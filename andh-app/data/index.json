@@ -1,6 +1,0 @@
-{
-  "app": "ANDH Pathways",
-  "diagnoses": [
-    {"id": "sam", "file": "sam.json", "title": "Severe acute malnutrition", "short": "SAM", "population": "Paediatric"}
-  ]
-}

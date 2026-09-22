@@ -1,8 +1,0 @@
-{
-  "_note": "offset = PDF page number minus printed page number. Items cite printed pages. Calibrate in the app (Sources tab) if a link lands on the wrong page.",
-  "sources": [
-    {"id": "imci2022", "short": "IMCI 2022", "title": "IMCI Chart Booklet (South Africa)", "edition": "2022 (final, May 2023 print)", "offset": 2},
-    {"id": "imam2015", "short": "IMAM 2015", "title": "Integrated Management of Children with Acute Malnutrition in South Africa: Operational Guidelines", "edition": "NDoH 2015", "offset": 0},
-    {"id": "who2013", "short": "WHO 2013", "title": "Guideline: Updates on the management of severe acute malnutrition in infants and children", "edition": "WHO 2013", "offset": 0}
-  ]
-}
