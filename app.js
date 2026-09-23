@@ -1,4 +1,4 @@
-// ANDH Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
+// JAD Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const app = $("#app");
@@ -61,16 +61,19 @@ function li(d, it) {
   return `<li class="${cls}">${chk}<span class="txt">${esc(it.t)}${it.d ? '<span class="dag">†</span>' : ""}</span>${chip(it.s)}${tick}</li>`;
 }
 const list = (d, items) => `<ul class="items">${(items || []).map(i => li(d, i)).join("")}</ul>`;
-const card = (d, title, items, n, note) =>
-  `<section class="card" ${n ? `id="s${n}"` : ""}><h2>${n ? `<span class="n">${n}</span>` : ""}<span>${esc(title)}</span></h2>${note ? `<div class="note">${esc(note)}</div>` : ""}${list(d, items)}</section>`;
+const card = (d, title, items, n, note) => {
+  const hasN = typeof n === "number";
+  return `<section class="card" ${hasN ? `id="s${n}"` : ""}><h2>${hasN ? `<span class="n">${n}</span>` : ""}<span>${esc(title)}</span></h2>${note ? `<div class="note">${esc(note)}</div>` : ""}${list(d, items)}</section>`;
+};
 
 /* ---------- screens ---------- */
-function shell(title, back, body, d, tab) {
+function shell(title, back, body, d, tab, logo) {
   const [v, n] = d ? progress(d) : [0, 0];
   app.innerHTML = `
   <header class="top">${back ? `<button class="back" aria-label="Back" data-go="${back}">‹</button>` : ""}
     <h1>${esc(title)}</h1>
-    ${d ? `<button class="verify-btn" aria-pressed="${S.verify}" id="vm">${S.verify ? "Verifying" : "Verify"}</button>` : ""}</header>
+    ${d ? `<button class="verify-btn" aria-pressed="${S.verify}" id="vm">${S.verify ? "Verifying" : "Verify"}</button>`
+      : logo ? `<img class="logo" src="icons/jad-logo.webp" alt="JAD">` : ""}</header>
   ${d && S.verify ? `<div class="meter" title="${v} of ${n} verified"><i style="width:${n ? (100 * v / n) : 0}%"></i></div>` : ""}
   <main class="fade">${body}</main>
   ${d ? `<nav class="tabs">${[["arrival", "Arrival"], ["days", d.chart.unit + "s"], ["doses", "Doses"], ["nursing", "Nursing"], ["sources", "Sources"]]
@@ -79,7 +82,7 @@ function shell(title, back, body, d, tab) {
 
 function home() {
   const rows = S.index.diagnoses.map(e => `<button class="dx" data-go="#/dx/${e.id}/arrival"><div class="t">${esc(e.title)}</div><div class="p">${esc(e.short)} · ${esc(e.population)}</div></button>`).join("");
-  shell("ANDH pathways", "", `<p class="hint">Reference only. No patient details are stored. Tap an amber tag to open the guideline page it comes from.</p>${rows}`);
+  shell("JAD pathways", "", `<p class="hint">Reference only. No patient details are stored. Tap an amber tag to open the guideline page it comes from.</p>${rows}`, null, null, true);
 }
 
 function arrival(d) {

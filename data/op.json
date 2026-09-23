@@ -1,0 +1,1277 @@
+{
+ "id": "op",
+ "short": "OP poisoning",
+ "title": "Organophosphate / carbamate poisoning",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines where doses differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-23",
+ "sources": [
+  "stgah",
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — exposure + cholinergic toxidrome (clinical)",
+   "items": [
+    {
+     "t": "Exposure: pesticide / stock remedy, ingested, skin or inhaled",
+     "s": "stgah:19.37",
+     "b": 1
+    },
+    {
+     "t": "Muscarinic: salivation, lacrimation, sweating, urination, vomiting, diarrhoea, bronchorrhoea, bronchospasm, bradycardia, hypotension, miosis",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "Nicotinic: fasciculations, muscle weakness, tachycardia, hypertension, mydriasis",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "Central: confusion, coma, convulsions",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "HR and pupils depend on whether muscarinic or nicotinic effects predominate. Low pseudocholinesterase supports the diagnosis — do not wait for it.",
+     "s": "paedstg2024:18.15",
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Exposed at ____ h · Product ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe OP poisoning = any one of",
+   "note": "The SA STGs do not grade OP severity; these are the STG triggers for airway and ventilatory support.",
+   "items": [
+    {
+     "t": "GCS < 8 — airway must be protected",
+     "s": "phcstg:21.50",
+     "b": 1
+    },
+    {
+     "t": "Hypoxia, hypercarbia or decreased respiratory effort — needs intubation and ventilation",
+     "s": "phcstg:21.50",
+     "b": 1
+    },
+    {
+     "t": "Convulsions or coma",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Weakness of neck flexors, bulbar or respiratory muscles",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Secretions or bradycardia not controlled despite escalating atropine",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Collateral record",
+   "items": [
+    {
+     "h": "Child — Road to Health Booklet"
+    },
+    {
+     "t": "Last recorded weight (dosing)"
+    },
+    {
+     "t": "Age / mobility (access)",
+     "d": 1
+    },
+    {
+     "t": "Previous poisoning or admissions"
+    },
+    {
+     "t": "HIV exposure / status"
+    },
+    {
+     "t": "Milestones / chronic illness"
+    },
+    {
+     "t": "Caregiver on the booklet"
+    },
+    {
+     "h": "Adult / adolescent — clinic card / previous records"
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Psychiatric history, treatment"
+    },
+    {
+     "t": "Chronic conditions and medicines"
+    },
+    {
+     "t": "Alcohol / substance use"
+    },
+    {
+     "t": "HIV / ART"
+    },
+    {
+     "t": "Pregnancy possible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Container / label brought",
+     "s": "stgah:19.12"
+    },
+    {
+     "t": "Time of exposure",
+     "s": "stgah:19.13"
+    },
+    {
+     "t": "Route: oral / skin / inhaled",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "Amount taken"
+    },
+    {
+     "t": "Intentional vs accidental",
+     "s": "stgah:19.11"
+    },
+    {
+     "t": "Co-ingestants (pills, alcohol)"
+    },
+    {
+     "t": "Unspecified rat poison or pesticide: consider super-warfarin and amitraz",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Street pesticide (\"Two-step\" = aldicarb, a carbamate)",
+     "d": 1
+    },
+    {
+     "h": "Pre-hospital treatment — do not duplicate"
+    },
+    {
+     "t": "Atropine: total ____ mg, last at ____",
+     "k": "value"
+    },
+    {
+     "t": "Activated charcoal given"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Vomiting / diarrhoea"
+    },
+    {
+     "t": "Breathlessness / wheeze"
+    },
+    {
+     "t": "Weakness / twitching"
+    },
+    {
+     "t": "Seizure / confusion"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Child: supervision, storage",
+     "d": 1
+    },
+    {
+     "t": "Adult/teen: suicidal intent",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Bradycardia / Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / Hypertension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Weak or decreasing respiratory effort",
+     "s": "phcstg:21.50",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "GCS < 8 — protect airway",
+     "s": "phcstg:21.50",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "GCS ____ /15 · Pupils ____ mm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Airway and chest"
+    },
+    {
+     "t": "Drooling / pooled secretions"
+    },
+    {
+     "t": "Bronchorrhoea (wet crackles)"
+    },
+    {
+     "t": "Wheeze / bronchospasm"
+    },
+    {
+     "t": "Cyanosis"
+    },
+    {
+     "h": "Eyes"
+    },
+    {
+     "t": "Pinpoint pupils"
+    },
+    {
+     "t": "Dilated pupils"
+    },
+    {
+     "t": "Lacrimation"
+    },
+    {
+     "t": "Eye contamination",
+     "s": "stgah:19.13"
+    },
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Sweating (axillae wet)"
+    },
+    {
+     "t": "Pesticide / solvent on skin, clothes"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Fasciculations"
+    },
+    {
+     "t": "Proximal / neck weakness"
+    },
+    {
+     "t": "Agitation / confusion"
+    },
+    {
+     "t": "Seizure activity"
+    },
+    {
+     "h": "Baselines for monitoring"
+    },
+    {
+     "t": "Neck flexion strength",
+     "d": 1
+    },
+    {
+     "t": "Bowel sounds",
+     "s": "stgah:19.40"
+    },
+    {
+     "t": "Bladder (retention)",
+     "s": "stgah:19.40"
+    },
+    {
+     "t": "Swallow and cough"
+    },
+    {
+     "t": "Amitraz clue: no sweating, salivation, incontinence or fasciculation; hypothermia",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 3 mmol/L: correct, recheck",
+     "d": 1
+    },
+    {
+     "t": "Then 6-hourly while nil by mouth, and with any seizure or drop in LOC",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG — ward blood gas",
+   "items": [
+    {
+     "t": "Value on arrival: pH ____ pCO₂ ____ kPa lactate ____",
+     "k": "value"
+    },
+    {
+     "t": "Hypercarbia or hypoxia: intubate and ventilate — attempt REFERRAL (no ventilation on site)",
+     "s": "phcstg:21.50",
+     "b": 1
+    },
+    {
+     "t": "Repeat with any respiratory deterioration"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise / GCS < 8",
+     "s": "phcstg:21.50",
+     "b": 1
+    },
+    {
+     "t": "Respiratory failure",
+     "s": "phcstg:21.50",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "phcstg:21.49",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "stgah:19.38",
+     "b": 1
+    },
+    {
+     "t": "Bronchorrhoea / bronchospasm",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Severe bradycardia",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Neck / bulbar / respiratory weakness",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Aspiration",
+     "d": 1
+    },
+    {
+     "t": "Hydrocarbon solvent (paraffin)",
+     "s": "stgah:19.14"
+    },
+    {
+     "t": "Super-warfarin (rat poison)",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Amitraz (mimic)",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "Paraquat: O₂ only if hypoxic",
+     "s": "stgah:19.41"
+    },
+    {
+     "t": "Co-ingestion (e.g. paracetamol)",
+     "d": 1
+    },
+    {
+     "t": "Intentional self-harm",
+     "s": "stgah:19.11"
+    },
+    {
+     "t": "Child: neglect concern",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE OP poisoning → atropinise, then REFER (ICU). Adult: refer if ventilatory support is needed; child: all severe cases to ICU",
+   "s": "stgah:19.40"
+  },
+  {
+   "t": "11. ADMIT — atropinise, infuse, watch for intermediate syndrome — stabilise, then continue on the 0 h – Day 5 inpatient chart and the 24-hour nursing record",
+   "s": "paedstg2024:18.16"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Infusion and weaning start when criteria are met, not on the clock",
+  "columns": {
+   "feed": "Atropine & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Bolus phase: reassess 3–5 min after every atropine dose (doctor at bedside) — chest secretions, skin, HR, BP, pupils",
+    "s": "stgah:19.38"
+   },
+   {
+    "t": "On infusion: hourly while on infusion and for 24 h after it stops, then 4-hourly — HR, BP, RR, SpO₂, temperature, pupils, chest secretions, axillary sweat, GCS, neck flexion",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Extra check 15 min after every rate change",
+    "d": 1
+   },
+   {
+    "t": "Atropine overdose check at the same times: agitation, fever, bowel sounds, urinary retention",
+    "s": "stgah:19.40"
+   },
+   {
+    "t": "HGT on arrival, 6-hourly while nil by mouth, and with any seizure or drop in LOC",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Suction secretions frequently",
+    "s": "stgah:19.38"
+   },
+   {
+    "t": "Staff PPE throughout",
+    "s": "stgah:19.38"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "PPE first. Check the referral / EMS note for atropine (mg) and charcoal already given — do not repeat charcoal. Call Poisons Helpline 0861 555 777 or UFS 082 491 0160 (24 h).",
+    "feed": [
+     {
+      "h": "Airway · decontamination · fluids"
+     },
+     {
+      "t": "Airway, O₂, suction secretions frequently",
+      "s": "stgah:19.38",
+      "b": 1
+     },
+     {
+      "t": "GCS < 8: protect airway → REFER",
+      "s": "phcstg:21.50",
+      "b": 1
+     },
+     {
+      "t": "Hypoxia, hypercarbia, weak effort: intubate + ventilate → REFER",
+      "s": "phcstg:21.50"
+     },
+     {
+      "t": "RSI: avoid suxamethonium (child: also mivacurium) — prolonged paralysis",
+      "s": "paedstg2024:18.15"
+     },
+     {
+      "t": "Decontaminate only once resuscitated: remove clothes, wash body with soap and water, clothes in closed bags",
+      "s": "stgah:19.38"
+     },
+     {
+      "t": "Eyes: irrigate 15–20 min",
+      "s": "stgah:19.13"
+     },
+     {
+      "t": "IV access · hypotension: bolus per shock protocol",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth until alert, secretions controlled",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT on arrival",
+      "s": "stgah:19.13",
+      "b": 1
+     },
+     {
+      "t": "VBG: pH, pCO₂ (lactate, K = †)",
+      "s": "phcstg:21.50",
+      "b": 1
+     },
+     {
+      "t": "Pseudocholinesterase — confirmation only, do not wait",
+      "s": "paedstg2024:18.15",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine · FBC",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG (bradycardia, QT)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If rat poison / unknown pesticide: INR now and at 48 h",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "t": "If intentional: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Record time of ingestion on request forms",
+      "s": "stgah:19.13"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Atropine STEP 1 — bronchorrhoea, bronchospasm or bradycardia"
+     },
+     {
+      "t": "ADULT: atropine 2 mg IV bolus; double every 3–5 min until atropinised: 2 → 4 → 8 → 16 mg…",
+      "s": "stgah:19.38",
+      "b": 1
+     },
+     {
+      "t": "ADULT: check ampoule strength (100 mg/10 mL at some sites)",
+      "s": "stgah:19.39"
+     },
+     {
+      "t": "CHILD: atropine 0.05 mg/kg IV over 1 min; double every 3–5 min, e.g. 10 kg: 0.5 → 1 → 2 → 4 → 8 mg (no maximum)",
+      "s": "paedstg2024:18.15",
+      "b": 1
+     },
+     {
+      "t": "Atropinised = reduced bronchial secretions, dry skin, HR and BP rising, pupils dilating (may be delayed). No response: double. Some response: same or reduced dose",
+      "s": "stgah:19.38"
+     },
+     {
+      "t": "Tachycardia and dilated pupils do not contraindicate atropine in resuscitation",
+      "s": "stgah:19.40"
+     },
+     {
+      "h": "Agitation / seizures"
+     },
+     {
+      "t": "ADULT agitation: diazepam 5–10 mg IV, repeat after 30–60 min if needed",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "ADULT seizures: lorazepam 4 mg IV, or midazolam 10 mg IV/IM/buccal, or diazepam 10 mg IV; repeat once at 5 min",
+      "s": "stgah:14.15"
+     },
+     {
+      "t": "ADULT: no phenytoin (toxin) — still seizing: REFER",
+      "s": "stgah:14.16",
+      "b": 1
+     },
+     {
+      "t": "CHILD agitation or seizures: lorazepam 0.1 mg/kg IV (max 4 mg), or midazolam 0.25 mg/kg IV (max 10 mg) / 0.5 mg/kg buccal, or diazepam 0.25 mg/kg IV (max 10 mg); repeat once at 5 min",
+      "s": "paedstg2024:13.8"
+     },
+     {
+      "t": "CHILD: then phenobarbital 20 mg/kg IV over 5 min (max 600 mg). No phenytoin. REFER",
+      "s": "paedstg2024:13.9",
+      "b": 1
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "Activated charcoal once stabilised and airway protected — doses in Doses tab",
+      "s": "stgah:19.38",
+      "b": 1
+     },
+     {
+      "t": "Notify NMC (pesticide poisoning is notifiable)",
+      "s": "stgah:19.37",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Atropinised",
+    "phase": "Atropinised → STEP 2",
+    "feed": [
+     {
+      "t": "Infusion 10–20% of the STEP 1 total bolus dose per hour",
+      "s": "stgah:19.39",
+      "b": 1
+     },
+     {
+      "t": "Adult: start at 10%, titrate up to 20% — 40 mg (1 mg/mL) + 160 mL diluent = 0.2 mg/mL; e.g. total 62 mg → 6 mg/h = 30 mL/h",
+      "s": "stgah:19.39"
+     },
+     {
+      "t": "Child: 0.01 mg/mL — remove 1 mL from 100 mL NaCl 0.9%, add 1 mL atropine 1 mg/mL",
+      "s": "paedstg2024:18.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Record STEP 1 total bolus (patient box)"
+     },
+     {
+      "t": "VBG if respiratory concern",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Activated charcoal now if stable and airway protected",
+      "s": "stgah:19.38",
+      "b": 1
+     },
+     {
+      "t": "Decontaminate if not yet done",
+      "s": "stgah:19.38"
+     },
+     {
+      "t": "Start the 24-hour nursing record"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Infusion · titrate",
+    "feed": [
+     {
+      "h": "Titrate"
+     },
+     {
+      "t": "Secretions, bronchospasm or bradycardia recur → increase",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "Controlled + overdose signs (tachycardia, mydriasis, agitation, pyrexia, reduced bowel sounds, urinary retention) → decrease",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "No recurrence, no overdose → reduce slowly",
+      "s": "stgah:19.40"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly response + overdose check (nursing record)"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Recurrence despite infusion (STEP 3)"
+     },
+     {
+      "t": "Adult: boluses again from 2 mg, doubling; new rate = 0.1 × (STEP 1 + STEP 3 bolus totals), titrate up to 20%",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "Child: increase the infusion",
+      "s": "paedstg2024:18.16"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Infusion",
+    "feed": [
+     {
+      "t": "Titrate as at 1 h. Rate ____ mg/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly response + overdose check"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Decontamination complete? Clothes bagged",
+      "s": "stgah:19.38"
+     },
+     {
+      "t": "Charcoal given? ____ g at ____",
+      "k": "value"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Infusion",
+    "feed": [
+     {
+      "t": "Titrate as at 1 h. Rate ____ mg/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG if respiratory concern",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bladder: catheter if retention",
+      "d": 1
+     },
+     {
+      "t": "Child, central anticholinergic toxicity but still wet: glycopyrrolate 0.025 mg/kg IV (not a substitute for atropine)",
+      "s": "paedstg2024:18.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Infusion",
+    "feed": [
+     {
+      "t": "Titrate as at 1 h. Rate ____ mg/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT (6-hourly while nil by mouth)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E if 0 h abnormal",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess severity (Arrival §2): any criterion → REFER"
+     },
+     {
+      "t": "Poisons Helpline advice documented"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Infusion",
+    "feed": [
+     {
+      "t": "Titrate as at 1 h. Rate ____ mg/h · oral fluids if alert and secretions controlled",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 6-hourly while nil by mouth",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Paracetamol result reviewed (if sent)",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adult agitation: diazepam 5–10 mg IV, repeat after 30–60 min if needed",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "Watch for aspiration",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Wean if criteria met",
+    "feed": [
+     {
+      "t": "No recurrence and no overdose → wean",
+      "s": "stgah:19.40",
+      "b": 1
+     },
+     {
+      "t": "Do not stop abruptly — wean over at least 24 h",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "Recurrence on weaning: back to the last effective rate, STEP 3 if needed",
+      "s": "stgah:19.40"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E · HGT if not eating",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Intermediate syndrome watch (1–4 days after the cholinergic crisis)",
+      "s": "stgah:19.38"
+     },
+     {
+      "t": "Neck flexors, bulbar (swallow, cough), respiratory muscles, proximal limbs, cranial nerves",
+      "s": "stgah:19.38"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Weaning / off",
+    "feed": [
+     {
+      "t": "Infusion off when weaned. Oral diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "If rat poison / unknown pesticide: INR at 48 h post-ingestion",
+      "s": "stgah:19.42",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intentional: mental health assessment before discharge",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Child: social worker if supervision or neglect concern",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "No atropine. Mobilise",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neck flexion, swallow, cough 4-hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New weakness or falling respiratory effort: REFER (ventilation) — supportive care is the mainstay",
+      "s": "stgah:19.38"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Observe → discharge",
+    "feed": [
+     {
+      "t": "Diet and fluids normal."
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review pending results (pseudocholinesterase, INR)"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess discharge criteria"
+     },
+     {
+      "t": "NMC notification confirmed · safety counselling"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Atropine · preparation",
+   "items": [
+    {
+     "h": "Adult — bolus volume"
+    },
+    {
+     "t": "1 mg/mL ampoule: undiluted — 2 mg = 2 mL · 4 = 4 · 8 = 8 · 16 = 16 mL",
+     "s": "stgah:19.39"
+    },
+    {
+     "t": "500 mcg/mL: 2 mg = 4 mL · 4 = 8 · 8 = 16 · 16 = 32 mL",
+     "s": "stgah:19.39"
+    },
+    {
+     "t": "100 mg/10 mL: 1 mL + 9 mL diluent = 1 mg/mL",
+     "s": "stgah:19.39"
+    },
+    {
+     "h": "Adult — infusion"
+    },
+    {
+     "t": "1 mg/mL: 40 mg (40 mL) + 160 mL = 0.2 mg/mL",
+     "s": "stgah:19.39"
+    },
+    {
+     "t": "500 mcg/mL: 40 mg (80 mL) + 120 mL = 0.2 mg/mL",
+     "s": "stgah:19.39"
+    },
+    {
+     "t": "100 mg/10 mL: 200 mg (20 mL) + 180 mL = 1 mg/mL",
+     "s": "stgah:19.39"
+    },
+    {
+     "t": "Rate = 10% of total bolus/h, up to 20%",
+     "s": "stgah:19.39"
+    },
+    {
+     "h": "Child"
+    },
+    {
+     "t": "Bolus 0.05 mg/kg IV over 1 min, doubling",
+     "s": "paedstg2024:18.15"
+    },
+    {
+     "t": "Infusion 10–20% of total bolus dose per hour",
+     "s": "paedstg2024:18.16"
+    },
+    {
+     "t": "0.01 mg/mL: 1 mL removed from 100 mL NaCl 0.9% + atropine 1 mg/mL 1 mL; or 1 mL removed from 50 mL bag + atropine 500 mcg/mL 1 mL",
+     "s": "paedstg2024:18.16"
+    },
+    {
+     "t": "Glycopyrrolate 0.025 mg/kg IV: central atropine toxicity with ongoing peripheral secretions only",
+     "s": "paedstg2024:18.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Charcoal · seizures · agitation",
+   "items": [
+    {
+     "h": "Activated charcoal — once stabilised, airway protected; best within 1 h; not for petroleum solvents",
+     "s": "stgah:19.14"
+    },
+    {
+     "t": "Adult: 50 g in 100 mL water",
+     "s": "stgah:19.14"
+    },
+    {
+     "t": "Child < 6 y: 1 g/kg in 50–100 mL water",
+     "s": "paedstg2024:18.4"
+    },
+    {
+     "t": "Child > 6 y: 20–50 g in 100–300 mL water",
+     "s": "paedstg2024:18.4"
+    },
+    {
+     "h": "Seizures — benzodiazepine, repeat once at 5 min; never phenytoin in toxin-induced seizures",
+     "s": "stgah:14.16"
+    },
+    {
+     "t": "Adult: lorazepam 4 mg IV · or midazolam 10 mg IV/IM/buccal · or diazepam 10 mg IV. Not controlled: REFER (refractory)",
+     "s": "stgah:14.15"
+    },
+    {
+     "t": "Child (< 13 y): lorazepam 0.1 mg/kg IV (max 4) · or midazolam 0.25 mg/kg IV (max 10) / 0.5 mg/kg buccal · or diazepam 0.25 mg/kg IV (max 10)",
+     "s": "paedstg2024:13.8"
+    },
+    {
+     "t": "Child: then phenobarbital 20 mg/kg IV (max 600 mg). REFER",
+     "s": "paedstg2024:13.9"
+    },
+    {
+     "h": "Agitation"
+    },
+    {
+     "t": "Adult: diazepam 5–10 mg IV, repeat after 30–60 min",
+     "s": "stgah:19.40"
+    },
+    {
+     "t": "Child: benzodiazepine as for seizures",
+     "s": "paedstg2024:18.16"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Atropine overdose — decrease"
+    },
+    {
+     "t": "Tachycardia, mydriasis, agitation, pyrexia, reduced bowel sounds, urinary retention",
+     "s": "stgah:19.40"
+    },
+    {
+     "h": "Recurrence — increase"
+    },
+    {
+     "t": "Secretions, bronchospasm or bradycardia return",
+     "s": "stgah:19.40"
+    },
+    {
+     "h": "REFER (ICU)"
+    },
+    {
+     "t": "GCS < 8 · hypoxia, hypercarbia or weak respiratory effort",
+     "s": "phcstg:21.50",
+     "b": 1
+    },
+    {
+     "t": "Intermediate syndrome weakness (neck, bulbar, respiratory)",
+     "s": "stgah:19.38"
+    },
+    {
+     "t": "Seizures not controlled",
+     "s": "stgah:14.16"
+    },
+    {
+     "t": "Child: any severe case",
+     "s": "paedstg2024:18.16"
+    },
+    {
+     "t": "Hypotension needing inotropes",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "VBG · HGT · U&E · ECG",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "Paraquat co-exposure"
+    },
+    {
+     "t": "O₂ only if confirmed hypoxic",
+     "s": "stgah:19.41"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "Off atropine ≥ 24 h, no cholinergic signs",
+    "d": 1
+   },
+   {
+    "t": "No neck, bulbar or respiratory weakness through the intermediate-syndrome window",
+    "s": "stgah:19.38",
+    "b": 1
+   },
+   {
+    "t": "Alert, eating and drinking",
+    "d": 1
+   },
+   {
+    "t": "If rat poison: INR at 48 h reviewed",
+    "s": "stgah:19.42"
+   },
+   {
+    "t": "NMC notification done",
+    "s": "stgah:19.37"
+   },
+   {
+    "t": "Intentional: mental health assessment and plan",
+    "d": 1
+   },
+   {
+    "t": "Child: safe storage counselling; social worker if concern",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "Review at 1 week; mental health follow-up if intentional",
+    "d": 1
+   },
+   {
+    "t": "Return immediately if weakness, trouble breathing or swallowing, drooling, sweating or confusion",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — atropine response, overdose and neuro",
+  "period": "One sheet per 24 hours; hourly rows while on infusion and for 24 h after it stops (†), then 4-hourly (†)",
+  "params": [
+   {
+    "h": "Atropine response",
+    "items": [
+     {
+      "t": "Hourly while on infusion and for 24 h after it stops, then 4-hourly; extra check 15 min after every rate change",
+      "d": 1
+     },
+     {
+      "t": "Chest secretions: wet crackles / drooling Y or N",
+      "s": "stgah:19.38"
+     },
+     {
+      "t": "Axillae: wet or dry · HR · BP · pupils in mm",
+      "s": "stgah:19.38"
+     }
+    ]
+   },
+   {
+    "h": "Atropine overdose + infusion",
+    "items": [
+     {
+      "t": "Same times: temperature, agitation, bowel sounds, bladder / urine passed",
+      "s": "stgah:19.40"
+     },
+     {
+      "t": "Record the rate in mg/h every hour; boluses in Notes"
+     },
+     {
+      "t": "Never stop the infusion abruptly — wean over at least 24 h",
+      "s": "stgah:19.40",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Breathing, neuro, HGT",
+    "items": [
+     {
+      "t": "RR, SpO₂, GCS at the same times",
+      "s": "paedstg2024:18.15"
+     },
+     {
+      "t": "Neck flexion: lift head off pillow — N (normal) or W (weak); note swallow and cough",
+      "d": 1
+     },
+     {
+      "t": "HGT on arrival, 6-hourly while nil by mouth, and with any seizure or drop in LOC",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Secretions, wheeze or bradycardia returning",
+    "s": "stgah:19.40"
+   },
+   {
+    "t": "Overdose signs (tachycardia, dilated pupils, agitation, fever, absent bowel sounds, urinary retention)",
+    "s": "stgah:19.40"
+   },
+   {
+    "t": "GCS falling or GCS < 8",
+    "s": "phcstg:21.50",
+    "b": 1
+   },
+   {
+    "t": "RR, SpO₂ or breathing effort worse than the patient's baseline"
+   },
+   {
+    "t": "New neck, swallowing or breathing weakness",
+    "s": "stgah:19.38"
+   },
+   {
+    "t": "Seizure"
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Atropine boluses (mg)",
+   "Infusion (mg/24 h)",
+   "Intake (mL)",
+   "Urine (mL)"
+  ]
+ }
+}

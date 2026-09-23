@@ -1,9 +1,12 @@
 {
-  "app": "ANDH Pathways",
+  "app": "JAD Pathways",
   "diagnoses": [
     {"id": "sam", "file": "sam.json", "title": "Severe acute malnutrition", "short": "SAM", "population": "Paediatric"},
     {"id": "pet", "file": "pet.json", "title": "Pre-eclampsia", "short": "PET", "population": "Obstetric"},
     {"id": "dka-adult", "file": "dka-adult.json", "title": "Diabetic ketoacidosis — adult", "short": "DKA (adult)", "population": "Adult"},
-    {"id": "dka-paeds", "file": "dka-paeds.json", "title": "Diabetic ketoacidosis — paediatric", "short": "DKA (paeds)", "population": "Paediatric"}
+    {"id": "dka-paeds", "file": "dka-paeds.json", "title": "Diabetic ketoacidosis — paediatric", "short": "DKA (paeds)", "population": "Paediatric"},
+    {"id": "age-paeds", "file": "age-paeds.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (child)", "short": "AGE (child)", "population": "Paediatric"},
+    {"id": "age-adult", "file": "age-adult.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (adult)", "short": "AGE (adult)", "population": "Adult"},
+    {"id": "op", "file": "op.json", "title": "Organophosphate / carbamate poisoning", "short": "OP poisoning", "population": "Adult + Paediatric"}
   ]
 }

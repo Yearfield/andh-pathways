@@ -1,0 +1,1395 @@
+{
+ "id": "age-paeds",
+ "short": "AGE (child)",
+ "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (child)",
+ "population": "Paediatric (1 month and older; excludes neonates < 28 d, SAM, dysentery, GI bleeding)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-23",
+ "sources": [
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Haematemesis · melaena · frank PR bleeding",
+     "b": 1
+    },
+    {
+     "t": "Blood or mucus in stool (dysentery)",
+     "s": "paedstg2024:2.23",
+     "b": 1
+    },
+    {
+     "t": "Neonate < 28 days",
+     "b": 1
+    },
+    {
+     "t": "Severe acute malnutrition → SAM pathway",
+     "s": "paedstg2024:2.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Sudden onset: more frequent, looser/watery stools",
+     "s": "paedstg2024:2.8",
+     "b": 1
+    },
+    {
+     "t": "± vomiting. Vomiting alone: exclude other causes (§9)",
+     "s": "phcstg:2.5",
+     "k": "info"
+    },
+    {
+     "t": "No blood or mucus in stool",
+     "s": "paedstg2024:2.18"
+    },
+    {
+     "t": "Duration ≤ 14 days (> 14 d = persistent, chart side 2)",
+     "s": "paedstg2024:2.19"
+    },
+    {
+     "t": "Wt ____ kg · Days ill ____ · Stools/24 h ____ · Vomits/24 h ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Classify — tick the highest that applies",
+   "items": [
+    {
+     "t": "SHOCK: any one: CRT > 3 s · rapid weak pulse · cool peripheries (late: ↓ LOC, ↓ BP)",
+     "s": "paedstg2024:2.9",
+     "b": 1
+    },
+    {
+     "t": "SEVERE dehydration: 2 of: lethargic · sunken eyes · drinks poorly · very slow skin pinch ≥ 2 s",
+     "s": "paedstg2024:2.9",
+     "b": 1
+    },
+    {
+     "t": "SOME dehydration: 2 of: restless/irritable · sunken eyes · drinks eagerly · slow pinch < 2 s",
+     "s": "paedstg2024:2.9",
+     "b": 1
+    },
+    {
+     "t": "NO VISIBLE dehydration: one or none of the above",
+     "s": "phcstg:2.12",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9) · failed oral rehydration at PHC",
+     "s": "paedstg2024:2.12",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet and referral letter",
+   "items": [
+    {
+     "t": "Immunisations up to date (incl. rotavirus)"
+    },
+    {
+     "t": "Weight-for-age curve: flattening or loss"
+    },
+    {
+     "t": "HIV exposed / PCR result"
+    },
+    {
+     "t": "Last vit A dose"
+    },
+    {
+     "t": "Previous diarrhoea admissions"
+    },
+    {
+     "t": "Premature birth"
+    },
+    {
+     "t": "Pre-referral IV fluid volume given",
+     "s": "phcstg:2.13",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone given (dose, time)",
+     "s": "phcstg:2.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Gastrointestinal"
+    },
+    {
+     "t": "Stool: watery / frequency"
+    },
+    {
+     "t": "Vomiting: bile-stained / persistent",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Abdominal pain or distension"
+    },
+    {
+     "t": "No stool or flatus",
+     "s": "phcstg:2.5"
+    },
+    {
+     "h": "Intake and output"
+    },
+    {
+     "t": "Breastfeeding / other feeds"
+    },
+    {
+     "t": "Drinking: normally / eagerly / poorly"
+    },
+    {
+     "t": "Urine passed in last 6 h"
+    },
+    {
+     "t": "ORS/SSS given at home or clinic"
+    },
+    {
+     "h": "Associated"
+    },
+    {
+     "t": "Fever"
+    },
+    {
+     "t": "Convulsions"
+    },
+    {
+     "t": "Cough / fast breathing"
+    },
+    {
+     "t": "Medicines / poisons taken",
+     "s": "phcstg:2.5"
+    },
+    {
+     "h": "Contacts and social"
+    },
+    {
+     "t": "Others ill (outbreak, cholera)",
+     "s": "phcstg:2.11"
+    },
+    {
+     "t": "Safe water / sanitation"
+    },
+    {
+     "t": "Mother's HIV status"
+    },
+    {
+     "t": "Primary caregiver present"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill > 3 s",
+     "s": "paedstg2024:2.9",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "SAM screen → SAM pathway if Y"
+    },
+    {
+     "t": "WFH/WFL z-score < −3",
+     "s": "paedstg2024:2.38",
+     "k": "yn"
+    },
+    {
+     "t": "MUAC < 11.5 cm (6–60 mo)",
+     "s": "paedstg2024:2.38",
+     "k": "yn"
+    },
+    {
+     "t": "Bilateral pedal oedema",
+     "s": "paedstg2024:2.38",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Dehydration signs",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Well, alert"
+    },
+    {
+     "t": "Restless / irritable"
+    },
+    {
+     "t": "Lethargic / unconscious"
+    },
+    {
+     "t": "Sunken eyes"
+    },
+    {
+     "t": "Skin pinch slow (< 2 s)"
+    },
+    {
+     "t": "Skin pinch very slow (≥ 2 s)"
+    },
+    {
+     "h": "Shock signs",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Cool peripheries"
+    },
+    {
+     "t": "Rapid, weak pulse"
+    },
+    {
+     "h": "Hypernatraemia clues",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "Doughy skin"
+    },
+    {
+     "t": "High-pitched cry / hyperreflexia"
+    },
+    {
+     "h": "Abdomen",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Distension"
+    },
+    {
+     "t": "Decreased bowel sounds"
+    },
+    {
+     "t": "Tenderness / guarding / mass"
+    },
+    {
+     "t": "Baseline liver span: ____ cm",
+     "s": "paedstg2024:2.12",
+     "k": "value"
+    },
+    {
+     "h": "Chest and neuro",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Fast breathing, chest indrawing"
+    },
+    {
+     "t": "Abnormal tone / floppy"
+    },
+    {
+     "t": "Bulging fontanelle / neck stiffness"
+    },
+    {
+     "t": "Jaundice"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT †",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 3 mmol/L: dextrose 10% 2 mL/kg IV, recheck in 30 min",
+     "s": "phcstg:3.8",
+     "d": 1
+    },
+    {
+     "t": "Then with each 4-hourly reassessment while on IV fluids or not feeding",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG / U&E — if shock, severe dehydration or co-morbidity",
+   "items": [
+    {
+     "t": "Na ____ K ____ pH ____ urea/creat ____",
+     "s": "paedstg2024:2.10",
+     "k": "value"
+    },
+    {
+     "t": "Na 150–169: hypernatraemic plan, rehydrate over 48 h (chart side 2)",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "K < 2.5, Na > 170, or pH < 7.1 not responding: attempt REFERRAL",
+     "s": "paedstg2024:2.19",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or breastfeed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2024:1.2"
+    },
+    {
+     "t": "Hypoglycaemia"
+    },
+    {
+     "t": "SAM (→ SAM pathway)",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "Surgical abdomen / obstruction",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Intussusception",
+     "s": "phcstg:2.17"
+    },
+    {
+     "t": "Sepsis or meningitis"
+    },
+    {
+     "t": "UTI or pneumonia",
+     "s": "paedstg2024:2.18"
+    },
+    {
+     "t": "DKA (high HGT)",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Typhoid (high fever, very ill)",
+     "s": "phcstg:2.11"
+    },
+    {
+     "t": "Cholera (outbreak)",
+     "s": "phcstg:2.11"
+    },
+    {
+     "t": "Poisoning / medicines",
+     "s": "phcstg:2.5"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Shock after 40 mL/kg · Na > 170 · K < 2.5 · acidosis not responding · surgical abdomen → Attempt REFERRAL",
+   "s": "paedstg2024:2.19"
+  },
+  {
+   "t": "11. SOME / SEVERE / SHOCK → ADMIT · NO VISIBLE → Plan A, home if stable 4 h — stabilise, then continue on the 0–48 h inpatient chart and the 48-hour nursing record",
+   "s": "paedstg2024:2.14"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "The plan changes at each reassessment (4 h, 8 h…), not on the clock",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Hourly 0–8 h: ORS / IV / feed taken, vomits, stools, urine",
+    "d": 1
+   },
+   {
+    "t": "Full reassessment 4-hourly: general condition, CRT, LOC, skin pinch, sunken eyes, RR, liver span, urine, stools",
+    "s": "paedstg2024:2.12"
+   },
+   {
+    "t": "Shock: reassess after every bolus",
+    "s": "paedstg2024:2.11"
+   },
+   {
+    "t": "Urine output ≥ 1 mL/kg/h",
+    "s": "paedstg2024:2.10",
+    "b": 1
+   },
+   {
+    "t": "Weight on arrival then daily (6-hourly if hydration unsure and child very ill or small)",
+    "s": "paedstg2024:2.10"
+   },
+   {
+    "t": "HGT 4-hourly while on IV fluids or not feeding",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Na ≥ 150: fluid status, losses, neuro 2-hourly",
+    "s": "paedstg2024:2.17"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "feed": [
+     {
+      "h": "Some or severe, not shocked, not failed oral"
+     },
+     {
+      "t": "ORS 80 mL/kg over 4 h = 5 mL/kg every 15 min; more if the child wants",
+      "s": "paedstg2024:2.11",
+      "b": 1
+     },
+     {
+      "t": "Or NGT 20 mL/kg/h × 4 h",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "h": "Failed ORS/NGT, after shock, or failed at PHC"
+     },
+     {
+      "t": "ORS or NGT as above, PLUS",
+      "s": "paedstg2024:2.12"
+     },
+     {
+      "t": "NaCl 0.9%/dextrose 5% IV 10 mL/kg/h × 4 h, then reassess",
+      "s": "paedstg2024:2.12",
+      "b": 1
+     },
+     {
+      "t": "No visible dehydration: Plan A (side 2)",
+      "s": "paedstg2024:2.13"
+     },
+     {
+      "t": "Feeds: continue breastfeeds and usual feeds; withhold only in shock or severe dehydration until stable (a few hours)",
+      "s": "paedstg2024:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT on arrival",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Weight on arrival",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "VBG / U&E: Na, K, urea, creatinine, acid-base, after resuscitation, if shock, severe dehydration or co-morbidity",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick: leucocytes, nitrites, blood",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "HIV status (consent) in every child",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "Stool culture only if typhoid or cholera suspected",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Shock"
+     },
+     {
+      "t": "Oxygen · IO if no IV in 5 min",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "t": "NaCl 0.9% 10 mL/kg IV over 20 min",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "t": "Reassess after each bolus; repeat if still shocked and no overload",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "t": "Not responding after 40 mL/kg: REFER (ICU)",
+      "s": "paedstg2024:2.11",
+      "b": 1
+     },
+     {
+      "h": "Hypoglycaemia †"
+     },
+     {
+      "t": "HGT < 3 mmol/L: dextrose 10% 2 mL/kg IV, recheck in 30 min",
+      "s": "phcstg:3.8",
+      "d": 1
+     },
+     {
+      "h": "Fluid overload: stop IV fluids"
+     },
+     {
+      "t": "RR, pulse or liver size rising from baseline; crepitations",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "h": "Routine"
+     },
+     {
+      "t": "Zinc 10 mg PO daily × 14 days",
+      "s": "paedstg2024:2.18"
+     },
+     {
+      "t": "KCl PO 8-hourly: < 6 mo 125 mg; > 6 mo 250 mg. Not if hyperkalaemic or anuric",
+      "s": "paedstg2024:2.19"
+     },
+     {
+      "t": "Age < 2 months: ampicillin + gentamicin (side 2)",
+      "s": "paedstg2024:2.18"
+     },
+     {
+      "t": "No antidiarrhoeals, no antiemetics",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "h": "Electrolytes"
+     },
+     {
+      "t": "Act on the VBG / U&E result: K, Na, pH plans on side 2",
+      "s": "paedstg2024:2.15"
+     }
+    ],
+    "lead": "Check the referral letter for PHC IV fluid volume and ceftriaxone already given. Count the fluid; do not repeat the ceftriaxone."
+   },
+   {
+    "label": "1 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "ORS 5 mL/kg every 15 min · IV rate ____ mL/h",
+      "s": "paedstg2024:2.11"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Vomits: wait 10 min, then continue more slowly",
+      "s": "paedstg2024:2.11"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Continue; intake on target?"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Urine passed? · signs of overload?"
+     }
+    ]
+   },
+   {
+    "label": "3 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Continue"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Vomits: wait 10 min, then continue more slowly",
+      "s": "paedstg2024:2.11"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess + reclassify",
+    "feed": [
+     {
+      "t": "None: Plan A, restart usual feeds",
+      "s": "paedstg2024:2.13"
+     },
+     {
+      "t": "Some: repeat 80 mL/kg over 4 h; add IV 10 mL/kg/h if ORS/NGT failed",
+      "s": "paedstg2024:2.12"
+     },
+     {
+      "t": "Severe / shock: back to 0 h",
+      "s": "paedstg2024:2.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if on IV or not feeding",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Review VBG / U&E",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review list (standing box)",
+      "s": "paedstg2024:2.12"
+     },
+     {
+      "t": "Urine output ≥ 1 mL/kg/h?",
+      "s": "paedstg2024:2.10"
+     },
+     {
+      "t": "Correct K / Na (side 2)",
+      "s": "paedstg2024:2.15"
+     }
+    ]
+   },
+   {
+    "label": "5 h",
+    "phase": "Per 4-h plan",
+    "feed": [
+     {
+      "t": "Continue the plan set at 4 h"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Vomits: wait 10 min, then continue more slowly",
+      "s": "paedstg2024:2.11"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Per 4-h plan",
+    "feed": [
+     {
+      "t": "Continue"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight if hydration unsure and child very ill or small",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine passed? · signs of overload?"
+     }
+    ]
+   },
+   {
+    "label": "7 h",
+    "phase": "Per 4-h plan",
+    "feed": [
+     {
+      "t": "Continue"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Intake on target?"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Reassess + reclassify",
+    "feed": [
+     {
+      "t": "None and stable 4 h on Plan A: check discharge criteria",
+      "s": "paedstg2024:2.14",
+      "b": 1
+     },
+     {
+      "t": "Still some on ORS/NGT: add IV 10 mL/kg/h × 4 h",
+      "s": "paedstg2024:2.12",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if on IV or not feeding",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Na / K 8–12-hourly if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not improving on IV: REFER",
+      "s": "paedstg2024:2.19",
+      "b": 1
+     },
+     {
+      "t": "Review list · zinc and KCl continue",
+      "s": "paedstg2024:2.18"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan; usual feeds once stable",
+      "s": "paedstg2024:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight if 6-hourly",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · KCl 8-hourly",
+      "s": "paedstg2024:2.19"
+     }
+    ]
+   },
+   {
+    "label": "16 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan; Plan A 10 mL/kg ORS per stool",
+      "s": "paedstg2024:2.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if on IV or not feeding",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · KCl 8-hourly",
+      "s": "paedstg2024:2.19"
+     }
+    ]
+   },
+   {
+    "label": "20 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · check discharge criteria"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan; stop IV once drinking enough"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight (daily)",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "U&E if abnormal before",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · zinc day 2 · discharge criteria?"
+     }
+    ]
+   },
+   {
+    "label": "28 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A; usual feeds",
+      "s": "paedstg2024:2.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if on IV or not feeding",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · KCl 8-hourly",
+      "s": "paedstg2024:2.19"
+     }
+    ]
+   },
+   {
+    "label": "32 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A; usual feeds"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · discharge criteria?"
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A; usual feeds"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if on IV or not feeding",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · KCl 8-hourly",
+      "s": "paedstg2024:2.19"
+     }
+    ]
+   },
+   {
+    "label": "40 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A; usual feeds"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Full review · teach caregiver ORS / SSS",
+      "s": "paedstg2024:2.13"
+     }
+    ]
+   },
+   {
+    "label": "44 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A; usual feeds"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · discharge criteria?"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Discharge / review",
+    "feed": [
+     {
+      "t": "Plan A; usual feeds · if Na ≥ 150: 48-h plan complete",
+      "s": "paedstg2024:2.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "paedstg2024:2.10",
+      "b": 1
+     },
+     {
+      "t": "U&E if abnormal before",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria · still ill: find the cause (sepsis, UTI, surgical) or REFER",
+      "s": "paedstg2024:2.19"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Electrolytes and special fluid plans",
+   "items": [
+    {
+     "h": "Na 150–169: hypernatraemic dehydration",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "Lower Na by ≤ 0.5 mmol/L/h (10–12 mmol/L per 24 h); falling > 1 mmol/L/h: slow the rate",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "ORS/NGT 10 mL/kg/h preferred; continue feeds",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "Volume = deficit 50–70 mL/kg + maintenance, over 48 h",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "IV if oral/NGT fails: NaCl 0.9%/dextrose 5%: 2–10 kg 6 mL/kg/h · > 10–20 kg 5 · > 20–40 kg 4",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "t": "Maintenance: ≤ 1 y 120 mL/kg/24 h; > 1 y 100 / 50 / 20 mL/kg/24 h for 1st 10 / 2nd 10 / each kg > 20",
+     "s": "paedstg2024:2.16"
+    },
+    {
+     "h": "Na > 170: REFER (emergency)",
+     "s": "paedstg2024:2.17"
+    },
+    {
+     "t": "While waiting: 1 L NaCl 0.9% + 100 mL dextrose 50% + 10 mL KCl 15%, rate as above; phenobarbitone 20 mg/kg IV if convulsions likely",
+     "s": "paedstg2024:2.17"
+    },
+    {
+     "h": "Na < 120 or symptomatic",
+     "s": "paedstg2024:2.17"
+    },
+    {
+     "t": "NaCl 0.9% volume (mL) = (130 − Na) × wt × 4, at the rehydration rate: 200 mL NaCl 0.9% + 2 mL KCl 15% + 20 mL dextrose 50%",
+     "s": "paedstg2024:2.17"
+    },
+    {
+     "t": "K 2.5–3.5: KCl PO 25–50 mg/kg/dose 8-hourly",
+     "s": "paedstg2024:2.15"
+    },
+    {
+     "t": "K < 2.5: IV K only with continuous ECG + bedside K: REFER",
+     "s": "paedstg2024:2.15",
+     "b": 1
+    },
+    {
+     "t": "pH < 7.1: bicarbonate only with expert supervision: discuss / REFER",
+     "s": "paedstg2024:2.15",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Drugs · Plan A · persistent diarrhoea",
+   "items": [
+    {
+     "h": "All children"
+    },
+    {
+     "t": "Zinc 10 mg PO daily × 14 days",
+     "s": "paedstg2024:2.18"
+    },
+    {
+     "t": "KCl PO 8-hourly: < 6 mo 125 mg; > 6 mo 250 mg",
+     "s": "paedstg2024:2.19"
+    },
+    {
+     "t": "No antidiarrhoeals, no antiemetics; antibiotics not routine",
+     "s": "paedstg2024:2.18"
+    },
+    {
+     "h": "Age < 2 months"
+    },
+    {
+     "t": "Ampicillin 25–50 mg/kg IV 6-hourly + gentamicin 6 mg/kg IV daily × 5 days; confirm renal function before the 2nd dose",
+     "s": "paedstg2024:2.18"
+    },
+    {
+     "h": "Typhoid suspected"
+    },
+    {
+     "t": "Ceftriaxone 100 mg/kg IV daily × 10–14 days",
+     "s": "paedstg2024:2.18"
+    },
+    {
+     "h": "Plan A"
+    },
+    {
+     "t": "ORS 10 mL/kg after each loose stool; extra feeds after diarrhoea stops",
+     "s": "paedstg2024:2.13"
+    },
+    {
+     "h": "Diarrhoea > 14 days (persistent)"
+    },
+    {
+     "t": "Lactose-free feeds if not breastfed (day 3–7)",
+     "s": "paedstg2024:2.19"
+    },
+    {
+     "t": "Giardia not excluded: metronidazole 7.5 mg/kg 8-hourly × 5 d",
+     "s": "paedstg2024:2.20"
+    },
+    {
+     "t": "HIV+ (Cystoisospora / Cyclospora): co-trimoxazole 5 mg/kg TMP 12-hourly × 10 d",
+     "s": "paedstg2024:2.20"
+    },
+    {
+     "t": "Still persisting: REFER",
+     "s": "paedstg2024:2.20",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Fluid overload: stop IV fluids",
+     "s": "paedstg2024:1.16"
+    },
+    {
+     "t": "RR, pulse, liver size or JVP rising from the child's baseline",
+     "s": "paedstg2024:1.16"
+    },
+    {
+     "t": "New crepitations · rising O₂ need",
+     "s": "paedstg2024:1.16"
+    },
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Shock signs return · urine output < 1 mL/kg/h",
+     "s": "paedstg2024:2.10"
+    },
+    {
+     "t": "Convulsion or ↓ LOC · vomits everything"
+    },
+    {
+     "t": "Bile-stained vomit, distension",
+     "s": "paedstg2024:2.9"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "d": 1
+    },
+    {
+     "t": "Blood in stool: dysentery pathway",
+     "s": "paedstg2024:2.13"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · VBG / U&E · urine dipstick",
+     "b": 1
+    },
+    {
+     "h": "REFER",
+     "s": "paedstg2024:2.19"
+    },
+    {
+     "t": "Shock not corrected after 40 mL/kg",
+     "s": "paedstg2024:2.11"
+    },
+    {
+     "t": "Dehydration not correctable",
+     "s": "paedstg2024:2.19"
+    },
+    {
+     "t": "Acidosis not responding · Na > 170 · K < 2.5 or symptomatic",
+     "s": "paedstg2024:2.19"
+    },
+    {
+     "t": "Surgical abdomen",
+     "s": "phcstg:2.15"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all eight must be met",
+  "items": [
+   {
+    "t": "No signs of dehydration",
+    "s": "paedstg2024:2.14"
+   },
+   {
+    "t": "Stable ≥ 4 h on oral fluids only",
+    "s": "paedstg2024:2.14",
+    "b": 1
+   },
+   {
+    "t": "Drinking and feeding well",
+    "s": "paedstg2024:2.13"
+   },
+   {
+    "t": "Passing urine"
+   },
+   {
+    "t": "Caregiver can give ORS and make SSS",
+    "s": "paedstg2024:2.13"
+   },
+   {
+    "t": "Electrolytes corrected",
+    "d": 1
+   },
+   {
+    "t": "Zinc for 14 days supplied",
+    "s": "paedstg2024:2.18"
+   },
+   {
+    "t": "HIV status known",
+    "s": "paedstg2024:2.10"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC",
+  "items": [
+   {
+    "t": "Return immediately if: no improvement, worse, poor drinking or feeding, blood in stool, fever, sunken eyes, slow skin pinch",
+    "s": "paedstg2024:2.13",
+    "b": 1
+   },
+   {
+    "t": "Teach hygiene, ORS and danger signs",
+    "s": "paedstg2024:2.13"
+   },
+   {
+    "t": "Diarrhoea ≥ 7 days: PHC persistent-diarrhoea care (vit A, zinc, HIV test)",
+    "s": "phcstg:2.15"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "48-hour nursing record — intake, output, weight and HGT",
+  "period": "One sheet per admission, 0–48 h; hourly rows 0–8 h, then 4-hourly",
+  "params": [
+   {
+    "h": "Intake",
+    "items": [
+     {
+      "t": "Hourly 0–8 h, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "ORS target: 5 mL/kg every 15 min (Plan B)",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "t": "Vomits: wait 10 min, then continue more slowly",
+      "s": "paedstg2024:2.11"
+     }
+    ]
+   },
+   {
+    "h": "Output",
+    "items": [
+     {
+      "t": "Stools and vomits: number, watery?"
+     },
+     {
+      "t": "Urine: passed Y/N (mL if measured)"
+     },
+     {
+      "t": "Urine output ≥ 1 mL/kg/h",
+      "s": "paedstg2024:2.10"
+     }
+    ]
+   },
+   {
+    "h": "Weight · HGT",
+    "items": [
+     {
+      "t": "Weight on arrival, then daily; 6-hourly if hydration unsure and child very ill or small",
+      "s": "paedstg2024:2.10"
+     },
+     {
+      "t": "HGT 4-hourly while on IV fluids or not feeding",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Reassessment",
+    "items": [
+     {
+      "t": "4-hourly: condition, CRT, LOC, eyes, skin pinch, RR, stools",
+      "s": "paedstg2024:2.12"
+     },
+     {
+      "t": "Shock: after every bolus",
+      "s": "paedstg2024:2.11"
+     },
+     {
+      "t": "Na ≥ 150: fluid status, losses, neuro 2-hourly",
+      "s": "paedstg2024:2.17"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for shock signs (CRT > 3 s, rapid weak pulse, cool peripheries, ↓ LOC) · urine output < 1 mL/kg/h · RR, pulse or liver size rising from baseline · convulsion · vomits everything · bile-stained vomit or distension · blood in stool",
+    "s": "paedstg2024:2.10",
+    "b": 1
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "b": 1,
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Total in (mL)",
+   "Stools",
+   "Urine output (mL/kg/h)",
+   "Weight change"
+  ]
+ }
+}

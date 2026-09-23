@@ -9,6 +9,10 @@
     {"id": "stgphc", "short": "STG PHC", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
     {"id": "jbds2023", "short": "JBDS 2023", "title": "JBDS-IP: The Management of Diabetic Ketoacidosis in Adults", "edition": "Mar 2023", "offset": 0},
     {"id": "mcg2016", "short": "Maternity 2016", "title": "Guidelines for Maternity Care in South Africa", "edition": "4th edition, NDoH 2016", "offset": 0},
-    {"id": "stghosp", "short": "Hospital STG Ch 6", "title": "Standard Treatment Guidelines and EML, Hospital Level (Adults) — Chapter 6: Obstetrics", "edition": "edition not printed in uploaded extract (cites 2024 references)", "offset": 0}
+    {"id": "stghosp", "short": "Hospital STG Ch 6", "title": "Standard Treatment Guidelines and EML, Hospital Level (Adults) — Chapter 6: Obstetrics", "edition": "edition not printed in uploaded extract (cites 2024 references)", "offset": 0},
+    {"id": "paedstg2024", "short": "Paeds STG 2024", "title": "Paediatric Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "5th ed. 2024", "offset": 0},
+    {"id": "phcstg", "short": "PHC STG", "title": "Primary Health Care Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
+    {"id": "adultstg", "short": "Adult STG", "title": "Adult Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
+    {"id": "who2005", "short": "WHO 2005", "title": "WHO/USAID Diarrhoea Treatment Guidelines", "edition": "2005", "offset": 0}
   ]
 }

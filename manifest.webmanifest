@@ -1,6 +1,6 @@
 {
-  "name": "ANDH clinical pathways",
-  "short_name": "ANDH pathways",
+  "name": "JAD clinical pathways",
+  "short_name": "JAD pathways",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

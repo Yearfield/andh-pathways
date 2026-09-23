@@ -1,0 +1,1419 @@
+{
+ "id": "age-adult",
+ "short": "AGE (adult)",
+ "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (adult)",
+ "population": "Adult (excludes dysentery, GI bleeding, DKA/HHS, hyperemesis)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-23",
+ "sources": [
+  "adultstg",
+  "phcstg",
+  "who2005"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline (WHO 2005 where SA is silent)",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Haematemesis · melaena · frank PR bleeding",
+     "b": 1
+    },
+    {
+     "t": "Blood or mucus in stool (dysentery)",
+     "s": "adultstg:1.19",
+     "b": 1
+    },
+    {
+     "t": "DKA / HHS",
+     "b": 1
+    },
+    {
+     "t": "Pregnancy with vomiting (hyperemesis)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Acute diarrhoea, no macroscopic blood or mucus",
+     "s": "adultstg:1.20",
+     "b": 1
+    },
+    {
+     "t": "± nausea and vomiting. Vomiting alone: exclude other causes (§9)",
+     "s": "phcstg:2.5",
+     "k": "info"
+    },
+    {
+     "t": "Duration ≤ 4 weeks (> 4 weeks = chronic, chart side 2)",
+     "s": "phcstg:2.17"
+    },
+    {
+     "t": "Pregnancy excluded (women of child-bearing age)",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Wt ____ kg · Days ill ____ · Stools/24 h ____ · Vomits/24 h ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Classify (WHO 2005 †) — tick the highest",
+   "items": [
+    {
+     "t": "SHOCK: weak or absent radial pulse · hypotension · cool peripheries · ↓ LOC",
+     "s": "who2005:24",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "SEVERE dehydration: 2 of: lethargic · sunken eyes · drinks poorly / unable · skin pinch very slow ≥ 2 s",
+     "s": "who2005:24",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "SOME dehydration: 2 of: restless / irritable · sunken eyes · thirsty, drinks eagerly · skin pinch slow",
+     "s": "who2005:24",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "NO VISIBLE dehydration: none of the above",
+     "s": "who2005:24",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9) · cannot keep ORS down",
+     "s": "adultstg:1.20",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Diabetes (on insulin / SU / metformin)",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Hypertension / cardiac failure"
+    },
+    {
+     "t": "CKD — baseline creatinine: ____",
+     "s": "adultstg:7.9",
+     "k": "value"
+    },
+    {
+     "t": "HIV: ART, last VL / CD4"
+    },
+    {
+     "t": "Diuretic / ACE-inhibitor / ARB",
+     "s": "adultstg:7.12"
+    },
+    {
+     "t": "Antibiotics or admission in last 3 months",
+     "s": "adultstg:1.21"
+    },
+    {
+     "t": "Previous admissions for diarrhoea"
+    },
+    {
+     "t": "Alcohol / liver disease",
+     "s": "phcstg:2.5"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Gastrointestinal"
+    },
+    {
+     "t": "Stool: watery / frequency"
+    },
+    {
+     "t": "Vomiting: frequency, keeps fluids down?",
+     "s": "adultstg:1.20"
+    },
+    {
+     "t": "Abdominal pain: site, severity",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "No stool or flatus",
+     "s": "phcstg:2.5"
+    },
+    {
+     "h": "Intake and output"
+    },
+    {
+     "t": "Drinking: normally / eagerly / poorly"
+    },
+    {
+     "t": "Urine passed in last 6 h"
+    },
+    {
+     "h": "Associated"
+    },
+    {
+     "t": "Fever"
+    },
+    {
+     "t": "Headache",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Weight loss / wasting",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Jaundice",
+     "s": "phcstg:2.5"
+    },
+    {
+     "h": "Exposures"
+    },
+    {
+     "t": "Others ill / food source (outbreak, cholera)",
+     "s": "adultstg:1.19"
+    },
+    {
+     "t": "New medicines / poisons",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "LMP · possible pregnancy",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Alcohol",
+     "s": "phcstg:2.5"
+    },
+    {
+     "h": "HIV status"
+    },
+    {
+     "t": "Known, on ART"
+    },
+    {
+     "t": "Unknown: offer test",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / postural drop",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Weak or absent radial pulse",
+     "s": "who2005:24",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Dehydration signs",
+     "s": "who2005:24"
+    },
+    {
+     "t": "Well, alert"
+    },
+    {
+     "t": "Restless / irritable"
+    },
+    {
+     "t": "Lethargic / confused"
+    },
+    {
+     "t": "Sunken eyes, dry mouth"
+    },
+    {
+     "t": "Skin pinch slow"
+    },
+    {
+     "t": "Skin pinch very slow (≥ 2 s)"
+    },
+    {
+     "h": "Shock signs"
+    },
+    {
+     "t": "Cool peripheries"
+    },
+    {
+     "t": "Weak, fast pulse"
+    },
+    {
+     "h": "Electrolyte clues"
+    },
+    {
+     "t": "Muscle weakness / cramps (↓ K)",
+     "s": "adultstg:7.11"
+    },
+    {
+     "t": "Confusion / seizure (Na)",
+     "s": "adultstg:7.14"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distension"
+    },
+    {
+     "t": "Tenderness with guarding",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Peritonism on percussion",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Hepatomegaly / jaundice"
+    },
+    {
+     "h": "Chest and neuro"
+    },
+    {
+     "t": "Baseline chest: crepitations?"
+    },
+    {
+     "t": "Baseline JVP"
+    },
+    {
+     "t": "Neck stiffness"
+    },
+    {
+     "t": "Focal signs"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT †",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Low with symptoms: dextrose 50% 50 mL IV, recheck in 5–10 min",
+     "s": "adultstg:8.13"
+    },
+    {
+     "t": "High: exclude DKA / HHS (own pathway)",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Then 4-hourly if diabetic, on IV fluids or not eating",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "U&E / VBG — if some or severe dehydration †",
+   "items": [
+    {
+     "t": "Na ____ K ____ creat ____ pH ____",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "K < 3.5 / Na > 145 / Na < 135: electrolyte plan, chart side 2",
+     "s": "adultstg:7.11"
+    },
+    {
+     "t": "AKI: creat ↑ ≥ 26.5 µmol/L in 48 h, or ≥ 1.5 × baseline",
+     "s": "adultstg:7.9"
+    },
+    {
+     "t": "K > 6: emergency measures · K > 7 or pH < 7.15 refractory: attempt REFERRAL",
+     "s": "adultstg:7.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Surgical abdomen / obstruction",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Sepsis",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "DKA / HHS",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Acute kidney injury",
+     "s": "adultstg:7.9"
+    },
+    {
+     "t": "Early pregnancy",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Liver disease / jaundice",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Renal failure / uraemia",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Medicines / poisoning",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Meningitis / raised ICP"
+    },
+    {
+     "t": "C. difficile (recent antibiotics)",
+     "s": "adultstg:1.21"
+    },
+    {
+     "t": "Cholera (outbreak)",
+     "s": "adultstg:1.19"
+    },
+    {
+     "t": "Typhoid (fever, very ill)"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Shock not responding · Na < 120 with severe symptoms · dialysis indication · surgical abdomen → Attempt REFERRAL",
+   "s": "phcstg:2.16"
+  },
+  {
+   "t": "11. SOME / SEVERE / SHOCK or cannot keep ORS down → ADMIT · NO VISIBLE → ORS, home — stabilise, then continue on the 0–48 h inpatient chart and the 48-hour nursing record"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "The plan changes at each reassessment (4 h, 8 h…), not on the clock",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Hourly 0–8 h: pulse, BP, ORS / IV taken, vomits, stools, urine",
+    "d": 1
+   },
+   {
+    "t": "Shock / Plan C: reassess every 15–30 min",
+    "d": 1
+   },
+   {
+    "t": "Full reassessment 4-hourly: LOC, pulse, BP, skin pinch, eyes, chest, urine, stools",
+    "d": 1
+   },
+   {
+    "t": "Urine output: < 0.5 mL/kg/h for 6 h = AKI",
+    "s": "adultstg:7.9",
+    "b": 1
+   },
+   {
+    "t": "Weight daily",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "HGT 4-hourly if diabetic, on IV fluids or not eating",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "K after each IV K dose",
+    "s": "adultstg:7.12",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "feed": [
+     {
+      "h": "Shock or severe (Plan C)"
+     },
+     {
+      "t": "Ringer's lactate (preferred) or NaCl 0.9% IV",
+      "s": "adultstg:1.19",
+      "b": 1
+     },
+     {
+      "t": "30 mL/kg over 30 min, then 70 mL/kg over 2.5 h",
+      "s": "who2005:24",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Add ORS ~5 mL/kg/h as soon as able to drink",
+      "s": "who2005:24",
+      "d": 1
+     },
+     {
+      "t": "Not dextrose 5% for replacement",
+      "s": "adultstg:1.19"
+     },
+     {
+      "h": "Some dehydration (Plan B)"
+     },
+     {
+      "t": "ORS ~75 mL/kg over 4 h — oral unless vomiting or profoundly dehydrated",
+      "s": "who2005:23",
+      "d": 1
+     },
+     {
+      "t": "No visible dehydration: ORS or SSS after each loose stool (Plan A)",
+      "s": "phcstg:2.16"
+     },
+     {
+      "t": "Diet: eat as tolerated once not vomiting",
+      "s": "who2005:24",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT on arrival",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Weight on arrival",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E (Na, K, creatinine) if some or severe dehydration, elderly or co-morbid",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "VBG if shock",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Pregnancy test: women of child-bearing age",
+      "s": "phcstg:2.5",
+      "b": 1
+     },
+     {
+      "t": "HIV test (offer) if status unknown",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "C. difficile stool test if recent antibiotics and > 3 unformed stools / 24 h",
+      "s": "adultstg:1.21",
+      "b": 1
+     },
+     {
+      "t": "ECG if K low",
+      "s": "adultstg:7.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Shock"
+     },
+     {
+      "t": "Oxygen · large-bore IV access"
+     },
+     {
+      "t": "Ringer's lactate 30 mL/kg over 30 min; reassess every 15–30 min",
+      "d": 1
+     },
+     {
+      "t": "Still shocked after Plan C: REFER",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "h": "Hypoglycaemia",
+      "s": "adultstg:8.13"
+     },
+     {
+      "t": "Dextrose 50% 50 mL IV; recheck in 5–10 min; repeat once; then dextrose 10%",
+      "s": "adultstg:8.13"
+     },
+     {
+      "h": "Severe symptomatic ↓ K"
+     },
+     {
+      "t": "KCl 40 mmol in 1 L NaCl 0.9% IV over 3 h (max 20 mmol/h)",
+      "s": "adultstg:7.12"
+     },
+     {
+      "h": "K > 6",
+      "s": "adultstg:7.10"
+     },
+     {
+      "t": "Ca gluconate 10% 10 mL IV over 10 min · dextrose 50% 100 mL + soluble insulin 10 U · salbutamol neb 10–20 mg",
+      "s": "adultstg:7.10"
+     },
+     {
+      "h": "Symptoms"
+     },
+     {
+      "t": "Metoclopramide 10 mg IV / IM / PO 8-hourly",
+      "s": "phcstg:2.5"
+     },
+     {
+      "t": "Loperamide 4 mg PO, then 2 mg per loose stool (max: side 2)",
+      "s": "adultstg:1.20"
+     },
+     {
+      "t": "No loperamide if blood in stool or C. difficile suspected",
+      "s": "adultstg:1.21",
+      "b": 1
+     },
+     {
+      "h": "C. difficile suspected"
+     },
+     {
+      "t": "Stop the antibiotic · contact precautions · soap-and-water handwashing",
+      "s": "adultstg:1.21"
+     },
+     {
+      "h": "Cholera suspected (notifiable)"
+     },
+     {
+      "t": "Ciprofloxacin 1 g PO single dose",
+      "s": "adultstg:1.19"
+     },
+     {
+      "h": "Electrolytes"
+     },
+     {
+      "t": "Act on U&E: K / Na plans on side 2",
+      "s": "adultstg:7.11"
+     }
+    ],
+    "lead": "Check the referral note for IV fluid volume already given; count it. Hold diuretic / ACE-inhibitor / ARB / metformin while dehydrated †."
+   },
+   {
+    "label": "1 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Plan C: 70 mL/kg over 2.5 h or Plan B ORS · IV rate ____ mL/h",
+      "s": "who2005:24",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Radial pulse strong? · pulse, BP hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Continue; ORS if able to drink",
+      "s": "who2005:24"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Urine passed? · crepitations, JVP?"
+     }
+    ]
+   },
+   {
+    "label": "3 h",
+    "phase": "Plan C done",
+    "feed": [
+     {
+      "t": "Plan C complete: reclassify → Plan B, A or repeat C",
+      "s": "who2005:24",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Vomiting controlled?"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess + reclassify",
+    "feed": [
+     {
+      "t": "None: Plan A, eat",
+      "s": "phcstg:2.16"
+     },
+     {
+      "t": "Some: ORS ~75 mL/kg over 4 h",
+      "s": "who2005:23",
+      "d": 1
+     },
+     {
+      "t": "Severe / shock: Plan C again",
+      "s": "who2005:24",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if diabetic, on IV or not eating",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Review U&E",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review (standing box)",
+      "d": 1
+     },
+     {
+      "t": "Correct K / Na (side 2)",
+      "s": "adultstg:7.11"
+     },
+     {
+      "t": "AKI? (side 2)",
+      "s": "adultstg:7.9"
+     }
+    ]
+   },
+   {
+    "label": "5 h",
+    "phase": "Per 4-h plan",
+    "feed": [
+     {
+      "t": "Continue the plan set at 4 h"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Pulse, BP, urine"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Per 4-h plan",
+    "feed": [
+     {
+      "t": "Continue"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K after each IV K dose",
+      "s": "adultstg:7.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 0.5 mL/kg/h?",
+      "s": "adultstg:7.9"
+     }
+    ]
+   },
+   {
+    "label": "7 h",
+    "phase": "Per 4-h plan",
+    "feed": [
+     {
+      "t": "Continue"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Intake on target?"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Reassess + reclassify",
+    "feed": [
+     {
+      "t": "None, tolerating ORS: stop IV",
+      "b": 1
+     },
+     {
+      "t": "Still dehydrated despite rehydration: IV Ringer's lactate, review cause",
+      "s": "adultstg:1.20",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E if abnormal at 0 h",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dehydration not corrected: REFER",
+      "s": "phcstg:2.16",
+      "b": 1
+     },
+     {
+      "t": "Review list"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan; eat as tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "K after IV K",
+      "s": "adultstg:7.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · metoclopramide 8-hourly if needed",
+      "s": "phcstg:2.5"
+     }
+    ]
+   },
+   {
+    "label": "16 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan; Plan A after each loose stool",
+      "s": "phcstg:2.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if diabetic, on IV or not eating",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · loperamide max not exceeded",
+      "s": "adultstg:1.20"
+     }
+    ]
+   },
+   {
+    "label": "20 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · check discharge criteria"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Per plan; stop IV once drinking enough"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E (creatinine, K) if AKI or abnormal",
+      "s": "adultstg:7.9",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · urine < 0.5 mL/kg/h × 6 h = AKI · discharge criteria?",
+      "s": "adultstg:7.9"
+     }
+    ]
+   },
+   {
+    "label": "28 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A; eat as tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if diabetic, on IV or not eating",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · oral KCl if prescribed",
+      "s": "adultstg:7.12"
+     }
+    ]
+   },
+   {
+    "label": "32 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · discharge criteria?"
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if diabetic, on IV or not eating",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review"
+     }
+    ]
+   },
+   {
+    "label": "40 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Full review · teach ORS / SSS and return signs",
+      "s": "phcstg:2.16"
+     }
+    ]
+   },
+   {
+    "label": "44 h",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Plan A"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na / K if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full review · discharge criteria?"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Discharge / review",
+    "feed": [
+     {
+      "t": "Plan A"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E if AKI or abnormal before",
+      "s": "adultstg:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria · restart held medicines †",
+      "d": 1
+     },
+     {
+      "t": "Still ill: find the cause or REFER",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Electrolytes and kidneys",
+   "items": [
+    {
+     "h": "K 3–3.4, not vomiting",
+     "s": "adultstg:7.12"
+    },
+    {
+     "t": "KCl 1 200 mg PO 8-hourly (max 6 g/day) until K persistently > 3.5",
+     "s": "adultstg:7.12"
+    },
+    {
+     "h": "Severe, symptomatic ↓ K",
+     "s": "adultstg:7.12"
+    },
+    {
+     "t": "KCl 40 mmol in 1 L NaCl 0.9% over 3 h (max 20 mmol/h); K after each dose; max 3 mmol/kg/day",
+     "s": "adultstg:7.12"
+    },
+    {
+     "t": "Not responding: check Mg",
+     "s": "adultstg:7.13"
+    },
+    {
+     "h": "Na > 145",
+     "s": "adultstg:7.13"
+    },
+    {
+     "t": "Oral / NGT water; IV dextrose 5% if unable. Lower Na by < 10 mmol/L per 24 h",
+     "s": "adultstg:7.14"
+    },
+    {
+     "t": "Water deficit = TBW × (1 − 140 / Na); TBW = wt × 0.6 men · 0.5 women and elderly men · 0.45 elderly women; + 30 mL/h ongoing losses",
+     "s": "adultstg:7.13"
+    },
+    {
+     "h": "Na < 135, dehydrated",
+     "s": "adultstg:7.15"
+    },
+    {
+     "t": "Na > 120, mild symptoms: NaCl 0.9% 1 L 8-hourly. Raise Na by < 8 mmol/L per day",
+     "s": "adultstg:7.16"
+    },
+    {
+     "t": "Na < 120 with severe symptoms (hypertonic saline): consult specialist / REFER",
+     "s": "adultstg:7.15",
+     "b": 1
+    },
+    {
+     "h": "AKI",
+     "s": "adultstg:7.9"
+    },
+    {
+     "t": "Creat ↑ ≥ 26.5 µmol/L in 48 h, ≥ 1.5 × baseline, or urine < 0.5 mL/kg/h for 6 h",
+     "s": "adultstg:7.9"
+    },
+    {
+     "t": "Monitor creatinine, K, urine · avoid NSAIDs, aminoglycosides",
+     "s": "adultstg:7.9"
+    }
+   ]
+  },
+  {
+   "title": "Drugs · chronic diarrhoea",
+   "items": [
+    {
+     "h": "Nausea and vomiting"
+    },
+    {
+     "t": "Metoclopramide 10 mg IV / IM / PO 8-hourly",
+     "s": "phcstg:2.5"
+    },
+    {
+     "h": "Loperamide (non-bloody diarrhoea only)",
+     "s": "adultstg:1.20"
+    },
+    {
+     "t": "4 mg, then 2 mg after each loose stool",
+     "s": "adultstg:1.20"
+    },
+    {
+     "t": "Daily max: 34–39 kg 10 mg · 40–46 kg 12 mg · 47–53 kg 14 mg · ≥ 54 kg 16 mg",
+     "s": "adultstg:1.20"
+    },
+    {
+     "h": "C. difficile confirmed",
+     "s": "adultstg:1.21"
+    },
+    {
+     "t": "Not settling off antibiotics: metronidazole 400 mg PO 8-hourly × 10 d",
+     "s": "adultstg:1.21"
+    },
+    {
+     "t": "Severe (WCC > 15, creat > 132, age > 65, immunodeficient): vancomycin 125 mg PO 6-hourly × 10 d",
+     "s": "adultstg:1.21"
+    },
+    {
+     "h": "Cholera",
+     "s": "adultstg:1.19"
+    },
+    {
+     "t": "Ciprofloxacin 1 g PO single dose; adjust to outbreak sensitivity",
+     "s": "adultstg:1.19"
+    },
+    {
+     "h": "Diarrhoea > 4 weeks",
+     "s": "phcstg:2.17"
+    },
+    {
+     "t": "HIV test · stool microscopy (ova, cysts, parasites), no culture",
+     "s": "phcstg:2.17"
+    },
+    {
+     "t": "Empiric giardia: metronidazole 2 g PO daily × 3 d",
+     "s": "phcstg:2.17"
+    },
+    {
+     "t": "HIV-negative, no pathogen: REFER",
+     "s": "phcstg:2.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Fluid overload: slow or stop IV fluids †"
+    },
+    {
+     "t": "RR rising from baseline · new crepitations · raised JVP · falling SpO₂",
+     "d": 1
+    },
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Pulse rising or BP falling from baseline"
+    },
+    {
+     "t": "Urine output < 0.5 mL/kg/h",
+     "s": "adultstg:7.9"
+    },
+    {
+     "t": "Confusion, ↓ LOC or seizure · vomits everything"
+    },
+    {
+     "t": "Distension, guarding · blood in stool or vomit",
+     "s": "phcstg:2.5"
+    },
+    {
+     "t": "Low HGT",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · U&E · VBG · ECG",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Suspected surgical abdomen",
+     "s": "phcstg:2.16"
+    },
+    {
+     "t": "Dehydration not corrected",
+     "s": "phcstg:2.16"
+    },
+    {
+     "t": "Shock not responding",
+     "d": 1
+    },
+    {
+     "t": "Dialysis indication: refractory pulmonary oedema, pH < 7.15 or K > 7 refractory, uraemic complications",
+     "s": "adultstg:7.9"
+    },
+    {
+     "t": "Na < 120 with severe symptoms",
+     "s": "adultstg:7.15"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all eight must be met",
+  "items": [
+   {
+    "t": "No signs of dehydration",
+    "s": "who2005:24"
+   },
+   {
+    "t": "Tolerating oral fluids ≥ 4 h, off IV",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Vomiting controlled"
+   },
+   {
+    "t": "Passing urine"
+   },
+   {
+    "t": "K, Na and creatinine corrected or improving",
+    "d": 1
+   },
+   {
+    "t": "HGT stable if diabetic",
+    "d": 1
+   },
+   {
+    "t": "Knows ORS / SSS and return signs",
+    "s": "phcstg:2.16"
+   },
+   {
+    "t": "HIV test offered",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC",
+  "items": [
+   {
+    "t": "Return if unable to drink, vomiting everything, blood in stool, fever, less urine, or not improving",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Review held medicines and U&E at PHC if AKI or K abnormal",
+    "d": 1
+   },
+   {
+    "t": "Diarrhoea > 4 weeks: chronic work-up (drugs box)",
+    "s": "phcstg:2.17"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "48-hour nursing record — pulse/BP, intake, output, HGT",
+  "period": "One sheet per admission, 0–48 h; hourly rows 0–8 h, then 4-hourly",
+  "params": [
+   {
+    "h": "Pulse · BP",
+    "items": [
+     {
+      "t": "Hourly 0–8 h, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Shock / Plan C: every 15–30 min",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Intake · output",
+    "items": [
+     {
+      "t": "ORS and IV mL in; stools and vomits (number)"
+     },
+     {
+      "t": "Urine mL: < 0.5 mL/kg/h for 6 h = AKI",
+      "s": "adultstg:7.9"
+     }
+    ]
+   },
+   {
+    "h": "Weight · HGT",
+    "items": [
+     {
+      "t": "Weight on arrival, then daily",
+      "d": 1
+     },
+     {
+      "t": "HGT 4-hourly if diabetic, on IV fluids or not eating",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Reassessment",
+    "items": [
+     {
+      "t": "4-hourly: LOC, pulse, BP, skin pinch, eyes, chest, urine, stools",
+      "d": 1
+     },
+     {
+      "t": "On IV K: doctor checks K after each dose",
+      "s": "adultstg:7.12"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for pulse rising or BP falling from baseline · urine output < 0.5 mL/kg/h · confusion, ↓ LOC or seizure · vomits everything · distension, guarding · blood in stool or vomit",
+    "s": "adultstg:7.9",
+    "b": 1
+   },
+   {
+    "t": "RR rising, new crepitations or falling SpO₂ · low HGT",
+    "b": 1,
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Total in (mL)",
+   "Urine (mL)",
+   "Urine output (mL/kg/h)",
+   "Balance"
+  ]
+ }
+}

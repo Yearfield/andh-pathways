@@ -1,30 +1,39 @@
-@font-face { font-family: "AH"; src: url("fonts/ah-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "AH"; src: url("fonts/ah-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Plex Sans"; src: url("fonts/plex-sans-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Sans"; src: url("fonts/plex-sans-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Plex Serif"; src: url("fonts/plex-serif-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Serif"; src: url("fonts/plex-serif-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("fonts/caveat-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 
-/* Clinical-chart palette: black ink on white, squared framing; amber for sources, green for verified. Always light. */
+/* JAD brand palette: teal ink on soft sage/white, squared clinical-chart framing kept for fast, unambiguous reading. */
 :root {
-  --bg: #ffffff;
+  --bg: #f5f7f6;
   --panel: #ffffff;
-  --ink: #111111;          /* near-black text */
-  --muted: #4a4a4a;        /* darkened for contrast on white */
-  --line: #1a1a1a;         /* dark grey/black framing rules */
-  --src: #7a4e00;          /* amber source tag, darkened for contrast on white */
-  --src-bg: #fbf0d9;
-  --ok: #1f7a4d;           /* verified */
-  --warn: #9b2c2c;         /* refer / escalate */
-  --tab: #111111;          /* tab bar stays dark regardless of theme */
-  --r: 4px;
+  --ink: #243338;          /* body text */
+  --muted: #687b7d;
+  --line: #20383e;         /* ink-900: kept dark/solid for clearly-visible framing, not the palette's pale hairline */
+  --src: #c2883a;          /* elevated/warning: source tag */
+  --src-bg: #f6ecd9;
+  --ok: #3f8d7d;           /* normal/healthy: verified */
+  --warn: #bb5749;         /* critical: refer / escalate */
+  --tab: #2c4a52;          /* brand ink: tab bar stays dark, on-brand */
+  --lead-bg: #e7f1ee;      /* sage-100: informational callout, not a warning */
+  --lead-border: #c9deda;  /* sage-300 */
+  --r: 4px;                /* kept squared, not the palette's 12px default */
+  --font-body: "Plex Sans", system-ui, sans-serif;
+  --font-head: "Plex Serif", Georgia, serif;
+  --font-accent: "Caveat", cursive;
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; background: var(--bg); color: var(--ink);
-  font-family: "AH", system-ui, sans-serif; font-size: 17px; line-height: 1.4; }
+  font-family: var(--font-body); font-size: 17px; line-height: 1.4; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 3px solid var(--src); outline-offset: 2px; }
 
 header.top { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 16px 8px;
   border-bottom: 1.5px solid var(--line); display: flex; align-items: center; gap: 10px; }
-header.top h1 { font-size: 1.15rem; margin: 0; flex: 1; line-height: 1.2; }
+header.top h1 { font-family: var(--font-head); font-size: 1.15rem; margin: 0; flex: 1; line-height: 1.2; }
 header.top .back { border: 0; background: none; font-size: 1.4rem; padding: 0 6px 0 0; }
+.logo { flex: 0 0 auto; width: 34px; height: 34px; border-radius: 4px; border: 1.5px solid var(--line); object-fit: cover; }
 .verify-btn { border: 1.5px solid var(--line); background: var(--panel); border-radius: 6px; padding: 4px 12px; font-size: .85rem; }
 .verify-btn[aria-pressed="true"] { border-color: var(--ok); color: var(--ok); font-weight: 700; }
 .meter { height: 4px; background: #e2e2e2; border-radius: 2px; margin: 6px 16px 0; overflow: hidden; }
@@ -35,9 +44,9 @@ main { padding: 12px 12px 140px; max-width: 720px; margin: 0 auto; }
 /* home */
 .dx { display: block; width: 100%; text-align: left; background: var(--panel); border: 1.5px solid var(--line);
   border-radius: var(--r); padding: 14px 16px; margin-bottom: 10px; }
-.dx .t { font-weight: 700; font-size: 1.1rem; }
+.dx .t { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; }
 .dx .p { color: var(--muted); font-size: .9rem; }
-.hint { color: var(--muted); font-size: .9rem; margin: 6px 4px 14px; }
+.hint { font-family: var(--font-accent); color: var(--muted); font-size: 1.05rem; margin: 6px 4px 14px; }
 
 /* sections */
 .jump { display: flex; gap: 6px; overflow-x: auto; padding: 2px 0 10px; scrollbar-width: none; }
@@ -46,9 +55,9 @@ main { padding: 12px 12px 140px; max-width: 720px; margin: 0 auto; }
 .jump button.on { background: var(--ink); color: #fff; border-color: var(--ink); }
 .toolrow { display: flex; justify-content: flex-end; margin: 2px 4px 10px; }
 section.card { background: var(--panel); border: 1.5px solid var(--line); border-radius: var(--r); margin-bottom: 12px; overflow: hidden; }
-section.card > h2 { margin: 0; font-size: 1rem; padding: 10px 14px; border-bottom: 1.5px solid var(--line); display: flex; gap: 10px; }
+section.card > h2 { font-family: var(--font-head); margin: 0; font-size: 1rem; padding: 10px 14px; border-bottom: 1.5px solid var(--line); display: flex; gap: 10px; }
 section.card > h2 .n { color: var(--muted); font-variant-numeric: tabular-nums; }
-.note { font-size: .85rem; color: var(--muted); padding: 8px 14px 0; }
+.note { font-family: var(--font-accent); font-size: 1rem; color: var(--muted); padding: 8px 14px 0; }
 ul.items { list-style: none; margin: 0; padding: 4px 0; }
 ul.items li { display: flex; align-items: flex-start; gap: 8px; padding: 8px 14px; }
 ul.items li.sub { padding-left: 34px; }
@@ -79,9 +88,9 @@ ul.items li.checked .txt { text-decoration: line-through; color: var(--muted); }
 .days button b { display: block; font-size: 1.05rem; }
 .days button.on { background: var(--ink); color: #fff; border-color: var(--ink); }
 .dayhead { display: flex; align-items: baseline; gap: 12px; margin: 4px 4px 10px; }
-.dayhead .big { font-size: 2.4rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.dayhead .big { font-family: var(--font-head); font-size: 2.4rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
 .dayhead .ph { color: var(--muted); }
-.lead { background: var(--src-bg); color: var(--ink); border-radius: var(--r); padding: 10px 14px; margin-bottom: 12px; font-size: .95rem; }
+.lead { background: var(--lead-bg); border: 1.5px solid var(--lead-border); color: var(--ink); border-radius: var(--r); padding: 10px 14px; margin-bottom: 12px; font-size: .95rem; }
 .pager { position: fixed; left: 0; right: 0; bottom: 64px; display: flex; justify-content: space-between; padding: 0 12px; pointer-events: none; max-width: 720px; margin: 0 auto; }
 .pager button { pointer-events: auto; border: 1.5px solid var(--line); background: var(--panel); border-radius: 8px; padding: 8px 16px; box-shadow: 0 2px 6px rgba(0,0,0,.12); }
 .pager button[disabled] { visibility: hidden; }
