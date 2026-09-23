@@ -1,6 +1,6 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v1";
+const VERSION = "andh-v4";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "fonts/ah-400.woff2", "fonts/ah-700.woff2",
   "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json"];

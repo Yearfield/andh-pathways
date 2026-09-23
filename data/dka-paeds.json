@@ -1,0 +1,1265 @@
+{
+ "id": "dka-paeds",
+ "short": "DKA (paeds)",
+ "title": "Diabetic ketoacidosis — paediatric",
+ "population": "Children and adolescents (paediatric ward)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-23",
+ "sources": [
+  "stgph",
+  "stgphc"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Glucose > 11 mmol/L",
+     "s": "stgph:7.19",
+     "b": 1
+    },
+    {
+     "t": "Ketonuria 2+ (glycosuria 3+ or more)",
+     "s": "stgph:7.19",
+     "b": 1
+    },
+    {
+     "t": "Blood gas: pH < 7.3, HCO₃ < 15 mmol/L",
+     "s": "stgph:7.19",
+     "b": 1
+    },
+    {
+     "t": "Polyuria, polydipsia, dehydration",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Kussmaul breathing, vomiting, abdominal pain, reduced LOC are late signs",
+     "s": "stgph:7.19",
+     "k": "sub"
+    },
+    {
+     "t": "Rarely, glucose is not elevated",
+     "s": "stgph:7.19",
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · HGT ____ · pH ____ · HCO₃ ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer criteria (STG) = any one of",
+   "items": [
+    {
+     "t": "pH < 7.1",
+     "s": "stgph:7.24",
+     "b": 1
+    },
+    {
+     "t": "Shock · hyperventilation",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Depressed level of consciousness",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Persistent vomiting",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Age < 5 years",
+     "s": "stgph:7.24",
+     "b": 1
+    },
+    {
+     "t": "Rising glucose / no improvement",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Signs of cerebral oedema → ICU",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "t": "Mild dehydration, not unwell: oral fluids + SC insulin (sick days)",
+     "s": "stgph:7.19",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet / diabetes clinic card",
+   "items": [
+    {
+     "t": "Known diabetic: regimen, doses",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "Previous DKA admissions",
+     "d": 1
+    },
+    {
+     "t": "Weight-for-age: weight loss",
+     "d": 1
+    },
+    {
+     "t": "Immunisations up to date",
+     "d": 1
+    },
+    {
+     "t": "HIV exposure / status",
+     "d": 1
+    },
+    {
+     "t": "Last HbA1c",
+     "d": 1
+    },
+    {
+     "t": "Caregiver knows sick-day rules",
+     "s": "stgph:7.16"
+    },
+    {
+     "t": "Pubertal status (insulin dose)",
+     "s": "stgph:7.23"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "t": "Duration of polyuria, polydipsia, weight loss",
+     "s": "stgph:7.19",
+     "k": "info"
+    },
+    {
+     "h": "Gastrointestinal",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Vomiting (persistent?)",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Abdominal pain",
+     "s": "stgph:7.19"
+    },
+    {
+     "h": "Precipitant",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Missed insulin / new diagnosis",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Infection symptoms",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Trauma or surgery",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Enuresis / nocturia",
+     "d": 1
+    },
+    {
+     "h": "Neuro",
+     "s": "stgph:7.18"
+    },
+    {
+     "t": "Headache",
+     "s": "stgph:7.18"
+    },
+    {
+     "t": "Irritability, confusion",
+     "s": "stgph:7.18"
+    },
+    {
+     "h": "TB and HIV",
+     "d": 1
+    },
+    {
+     "t": "TB: cough > 2 wk, contact",
+     "d": 1
+    },
+    {
+     "t": "HIV: PMTCT / last test",
+     "d": 1
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Caregiver / school",
+     "d": 1
+    },
+    {
+     "t": "Fridge, glucometer",
+     "d": 1
+    },
+    {
+     "t": "Adolescent: adherence",
+     "d": 1
+    },
+    {
+     "t": "Child support grant",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / hyperventilation (Kussmaul)",
+     "s": "stgph:7.24",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air → oxygen",
+     "s": "stgph:7.20",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "s": "stgph:7.24",
+     "k": "yn"
+    },
+    {
+     "t": "Obese — use ideal body weight for fluids",
+     "s": "stgph:7.20",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Dehydration",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "~5% dehydrated",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "~10% dehydrated",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "Weight ____ kg · ideal weight ____ kg",
+     "s": "stgph:7.20",
+     "k": "value"
+    },
+    {
+     "h": "Shock signs",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "Cool peripheries · weak pulse"
+    },
+    {
+     "t": "Prolonged capillary refill"
+    },
+    {
+     "h": "Neuro — cerebral oedema baseline",
+     "s": "stgph:7.18"
+    },
+    {
+     "t": "Baseline GCS ____ /15",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Papilloedema (late) · focal signs",
+     "s": "stgph:7.18"
+    },
+    {
+     "h": "Breathing"
+    },
+    {
+     "t": "Acetone breath",
+     "s": "stgphc:9.16"
+    },
+    {
+     "t": "Kussmaul respiration",
+     "s": "stgph:7.19"
+    },
+    {
+     "h": "Chest / abdomen"
+    },
+    {
+     "t": "Crepitations (infection)",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Abdominal tenderness",
+     "d": 1
+    },
+    {
+     "h": "Puberty (SC dose)",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "Prepubertal",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "Pubertal",
+     "s": "stgph:7.23"
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "> 11 mmol/L with ketonuria: DKA",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "< 3.5–4 mmol/L with symptoms: dextrose 10% 2–5 mL/kg IV",
+     "s": "stgph:7.25"
+    },
+    {
+     "t": "On treatment < 5: dextrose 10% 2 mL/kg, increase dextrose",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "Then hourly",
+     "s": "stgphc:9.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Urine dipstick + VBG",
+   "items": [
+    {
+     "t": "Urine glucose ____ ketones ____ · pH ____ HCO₃ ____ pCO₂ ____ Na⁺ ____ K⁺ ____",
+     "k": "value"
+    },
+    {
+     "t": "pH < 7.3, HCO₃ < 15: DKA · pH < 7.1: REFER",
+     "s": "stgph:7.24",
+     "b": 1
+    },
+    {
+     "t": "pCO₂ persistently < 2.7 kPa, or high urea: cerebral oedema risk",
+     "s": "stgph:7.18"
+    },
+    {
+     "t": "Precipitous Na⁺ drop: cerebral oedema danger",
+     "s": "stgph:7.21"
+    },
+    {
+     "t": "KCl from start unless anuric; K⁺ high: once urine passed",
+     "s": "stgph:7.22",
+     "b": 1
+    },
+    {
+     "t": "Na⁺ and Cl⁻ (VBG) 4–6-hourly",
+     "s": "stgph:7.21"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Cerebral oedema signs",
+     "s": "stgph:7.18"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Hypoxaemia",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "Age < 5 years",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Persistent vomiting",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "Sepsis / meningitis",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Pneumonia or UTI (precipitant)",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Hypo- or hyperkalaemia",
+     "s": "stgph:7.22"
+    },
+    {
+     "t": "Thrombosis / intracranial bleed",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Acute surgical abdomen",
+     "d": 1
+    },
+    {
+     "t": "Undiagnosed HIV or TB",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = DKA + any §2 criterion → Attempt REFERRAL"
+  },
+  {
+   "t": "11. ADMIT — seek specialist advice early; stabilise, then follow the paediatric DKA hourly chart and the 24-hour DKA nursing record",
+   "s": "stgph:7.20"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Dextrose, fluid type and IV → SC switch follow HGT and resolution criteria, not the clock",
+  "columns": {
+   "feed": "Fluids & potassium",
+   "tests": "Bloods & tests",
+   "treatment": "Insulin, treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HGT hourly",
+    "s": "stgphc:9.17",
+    "b": 1
+   },
+   {
+    "t": "IV in and urine out hourly; fluid review at least 2-hourly",
+    "s": "stgph:7.20",
+    "b": 1
+   },
+   {
+    "t": "VBG Na⁺ and Cl⁻ 4–6-hourly",
+    "s": "stgph:7.21",
+    "b": 1
+   },
+   {
+    "t": "K⁺ and pH/HCO₃ on the same VBG",
+    "d": 1
+   },
+   {
+    "t": "Urine ketones every void",
+    "d": 1
+   },
+   {
+    "t": "Neuro obs (GCS, headache, behaviour), pulse, BP, RR hourly",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival — resuscitate",
+    "lead": "Check the referral note for pre-referral saline boluses and IM insulin 0.1 U/kg (PHC) — count them in the fluid total; do not repeat insulin early.",
+    "feed": [
+     {
+      "t": "Shock: NaCl 0.9% IV 10–20 mL/kg over 10–30 min; repeat if shock persists",
+      "s": "stgph:7.20",
+      "b": 1
+     },
+     {
+      "t": "Then maintenance + deficit over 48 h (box, side 2): ____ mL/h",
+      "s": "stgph:7.20",
+      "b": 1
+     },
+     {
+      "t": "NaCl 0.9% for the initial phase",
+      "s": "stgph:7.21"
+     },
+     {
+      "t": "KCl 15% 20 mL per 1 L (40 mmol/L) from the start, unless anuric",
+      "s": "stgph:7.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgph:7.19",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick: glucose, ketones",
+      "s": "stgph:7.19",
+      "b": 1
+     },
+     {
+      "t": "VBG: pH, HCO₃, pCO₂, Na⁺, K⁺, Cl⁻",
+      "s": "stgph:7.21",
+      "b": 1
+     },
+     {
+      "t": "U&E (urea: cerebral oedema risk)",
+      "s": "stgph:7.18",
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture if febrile · urine MCS",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR if chest signs",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HbA1c · HIV test if unknown",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway",
+      "s": "stgph:7.19"
+     },
+     {
+      "t": "Patent airway; oxygen if hypoxaemic",
+      "s": "stgph:7.20"
+     },
+     {
+      "t": "Comatose: secure airway, urinary catheter",
+      "s": "stgph:7.19"
+     },
+     {
+      "t": "Comatose or recurrent vomiting: NGT on free drainage",
+      "s": "stgph:7.20"
+     },
+     {
+      "h": "Hypoglycaemia",
+      "s": "stgph:7.25"
+     },
+     {
+      "t": "Dextrose 10% 2–5 mL/kg IV",
+      "s": "stgph:7.25"
+     },
+     {
+      "h": "Insulin",
+      "s": "stgph:7.22"
+     },
+     {
+      "t": "0.05–0.1 U/kg/h IV infusion, separate line",
+      "s": "stgph:7.22",
+      "b": 1
+     },
+     {
+      "t": "Start after the first hour of IV fluids",
+      "s": "stgphc:9.17",
+      "d": 1
+     },
+     {
+      "t": "No pump: 0.1 U/kg IV hourly",
+      "s": "stgph:7.23"
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "No bicarbonate (specialist only)",
+      "s": "stgph:7.22",
+      "b": 1
+     },
+     {
+      "t": "Seek specialist advice early",
+      "s": "stgph:7.20",
+      "b": 1
+     },
+     {
+      "t": "Treat precipitant (infection, trauma, surgery)",
+      "s": "stgph:7.19"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Maintenance + deficit rate: ____ mL/h",
+      "s": "stgph:7.20"
+     },
+     {
+      "t": "KCl 40 mmol/L in all fluids",
+      "s": "stgph:7.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "Urine output",
+      "s": "stgph:7.20"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Insulin ____ U/kg/h (1 U/mL: ____ mL/h)",
+      "s": "stgph:7.23"
+     },
+     {
+      "t": "Neuro obs hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Review fluids (at least 2-hourly)",
+      "s": "stgph:7.20",
+      "b": 1
+     },
+     {
+      "t": "Urine > 2 mL/kg/h: replace the excess",
+      "s": "stgph:7.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "Urine ketones",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HGT falling > 5 mmol/L/h or ≤ 17: add dextrose; do not stop insulin",
+      "s": "stgph:7.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Rehydrate · cerebral oedema window",
+    "feed": [
+     {
+      "t": "HGT ≤ 12: switch to NaCl 0.45% / dextrose 5% (+ KCl)",
+      "s": "stgph:7.21",
+      "b": 1
+     },
+     {
+      "t": "Review fluids",
+      "s": "stgph:7.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "VBG: Na⁺, Cl⁻ (+ K⁺, pH, HCO₃†)",
+      "s": "stgph:7.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cerebral oedema risk 4–12 h: headache, irritability, falling GCS",
+      "s": "stgph:7.18",
+      "b": 1
+     },
+     {
+      "t": "HGT < 5: dextrose 10% 2 mL/kg, increase dextrose",
+      "s": "stgph:7.23"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Review fluids · replace urine > 2 mL/kg/h",
+      "s": "stgph:7.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "Urine ketones",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue insulin + dextrose",
+      "s": "stgph:7.23"
+     },
+     {
+      "t": "Precipitous Na⁺ drop: call doctor",
+      "s": "stgph:7.21"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Rehydrate",
+    "feed": [
+     {
+      "t": "Review fluids",
+      "s": "stgph:7.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "VBG: Na⁺, Cl⁻ (+ K⁺, pH, HCO₃†)",
+      "s": "stgph:7.21",
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adjust maintenance fluid to Na⁺ and Cl⁻",
+      "s": "stgph:7.21"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Review fluids",
+      "s": "stgph:7.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "VBG + urine ketones",
+      "s": "stgph:7.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No improvement, rising glucose, or pH < 7.1: REFER",
+      "s": "stgph:7.24",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Continue deficit replacement over 48 h",
+      "s": "stgph:7.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgphc:9.17",
+      "b": 1
+     },
+     {
+      "t": "VBG + U&E",
+      "s": "stgph:7.21",
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP if infection",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop-IV-insulin criteria met? → next row",
+      "s": "stgph:7.23"
+     }
+    ]
+   },
+   {
+    "label": "Resolution",
+    "phase": "Stop IV insulin",
+    "feed": [
+     {
+      "t": "Continue IV until drinking well and tolerating snacks; then reduce IV",
+      "s": "stgph:7.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Base deficit < 5 or HCO₃ ≥ 15",
+      "s": "stgph:7.23",
+      "b": 1
+     },
+     {
+      "t": "No ketonuria · HGT ≤ 10",
+      "s": "stgph:7.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "SC insulin once well hydrated and on a normal diet",
+      "s": "stgph:7.23"
+     }
+    ]
+   },
+   {
+    "label": "IV → SC",
+    "phase": "SC insulin",
+    "feed": [
+     {
+      "t": "Normal diet; IV stopped",
+      "s": "stgph:7.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT before meals",
+      "s": "stgph:7.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "First SC dose 30 min before a meal; infusion continues 90 min after",
+      "s": "stgph:7.23",
+      "b": 1
+     },
+     {
+      "t": "New: basal-bolus, prepubertal 0.7 U/kg/day, pubertal 1 U/kg/day",
+      "s": "stgph:7.23",
+      "b": 1
+     },
+     {
+      "t": "Established: usual maintenance insulin",
+      "s": "stgph:7.23"
+     },
+     {
+      "t": "Supplemental short-acting if HGT > 11 (box)",
+      "s": "stgph:7.23"
+     }
+    ]
+   },
+   {
+    "label": "Pre-discharge",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Normal diet",
+      "s": "stgph:7.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT profile before meals and at night",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Caregiver education: injection, HGT, sick days, hypoglycaemia",
+      "s": "stgph:7.16"
+     },
+     {
+      "t": "Glucagon: < 12 y 0.5 mg · > 12 y 1 mg IM/SC",
+      "s": "stgph:7.25"
+     },
+     {
+      "t": "Book paediatric diabetes follow-up",
+      "s": "stgph:7.16"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids & potassium",
+   "items": [
+    {
+     "h": "Resuscitation",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "NaCl 0.9% 10–20 mL/kg over 10–30 min; repeat if shock persists",
+     "s": "stgph:7.20"
+    },
+    {
+     "h": "Maintenance per 24 h (ideal weight if obese)",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "≤ 10 kg 100 mL/kg · 11–20 kg 1 000 mL + 50 mL/kg over 10 kg · > 20 kg 1 500 mL + 20 mL/kg over 20 kg",
+     "s": "stgph:7.20"
+    },
+    {
+     "h": "+ Deficit over 48 h · + ongoing losses",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "5%: 50 mL/kg · 10%: 100 mL/kg · urine > 2 mL/kg/h",
+     "s": "stgph:7.20"
+    },
+    {
+     "t": "Maint. + 5%, mL/h: 10 kg 53 · 15 kg 74 · 20 kg 93 · 30 kg 128 · 40 kg 154 · 50 kg 175 · 60 kg 193",
+     "s": "stgph:7.21",
+     "b": 1
+    },
+    {
+     "t": "NaCl 0.9% → NaCl 0.45% / dextrose 5% at HGT ≤ 12",
+     "s": "stgph:7.21"
+    },
+    {
+     "h": "Potassium",
+     "s": "stgph:7.22"
+    },
+    {
+     "t": "KCl 15% 20 mL in 1 L = 40 mmol/L",
+     "s": "stgph:7.22",
+     "b": 1
+    },
+    {
+     "t": "Two-bag system: only under specialist supervision",
+     "s": "stgph:7.22"
+    }
+   ]
+  },
+  {
+   "title": "Insulin & SC switch",
+   "items": [
+    {
+     "h": "IV infusion",
+     "s": "stgph:7.22"
+    },
+    {
+     "t": "50 U (0.5 mL) in 50 mL NaCl 0.9% = 1 U/mL, syringe pump, own line",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "0.05–0.1 U/kg/h · never in the fluid bag",
+     "s": "stgph:7.22"
+    },
+    {
+     "t": "Fall > 5/h or HGT ≤ 17: add dextrose · HGT < 5: D10 2 mL/kg",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "No pump: 0.1 U/kg IV hourly",
+     "s": "stgph:7.23"
+    },
+    {
+     "h": "Stop IV insulin when all:",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "Base deficit < 5 or HCO₃ ≥ 15 · no ketonuria · HGT ≤ 10",
+     "s": "stgph:7.23",
+     "b": 1
+    },
+    {
+     "h": "New diabetic: basal-bolus",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "0.7 U/kg/day prepubertal · 1 U/kg/day pubertal",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "Short-acting 20% before each meal; intermediate 40% at night (21h00)",
+     "s": "stgph:7.14"
+    },
+    {
+     "h": "Supplement before meals (U/kg/dose)",
+     "s": "stgph:7.23"
+    },
+    {
+     "t": "HGT 11–12: 0.06 · 13–16: 0.09 · > 16: 0.12",
+     "s": "stgph:7.23"
+    }
+   ]
+  },
+  {
+   "title": "Cerebral oedema · escalate",
+   "items": [
+    {
+     "h": "Signs (4–12 h, often after improvement)",
+     "s": "stgph:7.18"
+    },
+    {
+     "t": "Headache, irritability, confusion, reduced LOC, hypoxaemia; papilloedema late",
+     "s": "stgph:7.18"
+    },
+    {
+     "h": "Act — do not wait for CT",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "Exclude hypoglycaemia · elevate head of bed",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "IV fluids to ⅔ maintenance; deficit over 72 h",
+     "s": "stgph:7.19"
+    },
+    {
+     "t": "NaCl 5% 2 mL/kg over 30 min, or mannitol 250 mg/kg over 30–60 min (≤ 2 doses without specialist)",
+     "s": "stgph:13.50",
+     "b": 1
+    },
+    {
+     "t": "REFER to ICU",
+     "s": "stgph:7.19",
+     "b": 1
+    },
+    {
+     "h": "Refer also",
+     "s": "stgph:7.24"
+    },
+    {
+     "t": "No improvement · pH < 7.1 · shock · reduced LOC · persistent vomiting · age < 5 · rising glucose",
+     "s": "stgph:7.24"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · VBG (Na⁺, K⁺, pCO₂) · U&E",
+     "s": "stgph:7.18",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Stop-IV-insulin criteria met",
+    "s": "stgph:7.23"
+   },
+   {
+    "t": "Drinking well, normal diet",
+    "s": "stgph:7.23"
+   },
+   {
+    "t": "On SC insulin ≥ 24 h with stable HGT",
+    "d": 1
+   },
+   {
+    "t": "Precipitant identified and treated",
+    "s": "stgph:7.19"
+   },
+   {
+    "t": "Caregiver trained: injections, HGT, sick days, hypoglycaemia",
+    "s": "stgph:7.16"
+   },
+   {
+    "t": "Paediatric diabetes follow-up booked",
+    "s": "stgph:7.16"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "All children: supervised by a paediatrician experienced in diabetes, MDT at regional hospital",
+    "s": "stgph:7.16"
+   },
+   {
+    "t": "Sick days: HGT > 14 with ketones ≥ 1.5 mmol/L or urine > 1+: seek urgent care",
+    "s": "stgph:7.17",
+    "b": 1
+   },
+   {
+    "t": "Refer back urgently: persistent vomiting, rising glucose despite extra insulin, heavy ketonuria, exhausted, confused, hyperventilating, dehydrated or severe abdominal pain",
+    "s": "stgph:7.18",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour DKA nursing record — HGT, ketones, insulin, fluids, neuro",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 2 h",
+  "params": [
+   {
+    "h": "HGT and insulin",
+    "items": [
+     {
+      "t": "HGT hourly",
+      "s": "stgphc:9.17"
+     },
+     {
+      "t": "Insulin rate (mL/h, 1 U/mL) every hour",
+      "s": "stgph:7.23"
+     },
+     {
+      "t": "Never stop insulin while dextrose runs",
+      "s": "stgph:7.23"
+     }
+    ]
+   },
+   {
+    "h": "Fluids and urine",
+    "items": [
+     {
+      "t": "IV in and urine out hourly",
+      "s": "stgph:7.20"
+     },
+     {
+      "t": "Doctor reviews fluids at least 2-hourly",
+      "s": "stgph:7.20"
+     },
+     {
+      "t": "Urine ketones every void",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Neuro obs",
+    "items": [
+     {
+      "t": "GCS, headache, behaviour hourly",
+      "d": 1
+     },
+     {
+      "t": "Highest risk 4–12 h into treatment",
+      "s": "stgph:7.18"
+     },
+     {
+      "t": "Pulse, BP, RR hourly",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for HGT falling > 5 mmol/L/h or ≤ 17, HGT < 5, headache, irritability, confusion or a falling GCS, urine > 2 mL/kg/h or no urine, persistent vomiting, or shock",
+    "s": "stgph:7.23",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Oral in (mL)",
+   "Urine out (mL)",
+   "Balance (mL)",
+   "Insulin total (U)"
+  ]
+ }
+}

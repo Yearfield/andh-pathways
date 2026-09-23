@@ -3,6 +3,12 @@
   "sources": [
     {"id": "imci2022", "short": "IMCI 2022", "title": "IMCI Chart Booklet (South Africa)", "edition": "2022 (final, May 2023 print)", "offset": 2},
     {"id": "imam2015", "short": "IMAM 2015", "title": "Integrated Management of Children with Acute Malnutrition in South Africa: Operational Guidelines", "edition": "NDoH 2015", "offset": 0},
-    {"id": "who2013", "short": "WHO 2013", "title": "Guideline: Updates on the management of severe acute malnutrition in infants and children", "edition": "WHO 2013", "offset": 0}
+    {"id": "who2013", "short": "WHO 2013", "title": "Guideline: Updates on the management of severe acute malnutrition in infants and children", "edition": "WHO 2013", "offset": 0},
+    {"id": "stgah", "short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List", "edition": "6th ed. 2024", "offset": 0},
+    {"id": "stgph", "short": "STG Paeds", "title": "Paediatric Hospital-level Standard Treatment Guidelines and Essential Medicines List", "edition": "2023 ed.", "offset": 0},
+    {"id": "stgphc", "short": "STG PHC", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
+    {"id": "jbds2023", "short": "JBDS 2023", "title": "JBDS-IP: The Management of Diabetic Ketoacidosis in Adults", "edition": "Mar 2023", "offset": 0},
+    {"id": "mcg2016", "short": "Maternity 2016", "title": "Guidelines for Maternity Care in South Africa", "edition": "4th edition, NDoH 2016", "offset": 0},
+    {"id": "stghosp", "short": "Hospital STG Ch 6", "title": "Standard Treatment Guidelines and EML, Hospital Level (Adults) — Chapter 6: Obstetrics", "edition": "edition not printed in uploaded extract (cites 2024 references)", "offset": 0}
   ]
 }

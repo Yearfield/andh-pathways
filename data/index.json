@@ -1,6 +1,9 @@
 {
   "app": "ANDH Pathways",
   "diagnoses": [
-    {"id": "sam", "file": "sam.json", "title": "Severe acute malnutrition", "short": "SAM", "population": "Paediatric"}
+    {"id": "sam", "file": "sam.json", "title": "Severe acute malnutrition", "short": "SAM", "population": "Paediatric"},
+    {"id": "pet", "file": "pet.json", "title": "Pre-eclampsia", "short": "PET", "population": "Obstetric"},
+    {"id": "dka-adult", "file": "dka-adult.json", "title": "Diabetic ketoacidosis — adult", "short": "DKA (adult)", "population": "Adult"},
+    {"id": "dka-paeds", "file": "dka-paeds.json", "title": "Diabetic ketoacidosis — paediatric", "short": "DKA (paeds)", "population": "Paediatric"}
   ]
 }

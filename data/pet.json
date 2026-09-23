@@ -1,0 +1,1366 @@
+{
+ "id": "pet",
+ "short": "PET",
+ "title": "Pre-eclampsia",
+ "population": "Obstetric (≥ 20 weeks' gestation, or ≤ 7 days after delivery)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-23",
+ "sources": [
+  "mcg2016",
+  "stghosp",
+  "stgphc"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Onset ≥ 20 weeks' gestation",
+     "s": "stghosp:6.9",
+     "b": 1
+    },
+    {
+     "t": "Hypertension: SBP ≥ 140 and/or DBP ≥ 90",
+     "s": "stgphc:6.12",
+     "b": 1
+    },
+    {
+     "t": "On 2 readings ≥ 4 h apart (PHC STG; Maternity 2016: ≥ 2 h), or a single SBP ≥ 160 and/or DBP ≥ 110",
+     "s": "stgphc:6.12",
+     "k": "info"
+    },
+    {
+     "t": "Proteinuria ≥ 1+ on dipstick",
+     "s": "stgphc:6.14",
+     "b": 1
+    },
+    {
+     "t": "Clean catch, 2 occasions ≥ 2 h apart, or ≥ 0.3 g / 24 h",
+     "s": "mcg2016:70",
+     "k": "info"
+    },
+    {
+     "t": "Superimposed: known chronic HT + new persistent proteinuria after 20 weeks",
+     "s": "stghosp:6.9",
+     "k": "sub"
+    },
+    {
+     "t": "GA ____ wk · BP 1 ____ time ____ · BP 2 ____ time ____ · Dipstick ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe features = any one of",
+   "items": [
+    {
+     "t": "Acute severe HT: SBP ≥ 160 and/or DBP ≥ 110",
+     "s": "stghosp:6.10",
+     "b": 1
+    },
+    {
+     "t": "Platelets < 100 000/µL",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "ALT or AST > 40 U/L",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Severe persistent RUQ or epigastric pain",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "HELLP: platelets < 100 000 + AST > 70 + LDH > 600",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Creatinine ≥ 120 µmol/L",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "New severe headache unresponsive to medication",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Visual disturbances",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Imminent eclampsia: hyperreflexia, clonus, dizziness, fainting, vomiting",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP / SFH",
+     "s": "mcg2016:143"
+    },
+    {
+     "t": "Booking BP = baseline ____/____",
+     "s": "mcg2016:71",
+     "k": "value"
+    },
+    {
+     "t": "BP rise ≥ 30 sys or ≥ 15 dia over booking",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "Primigravida, age ≥ 35 or teenager",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "Previous PET, abruption or IUD",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "Chronic HT, renal, diabetes, SLE/APS",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "Multiple pregnancy",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "Aspirin / calcium taken",
+     "s": "mcg2016:72"
+    },
+    {
+     "t": "HIV status · ART · last VL",
+     "s": "stghosp:6.15"
+    },
+    {
+     "t": "RPR · Rh / blood group",
+     "d": 1
+    },
+    {
+     "t": "Hb trend",
+     "s": "stghosp:6.1"
+    },
+    {
+     "t": "SFH growth plotted / flattening",
+     "s": "mcg2016:73"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Imminent eclampsia",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Persistent headache",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Visual disturbances",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Epigastric / RUQ pain",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Dizziness, fainting, vomiting",
+     "s": "mcg2016:70"
+    },
+    {
+     "h": "Obstetric",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Fetal movements reduced",
+     "s": "mcg2016:72"
+    },
+    {
+     "t": "Vaginal bleeding",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Abdominal pain / contractions",
+     "s": "mcg2016:79"
+    },
+    {
+     "t": "Membranes ruptured",
+     "d": 1
+    },
+    {
+     "h": "Treatment already given",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "MgSO₄ — dose, time",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "Nifedipine — doses, times",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "Methyldopa / other antihypertensive",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "Seizure before arrival",
+     "s": "stghosp:6.11"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Breathlessness / orthopnoea",
+     "d": 1
+    },
+    {
+     "t": "TB symptom screen",
+     "s": "stghosp:6.15"
+    },
+    {
+     "t": "Lives far / unreliable follow-up",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "Transport available",
+     "s": "mcg2016:73"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "s": "mcg2016:73",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "s": "mcg2016:73",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "s": "stghosp:6.11",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (AVPU)",
+     "s": "mcg2016:74",
+     "k": "yn"
+    },
+    {
+     "h": "BP — correct cuff, sitting or on her side",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "SBP 140–159 and/or DBP 90–109",
+     "s": "stghosp:6.10",
+     "k": "yn"
+    },
+    {
+     "t": "SBP ≥ 160 and/or DBP ≥ 110",
+     "s": "stghosp:6.10",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Repeat after 20 min, nearest 2 mmHg",
+     "s": "mcg2016:74",
+     "k": "yn"
+    },
+    {
+     "t": "MUAC > 33 cm → obese cuff",
+     "s": "mcg2016:71",
+     "k": "yn"
+    },
+    {
+     "t": "RR > 24 → examine lungs for oedema",
+     "s": "mcg2016:73",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Pallor",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Jaundice",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Oedema: face / hands / generalised",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Bleeding, bruising (DIC)",
+     "s": "mcg2016:80"
+    },
+    {
+     "h": "Chest and CVS",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Crepitations",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "Heart examined",
+     "s": "mcg2016:74"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Hyperreflexia / clonus",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Baseline patellar reflexes (for MgSO₄)",
+     "s": "stghosp:6.11",
+     "b": 1
+    },
+    {
+     "h": "Abdomen and fetus",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "RUQ / epigastric tenderness",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Uterus tender or irritable",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "SFH ____ cm · lie",
+     "s": "mcg2016:74",
+     "k": "value"
+    },
+    {
+     "t": "FHR ____ /min",
+     "k": "value"
+    },
+    {
+     "t": "Liquor volume",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Contractions",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "Cervix / Bishop score ____ (for IOL)",
+     "s": "mcg2016:74",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urine dipstick — protein",
+   "items": [
+    {
+     "t": "Value on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "≥ 1+ = significant; repeat after ≥ 2 h to confirm",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Doubtful: 24-h urine protein (≥ 0.3 g = significant)",
+     "s": "mcg2016:72"
+    },
+    {
+     "t": "Protein without hypertension: urine MCS for UTI",
+     "s": "mcg2016:71"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Platelets — urgent FBC",
+   "items": [
+    {
+     "t": "Value on arrival: ____ /µL",
+     "k": "value"
+    },
+    {
+     "t": "< 100 000/µL: severe feature — stabilise and REFER",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Assess the fetus only once mother stable and platelets known",
+     "s": "mcg2016:74"
+    },
+    {
+     "t": "No severe features: repeat weekly (daily chart)",
+     "s": "mcg2016:73"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Seizure (eclampsia)",
+     "s": "stghosp:6.11",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "mcg2016:74",
+     "b": 1
+    },
+    {
+     "t": "Airway compromise",
+     "s": "mcg2016:74",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "mcg2016:79",
+     "b": 1
+    },
+    {
+     "t": "BP ≥ 160/110",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Imminent eclampsia",
+     "s": "mcg2016:70"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "HELLP / jaundice",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Abruptio placentae",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "Absent FHR / IUD",
+     "s": "mcg2016:80"
+    },
+    {
+     "t": "Oliguria",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "DIC / bleeding",
+     "s": "mcg2016:80"
+    },
+    {
+     "t": "Other seizure cause (epilepsy, meningitis)",
+     "s": "mcg2016:101"
+    },
+    {
+     "t": "Cerebral malaria (travel)",
+     "s": "mcg2016:105"
+    },
+    {
+     "t": "Liver rupture",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "stgphc:6.16"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE PRE-ECLAMPSIA / IMMINENT ECLAMPSIA / ECLAMPSIA → stabilise (MgSO₄, nifedipine) then REFER",
+   "s": "mcg2016:71"
+  },
+  {
+   "t": "11. NO SEVERE FEATURES → ADMIT — stabilise, then continue on the pre-eclampsia inpatient management chart and the 12-hour nursing record",
+   "s": "mcg2016:71"
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Severe features: stabilise and REFER — rows after 2 h apply while awaiting transfer or if transfer is not possible",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Severe features or on MgSO₄ (before delivery): BP every 30 min",
+    "s": "stgphc:6.14",
+    "b": 1
+   },
+   {
+    "t": "Pulse, RR, patellar reflexes, urine output (Foley) hourly",
+    "s": "stgphc:6.14",
+    "b": 1
+   },
+   {
+    "t": "Chest for pulmonary oedema at each check · strict fluid balance",
+    "s": "mcg2016:73"
+   },
+   {
+    "t": "FHR hourly once mother stable",
+    "d": 1
+   },
+   {
+    "t": "Symptoms (headache, vision, epigastric pain) each check",
+    "s": "mcg2016:74"
+   },
+   {
+    "t": "After delivery: obs ½-hourly × 2 h, hourly × 4 h, 2-hourly × 8 h, then 4-hourly; reflexes, RR, urine hourly while on MgSO₄",
+    "s": "mcg2016:73",
+    "b": 1
+   },
+   {
+    "t": "No severe features: BP 4-hourly on the ward chart",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for MgSO₄, nifedipine and methyldopa already given (dose, time) — do not repeat a completed MgSO₄ loading dose. †",
+    "feed": [
+     {
+      "t": "Restricted IV fluid: Ringer's lactate 80 mL/h — guard against overload",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "Foley catheter; plot hourly urine output",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "Strict intake/output chart",
+      "s": "mcg2016:75"
+     },
+     {
+      "t": "Sit up or left lateral — never flat on her back",
+      "s": "mcg2016:71"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP to nearest 2 mmHg, correct cuff; repeat after 20 min",
+      "s": "mcg2016:74"
+     },
+     {
+      "t": "Urine dipstick protein",
+      "s": "mcg2016:70",
+      "b": 1
+     },
+     {
+      "t": "FBC (Hb, platelets) · creatinine · ALT/AST · LDH",
+      "s": "mcg2016:74",
+      "b": 1
+     },
+     {
+      "t": "HIV test if not negative at this visit or unknown",
+      "s": "stghosp:6.15",
+      "b": 1
+     },
+     {
+      "t": "Group & cross-match if abruptio suspected",
+      "s": "mcg2016:80",
+      "b": 1
+     },
+     {
+      "t": "TB symptom screen",
+      "s": "stghosp:6.15"
+     },
+     {
+      "t": "Fetus: FHR now; CTG (if ≥ 28 wk) only once mother stable and platelets known",
+      "s": "mcg2016:74"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Eclampsia (seizure)",
+      "s": "stghosp:6.11"
+     },
+     {
+      "t": "Shout for help; left lateral, clear airway, oral airway",
+      "s": "mcg2016:74"
+     },
+     {
+      "t": "Oxygen to SpO₂ > 90%",
+      "s": "stghosp:6.11"
+     },
+     {
+      "t": "MgSO₄ loading dose (below)",
+      "s": "stghosp:6.11"
+     },
+     {
+      "t": "Restless: see Doses — avoid diazepam unless nothing else",
+      "s": "stghosp:6.12"
+     },
+     {
+      "h": "Severe features / imminent eclampsia",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "MgSO₄ 4 g IV in 200 mL NaCl 0.9% or RL over 20 min",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "+ 5 g IM each buttock (10 g) — Maternity 2016: may omit if transfer < 4 h",
+      "s": "stgphc:6.14",
+      "b": 1
+     },
+     {
+      "h": "SBP ≥ 160 and/or DBP ≥ 110",
+      "s": "stghosp:6.9"
+     },
+     {
+      "t": "Nifedipine 10 mg PO — swallow whole, not sublingual",
+      "s": "stghosp:6.9",
+      "b": 1
+     },
+     {
+      "t": "Repeat BP in 30 min",
+      "s": "stghosp:6.9"
+     },
+     {
+      "h": "Maintenance"
+     },
+     {
+      "t": "Methyldopa 250 mg PO 8-hourly (start dose)",
+      "s": "stghosp:6.8"
+     },
+     {
+      "t": "Steroids if 26–34 wk and delivery likely — see Doses",
+      "s": "stghosp:6.23"
+     },
+     {
+      "h": "Refer (all severe)",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "Phone specialist hospital + EMS; nurse escort continues MgSO₄; full records go with her",
+      "s": "mcg2016:73"
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "RL 80 mL/h continues",
+      "s": "mcg2016:73"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP (30-min)",
+      "s": "stgphc:6.14"
+     },
+     {
+      "t": "After MgSO₄ load: reflexes, RR",
+      "s": "stghosp:6.11"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still SBP ≥ 160 and/or DBP ≥ 110: nifedipine 10 mg, dose 2",
+      "s": "stghosp:6.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "First hourly urine output",
+      "s": "stgphc:6.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP 30-min · pulse, RR, reflexes, urine hourly",
+      "s": "stgphc:6.14"
+     },
+     {
+      "t": "Chest for crepitations if RR > 24",
+      "s": "mcg2016:73"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still ≥ 160/110: nifedipine 10 mg, dose 3",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "Specialist phoned: transfer now, or deliver here only if very close to delivery",
+      "s": "mcg2016:73"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Classify",
+    "feed": [
+     {
+      "t": "Balance so far: ____ in / ____ out",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat urine dipstick (≥ 2 h after first)",
+      "s": "mcg2016:70",
+      "b": 1
+     },
+     {
+      "t": "Results: platelets < 100 000, ALT/AST > 40, creatinine ≥ 120, LDH > 600 = severe",
+      "s": "stghosp:6.10",
+      "b": 1
+     },
+     {
+      "t": "Once stable: CTG if ≥ 28 wk; ultrasound for GA/EFW, liquor, placenta; umbilical artery Doppler if available",
+      "s": "mcg2016:72",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still ≥ 160/110 after 3 nifedipine doses: labetalol IV (see Doses) — needs high care → REFER urgently",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "Severe → REFER. No severe features → daily antenatal row",
+      "s": "mcg2016:71"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Await transfer",
+    "feed": [
+     {
+      "t": "RL 80 mL/h. Urine last 4 h: ____ mL",
+      "s": "mcg2016:73",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine output ≥ 100 mL / 4 h before next MgSO₄",
+      "s": "stghosp:6.11",
+      "b": 1
+     },
+     {
+      "t": "Reflexes present, RR ≥ 16",
+      "s": "stghosp:6.11"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MgSO₄ 5 g IM, alternate buttock, 4-hourly — or with a pump: 1 g/h IV (4 g in 200 mL at 50 mL/h)",
+      "s": "stghosp:6.11",
+      "b": 1
+     },
+     {
+      "t": "Methyldopa 8-hourly",
+      "s": "stghosp:6.8"
+     }
+    ]
+   },
+   {
+    "label": "8–20 h",
+    "phase": "Every 4 h",
+    "feed": [
+     {
+      "t": "Balance each shift; fluid overload → stop IV, call doctor",
+      "s": "mcg2016:75"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Same checks as 4 h before each MgSO₄ dose",
+      "s": "stghosp:6.11"
+     },
+     {
+      "t": "Symptoms of imminent eclampsia each check",
+      "s": "mcg2016:74"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MgSO₄ 5 g IM at 8, 12, 16, 20 h (or 1 g/h IV)",
+      "s": "stghosp:6.11"
+     },
+     {
+      "t": "Nifedipine 10 mg for any SBP ≥ 160 / DBP ≥ 110",
+      "s": "stghosp:6.9"
+     },
+     {
+      "t": "In labour: vaginal delivery preferred — see 36 wk / delivery row",
+      "s": "mcg2016:73"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Stop IV if drinking and stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC (platelets) · creatinine · ALT/AST · LDH repeat",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Steroid dose 2 due (betamethasone)",
+      "s": "stghosp:6.23"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop MgSO₄ at 24 h (prevention) — or continue until 24 h after delivery / last seizure",
+      "s": "stghosp:6.10",
+      "b": 1
+     },
+     {
+      "t": "Still undelivered with severe features: transfer remains the plan",
+      "s": "mcg2016:73"
+     }
+    ]
+   },
+   {
+    "label": "Daily",
+    "phase": "Antenatal, no severe features",
+    "feed": [
+     {
+      "t": "Ward diet; continue calcium 1 g daily",
+      "s": "stgphc:6.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Urine dipstick daily",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "CTG twice daily (≥ 28 wk)",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "Fetal movement chart daily",
+      "s": "mcg2016:72"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Methyldopa, titrate to target 135–140 / 85–90 — do not lower further",
+      "s": "mcg2016:72",
+      "b": 1
+     },
+     {
+      "t": "Ask about headache, vision, epigastric pain each round",
+      "s": "mcg2016:70"
+     }
+    ]
+   },
+   {
+    "label": "Weekly",
+    "phase": "Antenatal",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Platelet count weekly",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "Creatinine, ALT",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "SFH plotted every 2 weeks",
+      "s": "mcg2016:73"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review growth and delivery plan",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "Very reliable patient living close by: outpatient care can be individualised",
+      "s": "mcg2016:73"
+     }
+    ]
+   },
+   {
+    "label": "36 wk",
+    "phase": "Delivery",
+    "feed": [
+     {
+      "t": "Careful IV fluids; limit blood loss",
+      "s": "stghosp:6.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Bishop score; NST before induction",
+      "s": "stghosp:6.26",
+      "b": 1
+     },
+     {
+      "t": "CTG in labour per IOL protocol (STG 6.13)",
+      "s": "stghosp:6.26"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Induce at 36 completed weeks (earlier if severe features → refer)",
+      "s": "mcg2016:73",
+      "b": 1
+     },
+     {
+      "t": "Vaginal preferred; no excessive bearing down",
+      "s": "mcg2016:74"
+     },
+     {
+      "t": "Oxytocin 10 U IM after the baby — no ergometrine / syntometrine",
+      "s": "stghosp:6.9",
+      "b": 1
+     },
+     {
+      "t": "Tell the neonatal team if MgSO₄ or a benzodiazepine was given",
+      "s": "stghosp:6.12"
+     }
+    ]
+   },
+   {
+    "label": "0–24 h",
+    "phase": "After delivery",
+    "feed": [
+     {
+      "t": "Strict fluid balance (renal failure risk)",
+      "s": "mcg2016:75"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Obs ½-h × 2 h, 1-h × 4 h, 2-h × 8 h, then 4-h",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "FBC (platelets) · creatinine · ALT next day — platelets may keep falling for 48–72 h",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MgSO₄ until 24 h after delivery (severe / eclampsia)",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "Nifedipine 10 mg PO for spikes ≥ 160/110",
+      "s": "mcg2016:74"
+     },
+     {
+      "t": "Continue antihypertensive",
+      "s": "mcg2016:75"
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3+",
+    "phase": "Postnatal / discharge",
+    "feed": [
+     {
+      "t": "Oral; stop IV",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Severe: repeat FBC, creatinine, ALT until normal",
+      "s": "mcg2016:75",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "BP 4-hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop methyldopa (post-partum depression) → enalapril if renal function normal (see Doses)",
+      "s": "mcg2016:75",
+      "b": 1
+     },
+     {
+      "t": "Discharge when criteria met; 4-week script",
+      "s": "mcg2016:75"
+     },
+     {
+      "t": "Contraception discussed",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antihypertensives",
+   "items": [
+    {
+     "h": "Acute severe: SBP ≥ 160 and/or DBP ≥ 110",
+     "s": "stghosp:6.9"
+    },
+    {
+     "t": "Nifedipine 10 mg PO, swallow whole; repeat after 30 min until < 160/110",
+     "s": "stghosp:6.9"
+    },
+    {
+     "t": "After 3 doses, or cannot swallow: REFER; labetalol IV only in high care: 200 mg in 160 mL NaCl 0.9% (1 mg/mL), start 40 mL/h, max 160 mL/h, total 1–2 mg/kg, aim 140/100",
+     "s": "stghosp:6.9",
+     "b": 1
+    },
+    {
+     "h": "Maintenance (antenatal)",
+     "s": "stghosp:6.8"
+    },
+    {
+     "t": "Methyldopa 250 mg 8-hourly → max 750 mg 8-hourly",
+     "s": "stghosp:6.8"
+    },
+    {
+     "t": "and/or amlodipine 5 mg daily → 10 mg",
+     "s": "stghosp:6.8"
+    },
+    {
+     "t": "No diuretics",
+     "s": "stghosp:6.8"
+    },
+    {
+     "h": "Post-partum",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "Enalapril 5 mg mane → 20 mg daily (normal renal function)",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "2nd: amlodipine 5 → 10 mg · 3rd: atenolol 50 → 100 mg",
+     "s": "mcg2016:75"
+    }
+   ]
+  },
+  {
+   "title": "MgSO₄ · seizures · steroids",
+   "items": [
+    {
+     "h": "Load",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "4 g IV in 200 mL over 20 min + 5 g IM each buttock",
+     "s": "stgphc:6.14"
+    },
+    {
+     "h": "Maintain",
+     "s": "stghosp:6.11"
+    },
+    {
+     "t": "5 g IM 4-hourly, alternate buttocks, or 1 g/h IV (pump)",
+     "s": "stghosp:6.11"
+    },
+    {
+     "t": "24 h (prevention), or until 24 h after delivery / last seizure",
+     "s": "stghosp:6.10"
+    },
+    {
+     "h": "STOP if: reflexes absent · urine < 100 mL / 4 h · RR < 16",
+     "s": "stghosp:6.11"
+    },
+    {
+     "t": "Respiratory depression: calcium gluconate 10%, 10 mL IV, ≤ 5 mL/min",
+     "s": "stghosp:6.11",
+     "b": 1
+    },
+    {
+     "h": "Recurrent seizure",
+     "s": "stghosp:6.11"
+    },
+    {
+     "t": "MgSO₄ 2 g IV over 10 min; continuing → other cause, treat as status epilepticus",
+     "s": "stgphc:6.15"
+    },
+    {
+     "h": "Agitated",
+     "s": "stghosp:6.11"
+    },
+    {
+     "t": "Lorazepam 4 mg IV/IM, repeat 10–15 min, max 8 mg; or clonazepam 2 mg IV, max 4 mg; diazepam 10–20 mg IV only if neither",
+     "s": "stghosp:6.12"
+    },
+    {
+     "h": "Steroids 26–34 wk",
+     "s": "stghosp:6.23"
+    },
+    {
+     "t": "Betamethasone 12 mg IM × 2, 24 h apart (or dexamethasone 8 mg IM 8-hourly × 3)",
+     "s": "stghosp:6.23"
+    },
+    {
+     "t": "Not if RR > 24 unless doctor-assessed (pulmonary oedema risk)",
+     "s": "mcg2016:144"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Pulmonary oedema",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "RR > 24, crepitations, SpO₂ falling → stop IV fluids, call doctor, REFER",
+     "s": "mcg2016:73"
+    },
+    {
+     "h": "REFER (district cannot manage)",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "Any severe feature, imminent eclampsia, eclampsia",
+     "s": "mcg2016:71"
+    },
+    {
+     "t": "BP ≥ 160/110 after 3 nifedipine doses",
+     "s": "mcg2016:73"
+    },
+    {
+     "t": "HELLP · platelets < 100 000 · rising creatinine",
+     "s": "stghosp:6.10"
+    },
+    {
+     "t": "Abruptio · fetus < 32 wk or < 1.5 kg · caesarean with severe PET (specialist anaesthetist)",
+     "s": "stghosp:6.23"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "FBC · creatinine · ALT/AST · LDH; INR, PTT, cross-match if bleeding",
+     "s": "mcg2016:80",
+     "b": 1
+    },
+    {
+     "h": "Watch for",
+     "s": "mcg2016:75"
+    },
+    {
+     "t": "Abruptio, liver rupture, cerebral haemorrhage, renal failure after delivery",
+     "s": "mcg2016:75"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "BP < 150/100, stable 24 h (no severe features) / controlled 48 h (severe)",
+    "s": "mcg2016:75",
+    "b": 1
+   },
+   {
+    "t": "Severe: platelets, creatinine, ALT back to normal",
+    "s": "mcg2016:75"
+   },
+   {
+    "t": "No headache, visual or epigastric symptoms",
+    "d": 1
+   },
+   {
+    "t": "4-week script, ideally one drug",
+    "s": "mcg2016:75"
+   },
+   {
+    "t": "Told to return for persistent headache or dizziness",
+    "s": "mcg2016:75"
+   },
+   {
+    "t": "3-day and 6-week visits booked",
+    "s": "mcg2016:75"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic at 3 days; 6 weeks at postnatal clinic (severe: high-risk clinic), off medication for the last 2 weeks to test for chronic HT",
+    "s": "mcg2016:75",
+    "b": 1
+   },
+   {
+    "t": "> 1 drug: step-wise withdrawal at high-risk clinic",
+    "s": "mcg2016:75"
+   },
+   {
+    "t": "Refer back for persistent headache or dizziness",
+    "s": "mcg2016:75",
+    "b": 1
+   },
+   {
+    "t": "Next pregnancy: aspirin 150 mg nocte from 6 (ideally < 16) to 36 wk + calcium 1 g daily",
+    "s": "stghosp:6.10"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing record — BP, MgSO₄ checks and urine output",
+  "period": "One sheet per 12 hours; 30-min rows, heavier rule every hour",
+  "params": [
+   {
+    "h": "BP",
+    "items": [
+     {
+      "t": "Every 30 min while severe / on MgSO₄ before delivery",
+      "s": "stgphc:6.14",
+      "b": 1
+     },
+     {
+      "t": "After delivery: ½-hourly × 2 h, hourly × 4 h, 2-hourly × 8 h, then 4-hourly",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "Sitting or on her side, correct cuff",
+      "s": "mcg2016:71"
+     }
+    ]
+   },
+   {
+    "h": "MgSO₄ checks — hourly",
+    "items": [
+     {
+      "t": "Pulse, RR, patellar reflexes (+ / 0)",
+      "s": "stgphc:6.14"
+     },
+     {
+      "t": "Chest for crackles; symptoms each check",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "Before each 4-hourly dose: reflexes present, RR ≥ 16, urine ≥ 100 mL / 4 h",
+      "s": "stghosp:6.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Urine and fluids",
+    "items": [
+     {
+      "t": "Foley: urine every hour, sum each 4 h",
+      "s": "stgphc:6.14"
+     },
+     {
+      "t": "IV Ringer's lactate 80 mL/h — record all intake",
+      "s": "mcg2016:73"
+     },
+     {
+      "t": "FHR hourly once mother stable",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "STOP MgSO₄ and call the doctor if reflexes absent, urine < 100 mL / 4 h, or RR < 16",
+    "s": "stghosp:6.11",
+    "b": 1
+   },
+   {
+    "t": "Call the doctor for SBP ≥ 160 and/or DBP ≥ 110, RR > 24 or crackles, seizure, headache, visual disturbance, epigastric pain, vaginal bleeding or a tender uterus, or a change in FHR or fetal movements",
+    "s": "mcg2016:73"
+   }
+  ],
+  "totals": [
+   "Urine per 4 h (mL)",
+   "Urine 12 h (mL)",
+   "Total in (mL)",
+   "Balance (mL)",
+   "MgSO₄ given (g)",
+   "Nifedipine doses"
+  ]
+ }
+}

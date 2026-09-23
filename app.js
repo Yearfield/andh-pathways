@@ -2,11 +2,12 @@
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const app = $("#app");
-const LS_VER = "andh.verified", LS_OFF = "andh.offsets", LS_MODE = "andh.verifyMode";
+const LS_VER = "andh.verified", LS_OFF = "andh.offsets", LS_MODE = "andh.verifyMode", LS_CHK = "andh.checked";
 
 const S = {
   index: null, sources: {}, dx: {}, verified: JSON.parse(localStorage.getItem(LS_VER) || "{}"),
   offsets: JSON.parse(localStorage.getItem(LS_OFF) || "{}"), verify: localStorage.getItem(LS_MODE) === "1",
+  checked: JSON.parse(localStorage.getItem(LS_CHK) || "{}"),
 };
 
 /* ---------- storage for guideline PDFs (IndexedDB, stays on the phone) ---------- */
@@ -53,10 +54,11 @@ function chip(src) {
 }
 function li(d, it) {
   if (it.h && !it.t) return `<li class="head"><span class="txt">${esc(it.h)}${it.d ? '<span class="dag">†</span>' : ""}</span>${chip(it.s)}</li>`;
-  const cls = [it.k === "sub" ? "sub" : "", it.b ? "b" : "", it.k === "yn" ? "yn" : ""].join(" ");
-  const k = key(d.id, it); const on = S.verified[k];
-  const tick = S.verify ? `<button class="tick ${on ? "on" : ""}" data-k="${k}" aria-pressed="${!!on}" title="${on ? "Verified " + on : "Mark verified"}">✓</button>` : "";
-  return `<li class="${cls}">${tick}<span class="txt">${esc(it.t)}${it.d ? '<span class="dag">†</span>' : ""}</span>${chip(it.s)}</li>`;
+  const k = key(d.id, it); const vOn = S.verified[k]; const cOn = S.checked[k];
+  const cls = [it.k === "sub" ? "sub" : "", it.b ? "b" : "", it.k === "yn" ? "yn" : "", cOn ? "checked" : ""].join(" ");
+  const chk = `<button class="chk ${cOn ? "on" : ""}" data-chk="${k}" aria-pressed="${!!cOn}" aria-label="${cOn ? "Checked off" : "Mark done"}"></button>`;
+  const tick = S.verify ? `<button class="tick ${vOn ? "on" : ""}" data-tick="${k}" aria-pressed="${!!vOn}" title="${vOn ? "Verified " + vOn : "Mark verified"}">✓</button>` : "";
+  return `<li class="${cls}">${chk}<span class="txt">${esc(it.t)}${it.d ? '<span class="dag">†</span>' : ""}</span>${chip(it.s)}${tick}</li>`;
 }
 const list = (d, items) => `<ul class="items">${(items || []).map(i => li(d, i)).join("")}</ul>`;
 const card = (d, title, items, n, note) =>
@@ -82,7 +84,8 @@ function home() {
 
 function arrival(d) {
   const jump = `<div class="jump">${d.admission.map(s => `<button data-jump="s${s.n}">${s.n}</button>`).join("")}<button data-jump="dec">10–11</button></div>`;
-  const body = jump + d.admission.map(s => card(d, s.title, s.items, s.n, s.note)).join("") +
+  const reset = `<div class="toolrow"><button class="btn" data-resetchk="${d.id}">Reset checklist</button></div>`;
+  const body = reset + jump + d.admission.map(s => card(d, s.title, s.items, s.n, s.note)).join("") +
     `<div id="dec">${d.decision.map(x => `<div class="decision">${esc(x.t)}</div>`).join("")}</div>`;
   shell(d.title, "#/", body, d, "arrival");
 }
@@ -179,9 +182,19 @@ document.addEventListener("click", async e => {
   if (t.dataset.src) { openSource(t.dataset.src); return; }
   if (t.dataset.jump) { document.getElementById(t.dataset.jump)?.scrollIntoView({ block: "start" }); window.scrollBy(0, -60); return; }
   if (t.id === "vm") { S.verify = !S.verify; localStorage.setItem(LS_MODE, S.verify ? "1" : "0"); route(); return; }
-  if (t.dataset.k) {
-    const k = t.dataset.k; if (S.verified[k]) delete S.verified[k]; else S.verified[k] = new Date().toISOString().slice(0, 10);
+  if (t.dataset.tick) {
+    const k = t.dataset.tick; if (S.verified[k]) delete S.verified[k]; else S.verified[k] = new Date().toISOString().slice(0, 10);
     localStorage.setItem(LS_VER, JSON.stringify(S.verified)); const y = window.scrollY; await route(); window.scrollTo(0, y); return;
+  }
+  if (t.dataset.chk) {
+    const k = t.dataset.chk; if (S.checked[k]) delete S.checked[k]; else S.checked[k] = new Date().toISOString().slice(0, 10);
+    localStorage.setItem(LS_CHK, JSON.stringify(S.checked)); const y = window.scrollY; await route(); window.scrollTo(0, y); return;
+  }
+  if (t.dataset.resetchk) {
+    if (!confirm("Clear all checklist ticks for this diagnosis?")) return;
+    const dd = await getDx(t.dataset.resetchk);
+    allItems(dd).forEach(it => delete S.checked[key(dd.id, it)]);
+    localStorage.setItem(LS_CHK, JSON.stringify(S.checked)); route(); return;
   }
   if (t.dataset.del) { await delPdf(t.dataset.del); route(); }
 });

@@ -1,0 +1,1341 @@
+{
+ "id": "dka-adult",
+ "short": "DKA (adult)",
+ "title": "Diabetic ketoacidosis — adult",
+ "population": "Adults (and adolescents managed on the adult ward); HHS shares the fluid/potassium protocol",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-23",
+ "sources": [
+  "stgah",
+  "stgphc",
+  "jbds2023"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG (JBDS 2023 or local practice)",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all three confirm DKA",
+   "items": [
+    {
+     "t": "Hyperglycaemia: glucose ≥ 11.1 mmol/L (or known diabetic)",
+     "s": "stgphc:9.13",
+     "b": 1
+    },
+    {
+     "t": "Ketones: blood positive, or urine > 1+",
+     "s": "stgphc:9.13",
+     "b": 1
+    },
+    {
+     "t": "Acidosis: anion gap > 20",
+     "s": "stgah:8.14",
+     "b": 1
+    },
+    {
+     "t": "or venous pH < 7.3 and/or HCO₃ < 15 mmol/L",
+     "s": "jbds2023:10",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Profile: younger, over hours to days; vomiting, abdominal pain, acidotic breathing",
+     "s": "stgah:8.14",
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · HGT ____ · pH ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe DKA / refer criteria = any one of",
+   "items": [
+    {
+     "t": "pH < 7.0 · HCO₃ < 5 · blood ketones > 6",
+     "s": "jbds2023:24",
+     "d": 1
+    },
+    {
+     "t": "K⁺ < 3.5 mmol/L on admission · GCS < 12",
+     "s": "jbds2023:24",
+     "d": 1
+    },
+    {
+     "t": "HHS features: glucose > 40 mmol/L, osmolality > 320",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Renal or cardiac disease — fluids need CVP monitoring",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Shock not responding to fluids (inotropes)",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known diabetic: type 1 / type 2",
+     "s": "stgah:8.10"
+    },
+    {
+     "t": "Insulin regimen and doses (restart doses)",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "Missed insulin / poor adherence",
+     "d": 1
+    },
+    {
+     "t": "Previous DKA or HHS admissions",
+     "d": 1
+    },
+    {
+     "t": "Last HbA1c and eGFR (own baseline)",
+     "s": "stgphc:9.3"
+    },
+    {
+     "t": "CKD or heart disease (IHD, heart failure)",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "HIV status / ART regimen",
+     "d": 1
+    },
+    {
+     "t": "TB treatment · steroids · other chronic meds",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "t": "Duration of polyuria, polydipsia, weight loss",
+     "s": "stgphc:9.1",
+     "k": "info"
+    },
+    {
+     "h": "Gastrointestinal",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Vomiting",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Abdominal pain",
+     "s": "stgah:8.14"
+    },
+    {
+     "h": "Precipitant",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Missed insulin / new diagnosis",
+     "s": "stgphc:9.3"
+    },
+    {
+     "t": "Infection symptoms",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Chest pain (MI)",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Alcohol / steroids",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Drowsiness, confusion",
+     "s": "stgphc:9.16"
+    },
+    {
+     "t": "Headache",
+     "d": 1
+    },
+    {
+     "h": "TB and HIV",
+     "d": 1
+    },
+    {
+     "t": "TB: cough > 2 wk, night sweats",
+     "d": 1
+    },
+    {
+     "t": "HIV: last test / on ART",
+     "d": 1
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Fridge for insulin storage",
+     "s": "stgphc:9.4"
+    },
+    {
+     "t": "Glucometer and strips at home",
+     "s": "stgah:8.12"
+    },
+    {
+     "t": "Pregnancy possible (LMP)",
+     "d": 1
+    },
+    {
+     "t": "Lives alone / support",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Kussmaul (acidotic) breathing",
+     "s": "stgah:8.14",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "s": "stgphc:9.12",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "s": "stgphc:9.16",
+     "k": "yn"
+    },
+    {
+     "t": "GCS < 12",
+     "s": "jbds2023:24",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Urine output low / anuric",
+     "s": "stgah:8.14",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Dehydration: dry mucosa, reduced turgor",
+     "s": "stgphc:9.16"
+    },
+    {
+     "t": "Acetone / fruity breath",
+     "s": "stgphc:9.16"
+    },
+    {
+     "t": "Weight ____ kg (for fluid and insulin doses)",
+     "s": "stgah:8.14",
+     "k": "value"
+    },
+    {
+     "h": "Shock signs",
+     "s": "stgphc:9.16"
+    },
+    {
+     "t": "Cool peripheries · weak pulse"
+    },
+    {
+     "t": "Hypotension",
+     "s": "stgphc:9.12"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Baseline GCS ____ /15 (cerebral oedema watch)",
+     "s": "stgah:8.15",
+     "k": "value"
+    },
+    {
+     "t": "Confusion / focal signs / neck stiffness",
+     "d": 1
+    },
+    {
+     "h": "Chest and CVS"
+    },
+    {
+     "t": "Crepitations, consolidation (infection)",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Signs of heart failure / raised JVP",
+     "s": "stgah:8.14"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Tenderness · guarding (surgical cause)",
+     "d": 1
+    },
+    {
+     "h": "Skin and feet"
+    },
+    {
+     "t": "Foot ulcer, abscess, cellulitis (sepsis source)",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Injection sites: lipohypertrophy",
+     "s": "stgphc:9.4"
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "≥ 11.1 mmol/L: in keeping with DKA",
+     "s": "stgphc:9.13"
+    },
+    {
+     "t": "> 40 mmol/L: think HHS — same fluid/K⁺ protocol, slower osmolality fall",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "< 4 mmol/L: treat as hypoglycaemia — dextrose 50% 50 mL IV, recheck 5–10 min",
+     "s": "stgah:8.13"
+    },
+    {
+     "t": "Then hourly (bedside capillary glucose)",
+     "s": "stgah:8.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Ketones + VBG (K⁺, Na⁺, Cl⁻, HCO₃⁻, pH)",
+   "items": [
+    {
+     "t": "Ketones ____ · pH ____ · HCO₃ ____ · K⁺ ____ · Na⁺ ____ · Cl⁻ ____",
+     "k": "value"
+    },
+    {
+     "t": "Anion gap = Na − (Cl + HCO₃): > 20 = DKA",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Osmolarity = 2(Na + K) + glucose + urea: > 320 = HHS",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "K⁺ < 3.5: add 40 mmol/L · 3.5–5.5: 20 mmol/L · > 5.5: none",
+     "s": "stgah:8.15",
+     "b": 1
+    },
+    {
+     "t": "Do not give insulin until K⁺ is known",
+     "s": "stgphc:9.16",
+     "b": 1
+    },
+    {
+     "t": "K⁺ hourly initially, then 2-hourly when stabilised",
+     "s": "stgah:8.15"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "s": "stgah:8.14",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "stgphc:9.16",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC / coma",
+     "s": "stgah:8.14",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "stgah:8.14",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "stgah:8.13"
+    },
+    {
+     "t": "Hypo- or hyperkalaemia",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "HHS (osmolality > 320)",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Sepsis: chest, urine, skin/foot",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Acute MI",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Cerebral oedema",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "Anuria / acute kidney injury",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "Heart failure / fluid overload",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Acute surgical abdomen",
+     "d": 1
+    },
+    {
+     "t": "Other cause of acidosis or coma (alcohol, lactate, meningitis)",
+     "d": 1
+    },
+    {
+     "t": "Undiagnosed HIV or TB",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE DKA (§2) → Attempt REFERRAL"
+  },
+  {
+   "t": "11. ADMIT — high care: stabilise, then follow the DKA hourly chart and the 24-hour DKA nursing record",
+   "s": "stgah:8.15"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Insulin → SC switch starts when resolution criteria are met, not at a fixed hour",
+  "columns": {
+   "feed": "Fluids & potassium",
+   "tests": "Bloods & tests",
+   "treatment": "Insulin, treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HGT hourly",
+    "s": "stgah:8.16",
+    "b": 1
+   },
+   {
+    "t": "K⁺ (VBG) hourly initially, then 2-hourly when stabilised",
+    "s": "stgah:8.15",
+    "b": 1
+   },
+   {
+    "t": "Ketones and pH/HCO₃ 2-hourly until resolved",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "IV fluid in and urine out, hourly",
+    "s": "stgah:8.14"
+   },
+   {
+    "t": "Insulin rate hourly",
+    "s": "stgah:8.16"
+   },
+   {
+    "t": "GCS, pulse, BP, RR hourly",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival — resuscitate",
+    "lead": "Check the referral note for pre-referral saline (volume) and IM insulin 0.1 U/kg — count them in the 4-hour total; do not repeat insulin early.",
+    "feed": [
+     {
+      "t": "Sodium chloride 0.9% IV 15–20 mL/kg in the first hour",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "< 20 years: 10–20 mL/kg in the first hour",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "Shocked: 20 mL/kg boluses",
+      "s": "stgphc:9.16"
+     },
+     {
+      "t": "Renal or cardiac disease: needs CVP — REFER",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "KCl in first litre once K⁺ known (box, side 2)",
+      "s": "stgah:8.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT + blood/urine ketones",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "VBG: pH, HCO₃, K⁺, Na⁺, Cl⁻",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "U&E + creatinine (urea for osmolality)",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "Calculate anion gap, corrected Na, osmolarity",
+      "s": "stgah:8.15"
+     },
+     {
+      "t": "FBC, CRP",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture if febrile · urine dipstick + MCS",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG (K⁺, MI) · CXR if chest signs",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HbA1c · HIV test if unknown · pregnancy test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway / unconscious",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "Protect airway; NGT; IV line",
+      "s": "stgah:8.14"
+     },
+     {
+      "h": "Hypoglycaemia (< 4 mmol/L)",
+      "s": "stgphc:9.13"
+     },
+     {
+      "t": "Dextrose 50% 50 mL IV; recheck 5–10 min",
+      "s": "stgah:8.13"
+     },
+     {
+      "h": "Insulin — start once K⁺ known",
+      "s": "stgphc:9.16"
+     },
+     {
+      "t": "IV: 0.1 U/kg/h (50 U in 200 mL NaCl 0.9%: 4 mL = 1 U)",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "No pump/line: IM 0.5 U/kg load (½ IV, ½ IM), then 0.1 U/kg IM hourly",
+      "s": "stgah:8.16"
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "No bicarbonate",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily",
+      "s": "stgah:8.16"
+     },
+     {
+      "t": "Find and treat the precipitant (infection, MI)",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "Nurse in high care ward",
+      "s": "stgah:8.15"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Resuscitate",
+    "feed": [
+     {
+      "t": "Then 5–15 mL/kg/h, by clinical condition",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "KCl per K⁺ (max 40 mmol/h)",
+      "s": "stgah:8.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "Urine output",
+      "s": "stgah:8.14"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HGT fall < 3 mmol/L in first hour: double the insulin (hourly) until a steady fall of 3–4 mmol/L/h",
+      "s": "stgah:8.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Replace deficit",
+    "feed": [
+     {
+      "t": "Correct Na for glucose (Na + glucose ÷ 3)",
+      "s": "stgah:8.15"
+     },
+     {
+      "t": "Corrected Na > 140: NaCl 0.45% · ≤ 140: NaCl 0.9%",
+      "s": "stgah:8.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "Ketones + pH/HCO₃",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate insulin to hourly HGT",
+      "s": "stgah:8.16"
+     },
+     {
+      "t": "Keep treating ketosis, not glucose alone",
+      "s": "stgah:8.16"
+     }
+    ]
+   },
+   {
+    "label": "3 h",
+    "phase": "Replace deficit",
+    "feed": [
+     {
+      "t": "Continue; adjust volumes to clinical criteria",
+      "s": "stgah:8.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺",
+      "s": "stgah:8.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review precipitant results; start specific treatment",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "Osmolality fall ≤ 3 mOsm/kg/h",
+      "s": "stgah:8.14"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Replace deficit",
+    "feed": [
+     {
+      "t": "First-4-hour total ≤ 50 mL/kg: ____ mL",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "Thereafter ± 5 mL/kg/h",
+      "s": "stgah:8.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "Ketones + pH/HCO₃",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E (Na, urea): osmolality",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HGT < 15 with ketones: add dextrose 5% or 10% in NaCl 0.9%",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "HGT < 14: insulin 1–2 U/h, adjust to hourly HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "Never stop insulin while ketotic",
+      "s": "stgah:8.16"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Replace deficit",
+    "feed": [
+     {
+      "t": "± 5 mL/kg/h",
+      "s": "stgah:8.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺ — 2-hourly once stabilised",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "Ketones + pH/HCO₃",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cerebral oedema watch: headache, confusion, falling GCS",
+      "s": "stgah:8.15"
+     },
+     {
+      "t": "Fluid balance review",
+      "s": "stgah:8.14"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Replace deficit",
+    "feed": [
+     {
+      "t": "± 5 mL/kg/h",
+      "s": "stgah:8.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺",
+      "s": "stgah:8.15",
+      "b": 1
+     },
+     {
+      "t": "Ketones + pH/HCO₃",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue insulin + dextrose + K⁺ until ketosis clears",
+      "s": "stgah:8.16"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "± 5 mL/kg/h; oral fluids if alert and not vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "VBG + U&E",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "Ketones",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Acidosis not improving, or deteriorating: discuss and REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Replace remaining deficit over 48 h (± 5 mL/kg/h)",
+      "s": "stgah:8.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "VBG + U&E + creatinine",
+      "s": "stgah:8.14",
+      "b": 1
+     },
+     {
+      "t": "Ketones",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP if infection",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enoxaparin 40 mg SC daily",
+      "s": "stgah:8.16"
+     },
+     {
+      "t": "Acidosis resolved and eating? → next row",
+      "s": "stgah:8.16"
+     }
+    ]
+   },
+   {
+    "label": "Resolution",
+    "phase": "IV → SC insulin",
+    "feed": [
+     {
+      "t": "Stop IV fluids once eating and drinking",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG + ketones: acidosis and ketosis resolved",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "Resolved = ketones < 0.6 and pH > 7.3",
+      "s": "jbds2023:30",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "SC insulin at previous doses, or new: 0.5–1 U/kg/day biphasic, ⅔ morning, ⅓ night",
+      "s": "stgah:8.16",
+      "b": 1
+     },
+     {
+      "t": "Overlap IV infusion 1–2 h after the first SC dose",
+      "s": "stgah:8.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Next 24 h",
+    "phase": "SC insulin",
+    "feed": [
+     {
+      "t": "Ward diabetic diet; regular meals",
+      "s": "stgphc:9.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT before meals and at bedtime",
+      "s": "stgah:8.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Type 1: basal-bolus 0.6 U/kg/day, 40–50% basal",
+      "s": "stgah:8.11"
+     },
+     {
+      "t": "Adjust doses to HGT record",
+      "s": "stgah:8.11"
+     },
+     {
+      "t": "Insulin education starts (box below)",
+      "s": "stgphc:9.4"
+     }
+    ]
+   },
+   {
+    "label": "Pre-discharge",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Eating and drinking normally",
+      "s": "stgah:8.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HbA1c (if not done) · eGFR · urine ACR",
+      "s": "stgah:8.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Education: technique, storage, sick days, hypoglycaemia",
+      "s": "stgphc:9.4"
+     },
+     {
+      "t": "Glucometer + test strips",
+      "s": "stgah:8.12"
+     },
+     {
+      "t": "Glucagon kit if recurrent hypoglycaemia (type 1)",
+      "s": "stgah:8.12"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids & potassium",
+   "items": [
+    {
+     "h": "Sodium chloride 0.9%",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "15–20 mL/kg in the 1st hour (< 20 y: 10–20 mL/kg)",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Then 5–15 mL/kg/h; ≤ 50 mL/kg in the first 4 h",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Thereafter ± 5 mL/kg/h; osmolality fall ≤ 3 mOsm/kg/h",
+     "s": "stgah:8.14"
+    },
+    {
+     "t": "Corrected Na > 140: NaCl 0.45%",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "HGT < 15 + ketones: dextrose 5% or 10% in NaCl 0.9%",
+     "s": "stgah:8.15"
+    },
+    {
+     "h": "Potassium chloride, per 1 L",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "1 ampoule = 20 mmol = 10 mL",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "K⁺ < 3.5: 40 mmol · 3.5–5.5: 20 mmol · > 5.5: none",
+     "s": "stgah:8.15",
+     "b": 1
+    },
+    {
+     "t": "Max 40 mmol/h",
+     "s": "stgah:8.15",
+     "b": 1
+    },
+    {
+     "t": "No K⁺ result: 20 mmol/L once urine output established",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "Bicarbonate: no proven role, may harm",
+     "s": "stgah:8.15"
+    }
+   ]
+  },
+  {
+   "title": "Insulin & heparin",
+   "items": [
+    {
+     "h": "IV infusion (preferred)",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "50 U short-acting in 200 mL NaCl 0.9% (4 mL = 1 U)",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "0.1 U/kg/h (usually 5–7 U/h = 20–28 mL/h)",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "Fall < 3 mmol/L/h: double hourly · HGT < 14: 1–2 U/h",
+     "s": "stgah:8.16"
+    },
+    {
+     "h": "Hourly IM (no safe IV infusion)",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "100 U in 10 mL NaCl 0.9% (10 U/mL)",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "Load 0.5 U/kg: ½ IV, ½ IM; then 5–10 U IM hourly",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "Not with an insulin syringe and needle",
+     "s": "stgah:8.16"
+    },
+    {
+     "h": "SC switch",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "Previous doses, or 0.5–1 U/kg/day biphasic ⅔ am, ⅓ pm",
+     "s": "stgah:8.16"
+    },
+    {
+     "h": "In ward when out of DKA (author)",
+     "d": 1
+    },
+    {
+     "t": "Actrapid SC by HGT (mmol/L): < 4: treat hypoglycaemia (dextrose 50% 50 mL IV, then 10%), call doctor",
+     "s": "stgah:8.13"
+    },
+    {
+     "t": "4–10: nothing · 10.1–12: 2 U · 12.1–14: 4 U · 14.1–18: 8 U",
+     "d": 1
+    },
+    {
+     "t": "18.1–20: 10 U · > 20: 10 U and call doctor",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "Thromboprophylaxis — all patients",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "Enoxaparin 40 mg SC daily, or heparin 5 000 U SC 12-hourly",
+     "s": "stgah:8.17"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Cerebral oedema",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "Headache, confusion, falling GCS: call doctor, slow fluids, check HGT and Na",
+     "s": "stgah:8.15"
+    },
+    {
+     "h": "Fluid overload",
+     "d": 1
+    },
+    {
+     "t": "RR or pulse rising from baseline, new crepitations, raised JVP: slow fluids",
+     "d": 1
+    },
+    {
+     "h": "Also escalate"
+    },
+    {
+     "t": "HGT not falling after doubling insulin",
+     "s": "stgah:8.16"
+    },
+    {
+     "t": "K⁺ < 3.5 despite replacement · no urine output",
+     "s": "stgah:8.15"
+    },
+    {
+     "t": "HGT < 4 mmol/L on treatment",
+     "s": "stgphc:9.13"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · VBG + K⁺ · U&E · ECG†",
+     "s": "stgah:8.14",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Needs ventilation, inotropes or CVP; pH not improving at 12 h",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Acidosis and ketosis resolved",
+    "s": "stgah:8.16"
+   },
+   {
+    "t": "Eating and drinking normally",
+    "s": "stgah:8.16"
+   },
+   {
+    "t": "On SC insulin ≥ 24 h with stable HGT",
+    "d": 1
+   },
+   {
+    "t": "Precipitant identified and treated",
+    "s": "stgah:8.14"
+   },
+   {
+    "t": "Education: technique, storage, sick days, hypoglycaemia",
+    "s": "stgphc:9.4"
+   },
+   {
+    "t": "Glucometer and test strips given",
+    "s": "stgah:8.12"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Type 1: diagnosed and monitored at hospital level; stable patients down-referred for chronic medicines",
+    "s": "stgphc:9.3"
+   },
+   {
+    "t": "Type 2: PHC clinic, review within 2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Refer back same day: acidotic breathing, dehydration/hypotension, vomiting or abdominal pain, ketonuria > 1+, glucose > 25 mmol/L",
+    "s": "stgphc:9.12",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour DKA nursing record — HGT, ketones, K⁺, fluids, insulin, GCS",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "HGT and insulin",
+    "items": [
+     {
+      "t": "HGT hourly",
+      "s": "stgah:8.16"
+     },
+     {
+      "t": "Record insulin rate (U/h and mL/h) every hour",
+      "s": "stgah:8.16"
+     },
+     {
+      "t": "Never stop insulin without the doctor",
+      "s": "stgah:8.16"
+     }
+    ]
+   },
+   {
+    "h": "K⁺, ketones, VBG",
+    "items": [
+     {
+      "t": "K⁺ (VBG) hourly initially, then 2-hourly when stabilised",
+      "s": "stgah:8.15"
+     },
+     {
+      "t": "Ketones and pH/HCO₃ 2-hourly until resolved",
+      "d": 1
+     },
+     {
+      "t": "KCl added per litre: write in notes",
+      "s": "stgah:8.15"
+     }
+    ]
+   },
+   {
+    "h": "Fluids and GCS",
+    "items": [
+     {
+      "t": "IV fluid in and urine out, hourly",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "4-hour total ≤ 50 mL/kg — total at 4 h",
+      "s": "stgah:8.14"
+     },
+     {
+      "t": "GCS, pulse, BP, RR hourly",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for HGT < 4 mmol/L, HGT < 14 (reduce insulin), HGT < 15 with ketones (add dextrose), HGT fall < 3 mmol/L in the first hour, K⁺ < 3.5 or > 5.5, no urine output, or headache, confusion or a falling GCS",
+    "s": "stgah:8.15",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Oral in (mL)",
+   "Urine out (mL)",
+   "Balance (mL)",
+   "Insulin total (U)",
+   "KCl total (mmol)"
+  ]
+ }
+}
