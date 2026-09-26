@@ -1,0 +1,1563 @@
+{
+ "id": "prb-adult",
+ "short": "PR bleed (adult)",
+ "title": "Rectal bleeding — fresh blood per rectum (adult)",
+ "population": "Adult (excludes melaena, vaginal / obstetric bleeding, trauma)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-26",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Black / tarry stool (melaena) or haematemesis → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Vaginal or obstetric bleeding → gynae / maternity",
+     "b": 1
+    },
+    {
+     "t": "Anorectal trauma / sexual assault",
+     "b": 1
+    },
+    {
+     "t": "Watery diarrhoea without blood → AGE pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms PR bleeding",
+   "items": [
+    {
+     "t": "Fresh red blood per rectum: on, mixed with or without stool",
+     "s": "phcstg2026:2.2",
+     "b": 1
+    },
+    {
+     "t": "Diarrhoea with blood and/or mucus (dysentery)",
+     "s": "adultstg2026:1.19",
+     "b": 1
+    },
+    {
+     "t": "Maroon / dark red stool (check for UGIB if shocked)",
+     "d": 1
+    },
+    {
+     "t": "Wt ____ kg · Stools/24 h ____ · Days ____ · Amount: streaks / mixed / large",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — any one = SEVERE",
+   "items": [
+    {
+     "t": "SHOCK: hypotension, tachycardia, weak pulses, clammy, altered mental state, poor urine output",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "Massive / ongoing haemorrhage",
+     "s": "adultstg2026:1.1",
+     "b": 1
+    },
+    {
+     "t": "Peritonism, distension, severe pain (perforation, toxic megacolon)",
+     "s": "phcstg2026:2.19",
+     "b": 1
+    },
+    {
+     "t": "Dysentery with sepsis, severe dehydration or significant co-morbidity",
+     "s": "adultstg2026:1.20",
+     "b": 1
+    },
+    {
+     "t": "Hb < 7 g/dL",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "HIV: ART, last VL / CD4",
+     "s": "adultstg2026:10.27"
+    },
+    {
+     "t": "Warfarin / anticoagulant",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "t": "NSAID / aspirin",
+     "d": 1
+    },
+    {
+     "t": "Previous haemorrhoids / fissure",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Known IBD / diverticulosis",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Recent antibiotics (C. difficile)",
+     "s": "adultstg2026:1.21"
+    },
+    {
+     "t": "Cardiac disease",
+     "d": 1
+    },
+    {
+     "t": "Iron-deficiency anaemia",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "The blood"
+    },
+    {
+     "t": "Streaks on paper / hard stool",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Mixed with diarrhoea / mucus",
+     "s": "adultstg2026:1.19"
+    },
+    {
+     "t": "Large painless bleed",
+     "s": "adultstg2026:1.1"
+    },
+    {
+     "t": "Pain on defecation",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "h": "Bowel"
+    },
+    {
+     "t": "Constipation / straining",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Change in bowel habit",
+     "d": 1
+    },
+    {
+     "t": "Tenesmus, fever",
+     "s": "phcstg2026:2.18"
+    },
+    {
+     "t": "Diarrhoea > 2 weeks",
+     "s": "adultstg2026:1.20"
+    },
+    {
+     "h": "Alarm (cancer / IBD)"
+    },
+    {
+     "t": "Weight loss",
+     "s": "phcstg2026:2.23"
+    },
+    {
+     "t": "Age > 50 years",
+     "s": "phcstg2026:2.23"
+    },
+    {
+     "t": "Abdominal mass",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Family history of bowel cancer",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "HIV status",
+     "s": "phcstg2026:2.19"
+    },
+    {
+     "t": "Travel / others ill (outbreak)",
+     "s": "adultstg2026:1.19"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / postural drop",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air (SpO₂ < 94%)",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pallor",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Clammy / cold peripheries",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "s": "phcstg2026:2.18",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "Circulation and hydration",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Clammy / cold peripheries"
+    },
+    {
+     "t": "Weak pulses"
+    },
+    {
+     "t": "Pallor"
+    },
+    {
+     "t": "Dehydrated"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Tenderness / peritonism",
+     "s": "phcstg2026:2.19"
+    },
+    {
+     "t": "Distension",
+     "s": "phcstg2026:2.17"
+    },
+    {
+     "t": "Mass",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Hepatomegaly",
+     "d": 1
+    },
+    {
+     "h": "Perianal inspection + PR",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Haemorrhoids (prolapsed / thrombosed)",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Fissure / sentinel pile",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Perianal abscess / fistula",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Rectal mass",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Wasting, lymphadenopathy (HIV)",
+     "s": "adultstg2026:10.27"
+    },
+    {
+     "t": "Bruising / bleeding elsewhere",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Hb — ward Hb or VBG",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "Not actively bleeding: transfuse if Hb < 7 g/dL, one unit at a time",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "Actively bleeding: decide by rate of loss and physiology",
+     "s": "adultstg2026:23.10"
+    },
+    {
+     "t": "Low Hb with small streaks only: look for another cause (cancer)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Stool — bedside and lab",
+   "items": [
+    {
+     "t": "Blood / mucus seen: ____",
+     "k": "value"
+    },
+    {
+     "t": "Dysentery: stool culture",
+     "s": "adultstg2026:1.19",
+     "b": 1
+    },
+    {
+     "t": "Warm stool microscopy for amoebae",
+     "s": "adultstg2026:1.22",
+     "b": 1
+    },
+    {
+     "t": "Recent antibiotics, > 3 unformed stools/24 h: C. difficile test",
+     "s": "adultstg2026:1.21",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Brisk UGIB (maroon stool + shock)",
+     "d": 1
+    },
+    {
+     "t": "Perforation / peritonitis",
+     "s": "phcstg2026:2.19"
+    },
+    {
+     "t": "Toxic megacolon",
+     "s": "adultstg2026:1.20"
+    },
+    {
+     "t": "Massive diverticular bleed",
+     "s": "adultstg2026:1.1"
+    },
+    {
+     "t": "Colorectal cancer",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Anticoagulant / coagulopathy",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "t": "CMV colitis (CD4 < 100)",
+     "s": "adultstg2026:10.27"
+    },
+    {
+     "t": "Typhoid (fever, haemorrhage)",
+     "s": "adultstg2026:9.20"
+    },
+    {
+     "t": "HUS (reduced urine)",
+     "s": "phcstg2026:2.19"
+    },
+    {
+     "t": "AKI",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Sepsis",
+     "s": "adultstg2026:1.20"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "phcstg2026:2.18"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Shock · massive bleed · peritonism · toxic megacolon · suspected IBD, cancer or CMV → stabilise, REFER (urgent if unstable)",
+   "s": "adultstg2026:1.1"
+  },
+  {
+   "t": "11. ADMIT: dysentery with sepsis, dehydration or co-morbidity; ongoing bleed · haemorrhoids, fissure, mild dysentery → treat, home",
+   "s": "adultstg2026:1.20"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Massive lower GI bleed (diverticular) · brisk UGIB",
+   "branch": "If heavy bleed",
+   "features": [
+    {
+     "t": "Large painless bleed, older patient, diverticulosis",
+     "s": "adultstg2026:1.1"
+    },
+    {
+     "t": "Shock with maroon stool: may be UGIB",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for colonoscopy / endoscopy",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Resuscitate + blood (chart 0 h)",
+     "s": "adultstg2026:20.20"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Massive haemorrhage: REFER",
+     "s": "adultstg2026:1.1",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bacillary dysentery",
+   "branch": "If dysentery",
+   "features": [
+    {
+     "t": "Sudden diarrhoea with blood / mucus, fever, tenesmus",
+     "s": "phcstg2026:2.18"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Stool culture",
+     "s": "adultstg2026:1.19",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Rehydrate: ORS; severe: NaCl 0.9% / Ringer's IV",
+     "s": "phcstg2026:2.18"
+    },
+    {
+     "t": "Ciprofloxacin 500 mg PO 12-hourly × 3 d (7 d if immunocompromised)",
+     "s": "adultstg2026:1.20",
+     "b": 1
+    },
+    {
+     "t": "Sepsis / severe: ceftriaxone 1 g IV daily",
+     "s": "adultstg2026:1.20"
+    },
+    {
+     "t": "No loperamide",
+     "s": "adultstg2026:1.20",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Blood + mucus > 2 weeks",
+     "s": "adultstg2026:1.20"
+    }
+   ]
+  },
+  {
+   "dx": "Amoebic dysentery",
+   "branch": "If dysentery",
+   "features": [
+    {
+     "t": "No response to bacillary treatment in 3 days",
+     "s": "phcstg2026:2.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Warm stool microscopy",
+     "s": "adultstg2026:1.22",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Metronidazole 800 mg PO 8-hourly × 10 d",
+     "s": "adultstg2026:1.22",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Perforation → surgery",
+     "s": "adultstg2026:1.22"
+    }
+   ]
+  },
+  {
+   "dx": "Haemorrhoids",
+   "branch": "If anorectal",
+   "features": [
+    {
+     "t": "Bright blood with defecation, constipation, prolapse",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Perianal inspection / PR",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "manage": [
+    {
+     "t": "High fibre, avoid straining",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Bismuth subgallate ointment 2–4 × daily (or suppository 3 × daily) + lidocaine 2% before and after stool",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Irreducible, thrombosed, persistent bleeding, poor response",
+     "s": "phcstg2026:2.7"
+    }
+   ]
+  },
+  {
+   "dx": "Anal fissure",
+   "branch": "If anorectal",
+   "features": [
+    {
+     "t": "Painful defecation, blood streaks, sentinel pile",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Perianal inspection",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose 10–20 mL PO daily (12-hourly if poor response) + bismuth ointment + lidocaine 2%",
+     "s": "phcstg2026:2.6",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Severe pain, recurrent, persistent bleeding",
+     "s": "phcstg2026:2.6"
+    }
+   ]
+  },
+  {
+   "dx": "Inflammatory bowel disease",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Pain, rectal bleeding, diarrhoea, weight loss",
+     "s": "adultstg2026:1.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Stool culture to exclude infection; FBC",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Supportive; transfuse / iron as needed",
+     "s": "adultstg2026:2.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — discuss with specialist",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Colorectal cancer",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Older patient, weight loss, change in bowel habit, anaemia, mass",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for colonoscopy",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Iron: ferrous sulfate 170 mg PO 12-hourly",
+     "s": "adultstg2026:2.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "phcstg2026:2.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "CMV colitis (advanced HIV)",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "CD4 < 100; GIT ulceration",
+     "s": "adultstg2026:10.27"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Biopsy needed",
+     "s": "adultstg2026:10.27",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Specialist: valganciclovir; start ART",
+     "s": "adultstg2026:10.28"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL",
+     "s": "adultstg2026:10.28",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Anticoagulant / coagulopathy",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "On warfarin or rat-poison exposure; bleeding elsewhere",
+     "s": "adultstg2026:19.41"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "INR now and at 48 h",
+     "s": "adultstg2026:19.42",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Active bleeding: FDP 15 mL/kg + vitamin K1 10 mg slow IV (5 mg on long-term warfarin)",
+     "s": "adultstg2026:19.42"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Ongoing bleed despite reversal",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Typhoid (intestinal haemorrhage)",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Fever, abdominal pain, headache; frank bleeding later",
+     "s": "phcstg2026:2.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood + stool culture",
+     "s": "adultstg2026:9.20",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly (10 d total)",
+     "s": "adultstg2026:9.21"
+    },
+    {
+     "t": "Transfuse for severe haemorrhage",
+     "s": "adultstg2026:9.20"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Surgical consult: haemorrhage, perforation",
+     "s": "adultstg2026:9.21",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "IBS, coeliac disease",
+   "features": [
+    {
+     "t": "Do NOT cause PR bleeding — blood or mucus is a referral sign against IBS",
+     "s": "phcstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Coeliac: malabsorption, not bleeding",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "—"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Look for another cause",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "IBS with blood, weight loss or > 50 y: REFER",
+     "s": "phcstg2026:2.23"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Branch rows start once the working diagnosis is ticked (page 2 of the protocol book)",
+  "columns": {
+   "feed": "Fluids, blood & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Shock / active bleeding: pulse, BP, LOC every 15 min until stable, then hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Pulse, BP, temperature 4-hourly once stable",
+    "d": 1
+   },
+   {
+    "t": "Every stool: blood, mucus, volume",
+    "d": 1
+   },
+   {
+    "t": "Urine output: < 0.5 mL/kg/h for 6 h = AKI",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Hb on arrival and after each unit",
+    "s": "adultstg2026:23.10",
+    "b": 1
+   },
+   {
+    "t": "Intake and output (dysentery)",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral note for fluids/blood given. Exclude UGIB in any shocked patient with dark or maroon blood.",
+    "feed": [
+     {
+      "h": "Shock (non-trauma)"
+     },
+     {
+      "t": "NaCl 0.9% IV 1–2 L; monitor BP, pulse, response",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "Major bleeding: keep crystalloid < 1.5 L; replace with blood",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "h": "Blood (ANDH: 2 units emergency O-neg)"
+     },
+     {
+      "t": "After 2 units: FDP 1 unit per unit; urgent transfer",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     },
+     {
+      "h": "Dysentery"
+     },
+     {
+      "t": "ORS / SSS; severe dehydration: NaCl 0.9% or Ringer's IV",
+      "s": "phcstg2026:2.18"
+     },
+     {
+      "h": "Feeds"
+     },
+     {
+      "t": "Eat and drink unless surgical abdomen",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb (ward Hb / VBG)",
+      "s": "adultstg2026:23.9",
+      "b": 1
+     },
+     {
+      "t": "FBC, INR",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     },
+     {
+      "t": "Blood-bank sample if bleeding heavily",
+      "s": "adultstg2026:20.21",
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Stool culture (dysentery)",
+      "s": "adultstg2026:1.19",
+      "b": 1
+     },
+     {
+      "t": "Warm stool microscopy",
+      "s": "adultstg2026:1.22",
+      "b": 1
+     },
+     {
+      "t": "C. difficile test if recent antibiotics",
+      "s": "adultstg2026:1.21",
+      "b": 1
+     },
+     {
+      "t": "HIV test; CD4 if HIV+",
+      "s": "phcstg2026:2.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway and shock"
+     },
+     {
+      "t": "Oxygen if SpO₂ < 94%",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "1–2 large-bore IV lines",
+      "s": "adultstg2026:20.20"
+     },
+     {
+      "t": "Still shocked after fluids + 2 units: REFER urgently",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     },
+     {
+      "h": "On warfarin, bleeding"
+     },
+     {
+      "t": "FDP 15 mL/kg + vitamin K1 10 mg slow IV (5 mg if long-term warfarin)",
+      "s": "adultstg2026:19.42",
+      "b": 1
+     },
+     {
+      "h": "Peritonism / distension"
+     },
+     {
+      "t": "Nil by mouth; REFER (surgery)",
+      "s": "phcstg2026:2.19",
+      "b": 1
+     },
+     {
+      "h": "Dysentery"
+     },
+     {
+      "t": "Ciprofloxacin 500 mg PO 12-hourly × 3 d",
+      "s": "adultstg2026:1.20",
+      "b": 1
+     },
+     {
+      "t": "Sepsis / severe: ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:1.20"
+     },
+     {
+      "h": "Haemorrhoids / fissure"
+     },
+     {
+      "t": "Bismuth ointment + lidocaine 2%; lactulose for fissure",
+      "s": "phcstg2026:2.6"
+     },
+     {
+      "h": "Do not give"
+     },
+     {
+      "t": "Loperamide in bloody diarrhoea (toxic megacolon)",
+      "s": "adultstg2026:1.20",
+      "b": 1
+     },
+     {
+      "t": "NSAIDs while bleeding",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Shock treated? Blood if still unstable",
+      "s": "adultstg2026:20.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Stool sample sent before antibiotics",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per plan"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb after each unit",
+      "s": "adultstg2026:23.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 0.5 mL/kg/h?",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch row below"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if bleeding continues",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transfuse only if Hb < 7 or active bleeding",
+      "s": "adultstg2026:23.9"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Still bleeding heavily: REFER",
+      "s": "adultstg2026:1.1",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if dehydrated / AKI risk",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review culture / microscopy",
+      "s": "adultstg2026:1.19"
+     }
+    ]
+   },
+   {
+    "label": "If heavy bleed",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Blood to keep circulation stable; Hb ≥ 7",
+      "s": "adultstg2026:23.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, INR",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for colonoscopy / endoscopy",
+      "s": "adultstg2026:1.1",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If dysentery",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "ORS; IV if severe",
+      "s": "phcstg2026:2.18"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture result",
+      "s": "adultstg2026:1.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ciprofloxacin 500 mg 12-hourly × 3 d (7 d if immunocompromised)",
+      "s": "adultstg2026:1.20"
+     },
+     {
+      "t": "Amoebae seen: metronidazole 800 mg 8-hourly × 10 d",
+      "s": "adultstg2026:1.22"
+     }
+    ]
+   },
+   {
+    "label": "If anorectal",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "High-fibre diet, fluids",
+      "s": "phcstg2026:2.6"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Haemorrhoids: bismuth ointment / suppository + lidocaine 2%",
+      "s": "phcstg2026:2.7"
+     },
+     {
+      "t": "Fissure: lactulose 10–20 mL daily",
+      "s": "phcstg2026:2.6"
+     },
+     {
+      "t": "Home when well",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If other",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, CD4, INR as indicated",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "IBD, cancer, CMV: REFER",
+      "s": "adultstg2026:1.4",
+      "b": 1
+     },
+     {
+      "t": "Typhoid: ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:9.21"
+     },
+     {
+      "t": "Warfarin: reverse (0 h box)",
+      "s": "adultstg2026:19.42"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Treat",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if bleeding continued",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E if AKI",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dysentery: antibiotic day 2",
+      "s": "adultstg2026:1.20"
+     },
+     {
+      "t": "Blood still present? Reconsider diagnosis",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Treat",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Ciprofloxacin course ends (3 d)",
+      "s": "adultstg2026:1.20"
+     },
+     {
+      "t": "No response in 3 days: treat as amoebic or refer",
+      "s": "phcstg2026:2.17"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Treat",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Check discharge criteria"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb before discharge if it was low",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Iron if anaemic",
+      "s": "adultstg2026:2.1"
+     },
+     {
+      "t": "Referral booked (colonoscopy / specialist) if needed",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids and blood",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% 1–2 L IV; major bleeding keep crystalloid < 1.5 L",
+     "s": "adultstg2026:20.20"
+    },
+    {
+     "t": "Not actively bleeding: transfuse if Hb < 7 g/dL, one unit then reassess",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "No blood bank: FDP 1 unit per unit emergency blood; urgent transfer",
+     "s": "adultstg2026:20.22"
+    },
+    {
+     "t": "Dysentery: ORS / SSS; severe: NaCl 0.9% or Ringer's IV",
+     "s": "phcstg2026:2.18"
+    },
+    {
+     "t": "Anaemia: ferrous sulfate 170 mg PO 12-hourly, 3 months after Hb normal",
+     "s": "adultstg2026:2.1"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Dysentery"
+    },
+    {
+     "t": "Ciprofloxacin 500 mg PO 12-hourly × 3 d (7 d if immunocompromised)",
+     "s": "adultstg2026:1.20"
+    },
+    {
+     "t": "Sepsis: ceftriaxone 1 g IV daily, then ciprofloxacin",
+     "s": "adultstg2026:1.20"
+    },
+    {
+     "t": "Amoebic: metronidazole 800 mg PO 8-hourly × 10 d",
+     "s": "adultstg2026:1.22"
+    },
+    {
+     "h": "Haemorrhoids / fissure"
+    },
+    {
+     "t": "Bismuth subgallate ointment 2–4 × daily; lidocaine 2% before and after stool",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Fissure: lactulose 10–20 mL PO daily",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "h": "Typhoid"
+    },
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly, then ciprofloxacin; 10 d total",
+     "s": "adultstg2026:9.21"
+    },
+    {
+     "h": "Warfarin reversal"
+    },
+    {
+     "t": "FDP 15 mL/kg + vitamin K1 10 mg slow IV",
+     "s": "adultstg2026:19.42"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Pulse up or BP down from baseline; large fresh bleed",
+     "d": 1
+    },
+    {
+     "t": "Distension, peritonism, severe pain",
+     "s": "phcstg2026:2.19"
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "Hb · INR · U&E",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Massive haemorrhage",
+     "s": "adultstg2026:1.1",
+     "b": 1
+    },
+    {
+     "t": "Peritonitis, perforation, toxic megacolon",
+     "s": "phcstg2026:2.19",
+     "b": 1
+    },
+    {
+     "t": "IBD, cancer, CMV colitis",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Haemorrhoids: irreducible, thrombosed, persistent bleeding",
+     "s": "phcstg2026:2.7"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No heavy bleeding for 24 h",
+    "d": 1
+   },
+   {
+    "t": "Stable pulse and BP",
+    "d": 1
+   },
+   {
+    "t": "Hb stable",
+    "d": 1
+   },
+   {
+    "t": "Eating, drinking, passing urine",
+    "d": 1
+   },
+   {
+    "t": "Surgical cause excluded",
+    "s": "phcstg2026:2.19"
+   },
+   {
+    "t": "Antibiotic course can finish at home",
+    "d": 1
+   },
+   {
+    "t": "Referral booked if cancer / IBD suspected",
+    "s": "phcstg2026:2.23"
+   },
+   {
+    "t": "HIV test offered",
+    "s": "phcstg2026:2.19"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: more blood, dizziness, fever, severe pain",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Hb check at 2 weeks if anaemic",
+    "d": 1
+   },
+   {
+    "t": "Haemorrhoids / fissure: PHC review; refer if persistent bleeding",
+    "s": "phcstg2026:2.7"
+   },
+   {
+    "t": "Stool culture repeated weekly if typhoid (carrier)",
+    "s": "adultstg2026:9.21"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — circulation, stools, bleeding, urine",
+  "period": "One sheet per 24 h; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Circulation",
+    "items": [
+     {
+      "t": "Shock / active bleeding: every 15 min until stable, then hourly",
+      "d": 1
+     },
+     {
+      "t": "Pulse, BP, temperature 4-hourly once stable",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Stools",
+    "items": [
+     {
+      "t": "Every stool: blood, mucus, volume",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "In / out",
+    "items": [
+     {
+      "t": "Oral, IV and blood in (mL)",
+      "d": 1
+     },
+     {
+      "t": "Urine: < 0.5 mL/kg/h for 6 h = AKI",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   },
+   {
+    "h": "Hb",
+    "items": [
+     {
+      "t": "Hb on arrival and after each unit",
+      "s": "adultstg2026:23.10"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pulse rising or BP falling from baseline",
+    "b": 1
+   },
+   {
+    "t": "large fresh bleed",
+    "d": 1
+   },
+   {
+    "t": "distension, peritonism or severe pain",
+    "s": "phcstg2026:2.19"
+   },
+   {
+    "t": "urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9"
+   },
+   {
+    "t": "confusion or ↓ LOC"
+   }
+  ],
+  "totals": [
+   "Bloody stools (n)",
+   "In (mL)",
+   "Urine (mL/kg/h)",
+   "Hb trend"
+  ]
+ }
+}

@@ -15,6 +15,10 @@
     {"id": "adultstg", "short": "Adult STG", "title": "Adult Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
     {"id": "who2005", "short": "WHO 2005", "title": "WHO/USAID Diarrhoea Treatment Guidelines", "edition": "2005", "offset": 0},
     {"id": "impcg2024", "short": "Maternal 2024", "title": "National Integrated Maternal and Perinatal Care Guidelines for South Africa", "edition": "5th ed., NDoH 2024", "offset": 0},
-    {"id": "phcstg2024", "short": "PHC STG 2024", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "2024 ed. (updated 3 Sept 2026)", "offset": 0}
+    {"id": "phcstg2024", "short": "PHC STG 2024", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "2024 ed. (updated 3 Sept 2026)", "offset": 0},
+    {"id": "paedstg2026", "short": "Paeds STG 2026", "title": "Paediatric Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "5th ed. 2024 (updated Mar 2026)", "offset": 0},
+    {"id": "adultstg2026", "short": "Adult STG 2026", "title": "Adult Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "6th ed. 2024 (updated Mar 2026)", "offset": 0},
+    {"id": "phcstg2026", "short": "PHC STG 2026", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "8th ed. 2024 (updated Sept 2026)", "offset": 0},
+    {"id": "esge2021", "short": "ESGE 2021", "title": "ESGE Guideline: Endoscopic management of acute non-variceal upper gastrointestinal haemorrhage (NVUGIH), Update 2021", "edition": "2021 (citations are recommendation numbers, e.g. R13, not pages)", "offset": 0}
   ]
 }

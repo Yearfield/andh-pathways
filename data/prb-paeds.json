@@ -1,0 +1,1583 @@
+{
+ "id": "prb-paeds",
+ "short": "PR bleed (child)",
+ "title": "Rectal bleeding — fresh blood per rectum (child)",
+ "population": "Paediatric (1 month and older; excludes neonates, SAM, melaena)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-26",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days",
+     "b": 1
+    },
+    {
+     "t": "Black / tarry stool (melaena) → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Severe acute malnutrition → SAM pathway",
+     "b": 1
+    },
+    {
+     "t": "Watery diarrhoea without blood → AGE pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms PR bleeding",
+   "items": [
+    {
+     "t": "Fresh red blood per rectum: on, mixed with or without stool",
+     "s": "phcstg2026:2.2",
+     "b": 1
+    },
+    {
+     "t": "Blood and mucus in stools (dysentery)",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Red-currant-jelly stool",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Red food / drinks can mimic blood — check",
+     "d": 1,
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Stools/24 h ____ · Days ____ · Amount: streaks / mixed / large",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — any one = SEVERE / SURGICAL",
+   "items": [
+    {
+     "t": "SHOCK: cold peripheries · weak pulse · CRT ≥ 3 s · ↓ LOC",
+     "s": "paedstg2026:1.15",
+     "b": 1
+    },
+    {
+     "t": "Suspected intussusception: pain, bile-stained vomit, red-currant jelly, mass",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Dysentery with dehydration, convulsions, shock or reduced urine",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Large or ongoing bleed",
+     "d": 1
+    },
+    {
+     "t": "Hb < 7 g/dL",
+     "s": "paedstg2026:2.36"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet and referral letter",
+   "items": [
+    {
+     "t": "Immunisations up to date"
+    },
+    {
+     "t": "HIV exposed / status"
+    },
+    {
+     "t": "Weight-for-age curve: flattening or loss",
+     "s": "paedstg2026:2.22"
+    },
+    {
+     "t": "Long-standing constipation",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Previous PR bleeds"
+    },
+    {
+     "t": "Bleeding disorder / easy bruising",
+     "s": "paedstg2026:3.20"
+    },
+    {
+     "t": "Pre-referral ceftriaxone given (dose)",
+     "s": "phcstg2026:2.19",
+     "b": 1
+    },
+    {
+     "t": "Pre-referral fluids given (mL)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "The blood"
+    },
+    {
+     "t": "Streaks on hard, painful stool",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Mixed with diarrhoea and mucus",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Red-currant jelly",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Painless, large, bright or maroon",
+     "d": 1
+    },
+    {
+     "h": "Bowel and abdomen"
+    },
+    {
+     "t": "Hard stools / straining",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Colicky pain, drawing up legs",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Bile-stained vomiting",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Fever, cramps, urgency",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "h": "Other systems"
+    },
+    {
+     "t": "Rash on legs / buttocks, joint pain",
+     "s": "paedstg2026:12.1"
+    },
+    {
+     "t": "Pale, passing less urine",
+     "s": "paedstg2026:3.23"
+    },
+    {
+     "t": "Convulsions",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Weight loss, chronic diarrhoea",
+     "s": "paedstg2026:2.22"
+    },
+    {
+     "h": "Contacts and screen"
+    },
+    {
+     "t": "Others with bloody diarrhoea",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "HIV status",
+     "s": "paedstg2026:3.23"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "s": "paedstg2026:12.2",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill ≥ 3 s",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pallor",
+     "k": "yn"
+    },
+    {
+     "h": "Dehydration (AGE pathway plans)",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Sunken eyes / slow skin pinch",
+     "s": "paedstg2026:2.9",
+     "k": "yn"
+    },
+    {
+     "h": "SAM screen → SAM pathway if Y"
+    },
+    {
+     "t": "MUAC < 11.5 cm or WFH z < −3",
+     "s": "paedstg2026:2.38",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "Circulation and hydration",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Cold peripheries / weak pulse"
+    },
+    {
+     "t": "Pallor"
+    },
+    {
+     "t": "Sunken eyes"
+    },
+    {
+     "t": "Slow skin pinch"
+    },
+    {
+     "h": "Abdomen",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Sausage-shaped mass"
+    },
+    {
+     "t": "Distension"
+    },
+    {
+     "t": "Tenderness / peritonism"
+    },
+    {
+     "t": "Hepatosplenomegaly",
+     "s": "paedstg2026:3.20"
+    },
+    {
+     "h": "Perianal inspection",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Fissure / skin tag"
+    },
+    {
+     "t": "Haemorrhoid",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Rectal prolapse",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Intussusceptum at anus",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "h": "Skin",
+     "s": "paedstg2026:12.1"
+    },
+    {
+     "t": "Palpable purpura legs / buttocks"
+    },
+    {
+     "t": "Petechiae / bruising",
+     "s": "paedstg2026:3.20"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Hb — ward Hb or VBG",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "Bleeding with shock: packed cells / whole blood 10–20 mL/kg",
+     "s": "paedstg2026:1.17"
+    },
+    {
+     "t": "Stable, Hb < 7 g/dL: packed cells 10 mL/kg over 3 h",
+     "s": "paedstg2026:2.36",
+     "d": 1
+    },
+    {
+     "t": "Low Hb + low platelets after dysentery: think HUS",
+     "s": "paedstg2026:3.22"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Urine dipstick",
+   "items": [
+    {
+     "t": "Result: blood ____ protein ____ leucocytes ____",
+     "k": "value"
+    },
+    {
+     "t": "Blood / protein: HUS or IgA vasculitis kidney involvement",
+     "s": "paedstg2026:12.1"
+    },
+    {
+     "t": "Persistent blood in urine with dysentery: REFER",
+     "s": "phcstg2026:2.19",
+     "b": 1
+    },
+    {
+     "t": "Leucocytes / nitrites: UTI",
+     "s": "paedstg2026:2.10"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or breastfeed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Intussusception",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "HUS (pale, oliguric)",
+     "s": "paedstg2026:3.23"
+    },
+    {
+     "t": "Toxic megacolon",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Perforation / peritonitis",
+     "s": "phcstg2026:2.19"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "IgA vasculitis (HSP)",
+     "s": "paedstg2026:12.1"
+    },
+    {
+     "t": "Low platelets / coagulopathy",
+     "s": "paedstg2026:3.20"
+    },
+    {
+     "t": "Typhoid (high fever, very ill)",
+     "s": "phcstg2026:2.23"
+    },
+    {
+     "t": "Rectal prolapse",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "SAM",
+     "s": "paedstg2026:2.38"
+    },
+    {
+     "t": "HIV"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Shock · intussusception · HUS · toxic megacolon · heavy bleed → stabilise, REFER urgently · polyp, IBD, haemorrhoid → REFER (planned)",
+   "s": "paedstg2026:2.24"
+  },
+  {
+   "t": "11. ADMIT: dysentery < 12 months, dehydrated or toxic · fissure or mild dysentery → treat, home",
+   "s": "phcstg2026:2.19"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Intussusception",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Colicky pain, bile-stained vomit, red-currant jelly, mass, intussusceptum at anus",
+     "s": "paedstg2026:2.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound abdomen (on site)",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth, IV access, NG tube",
+     "d": 1
+    },
+    {
+     "t": "Shock: 20 mL/kg NaCl 0.9% / Ringer's",
+     "s": "paedstg2026:1.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — urgently (no theatre)",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bacillary dysentery (Shigella)",
+   "branch": "If dysentery",
+   "features": [
+    {
+     "t": "Sudden onset; cramps, fever, urgency, blood and mucus; ± convulsions",
+     "s": "paedstg2026:2.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Stool culture; microscopy (polymorphs, blood)",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Rehydrate as AGE pathway",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Ciprofloxacin 15 mg/kg PO 12-hourly × 3 d",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Cannot take oral: ceftriaxone 100 mg/kg IV daily × 5 d",
+     "s": "paedstg2026:2.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Persistent shock, HUS, toxic megacolon",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Amoebic dysentery",
+   "branch": "If dysentery",
+   "features": [
+    {
+     "t": "Uncommon in SA children; seen on warm stool",
+     "s": "paedstg2026:2.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Immediate microscopy of warm stool",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Metronidazole 15 mg/kg PO 8-hourly × 7 d",
+     "s": "paedstg2026:2.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not responding",
+     "s": "phcstg2026:2.17"
+    }
+   ]
+  },
+  {
+   "dx": "Haemolytic uraemic syndrome",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "After diarrhoea / dysentery: pallor, purpura, low urine, fever, neuro signs",
+     "s": "paedstg2026:3.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC + smear, U&E, INR, stool STEC, blood culture, HIV",
+     "s": "paedstg2026:3.23",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "FDP 30 mL/kg/day in 3–4 doses (specialist)",
+     "s": "paedstg2026:3.23"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — early",
+     "s": "paedstg2026:3.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "IgA vasculitis (HSP)",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Palpable purpura legs / buttocks, arthralgia, colic; GI bleeding or intussusception",
+     "s": "paedstg2026:12.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine dipstick, BP, FBC (platelets normal), U&E",
+     "s": "paedstg2026:12.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Soft diet; paracetamol 15 mg/kg 6-hourly",
+     "s": "paedstg2026:12.2"
+    },
+    {
+     "t": "Severe pain: prednisone 1–2 mg/kg daily × 10 d",
+     "s": "paedstg2026:12.2"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Persistent pain, renal involvement, hypertension",
+     "s": "paedstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "dx": "Anal fissure",
+   "branch": "If fissure / constipation",
+   "features": [
+    {
+     "t": "Pain on passing stool; blood streaks on hard stool; visible crack",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Perianal inspection",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose 0.5 mL/kg/dose PO daily (12-hourly if poor response)",
+     "s": "phcstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "Soft-stool diet",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Recurrent, severe pain, persistent bleeding",
+     "s": "phcstg2026:2.6"
+    }
+   ]
+  },
+  {
+   "dx": "Constipation / faecal loading",
+   "branch": "If fissure / constipation",
+   "features": [
+    {
+     "t": "≤ 2 stools/week, hard or painful stools, retentive posturing",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical (Rome IV)",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose: 1–11 mo 5 mL · 1–4 y 10 mL · 5–14 y 15 mL daily",
+     "s": "paedstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Organic cause suspected, poor response",
+     "s": "paedstg2026:2.7"
+    }
+   ]
+  },
+  {
+   "dx": "Juvenile polyp · Meckel's diverticulum",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Painless bright blood (polyp) or large painless maroon bleed (Meckel's)",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for colonoscopy / scan",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hb; transfuse if needed",
+     "s": "paedstg2026:1.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Inflammatory bowel disease",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Pain, bloody stools, weight loss, perianal disease, arthritis, uveitis",
+     "s": "paedstg2026:2.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC, serum proteins, stool MCS",
+     "s": "paedstg2026:2.22",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nutritional support",
+     "s": "paedstg2026:2.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — specialist",
+     "s": "paedstg2026:2.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Haemorrhoids · ITP / coagulopathy",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Haemorrhoids are rare in children",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Petechiae, bruising, epistaxis; rat-poison access",
+     "s": "paedstg2026:3.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC platelets, INR",
+     "s": "paedstg2026:3.20",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ITP bleeding: prednisone 4 mg/kg daily × 4 d",
+     "s": "paedstg2026:3.21"
+    },
+    {
+     "t": "Rat poison, INR > 2.5: vitamin K1 1–5 mg",
+     "s": "paedstg2026:18.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Haemorrhoids in children: REFER",
+     "s": "phcstg2026:2.7"
+    }
+   ]
+  },
+  {
+   "dx": "IBS, coeliac disease",
+   "features": [
+    {
+     "t": "Do NOT cause PR bleeding — blood or mucus is a referral sign against IBS",
+     "s": "phcstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Coeliac: chronic diarrhoea with weight loss, no bleeding",
+     "s": "paedstg2026:2.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "—"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Look for another cause",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Coeliac suspected, no local resources",
+     "s": "paedstg2026:2.23"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Branch rows start once the working diagnosis is ticked (page 2 of the protocol book)",
+  "columns": {
+   "feed": "Fluids, blood & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Shock: pulse, CRT, BP, LOC every 15 min until stable",
+    "s": "paedstg2026:1.16",
+    "b": 1
+   },
+   {
+    "t": "Pulse, CRT, temperature 4-hourly; hourly while bleeding heavily",
+    "d": 1
+   },
+   {
+    "t": "Every stool: blood, mucus, volume",
+    "d": 1
+   },
+   {
+    "t": "Dehydrated: reassess hydration 4-hourly",
+    "s": "paedstg2026:2.10"
+   },
+   {
+    "t": "Urine output ≥ 1 mL/kg/h",
+    "s": "paedstg2026:2.10",
+    "b": 1
+   },
+   {
+    "t": "Weight daily",
+    "s": "paedstg2026:2.10"
+   },
+   {
+    "t": "Urine dipstick daily if HUS / HSP suspected",
+    "b": 1,
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for ceftriaxone and fluids already given — do not repeat the ceftriaxone dose.",
+    "feed": [
+     {
+      "h": "Shock"
+     },
+     {
+      "t": "NaCl 0.9% or Ringer's lactate 20 mL/kg rapidly; review every 15 min; up to 40 mL/kg",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     },
+     {
+      "t": "Bleeding: packed cells / whole blood 10–20 mL/kg",
+      "s": "paedstg2026:1.17"
+     },
+     {
+      "h": "Dehydration (dysentery)"
+     },
+     {
+      "t": "Rehydrate as AGE pathway plans",
+      "s": "paedstg2026:2.23"
+     },
+     {
+      "h": "Feeds"
+     },
+     {
+      "t": "Surgical abdomen suspected: nil by mouth",
+      "d": 1
+     },
+     {
+      "t": "Otherwise continue feeds / breastfeeds",
+      "s": "paedstg2026:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb (ward Hb / VBG)",
+      "s": "paedstg2026:1.17",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "s": "paedstg2026:12.1",
+      "b": 1
+     },
+     {
+      "t": "Stool: culture + warm-stool microscopy",
+      "s": "paedstg2026:2.23",
+      "b": 1
+     },
+     {
+      "t": "FBC + platelets",
+      "s": "paedstg2026:3.23",
+      "b": 1
+     },
+     {
+      "t": "U&E if dehydrated, pale or oliguric",
+      "s": "paedstg2026:3.23",
+      "b": 1
+     },
+     {
+      "t": "INR if bruising / rat poison",
+      "s": "paedstg2026:18.6",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound if intussusception suspected",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV status",
+      "s": "paedstg2026:3.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway and shock"
+     },
+     {
+      "t": "Oxygen if shocked",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "IV or IO access",
+      "s": "paedstg2026:1.15"
+     },
+     {
+      "t": "Shock not resolved after 40 mL/kg: REFER (ICU)",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     },
+     {
+      "h": "Surgical abdomen / intussusception"
+     },
+     {
+      "t": "Nil by mouth, NG tube, IV fluids",
+      "d": 1
+     },
+     {
+      "t": "REFER urgently",
+      "s": "paedstg2026:2.23",
+      "b": 1
+     },
+     {
+      "h": "Dysentery"
+     },
+     {
+      "t": "Ciprofloxacin 15 mg/kg PO 12-hourly × 3 d",
+      "s": "paedstg2026:2.24",
+      "b": 1
+     },
+     {
+      "t": "Cannot take oral: ceftriaxone 100 mg/kg IV daily × 5 d",
+      "s": "paedstg2026:2.24"
+     },
+     {
+      "h": "Fissure / constipation"
+     },
+     {
+      "t": "Lactulose (page 2 / side 2)",
+      "s": "phcstg2026:2.6"
+     },
+     {
+      "h": "Do not give"
+     },
+     {
+      "t": "Antidiarrhoeals (loperamide)",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     },
+     {
+      "t": "NSAIDs if bleeding",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Shock treated? Rehydration plan started",
+      "s": "paedstg2026:2.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Stool sample sent before antibiotics",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per plan"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 1 mL/kg/h?",
+      "s": "paedstg2026:2.10"
+     },
+     {
+      "t": "Abdomen re-examined",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch row below"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if bleeding continues",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess hydration, pain, bleeding",
+      "s": "paedstg2026:2.10"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick if not done",
+      "s": "paedstg2026:12.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still bleeding heavily: REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if HUS suspected",
+      "s": "paedstg2026:3.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review culture / microscopy",
+      "s": "paedstg2026:2.23"
+     }
+    ]
+   },
+   {
+    "label": "If surgical",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; IV fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ultrasound; Hb",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intussusception / polyp / Meckel's: REFER",
+      "s": "paedstg2026:2.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If dysentery",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Continue feeds; ORS for losses",
+      "s": "paedstg2026:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Stool culture result",
+      "s": "paedstg2026:2.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ciprofloxacin 15 mg/kg 12-hourly × 3 d, or ceftriaxone 100 mg/kg IV daily × 5 d",
+      "s": "paedstg2026:2.24"
+     },
+     {
+      "t": "Amoeba seen: metronidazole 15 mg/kg 8-hourly × 7 d",
+      "s": "paedstg2026:2.24"
+     }
+    ]
+   },
+   {
+    "label": "If fissure / constipation",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "High-fibre, soft-stool diet",
+      "s": "phcstg2026:2.6"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Lactulose 0.5 mL/kg/dose daily",
+      "s": "phcstg2026:2.6"
+     },
+     {
+      "t": "Home when well (discharge box)"
+     }
+    ]
+   },
+   {
+    "label": "If other",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "HSP: soft diet",
+      "s": "paedstg2026:12.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Dipstick, BP, FBC, U&E",
+      "s": "paedstg2026:12.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HUS: REFER all early",
+      "s": "paedstg2026:3.23",
+      "b": 1
+     },
+     {
+      "t": "HSP severe pain: prednisone 1–2 mg/kg daily",
+      "s": "paedstg2026:12.2"
+     },
+     {
+      "t": "IBD / haemorrhoid: REFER",
+      "s": "paedstg2026:2.22"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Treat",
+    "feed": [
+     {
+      "t": "Normal feeds",
+      "s": "paedstg2026:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if bleeding continued",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E if HUS risk",
+      "s": "paedstg2026:3.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dysentery: antibiotic day 2",
+      "s": "paedstg2026:2.24"
+     },
+     {
+      "t": "Blood still present? Reconsider diagnosis",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Treat",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick (HUS / HSP)",
+      "s": "paedstg2026:12.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ciprofloxacin course ends",
+      "s": "paedstg2026:2.24"
+     },
+     {
+      "t": "No response in 3 days: think amoebic or refer",
+      "s": "phcstg2026:2.17"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Treat",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Ceftriaxone day 4 (if IV)",
+      "s": "paedstg2026:2.24"
+     },
+     {
+      "t": "Check discharge criteria"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb before discharge if it was low",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone course ends",
+      "s": "paedstg2026:2.24"
+     },
+     {
+      "t": "Discharge criteria (below)"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids and blood",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% / Ringer's 20 mL/kg, review every 15 min, up to 40 mL/kg",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "t": "Bleeding: packed cells / whole blood 10–20 mL/kg",
+     "s": "paedstg2026:1.17"
+    },
+    {
+     "t": "Stable, Hb < 7 g/dL: packed cells 10 mL/kg over 3 h",
+     "s": "paedstg2026:2.36",
+     "d": 1
+    },
+    {
+     "t": "Dehydration: AGE pathway (ORS 80 mL/kg over 4 h, IV if failed)",
+     "s": "paedstg2026:2.11"
+    },
+    {
+     "t": "HUS: FDP 30 mL/kg/day in 3–4 doses (specialist)",
+     "s": "paedstg2026:3.23"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Dysentery"
+    },
+    {
+     "t": "Ciprofloxacin 15 mg/kg PO 12-hourly × 3 d",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Ceftriaxone 100 mg/kg IV daily × 5 d",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Amoebic: metronidazole 15 mg/kg PO 8-hourly × 7 d",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "h": "Fissure / constipation"
+    },
+    {
+     "t": "Lactulose 0.5 mL/kg/dose daily",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "By age: 1–11 mo 5 mL · 1–4 y 10 mL · 5–14 y 15 mL",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "h": "IgA vasculitis"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg 6-hourly; severe: prednisone 1–2 mg/kg × 10 d, taper 2 weeks",
+     "s": "paedstg2026:12.2"
+    },
+    {
+     "h": "ITP bleeding"
+    },
+    {
+     "t": "Prednisone 4 mg/kg daily × 4 d",
+     "s": "paedstg2026:3.21"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Shock signs, bile vomit, distension, severe pain",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Urine < 1 mL/kg/h or pallor (HUS)",
+     "s": "paedstg2026:3.23"
+    },
+    {
+     "t": "Convulsion",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "Hb · U&E · FBC · urine dipstick",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Intussusception / surgical abdomen",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "HUS, toxic megacolon, persistent shock",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Polyp, Meckel's, IBD, haemorrhoids",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "No response to treatment in 3 days",
+     "s": "phcstg2026:2.19"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No blood for 24 h, or only streaks with a fissure",
+    "d": 1
+   },
+   {
+    "t": "Hydrated, drinking and feeding",
+    "s": "paedstg2026:2.13"
+   },
+   {
+    "t": "Passing normal urine",
+    "s": "paedstg2026:2.10"
+   },
+   {
+    "t": "Hb stable",
+    "d": 1
+   },
+   {
+    "t": "Surgical cause excluded",
+    "s": "paedstg2026:2.23"
+   },
+   {
+    "t": "Antibiotic course can finish at home",
+    "d": 1
+   },
+   {
+    "t": "Caregiver knows danger signs",
+    "s": "paedstg2026:2.13"
+   },
+   {
+    "t": "HIV status known",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: more blood, pain, vomiting, less urine, pallor, fever",
+    "s": "paedstg2026:2.13",
+    "b": 1
+   },
+   {
+    "t": "HSP: BP + urine dipstick weekly or every 2 weeks for 2 months, then monthly for a year",
+    "s": "paedstg2026:12.1"
+   },
+   {
+    "t": "Fissure / constipation: PHC review; long-term lactulose",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Hand washing, safe water, food hygiene",
+    "s": "phcstg2026:2.18"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — stools, bleeding, hydration, urine",
+  "period": "One sheet per 24 h; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Circulation",
+    "items": [
+     {
+      "t": "Shock: every 15 min until stable",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "Pulse, CRT, temperature 4-hourly; hourly while bleeding heavily",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Stools",
+    "items": [
+     {
+      "t": "Every stool: blood, mucus, volume",
+      "d": 1
+     },
+     {
+      "t": "Vomits: bile-stained?",
+      "s": "paedstg2026:2.23"
+     }
+    ]
+   },
+   {
+    "h": "Hydration / urine",
+    "items": [
+     {
+      "t": "Dehydrated: reassess 4-hourly",
+      "s": "paedstg2026:2.10"
+     },
+     {
+      "t": "Urine output ≥ 1 mL/kg/h",
+      "s": "paedstg2026:2.10"
+     },
+     {
+      "t": "Weight daily",
+      "s": "paedstg2026:2.10"
+     }
+    ]
+   },
+   {
+    "h": "Urine dipstick",
+    "items": [
+     {
+      "t": "Daily if HUS / HSP suspected",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "CRT ≥ 3 s, weak pulse, cold peripheries, ↓ LOC",
+    "s": "paedstg2026:1.15",
+    "b": 1
+   },
+   {
+    "t": "bile-stained vomit, distension or severe pain",
+    "s": "paedstg2026:2.23"
+   },
+   {
+    "t": "urine < 1 mL/kg/h or pallor",
+    "s": "paedstg2026:3.23"
+   },
+   {
+    "t": "convulsion",
+    "s": "paedstg2026:2.23"
+   },
+   {
+    "t": "large fresh bleed",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Bloody stools (n)",
+   "In (mL)",
+   "Urine (mL/kg/h)",
+   "Weight change"
+  ]
+ }
+}

@@ -1,0 +1,1578 @@
+{
+ "id": "ugib-adult",
+ "short": "UGIB (adult)",
+ "title": "Upper GI bleeding — haematemesis and melaena (adult)",
+ "population": "Adult (excludes pregnancy-related bleeding, poisoning, isolated PR bleeding)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-26",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "esge2021"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pregnancy-related bleeding / hyperemesis → maternity",
+     "b": 1
+    },
+    {
+     "t": "Caustic or anticoagulant ingestion without bleeding → poisoning (STG ch. 19)",
+     "b": 1
+    },
+    {
+     "t": "Haemoptysis → respiratory",
+     "b": 1
+    },
+    {
+     "t": "Bright red blood per rectum only → PR bleeding pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms UGIB",
+   "items": [
+    {
+     "t": "Haematemesis: fresh blood or coffee-grounds vomitus",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Melaena: black, tarry stool",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Iron, bismuth, charcoal blacken stool — check",
+     "d": 1,
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Episodes ____ · Est. volume ____ mL · Started ____ h ago",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — any one = SEVERE UGIB",
+   "items": [
+    {
+     "t": "SHOCK: hypotension, tachycardia, weak pulses, clammy, pallor, altered mental state, poor urine output",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "Needs > 1 L fluid or emergency blood",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "Suspected varices: known cirrhosis, ascites, splenomegaly, jaundice",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    },
+    {
+     "t": "Ongoing bleeding after arrival",
+     "d": 1
+    },
+    {
+     "t": "Hb < 7 g/dL",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Cirrhosis / portal hypertension / alcohol",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Previous PUD / GI bleed",
+     "s": "adultstg2026:1.8"
+    },
+    {
+     "t": "NSAID / aspirin / pain powders",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Warfarin / anticoagulant",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "t": "Cardiac disease (Hb target differs)",
+     "s": "esge2021:R2",
+     "d": 1
+    },
+    {
+     "t": "HIV: ART, last VL / CD4"
+    },
+    {
+     "t": "CKD — baseline creatinine: ____",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Pre-referral fluids / blood given (mL)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "The bleed"
+    },
+    {
+     "t": "Fresh blood / coffee grounds",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Episodes, volume, syncope",
+     "d": 1
+    },
+    {
+     "t": "Black stools",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Retching or vomiting before blood",
+     "d": 1
+    },
+    {
+     "h": "Alarm features (endoscopy)",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Weight loss",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Dysphagia / odynophagia",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Persistent vomiting",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Family history of GI cancer",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "h": "Pain and medicines"
+    },
+    {
+     "t": "Epigastric pain / dyspepsia",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "NSAIDs, aspirin, steroids",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Alcohol, smoking",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Anticoagulant",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "h": "Liver"
+    },
+    {
+     "t": "Jaundice",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Confusion (encephalopathy)",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "h": "Screen"
+    },
+    {
+     "t": "HIV status"
+    },
+    {
+     "t": "Possible pregnancy (LMP)",
+     "s": "phcstg2026:2.5"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / postural drop",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air (SpO₂ < 94%)",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pallor",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Clammy / cold peripheries",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 11,
+   "items": [
+    {
+     "h": "Shock and anaemia",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Clammy, cold peripheries"
+    },
+    {
+     "t": "Weak pulses"
+    },
+    {
+     "t": "Pallor"
+    },
+    {
+     "t": "Altered mental state"
+    },
+    {
+     "h": "Chronic liver disease",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Jaundice"
+    },
+    {
+     "t": "Ascites"
+    },
+    {
+     "t": "Splenomegaly"
+    },
+    {
+     "t": "Asterixis / confusion"
+    },
+    {
+     "t": "Baseline chest: crepitations? JVP?",
+     "d": 1
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Epigastric tenderness",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Peritonism / guarding",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Mass",
+     "s": "phcstg2026:2.4"
+    },
+    {
+     "t": "PR: melaena confirmed",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Bruising / bleeding elsewhere",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "t": "Lymphadenopathy / weight loss",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Hb — ward Hb or VBG",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "Not actively bleeding: transfuse if Hb < 7 g/dL, one unit at a time",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "Actively bleeding: decide by rate of loss and physiology, not one Hb",
+     "s": "adultstg2026:23.10"
+    },
+    {
+     "t": "Cardiac disease: threshold ≤ 8, target ≥ 10 g/dL",
+     "s": "esge2021:R2",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Hypoglycaemia: dextrose 50% 50 mL IV, recheck in 5–10 min",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Then 4-hourly if liver disease, diabetic or nil by mouth",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise / aspiration risk",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Variceal bleed",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Hepatic encephalopathy",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "Perforation / peritonitis",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Anticoagulant / coagulopathy",
+     "s": "adultstg2026:19.41"
+    },
+    {
+     "t": "Acute coronary syndrome",
+     "s": "phcstg2026:2.3"
+    },
+    {
+     "t": "AKI",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Alcohol withdrawal",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Gastric cancer (alarm features)",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Sepsis"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Caustic ingestion"
+    },
+    {
+     "t": "Bleeding disorder",
+     "s": "adultstg2026:2.13"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Shock · > 1 L fluid or emergency blood · varices · ongoing bleed → resuscitate, then REFER urgently for endoscopy (≤ 24 h) · every UGIB needs endoscopy",
+   "s": "adultstg2026:1.3"
+  },
+  {
+   "t": "11. ADMIT while awaiting transfer · stable, stopped bleed → observe, refer for early endoscopy",
+   "s": "esge2021:E2",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Bleeding oesophageal varices (cirrhosis / portal hypertension)",
+   "branch": "If variceal",
+   "features": [
+    {
+     "t": "Known cirrhosis, alcohol, jaundice, ascites, splenomegaly",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Large fresh haematemesis",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for endoscopy (ligation)",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    },
+    {
+     "t": "Ultrasound liver/spleen/ascites",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Resuscitate + blood (chart 0 h)",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Vasoactive drug + antibiotic prophylaxis: agree with referral centre before transfer (no SA dose)",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Encephalopathy: lactulose 10–30 mL 8-hourly",
+     "s": "adultstg2026:1.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — immediately",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Peptic ulcer (gastric / duodenal)",
+   "branch": "If PUD / gastritis",
+   "features": [
+    {
+     "t": "Epigastric pain, NSAID/aspirin, H. pylori, previous ulcer",
+     "s": "adultstg2026:1.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for endoscopy; GU needs biopsy",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop NSAIDs",
+     "s": "adultstg2026:1.7"
+    },
+    {
+     "t": "High-dose IV PPI may be considered before endoscopy: pantoprazole 80 mg IV",
+     "s": "esge2021:R13",
+     "d": 1
+    },
+    {
+     "t": "H. pylori eradication only after endoscopy confirms",
+     "s": "adultstg2026:1.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — endoscopy ≤ 24 h",
+     "s": "esge2021:E2",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Erosive gastritis / oesophagitis (GORD)",
+   "branch": "If PUD / gastritis",
+   "features": [
+    {
+     "t": "Heartburn, regurgitation, NSAIDs, alcohol",
+     "s": "adultstg2026:1.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Haematemesis = alarm → endoscopy",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop NSAIDs; pantoprazole 40 mg PO daily",
+     "s": "adultstg2026:1.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — alarm symptom",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  },
+  {
+   "dx": "Anticoagulant (warfarin / superwarfarin)",
+   "branch": "If coagulopathy",
+   "features": [
+    {
+     "t": "On warfarin or rat-poison exposure; bleeding elsewhere",
+     "s": "adultstg2026:19.41"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "INR now and at 48 h",
+     "s": "adultstg2026:19.42",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Active bleeding: FDP 15 mL/kg + vitamin K1 10 mg slow IV (5 mg if on long-term warfarin)",
+     "s": "adultstg2026:19.42",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Ongoing bleed despite reversal",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Mallory-Weiss tear",
+   "branch": "If minor / stopped",
+   "features": [
+    {
+     "t": "Blood after retching or repeated vomiting (often alcohol)",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; endoscopy if it continues",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat vomiting cause; observe",
+     "d": 1
+    },
+    {
+     "t": "Alcohol dependence: thiamine 300 mg PO daily",
+     "s": "adultstg2026:15.31"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If shock or continues",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Gastric / oesophageal cancer",
+   "branch": "If minor / stopped",
+   "features": [
+    {
+     "t": "Weight loss, dysphagia, anaemia, mass, > 60 y",
+     "s": "adultstg2026:1.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for endoscopy + biopsy",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Transfuse / iron as needed",
+     "s": "adultstg2026:2.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Swallowed blood (epistaxis, oral) · haemoptysis",
+   "branch": "If minor / stopped",
+   "features": [
+    {
+     "t": "Nose / mouth source; cough with blood",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ENT / chest exam",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the source",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "IBS, coeliac disease, IBD",
+   "features": [
+    {
+     "t": "IBS and coeliac do NOT cause haematemesis or melaena — look for another cause",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Blood in stool is a referral sign, not IBS",
+     "s": "phcstg2026:2.23"
+    },
+    {
+     "t": "IBD: rectal bleeding, diarrhoea, weight loss",
+     "s": "adultstg2026:1.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "—"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fresh PR blood → PR bleeding pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "IBD suspected: specialist",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Branch rows start once the working diagnosis is ticked (page 2 of the protocol book)",
+  "columns": {
+   "feed": "Fluids, blood & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Shock / active bleeding: pulse, BP, LOC every 15 min until stable, then hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Every vomit and stool: fresh blood, coffee grounds, melaena, estimated volume",
+    "d": 1
+   },
+   {
+    "t": "Urine output: < 0.5 mL/kg/h for 6 h = AKI",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Hb on arrival and after each unit",
+    "s": "adultstg2026:23.10",
+    "b": 1
+   },
+   {
+    "t": "HGT 4-hourly if liver disease, diabetic or nil by mouth",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Overload after each litre: RR, crepitations, JVP",
+    "d": 1
+   },
+   {
+    "t": "Nil by mouth while actively bleeding",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Call for help. Check the referral note for fluids/blood given. Send a blood-bank sample WITH the patient on transfer.",
+    "feed": [
+     {
+      "h": "Feeds"
+     },
+     {
+      "t": "Nil by mouth while actively bleeding",
+      "d": 1
+     },
+     {
+      "h": "Shock (non-trauma)"
+     },
+     {
+      "t": "NaCl 0.9% IV 1–2 L; monitor BP, pulse, response",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "Major bleeding: limit to < 1.5 L crystalloid; replace with blood",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "h": "Blood (ANDH: 2 units emergency O-neg)"
+     },
+     {
+      "t": "O-neg reserved for Rh-neg / unknown women of child-bearing age",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "After 2 units emergency blood: FDP 1 unit per unit; urgent transfer",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb (ward Hb / VBG)",
+      "s": "adultstg2026:23.9",
+      "b": 1
+     },
+     {
+      "t": "FBC, INR",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     },
+     {
+      "t": "Blood-bank sample",
+      "s": "adultstg2026:20.21",
+      "b": 1
+     },
+     {
+      "t": "U&E (urea, creatinine)",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "LFT if liver disease",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "ECG if chest pain / cardiac disease",
+      "s": "phcstg2026:2.3",
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test (women)",
+      "s": "phcstg2026:2.5",
+      "b": 1
+     },
+     {
+      "t": "HIV test (offer)",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway and shock"
+     },
+     {
+      "t": "Oxygen if SpO₂ < 94%",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "1–2 large-bore IV lines",
+      "s": "adultstg2026:20.20"
+     },
+     {
+      "t": "Recovery position if vomiting / ↓ LOC",
+      "d": 1
+     },
+     {
+      "t": "Still shocked after fluids + 2 units: REFER urgently",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "Dextrose 50% 50 mL IV; recheck 5–10 min",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "h": "Do NOT give"
+     },
+     {
+      "t": "Tranexamic acid (no benefit in UGIB)",
+      "s": "esge2021:R9",
+      "d": 1
+     },
+     {
+      "t": "NSAIDs",
+      "s": "adultstg2026:1.7"
+     },
+     {
+      "h": "Suspected varices"
+     },
+     {
+      "t": "Discuss vasoactive drug + antibiotic prophylaxis with the referral centre; REFER immediately",
+      "s": "adultstg2026:1.11",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "h": "Suspected PUD / gastritis"
+     },
+     {
+      "t": "Pantoprazole 80 mg IV (high-dose PPI may be considered)",
+      "s": "esge2021:R13",
+      "d": 1
+     },
+     {
+      "h": "On warfarin, bleeding"
+     },
+     {
+      "t": "FDP 15 mL/kg + vitamin K1 10 mg slow IV (5 mg if on long-term warfarin)",
+      "s": "adultstg2026:19.42",
+      "b": 1
+     },
+     {
+      "h": "Aspirin for secondary prevention"
+     },
+     {
+      "t": "Do not stop, or restart within 3–5 days",
+      "s": "esge2021:R5",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "15 min",
+    "phase": "Resuscitate",
+    "feed": [
+     {
+      "t": "Still shocked: more fluid (< 1.5 L total) or blood",
+      "s": "adultstg2026:20.21"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Pulse, BP, LOC after each bag",
+      "d": 1
+     },
+     {
+      "t": "Overload? RR, crepitations, JVP",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Resuscitate",
+    "feed": [
+     {
+      "t": "Emergency blood if still shocked",
+      "s": "adultstg2026:20.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb after each unit",
+      "s": "adultstg2026:23.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "After 2 units still unstable: REFER urgently",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Maintenance IV once no shock",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR, U&E results",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Call the referral hospital for endoscopy",
+      "s": "adultstg2026:1.3"
+     },
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Nil by mouth while bleeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if liver / diabetic",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 0.5 mL/kg/h?",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch row below"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb",
+      "s": "adultstg2026:23.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transfuse only if Hb < 7 (≤ 8 cardiac †) or active bleeding",
+      "s": "adultstg2026:23.9"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if indicated",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still bleeding: REFER urgently",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If variceal",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Blood to keep Hb ≥ 7 and circulation stable",
+      "s": "adultstg2026:23.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR, LFT, ultrasound",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER immediately (ligation)",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     },
+     {
+      "t": "Encephalopathy: lactulose 10–30 mL 8-hourly",
+      "s": "adultstg2026:1.12"
+     },
+     {
+      "t": "Alcohol: thiamine 300 mg PO daily",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "If PUD / gastritis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oral fluids once no bleeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb 12-hourly",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop NSAIDs",
+      "s": "adultstg2026:1.7"
+     },
+     {
+      "t": "PPI as started; REFER for endoscopy ≤ 24 h",
+      "s": "esge2021:E2",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If coagulopathy",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "FDP 15 mL/kg if bleeding",
+      "s": "adultstg2026:19.42"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR 12 h after vitamin K, then 4–6-hourly until stable",
+      "s": "adultstg2026:19.42",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Vitamin K1 10 mg slow IV (5 mg on long-term warfarin)",
+      "s": "adultstg2026:19.42"
+     },
+     {
+      "t": "Stop warfarin",
+      "s": "adultstg2026:19.42"
+     }
+    ]
+   },
+   {
+    "label": "If minor / stopped",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oral fluids, then diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb at 12 h",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe 24 h; early endoscopy referral",
+      "s": "esge2021:E2",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if still bleeding",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rebleed? → back to 0 h",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids if no bleeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E if AKI risk",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transfer done? If not, escalate",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Diet if no bleeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, U&E",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pantoprazole 40 mg PO daily if PUD / gastritis",
+      "s": "adultstg2026:1.3"
+     },
+     {
+      "t": "Check discharge / transfer criteria"
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Teach danger signs; alcohol / NSAID counselling",
+      "s": "adultstg2026:1.2"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Discharge / transfer",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb before discharge",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Iron if Hb low",
+      "s": "adultstg2026:2.1"
+     },
+     {
+      "t": "Discharge criteria · endoscopy booked",
+      "s": "adultstg2026:1.3"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Blood and fluids",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% 1–2 L IV; major bleeding keep crystalloid < 1.5 L",
+     "s": "adultstg2026:20.20"
+    },
+    {
+     "t": "Not actively bleeding: transfuse if Hb < 7 g/dL, one unit then reassess",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "Cardiac disease: transfuse at Hb ≤ 8, target ≥ 10 g/dL",
+     "s": "esge2021:R2",
+     "d": 1
+    },
+    {
+     "t": "No blood bank: FDP 1 unit per unit emergency blood; urgent transfer",
+     "s": "adultstg2026:20.22"
+    },
+    {
+     "t": "O-neg: keep for Rh-neg / unknown women of child-bearing age",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Anaemia after the bleed: ferrous sulfate 170 mg PO 12-hourly, 3 months after Hb normal",
+     "s": "adultstg2026:2.1"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "PUD / gastritis"
+    },
+    {
+     "t": "Pre-endoscopy: pantoprazole 80 mg IV may be considered",
+     "s": "esge2021:R13",
+     "d": 1
+    },
+    {
+     "t": "Then pantoprazole 40 mg PO daily",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "H. pylori+ (after endoscopy): amoxicillin 1 g + metronidazole 400 mg + pantoprazole 40 mg, all 12-hourly × 14 d",
+     "s": "adultstg2026:1.7"
+    },
+    {
+     "h": "Varices"
+    },
+    {
+     "t": "Vasoactive + antibiotic: per referral centre",
+     "d": 1
+    },
+    {
+     "t": "After the bleed (specialist): propranolol 20–40 mg 12-hourly",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "h": "Warfarin reversal"
+    },
+    {
+     "t": "FDP 15 mL/kg + vitamin K1 10 mg slow IV",
+     "s": "adultstg2026:19.42"
+    },
+    {
+     "h": "Do not give"
+    },
+    {
+     "t": "Tranexamic acid · NSAIDs",
+     "s": "esge2021:R9",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Overload: slow fluids"
+    },
+    {
+     "t": "RR rising, new crepitations, JVP up",
+     "d": 1
+    },
+    {
+     "h": "Rebleed"
+    },
+    {
+     "t": "Fresh haematemesis or melaena; pulse up or BP down from baseline; Hb falling",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "Hb · INR · U&E · HGT · ECG",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Shock after fluids + 2 units",
+     "s": "adultstg2026:20.22",
+     "b": 1
+    },
+    {
+     "t": "Varices",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    },
+    {
+     "t": "Every UGIB for endoscopy",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    },
+    {
+     "t": "Peritonism / perforation",
+     "s": "phcstg2026:2.2"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (minor bleed) — all must be met",
+  "items": [
+   {
+    "t": "No bleeding for 24 h",
+    "d": 1
+   },
+   {
+    "t": "Stable pulse and BP, off IV",
+    "d": 1
+   },
+   {
+    "t": "Hb stable",
+    "d": 1
+   },
+   {
+    "t": "Eating and drinking",
+    "d": 1
+   },
+   {
+    "t": "Endoscopy booked",
+    "s": "adultstg2026:1.3"
+   },
+   {
+    "t": "NSAIDs stopped",
+    "s": "adultstg2026:1.7"
+   },
+   {
+    "t": "Knows danger signs",
+    "d": 1
+   },
+   {
+    "t": "HIV test offered",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: blood vomit, black stool, dizziness, fainting",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Hb check at 1–2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Endoscopy result: H. pylori therapy if positive",
+    "s": "adultstg2026:1.7"
+   },
+   {
+    "t": "After varices: specialist follow-up, propranolol",
+    "s": "adultstg2026:1.12"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — circulation, blood loss, urine, Hb, HGT",
+  "period": "One sheet per 24 h; 15-min rows for the first hour, then hourly",
+  "params": [
+   {
+    "h": "Circulation",
+    "items": [
+     {
+      "t": "Pulse, BP, LOC every 15 min until stable, then hourly",
+      "d": 1
+     },
+     {
+      "t": "Overload after each litre: RR, crepitations, JVP",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Blood loss",
+    "items": [
+     {
+      "t": "Every vomit and stool: fresh blood, coffee grounds, melaena, estimated volume",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "In / out",
+    "items": [
+     {
+      "t": "IV fluid and blood in (mL)"
+     },
+     {
+      "t": "Urine: < 0.5 mL/kg/h for 6 h = AKI",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   },
+   {
+    "h": "Hb · HGT",
+    "items": [
+     {
+      "t": "Hb on arrival and after each unit",
+      "s": "adultstg2026:23.10"
+     },
+     {
+      "t": "HGT 4-hourly if liver disease, diabetic or nil by mouth",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pulse rising or BP falling from baseline",
+    "b": 1
+   },
+   {
+    "t": "new fresh haematemesis or melaena",
+    "d": 1
+   },
+   {
+    "t": "confusion or ↓ LOC"
+   },
+   {
+    "t": "urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9"
+   },
+   {
+    "t": "RR rising, new crepitations or falling SpO₂",
+    "d": 1
+   },
+   {
+    "t": "low HGT",
+    "s": "adultstg2026:8.13"
+   }
+  ],
+  "totals": [
+   "Units / FDP given",
+   "IV in (mL)",
+   "Urine (mL/kg/h)",
+   "Hb trend"
+  ]
+ }
+}

@@ -16,6 +16,10 @@
     {"id": "preterm-labour", "file": "preterm-labour.json", "title": "Preterm labour and PPROM (24–36⁺⁶ weeks)", "short": "Preterm labour", "population": "Obstetric"},
     {"id": "pph", "file": "pph.json", "title": "Postpartum haemorrhage", "short": "PPH", "population": "Obstetric"},
     {"id": "toxic-alcohols", "file": "toxic-alcohols.json", "title": "Toxic alcohols — methanol / ethylene glycol (e.g. antifreeze) poisoning", "short": "Toxic alcohols", "population": "Adult + Paediatric"},
-    {"id": "aph", "file": "aph.json", "title": "Antepartum haemorrhage (≥ 20 weeks)", "short": "APH", "population": "Obstetric"}
+    {"id": "aph", "file": "aph.json", "title": "Antepartum haemorrhage (≥ 20 weeks)", "short": "APH", "population": "Obstetric"},
+    {"id": "ugib-adult", "file": "ugib-adult.json", "title": "Upper GI bleeding — haematemesis and melaena (adult)", "short": "UGIB (adult)", "population": "Adult (excludes pregnancy-related bleeding, poisoning, isolated PR bleeding)"},
+    {"id": "ugib-paeds", "file": "ugib-paeds.json", "title": "Upper GI bleeding — haematemesis and melaena (child)", "short": "UGIB (child)", "population": "Paediatric (1 month and older; excludes neonates, SAM, poisoning, isolated PR bleeding)"},
+    {"id": "prb-adult", "file": "prb-adult.json", "title": "Rectal bleeding — fresh blood per rectum (adult)", "short": "PR bleed (adult)", "population": "Adult (excludes melaena, vaginal / obstetric bleeding, trauma)"},
+    {"id": "prb-paeds", "file": "prb-paeds.json", "title": "Rectal bleeding — fresh blood per rectum (child)", "short": "PR bleed (child)", "population": "Paediatric (1 month and older; excludes neonates, SAM, melaena)"}
   ]
 }
