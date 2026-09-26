@@ -1,0 +1,1168 @@
+{
+ "id": "amphetamines",
+ "short": "Amphetamines",
+ "title": "Amphetamines and methamphetamine (tik, ecstasy/MDMA) poisoning",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines where the STGs differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "stgah",
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — exposure + sympathomimetic toxidrome",
+   "items": [
+    {
+     "t": "Use / ingestion of an amphetamine-type stimulant (list below)",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Sympathomimetic toxidrome: tachycardia, hypertension, hyperthermia, sweating, dilated pupils, agitation / hyperactivity",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Teeth grinding, tremor, delirium, psychosis",
+     "s": "stgah:19.31",
+     "k": "sub"
+    },
+    {
+     "t": "Seizures, coma",
+     "s": "stgah:19.31",
+     "k": "sub"
+    },
+    {
+     "t": "Sweaty skin (vs hot dry skin in anticholinergic toxicity)",
+     "s": "stgah:19.11",
+     "k": "info"
+    },
+    {
+     "h": "Street names and sources (ask; check the packet)"
+    },
+    {
+     "t": "\"Tik\" = methamphetamine; \"Ecstasy\" = MDMA; \"Ice\" / \"Eve\" = MDEA",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Methcathinone (\"CAT\"); methylphenidate; pseudoephedrine decongestants",
+     "s": "paedstg2024:18.23"
+    },
+    {
+     "t": "Also: crystal, glass, speed, \"Molly\", tablets sold as ecstasy that contain other drugs",
+     "d": 1
+    },
+    {
+     "t": "Wt ____ kg · Taken at ____ h · Drug / route ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Hyperthermia",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Seizures or coma",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Chest pain / MI, stroke",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Severe hypertension with target-organ damage",
+     "s": "stgah:3.43"
+    },
+    {
+     "t": "Rhabdomyolysis, acute kidney injury, hyperkalaemia",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Hyponatraemia (especially MDMA): confusion, seizures",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Severe agitation / psychosis not settling",
+     "s": "stgah:15.6"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet (child) / clinic card, previous records (adult)",
+   "items": [
+    {
+     "t": "CHILD: last weight (dosing)"
+    },
+    {
+     "t": "CHILD: access to adult's tablets / drugs"
+    },
+    {
+     "t": "CHILD: caregiver on booklet"
+    },
+    {
+     "t": "HIV exposure / status"
+    },
+    {
+     "t": "ADULT: previous stimulant use / admissions"
+    },
+    {
+     "t": "Psychiatric history, psychosis"
+    },
+    {
+     "t": "Cardiac disease, hypertension"
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Chronic medicines (antidepressants, ADHD meds)",
+     "d": 1
+    },
+    {
+     "t": "Epilepsy"
+    },
+    {
+     "t": "HIV / ART"
+    },
+    {
+     "t": "Pregnancy possible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Drug, route (smoked, snorted, swallowed, IV)",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Time and amount",
+     "s": "stgah:19.13"
+    },
+    {
+     "t": "Intentional vs recreational"
+    },
+    {
+     "t": "Co-ingestants (alcohol, cannabis, opioids)"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Chest pain, palpitations",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Headache, weakness (stroke)",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Hot, sweating",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Muscle pain, dark urine",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Seizure",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Hallucinations, paranoia",
+     "s": "paedstg2024:18.23"
+    },
+    {
+     "h": "MDMA"
+    },
+    {
+     "t": "Large water intake (hyponatraemia)",
+     "d": 1
+    },
+    {
+     "t": "Dancing / exertion, heat",
+     "d": 1
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "CHILD: supervision, storage",
+     "s": "paedstg2024:18.5"
+    },
+    {
+     "t": "ADULT / teen: suicidal intent, substance use pattern",
+     "s": "stgah:19.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hyperthermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / arrhythmia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Severe agitation",
+     "k": "yn"
+    },
+    {
+     "t": "Temp ____ °C · GCS ____ /15 · Pupils ____ mm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General / CNS"
+    },
+    {
+     "t": "Agitation, hyperactivity",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Tremor, teeth grinding",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Delirium, psychosis",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Focal neurology (stroke)",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Dilated pupils",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Injury from agitation / restraint",
+     "d": 1
+    },
+    {
+     "h": "CVS / chest"
+    },
+    {
+     "t": "Irregular pulse",
+     "s": "paedstg2024:18.23"
+    },
+    {
+     "t": "Signs of pulmonary oedema",
+     "d": 1
+    },
+    {
+     "h": "Skin / muscle"
+    },
+    {
+     "t": "Sweating",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Muscle tenderness (rhabdo)",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Injection marks",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "ECG — on arrival",
+   "items": [
+    {
+     "t": "Rate / rhythm ____ · ST changes ____",
+     "k": "value"
+    },
+    {
+     "t": "Dysrhythmia: cardiac monitor; manage per dysrhythmia section",
+     "s": "paedstg2024:18.23"
+    },
+    {
+     "t": "Ischaemia / chest pain: treat as ACS, REFER",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Repeat with any chest pain or new arrhythmia",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG + HGT — ward blood gas",
+   "items": [
+    {
+     "t": "Na ____ K ____ pH ____ HGT ____",
+     "k": "value"
+    },
+    {
+     "t": "Low Na (MDMA): restrict free water; seizures / confusion → REFER",
+     "d": 1
+    },
+    {
+     "t": "High K / rising creatinine: rhabdomyolysis, AKI → REFER for dialysis if renal failure",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Correct hypoglycaemia",
+     "s": "stgah:19.31"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock / arrhythmia",
+     "b": 1
+    },
+    {
+     "t": "Decreased LOC / coma",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Hyperthermia",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "MI / chest pain",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Stroke",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Rhabdomyolysis / AKI",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Hyponatraemia (MDMA)",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Head injury, trauma",
+     "d": 1
+    },
+    {
+     "t": "Co-ingestion (opioid, alcohol, paracetamol)",
+     "d": 1
+    },
+    {
+     "t": "Sepsis / meningitis mimic",
+     "s": "stgah:20.13"
+    },
+    {
+     "t": "Intentional self-harm",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Child: neglect concern",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Serotonin toxicity (with antidepressants)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Severe → benzodiazepine, cool, REFER",
+   "s": "stgah:19.31"
+  },
+  {
+   "t": "11. ADMIT — seriously ill child: ICU → REFER",
+   "s": "paedstg2024:18.24"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Most toxicity settles within 24 h; MDMA hyponatraemia and rhabdomyolysis can appear later.",
+  "columns": {
+   "feed": "Cooling, fluids & decontamination",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temp, HR, BP, RR, GCS / agitation hourly until settled, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Cardiac monitor / ECG if dysrhythmia or chest pain",
+    "s": "paedstg2024:18.23",
+    "b": 1
+   },
+   {
+    "t": "Urine output and colour each void (rhabdomyolysis)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "After every benzodiazepine: RR, SpO₂, sedation (respiratory depression)",
+    "s": "stgah:20.15",
+    "b": 1
+   },
+   {
+    "t": "Calm, quiet room; same staff; re-orientate",
+    "s": "stgah:20.14"
+   },
+   {
+    "t": "If restrained: vitals, mental state and restraint sites every 15 min",
+    "s": "stgah:20.14"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral note for benzodiazepines or charcoal already given — do not duplicate. Poisons Helpline 0861 555 777 / UFS 082 491 0160 (24 h).",
+    "feed": [
+     {
+      "h": "Hyperthermia"
+     },
+     {
+      "t": "Cool the patient",
+      "s": "stgah:19.31",
+      "b": 1
+     },
+     {
+      "t": "Undress, tepid spray and fanning, ice packs to groin / axillae",
+      "d": 1
+     },
+     {
+      "t": "Sedate agitation — it drives heat production",
+      "s": "paedstg2024:18.23"
+     },
+     {
+      "h": "Fluids"
+     },
+     {
+      "t": "Correct dehydration (IV crystalloid)",
+      "s": "stgah:19.31"
+     },
+     {
+      "t": "Rhabdomyolysis: IV fluids to keep urine flowing",
+      "d": 1
+     },
+     {
+      "t": "MDMA hyponatraemia: avoid excess free water",
+      "d": 1
+     },
+     {
+      "h": "Decontamination"
+     },
+     {
+      "t": "Activated charcoal only if swallowed, within 1 h, airway protected — ADULT 50 g in 100 mL water",
+      "s": "stgah:19.14"
+     },
+     {
+      "t": "CHILD: activated charcoal < 6 y 1 g/kg; > 6 y 20–50 g",
+      "s": "paedstg2024:18.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG",
+      "s": "paedstg2024:18.23",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "stgah:19.31",
+      "b": 1
+     },
+     {
+      "t": "VBG: Na, K, pH",
+      "s": "stgah:19.31",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine",
+      "s": "stgah:19.31",
+      "b": 1
+     },
+     {
+      "t": "CK (rhabdomyolysis)",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "Troponin if chest pain",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick: blood without red cells = myoglobin",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If intentional: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Head CT if focal signs → REFER",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Agitation — ADULT"
+     },
+     {
+      "t": "Oral first: lorazepam 0.5–2 mg · or clonazepam 0.5–2 mg · or diazepam 5–10 mg · or midazolam 7.5–15 mg oral/buccal",
+      "s": "stgah:15.6"
+     },
+     {
+      "t": "Refused / no response in 30–60 min: lorazepam IM 0.5–2 mg · or midazolam IM 7.5–15 mg",
+      "s": "stgah:15.7"
+     },
+     {
+      "t": "Or diazepam IV 5–10 mg (highest risk of respiratory depression)",
+      "s": "stgah:20.15"
+     },
+     {
+      "t": "Still not settled: olanzapine ODT/IM 5–10 mg",
+      "s": "stgah:15.7"
+     },
+     {
+      "h": "Agitation — CHILD"
+     },
+     {
+      "t": "Diazepam IV/oral 0.1–0.2 mg/kg (max 10 mg)",
+      "s": "paedstg2024:18.24"
+     },
+     {
+      "h": "Seizures"
+     },
+     {
+      "t": "ADULT: lorazepam 4 mg IV · or midazolam 10 mg IV/IM/buccal · or diazepam 10 mg IV; repeat once at 5 min",
+      "s": "stgah:14.15"
+     },
+     {
+      "t": "CHILD: lorazepam 0.1 mg/kg IV (max 4) · or midazolam 0.25 mg/kg IV (max 10) / 0.5 mg/kg buccal · or diazepam 0.25 mg/kg IV (max 10)",
+      "s": "paedstg2024:13.8"
+     },
+     {
+      "t": "No phenytoin (toxin-induced) — still seizing: REFER",
+      "s": "stgah:14.16",
+      "b": 1
+     },
+     {
+      "h": "Hypertension"
+     },
+     {
+      "t": "Benzodiazepine first, then reassess",
+      "d": 1
+     },
+     {
+      "t": "Hypertensive emergency (encephalopathy, ACS, pulmonary oedema, dissection): REFER for IV labetalol in high care",
+      "s": "stgah:3.43",
+      "b": 1
+     },
+     {
+      "t": "Do not lower BP by > 25% in the first 30 min – 2 h",
+      "s": "stgah:3.43"
+     },
+     {
+      "t": "CHILD hypertensive crisis: REFER",
+      "s": "paedstg2024:18.24",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Settle",
+    "feed": [
+     {
+      "t": "Temperature falling? Continue cooling until normal for the patient",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if drowsy or not eating",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess sedation 15–30 min after each benzodiazepine before repeating",
+      "s": "stgah:20.15"
+     },
+     {
+      "t": "Chest pain: repeat ECG",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Settle",
+    "feed": [
+     {
+      "t": "IV fluids ____ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG if tachyarrhythmia",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "BP still severely raised after sedation: manage per hypertension section; emergency → REFER",
+      "s": "stgah:3.42"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids when calm",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG: Na, K",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CK, creatinine if muscle pain / dark urine",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not settling, hyperthermia persisting, or seizures recurring: REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Maintain hydration",
+      "s": "paedstg2024:18.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rising creatinine / K: acute renal failure → REFER for haemodialysis",
+      "s": "stgah:19.31",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet if alert",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CK, U&E if rhabdomyolysis",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Obs 4-hourly once settled",
+      "d": 1
+     },
+     {
+      "t": "Assess and monitor for psychosis",
+      "s": "stgah:15.36"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Recovery",
+    "feed": [
+     {
+      "t": "Stop IV fluids when drinking and creatinine stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, CK if abnormal before",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Once medically stable: mental health assessment, suicide risk; refer social / psychological / psychiatric services",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "Substance use: ASSIST / DUDIT, discuss findings",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "CHILD: home circumstances; safe-storage counselling",
+      "s": "paedstg2024:18.5"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Withdrawal?",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat abnormal bloods only",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Watch for depression and suicide risk as the drug wears off",
+      "s": "stgah:15.36",
+      "b": 1
+     },
+     {
+      "t": "Severe anxiety, irritability, insomnia: ADULT diazepam 5–10 mg oral 8-hourly for 5–7 days",
+      "s": "stgah:15.36"
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Eating and drinking"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Last creatinine ____ · K ____",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria · letter · substance-use referral",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Benzodiazepines · sedation",
+   "items": [
+    {
+     "h": "ADULT agitation"
+    },
+    {
+     "t": "Oral: lorazepam 0.5–2 mg · clonazepam 0.5–2 mg · diazepam 5–10 mg · midazolam 7.5–15 mg",
+     "s": "stgah:15.6"
+    },
+    {
+     "t": "IM: lorazepam 0.5–2 mg · midazolam 7.5–15 mg · clonazepam 0.5–2 mg",
+     "s": "stgah:15.7"
+    },
+    {
+     "t": "Allow ≥ 30 min before repeating; repeated IM doses accumulate",
+     "s": "stgah:15.7"
+    },
+    {
+     "t": "IV route has the highest risk of respiratory depression",
+     "s": "stgah:15.6"
+    },
+    {
+     "h": "CHILD agitation"
+    },
+    {
+     "t": "Diazepam IV/oral 0.1–0.2 mg/kg (max 10 mg)",
+     "s": "paedstg2024:18.24"
+    },
+    {
+     "h": "Seizures"
+    },
+    {
+     "t": "ADULT: lorazepam 4 mg IV (≤ 2 mg/min) · midazolam 10 mg IV/IM/buccal · diazepam 10 mg IV; repeat once at 5 min",
+     "s": "stgah:14.15"
+    },
+    {
+     "t": "CHILD: see 0 h; then phenobarbital 20 mg/kg IV (max 600 mg) and REFER",
+     "s": "paedstg2024:13.9"
+    },
+    {
+     "t": "Never phenytoin for toxin-induced seizures",
+     "s": "stgah:14.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Heat · fluids · BP · kidneys",
+   "items": [
+    {
+     "h": "Hyperthermia"
+    },
+    {
+     "t": "Cool actively; sedate; treat seizures",
+     "s": "stgah:19.31"
+    },
+    {
+     "h": "Fluids and electrolytes"
+    },
+    {
+     "t": "Correct dehydration, hyponatraemia, hyperkalaemia",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Rhabdomyolysis: IV fluids, watch urine output",
+     "d": 1
+    },
+    {
+     "t": "Acute renal failure may need haemodialysis → REFER",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "h": "Hypertension"
+    },
+    {
+     "t": "Asymptomatic severe (DBP ≥ 110 and/or SBP ≥ 180): rest, repeat in 1 h",
+     "s": "stgah:3.42"
+    },
+    {
+     "t": "Emergency: REFER for IV labetalol 2 mg/min to 1–2 mg/kg in high care; ≤ 25% fall in first 30 min – 2 h",
+     "s": "stgah:3.43"
+    },
+    {
+     "t": "CHILD crisis: REFER (labetalol 0.5–3 mg/kg/h needs PICU)",
+     "s": "paedstg2024:4.35"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Status epilepticus needing ICU; hypertensive crisis",
+     "s": "paedstg2024:18.24",
+     "b": 1
+    },
+    {
+     "t": "All seriously ill children → ICU",
+     "s": "paedstg2024:18.24"
+    },
+    {
+     "t": "Hyperthermia not responding to cooling + sedation",
+     "d": 1
+    },
+    {
+     "t": "MI, stroke, acute renal failure",
+     "s": "stgah:19.31"
+    },
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "Temperature rising; HR / BP rising from baseline",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "RR falling or too drowsy after benzodiazepine",
+     "s": "stgah:20.15"
+    },
+    {
+     "t": "Chest pain, seizure, confusion",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Dark urine or little urine",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "ECG · HGT · VBG (Na, K) · U&E · CK",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "Calm, alert, vital signs at the patient's baseline",
+    "d": 1
+   },
+   {
+    "t": "No chest pain; ECG normal or explained",
+    "d": 1
+   },
+   {
+    "t": "Creatinine, K, Na normal or improving",
+    "d": 1
+   },
+   {
+    "t": "No psychosis; suicide risk assessed",
+    "s": "stgah:15.36"
+   },
+   {
+    "t": "Intentional: mental health assessment and plan",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "Substance-use counselling and referral offered",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "CHILD: home circumstances assessed, safe storage counselled",
+    "s": "paedstg2024:18.5"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "Review in 1 week: mood, sleep, psychosis, substance use",
+    "d": 1
+   },
+   {
+    "t": "Withdrawal usually needs no admission; no substitute medication",
+    "s": "stgah:15.36"
+   },
+   {
+    "t": "Return at once: chest pain, severe headache, weakness, seizure, fever, dark urine",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — temperature, HR, BP, sedation, urine",
+  "period": "One sheet per 24 hours; hourly rows until settled, then 4-hourly (heavier rule every 4 h)",
+  "params": [
+   {
+    "h": "Vitals — hourly until settled†",
+    "items": [
+     {
+      "t": "Temp, HR, BP, RR, GCS hourly, then 4-hourly once settled",
+      "d": 1
+     },
+     {
+      "t": "Cardiac monitor if dysrhythmia or chest pain",
+      "s": "paedstg2024:18.23"
+     },
+     {
+      "t": "Cool if hot: undress, tepid spray, fan",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "After sedation",
+    "items": [
+     {
+      "t": "RR, SpO₂ and sedation after every benzodiazepine",
+      "s": "stgah:20.15"
+     },
+     {
+      "t": "Recovery position if drowsy",
+      "s": "stgah:15.7"
+     },
+     {
+      "t": "Restrained: vitals, mental state, restraint sites every 15 min",
+      "s": "stgah:20.14"
+     }
+    ]
+   },
+   {
+    "h": "Urine and behaviour",
+    "items": [
+     {
+      "t": "Volume and colour each void (dark = rhabdomyolysis)",
+      "d": 1
+     },
+     {
+      "t": "Calm room, same staff, re-orientate",
+      "s": "stgah:20.14"
+     },
+     {
+      "t": "Record seizures, chest pain, hallucinations",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Temperature rising or hot to touch",
+    "s": "stgah:19.31"
+   },
+   {
+    "t": "HR or BP rising from the patient's baseline"
+   },
+   {
+    "t": "RR falling or too drowsy after sedation",
+    "s": "stgah:20.15"
+   },
+   {
+    "t": "Seizure",
+    "s": "stgah:19.31"
+   },
+   {
+    "t": "Chest pain or new irregular pulse",
+    "s": "stgah:19.31"
+   },
+   {
+    "t": "Agitation not settling"
+   },
+   {
+    "t": "Dark or little urine",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Benzodiazepine given (drug, mg)",
+   "IV fluid (mL)",
+   "Urine (mL)"
+  ]
+ }
+}

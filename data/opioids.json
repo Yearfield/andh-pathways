@@ -1,0 +1,1144 @@
+{
+ "id": "opioids",
+ "short": "Opioids",
+ "title": "Opioid poisoning (heroin, nyaope, codeine, morphine)",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines where the STGs differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "stgah",
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — exposure + opioid triad",
+   "items": [
+    {
+     "t": "Use / ingestion of an opioid (list below)",
+     "s": "stgah:19.20",
+     "b": 1
+    },
+    {
+     "t": "Triad: CNS depression, respiratory depression, pinpoint pupils",
+     "s": "stgah:19.20",
+     "b": 1
+    },
+    {
+     "t": "Also: hypotension, hypothermia, bradycardia, hyporeflexia, vomiting",
+     "s": "paedstg2024:18.17",
+     "k": "sub"
+    },
+    {
+     "t": "Non-cardiogenic pulmonary oedema",
+     "s": "stgah:19.20",
+     "k": "sub"
+    },
+    {
+     "t": "Oral and long-acting opioids: effect may be delayed 4–12 h; may be alert 1–2 h after ingestion",
+     "s": "paedstg2024:18.16",
+     "k": "info"
+    },
+    {
+     "h": "Common opioids (ask; check the packet)"
+    },
+    {
+     "t": "Heroin, \"nyaope\", \"whoonga\", \"unga\"",
+     "s": "stgah:15.34",
+     "b": 1
+    },
+    {
+     "t": "Codeine (common drug of abuse), morphine, long-acting morphine",
+     "s": "paedstg2024:18.16"
+    },
+    {
+     "t": "Also: codeine cough mixtures, tramadol, methadone, fentanyl patches, pethidine",
+     "d": 1
+    },
+    {
+     "t": "Wt ____ kg · Taken at ____ h · Drug / route ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Naloxone needed = any one of",
+   "items": [
+    {
+     "t": "Significant respiratory depression (slow, shallow or apnoeic)",
+     "s": "stgah:19.21",
+     "b": 1
+    },
+    {
+     "t": "Needs ventilatory support",
+     "s": "phcstg:21.51",
+     "b": 1
+    },
+    {
+     "t": "CHILD: respiratory depression or depressed LOC",
+     "s": "paedstg2024:18.17",
+     "b": 1
+    },
+    {
+     "t": "Uncertain diagnosis: single test dose",
+     "s": "phcstg:21.51"
+    },
+    {
+     "h": "Also severe"
+    },
+    {
+     "t": "GCS < 8 — protect airway",
+     "s": "phcstg:21.51",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema, aspiration",
+     "s": "stgah:19.20"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet (child) / clinic card, previous records (adult)",
+   "items": [
+    {
+     "t": "CHILD: last weight (dosing)"
+    },
+    {
+     "t": "CHILD: access to adult's medicines"
+    },
+    {
+     "t": "CHILD: caregiver on booklet"
+    },
+    {
+     "t": "HIV exposure / status"
+    },
+    {
+     "t": "ADULT: opioid dependence / on methadone",
+     "s": "stgah:15.34"
+    },
+    {
+     "t": "Injecting drug use",
+     "s": "stgah:15.36"
+    },
+    {
+     "t": "Chronic pain meds (tramadol, morphine)",
+     "d": 1
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Psychiatric history, treatment"
+    },
+    {
+     "t": "Benzodiazepine / alcohol use",
+     "s": "stgah:15.34"
+    },
+    {
+     "t": "HIV / ART, hepatitis",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy possible",
+     "s": "stgah:15.34"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Drug, route (IV, smoked, oral, patch)",
+     "s": "phcstg:21.51"
+    },
+    {
+     "t": "Time and amount",
+     "s": "stgah:19.13"
+    },
+    {
+     "t": "Long-acting / slow-release?",
+     "s": "paedstg2024:18.16"
+    },
+    {
+     "t": "Intentional vs accidental"
+    },
+    {
+     "t": "Co-ingestants (benzodiazepines, alcohol, paracetamol)",
+     "d": 1
+    },
+    {
+     "h": "Pre-hospital — do not duplicate"
+    },
+    {
+     "t": "Naloxone ____ mg at ____",
+     "k": "value"
+    },
+    {
+     "t": "Charcoal given"
+    },
+    {
+     "h": "Body packer / stuffer"
+    },
+    {
+     "t": "Swallowed packages (travel, arrest)",
+     "s": "stgah:19.21"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "CHILD: supervision, storage",
+     "s": "paedstg2024:18.5"
+    },
+    {
+     "t": "ADULT / teen: suicidal intent, substance use pattern",
+     "s": "stgah:19.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Slow / shallow breathing",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pinpoint pupils",
+     "k": "yn"
+    },
+    {
+     "t": "RR ____ /min · SpO₂ ____ % · GCS ____ /15",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Airway / chest"
+    },
+    {
+     "t": "Snoring, pooled secretions, vomit",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "t": "Crackles (pulmonary oedema, aspiration)",
+     "s": "stgah:19.20"
+    },
+    {
+     "t": "Cyanosis"
+    },
+    {
+     "h": "CNS"
+    },
+    {
+     "t": "Pinpoint pupils",
+     "s": "stgah:19.20"
+    },
+    {
+     "t": "Hyporeflexia",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "t": "Head injury",
+     "d": 1
+    },
+    {
+     "h": "Skin / abdomen"
+    },
+    {
+     "t": "Injection marks, abscesses",
+     "d": 1
+    },
+    {
+     "t": "Fentanyl patch on skin — remove",
+     "d": 1
+    },
+    {
+     "t": "Full bladder (urinary retention)",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "t": "Pressure areas, compartment (long lie)",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ + RR — bedside",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on ____ · RR ____ /min",
+     "k": "value"
+    },
+    {
+     "t": "Apnoeic or slow / shallow: bag-valve-mask with oxygen while giving naloxone",
+     "s": "phcstg:21.51",
+     "b": 1
+    },
+    {
+     "t": "Monitor SpO₂ continuously",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "t": "Persistent respiratory depression, GCS < 8: protect airway, intubate → REFER",
+     "s": "phcstg:21.51",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Exclude hypoglycaemia as a cause of low GCS",
+     "s": "stgah:20.13"
+    },
+    {
+     "t": "Correct if low; repeat if GCS stays low",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise / GCS < 8",
+     "s": "phcstg:21.51",
+     "b": 1
+    },
+    {
+     "t": "Apnoea / respiratory failure",
+     "s": "phcstg:21.51",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Seizures (tramadol)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Aspiration",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "stgah:19.20"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "t": "Rhabdomyolysis (long lie)",
+     "d": 1
+    },
+    {
+     "t": "Co-ingestion: benzodiazepine, alcohol, paracetamol",
+     "d": 1
+    },
+    {
+     "t": "Body packer — rupture risk",
+     "s": "stgah:19.21"
+    },
+    {
+     "t": "Head injury",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "stgah:20.13"
+    },
+    {
+     "t": "Intentional self-harm",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Child: neglect concern",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "s": "stgah:15.34"
+    },
+    {
+     "t": "Neonate of opioid-using mother: withdrawal",
+     "s": "paedstg2024:18.17"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Needs ventilation, or CHILD needs repeated naloxone → REFER",
+   "s": "paedstg2024:18.17"
+  },
+  {
+   "t": "11. ADMIT — observe ≥ 12 h after naloxone (longer for long-acting opioids)",
+   "s": "paedstg2024:18.17"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Observation runs from the last naloxone dose, not from arrival.",
+  "columns": {
+   "feed": "Airway & naloxone",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "RR, SpO₂, GCS, pupils, HR every 30 min for 12 h after the last naloxone dose, then hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Continuous monitoring for everyone who gets naloxone",
+    "s": "stgah:19.21",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ monitored continuously",
+    "s": "paedstg2024:18.17",
+    "b": 1
+   },
+   {
+    "t": "Watch for re-sedation: naloxone wears off before most opioids",
+    "s": "stgah:19.21",
+    "b": 1
+   },
+   {
+    "t": "Check for urinary retention",
+    "s": "paedstg2024:18.17"
+   },
+   {
+    "t": "Aspiration precautions: recovery position, suction ready",
+    "s": "stgah:15.7"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Airway first. Check the referral / EMS note for naloxone already given (total mg). Poisons Helpline 0861 555 777 / UFS 082 491 0160 (24 h).",
+    "feed": [
+     {
+      "h": "Airway and breathing"
+     },
+     {
+      "t": "Airway protection is the priority; bag-valve-mask ventilation with oxygen",
+      "s": "paedstg2024:18.17",
+      "b": 1
+     },
+     {
+      "t": "GCS < 8: protect airway; intubate if respiratory depression persists → REFER",
+      "s": "phcstg:21.51"
+     },
+     {
+      "t": "Target: reverse respiratory depression, not full wakefulness",
+      "s": "stgah:19.21"
+     },
+     {
+      "h": "Naloxone — ADULT"
+     },
+     {
+      "t": "0.4 mg IV (or IM / SC if no IV)",
+      "s": "stgah:19.21",
+      "b": 1
+     },
+     {
+      "t": "Repeat every 2–3 min, increasing: 0.4 → 0.8 → 2 → 4 mg; maximum 10 mg",
+      "s": "stgah:19.21"
+     },
+     {
+      "t": "Opioid-dependent: start 0.04–0.1 mg IV (avoids precipitated withdrawal)",
+      "s": "stgah:19.21"
+     },
+     {
+      "t": "No response after 10 mg: re-assess the diagnosis",
+      "s": "stgah:19.21"
+     },
+     {
+      "h": "Naloxone — CHILD"
+     },
+     {
+      "t": "0.1 mg/kg IV; no response after 5 min: repeat and titrate",
+      "s": "paedstg2024:18.17",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "stgah:20.13",
+      "b": 1
+     },
+     {
+      "t": "SpO₂ (continuous)",
+      "s": "paedstg2024:18.17",
+      "b": 1
+     },
+     {
+      "t": "VBG: pCO₂, pH if still drowsy",
+      "s": "paedstg2024:18.17",
+      "b": 1
+     },
+     {
+      "t": "If intentional: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, CK if long lie",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Body packer: abdominal X-ray (CT if available)",
+      "s": "stgah:19.21",
+      "b": 1
+     },
+     {
+      "t": "CXR if crackles / hypoxic after reversal",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Responded to naloxone"
+     },
+     {
+      "t": "ADULT: start infusion 0.4 mg/h",
+      "s": "stgah:19.21",
+      "b": 1
+     },
+     {
+      "t": "CHILD needing repeated doses: infusion 0.01 mg/kg/h and REFER",
+      "s": "paedstg2024:18.17",
+      "b": 1
+     },
+     {
+      "t": "Precipitated withdrawal (agitation, vomiting, hypertension, tachycardia): aspiration risk — lower doses",
+      "s": "stgah:19.21"
+     },
+     {
+      "h": "Decontamination"
+     },
+     {
+      "t": "CHILD: activated charcoal < 6 y 1 g/kg; > 6 y 20–50 g — only if airway protected",
+      "s": "paedstg2024:18.4"
+     },
+     {
+      "t": "ADULT oral overdose: charcoal only if within 1 h and airway protected",
+      "s": "stgah:19.14"
+     },
+     {
+      "h": "Body packer / stuffer"
+     },
+     {
+      "t": "Conservative — do not remove packets; charcoal and whole bowel irrigation may help expel them",
+      "s": "stgah:19.21"
+     },
+     {
+      "t": "Obstruction or perforation: surgery → REFER",
+      "s": "stgah:19.21",
+      "b": 1
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "Remove fentanyl patches; warm if hypothermic",
+      "d": 1
+     },
+     {
+      "t": "Start the 12-hour nursing record",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "After reversal",
+    "feed": [
+     {
+      "t": "Infusion rate ____ mg/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, RR, GCS every 30 min",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-sedation (RR falling, pupils pinpoint again): bolus + increase infusion",
+      "s": "stgah:19.21"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Naloxone wearing off",
+    "feed": [
+     {
+      "t": "Adult naloxone half-life about 1 h",
+      "s": "stgah:19.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if GCS still low",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pulmonary oedema / aspiration: oxygen, sit up, CXR; ventilation needed → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Infusion rate ____ mg/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG if RR / SpO₂ borderline",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral opioid: symptoms may still be developing (delayed up to 4–12 h)",
+      "s": "paedstg2024:18.16"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Observe / wean",
+    "feed": [
+     {
+      "t": "Wean infusion if no re-sedation for 2 h",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, CK if long lie",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check bladder — urinary retention",
+      "s": "paedstg2024:18.17"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observation period",
+    "feed": [
+     {
+      "t": "Off naloxone at ____ (time)",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Paracetamol result reviewed if taken",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe at least 12 h after the last naloxone dose for relapse, longer for long-acting opioids",
+      "s": "paedstg2024:18.17",
+      "b": 1
+     },
+     {
+      "t": "Mental health assessment once medically stable if intentional",
+      "s": "stgah:19.15"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Dependence?",
+    "feed": [
+     {
+      "t": "Eating and drinking"
+     }
+    ],
+    "tests": [
+     {
+      "t": "OOWS score ____ (objective opioid withdrawal scale)",
+      "s": "stgah:15.34",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Opioid-dependent: withdrawal plan — OOWS < 4 symptomatic; OOWS ≥ 4 methadone (box below)",
+      "s": "stgah:15.34"
+     },
+     {
+      "t": "Substance use: ASSIST / DUDIT, discuss findings",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "CHILD: home circumstances; safe-storage counselling",
+      "s": "paedstg2024:18.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Withdrawal",
+    "feed": [
+     {
+      "t": "Methadone: repeat day-1 total as single or 2 doses; top-ups 5 mg 2–4-hourly, max 30 mg/day",
+      "s": "stgah:15.35"
+     }
+    ],
+    "tests": [
+     {
+      "t": "OOWS each shift",
+      "s": "stgah:15.34"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "> 30 mg/day needed or symptoms uncontrolled: consult an experienced clinician",
+      "s": "stgah:15.35"
+     }
+    ]
+   },
+   {
+    "label": "Day 3+",
+    "phase": "Taper",
+    "feed": [
+     {
+      "t": "Reduce methadone 10–20% per day over 3–10 days",
+      "s": "stgah:15.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "OOWS",
+      "s": "stgah:15.34"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Offer referral for opioid substitution therapy",
+      "s": "stgah:15.36",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Off naloxone ≥ 12 h",
+      "s": "paedstg2024:18.17"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Last SpO₂ ____ · RR ____",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Counsel: tolerance is lower after admission — high overdose risk",
+      "s": "stgah:15.34",
+      "b": 1
+     },
+     {
+      "t": "IV users: sterile needles and swabs; needle-syringe programme",
+      "s": "stgah:15.36"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Naloxone",
+   "items": [
+    {
+     "h": "ADULT"
+    },
+    {
+     "t": "0.4 mg IV stat; repeat 2–3-minutely increasing 0.4 → 0.8 → 2 → 4 mg, max 10 mg",
+     "s": "stgah:19.21",
+     "b": 1
+    },
+    {
+     "t": "IM or SC if no IV",
+     "s": "stgah:19.21"
+    },
+    {
+     "t": "Response: infusion 0.4 mg/h",
+     "s": "stgah:19.21"
+    },
+    {
+     "t": "Opioid-dependent: start 0.04–0.1 mg IV",
+     "s": "stgah:19.21"
+    },
+    {
+     "h": "CHILD"
+    },
+    {
+     "t": "0.1 mg/kg IV; repeat after 5 min if no response, titrate",
+     "s": "paedstg2024:18.17",
+     "b": 1
+    },
+    {
+     "t": "PHC STG: repeat 0.1 mg/kg (max 2 mg/dose) every 2–3 min, total 10 mg",
+     "s": "phcstg:21.51"
+    },
+    {
+     "t": "Repeated doses: infusion 0.01 mg/kg/h — REFER",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "h": "Duration"
+    },
+    {
+     "t": "ADULT: half-life about 1 h — shorter than most opioids",
+     "s": "stgah:19.21"
+    },
+    {
+     "t": "CHILD: acts 20–30 min; re-sedation expected",
+     "s": "paedstg2024:18.17"
+    }
+   ]
+  },
+  {
+   "title": "Opioid withdrawal (dependent patients)",
+   "items": [
+    {
+     "t": "Signs: vomiting, gooseflesh, cramps, runny nose, tearing, myalgia, diarrhoea, restlessness",
+     "s": "stgah:15.34"
+    },
+    {
+     "h": "Mild (OOWS < 4) — symptomatic"
+    },
+    {
+     "t": "Diazepam 5–20 mg/day in 2–3 doses, taper over 5–7 days",
+     "s": "stgah:15.34"
+    },
+    {
+     "t": "Hyoscine butylbromide 20 mg 8-hourly · paracetamol 0.5–1 g 4–6-hourly (max 4 g) · ibuprofen 400 mg 8-hourly · loperamide 4 mg then 2 mg per loose stool (max 16 mg)",
+     "s": "stgah:15.35"
+    },
+    {
+     "h": "Moderate–severe (OOWS ≥ 4) — admit"
+    },
+    {
+     "t": "Day 1: methadone 5–10 mg oral when withdrawal starts; repeat 5–10 mg after 2–4 h; max 30 mg/24 h",
+     "s": "stgah:15.35"
+    },
+    {
+     "t": "Day 2: repeat day-1 total; Day 3+: reduce 10–20%/day",
+     "s": "stgah:15.35"
+    },
+    {
+     "t": "No methadone: tramadol 200 mg 12-hourly for 14 days",
+     "s": "stgah:15.36"
+    },
+    {
+     "t": "Pregnancy or with benzodiazepine / alcohol withdrawal: consult an expert",
+     "s": "stgah:15.34"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Needs ventilation / persistent respiratory depression",
+     "s": "phcstg:21.51",
+     "b": 1
+    },
+    {
+     "t": "CHILD needing multiple naloxone doses",
+     "s": "paedstg2024:18.17",
+     "b": 1
+    },
+    {
+     "t": "Body packer with obstruction / perforation",
+     "s": "stgah:19.21"
+    },
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "RR slowing, SpO₂ falling, GCS falling, pupils pinpoint again",
+     "s": "stgah:19.21",
+     "b": 1
+    },
+    {
+     "t": "Agitation, vomiting after naloxone (withdrawal) — aspiration",
+     "s": "stgah:19.21"
+    },
+    {
+     "t": "Crackles, hypoxia (pulmonary oedema)",
+     "s": "stgah:19.20"
+    },
+    {
+     "t": "Seizure (tramadol)",
+     "d": 1
+    },
+    {
+     "t": "Unable to pass urine",
+     "s": "paedstg2024:18.17"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "SpO₂ · VBG · HGT · CXR",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "≥ 12 h since last naloxone, no re-sedation (longer if long-acting opioid)",
+    "s": "paedstg2024:18.17",
+    "b": 1
+   },
+   {
+    "t": "Alert; RR and SpO₂ at the patient's baseline",
+    "d": 1
+   },
+   {
+    "t": "Passing urine; eating and drinking",
+    "d": 1
+   },
+   {
+    "t": "Intentional: mental health assessment and plan",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "Counselled on reduced tolerance / overdose risk",
+    "s": "stgah:15.34"
+   },
+   {
+    "t": "OST / substance-use referral offered; IV users given sterile equipment",
+    "s": "stgah:15.36"
+   },
+   {
+    "t": "CHILD: home circumstances assessed, safe storage counselled",
+    "s": "paedstg2024:18.5"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "Opioid substitution / substance-use service referral",
+    "s": "stgah:15.36"
+   },
+   {
+    "t": "Mental health follow-up if intentional"
+   },
+   {
+    "t": "Return at once / call EMS: slow breathing, can't wake, blue lips",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing record — breathing, SpO₂, GCS, pupils, naloxone",
+  "period": "One sheet per 12 hours; 30-minute rows for 12 h after the last naloxone, then hourly",
+  "params": [
+   {
+    "h": "Breathing — every 30 min†",
+    "items": [
+     {
+      "t": "RR, SpO₂, GCS, pupils, HR every 30 min for 12 h after the last naloxone, then hourly",
+      "d": 1
+     },
+     {
+      "t": "SpO₂ monitored continuously",
+      "s": "paedstg2024:18.17"
+     },
+     {
+      "t": "Recovery position; suction ready",
+      "s": "stgah:15.7"
+     }
+    ]
+   },
+   {
+    "h": "Naloxone",
+    "items": [
+     {
+      "t": "Record every bolus (mg, time) and the infusion rate",
+      "d": 1
+     },
+     {
+      "t": "Re-sedation expected as naloxone wears off",
+      "s": "stgah:19.21"
+     },
+     {
+      "t": "After naloxone: watch for vomiting and agitation (withdrawal)",
+      "s": "stgah:19.21"
+     }
+    ]
+   },
+   {
+    "h": "Also",
+    "items": [
+     {
+      "t": "Bladder: urinary retention",
+      "s": "paedstg2024:18.17"
+     },
+     {
+      "t": "Temperature: keep warm",
+      "s": "paedstg2024:18.17"
+     },
+     {
+      "t": "Check for patches, needles, packets",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "RR slowing or shallow",
+    "s": "stgah:19.21"
+   },
+   {
+    "t": "SpO₂ falling",
+    "s": "paedstg2024:18.17"
+   },
+   {
+    "t": "GCS falling or pupils pinpoint again",
+    "s": "stgah:19.21"
+   },
+   {
+    "t": "Vomiting while drowsy",
+    "s": "paedstg2024:18.17"
+   },
+   {
+    "t": "Agitation, sweating, vomiting after naloxone (withdrawal)",
+    "s": "stgah:19.21"
+   },
+   {
+    "t": "Seizure",
+    "d": 1
+   },
+   {
+    "t": "Unable to pass urine",
+    "s": "paedstg2024:18.17"
+   }
+  ],
+  "totals": [
+   "Naloxone boluses (mg)",
+   "Infusion (mg)",
+   "Urine (mL)"
+  ]
+ }
+}

@@ -1,0 +1,1331 @@
+{
+ "id": "pph",
+ "short": "PPH",
+ "title": "Postpartum haemorrhage (primary + secondary, after vaginal birth)",
+ "population": "Obstetric (postpartum)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "impcg2024",
+  "stghosp"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms PPH",
+   "items": [
+    {
+     "t": "Blood loss ≥ 500 mL within 24 h of birth — measured (drape) or appears excessive",
+     "s": "impcg2024:116",
+     "b": 1
+    },
+    {
+     "t": "Any blood loss with haemodynamic instability (tachycardia and/or hypotension)",
+     "s": "stghosp:6.29",
+     "b": 1
+    },
+    {
+     "t": "Secondary PPH: fresh blood or clots > 24 h after birth",
+     "s": "impcg2024:120",
+     "b": 1
+    },
+    {
+     "h": "Severity (blood loss)",
+     "s": "impcg2024:115"
+    },
+    {
+     "t": "Mild 500–1000 mL",
+     "s": "impcg2024:115",
+     "k": "sub"
+    },
+    {
+     "t": "Severe 1000–2500 mL",
+     "s": "impcg2024:115",
+     "k": "sub"
+    },
+    {
+     "t": "Massive > 2500 mL",
+     "s": "impcg2024:115",
+     "k": "sub"
+    },
+    {
+     "t": "Do not wait for vital signs to change — treat at ≥ 500 mL",
+     "s": "impcg2024:115",
+     "k": "info"
+    },
+    {
+     "t": "Birth time ____ · Loss ____ mL (drape / visual) · Time PPH ____ · Para ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Massive bleeding / refer = any one of",
+   "items": [
+    {
+     "t": "SBP < 80 · HR > 120 · shock index > 1.5",
+     "s": "impcg2024:154",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness · cold peripheries",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Blood loss > 1500 mL",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Still bleeding after MOTIVE + cause-directed treatment (refractory)",
+     "s": "impcg2024:118"
+    },
+    {
+     "t": "Likely to need more than the 2 units on site",
+     "d": 1
+    },
+    {
+     "t": "Retained placenta or products needing theatre",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "Complex / cervical tear, apex not reached (? rupture)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Inversion not reduced",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "Coagulopathy · severe puerperal sepsis",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card + delivery notes)",
+   "items": [
+    {
+     "t": "Parity ____ · grand multipara"
+    },
+    {
+     "t": "Previous PPH / previous CS"
+    },
+    {
+     "t": "Twins · big baby · polyhydramnios",
+     "d": 1
+    },
+    {
+     "t": "Prolonged labour · APH / abruptio",
+     "s": "impcg2024:115"
+    },
+    {
+     "t": "Pre-eclampsia / HT (no ergometrine)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Cardiac disease",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Antenatal Hb ____ · anaemia",
+     "s": "impcg2024:115"
+    },
+    {
+     "t": "Rh group · HIV · RPR",
+     "s": "impcg2024:156"
+    },
+    {
+     "t": "Oxytocin 10 U IM at birth — time",
+     "s": "impcg2024:116"
+    },
+    {
+     "t": "Placenta complete? time out",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Tears / episiotomy noted",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "VTE / heart valves (TXA caution)",
+     "s": "impcg2024:116"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Bleeding"
+    },
+    {
+     "t": "Onset ____ min/h after birth"
+    },
+    {
+     "t": "Pads soaked / clots",
+     "s": "impcg2024:157"
+    },
+    {
+     "t": "Born before arrival (BBA)"
+    },
+    {
+     "t": "Placenta not yet delivered",
+     "s": "impcg2024:118"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Dizzy, faint, thirsty"
+    },
+    {
+     "t": "Breathless · chest pain",
+     "d": 1
+    },
+    {
+     "t": "Severe pain / shock out of proportion",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "Bleeding gums / drip sites"
+    },
+    {
+     "h": "Secondary PPH",
+     "s": "impcg2024:120"
+    },
+    {
+     "t": "Fever, rigors",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Offensive lochia",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Lower abdominal pain",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Wound / perineal breakdown",
+     "s": "impcg2024:120"
+    },
+    {
+     "h": "Given before arrival"
+    },
+    {
+     "t": "Oxytocin · ergometrine — times",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "TXA doses ____ (max 2)",
+     "s": "impcg2024:155",
+     "b": 1
+    },
+    {
+     "t": "Misoprostol · fluids (L)"
+    },
+    {
+     "t": "Blood given (units)"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "s": "stghosp:6.29",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "stghosp:6.29",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension (no ergometrine)",
+     "s": "impcg2024:117",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged · cold peripheries",
+     "s": "impcg2024:154",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "s": "impcg2024:154",
+     "k": "yn"
+    },
+    {
+     "h": "Massive bleeding triggers",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "SBP < 80 mmHg",
+     "s": "impcg2024:154",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "HR > 120 /min",
+     "s": "impcg2024:154",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Shock index (HR ÷ SBP) > 1.5 = ____",
+     "s": "impcg2024:154",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Temp — keep > 35 °C",
+     "s": "impcg2024:155",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — the 4 Ts",
+   "items": [
+    {
+     "h": "Tone (uterus)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Soft, large → atony",
+     "s": "impcg2024:117",
+     "b": 1
+    },
+    {
+     "t": "Firm + fresh bleeding → tear",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Not felt → inversion",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Bladder full",
+     "s": "impcg2024:117"
+    },
+    {
+     "h": "Tissue",
+     "s": "impcg2024:116"
+    },
+    {
+     "t": "Placenta complete",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Membranes complete",
+     "s": "impcg2024:62"
+    },
+    {
+     "t": "Placenta retained (> 30 min)",
+     "s": "impcg2024:118"
+    },
+    {
+     "t": "In vagina / cervix",
+     "s": "impcg2024:119"
+    },
+    {
+     "h": "Trauma (lithotomy, good light)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Perineal tear degree ____"
+    },
+    {
+     "t": "Vaginal wall tear",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Cervical tear · apex seen?",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Haematoma",
+     "s": "impcg2024:120"
+    },
+    {
+     "t": "Uterus tender, ? rupture",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Episiotomy extended"
+    },
+    {
+     "h": "Thrombin"
+    },
+    {
+     "t": "Oozing from drip / needle sites"
+    },
+    {
+     "t": "Petechiae, bruising"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Blood loss — measured, cumulative",
+   "items": [
+    {
+     "t": "Total so far: ____ mL (drape / weighed pads / visual)",
+     "k": "value"
+    },
+    {
+     "t": "≥ 500 mL: start MOTIVE bundle now",
+     "s": "impcg2024:115"
+    },
+    {
+     "t": "> 1500 mL: massive bleeding protocol — 2 O-neg + 2 FDP, call for transfer",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Visual estimates underestimate — measure every 15 min",
+     "s": "impcg2024:62"
+    },
+    {
+     "t": "Warning sign for patient: > 2–3 pads soaked in 20–30 min",
+     "s": "impcg2024:157"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb (meter) and bedside clotting",
+   "items": [
+    {
+     "t": "Hb on arrival: ____ g/dL · clot test ____",
+     "k": "value"
+    },
+    {
+     "t": "Early Hb can be falsely reassuring — treat the bleeding and the vitals",
+     "d": 1
+    },
+    {
+     "t": "Bleeding + shock: 2 O-neg units + 2 units FDP (severe haemorrhage), give now",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Clot test fails, or oozing from drip sites → coagulopathy → REFER",
+     "d": 1
+    },
+    {
+     "t": "Send FBC, group & cross-match sample with the transfer",
+     "s": "impcg2024:118",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizure → eclampsia",
+     "b": 1
+    },
+    {
+     "t": "Uterine rupture",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Uterine inversion",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "Retained placenta",
+     "s": "impcg2024:118"
+    },
+    {
+     "t": "Coagulopathy / DIC",
+     "s": "impcg2024:155"
+    },
+    {
+     "t": "Abruptio / HELLP / PET",
+     "s": "impcg2024:155"
+    },
+    {
+     "t": "Puerperal sepsis",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Broad-ligament / vulval haematoma",
+     "s": "impcg2024:120"
+    },
+    {
+     "t": "Amniotic fluid embolism",
+     "d": 1
+    },
+    {
+     "t": "Cardiac disease",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "impcg2024:123"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "impcg2024:155"
+    },
+    {
+     "t": "Transfusion reaction",
+     "s": "impcg2024:155"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = MASSIVE / REFRACTORY PPH or needs theatre (§2) → MOTIVE, bimanual or balloon tamponade, TXA, 2 O-neg + 2 FDP, then REFER (BP and pulse stabilised, escorted)",
+   "s": "impcg2024:120"
+  },
+  {
+   "t": "11. PPH CONTROLLED with MOTIVE + cause-directed treatment → ADMIT — stabilise, then continue on the PPH management chart and the 12-hour PPH nursing record.",
+   "s": "impcg2024:117"
+  }
+ ],
+ "chart": {
+  "unit": "Minutes / Hours",
+  "phase_note": "Clock starts when PPH is diagnosed (≥ 500 mL). ANDH: 2 O-neg units + FDP, no blood bank, no theatre or evacuation → REFER early.",
+  "columns": {
+   "feed": "Fluids & blood",
+   "tests": "Observations & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "While bleeding / on uterotonics: BP, pulse, uterus and blood loss every 15 min · shock index (HR ÷ SBP) · cumulative blood loss (drape / weighed pads)",
+    "s": "stghosp:6.29",
+    "b": 1
+   },
+   {
+    "t": "After control: BP, pulse, RR, temp, pads, uterus every 15 min × 1 h, then every 30 min × 1 h",
+    "s": "impcg2024:62"
+   },
+   {
+    "t": "Then hourly × 8 h",
+    "d": 1
+   },
+   {
+    "t": "Then 4-hourly on the early warning chart",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Urine output hourly via catheter",
+    "d": 1
+   },
+   {
+    "t": "Level of consciousness · temp — keep > 35 °C · IV fluid and blood in",
+    "s": "impcg2024:154"
+   },
+   {
+    "t": "Act on: SBP < 80 · HR > 120 · shock index > 1.5 · loss > 1500 mL · reduced LOC · cold peripheries",
+    "s": "impcg2024:154",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "E-MOTIVE bundle",
+    "lead": "Call for help and the PPH box. Check what was given before (oxytocin, TXA doses — max 2) †. Talk to her calmly throughout.",
+    "feed": [
+     {
+      "t": "IV line, 16 G",
+      "s": "impcg2024:119"
+     },
+     {
+      "t": "Shocked: 2nd line, NaCl 0.9% or RL run fast — 1–2 L, max 2–3 L crystalloid",
+      "s": "impcg2024:155",
+      "b": 1
+     },
+     {
+      "t": "Flat / head down; keep warm (> 35 °C)",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Oxygen by face mask if shocked",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Empty bladder — Foley catheter",
+      "s": "impcg2024:117",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb (meter); FBC, group & cross-match (goes with transfer)",
+      "s": "impcg2024:118",
+      "b": 1
+     },
+     {
+      "t": "Bedside clot test",
+      "d": 1
+     },
+     {
+      "t": "Start measured blood loss (drape / weigh)",
+      "s": "impcg2024:115",
+      "b": 1
+     },
+     {
+      "t": "Shock index = HR ÷ SBP",
+      "s": "impcg2024:155"
+     },
+     {
+      "t": "Placenta and membranes complete?",
+      "s": "impcg2024:117"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "M · O · T",
+      "s": "impcg2024:117"
+     },
+     {
+      "t": "Massage uterus, expel clots",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Oxytocin 10 U in 100–200 mL NaCl 0.9% IV over 5–10 min (no IV yet: 10 U IM)",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Tranexamic acid 1 g in 200 mL IV over 10 min — separate bag (caution VTE / heart valves)",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Then oxytocin 20 U in 1 L NaCl 0.9% at 125–250 mL/h",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "h": "IV · E",
+      "s": "impcg2024:117"
+     },
+     {
+      "t": "Fluids as above; blood when shocked",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Examine: tone, tissue, trauma, thrombin (4 Ts)",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Escalate: senior doctor now; if massive → phone referral hospital + EMS early",
+      "d": 1
+     },
+     {
+      "h": "Massive bleeding (§2 triggers)",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Give the 2 O-neg units + 2 units FDP now; activate transfer",
+      "s": "impcg2024:154",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "10 min",
+    "phase": "Find the cause",
+    "feed": [
+     {
+      "t": "Oxytocin infusion running",
+      "s": "impcg2024:117"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, uterus, loss (15-min)",
+      "s": "stghosp:6.29"
+     },
+     {
+      "t": "Uterus soft / firm / not felt",
+      "s": "impcg2024:117"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Atony: ergometrine 0.5 mg IM (or ergometrine/oxytocin 1 ampoule IM) unless HT / cardiac; keep massaging",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Tear: repair under local in lithotomy; complex → REFER",
+      "s": "impcg2024:117"
+     },
+     {
+      "t": "Retained placenta / inversion: cause-specific box",
+      "s": "impcg2024:118",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "15 min",
+    "phase": "Still bleeding",
+    "feed": [
+     {
+      "t": "Continue fluids; O-neg blood if shocked",
+      "s": "impcg2024:154"
+     }
+    ],
+    "tests": [
+     {
+      "t": "15-min checks; shock index",
+      "s": "stghosp:6.29"
+     },
+     {
+      "t": "Retained tissue and trauma excluded?",
+      "s": "impcg2024:117"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bimanual uterine compression",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Ergometrine 0.5 mg IM — one repeat dose",
+      "s": "stghosp:6.30",
+      "b": 1
+     },
+     {
+      "t": "Misoprostol 600 µg SL or PR, single dose",
+      "s": "impcg2024:116",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Not controlled",
+    "feed": [
+     {
+      "t": "Blood in: ____ units (max 2 on site)",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Loss so far ____ mL",
+      "k": "value"
+     },
+     {
+      "t": "Clot test / drip-site oozing",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tranexamic acid 1 g IV, 2nd (last) dose",
+      "s": "impcg2024:117",
+      "b": 1
+     },
+     {
+      "t": "Atony, trauma and tissue excluded: uterine balloon tamponade; bleeding past the balloon or still bleeding after 10 min → remove, next step",
+      "s": "impcg2024:117"
+     }
+    ]
+   },
+   {
+    "label": "Refractory",
+    "phase": "Massive bleeding",
+    "feed": [
+     {
+      "t": "Up to 3 L crystalloid; 2 O-neg units + 2 FDP; warm fluids",
+      "s": "impcg2024:118"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SBP < 80, HR > 120, shock index > 1.5, loss > 1500 mL, ↓LOC",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Urine output hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aortic compression above the umbilicus while waiting",
+      "s": "impcg2024:118",
+      "b": 1
+     },
+     {
+      "t": "Needs theatre, more blood, platelets or laparotomy → REFER now; senior doctor at receiving hospital phoned",
+      "s": "impcg2024:120"
+     }
+    ]
+   },
+   {
+    "label": "Transfer",
+    "phase": "Until EMS leaves",
+    "feed": [
+     {
+      "t": "Lines running; blood going; keep warm",
+      "s": "impcg2024:154"
+     }
+    ],
+    "tests": [
+     {
+      "t": "15-min obs continue; never left alone",
+      "s": "impcg2024:120"
+     },
+     {
+      "t": "Notes, bloods, blood forms go with her",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Temporise: balloon tamponade (atony) or vaginal packing (lacerations)",
+      "s": "impcg2024:120",
+      "b": 1
+     },
+     {
+      "t": "BP and pulse as stable as possible before leaving; ambulance within 30 min; escort doctor / midwife",
+      "s": "impcg2024:120"
+     },
+     {
+      "t": "Explain to her and family why",
+      "s": "impcg2024:120"
+     }
+    ]
+   },
+   {
+    "label": "0–2 h",
+    "phase": "Bleeding controlled",
+    "feed": [
+     {
+      "t": "Oxytocin infusion to finish (4–8 h)",
+      "s": "impcg2024:117"
+     }
+    ],
+    "tests": [
+     {
+      "t": "15 min × 1 h, 30 min × 1 h: BP, pulse, RR, temp, pads, uterus",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Hb repeat at 2 h",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rebleeding → back to 0 min"
+     },
+     {
+      "t": "Balloon in: keep, oxytocin running, reassess for removal",
+      "d": 1
+     },
+     {
+      "t": "Skin-to-skin and breastfeeding when stable",
+      "s": "impcg2024:61"
+     }
+    ]
+   },
+   {
+    "label": "2–12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids, light meal; stop IV when stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly BP, pulse, pads, uterus, urine",
+      "d": 1
+     },
+     {
+      "t": "Fluid balance"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Remove catheter when stable and mobile",
+      "d": 1
+     },
+     {
+      "t": "Paracetamol 1 g PO for pain",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "Debrief kindly; offer support",
+      "s": "impcg2024:115"
+     }
+    ]
+   },
+   {
+    "label": "12–24 h",
+    "phase": "Postnatal ward",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, temp, pads 4-hourly (early warning chart)",
+      "s": "impcg2024:156",
+      "b": 1
+     },
+     {
+      "t": "Hb next morning",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rh-neg + baby Rh-pos/unknown: anti-D 100 µg IM ≤ 72 h",
+      "s": "impcg2024:89",
+      "b": 1
+     },
+     {
+      "t": "After manual removal: antibiotics (box)",
+      "s": "impcg2024:119"
+     },
+     {
+      "t": "Hb < 6 or symptomatic: transfuse / REFER if no blood left",
+      "s": "impcg2024:122"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Discharge review",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Discharge criteria (below)",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "All results: Hb, syphilis, Rh, HIV",
+      "s": "impcg2024:156",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hb 8–9.9: ferrous sulphate compound 170 mg (or ferrous fumarate 200 mg) 12-hourly",
+      "s": "impcg2024:122",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Hb ≤ 7.9: ferrous sulphate 200 mg 8-hourly + folic acid 5 mg daily",
+      "s": "impcg2024:122",
+      "d": 1
+     },
+     {
+      "t": "Contraception; debrief; mental health screen",
+      "s": "impcg2024:157"
+     }
+    ]
+   },
+   {
+    "label": "2° PPH",
+    "phase": "> 24 h · arrival",
+    "feed": [
+     {
+      "t": "Resuscitate as primary PPH; oxytocin 20 U in 1 L NaCl 0.9% at 125 mL/h",
+      "s": "impcg2024:120",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LOC, temp, colour, BP, pulse, RR",
+      "s": "impcg2024:120"
+     },
+     {
+      "t": "FBC, cross-match",
+      "s": "impcg2024:120",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oxytocin 10 U IM single dose",
+      "s": "impcg2024:120",
+      "b": 1
+     },
+     {
+      "t": "Ergometrine 0.5 mg IM once unless HT / cardiac",
+      "s": "impcg2024:120",
+      "b": 1
+     },
+     {
+      "t": "Admit",
+      "s": "impcg2024:120"
+     }
+    ]
+   },
+   {
+    "label": "2° PPH",
+    "phase": "Cause",
+    "feed": [
+     {
+      "t": "Oral fluids",
+      "s": "impcg2024:135"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Speculum + bimanual: retained products, wound, haematoma",
+      "s": "impcg2024:135"
+     },
+     {
+      "t": "Sepsis signs: temp, pulse, offensive lochia, tender uterus",
+      "s": "impcg2024:135"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Sepsis: amoxicillin/clavulanic acid 1.2 g IV 8-hourly → 875/125 mg PO 12-hourly",
+      "s": "impcg2024:135",
+      "b": 1
+     },
+     {
+      "t": "Retained products → evacuation in theatre → REFER",
+      "s": "impcg2024:135",
+      "b": 1
+     },
+     {
+      "t": "Severe sepsis (temp ≥ 37.5 + pulse ≥ 100) → REFER",
+      "s": "impcg2024:135"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Uterotonics · TXA · blood",
+   "items": [
+    {
+     "h": "Oxytocin",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "10 U in 100–200 mL NaCl 0.9% IV over 5–10 min (or 10 U IM)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Infusion 20 U in 1 L NaCl 0.9% at 125–250 mL/h (4–8 h)",
+     "s": "impcg2024:117"
+    },
+    {
+     "h": "Ergometrine",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "0.5 mg IM (or ergometrine/oxytocin 1 ampoule IM); one repeat after 15 min",
+     "s": "stghosp:6.30"
+    },
+    {
+     "t": "Not in hypertension or cardiac disease",
+     "s": "impcg2024:117"
+    },
+    {
+     "h": "Misoprostol",
+     "s": "impcg2024:116"
+    },
+    {
+     "t": "600 µg SL or PR, single dose",
+     "s": "impcg2024:116"
+    },
+    {
+     "h": "Tranexamic acid",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "1 g in 200 mL IV over 10 min; repeat once after 30 min — max 2 doses; caution VTE / heart valves",
+     "s": "impcg2024:155"
+    },
+    {
+     "h": "Blood (no blood bank)",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "2 un-cross-matched O-neg units + 2 units FDP (all severe obstetric haemorrhage); FDP and FFP interchangeable; then REFER. Rh-neg given Rh-pos blood → anti-D per specialist",
+     "s": "impcg2024:154"
+    }
+   ]
+  },
+  {
+   "title": "Cause-specific",
+   "items": [
+    {
+     "h": "Retained placenta (> 30 min)",
+     "s": "impcg2024:118"
+    },
+    {
+     "t": "Bleeding: catheter, oxytocin infusion, manual removal in labour ward now",
+     "s": "impcg2024:119",
+     "b": 1
+    },
+    {
+     "t": "Minimal bleeding: oxytocin infusion; manual removal is a theatre procedure → REFER; CCT if it separates",
+     "s": "impcg2024:119",
+     "b": 1
+    },
+    {
+     "t": "After manual removal: ampicillin 1 g IV, then amoxicillin 500 mg + metronidazole 400 mg PO 8-hourly × 5 days",
+     "s": "impcg2024:119"
+    },
+    {
+     "h": "Tears",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Repair in lithotomy under local; complex / cervical apex not seen → pack, REFER",
+     "s": "impcg2024:117"
+    },
+    {
+     "h": "Inversion",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "NaCl 0.9% fast via 2 × 16 G; morphine 0.1 mg/kg IM (max 10 mg) if SBP ≥ 90; do not remove attached placenta",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "Salbutamol 250 µg IV; push fundus up and hold; failing → hydrostatic (500–1000 mL saline in vagina)",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "After reduction: ergometrine 0.5 mg IM + oxytocin 20 U/1 L at 240 mL/h; failed → REFER",
+     "s": "impcg2024:119"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER (district cannot manage)",
+     "s": "impcg2024:120"
+    },
+    {
+     "t": "Refractory PPH · need beyond 2 O-neg units · massive bleeding triggers",
+     "s": "impcg2024:120"
+    },
+    {
+     "t": "Manual removal / evacuation in theatre · complex tear · ? rupture",
+     "s": "impcg2024:119"
+    },
+    {
+     "t": "Failed inversion reduction · coagulopathy · severe sepsis",
+     "s": "impcg2024:119"
+    },
+    {
+     "h": "Before transfer",
+     "s": "impcg2024:120"
+    },
+    {
+     "t": "All treatment available here given; balloon / packing in; BP and pulse stabilised; escort; notes, bloods, blood forms",
+     "s": "impcg2024:120"
+    },
+    {
+     "h": "Transfusion reaction",
+     "s": "impcg2024:155"
+    },
+    {
+     "t": "Stop, new line NaCl 0.9%, check ID, call doctor; return unit + set to blood bank",
+     "s": "impcg2024:155"
+    },
+    {
+     "h": "Call doctor"
+    },
+    {
+     "t": "Loss ≥ 500 mL · soft uterus · SBP < 80 · HR > 120 · shock index > 1.5 · ↓LOC · cold peripheries · temp < 35 · poor urine output (†) · rebleeding",
+     "s": "impcg2024:154"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No active bleeding; uterus firm, not tender",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Pulse < 100, RR < 20, temp < 37.5, BP normal",
+    "s": "impcg2024:156",
+    "b": 1
+   },
+   {
+    "t": "Mobile, passed urine, no dizziness",
+    "d": 1
+   },
+   {
+    "t": "Hb recorded; iron and folic acid prescribed",
+    "d": 1
+   },
+   {
+    "t": "Feeding explained, contraception provided",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Hb, syphilis, Rh, HIV recorded and acted on",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Danger signs explained; debriefed",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Discharge summary: PPH, blood given, next pregnancy risk",
+    "d": 1
+   },
+   {
+    "t": "Discharged by / date: ____",
+    "k": "value"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic at 3–6 days, then 6 weeks (bedside Hb; FBC if low). Mental health screen; offer debriefing support.",
+    "s": "impcg2024:157",
+    "b": 1
+   },
+   {
+    "h": "Straight back",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "> 2–3 pads soaked in 20–30 min or bleeding increasing, fever, severe abdominal pain, fast breathing, too weak to stand",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Next pregnancy: deliver in hospital",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour PPH nursing record — vitals, uterus, blood loss, urine",
+  "period": "One sheet per 12 hours from PPH; 15-min rows × 2 h, 30-min rows to 4 h, hourly to 12 h; rebleeding → new sheet",
+  "params": [
+   {
+    "h": "BP · pulse · shock index",
+    "items": [
+     {
+      "t": "Every 15 min while bleeding / on uterotonics, and for 1 h after control",
+      "s": "stghosp:6.29"
+     },
+     {
+      "t": "Then every 30 min × 1 h, then hourly × 8 h (†)",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Shock index = pulse ÷ systolic BP",
+      "s": "impcg2024:155"
+     }
+    ]
+   },
+   {
+    "h": "Uterus · blood loss",
+    "items": [
+     {
+      "t": "Uterus firm (F) or soft (S) — soft: massage and call",
+      "s": "impcg2024:117"
+     },
+     {
+      "t": "Blood loss each check (drape / weighed pads) + running total",
+      "s": "impcg2024:62"
+     }
+    ]
+   },
+   {
+    "h": "Urine · fluids · temp · LOC",
+    "items": [
+     {
+      "t": "Urine output hourly via catheter",
+      "d": 1
+     },
+     {
+      "t": "Record every IV bag and blood unit",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Temp and AVPU with each set; keep warm (> 35 °C)",
+      "s": "impcg2024:155"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for blood loss ≥ 500 mL · soft uterus · SBP < 80 · pulse > 120 · shock index > 1.5 · reduced LOC · cold peripheries · temp < 35 · poor urine output (†) · any rebleeding · transfusion reaction",
+    "s": "impcg2024:154",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Total blood loss (mL)",
+   "IV in (mL)",
+   "Blood (units)",
+   "Urine out (mL)"
+  ]
+ }
+}

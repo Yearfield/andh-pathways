@@ -1,0 +1,1152 @@
+{
+ "id": "cocaine",
+ "short": "Cocaine",
+ "title": "Cocaine poisoning (incl. crack and body packers)",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines where the STGs differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "stgah",
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — exposure + sympathomimetic toxicity",
+   "items": [
+    {
+     "t": "Cocaine use: snorted, smoked (crack), swallowed or injected",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Mild: euphoria, anxiety, altered mental status, tachycardia, mild hypertension",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Moderate: agitation, paranoia, hallucinations, cardiac dysrhythmias",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Severe: see §2",
+     "s": "stgah:19.30",
+     "k": "sub"
+    },
+    {
+     "t": "Cardiovascular effects predominate (dysrhythmias, ischaemia)",
+     "s": "paedstg2024:18.24",
+     "k": "info"
+    },
+    {
+     "h": "Forms and situations (ask)"
+    },
+    {
+     "t": "Powder (snorted), crack / \"rocks\" (smoked), injected; body packers and stuffers",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Often mixed with alcohol, cannabis, heroin (\"speedball\") or cut with other drugs",
+     "d": 1
+    },
+    {
+     "t": "Wt ____ kg · Used at ____ h · Route ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe toxicity = any one of",
+   "items": [
+    {
+     "t": "Severe headache, seizure",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Hyperthermia",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Chest pain / MI, stroke, intestinal ischaemia",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Rhabdomyolysis, severe acidosis",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Body packer with signs of toxicity (package rupture)",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet (child) / clinic card, previous records (adult)",
+   "items": [
+    {
+     "t": "CHILD: last weight (dosing)"
+    },
+    {
+     "t": "CHILD: access to drugs at home"
+    },
+    {
+     "t": "CHILD: caregiver on booklet"
+    },
+    {
+     "t": "HIV exposure / status"
+    },
+    {
+     "t": "ADULT: previous cocaine use / admissions"
+    },
+    {
+     "t": "Cardiac disease, hypertension"
+    },
+    {
+     "t": "Psychiatric history"
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Chronic medicines (β-blockers)",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Epilepsy"
+    },
+    {
+     "t": "HIV / ART"
+    },
+    {
+     "t": "Pregnancy possible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Route, amount, time of last use",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Swallowed packets (travel, arrest)",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Co-ingestants (alcohol, opioids, cannabis)",
+     "d": 1
+    },
+    {
+     "t": "Intentional vs recreational"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Chest pain, palpitations",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Severe headache, weakness",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Abdominal pain (ischaemia, packets)",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Breathlessness",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Muscle pain, dark urine",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Seizure",
+     "s": "stgah:19.30"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "CHILD: supervision, storage",
+     "s": "paedstg2024:18.5"
+    },
+    {
+     "t": "ADULT / teen: suicidal intent, substance use pattern",
+     "s": "stgah:19.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hyperthermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / arrhythmia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Severe agitation",
+     "k": "yn"
+    },
+    {
+     "t": "Temp ____ °C · GCS ____ /15 · Pupils ____ mm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General / CNS"
+    },
+    {
+     "t": "Agitation, paranoia",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Focal neurology (stroke)",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Dilated pupils",
+     "s": "paedstg2024:18.23"
+    },
+    {
+     "t": "Sweating",
+     "s": "paedstg2024:18.23"
+    },
+    {
+     "h": "CVS / chest"
+    },
+    {
+     "t": "Irregular pulse",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Crackles (pulmonary oedema)",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Unequal arm BP (dissection)",
+     "d": 1
+    },
+    {
+     "h": "Abdomen / skin"
+    },
+    {
+     "t": "Tender abdomen (ischaemia)",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Nasal septum damage, burnt lips / fingers",
+     "d": 1
+    },
+    {
+     "t": "Injection marks",
+     "d": 1
+    },
+    {
+     "t": "Muscle tenderness",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "ECG — on arrival",
+   "items": [
+    {
+     "t": "Rate / rhythm ____ · QRS ____ · ST changes ____",
+     "k": "value"
+    },
+    {
+     "t": "Dysrhythmia: cardiac monitor; manage per dysrhythmia section",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Ischaemia / chest pain: MI possible → treat as ACS, REFER",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Repeat with any chest pain or new arrhythmia",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG + CK",
+   "items": [
+    {
+     "t": "pH ____ K ____ HGT ____ CK ____",
+     "k": "value"
+    },
+    {
+     "t": "Severe acidosis = severe toxicity",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Raised CK: rhabdomyolysis or MI",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Rising K / creatinine: AKI → REFER",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock / arrhythmia",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Decreased LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "MI / ACS",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Stroke",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Aortic dissection",
+     "d": 1
+    },
+    {
+     "t": "Intestinal ischaemia",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Hyperthermia",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Rhabdomyolysis",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Ruptured packets",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Co-ingestion (opioid, alcohol)",
+     "d": 1
+    },
+    {
+     "t": "Intentional self-harm",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Child: neglect concern",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy (abruption)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Severe → benzodiazepine, cool, REFER",
+   "s": "stgah:19.30"
+  },
+  {
+   "t": "11. ADMIT — seriously ill child: ICU → REFER",
+   "s": "paedstg2024:18.24"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Cocaine toxicity is usually short; body packers stay until all packets have passed.",
+  "columns": {
+   "feed": "Sedation & seizures",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temp, HR, BP, RR, GCS / agitation hourly until settled, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Cardiac monitor / ECG monitoring",
+    "s": "paedstg2024:18.23",
+    "b": 1
+   },
+   {
+    "t": "Chest pain: ECG at once",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "After every benzodiazepine: RR, SpO₂, sedation",
+    "s": "stgah:20.15",
+    "b": 1
+   },
+   {
+    "t": "Urine output and colour (rhabdomyolysis)",
+    "d": 1
+   },
+   {
+    "t": "Body packer: abdomen, stools, packets passed",
+    "s": "stgah:19.30"
+   },
+   {
+    "t": "Calm, quiet room; re-orientate",
+    "s": "stgah:20.14"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Benzodiazepines are the key treatment. Check the referral note for sedation already given. Poisons Helpline 0861 555 777 / UFS 082 491 0160 (24 h).",
+    "feed": [
+     {
+      "h": "Sedation — ADULT"
+     },
+     {
+      "t": "Benzodiazepines treat the sympathetic and psychomotor features",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "Oral: lorazepam 0.5–2 mg · clonazepam 0.5–2 mg · diazepam 5–10 mg · midazolam 7.5–15 mg",
+      "s": "stgah:15.6"
+     },
+     {
+      "t": "IM: lorazepam 0.5–2 mg · midazolam 7.5–15 mg; or diazepam IV 5–10 mg",
+      "s": "stgah:15.7"
+     },
+     {
+      "t": "Severe delirium: see delirium section",
+      "s": "stgah:20.14"
+     },
+     {
+      "h": "Sedation — CHILD"
+     },
+     {
+      "t": "Diazepam IV/oral 0.1–0.2 mg/kg (max 10 mg) for agitation and tachycardia",
+      "s": "paedstg2024:18.24"
+     },
+     {
+      "h": "Seizures"
+     },
+     {
+      "t": "ADULT: lorazepam 4 mg IV · or midazolam 10 mg IV/IM/buccal · or diazepam 10 mg IV; repeat once at 5 min",
+      "s": "stgah:14.15"
+     },
+     {
+      "t": "CHILD: lorazepam 0.1 mg/kg IV (max 4) · or midazolam 0.25 mg/kg IV (max 10) / 0.5 mg/kg buccal · or diazepam 0.25 mg/kg IV (max 10)",
+      "s": "paedstg2024:13.8"
+     },
+     {
+      "t": "No phenytoin (cardiotoxic)",
+      "s": "stgah:19.30",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG + cardiac monitor",
+      "s": "paedstg2024:18.23",
+      "b": 1
+     },
+     {
+      "t": "Troponin if chest pain",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CK",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "VBG: pH, K",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Body packer: abdominal X-ray (CT if available)",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "If intentional: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Heart and BP"
+     },
+     {
+      "t": "Dysrhythmias: manage per dysrhythmia section",
+      "s": "stgah:19.31"
+     },
+     {
+      "t": "Hypertension not responding to benzodiazepines: hypertension section",
+      "s": "stgah:19.31"
+     },
+     {
+      "t": "NO β-blockers (except labetalol) — worsen vasoconstriction",
+      "s": "stgah:19.31",
+      "b": 1
+     },
+     {
+      "t": "Hypertensive emergency: REFER for IV labetalol in high care; ≤ 25% fall in first 30 min – 2 h",
+      "s": "stgah:3.43"
+     },
+     {
+      "t": "Chest pain with ischaemic ECG: MI → REFER",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "CHILD hypertensive crisis: REFER",
+      "s": "paedstg2024:18.24",
+      "b": 1
+     },
+     {
+      "h": "Heat and fluids"
+     },
+     {
+      "t": "Cool if hyperthermic",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "Maintain hydration",
+      "s": "paedstg2024:18.24"
+     },
+     {
+      "h": "Body packers / stuffers"
+     },
+     {
+      "t": "Conservative: do not try to remove packets",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "t": "Activated charcoal + whole bowel irrigation may help expel packets",
+      "s": "stgah:19.30"
+     },
+     {
+      "t": "Obstruction, perforation or toxicity from rupture: surgery → REFER",
+      "s": "stgah:19.30",
+      "b": 1
+     },
+     {
+      "h": "Swallowed (not packed)"
+     },
+     {
+      "t": "CHILD: activated charcoal < 6 y 1 g/kg; > 6 y 20–50 g",
+      "s": "paedstg2024:18.4"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Settle",
+    "feed": [
+     {
+      "t": "Reassess 15–30 min after each benzodiazepine before repeating",
+      "s": "stgah:20.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG if chest pain or arrhythmia",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Temperature still high: continue cooling, more sedation",
+      "s": "stgah:19.30"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Settle",
+    "feed": [
+     {
+      "t": "IV fluids ____ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Troponin repeat if chest pain",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not settling, seizures recurring, hyperthermia persisting: REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids when calm",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CK, U&E, K",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rhabdomyolysis: IV fluids, watch urine output",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet if alert and no packets",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG before stopping monitor",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Obs 4-hourly once settled",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Recovery",
+    "feed": [
+     {
+      "t": "Stop IV fluids when drinking",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CK, creatinine if raised before",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Once medically stable: mental health assessment, suicide risk; refer social / psychological / psychiatric services",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "Substance use: ASSIST / DUDIT, discuss findings",
+      "s": "stgah:19.15"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Withdrawal?",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat abnormal bloods only",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Watch for depression, suicide risk and psychosis",
+      "s": "stgah:15.36",
+      "b": 1
+     },
+     {
+      "t": "Severe anxiety, irritability, insomnia: ADULT diazepam 5–10 mg oral 8-hourly for 5–7 days",
+      "s": "stgah:15.36"
+     },
+     {
+      "t": "CHILD: home circumstances; safe-storage counselling",
+      "s": "paedstg2024:18.5"
+     }
+    ]
+   },
+   {
+    "label": "Packer",
+    "phase": "Until all packets passed",
+    "feed": [
+     {
+      "t": "Whole bowel irrigation: ADULT PEG solution NGT 1500–2000 mL/h until effluent clear",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "CHILD PEG: 9 mo–6 y 500 mL/h; 6–12 y 1000 mL/h",
+      "s": "paedstg2024:18.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Count packets passed; repeat abdominal X-ray before discharge",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Any toxicity, obstruction or perforation: REFER for surgery",
+      "s": "stgah:19.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Eating and drinking"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Last ECG ____ · CK ____",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria · letter · substance-use referral",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Benzodiazepines · sedation",
+   "items": [
+    {
+     "t": "First line for agitation, tachycardia, hypertension and seizures",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "h": "ADULT"
+    },
+    {
+     "t": "Oral: lorazepam 0.5–2 mg · clonazepam 0.5–2 mg · diazepam 5–10 mg · midazolam 7.5–15 mg",
+     "s": "stgah:15.6"
+    },
+    {
+     "t": "IM: lorazepam 0.5–2 mg · midazolam 7.5–15 mg · clonazepam 0.5–2 mg",
+     "s": "stgah:15.7"
+    },
+    {
+     "t": "Allow ≥ 30 min before repeating; IV has the highest risk of respiratory depression",
+     "s": "stgah:15.7"
+    },
+    {
+     "h": "CHILD"
+    },
+    {
+     "t": "Diazepam IV/oral 0.1–0.2 mg/kg (max 10 mg)",
+     "s": "paedstg2024:18.24"
+    },
+    {
+     "h": "Seizures"
+    },
+    {
+     "t": "ADULT: lorazepam 4 mg IV · midazolam 10 mg · diazepam 10 mg IV; repeat once at 5 min",
+     "s": "stgah:14.15"
+    },
+    {
+     "t": "CHILD: then phenobarbital 20 mg/kg IV (max 600 mg) and REFER",
+     "s": "paedstg2024:13.9"
+    },
+    {
+     "t": "Never phenytoin",
+     "s": "stgah:19.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Heart · BP · heat",
+   "items": [
+    {
+     "h": "Cocaine chest pain"
+    },
+    {
+     "t": "MI and other vascular events can occur",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "ECG, troponin; ischaemia → REFER",
+     "d": 1
+    },
+    {
+     "h": "Hypertension"
+    },
+    {
+     "t": "Benzodiazepine first",
+     "s": "stgah:19.31"
+    },
+    {
+     "t": "Avoid β-blockers other than labetalol",
+     "s": "stgah:19.31",
+     "b": 1
+    },
+    {
+     "t": "Emergency: IV labetalol 2 mg/min to 1–2 mg/kg in high care → REFER",
+     "s": "stgah:3.43"
+    },
+    {
+     "t": "CHILD: labetalol 0.5–3 mg/kg/h needs PICU → REFER",
+     "s": "paedstg2024:4.35"
+    },
+    {
+     "h": "Hyperthermia"
+    },
+    {
+     "t": "Cool; sedate; treat seizures",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Undress, tepid spray, fanning",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Status epilepticus needing ICU; hypertensive crisis",
+     "s": "paedstg2024:18.24",
+     "b": 1
+    },
+    {
+     "t": "MI, stroke, intestinal ischaemia, dissection",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "Body packer: obstruction, perforation or rupture",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "All seriously ill children → ICU",
+     "s": "paedstg2024:18.24"
+    },
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "Chest pain, new irregular pulse",
+     "s": "stgah:19.30",
+     "b": 1
+    },
+    {
+     "t": "Temperature rising; HR / BP rising from baseline",
+     "s": "stgah:19.30"
+    },
+    {
+     "t": "RR falling or too drowsy after benzodiazepine",
+     "s": "stgah:20.15"
+    },
+    {
+     "t": "Severe headache, seizure, abdominal pain",
+     "s": "stgah:19.30"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "ECG · troponin · CK · VBG · U&E",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "Calm, alert, vital signs at the patient's baseline",
+    "d": 1
+   },
+   {
+    "t": "No chest pain; ECG normal or explained",
+    "d": 1
+   },
+   {
+    "t": "CK and creatinine normal or improving",
+    "d": 1
+   },
+   {
+    "t": "Body packer: all packets passed, abdominal X-ray clear",
+    "d": 1
+   },
+   {
+    "t": "No psychosis; suicide risk assessed",
+    "s": "stgah:15.36"
+   },
+   {
+    "t": "Intentional: mental health assessment and plan",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "Substance-use counselling and referral offered",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "CHILD: home circumstances assessed, safe storage counselled",
+    "s": "paedstg2024:18.5"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "Review in 1 week: mood, sleep, substance use",
+    "d": 1
+   },
+   {
+    "t": "Withdrawal usually needs no admission; no substitute medication",
+    "s": "stgah:15.36"
+   },
+   {
+    "t": "Return at once: chest pain, severe headache, weakness, seizure, dark urine",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — temperature, HR, BP, rhythm, sedation",
+  "period": "One sheet per 24 hours; hourly rows until settled, then 4-hourly (heavier rule every 4 h)",
+  "params": [
+   {
+    "h": "Vitals — hourly until settled†",
+    "items": [
+     {
+      "t": "Temp, HR, BP, RR, GCS hourly, then 4-hourly once settled",
+      "d": 1
+     },
+     {
+      "t": "Cardiac monitor; note rhythm",
+      "s": "paedstg2024:18.23"
+     },
+     {
+      "t": "Chest pain: ECG at once and call doctor",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "After sedation",
+    "items": [
+     {
+      "t": "RR, SpO₂ and sedation after every benzodiazepine",
+      "s": "stgah:20.15"
+     },
+     {
+      "t": "Recovery position if drowsy",
+      "s": "stgah:15.7"
+     },
+     {
+      "t": "Restrained: vitals, mental state, restraint sites every 15 min",
+      "s": "stgah:20.14"
+     }
+    ]
+   },
+   {
+    "h": "Urine, stools, packets",
+    "items": [
+     {
+      "t": "Urine volume and colour each void",
+      "d": 1
+     },
+     {
+      "t": "Body packer: record every stool and packets passed",
+      "s": "stgah:19.30"
+     },
+     {
+      "t": "Calm room, same staff, re-orientate",
+      "s": "stgah:20.14"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Chest pain or new irregular pulse",
+    "s": "stgah:19.30"
+   },
+   {
+    "t": "Temperature rising or hot to touch",
+    "s": "stgah:19.30"
+   },
+   {
+    "t": "HR or BP rising from the patient's baseline"
+   },
+   {
+    "t": "RR falling or too drowsy after sedation",
+    "s": "stgah:20.15"
+   },
+   {
+    "t": "Seizure or severe headache",
+    "s": "stgah:19.30"
+   },
+   {
+    "t": "Abdominal pain / vomiting (packer)",
+    "s": "stgah:19.30"
+   },
+   {
+    "t": "Dark or little urine",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Benzodiazepine given (drug, mg)",
+   "IV fluid (mL)",
+   "Urine (mL)",
+   "Packets passed"
+  ]
+ }
+}

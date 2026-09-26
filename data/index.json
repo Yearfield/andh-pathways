@@ -7,6 +7,15 @@
     {"id": "dka-paeds", "file": "dka-paeds.json", "title": "Diabetic ketoacidosis — paediatric", "short": "DKA (paeds)", "population": "Paediatric"},
     {"id": "age-paeds", "file": "age-paeds.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (child)", "short": "AGE (child)", "population": "Paediatric"},
     {"id": "age-adult", "file": "age-adult.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (adult)", "short": "AGE (adult)", "population": "Adult"},
-    {"id": "op", "file": "op.json", "title": "Organophosphate / carbamate poisoning", "short": "OP poisoning", "population": "Adult + Paediatric"}
+    {"id": "op", "file": "op.json", "title": "Organophosphate / carbamate poisoning", "short": "OP poisoning", "population": "Adult + Paediatric"},
+    {"id": "amphetamines", "file": "amphetamines.json", "title": "Amphetamines and methamphetamine (tik, ecstasy/MDMA) poisoning", "short": "Amphetamines", "population": "Adult + Paediatric"},
+    {"id": "opioids", "file": "opioids.json", "title": "Opioid poisoning (heroin, nyaope, codeine, morphine)", "short": "Opioids", "population": "Adult + Paediatric"},
+    {"id": "cocaine", "file": "cocaine.json", "title": "Cocaine poisoning (incl. crack and body packers)", "short": "Cocaine", "population": "Adult + Paediatric"},
+    {"id": "superwarfarin", "file": "superwarfarin.json", "title": "Anticoagulant rat poison (superwarfarin, e.g. Ratex) poisoning", "short": "Rat poison (superwarfarin)", "population": "Adult + Paediatric"},
+    {"id": "term-labour", "file": "term-labour.json", "title": "Term labour — admission for expected NVD", "short": "Term labour", "population": "Obstetric"},
+    {"id": "preterm-labour", "file": "preterm-labour.json", "title": "Preterm labour and PPROM (24–36⁺⁶ weeks)", "short": "Preterm labour", "population": "Obstetric"},
+    {"id": "pph", "file": "pph.json", "title": "Postpartum haemorrhage", "short": "PPH", "population": "Obstetric"},
+    {"id": "toxic-alcohols", "file": "toxic-alcohols.json", "title": "Toxic alcohols — methanol / ethylene glycol (e.g. antifreeze) poisoning", "short": "Toxic alcohols", "population": "Adult + Paediatric"},
+    {"id": "aph", "file": "aph.json", "title": "Antepartum haemorrhage (≥ 20 weeks)", "short": "APH", "population": "Obstetric"}
   ]
 }

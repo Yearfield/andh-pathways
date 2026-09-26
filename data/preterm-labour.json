@@ -1,0 +1,1255 @@
+{
+ "id": "preterm-labour",
+ "short": "Preterm labour",
+ "title": "Preterm labour and PPROM (24–36⁺⁶ weeks)",
+ "population": "Obstetric (24⁺⁰–36⁺⁶ weeks)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "impcg2024",
+  "stghosp"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "h": "Preterm labour — all of",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "GA < 37 weeks (pathway: from 24⁺⁰)",
+     "s": "stghosp:6.22",
+     "b": 1
+    },
+    {
+     "t": "Regular painful contractions, ≥ 1 every 10 min",
+     "s": "impcg2024:87",
+     "b": 1
+    },
+    {
+     "t": "Cervical change (shortening or internal os dilating) and/or ROM",
+     "s": "impcg2024:87",
+     "b": 1
+    },
+    {
+     "h": "PPROM — all of",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "ROM without contractions, < 37 weeks",
+     "s": "impcg2024:88",
+     "b": 1
+    },
+    {
+     "t": "Confirmed by sterile speculum (fluid from os) or pH, or US liquor",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "No digital vaginal examination",
+     "s": "impcg2024:88",
+     "b": 1
+    },
+    {
+     "t": "GA ____ wk · dating ____ · EFW ____ g · Contractions ____/10 min · Cervix ____ cm · ROM time ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer / do not suppress = any one of",
+   "items": [
+    {
+     "t": "GA < 32 wk or EFW < 1.5 kg → specialist hospital",
+     "s": "stghosp:6.23",
+     "b": 1
+    },
+    {
+     "t": "GA 24⁺⁰–25⁺⁶: discuss with specialist hospital",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Chorioamnionitis: temp ≥ 38, maternal HR ≥ 100, uterine tenderness, FHR ≥ 160, offensive or meconium liquor",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Pathological or suspicious fetal heart pattern",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Abruptio placentae / APH",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Severe hypertension → PET pathway",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Severe IUGR · lethal anomaly · IUD",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Cervix ≥ 6 cm with strong contractions (allow labour)",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Severely ill mother · baby needing surgery",
+     "s": "stghosp:6.23"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP / SFH",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    },
+    {
+     "t": "Previous preterm birth / PPROM",
+     "s": "stghosp:6.24"
+    },
+    {
+     "t": "Cerclage · progesterone",
+     "s": "stghosp:6.24"
+    },
+    {
+     "t": "Multiple pregnancy"
+    },
+    {
+     "t": "HIV · ART · last VL",
+     "s": "impcg2024:138"
+    },
+    {
+     "t": "RPR · Rh group",
+     "s": "impcg2024:89"
+    },
+    {
+     "t": "Hb trend · last Hb ____"
+    },
+    {
+     "t": "SFH growth · IUGR",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "UTI / discharge treated",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Steroids already given (dates)",
+     "s": "stghosp:6.23"
+    },
+    {
+     "t": "Cardiac disease (no tocolysis)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Labour / membranes"
+    },
+    {
+     "t": "Onset of pains ____ h"
+    },
+    {
+     "t": "Frequency, duration",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Fluid leak — time ____",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Liquor colour, smell",
+     "s": "impcg2024:86"
+    },
+    {
+     "h": "Cause / complications",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Vaginal discharge",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Dysuria / UTI",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Fever, rigors",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Vaginal bleeding → APH"
+    },
+    {
+     "t": "Fetal movements reduced"
+    },
+    {
+     "t": "Abdominal pain between contr.",
+     "d": 1
+    },
+    {
+     "h": "Treatment before arrival"
+    },
+    {
+     "t": "Nifedipine — doses, times",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "BMZ / dex — dose 1 time",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Antibiotics given",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "IV fluid given",
+     "s": "impcg2024:87"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "TB symptom screen",
+     "d": 1
+    },
+    {
+     "t": "Consents to suppression",
+     "s": "impcg2024:87"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Temp ≥ 38 °C (chorioamnionitis)",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Maternal HR ≥ 100 (chorioamnionitis)",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension → PET pathway",
+     "s": "impcg2024:88",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension (before nifedipine)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Fetal heart"
+    },
+    {
+     "t": "FHR ≥ 160 (chorioamnionitis)",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "FHR ≥ 180 or < 110 for 10 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Late decelerations 10 min / single decel > 3 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Pallor"
+    },
+    {
+     "t": "Heart examined",
+     "d": 1
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "SFH ____ cm"
+    },
+    {
+     "t": "Lie · presentation"
+    },
+    {
+     "t": "Uterine tenderness / irritability",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Contractions ____/10 min",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Head ____/5 · twins?"
+    },
+    {
+     "t": "FHR ____ /min"
+    },
+    {
+     "t": "EFW ____ g (clinical / US)",
+     "s": "stghosp:6.22",
+     "b": 1
+    },
+    {
+     "t": "Renal angle tenderness",
+     "d": 1
+    },
+    {
+     "h": "Speculum first (sterile)",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Fluid draining from os",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Liquor: clear / MSL / offensive",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Discharge · bleeding",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Cord or membranes visible"
+    },
+    {
+     "h": "Digital VE — only if membranes intact",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Dilatation ____ cm",
+     "s": "impcg2024:87",
+     "b": 1
+    },
+    {
+     "t": "Length / effacement ____",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Presenting part · station"
+    },
+    {
+     "t": "Membranes bulging"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Sterile speculum ± pH — membranes",
+   "items": [
+    {
+     "t": "Finding on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "Fluid from os or positive pH = ROM → antibiotics (26⁺⁰–33⁺⁶) · no digital VE",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Doubtful: ultrasound liquor volume",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "ROM + contractions → manage as preterm labour",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Offensive or meconium liquor → chorioamnionitis: deliver",
+     "s": "impcg2024:86"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "GA and EFW — decides where she delivers",
+   "items": [
+    {
+     "t": "GA ____ wk · EFW ____ g",
+     "k": "value"
+    },
+    {
+     "t": "24⁺⁰–25⁺⁶: allow labour; comfort-care evaluation at birth; PPROM → discuss specialist",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "26⁺⁰–31⁺⁶ or EFW < 1.5 kg: BMZ dose 1 (+ nifedipine if contracting) → REFER",
+     "s": "stghosp:6.23",
+     "b": 1
+    },
+    {
+     "t": "32⁺⁰–33⁺⁶ and EFW ≥ 1.5 kg: treat at ANDH",
+     "s": "stghosp:6.23"
+    },
+    {
+     "t": "≥ 34 wk or EFW ≥ 2 kg: term labour pathway",
+     "s": "impcg2024:87"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizure → eclampsia",
+     "b": 1
+    },
+    {
+     "t": "Chorioamnionitis",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Vaginal bleeding / abruptio",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Severe HT → PET pathway",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Cord prolapse",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Abnormal FHR (§5)",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Absent FHR (IUD)",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Malpresentation · twins"
+    },
+    {
+     "t": "Birth imminent (fully dilated)"
+    },
+    {
+     "t": "UTI / pyelonephritis",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Cardiac disease"
+    },
+    {
+     "t": "Wrong dates (term baby)"
+    },
+    {
+     "t": "False labour"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = PRETERM LABOUR / PPROM 26⁺⁰–31⁺⁶ wk or EFW < 1.5 kg → BMZ dose 1, nifedipine if contracting, antibiotics if ROM, then REFER. Chorioamnionitis or other §2 → do not suppress; deliver, or REFER if < 32 wk · 24⁺⁰–25⁺⁶ wk → allow labour, discuss with specialist hospital",
+   "s": "impcg2024:87"
+  },
+  {
+   "t": "11. 32⁺⁰–33⁺⁶ wk and EFW ≥ 1.5 kg, no §2 → ADMIT (≥ 34 wk → term labour pathway) — stabilise, then continue on the preterm labour management chart and the 24-hour preterm nursing record. If labour proceeds, use the term labour nursing record.",
+   "s": "stghosp:6.23"
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Clock starts at first nifedipine / BMZ dose. < 32 wk or EFW < 1.5 kg: rows apply until transfer. ANDH: nifedipine, steroids, MgSO₄, KMC ≥ 1.2 kg (†), Neopuff; no CS, induction, CPAP or NICU → REFER.",
+  "columns": {
+   "feed": "Fluids & position",
+   "tests": "Observations & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "On nifedipine: contractions, FHR, maternal pulse and BP before each dose — at 30 min, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "ROM / PPROM: temp, maternal pulse, FHR and pads 6-hourly · abdomen for tenderness and CTG daily",
+    "s": "impcg2024:88"
+   },
+   {
+    "t": "Every check: chorioamnionitis signs — temp ≥ 38 · maternal HR ≥ 100 · FHR ≥ 160 · uterine tenderness · offensive or meconium liquor",
+    "s": "impcg2024:86",
+    "b": 1
+   },
+   {
+    "t": "Labour proceeds: term labour chart frequencies (FHR 2-hourly latent, every 30 min active) on the term labour nursing record",
+    "s": "impcg2024:59"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for nifedipine, BMZ and antibiotics already given (dose, time) — do not repeat a dose already given. †",
+    "feed": [
+     {
+      "t": "Before nifedipine: NaCl 0.9% 200 mL IV (pre-hydrate)",
+      "s": "stghosp:6.22",
+      "b": 1
+     },
+     {
+      "t": "Oral fluids and diet"
+     },
+     {
+      "t": "Rest on her side",
+      "d": 1
+     },
+     {
+      "t": "PPROM: sterile pad, no digital VE",
+      "s": "impcg2024:88"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick + urine MCS before antibiotics",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "CTG on admission (< 34 wk)",
+      "s": "impcg2024:66",
+      "b": 1
+     },
+     {
+      "t": "Speculum: ROM, discharge (swab if discharge †)",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "Hb; rapid HIV + syphilis if negative earlier / unknown",
+      "s": "impcg2024:57",
+      "b": 1
+     },
+     {
+      "t": "EFW: clinical ± ultrasound (GA, presentation, liquor)",
+      "s": "stghosp:6.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Contracting, 26⁺⁰–33⁺⁶ wk, no contra-indication",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Nifedipine 20 mg PO after pre-hydration",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "Contra-indicated: no consent, suspicious/pathological FHR, lethal anomaly, IUD, chorio, severe HT, abruptio, severe IUGR",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Cervix ≥ 6 cm + strong contractions: allow labour — do not augment",
+      "s": "impcg2024:87"
+     },
+     {
+      "h": "Steroids",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Betamethasone 12 mg IM, dose 1 now (dex 8 mg IM if no BMZ)",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "h": "ROM (26⁺⁰–33⁺⁶)",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "Ampicillin 1 g IV 6-hourly + azithromycin 1 g PO stat",
+      "s": "impcg2024:88",
+      "b": 1
+     },
+     {
+      "t": "Penicillin allergy: clindamycin 600 mg IV 8-hourly",
+      "s": "impcg2024:88"
+     },
+     {
+      "h": "Chorioamnionitis",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "Do not suppress; ampicillin 2 g IV + metronidazole 400 mg PO; deliver — < 32 wk REFER",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "h": "< 32 wk or EFW < 1.5 kg",
+      "s": "stghosp:6.23"
+     },
+     {
+      "t": "First BMZ + nifedipine given → REFER; phone specialist + EMS",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Birth imminent < 32 wk: MgSO₄ 4 g IV over 20 min",
+      "s": "stghosp:6.11",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Suppress",
+    "feed": [
+     {
+      "t": "Oral fluids"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Contractions, FHR, pulse, BP",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Contractions persist: nifedipine 10 mg PO",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "Stopped: next dose at 4 h",
+      "s": "impcg2024:87"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Suppress",
+    "feed": [
+     {
+      "t": "Oral fluids"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Contractions, FHR, pulse, BP before dose",
+      "d": 1
+     },
+     {
+      "t": "Cervix if contractions persist (intact membranes only)",
+      "s": "impcg2024:87"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Nifedipine 10 mg PO 4-hourly (up to 48 h)",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "Cervix ≥ 6 cm + strong contractions → stop, allow labour; < 32 wk → REFER",
+      "s": "impcg2024:87"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "ROM obs",
+    "feed": [],
+    "tests": [
+     {
+      "t": "ROM: temp, pulse, FHR, pads (6-hourly)",
+      "s": "impcg2024:88"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "ROM: ampicillin 1 g IV dose 2 (6-hourly)",
+      "s": "impcg2024:88",
+      "b": 1
+     },
+     {
+      "t": "Chorio signs → do not suppress; chorio antibiotics; deliver / REFER",
+      "s": "impcg2024:86"
+     }
+    ]
+   },
+   {
+    "label": "8–20 h",
+    "phase": "Every 4 h / 6 h",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Checks as standing box before each dose"
+     },
+     {
+      "t": "Urine MCS result — treat UTI",
+      "s": "impcg2024:87",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Nifedipine 10 mg at 8, 12, 16, 20 h",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Ampicillin 1 g IV at 12, 18 h (ROM)",
+      "s": "impcg2024:88"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Steroid 2",
+    "feed": [],
+    "tests": [
+     {
+      "t": "ROM: CTG daily; abdomen for tenderness",
+      "s": "impcg2024:88",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Betamethasone 12 mg IM, dose 2 (or dex dose 3 at 16 h)",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "PPROM: labour starting ≥ 24 h after BMZ 1 → do not suppress, allow labour",
+      "s": "impcg2024:88"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Stop tocolysis",
+    "feed": [
+     {
+      "t": "Stop IV",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Intact: repeat cervical assessment",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "ROM: CTG, temp, pads",
+      "s": "impcg2024:88"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop nifedipine — no benefit beyond 48 h",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "ROM: ampicillin → amoxicillin 500 mg PO 8-hourly × 5 days",
+      "s": "impcg2024:88",
+      "b": 1
+     },
+     {
+      "t": "Intact + no contractions 48 h → discharge; ROM → PPROM rows",
+      "s": "impcg2024:87"
+     }
+    ]
+   },
+   {
+    "label": "Day 3–7",
+    "phase": "PPROM, expectant",
+    "feed": [
+     {
+      "t": "Ward diet; sterile pads"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Temp, pulse, FHR, pads 6-hourly",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "Abdomen for tenderness; CTG daily",
+      "s": "impcg2024:88",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amoxicillin 500 mg PO 8-hourly to day 7",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "No digital VE",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "Contractions: do not suppress (≥ 24 h after BMZ 1) — labour row",
+      "s": "impcg2024:88"
+     }
+    ]
+   },
+   {
+    "label": "Daily → 34 wk",
+    "phase": "PPROM 32–33⁺⁶ wk",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Same 6-hourly checks · daily CTG",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "Weekly EFW / growth",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reach 34 wk (or EFW 2 kg) → induction — not at ANDH → REFER",
+      "s": "impcg2024:88",
+      "b": 1
+     },
+     {
+      "t": "Any chorio sign → deliver",
+      "s": "impcg2024:88"
+     }
+    ]
+   },
+   {
+    "label": "Labour",
+    "phase": "Allowed to proceed",
+    "feed": [
+     {
+      "t": "As term labour pathway"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Term labour frequencies; CTG for poor FHR on auscultation",
+      "s": "impcg2024:66",
+      "b": 1
+     },
+     {
+      "t": "Term labour nursing record"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PPROM in labour: ampicillin 2 g IV, then 1 g IV 6-hourly until birth (GBS)",
+      "s": "impcg2024:88",
+      "b": 1
+     },
+     {
+      "t": "Do not augment",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "< 32 wk, birth imminent: MgSO₄ 4 g IV over 20 min; tell neonatal team",
+      "s": "stghosp:6.11",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Birth",
+    "phase": "Preterm baby",
+    "feed": [
+     {
+      "t": "Skin-to-skin; keep warm",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Apgar at 1 and 5 min; baby weight ____ g",
+      "s": "impcg2024:61",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oxytocin 10 U IM after baby (no second twin)",
+      "s": "impcg2024:62",
+      "b": 1
+     },
+     {
+      "t": "Resuscitate with Neopuff; 24⁺⁰–25⁺⁶: evaluate for comfort care, vigorous → discuss specialist",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Baby < 1.2 kg or needs CPAP → REFER; ≥ 1.2 kg well → KMC",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "0–24 h",
+    "phase": "Postnatal",
+    "feed": [
+     {
+      "t": "Oral; mobile"
+     }
+    ],
+    "tests": [
+     {
+      "t": "4th stage: every 15 min × 1 h, 30 min × 1 h; then 4-hourly",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Chorio: temp, uterine tenderness, lochia",
+      "s": "impcg2024:86"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Chorio: antibiotics 5 days after delivery",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Rh-neg: anti-D 100 µg IM within 72 h",
+      "s": "impcg2024:89",
+      "b": 1
+     },
+     {
+      "t": "MCR changed to high risk; contraception",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Tocolysis · steroids · MgSO₄",
+   "items": [
+    {
+     "h": "Nifedipine (26⁺⁰–33⁺⁶ wk)",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "NaCl 0.9% 200 mL IV first",
+     "s": "stghosp:6.22"
+    },
+    {
+     "t": "20 mg PO; contractions persist → 10 mg after 30 min, then 10 mg 4-hourly, max 48 h",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Nifedipine contra-indicated and < 32 wk: indomethacin 50 mg PO, then 25 mg 4-hourly ≤ 48 h (REFER)",
+     "s": "stghosp:6.22"
+    },
+    {
+     "h": "Steroids",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Betamethasone 12 mg IM × 2, 24 h apart",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "No BMZ: dexamethasone 8 mg IM × 3, 8 h apart",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "PTL 26–33 wk (2024) / 26–34 wk (STG); PPROM from 26⁺⁵ wk (2024)",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "First dose before transfer",
+     "s": "impcg2024:87"
+    },
+    {
+     "h": "MgSO₄ neuroprotection"
+    },
+    {
+     "t": "< 32 wk, birth imminent: 4 g IV in 200 mL NaCl 0.9% over 20 min (SA eclampsia loading dose); reflexes, RR",
+     "s": "stghosp:6.11",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Antibiotics",
+   "items": [
+    {
+     "h": "ROM 26⁺⁰–33⁺⁶ wk",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Ampicillin 1 g IV 6-hourly × 48 h → amoxicillin 500 mg PO 8-hourly × 5 days",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "+ azithromycin 1 g PO single dose",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Severe penicillin allergy: clindamycin 600 mg IV 8-hourly × 48 h → 450 mg PO 8-hourly × 5 days + azithromycin",
+     "s": "impcg2024:88"
+    },
+    {
+     "h": "PPROM ≥ 34 wk",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Not in labour by 12–16 h: start antibiotics (as above) + induction → REFER",
+     "s": "impcg2024:88"
+    },
+    {
+     "h": "PPROM in labour (GBS)",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Ampicillin 2 g IV, then 1 g IV 6-hourly until birth",
+     "s": "impcg2024:88"
+    },
+    {
+     "h": "Chorioamnionitis",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Ampicillin 2 g IV → 1 g IV 6-hourly + metronidazole 400 mg PO 8-hourly (allergy: clindamycin 600 mg IV 8-hourly); continue 5 days after delivery",
+     "s": "impcg2024:86"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Stop nifedipine"
+    },
+    {
+     "t": "48 h reached · chorio sign · abnormal FHR · bleeding · cervix ≥ 6 cm with strong contractions",
+     "s": "impcg2024:87"
+    },
+    {
+     "t": "Hypotension, dizziness, headache on nifedipine → call doctor",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "< 32 wk or EFW < 1.5 kg (after first doses)",
+     "s": "stghosp:6.23"
+    },
+    {
+     "t": "PPROM ≥ 34 wk needing induction · chorio needing induction",
+     "s": "impcg2024:88"
+    },
+    {
+     "t": "Malpresentation, fetal distress not deliverable vaginally",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Baby < 1.2 kg or needing CPAP / NICU",
+     "d": 1
+    },
+    {
+     "h": "Call doctor"
+    },
+    {
+     "t": "Temp ≥ 38 · maternal HR ≥ 100 · FHR ≥ 160 · FHR < 110 or ≥ 180 for 10 min · uterine tenderness · offensive/meconium liquor · bleeding · contractions returning · urge to push",
+     "s": "impcg2024:86"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — membranes intact, all must be met",
+  "items": [
+   {
+    "t": "No contractions for 48 h",
+    "s": "impcg2024:87",
+    "b": 1
+   },
+   {
+    "t": "Repeat cervical assessment done",
+    "s": "impcg2024:87"
+   },
+   {
+    "t": "Steroid course complete",
+    "d": 1
+   },
+   {
+    "t": "Good notes in MCR; risk changed to high risk",
+    "s": "impcg2024:87"
+   },
+   {
+    "t": "High-risk clinic booked in 1 week",
+    "s": "impcg2024:87"
+   },
+   {
+    "t": "Told to return for pains, leaking, bleeding",
+    "d": 1
+   },
+   {
+    "t": "Discharged by / date: ____",
+    "k": "value"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "High-risk clinic in 1 week, then follow up until 34 weeks; from 34 weeks reassess for CHC/MOU care",
+    "s": "impcg2024:87",
+    "b": 1
+   },
+   {
+    "t": "PPROM does not go home — expectant in hospital to 34 wk",
+    "d": 1
+   },
+   {
+    "h": "Straight back"
+   },
+   {
+    "t": "Contractions, fluid leak, bleeding, fever, reduced fetal movements",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour preterm nursing record — contractions, FHR, chorio signs",
+  "period": "One sheet per 24 hours; hourly rows from first dose (+30 min row), heavier rule every 4 h",
+  "params": [
+   {
+    "h": "On nifedipine",
+    "items": [
+     {
+      "t": "Contractions, FHR, maternal pulse and BP before each dose",
+      "d": 1
+     },
+     {
+      "t": "At 30 min, then 4-hourly (heavy lines), max 48 h",
+      "s": "impcg2024:87"
+     },
+     {
+      "t": "Record dose + time in the drug column"
+     }
+    ]
+   },
+   {
+    "h": "ROM / PPROM",
+    "items": [
+     {
+      "t": "Temp, maternal pulse, FHR, pads 6-hourly",
+      "s": "impcg2024:88"
+     },
+     {
+      "t": "Pads: amount, colour, smell of liquor",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "No digital VE; CTG daily (doctor)",
+      "s": "impcg2024:88"
+     }
+    ]
+   },
+   {
+    "h": "Every check — chorioamnionitis",
+    "items": [
+     {
+      "t": "Temp ≥ 38 · maternal HR ≥ 100 · FHR ≥ 160",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Uterine tenderness · offensive or meconium liquor",
+      "s": "impcg2024:86"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for temp ≥ 38 · maternal HR ≥ 100 · FHR ≥ 160 · FHR < 110 or ≥ 180 for 10 min · uterine tenderness · offensive/meconium liquor · bleeding · contractions returning · urge to push · hypotension, dizziness or headache on nifedipine (†)",
+    "s": "impcg2024:86",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Nifedipine doses",
+   "Ampicillin doses",
+   "Steroid dose no.",
+   "Max temp (°C)"
+  ]
+ }
+}

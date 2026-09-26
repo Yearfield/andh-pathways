@@ -1,0 +1,1268 @@
+{
+ "id": "aph",
+ "short": "APH",
+ "title": "Antepartum haemorrhage (≥ 20 weeks)",
+ "population": "Obstetric (≥ 20 weeks)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "impcg2024",
+  "phcstg2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Bleeding from the genital tract",
+     "s": "impcg2024:112",
+     "b": 1
+    },
+    {
+     "t": "GA ≥ 20 weeks, before birth of the baby",
+     "s": "impcg2024:112",
+     "b": 1
+    },
+    {
+     "t": "PHC STG uses ≥ 22 weeks — this pathway uses 20",
+     "s": "phcstg2024:6.6",
+     "k": "info"
+    },
+    {
+     "h": "Likely cause",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Abruptio placentae",
+     "s": "impcg2024:112",
+     "k": "sub"
+    },
+    {
+     "t": "Placenta praevia · vasa praevia",
+     "s": "impcg2024:112",
+     "k": "sub"
+    },
+    {
+     "t": "Local: cervix / vagina (incl. cancer, infection, trauma)",
+     "s": "impcg2024:112",
+     "k": "sub"
+    },
+    {
+     "t": "Uterine rupture",
+     "s": "impcg2024:112",
+     "k": "sub"
+    },
+    {
+     "t": "Unknown origin",
+     "s": "impcg2024:112",
+     "k": "sub"
+    },
+    {
+     "t": "Post-coital bleeding still counts",
+     "s": "impcg2024:112",
+     "k": "info"
+    },
+    {
+     "t": "GA ____ wk · dating ____ · Onset ____ · Loss ____ mL · FHR ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe / refer = any one of",
+   "items": [
+    {
+     "t": "Shock, or massive bleeding (SBP < 80, HR > 120, shock index > 1.5)",
+     "s": "impcg2024:154",
+     "b": 1
+    },
+    {
+     "t": "Placenta praevia (any) — needs specialist care / CS",
+     "s": "impcg2024:113",
+     "b": 1
+    },
+    {
+     "t": "Abruptio, fetus alive and viable — emergency CS",
+     "s": "impcg2024:113",
+     "b": 1
+    },
+    {
+     "t": "Abruptio, fetus dead — coagulopathy risk",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Fetal distress in a viable baby",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Suspected uterine rupture · vasa praevia",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Severe pre-eclampsia / eclampsia with it",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Clotting time ≥ 7 min · bleeding from gums / puncture sites",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Suspected cervical cancer",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP / SFH"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    },
+    {
+     "t": "Placenta site on earlier scan",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Previous CS (praevia, rupture)",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Pre-eclampsia / HT this pregnancy",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Previous APH / abruptio"
+    },
+    {
+     "t": "Hb trend · last Hb ____",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Rh group (anti-D)",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "HIV · ART · VL · RPR"
+    },
+    {
+     "t": "Pap smear / cervical lesion",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Steroids already given",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Multiple pregnancy · grand multip",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Bleeding"
+    },
+    {
+     "t": "Onset, amount, pads ____"
+    },
+    {
+     "t": "Bright red vs dark with clots",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Still bleeding"
+    },
+    {
+     "t": "Post-coital",
+     "s": "impcg2024:112"
+    },
+    {
+     "h": "Abruptio vs praevia",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Abdominal pain (abruptio)",
+     "s": "impcg2024:112",
+     "b": 1
+    },
+    {
+     "t": "Painless (praevia)",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Fetal movements reduced / absent",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Abdominal trauma",
+     "s": "impcg2024:112"
+    },
+    {
+     "h": "Associated"
+    },
+    {
+     "t": "Headache, vision, epigastric pain",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Contractions · ROM"
+    },
+    {
+     "t": "Misoprostol / attempted TOP",
+     "s": "phcstg2024:6.6"
+    },
+    {
+     "t": "Dizzy, faint"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Treatment before arrival",
+     "d": 1
+    },
+    {
+     "t": "TB symptom screen",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "s": "impcg2024:113",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "impcg2024:113",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension → PET pathway too",
+     "s": "impcg2024:113",
+     "k": "yn"
+    },
+    {
+     "t": "Cold peripheries · decreased LOC",
+     "s": "impcg2024:154",
+     "k": "yn"
+    },
+    {
+     "h": "Shock / fetus"
+    },
+    {
+     "t": "SBP < 80 · HR > 120 · shock index > 1.5",
+     "s": "impcg2024:154",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Urine protein (abruptio + PET)",
+     "s": "impcg2024:113",
+     "k": "yn"
+    },
+    {
+     "t": "FHR absent",
+     "s": "impcg2024:112",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "FHR ≥ 180 or < 110 for 10 min · late decels",
+     "s": "impcg2024:66",
+     "k": "yn"
+    },
+    {
+     "t": "Contractions > 5 in 10 min",
+     "s": "impcg2024:112",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — NO digital vaginal examination until placenta praevia excluded on ultrasound",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Pallor"
+    },
+    {
+     "t": "Oedema"
+    },
+    {
+     "h": "Abdomen",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Hard, tender uterus (abruptio)",
+     "s": "impcg2024:112",
+     "b": 1
+    },
+    {
+     "t": "Soft, non-tender (praevia)",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Large for dates",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Irritable · contractions",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Malpresentation / high head",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Scar tenderness"
+    },
+    {
+     "t": "SFH ____ cm"
+    },
+    {
+     "t": "FHR ____ /min (not maternal)",
+     "s": "impcg2024:112"
+    },
+    {
+     "h": "Speculum (after scan, if no praevia)",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Cervical lesion / polyp",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Vaginal tear",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Bleeding through os"
+    },
+    {
+     "t": "Discharge / infection",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Cervix dilated ____ cm"
+    },
+    {
+     "t": "Membranes / liquor"
+    },
+    {
+     "h": "Bleeding",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Bright red",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Dark with clots",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Ultrasound — placenta and fetus",
+   "items": [
+    {
+     "t": "Finding: ____",
+     "k": "value"
+    },
+    {
+     "t": "Placenta in lower segment, near / over os → praevia: no VE; Hb; REFER",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Normal site ± retroplacental clot → abruptio likely",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Fetal heart present? — confirm on scan, CTG may pick up maternal pulse",
+     "s": "impcg2024:113",
+     "b": 1
+    },
+    {
+     "t": "No praevia, no abruptio → speculum → local cause or unknown origin",
+     "s": "impcg2024:112"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb (meter) and whole-blood clotting time",
+   "items": [
+    {
+     "t": "Hb: ____ g/dL · clotting time ____ min",
+     "k": "value"
+    },
+    {
+     "t": "Praevia + Hb < 10 g/dL: start transfusion, REFER urgently",
+     "s": "impcg2024:113",
+     "b": 1
+    },
+    {
+     "t": "Clotting time in glass tube should be < 7 min; prolonged → coagulopathy",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Shock / dead fetus abruptio: 2 O-neg units + 2 FDP",
+     "s": "impcg2024:154",
+     "b": 1
+    },
+    {
+     "t": "Send FBC, cross-match (+ urea, creatinine, INR, PTT if abruptio)",
+     "s": "impcg2024:113",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizure → eclampsia",
+     "b": 1
+    },
+    {
+     "t": "Uterine rupture",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Coagulopathy / DIC",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Fetal distress",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Intra-uterine death",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Severe PET / HELLP",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Oliguria",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Preterm labour",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Vasa praevia (bleed at ROM)",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Cervical cancer",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Trauma / assault",
+     "d": 1
+    },
+    {
+     "t": "Severe anaemia"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = PRAEVIA, ABRUPTIO, SHOCK or any §2 → resuscitate (fluids, 2 O-neg + FDP), AROM if abruptio with dead fetus, then REFER urgently",
+   "s": "impcg2024:113"
+  },
+  {
+   "t": "11. APH OF UNKNOWN ORIGIN or LOCAL CAUSE, stable → ADMIT — stabilise, then continue on the APH management chart and the 24-hour APH nursing record.",
+   "s": "impcg2024:114"
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Praevia, abruptio or shock: stabilise and REFER — later rows apply while waiting, or to APH of unknown origin kept at ANDH. ANDH: ultrasound, CTG, 2 O-neg + FDP; no CS, theatre, induction or blood bank.",
+  "columns": {
+   "feed": "Fluids & blood",
+   "tests": "Observations & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Bleeding / shocked / awaiting transfer: BP, pulse, bleeding (pads), uterus every 15 min · FHR with each set",
+    "d": 1
+   },
+   {
+    "t": "Bleeding settled: BP, pulse, pads hourly × 12 h, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "CTG 6-hourly until bleeding stops, then daily (unknown origin)",
+    "s": "impcg2024:114",
+    "b": 1
+   },
+   {
+    "t": "Abruptio: catheter — urine output hourly; fluid balance; watch for PET, pulmonary oedema",
+    "s": "impcg2024:113",
+    "b": 1
+   },
+   {
+    "t": "Act on: SBP < 80 · HR > 120 · shock index > 1.5 · urine < 30 mL/h for > 4 h · new pain, hard uterus, FHR change",
+    "s": "impcg2024:154",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "NO digital vaginal examination until placenta praevia is excluded on ultrasound. Check what was given before arrival †. Stay calm and supportive.",
+    "feed": [
+     {
+      "t": "IV NaCl 0.9% 1 L",
+      "s": "impcg2024:112",
+      "b": 1
+     },
+     {
+      "t": "Shocked: 1–2 L NaCl 0.9%, 2 lines",
+      "s": "impcg2024:112",
+      "b": 1
+     },
+     {
+      "t": "Left lateral; oxygen by mask; keep warm",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Abruptio: aim SBP ≥ 100; beware overload with PET",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Catheter if abruptio / shocked",
+      "s": "impcg2024:113"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb (meter); FBC, cross-match",
+      "s": "impcg2024:112",
+      "b": 1
+     },
+     {
+      "t": "Abruptio: urea, creatinine, INR, PTT; clotting time in glass tube (< 7 min)",
+      "s": "impcg2024:113",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound: placenta site, FH, retroplacental clot",
+      "s": "impcg2024:112",
+      "b": 1
+     },
+     {
+      "t": "CTG once praevia excluded (not maternal pulse)",
+      "s": "impcg2024:112",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick protein; BP for PET",
+      "s": "impcg2024:113",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Shock / massive bleeding",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "2 O-neg units + 2 units FDP; max 2–3 L crystalloid",
+      "s": "impcg2024:154",
+      "b": 1
+     },
+     {
+      "t": "Phone specialist hospital + EMS; transfer urgently",
+      "s": "impcg2024:112"
+     },
+     {
+      "h": "Placenta praevia",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Continue resuscitation; Hb < 10 g/dL → start transfusion",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "REFER urgently, escorted if transfusion running",
+      "s": "impcg2024:113",
+      "b": 1
+     },
+     {
+      "h": "Abruptio",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Alive, viable, FHR > 100 → emergency CS → REFER urgently; cervix ≥ 9 cm → deliver here",
+      "s": "impcg2024:113",
+      "b": 1
+     },
+     {
+      "t": "Alive, not viable → AROM, plan vaginal delivery (augmentation → REFER)",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Dead fetus → AROM now (even unfavourable cervix), fluids + O-neg + FDP, REFER unless delivery imminent",
+      "s": "impcg2024:113",
+      "b": 1
+     },
+     {
+      "t": "Pain: morphine 0.1 mg/kg IM (max 10 mg) 4-hourly",
+      "s": "impcg2024:113",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Diagnose",
+    "feed": [
+     {
+      "t": "Continue as needed"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ultrasound done: praevia / abruptio / neither",
+      "s": "impcg2024:112"
+     },
+     {
+      "t": "CTG: contractions > 5/10 min, irritable uterus, abnormal FHR → small abruptio",
+      "s": "impcg2024:112"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Praevia or abruptio → 0 h actions + REFER",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Neither → speculum for a local cause",
+      "s": "impcg2024:112",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Cause found",
+    "feed": [
+     {
+      "t": "Stop IV fluid if not shocked",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Local lesion: describe; suspected cancer → REFER",
+      "s": "impcg2024:112"
+     },
+     {
+      "t": "No cause → APH of unknown origin",
+      "s": "impcg2024:114",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Unknown origin: admit; observe for abruptio",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "< 34 wk and delivery may be imminent: betamethasone 12 mg IM, dose 1",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Rh-neg: anti-D if expectant",
+      "s": "impcg2024:113"
+     }
+    ]
+   },
+   {
+    "label": "Transfer",
+    "phase": "Until EMS leaves",
+    "feed": [
+     {
+      "t": "Lines running; blood / FDP going; keep warm",
+      "s": "impcg2024:154"
+     }
+    ],
+    "tests": [
+     {
+      "t": "15-min obs; never left alone",
+      "d": 1
+     },
+     {
+      "t": "Notes, bloods, blood forms, scan report go",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Escort (life-support personnel if transfusion running)",
+      "s": "impcg2024:113"
+     },
+     {
+      "t": "Senior doctor at receiving hospital phoned",
+      "s": "impcg2024:120"
+     },
+     {
+      "t": "Explain to her and family why",
+      "s": "impcg2024:120"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Unknown origin",
+    "feed": [
+     {
+      "t": "Oral fluids, diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CTG (6-hourly while bleeding)",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Pads; pain; uterine tenderness",
+      "s": "impcg2024:114"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New pain, hard uterus, FHR change → abruptio → 0 h",
+      "s": "impcg2024:114"
+     },
+     {
+      "t": "Contractions → preterm labour pathway",
+      "s": "impcg2024:114"
+     }
+    ]
+   },
+   {
+    "label": "12–18 h",
+    "phase": "Unknown origin",
+    "feed": [],
+    "tests": [
+     {
+      "t": "CTG at 12 h and 18 h while bleeding",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Hourly obs to 12 h after bleeding settled",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bleeding recurs or increases → Hb, ultrasound, reassess",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Unknown origin",
+    "feed": [],
+    "tests": [
+     {
+      "t": "CTG; then daily CTG once bleeding stops",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Hb repeat",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Betamethasone 12 mg IM, dose 2 (if started)",
+      "s": "impcg2024:87",
+      "b": 1
+     },
+     {
+      "t": "Bleeding stopped: time ____ (discharge clock starts)",
+      "k": "value"
+     }
+    ]
+   },
+   {
+    "label": "24–48 h",
+    "phase": "After bleeding stops",
+    "feed": [
+     {
+      "t": "Ward diet; mobilise"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Daily CTG; 4-hourly obs (†)",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Assess the cervix before discharge (praevia excluded)",
+      "s": "impcg2024:114",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge 24–48 h after bleeding stopped (criteria below)",
+      "s": "impcg2024:114"
+     },
+     {
+      "t": "Hospital antenatal care; fetal growth and movements",
+      "s": "impcg2024:114"
+     },
+     {
+      "t": "Plan delivery at 38 wk → induction not at ANDH → REFER / book",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Delivery",
+    "phase": "Imminent at ANDH",
+    "feed": [
+     {
+      "t": "2 IV lines; blood / FDP ready",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Term labour frequencies; CTG",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Record blood loss (drape)",
+      "s": "impcg2024:62"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Active management of 3rd stage — mandatory: oxytocin 10 U IM",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Then oxytocin 20 U in 1 L NaCl 0.9% immediately after delivery",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "PPH → PPH pathway",
+      "s": "impcg2024:115"
+     }
+    ]
+   },
+   {
+    "label": "0–12 h",
+    "phase": "After abruptio delivery",
+    "feed": [
+     {
+      "t": "Keep IV line ≥ 12 h; fluid balance",
+      "s": "impcg2024:114"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Vitals hourly ≥ 12 h; watch for PPH",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "Urine output hourly; lungs",
+      "s": "impcg2024:113",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Manage associated PET (PET pathway)",
+      "s": "impcg2024:114"
+     },
+     {
+      "t": "REFER if any post-delivery criterion (box)",
+      "s": "impcg2024:114"
+     },
+     {
+      "t": "Rh-neg: anti-D 100 µg IM ≤ 72 h",
+      "s": "impcg2024:89",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day after",
+    "phase": "Postnatal",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, platelets, urea, creatinine",
+      "s": "impcg2024:114",
+      "b": 1
+     },
+     {
+      "t": "BP 4-hourly",
+      "s": "impcg2024:156"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Iron if anaemic",
+      "d": 1
+     },
+     {
+      "t": "Psychological support; contraception and future pregnancy advice",
+      "s": "impcg2024:114"
+     },
+     {
+      "t": "Stillbirth: bereavement care, notes",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids · blood · drugs",
+   "items": [
+    {
+     "h": "Fluids",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "NaCl 0.9% 1 L IV; shocked 1–2 L; max 2–3 L crystalloid then blood",
+     "s": "impcg2024:155"
+    },
+    {
+     "t": "Abruptio: keep SBP ≥ 100 — beware fluid overload with PET",
+     "s": "impcg2024:113"
+    },
+    {
+     "h": "Blood (no blood bank)",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "2 un-cross-matched O-neg units + 2 units FDP; FDP and FFP interchangeable",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Praevia: transfuse if Hb < 10 g/dL",
+     "s": "impcg2024:113"
+    },
+    {
+     "h": "Steroids (< 34 wk, delivery may be imminent)",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Betamethasone 12 mg IM × 2, 24 h apart (or dexamethasone 8 mg IM × 3, 8 h apart)",
+     "s": "impcg2024:87"
+    },
+    {
+     "h": "Analgesia",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Morphine 0.1 mg/kg IM, max 10 mg, 4-hourly",
+     "s": "impcg2024:113"
+    },
+    {
+     "h": "Anti-D",
+     "s": "impcg2024:89"
+    },
+    {
+     "t": "Rh-neg: 100 µg IM (expectant praevia; after delivery if baby Rh-pos/unknown)",
+     "s": "impcg2024:89"
+    }
+   ]
+  },
+  {
+   "title": "Abruptio vs praevia",
+   "items": [
+    {
+     "h": "Abruptio",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Often hypertensive; may follow trauma",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Pain almost always; fetal movements reduced / absent",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Hard, tender uterus, large for dates",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Dark blood with clots, or none visible",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Scan: normal placenta site, ± clot; fetus may be dead",
+     "s": "impcg2024:112"
+    },
+    {
+     "h": "Placenta praevia",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Usually painless; often previous CS",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Soft, non-tender uterus; malpresentation / high head",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Bright red blood; fetal movements normal",
+     "s": "impcg2024:112"
+    },
+    {
+     "t": "Scan: placenta in lower segment, near / over os",
+     "s": "impcg2024:112"
+    }
+   ]
+  },
+  {
+   "title": "Refer · escalate",
+   "items": [
+    {
+     "h": "REFER urgently (from ANDH)"
+    },
+    {
+     "t": "Placenta praevia · abruptio (alive viable → CS; dead fetus unless delivering)",
+     "s": "impcg2024:113"
+    },
+    {
+     "t": "Shock needing more than 2 O-neg + FDP · rupture · vasa praevia",
+     "s": "impcg2024:154"
+    },
+    {
+     "h": "After delivery here — transfer if",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Severe PET / eclampsia · coagulopathy (gum / puncture-site bleeding, prolonged clotting time)",
+     "s": "impcg2024:114"
+    },
+    {
+     "t": "Urine < 30 mL/h for > 4 h · pulmonary oedema · rising urea, creatinine · platelets < 50 000",
+     "s": "impcg2024:114"
+    },
+    {
+     "h": "Call doctor"
+    },
+    {
+     "t": "New bleeding · pain · hard uterus · FHR change · SBP < 80 · HR > 120 · shock index > 1.5 · urine < 30 mL/h · contractions",
+     "s": "impcg2024:154"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — unknown origin / local cause, all must be met",
+  "items": [
+   {
+    "t": "No bleeding for 24–48 h",
+    "s": "impcg2024:114",
+    "b": 1
+   },
+   {
+    "t": "Cervix assessed — no preterm labour",
+    "s": "impcg2024:114"
+   },
+   {
+    "t": "CTG normal; fetal movements normal",
+    "d": 1
+   },
+   {
+    "t": "Hospital antenatal visit booked",
+    "s": "impcg2024:114"
+   },
+   {
+    "t": "Delivery plan (38 wk) documented",
+    "d": 1
+   },
+   {
+    "t": "Told to return for any bleeding, pain, reduced movements",
+    "d": 1
+   },
+   {
+    "t": "Discharged by / date: ____",
+    "k": "value"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Hospital antenatal clinic: fetal growth and movements; consider delivery at 38 weeks",
+    "s": "impcg2024:114",
+    "b": 1
+   },
+   {
+    "t": "Local cause: treat; suspected cancer → gynae referral",
+    "d": 1
+   },
+   {
+    "t": "Straight back: any bleeding, abdominal pain, reduced fetal movements, leaking",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour APH nursing record — vitals, bleeding, uterus, fetus",
+  "period": "One sheet per 24 hours; 15-min rows for the first hour, then hourly rows; heavier rule every 6 h (CTG); new bleeding → new sheet",
+  "params": [
+   {
+    "h": "BP · pulse · shock index",
+    "items": [
+     {
+      "t": "Every 15 min while bleeding / shocked / awaiting transfer",
+      "d": 1
+     },
+     {
+      "t": "Hourly × 12 h once settled, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Shock index = pulse ÷ systolic BP",
+      "s": "impcg2024:155"
+     }
+    ]
+   },
+   {
+    "h": "Bleeding · uterus · fetus",
+    "items": [
+     {
+      "t": "Pads: amount, bright red / dark, clots",
+      "s": "impcg2024:112"
+     },
+     {
+      "t": "Uterus soft (S), tender (T), hard (H); pain",
+      "s": "impcg2024:112"
+     },
+     {
+      "t": "FHR each set; CTG 6-hourly until bleeding stops, then daily (heavy lines)",
+      "s": "impcg2024:114",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Urine · no VE",
+    "items": [
+     {
+      "t": "Abruptio: catheter, urine output hourly",
+      "s": "impcg2024:113",
+      "b": 1
+     },
+     {
+      "t": "No digital VE until praevia excluded",
+      "s": "impcg2024:112"
+     },
+     {
+      "t": "Record IV bags, O-neg units, FDP given",
+      "s": "impcg2024:154"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for new or more bleeding · new pain, hard or tender uterus · FHR change or absent · contractions · SBP < 80 · pulse > 120 · shock index > 1.5 · urine < 30 mL/h for > 4 h · breathlessness · bleeding from gums or drip sites",
+    "s": "impcg2024:114",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "O-neg units",
+   "FDP units",
+   "Urine out (mL)",
+   "CTGs"
+  ]
+ }
+}

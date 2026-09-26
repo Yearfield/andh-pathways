@@ -1,0 +1,1197 @@
+{
+ "id": "superwarfarin",
+ "short": "Rat poison (superwarfarin)",
+ "title": "Anticoagulant rat poison (superwarfarin, e.g. Ratex) poisoning",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines where thresholds and doses differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "stgah",
+  "paedstg2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms exposure",
+   "items": [
+    {
+     "t": "Ingestion of anticoagulant rat poison (pellets, granules, wedges, blocks, powder) — packet seen",
+     "s": "paedstg2024:18.6",
+     "b": 1
+    },
+    {
+     "t": "Unexplained bleeding or bruising + raised INR (bleeding may be occult)",
+     "s": "stgah:19.41",
+     "b": 1
+    },
+    {
+     "t": "Onset of coagulopathy is delayed: ADULT 1–2 days, CHILD 48–72 h. A normal INR on arrival does not exclude it.",
+     "s": "stgah:19.42",
+     "k": "info"
+    },
+    {
+     "t": "Rat poison ≠ warfarin: superwarfarins are more potent, act for weeks to months, may resist large vitamin K1 doses; prolonged vitamin K1 via Poisons Centre / haematologist",
+     "s": "stgah:19.43",
+     "b": 1,
+     "k": "info"
+    },
+    {
+     "t": "Warfarin-therapy reversal rules do not apply to rat poison",
+     "s": "stgah:19.42",
+     "k": "info"
+    },
+    {
+     "t": "Not all rat poison is anticoagulant: unspecified rat poison or pesticide → also consider amitraz and organophosphates",
+     "s": "stgah:19.42",
+     "b": 1,
+     "k": "info"
+    },
+    {
+     "t": "\"Two-step\" street poison = aldicarb (carbamate) → cholinergic → OP pathway",
+     "d": 1,
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Taken at ____ h · Product ____ · Active ingredient ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Significant poisoning = any one of",
+   "items": [
+    {
+     "t": "Active bleeding → plasma + IV vitamin K1",
+     "s": "stgah:19.42",
+     "b": 1
+    },
+    {
+     "t": "ADULT: INR > 4 (not on long-term warfarin)",
+     "s": "stgah:19.42",
+     "b": 1
+    },
+    {
+     "t": "CHILD: INR > 2.5",
+     "s": "paedstg2024:18.7",
+     "b": 1
+    },
+    {
+     "t": "Significant amount, deliberate ingestion, or amount unknown",
+     "s": "paedstg2024:18.6"
+    },
+    {
+     "t": "Long-acting superwarfarin on the packet, or product unknown",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "Patient on therapeutic warfarin / prosthetic valve → specialist",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet (child) / clinic card, previous records (adult)",
+   "items": [
+    {
+     "t": "CHILD: last weight (dosing)"
+    },
+    {
+     "t": "CHILD: previous poisoning / admissions"
+    },
+    {
+     "t": "CHILD: caregiver on booklet"
+    },
+    {
+     "t": "HIV exposure / status"
+    },
+    {
+     "t": "ADULT: on warfarin — indication, INR target",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "Prosthetic heart valve",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "Liver disease / alcohol use",
+     "d": 1
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Psychiatric history, treatment"
+    },
+    {
+     "t": "Chronic medicines (NSAIDs, aspirin, enzyme inhibitors)",
+     "s": "stgah:19.41"
+    },
+    {
+     "t": "HIV / ART"
+    },
+    {
+     "t": "Pregnancy possible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Packet / container brought",
+     "s": "stgah:19.12"
+    },
+    {
+     "t": "Time and amount taken",
+     "s": "stgah:19.13"
+    },
+    {
+     "t": "Intentional vs accidental",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Co-ingestants, other products"
+    },
+    {
+     "t": "Salivation, sweating, twitching (OP)",
+     "s": "stgah:19.37"
+    },
+    {
+     "h": "Pre-hospital — do not duplicate"
+    },
+    {
+     "t": "Vitamin K1 ____ mg at ____",
+     "k": "value"
+    },
+    {
+     "t": "Charcoal / plasma given"
+    },
+    {
+     "h": "Bleeding symptoms"
+    },
+    {
+     "t": "Gums / nose"
+    },
+    {
+     "t": "Blood in urine"
+    },
+    {
+     "t": "Black stool / vomiting blood"
+    },
+    {
+     "t": "Heavy PV bleeding"
+    },
+    {
+     "t": "Easy bruising"
+    },
+    {
+     "t": "Headache, vomiting, drowsy",
+     "d": 1
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "CHILD: supervision, storage",
+     "s": "paedstg2024:18.5"
+    },
+    {
+     "t": "ADULT / teen: suicidal intent",
+     "s": "stgah:19.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / Hypertension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pallor (clinical)",
+     "k": "yn"
+    },
+    {
+     "t": "GCS ____ /15 · Pupils ____ mm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Skin and mucosa"
+    },
+    {
+     "t": "Bruises / ecchymoses (map)"
+    },
+    {
+     "t": "Petechiae"
+    },
+    {
+     "t": "Gum bleeding"
+    },
+    {
+     "t": "Epistaxis"
+    },
+    {
+     "t": "Subconjunctival bleed"
+    },
+    {
+     "t": "Oozing from IV / puncture sites"
+    },
+    {
+     "t": "Shock: cool peripheries, weak pulse"
+    },
+    {
+     "h": "Abdomen and GU"
+    },
+    {
+     "t": "Melaena on PR",
+     "d": 1
+    },
+    {
+     "t": "Tender abdomen / flank",
+     "d": 1
+    },
+    {
+     "t": "Haematuria (dipstick)",
+     "d": 1
+    },
+    {
+     "t": "PV bleeding"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Focal signs / new headache",
+     "d": 1
+    },
+    {
+     "t": "Seizure activity"
+    },
+    {
+     "h": "Toxidrome check"
+    },
+    {
+     "t": "Cholinergic signs (OP)",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "CNS depression, bradycardia, miosis, no sweating (amitraz)",
+     "s": "stgah:19.37"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "INR / PT — urgent lab",
+   "items": [
+    {
+     "t": "Value on arrival: INR ____ at ____ h after ingestion",
+     "k": "value"
+    },
+    {
+     "t": "ADULT: baseline, and repeat at 48 h after ingestion",
+     "s": "stgah:19.42",
+     "b": 1
+    },
+    {
+     "t": "CHILD: baseline if symptoms/signs; baseline or repeat at 36–72 h in all significant ingestion",
+     "s": "paedstg2024:18.6",
+     "b": 1
+    },
+    {
+     "t": "ADULT INR > 4 / CHILD INR > 2.5: vitamin K1 (chart, 0 h)",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "After vitamin K1: INR ≥ 12 h later, then 4–6-hourly until stable, then 24-hourly",
+     "s": "stgah:19.42"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb — ward Hb or VBG",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "Baseline to judge ongoing or occult bleeding",
+     "d": 1
+    },
+    {
+     "t": "Falling from baseline, or bleeding with shock: plasma + IV vitamin K1, crossmatch, transfuse",
+     "d": 1
+    },
+    {
+     "t": "Bleeding not controlled, or intracranial bleed suspected: attempt REFERRAL",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Then daily while bleeding or on vitamin K1",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock / haemorrhage",
+     "s": "stgah:19.42",
+     "b": 1
+    },
+    {
+     "t": "Decreased LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Intracranial bleed",
+     "d": 1
+    },
+    {
+     "t": "GI bleed",
+     "s": "stgah:19.41"
+    },
+    {
+     "t": "Haemoptysis / airway bleed",
+     "d": 1
+    },
+    {
+     "t": "Retroperitoneal bleed",
+     "d": 1
+    },
+    {
+     "t": "OP / carbamate (other rat poison)",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "Amitraz",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "Co-ingestion (e.g. paracetamol)",
+     "d": 1
+    },
+    {
+     "t": "On warfarin / prosthetic valve",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "Intentional self-harm",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Child: neglect concern",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Liver disease",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Bleeding → plasma + IV vitamin K1; REFER if uncontrolled / intracranial",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT (asymptomatic child, small amount, able to return: may observe as outpatient) — stabilise, then continue on the 0 h – discharge inpatient chart and the 24-hour nursing record. Notify NMC: rodenticide superwarfarin poisoning is notifiable.",
+   "s": "paedstg2024:18.6"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "INR timing counts from the time of ingestion, not arrival. Rows from Day 4 apply while vitamin K1 is still needed.",
+  "columns": {
+   "feed": "Vitamin K1 & blood products",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HR, BP, GCS + bleeding check (gums, nose, skin / new bruises, puncture sites) 4-hourly; hourly while actively bleeding or receiving plasma",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Each urine and stool: blood / melaena; urine dipstick daily",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Record every vitamin K1 dose and every INR time and result"
+   },
+   {
+    "t": "No IM injections, no NSAIDs or aspirin",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Firm pressure on puncture sites · ask about headache",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral note for vitamin K1, plasma or charcoal already given — do not duplicate. Identify the product from the packet. Call Poisons Helpline 0861 555 777 or UFS 082 491 0160 (24 h).",
+    "feed": [
+     {
+      "t": "Do NOT give vitamin K1 prophylactically — only for active bleeding or a raised INR",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "h": "Active bleeding"
+     },
+     {
+      "t": "ADULT: lyophilised plasma or FFP 15 mL/kg IV + vitamin K1 10 mg slow IV (undiluted, not mixed)",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "CHILD: lyophilised plasma or FFP 20 mL/kg IV + vitamin K1 1–5 mg/dose IV slowly",
+      "s": "paedstg2024:18.7"
+     },
+     {
+      "h": "No bleeding, INR raised"
+     },
+     {
+      "t": "ADULT, not on anticoagulants, INR > 4: vitamin K1 10–20 mg oral",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "CHILD, INR > 2.5: vitamin K1 1–5 mg/dose oral (IV only if rapid reversal needed)",
+      "s": "paedstg2024:18.7"
+     },
+     {
+      "t": "The IV ampoule may be given orally",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "On long-term warfarin: Doses tab",
+      "s": "stgah:19.43"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR / PT baseline — ADULT all; CHILD if symptoms / signs",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "t": "Record time of ingestion on the request form",
+      "s": "stgah:19.13"
+     },
+     {
+      "t": "Ward Hb / VBG · FBC incl. platelets",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Group and crossmatch if bleeding",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, LFT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick for blood",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If intentional: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If cholinergic signs: pseudocholinesterase → OP pathway",
+      "s": "stgah:19.38",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Bleeding / shock"
+     },
+     {
+      "t": "Resuscitate: airway, breathing, circulation",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "Plasma + IV vitamin K1 (vitamin K1 column)",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "Packed cells per transfusion guideline",
+      "d": 1
+     },
+     {
+      "t": "Headache, vomiting, falling GCS, focal signs = intracranial bleed: plasma + IV vitamin K1, then REFER for CT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Bleeding not controlled: REFER",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Stop warfarin if on therapy",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "h": "Activated charcoal — best within 1 h, airway protected"
+     },
+     {
+      "t": "ADULT 50 g in 100 mL water",
+      "s": "stgah:19.14"
+     },
+     {
+      "t": "CHILD < 6 y: 1 g/kg in 50–100 mL; > 6 y: 20–50 g in 100–300 mL",
+      "s": "paedstg2024:18.4"
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "Unspecified rat poison: look for OP / amitraz toxidrome",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "Notify NMC (rodenticide superwarfarin is notifiable)",
+      "s": "stgah:19.41",
+      "b": 1
+     },
+     {
+      "t": "Asymptomatic child, small amount, able to return: may observe as outpatient; INR at 36–72 h",
+      "s": "paedstg2024:18.6"
+     },
+     {
+      "t": "Start the 24-hour nursing record"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "After any vitamin K1",
+    "feed": [
+     {
+      "t": "Repeat doses guided by INR only",
+      "s": "stgah:19.42"
+     },
+     {
+      "t": "Dose given: ____ mg at ____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR at least 12 h after each vitamin K1 dose",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "t": "Then INR 4–6-hourly until stable",
+      "s": "stgah:19.42",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess bleeding sites and Hb trend",
+      "d": 1
+     },
+     {
+      "t": "Still bleeding: repeat plasma; discuss with Poisons Centre / haematologist",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "If on vitamin K1: repeat per INR",
+      "s": "stgah:19.42"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR 4–6-hourly until stable, then 24-hourly",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "t": "Hb daily while bleeding or on vitamin K1",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intentional: once medically stable, mental health assessment (suicide risk), refer social / psychological / psychiatric services",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "CHILD: assess home circumstances; safe-storage counselling",
+      "s": "paedstg2024:18.5"
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "CHILD INR window opens",
+    "feed": [
+     {
+      "t": "CHILD INR > 2.5: vitamin K1 1–5 mg/dose oral",
+      "s": "paedstg2024:18.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CHILD: INR at 36–72 h after ingestion in all significant ingestion",
+      "s": "paedstg2024:18.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Coagulopathy onset may be delayed 48–72 h — do not discharge on the arrival INR alone",
+      "s": "paedstg2024:18.6"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "ADULT INR due",
+    "feed": [
+     {
+      "t": "ADULT INR > 4: vitamin K1 10–20 mg oral",
+      "s": "stgah:19.42"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ADULT: INR at 48 h after ingestion",
+      "s": "stgah:19.42",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "INR not raised, no bleeding, no vitamin K1 needed: check discharge criteria"
+     },
+     {
+      "t": "On vitamin K1: continue, INR 24-hourly once stable",
+      "s": "stgah:19.42"
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "CHILD window closes",
+    "feed": [
+     {
+      "t": "Per INR. INR may take 3–4 days to normalise",
+      "s": "stgah:19.42"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CHILD: INR now if not yet done in the 36–72 h window",
+      "s": "paedstg2024:18.6",
+      "b": 1
+     },
+     {
+      "t": "INR 24-hourly if on vitamin K1",
+      "s": "stgah:19.42",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "INR not settling on vitamin K1 → treat as long-acting superwarfarin (Rat poison ≠ warfarin box)",
+      "s": "stgah:19.43"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Superwarfarin?",
+    "feed": [
+     {
+      "t": "Oral vitamin K1 ____ mg ____-hourly",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR 24-hourly",
+      "s": "stgah:19.42",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "INR rises again as vitamin K1 is reduced: discuss dose and duration with Poisons Centre / haematologist (may be several months)",
+      "s": "stgah:19.43"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Home plan",
+    "feed": [
+     {
+      "t": "Home dose ____ mg, frequency ____, planned duration ____ (per PIC / haematologist)",
+      "s": "stgah:19.43",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR 24-hourly",
+      "s": "stgah:19.42",
+      "b": 1
+     },
+     {
+      "t": "Hb if bled",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prescribe and supply oral vitamin K1 for home. Book outpatient INR dates",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 6",
+    "phase": "Stable?",
+    "feed": [
+     {
+      "t": "Same oral dose"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR stable on the home dose",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Counsel: bleeding signs, no NSAIDs / aspirin, take vitamin K1 daily, do not stop early",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Vitamin K1 supply given",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Last INR ____ on ____",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria · letter with vitamin K1 and INR plan · PHC / OPD link",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Vitamin K1 · plasma",
+   "items": [
+    {
+     "t": "No prophylactic vitamin K1 — bleeding or raised INR only",
+     "s": "stgah:19.42",
+     "b": 1
+    },
+    {
+     "h": "Not on anticoagulants (rat poison)"
+    },
+    {
+     "t": "ADULT bleeding: plasma (lyophilised or FFP) 15 mL/kg IV + vitamin K1 10 mg slow IV",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "ADULT INR > 4, no bleeding: vitamin K1 10–20 mg oral",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "CHILD bleeding: plasma 20 mL/kg IV + vitamin K1 1–5 mg/dose IV slowly",
+     "s": "paedstg2024:18.7"
+    },
+    {
+     "t": "CHILD INR > 2.5: vitamin K1 1–5 mg/dose, oral preferred",
+     "s": "paedstg2024:18.7"
+    },
+    {
+     "t": "IV vitamin K1 may cause hypersensitivity — give slowly; IV ampoule can be given orally",
+     "s": "paedstg2024:18.7"
+    },
+    {
+     "h": "ADULT on long-term warfarin"
+    },
+    {
+     "t": "Bleeding: stop warfarin; plasma + vitamin K1 5 mg slow IV",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "INR 5–8: stop warfarin · INR > 8: vitamin K1 0.5–1 mg oral, repeat at 12–24 h if still ≥ 8",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "Consult a haematologist; prosthetic valve: specialist",
+     "s": "stgah:19.43"
+    }
+   ]
+  },
+  {
+   "title": "Rat poison ≠ warfarin",
+   "items": [
+    {
+     "h": "Superwarfarins are not warfarin"
+    },
+    {
+     "t": "More potent; small doses of concentrated forms can anticoagulate significantly",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "Long duration: vitamin K1 may be needed for weeks to several months; may resist large doses",
+     "s": "paedstg2024:18.7",
+     "b": 1
+    },
+    {
+     "t": "Onset delayed (ADULT 1–2 d, CHILD 48–72 h): a normal arrival INR does not exclude poisoning",
+     "s": "stgah:19.42"
+    },
+    {
+     "t": "The low-dose warfarin-therapy rules (INR 5–8 / > 8) do not apply to a rat-poison patient",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "INR normal on vitamin K1 ≠ cured — recheck after each dose reduction and after stopping",
+     "d": 1
+    },
+    {
+     "t": "Examples on packets: brodifacoum, bromadiolone, difenacoum",
+     "d": 1
+    },
+    {
+     "h": "Not all rat poison is anticoagulant"
+    },
+    {
+     "t": "Unspecified rat poison or pesticide: also consider amitraz and organophosphates",
+     "s": "stgah:19.42",
+     "b": 1
+    },
+    {
+     "t": "\"Two-step\" street poison = aldicarb (carbamate) → cholinergic → OP pathway",
+     "d": 1
+    },
+    {
+     "t": "Unknown product: call the Poisons Helpline; check INR anyway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "Any new bleeding or bruising"
+    },
+    {
+     "t": "HR rising / BP falling from the patient's baseline"
+    },
+    {
+     "t": "Hb falling from baseline",
+     "d": 1
+    },
+    {
+     "t": "Reaction during IV vitamin K1 or plasma: stop, treat",
+     "s": "paedstg2024:18.7"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Suspected intracranial bleed: plasma + IV vitamin K1 first, then CT",
+     "d": 1
+    },
+    {
+     "t": "Bleeding not controlled with plasma + vitamin K1",
+     "d": 1
+    },
+    {
+     "t": "Prosthetic valve / complex anticoagulation: specialist",
+     "s": "stgah:19.43"
+    },
+    {
+     "t": "Antidote unavailable; psychiatric evaluation after self-harm",
+     "s": "paedstg2024:18.5"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "INR · Hb / FBC · group and crossmatch · U&E",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "Other toxidrome"
+    },
+    {
+     "t": "Salivation, sweating, pinpoint pupils, fasciculations → OP pathway",
+     "s": "stgah:19.37"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "No bleeding; Hb stable",
+    "d": 1
+   },
+   {
+    "t": "INR reviewed at 48 h (ADULT) / 36–72 h (CHILD) after ingestion",
+    "s": "stgah:19.42",
+    "b": 1
+   },
+   {
+    "t": "If on vitamin K1: INR stable on oral dose; dose and duration agreed with PIC / haematologist",
+    "s": "stgah:19.43"
+   },
+   {
+    "t": "Vitamin K1 supply + INR dates given",
+    "d": 1
+   },
+   {
+    "t": "NMC notification done",
+    "s": "stgah:19.41"
+   },
+   {
+    "t": "Intentional: mental health assessment and plan",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "CHILD: home circumstances assessed, safe storage counselled",
+    "s": "paedstg2024:18.5"
+   },
+   {
+    "t": "Returns if bleeding; can reach the hospital",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "On vitamin K1: INR on the agreed dates; continue until INR stays normal off vitamin K1 (weeks–months)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Mental health follow-up if intentional"
+   },
+   {
+    "t": "Return at once: bleeding gums / nose, blood in urine, black stool, severe headache, drowsiness",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — bleeding check, HR, BP, GCS",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "HR, BP, GCS",
+    "items": [
+     {
+      "t": "4-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Hourly while actively bleeding or receiving plasma",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ask about headache; note vomiting or confusion",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bleeding check — same times",
+    "items": [
+     {
+      "t": "Gums, nose, skin / new bruises, puncture sites",
+      "d": 1
+     },
+     {
+      "t": "Each urine and stool: blood / melaena; urine dipstick daily",
+      "d": 1
+     },
+     {
+      "t": "Firm pressure on puncture sites; no IM injections",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Vitamin K1, plasma, INR",
+    "items": [
+     {
+      "t": "Record every vitamin K1 dose (mg, route, time) and plasma volume"
+     },
+     {
+      "t": "Give IV vitamin K1 slowly — watch for a reaction",
+      "s": "paedstg2024:18.7"
+     },
+     {
+      "t": "Write the time each INR is drawn; no NSAIDs or aspirin",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Any new bleeding or bruising"
+   },
+   {
+    "t": "HR rising or BP falling from the patient's baseline"
+   },
+   {
+    "t": "Headache, vomiting, confusion, falling GCS or seizure",
+    "d": 1
+   },
+   {
+    "t": "A reaction during IV vitamin K1 or plasma",
+    "s": "paedstg2024:18.7"
+   },
+   {
+    "t": "Salivation, sweating, pinpoint pupils or twitching (another rat poison)",
+    "s": "stgah:19.42"
+   }
+  ],
+  "totals": [
+   "Vitamin K1 (mg, route)",
+   "Plasma (mL)",
+   "Blood in urine / stool Y/N",
+   "INR (time : result)"
+  ]
+ }
+}

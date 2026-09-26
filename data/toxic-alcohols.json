@@ -1,0 +1,1267 @@
+{
+ "id": "toxic-alcohols",
+ "short": "Toxic alcohols",
+ "title": "Toxic alcohols — methanol / ethylene glycol (e.g. antifreeze) poisoning",
+ "population": "Adults and children (one pathway; ADULT / CHILD and METHANOL / EG lines where they differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "stgah",
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — history + toxidrome",
+   "items": [
+    {
+     "t": "History of ingestion of a methanol or ethylene glycol product (list below) — container seen",
+     "s": "stgah:19.34",
+     "b": 1
+    },
+    {
+     "t": "Toxic-alcohol toxidrome: inebriation / depressed LOC, nausea, vomiting, high anion gap metabolic acidosis, hyperventilation",
+     "s": "stgah:19.12",
+     "b": 1
+    },
+    {
+     "t": "METHANOL: visual disturbance (after a 12–24 h latent period)",
+     "s": "stgah:19.36",
+     "k": "sub"
+    },
+    {
+     "t": "EG: renal failure, hypocalcaemia (QT prolonged, tetany), oxalate crystals in urine",
+     "s": "stgah:19.33",
+     "k": "sub"
+    },
+    {
+     "t": "Early on the patient may look only \"drunk\".",
+     "s": "stgah:19.36",
+     "k": "info"
+    },
+    {
+     "h": "Where these come from (check the container)"
+    },
+    {
+     "t": "Ethylene glycol: radiator coolant / antifreeze; occasionally brake fluid; homemade toilet and drain cleaners",
+     "s": "stgah:19.33",
+     "b": 1,
+     "k": "info"
+    },
+    {
+     "t": "Ethylene glycol also: de-icers, hydraulic fluid",
+     "d": 1,
+     "k": "info"
+    },
+    {
+     "t": "Methanol: stove or model fuels, antifreeze, windscreen washer fluid",
+     "s": "stgah:19.35",
+     "b": 1,
+     "k": "info"
+    },
+    {
+     "t": "Methanol also: home-brewed / counterfeit spirits, paint thinners, varnish removers, carburettor cleaner",
+     "d": 1,
+     "k": "info"
+    },
+    {
+     "t": "SA methylated spirits no longer contains methanol",
+     "s": "stgah:19.35",
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Taken at ____ h · Product ____ · Amount ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Start ethanol antidote = history + any two",
+   "items": [
+    {
+     "t": "pH < 7.3 (STG: arterial; VBG acceptable†)",
+     "s": "stgah:19.34",
+     "b": 1
+    },
+    {
+     "t": "Serum HCO₃ < 20 mmol/L",
+     "s": "stgah:19.34",
+     "b": 1
+    },
+    {
+     "t": "Urinary oxalate crystals (EG) or visual disturbance (methanol)",
+     "s": "stgah:19.34",
+     "b": 1
+    },
+    {
+     "h": "Severe = any one of"
+    },
+    {
+     "t": "Profound acidosis → early haemodialysis → REFER",
+     "s": "stgah:19.35",
+     "b": 1
+    },
+    {
+     "t": "Coma, seizures",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Visual disturbance (methanol) / renal failure (EG)",
+     "s": "stgah:19.36"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet (child) / clinic card, previous records (adult)",
+   "items": [
+    {
+     "t": "CHILD: last weight (dosing)"
+    },
+    {
+     "t": "CHILD: previous poisoning / admissions"
+    },
+    {
+     "t": "CHILD: caregiver on booklet"
+    },
+    {
+     "t": "HIV exposure / status"
+    },
+    {
+     "t": "ADULT: chronic alcohol use (ethanol dose)",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "Kidney disease (baseline creatinine)",
+     "d": 1
+    },
+    {
+     "t": "Diabetes / hypoglycaemia risk",
+     "d": 1
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Psychiatric history, treatment"
+    },
+    {
+     "t": "Chronic medicines"
+    },
+    {
+     "t": "HIV / ART"
+    },
+    {
+     "t": "Pregnancy possible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Container / label brought",
+     "s": "stgah:19.12"
+    },
+    {
+     "t": "Time and amount taken",
+     "s": "stgah:19.13"
+    },
+    {
+     "t": "Intentional vs accidental",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Drank as alcohol (home brew)",
+     "d": 1
+    },
+    {
+     "t": "Co-ingestants (ethanol, pills)"
+    },
+    {
+     "h": "Pre-hospital — do not duplicate"
+    },
+    {
+     "t": "Ethanol given ____ mL at ____",
+     "k": "value"
+    },
+    {
+     "t": "Bicarbonate / charcoal given"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Drunk, drowsy, ataxic"
+    },
+    {
+     "t": "Nausea / vomiting"
+    },
+    {
+     "t": "Blurred vision, \"snowfield\", blind"
+    },
+    {
+     "t": "Fast / deep breathing"
+    },
+    {
+     "t": "Little urine, flank pain",
+     "d": 1
+    },
+    {
+     "t": "Cramps, tetany"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "CHILD: supervision, storage",
+     "s": "paedstg2024:18.5"
+    },
+    {
+     "t": "ADULT / teen: suicidal intent",
+     "s": "stgah:19.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / deep acidotic breathing",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Oliguria (catheter / urine output)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "GCS ____ /15 · Pupils ____ mm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General / CNS"
+    },
+    {
+     "t": "Smell of alcohol (may be absent)"
+    },
+    {
+     "t": "Nystagmus, ataxia",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Hypotonia, hyporeflexia",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Seizure activity"
+    },
+    {
+     "t": "Hypothermia"
+    },
+    {
+     "h": "Eyes (methanol)"
+    },
+    {
+     "t": "Visual acuity ____ / counts fingers",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Dilated, poorly reactive pupils",
+     "d": 1
+    },
+    {
+     "h": "Respiratory / CVS"
+    },
+    {
+     "t": "Kussmaul breathing",
+     "s": "stgah:19.12"
+    },
+    {
+     "t": "Aspiration (vomit)",
+     "d": 1
+    },
+    {
+     "t": "Tachycardia",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Hypertension",
+     "s": "stgah:19.33"
+    },
+    {
+     "h": "Renal / calcium (EG)"
+    },
+    {
+     "t": "Flank / loin pain",
+     "d": 1
+    },
+    {
+     "t": "Tetany, Chvostek / Trousseau",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "VBG — ward blood gas + electrolytes",
+   "items": [
+    {
+     "t": "Value on arrival: pH ____ HCO₃ ____ Na ____ Cl ____",
+     "k": "value"
+    },
+    {
+     "t": "Anion gap = Na − (Cl + HCO₃) = ____",
+     "s": "stgah:19.33",
+     "k": "value"
+    },
+    {
+     "t": "pH < 7.3 or HCO₃ < 20 (+ history): counts toward starting ethanol (§2)",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "Acidotic: sodium bicarbonate 8.4% (chart, 0 h)",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "Profound acidosis: REFER for early haemodialysis",
+     "s": "stgah:19.35",
+     "b": 1
+    },
+    {
+     "t": "Then 4-hourly on ethanol, and 1 h after each bicarbonate dose",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Low HGT (toxic alcohol and ethanol effect): correct it",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "CHILD hypoglycaemic: dextrose 10% 2 mL/kg IV, then 10% dextrose maintenance",
+     "s": "paedstg2024:18.11"
+    },
+    {
+     "t": "Then hourly while on ethanol",
+     "d": 1
+    },
+    {
+     "t": "CHILD persistent hypoglycaemia: REFER",
+     "s": "paedstg2024:18.11"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Decreased LOC / coma",
+     "s": "stgah:19.33",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "paedstg2024:18.3",
+     "b": 1
+    },
+    {
+     "t": "Profound metabolic acidosis",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "Visual loss (methanol)",
+     "s": "stgah:19.36"
+    },
+    {
+     "t": "Renal failure (EG)",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Hypocalcaemia, QT prolonged (EG)",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Hypoglycaemia · head injury",
+     "d": 1
+    },
+    {
+     "t": "Other acidosis: DKA, sepsis, salicylate",
+     "d": 1
+    },
+    {
+     "t": "Intentional self-harm · co-ingestion",
+     "d": 1
+    },
+    {
+     "t": "Cluster: others drank it",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Severe → ethanol + bicarbonate, REFER for haemodialysis",
+   "s": "stgah:19.35"
+  },
+  {
+   "t": "11. ADMIT — PHC STG: refer all toxic-alcohol cases; start ethanol here before transfer. Stabilise, then continue on the 0 h – discharge inpatient chart and the 24-hour nursing record. No activated charcoal (ineffective for methanol / EG / ethanol).",
+   "s": "phcstg:21.52"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Paeds STG has no toxic-alcohol section: CHILD antidote lines are extrapolated† — discuss with the Poisons Centre.",
+  "columns": {
+   "feed": "Ethanol antidote & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Ethanol 20% rate, GCS, RR hourly (HR, BP hourly on the ward observation chart)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT hourly while on ethanol",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Urine output hourly (catheter if EG or oliguric)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "VBG 4-hourly and 1 h after each bicarbonate dose",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "METHANOL: vision check 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Aspiration precautions: head up, side-lying if drowsy",
+    "d": 1
+   },
+   {
+    "t": "Never give commercial ethanol IV · no activated charcoal",
+    "s": "stgah:19.35",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral note for ethanol or bicarbonate already given — do not duplicate. Consult the Poisons Helpline 0861 555 777 / UFS 082 491 0160. Treat early. Arrange referral for haemodialysis now if severe.",
+    "feed": [
+     {
+      "t": "Start if history + any two: pH < 7.3 · HCO₃ < 20 mmol/L · oxalate crystals (EG) / visual disturbance (methanol)",
+      "s": "stgah:19.34",
+      "b": 1
+     },
+     {
+      "t": "METHANOL + acidosis or visual disturbance: start immediately",
+      "s": "stgah:19.36"
+     },
+     {
+      "h": "Make ethanol 20%"
+     },
+     {
+      "t": "Ethanol 96%: 1 part + 4 parts juice/water (250 mL + 1000 mL = 1250 mL)",
+      "s": "stgah:19.34"
+     },
+     {
+      "t": "Or spirits 40–43% (gin, whisky, vodka): 1 + 1 (500 mL + 500 mL)",
+      "s": "stgah:19.34"
+     },
+     {
+      "h": "Give orally, or by NGT if not cooperative"
+     },
+     {
+      "t": "Load 4 mL/kg over 15–30 min",
+      "s": "stgah:19.34",
+      "b": 1
+     },
+     {
+      "t": "Maintenance: non-drinker 0.5 mL/kg/h; chronic drinker 1 mL/kg/h",
+      "s": "stgah:19.34",
+      "b": 1
+     },
+     {
+      "t": "60 kg: load 240 mL; then 30 mL/h (non-drinker) or 60 mL/h (drinker)",
+      "s": "stgah:19.34"
+     },
+     {
+      "t": "CHILD: same mL/kg regimen — confirm with Poisons Centre; HGT hourly",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG: pH, HCO₃, Na, Cl → anion gap",
+      "s": "stgah:19.34",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "stgah:19.35",
+      "b": 1
+     },
+     {
+      "t": "Urine microscopy: oxalate crystals (EG)",
+      "s": "stgah:19.34",
+      "b": 1
+     },
+     {
+      "t": "Calcium · ECG for QT (EG)",
+      "s": "stgah:19.33",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Serum osmolality if available (osmolar gap)",
+      "s": "stgah:19.12",
+      "b": 1
+     },
+     {
+      "t": "Methanol / EG / ethanol levels usually unavailable: titrate to acidosis",
+      "s": "stgah:19.35"
+     },
+     {
+      "t": "If intentional: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Record time of ingestion on the request form",
+      "s": "stgah:19.13"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway · seizures"
+     },
+     {
+      "t": "Protect airway; depressed LOC may need ventilation → REFER",
+      "s": "stgah:19.33"
+     },
+     {
+      "t": "Seizures: status epilepticus protocol",
+      "d": 1
+     },
+     {
+      "h": "Metabolic acidosis"
+     },
+     {
+      "t": "ADULT: sodium bicarbonate 8.4% 50–100 mmol IV over 30–45 min",
+      "s": "stgah:19.35"
+     },
+     {
+      "t": "CHILD: sodium bicarbonate 8.4% 1 mL/kg IV over 1 h (Paeds STG salicylate dose)",
+      "d": 1
+     },
+     {
+      "t": "Correct severe or clinically evident hypocalcaemia first — rapid correction of acidosis can precipitate seizures",
+      "s": "stgah:19.35",
+      "b": 1
+     },
+     {
+      "h": "Glucose"
+     },
+     {
+      "t": "Correct hypoglycaemia; CHILD: dextrose 10% 2 mL/kg IV, then 10% dextrose maintenance",
+      "s": "paedstg2024:18.11"
+     },
+     {
+      "h": "Cofactors (ADULT)"
+     },
+     {
+      "t": "Thiamine 100 mg oral daily · pyridoxine 100 mg oral daily",
+      "s": "stgah:19.35"
+     },
+     {
+      "t": "CHILD: dose via Poisons Centre",
+      "d": 1
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "No activated charcoal (ineffective)",
+      "s": "stgah:19.14",
+      "b": 1
+     },
+     {
+      "t": "Severe with profound acidosis: REFER for early haemodialysis",
+      "s": "stgah:19.35",
+      "b": 1
+     },
+     {
+      "t": "Ethanol running during transfer; send solution and rate",
+      "d": 1
+     },
+     {
+      "t": "Others drank the same product: find and assess them",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Load given",
+    "feed": [
+     {
+      "t": "Maintenance running: ____ mL/h",
+      "k": "value"
+     },
+     {
+      "t": "Too drowsy: reduce rate, protect airway",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG 1 h after bicarbonate",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Referral / haemodialysis discussed? Poisons Centre advice noted",
+      "s": "stgah:19.33"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Titrate the rate to improvement in acidosis and systemic toxicity",
+      "s": "stgah:19.35"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still acidotic: repeat bicarbonate; recheck calcium first",
+      "s": "stgah:19.35"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Rate ____ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG + anion gap (4-hourly)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Calcium if EG",
+      "s": "stgah:19.35",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Worsening acidosis despite ethanol + bicarbonate: REFER for haemodialysis",
+      "s": "stgah:19.35",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Rate ____ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine output falling (EG): renal failure → REFER for dialysis",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Methanol latent period ends (12–24 h)",
+    "feed": [
+     {
+      "t": "Continue. Do not stop because the patient looks well.",
+      "s": "stgah:19.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "METHANOL: visual acuity",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New acidosis or visual disturbance = methanol toxicity: ethanol + evaluate urgent dialysis",
+      "s": "stgah:19.36"
+     },
+     {
+      "t": "Thiamine + pyridoxine daily (ADULT)",
+      "s": "stgah:19.35"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Continue",
+    "feed": [
+     {
+      "t": "Several days of ethanol may be needed, until the clinical condition improves",
+      "s": "stgah:19.35"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG 4-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine, calcium daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intentional: once medically stable, mental health assessment (suicide risk); refer social / psychological / psychiatric services",
+      "s": "stgah:19.15"
+     },
+     {
+      "t": "CHILD: home circumstances; safe-storage counselling",
+      "s": "paedstg2024:18.5"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Continue / wean",
+    "feed": [
+     {
+      "t": "Rate ____ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Acidosis resolved and clinically improved: stop ethanol, then recheck VBG after 6–12 h",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Off ethanol?",
+    "feed": [
+     {
+      "t": "Stopped at ____ · restarted? ____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG off ethanol",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Creatinine (EG)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Acidosis returns off ethanol: restart ethanol, discuss dialysis with Poisons Centre",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Off ethanol ≥ 24 h",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Last VBG ____ · creatinine ____",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria · letter · eye / renal follow-up booked",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Ethanol antidote",
+   "items": [
+    {
+     "t": "Indication: history + any two of pH < 7.3, HCO₃ < 20 mmol/L, oxalate crystals (EG) / visual disturbance (methanol)",
+     "s": "stgah:19.34",
+     "b": 1
+    },
+    {
+     "h": "Ethanol 20% solution"
+    },
+    {
+     "t": "96% ethanol: 1 part + 4 parts juice or water",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "40% spirits: 1 + 1; SA spirits are often 43% — use the same way",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "\"Proof\" = 2 × % (80 proof = 40%)",
+     "s": "stgah:19.35"
+    },
+    {
+     "h": "Dose — oral or NGT"
+    },
+    {
+     "t": "Load 4 mL/kg over 15–30 min",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "Maintenance: non-drinker 0.5 mL/kg/h · chronic drinker 1 mL/kg/h",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "Increase the dose during haemodialysis",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "Target ethanol level 1–1.3 g/L; if levels unavailable, titrate to acidosis and signs of toxicity",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "Commercial ethanol is not for IV use",
+     "s": "stgah:19.35",
+     "b": 1
+    },
+    {
+     "t": "CHILD: same mL/kg regimen; watch HGT",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Bicarbonate · calcium · glucose · cofactors",
+   "items": [
+    {
+     "h": "Metabolic acidosis"
+    },
+    {
+     "t": "ADULT: sodium bicarbonate 8.4% 50–100 mmol IV over 30–45 min",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "CHILD: 8.4% 1 mL/kg IV over 1 h (Paeds STG salicylate dose)",
+     "d": 1
+    },
+    {
+     "t": "Monitor blood gases",
+     "s": "stgah:19.34"
+    },
+    {
+     "h": "Calcium (EG)"
+    },
+    {
+     "t": "Correct severe or clinically evident hypocalcaemia before rapid acidosis correction (seizure risk)",
+     "s": "stgah:19.35"
+    },
+    {
+     "h": "Glucose"
+    },
+    {
+     "t": "Monitor and correct hypoglycaemia",
+     "s": "stgah:19.35"
+    },
+    {
+     "t": "CHILD: dextrose 10% 2 mL/kg IV, then 10% maintenance; persistent: REFER",
+     "s": "paedstg2024:18.11"
+    },
+    {
+     "h": "Cofactors (ADULT)"
+    },
+    {
+     "t": "Thiamine 100 mg oral daily; pyridoxine 100 mg oral daily",
+     "s": "stgah:19.35"
+    },
+    {
+     "h": "Not useful"
+    },
+    {
+     "t": "Activated charcoal",
+     "s": "stgah:19.14"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER (haemodialysis)"
+    },
+    {
+     "t": "Severe poisoning with profound acidosis — early dialysis is the treatment of choice",
+     "s": "stgah:19.34"
+    },
+    {
+     "t": "Acidosis not improving on ethanol + bicarbonate",
+     "d": 1
+    },
+    {
+     "t": "Renal failure (EG); visual disturbance (methanol)",
+     "s": "stgah:19.36"
+    },
+    {
+     "t": "PHC STG: refer all toxic-alcohol cases",
+     "s": "phcstg:21.52"
+    },
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "GCS falling / too drowsy on ethanol: reduce rate, protect airway",
+     "d": 1
+    },
+    {
+     "t": "RR rising, deep breathing (worsening acidosis)",
+     "s": "stgah:19.12"
+    },
+    {
+     "t": "Seizure, tetany, QT prolonged",
+     "s": "stgah:19.33"
+    },
+    {
+     "t": "Vision worsening",
+     "s": "stgah:19.36"
+    },
+    {
+     "t": "Urine output falling",
+     "d": 1
+    },
+    {
+     "t": "Low HGT",
+     "s": "stgah:19.35"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "VBG · HGT · U&E · calcium · ECG",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "Acidosis resolved; off ethanol ≥ 24 h without recurrence",
+    "d": 1
+   },
+   {
+    "t": "Alert, eating and drinking",
+    "d": 1
+   },
+   {
+    "t": "METHANOL: vision documented; eye referral if any deficit",
+    "d": 1
+   },
+   {
+    "t": "EG: creatinine improving; renal follow-up plan",
+    "d": 1
+   },
+   {
+    "t": "Intentional: mental health assessment and plan",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "CHILD: home circumstances assessed, safe storage counselled",
+    "s": "paedstg2024:18.5"
+   },
+   {
+    "t": "Cluster from home brew: others traced, reported",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "EG: creatinine at 1 week",
+    "d": 1
+   },
+   {
+    "t": "METHANOL with visual symptoms: eye clinic",
+    "d": 1
+   },
+   {
+    "t": "Mental health follow-up if intentional"
+   },
+   {
+    "t": "Return at once: drowsiness, fast breathing, vomiting, blurred vision, little urine",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — ethanol antidote, HGT, GCS, breathing, urine",
+  "period": "One sheet per 24 hours while on ethanol; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Ethanol 20% antidote",
+    "items": [
+     {
+      "t": "Oral or NGT only — never IV",
+      "s": "stgah:19.35",
+      "b": 1
+     },
+     {
+      "t": "Record the rate every hour and any change the doctor makes"
+     },
+     {
+      "t": "Record when the load was given; bicarbonate doses in Notes"
+     }
+    ]
+   },
+   {
+    "h": "HGT, GCS, RR — hourly",
+    "items": [
+     {
+      "t": "HGT hourly while on ethanol",
+      "d": 1
+     },
+     {
+      "t": "GCS and RR (deep, fast breathing = acidosis) hourly",
+      "d": 1
+     },
+     {
+      "t": "HR, BP hourly on the ward observation chart",
+      "d": 1
+     },
+     {
+      "t": "Drowsy: head up / side-lying, watch for vomiting",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Urine and vision",
+    "items": [
+     {
+      "t": "Urine output hourly (catheter if EG or oliguric)",
+      "d": 1
+     },
+     {
+      "t": "METHANOL: vision 4-hourly — count fingers / blurred / normal",
+      "d": 1
+     },
+     {
+      "t": "Note the time each VBG is drawn"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "GCS falling or too drowsy on ethanol",
+    "d": 1
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "d": 1
+   },
+   {
+    "t": "Faster or deeper breathing",
+    "s": "stgah:19.12"
+   },
+   {
+    "t": "Seizure, cramps or tetany",
+    "s": "stgah:19.33"
+   },
+   {
+    "t": "Vision worse",
+    "s": "stgah:19.36"
+   },
+   {
+    "t": "Urine output falling",
+    "d": 1
+   },
+   {
+    "t": "Vomiting while drowsy",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Ethanol 20% given (mL)",
+   "Urine (mL)",
+   "Bicarbonate (mmol)",
+   "VBG (time : pH / HCO₃)"
+  ]
+ }
+}

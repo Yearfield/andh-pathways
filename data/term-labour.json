@@ -1,0 +1,1538 @@
+{
+ "id": "term-labour",
+ "short": "Term labour",
+ "title": "Term labour — admission for expected NVD (incl. poor progress, poor maternal effort)",
+ "population": "Obstetric (≥ 37 weeks, singleton, cephalic, planned vaginal birth)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-25",
+ "sources": [
+  "impcg2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnosis of labour — contractions + any one",
+   "items": [
+    {
+     "t": "Regular painful uterine contractions, plus ≥ 1 of:",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Cervical change",
+     "s": "impcg2024:57",
+     "k": "sub"
+    },
+    {
+     "t": "Ruptured membranes",
+     "s": "impcg2024:57",
+     "k": "sub"
+    },
+    {
+     "t": "Show",
+     "s": "impcg2024:57",
+     "k": "sub"
+    },
+    {
+     "t": "Term: ≥ 37 weeks (dating on card)",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "h": "Phase"
+    },
+    {
+     "t": "Suspected labour — observe up to 6 h",
+     "s": "impcg2024:58",
+     "k": "sub"
+    },
+    {
+     "t": "Latent phase: cervix < 5 cm",
+     "s": "impcg2024:59",
+     "k": "sub"
+    },
+    {
+     "t": "Active phase: cervix ≥ 5 cm",
+     "s": "impcg2024:59",
+     "k": "sub"
+    },
+    {
+     "t": "Second stage: fully dilated (10 cm)",
+     "s": "impcg2024:60",
+     "k": "sub"
+    },
+    {
+     "t": "GA ____ wk · Contractions ____/10 min lasting ____ s · Cervix ____ cm · Head ____/5 · Time ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "High-risk / abnormal labour = any one of",
+   "items": [
+    {
+     "t": "Maternal or fetal condition non-reassuring",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Meconium-stained liquor (thick: needs continuous CTG)",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "ROM > 12 h and still in the latent phase",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Previous caesarean section / uterine scar",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Malpresentation: breech, transverse or oblique lie",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "CPD: 2+ or 3+ sagittal moulding with head not engaged, or severe caput",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Poor progress: action line crossed",
+     "s": "impcg2024:60"
+    },
+    {
+     "t": "Multiple pregnancy · parity ≥ 5",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Suspected chorioamnionitis · impaired fetal growth · diabetes",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Hb < 6 g/dL, or anaemia with symptoms",
+     "s": "impcg2024:123"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP / SFH",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    },
+    {
+     "t": "Parity ____ · previous CS / scar",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Prev. PPH, stillbirth, big baby",
+     "d": 1
+    },
+    {
+     "t": "HIV status · ART · last VL",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "RPR · treated, dates",
+     "s": "impcg2024:146"
+    },
+    {
+     "t": "Rh group · antibodies",
+     "s": "impcg2024:89"
+    },
+    {
+     "t": "Hb trend · last Hb ____",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "SFH growth plotted · EFW",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Diabetes · other medical",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Unbooked → booking bloods",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Birth companion · wishes",
+     "s": "impcg2024:58"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Labour",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Onset of pains ____ h",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Frequency, duration",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Show",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "ROM — time ____, colour, smell",
+     "s": "impcg2024:57"
+    },
+    {
+     "h": "Fetus / other obstetric"
+    },
+    {
+     "t": "Fetal movements reduced",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Vaginal bleeding → APH",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Headache, vision → PET"
+    },
+    {
+     "t": "Constant pain between contr.",
+     "d": 1
+    },
+    {
+     "h": "Differentials",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Dysuria / UTI",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Fever, rigors",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Vomiting, diarrhoea",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "False labour",
+     "s": "impcg2024:57"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Treatment given before arrival",
+     "d": 1
+    },
+    {
+     "t": "TB symptom screen",
+     "d": 1
+    },
+    {
+     "t": "Previous traumatic birth / fear",
+     "s": "impcg2024:58"
+    },
+    {
+     "t": "Wants analgesia",
+     "s": "impcg2024:59"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "impcg2024:57",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "s": "impcg2024:57",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "s": "impcg2024:57",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension → pre-eclampsia pathway",
+     "s": "impcg2024:57",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "impcg2024:57",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Distressed / panicking / withdrawn",
+     "s": "impcg2024:57",
+     "k": "yn"
+    },
+    {
+     "h": "Fetal heart — before and after a contraction",
+     "s": "impcg2024:65"
+    },
+    {
+     "t": "Baseline counted 1 min between contractions",
+     "s": "impcg2024:65",
+     "k": "yn"
+    },
+    {
+     "t": "FHR ≥ 180 for 10 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "FHR < 110 for 10 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Late decelerations persisting 10 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Single deceleration > 3 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination (ESMOE: Big 5, forgotten 4)",
+   "items": [
+    {
+     "h": "General",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Pallor",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Oedema",
+     "s": "impcg2024:57"
+    },
+    {
+     "h": "Abdomen",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Scars",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "SFH ____ cm",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Lie · presentation",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Attitude (flexion)",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Head ____/5 above brim",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Liquor volume",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Contractions ____/10 min",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "EFW ____ g · twin?",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Uterus tender / hard",
+     "d": 1
+    },
+    {
+     "t": "FHR ____ /min",
+     "s": "impcg2024:57"
+    },
+    {
+     "h": "Vaginal examination — consent, privacy",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Discharge · warts · ulcers",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Dilatation ____ cm",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Effacement (length ____ cm)",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Position · consistency",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Membranes intact / ruptured",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Liquor: clear/blood/MSL/offensive",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Presenting part · position",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Moulding 0/1+/2+/3+ · caput",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Cord felt → cord prolapse",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Hb (haemoglobin meter)",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "< 6 g/dL in labour: transfuse ≥ 1 unit packed cells, 1 unit at a time",
+     "s": "impcg2024:123",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic (dizzy, tachycardic, breathless at rest): transfuse",
+     "s": "impcg2024:122"
+    },
+    {
+     "t": "Low Hb: send FBC; avoid IV fluid overload",
+     "s": "impcg2024:122"
+    },
+    {
+     "t": "Plus urine dipstick: glucose, ketones, protein (protein + raised BP → pre-eclampsia pathway)",
+     "s": "impcg2024:57"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Rapid HIV and syphilis test",
+   "items": [
+    {
+     "t": "Result on arrival: HIV ____ Syphilis ____",
+     "k": "value"
+    },
+    {
+     "t": "Test all who tested negative earlier or are unknown",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "HIV+ not on ART: TLD 1 tab + NVP stat; start ART next day",
+     "s": "impcg2024:138"
+    },
+    {
+     "t": "All women living with HIV: viral load at delivery; on ART → usual doses in labour",
+     "s": "impcg2024:138"
+    },
+    {
+     "t": "Syphilis RDT +: benzathine penicillin 2.4 MU IM + RPR; baby per newborn guideline",
+     "s": "impcg2024:146"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizure → eclampsia",
+     "b": 1
+    },
+    {
+     "t": "Vaginal bleeding → APH",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Raised BP → PET pathway"
+    },
+    {
+     "t": "< 37 wk → preterm pathway"
+    },
+    {
+     "t": "Cord prolapse",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Abnormal FHR (§5)",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Thick meconium",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Malpresentation · twins",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Previous CS in labour",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Chorioamnionitis",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Abruptio / uterine rupture",
+     "s": "impcg2024:71"
+    },
+    {
+     "t": "Absent FHR (IUD)"
+    },
+    {
+     "t": "UTI / gastroenteritis",
+     "s": "impcg2024:57"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HIGH-RISK LABOUR (§2) → stabilise, intrauterine resuscitation if needed, then REFER",
+   "s": "impcg2024:59"
+  },
+  {
+   "t": "11. LOW-RISK TERM LABOUR or SUSPECTED LABOUR → ADMIT to labour ward — stabilise, then continue on the term labour management chart and the 12-hour labour nursing record (plot on the MCR partogram)",
+   "s": "impcg2024:57"
+  }
+ ],
+ "chart": {
+  "unit": "Stage",
+  "phase_note": "Rows follow the stage of labour, not the clock — move to the next row when its criteria are met. ANDH: ventouse and Neopuff on site; no caesarean section or oxytocin augmentation → REFER. Plot every observation on the MCR partogram.",
+  "columns": {
+   "feed": "Fluids, position & support",
+   "tests": "Observations & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "h": "Suspected + latent (< 5 cm)",
+    "s": "impcg2024:59"
+   },
+   {
+    "t": "FHR + maternal pulse 2-hourly · contractions 2-hourly · BP, RR, temp 6-hourly · VE 6-hourly · urine when passed",
+    "s": "impcg2024:59"
+   },
+   {
+    "h": "Active (≥ 5 cm)",
+    "s": "impcg2024:59"
+   },
+   {
+    "t": "FHR + maternal pulse every 30 min · contractions 2-hourly · BP, RR, temp 4-hourly · VE 4-hourly, 2-hourly after 8 cm · urine when passed",
+    "s": "impcg2024:59"
+   },
+   {
+    "h": "Second stage",
+    "s": "impcg2024:60"
+   },
+   {
+    "t": "Passive — as active phase, FHR every 30 min",
+    "s": "impcg2024:60"
+   },
+   {
+    "t": "Pushing — FHR every 5 min or after every 2nd contraction (whichever first) with maternal pulse; maternal vitals at onset; head descent (fifths) every 15 min",
+    "s": "impcg2024:60"
+   },
+   {
+    "t": "FHR before and after a contraction every time",
+    "s": "impcg2024:65",
+    "b": 1
+   },
+   {
+    "t": "Act on: FHR ≥ 180 or < 110 for 10 min · late decelerations for 10 min · single deceleration > 3 min",
+    "s": "impcg2024:66",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Admission",
+    "phase": "On arrival",
+    "lead": "Check the referral letter / card for treatment already given (analgesia, ART, penicillin) †. Risk-classify (admission pathway §2) and confirm labour.",
+    "feed": [
+     {
+      "t": "Low risk: eat and drink freely — no routine IV",
+      "s": "impcg2024:58"
+     },
+     {
+      "t": "Walk about in latent and early active phase",
+      "s": "impcg2024:58"
+     },
+     {
+      "t": "Any position except flat on her back",
+      "s": "impcg2024:58"
+     },
+     {
+      "t": "One companion of her choice; privacy; her own language",
+      "s": "impcg2024:58"
+     },
+     {
+      "t": "No routine enema, shaving, catheter or AROM",
+      "s": "impcg2024:58"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb (meter)",
+      "s": "impcg2024:57",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick: glucose, ketones, protein",
+      "s": "impcg2024:57",
+      "b": 1
+     },
+     {
+      "t": "Rapid HIV + syphilis if negative earlier / unknown",
+      "s": "impcg2024:57",
+      "b": 1
+     },
+     {
+      "t": "Rh group if unknown; unbooked or no results: all booking bloods",
+      "s": "impcg2024:89",
+      "b": 1
+     },
+     {
+      "t": "WLHIV: viral load at delivery (sticker in RTHB)",
+      "s": "impcg2024:138",
+      "b": 1
+     },
+     {
+      "t": "TB symptom screen",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Abnormal FHR — intrauterine resuscitation",
+      "s": "impcg2024:71"
+     },
+     {
+      "t": "Turn her off her back; 500 mL fluid bolus if dehydrated or hypotensive",
+      "s": "impcg2024:71"
+     },
+     {
+      "t": "Temp > 38: investigate and treat",
+      "s": "impcg2024:71"
+     },
+     {
+      "t": "Persisting: salbutamol 250 µg IV over 2 min (not if cardiac disease, maternal tachycardia, HT)",
+      "s": "impcg2024:70",
+      "b": 1
+     },
+     {
+      "t": "Fully dilated, head 0/5 → ventouse; otherwise REFER urgently",
+      "s": "impcg2024:71"
+     },
+     {
+      "t": "No maternal face-mask O₂ for the fetus",
+      "s": "impcg2024:70"
+     },
+     {
+      "h": "Cord prolapse",
+      "s": "impcg2024:93"
+     },
+     {
+      "t": "Fully dilated + head engaged → ventouse now",
+      "s": "impcg2024:93"
+     },
+     {
+      "t": "Else: push presenting part up, knee-elbow; catheter, fill bladder 400 mL NaCl 0.9%, clamp; IV line; salbutamol as above; REFER urgently",
+      "s": "impcg2024:93"
+     },
+     {
+      "h": "Hb < 6 g/dL in labour",
+      "s": "impcg2024:123"
+     },
+     {
+      "t": "Transfuse ≥ 1 unit, 1 unit at a time",
+      "s": "impcg2024:123"
+     },
+     {
+      "h": "HIV+ not on ART",
+      "s": "impcg2024:138"
+     },
+     {
+      "t": "TLD 1 tab + NVP stat; ART next day",
+      "s": "impcg2024:138",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "0–6 h",
+    "phase": "Suspected labour",
+    "feed": [
+     {
+      "t": "Eat, drink, walk about",
+      "s": "impcg2024:58"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Latent-phase frequencies (standing box)",
+      "s": "impcg2024:58"
+     },
+     {
+      "t": "VE after 4 h if no contractions palpable",
+      "s": "impcg2024:58"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Labour usually clear by 6 h",
+      "s": "impcg2024:58"
+     },
+     {
+      "t": "Not in labour + reassuring + no ROM + no cervical change → discharge (or waiting home) with warning signs and follow-up date",
+      "s": "impcg2024:58"
+     }
+    ]
+   },
+   {
+    "label": "< 5 cm",
+    "phase": "Latent phase (up to 24 h)",
+    "feed": [
+     {
+      "t": "Oral fluids and food. Analgesia on request.",
+      "s": "impcg2024:59"
+     }
+    ],
+    "tests": [
+     {
+      "t": "2-hourly FHR, pulse, contractions; 6-hourly BP, RR, temp, VE",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Earlier VE: contractions change, seems active, needs opiate, urge to push, non-reassuring",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "ROM → speculum (not VE), check FHR",
+      "s": "impcg2024:59"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Morphine 0.1 mg/kg IM 4-hourly PRN (max 10 mg) + promethazine 25 mg IM 4-hourly",
+      "s": "impcg2024:59",
+      "b": 1
+     },
+     {
+      "t": "REFER: MSL, ROM > 12 h, non-reassuring",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Not 5 cm by 12 h: doctor review",
+      "d": 1
+     },
+     {
+      "t": "> 24 h (prolonged): exclude abruptio, UTI, false labour, fetal distress, CPD → stretch & sweep, AROM; oxytocin needed → REFER",
+      "s": "impcg2024:91"
+     }
+    ]
+   },
+   {
+    "label": "≥ 5 cm",
+    "phase": "Active phase",
+    "feed": [
+     {
+      "t": "Oral fluids. Empty bladder. Entonox or morphine.",
+      "s": "impcg2024:59"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR + pulse every 30 min; contractions 2-hourly; BP, RR, temp 4-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "VE 4-hourly (2-hourly after 8 cm)",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Partogram: first active entry on the alert line (from 5 cm, 1 cm/h); action line 2 h to the right",
+      "s": "impcg2024:60"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER: non-reassuring, MSL with delivery not imminent, poor progress, CPD (2+/3+ moulding and head not engaged, severe caput)",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "ROM > 12 h with good progress + reassuring: no referral needed",
+      "s": "impcg2024:59"
+     }
+    ]
+   },
+   {
+    "label": "Alert line",
+    "phase": "Poor progress < 1 cm/h",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 200–300 mL IV bolus, then 120 mL/h; oral fluids",
+      "s": "impcg2024:91",
+      "b": 1
+     },
+     {
+      "t": "Empty bladder (catheter if needed)",
+      "s": "impcg2024:91"
+     }
+    ],
+    "tests": [
+     {
+      "t": "4 Ps: Patient (distress, pain, hydration, bladder, position) · Powers (contractions) · Passage · Passenger (size, lie, position, level, moulding, liquor)",
+      "s": "impcg2024:92"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "CPD, malpresentation or fetal distress → REFER (caesarean)",
+      "s": "impcg2024:91"
+     },
+     {
+      "t": "None: support, mobilise, analgesia, AROM if intact",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Reassess in 2 h",
+      "s": "impcg2024:92"
+     }
+    ]
+   },
+   {
+    "label": "Action line",
+    "phase": "+ 2 h, still < 1 cm/h",
+    "feed": [
+     {
+      "t": "Continue IV 120 mL/h",
+      "s": "impcg2024:91"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-examine for CPD: moulding, descent (fifths), caput",
+      "s": "impcg2024:91"
+     },
+     {
+      "t": "Oxytocin would need continuous CTG",
+      "s": "impcg2024:66"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Primigravida, no CPD, no fetal distress: oxytocin augmentation — not done at ANDH → REFER",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Multigravida or any CPD → REFER",
+      "s": "impcg2024:91"
+     }
+    ]
+   },
+   {
+    "label": "10 cm",
+    "phase": "Passive 2nd stage (≤ 1 h)",
+    "feed": [
+     {
+      "t": "Empty bladder (catheter if needed). Upright or side.",
+      "s": "impcg2024:60"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR every 30 min; other obs as active phase",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Rule out CPD",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Time fully dilated: ____",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Wait for urge to push — do not start pushing without it",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "No urge at 1 h: confirm truly fully dilated; AROM if intact; still no urge → REFER (let her deliver if the urge comes while waiting)",
+      "s": "impcg2024:92"
+     }
+    ]
+   },
+   {
+    "label": "Pushing",
+    "phase": "Active 2nd stage · maternal effort",
+    "feed": [
+     {
+      "t": "Position of her choice, not flat supine. Calm, kind, clear; praise effort; push only with contractions.",
+      "s": "impcg2024:60"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR every 5 min or after every 2nd contraction, with pulse",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Vitals at onset; head descent every 15 min (fifths — caput misleads)",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Time pushing started: ____",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Limit: para 0 = 45 min, para > 0 = 30 min of pushing (no CS on site)",
+      "s": "impcg2024:60",
+      "b": 1
+     },
+     {
+      "t": "Not delivered: head 0/5 + conditions met → ventouse; head ≥ 1/5 → REFER",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Fetal or maternal compromise: act now, time limits do not apply",
+      "s": "impcg2024:60"
+     }
+    ]
+   },
+   {
+    "label": "Birth",
+    "phase": "Baby delivered",
+    "feed": [
+     {
+      "t": "Dry baby, skin-to-skin ≥ 1 h. Breastfeed within 1 h.",
+      "s": "impcg2024:61"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Apgar at 1 and 5 min",
+      "s": "impcg2024:61",
+      "b": 1
+     },
+     {
+      "t": "Record times: full dilatation, pushing, birth; FHR during delivery",
+      "s": "impcg2024:61"
+     },
+     {
+      "t": "5-min Apgar < 7: cord blood gas if possible, placenta to histology, incident report, copy file/CTG",
+      "s": "impcg2024:74"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Episiotomy only if indicated (rigid perineum, fetal distress): lignocaine 1% max 3 mg/kg (usually ≤ 20 mL), mediolateral",
+      "s": "impcg2024:61"
+     },
+     {
+      "t": "Cord clamp at 1–3 min; early if baby needs resuscitation — Neopuff; ongoing support → REFER",
+      "s": "impcg2024:61",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "3rd stage",
+    "phase": "Birth → placenta",
+    "feed": [
+     {
+      "t": "Stay with her",
+      "s": "impcg2024:62"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Palpate: no second twin",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Placenta and membranes complete?",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Inspect perineum, vagina: tear degree ____",
+      "s": "impcg2024:94"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oxytocin 10 U IM immediately (after twin excluded)",
+      "s": "impcg2024:62",
+      "b": 1
+     },
+     {
+      "t": "Controlled cord traction when uterus contracts, guarding the uterus; no fundal massage to speed it",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Not separating and no bleeding: wait, retry",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Repair episiotomy / tear; 3rd/4th degree → REFER unless skilled doctor + theatre",
+      "s": "impcg2024:94"
+     }
+    ]
+   },
+   {
+    "label": "0–2 h",
+    "phase": "4th stage, labour ward",
+    "feed": [
+     {
+      "t": "Skin-to-skin; offer a light meal at 2 h",
+      "s": "impcg2024:62"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, RR, temp, pads, uterus every 15 min × 1 h, then every 30 min × 1 h (MCR page)",
+      "s": "impcg2024:62",
+      "b": 1
+     },
+     {
+      "t": "Cumulative blood loss every 15 min if a drape is used",
+      "s": "impcg2024:62"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PPH risk: consider oxytocin infusion 10–20 U in 1 L NaCl 0.9% — see PPH pathway",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "All obs normal → postnatal ward (after 1 h if no bed, same schedule)",
+      "s": "impcg2024:62"
+     }
+    ]
+   },
+   {
+    "label": "2–6 h",
+    "phase": "Postnatal ward",
+    "feed": [
+     {
+      "t": "Mobile; passes urine. Breastfeeding position and attachment.",
+      "s": "impcg2024:156"
+     }
+    ],
+    "tests": [
+     {
+      "t": "On arrival: BP, pulse, uterus firm, no active bleeding",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "BP, pulse, temp, pads 4-hourly (early warning chart)",
+      "s": "impcg2024:156",
+      "b": 1
+     },
+     {
+      "t": "WLHIV: delivery VL sent; infant birth HIV PCR",
+      "s": "impcg2024:139",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol 1 g PO for mild pain",
+      "s": "impcg2024:156",
+      "b": 1
+     },
+     {
+      "t": "Rh-neg + baby Rh-pos/unknown: anti-D 100 µg IM within 72 h",
+      "s": "impcg2024:89",
+      "b": 1
+     },
+     {
+      "t": "HIV-exposed baby: NVP + AZT per VTP guideline",
+      "s": "impcg2024:139"
+     },
+     {
+      "t": "Syphilis +: penicillin course; baby per newborn guideline",
+      "s": "impcg2024:146"
+     }
+    ]
+   },
+   {
+    "label": "≥ 6 h",
+    "phase": "Discharge review",
+    "feed": [
+     {
+      "t": "Safe place to stay; companion present",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Discharge criteria (below)",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "All results recorded: Hb, syphilis, Rh, HIV",
+      "s": "impcg2024:156",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Criteria met → discharge; danger signs explained",
+      "s": "impcg2024:157"
+     },
+     {
+      "t": "Contraception counselled and provided",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "Not met → stay; call doctor for abnormal obs",
+      "s": "impcg2024:156"
+     }
+    ]
+   },
+   {
+    "label": "6–24 h",
+    "phase": "If kept",
+    "feed": [
+     {
+      "t": "Oral; mobile",
+      "s": "impcg2024:156"
+     }
+    ],
+    "tests": [
+     {
+      "t": "4-hourly BP, pulse, temp, pads",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "Watch for infection: fever, uterine tenderness, offensive lochia",
+      "s": "impcg2024:157"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Infection risk (HIV, prolonged labour, prolonged ROM, chorioamnionitis): observe longer",
+      "s": "impcg2024:158",
+      "d": 1
+     },
+     {
+      "t": "New HIV+: start lifelong ART (TLD) day after delivery",
+      "s": "impcg2024:138"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses · analgesia · labour drugs",
+   "items": [
+    {
+     "h": "Analgesia",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Morphine 0.1 mg/kg IM 4-hourly PRN, max 10 mg, + promethazine 25 mg IM 4-hourly — latent to full dilatation",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Entonox (50% N₂O / O₂) by mask in active labour",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Postnatal: paracetamol 1 g PO",
+     "s": "impcg2024:156"
+    },
+    {
+     "h": "Poor progress hydration",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "NaCl 0.9% 200–300 mL IV bolus → 120 mL/h",
+     "s": "impcg2024:91"
+    },
+    {
+     "h": "Third stage",
+     "s": "impcg2024:62"
+    },
+    {
+     "t": "Oxytocin 10 U IM once no second twin",
+     "s": "impcg2024:62"
+    },
+    {
+     "h": "Salbutamol (fetal distress, cord prolapse)",
+     "s": "impcg2024:70"
+    },
+    {
+     "t": "1 mL (0.5 mg) + 9 mL NaCl 0.9% = 50 µg/mL; give 5 mL (250 µg) IV over 2 min; stop if pulse > 120",
+     "s": "impcg2024:93"
+    },
+    {
+     "h": "Oxytocin augmentation",
+     "s": "impcg2024:75"
+    },
+    {
+     "t": "REFER — needs continuous CTG and caesarean back-up",
+     "s": "impcg2024:75",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Poor maternal effort · ventouse",
+   "items": [
+    {
+     "h": "Before calling it poor effort",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Truly fully dilated? Bladder empty? Membranes ruptured?",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Pain, fear, exhaustion: support, analgesia, fluids, position change; kind, clear words — never shout or threaten",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "CPD or head ≥ 1/5 → REFER",
+     "s": "impcg2024:92"
+    },
+    {
+     "h": "Ventouse — all required",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Informed + co-operative · vertex · head 0/5 (ANDH, no CS) · position certain · fully dilated · membranes ruptured · bladder empty · strong contractions",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "−0.6 to −0.8 bar, never beyond red zone; pull only with contractions",
+     "s": "impcg2024:93"
+    },
+    {
+     "h": "Abandon → REFER (caesarean)",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "No descent with a pull · not delivered after 3 pulls · 2 cup detachments",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "No forceps after a failed ventouse",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Record on MCR ventouse form",
+     "s": "impcg2024:93"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER (district cannot manage)"
+    },
+    {
+     "t": "Action line crossed · CPD · malpresentation · previous CS",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Fetal distress not deliverable by ventouse",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Thick MSL (continuous CTG), delivery not imminent",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Abandoned ventouse · no urge after passive 1 h",
+     "s": "impcg2024:92"
+    },
+    {
+     "h": "Shoulder dystocia",
+     "s": "impcg2024:94"
+    },
+    {
+     "t": "Call 2 helpers · McRoberts · suprapubic (never fundal) pressure · deliver posterior arm · all-fours · record head-to-body time",
+     "s": "impcg2024:94"
+    },
+    {
+     "h": "Change pathway"
+    },
+    {
+     "t": "Bleeding → APH / PPH · BP raised → pre-eclampsia · fever, offensive liquor → chorioamnionitis: REFER",
+     "s": "impcg2024:66"
+    },
+    {
+     "h": "Call doctor"
+    },
+    {
+     "t": "FHR act-on trigger · meconium · cord felt/seen · bleeding · BP, pulse or temp above booking baseline · urge to push · no progress at next VE · pushing limit reached",
+     "s": "impcg2024:66"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — ≥ 6 h after birth, all must be met",
+  "items": [
+   {
+    "t": "Looks and feels well; no problems needing attention",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Pulse < 100, RR < 20, temp < 37.5, BP normal",
+    "s": "impcg2024:156",
+    "b": 1
+   },
+   {
+    "t": "No anaemia · no uterine tenderness · no active bleeding",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Mobile, passed urine, no excessive pain",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Feeding explained, demonstrated, support known",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Contraception discussed and provided",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Hb, syphilis, Rh, HIV recorded and acted on",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Safe place to stay · MCR checklist + discharge summary done",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Discharged by / date: ____",
+    "k": "value"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic at 3–6 days (mother + baby), then 6 weeks",
+    "s": "impcg2024:157",
+    "b": 1
+   },
+   {
+    "t": "WLHIV: 2 months ART + 6 weeks infant prophylaxis; delivery VL checked at 3–6 days",
+    "s": "impcg2024:139"
+   },
+   {
+    "h": "Straight back",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Bleeding (> 2–3 pads in 20–30 min, or increasing), convulsions, fast breathing, fever too weak to stand, severe abdominal pain",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Baby: difficult breathing, fits, fever/cold, not feeding",
+    "s": "impcg2024:157"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour labour nursing record — FHR, pulse, contractions, progress",
+  "period": "One sheet per 12 hours; 30-min rows, heavier rule every 2 h; second-stage and fourth-stage strips",
+  "params": [
+   {
+    "h": "FHR + maternal pulse",
+    "items": [
+     {
+      "t": "Latent: 2-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Active + passive 2nd stage: every 30 min",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Pushing: every 5 min or after every 2nd contraction (strip below)",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Before and after a contraction",
+      "s": "impcg2024:65"
+     }
+    ]
+   },
+   {
+    "h": "Contractions · urine",
+    "items": [
+     {
+      "t": "2-hourly (latent and active)",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Number per 10 min + seconds each",
+      "s": "impcg2024:57"
+     },
+     {
+      "t": "Urine when passed: volume, protein, ketones",
+      "s": "impcg2024:59"
+     }
+    ]
+   },
+   {
+    "h": "BP · RR · temp",
+    "items": [
+     {
+      "t": "Latent: 6-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Active: 4-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "2nd stage: at onset",
+      "s": "impcg2024:60"
+     }
+    ]
+   },
+   {
+    "h": "Vaginal examination (doctor / midwife)",
+    "items": [
+     {
+      "t": "Latent: 6-hourly · Active: 4-hourly, 2-hourly after 8 cm",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Cervix cm · head /5 · moulding · liquor",
+      "s": "impcg2024:57"
+     }
+    ]
+   },
+   {
+    "h": "Second stage strip",
+    "items": [
+     {
+      "t": "Time fully dilated, time pushing started, limit (para 0: 45 min · para > 0: 30 min)",
+      "s": "impcg2024:60",
+      "b": 1
+     },
+     {
+      "t": "FHR + pulse every 5 min; head /5 every 15 min; birth time, Apgar",
+      "s": "impcg2024:60"
+     }
+    ]
+   },
+   {
+    "h": "Fourth stage strip",
+    "items": [
+     {
+      "t": "BP, pulse, RR, temp, uterus, pads every 15 min × 1 h, then 30 min × 1 h",
+      "s": "impcg2024:62",
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for FHR ≥ 180 or < 110 for 10 min · late decelerations for 10 min · single deceleration > 3 min · meconium · cord felt or seen · vaginal bleeding · BP, pulse or temp above her booking baseline · urge to push · no progress at the next VE · pushing limit reached",
+    "s": "impcg2024:66",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Oral in (mL)",
+   "IV in (mL)",
+   "Urine out (mL)",
+   "VEs this sheet"
+  ]
+ }
+}

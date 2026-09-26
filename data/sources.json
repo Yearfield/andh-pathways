@@ -13,6 +13,8 @@
     {"id": "paedstg2024", "short": "Paeds STG 2024", "title": "Paediatric Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "5th ed. 2024", "offset": 0},
     {"id": "phcstg", "short": "PHC STG", "title": "Primary Health Care Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
     {"id": "adultstg", "short": "Adult STG", "title": "Adult Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "", "offset": 0},
-    {"id": "who2005", "short": "WHO 2005", "title": "WHO/USAID Diarrhoea Treatment Guidelines", "edition": "2005", "offset": 0}
+    {"id": "who2005", "short": "WHO 2005", "title": "WHO/USAID Diarrhoea Treatment Guidelines", "edition": "2005", "offset": 0},
+    {"id": "impcg2024", "short": "Maternal 2024", "title": "National Integrated Maternal and Perinatal Care Guidelines for South Africa", "edition": "5th ed., NDoH 2024", "offset": 0},
+    {"id": "phcstg2024", "short": "PHC STG 2024", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "2024 ed. (updated 3 Sept 2026)", "offset": 0}
   ]
 }

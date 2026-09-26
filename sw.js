@@ -1,6 +1,6 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v8";
+const VERSION = "andh-v16";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
