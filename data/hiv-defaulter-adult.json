@@ -1,0 +1,1146 @@
+{
+ "id": "hiv-defaulter-adult",
+ "short": "HIV defaulter (adult)",
+ "title": "HIV treatment defaulter re-engaging in care, TB excluded — admitted adult",
+ "population": "Adult and adolescent ≥ 15 y previously on ART who interrupted treatment; TB excluded; excludes pregnancy, TB, meningitis",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "hiv2026",
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Never on ART → Newly diagnosed HIV (adult)",
+     "b": 1
+    },
+    {
+     "t": "TB diagnosed → TB-HIV (adult)",
+     "b": 1
+    },
+    {
+     "t": "Pregnant / breastfeeding → VTP guideline",
+     "s": "hiv2026:117",
+     "b": 1
+    },
+    {
+     "t": "Cryptococcal / TB meningitis → REFER",
+     "s": "hiv2026:92",
+     "b": 1
+    },
+    {
+     "t": "< 15 y → HIV defaulter (child)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Defaulter / re-engaging = any one of",
+   "items": [
+    {
+     "t": "Missed ART appointment > 28 days",
+     "s": "hiv2026:34",
+     "b": 1
+    },
+    {
+     "t": "> 90 days = lost to follow-up",
+     "s": "hiv2026:34",
+     "b": 1
+    },
+    {
+     "t": "Stopped ART (self-reported)",
+     "s": "hiv2026:90"
+    },
+    {
+     "t": "Returns unwell after any missed appointment",
+     "s": "hiv2026:34"
+    },
+    {
+     "t": "Days since last pick-up ____   last regimen ____",
+     "k": "value"
+    },
+    {
+     "t": "Last VL ____ (date) · last CD4 ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Advanced HIV / seriously ill = any one of",
+   "items": [
+    {
+     "t": "Treatment interruption > 90 days (regardless of symptoms)",
+     "s": "hiv2026:60",
+     "b": 1
+    },
+    {
+     "t": "Clinically unwell",
+     "s": "hiv2026:60"
+    },
+    {
+     "t": "VL ≥ 1000 on ART",
+     "s": "hiv2026:60"
+    },
+    {
+     "t": "Advanced HIV: CD4 ≤ 200 or WHO stage 3 / 4",
+     "s": "hiv2026:54",
+     "b": 1
+    },
+    {
+     "t": "RR ≥ 30 · pulse ≥ 120 · breathless at rest",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Drowsy / confused · seizures",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "ART card / clinic records",
+   "items": [
+    {
+     "t": "Regimen history: TEE · TLD · PI · third-line",
+     "s": "hiv2026:34",
+     "b": 1
+    },
+    {
+     "t": "Start dates, switches and reasons",
+     "s": "hiv2026:96"
+    },
+    {
+     "t": "VL and CD4 history",
+     "s": "hiv2026:96"
+    },
+    {
+     "t": "Previous resistance test",
+     "s": "hiv2026:96"
+    },
+    {
+     "t": "Side effects on previous regimen",
+     "s": "hiv2026:45"
+    },
+    {
+     "t": "CPT · TPT · fluconazole history",
+     "s": "hiv2026:87"
+    },
+    {
+     "t": "Previous EAC sessions",
+     "s": "hiv2026:45"
+    },
+    {
+     "t": "Renal function (eGFR) history",
+     "s": "hiv2026:30"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Why ART stopped"
+    },
+    {
+     "t": "Cost, transport, work, travel",
+     "s": "hiv2026:95"
+    },
+    {
+     "t": "Side effects · pill burden",
+     "s": "hiv2026:95"
+    },
+    {
+     "t": "Depression, alcohol / substance use",
+     "s": "hiv2026:95"
+    },
+    {
+     "t": "GBV · non-disclosure · stigma · beliefs",
+     "s": "hiv2026:95"
+    },
+    {
+     "h": "Opportunistic infections"
+    },
+    {
+     "t": "TB symptoms (must be negative / tested)",
+     "s": "hiv2026:65"
+    },
+    {
+     "t": "Headache, confusion (crypto)",
+     "s": "hiv2026:79"
+    },
+    {
+     "t": "Dry cough, breathless (PJP)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Diarrhoea, weight loss",
+     "s": "hiv2026:210"
+    },
+    {
+     "h": "Medication"
+    },
+    {
+     "t": "Other drugs, OTC, herbal (interactions)",
+     "s": "hiv2026:44"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Treatment supporter · contact details (consent)",
+     "s": "hiv2026:62"
+    },
+    {
+     "t": "Contraception / LMP",
+     "s": "hiv2026:92"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "RR ≥ 30 or pulse ≥ 120 (danger sign)",
+     "s": "hiv2026:59",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% on room air → O₂",
+     "s": "adultstg2026:16.15",
+     "k": "yn"
+    },
+    {
+     "t": "Confused / ↓ LOC",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "BMI < 18.5 (underweight)",
+     "s": "hiv2026:27",
+     "k": "yn"
+    },
+    {
+     "t": "Weight loss > 10% (stage 3)",
+     "s": "hiv2026:210",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — WHO stage",
+   "items": [
+    {
+     "h": "Mouth and skin"
+    },
+    {
+     "t": "Oral thrush · hairy leukoplakia",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Herpes zoster · PPE",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Kaposi sarcoma lesions",
+     "d": 1
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Lymphadenopathy",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Wasting · pallor",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Jaundice",
+     "s": "hiv2026:111"
+    },
+    {
+     "h": "CNS and chest"
+    },
+    {
+     "t": "Neck stiffness · confusion · focal signs",
+     "s": "hiv2026:79"
+    },
+    {
+     "t": "Crackles / hypoxia",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Genital ulcers / discharge (STI)",
+     "s": "hiv2026:92"
+    },
+    {
+     "t": "Mood / affect (mental health screen)",
+     "s": "hiv2026:179"
+    },
+    {
+     "t": "WHO stage: 1 · 2 · 3 · 4 (circle)",
+     "s": "hiv2026:88"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urine LF-LAM + sputum Xpert — exclude TB",
+   "items": [
+    {
+     "t": "U-LAM: ____   Xpert sent: ____",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "U-LAM for every symptomatic PLHIV admitted",
+     "s": "hiv2026:27",
+     "b": 1
+    },
+    {
+     "t": "Either positive → TB-HIV (adult) pathway",
+     "b": 1
+    },
+    {
+     "t": "Negative + no TB symptoms: TB excluded → TPT if never had it",
+     "s": "hiv2026:89"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "CD4 count (+ reflex CrAg) — send on arrival",
+   "items": [
+    {
+     "t": "CD4: ____   CrAg: ____",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Every re-engaging patient: CD4 to identify AHD",
+     "s": "hiv2026:34",
+     "b": 1
+    },
+    {
+     "t": "≤ 200: AHD → CPT, CrAg, AHD package",
+     "s": "hiv2026:54",
+     "b": 1
+    },
+    {
+     "t": "< 200: reflex CrAg; positive → LP for all",
+     "s": "hiv2026:29",
+     "b": 1
+    },
+    {
+     "t": "VL: 3 months after restarting ART",
+     "s": "hiv2026:34"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "RR ≥ 30 or pulse ≥ 120",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Breathless at rest",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Drowsy / confused",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Meningitis (crypto / bacterial / TB)",
+     "s": "hiv2026:81"
+    },
+    {
+     "t": "PJP",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Sepsis / severe bacterial infection",
+     "s": "hiv2026:81"
+    },
+    {
+     "t": "TB (LAM / Xpert)",
+     "s": "hiv2026:27"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "hiv2026:105"
+    },
+    {
+     "t": "Renal impairment (no TDF)",
+     "s": "hiv2026:91"
+    },
+    {
+     "t": "Hepatitis B flare after stopping TDF / 3TC",
+     "s": "hiv2026:111"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "hiv2026:26"
+    },
+    {
+     "t": "Severe depression / substance use",
+     "s": "hiv2026:95"
+    },
+    {
+     "t": "Previously on third-line / PI failure",
+     "s": "hiv2026:37"
+    },
+    {
+     "t": "GBV / unsafe home",
+     "s": "hiv2026:95"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Cryptococcal or TB meningitis, TB diagnosed, or needs ICU → REFER / TB-HIV pathway · third-line or PI failure → expert",
+   "s": "hiv2026:37",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT → re-engage: EAC, AHD package, restart ART (DTG regimen) the same day unless a deferral reason",
+   "s": "hiv2026:34"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Restart ART the same day unless deferral applies · VL at 3 months, not now · branch rows only if needed",
+  "columns": {
+   "feed": "O₂, diet & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "ART, cotrimoxazole, TPT, fluconazole: each dose observed and timed",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "New headache, confusion, visual change (cryptococcal meningitis)",
+    "s": "hiv2026:79"
+   },
+   {
+    "t": "Rash, mouth ulcers, jaundice (cotrimoxazole / INH)",
+    "s": "hiv2026:87"
+   },
+   {
+    "t": "After ART start: new fever, enlarging nodes, worse chest (IRIS)",
+    "s": "hiv2026:104"
+   },
+   {
+    "t": "Weight on admission and weekly",
+    "s": "hiv2026:27"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Welcome back without judgement — patients who feel judged disengage again. Treat the admitting illness first.",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Diet; nutrition if wasted",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CD4 (reflex CrAg)",
+      "s": "hiv2026:34",
+      "b": 1
+     },
+     {
+      "t": "Sputum Xpert + urine LF-LAM",
+      "s": "hiv2026:27",
+      "b": 1
+     },
+     {
+      "t": "Creatinine / eGFR",
+      "s": "hiv2026:29",
+      "b": 1
+     },
+     {
+      "t": "Hb (FBC if low)",
+      "s": "hiv2026:29",
+      "b": 1
+     },
+     {
+      "t": "HBsAg if unknown",
+      "s": "hiv2026:111",
+      "b": 1
+     },
+     {
+      "t": "ALT + bilirubin if liver symptoms",
+      "s": "hiv2026:26",
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test (women)",
+      "s": "hiv2026:92",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Re-engagement"
+     },
+     {
+      "t": "Missed > 28 days, or unwell, or TB: clinical assessment + EAC session 1",
+      "s": "hiv2026:34",
+      "b": 1
+     },
+     {
+      "t": "Restart ART the same day unless a clinical reason to defer",
+      "s": "hiv2026:34",
+      "b": 1
+     },
+     {
+      "t": "CD4 count to identify AHD",
+      "s": "hiv2026:34",
+      "b": 1
+     },
+     {
+      "h": "Seriously ill"
+     },
+     {
+      "t": "Broad-spectrum antibiotics for suspected SBI",
+      "s": "hiv2026:71"
+     },
+     {
+      "h": "Prophylaxis"
+     },
+     {
+      "t": "Cotrimoxazole 800/160 mg (2 SS tabs) daily if CD4 ≤ 200 or WHO stage 3/4; stop when CD4 > 200",
+      "s": "hiv2026:87",
+      "b": 1
+     },
+     {
+      "h": "ART timing — tick"
+     },
+     {
+      "t": "TB symptoms: investigate first; start ART once TB excluded",
+      "s": "hiv2026:26"
+     },
+     {
+      "t": "PJP or bacterial pneumonia: defer ART 1–2 weeks after starting treatment",
+      "s": "hiv2026:26",
+      "b": 1
+     },
+     {
+      "t": "Cryptococcal meningitis: defer 4–6 weeks (REFER)",
+      "s": "hiv2026:92",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Results · ABCDE",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase CD4, CrAg, Xpert, eGFR",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "TB positive → TB-HIV (adult) pathway",
+      "b": 1
+     },
+     {
+      "t": "CrAg positive → LP (branch)",
+      "s": "hiv2026:74",
+      "b": 1
+     },
+     {
+      "t": "A — Adherence: cost, travel, side effects, depression, alcohol, GBV, non-disclosure",
+      "s": "hiv2026:44"
+     },
+     {
+      "t": "B — Bugs: TB and STI screen",
+      "s": "hiv2026:44"
+     },
+     {
+      "t": "Mental health screen",
+      "s": "hiv2026:45"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Restart ART",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "> 90 days out and previously on TEE, TLD or a PI: re-initiate a DTG regimen (TLD)",
+      "s": "hiv2026:34",
+      "b": 1
+     },
+     {
+      "t": "TLD (TDF 300 / 3TC 300 / DTG 50) 1 tab daily — ≥ 30 kg, ≥ 10 y, eGFR > 50",
+      "s": "hiv2026:33",
+      "b": 1
+     },
+     {
+      "t": "eGFR < 50: ABC + 3TC + DTG (ALD 600/300/50) 1 tab daily",
+      "s": "hiv2026:91",
+      "b": 1
+     },
+     {
+      "t": "TPT if never received (INH 300 mg + pyridoxine 25 mg)",
+      "s": "hiv2026:89",
+      "b": 1
+     },
+     {
+      "t": "C — Correct dose for weight / renal function",
+      "s": "hiv2026:44"
+     },
+     {
+      "t": "D — Drug interactions: rifampicin, anticonvulsants, antacids, iron, herbal",
+      "s": "hiv2026:44"
+     }
+    ]
+   },
+   {
+    "label": "If on a PI / third-line",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VL history ≥ 2 years",
+      "s": "hiv2026:37",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "On LPV/r or ATV/r < 2 years: switch to TLD this visit; do not wait for the VL",
+      "s": "hiv2026:36"
+     },
+     {
+      "t": "PI > 2 years, VL < 1000 or self-reported poor adherence: switch to TLD (ALD if no TDF); no resistance test",
+      "s": "hiv2026:37"
+     },
+     {
+      "t": "PI > 2 years, ≥ 2 consecutive VL ≥ 1000 despite 2 adherence interventions: no same-day switch — expert / resistance test",
+      "s": "hiv2026:37",
+      "b": 1
+     },
+     {
+      "t": "Repeat VL 3 months after any regimen change",
+      "s": "hiv2026:37"
+     },
+     {
+      "t": "LTFU on third-line: re-initiate the third-line regimen (expert)",
+      "s": "hiv2026:34"
+     },
+     {
+      "t": "National HIV & TB HCW Hotline 0800 212 506",
+      "s": "hiv2026:37"
+     }
+    ]
+   },
+   {
+    "label": "If CrAg positive",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "LP: CSF CrAg, opening pressure",
+      "s": "hiv2026:74",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "CrAg positive → LP for all",
+      "s": "hiv2026:74",
+      "b": 1
+     },
+     {
+      "t": "CSF CrAg negative: fluconazole 1200 mg daily × 14 d, then 800 mg × 8 weeks, then 200 mg ≥ 1 year",
+      "s": "hiv2026:76",
+      "b": 1
+     },
+     {
+      "t": "CSF CrAg positive (CM): REFER for amphotericin-based induction; defer ART 4–6 weeks",
+      "s": "hiv2026:76",
+      "b": 1
+     },
+     {
+      "t": "LP delayed: start fluconazole 1200 mg immediately",
+      "s": "hiv2026:76"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–6",
+    "phase": "Tolerance · EAC",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ALT if jaundice / vomiting",
+      "s": "hiv2026:26",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enhanced adherence counselling (SOP 2): barriers and plan",
+      "s": "hiv2026:45",
+      "b": 1
+     },
+     {
+      "t": "DTG side effects: insomnia (take in the morning), headache, GI — usually mild",
+      "s": "hiv2026:31"
+     },
+     {
+      "t": "Cotrimoxazole rash with systemic or mucosal features: stop permanently, admit",
+      "s": "hiv2026:87",
+      "b": 1
+     },
+     {
+      "t": "Early IRIS: continue ART, discuss",
+      "s": "hiv2026:104"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "hiv2026:27"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge summary: diagnoses, ART regimen, OI treatment doses and phases",
+      "s": "hiv2026:96",
+      "b": 1
+     },
+     {
+      "t": "3-monthly clinical review with aligned 3-month refills once well",
+      "s": "hiv2026:97"
+     },
+     {
+      "t": "VL booked for 3 months",
+      "s": "hiv2026:34",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Restart ART · regimen",
+   "items": [
+    {
+     "t": "Restart ART the same day unless a clinical reason to defer",
+     "s": "hiv2026:34",
+     "b": 1
+    },
+    {
+     "t": "> 90 days out and previously on TEE, TLD or a PI: re-initiate a DTG regimen (TLD)",
+     "s": "hiv2026:34",
+     "b": 1
+    },
+    {
+     "t": "LTFU on third-line: re-initiate the third-line regimen (expert)",
+     "s": "hiv2026:34"
+    },
+    {
+     "h": "Regimen"
+    },
+    {
+     "t": "TLD (TDF 300 / 3TC 300 / DTG 50) 1 tab daily — ≥ 30 kg, ≥ 10 y, eGFR > 50",
+     "s": "hiv2026:33",
+     "b": 1
+    },
+    {
+     "t": "eGFR < 50: ABC + 3TC + DTG (ALD 600/300/50) 1 tab daily",
+     "s": "hiv2026:91",
+     "b": 1
+    },
+    {
+     "t": "eGFR 30–50 with hepatitis B: TAF + FTC + DTG (discuss)",
+     "s": "hiv2026:91"
+    },
+    {
+     "h": "PI history"
+    },
+    {
+     "t": "PI > 2 years, VL < 1000 or self-reported poor adherence: switch to TLD (ALD if no TDF); no resistance test",
+     "s": "hiv2026:37"
+    },
+    {
+     "t": "PI > 2 years, ≥ 2 consecutive VL ≥ 1000 despite 2 adherence interventions: no same-day switch — expert / resistance test",
+     "s": "hiv2026:37",
+     "b": 1
+    },
+    {
+     "t": "Repeat VL 3 months after any regimen change",
+     "s": "hiv2026:37"
+    },
+    {
+     "h": "Interactions"
+    },
+    {
+     "t": "Iron / calcium: take with DTG only with food; antacids 2 h after or 6 h before DTG",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Carbamazepine, phenytoin, phenobarbital: switch anticonvulsant or DTG 50 mg 12-hourly",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "title": "OI prophylaxis · CrAg · ABCDE",
+   "items": [
+    {
+     "h": "Cotrimoxazole"
+    },
+    {
+     "t": "Cotrimoxazole 800/160 mg (2 SS tabs) daily if CD4 ≤ 200 or WHO stage 3/4; stop when CD4 > 200",
+     "s": "hiv2026:87",
+     "b": 1
+    },
+    {
+     "h": "TPT"
+    },
+    {
+     "t": "TPT once TB excluded: INH 300 mg + pyridoxine 25 mg daily × 12 months (12H)",
+     "s": "hiv2026:89",
+     "b": 1
+    },
+    {
+     "t": "Not if: liver disease, alcohol abuse, painful neuropathy, previous MDR-TB, pregnancy (unless AHD)",
+     "s": "hiv2026:88"
+    },
+    {
+     "h": "CrAg positive"
+    },
+    {
+     "t": "CSF CrAg negative: fluconazole 1200 mg daily × 14 d, then 800 mg × 8 weeks, then 200 mg ≥ 1 year",
+     "s": "hiv2026:76",
+     "b": 1
+    },
+    {
+     "t": "CSF CrAg positive (CM): REFER for amphotericin-based induction; defer ART 4–6 weeks",
+     "s": "hiv2026:76",
+     "b": 1
+    },
+    {
+     "h": "Elevated VL later"
+    },
+    {
+     "t": "A — Adherence: cost, travel, side effects, depression, alcohol, GBV, non-disclosure",
+     "s": "hiv2026:44"
+    },
+    {
+     "t": "B — Bugs: TB and STI screen",
+     "s": "hiv2026:44"
+    },
+    {
+     "t": "C — Correct dose for weight / renal function",
+     "s": "hiv2026:44"
+    },
+    {
+     "t": "D — Drug interactions: rifampicin, anticonvulsants, antacids, iron, herbal",
+     "s": "hiv2026:44"
+    },
+    {
+     "t": "E — Resistance only after the above are excluded",
+     "s": "hiv2026:44"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · IRIS",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Headache, confusion, neck stiffness",
+     "s": "hiv2026:79",
+     "b": 1
+    },
+    {
+     "t": "Cotrimoxazole rash with systemic or mucosal features: stop permanently, admit",
+     "s": "hiv2026:87",
+     "b": 1
+    },
+    {
+     "t": "Jaundice, vomiting, abdominal pain",
+     "s": "hiv2026:26"
+    },
+    {
+     "t": "RR ≥ 30, pulse ≥ 120, confusion",
+     "s": "hiv2026:59"
+    },
+    {
+     "h": "IRIS"
+    },
+    {
+     "t": "IRIS risk if CD4 < 100: most in first 3 months of ART",
+     "s": "hiv2026:104"
+    },
+    {
+     "t": "Continue ART; paracetamol / ibuprofen; severe → prednisone 1.5 mg/kg × 2 wk then 0.75 mg/kg × 2 wk",
+     "s": "adultstg2026:10.19"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Cryptococcal / TB meningitis · ICU · third-line failure (expert)",
+     "s": "hiv2026:37",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No danger signs",
+    "s": "hiv2026:59"
+   },
+   {
+    "t": "TB excluded (Xpert / LAM negative, no symptoms)",
+    "s": "hiv2026:88",
+    "b": 1
+   },
+   {
+    "t": "CD4 and CrAg actioned",
+    "s": "hiv2026:62",
+    "b": 1
+   },
+   {
+    "t": "ART restarted, or restart date written",
+    "s": "hiv2026:34",
+    "b": 1
+   },
+   {
+    "t": "EAC done; barriers addressed",
+    "s": "hiv2026:45"
+   },
+   {
+    "t": "Clinic appointment ≤ 2 weeks; VL date in 3 months",
+    "s": "hiv2026:97"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC / ART clinic)",
+  "items": [
+   {
+    "t": "Clinic visit 2-weekly (recently admitted) for the first 3 months",
+    "s": "hiv2026:97",
+    "b": 1
+   },
+   {
+    "t": "Linkage officer / CHW: weekly check-in first month",
+    "s": "hiv2026:95"
+   },
+   {
+    "t": "VL 3 months after re-engagement; suppressed → RPCs",
+    "s": "hiv2026:34",
+    "b": 1
+   },
+   {
+    "t": "VL ≥ 50: ABCDE, EAC, repeat VL in 3 months",
+    "s": "hiv2026:43"
+   },
+   {
+    "t": "CD4 6-monthly while ≤ 200",
+    "s": "hiv2026:61"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "14-day nursing record — ART, prophylaxis doses and OI warning signs",
+  "period": "one sheet per 14 days, one row per day (vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "ART, cotrimoxazole, TPT, fluconazole: each dose observed and timed",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Weight on admission and weekly",
+      "s": "hiv2026:27"
+     }
+    ]
+   },
+   {
+    "h": "Warning signs",
+    "items": [
+     {
+      "t": "New headache, confusion, visual change (cryptococcal meningitis)",
+      "s": "hiv2026:79"
+     },
+     {
+      "t": "Rash, mouth ulcers, jaundice (cotrimoxazole / INH)",
+      "s": "hiv2026:87"
+     }
+    ]
+   },
+   {
+    "h": "Observations · IRIS",
+    "items": [
+     {
+      "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "After ART start: new fever, enlarging nodes, worse chest (IRIS)",
+      "s": "hiv2026:104"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "headache, confusion or neck stiffness",
+    "s": "hiv2026:79",
+    "b": 1
+   },
+   {
+    "t": "rash with mouth ulcers or fever",
+    "s": "hiv2026:87",
+    "b": 1
+   },
+   {
+    "t": "jaundice or vomiting",
+    "s": "hiv2026:26"
+   },
+   {
+    "t": "refused or vomited dose (adherence concern)",
+    "d": 1
+   },
+   {
+    "t": "RR ≥ 30, pulse ≥ 120, confusion",
+    "s": "hiv2026:59"
+   }
+  ],
+  "totals": [
+   "ART doses given / due",
+   "CPT / TPT given / due",
+   "Fluconazole given / due",
+   "Warning sign (Y/N)"
+  ]
+ }
+}

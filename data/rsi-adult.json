@@ -1,0 +1,645 @@
+{
+ "id": "rsi-adult",
+ "short": "RSI",
+ "title": "Rapid sequence induction and intubation",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-30",
+ "regimen": "Fentanyl · Midazolam · Suxamethonium",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the STG.",
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered drug cells (m=a/b/c). steps[].decisions[]: if/then/goto. reference{}: drugs, dose_table, later.",
+ "indications": [
+  {
+   "h": "Airway at risk",
+   "items": [
+    {
+     "t": "At risk of aspiration",
+     "s": "stg-adult:20.18"
+    },
+    {
+     "t": "GCS ≤8 or falling; absent gag; pooling secretions / vomit",
+     "d": 1
+    },
+    {
+     "t": "Inhalational burn (stridor, soot, hoarse)",
+     "d": 1
+    },
+    {
+     "t": "Expanding neck haematoma, refractory angioedema",
+     "d": 1
+    }
+   ],
+   "col": 1,
+   "row": 1
+  },
+  {
+   "h": "Oxygenation failure",
+   "items": [
+    {
+     "t": "SpO₂ <90% despite NRB / BVM + PEEP / NIV",
+     "d": 1
+    },
+    {
+     "t": "Hypoxaemic respiratory failure",
+     "s": "stg-adult:23.2"
+    }
+   ],
+   "col": 1,
+   "row": 1
+  },
+  {
+   "h": "Ventilation failure",
+   "items": [
+    {
+     "t": "Hypercapnia with ↓GCS; exhaustion, silent chest",
+     "d": 1
+    },
+    {
+     "t": "Excessive work of breathing: asthma, COPD, metabolic acidosis, fatigue",
+     "s": "stg-adult:23.2"
+    }
+   ],
+   "col": 2,
+   "row": 1
+  },
+  {
+   "h": "Anticipated course",
+   "items": [
+    {
+     "t": "Severe TBI; refractory status epilepticus",
+     "d": 1
+    },
+    {
+     "t": "Combative – needs CT / transfer; major trauma",
+     "d": 1
+    },
+    {
+     "t": "Brain injury needing PCO₂ / PO₂ control",
+     "s": "stg-adult:23.2"
+    }
+   ],
+   "col": 2,
+   "row": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "RSI",
+   "items": [
+    {
+     "t": "Trained, experienced medical practitioner only",
+     "s": "stg-adult:20.18"
+    },
+    {
+     "t": "Difficult intubation anticipated: no muscle relaxant",
+     "s": "stg-adult:12.3",
+     "b": 1
+    },
+    {
+     "t": "→ Senior / anaesthetist; Plans B–D open first",
+     "d": 1
+    },
+    {
+     "t": "Obliterated airway anatomy → surgical airway",
+     "d": 1
+    },
+    {
+     "t": "Valid DNR / ceiling of care",
+     "d": 1
+    }
+   ],
+   "col": 1,
+   "row": 1
+  },
+  {
+   "h": "Suxamethonium – do NOT give",
+   "items": [
+    {
+     "t": "Upper / lower motor neuron defect; disuse atrophy",
+     "s": "stg-adult:12.3"
+    },
+    {
+     "t": "Prolonged denervation (ICU >3 days); muscle trauma, tumour, inflammation",
+     "s": "stg-adult:12.3"
+    },
+    {
+     "t": "Burns; severe infection",
+     "s": "stg-adult:12.3"
+    },
+    {
+     "t": "Pre-existing hyperkalaemia (AKI/CKD, rhabdo, peaked T)",
+     "s": "stg-adult:12.3",
+     "b": 1
+    },
+    {
+     "t": "Malignant hyperthermia",
+     "s": "stg-adult:20.19",
+     "b": 1
+    }
+   ],
+   "col": 2,
+   "row": 1
+  },
+  {
+   "h": "Also avoid",
+   "items": [
+    {
+     "t": "Pseudocholinesterase deficiency; myopathy; family MH; open globe / ↑ICP (caution)",
+     "d": 1
+    }
+   ],
+   "col": 3,
+   "row": 1
+  },
+  {
+   "h": "If sux contra-indicated",
+   "items": [
+    {
+     "t": "Rocuronium 0.9 mg/kg IV, lasts about 60 min",
+     "s": "stg-adult:20.19",
+     "b": 1
+    },
+    {
+     "t": "Long block is a problem if intubation fails",
+     "s": "stg-adult:20.19"
+    }
+   ],
+   "col": 3,
+   "row": 1
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "PREPARE",
+   "time": "T − 10 min",
+   "subtitle": "team, monitors, access, kit, drugs drawn up",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Assign roles",
+     "x": "intubator · assistant · drug nurse · scribe/timer; LEMON; say Plan A–D aloud",
+     "d": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Attach monitors",
+     "x": "SpO₂, ECG, NIBP q2–3 min, EtCO₂",
+     "d": 1
+    },
+    {
+     "n": "1.3",
+     "t": "Secure IV access",
+     "x": "line with fast-running fluids, induction agent given through it; resuscitation medicines and equipment at hand; 2nd IV line †",
+     "s": "stg-adult:20.18"
+    },
+    {
+     "n": "1.4",
+     "t": "Check kit (SOAP-ME)",
+     "x": "suction on · O₂ NRB + nasal cannula · ETT 7.0 ♀ / 8.0 ♂ + smaller, stylet, bougie · 2 laryngoscopes · OPA/NPA · iGel 3–5 · BVM + PEEP valve · vent set",
+     "d": 1
+    },
+    {
+     "n": "1.5",
+     "t": "Draw up and label drugs",
+     "x": "a, b, c + flushes, push-dose adrenaline, atropine; FONA kit open (#10 scalpel, bougie, 6.0 ETT)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "PRE-OXYGENATE & OPTIMISE",
+   "time": "T − 10 → T − 3 min",
+   "subtitle": "resuscitate before you intubate",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Position head-up 20–30°",
+     "x": "ramp if obese",
+     "d": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Pre-oxygenate ≥3 min",
+     "x": "NRB 15 L/min + nasal cannula 15 L/min, kept on throughout; target SpO₂ ≥94% (or 8 vital-capacity breaths)",
+     "d": 1
+    },
+    {
+     "n": "2.3",
+     "t": "Correct haemodynamics: SBP >90 / MAP >65 before drugs",
+     "x": "shock index (HR/SBP) >0.9 → fluids, reduce doses",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "n": "2.4",
+     "t": "Have push-dose adrenaline ready",
+     "x": "1 mg in 100 mL NaCl = 10 mcg/mL; 1–2 mL IV q2–5 min for SBP <90",
+     "d": 1
+    },
+    {
+     "n": "2.5",
+     "t": "Decompress pneumothorax; empty a distended stomach",
+     "x": "suction / NGT",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "SpO₂ not reaching 93%",
+     "then": "BVM with PEEP 5–10 or NIV, then continue",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "GIVE THE DRUGS IN THIS ORDER",
+   "time": "T − 3 → T 0",
+   "subtitle": "weigh / estimate kg, say it aloud, read the dose from the table",
+   "actions": [],
+   "sequence": [
+    {
+     "m": "a",
+     "drug": "FENTANYL",
+     "when": "T − 3 min",
+     "dose": "1–2 mcg/kg slow IV",
+     "adjusted": "shocked: 0.5–1 mcg/kg or omit",
+     "d": 1
+    },
+    {
+     "m": "b",
+     "drug": "MIDAZOLAM",
+     "when": "T 0",
+     "dose": "0.1–0.2 mg/kg IV push",
+     "adjusted": "shocked: 0.05 mg/kg",
+     "d": 1
+    },
+    {
+     "m": "c",
+     "drug": "SUXAMETHONIUM",
+     "when": "T 0, straight after b",
+     "dose": "1–1.5 mg/kg IV push",
+     "adjusted": "contra-indicated: ROCURONIUM 0.9 mg/kg IV",
+     "s": "stg-adult:12.3"
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Unstable or hypotensive",
+     "then": "STG alternatives to a + b: ketamine 1–2 mg/kg or etomidate 0.3 mg/kg (0.2–0.6) preferred; propofol 1.5–2.5 mg/kg causes hypotension",
+     "s": "stg-adult:20.19"
+    },
+    {
+     "if": "Sick and/or elderly",
+     "then": "healthy-adult doses shown; substantial reductions may be needed",
+     "s": "stg-adult:20.18"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "PARALYSE, INTUBATE & PROVE PLACEMENT",
+   "time": "T 0 → T + 60 s",
+   "subtitle": "flaccid in 30–60 s",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Start the timer",
+     "x": "no mask ventilation unless SpO₂ <93% (gastric insufflation, aspiration); then gentle 2-hand BVM",
+     "s": "stg-adult:20.18"
+    },
+    {
+     "n": "4.2",
+     "t": "Wait for flaccid jaw",
+     "x": "30–60 s after suxamethonium",
+     "s": "stg-adult:12.3"
+    },
+    {
+     "n": "4.3",
+     "t": "Apply cricoid pressure, laryngoscope",
+     "x": "release if view worse †",
+     "s": "stg-adult:12.4"
+    },
+    {
+     "n": "4.4",
+     "t": "Pass the tube: ≤30 s or SpO₂ <93% → abort and re-oxygenate",
+     "x": "BURP, head lift, bougie, change blade/operator; max 3 attempts",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "n": "4.5",
+     "t": "Confirm: sustained EtCO₂ × 6 breaths (no trace = wrong place)",
+     "x": "tube seen through cords; chest rise, air entry, silent epigastrium; depth ≈ 21 cm ♀ / 23 cm ♂; cuff 20–30 cmH₂O; secure",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Failed intubation (3 attempts or cannot oxygenate)",
+     "then": "Plan B: SGA (iGel) → Plan C: 2-person BVM + OPA/NPA (sux wears off quickly, spontaneous breathing resumes) → Plan D: CICO, scalpel–bougie–tube cricothyroidotomy",
+     "s": "stg-adult:20.19"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "SEDATE FIRST, THEN VENTILATE",
+   "time": "T + 1 → T + 5 min",
+   "subtitle": "sux wears off in about 5 min: never paralyse without sedation",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Give analgesia and sedation now",
+     "x": "treat pain first; midazolam 0.05 mg/kg bolus †, then infusion 0.05–0.2 mg/kg/h (<24 h); record sedation level",
+     "s": "stg-adult:20.19",
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Connect ventilator",
+     "x": "A/C or SIMV; FiO₂ 1.0 · Vt 5–8 mL/kg predicted body weight · RR 12–15 · PEEP 5 · I:E 1:2",
+     "s": "stg-adult:23.47",
+     "b": 1
+    },
+    {
+     "n": "5.3",
+     "t": "Titrate to targets",
+     "x": "FiO₂ ↓0.1 every 10 min to 0.4, SpO₂ ≥95% (≥88% if ARDS); PCO₂ 4.5–6.0 kPa (brain injury 4.2–4.8); pH not below 7.20",
+     "s": "stg-adult:23.48"
+    },
+    {
+     "n": "5.4",
+     "t": "Monitor",
+     "x": "ABG, SpO₂, all ventilator parameters; BP q5 min × 30 min then q15; EtCO₂ continuous",
+     "s": "stg-adult:23.47"
+    },
+    {
+     "n": "5.5",
+     "t": "Settle and document",
+     "x": "OGT/NGT, head-up 30°, IDC, CXR tip 3–5 cm above carina; record time, drugs, CL grade, attempts, ETT size and depth",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "drugs": [
+   {
+    "m": "a",
+    "name": "Fentanyl",
+    "conc": "50 mcg/mL (100 mcg/2 mL)",
+    "dose": "1–2 mcg/kg slow IV",
+    "when": "T − 3 min",
+    "onset": "2–3 min / 30–60 min",
+    "adjusted": "0.5–1 mcg/kg or omit",
+    "watch": "Chest-wall rigidity, hypotension",
+    "d": 1
+   },
+   {
+    "m": "b",
+    "name": "Midazolam",
+    "conc": "15 mg → 15 mL = 1 mg/mL",
+    "dose": "0.1–0.2 mg/kg IV push",
+    "when": "T 0",
+    "onset": "1–3 min / 30–60 min",
+    "adjusted": "0.05 mg/kg",
+    "watch": "Hypotension; awareness",
+    "d": 1
+   },
+   {
+    "m": "c",
+    "name": "Suxamethonium",
+    "conc": "50 mg/mL (100 mg/2 mL; fridge)",
+    "dose": "1–1.5 mg/kg IV (table 1.5)",
+    "when": "T 0, straight after midazolam",
+    "onset": "30–60 s / 5 min",
+    "adjusted": "Full dose †",
+    "watch": "Bradycardia (repeat), ↑K⁺, MH",
+    "s": "stg-adult:12.3",
+    "b": 1
+   },
+   {
+    "m": "c alt",
+    "name": "Rocuronium (if sux contra.)",
+    "conc": "—",
+    "dose": "0.9 mg/kg IV",
+    "when": "T 0",
+    "onset": "— / about 60 min",
+    "adjusted": "—",
+    "watch": "Long block if failed intubation",
+    "s": "stg-adult:20.19"
+   }
+  ],
+  "dose_table": {
+   "unit": "kg",
+   "weights": [
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+   ],
+   "rows": [
+    {
+     "m": "a",
+     "drug": "Fentanyl",
+     "basis": "2 mcg/kg (1 if shocked)",
+     "unit": "mcg",
+     "d": 1,
+     "vals": [
+      "100 (50)",
+      "120 (60)",
+      "140 (70)",
+      "160 (80)",
+      "180 (90)",
+      "200 (100)"
+     ]
+    },
+    {
+     "m": "b",
+     "drug": "Midazolam",
+     "basis": "0.15 mg/kg (0.05 if shocked)",
+     "unit": "mg",
+     "d": 1,
+     "vals": [
+      "7.5 (2.5)",
+      "9 (3)",
+      "10.5 (3.5)",
+      "12 (4)",
+      "13.5 (4.5)",
+      "15 (5)"
+     ]
+    },
+    {
+     "m": "c",
+     "drug": "Suxamethonium",
+     "basis": "1.5 mg/kg",
+     "unit": "mg · mL",
+     "s": "stg-adult:12.3",
+     "vals": [
+      "75 · 1.5",
+      "90 · 1.8",
+      "105 · 2.1",
+      "120 · 2.4",
+      "135 · 2.7",
+      "150 · 3"
+     ]
+    },
+    {
+     "m": "c alt",
+     "drug": "Rocuronium",
+     "basis": "0.9 mg/kg",
+     "unit": "mg",
+     "s": "stg-adult:20.19",
+     "vals": [
+      "45",
+      "54",
+      "63",
+      "72",
+      "81",
+      "90"
+     ]
+    }
+   ]
+  },
+  "later": [
+   {
+    "h": "Sedation beyond induction",
+    "items": [
+     {
+      "t": "≥72 h: midazolam 0.2 mg/kg/h or lorazepam 0.1 mg/kg/h",
+      "s": "stg-adult:20.20"
+     },
+     {
+      "t": "Add morphine 0.1–0.2 mg/kg/h or fentanyl 1 mcg/kg/h",
+      "s": "stg-adult:20.20"
+     },
+     {
+      "t": "Unstable: ketamine 0.5–1 mg/kg/h",
+      "s": "stg-adult:20.20"
+     }
+    ],
+    "col": 1,
+    "row": 1
+   },
+   {
+    "h": "Ventilator extras",
+    "items": [
+     {
+      "t": "Pressure control: 15 cmH₂O above PEEP",
+      "s": "stg-adult:23.47"
+     },
+     {
+      "t": "Asthma / COPD: I:E 1:3–1:4, RR 10–12; COPD SpO₂ 88–92%",
+      "d": 1
+     },
+     {
+      "t": "Plateau <30, peak <35 cmH₂O; PBW ♂ 50 / ♀ 45.5 + 0.91 × (ht cm − 152.4)",
+      "d": 1
+     }
+    ],
+    "col": 2,
+    "row": 1
+   },
+   {
+    "h": "Deteriorates: DOPES",
+    "items": [
+     {
+      "t": "Displaced · Obstructed · Pneumothorax · Equipment · Stacked breaths / Stomach",
+      "d": 1
+     },
+     {
+      "t": "Hypotension: fluids, push-dose adrenaline, exclude tension pneumothorax; auto-PEEP → disconnect",
+      "d": 1
+     }
+    ],
+    "col": 3,
+    "row": 1
+   },
+   {
+    "h": "Refer / transfer",
+    "items": [
+     {
+      "t": "ICU / tertiary referral – district level",
+      "d": 1
+     }
+    ],
+    "col": 4,
+    "row": 1
+   }
+  ]
+ },
+ "complications": {
+  "title": "Suxamethonium complications",
+  "sections": [
+   {
+    "h": "Bradycardia / asystole",
+    "items": [
+     {
+      "t": "Repeat sux doses: bradycardia, prolonged block",
+      "s": "stg-adult:12.3"
+     },
+     {
+      "t": "Atropine 0.5 mg IV",
+      "d": 1
+     },
+     {
+      "t": "Prolonged apnoea (pseudocholinesterase deficiency): keep sedated & ventilated",
+      "d": 1
+     }
+    ],
+    "col": 1,
+    "row": 1
+   },
+   {
+    "h": "Hyperkalaemic arrest",
+    "items": [
+     {
+      "t": "Calcium gluconate 10%, 10 mL slow IV over 10 min; repeat if ECG changes persist or recur",
+      "s": "stg-adult:7.10"
+     },
+     {
+      "t": "Dextrose 50% 100 mL IV, then soluble insulin 10 units IV over 5 min; HGT hourly × 6 h",
+      "s": "stg-adult:7.10"
+     },
+     {
+      "t": "In arrest: calcium as bolus, continue CPR",
+      "d": 1
+     }
+    ],
+    "col": 2,
+    "row": 1
+   },
+   {
+    "h": "Malignant hyperthermia",
+    "items": [
+     {
+      "t": "Dantrolene 2.5 mg/kg IV once, large-bore cannula, in 60 mL water (70 kg: 175 mg, 9 vials)",
+      "s": "stg-adult:12.10",
+      "b": 1
+     },
+     {
+      "t": "Repeat to clinical effect; >10 mg/kg uncommon – question diagnosis",
+      "s": "stg-adult:12.10"
+     },
+     {
+      "t": "Rising EtCO₂, rigidity, masseter spasm, ↑temp; stop triggers, 100% O₂, cool; ICU referral",
+      "d": 1
+     }
+    ],
+    "col": 3,
+    "row": 1
+   }
+  ]
+ }
+}

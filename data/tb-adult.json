@@ -1,0 +1,1221 @@
+{
+ "id": "tb-adult",
+ "short": "TB (adult)",
+ "title": "Pulmonary TB, drug-susceptible — newly diagnosed, admitted for work-up / initiation (adult)",
+ "population": "Adult and adolescent ≥ 15 y, HIV-negative (HIV+ → TB-HIV pathway); excludes RR-TB, TBM, miliary TB",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "adultstg2026",
+  "tbadult2017",
+  "phcstg2026",
+  "hiv2026",
+  "tbpaeds2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "HIV positive → TB-HIV (adult) pathway",
+     "b": 1
+    },
+    {
+     "t": "Rifampicin resistant → DR-TB unit",
+     "s": "adultstg2026:16.22",
+     "b": 1
+    },
+    {
+     "t": "TB meningitis / miliary / spine → REFER",
+     "b": 1
+    },
+    {
+     "t": "Child < 15 y → TB (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one starts TB treatment",
+   "items": [
+    {
+     "t": "Sputum Xpert Ultra positive, Rif susceptible",
+     "s": "adultstg2026:16.19",
+     "b": 1
+    },
+    {
+     "t": "Xpert trace + clinical and CXR suggestive: treat; send culture + DST",
+     "s": "phcstg2026:17.27"
+    },
+    {
+     "t": "Clinical (cough, weight loss, night sweats, fever) + CXR evidence, with or without bacteriology",
+     "s": "tbadult2017:1",
+     "b": 1
+    },
+    {
+     "t": "Pleural effusion: lymphocytic exudate on tap",
+     "s": "adultstg2026:16.21"
+    },
+    {
+     "t": "Previous TB (esp. < 2 y): Xpert may stay positive → confirm on smear + culture",
+     "s": "phcstg2026:17.28",
+     "k": "sub"
+    },
+    {
+     "t": "Wt ____ kg   Ht ____ cm   BMI ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit — seriously ill / complicated = any one of",
+   "items": [
+    {
+     "t": "RR ≥ 30 · pulse ≥ 120 · breathless at rest",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Unable to walk unaided",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Drowsy / confused · seizures",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Haemoptysis ≥ 1 tablespoon",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 94% on room air",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Liver disease / jaundice: LFT before starting",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Renal impairment (dose adjustment)",
+     "s": "phcstg2026:17.29"
+    },
+    {
+     "t": "Large effusion / empyema",
+     "s": "adultstg2026:16.21"
+    },
+    {
+     "t": "Xpert negative, TB still suspected (work-up)",
+     "s": "phcstg2026:17.28"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous TB: dates, regimen, outcome",
+     "s": "adultstg2026:16.20"
+    },
+    {
+     "t": "Last HIV test (> 1 year → retest)",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Diabetes · last HGT / HbA1c",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Liver disease · alcohol",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Renal disease · baseline creatinine",
+     "s": "phcstg2026:17.29"
+    },
+    {
+     "t": "Contraception / pregnancy",
+     "s": "phcstg2026:17.28"
+    },
+    {
+     "t": "Mining history (CXR)",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Baseline weight trend",
+     "s": "tbadult2017:1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Cough duration · haemoptysis",
+     "s": "hiv2026:65"
+    },
+    {
+     "t": "Fever · night sweats · weight loss",
+     "s": "hiv2026:65"
+    },
+    {
+     "h": "Resistance risk"
+    },
+    {
+     "t": "Previous TB treatment / defaulted",
+     "s": "adultstg2026:16.20"
+    },
+    {
+     "t": "Prisoner · health worker · MDR contact",
+     "s": "adultstg2026:16.20"
+    },
+    {
+     "h": "Contacts"
+    },
+    {
+     "t": "Household children < 5 y (TPT)",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "HIV+ household members",
+     "s": "tbadult2017:1"
+    },
+    {
+     "h": "Comorbidity"
+    },
+    {
+     "t": "Alcohol use (screen)",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Diabetes · liver · renal disease",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Amenorrhoea / contraception",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Headache, neck stiffness (TBM)",
+     "d": 1
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Address / locator for tracing",
+     "d": 1
+    },
+    {
+     "t": "Treatment supporter · grant",
+     "s": "tbadult2017:1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "RR ≥ 30 or pulse ≥ 120 (danger sign)",
+     "s": "hiv2026:59",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% on room air → O₂",
+     "s": "adultstg2026:16.15",
+     "k": "yn"
+    },
+    {
+     "t": "Confused / ↓ LOC",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "BMI < 18.5 (underweight)",
+     "s": "hiv2026:27",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Wasting",
+     "s": "hiv2026:27"
+    },
+    {
+     "t": "Pallor",
+     "d": 1
+    },
+    {
+     "t": "Jaundice (baseline for DILI)",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Lymphadenopathy (extrapulmonary TB)",
+     "d": 1
+    },
+    {
+     "t": "Oral thrush / HIV features",
+     "d": 1
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Crackles · bronchial breathing",
+     "d": 1
+    },
+    {
+     "t": "Dull, ↓ breath sounds (effusion → tap)",
+     "s": "adultstg2026:16.21"
+    },
+    {
+     "t": "Tracheal shift (pneumothorax)",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "h": "Other sites"
+    },
+    {
+     "t": "Neck stiffness / confusion (TBM)",
+     "d": 1
+    },
+    {
+     "t": "Hepatosplenomegaly, ascites",
+     "d": 1
+    },
+    {
+     "t": "Raised JVP, soft heart sounds (pericardial)",
+     "d": 1
+    },
+    {
+     "h": "Baselines"
+    },
+    {
+     "t": "Visual acuity / colour vision (ethambutol)",
+     "d": 1
+    },
+    {
+     "t": "Sensation feet (INH neuropathy)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ — pulse oximetry on room air",
+   "items": [
+    {
+     "t": "Value on arrival: ____ % on room air",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "< 94%: oxygen",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Hypoxic despite face-mask O₂ → REFER",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    },
+    {
+     "t": "Diffuse bilateral infiltrates + hypoxia: think PJP (HIV)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Then 4-hourly; hourly while danger signs",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "HIV rapid test",
+   "items": [
+    {
+     "t": "Result: ____   (all TB patients)",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "All TB patients screened for HIV",
+     "s": "adultstg2026:16.20",
+     "b": 1
+    },
+    {
+     "t": "Positive (3-test algorithm) → TB-HIV (adult) pathway",
+     "s": "hiv2026:18",
+     "b": 1
+    },
+    {
+     "t": "Negative: retest per window period; TB treatment as below",
+     "s": "hiv2026:17"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "RR ≥ 30 or pulse ≥ 120",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Breathless at rest / talking",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Drowsy / confused",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Massive haemoptysis",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Large effusion / empyema",
+     "s": "adultstg2026:16.21"
+    },
+    {
+     "t": "Meningism → TBM",
+     "d": 1
+    },
+    {
+     "t": "Jaundice / liver failure",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Renal failure",
+     "s": "phcstg2026:17.29"
+    },
+    {
+     "t": "Sepsis / shock",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Rif resistance on Xpert",
+     "s": "adultstg2026:16.22"
+    },
+    {
+     "t": "Diabetes / DKA",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Unknown HIV status",
+     "s": "adultstg2026:16.20"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. RR-TB, TB meningitis / miliary, or respiratory failure → REFER · massive haemoptysis → stabilise, REFER",
+   "s": "adultstg2026:16.22",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT = seriously ill, complicated, or work-up → start RHZE, notify, discharge to PHC",
+   "s": "adultstg2026:16.19"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Start RHZE as soon as the diagnosis is made (Day 1 if Xpert positive) · branch rows only if needed",
+  "columns": {
+   "feed": "Oxygen, diet & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "TB dose swallowed under observation (DOT) once daily, same time; record vomited doses",
+    "s": "phcstg2026:17.28",
+    "b": 1
+   },
+   {
+    "t": "Daily: nausea, vomiting, abdominal pain, jaundice, rash, tingling, visual change",
+    "s": "tbadult2017:1"
+   },
+   {
+    "t": "Weight on admission and weekly; dose band re-checked",
+    "s": "tbadult2017:1"
+   },
+   {
+    "t": "Airborne precautions (side room / mask) for the first 2 weeks of treatment",
+    "s": "tbpaeds2024:39"
+   },
+   {
+    "t": "Haemoptysis: estimate volume each episode",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Airborne precautions. Check clinic records for a TB treatment card already opened — do not duplicate a start†.",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Normal diet; nutritional support if wasted",
+      "d": 1
+     },
+     {
+      "t": "Side room / mask",
+      "s": "tbpaeds2024:39"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Sputum Xpert MTB/RIF Ultra",
+      "s": "adultstg2026:16.19",
+      "b": 1
+     },
+     {
+      "t": "Xpert positive: sputum smear (baseline, for monitoring)",
+      "s": "adultstg2026:16.20",
+      "b": 1
+     },
+     {
+      "t": "Previous TB / resistance risk: culture + DST",
+      "s": "adultstg2026:16.20",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "adultstg2026:16.20",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "Urine glucose + ketones",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "HGT / glucose if symptomatic",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "LFT if liver disease or alcohol",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test if amenorrhoea, no contraception",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "Creatinine / eGFR · FBC",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Start TB treatment (weight band)"
+     },
+     {
+      "t": "RHZE 150/75/400/275 daily × 2 months: 30–37 kg 2 tabs · 38–54 kg 3 · 55–70 kg 4 · ≥ 71 kg 5",
+      "s": "adultstg2026:16.20",
+      "b": 1
+     },
+     {
+      "t": "Then RH daily × 4 months: 30–37 kg RH 150/75 × 2 · 38–54 kg × 3 · ≥ 55 kg RH 300/150 × 2",
+      "s": "adultstg2026:16.20"
+     },
+     {
+      "t": "Once daily, 7 days a week; whole daily dose at once",
+      "s": "phcstg2026:17.30"
+     },
+     {
+      "t": "Pyridoxine 25 mg daily for all adults on TB treatment",
+      "s": "tbadult2017:1"
+     },
+     {
+      "h": "Haemoptysis ≥ 1 tablespoon"
+     },
+     {
+      "t": "O₂, lie on the bleeding side, blood group — REFER",
+      "d": 1
+     },
+     {
+      "h": "Effusion"
+     },
+     {
+      "t": "Diagnostic tap; drain max 1 L at a time if breathless",
+      "s": "adultstg2026:16.21"
+     },
+     {
+      "h": "Liver disease / alcohol"
+     },
+     {
+      "t": "Liver disease / alcohol: LFT before starting",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "ALT < 2 × ULN: start, ALT monthly",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "> 2 × ULN: do not start; REFER / discuss",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "h": "Renal"
+     },
+     {
+      "t": "eGFR < 30: IP = RH (Tue, Thu, Sat, Sun) + RHZE (Mon, Wed, Fri); CP RH daily",
+      "s": "phcstg2026:17.29"
+     },
+     {
+      "h": "Notify"
+     },
+     {
+      "t": "All TB is notifiable — notify, open TB register / card",
+      "s": "adultstg2026:16.19",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Results · start",
+    "feed": [
+     {
+      "t": "Wean O₂ once SpO₂ ≥ 94%",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase Xpert, smear, HIV, LFT results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Xpert Rif susceptible: continue RHZE",
+      "s": "phcstg2026:17.27",
+      "b": 1
+     },
+     {
+      "t": "Rif resistant: STOP — REFER DR-TB unit",
+      "s": "phcstg2026:17.28",
+      "b": 1
+     },
+     {
+      "t": "INH resistant (if reported): RHZE + levofloxacin 750 mg (30–45 kg) / 1 g (≥ 46 kg)",
+      "s": "adultstg2026:16.22"
+     },
+     {
+      "t": "HIV positive → TB-HIV (adult) pathway",
+      "b": 1
+     },
+     {
+      "t": "Counsel: TB, adherence, cough hygiene",
+      "s": "phcstg2026:17.28"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Tolerance",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "New nausea / vomiting: urgent ALT",
+      "s": "phcstg2026:17.29",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check DOT record: all doses swallowed",
+      "d": 1
+     },
+     {
+      "t": "Side effects: ADR box (side 2)",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Contact tracing started: children < 5 y + HIV+ contacts for TPT",
+      "s": "tbadult2017:1"
+     }
+    ]
+   },
+   {
+    "label": "If Xpert negative",
+    "phase": "Branch · work-up",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat sputum Xpert (unsuccessful / poor sample)",
+      "s": "phcstg2026:17.27",
+      "b": 1
+     },
+     {
+      "t": "Sputum culture",
+      "s": "adultstg2026:16.19",
+      "b": 1
+     },
+     {
+      "t": "Induced sputum (NaCl 5% neb) if not producing sputum",
+      "s": "adultstg2026:16.20",
+      "b": 1
+     },
+     {
+      "t": "FNA of nodes for Xpert (18G needle)",
+      "s": "adultstg2026:16.20",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HIV negative: treat as pneumonia, investigate further only if symptoms persist",
+      "s": "phcstg2026:17.28"
+     },
+     {
+      "t": "Clinical + CXR strongly suggestive: start TB treatment",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "Not improving: REFER for further work-up",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If DILI / jaundice",
+    "phase": "Branch · toxicity",
+    "feed": [
+     {
+      "t": "Stop hepatotoxic drugs",
+      "s": "adultstg2026:10.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ALT + bilirubin every 2 days; hepatitis A/B/C, INR",
+      "s": "adultstg2026:10.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hepatitis (ALT > 5 × ULN, or lower with jaundice / symptoms): stop R, H, Z (and ART, CPT)",
+      "s": "adultstg2026:10.16",
+      "b": 1
+     },
+     {
+      "t": "Background: linezolid 600 mg + levofloxacin 750–1000 mg (or moxifloxacin 400 mg) + ethambutol 800–1200 mg daily",
+      "s": "adultstg2026:10.17"
+     },
+     {
+      "t": "ALT + bilirubin every 2 days (inpatient); hepatitis A/B/C screen, INR",
+      "s": "adultstg2026:10.17",
+      "b": 1
+     },
+     {
+      "t": "ALT < 100 and bilirubin < 2 × ULN: rifampicin 600 mg (450 mg if < 60 kg) day 1 → ALT day 3 → add INH 300 mg day 4–6 → ALT day 7 → stop FQ + linezolid day 8 → ALT day 10",
+      "s": "adultstg2026:10.17"
+     },
+     {
+      "t": "Rechallenge fails → HIV & TB hotline / REFER",
+      "s": "adultstg2026:10.17",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If other ADR",
+    "phase": "Branch · toxicity",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Petechiae: platelet count",
+      "s": "tbadult2017:1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Nausea: exclude DILI (urgent ALT); give with meal or at bedtime",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Joint pain (Z): continue, NSAID; colchicine for gout",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Neuropathy (H): pyridoxine 50–75 mg daily (up to 200 mg if HIV+)",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Mild itchy rash: antihistamine · petechiae: platelets, stop R if low · blistering / mucosal / fever: stop all, rechallenge in hospital",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Visual loss (E): stop ethambutol, never rechallenge, eye REFER",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "Thrombocytopenia / purpura (R): stop rifampicin, REFER",
+      "s": "tbadult2017:1",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Room air; diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Culture / DST results if sent",
+      "s": "tbadult2017:1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Symptoms improving, tolerating: plan discharge",
+      "d": 1
+     },
+     {
+      "t": "Re-check dose band against weight",
+      "s": "phcstg2026:17.30"
+     }
+    ]
+   },
+   {
+    "label": "Day 14",
+    "phase": "Discharge / 2-week review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "tbadult2017:1"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "2-week review (programme follow-up visit)",
+      "s": "tbadult2017:1",
+      "b": 1
+     },
+     {
+      "t": "No longer infectious after 2 weeks of treatment",
+      "s": "tbpaeds2024:39"
+     },
+     {
+      "t": "Discharge to PHC with TB card, 1 month supply, contact list",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "TB drugs · weight band",
+   "items": [
+    {
+     "h": "Intensive — RHZE 150/75/400/275, 2 months"
+    },
+    {
+     "t": "30–37 kg 2 · 38–54 kg 3 · 55–70 kg 4 · ≥ 71 kg 5 tabs daily",
+     "s": "adultstg2026:16.20"
+    },
+    {
+     "h": "Continuation — RH, 4 months"
+    },
+    {
+     "t": "30–37 kg RH 150/75 × 2 · 38–54 kg × 3 · ≥ 55 kg RH 300/150 × 2",
+     "s": "adultstg2026:16.20"
+    },
+    {
+     "h": "Pyridoxine"
+    },
+    {
+     "t": "25 mg daily, all adults",
+     "s": "tbadult2017:1"
+    },
+    {
+     "h": "Renal (eGFR < 30)"
+    },
+    {
+     "t": "eGFR < 30: IP = RH (Tue, Thu, Sat, Sun) + RHZE (Mon, Wed, Fri); CP RH daily",
+     "s": "phcstg2026:17.29"
+    },
+    {
+     "h": "INH resistant"
+    },
+    {
+     "t": "RHZE + levofloxacin 750 mg (30–45 kg) / 1 g (≥ 46 kg) ≥ 6 months",
+     "s": "adultstg2026:16.22"
+    },
+    {
+     "h": "Interruptions"
+    },
+    {
+     "t": "< 1 month missed: continue, add missed doses at the end of the phase",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "1–2 months: continue; Xpert — Rif sensitive continue, Rif resistant stop + REFER MDR unit",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "≥ 2 months (LTFU): Xpert first; Rif sensitive → restart regimen; Rif resistant → MDR unit",
+     "s": "tbadult2017:1"
+    }
+   ]
+  },
+  {
+   "title": "Adverse drug reactions",
+   "items": [
+    {
+     "t": "Nausea: exclude DILI (urgent ALT); give with meal or at bedtime",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Joint pain (Z): continue, NSAID; colchicine for gout",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Neuropathy (H): pyridoxine 50–75 mg daily (up to 200 mg if HIV+)",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Mild itchy rash: antihistamine · petechiae: platelets, stop R if low · blistering / mucosal / fever: stop all, rechallenge in hospital",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "Visual loss (E): stop ethambutol, never rechallenge, eye REFER",
+     "s": "tbadult2017:1",
+     "b": 1
+    },
+    {
+     "t": "Thrombocytopenia / purpura (R): stop rifampicin, REFER",
+     "s": "tbadult2017:1",
+     "b": 1
+    },
+    {
+     "t": "Orange urine / tears (R): reassure",
+     "s": "tbadult2017:1"
+    },
+    {
+     "h": "Liver disease at start"
+    },
+    {
+     "t": "Liver disease / alcohol: LFT before starting",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "ALT < 2 × ULN: start, ALT monthly",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "> 2 × ULN: do not start; REFER / discuss",
+     "s": "tbadult2017:1",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · DILI",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Jaundice, vomiting, abdominal pain",
+     "s": "phcstg2026:17.29",
+     "b": 1
+    },
+    {
+     "t": "Rash, visual change, bruising",
+     "s": "tbadult2017:1"
+    },
+    {
+     "t": "RR ≥ 30, pulse ≥ 120, SpO₂ < 94%, confusion",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Haemoptysis ≥ 1 tablespoon",
+     "s": "hiv2026:59"
+    },
+    {
+     "h": "DILI"
+    },
+    {
+     "t": "Hepatitis (ALT > 5 × ULN, or lower with jaundice / symptoms): stop R, H, Z (and ART, CPT)",
+     "s": "adultstg2026:10.16",
+     "b": 1
+    },
+    {
+     "t": "Background: linezolid 600 mg + levofloxacin 750–1000 mg (or moxifloxacin 400 mg) + ethambutol 800–1200 mg daily",
+     "s": "adultstg2026:10.17"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Rif resistant (RR-TB) → DR-TB unit",
+     "s": "adultstg2026:16.22",
+     "b": 1
+    },
+    {
+     "t": "TB meningitis, miliary, spine → REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Respiratory failure / ventilation → REFER",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Clinically stable, no danger signs",
+    "s": "hiv2026:59"
+   },
+   {
+    "t": "Tolerating TB treatment ≥ 1 week, no DILI",
+    "d": 1
+   },
+   {
+    "t": "Xpert / HIV results given; notified",
+    "s": "adultstg2026:16.19",
+    "b": 1
+   },
+   {
+    "t": "Treatment supporter identified",
+    "s": "tbadult2017:1"
+   },
+   {
+    "t": "Counselled: adherence, IPC, side effects",
+    "s": "phcstg2026:17.28"
+   },
+   {
+    "t": "Clinic booked for 2-week visit",
+    "s": "tbadult2017:1"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC TB clinic)",
+  "items": [
+   {
+    "t": "2 weeks after start, then monthly: symptoms, weight, adherence, side effects",
+    "s": "tbadult2017:1"
+   },
+   {
+    "t": "Smear at 7 weeks (end of intensive phase): negative → continuation after week 8; positive → culture / LPA, extend IP 1 month",
+    "s": "tbadult2017:1",
+    "b": 1
+   },
+   {
+    "t": "Smear at 23 weeks (end of treatment)",
+    "s": "tbadult2017:1",
+    "b": 1
+   },
+   {
+    "t": "Contacts: screen all; TPT for children < 5 y and HIV+",
+    "s": "tbadult2017:1"
+   },
+   {
+    "t": "Retest HIV per schedule; family planning",
+    "s": "tbadult2017:1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "14-day nursing record — TB doses (DOT), weight and drug toxicity",
+  "period": "one sheet per 14 days, one row per day (vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "TB dose swallowed under observation (DOT) once daily, same time; record vomited doses",
+      "s": "phcstg2026:17.28",
+      "b": 1
+     },
+     {
+      "t": "Weight on admission and weekly; dose band re-checked",
+      "s": "tbadult2017:1"
+     }
+    ]
+   },
+   {
+    "h": "Toxicity",
+    "items": [
+     {
+      "t": "Daily: nausea, vomiting, abdominal pain, jaundice, rash, tingling, visual change",
+      "s": "tbadult2017:1"
+     },
+     {
+      "t": "Haemoptysis: estimate volume each episode",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Observations · IPC",
+    "items": [
+     {
+      "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Airborne precautions (side room / mask) for the first 2 weeks of treatment",
+      "s": "tbpaeds2024:39"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "jaundice, vomiting or abdominal pain",
+    "s": "phcstg2026:17.29",
+    "b": 1
+   },
+   {
+    "t": "new rash, bruising or visual change",
+    "s": "tbadult2017:1"
+   },
+   {
+    "t": "vomited or refused dose",
+    "d": 1
+   },
+   {
+    "t": "RR ≥ 30, pulse ≥ 120, SpO₂ < 94%, confusion",
+    "s": "hiv2026:59"
+   },
+   {
+    "t": "haemoptysis ≥ 1 tablespoon",
+    "s": "hiv2026:59",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Doses given / due",
+   "Doses vomited",
+   "Weight change (kg)",
+   "ADR noted (Y/N)"
+  ]
+ }
+}

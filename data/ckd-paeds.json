@@ -1,0 +1,1144 @@
+{
+ "id": "ckd-paeds",
+ "short": "CKD (child)",
+ "title": "Chronic kidney disease — admitted with a complication (child)",
+ "population": "Child < 13 y with known or suspected CKD; excludes SAM and children on dialysis",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Kidney function was normal recently → AKI (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "Severe acute malnutrition → SAM pathway",
+     "b": 1
+    },
+    {
+     "t": "Age ≥ 13 y → CKD (adult) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — abnormality present ≥ 3 months",
+   "items": [
+    {
+     "t": "Structural or functional kidney abnormality (urine, imaging or histology)",
+     "s": "paedstg2026:6.20",
+     "b": 1
+    },
+    {
+     "t": "With or without GFR < 60 mL/min/1.73 m²",
+     "s": "paedstg2026:6.20",
+     "b": 1
+    },
+    {
+     "t": "Small shrunken kidneys on ultrasound",
+     "s": "paedstg2026:6.22",
+     "b": 1
+    },
+    {
+     "h": "Stage (eGFR mL/min/1.73 m²)"
+    },
+    {
+     "t": "1: ≥ 90 · 2: 60–89 · 3: 30–59 · 4: 15–29 · 5: < 15 (ESRF)",
+     "s": "paedstg2026:6.20",
+     "k": "sub"
+    },
+    {
+     "t": "eCrCl = K × height (cm) ÷ creatinine (µmol/L); K: LBW 30 · infant 0–18 mo 40 · girls 2–16 y 49 · boys 2–12 y 49 · boys 13–16 y 60",
+     "s": "paedstg2026:6.20",
+     "k": "info"
+    },
+    {
+     "t": "Creatinine may be only mildly raised in a malnourished child",
+     "s": "paedstg2026:6.21",
+     "k": "info"
+    },
+    {
+     "t": "Ht ____ cm · Creat ____ µmol/L · eCrCl ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated CKD = any one of",
+   "items": [
+    {
+     "t": "Volume overload: oedema, hypertension, heart failure",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Respiratory distress (overload or acidosis)",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "K⁺ > 5.5 mmol/L persisting",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Convulsions (Na⁺, Ca²⁺, uraemia, BP)",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Severe dehydration (salt-wasting)",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Symptomatic anaemia",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Acute-on-chronic with intercurrent illness",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet",
+   "items": [
+    {
+     "t": "Weight / height curve: poor gain, stunting",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Immunisations incl. pneumococcal, varicella, hep B",
+     "s": "paedstg2026:6.26"
+    },
+    {
+     "t": "Previous UTIs",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Antenatal / congenital urinary anomaly",
+     "s": "paedstg2026:6.16"
+    },
+    {
+     "t": "Birth weight < 2.5 kg (K value)",
+     "s": "paedstg2026:6.20"
+    },
+    {
+     "t": "HIV exposure / PCR result",
+     "d": 1
+    },
+    {
+     "t": "Nephrotic syndrome history",
+     "s": "paedstg2026:6.25"
+    },
+    {
+     "t": "Paediatric nephrology follow-up",
+     "s": "paedstg2026:6.26"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Poor appetite, poor weight gain",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Constipation",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Urine"
+    },
+    {
+     "t": "Polyuria, polydipsia, nocturia",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Uraemia"
+    },
+    {
+     "t": "Nausea, vomiting, itch",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Mucosal bleeding",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Bone"
+    },
+    {
+     "t": "Bone pain, deformities",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Acute trigger"
+    },
+    {
+     "t": "Diarrhoea, fever, new medicines",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Convulsions",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "TB / HIV / social"
+    },
+    {
+     "t": "TB contact; HIV; caregiver, grants",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea (may be acidosis)",
+     "s": "paedstg2026:6.21",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill ≥ 3 s",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension: < 6 y > 120/90 · 6–15 y > 130/95",
+     "s": "phcstg2026:8.6",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Weight-for-age / height-for-age low",
+     "s": "paedstg2026:6.21",
+     "k": "yn"
+    },
+    {
+     "t": "Urine > 4 (polyuria) or < 1 mL/kg/h (oliguria)",
+     "s": "paedstg2026:6.21",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Volume — overloaded"
+    },
+    {
+     "t": "Oedema",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Crepitations",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Liver enlarged / tender",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "h": "Volume — dry"
+    },
+    {
+     "t": "Sunken eyes, poor turgor, CRT ≥ 3 s",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "h": "Uraemia / anaemia"
+    },
+    {
+     "t": "Pallor",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Brownish pigmentation, uraemic frost",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Scratch marks",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Bone"
+    },
+    {
+     "t": "Skeletal deformities (osteodystrophy)",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Kidney masses, bladder",
+     "d": 1
+    },
+    {
+     "t": "Baseline liver span ____ cm (overload)",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Height ____ cm · plot on growth chart",
+     "s": "paedstg2026:6.20",
+     "k": "value"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "VBG — K⁺, pH and HCO₃",
+   "items": [
+    {
+     "t": "Value on arrival: K⁺ ____ mmol/L · pH ____ · HCO₃ ____",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ > 6.5: emergency treatment as for AKI (chart)",
+     "s": "paedstg2026:6.18",
+     "b": 1
+    },
+    {
+     "t": "K⁺ > 5.5 persisting: stop K⁺-raising drugs, low-K⁺ diet, SPS",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "HCO₃ < 18: oral sodium bicarbonate",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Repeat K⁺ 2-hourly while > 6.5, then daily",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb — FBC or ward Hb",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "Symptomatic, usually Hb < 7 g/dL: packed cells 10 mL/kg over 6 h",
+     "s": "paedstg2026:6.24",
+     "b": 1
+    },
+    {
+     "t": "Avoid transfusion if possible (future transplant)",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "No blood bank at ANDH → REFER if transfusion needed",
+     "d": 1
+    },
+    {
+     "t": "Hb < 8 despite haematinics: EPO via paediatric nephrologist",
+     "s": "paedstg2026:6.25"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or breastfeed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema / heart failure",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Hyperkalaemia",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Severe acidosis",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Severe hypertension",
+     "s": "paedstg2026:4.35"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Uraemic bleeding",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Sepsis / UTI",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Hyponatraemia / hypocalcaemia",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Acute-on-chronic decline",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "Obstruction",
+     "s": "paedstg2026:6.22"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = CKD in a child → stabilise, REFER (all children with CKD)",
+   "s": "paedstg2026:6.26"
+  },
+  {
+   "t": "11. ADMIT while stabilising / awaiting transfer",
+   "d": 1
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Every child with CKD is referred — chart covers stabilisation and the wait for transfer",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Weigh daily, same scale — use body weight to guide the fluid prescription",
+    "s": "paedstg2026:6.23",
+    "b": 1
+   },
+   {
+    "t": "Intake (IV, oral, feeds) and urine output charted every shift; 24-h balance against the prescribed fluid plan",
+    "s": "paedstg2026:6.22",
+    "b": 1
+   },
+   {
+    "t": "BP 4-hourly; severe hypertension: every 10 min until stable, then every 30 min for 24 h",
+    "s": "paedstg2026:4.35",
+    "b": 1
+   },
+   {
+    "t": "Pulse, RR, SpO₂, temperature 4-hourly (hourly while unstable)",
+    "d": 1
+   },
+   {
+    "t": "Tubular / polyuric child: free access to water",
+    "s": "paedstg2026:6.23"
+   },
+   {
+    "t": "No NSAIDs, aminoglycosides, vancomycin, amphotericin B or contrast",
+    "s": "paedstg2026:6.23"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Check the referral letter and RtHB for fluids, furosemide and antihypertensives given. Phone the paediatric nephrology referral centre today.",
+    "feed": [
+     {
+      "t": "Fluid by body weight and status; IV only if oral not possible",
+      "s": "paedstg2026:6.23",
+      "b": 1
+     },
+     {
+      "t": "Anuric: insensible losses only, dextrose 5% or 10%",
+      "s": "paedstg2026:6.23"
+     },
+     {
+      "t": "Oliguric + oedema + BP: insensible + 50% of urine + extra-renal losses (NaCl 0.9%)",
+      "s": "paedstg2026:6.23"
+     },
+     {
+      "t": "Dehydrated + hypotensive: NaCl 0.9% bolus now, reassess, repeat if needed",
+      "s": "paedstg2026:6.23"
+     },
+     {
+      "t": "Insensible: neonate / young baby 30–40 mL/kg/d; older 25 mL/kg/d",
+      "s": "paedstg2026:6.23"
+     },
+     {
+      "t": "Do not limit protein; high-energy diet, NG feeds if needed",
+      "s": "paedstg2026:6.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, urea, creatinine (eCrCl)",
+      "s": "paedstg2026:6.21",
+      "b": 1
+     },
+     {
+      "t": "VBG: K⁺, pH, HCO₃",
+      "s": "paedstg2026:6.22",
+      "b": 1
+     },
+     {
+      "t": "Ca, PO₄, ALP; PTH",
+      "s": "paedstg2026:6.22",
+      "b": 1
+     },
+     {
+      "t": "FBC; ferritin, transferrin, TIBC",
+      "s": "paedstg2026:6.24",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick, microscopy, MCS",
+      "s": "paedstg2026:6.21",
+      "b": 1
+     },
+     {
+      "t": "Urine protein:creatinine ratio",
+      "s": "paedstg2026:6.21",
+      "b": 1
+     },
+     {
+      "t": "Renal ultrasound (obstruction, size)",
+      "s": "paedstg2026:6.22",
+      "b": 1
+     },
+     {
+      "t": "ECG if K⁺ high",
+      "s": "paedstg2026:6.17",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Hyperkalaemia"
+     },
+     {
+      "t": "K⁺ > 6.5: calcium gluconate 10% 0.5 mL/kg IV over 3–5 min, salbutamol neb 2.5–5 mg, NaHCO₃ 4.2% 4 mL/kg over 4 h (AKI regimen)",
+      "s": "paedstg2026:6.18",
+      "b": 1
+     },
+     {
+      "t": "Stop K⁺-sparing diuretics, spironolactone, ACE-i; exclude volume depletion",
+      "s": "paedstg2026:6.24"
+     },
+     {
+      "t": "K⁺ > 5.5 persisting: SPS 1 g/kg PO/PR in dextrose water, once or twice daily",
+      "s": "paedstg2026:6.24"
+     },
+     {
+      "h": "Respiratory distress from overload"
+     },
+     {
+      "t": "Sit up; O₂ 100% 2–3 L/min nasal prongs",
+      "s": "paedstg2026:6.22"
+     },
+     {
+      "t": "Furosemide 1 mg/kg IV over 5 min; no IV fluids running",
+      "s": "phcstg2026:8.5",
+      "b": 1
+     },
+     {
+      "t": "Pulmonary oedema not responding → REFER",
+      "s": "paedstg2026:6.19"
+     },
+     {
+      "h": "Hypertension (§5 level)"
+     },
+     {
+      "t": "Furosemide 1–2 mg/kg IV over 5 min (oliguric: max 5 mg/kg/dose)",
+      "s": "paedstg2026:4.35"
+     },
+     {
+      "t": "Inadequate: amlodipine 0.2 mg/kg PO, repeat after 12 h, then daily",
+      "s": "paedstg2026:4.36"
+     },
+     {
+      "t": "Severe → labetalol infusion = PICU: REFER",
+      "s": "paedstg2026:4.35"
+     },
+     {
+      "h": "Convulsions"
+     },
+     {
+      "t": "Check HGT, Na⁺, Ca²⁺, BP and treat the cause",
+      "s": "paedstg2026:6.19"
+     },
+     {
+      "h": "Stop / avoid"
+     },
+     {
+      "t": "NSAIDs, aminoglycosides, vancomycin, amphotericin B, contrast; adjust renally excreted drugs",
+      "s": "paedstg2026:6.23"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Fluids + acid–base",
+    "feed": [
+     {
+      "t": "Once euvolaemic: insensible + 100% of urine output",
+      "s": "paedstg2026:6.23"
+     },
+     {
+      "t": "Limit K⁺ foods if K⁺ > 5.5 (juices, dried fruit, citrus, bananas, guavas, tomatoes)",
+      "s": "paedstg2026:6.22"
+     },
+     {
+      "t": "Salt restriction unless salt-wasting polyuric",
+      "s": "paedstg2026:6.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, VBG",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HCO₃ < 18: sodium bicarbonate 1 mmol/kg/dose PO 2–3 × daily after meals",
+      "s": "paedstg2026:6.24",
+      "b": 1
+     },
+     {
+      "t": "Treat the acute trigger (infection, dehydration)",
+      "s": "paedstg2026:6.21"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Bone",
+    "feed": [
+     {
+      "t": "PO₄ high and GFR < 70: limit dairy, cereals, fizzy drinks",
+      "s": "paedstg2026:6.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ca, PO₄, ALP; PTH result",
+      "s": "paedstg2026:6.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PO₄ > 2.5: diet + calcium (elemental) 10–15 mg/kg/dose 12-hourly (max 1 g/d) until < 1.8",
+      "s": "paedstg2026:6.24",
+      "b": 1
+     },
+     {
+      "t": "Calcium carbonate 1–4 tablets chewed 8-hourly with meals (1 tab = 0.168 g Ca)",
+      "s": "paedstg2026:6.24"
+     },
+     {
+      "t": "Ca < 2.2: alfacalcidol 0.25 mcg twice weekly — specialist initiated",
+      "s": "paedstg2026:6.24"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Blood + vitamins",
+    "feed": [
+     {
+      "t": "Vegetables soaked 24 h or water decanted twice",
+      "s": "paedstg2026:6.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb; iron studies result",
+      "s": "paedstg2026:6.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Multivitamin 5 mL PO daily + folic acid 5 mg PO daily",
+      "s": "paedstg2026:6.23",
+      "b": 1
+     },
+     {
+      "t": "Ensure iron stores; avoid transfusion if possible",
+      "s": "paedstg2026:6.24"
+     },
+     {
+      "t": "Catch-up EPI; pneumococcal polysaccharide 0.5 mL IM if > 2 y",
+      "s": "paedstg2026:6.26"
+     }
+    ]
+   },
+   {
+    "label": "If proteinuric",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Salt restriction",
+      "s": "paedstg2026:6.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E (K⁺, HCO₃) within 7 days of ACE-i",
+      "s": "paedstg2026:6.26",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Nephrotic-range proteinuria + GFR > 30: enalapril 0.1 mg/kg daily → 0.5 mg/kg/day — only with nephrologist",
+      "s": "paedstg2026:6.25",
+      "b": 1
+     },
+     {
+      "t": "Creatinine doubled: check hydration, stop diuretics, halve ACE-i",
+      "s": "paedstg2026:6.26"
+     },
+     {
+      "t": "K⁺ > 5.5 persists or function not improving: stop ACE-i",
+      "s": "paedstg2026:6.26"
+     }
+    ]
+   },
+   {
+    "label": "If acute-on-chronic",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluids by AKI principles (12-h review)",
+      "s": "paedstg2026:6.17"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine MCS; blood culture if febrile",
+      "s": "paedstg2026:6.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat the intercurrent illness",
+      "s": "paedstg2026:6.21"
+     },
+     {
+      "t": "Any urgent-dialysis criterion (AKI §2) → REFER now",
+      "s": "paedstg2026:6.19",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Transfer plan",
+    "feed": [
+     {
+      "t": "Discharge diet and fluid plan",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Hb",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER — all children with CKD (and with dyslipidaemia)",
+      "s": "paedstg2026:6.26",
+      "b": 1
+     },
+     {
+      "t": "Statin only if > 8 y and cholesterol > 7 persisting — refer for advice",
+      "s": "paedstg2026:6.25"
+     },
+     {
+      "t": "Varicella vaccine × 2 and hep B × 3 if not immune",
+      "s": "paedstg2026:6.26"
+     }
+    ]
+   },
+   {
+    "label": "Transfer / discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Caregiver taught diet and fluid limits",
+      "s": "paedstg2026:6.22",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results copied to the referral letter",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Letter: stage, cause, drugs, doses, vaccines given",
+      "d": 1
+     },
+     {
+      "t": "RtHB updated; growth plotted",
+      "s": "paedstg2026:6.21",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids · K⁺ · acid–base",
+   "items": [
+    {
+     "h": "Fluid prescription (by weight)"
+    },
+    {
+     "t": "Anuric: insensible only (dextrose 5% / 10%)",
+     "s": "paedstg2026:6.23"
+    },
+    {
+     "t": "Oliguric + oedema + BP: insensible + 50% urine + extra-renal losses",
+     "s": "paedstg2026:6.23"
+    },
+    {
+     "t": "Euvolaemic: insensible + 100% urine",
+     "s": "paedstg2026:6.23"
+    },
+    {
+     "t": "Neonate / young baby 30–40 · older child 25 mL/kg/d (400 mL/m²/d)",
+     "s": "paedstg2026:6.23"
+    },
+    {
+     "h": "Potassium"
+    },
+    {
+     "t": "K⁺ > 6.5: calcium gluconate 0.5 mL/kg · salbutamol neb 2.5–5 mg · NaHCO₃ 4.2% 4 mL/kg",
+     "s": "paedstg2026:6.18",
+     "b": 1
+    },
+    {
+     "t": "K⁺ > 5.5 persisting: SPS 1 g/kg once or twice daily",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "h": "Acidosis"
+    },
+    {
+     "t": "HCO₃ < 18: NaHCO₃ 1 mmol/kg/dose PO 2–3 × daily",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "h": "Hypoglycaemia (< 2.6 mmol/L)"
+    },
+    {
+     "t": "Dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31"
+    }
+   ]
+  },
+  {
+   "title": "Bone · blood · vitamins · vaccines",
+   "items": [
+    {
+     "t": "Calcium carbonate 1–4 tabs chewed 8-hourly with meals",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "PO₄ > 2.5: elemental Ca 10–15 mg/kg/dose 12-hourly, max 1 g/d",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Alfacalcidol 0.25 mcg — specialist initiated",
+     "s": "paedstg2026:6.24"
+    },
+    {
+     "t": "Multivitamin 5 mL + folic acid 5 mg daily",
+     "s": "paedstg2026:6.23",
+     "b": 1
+    },
+    {
+     "t": "Packed cells 10 mL/kg over 6 h if symptomatic (Hb usually < 7)",
+     "s": "paedstg2026:6.24",
+     "b": 1
+    },
+    {
+     "t": "EPO 75 units/kg/week SC — paediatric nephrologist only",
+     "s": "paedstg2026:6.25"
+    },
+    {
+     "t": "Pneumococcal polysaccharide 0.5 mL IM (> 2 y)",
+     "s": "paedstg2026:6.26"
+    },
+    {
+     "t": "Varicella 0.5 mL SC × 2, 6 weeks apart (no immunity)",
+     "s": "paedstg2026:6.26"
+    },
+    {
+     "t": "Hepatitis B 1 mL IM × 3, 1 month apart (no immunity)",
+     "s": "paedstg2026:6.26"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Fluid overload — tell the doctor"
+    },
+    {
+     "t": "Weight up · RR, pulse or liver size increasing · crepitations",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "h": "Escalate / REFER"
+    },
+    {
+     "t": "K⁺ > 6.5 or ECG change",
+     "s": "paedstg2026:6.18"
+    },
+    {
+     "t": "Convulsion or reduced consciousness",
+     "s": "paedstg2026:6.21"
+    },
+    {
+     "t": "BP above the §5 level",
+     "s": "phcstg2026:8.6"
+    },
+    {
+     "t": "Pulmonary oedema not responding",
+     "s": "paedstg2026:6.19"
+    },
+    {
+     "t": "Dehydrated, hypotensive (salt-wasting)",
+     "s": "paedstg2026:6.23"
+    },
+    {
+     "h": "On any deterioration send"
+    },
+    {
+     "t": "U&E, VBG, HGT, FBC, Ca, PO₄",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Transfer / discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Euvolaemic; weight stable",
+    "d": 1
+   },
+   {
+    "t": "K⁺ and HCO₃ controlled on oral treatment",
+    "d": 1
+   },
+   {
+    "t": "BP controlled on oral medicines",
+    "d": 1
+   },
+   {
+    "t": "Acute trigger treated",
+    "s": "paedstg2026:6.21"
+   },
+   {
+    "t": "Referral accepted / appointment booked",
+    "s": "paedstg2026:6.26"
+   },
+   {
+    "t": "Caregiver knows diet, fluids, danger signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Paediatric nephrology: all children with CKD",
+    "s": "paedstg2026:6.26",
+    "b": 1
+   },
+   {
+    "t": "Stage 3: monitor 3–6 monthly; stages 1–2 annually",
+    "s": "paedstg2026:6.20"
+   },
+   {
+    "t": "Refer back: swelling, breathless, convulsion, less urine",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — weight, fluid balance and BP",
+  "period": "one sheet per 24 h, hourly rows (4-hourly obs)",
+  "params": [
+   {
+    "h": "Weight and fluid",
+    "items": [
+     {
+      "t": "Weigh daily, same scale — use body weight to guide the fluid prescription",
+      "s": "paedstg2026:6.23",
+      "b": 1
+     },
+     {
+      "t": "Intake (IV, oral, feeds) and urine output charted every shift; 24-h balance against the prescribed fluid plan",
+      "s": "paedstg2026:6.22",
+      "b": 1
+     },
+     {
+      "t": "Tubular / polyuric child: free access to water",
+      "s": "paedstg2026:6.23"
+     }
+    ]
+   },
+   {
+    "h": "Blood pressure",
+    "items": [
+     {
+      "t": "BP 4-hourly; severe hypertension: every 10 min until stable, then every 30 min for 24 h",
+      "s": "paedstg2026:4.35",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "Pulse, RR, SpO₂, temperature 4-hourly (hourly while unstable)",
+      "d": 1
+     },
+     {
+      "t": "Record vomiting, stools, oedema, convulsions",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "weight up, RR or pulse rising, liver enlarging",
+    "s": "paedstg2026:1.16",
+    "b": 1
+   },
+   {
+    "t": "BP above the age action level",
+    "s": "phcstg2026:8.6"
+   },
+   {
+    "t": "convulsion or drowsiness",
+    "s": "paedstg2026:6.21"
+   },
+   {
+    "t": "urine < 1 mL/kg/h or none",
+    "s": "paedstg2026:6.21"
+   },
+   {
+    "t": "CRT ≥ 3 s",
+    "s": "paedstg2026:1.15"
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:7.31"
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Urine (mL)",
+   "Balance (mL)",
+   "Weight today (kg)",
+   "Change (kg)"
+  ]
+ }
+}

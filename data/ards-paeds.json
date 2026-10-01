@@ -1,0 +1,1183 @@
+{
+ "id": "ards-paeds",
+ "short": "ARDS (child)",
+ "title": "Acute respiratory distress syndrome — recognise, stabilise, refer (child)",
+ "population": "Child 28 days to < 13 y with acute bilateral lung injury and hypoxaemia; ventilation is beyond ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days → neonatal respiratory distress (Ch 19)",
+     "s": "paedstg2026:19.13",
+     "b": 1
+    },
+    {
+     "t": "Bronchiolitis → Bronchiolitis pathway",
+     "b": 1
+    },
+    {
+     "t": "Heart failure / pulmonary oedema → HF (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "Stridor / asthma / weakness → respiratory failure (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "Age ≥ 13 y → ARDS (adult) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required (PALICC, not in SA STG)",
+   "items": [
+    {
+     "t": "Onset within 7 days of a known insult",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "New infiltrates on CXR (bilateral / diffuse)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Not explained by heart failure or fluid overload",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Hypoxaemia: SpO₂ < 92% despite O₂, needing escalating support",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ ____ on ____ L/min via ____ · RR ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Needs PICU now = any one of",
+   "items": [
+    {
+     "t": "Hypoxia and / or hypercapnia despite O₂ (ventilation indication)",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Signs of impending cardiorespiratory failure",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Shock not resolved after 40 mL/kg",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "t": "Decreased level of consciousness / convulsions",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Apnoea or exhaustion",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet",
+   "items": [
+    {
+     "t": "HIV exposure / PCR; cotrimoxazole prophylaxis",
+     "s": "paedstg2026:15.7"
+    },
+    {
+     "t": "Immunisations (measles, pertussis, Hib, PCV)",
+     "d": 1
+    },
+    {
+     "t": "Weight curve; SAM",
+     "d": 1
+    },
+    {
+     "t": "TB contact",
+     "s": "paedstg2026:15.8"
+    },
+    {
+     "t": "Prematurity, chronic lung or heart disease",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Malaria-area travel",
+     "s": "paedstg2026:8.14"
+    },
+    {
+     "t": "Recent burns, drowning, trauma",
+     "d": 1
+    },
+    {
+     "t": "Previous admissions / PICU",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Insult"
+    },
+    {
+     "t": "Pneumonia: fever, cough",
+     "s": "paedstg2026:15.1"
+    },
+    {
+     "t": "Aspiration, near-drowning, burns",
+     "d": 1
+    },
+    {
+     "t": "Sepsis source",
+     "s": "paedstg2026:1.17"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "paedstg2026:8.14"
+    },
+    {
+     "h": "HIV"
+    },
+    {
+     "t": "Infant 2–6 months, minimal chest signs (PJP)",
+     "s": "paedstg2026:15.7"
+    },
+    {
+     "h": "Mimics"
+    },
+    {
+     "t": "Sweating with feeds, murmur (heart)",
+     "d": 1
+    },
+    {
+     "t": "Choking episode (foreign body)",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "h": "TB"
+    },
+    {
+     "t": "Contact, weight loss",
+     "s": "paedstg2026:15.3"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "RR > 60 /min",
+     "s": "phcstg2026:21.9",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "HR > 160 (infant) / > 120 (child)",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 92% on O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill > 3 s",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "Grunting, nasal flaring, gasping",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "Poor colour: blue, grey, pale",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased consciousness",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Breathing"
+    },
+    {
+     "t": "Marked chest indrawing",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Bilateral crackles",
+     "d": 1
+    },
+    {
+     "t": "Unilateral signs (effusion, pneumothorax)",
+     "s": "paedstg2026:15.2"
+    },
+    {
+     "h": "Circulation"
+    },
+    {
+     "t": "Cold hands, weak fast pulse",
+     "s": "paedstg2026:1.2"
+    },
+    {
+     "h": "Heart (mimic)"
+    },
+    {
+     "t": "Hepatomegaly, gallop, murmur",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Wasting / oedema (SAM)",
+     "s": "paedstg2026:1.2"
+    },
+    {
+     "t": "Pallor (anaemia, malaria)",
+     "s": "paedstg2026:8.14"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ and O₂ device",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on room air · ____ % on ____ L/min",
+     "k": "value"
+    },
+    {
+     "t": "Nasal prongs 1–2 L/min humidified first",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Face mask 4–6 L/min / reservoir if still < 92%",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "CPAP / high flow needed → REFER if not on site",
+     "s": "paedstg2026:4.21",
+     "d": 1
+    },
+    {
+     "t": "Hypoxia or hypercapnia on O₂ = ventilation indication → REFER",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas + HGT",
+   "items": [
+    {
+     "t": "pH ____ · PCO₂ ____ · PO₂ ____ · lactate ____ · HGT ____",
+     "k": "value"
+    },
+    {
+     "t": "Rising PCO₂: ventilatory support → REFER",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "HGT < 2.6: dextrose 10% 2–5 mL/kg",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Hb low: severe malaria / sepsis; transfusion needs → REFER",
+     "s": "paedstg2026:8.14",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Not breathing / obstructed airway",
+     "s": "paedstg2026:1.1",
+     "b": 1
+    },
+    {
+     "t": "Central cyanosis",
+     "s": "paedstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Convulsions / coma",
+     "s": "paedstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Exhaustion / apnoea",
+     "d": 1
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "paedstg2026:15.2"
+    },
+    {
+     "t": "Foreign body",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "t": "Heart failure",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "paedstg2026:8.14"
+    },
+    {
+     "t": "PJP / CMV (HIV)",
+     "s": "paedstg2026:15.7"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "SAM",
+     "s": "paedstg2026:1.2"
+    },
+    {
+     "t": "Septic shock",
+     "s": "paedstg2026:1.17"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "paedstg2026:8.14"
+    },
+    {
+     "t": "Burns / inhalation",
+     "d": 1
+    },
+    {
+     "t": "Near-drowning",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = ARDS in a child → stabilise, discuss with PICU, REFER for ventilation",
+   "s": "paedstg2026:15.3"
+  },
+  {
+   "t": "11. ADMIT (resus / high care) while awaiting transfer",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Severe / very severe pneumonia",
+   "branch": "If pneumonia / sepsis",
+   "features": [
+    {
+     "t": "Fever, cough, indrawing, tachypnoea, danger signs",
+     "s": "paedstg2026:15.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, blood culture before antibiotics",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanate 25 mg/kg/dose IV",
+     "s": "paedstg2026:15.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — hypoxia / hypercapnia on O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Septic shock",
+   "branch": "If pneumonia / sepsis",
+   "features": [
+    {
+     "t": "Cold, CRT ≥ 3 s, weak pulse, fever",
+     "s": "paedstg2026:1.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood culture, lactate, HGT",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NaCl 0.9% / Ringer's 10 mL/kg rapidly, review every 15 min",
+     "s": "paedstg2026:1.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — not resolved after 40 mL/kg (inotropes)",
+     "s": "paedstg2026:1.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "PJP / CMV pneumonitis (HIV)",
+   "branch": "If PJP",
+   "features": [
+    {
+     "t": "Infant 2–6 months, hypoxaemia, few chest signs",
+     "s": "paedstg2026:15.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HIV PCR / test; induced sputum IF; CMV VL",
+     "s": "paedstg2026:15.8",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cotrimoxazole 5/25 mg/kg 6-hourly × 21 d + prednisone 1–2 mg/kg if hypoxic",
+     "s": "paedstg2026:15.8"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if failing O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Severe falciparum malaria",
+   "branch": "",
+   "features": [
+    {
+     "t": "Travel, fever, respiratory distress, acidosis, coma",
+     "s": "paedstg2026:8.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "RDT / smear; HGT; Hb",
+     "s": "paedstg2026:8.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "IV artesunate (Section 8.9)",
+     "s": "paedstg2026:8.15"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "paedstg2026:8.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Aspiration / near-drowning / burns",
+   "branch": "",
+   "features": [
+    {
+     "t": "Event history; inhalational injury",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, gas",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Supportive O₂; antibiotics only if infection",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if hypoxic on O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Mimic: heart failure",
+   "branch": "",
+   "features": [
+    {
+     "t": "Hepatomegaly, gallop, cardiomegaly",
+     "s": "paedstg2026:4.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, ECG",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "→ HF (child) pathway",
+     "s": "paedstg2026:4.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per HF pathway",
+     "s": "paedstg2026:4.22"
+    }
+   ]
+  },
+  {
+   "dx": "Mimic: foreign body",
+   "branch": "",
+   "features": [
+    {
+     "t": "Choking, unilateral wheeze, non-resolving pneumonia",
+     "s": "paedstg2026:1.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Inspiratory / expiratory CXR",
+     "s": "paedstg2026:1.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂; no blind finger sweep",
+     "s": "paedstg2026:1.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all for airway visualisation",
+     "s": "paedstg2026:1.14",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "PICU transfer is the goal; rows after 6 h apply only while transfer is delayed",
+  "columns": {
+   "feed": "O₂, fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "SpO₂ + O₂ device/flow, RR, HR, CRT, level of consciousness: every 15 min for the first hour, then hourly",
+    "s": "paedstg2026:15.3",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "O₂ to keep SpO₂ ≥ 92%; record device and flow",
+    "s": "paedstg2026:15.3",
+    "b": 1
+   },
+   {
+    "t": "Fluids 60–80% of maintenance (pneumonia / raised ADH); feeds preferred over IV",
+    "s": "paedstg2026:23.9",
+    "b": 1
+   },
+   {
+    "t": "Signs of impending failure (grunting, gasping, severe indrawing, poor colour) → call doctor at once",
+    "s": "phcstg2026:21.9",
+    "b": 1
+   },
+   {
+    "t": "Strict intake and urine output; weigh daily",
+    "s": "paedstg2026:23.9",
+    "d": 1
+   },
+   {
+    "t": "Isolation / infection control until cause known",
+    "s": "paedstg2026:15.8"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "ETAT triage; check RtHB and referral letter for antibiotics given. Phone the PICU / referral centre early.",
+    "feed": [
+     {
+      "t": "O₂ humidified by nasal prongs 1–2 L/min; face mask if needed; target SpO₂ ≥ 92%",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "Clear nose and mouth of secretions",
+      "s": "paedstg2026:15.3"
+     },
+     {
+      "t": "Shock: bolus 10–20 mL/kg isotonic crystalloid, reassess",
+      "s": "paedstg2026:23.9",
+      "b": 1
+     },
+     {
+      "t": "Not shocked: 60–80% of maintenance; NG feeds if RR > 60 / not tolerating",
+      "s": "paedstg2026:23.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas + lactate",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture before antibiotics",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "HIV test; induced sputum IF (PJP); CMV VL if very severe",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     },
+     {
+      "t": "TB work-up if contact / suspected",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "Malaria RDT if exposed",
+      "s": "paedstg2026:8.14",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Treat the trigger now"
+     },
+     {
+      "t": "Severe pneumonia: amoxicillin/clavulanate 25 mg/kg/dose IV",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "HIV-exposed infant 2–6 months: add cotrimoxazole 5/25 mg/kg 6-hourly (PJP)",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     },
+     {
+      "h": "Septic shock"
+     },
+     {
+      "t": "NaCl 0.9% / Ringer's 10 mL/kg rapidly, review every 15 min; > 40 mL/kg → inotropes = REFER",
+      "s": "paedstg2026:1.17",
+      "b": 1
+     },
+     {
+      "h": "Wheeze"
+     },
+     {
+      "t": "Salbutamol 100–200 mcg MDI + spacer as needed",
+      "s": "paedstg2026:15.3"
+     },
+     {
+      "h": "Pain / fever"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly",
+      "s": "paedstg2026:15.3"
+     },
+     {
+      "h": "If intubation before transfer"
+     },
+     {
+      "t": "Most experienced clinician; RSI: ketamine 1–2 mg/kg + suxamethonium 1–2 mg/kg (rocuronium 1 mg/kg if contra-indicated)",
+      "s": "paedstg2026:23.3",
+      "b": 1
+     },
+     {
+      "t": "Pre-oxygenate ≥ 3 min with 100% O₂; confirm with ETCO₂ and CXR",
+      "s": "paedstg2026:23.1"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "Escalate",
+    "feed": [
+     {
+      "t": "Step up O₂ device if SpO₂ < 92%",
+      "s": "paedstg2026:15.3",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas if tiring",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hypoxia / hypercapnia despite O₂ → ventilatory support: REFER now",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "Tick cause on differential sheet → branch rows",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "Await transfer",
+    "feed": [
+     {
+      "t": "Fluids 60–80% maintenance; avoid overload",
+      "s": "paedstg2026:23.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 4-hourly while NPO",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bag-mask ventilate if apnoea / exhaustion while waiting",
+      "d": 1
+     },
+     {
+      "t": "Post-intubation: analgosedation; secure tube; CXR",
+      "s": "paedstg2026:23.2"
+     }
+    ]
+   },
+   {
+    "label": "If pneumonia / sepsis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Continue breast / oral feeds if able",
+      "s": "paedstg2026:15.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue amoxicillin/clavulanate; adjust to culture",
+      "s": "paedstg2026:15.3"
+     },
+     {
+      "t": "Effusion / empyema: drain; staphylococcal features → cloxacillin per 15.1",
+      "s": "paedstg2026:15.2",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If PJP",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Restrict fluid intake",
+      "s": "paedstg2026:15.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CD4, CMV VL",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cotrimoxazole 5 mg TMP/25 mg SMX per kg IV/oral 6-hourly × 21 d, then prophylaxis",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     },
+     {
+      "t": "Still hypoxic on O₂: prednisone 1–2 mg/kg daily × 7 d, taper over 7 d",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 1–2",
+    "phase": "Transfer delayed",
+    "feed": [
+     {
+      "t": "Enteral feeds preferred; de-escalate IV",
+      "s": "paedstg2026:23.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Gas, U&E, FBC daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-discuss with PICU each shift",
+      "d": 1
+     },
+     {
+      "t": "Support caregiver; document discussions",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Transfer",
+    "phase": "Handover",
+    "feed": [
+     {
+      "t": "O₂ for the journey; suction available",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Copies: CXR, gases, cultures",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Escort able to bag-mask ventilate / intubate",
+      "d": 1
+     },
+     {
+      "t": "Caregiver accompanies; RtHB updated",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "O₂ · fluids · ventilation",
+   "items": [
+    {
+     "t": "Nasal prongs 1–2 L/min humidified; face mask 4–6 L/min",
+     "s": "paedstg2026:15.20",
+     "b": 1
+    },
+    {
+     "t": "Stop O₂ when SpO₂ ≥ 92% off oxygen",
+     "s": "paedstg2026:15.3"
+    },
+    {
+     "t": "Bolus 10–20 mL/kg isotonic crystalloid (shock only)",
+     "s": "paedstg2026:23.9"
+    },
+    {
+     "t": "Maintenance 60–80% in pneumonia (raised ADH); feeds preferred",
+     "s": "paedstg2026:23.9",
+     "b": 1
+    },
+    {
+     "t": "Maintenance: 1–3 mo 100–120 · 3–12 mo 80–100 · 1–5 y 70–80 · 5–12 y 40–70 mL/kg/day",
+     "s": "paedstg2026:23.9"
+    }
+   ]
+  },
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanate 25 mg/kg/dose IV",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Cotrimoxazole 5/25 mg/kg/dose 6-hourly × 21 d (PJP)",
+     "s": "paedstg2026:15.8",
+     "b": 1
+    },
+    {
+     "t": "Prednisone 1–2 mg/kg daily × 7 d, taper (hypoxic PJP)",
+     "s": "paedstg2026:15.8"
+    },
+    {
+     "t": "Dextrose 10% 2–5 mL/kg (HGT < 2.6)",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "RSI: atropine 0.02 mg/kg (min 0.1, max 0.5 mg) · ketamine 1–2 mg/kg · suxamethonium 1–2 mg/kg · rocuronium 1 mg/kg",
+     "s": "paedstg2026:23.3"
+    },
+    {
+     "t": "No IV access: IO preferred over IM",
+     "s": "paedstg2026:23.2"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor at once"
+    },
+    {
+     "t": "SpO₂ < 92% on current O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Grunting, gasping, severe indrawing, irregular breathing",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "HR rising / CRT > 3 s / poor colour",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Drowsy, abnormal posture, convulsion",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Bradycardia = pre-terminal → resuscitate",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "Gas, HGT, Hb, CXR",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Transfer criteria — all must be met before leaving",
+  "items": [
+   {
+    "t": "PICU accepted; doctor-to-doctor handover",
+    "d": 1
+   },
+   {
+    "t": "Airway secure or safe on current O₂",
+    "d": 1
+   },
+   {
+    "t": "IV / IO access; fluids running",
+    "d": 1
+   },
+   {
+    "t": "Antibiotics given (time recorded)",
+    "s": "paedstg2026:15.3"
+   },
+   {
+    "t": "HGT normal",
+    "s": "paedstg2026:7.31"
+   },
+   {
+    "t": "Caregiver informed and accompanying",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "After PICU",
+  "items": [
+   {
+    "t": "Back-transfer: wean O₂ to SpO₂ ≥ 92% off oxygen",
+    "s": "paedstg2026:15.3"
+   },
+   {
+    "t": "HIV / TB care; cotrimoxazole prophylaxis",
+    "s": "paedstg2026:15.8"
+   },
+   {
+    "t": "Growth and development follow-up",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — oxygenation and breathing",
+  "period": "one sheet from arrival: 15-min rows for 1 h, then hourly",
+  "params": [
+   {
+    "h": "Oxygen",
+    "items": [
+     {
+      "t": "O₂ to keep SpO₂ ≥ 92%; record device and flow",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     },
+     {
+      "t": "SpO₂ + O₂ device/flow, RR, HR, CRT, level of consciousness: every 15 min for the first hour, then hourly",
+      "s": "paedstg2026:15.3",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Danger signs",
+    "items": [
+     {
+      "t": "Signs of impending failure (grunting, gasping, severe indrawing, poor colour) → call doctor at once",
+      "s": "phcstg2026:21.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids and feeds",
+    "items": [
+     {
+      "t": "Fluids 60–80% of maintenance (pneumonia / raised ADH); feeds preferred over IV",
+      "s": "paedstg2026:23.9",
+      "b": 1
+     },
+     {
+      "t": "Strict intake and urine output; weigh daily",
+      "s": "paedstg2026:23.9",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ < 92% on current O₂",
+    "s": "paedstg2026:15.3",
+    "b": 1
+   },
+   {
+    "t": "grunting, gasping, severe indrawing",
+    "s": "phcstg2026:21.9"
+   },
+   {
+    "t": "CRT > 3 s or poor colour",
+    "s": "phcstg2026:21.9"
+   },
+   {
+    "t": "drowsy or convulsing",
+    "s": "phcstg2026:21.9"
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:7.31"
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Allowed (mL)",
+   "Urine (mL)",
+   "Lowest SpO₂",
+   "Highest O₂ (L/min)"
+  ]
+ }
+}

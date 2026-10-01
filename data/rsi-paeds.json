@@ -1,0 +1,765 @@
+{
+ "id": "rsi-paeds",
+ "short": "RSI",
+ "title": "Rapid sequence induction and intubation",
+ "population": "Child (1 month – 12 years)",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "regimen": "STG paediatric RSI agents",
+ "card_title": "RAPID SEQUENCE INDUCTION — CHILD · CASUALTY",
+ "card_sub": "1 month – 12 years · STG paediatric agents",
+ "comp_title": "SUXAMETHONIUM COMPLICATIONS",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA Paediatric STG. Any item without a source page is †; items with a page are from the STG.",
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered drug cells (m=a/b/c). steps[].decisions[]: if/then/goto. reference{}: drugs, dose_table, later.",
+ "indications": [
+  {
+   "h": "Airway at risk",
+   "items": [
+    {
+     "t": "GCS ≤8 / cannot protect airway; pooling secretions, vomiting",
+     "d": 1
+    },
+    {
+     "t": "Upper airway obstruction, inhalational burn, expanding neck swelling",
+     "d": 1
+    }
+   ],
+   "col": 1,
+   "row": 1
+  },
+  {
+   "h": "Oxygenation failure",
+   "items": [
+    {
+     "t": "SpO₂ <92% (PaO₂ <80 mmHg) despite O₂ – consider intubation and respiratory support",
+     "s": "stg-paed:1.16"
+    }
+   ],
+   "col": 1,
+   "row": 1
+  },
+  {
+   "h": "Ventilation failure",
+   "items": [
+    {
+     "t": "Hypercapnia with ↓GCS; exhaustion, silent chest",
+     "d": 1
+    }
+   ],
+   "col": 2,
+   "row": 1
+  },
+  {
+   "h": "Anticipated course",
+   "items": [
+    {
+     "t": "Severe TBI (GCS <9)",
+     "s": "stg-paed:23.22"
+    },
+    {
+     "t": "Refractory status epilepticus / asthmaticus; shock needing ventilation; transfer",
+     "d": 1
+    }
+   ],
+   "col": 2,
+   "row": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "RSI",
+   "items": [
+    {
+     "t": "Most experienced clinician; juniors only under supervision",
+     "s": "stg-paed:23.1"
+    },
+    {
+     "t": "Plan for failed intubation is mandatory",
+     "s": "stg-paed:23.1",
+     "b": 1
+    },
+    {
+     "t": "Difficult airway anticipated → senior / anaesthetist, Plans B–D open first",
+     "d": 1
+    },
+    {
+     "t": "Valid DNR / ceiling of care",
+     "d": 1
+    }
+   ],
+   "col": 1,
+   "row": 1
+  },
+  {
+   "h": "Suxamethonium – do NOT give (absolute)",
+   "items": [
+    {
+     "t": "Chronic myopathy or denervating neuromuscular disease",
+     "s": "stg-paed:23.3"
+    },
+    {
+     "t": "48–72 h post burns, polytrauma or acute denervating event",
+     "s": "stg-paed:23.3"
+    },
+    {
+     "t": "Extensive rhabdomyolysis",
+     "s": "stg-paed:23.3"
+    },
+    {
+     "t": "Pre-existing hyperkalaemia",
+     "s": "stg-paed:23.3",
+     "b": 1
+    },
+    {
+     "t": "Personal or family history of malignant hyperthermia",
+     "s": "stg-paed:23.3",
+     "b": 1
+    }
+   ],
+   "col": 2,
+   "row": 1
+  },
+  {
+   "h": "Relative / not recommended",
+   "items": [
+    {
+     "t": "Sux relative: renal dysfunction (K normal); organophosphate / pseudocholinesterase deficiency",
+     "s": "stg-paed:23.3"
+    },
+    {
+     "t": "Cricoid pressure not recommended",
+     "s": "stg-paed:23.1",
+     "b": 1
+    },
+    {
+     "t": "Midazolam only if nothing else; etomidate: caution in sepsis",
+     "s": "stg-paed:23.2"
+    }
+   ],
+   "col": 3,
+   "row": 1
+  },
+  {
+   "h": "If sux contra-indicated",
+   "items": [
+    {
+     "t": "Rocuronium 1 mg/kg IV (60–90 min)",
+     "s": "stg-paed:23.3",
+     "b": 1
+    }
+   ],
+   "col": 3,
+   "row": 1
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "PREPARE",
+   "time": "T − 10 min",
+   "subtitle": "checklist, team, monitors, access, equipment; plan for failure",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Run the checklist and assess for a difficult airway",
+     "x": "focused history and examination; roles: intubator · assistant · drug nurse · scribe/timer †",
+     "s": "stg-paed:23.1"
+    },
+    {
+     "n": "1.2",
+     "t": "Attach monitors",
+     "x": "3-lead ECG, automated BP, SpO₂, capnograph (EtCO₂), temperature",
+     "s": "stg-paed:22.6"
+    },
+    {
+     "n": "1.3",
+     "t": "Secure IV access; IO if IV fails",
+     "x": "IO is preferred to IM",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "n": "1.4",
+     "t": "Check age-appropriate equipment",
+     "x": "ETT cuffed = age/4 + 3.5 mm; suction, 2 laryngoscopes, bougie, OPA/NPA, SGA, BVM sized to child; all checked before drugs †",
+     "s": "stg-paed:22.8"
+    },
+    {
+     "n": "1.5",
+     "t": "Make the failure plan and say Plan A–D aloud",
+     "x": "plan for unsuccessful intubation is mandatory; draw up and label drugs",
+     "s": "stg-paed:23.1",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "PRE-OXYGENATE & OPTIMISE",
+   "time": "T − 5 → T − 3 min",
+   "subtitle": "100% oxygen as soon as the decision is made",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Start 100% O₂ now",
+     "x": "minimum 3 min raises the time to desaturation",
+     "s": "stg-paed:23.1"
+    },
+    {
+     "n": "2.2",
+     "t": "Position",
+     "x": "neutral head in toddlers, sniffing position in older children",
+     "s": "stg-paed:1.9"
+    },
+    {
+     "n": "2.3",
+     "t": "Correct shock before drugs",
+     "x": "hypovolaemic: 0.9% NaCl or Ringer's 20 mL/kg rapidly, review after each bolus; consider inotropes after 40 mL/kg",
+     "s": "stg-paed:1.16"
+    },
+    {
+     "n": "2.4",
+     "t": "Weigh or estimate weight and say it aloud",
+     "x": "read all doses from the table below",
+     "d": 1
+    },
+    {
+     "n": "2.5",
+     "t": "Empty a distended stomach",
+     "x": "NGT / OGT if needed",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Septic shock",
+     "then": "10 mL/kg rapidly, review after each bolus; inotropes if not resolved after 40 mL/kg",
+     "s": "stg-paed:1.17"
+    },
+    {
+     "if": "SpO₂ falling or inadequate chest rise",
+     "then": "bag-valve-mask: re-check head position and seal, add airway adjunct, exclude pneumothorax",
+     "s": "stg-paed:1.9"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "GIVE THE DRUGS IN THIS ORDER",
+   "time": "T − 3 → T 0",
+   "subtitle": "sedation always before the paralytic",
+   "actions": [],
+   "sequence": [
+    {
+     "m": "a",
+     "drug": "ATROPINE (optional)",
+     "when": "T − 3 min",
+     "dose": "0.02 mg/kg IV (min 0.1, max 0.5)",
+     "adjusted": "if sux, infant, septic/late shock, or before ketamine",
+     "s": "stg-paed:23.3"
+    },
+    {
+     "m": "b",
+     "drug": "INDUCTION AGENT",
+     "when": "T 0",
+     "dose": "choose ONE ↓ by condition",
+     "adjusted": "ketamine 1–2 · etomidate 0.3 · propofol 1–3.5 mg/kg",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "m": "c",
+     "drug": "SUXAMETHONIUM",
+     "when": "T 0, straight after b",
+     "dose": "1–2 mg/kg IV push",
+     "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
+     "s": "stg-paed:23.3"
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Normotensive",
+     "then": "ketamine, propofol, fentanyl or etomidate (midazolam only if nothing else)",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "if": "Hypotensive / hypovolaemic",
+     "then": "ketamine or etomidate (fentanyl 1 mcg/kg is an option in instability)",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "if": "Head injury / status epilepticus",
+     "then": "propofol, ketamine or etomidate; hypotensive → ketamine or etomidate",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "if": "Status asthmaticus",
+     "then": "ketamine first (STG table also lists propofol, notes list etomidate)",
+     "s": "stg-paed:23.2"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "PARALYSE, INTUBATE & PROVE PLACEMENT",
+   "time": "T 0 → T + 60 s",
+   "subtitle": "view at 30 s, confirm at 45 s",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Start the timer and wait for paralysis",
+     "x": "sux 30–60 s; rocuronium 1–3 min",
+     "s": "stg-paed:23.3"
+    },
+    {
+     "n": "4.2",
+     "t": "Position and view at 30 s",
+     "x": "NO cricoid pressure; external laryngeal manipulation may improve the view",
+     "s": "stg-paed:23.1",
+     "b": 1
+    },
+    {
+     "n": "4.3",
+     "t": "Pass the tube",
+     "x": "abort and re-oxygenate if SpO₂ or heart rate falls; max 3 attempts",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "n": "4.4",
+     "t": "Confirm at 45 s",
+     "x": "EtCO₂ strongly recommended + auscultation + symmetrical chest rise; no trace = wrong place",
+     "s": "stg-paed:23.2",
+     "b": 1
+    },
+    {
+     "n": "4.5",
+     "t": "Secure and set depth",
+     "x": "oral depth at lips from table (1 y 12 cm · 2 y 14 · 6 y 16 · 10 y 18); cuff pressure 15–20 cmH₂O",
+     "s": "stg-paed:22.8"
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Failed intubation (3 attempts or cannot oxygenate)",
+     "then": "Plan B: SGA → Plan C: 2-person BVM + airway adjunct (sux wears off in 5–10 min) → Plan D: CICO, needle cricothyroidotomy in small children",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "SEDATE FIRST, THEN VENTILATE",
+   "time": "T + 1 → T + 10 min",
+   "subtitle": "analgesia first; sux lasts 5–10 min, ketamine 5–10 min",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Give analgesia first",
+     "x": "fentanyl 1–5 mcg/kg bolus then 1–4 mcg/kg/h, or morphine 0.05–0.3 mg/kg then 20–80 mcg/kg/h",
+     "s": "stg-paed:23.5",
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Then sedate",
+     "x": "midazolam 0.05–0.2 mg/kg bolus then 50–200 mcg/kg/h",
+     "s": "stg-paed:23.6",
+     "b": 1
+    },
+    {
+     "n": "5.3",
+     "t": "Connect ventilator",
+     "x": "volume or pressure control; Vt 6–8 mL/kg, PEEP 5, rate for age; start FiO₂ 1.0, titrate to SpO₂ >94%",
+     "d": 1
+    },
+    {
+     "n": "5.4",
+     "t": "Monitor",
+     "x": "ECG, BP, SpO₂, EtCO₂ continuous; ABG †; sedation with COMFORT-B every 4–8 h",
+     "s": "stg-paed:23.4"
+    },
+    {
+     "n": "5.5",
+     "t": "Chest X-ray, settle and document",
+     "x": "tube position; OGT/NGT, head-up 30°, record drugs, attempts, ETT size/depth; refer to paediatric ICU †",
+     "s": "stg-paed:23.2"
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "drugs": [
+   {
+    "m": "a",
+    "name": "Atropine",
+    "conc": "—",
+    "dose": "0.02 mg/kg IV (min 0.1, max 0.5)",
+    "when": "T − 3 min",
+    "onset": "—",
+    "adjusted": "",
+    "watch": "Sux, infants, septic shock",
+    "s": "stg-paed:23.3"
+   },
+   {
+    "m": "b",
+    "name": "Ketamine",
+    "conc": "—",
+    "dose": "1–2 mg/kg IV",
+    "when": "T 0",
+    "onset": "60 s / 5–10 min",
+    "adjusted": "",
+    "watch": "Preferred if unstable or asthma",
+    "s": "stg-paed:23.3"
+   },
+   {
+    "m": "b",
+    "name": "Etomidate",
+    "conc": "—",
+    "dose": "0.3 mg/kg IV (max 20 mg)",
+    "when": "T 0",
+    "onset": "15–45 s / 10–12 min",
+    "adjusted": "",
+    "watch": "Adrenal suppression; sepsis",
+    "s": "stg-paed:23.3"
+   },
+   {
+    "m": "b",
+    "name": "Propofol",
+    "conc": "—",
+    "dose": "1–3.5 mg/kg IV",
+    "when": "T 0",
+    "onset": "30 s / 3–10 min",
+    "adjusted": "",
+    "watch": "Hypotension",
+    "s": "stg-paed:23.3"
+   },
+   {
+    "m": "b",
+    "name": "Fentanyl",
+    "conc": "—",
+    "dose": "3 mcg/kg (1 if unstable) IV",
+    "when": "T 0",
+    "onset": "1–2 min / 30–40 min",
+    "adjusted": "",
+    "watch": "Give slowly",
+    "s": "stg-paed:23.2"
+   },
+   {
+    "m": "b",
+    "name": "Midazolam (last resort)",
+    "conc": "—",
+    "dose": "0.2–0.3 mg/kg IV (max 10)",
+    "when": "T 0",
+    "onset": "2–3 min / 30–45 min",
+    "adjusted": "",
+    "watch": "Only if nothing else",
+    "s": "stg-paed:23.3"
+   },
+   {
+    "m": "c",
+    "name": "Suxamethonium",
+    "conc": "—",
+    "dose": "1–2 mg/kg IV",
+    "when": "T 0, straight after b",
+    "onset": "30–60 s / 5–10 min",
+    "adjusted": "",
+    "watch": "Bradycardia, ↑K⁺, MH",
+    "s": "stg-paed:23.3",
+    "b": 1
+   },
+   {
+    "m": "c alt",
+    "name": "Rocuronium (if sux contra.)",
+    "conc": "—",
+    "dose": "1 mg/kg IV",
+    "when": "T 0",
+    "onset": "1–3 min / 60–90 min",
+    "adjusted": "",
+    "watch": "Long block",
+    "s": "stg-paed:23.3"
+   }
+  ],
+  "dose_table": {
+   "unit": "kg",
+   "weights": [
+    5,
+    10,
+    15,
+    20,
+    30,
+    40
+   ],
+   "ages_approx": [
+    "2–3 mo",
+    "1 y",
+    "2 y",
+    "5–6 y",
+    "10 y",
+    "12 y"
+   ],
+   "rows": [
+    {
+     "m": "a",
+     "drug": "Atropine",
+     "basis": "0.02 mg/kg, min 0.1, max 0.5",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "0.1",
+      "0.2",
+      "0.3",
+      "0.4",
+      "0.5",
+      "0.5"
+     ]
+    },
+    {
+     "m": "b",
+     "drug": "Ketamine",
+     "basis": "1–2 mg/kg",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "5–10",
+      "10–20",
+      "15–30",
+      "20–40",
+      "30–60",
+      "40–80"
+     ]
+    },
+    {
+     "m": "b",
+     "drug": "Etomidate",
+     "basis": "0.3 mg/kg, max 20",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "1.5",
+      "3",
+      "4.5",
+      "6",
+      "9",
+      "12"
+     ]
+    },
+    {
+     "m": "b",
+     "drug": "Propofol",
+     "basis": "1–3.5 mg/kg",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "5–17.5",
+      "10–35",
+      "15–52.5",
+      "20–70",
+      "30–105",
+      "40–140"
+     ]
+    },
+    {
+     "m": "b",
+     "drug": "Fentanyl",
+     "basis": "3 mcg/kg (1 if unstable)",
+     "unit": "mcg",
+     "s": "stg-paed:23.2",
+     "vals": [
+      "15 (5)",
+      "30 (10)",
+      "45 (15)",
+      "60 (20)",
+      "90 (30)",
+      "120 (40)"
+     ]
+    },
+    {
+     "m": "b",
+     "drug": "Midazolam",
+     "basis": "0.2–0.3 mg/kg, max 10",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "1–1.5",
+      "2–3",
+      "3–4.5",
+      "4–6",
+      "6–9",
+      "8–10"
+     ]
+    },
+    {
+     "m": "c",
+     "drug": "Suxamethonium",
+     "basis": "1–2 mg/kg",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "5–10",
+      "10–20",
+      "15–30",
+      "20–40",
+      "30–60",
+      "40–80"
+     ]
+    },
+    {
+     "m": "c alt",
+     "drug": "Rocuronium",
+     "basis": "1 mg/kg",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "5",
+      "10",
+      "15",
+      "20",
+      "30",
+      "40"
+     ]
+    }
+   ],
+   "ages_note": "ages approximate (STG 22.8)"
+  },
+  "later": [
+   {
+    "h": "Sedation options (ventilated)",
+    "items": [
+     {
+      "t": "Lorazepam 0.05–0.1 mg/kg then 0.05–0.15 mg/kg/h for longer sedation",
+      "s": "stg-paed:23.6"
+     },
+     {
+      "t": "Ketamine 1–2 mg/kg then 5–40 mcg/kg/min (adjunct); propofol 1.5–4 mg/kg/h, max 48 h",
+      "s": "stg-paed:23.6"
+     }
+    ],
+    "col": 1,
+    "row": 1
+   },
+   {
+    "h": "Severe TBI targets",
+    "items": [
+     {
+      "t": "SpO₂ >94% but <100%; PEEP <10 cmH₂O",
+      "s": "stg-paed:23.22"
+     },
+     {
+      "t": "PaCO₂ 4.7–6 kPa (35–40 mmHg); avoid hyperventilation",
+      "s": "stg-paed:23.22"
+     },
+     {
+      "t": "No ICP monitor: MAP = 65 + 1.5 × age (years)",
+      "s": "stg-paed:23.22"
+     }
+    ],
+    "col": 2,
+    "row": 1
+   },
+   {
+    "h": "Deteriorates: DOPES",
+    "items": [
+     {
+      "t": "Displaced · Obstructed · Pneumothorax · Equipment · Stacked breaths / Stomach",
+      "d": 1
+     },
+     {
+      "t": "Hypotension: exclude tension pneumothorax and auto-PEEP; repeat fluid bolus",
+      "d": 1
+     }
+    ],
+    "col": 3,
+    "row": 1
+   },
+   {
+    "h": "No IV / IO access: IM",
+    "items": [
+     {
+      "t": "Ketamine 6–10 mg/kg (peak 10–30 min)",
+      "s": "stg-paed:23.3"
+     },
+     {
+      "t": "Suxamethonium 4 mg/kg, max 150 mg (local muscle pain)",
+      "s": "stg-paed:23.4"
+     },
+     {
+      "t": "Rocuronium 1 mg/kg infants, 1.8 mg/kg >1 y",
+      "s": "stg-paed:23.4"
+     }
+    ],
+    "col": 1,
+    "row": 2
+   },
+   {
+    "h": "ETT guide (uncuffed ID mm / oral depth cm)",
+    "items": [
+     {
+      "t": "2 mo 3.5/11 · 1 y 4/12 · 2 y 5/14 · 4 y 5.5/15 · 6 y 6/16 · 8 y 6.5/17 · 10 y 7/18; cuffed: half-size smaller",
+      "s": "stg-paed:22.8"
+     }
+    ],
+    "col": 2,
+    "row": 2
+   }
+  ]
+ },
+ "complications": {
+  "title": "Suxamethonium complications",
+  "sections": [
+   {
+    "h": "Bradycardia / asystole",
+    "items": [
+     {
+      "t": "Atropine 0.02 mg/kg IV (min 0.1, max 0.5)",
+      "s": "stg-paed:23.3"
+     },
+     {
+      "t": "Prolonged apnoea (pseudocholinesterase deficiency): keep sedated and ventilated",
+      "d": 1
+     }
+    ],
+    "col": 1,
+    "row": 1
+   },
+   {
+    "h": "Hyperkalaemic arrest",
+    "items": [
+     {
+      "t": "Calcium gluconate 0.6 mL/kg diluted 1:4, slow IV",
+      "s": "stg-paed:23.16"
+     },
+     {
+      "t": "Salbutamol 4 mcg/kg IV over 20 min; dextrose 50% 1 mL/kg + water 1 mL/kg + insulin 0.1 units/kg (10% dextrose via peripheral line)",
+      "s": "stg-paed:23.16"
+     },
+     {
+      "t": "In arrest: continue CPR",
+      "d": 1
+     }
+    ],
+    "col": 2,
+    "row": 1
+   },
+   {
+    "h": "Malignant hyperthermia",
+    "items": [
+     {
+      "t": "Dantrolene 2.5 mg/kg IV immediately, then 1 mg/kg boluses to a maximum of 10 mg/kg",
+      "s": "stg-paed:22.16",
+      "b": 1
+     },
+     {
+      "t": "Stop the trigger; provide IV hypnosis (ketamine or propofol); 100% O₂, cool, ICU referral",
+      "s": "stg-paed:22.16"
+     }
+    ],
+    "col": 3,
+    "row": 1
+   }
+  ]
+ }
+}

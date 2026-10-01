@@ -1,0 +1,1308 @@
+{
+ "id": "ards-adult",
+ "short": "ARDS (adult)",
+ "title": "Acute respiratory distress syndrome — recognise, stabilise, refer (adult)",
+ "population": "Adult and adolescent ≥ 13 y with acute bilateral lung injury and hypoxaemia; ventilation is beyond ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Cardiogenic pulmonary oedema → ADHF pathway",
+     "b": 1
+    },
+    {
+     "t": "Fluid overload from kidney failure → AKI pathway",
+     "b": 1
+    },
+    {
+     "t": "Isolated pneumonia, not bilateral / not hypoxic on mask → LRTI pathway",
+     "b": 1
+    },
+    {
+     "t": "Asthma / COPD / opioid → respiratory failure pathway",
+     "b": 1
+    },
+    {
+     "t": "Child < 13 y → ARDS (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required (Berlin, not in SA STG)",
+   "items": [
+    {
+     "t": "Onset within 1 week of an insult, or new / worsening breathing",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Bilateral opacities on CXR, not explained by effusion or collapse",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Not fully explained by heart failure or fluid overload",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Hypoxaemia: PaO₂/FiO₂ < 300 mmHg (40 kPa)",
+     "s": "adultstg2026:23.34",
+     "b": 1
+    },
+    {
+     "h": "Severity (PaO₂/FiO₂, on respiratory support)"
+    },
+    {
+     "t": "< 300 · < 200 · < 100 mmHg (SOFA respiratory bands)",
+     "s": "adultstg2026:23.34",
+     "k": "sub"
+    },
+    {
+     "t": "No ABG: SpO₂ < 90% despite face mask O₂ = treat as moderate–severe",
+     "s": "adultstg2026:9.11",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "PaO₂ ____ on FiO₂ ____ → P/F ____ · SpO₂ ____ on ____ L/min",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Needs ICU now = any one of",
+   "items": [
+    {
+     "t": "Failing maximal face-mask (reservoir) O₂",
+     "s": "adultstg2026:9.11",
+     "b": 1
+    },
+    {
+     "t": "RR > 30, cyanosis, confusion or hypotension (severe pneumonia)",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Rising PCO₂ / exhaustion / reduced consciousness",
+     "s": "adultstg2026:23.2"
+    },
+    {
+     "t": "Septic shock not responding to fluids",
+     "s": "adultstg2026:23.4"
+    },
+    {
+     "t": "Pregnant with SpO₂ < 94%",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "HIV: ART, CD4, VL; cotrimoxazole prophylaxis",
+     "d": 1
+    },
+    {
+     "t": "TB treatment / contacts",
+     "d": 1
+    },
+    {
+     "t": "COPD, asthma, heart failure (mimics)",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Pregnancy / recent delivery",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Recent travel (malaria area)",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Alcohol, seizures, stroke (aspiration risk)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Recent transfusion, surgery, trauma, burns",
+     "d": 1
+    },
+    {
+     "t": "Advance directive / ceiling of care",
+     "s": "adultstg2026:23.50"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Insult"
+    },
+    {
+     "t": "Pneumonia: fever, cough, sputum",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Aspiration: reduced LOC, vomiting",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Sepsis source",
+     "s": "adultstg2026:23.34"
+    },
+    {
+     "t": "COVID / flu contact",
+     "s": "adultstg2026:9.10"
+    },
+    {
+     "t": "Malaria exposure",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Pancreatitis, trauma, burns",
+     "d": 1
+    },
+    {
+     "h": "Mimics"
+    },
+    {
+     "t": "Orthopnoea, chest pain (cardiac)",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Oliguria (AKI)",
+     "d": 1
+    },
+    {
+     "h": "HIV / TB"
+    },
+    {
+     "t": "Dry cough < 12 weeks (PJP); TB symptoms",
+     "s": "adultstg2026:16.17"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "RR > 30 /min",
+     "s": "adultstg2026:16.16",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90% on O₂",
+     "s": "adultstg2026:9.11",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / MAP < 65",
+     "s": "adultstg2026:23.4",
+     "k": "yn"
+    },
+    {
+     "t": "Confusion",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    },
+    {
+     "t": "Cyanosis",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    },
+    {
+     "t": "Urine output low",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Work of breathing"
+    },
+    {
+     "t": "Accessory muscles, can't speak sentences",
+     "d": 1
+    },
+    {
+     "t": "Paradoxical breathing (tiring)",
+     "s": "adultstg2026:23.49"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Bilateral crackles",
+     "d": 1
+    },
+    {
+     "t": "Focal consolidation",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Effusion / pneumothorax",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "h": "Heart (mimic)"
+    },
+    {
+     "t": "Raised JVP, gallop, oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "Source"
+    },
+    {
+     "t": "Abdomen, skin, burns, wounds",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ on a known O₂ device",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on room air · ____ % on ____ L/min via ____",
+     "k": "value"
+    },
+    {
+     "t": "Nasal cannula 1–5 L/min ≈ FiO₂ 0.25–0.4",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Simple mask 6–10 L/min ≈ 0.4–0.6",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Reservoir mask 10–15 L/min ≈ 0.6–0.95",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Below target on reservoir mask → HFNO / CPAP / intubation = REFER",
+     "s": "adultstg2026:9.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas (ABG preferred) + lactate",
+   "items": [
+    {
+     "t": "pH ____ · PCO₂ ____ · PO₂ ____ · HCO₃ ____ · lactate ____",
+     "k": "value"
+    },
+    {
+     "t": "PaO₂/FiO₂ < 300: ARDS range",
+     "s": "adultstg2026:23.34",
+     "b": 1
+    },
+    {
+     "t": "Rising PCO₂ with tiring: ventilation needed",
+     "s": "adultstg2026:23.2",
+     "b": 1
+    },
+    {
+     "t": "Lactate > 2 + vasopressor need: septic shock",
+     "s": "adultstg2026:23.34"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Exhaustion / silent chest",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Septic shock",
+     "s": "adultstg2026:23.34"
+    },
+    {
+     "t": "Cardiogenic oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "PJP (HIV)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Massive aspiration",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Burns / inhalation",
+     "s": "adultstg2026:20.27"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = ARDS → stabilise, discuss with ICU, REFER for ventilation",
+   "s": "adultstg2026:16.16"
+  },
+  {
+   "t": "11. ADMIT (resus / high care) while awaiting transfer",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Severe community-acquired pneumonia",
+   "branch": "If pneumonia / sepsis",
+   "features": [
+    {
+     "t": "Fever, cough, consolidation; RR > 30, confusion",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, blood culture, sputum Xpert, HIV test",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV daily + azithromycin 500 mg IV daily × 3 d",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ventilation",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sepsis / septic shock (non-pulmonary)",
+   "branch": "If pneumonia / sepsis",
+   "features": [
+    {
+     "t": "Source elsewhere, hypotension, lactate > 2",
+     "s": "adultstg2026:23.34"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Cultures, lactate, urine, ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Balanced salt solution; no colloids; treat source",
+     "s": "adultstg2026:23.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — vasopressors (adrenaline) = ICU",
+     "s": "adultstg2026:23.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pneumocystis pneumonia (HIV)",
+   "branch": "If PJP",
+   "features": [
+    {
+     "t": "HIV, dry cough < 12 weeks, diffuse interstitial infiltrates",
+     "s": "adultstg2026:16.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CD4, CXR; exclude TB (Xpert)",
+     "s": "adultstg2026:16.17",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cotrimoxazole high dose + prednisone 80 mg if hypoxic",
+     "s": "adultstg2026:10.30"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if failing O₂ / CPAP",
+     "s": "adultstg2026:10.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Aspiration",
+   "branch": "If aspiration",
+   "features": [
+    {
+     "t": "Reduced LOC, vomiting, alcohol, seizure, stroke",
+     "s": "adultstg2026:16.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR (dependent segments)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanate 1.2 g IV 8-hourly if infection",
+     "s": "adultstg2026:16.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if ventilation needed",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "COVID-19 / influenza",
+   "branch": "If viral (COVID / flu)",
+   "features": [
+    {
+     "t": "Fever, cough, anosmia, contacts",
+     "s": "adultstg2026:9.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "SARS-CoV-2 PCR (nasopharyngeal)",
+     "s": "adultstg2026:9.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂ to SpO₂ ≥ 90%; awake prone; enoxaparin; no antibiotics unless co-infection",
+     "s": "adultstg2026:9.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — failing face-mask O₂",
+     "s": "adultstg2026:9.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Severe falciparum malaria",
+   "branch": "",
+   "features": [
+    {
+     "t": "Travel, fever, prostration, LOC, bleeding",
+     "s": "adultstg2026:9.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Malaria RDT / smear (parasitaemia)",
+     "s": "adultstg2026:9.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "IV artesunate per malaria guideline (PHC 10.7.2)",
+     "s": "adultstg2026:9.15"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — severe malaria with ARDS",
+     "s": "adultstg2026:9.15",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Mimic: cardiogenic pulmonary oedema",
+   "branch": "",
+   "features": [
+    {
+     "t": "Orthopnoea, raised JVP, cardiomegaly, frothy sputum",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, troponin, CXR, ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "→ ADHF pathway (furosemide, nitrates)",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per ADHF",
+     "s": "adultstg2026:20.16"
+    }
+   ]
+  },
+  {
+   "dx": "Mimic: fluid overload / AKI",
+   "branch": "",
+   "features": [
+    {
+     "t": "Positive balance, oliguria, oedema",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "U&E, urine output",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "→ AKI pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Dialysis indications → REFER",
+     "s": "adultstg2026:7.9"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "ICU transfer is the goal; rows after 6 h apply only while transfer is delayed",
+  "columns": {
+   "feed": "O₂, position & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "SpO₂ + O₂ device and flow, RR, pulse, BP: every 15 min for the first hour, then hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "SpO₂ target ≥ 90% (pregnant ≥ 94%); escalate device step by step (ladder, side 2)",
+    "s": "adultstg2026:9.11",
+    "b": 1
+   },
+   {
+    "t": "Awake prone positioning if tolerated; record hours prone",
+    "s": "adultstg2026:9.12"
+   },
+   {
+    "t": "Confusion / drowsiness and work of breathing with every set of obs",
+    "s": "adultstg2026:16.16",
+    "d": 1
+   },
+   {
+    "t": "Strict intake and urine output; avoid fluid overload",
+    "d": 1
+   },
+   {
+    "t": "Isolation and airborne precautions until COVID / flu / TB excluded",
+    "s": "adultstg2026:9.11"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for antibiotics and O₂ given. Phone ICU / referral centre early — transfer takes time.",
+    "feed": [
+     {
+      "t": "O₂ by ladder to SpO₂ ≥ 90% (pregnant ≥ 94%)",
+      "s": "adultstg2026:9.11",
+      "b": 1
+     },
+     {
+      "t": "Sit up; awake prone positioning if hypoxaemic and conscious",
+      "s": "adultstg2026:9.12"
+     },
+     {
+      "t": "Shocked: balanced salt solution, reassess after each bolus",
+      "s": "adultstg2026:23.4"
+     },
+     {
+      "t": "Not shocked: restrict IV fluids; avoid positive balance",
+      "d": 1
+     },
+     {
+      "t": "Isolation + airborne precautions",
+      "s": "adultstg2026:9.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ABG (or VBG) + lactate",
+      "s": "adultstg2026:23.34",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, creatinine, LFT, HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture × 2 before antibiotics",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test; CD4 if HIV+",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Sputum Xpert MTB/RIF Ultra",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "SARS-CoV-2 / influenza PCR",
+      "s": "adultstg2026:9.11",
+      "b": 1
+     },
+     {
+      "t": "Malaria RDT if exposed",
+      "s": "adultstg2026:9.15",
+      "b": 1
+     },
+     {
+      "t": "ECG ± troponin (exclude cardiac)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Treat the trigger now"
+     },
+     {
+      "t": "Severe pneumonia: ceftriaxone 2 g IV daily + azithromycin 500 mg IV (over ≥ 60 min) daily × 3 days",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "Penicillin allergy: moxifloxacin 400 mg IV daily",
+      "s": "adultstg2026:16.17"
+     },
+     {
+      "t": "HIV + diffuse infiltrates: treat PJP (branch)",
+      "s": "adultstg2026:16.17"
+     },
+     {
+      "h": "Septic shock"
+     },
+     {
+      "t": "Fluids, then adrenaline 0.01–1 mcg/kg/min to MAP > 65 = ICU: REFER",
+      "s": "adultstg2026:23.4",
+      "b": 1
+     },
+     {
+      "h": "Prophylaxis"
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily (20 mg if eGFR < 30)",
+      "s": "adultstg2026:9.12"
+     },
+     {
+      "h": "If intubation needed before transfer"
+     },
+     {
+      "t": "Most experienced clinician; RSI: ketamine 1–2 mg/kg or etomidate 0.3 mg/kg + suxamethonium 1–1.5 mg/kg",
+      "s": "adultstg2026:20.19",
+      "b": 1
+     },
+     {
+      "t": "Ventilator / transport vent: Vt 5–8 mL/kg predicted weight, PEEP 5, FiO₂ 1.0, RR 12–15",
+      "s": "adultstg2026:23.47"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "Escalate",
+    "feed": [
+     {
+      "t": "Step up device each time SpO₂ below target",
+      "s": "adultstg2026:9.11",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas if tiring or drowsy",
+      "s": "adultstg2026:23.2",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Below target on reservoir mask 15 L/min → HFNO / CPAP / intubation: REFER now",
+      "s": "adultstg2026:9.11",
+      "b": 1
+     },
+     {
+      "t": "Tick cause on differential sheet → branch rows",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "Await transfer",
+    "feed": [
+     {
+      "t": "Prone sessions as tolerated",
+      "s": "adultstg2026:9.12"
+     },
+     {
+      "t": "Fluid balance: aim neutral",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lactate repeat if shocked",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ventilated: SpO₂ ≥ 88% acceptable in ARDS; permissive hypercapnia, keep pH ≥ 7.20",
+      "s": "adultstg2026:23.48"
+     },
+     {
+      "t": "Reduce FiO₂ by 0.1 every 10 min to 0.4 as SpO₂ allows",
+      "s": "adultstg2026:23.48"
+     },
+     {
+      "t": "Sedate ventilated patient: midazolam 0.05–0.2 mg/kg/h",
+      "s": "adultstg2026:20.19"
+     }
+    ]
+   },
+   {
+    "label": "If pneumonia / sepsis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As above",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture results; procalcitonin not needed",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue ceftriaxone ± azithromycin; adjust to cultures",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "Find and drain any source",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If PJP",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "O₂ by face mask or CPAP as needed",
+      "s": "adultstg2026:10.30"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CD4; FBC + K⁺ on high-dose cotrimoxazole",
+      "s": "adultstg2026:10.29",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cotrimoxazole 80/400 mg PO 6-hourly × 21 d: < 60 kg 3 tabs, ≥ 60 kg 4 tabs (IV if vomiting)",
+      "s": "adultstg2026:10.29",
+      "b": 1
+     },
+     {
+      "t": "Hypoxic (PaO₂ < 70 mmHg / SpO₂ < 92%): prednisone 80 mg daily × 5 d, then taper over 14 d",
+      "s": "adultstg2026:10.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If aspiration",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; head up 30°; protect airway",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pneumonitis only (hours after event): no antibiotics",
+      "s": "adultstg2026:16.17"
+     },
+     {
+      "t": "Infection: amoxicillin/clavulanate 1.2 g IV 8-hourly",
+      "s": "adultstg2026:16.17",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If viral (COVID / flu)",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Awake prone; O₂ to SpO₂ ≥ 90%",
+      "s": "adultstg2026:9.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "D-dimer",
+      "s": "adultstg2026:9.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No antibiotics unless co-infection",
+      "s": "adultstg2026:9.12"
+     },
+     {
+      "t": "D-dimer > 1.5 mg/L or non-rebreather: therapeutic enoxaparin 1 mg/kg 12-hourly",
+      "s": "adultstg2026:9.12"
+     },
+     {
+      "t": "Notify; follow current NICD guidance",
+      "s": "adultstg2026:9.10"
+     }
+    ]
+   },
+   {
+    "label": "Day 1–2",
+    "phase": "Transfer delayed",
+    "feed": [
+     {
+      "t": "Enteral feeds early; avoid overload",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Gas, U&E, FBC daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-discuss with ICU each shift; document ceiling of care with family",
+      "s": "adultstg2026:23.50",
+      "d": 1
+     },
+     {
+      "t": "Not for ICU: palliative symptom care (Chapter 24)",
+      "s": "adultstg2026:23.42",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Transfer",
+    "phase": "Handover",
+    "feed": [
+     {
+      "t": "O₂ for the journey ≥ 1.5 × expected use",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Copies: CXR, gases, cultures sent",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stabilise before transfer; appropriate level of transport",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "t": "Escort able to intubate / bag-ventilate",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "O₂ ladder · ventilation",
+   "items": [
+    {
+     "t": "Nasal cannula 1–5 L/min (FiO₂ ≈ 0.25–0.4)",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Simple face mask 6–10 L/min (≈ 0.4–0.6)",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Reservoir mask 10–15 L/min (≈ 0.6–0.95)",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Failing → HFNO / CPAP / intubation (REFER)",
+     "s": "adultstg2026:9.11",
+     "b": 1
+    },
+    {
+     "h": "Initial ventilator settings"
+    },
+    {
+     "t": "FiO₂ 1.0 · RR 12–15 · Vt 5–8 mL/kg predicted weight · PEEP 5 · I:E 1:2",
+     "s": "adultstg2026:23.47",
+     "b": 1
+    },
+    {
+     "t": "Titrate: SpO₂ ≥ 88% in ARDS; PCO₂ allowed higher; pH ≥ 7.20",
+     "s": "adultstg2026:23.48"
+    }
+   ]
+  },
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Ceftriaxone 2 g IV daily + azithromycin 500 mg IV daily × 3 d",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    },
+    {
+     "t": "Cotrimoxazole PJP: 3–4 tabs 80/400 6-hourly × 21 d",
+     "s": "adultstg2026:10.29"
+    },
+    {
+     "t": "Prednisone 80 mg daily × 5 d (hypoxic PJP)",
+     "s": "adultstg2026:10.30"
+    },
+    {
+     "t": "Amoxicillin/clavulanate 1.2 g IV 8-hourly (aspiration)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Adrenaline 0.01–1 mcg/kg/min (septic shock, ICU)",
+     "s": "adultstg2026:23.4"
+    },
+    {
+     "t": "Enoxaparin 40 mg SC daily · therapeutic 1 mg/kg 12-hourly (COVID criteria)",
+     "s": "adultstg2026:9.12"
+    },
+    {
+     "t": "RSI: ketamine 1–2 mg/kg / etomidate 0.3 mg/kg / propofol 1.5–2.5 mg/kg; suxamethonium 1–1.5 mg/kg; rocuronium 0.9 mg/kg",
+     "s": "adultstg2026:20.19"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "SpO₂ below target on current device",
+     "s": "adultstg2026:9.11",
+     "b": 1
+    },
+    {
+     "t": "RR > 30, rising, or tiring (paradoxical breathing)",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "New confusion or drowsiness",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "BP falling, cold peripheries, low urine",
+     "s": "adultstg2026:23.4"
+    },
+    {
+     "h": "Avoid"
+    },
+    {
+     "t": "Fluid overload; colloids in sepsis",
+     "s": "adultstg2026:23.4"
+    },
+    {
+     "t": "Sedation in the non-ventilated patient",
+     "s": "adultstg2026:16.4",
+     "d": 1
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "Gas, lactate, CXR, HGT",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Transfer criteria — all must be met before leaving",
+  "items": [
+   {
+    "t": "ICU bed accepted; doctor-to-doctor handover",
+    "d": 1
+   },
+   {
+    "t": "Airway secure or safe on current O₂",
+    "s": "adultstg2026:16.4"
+   },
+   {
+    "t": "IV access ×2; fluids / vasopressor running",
+    "d": 1
+   },
+   {
+    "t": "Antibiotics given (time recorded)",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "Family informed; ceiling of care noted",
+    "s": "adultstg2026:23.50"
+   },
+   {
+    "t": "Escort and O₂ supply adequate",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "After ICU / if not transferred",
+  "items": [
+   {
+    "t": "Back-transfer: wean O₂ to SpO₂ target; LRTI pathway",
+    "d": 1
+   },
+   {
+    "t": "Follow-up CXR 4–6 weeks if > 50 y or symptoms persist",
+    "s": "adultstg2026:16.15"
+   },
+   {
+    "t": "HIV / TB care linked",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — oxygenation and breathing",
+  "period": "one sheet from arrival: 15-min rows for 1 h, then hourly",
+  "params": [
+   {
+    "h": "Oxygen",
+    "items": [
+     {
+      "t": "SpO₂ target ≥ 90% (pregnant ≥ 94%); escalate device step by step (ladder, side 2)",
+      "s": "adultstg2026:9.11",
+      "b": 1
+     },
+     {
+      "t": "Record device + flow with every SpO₂",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Breathing and circulation",
+    "items": [
+     {
+      "t": "SpO₂ + O₂ device and flow, RR, pulse, BP: every 15 min for the first hour, then hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Confusion / drowsiness and work of breathing with every set of obs",
+      "s": "adultstg2026:16.16",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Position and fluid",
+    "items": [
+     {
+      "t": "Awake prone positioning if tolerated; record hours prone",
+      "s": "adultstg2026:9.12"
+     },
+     {
+      "t": "Strict intake and urine output; avoid fluid overload",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ below target on current device",
+    "s": "adultstg2026:9.11",
+    "b": 1
+   },
+   {
+    "t": "RR > 30 or rising, tiring",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "new confusion or drowsiness",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "BP falling or low urine output",
+    "s": "adultstg2026:23.4"
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Urine (mL)",
+   "Balance (mL)",
+   "Hours prone",
+   "Highest O₂ (L/min)"
+  ]
+ }
+}

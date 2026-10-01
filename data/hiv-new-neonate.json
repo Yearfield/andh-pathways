@@ -1,0 +1,900 @@
+{
+ "id": "hiv-new-neonate",
+ "short": "New HIV (neonate)",
+ "title": "HIV-positive neonate (< 28 days), starting ART — admitted",
+ "population": "Neonate < 28 days with a positive HIV PCR (birth or later), not yet on ART",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "hiv2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "HIV-exposed, PCR negative → VTP prophylaxis only",
+     "s": "hiv2026:148",
+     "b": 1
+    },
+    {
+     "t": "≥ 28 days → New HIV (child)",
+     "b": 1
+    },
+    {
+     "t": "Mother not on ART / VL ≥ 50 → also manage mother (VTP guideline)",
+     "s": "hiv2026:149",
+     "b": 1
+    },
+    {
+     "t": "Needs ventilation / very preterm with complications → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "HIV diagnosis",
+   "items": [
+    {
+     "t": "Birth or any HIV PCR positive",
+     "s": "hiv2026:148",
+     "b": 1
+    },
+    {
+     "t": "Confirm with 2nd PCR (or VL) on a NEW sample",
+     "s": "hiv2026:148",
+     "b": 1
+    },
+    {
+     "t": "Start ART — do not wait for the confirmatory result",
+     "s": "hiv2026:149",
+     "b": 1
+    },
+    {
+     "t": "Indeterminate result → §7",
+     "s": "hiv2026:151"
+    },
+    {
+     "t": "Birth wt ____ g  GA at birth ____ wk  Age ____ d",
+     "k": "value"
+    },
+    {
+     "t": "Current wt ____ g  Corrected GA ____ wk",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Seriously ill = any one of",
+   "items": [
+    {
+     "t": "Unable to breastfeed · vomits everything · convulsions",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Lethargic / unconscious · signs of shock",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Chest indrawing · SpO₂ < 92% · cyanosis",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Bulging fontanelle · irritable",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Hypothermia / hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB) and maternal records",
+   "items": [
+    {
+     "t": "Mother's ART regimen and delivery VL",
+     "s": "hiv2026:148",
+     "b": 1
+    },
+    {
+     "t": "Mother failing TLD2 or a PI",
+     "s": "hiv2026:172"
+    },
+    {
+     "t": "Infant prophylaxis given (NVP / AZT)",
+     "s": "hiv2026:148"
+    },
+    {
+     "t": "PCR barcodes on RtHB",
+     "s": "hiv2026:148"
+    },
+    {
+     "t": "Birth weight, GA, Apgar",
+     "d": 1
+    },
+    {
+     "t": "Feeding: breast / formula / mixed",
+     "s": "hiv2026:149"
+    },
+    {
+     "t": "Immunisations at birth",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "t": "Other children / partner tested",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Caregiver"
+    },
+    {
+     "t": "At least one identified caregiver who gives the medicine",
+     "s": "paedstg2026:9.16",
+     "b": 1
+    },
+    {
+     "t": "Mother on ART and adherent",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "Mother's VL now (repeat if unknown / ≥ 50)",
+     "s": "hiv2026:149"
+    },
+    {
+     "h": "Baby"
+    },
+    {
+     "t": "Feeding well · stools · urine",
+     "d": 1
+    },
+    {
+     "t": "Fever, lethargy, poor suck",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "TB in mother / household",
+     "s": "paedstg2026:9.13",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside neonatal norms or the baby's documented baseline",
+   "items": [
+    {
+     "t": "Temperature < 36.5 or ≥ 37.5 °C",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / bradycardia",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / chest indrawing",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 92% → O₂",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Signs of shock",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Glucose low",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Jaundice",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "< 2.0 kg or < 37 wk (preterm regimen)",
+     "s": "hiv2026:173",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Activity, tone, suck",
+     "d": 1
+    },
+    {
+     "t": "Hepatosplenomegaly · lymphadenopathy",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Oral thrush",
+     "d": 1
+    },
+    {
+     "t": "Skin: rash, jaundice, pallor",
+     "d": 1
+    },
+    {
+     "h": "Growth"
+    },
+    {
+     "t": "Weight, length, HC plotted",
+     "s": "paedstg2026:9.14"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Indeterminate PCR",
+   "items": [
+    {
+     "t": "Indeterminate PCR: check prior PCR / VL",
+     "s": "hiv2026:151",
+     "b": 1
+    },
+    {
+     "t": "Prior positive / detectable → treat as infected, start ART",
+     "s": "hiv2026:151"
+    },
+    {
+     "t": "Prior negative / none: repeat PCR + VL urgently; positive → ART, negative → VTP testing",
+     "s": "hiv2026:151"
+    },
+    {
+     "t": "Never stop ART without specialist advice",
+     "s": "hiv2026:151",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Baseline bloods — send before first dose",
+   "items": [
+    {
+     "t": "Confirmatory PCR (or VL) on a new sample",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "CD4 count",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "FBC",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "HIV drug-resistance test if mother failing TLD2 or a PI",
+     "s": "hiv2026:172"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Convulsions",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 92% / chest indrawing",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Neonatal sepsis",
+     "d": 1
+    },
+    {
+     "t": "Hypothermia · hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Severe jaundice",
+     "d": 1
+    },
+    {
+     "t": "Congenital TB (mother with TB)",
+     "d": 1
+    },
+    {
+     "t": "Mother not on ART",
+     "s": "hiv2026:172"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Needs ventilation / CPAP, very preterm with complications, or neonatal surgery → REFER",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT → stop prophylaxis, send confirmatory PCR, start ART the SAME DAY (term: ABC + 3TC + DTG · preterm: AZT + 3TC + NVP)",
+   "s": "hiv2026:148"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Stop NVP / AZT prophylaxis · ART same day · dose by age, GA and weight · term < 2 weeks = every 2nd day",
+  "columns": {
+   "feed": "O₂, feeds & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals incl. temperature and SpO₂ 4-hourly; hourly while danger signs present",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Each ARV dose observed and timed; term < 2 weeks = every 2nd day — check 'due today'",
+    "s": "hiv2026:172",
+    "b": 1
+   },
+   {
+    "t": "Breastfeeds / volumes each shift",
+    "s": "hiv2026:172"
+   },
+   {
+    "t": "Weight daily (grams); re-calculate mg/kg doses",
+    "s": "hiv2026:173"
+   },
+   {
+    "t": "Jaundice, pallor, poor feeding, lethargy",
+    "d": 1
+   },
+   {
+    "t": "Hypothermia / fever",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "PCR positive",
+    "lead": "Stop NVP and AZT prophylaxis and start ART today. Classify term or preterm by weight and gestation.",
+    "feed": [
+     {
+      "t": "Breastfeeding recommended",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "O₂ if SpO₂ < 92%",
+      "s": "hiv2026:59"
+     },
+     {
+      "t": "Keep warm",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Confirmatory PCR / VL",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "CD4, FBC",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "± resistance test (mother failing TLD2 / PI)",
+      "s": "hiv2026:172"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop NVP and AZT prophylaxis",
+      "s": "hiv2026:148",
+      "b": 1
+     },
+     {
+      "h": "Term ≥ 2 kg and ≥ 37 wk"
+     },
+     {
+      "t": "Birth – < 2 weeks: ABC/3TC 120/60 DT ¼ tab + DTG 10 mg DT ½ tab ONCE EVERY 2nd DAY",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "2 – < 4 weeks: same doses ONCE DAILY",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "h": "Preterm"
+     },
+     {
+      "t": "Use preterm table (side 2 box)",
+      "s": "hiv2026:173",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Mother · caregiver",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Mother's VL if not done",
+      "s": "hiv2026:149"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ensure mother is on ART; ABCDE if her VL ≥ 50",
+      "s": "hiv2026:148",
+      "b": 1
+     },
+     {
+      "t": "Syringe per ARV, dose marked; show how to prepare",
+      "s": "paedstg2026:9.13"
+     },
+     {
+      "t": "Counsel parent / caregiver",
+      "s": "hiv2026:172"
+     }
+    ]
+   },
+   {
+    "label": "If preterm",
+    "phase": "< 2 kg or < 37 wk",
+    "feed": [
+     {
+      "t": "Feeds per weight",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight daily",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PRETERM = < 2 kg OR < 37 weeks: AZT + 3TC + NVP solutions (10 mg/mL), all twice daily",
+      "s": "hiv2026:173",
+      "b": 1
+     },
+     {
+      "t": "< 30 wk, birth – < 4 wk: AZT 2 · 3TC 2 · NVP 2 mg/kg/dose",
+      "s": "hiv2026:173"
+     },
+     {
+      "t": "30 – < 35 wk, < 2 wk: AZT 2 · 3TC 2 · NVP 2 mg/kg/dose",
+      "s": "hiv2026:173"
+     },
+     {
+      "t": "30 – < 35 wk, 2 – < 4 wk: AZT 3 · 3TC 2 · NVP 4 mg/kg/dose",
+      "s": "hiv2026:173"
+     },
+     {
+      "t": "35 – < 37 wk, < 1 wk: AZT 4 · 3TC 2 · NVP 4 mg/kg/dose",
+      "s": "hiv2026:173"
+     },
+     {
+      "t": "35 – < 37 wk, 1 – < 4 wk: AZT 4 · 3TC 2 · NVP 6 mg/kg/dose",
+      "s": "hiv2026:173"
+     }
+    ]
+   },
+   {
+    "label": "If indeterminate PCR",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat PCR + VL urgently",
+      "s": "hiv2026:151",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prior positive / detectable → treat as infected, start ART",
+      "s": "hiv2026:151"
+     },
+     {
+      "t": "Prior negative / none: repeat PCR + VL urgently; positive → ART, negative → VTP testing",
+      "s": "hiv2026:151"
+     },
+     {
+      "t": "Never stop ART without specialist advice",
+      "s": "hiv2026:151",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Age 2 weeks",
+    "phase": "Term dose change",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "2 – < 4 weeks: same doses ONCE DAILY",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "Preterm: check GA / age band and re-dose by weight",
+      "s": "hiv2026:173",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3–6",
+    "phase": "Tolerance",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase CD4, FBC, confirmatory PCR",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Caregiver prepares each dose under observation",
+      "s": "paedstg2026:9.13",
+      "b": 1
+     },
+     {
+      "t": "Confirmatory PCR negative → discuss (VTP guideline); do not stop ART",
+      "s": "hiv2026:172",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review after 1 week, then 1–2-weekly",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "CPT from 6 weeks of age",
+      "s": "hiv2026:148",
+      "b": 1
+     },
+     {
+      "t": "≥ 4 weeks AND ≥ 3 kg: child weight-band chart (pALD)",
+      "s": "hiv2026:172"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Term neonate — ABC + 3TC + DTG",
+   "items": [
+    {
+     "t": "TERM = ≥ 2.0 kg AND ≥ 37 weeks at birth: ABC + 3TC + DTG",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "Birth – < 2 weeks: ABC/3TC 120/60 DT ¼ tab + DTG 10 mg DT ½ tab ONCE EVERY 2nd DAY",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "2 – < 4 weeks: same doses ONCE DAILY",
+     "s": "hiv2026:172",
+     "b": 1
+    },
+    {
+     "t": "No ABC/3TC DT: ABC 20 mg/mL 1.5 mL + 3TC 10 mg/mL 1.5 mL (same schedule) with DTG DT",
+     "s": "hiv2026:172"
+    },
+    {
+     "t": "≥ 4 weeks AND ≥ 3 kg: child weight-band chart (pALD)",
+     "s": "hiv2026:172"
+    }
+   ]
+  },
+  {
+   "title": "Preterm neonate — AZT + 3TC + NVP (mg/kg/dose, 12-hourly)",
+   "items": [
+    {
+     "t": "PRETERM = < 2 kg OR < 37 weeks: AZT + 3TC + NVP solutions (10 mg/mL), all twice daily",
+     "s": "hiv2026:173",
+     "b": 1
+    },
+    {
+     "t": "< 30 wk, birth – < 4 wk: AZT 2 · 3TC 2 · NVP 2 mg/kg/dose",
+     "s": "hiv2026:173"
+    },
+    {
+     "t": "30 – < 35 wk, < 2 wk: AZT 2 · 3TC 2 · NVP 2 mg/kg/dose",
+     "s": "hiv2026:173"
+    },
+    {
+     "t": "30 – < 35 wk, 2 – < 4 wk: AZT 3 · 3TC 2 · NVP 4 mg/kg/dose",
+     "s": "hiv2026:173"
+    },
+    {
+     "t": "35 – < 37 wk, < 1 wk: AZT 4 · 3TC 2 · NVP 4 mg/kg/dose",
+     "s": "hiv2026:173"
+    },
+    {
+     "t": "35 – < 37 wk, 1 – < 4 wk: AZT 4 · 3TC 2 · NVP 6 mg/kg/dose",
+     "s": "hiv2026:173"
+    },
+    {
+     "t": "At ≥ 4 weeks: ≥ 2 kg AND ≥ 37 wk corrected → switch to ABC + 3TC + DTG; otherwise continue",
+     "s": "hiv2026:173",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · follow-on",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Convulsions, lethargy, poor suck",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 92%, chest indrawing",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Vomits dose twice / refuses feeds",
+     "d": 1
+    },
+    {
+     "t": "Jaundice or pallor",
+     "d": 1
+    },
+    {
+     "h": "Follow-on"
+    },
+    {
+     "t": "CPT from 6 weeks (all < 1 y)",
+     "s": "hiv2026:148"
+    },
+    {
+     "t": "At 4 weeks: switch to child chart when criteria met",
+     "s": "hiv2026:172"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Ventilation, CPAP, surgery · expert for resistance results",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No danger signs; feeding well",
+    "s": "hiv2026:59"
+   },
+   {
+    "t": "ART started; confirmatory PCR sent",
+    "s": "hiv2026:172",
+    "b": 1
+   },
+   {
+    "t": "Caregiver prepares doses correctly (syringes marked)",
+    "s": "paedstg2026:9.13",
+    "b": 1
+   },
+   {
+    "t": "Mother on ART",
+    "s": "hiv2026:172",
+    "b": 1
+   },
+   {
+    "t": "Weight stable or gaining",
+    "d": 1
+   },
+   {
+    "t": "Clinic review in 1 week; RtHB updated",
+    "s": "hiv2026:172"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC / ART clinic)",
+  "items": [
+   {
+    "t": "Review after 1 week, then 1–2-weekly; adjust doses as weight rises",
+    "s": "hiv2026:173",
+    "b": 1
+   },
+   {
+    "t": "At 4 weeks: term ≥ 3 kg → pALD chart · preterm ≥ 2 kg and ≥ 37 wk corrected → ABC + 3TC + DTG",
+    "s": "hiv2026:172",
+    "b": 1
+   },
+   {
+    "t": "Cotrimoxazole from 6 weeks",
+    "s": "hiv2026:148"
+   },
+   {
+    "t": "VL at month 3 on ART",
+    "s": "paedstg2026:9.15"
+   },
+   {
+    "t": "Mother's VL 6-monthly while breastfeeding",
+    "s": "hiv2026:149"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "14-day nursing record — ARV doses, feeds and weight (neonate)",
+  "period": "one sheet per 14 days, one row per day (vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "Each ARV dose observed and timed; term < 2 weeks = every 2nd day — check 'due today'",
+      "s": "hiv2026:172",
+      "b": 1
+     },
+     {
+      "t": "Weight daily (grams); re-calculate mg/kg doses",
+      "s": "hiv2026:173"
+     }
+    ]
+   },
+   {
+    "h": "Feeds · warning signs",
+    "items": [
+     {
+      "t": "Breastfeeds / volumes each shift",
+      "s": "hiv2026:172"
+     },
+     {
+      "t": "Jaundice, pallor, poor feeding, lethargy",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Vitals incl. temperature and SpO₂ 4-hourly; hourly while danger signs present",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Hypothermia / fever",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "convulsions, lethargy or poor suck",
+    "s": "hiv2026:59",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ < 92% or chest indrawing",
+    "s": "hiv2026:59",
+    "b": 1
+   },
+   {
+    "t": "dose vomited twice",
+    "d": 1
+   },
+   {
+    "t": "jaundice, hypothermia or not feeding",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "ARV doses given / due",
+   "Doses vomited",
+   "Weight change (g)",
+   "Feeds refused"
+  ]
+ }
+}

@@ -59,4 +59,4 @@ If you change app files (app.js, style.css, index.html, sw.js), also change
 
 ## Licences
 
-PDF.js (Apache 2.0) in `vendor/pdfjs/`; IBM Plex Sans/Serif and Caveat fonts (SIL OFL) in `fonts/`.
+PDF.js (Apache 2.0) in `vendor/pdfjs/`; IBM Plex Sans/Serif fonts (SIL OFL) in `fonts/`.

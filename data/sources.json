@@ -19,6 +19,21 @@
     {"id": "paedstg2026", "short": "Paeds STG 2026", "title": "Paediatric Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "5th ed. 2024 (updated Mar 2026)", "offset": 0},
     {"id": "adultstg2026", "short": "Adult STG 2026", "title": "Adult Hospital Level Standard Treatment Guidelines and Essential Medicines List", "edition": "6th ed. 2024 (updated Mar 2026)", "offset": 0},
     {"id": "phcstg2026", "short": "PHC STG 2026", "title": "Primary Healthcare Standard Treatment Guidelines and Essential Medicines List", "edition": "8th ed. 2024 (updated Sept 2026)", "offset": 0},
-    {"id": "esge2021", "short": "ESGE 2021", "title": "ESGE Guideline: Endoscopic management of acute non-variceal upper gastrointestinal haemorrhage (NVUGIH), Update 2021", "edition": "2021 (citations are recommendation numbers, e.g. R13, not pages)", "offset": 0}
+    {"id": "esge2021", "short": "ESGE 2021", "title": "ESGE Guideline: Endoscopic management of acute non-variceal upper gastrointestinal haemorrhage (NVUGIH), Update 2021", "edition": "2021 (citations are recommendation numbers, e.g. R13, not pages)", "offset": 0},
+    {"id": "hiv2026", "short": "HIV 2026", "title": "National Consolidated Guidelines for the Prevention and Management of HIV", "edition": "May 2026 v2", "offset": 16},
+    {"id": "tbadult2017", "short": "TB Adults 2017", "title": "South African National TB Guidelines – Adults (MIC/UCT wall chart, based on NTCP 2014)", "edition": "Mar 2017", "offset": 0},
+    {"id": "tbpaeds2024", "short": "Paeds TB 2024", "title": "Clinical Guideline for the Diagnosis and Treatment of DS-TB in Children and Adolescents", "edition": "NDoH Sept 2024", "offset": 8},
+    {"id": "tbqrg2025", "short": "Paeds TB QRG 2025", "title": "Management of TB in Children and Adolescents – Quick Reference Guide", "edition": "Sept 2025", "offset": 0},
+    {"id": "stg-adult", "short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
+    "7": {"title": "Chapter 7", "offset": 0},
+    "12": {"title": "Chapter 12", "offset": 0},
+    "20": {"title": "Chapter 20", "offset": 0},
+    "23": {"title": "Chapter 23", "offset": 0}
+    }},
+    {"id": "stg-paed", "short": "STG Paeds", "title": "Paediatric Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
+    "1": {"title": "Chapter 1", "offset": 0},
+    "22": {"title": "Chapter 22", "offset": 0},
+    "23": {"title": "Chapter 23", "offset": 0}
+    }}
   ]
 }

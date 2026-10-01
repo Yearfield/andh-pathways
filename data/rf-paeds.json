@@ -1,0 +1,1319 @@
+{
+ "id": "rf-paeds",
+ "short": "Resp. failure (child)",
+ "title": "Acute respiratory failure — upper airway, lower airway, lung and pump (child)",
+ "population": "Child 28 days to < 13 y with impending or established respiratory failure; ventilation is beyond ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days → neonatal respiratory distress (Ch 19)",
+     "s": "paedstg2026:19.13",
+     "b": 1
+    },
+    {
+     "t": "Bronchiolitis → Bronchiolitis pathway",
+     "b": 1
+    },
+    {
+     "t": "Diffuse infiltrates + hypoxaemia → ARDS (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "Heart failure → HF (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "DKA (acidotic breathing) → DKA (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "Age ≥ 13 y → respiratory failure (adult) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — signs of impending respiratory failure (any)",
+   "items": [
+    {
+     "t": "RR > 60 /min, marked indrawing, grunting, flaring, gasping",
+     "s": "phcstg2026:21.9",
+     "b": 1
+    },
+    {
+     "t": "Central cyanosis / SpO₂ < 92% despite O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Rising PCO₂ on gas",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Weak effort, unable to talk or feed (muscle / drive failure)",
+     "s": "paedstg2026:13.39",
+     "b": 1
+    },
+    {
+     "t": "Decreased consciousness, abnormal posture",
+     "s": "phcstg2026:21.9",
+     "b": 1
+    },
+    {
+     "t": "Stridor at rest / grade 3–4 obstruction",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ ____ on ____ · RR ____ · HR ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Needs ventilation / PICU = any one of",
+   "items": [
+    {
+     "t": "Hypoxia and / or hypercapnia despite O₂",
+     "s": "paedstg2026:15.3"
+    },
+    {
+     "t": "Asthma non-responder after step 3",
+     "s": "paedstg2026:15.22"
+    },
+    {
+     "t": "Croup grade 3 not better in 1 h, or grade 4",
+     "s": "paedstg2026:15.32"
+    },
+    {
+     "t": "GBS: rapid ascent, weak cough, falling PEFR, rising PCO₂",
+     "s": "paedstg2026:13.39"
+    },
+    {
+     "t": "Myasthenic crisis",
+     "s": "paedstg2026:13.41"
+    },
+    {
+     "t": "Opioid needing repeated naloxone",
+     "s": "paedstg2026:18.17"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet",
+   "items": [
+    {
+     "t": "Immunisations: Hib, DTP (epiglottitis, diphtheria, pertussis)",
+     "s": "paedstg2026:15.29"
+    },
+    {
+     "t": "Known asthma; previous ICU",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "HIV exposure / status",
+     "s": "paedstg2026:15.7"
+    },
+    {
+     "t": "Prematurity / chronic lung disease",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Neuromuscular disease",
+     "s": "paedstg2026:13.37"
+    },
+    {
+     "t": "Medicines at home (codeine, opioids)",
+     "s": "paedstg2026:18.17"
+    },
+    {
+     "t": "Measles / herpes (no steroids in croup)",
+     "s": "paedstg2026:15.32"
+    },
+    {
+     "t": "Weight curve",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Airway"
+    },
+    {
+     "t": "Choking episode",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "t": "Barking cough, stridor after URTI",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Drooling, high fever, muffled voice",
+     "s": "paedstg2026:15.29"
+    },
+    {
+     "h": "Lower airway / lung"
+    },
+    {
+     "t": "Wheeze, known asthma",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Fever, cough (pneumonia)",
+     "s": "paedstg2026:15.1"
+    },
+    {
+     "h": "Pump"
+    },
+    {
+     "t": "Ascending weakness after infection",
+     "s": "paedstg2026:13.38"
+    },
+    {
+     "t": "Ingestion (opioid, OP)",
+     "s": "paedstg2026:18.17"
+    },
+    {
+     "h": "TB / HIV"
+    },
+    {
+     "t": "Contact; HIV status",
+     "s": "paedstg2026:15.8"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "RR > 60 /min or slow / irregular",
+     "s": "phcstg2026:21.9",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "HR > 160 (infant) / > 120 (child); bradycardia",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 92%",
+     "s": "paedstg2026:15.3",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill > 3 s",
+     "s": "phcstg2026:21.9",
+     "k": "yn"
+    },
+    {
+     "t": "Stridor at rest",
+     "s": "paedstg2026:15.31",
+     "k": "yn"
+    },
+    {
+     "t": "Pulsus paradoxus",
+     "s": "paedstg2026:15.18",
+     "k": "yn"
+    },
+    {
+     "t": "Unable to talk / feed",
+     "s": "paedstg2026:15.18",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased consciousness / agitation",
+     "s": "paedstg2026:15.20",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Airway"
+    },
+    {
+     "t": "Inspiratory / biphasic stridor",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Sitting forward, drooling",
+     "s": "paedstg2026:15.29"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Silent chest",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Wheeze",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Unilateral signs (FB, pneumothorax)",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "t": "Crackles, consolidation",
+     "s": "paedstg2026:15.2"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Areflexia, ascending weakness",
+     "s": "paedstg2026:13.38"
+    },
+    {
+     "t": "Ptosis, fatigable weakness",
+     "s": "paedstg2026:13.40"
+    },
+    {
+     "t": "Pinpoint pupils",
+     "s": "paedstg2026:18.17"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ / O₂ and severity grade",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on ____ · asthma severity ____ · croup grade ____",
+     "k": "value"
+    },
+    {
+     "t": "Asthma severe: SpO₂ < 92% off O₂, can't speak, cyanosis",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    },
+    {
+     "t": "Croup grade 3: + active expiration, pulsus paradoxus; grade 4: cyanosis, apathy",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Croup: avoid arterial gas — clinical grading is better",
+     "s": "paedstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas / PEFR / bedside",
+   "items": [
+    {
+     "t": "pH ____ · PCO₂ ____ · PEFR ____ % · HGT ____",
+     "k": "value"
+    },
+    {
+     "t": "Rising PCO₂ = ventilatory failure → REFER",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Asthma PEFR < 60% predicted: danger sign",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "GBS: falling PEFR comes before hypoxaemia",
+     "s": "paedstg2026:13.39",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Not breathing / airway obstructed",
+     "s": "paedstg2026:1.1",
+     "b": 1
+    },
+    {
+     "t": "Central cyanosis",
+     "s": "paedstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Convulsions / coma",
+     "s": "paedstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Epiglottitis",
+     "s": "paedstg2026:15.29"
+    },
+    {
+     "t": "Foreign body",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "t": "Silent chest",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Pneumothorax / air leak",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Bulbar palsy",
+     "s": "paedstg2026:13.39"
+    },
+    {
+     "t": "Opioid toxicity",
+     "s": "paedstg2026:18.17"
+    },
+    {
+     "t": "Anaphylaxis",
+     "s": "paedstg2026:1.5"
+    },
+    {
+     "t": "Bradycardia (pre-terminal)",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Hypokalaemia (β2)",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Severe pneumonia",
+     "s": "paedstg2026:15.2"
+    },
+    {
+     "t": "Sepsis",
+     "s": "paedstg2026:1.17"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = RESPIRATORY FAILURE needing ventilation → stabilise airway, discuss, REFER (PICU)",
+   "s": "paedstg2026:15.3"
+  },
+  {
+   "t": "11. ADMIT (high care)",
+   "s": "paedstg2026:15.19"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Epiglottitis / bacterial tracheitis",
+   "branch": "If upper airway",
+   "features": [
+    {
+     "t": "High fever, drooling, muffled voice, sitting forward",
+     "s": "paedstg2026:15.29"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical — do not examine throat or X-ray",
+     "s": "paedstg2026:15.29",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Keep calm; secure airway before IV; ceftriaxone 50 mg/kg IV daily",
+     "s": "paedstg2026:15.30"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all, once airway secured",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Croup (LTB)",
+   "branch": "If upper airway",
+   "features": [
+    {
+     "t": "URTI then barking cough, stridor",
+     "s": "paedstg2026:15.31"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical grade 1–4",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Prednisone 2 mg/kg or dexamethasone 0.5 mg/kg; grade ≥ 2: adrenaline neb",
+     "s": "paedstg2026:15.32"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — grade 3 not improving in 1 h, grade 4",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Inhaled foreign body",
+   "branch": "If upper airway",
+   "features": [
+    {
+     "t": "Sudden choking, unilateral wheeze / stridor",
+     "s": "paedstg2026:1.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Inspiratory / expiratory CXR",
+     "s": "paedstg2026:1.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Coughing: O₂ only; not coughing: back slaps / chest thrusts / Heimlich",
+     "s": "paedstg2026:1.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all for airway visualisation",
+     "s": "paedstg2026:1.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute severe asthma",
+   "branch": "If asthma",
+   "features": [
+    {
+     "t": "Wheeze, can't speak / feed, SpO₂ < 92%",
+     "s": "paedstg2026:15.18"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "SpO₂, PEFR, response to step 1",
+     "s": "paedstg2026:15.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂, salbutamol, ipratropium, prednisone / hydrocortisone",
+     "s": "paedstg2026:15.20"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — non-responder at step 3 (MgSO₄, IV salbutamol, ICU)",
+     "s": "paedstg2026:15.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Severe pneumonia / PJP",
+   "branch": "If pneumonia",
+   "features": [
+    {
+     "t": "Fever, indrawing, tachypnoea; HIV infant 2–6 mo",
+     "s": "paedstg2026:15.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, culture, HIV test",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanate IV ± cotrimoxazole (PJP)",
+     "s": "paedstg2026:15.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — hypoxia / hypercapnia on O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Guillain-Barré syndrome",
+   "branch": "If neuromuscular",
+   "features": [
+    {
+     "t": "Ascending flaccid weakness, areflexia, bulbar signs",
+     "s": "paedstg2026:13.38"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial PEFR, gas; stool × 2 (AFP)",
+     "s": "paedstg2026:13.39",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Notify AFP; high care; IVIG under specialist",
+     "s": "paedstg2026:13.39"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — bulbar / early respiratory failure",
+     "s": "paedstg2026:13.40",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Myasthenic crisis",
+   "branch": "If neuromuscular",
+   "features": [
+    {
+     "t": "Ptosis, fatigable weakness, can't swallow",
+     "s": "paedstg2026:13.41"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lid-lag / arm-raising tests",
+     "s": "paedstg2026:13.40",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ventilatory and feeding support",
+     "s": "paedstg2026:13.41"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all (ICU)",
+     "s": "paedstg2026:13.41",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Opioid poisoning",
+   "branch": "If drug-induced",
+   "features": [
+    {
+     "t": "Reduced LOC, slow breathing, pinpoint pupils",
+     "s": "paedstg2026:18.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Response to naloxone",
+     "s": "paedstg2026:18.17",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Bag-mask; naloxone 0.1 mg/kg IV, repeat after 5 min",
+     "s": "paedstg2026:18.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — multiple doses needed",
+     "s": "paedstg2026:18.17",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Branch rows follow the ticked cause · decide early whether ventilation will be needed",
+  "columns": {
+   "feed": "O₂, position & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "SpO₂ + O₂ device/flow, RR, HR, CRT, AVPU: every 15 min for the first hour, then hourly",
+    "s": "paedstg2026:15.19",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "O₂ to keep SpO₂ ≥ 92% (asthma: ≥ 95%)",
+    "s": "paedstg2026:15.20",
+    "b": 1
+   },
+   {
+    "t": "Signs of impending failure (grunting, gasping, severe indrawing, poor colour, drowsy) → call doctor at once",
+    "s": "phcstg2026:21.9",
+    "b": 1
+   },
+   {
+    "t": "Stridor: keep child calm and sitting on caregiver; do not examine the throat",
+    "s": "paedstg2026:15.29"
+   },
+   {
+    "t": "Asthma: K⁺ if on continuous β2-agonist; IV fluids max 50 mL/kg/24 h",
+    "s": "paedstg2026:15.19"
+   },
+   {
+    "t": "No sedation unless ventilated",
+    "s": "paedstg2026:15.19"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "ETAT triage. Airway first; the most experienced clinician takes the airway. Check RtHB / referral letter for drugs given.",
+    "feed": [
+     {
+      "t": "Position of comfort (stridor: on caregiver's lap)",
+      "s": "paedstg2026:15.29",
+      "b": 1
+     },
+     {
+      "t": "O₂: nasal prongs 1–2 L/min or face mask 4–6 L/min; SpO₂ ≥ 92% (asthma ≥ 95%)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "Bag-mask ventilate if apnoeic / gasping",
+      "s": "paedstg2026:18.17"
+     },
+     {
+      "t": "IV fluids only if unable to drink; asthma max 50 mL/kg/24 h",
+      "s": "paedstg2026:15.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas (not in croup)",
+      "s": "paedstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "paedstg2026:7.31",
+      "b": 1
+     },
+     {
+      "t": "CXR (not in epiglottitis)",
+      "s": "paedstg2026:15.29",
+      "b": 1
+     },
+     {
+      "t": "U&E, K⁺, FBC",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     },
+     {
+      "t": "PEFR if able (asthma, GBS)",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     },
+     {
+      "t": "HIV test; blood culture if febrile",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Asthma — moderate / severe"
+     },
+     {
+      "t": "Salbutamol MDI 10 puffs (severe) / 4–6 puffs (moderate), or neb 0.15–0.3 mg/kg (max 5 mg) every 20 min × 3",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "Ipratropium 0.25 mg neb; severe: every 20–30 min × 4 over 2 h",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "Prednisone 1–2 mg/kg (max 20 / 30 / 40 mg by age) or hydrocortisone 2 mg/kg IV 6-hourly",
+      "s": "paedstg2026:15.22"
+     },
+     {
+      "h": "Croup"
+     },
+     {
+      "t": "Prednisone 2 mg/kg or dexamethasone 0.5 mg/kg IV/IM",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Grade ≥ 2: adrenaline 1:1000 1 mL + 1 mL NaCl 0.9% neb every 15–30 min",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "h": "Epiglottitis"
+     },
+     {
+      "t": "Do not agitate; prepare airway kit; ceftriaxone 50 mg/kg IV once airway safe",
+      "s": "paedstg2026:15.30"
+     },
+     {
+      "h": "Opioid"
+     },
+     {
+      "t": "Naloxone 0.1 mg/kg IV; repeat after 5 min; infusion 0.01 mg/kg/h",
+      "s": "paedstg2026:18.17",
+      "b": 1
+     },
+     {
+      "h": "Pneumonia"
+     },
+     {
+      "t": "Amoxicillin/clavulanate 25 mg/kg/dose IV",
+      "s": "paedstg2026:15.3"
+     },
+     {
+      "h": "Intubation before transfer"
+     },
+     {
+      "t": "RSI: ketamine 1–2 mg/kg (asthma) + suxamethonium 1–2 mg/kg; atropine 0.02 mg/kg in infants",
+      "s": "paedstg2026:23.3"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Step up O₂ device",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas if tiring (not croup)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Asthma step 2: responder (> 20% PEFR, RR < 40, speech normal) vs non-responder",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     },
+     {
+      "t": "Croup grade 3 no improvement in 1 h → intubate / REFER",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Tick cause → branch rows",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If upper airway",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Humidified O₂; keep calm",
+      "s": "paedstg2026:15.30"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture after airway secure",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Complete obstruction: bag-mask → intubate → needle cricothyroidotomy",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     },
+     {
+      "t": "Epiglottitis: refer all once airway secured; transfer sitting",
+      "s": "paedstg2026:15.30"
+     },
+     {
+      "t": "Foreign body: refer all for airway visualisation",
+      "s": "paedstg2026:1.14"
+     }
+    ]
+   },
+   {
+    "label": "If asthma",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oral maintenance fluid; avoid overhydration",
+      "s": "paedstg2026:15.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺; PEFR before / after",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Non-responder (step 3): consult paediatrician — MgSO₄ 25–75 mg/kg IV over 20 min or salbutamol 15 mcg/kg IV over 10 min",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     },
+     {
+      "t": "Still not responding → ICU: REFER",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     },
+     {
+      "t": "No antihistamines, antibiotics, physiotherapy or sedation",
+      "s": "paedstg2026:15.19"
+     }
+    ]
+   },
+   {
+    "label": "If pneumonia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluids 60–80% maintenance; NG feeds if RR > 60",
+      "s": "paedstg2026:23.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture; CD4 / induced sputum (HIV)",
+      "s": "paedstg2026:15.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HIV infant 2–6 months: add cotrimoxazole 5/25 mg/kg 6-hourly (PJP)",
+      "s": "paedstg2026:15.8"
+     },
+     {
+      "t": "Hypoxia / hypercapnia on O₂ → REFER (ventilation)",
+      "s": "paedstg2026:15.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If neuromuscular",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO if bulbar; NG feeds",
+      "s": "paedstg2026:13.39"
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR, RR, HR, BP, bulbar function 2–4-hourly; gas",
+      "s": "paedstg2026:13.39",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ventilate before hypoxaemia: falling PEFR, weak cough, swallowing difficulty, rising PCO₂ → REFER",
+      "s": "paedstg2026:13.39",
+      "b": 1
+     },
+     {
+      "t": "Notify AFP; 2 stool samples 24–48 h apart",
+      "s": "paedstg2026:13.39"
+     }
+    ]
+   },
+   {
+    "label": "If drug-induced",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Airway protection; bag-mask",
+      "s": "paedstg2026:18.17"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ constantly; HGT",
+      "s": "paedstg2026:18.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe ≥ 12 h after naloxone (long-acting opioids)",
+      "s": "paedstg2026:18.17",
+      "b": 1
+     },
+     {
+      "t": "Repeated naloxone doses → REFER",
+      "s": "paedstg2026:18.17"
+     }
+    ]
+   },
+   {
+    "label": "Day 1–2",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Wean O₂ to SpO₂ ≥ 92% off oxygen",
+      "s": "paedstg2026:15.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if on β2-agonist or IV fluids",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Asthma: prednisone 2 mg/kg daily × 5 d; salbutamol 200 mcg MDI as needed",
+      "s": "paedstg2026:15.21"
+     },
+     {
+      "t": "Croup: reduce adrenaline nebs as obstruction settles",
+      "s": "paedstg2026:15.32"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Feeding normally",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ on air",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Asthma: inhaler + spacer technique; maintenance review",
+      "s": "paedstg2026:15.21"
+     },
+     {
+      "t": "Caregiver: danger signs; return immediately",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Airway · asthma doses",
+   "items": [
+    {
+     "t": "Croup: prednisone 2 mg/kg (max 20/30/40 mg) or dexamethasone 0.5 mg/kg",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Adrenaline 1:1000 1 mL in 1 mL NaCl neb every 15–30 min",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Epiglottitis: ceftriaxone 50 mg/kg IV daily × 7 d",
+     "s": "paedstg2026:15.30"
+    },
+    {
+     "t": "Salbutamol neb 0.15–0.3 mg/kg (max 5 mg) every 20 min × 3",
+     "s": "paedstg2026:15.20",
+     "b": 1
+    },
+    {
+     "t": "Ipratropium 0.25 mg neb, then 6-hourly",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Hydrocortisone 2 mg/kg IV 6-hourly",
+     "s": "paedstg2026:15.22"
+    },
+    {
+     "t": "MgSO₄ 25–75 mg/kg IV over 20 min · salbutamol IV 15 mcg/kg (paediatrician)",
+     "s": "paedstg2026:15.22"
+    }
+   ]
+  },
+  {
+   "title": "Antidote · RSI",
+   "items": [
+    {
+     "t": "Naloxone 0.1 mg/kg IV; repeat at 5 min; infusion 0.01 mg/kg/h",
+     "s": "paedstg2026:18.17",
+     "b": 1
+    },
+    {
+     "t": "Dextrose 10% 2–5 mL/kg (HGT < 2.6)",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Atropine 0.02 mg/kg (min 0.1, max 0.5 mg)",
+     "s": "paedstg2026:23.3"
+    },
+    {
+     "t": "Ketamine 1–2 mg/kg (asthma) · propofol 1–3.5 mg/kg",
+     "s": "paedstg2026:23.3"
+    },
+    {
+     "t": "Suxamethonium 1–2 mg/kg · rocuronium 1 mg/kg",
+     "s": "paedstg2026:23.3"
+    },
+    {
+     "t": "Sux contra-indicated: neuromuscular disease, hyperkalaemia, 48–72 h after burns",
+     "s": "paedstg2026:23.3"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor at once"
+    },
+    {
+     "t": "SpO₂ < 92% on current O₂",
+     "s": "paedstg2026:15.3",
+     "b": 1
+    },
+    {
+     "t": "Grunting, gasping, severe indrawing, silent chest",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "t": "Stridor at rest worsening, cyanosis, apathy",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Agitation or restlessness (severe hypoxia)",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Bradycardia = pre-terminal → resuscitate",
+     "s": "phcstg2026:21.9"
+    },
+    {
+     "h": "Avoid"
+    },
+    {
+     "t": "Throat examination in stridor; ABG in croup; sedation",
+     "s": "paedstg2026:15.29"
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "Gas, HGT, K⁺, CXR",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "SpO₂ ≥ 92% off oxygen",
+    "s": "paedstg2026:15.3"
+   },
+   {
+    "t": "No stridor at rest; feeding",
+    "d": 1
+   },
+   {
+    "t": "Asthma responder maintained ≥ 1 h on oral therapy",
+    "s": "paedstg2026:15.21"
+   },
+   {
+    "t": "Cause treated / referral done",
+    "d": 1
+   },
+   {
+    "t": "Inhaler + spacer technique taught",
+    "s": "paedstg2026:15.21"
+   },
+   {
+    "t": "Caregiver knows danger signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC in 2–3 days (asthma, croup, pneumonia)",
+    "d": 1
+   },
+   {
+    "t": "Review asthma maintenance therapy",
+    "s": "paedstg2026:15.21"
+   },
+   {
+    "t": "Return now: noisy / fast breathing, blue lips, drowsy",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — airway, breathing and response",
+  "period": "one sheet from arrival: 15-min rows for 1 h, then hourly",
+  "params": [
+   {
+    "h": "Oxygen and obs",
+    "items": [
+     {
+      "t": "O₂ to keep SpO₂ ≥ 92% (asthma: ≥ 95%)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "SpO₂ + O₂ device/flow, RR, HR, CRT, AVPU: every 15 min for the first hour, then hourly",
+      "s": "paedstg2026:15.19",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Danger signs",
+    "items": [
+     {
+      "t": "Signs of impending failure (grunting, gasping, severe indrawing, poor colour, drowsy) → call doctor at once",
+      "s": "phcstg2026:21.9",
+      "b": 1
+     },
+     {
+      "t": "Stridor: keep child calm and sitting on caregiver; do not examine the throat",
+      "s": "paedstg2026:15.29"
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Asthma: K⁺ if on continuous β2-agonist; IV fluids max 50 mL/kg/24 h",
+      "s": "paedstg2026:15.19"
+     },
+     {
+      "t": "No sedation unless ventilated",
+      "s": "paedstg2026:15.19"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ < 92% on current O₂",
+    "s": "paedstg2026:15.3",
+    "b": 1
+   },
+   {
+    "t": "grunting, gasping, silent chest or worsening stridor",
+    "s": "phcstg2026:21.9"
+   },
+   {
+    "t": "agitation, drowsiness or cyanosis",
+    "s": "paedstg2026:15.20"
+   },
+   {
+    "t": "slow heart rate",
+    "s": "phcstg2026:21.9"
+   }
+  ],
+  "totals": [
+   "Nebs given (n)",
+   "Lowest SpO₂",
+   "Highest O₂ (L/min)",
+   "Intake (mL)",
+   "Urine (mL)"
+  ]
+ }
+}

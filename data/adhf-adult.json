@@ -1,0 +1,1478 @@
+{
+ "id": "adhf-adult",
+ "short": "ADHF (adult)",
+ "title": "Acute decompensated heart failure — pulmonary oedema / cardiogenic shock (adult)",
+ "population": "Adult and adolescent ≥ 13 y; first 48 h of acute pulmonary oedema or congestion, then CCF chart",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "ST elevation / ischaemic chest pain → ACS pathway first",
+     "b": 1
+    },
+    {
+     "t": "Overload from AKI / CKD, heart normal → AKI or CKD pathway",
+     "b": 1
+    },
+    {
+     "t": "Pregnant / postpartum → discuss obstetrics; PET pathway if hypertensive",
+     "b": 1
+    },
+    {
+     "t": "Stable chronic HF, no pulmonary oedema → CCF pathway",
+     "b": 1
+    },
+    {
+     "t": "Child < 13 y → heart failure (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — typical symptoms + signs of congestion",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Breathless at rest / orthopnoea / PND",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "Ankle or body swelling, fatigue",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "h": "Signs (any)"
+    },
+    {
+     "t": "Raised JVP",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "Basal crackles or wheeze",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "Pitting oedema · enlarged tender liver",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Frothy sputum, sweaty, poorly perfused",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Wt ____ kg · usual (dry) weight ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe ADHF = any one of",
+   "items": [
+    {
+     "t": "Acute pulmonary oedema, hypoxic",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Cardiogenic shock: hypotensive, cold, clammy",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "ST elevation / new LBBB (STEMI)",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Hypertensive emergency with LV failure",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Haemodynamically compromising arrhythmia",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Obstructive shock: tamponade, PE",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known HF, cause, echo / EF result",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Furosemide, enalapril, carvedilol, spironolactone, digoxin — adherence",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "t": "Rheumatic heart disease; penicillin prophylaxis",
+     "s": "adultstg2026:3.45"
+    },
+    {
+     "t": "Hypertension, diabetes, CKD, IHD",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "HIV / ART, TB treatment",
+     "d": 1
+    },
+    {
+     "t": "Warfarin (AF, valve) and last INR",
+     "s": "adultstg2026:3.17"
+    },
+    {
+     "t": "Usual (dry) weight; last K⁺, creatinine",
+     "s": "adultstg2026:3.27",
+     "b": 1
+    },
+    {
+     "t": "Previous HF admissions",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Precipitant"
+    },
+    {
+     "t": "Chest pain (ACS)",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Palpitations (AF)",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Infection",
+     "d": 1
+    },
+    {
+     "t": "Missed medicines, salt, fluid",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    },
+    {
+     "t": "NSAIDs",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Alcohol, poor diet (thiamine)",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "h": "Cause clues"
+    },
+    {
+     "t": "Murmur / RHD",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Thyroid symptoms",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Pregnancy or recent delivery",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "h": "TB screen"
+    },
+    {
+     "t": "Cough, fever, sweats, weight loss",
+     "d": 1
+    },
+    {
+     "h": "HIV status"
+    },
+    {
+     "t": "Last test; offer if unknown",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Irregular pulse (AF)",
+     "s": "adultstg2026:3.16",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.25",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension, cold and clammy (shock)",
+     "s": "adultstg2026:20.25",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "BP ≥ 180/110",
+     "s": "adultstg2026:3.42",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Congestion"
+    },
+    {
+     "t": "JVP raised",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Basal crackles / wheeze",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Pleural effusion",
+     "d": 1
+    },
+    {
+     "t": "Liver enlarged, tender",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Pitting / sacral oedema, ascites",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "h": "Perfusion"
+    },
+    {
+     "t": "Cold, clammy, weak pulse",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "h": "Heart"
+    },
+    {
+     "t": "Murmur",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Muffled sounds, pulsus paradoxus",
+     "d": 1
+    },
+    {
+     "t": "Gallop rhythm",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Goitre / thyroid signs",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    },
+    {
+     "t": "Calf swelling (DVT / PE)",
+     "s": "adultstg2026:20.25",
+     "d": 1
+    },
+    {
+     "t": "Weight now ____ kg",
+     "k": "value"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "ECG — on arrival",
+   "items": [
+    {
+     "t": "Rhythm ____ rate ____ /min",
+     "k": "value"
+    },
+    {
+     "t": "ST elevation or new LBBB: STEMI → ACS chart (thrombolysis)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Not diagnostic: repeat ECG every 20–30 min if pain",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "AF, fast: rate control (chart branch)",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Heart block / slow escape: treat cause; atropine if inferior MI",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "LBBB (not acute): CRT candidate — discuss with specialist",
+     "s": "adultstg2026:3.30"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG / U&E — K⁺ and creatinine",
+   "items": [
+    {
+     "t": "Value on arrival: K⁺ ____ mmol/L · creatinine ____ · eGFR ____",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ > 6.0: hyperkalaemia emergency (AKI regimen)",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Low K⁺ on diuretics: replace short-term only",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "t": "eGFR < 30: no spironolactone",
+     "s": "adultstg2026:3.29"
+    },
+    {
+     "t": "Repeat K⁺ + creatinine daily on IV diuretic",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Cardiogenic shock",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "STEMI",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Fast AF / VT",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Heart block",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Tamponade",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Hypertensive emergency",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Sepsis / pneumonia",
+     "d": 1
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "Hyperkalaemia",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Peripartum",
+     "s": "adultstg2026:3.27"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE ADHF → stabilise, consult specialist, REFER",
+   "s": "adultstg2026:20.25"
+  },
+  {
+   "t": "11. ADMIT",
+   "s": "adultstg2026:20.16"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Acute coronary syndrome",
+   "branch": "If ischaemic / hypertensive",
+   "features": [
+    {
+     "t": "Ischaemic chest pain, sweating, ST changes",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG; repeat 20–30 min; troponin",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ACS pathway: aspirin, clopidogrel, thrombolysis if STEMI",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — refractory shock / oedema, ongoing pain",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypertensive LV failure",
+   "branch": "If ischaemic / hypertensive",
+   "features": [
+    {
+     "t": "BP very high + pulmonary oedema",
+     "s": "adultstg2026:3.43"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "BP, fundi, ECG, creatinine",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "GTN IV 5–10 mcg/min + furosemide IV 40–80 mg",
+     "s": "adultstg2026:3.44"
+    },
+    {
+     "t": "Max 25% drop in first 30 min–2 h",
+     "s": "adultstg2026:3.43"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — hypertensive emergency (high care)",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Atrial fibrillation / arrhythmia",
+   "branch": "If AF",
+   "features": [
+    {
+     "t": "Irregular fast pulse, palpitations",
+     "s": "adultstg2026:3.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG; TSH; K⁺",
+     "s": "adultstg2026:3.16",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Rate control (carvedilol in CCF, digoxin)",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Unstable: synchronised DC cardioversion",
+     "s": "adultstg2026:3.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If rate not controlled",
+     "s": "adultstg2026:3.18"
+    }
+   ]
+  },
+  {
+   "dx": "Rheumatic valve disease",
+   "branch": "If valvular / cardiomyopathy",
+   "features": [
+    {
+     "t": "Murmur, young adult, RHD history",
+     "s": "adultstg2026:3.44"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Echo → REFER (not on site)",
+     "s": "adultstg2026:3.30",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Diuretic; benzathine penicillin 1.2 MU IM every 3–4 weeks",
+     "s": "adultstg2026:3.45"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — pulmonary oedema or high diuretic need: valve surgery",
+     "s": "adultstg2026:3.45",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Dilated cardiomyopathy (HIV, alcohol, peripartum)",
+   "branch": "If valvular / cardiomyopathy",
+   "features": [
+    {
+     "t": "Cardiomegaly, no murmur, risk factor",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, ECG; echo → REFER",
+     "s": "adultstg2026:3.30",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "HF medicines; thiamine 100 mg daily × 4 weeks if unexplained",
+     "s": "adultstg2026:3.30"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — work-up of reversible causes",
+     "s": "adultstg2026:3.30"
+    }
+   ]
+  },
+  {
+   "dx": "Pericardial effusion / tamponade (TB)",
+   "branch": "If effusion / tamponade",
+   "features": [
+    {
+     "t": "Raised JVP, hypotension, muffled sounds",
+     "s": "adultstg2026:20.25"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Bedside ultrasound (on site)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No diuretics if tamponade; fluids per specialist",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent consult and referral",
+     "s": "adultstg2026:20.26",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pulmonary embolism",
+   "branch": "",
+   "features": [
+    {
+     "t": "Sudden breathlessness, raised JVP, hypotension",
+     "s": "adultstg2026:20.25"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, calf ultrasound†, CXR",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂; anticoagulate (Section 2.8.2)",
+     "s": "adultstg2026:2.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent if unstable (thrombolysis decision)",
+     "s": "adultstg2026:2.24",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Thiamine deficiency / thyroid disease",
+   "branch": "",
+   "features": [
+    {
+     "t": "Alcohol, poor diet; goitre, tremor",
+     "s": "adultstg2026:3.27"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "TSH",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Thiamine 100 mg PO/IM daily × 4 weeks",
+     "s": "adultstg2026:3.30"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Thyroid disease → specialist",
+     "s": "adultstg2026:3.30"
+    }
+   ]
+  },
+  {
+   "dx": "Severe anaemia / kidney failure",
+   "branch": "",
+   "features": [
+    {
+     "t": "Pallor; oliguria, raised creatinine",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb; U&E, urine dipstick",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hb < 7: transfusion trigger; kidney → AKI / CKD pathway",
+     "s": "adultstg2026:23.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No blood bank → REFER if transfusion needed",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Branch rows apply only to the ticked cause (differential sheet) · step down to the CCF chart when off IV therapy",
+  "columns": {
+   "feed": "O₂, fluids & position",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "RR, SpO₂ + O₂ flow, pulse, BP: every 15 min for the first hour, then hourly to 12 h, then 2-hourly",
+    "s": "adultstg2026:3.5",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Urine output hourly (catheter if in pulmonary oedema or shock); note urine within 1–2 h of each furosemide dose",
+    "s": "adultstg2026:20.16",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fluid intake limit 1–1.5 L/day; all intake and output charted",
+    "s": "adultstg2026:3.27",
+    "b": 1
+   },
+   {
+    "t": "Sitting up (Fowler's); O₂ to keep SpO₂ ≥ 94%",
+    "s": "adultstg2026:20.16"
+   },
+   {
+    "t": "Cardiac monitor while in shock, ischaemic or arrhythmic",
+    "s": "adultstg2026:3.3"
+   },
+   {
+    "t": "Weight daily, same time and scale",
+    "s": "adultstg2026:3.27"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for furosemide, nitrates, aspirin or thrombolysis already given. ECG immediately.",
+    "feed": [
+     {
+      "t": "Fowler's position unless hypotensive or comatose",
+      "s": "adultstg2026:20.16",
+      "b": 1
+     },
+     {
+      "t": "O₂ 40% face mask 6–8 L/min; aim SpO₂ ≥ 94%",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "Consider NIV; if needed and not available → REFER",
+      "s": "adultstg2026:20.16",
+      "d": 1
+     },
+     {
+      "t": "No IV fluids (heparin lock) unless RV infarct or shock",
+      "d": 1
+     },
+     {
+      "t": "Fluid limit 1–1.5 L/day; salt restriction",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG (repeat 20–30 min if pain)",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Troponin",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine, K⁺, Mg",
+      "s": "phcstg2026:4.11",
+      "b": 1
+     },
+     {
+      "t": "FBC (Hb), HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "VBG if shocked / drowsy",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "TSH if no clear cause",
+      "s": "adultstg2026:3.27",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown; INR if on warfarin",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Bedside ultrasound: effusion, B-lines",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Pulmonary oedema"
+     },
+     {
+      "t": "Furosemide 40 mg slow IV; if responding repeat 40 mg in 2–4 h",
+      "s": "adultstg2026:20.16",
+      "b": 1
+     },
+     {
+      "t": "No response in 20–30 min: furosemide 80 mg IV",
+      "s": "adultstg2026:20.16",
+      "b": 1
+     },
+     {
+      "t": "Then isosorbide dinitrate 5 mg SL every 5–10 min — not if hypotensive",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "OR GTN IV 5–200 mcg/min, titrated (Table 3.3 dilution)",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "h": "Hypertensive LV failure"
+     },
+     {
+      "t": "GTN IV 5–10 mcg/min + furosemide IV 40–80 mg; lower BP max 25% in 30 min–2 h",
+      "s": "adultstg2026:3.44"
+     },
+     {
+      "h": "Cardiogenic shock"
+     },
+     {
+      "t": "O₂; RV infarct: NaCl 0.9% 250–500 mL bolus, reassess",
+      "s": "adultstg2026:20.25"
+     },
+     {
+      "t": "Dobutamine 5–10 mcg/kg/min (250 mg in 50 mL = 5 mg/mL)",
+      "s": "adultstg2026:20.25",
+      "b": 1
+     },
+     {
+      "t": "Consult specialist → REFER after stabilising",
+      "s": "adultstg2026:20.25",
+      "b": 1
+     },
+     {
+      "h": "STEMI on ECG"
+     },
+     {
+      "t": "ACS pathway now: aspirin 150 mg chewed, clopidogrel, streptokinase",
+      "s": "adultstg2026:3.4"
+     },
+     {
+      "h": "Hold"
+     },
+     {
+      "t": "Carvedilol if shocked or severely overloaded; NSAIDs",
+      "s": "phcstg2026:4.13"
+     },
+     {
+      "t": "Correct electrolytes; treat dysrhythmia",
+      "s": "adultstg2026:20.16"
+     }
+    ]
+   },
+   {
+    "label": "1–2 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Reduce O₂ as SpO₂ allows",
+      "d": 1
+     },
+     {
+      "t": "Catheter output charted hourly",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG if pain or rhythm change",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine within 1–2 h of furosemide? If not, increase dose",
+      "s": "adultstg2026:7.5"
+     },
+     {
+      "t": "Titrate GTN by 5 mcg/min every 5 min to 20, then by 20 mcg/min; watch BP",
+      "s": "adultstg2026:3.7"
+     },
+     {
+      "t": "Still hypoxic or shocked → REFER (ICU / ventilation)",
+      "s": "adultstg2026:3.9",
+      "b": 1
+     },
+     {
+      "t": "Tick the cause on the differential sheet → branch rows",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6–24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Fluid limit 1–1.5 L/day",
+      "s": "adultstg2026:3.27"
+     },
+     {
+      "t": "Oral diet, low salt",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + K⁺ at 12–24 h",
+      "s": "phcstg2026:4.11",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Troponin repeat if ACS possible",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Furosemide IV 40 mg 12-hourly while congested; adjust to weight / urine",
+      "s": "adultstg2026:3.28",
+      "d": 1
+     },
+     {
+      "t": "VTE prophylaxis: enoxaparin 40 mg SC daily (20 mg if eGFR < 30) or rivaroxaban 10 mg daily",
+      "s": "adultstg2026:2.25"
+     },
+     {
+      "t": "Unexplained HF: thiamine 100 mg daily × 4 weeks",
+      "s": "adultstg2026:3.30"
+     },
+     {
+      "t": "K⁺ low: short-term KCl only",
+      "s": "adultstg2026:3.28"
+     }
+    ]
+   },
+   {
+    "label": "If ischaemic / hypertensive",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As above",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Troponin, serial ECGs",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "ACS: aspirin 150 mg daily; follow ACS chart",
+      "s": "adultstg2026:3.4"
+     },
+     {
+      "t": "Hypertensive: GTN + furosemide, then oral ACE-i once stable",
+      "s": "adultstg2026:3.44"
+     },
+     {
+      "t": "Ongoing pain, refractory oedema or shock → REFER",
+      "s": "adultstg2026:3.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If AF",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As above",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSH, K⁺; INR baseline",
+      "s": "adultstg2026:3.17",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Unstable: synchronised DC cardioversion",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     },
+     {
+      "t": "Rate: carvedilol (when not overloaded) + digoxin 0.125 mg daily",
+      "s": "adultstg2026:3.18"
+     },
+     {
+      "t": "CHA₂DS₂-VASc ≥ 2: warfarin 5 mg daily; INR at 48 h, target 2–3",
+      "s": "adultstg2026:3.17"
+     },
+     {
+      "t": "Not controlled → REFER (amiodarone / ablation)",
+      "s": "adultstg2026:3.18"
+     }
+    ]
+   },
+   {
+    "label": "If valvular / cardiomyopathy",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As above",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Echo → arrange via referral",
+      "s": "adultstg2026:3.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "RHD: benzathine penicillin 1.2 MU IM every 3–4 weeks, lifelong",
+      "s": "adultstg2026:3.45"
+     },
+     {
+      "t": "RHD with pulmonary oedema → REFER for valve surgery",
+      "s": "adultstg2026:3.45",
+      "b": 1
+     },
+     {
+      "t": "Murmur: all need specialist evaluation",
+      "s": "adultstg2026:3.30"
+     }
+    ]
+   },
+   {
+    "label": "If effusion / tamponade",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Avoid diuretics if tamponade",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ultrasound: effusion size; TB work-up",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tamponade / obstructive shock: urgent consult, REFER for pericardiocentesis",
+      "s": "adultstg2026:20.26",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "IV → oral",
+    "feed": [
+     {
+      "t": "Fluid limit; daily weight",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + creatinine, K⁺",
+      "s": "phcstg2026:4.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Switch to oral furosemide 40 mg/day when breathing settles; > 80 mg/day give 12-hourly",
+      "s": "phcstg2026:4.12"
+     },
+     {
+      "t": "Start enalapril 2.5 mg 12-hourly once BP stable and K⁺ / creatinine allow",
+      "s": "adultstg2026:3.29"
+     },
+     {
+      "t": "Reduce diuretic before ACE-i unless still overloaded",
+      "s": "adultstg2026:3.28"
+     }
+    ]
+   },
+   {
+    "label": "Step down",
+    "phase": "To CCF chart",
+    "feed": [
+     {
+      "t": "Off O₂ and IV therapy",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight = new target",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue on the CCF chart: carvedilol, spironolactone, titration, discharge",
+      "d": 1
+     },
+     {
+      "t": "Refer: murmurs, reversible causes, persistent overload, LBBB",
+      "s": "adultstg2026:3.30"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Acute doses",
+   "items": [
+    {
+     "h": "Pulmonary oedema"
+    },
+    {
+     "t": "O₂ 40% face mask 6–8 L/min",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Furosemide 40 mg slow IV → 40 mg in 2–4 h; or 80 mg if no response in 20–30 min",
+     "s": "adultstg2026:20.16",
+     "b": 1
+    },
+    {
+     "t": "ISDN 5 mg SL every 5–10 min (not if hypotensive)",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "GTN IV 5–200 mcg/min: start 5, +5 every 5 min to 20, then +20",
+     "s": "adultstg2026:3.7"
+    },
+    {
+     "h": "Cardiogenic shock"
+    },
+    {
+     "t": "Dobutamine 5–10 mcg/kg/min; 70 kg at 5 mcg/kg/min = 4.2 mL/h of 5 mg/mL",
+     "s": "adultstg2026:20.25",
+     "b": 1
+    },
+    {
+     "t": "RV infarct: NaCl 0.9% 250–500 mL bolus",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "h": "Hypertensive LV failure"
+    },
+    {
+     "t": "GTN 5–10 mcg/min + furosemide 40–80 mg IV; labetalol caution in pulmonary oedema",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Hyperkalaemia K⁺ > 6.0"
+    },
+    {
+     "t": "Calcium gluconate 10% 10 mL IV; dextrose 50% 100 mL + insulin 10 units; salbutamol neb",
+     "s": "adultstg2026:7.10"
+    }
+   ]
+  },
+  {
+   "title": "AF · anticoagulation · other",
+   "items": [
+    {
+     "t": "Digoxin 0.125 mg daily; trough 0.6–1 nmol/L",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Atenolol is contraindicated in heart failure",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Verapamil: avoid in LV dysfunction",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Warfarin 5 mg daily if CHA₂DS₂-VASc ≥ 2; INR 2–3",
+     "s": "adultstg2026:3.17"
+    },
+    {
+     "t": "Thiamine 100 mg PO/IM daily × 4 weeks",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Enoxaparin 40 mg SC daily (eGFR < 30: 20 mg)",
+     "s": "adultstg2026:2.25"
+    },
+    {
+     "t": "Benzathine penicillin 1.2 MU IM every 3–4 weeks (RHD)",
+     "s": "adultstg2026:3.45"
+    },
+    {
+     "t": "Anti-dysrhythmics only for life-threatening VT — exclude K⁺ / drug toxicity first",
+     "s": "adultstg2026:3.30"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "RR rising, SpO₂ falling despite O₂",
+     "s": "adultstg2026:20.16",
+     "d": 1
+    },
+    {
+     "t": "BP falling, cold peripheries",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "No urine 1–2 h after furosemide",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "New chest pain, irregular or slow pulse",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Confusion or drowsiness",
+     "d": 1
+    },
+    {
+     "h": "Stop GTN / ISDN"
+    },
+    {
+     "t": "Hypotension",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Refractory shock or oedema, compromising arrhythmia",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "ECG, VBG, U&E, troponin, HGT",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Step-down to CCF chart — all must be met",
+  "items": [
+   {
+    "t": "Breathing comfortably at rest",
+    "d": 1
+   },
+   {
+    "t": "Off O₂ and IV diuretic",
+    "d": 1
+   },
+   {
+    "t": "BP stable, no shock",
+    "d": 1
+   },
+   {
+    "t": "No chest pain; rhythm controlled",
+    "d": 1
+   },
+   {
+    "t": "K⁺ and creatinine acceptable",
+    "d": 1
+   },
+   {
+    "t": "Cause and precipitant documented",
+    "s": "adultstg2026:3.27"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Continue on the CCF chart → discharge and PHC titration",
+    "d": 1
+   },
+   {
+    "t": "Echo and specialist review for murmurs and reversible causes",
+    "s": "adultstg2026:3.30"
+   },
+   {
+    "t": "Annual influenza vaccine",
+    "s": "adultstg2026:3.30"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — breathing, BP and urine output",
+  "period": "one sheet from arrival: 15-min rows for 1 h, then hourly to 12 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Breathing and circulation",
+    "items": [
+     {
+      "t": "RR, SpO₂ + O₂ flow, pulse, BP: every 15 min for the first hour, then hourly to 12 h, then 2-hourly",
+      "s": "adultstg2026:3.5",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Sitting up (Fowler's); O₂ to keep SpO₂ ≥ 94%",
+      "s": "adultstg2026:20.16"
+     }
+    ]
+   },
+   {
+    "h": "Urine and fluid",
+    "items": [
+     {
+      "t": "Urine output hourly (catheter if in pulmonary oedema or shock); note urine within 1–2 h of each furosemide dose",
+      "s": "adultstg2026:20.16",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Fluid intake limit 1–1.5 L/day; all intake and output charted",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Monitor and weight",
+    "items": [
+     {
+      "t": "Cardiac monitor while in shock, ischaemic or arrhythmic",
+      "s": "adultstg2026:3.3"
+     },
+     {
+      "t": "Weight daily, same time and scale",
+      "s": "adultstg2026:3.27"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "RR rising or SpO₂ falling despite O₂",
+    "s": "adultstg2026:20.16",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "BP falling or cold, clammy",
+    "s": "adultstg2026:20.25"
+   },
+   {
+    "t": "no urine 1–2 h after furosemide",
+    "s": "adultstg2026:7.5"
+   },
+   {
+    "t": "new chest pain, irregular or slow pulse",
+    "s": "adultstg2026:3.4"
+   },
+   {
+    "t": "confusion or drowsiness",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Urine (mL)",
+   "Balance (mL)",
+   "Furosemide total (mg)",
+   "Weight (kg)"
+  ]
+ }
+}

@@ -1,0 +1,1749 @@
+{
+ "id": "prolonged-labour",
+ "short": "Prolonged labour",
+ "title": "Prolonged labour / poor progress (latent, active, second stage)",
+ "population": "Obstetric (term labour)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "impcg2024",
+  "stghosp"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "NOT THIS PATHWAY — use their own pathways",
+   "items": [
+    {
+     "t": "Normal progress → term labour"
+    },
+    {
+     "t": "< 37 weeks → preterm labour"
+    },
+    {
+     "t": "Vaginal bleeding → APH"
+    },
+    {
+     "t": "Raised BP → pre-eclampsia"
+    },
+    {
+     "t": "Bleeding after birth → PPH"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms",
+   "items": [
+    {
+     "t": "Prolonged latent phase: > 24 h since labour confirmed, still ≤ 4 cm",
+     "s": "impcg2024:91",
+     "b": 1
+    },
+    {
+     "t": "Latent > 12 h without reaching 5 cm (MOU → hospital trigger)",
+     "s": "impcg2024:91",
+     "k": "sub"
+    },
+    {
+     "t": "Poor progress, active phase: < 1 cm/h — alert line crossed",
+     "s": "impcg2024:91",
+     "b": 1
+    },
+    {
+     "t": "Still < 1 cm/h 2 h later — action line crossed",
+     "s": "impcg2024:60",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "No urge to push 1 h after full dilatation",
+     "s": "impcg2024:92",
+     "b": 1
+    },
+    {
+     "t": "Not delivered after pushing: para 0 · 45 min, para > 0 · 30 min (no CS on site)",
+     "s": "impcg2024:60",
+     "b": 1
+    },
+    {
+     "t": "Poor maternal effort and slow descent are causes to find (differential sheet), not separate diagnoses",
+     "k": "info"
+    },
+    {
+     "t": "Labour confirmed ____ · Cervix now ____ cm · Head ____/5 · Fully dilated ____ · Pushing from ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Obstructed / refer = any one of",
+   "items": [
+    {
+     "t": "CPD: increasing sagittal moulding with no descent, or 2+ moulding with head ≥ 3/5 above brim",
+     "s": "impcg2024:91",
+     "b": 1
+    },
+    {
+     "t": "2+ or 3+ moulding with head not engaged · severe caput",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Malpresentation: breech, oblique or transverse lie",
+     "s": "impcg2024:91",
+     "b": 1
+    },
+    {
+     "t": "Fetal distress (late decelerations, thick meconium)",
+     "s": "impcg2024:91",
+     "b": 1
+    },
+    {
+     "t": "Action line crossed (needs oxytocin or CS)",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Pushing limit reached and head ≥ 1/5 · ventouse abandoned",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Previous CS · signs of imminent uterine rupture",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Chorioamnionitis · parity ≥ 5 (no oxytocin)",
+     "s": "impcg2024:75"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record + partogram",
+   "items": [
+    {
+     "t": "Parity ____ · grand multipara",
+     "s": "impcg2024:75"
+    },
+    {
+     "t": "Previous CS / scar",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Previous long labour / CS for CPD",
+     "d": 1
+    },
+    {
+     "t": "GA (≥ 37 wk) · dating"
+    },
+    {
+     "t": "SFH · EFW ____ g · diabetes",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "ROM time · liquor",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Partogram: entries, alert / action line",
+     "s": "impcg2024:60"
+    },
+    {
+     "t": "Number of VEs since ROM",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "HIV · ART · VL (AROM if VL suppressed)",
+     "s": "stghosp:6.26"
+    },
+    {
+     "t": "Hb · Rh · RPR",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Analgesia given · times",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Labour"
+    },
+    {
+     "t": "Pains since ____ h"
+    },
+    {
+     "t": "Contractions weaker / spaced",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "ROM — time, colour, smell",
+     "s": "impcg2024:57"
+    },
+    {
+     "t": "Urge to push",
+     "s": "impcg2024:60"
+    },
+    {
+     "h": "Patient",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Exhausted · not pushing well"
+    },
+    {
+     "t": "Fear · distress · past trauma",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Not eating / drinking · vomiting",
+     "s": "stghosp:6.28"
+    },
+    {
+     "t": "Not passed urine ____ h",
+     "s": "impcg2024:91"
+    },
+    {
+     "h": "Danger",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Pain between contractions / over scar",
+     "s": "impcg2024:101",
+     "b": 1
+    },
+    {
+     "t": "Contractions suddenly stopped",
+     "s": "impcg2024:101",
+     "b": 1
+    },
+    {
+     "t": "Blood in urine · vaginal bleeding",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Fever · offensive liquor",
+     "s": "impcg2024:86"
+    },
+    {
+     "h": "Fetus"
+    },
+    {
+     "t": "Fetal movements reduced"
+    },
+    {
+     "t": "Meconium",
+     "s": "impcg2024:92"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Temp ≥ 38 °C (chorioamnionitis)",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Maternal HR ≥ 100 (chorioamnionitis)",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock (? rupture)",
+     "s": "impcg2024:101",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension → PET pathway",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated · urine ketones ++",
+     "s": "stghosp:6.28",
+     "k": "yn"
+    },
+    {
+     "h": "Fetal heart — before and after a contraction",
+     "s": "impcg2024:65"
+    },
+    {
+     "t": "FHR ≥ 180 or < 110 for 10 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Late decelerations 10 min · single decel > 3 min",
+     "s": "impcg2024:66",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "FHR ≥ 160 (chorioamnionitis)",
+     "s": "impcg2024:86",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — the 4 Ps",
+   "items": [
+    {
+     "h": "Patient",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Distress · pain",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Dehydration",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Bladder full",
+     "s": "impcg2024:92",
+     "b": 1
+    },
+    {
+     "t": "Position (not flat supine)",
+     "s": "impcg2024:58"
+    },
+    {
+     "h": "Powers",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Contractions ____/10 min",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Lasting ____ s · strength",
+     "s": "impcg2024:57"
+    },
+    {
+     "h": "Passage",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Cervix ____ cm · effacement",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Application to head",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Membranes intact / ruptured",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Pelvis (clinical)",
+     "s": "impcg2024:92"
+    },
+    {
+     "h": "Passenger",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Lie · presentation",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Position (OA / OP)",
+     "s": "impcg2024:92",
+     "d": 1
+    },
+    {
+     "t": "Head ____/5 above brim",
+     "s": "impcg2024:92",
+     "b": 1
+    },
+    {
+     "t": "Moulding 0 / 1+ / 2+ / 3+",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Caput · deflexed head",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "EFW ____ g · twin?",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Liquor clear / MSL / offensive",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "FHR ____ (CTG)",
+     "s": "impcg2024:66"
+    },
+    {
+     "h": "Uterus"
+    },
+    {
+     "t": "Tender lower segment / scar",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Rising retraction ring",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Partogram — rate of progress",
+   "items": [
+    {
+     "t": "Cervix: ____ cm at ____ h · rate ____ cm/h",
+     "k": "value"
+    },
+    {
+     "t": "Active phase starts at 5 cm; alert line at 1 cm/h",
+     "s": "impcg2024:60"
+    },
+    {
+     "t": "Alert line crossed: 4 Ps, hydrate, empty bladder, AROM — reassess 2 h",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Action line (2 h right): oxytocin or CS → REFER",
+     "s": "impcg2024:92",
+     "b": 1
+    },
+    {
+     "t": "VE 4-hourly, 2-hourly after 8 cm",
+     "s": "impcg2024:59"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Descent (fifths) and moulding",
+   "items": [
+    {
+     "t": "Head: ____/5 · moulding ____ · caput ____",
+     "k": "value"
+    },
+    {
+     "t": "Use fifths palpable — caput and moulding mislead the VE",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Fully dilated + head 0/5 + conditions met → ventouse here",
+     "s": "impcg2024:93",
+     "b": 1
+    },
+    {
+     "t": "Head ≥ 1/5 after pushing limit → REFER",
+     "s": "impcg2024:92",
+     "b": 1
+    },
+    {
+     "t": "Increasing moulding, no descent → CPD → REFER",
+     "s": "impcg2024:91"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizure → eclampsia",
+     "b": 1
+    },
+    {
+     "t": "Imminent uterine rupture",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Fetal distress",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Cord prolapse",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Obstructed labour",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "Chorioamnionitis",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Thick meconium",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Dehydration / ketosis",
+     "s": "stghosp:6.28"
+    },
+    {
+     "t": "Intra-uterine death"
+    },
+    {
+     "t": "Bleeding → APH"
+    },
+    {
+     "t": "Raised BP → PET"
+    },
+    {
+     "t": "Big baby → shoulder dystocia",
+     "s": "impcg2024:94"
+    },
+    {
+     "t": "PPH risk after birth",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. OBSTRUCTED / CPD / MALPRESENTATION / FETAL DISTRESS / ACTION LINE / HEAD ≥ 1/5 AT PUSHING LIMIT (§2) → hydrate, empty bladder, intrauterine resuscitation, then REFER",
+   "s": "impcg2024:91"
+  },
+  {
+   "t": "11. ALERT LINE OR PROLONGED LATENT, NO §2 · 2nd STAGE WITH HEAD 0/5 → ADMIT and correct the cause — tick the working cause on the differential sheet, then continue on the prolonged labour management chart and the 12-hour poor-progress nursing record.",
+   "s": "impcg2024:92"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Imminent / actual uterine rupture",
+   "features": [
+    {
+     "t": "Pain between contractions or over scar",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Contractions suddenly stop",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Vaginal bleeding · macroscopic haematuria",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Fetal tachycardia or decelerations; shock",
+     "s": "impcg2024:101"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; CTG; BP, pulse",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Previous CS on card",
+     "s": "impcg2024:101"
+    }
+   ],
+   "manage": [
+    {
+     "t": "2 large IV lines, NaCl 0.9%; 2 O-neg + 2 FDP if shocked",
+     "s": "impcg2024:154",
+     "b": 1
+    },
+    {
+     "t": "No oxytocin, no pushing",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent (laparotomy)",
+     "s": "impcg2024:101",
+     "b": 1
+    }
+   ],
+   "branch": "Transfer"
+  },
+  {
+   "dx": "Cephalopelvic disproportion / obstructed labour",
+   "features": [
+    {
+     "t": "Increasing sagittal moulding, no descent",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "2+ moulding with head ≥ 3/5 above brim",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "2+/3+ moulding, head not engaged · severe caput",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Large baby, diabetes",
+     "s": "impcg2024:92"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Fifths above brim + moulding grade each VE",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "EFW (clinical / US)",
+     "s": "impcg2024:92"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hydrate; empty bladder; no oxytocin",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "No ventouse unless 0/5",
+     "s": "impcg2024:93"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y (CS)",
+     "s": "impcg2024:91",
+     "b": 1
+    }
+   ],
+   "branch": "Action line"
+  },
+  {
+   "dx": "Malpresentation",
+   "features": [
+    {
+     "t": "Breech · oblique / transverse lie",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "High presenting part",
+     "s": "impcg2024:112"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Palpation; ultrasound",
+     "s": "impcg2024:85",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Breech with progress < 1 cm/h is not suitable for vaginal birth",
+     "s": "impcg2024:85"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y (CS)",
+     "s": "impcg2024:91",
+     "b": 1
+    }
+   ],
+   "branch": "Transfer"
+  },
+  {
+   "dx": "Fetal distress in prolonged labour",
+   "features": [
+    {
+     "t": "Late decelerations · FHR ≥ 180 or < 110 for 10 min",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Thick meconium",
+     "s": "impcg2024:92"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CTG (indicated for poor progress)",
+     "s": "impcg2024:66",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Intrauterine resuscitation: off her back, 500 mL fluid bolus, salbutamol 250 µg IV",
+     "s": "impcg2024:71"
+    },
+    {
+     "t": "Fully dilated + 0/5 → ventouse",
+     "s": "impcg2024:71"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y unless ventouse possible",
+     "s": "impcg2024:91",
+     "b": 1
+    }
+   ],
+   "branch": "Ventouse"
+  },
+  {
+   "dx": "Chorioamnionitis",
+   "features": [
+    {
+     "t": "Temp ≥ 38 · maternal HR ≥ 100 · FHR ≥ 160",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Tender uterus · offensive liquor",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Long ROM, many VEs",
+     "s": "impcg2024:135"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "FBC",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ampicillin 2 g IV then 1 g IV 6-hourly + metronidazole 400 mg PO 8-hourly (allergy: clindamycin 600 mg IV 8-hourly)",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Delivery indicated",
+     "s": "impcg2024:86"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y unless delivering",
+     "s": "impcg2024:86",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Inadequate contractions (powers)",
+   "features": [
+    {
+     "t": "Fewer than 3 contractions in 10 min, short, weak",
+     "s": "impcg2024:75"
+    },
+    {
+     "t": "Primigravida, no CPD",
+     "s": "impcg2024:92"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Palpate contractions 10 min; CTG toco",
+     "s": "impcg2024:66"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hydrate, mobilise, analgesia; AROM if intact",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Still < 1 cm/h at action line → oxytocin needed",
+     "s": "impcg2024:92"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y for oxytocin (not at ANDH)",
+     "s": "impcg2024:75",
+     "b": 1
+    }
+   ],
+   "branch": "Action line"
+  },
+  {
+   "dx": "Malposition (occipito-posterior)",
+   "features": [
+    {
+     "t": "Deflexed head, backache, early urge to push",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "VE: sutures and fontanelles",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Support, upright / all-fours positions, analgesia; treat as poor progress",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If action line or head ≥ 1/5",
+     "s": "impcg2024:92"
+    }
+   ],
+   "branch": "Alert line"
+  },
+  {
+   "dx": "Patient: dehydration, full bladder, pain, fear",
+   "features": [
+    {
+     "t": "Not drinking, vomiting, ketonuria",
+     "s": "stghosp:6.28"
+    },
+    {
+     "t": "Palpable bladder",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Distress; past sexual or birth trauma",
+     "s": "impcg2024:91"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine dipstick (ketones)",
+     "s": "impcg2024:57",
+     "b": 1
+    },
+    {
+     "t": "Bladder palpation",
+     "s": "impcg2024:92"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Oral fluids; poor progress: NaCl 0.9% 200–300 mL bolus → 120 mL/h; moderate/severe dehydration: 250 mL/h, re-check hourly",
+     "s": "impcg2024:91",
+     "b": 1
+    },
+    {
+     "t": "Catheter if needed; morphine / Entonox; companion",
+     "s": "impcg2024:59"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ],
+   "branch": "Alert line"
+  },
+  {
+   "dx": "Poor maternal effort / exhaustion (2nd stage)",
+   "features": [
+    {
+     "t": "No urge to push; weak pushing; long labour",
+     "s": "impcg2024:92"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Confirm full dilatation; membranes; bladder; fifths",
+     "s": "impcg2024:92"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Wait 1 h for urge; AROM; position of choice; kind coaching; pushing limits",
+     "s": "impcg2024:60"
+    },
+    {
+     "t": "0/5 → ventouse",
+     "s": "impcg2024:92"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If no urge at 1 h after AROM, or ≥ 1/5",
+     "s": "impcg2024:92"
+    }
+   ],
+   "branch": "Pushing limit"
+  },
+  {
+   "dx": "Prolonged latent phase / false labour",
+   "features": [
+    {
+     "t": "No cervical change; irregular, non-increasing pains",
+     "s": "impcg2024:91"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Observe; VE 6-hourly (4 h if no contractions)",
+     "s": "impcg2024:58"
+    },
+    {
+     "t": "Exclude abruptio, UTI",
+     "s": "impcg2024:91"
+    }
+   ],
+   "manage": [
+    {
+     "t": "False labour → home; prolonged latent → stretch & sweep, AROM",
+     "s": "impcg2024:91"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if oxytocin needed",
+     "s": "impcg2024:91",
+     "b": 1
+    }
+   ],
+   "branch": "Latent > 24 h"
+  }
+ ],
+ "chart": {
+  "unit": "Stage",
+  "phase_note": "Rows follow the labour stage where progress failed — start at the matching row. ANDH: CTG, ultrasound, ventouse (head 0/5), 2 O-neg + FDP; no oxytocin augmentation, CS or theatre → REFER.",
+  "columns": {
+   "feed": "Fluids, position & support",
+   "tests": "Observations & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Latent (< 5 cm): FHR + maternal pulse 2-hourly · contractions 2-hourly · BP, RR, temp 6-hourly · VE 6-hourly · urine when passed",
+    "s": "impcg2024:59"
+   },
+   {
+    "t": "Active (≥ 5 cm): FHR + maternal pulse every 30 min · contractions 2-hourly · BP, RR, temp 4-hourly · VE 4-hourly, 2-hourly after 8 cm · urine when passed · CTG (poor progress)",
+    "s": "impcg2024:59"
+   },
+   {
+    "t": "Second stage: passive — FHR every 30 min · pushing — FHR every 5 min or after every 2nd contraction, with pulse; head descent (fifths) every 15 min",
+    "s": "impcg2024:60",
+    "b": 1
+   },
+   {
+    "t": "On IV for dehydration: re-check hydration hourly",
+    "s": "stghosp:6.28"
+   },
+   {
+    "t": "Urine ketones when passed",
+    "d": 1
+   },
+   {
+    "t": "Act on: FHR ≥ 180 or < 110 for 10 min · late decelerations 10 min · single decel > 3 min · rupture signs",
+    "s": "impcg2024:66",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Poor progress recognised",
+    "lead": "Assess the 4 Ps (Patient, Powers, Passage, Passenger) and tick the working cause on the differential sheet. Explain progress and plan to her in her language.",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 200–300 mL IV bolus, then 120 mL/h; oral fluids",
+      "s": "impcg2024:91",
+      "b": 1
+     },
+     {
+      "t": "Moderate/severe dehydration: NaCl 0.9% 250 mL/h, re-check hourly",
+      "s": "stghosp:6.28",
+      "b": 1
+     },
+     {
+      "t": "Empty bladder — catheter if needed",
+      "s": "impcg2024:91",
+      "b": 1
+     },
+     {
+      "t": "Upright / side; never flat supine; companion",
+      "s": "impcg2024:58"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VE: cervix, application, membranes, fifths above brim, moulding, caput, position",
+      "s": "impcg2024:92",
+      "b": 1
+     },
+     {
+      "t": "Contractions in 10 min, duration",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "CTG; urine dipstick (ketones)",
+      "s": "impcg2024:66",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound if lie / presentation uncertain",
+      "s": "impcg2024:85",
+      "b": 1
+     },
+     {
+      "t": "Temp, pulse (chorioamnionitis)",
+      "s": "impcg2024:86"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Any §2 finding (obstructed)",
+      "s": "impcg2024:91"
+     },
+     {
+      "t": "CPD, malpresentation, fetal distress, action line, rupture signs → REFER for CS",
+      "s": "impcg2024:91",
+      "b": 1
+     },
+     {
+      "t": "No oxytocin; stop pushing if obstructed",
+      "d": 1
+     },
+     {
+      "h": "Fetal distress",
+      "s": "impcg2024:71"
+     },
+     {
+      "t": "Off her back; 500 mL fluid bolus; salbutamol 250 µg IV over 2 min (not if cardiac disease, maternal tachycardia, HT)",
+      "s": "impcg2024:70",
+      "b": 1
+     },
+     {
+      "h": "No §2 finding",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Support, mobilise, offer analgesia",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "AROM if membranes intact (WLHIV: if VL suppressed)",
+      "s": "stghosp:6.26",
+      "b": 1
+     },
+     {
+      "t": "Reassess in 2 h",
+      "s": "impcg2024:92"
+     },
+     {
+      "h": "Analgesia",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Morphine 0.1 mg/kg IM 4-hourly PRN (max 10 mg) + promethazine 25 mg IM; Entonox",
+      "s": "impcg2024:59",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Latent > 24 h",
+    "phase": "Prolonged latent phase",
+    "feed": [
+     {
+      "t": "Oral fluids, food; walk about",
+      "s": "impcg2024:58"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Exclude abruptio, UTI, false labour",
+      "s": "impcg2024:91"
+     },
+     {
+      "t": "Exclude fetal distress and CPD (CTG, fifths)",
+      "s": "impcg2024:91"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "False labour, no problems → home",
+      "s": "impcg2024:91"
+     },
+     {
+      "t": "Prolonged latent: stretch & sweep, AROM",
+      "s": "impcg2024:91",
+      "b": 1
+     },
+     {
+      "t": "Oxytocin needed → REFER (not at ANDH)",
+      "s": "impcg2024:91",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Alert line",
+    "phase": "< 1 cm/h, active phase",
+    "feed": [
+     {
+      "t": "Bolus then 120 mL/h; bladder empty",
+      "s": "impcg2024:91"
+     }
+    ],
+    "tests": [
+     {
+      "t": "4 Ps; CTG",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "CPD / malpresentation / distress excluded?",
+      "s": "impcg2024:91"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "None: support, mobilise, analgesia, AROM",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Any present → REFER",
+      "s": "impcg2024:91",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "+ 2 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Continue IV; hydration hourly",
+      "s": "stghosp:6.28"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VE: dilatation, fifths, moulding",
+      "s": "impcg2024:92",
+      "b": 1
+     },
+     {
+      "t": "Rate since alert line ____ cm/h",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "≥ 1 cm/h → term labour chart",
+      "s": "impcg2024:92"
+     },
+     {
+      "t": "Still < 1 cm/h → action line row",
+      "s": "impcg2024:92"
+     }
+    ]
+   },
+   {
+    "label": "Action line",
+    "phase": "2 h right of alert",
+    "feed": [
+     {
+      "t": "Continue IV; catheter",
+      "s": "impcg2024:91"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-examine for CPD: moulding, descent, caput",
+      "s": "impcg2024:91"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Primigravida, no CPD, no distress: oxytocin needed — not at ANDH → REFER",
+      "s": "impcg2024:92",
+      "b": 1
+     },
+     {
+      "t": "Multigravida or CPD → REFER (CS)",
+      "s": "impcg2024:91",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "10 cm + 1 h",
+    "phase": "No urge to push",
+    "feed": [
+     {
+      "t": "Bladder empty; position of choice",
+      "s": "impcg2024:60"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR every 30 min",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Confirm truly fully dilated; fifths",
+      "s": "impcg2024:92"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "AROM if intact; wait for urge",
+      "s": "impcg2024:92",
+      "b": 1
+     },
+     {
+      "t": "Still no urge → REFER; urge comes while waiting → allow birth",
+      "s": "impcg2024:92",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Pushing limit",
+    "phase": "Poor effort / slow descent",
+    "feed": [
+     {
+      "t": "Calm, kind coaching; push with contractions only",
+      "s": "impcg2024:60"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR every 5 min · fifths every 15 min",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Para 0: 45 min · para > 0: 30 min pushing reached",
+      "s": "impcg2024:60",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Head 0/5 + conditions met → ventouse",
+      "s": "impcg2024:92",
+      "b": 1
+     },
+     {
+      "t": "Head ≥ 1/5 → REFER",
+      "s": "impcg2024:92",
+      "b": 1
+     },
+     {
+      "t": "Compromise → act now; limits do not apply",
+      "s": "impcg2024:60"
+     }
+    ]
+   },
+   {
+    "label": "Ventouse",
+    "phase": "Head 0/5",
+    "feed": [
+     {
+      "t": "Lithotomy; bladder empty; consent",
+      "s": "impcg2024:93"
+     }
+    ],
+    "tests": [
+     {
+      "t": "All conditions met (box)",
+      "s": "impcg2024:93"
+     },
+     {
+      "t": "Record cup, pulls, detachments on MCR form",
+      "s": "impcg2024:93"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "−0.6 to −0.8 bar; pull with contractions",
+      "s": "impcg2024:93"
+     },
+     {
+      "t": "No descent · 3 pulls · 2 detachments → abandon → REFER; no forceps after failed ventouse",
+      "s": "impcg2024:93",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Transfer",
+    "phase": "Until EMS leaves",
+    "feed": [
+     {
+      "t": "IV running; catheter; left lateral",
+      "s": "impcg2024:91"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR / CTG and maternal obs continue",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Partogram copy, notes go with her",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fetal distress: intrauterine resuscitation",
+      "s": "impcg2024:66"
+     },
+     {
+      "t": "Senior doctor at receiving hospital phoned; escort",
+      "s": "impcg2024:120"
+     }
+    ]
+   },
+   {
+    "label": "0–2 h",
+    "phase": "After delivery",
+    "feed": [
+     {
+      "t": "Skin-to-skin; breastfeed within 1 h",
+      "s": "impcg2024:61"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, RR, temp, pads, uterus every 15 min × 1 h, then every 30 min × 1 h",
+      "s": "impcg2024:62"
+     },
+     {
+      "t": "Inspect perineum, vagina, cervix for tears",
+      "s": "impcg2024:94"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oxytocin 10 U IM (3rd stage)",
+      "s": "impcg2024:62",
+      "b": 1
+     },
+     {
+      "t": "PPH risk: oxytocin 20 U in 1 L NaCl 0.9% at 120–240 mL/h",
+      "s": "impcg2024:115",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Baby: Apgar; Neopuff if needed",
+      "s": "impcg2024:61"
+     }
+    ]
+   },
+   {
+    "label": "2–24 h",
+    "phase": "Postnatal ward",
+    "feed": [
+     {
+      "t": "Oral fluids; mobilise; remove catheter",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, temp, pads 4-hourly",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "Passing urine; leaking urine",
+      "d": 1
+     },
+     {
+      "t": "Temp, uterine tenderness, offensive lochia",
+      "s": "impcg2024:135"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fever, tender uterus, offensive lochia → puerperal sepsis: amoxicillin/clavulanic acid 1.2 g IV 8-hourly; severe → REFER",
+      "s": "impcg2024:135",
+      "b": 1
+     },
+     {
+      "t": "Constant urine leak → fistula → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "≥ 6 h",
+    "phase": "Discharge review",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Discharge criteria (below)",
+      "s": "impcg2024:156"
+     },
+     {
+      "t": "Hb, syphilis, Rh, HIV recorded",
+      "s": "impcg2024:156",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Debrief kindly about the long labour; mental health screen",
+      "s": "impcg2024:91"
+     },
+     {
+      "t": "Next pregnancy: deliver in hospital",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids · analgesia · drugs",
+   "items": [
+    {
+     "h": "Poor progress hydration",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "NaCl 0.9% 200–300 mL IV bolus → 120 mL/h + oral fluids",
+     "s": "impcg2024:91"
+    },
+    {
+     "h": "Dehydration / ketosis",
+     "s": "stghosp:6.28"
+    },
+    {
+     "t": "Mild: oral fluids · moderate/severe: NaCl 0.9% 250 mL/h IV, re-evaluate hourly",
+     "s": "stghosp:6.28"
+    },
+    {
+     "h": "Analgesia",
+     "s": "impcg2024:59"
+    },
+    {
+     "t": "Morphine 0.1 mg/kg IM 4-hourly PRN, max 10 mg, + promethazine 25 mg IM; Entonox in late first stage",
+     "s": "stghosp:6.28"
+    },
+    {
+     "h": "Salbutamol (fetal distress)",
+     "s": "impcg2024:70"
+    },
+    {
+     "t": "1 mL (0.5 mg) + 9 mL NaCl 0.9% = 50 µg/mL; 5 mL (250 µg) IV over 2 min",
+     "s": "impcg2024:70"
+    },
+    {
+     "h": "Chorioamnionitis",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Ampicillin 2 g IV → 1 g 6-hourly + metronidazole 400 mg PO 8-hourly; delivery indicated",
+     "s": "impcg2024:86"
+    },
+    {
+     "h": "Oxytocin augmentation",
+     "s": "impcg2024:75"
+    },
+    {
+     "t": "REFER — needs CTG and CS back-up; avoid if previous CS or parity ≥ 5",
+     "s": "impcg2024:75",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Poor maternal effort · ventouse",
+   "items": [
+    {
+     "h": "Before calling it poor effort",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Truly fully dilated? Bladder empty? Membranes ruptured? Urge present?",
+     "s": "impcg2024:92"
+    },
+    {
+     "t": "Pain, fear, exhaustion, dehydration: fluids, analgesia, position change, companion; never shout or threaten",
+     "s": "impcg2024:91"
+    },
+    {
+     "h": "Ventouse — all required",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Informed + co-operative · vertex · head 0/5 · position certain · fully dilated · membranes ruptured · bladder empty · strong contractions",
+     "s": "impcg2024:93"
+    },
+    {
+     "h": "Abandon → REFER",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "No descent with a pull · not delivered after 3 pulls · 2 cup detachments",
+     "s": "impcg2024:93"
+    },
+    {
+     "h": "Shoulder dystocia (big baby)",
+     "s": "impcg2024:94"
+    },
+    {
+     "t": "2 helpers · McRoberts · suprapubic pressure · posterior arm · all-fours",
+     "s": "impcg2024:94"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Imminent uterine rupture — REFER urgently",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Fetal tachycardia / decelerations · vaginal bleeding · macroscopic haematuria · pain between contractions or over scar · contractions suddenly stop",
+     "s": "impcg2024:101"
+    },
+    {
+     "t": "Shock: 2 O-neg + 2 FDP",
+     "s": "impcg2024:154"
+    },
+    {
+     "h": "REFER (CS or oxytocin)",
+     "s": "impcg2024:91"
+    },
+    {
+     "t": "CPD · malpresentation · action line · fetal distress not deliverable by ventouse · head ≥ 1/5 at pushing limit · no urge after AROM · abandoned ventouse · previous CS",
+     "s": "impcg2024:92"
+    },
+    {
+     "h": "Call doctor"
+    },
+    {
+     "t": "FHR act-on trigger · meconium · cord · bleeding · temp ≥ 38 or pulse ≥ 100 · no progress at next VE · pushing limit reached",
+     "s": "impcg2024:66"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — ≥ 6 h after birth, all must be met",
+  "items": [
+   {
+    "t": "Pulse < 100, RR < 20, temp < 37.5, BP normal",
+    "s": "impcg2024:156",
+    "b": 1
+   },
+   {
+    "t": "No uterine tenderness · no active bleeding",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Mobile; passed urine normally — no leaking",
+    "s": "impcg2024:156",
+    "d": 1
+   },
+   {
+    "t": "Feeding explained; contraception provided",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Hb, syphilis, Rh, HIV recorded and acted on",
+    "s": "impcg2024:156"
+   },
+   {
+    "t": "Danger signs explained · discharge summary done",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Discharged by / date: ____",
+    "k": "value"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic at 3–6 days (mother + baby), then 6 weeks",
+    "s": "impcg2024:157",
+    "b": 1
+   },
+   {
+    "h": "Straight back",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Fever, offensive lochia, abdominal pain, heavy bleeding",
+    "s": "impcg2024:157"
+   },
+   {
+    "t": "Urine or stool leaking",
+    "d": 1
+   },
+   {
+    "t": "Baby: poor feeding, fits, breathing difficulty",
+    "s": "impcg2024:157"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour poor-progress nursing record",
+  "period": "One sheet per 12 hours; 30-min rows, heavier rule every 2 h; second-stage and fourth-stage strips",
+  "params": [
+   {
+    "h": "FHR + maternal pulse",
+    "items": [
+     {
+      "t": "Latent: 2-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Active + passive 2nd stage: every 30 min",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Pushing: every 5 min or after every 2nd contraction (strip)",
+      "s": "impcg2024:60"
+     },
+     {
+      "t": "Before and after a contraction",
+      "s": "impcg2024:65"
+     }
+    ]
+   },
+   {
+    "h": "Contractions · urine · hydration",
+    "items": [
+     {
+      "t": "Contractions 2-hourly: number per 10 min + seconds",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Urine when passed: volume, ketones",
+      "s": "impcg2024:59",
+      "d": 1
+     },
+     {
+      "t": "On IV for dehydration: hydration hourly",
+      "s": "stghosp:6.28"
+     }
+    ]
+   },
+   {
+    "h": "BP · RR · temp",
+    "items": [
+     {
+      "t": "Latent: 6-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Active: 4-hourly",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "2nd stage: at onset",
+      "s": "impcg2024:60"
+     }
+    ]
+   },
+   {
+    "h": "Vaginal examination (doctor / midwife)",
+    "items": [
+     {
+      "t": "Latent: 6-hourly · Active: 4-hourly, 2-hourly after 8 cm",
+      "s": "impcg2024:59"
+     },
+     {
+      "t": "Cervix cm · head /5 · moulding · caput · liquor",
+      "s": "impcg2024:92",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Second stage strip",
+    "items": [
+     {
+      "t": "Time fully dilated, time pushing started, limit (para 0: 45 min · para > 0: 30 min)",
+      "s": "impcg2024:60",
+      "b": 1
+     },
+     {
+      "t": "FHR + pulse every 5 min; head /5 every 15 min; birth time, Apgar",
+      "s": "impcg2024:60"
+     }
+    ]
+   },
+   {
+    "h": "Fourth stage strip",
+    "items": [
+     {
+      "t": "BP, pulse, RR, temp, uterus, pads every 15 min × 1 h, then 30 min × 1 h",
+      "s": "impcg2024:62",
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for FHR ≥ 180 or < 110 for 10 min · late decelerations for 10 min · single deceleration > 3 min · meconium · cord felt or seen · vaginal bleeding · temp ≥ 38 or pulse ≥ 100 · urge to push · no progress at next VE · pushing limit reached · pain between contractions, contractions stopping, blood in urine (rupture)",
+    "s": "impcg2024:66",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Oral in (mL)",
+   "IV in (mL)",
+   "Urine out (mL)",
+   "VEs this sheet"
+  ]
+ }
+}

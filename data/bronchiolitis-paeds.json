@@ -1,0 +1,1060 @@
+{
+ "id": "bronchiolitis-paeds",
+ "short": "Bronchiolitis",
+ "title": "Acute bronchiolitis (child < 2 years)",
+ "population": "Paediatric, 28 days – 2 years (excludes neonates, asthma, pneumonia)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days → neonatal protocol",
+     "b": 1
+    },
+    {
+     "t": "Good salbutamol response + recurrent wheeze → asthma (Paeds STG 15.4)",
+     "s": "paedstg2026:15.13",
+     "b": 1
+    },
+    {
+     "t": "Pneumonia (fever, toxic, focal signs) → LRTI (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "Stridor → croup (Paeds STG 15.5.2)",
+     "s": "imci2022:25",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — clinical; all of",
+   "items": [
+    {
+     "t": "Age < 2 years (usually 4 months – 2 years)",
+     "s": "paedstg2026:15.11",
+     "b": 1
+    },
+    {
+     "t": "Viral prodrome: irritability, rhinorrhoea",
+     "s": "paedstg2026:15.11",
+     "b": 1
+    },
+    {
+     "t": "Wheeze slowly or not responsive to bronchodilator (§8)",
+     "s": "paedstg2026:15.11",
+     "b": 1
+    },
+    {
+     "t": "Crepitations, hyperinflation",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Fast breathing — count 1 full minute:",
+     "s": "paedstg2026:15.12",
+     "b": 1
+    },
+    {
+     "t": "< 60 days: > 60 /min",
+     "s": "paedstg2026:15.12",
+     "k": "sub"
+    },
+    {
+     "t": "2–12 months: > 50 /min",
+     "s": "paedstg2026:15.12",
+     "k": "sub"
+    },
+    {
+     "t": "1–5 years: > 40 /min",
+     "s": "paedstg2026:15.12",
+     "k": "sub"
+    },
+    {
+     "t": "CXR only if severe or complicated",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "RR ____ /min   SpO₂ ____ % RA",
+     "k": "value"
+    },
+    {
+     "t": "Age ____   Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — tick the highest",
+   "items": [
+    {
+     "h": "Mild"
+    },
+    {
+     "t": "Cough + fast breathing",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "h": "Moderate — mild plus any"
+    },
+    {
+     "t": "Lower chest wall indrawing · nasal flaring · grunting",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "h": "Severe — plus any"
+    },
+    {
+     "t": "Central cyanosis / SpO₂ < 90% in room air",
+     "s": "paedstg2026:15.12",
+     "b": 1
+    },
+    {
+     "t": "Inability to feed",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Convulsions, lethargy, ↓ LOC",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Very severe chest indrawing",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Apnoea",
+     "s": "phcstg2026:17.16"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "h": "Risk factors for severe disease"
+    },
+    {
+     "t": "< 3 months · ex-preterm · chronic lung disease · congenital heart disease",
+     "s": "paedstg2026:15.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet",
+   "items": [
+    {
+     "t": "Gestation / birth weight (ex-preterm)",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Chronic lung disease",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Congenital heart disease",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Immunisations up to date"
+    },
+    {
+     "t": "HIV exposed · PCR result"
+    },
+    {
+     "t": "Weight-for-age curve"
+    },
+    {
+     "t": "Previous wheezing episodes",
+     "s": "paedstg2026:15.13"
+    },
+    {
+     "t": "Previous admissions"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Days of runny nose, irritability",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Cough · fast / difficult breathing",
+     "s": "phcstg2026:17.16"
+    },
+    {
+     "h": "Feeding and colour"
+    },
+    {
+     "t": "Feeding less / unable to feed",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Pauses in breathing · blue spells",
+     "s": "phcstg2026:17.16"
+    },
+    {
+     "t": "Wet nappies / urine",
+     "d": 1
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Recurrent wheeze, atopy (asthma)",
+     "s": "paedstg2026:15.13"
+    },
+    {
+     "t": "Choking episode (foreign body)",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "t": "Paroxysms / whoop (pertussis)",
+     "s": "paedstg2026:8.29"
+    },
+    {
+     "h": "TB · HIV · social"
+    },
+    {
+     "t": "TB contact · HIV exposure"
+    },
+    {
+     "t": "Caregiver able to return if worse",
+     "s": "paedstg2026:15.12"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fast breathing (§1 thresholds)",
+     "s": "paedstg2026:15.12",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Chest indrawing",
+     "s": "paedstg2026:15.12",
+     "k": "yn"
+    },
+    {
+     "t": "Nasal flaring / grunting",
+     "s": "paedstg2026:15.12",
+     "k": "yn"
+    },
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:15.12",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 92% in room air → O₂",
+     "s": "paedstg2026:15.12",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90% → severe",
+     "s": "paedstg2026:15.12",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / ↓ LOC",
+     "s": "paedstg2026:15.12",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "s": "paedstg2026:15.12",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Central cyanosis",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Wasting / oedema (SAM)",
+     "d": 1
+    },
+    {
+     "t": "Blocked nose, secretions",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Wheeze",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Crepitations",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Hyperinflation",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "↓ breath sounds",
+     "s": "phcstg2026:17.16"
+    },
+    {
+     "t": "Unilateral signs (FB / pneumonia)",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "h": "Heart and baseline"
+    },
+    {
+     "t": "Murmur, gallop, hepatomegaly (CHD / heart failure)",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Baseline RR, work of breathing, feeding",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ — pulse oximetry in room air",
+   "items": [
+    {
+     "t": "Value on arrival: ____ % in room air",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "< 92%: O₂ humidified 1–2 L/min, nasal prongs",
+     "s": "paedstg2026:15.12",
+     "b": 1
+    },
+    {
+     "t": "Keep nose clear; position prongs correctly",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "< 90% = severe: discuss with paediatrician",
+     "s": "paedstg2026:15.13"
+    },
+    {
+     "t": "Apnoea, SpO₂ not held on nasal O₂, exhaustion → REFER (no CPAP at ANDH)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Then hourly for 6 h and while severe, then 4-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bronchodilator trial (once)",
+   "items": [
+    {
+     "t": "Given: ____ at ____   response Y / N",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Salbutamol MDI 200–400 mcg via spacer, or 0.15–0.3 mg/kg neb (max 5 mg)",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Clear response + recurrent wheeze → asthma (not this pathway)",
+     "s": "paedstg2026:15.13",
+     "b": 1
+    },
+    {
+     "t": "No response → bronchiolitis (does not respond to salbutamol)",
+     "s": "phcstg2026:17.16"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink / breastfeed",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "SpO₂ < 90% / cyanosis",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Exhaustion, very severe indrawing",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Unable to feed / dehydrated",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Age < 3 months · ex-preterm",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Heart disease / heart failure",
+     "s": "paedstg2026:15.11"
+    },
+    {
+     "t": "Bacterial pneumonia (high fever, toxic)",
+     "d": 1
+    },
+    {
+     "t": "Foreign body",
+     "s": "paedstg2026:1.14"
+    },
+    {
+     "t": "Pertussis",
+     "s": "paedstg2026:8.29"
+    },
+    {
+     "t": "Stridor (croup)",
+     "s": "imci2022:25"
+    },
+    {
+     "t": "HIV-exposed (PJP)",
+     "s": "paedstg2026:15.8"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "imci2022:35"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE BRONCHIOLITIS → O₂, discuss with paediatrician · REFER: apnoea, SpO₂ not held on nasal O₂, exhaustion",
+   "s": "paedstg2026:15.13",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT = moderate, severe, or mild + risk factor · mild, no risk factor → home with a plan",
+   "s": "paedstg2026:15.12"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Supportive care only · no routine antibiotics, steroids or sedation · branch rows only if needed",
+  "columns": {
+   "feed": "Oxygen, feeds & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "RR (full minute), SpO₂ + O₂ flow, work of breathing, heart rate, temperature: hourly for the first 6 h and while severe, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "O₂ 1–2 L/min humidified if SpO₂ < 92%; keep nose clear, prongs positioned",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "< 3 months: apnoea monitoring; record every pause or colour change",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "Feeds offered / taken, NGT, IV fluids, urine / wet nappies; avoid over-hydration",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "HGT 4-hourly if not feeding or on IV fluids",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Isolate from other infants if possible. No routine antibiotics, corticosteroids or sedation.",
+    "feed": [
+     {
+      "t": "O₂ humidified 1–2 L/min, nasal prongs, if SpO₂ < 92%",
+      "s": "paedstg2026:15.12",
+      "b": 1
+     },
+     {
+      "t": "NaCl 0.9% nose drops as needed",
+      "s": "phcstg2026:17.21"
+     },
+     {
+      "t": "Breastfeed / small frequent feeds; NGT if not feeding",
+      "s": "paedstg2026:15.12"
+     },
+     {
+      "t": "IV maintenance only if oral / NGT not tolerated; avoid over-hydration",
+      "s": "paedstg2026:15.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ in room air",
+      "s": "paedstg2026:15.12",
+      "b": 1
+     },
+     {
+      "t": "HGT if not feeding or lethargic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR only if severe or complicated",
+      "s": "paedstg2026:15.11",
+      "b": 1
+     },
+     {
+      "t": "HIV status / test",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture only if bacterial infection suspected",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Supportive"
+     },
+     {
+      "t": "Apnoea monitoring if < 3 months",
+      "s": "paedstg2026:15.12"
+     },
+     {
+      "t": "Do not sedate",
+      "s": "phcstg2026:17.16"
+     },
+     {
+      "t": "No routine antibiotics or corticosteroids",
+      "s": "phcstg2026:17.16",
+      "b": 1
+     },
+     {
+      "h": "Wheeze"
+     },
+     {
+      "t": "Bronchodilator trial once (§8); continue only if it helped",
+      "s": "paedstg2026:15.13",
+      "d": 1
+     },
+     {
+      "h": "Fever"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly as needed",
+      "s": "paedstg2026:15.5"
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "HGT < 3 mmol/L: 10% glucose 5 mL/kg NGT / IV",
+      "s": "imci2022:35"
+     },
+     {
+      "h": "Severe"
+     },
+     {
+      "t": "Discuss with paediatrician",
+      "s": "paedstg2026:15.13",
+      "b": 1
+     },
+     {
+      "t": "Apnoea, SpO₂ not held on nasal O₂, exhaustion → REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Supportive",
+    "feed": [
+     {
+      "t": "Wean O₂ once SpO₂ ≥ 92% in room air",
+      "s": "paedstg2026:15.12"
+     },
+     {
+      "t": "Feeds; NGT if tiring",
+      "s": "paedstg2026:15.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if feeding poorly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Worsening: think bacterial co-infection, pneumothorax, heart failure",
+      "d": 1
+     },
+     {
+      "t": "Severe: discuss with paediatrician",
+      "s": "paedstg2026:15.13"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Peak / recovery",
+    "feed": [
+     {
+      "t": "As Day 2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR if deteriorating (complications)",
+      "s": "paedstg2026:15.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bacterial co-infection: see branch",
+      "s": "paedstg2026:15.13"
+     },
+     {
+      "t": "Improving: discharge check (side 2)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If bacterial co-infection",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As above"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR · blood culture",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amoxicillin 45 mg/kg PO 12-hourly × 5 d",
+      "s": "paedstg2026:15.13",
+      "b": 1
+     },
+     {
+      "t": "Severe pneumonia signs → LRTI (child) pathway (IV amox/clav)",
+      "s": "paedstg2026:15.3"
+     }
+    ]
+   },
+   {
+    "label": "If salbutamol helps",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "O₂ to keep SpO₂ ≥ 95% if moderate / severe asthma",
+      "s": "paedstg2026:15.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ off O₂",
+      "s": "paedstg2026:15.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrent wheeze + response = asthma: salbutamol every 20 min × 3, then as needed",
+      "s": "paedstg2026:15.20"
+     },
+     {
+      "t": "Prednisone 1–2 mg/kg daily × 5 d (max 20 mg if < 2 y)",
+      "s": "paedstg2026:15.20"
+     },
+     {
+      "t": "Silent chest, ↓ LOC, rising CO₂: REFER",
+      "s": "paedstg2026:15.18",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Recovery",
+    "feed": [
+     {
+      "t": "Room air; normal feeds"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check discharge criteria (box below)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5+",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Counsel caregiver; plan if worse",
+      "s": "paedstg2026:15.12",
+      "b": 1
+     },
+     {
+      "t": "Recurrent wheeze → asthma follow-up",
+      "s": "phcstg2026:17.16"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Oxygen, feeds & fluids",
+   "items": [
+    {
+     "h": "Oxygen"
+    },
+    {
+     "t": "Humidified 1–2 L/min nasal prongs only if SpO₂ < 92%",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Keep nasal passages clear; NaCl 0.9% drops",
+     "s": "phcstg2026:17.21"
+    },
+    {
+     "h": "Feeds"
+    },
+    {
+     "t": "Breastfeed / small frequent feeds; NGT if not feeding",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "h": "IV fluids"
+    },
+    {
+     "t": "Maintenance only if oral / NGT not tolerated; avoid over-hydration",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "h": "No CPAP / HFNC at ANDH†"
+    },
+    {
+     "t": "Needs CPAP or ventilation → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Routine"
+    },
+    {
+     "t": "No antibiotics, corticosteroids or sedation",
+     "s": "phcstg2026:17.16",
+     "b": 1
+    },
+    {
+     "h": "Bacterial co-infection"
+    },
+    {
+     "t": "Amoxicillin 45 mg/kg PO 12-hourly × 5 d",
+     "s": "paedstg2026:15.13"
+    },
+    {
+     "h": "Bronchodilator trial"
+    },
+    {
+     "t": "Salbutamol MDI 200–400 mcg via spacer or 0.15–0.3 mg/kg neb (max 5 mg)",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "h": "Fever"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg 6-hourly as needed",
+     "s": "paedstg2026:15.5"
+    },
+    {
+     "h": "Hypoglycaemia"
+    },
+    {
+     "t": "10% glucose 5 mL/kg NGT / IV",
+     "s": "imci2022:35"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Escalate — call the doctor"
+    },
+    {
+     "t": "SpO₂ < 92% on current O₂ or O₂ need rising",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Any apnoea or colour change",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "RR rising, grunting, severe indrawing, tiring",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Unable to feed / dry nappies",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "Lethargy, convulsion",
+     "s": "paedstg2026:15.12"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "imci2022:35"
+    },
+    {
+     "h": "IV fluids — over-hydration"
+    },
+    {
+     "t": "RR, pulse, liver size or crackles rising: stop / reduce",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Apnoea, SpO₂ not held on nasal O₂, exhaustion",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "SpO₂ ≥ 92% in room air",
+    "s": "paedstg2026:15.12",
+    "b": 1
+   },
+   {
+    "t": "No apnoea",
+    "d": 1
+   },
+   {
+    "t": "Feeding adequately, hydrated",
+    "d": 1
+   },
+   {
+    "t": "Work of breathing settling",
+    "d": 1
+   },
+   {
+    "t": "Caregiver counselled with a plan if worse",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "Follow-up arranged",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC review in 2 days",
+    "d": 1
+   },
+   {
+    "t": "Return at once: breathing harder, blue, pauses, not feeding",
+    "s": "phcstg2026:17.16"
+   },
+   {
+    "t": "Recurrent wheeze: assess for asthma",
+    "s": "paedstg2026:15.11"
+   },
+   {
+    "t": "Catch-up immunisations",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — breathing, apnoea, oxygen and feeds",
+  "period": "one sheet per 24 h, hourly rows",
+  "params": [
+   {
+    "h": "Breathing",
+    "items": [
+     {
+      "t": "RR (full minute), SpO₂ + O₂ flow, work of breathing, heart rate, temperature: hourly for the first 6 h and while severe, then 4-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ 1–2 L/min humidified if SpO₂ < 92%; keep nose clear, prongs positioned",
+      "s": "paedstg2026:15.12"
+     }
+    ]
+   },
+   {
+    "h": "Apnoea",
+    "items": [
+     {
+      "t": "< 3 months: apnoea monitoring; record every pause or colour change",
+      "s": "paedstg2026:15.12"
+     }
+    ]
+   },
+   {
+    "h": "Feeds and fluids",
+    "items": [
+     {
+      "t": "Feeds offered / taken, NGT, IV fluids, urine / wet nappies; avoid over-hydration",
+      "s": "paedstg2026:15.12"
+     },
+     {
+      "t": "HGT 4-hourly if not feeding or on IV fluids",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ < 92% on current O₂ or O₂ need rising",
+    "s": "paedstg2026:15.12",
+    "b": 1
+   },
+   {
+    "t": "any apnoea or colour change",
+    "s": "paedstg2026:15.12",
+    "b": 1
+   },
+   {
+    "t": "RR rising, grunting, severe indrawing, tiring",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "unable to feed / dry nappies",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "lethargy, convulsion",
+    "s": "paedstg2026:15.12"
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "s": "imci2022:35"
+   }
+  ],
+  "totals": [
+   "Feeds taken (mL)",
+   "IV in (mL)",
+   "Apnoea episodes (n)",
+   "Lowest SpO₂ / highest O₂"
+  ]
+ }
+}

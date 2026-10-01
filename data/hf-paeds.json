@@ -1,0 +1,1371 @@
+{
+ "id": "hf-paeds",
+ "short": "Heart failure (child)",
+ "title": "Heart failure — acute and maintenance (child)",
+ "population": "Child 28 days to < 13 y; excludes neonates, SAM and AKI with fluid overload",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days → neonatal heart failure (refer / neonatal unit)",
+     "s": "paedstg2026:19.28",
+     "b": 1
+    },
+    {
+     "t": "Severe acute malnutrition → SAM pathway",
+     "b": 1
+    },
+    {
+     "t": "Overload from kidney failure → AKI (child) pathway",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "Cyanotic CHD with spells → REFER (paediatric cardiology)",
+     "s": "paedstg2026:4.8",
+     "b": 1
+    },
+    {
+     "t": "Age ≥ 13 y → ADHF / CCF (adult) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — recent symptoms + signs (clinical)",
+   "items": [
+    {
+     "h": "History"
+    },
+    {
+     "t": "Poor feeding, sweating, tachypnoea, breathlessness, cough",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "Poor or excessive weight gain",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "h": "Signs"
+    },
+    {
+     "t": "Tachycardia, gallop ± murmur",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "Hepatomegaly",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "Crepitations, wheeze, recession",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Cold extremities, weak pulses, low urine output",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Periorbital oedema (not in infants)",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "CXR: cardiomegaly almost always present",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "Wt ____ kg · liver ____ cm · HR ____ · RR ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe heart failure = any one of",
+   "items": [
+    {
+     "t": "Shock (acute HF may present as shock)",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "t": "Acute pulmonary oedema",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Hypotension / refractory failure (ICU)",
+     "s": "paedstg2026:4.22"
+    },
+    {
+     "t": "Suspected myocarditis or cardiomyopathy with shock",
+     "s": "paedstg2026:4.15"
+    },
+    {
+     "t": "Tamponade: pulsus paradoxus, raised JVP, low BP",
+     "s": "paedstg2026:4.18"
+    },
+    {
+     "t": "Arrhythmia",
+     "s": "paedstg2026:4.15"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet",
+   "items": [
+    {
+     "t": "Weight curve: faltering",
+     "s": "paedstg2026:4.8"
+    },
+    {
+     "t": "Known heart lesion / murmur, cardiology follow-up",
+     "s": "paedstg2026:4.23"
+    },
+    {
+     "t": "Rheumatic fever; penicillin prophylaxis",
+     "s": "paedstg2026:4.15"
+    },
+    {
+     "t": "HIV exposure / status",
+     "s": "paedstg2026:4.17"
+    },
+    {
+     "t": "TB contact (pericardial effusion)",
+     "s": "paedstg2026:4.17"
+    },
+    {
+     "t": "Immunisations up to date",
+     "d": 1
+    },
+    {
+     "t": "Recent viral illness",
+     "s": "paedstg2026:4.15"
+    },
+    {
+     "t": "Prematurity / neonatal problems",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Sweating with feeds, breathless",
+     "s": "paedstg2026:4.8"
+    },
+    {
+     "h": "Cause clues"
+    },
+    {
+     "t": "Sore throat, joint pain, chorea (ARF)",
+     "s": "paedstg2026:4.13"
+    },
+    {
+     "t": "Viral illness (myocarditis)",
+     "s": "paedstg2026:4.15"
+    },
+    {
+     "t": "Fever with heart lesion (endocarditis)",
+     "s": "paedstg2026:4.9"
+    },
+    {
+     "t": "Pallor (anaemia)",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "h": "TB screen"
+    },
+    {
+     "t": "Cough, night sweats, weight loss",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "h": "Medicines"
+    },
+    {
+     "t": "Furosemide, captopril, spironolactone",
+     "s": "paedstg2026:4.23"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Caregiver, feeding, clinic access",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill ≥ 3 s",
+     "s": "paedstg2026:1.15",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension (late sign)",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension: < 6 y > 120/90 · 6–15 y > 130/95",
+     "s": "phcstg2026:8.6",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic → oxygen",
+     "s": "paedstg2026:4.21",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Congestion"
+    },
+    {
+     "t": "Hepatomegaly",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Crepitations, wheeze",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Recession, cyanosis",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Oedema",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "h": "Heart"
+    },
+    {
+     "t": "Gallop rhythm",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Murmur",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Muffled sounds, pulsus paradoxus",
+     "s": "paedstg2026:4.18"
+    },
+    {
+     "t": "Precordial bulge",
+     "s": "paedstg2026:4.8"
+    },
+    {
+     "h": "Cause clues"
+    },
+    {
+     "t": "Arthritis, nodules, erythema marginatum",
+     "s": "paedstg2026:4.13"
+    },
+    {
+     "t": "Pallor",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "t": "Splenomegaly, clubbing",
+     "s": "paedstg2026:4.9"
+    },
+    {
+     "t": "Baseline liver span ____ cm",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "CXR + ECG",
+   "items": [
+    {
+     "t": "CTR ____ · lung fields ____ · ECG rhythm ____",
+     "k": "value"
+    },
+    {
+     "t": "Cardiomegaly + congestion: heart failure",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "Plethoric lungs, big heart: left-to-right shunt",
+     "s": "paedstg2026:4.8"
+    },
+    {
+     "t": "Globular 'water-bottle' heart, small complexes: effusion",
+     "s": "paedstg2026:4.18"
+    },
+    {
+     "t": "Arrhythmia / prolonged PR / ST changes",
+     "s": "paedstg2026:4.15"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb and HGT",
+   "items": [
+    {
+     "t": "Hb ____ g/dL · HGT ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Severe anaemia: high-output failure → transfuse slowly, furosemide; no blood on site → REFER",
+     "s": "paedstg2026:4.20",
+     "d": 1
+    },
+    {
+     "t": "HGT < 2.6: dextrose 10% 2–5 mL/kg — small volume",
+     "s": "paedstg2026:7.31"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or breastfeed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Tamponade",
+     "s": "paedstg2026:4.18"
+    },
+    {
+     "t": "Arrhythmia",
+     "s": "paedstg2026:4.15"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "t": "Sepsis",
+     "s": "paedstg2026:4.20"
+    },
+    {
+     "t": "Endocarditis",
+     "s": "paedstg2026:4.9"
+    },
+    {
+     "t": "Severe hypertension",
+     "s": "paedstg2026:4.35"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Hypoxaemia",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Kidney failure",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Hypokalaemia on diuretic",
+     "s": "paedstg2026:4.22"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE / REFRACTORY HF, myocarditis, cardiomyopathy, tamponade → stabilise, REFER (ICU / cardiology)",
+   "s": "paedstg2026:4.22"
+  },
+  {
+   "t": "11. ADMIT",
+   "s": "paedstg2026:4.21"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Myocarditis",
+   "branch": "If myocarditis / cardiomyopathy",
+   "features": [
+    {
+     "t": "Viral illness, then tachycardia, HF, arrhythmia or shock",
+     "s": "paedstg2026:4.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, CXR, troponin-T (normal does not exclude)",
+     "s": "paedstg2026:4.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂; fluid 75%; furosemide 1 mg/kg IV 8-hourly",
+     "s": "paedstg2026:4.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — manage with paediatrician; inotropes = ICU",
+     "s": "paedstg2026:4.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Dilated cardiomyopathy",
+   "branch": "If myocarditis / cardiomyopathy",
+   "features": [
+    {
+     "t": "Cardiomegaly, poorly localised apex, HF",
+     "s": "paedstg2026:4.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, ECG; echo via referral",
+     "s": "paedstg2026:4.17",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂, fluid 75%, bed rest; HF treatment",
+     "s": "paedstg2026:4.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all; urgent ICU if inotropes needed",
+     "s": "paedstg2026:4.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute rheumatic fever / RHD",
+   "branch": "If rheumatic",
+   "features": [
+    {
+     "t": "Arthritis, carditis, chorea, nodules, erythema marginatum",
+     "s": "paedstg2026:4.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ASOT, throat culture, ESR / CRP, ECG (PR)",
+     "s": "paedstg2026:4.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzathine penicillin < 30 kg 600 000 IU, ≥ 30 kg 1.2 MU IM",
+     "s": "paedstg2026:4.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all for echocardiography",
+     "s": "paedstg2026:4.15",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Left-to-right shunt (VSD, PDA, ASD, AVSD)",
+   "branch": "If L–R shunt",
+   "features": [
+    {
+     "t": "Sweating with feeds, failure to thrive, precordial bulge",
+     "s": "paedstg2026:4.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR: cardiomegaly, plethoric fields",
+     "s": "paedstg2026:4.8",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Furosemide 1 mg/kg 8–12-hourly + KCl; nutrition",
+     "s": "paedstg2026:4.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all to paediatric cardiology",
+     "s": "paedstg2026:4.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pericardial effusion / tamponade (TB)",
+   "branch": "If effusion / tamponade",
+   "features": [
+    {
+     "t": "Low output, distended neck veins, muffled sounds",
+     "s": "paedstg2026:4.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (on site), CXR, ECG; TST",
+     "s": "paedstg2026:4.17",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Tamponade: urgent pericardiocentesis by experienced person",
+     "s": "paedstg2026:4.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent",
+     "s": "paedstg2026:4.18",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Infective endocarditis",
+   "branch": "",
+   "features": [
+    {
+     "t": "Known heart lesion + persistent fever, new murmur",
+     "s": "paedstg2026:4.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood cultures × 3 before antibiotics",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat HF; antibiotics per culture",
+     "s": "paedstg2026:4.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all suspected, as soon as possible",
+     "s": "paedstg2026:4.13",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "High-output: severe anaemia, sepsis",
+   "branch": "",
+   "features": [
+    {
+     "t": "Pallor, fever, bounding pulses",
+     "s": "paedstg2026:4.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb, blood culture",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat cause; slow transfusion with furosemide",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "No blood on site → REFER",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypertension / kidney disease",
+   "branch": "",
+   "features": [
+    {
+     "t": "High BP, oedema, abnormal urine",
+     "s": "paedstg2026:4.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "BP, urine dipstick, U&E",
+     "s": "paedstg2026:4.36",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "→ AKI pathway / hypertension 4.11",
+     "s": "paedstg2026:4.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Severe hypertension: urgent",
+     "s": "paedstg2026:4.36",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Branch rows apply only to the ticked cause · avoid ACE-i in obstructive lesions",
+  "columns": {
+   "feed": "O₂, fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "RR, heart rate, SpO₂ + O₂, BP, CRT: hourly for the first 6 h and while on IV furosemide or inotrope, then 4-hourly",
+    "s": "paedstg2026:4.21",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fluid intake 75% of daily requirement — not at the expense of calories; all intake and urine charted",
+    "s": "paedstg2026:4.22",
+    "b": 1
+   },
+   {
+    "t": "Urine output hourly while on IV furosemide (watch for over-diuresis)",
+    "s": "paedstg2026:4.21",
+    "b": 1
+   },
+   {
+    "t": "Weigh daily; liver edge (cm below costal margin) daily",
+    "s": "paedstg2026:4.21",
+    "d": 1
+   },
+   {
+    "t": "Upright or semi-upright position; oxygen as prescribed",
+    "s": "paedstg2026:4.21",
+    "b": 1
+   },
+   {
+    "t": "Feeds: breastfeed / NG if tiring; record volumes",
+    "s": "paedstg2026:4.22"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter and RtHB for furosemide or other doses given. Shock: ABCDE first (Ch 1).",
+    "feed": [
+     {
+      "t": "Upright / semi-upright",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     },
+     {
+      "t": "O₂ 100% face mask or nasal cannula; CPAP / high flow if needed → REFER if not available",
+      "s": "paedstg2026:4.21"
+     },
+     {
+      "t": "Restrict fluids — beware IV fluids",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     },
+     {
+      "t": "Maintenance 75% of requirement; NG feeds if tiring",
+      "s": "paedstg2026:4.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     },
+     {
+      "t": "U&E, K⁺, creatinine",
+      "s": "paedstg2026:4.22",
+      "b": 1
+     },
+     {
+      "t": "FBC (Hb), HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Troponin-T if myocarditis suspected",
+      "s": "paedstg2026:4.15",
+      "b": 1
+     },
+     {
+      "t": "ASOT, ESR / CRP if ARF possible",
+      "s": "paedstg2026:4.13",
+      "b": 1
+     },
+     {
+      "t": "Blood culture if febrile",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ultrasound heart / pericardium",
+      "s": "paedstg2026:4.18",
+      "b": 1
+     },
+     {
+      "t": "HIV test; TST if effusion",
+      "s": "paedstg2026:4.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Acute HF / pulmonary oedema"
+     },
+     {
+      "t": "Furosemide 1 mg/kg IV 8-hourly",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     },
+     {
+      "t": "Inadequate: infusion 0.1–1 mg/kg/hour",
+      "s": "paedstg2026:4.21"
+     },
+     {
+      "t": "Still inadequate: HCTZ 1 mg/kg 12-hourly with paediatric cardiologist",
+      "s": "paedstg2026:4.22"
+     },
+     {
+      "h": "Shock / severe myocardial dysfunction"
+     },
+     {
+      "t": "Dobutamine 2–15 mcg/kg/min; no response → adrenaline — ICU: REFER",
+      "s": "paedstg2026:4.22",
+      "b": 1
+     },
+     {
+      "t": "Fluid bolus only with great caution (cardiogenic)",
+      "s": "paedstg2026:1.17",
+      "d": 1
+     },
+     {
+      "h": "Tamponade"
+     },
+     {
+      "t": "Urgent ultrasound-guided pericardiocentesis by experienced person; emergency: large-bore cannula",
+      "s": "paedstg2026:4.18"
+     },
+     {
+      "h": "Hypertension"
+     },
+     {
+      "t": "Furosemide 1–2 mg/kg IV; amlodipine 0.2 mg/kg PO",
+      "s": "paedstg2026:4.36"
+     },
+     {
+      "h": "Monitor"
+     },
+     {
+      "t": "Over-diuresis, hypokalaemia, electrolytes",
+      "s": "paedstg2026:4.21"
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Wean O₂ as SpO₂ allows",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine output hourly",
+      "s": "paedstg2026:4.16",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "RR, HR, liver falling = responding",
+      "d": 1
+     },
+     {
+      "t": "Not responding / hypotensive → ICU: REFER",
+      "s": "paedstg2026:4.22",
+      "b": 1
+     },
+     {
+      "t": "Tick the cause (differential sheet)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Fluid 75% of requirement; adequate calories",
+      "s": "paedstg2026:4.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + K⁺",
+      "s": "paedstg2026:4.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral furosemide as soon as condition allows: 1–2 mg/kg 12-hourly",
+      "s": "paedstg2026:4.23",
+      "b": 1
+     },
+     {
+      "t": "No spironolactone: add KCl",
+      "s": "paedstg2026:4.23"
+     },
+     {
+      "t": "Stable BP: start captopril 0.5–1 mg/kg/24 h in 3 doses (not obstructive lesions)",
+      "s": "paedstg2026:4.22"
+     }
+    ]
+   },
+   {
+    "label": "If myocarditis / cardiomyopathy",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Bed rest; fluid 75%",
+      "s": "paedstg2026:4.17"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Troponin-T, ECG",
+      "s": "paedstg2026:4.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Spironolactone 1–3 mg/kg daily with paediatric cardiologist",
+      "s": "paedstg2026:4.16"
+     },
+     {
+      "t": "No IV immunoglobulin",
+      "s": "paedstg2026:4.16"
+     },
+     {
+      "t": "Discuss with paediatrician; REFER (inotropes / work-up)",
+      "s": "paedstg2026:4.17",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If rheumatic",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Bed rest until sleeping pulse normal",
+      "s": "paedstg2026:4.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ASOT, throat culture, ESR / CRP",
+      "s": "paedstg2026:4.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Benzathine penicillin < 30 kg 600 000 IU / ≥ 30 kg 1.2 MU IM once, or penicillin VK 15 mg/kg 12-hourly × 10 days",
+      "s": "paedstg2026:4.14",
+      "b": 1
+     },
+     {
+      "t": "Severe arthritis: ibuprofen 10 mg/kg 8-hourly",
+      "s": "paedstg2026:4.14"
+     },
+     {
+      "t": "REFER for echo; notify",
+      "s": "paedstg2026:4.15"
+     }
+    ]
+   },
+   {
+    "label": "If L–R shunt",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Special attention to nutrition",
+      "s": "paedstg2026:4.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Furosemide 1 mg/kg/dose 8–12-hourly + KCl 25–50 mg/kg/dose",
+      "s": "paedstg2026:4.9",
+      "b": 1
+     },
+     {
+      "t": "If needed: spironolactone 1 mg/kg 12-hourly — stop KCl",
+      "s": "paedstg2026:4.9"
+     },
+     {
+      "t": "REFER all to paediatric cardiology",
+      "s": "paedstg2026:4.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If effusion / tamponade",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "No diuretic push in tamponade",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TST; pericardial fluid if drained",
+      "s": "paedstg2026:4.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tamponade → urgent pericardiocentesis / REFER",
+      "s": "paedstg2026:4.18",
+      "b": 1
+     },
+     {
+      "t": "TB likely: TB pathway",
+      "s": "paedstg2026:4.17",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–4",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Fluid 75%; NG feeds if needed",
+      "s": "paedstg2026:4.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, K⁺ every 1–2 days; BP",
+      "s": "paedstg2026:4.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Captopril: +0.5 mg/kg/24 h every 24–48 h to 3–5 mg/kg/24 h (< 1 y max 4)",
+      "s": "paedstg2026:4.23",
+      "b": 1
+     },
+     {
+      "t": "Or enalapril 0.2–1 mg/kg/day, +0.2 mg/kg/day every 1–2 days",
+      "s": "paedstg2026:4.23"
+     },
+     {
+      "t": "Still symptomatic: spironolactone 1–3 mg/kg daily",
+      "s": "paedstg2026:4.23"
+     },
+     {
+      "t": "Refractory → REFER (β-blocker, digoxin)",
+      "s": "paedstg2026:4.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge / transfer",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Feeding plan; caregiver taught",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E on discharge",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Referral for cause and treatment review after stabilisation",
+      "s": "paedstg2026:4.23",
+      "b": 1
+     },
+     {
+      "t": "ARF: benzathine penicillin every 3–4 weeks to 21 y (35 y if valve disease)",
+      "s": "paedstg2026:4.15"
+     },
+     {
+      "t": "Myocarditis: avoid exercise ≥ 6 months",
+      "s": "paedstg2026:4.16"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Acute doses",
+   "items": [
+    {
+     "t": "O₂ 100% face mask / nasal cannula",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "t": "Furosemide IV 1 mg/kg 8-hourly; infusion 0.1–1 mg/kg/h",
+     "s": "paedstg2026:4.21",
+     "b": 1
+    },
+    {
+     "t": "HCTZ 1 mg/kg 12-hourly (with cardiologist)",
+     "s": "paedstg2026:4.22"
+    },
+    {
+     "t": "Dobutamine 2–15 mcg/kg/min (ICU)",
+     "s": "paedstg2026:4.22",
+     "b": 1
+    },
+    {
+     "t": "Shock chapter: dobutamine 5–15 mcg/kg/min",
+     "s": "paedstg2026:1.17"
+    },
+    {
+     "t": "Hypoglycaemia: dextrose 10% 2–5 mL/kg",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Amlodipine 0.2 mg/kg PO (hypertension)",
+     "s": "paedstg2026:4.36"
+    }
+   ]
+  },
+  {
+   "title": "Maintenance doses",
+   "items": [
+    {
+     "t": "Furosemide oral 1–2 mg/kg 12-hourly; KCl unless on spironolactone",
+     "s": "paedstg2026:4.23",
+     "b": 1
+    },
+    {
+     "t": "Captopril 0.5–1 mg/kg/24 h ÷ 8-hourly → 3–5 mg/kg/24 h (< 1 y ≤ 4)",
+     "s": "paedstg2026:4.23",
+     "b": 1
+    },
+    {
+     "t": "Enalapril 0.2–1 mg/kg/day",
+     "s": "paedstg2026:4.23"
+    },
+    {
+     "t": "Spironolactone 1–3 mg/kg daily",
+     "s": "paedstg2026:4.23"
+    },
+    {
+     "t": "ACE-i contra-indicated: AS, MS, coarctation, bilateral RAS",
+     "s": "paedstg2026:4.23",
+     "b": 1
+    },
+    {
+     "t": "Benzathine penicillin < 30 kg 600 000 IU · > 30 kg 1.2 MU, every 3–4 weeks",
+     "s": "paedstg2026:4.15"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "RR or HR rising, SpO₂ falling",
+     "s": "paedstg2026:4.21",
+     "d": 1
+    },
+    {
+     "t": "Liver enlarging, weight up",
+     "s": "paedstg2026:4.21",
+     "d": 1
+    },
+    {
+     "t": "CRT ≥ 3 s, cold, low urine output",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Over-diuresis: dry, low BP; low K⁺",
+     "s": "paedstg2026:4.21"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Hypotensive / refractory failure, myocarditis, cardiomyopathy, tamponade",
+     "s": "paedstg2026:4.22",
+     "b": 1
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "U&E, K⁺, HGT, Hb, CXR, ECG",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "Breathing comfortably off O₂",
+    "d": 1
+   },
+   {
+    "t": "Feeding and gaining weight",
+    "d": 1
+   },
+   {
+    "t": "On oral furosemide ± captopril / spironolactone",
+    "s": "paedstg2026:4.23"
+   },
+   {
+    "t": "K⁺ and creatinine stable",
+    "s": "paedstg2026:4.22"
+   },
+   {
+    "t": "Cause identified or referral booked",
+    "s": "paedstg2026:4.23"
+   },
+   {
+    "t": "Caregiver knows doses and danger signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Paediatric cardiology / paediatrician: cause and review",
+    "s": "paedstg2026:4.23",
+    "b": 1
+   },
+   {
+    "t": "1–2 weeks: weight, RR, liver, K⁺",
+    "d": 1
+   },
+   {
+    "t": "Refer back: deterioration despite treatment",
+    "s": "paedstg2026:4.23"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — breathing, fluid and weight",
+  "period": "one sheet per 24 h, hourly rows",
+  "params": [
+   {
+    "h": "Breathing and circulation",
+    "items": [
+     {
+      "t": "RR, heart rate, SpO₂ + O₂, BP, CRT: hourly for the first 6 h and while on IV furosemide or inotrope, then 4-hourly",
+      "s": "paedstg2026:4.21",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Upright or semi-upright position; oxygen as prescribed",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluid and urine",
+    "items": [
+     {
+      "t": "Fluid intake 75% of daily requirement — not at the expense of calories; all intake and urine charted",
+      "s": "paedstg2026:4.22",
+      "b": 1
+     },
+     {
+      "t": "Urine output hourly while on IV furosemide (watch for over-diuresis)",
+      "s": "paedstg2026:4.21",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Weight, liver, feeds",
+    "items": [
+     {
+      "t": "Weigh daily; liver edge (cm below costal margin) daily",
+      "s": "paedstg2026:4.21",
+      "d": 1
+     },
+     {
+      "t": "Feeds: breastfeed / NG if tiring; record volumes",
+      "s": "paedstg2026:4.22"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "RR or HR rising, SpO₂ falling",
+    "s": "paedstg2026:4.21",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "CRT ≥ 3 s or cold peripheries",
+    "s": "paedstg2026:1.15"
+   },
+   {
+    "t": "liver enlarging or weight up",
+    "d": 1
+   },
+   {
+    "t": "low urine output or dry on diuretics",
+    "s": "paedstg2026:4.21"
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:7.31"
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Allowed (75%) (mL)",
+   "Urine (mL)",
+   "Weight (kg)",
+   "Liver (cm)"
+  ]
+ }
+}

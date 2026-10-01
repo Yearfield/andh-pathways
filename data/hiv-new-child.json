@@ -1,0 +1,1007 @@
+{
+ "id": "hiv-new-child",
+ "short": "New HIV (child)",
+ "title": "Newly diagnosed HIV, TB excluded — admitted child 28 days to < 15 years",
+ "population": "Child 28 d – < 15 y, newly diagnosed with HIV, never on ART; TB excluded; excludes neonates, TB, meningitis",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "hiv2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "< 28 days → New HIV (neonate)",
+     "b": 1
+    },
+    {
+     "t": "TB diagnosed → TB-HIV (paeds)",
+     "b": 1
+    },
+    {
+     "t": "Previously on ART → HIV defaulter (child)",
+     "b": 1
+    },
+    {
+     "t": "Meningitis (TB / crypto) → REFER",
+     "s": "hiv2026:92",
+     "b": 1
+    },
+    {
+     "t": "SAM → run SAM pathway alongside this one",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "HIV diagnosis — confirm by age",
+   "items": [
+    {
+     "t": "< 18 months: PCR positive → confirm with 2nd PCR (or VL) on a new sample",
+     "s": "hiv2026:18",
+     "b": 1
+    },
+    {
+     "t": "18 months–2 years: rapid test → confirm with PCR",
+     "s": "hiv2026:18"
+    },
+    {
+     "t": "> 2 years: rapid test algorithm (3 tests)",
+     "s": "hiv2026:18"
+    },
+    {
+     "t": "Start ART while awaiting the confirmatory result",
+     "s": "hiv2026:18",
+     "b": 1
+    },
+    {
+     "t": "Wt ____ kg  Ht ____ cm  HC ____ cm  MUAC ____ cm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Advanced HIV / seriously ill = any one of",
+   "items": [
+    {
+     "t": "All children < 5 y = advanced HIV (unless > 1 year on ART and stable)",
+     "s": "hiv2026:54",
+     "b": 1
+    },
+    {
+     "t": "≥ 5 y: CD4 ≤ 200 or WHO stage 3 / 4",
+     "s": "hiv2026:54",
+     "b": 1
+    },
+    {
+     "t": "Unable to drink / breastfeed · vomits everything · convulsions",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Lethargic / unconscious · signs of shock",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Chest indrawing · stridor · SpO₂ < 92% · cyanosis",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB)",
+   "items": [
+    {
+     "t": "Mother's HIV status, ART and VL",
+     "s": "hiv2026:148"
+    },
+    {
+     "t": "Infant prophylaxis (NVP / AZT) given",
+     "s": "hiv2026:148"
+    },
+    {
+     "t": "Previous PCR / rapid results and barcodes",
+     "s": "hiv2026:151"
+    },
+    {
+     "t": "Breastfeeding status",
+     "s": "hiv2026:149"
+    },
+    {
+     "t": "Growth curve",
+     "s": "paedstg2026:9.14"
+    },
+    {
+     "t": "Immunisations up to date",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "t": "Vitamin A · deworming",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "t": "Developmental milestones",
+     "s": "paedstg2026:9.14"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Caregiver (mandatory)"
+    },
+    {
+     "t": "At least one identified caregiver who gives the medicine",
+     "s": "paedstg2026:9.16",
+     "b": 1
+    },
+    {
+     "t": "Caregiver's own HIV status and ART",
+     "s": "paedstg2026:9.13"
+    },
+    {
+     "t": "Disclosure in household",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "t": "Orphan / vulnerable child → social worker",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "TB contact and TB symptoms (child and caregiver)",
+     "s": "paedstg2026:9.13",
+     "b": 1
+    },
+    {
+     "t": "Cough, fast breathing (PJP / pneumonia)",
+     "s": "hiv2026:211"
+    },
+    {
+     "t": "Diarrhoea ≥ 14 days · persistent fever",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Weight loss / poor growth",
+     "s": "hiv2026:210"
+    },
+    {
+     "h": "Feeding"
+    },
+    {
+     "t": "Breastfed / formula / solids",
+     "s": "paedstg2026:9.13"
+    },
+    {
+     "t": "Appetite and intake",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age norms (IMCI) or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia for age",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea for age",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Chest indrawing / stridor",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 92% on room air → O₂",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Signs of shock",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / unconscious",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "MUAC < 11.5 cm / WHZ < −3 (SAM)",
+     "s": "hiv2026:59",
+     "k": "yn"
+    },
+    {
+     "t": "Bilateral pedal oedema",
+     "s": "hiv2026:59",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — WHO stage (children)",
+   "items": [
+    {
+     "h": "Stage 2"
+    },
+    {
+     "t": "Hepatosplenomegaly · parotid enlargement · PPE",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Recurrent oral ulcers · extensive warts / molluscum",
+     "s": "hiv2026:210"
+    },
+    {
+     "h": "Stage 3"
+    },
+    {
+     "t": "Oral thrush after 6–8 weeks of life · OHL",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Diarrhoea ≥ 14 d · fever > 1 month · moderate malnutrition",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Severe recurrent pneumonia · LIP · Hb < 8",
+     "s": "hiv2026:210"
+    },
+    {
+     "h": "Stage 4"
+    },
+    {
+     "t": "Severe wasting / SAM not responding · PJP",
+     "s": "hiv2026:211"
+    },
+    {
+     "t": "Oesophageal candida · HIV encephalopathy",
+     "s": "hiv2026:211"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Lymphadenopathy",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "Development delay (encephalopathy)",
+     "s": "hiv2026:211"
+    },
+    {
+     "t": "WHO stage: 1 · 2 · 3 · 4 (circle)",
+     "s": "hiv2026:88"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Exclude TB before ART / TPT",
+   "items": [
+    {
+     "t": "TB symptom screen: cough, fever, poor weight gain, lethargy, contact",
+     "s": "hiv2026:89",
+     "b": 1
+    },
+    {
+     "t": "Sample for Xpert (sputum / gastric / stool) if any symptom",
+     "s": "hiv2026:89",
+     "b": 1
+    },
+    {
+     "t": "Positive or clinical TB → TB-HIV (paeds) pathway",
+     "b": 1
+    },
+    {
+     "t": "TB excluded → TPT once > 14 weeks old",
+     "s": "hiv2026:89"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Baseline bloods — send on arrival",
+   "items": [
+    {
+     "t": "CD4 %: ____  CD4 count: ____",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Confirmatory test (2nd PCR / VL < 2 y)",
+     "s": "hiv2026:18",
+     "b": 1
+    },
+    {
+     "t": "Hb or FBC (< 8 g/dL: manage)",
+     "s": "paedstg2026:9.14",
+     "b": 1
+    },
+    {
+     "t": "ALT if jaundiced",
+     "s": "paedstg2026:9.14"
+    },
+    {
+     "t": "CrAg: adolescents with CD4 ≤ 200 only",
+     "s": "hiv2026:73"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Convulsions / lethargic",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 92% / chest indrawing",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "PJP (infant, hypoxic, dry cough)",
+     "s": "hiv2026:211"
+    },
+    {
+     "t": "Meningitis",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Severe pneumonia / sepsis",
+     "s": "hiv2026:210"
+    },
+    {
+     "t": "SAM",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Severe anaemia (Hb < 7)",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "TB (child or contact)",
+     "s": "paedstg2026:9.13"
+    },
+    {
+     "t": "No identified caregiver",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Meningitis, TB meningitis, shock not responding, or needs ventilation → REFER (regional)",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT → stabilise, exclude TB, prepare caregiver, start ART (pALD) within 7 days, same day if possible",
+   "s": "hiv2026:26"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Treat the admitting illness · ART within 7 days, same day if possible (< 5 y = priority) · branch rows only if needed",
+  "columns": {
+   "feed": "O₂, feeds & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Caregiver gives ART + CPT under observation; each dose timed; spat / vomited recorded",
+    "s": "paedstg2026:9.13",
+    "b": 1
+   },
+   {
+    "t": "Feeds / intake and stool each shift",
+    "d": 1
+   },
+   {
+    "t": "Rash, mouth ulcers, jaundice (cotrimoxazole / INH)",
+    "s": "hiv2026:87"
+   },
+   {
+    "t": "After ART start: new fever, enlarging nodes, worse breathing (IRIS)",
+    "s": "hiv2026:104"
+   },
+   {
+    "t": "Weight on admission and twice weekly; re-check weight band",
+    "s": "paedstg2026:9.17"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "All children < 5 y have advanced HIV. Start ART in hospital; don't wait for the confirmatory result.",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 92%",
+      "s": "hiv2026:59",
+      "b": 1
+     },
+     {
+      "t": "Continue breastfeeding",
+      "s": "paedstg2026:9.13"
+     },
+     {
+      "t": "SAM: F-75 per SAM pathway",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Confirmatory PCR / VL (< 2 y) or rapid tests",
+      "s": "hiv2026:18",
+      "b": 1
+     },
+     {
+      "t": "CD4 % and count",
+      "s": "paedstg2026:9.14",
+      "b": 1
+     },
+     {
+      "t": "Hb / FBC",
+      "s": "paedstg2026:9.14",
+      "b": 1
+     },
+     {
+      "t": "ALT if jaundiced",
+      "s": "paedstg2026:9.14"
+     },
+     {
+      "t": "Xpert if TB symptoms",
+      "s": "hiv2026:89",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Caregiver"
+     },
+     {
+      "t": "At least one identified caregiver who gives the medicine",
+      "s": "paedstg2026:9.16",
+      "b": 1
+     },
+     {
+      "t": "Counsel: lifelong ART, adherence, side effects",
+      "s": "paedstg2026:9.17"
+     },
+     {
+      "h": "Prophylaxis"
+     },
+     {
+      "t": "CPT: all < 1 y · 1–5 y if CD4 ≤ 25% or WHO 3/4 · > 5 y if CD4 ≤ 200 or WHO 3/4",
+      "s": "hiv2026:87",
+      "b": 1
+     },
+     {
+      "h": "ART timing — tick"
+     },
+     {
+      "t": "TB symptoms: investigate first; start ART once TB excluded",
+      "s": "hiv2026:26"
+     },
+     {
+      "t": "PJP or bacterial pneumonia: defer ART 1–2 weeks after starting treatment",
+      "s": "hiv2026:26",
+      "b": 1
+     },
+     {
+      "t": "No deferral reason: start ART within 7 days, same day if possible (priority: AHD, < 5 y, pregnant)",
+      "s": "hiv2026:26",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Results · prepare",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase CD4, Hb, Xpert",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "TB found → TB-HIV (paeds) pathway",
+      "b": 1
+     },
+     {
+      "t": "Syringe per ARV, dose marked; show how to prepare",
+      "s": "paedstg2026:9.13"
+     },
+     {
+      "t": "Caregiver health / ART checked",
+      "s": "paedstg2026:9.13"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Start ART",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight → dose band",
+      "s": "paedstg2026:9.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "ABC + 3TC + DTG: pALD 60/30/5 dispersible once daily by weight",
+      "s": "hiv2026:174",
+      "b": 1
+     },
+     {
+      "t": "2–5.9 kg 1 tab · 6–9.9 kg 3 · 10–13.9 kg 4 · 14–19.9 kg 5 · 20–24.9 kg 6",
+      "s": "hiv2026:174"
+     },
+     {
+      "t": "≥ 25 kg: ALD 600/300/50 1 tab daily · ≥ 30 kg and ≥ 10 y: TLD if eligible",
+      "s": "hiv2026:174"
+     },
+     {
+      "t": "3–5.9 kg 2.5 mL · 6–13.9 kg 5 mL / ½ tab · 14–24.9 kg 10 mL / 1 tab · ≥ 25 kg 2 tabs daily",
+      "s": "hiv2026:88"
+     }
+    ]
+   },
+   {
+    "label": "If PJP / pneumonia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "O₂ to SpO₂ ≥ 92%",
+      "s": "hiv2026:59",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat per Paeds STG pneumonia / PJP section",
+      "d": 1
+     },
+     {
+      "t": "PJP or bacterial pneumonia: defer ART 1–2 weeks after starting treatment",
+      "s": "hiv2026:26",
+      "b": 1
+     },
+     {
+      "t": "Not improving / needs CPAP → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If SAM",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "SAM feeding protocol",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Glucose",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stabilise SAM first; start ART once stable (usually within 2 weeks)",
+      "d": 1
+     },
+     {
+      "t": "Dose ART by current weight; re-dose as weight rises",
+      "s": "paedstg2026:9.17",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–6",
+    "phase": "Tolerance",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ALT if jaundice / vomiting",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Caregiver gives each dose, nurse observes",
+      "s": "paedstg2026:9.13",
+      "b": 1
+     },
+     {
+      "t": "Cotrimoxazole rash with systemic or mucosal features: stop permanently, admit",
+      "s": "hiv2026:87",
+      "b": 1
+     },
+     {
+      "t": "TPT once TB excluded (> 14 weeks old): INH daily × 6 months (6H)",
+      "s": "hiv2026:89",
+      "b": 1
+     },
+     {
+      "t": "Pyridoxine: < 5 y 12.5 mg, ≥ 5 y 25 mg daily",
+      "s": "hiv2026:89"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "paedstg2026:9.17"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge summary: diagnoses, ART regimen, OI treatment doses and phases",
+      "s": "hiv2026:96",
+      "b": 1
+     },
+     {
+      "t": "VL at month 3 on ART",
+      "s": "paedstg2026:9.15",
+      "b": 1
+     },
+     {
+      "t": "Clinic 2-weekly for the first 3 months",
+      "s": "hiv2026:97",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "ART — ABC + 3TC + DTG by weight",
+   "items": [
+    {
+     "t": "ABC + 3TC + DTG: pALD 60/30/5 dispersible once daily by weight",
+     "s": "hiv2026:174",
+     "b": 1
+    },
+    {
+     "t": "2–5.9 kg 1 tab · 6–9.9 kg 3 · 10–13.9 kg 4 · 14–19.9 kg 5 · 20–24.9 kg 6",
+     "s": "hiv2026:174"
+    },
+    {
+     "t": "≥ 25 kg: ALD 600/300/50 1 tab daily · ≥ 30 kg and ≥ 10 y: TLD if eligible",
+     "s": "hiv2026:174"
+    },
+    {
+     "t": "Re-check weight band at every visit",
+     "s": "paedstg2026:9.17"
+    },
+    {
+     "h": "Caregiver"
+    },
+    {
+     "t": "Syringe per ARV, dose marked; show how to prepare",
+     "s": "paedstg2026:9.13"
+    },
+    {
+     "t": "Disclosure to another household adult encouraged",
+     "s": "paedstg2026:9.16"
+    },
+    {
+     "h": "Timing"
+    },
+    {
+     "t": "No deferral reason: start ART within 7 days, same day if possible (priority: AHD, < 5 y, pregnant)",
+     "s": "hiv2026:26",
+     "b": 1
+    },
+    {
+     "t": "PJP or bacterial pneumonia: defer ART 1–2 weeks after starting treatment",
+     "s": "hiv2026:26",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Cotrimoxazole · TPT",
+   "items": [
+    {
+     "h": "Cotrimoxazole"
+    },
+    {
+     "t": "CPT: all < 1 y · 1–5 y if CD4 ≤ 25% or WHO 3/4 · > 5 y if CD4 ≤ 200 or WHO 3/4",
+     "s": "hiv2026:87",
+     "b": 1
+    },
+    {
+     "t": "3–5.9 kg 2.5 mL · 6–13.9 kg 5 mL / ½ tab · 14–24.9 kg 10 mL / 1 tab · ≥ 25 kg 2 tabs daily",
+     "s": "hiv2026:88"
+    },
+    {
+     "h": "TPT (> 14 weeks, TB excluded)"
+    },
+    {
+     "t": "TPT once TB excluded (> 14 weeks old): INH daily × 6 months (6H)",
+     "s": "hiv2026:89",
+     "b": 1
+    },
+    {
+     "t": "INH 100 mg: 2–3.4 kg ¼ · 3.5–4.9 ½ · 5–7.4 ¾ · 7.5–9.9 1 · 10–14.9 1½ · 15–19.9 2 · 20–24.9 3 tabs",
+     "s": "hiv2026:90"
+    },
+    {
+     "t": "Pyridoxine: < 5 y 12.5 mg, ≥ 5 y 25 mg daily",
+     "s": "hiv2026:89"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · IRIS",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Convulsions, lethargy, neck stiffness",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Cotrimoxazole rash with systemic or mucosal features: stop permanently, admit",
+     "s": "hiv2026:87",
+     "b": 1
+    },
+    {
+     "t": "Vomits every dose / refuses",
+     "d": 1
+    },
+    {
+     "t": "SpO₂ < 92%, chest indrawing",
+     "s": "hiv2026:59"
+    },
+    {
+     "h": "IRIS"
+    },
+    {
+     "t": "New fever, nodes, worse chest after ART: continue ART, discuss",
+     "s": "hiv2026:104"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Meningitis · needs CPAP / ventilation · second-line decisions (experienced practitioner)",
+     "s": "paedstg2026:9.17",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No danger signs",
+    "s": "hiv2026:59"
+   },
+   {
+    "t": "TB excluded",
+    "s": "hiv2026:89",
+    "b": 1
+   },
+   {
+    "t": "ART started and tolerated",
+    "s": "hiv2026:26",
+    "b": 1
+   },
+   {
+    "t": "Caregiver shown and gives correct doses",
+    "s": "paedstg2026:9.13",
+    "b": 1
+   },
+   {
+    "t": "Feeding / gaining weight",
+    "d": 1
+   },
+   {
+    "t": "Clinic appointment ≤ 2 weeks; RtHB updated",
+    "s": "hiv2026:97"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC / ART clinic)",
+  "items": [
+   {
+    "t": "Clinic 2-weekly for the first 3 months; re-dose by weight each visit",
+    "s": "hiv2026:97",
+    "b": 1
+   },
+   {
+    "t": "VL at month 3, month 12, then 12-monthly",
+    "s": "paedstg2026:9.15",
+    "b": 1
+   },
+   {
+    "t": "CD4 at 1 year on ART, then 6-monthly until CPT can stop",
+    "s": "paedstg2026:9.14"
+   },
+   {
+    "t": "Growth, development, immunisations (RtHB)",
+    "s": "paedstg2026:9.14"
+   },
+   {
+    "t": "Age-appropriate disclosure to the child",
+    "s": "hiv2026:186"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "14-day nursing record — ART and prophylaxis doses, feeds and warning signs",
+  "period": "one sheet per 14 days, one row per day (vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "Caregiver gives ART + CPT under observation; each dose timed; spat / vomited recorded",
+      "s": "paedstg2026:9.13",
+      "b": 1
+     },
+     {
+      "t": "Weight on admission and twice weekly; re-check weight band",
+      "s": "paedstg2026:9.17"
+     }
+    ]
+   },
+   {
+    "h": "Feeds · warning signs",
+    "items": [
+     {
+      "t": "Feeds / intake and stool each shift",
+      "d": 1
+     },
+     {
+      "t": "Rash, mouth ulcers, jaundice (cotrimoxazole / INH)",
+      "s": "hiv2026:87"
+     }
+    ]
+   },
+   {
+    "h": "Observations · IRIS",
+    "items": [
+     {
+      "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "After ART start: new fever, enlarging nodes, worse breathing (IRIS)",
+      "s": "hiv2026:104"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "convulsions, lethargy or neck stiffness",
+    "s": "hiv2026:59",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ < 92% or chest indrawing",
+    "s": "hiv2026:59",
+    "b": 1
+   },
+   {
+    "t": "rash with mouth ulcers or fever",
+    "s": "hiv2026:87",
+    "b": 1
+   },
+   {
+    "t": "dose vomited / spat twice in a row",
+    "d": 1
+   },
+   {
+    "t": "not feeding",
+    "s": "hiv2026:59"
+   }
+  ],
+  "totals": [
+   "ART doses given / due",
+   "CPT / TPT given / due",
+   "Doses vomited / spat",
+   "Weight change (kg)"
+  ]
+ }
+}

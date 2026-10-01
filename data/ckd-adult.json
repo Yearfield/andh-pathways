@@ -1,0 +1,1235 @@
+{
+ "id": "ckd-adult",
+ "short": "CKD (adult)",
+ "title": "Chronic kidney disease — admitted with a complication (adult)",
+ "population": "Adult and adolescent ≥ 13 y with known or suspected CKD; excludes pregnancy and dialysis patients",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "hiv2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Normal creatinine in last 3 months → AKI (adult) pathway",
+     "s": "hiv2026:108",
+     "b": 1
+    },
+    {
+     "t": "Pregnant → discuss with obstetrics; PET pathway if hypertensive",
+     "b": 1
+    },
+    {
+     "t": "Child < 13 y → CKD (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any marker present > 3 months",
+   "items": [
+    {
+     "t": "eGFR < 60 mL/min/1.73 m²",
+     "s": "adultstg2026:7.1",
+     "b": 1
+    },
+    {
+     "t": "Proteinuria and/or haematuria on dipstick (repeat to confirm)",
+     "s": "adultstg2026:7.2",
+     "b": 1
+    },
+    {
+     "t": "UACR ≥ 3 mg/mmol or UPCR ≥ 0.015 g/mmol",
+     "s": "adultstg2026:7.1",
+     "b": 1
+    },
+    {
+     "t": "Abnormal kidneys on ultrasound (small, polycystic, scarred)",
+     "s": "adultstg2026:7.2",
+     "b": 1
+    },
+    {
+     "t": "Tubular electrolyte disorder, or renal transplant",
+     "s": "adultstg2026:7.2"
+    },
+    {
+     "h": "Stage (KDIGO)"
+    },
+    {
+     "t": "G3a 45–59 · G3b 30–44 · G4 15–29 · G5 < 15",
+     "s": "adultstg2026:7.3",
+     "k": "sub"
+    },
+    {
+     "t": "A1 < 3 · A2 3–30 · A3 > 30 mg/mmol (UACR)",
+     "s": "adultstg2026:7.3",
+     "k": "sub"
+    },
+    {
+     "t": "eGFR ____ · UACR/UPCR ____ · first abnormal (date) ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Decompensated CKD = any one of",
+   "items": [
+    {
+     "t": "Fluid overload / pulmonary oedema",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "K⁺ > 6.0 mmol/L",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Metabolic acidosis",
+     "s": "adultstg2026:7.7"
+    },
+    {
+     "t": "Uraemia: pericarditis, gastritis, delirium, seizures",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "Rapid deterioration in kidney function",
+     "s": "adultstg2026:7.7"
+    },
+    {
+     "t": "Resistant or severe hypertension",
+     "s": "adultstg2026:7.7"
+    },
+    {
+     "t": "G5: eGFR < 15",
+     "s": "adultstg2026:7.3"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Creatinine / eGFR trend (dates) = baseline",
+     "s": "adultstg2026:7.1",
+     "b": 1
+    },
+    {
+     "t": "Cause: hypertension, diabetes, HIV, GN, polycystic",
+     "s": "phcstg2026:8.2"
+    },
+    {
+     "t": "ACE-i / ARB dose, diuretic",
+     "s": "adultstg2026:7.4"
+    },
+    {
+     "t": "Metformin, sulphonylurea, insulin",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "ART regimen (TDF?), CD4, VL",
+     "s": "hiv2026:108"
+    },
+    {
+     "t": "NSAIDs, TDF, aminoglycosides",
+     "s": "phcstg2026:8.3"
+    },
+    {
+     "t": "Previous nephrology / KRT assessment",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Last Hb, K⁺, Ca, PO₄",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Fluid"
+    },
+    {
+     "t": "Breathless, orthopnoea, swelling, weight gain",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "h": "Uraemia"
+    },
+    {
+     "t": "Nausea, vomiting, itch, confusion",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "Bleeding",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "Urine"
+    },
+    {
+     "t": "Volume, froth, blood",
+     "s": "adultstg2026:7.2"
+    },
+    {
+     "h": "Triggers"
+    },
+    {
+     "t": "Infection, D&V, NSAIDs, contrast",
+     "s": "hiv2026:108"
+    },
+    {
+     "t": "Missed medicines",
+     "d": 1
+    },
+    {
+     "h": "Diabetes"
+    },
+    {
+     "t": "Hypoglycaemia episodes",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "h": "TB screen"
+    },
+    {
+     "t": "Cough, fever, sweats, weight loss",
+     "d": 1
+    },
+    {
+     "h": "HIV / social"
+    },
+    {
+     "t": "HIV status; support, transport",
+     "s": "adultstg2026:7.11"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "BP ≥ 180/110 (severe)",
+     "s": "adultstg2026:3.42",
+     "k": "yn"
+    },
+    {
+     "t": "BP above CKD target 130/80",
+     "s": "adultstg2026:7.4",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h (AKI on CKD)",
+     "s": "adultstg2026:7.9",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Volume — overloaded"
+    },
+    {
+     "t": "Raised JVP",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Basal crepitations",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Pedal / sacral oedema",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "Pleural effusion, ascites",
+     "d": 1
+    },
+    {
+     "h": "Volume — dry"
+    },
+    {
+     "t": "Postural drop, dry",
+     "d": 1
+    },
+    {
+     "h": "CVS"
+    },
+    {
+     "t": "Pericardial rub",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "h": "Uraemia / anaemia"
+    },
+    {
+     "t": "Pallor",
+     "s": "hiv2026:107"
+    },
+    {
+     "t": "Confusion, asterixis",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "Bruising, bleeding",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "Eyes"
+    },
+    {
+     "t": "Hypertensive retinopathy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Large kidneys (polycystic)",
+     "s": "adultstg2026:7.2"
+    },
+    {
+     "t": "Palpable bladder",
+     "d": 1
+    },
+    {
+     "t": "Baseline weight ____ kg",
+     "k": "value"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "VBG — K⁺ and pH, plus ECG",
+   "items": [
+    {
+     "t": "Value on arrival: K⁺ ____ mmol/L · pH ____ · HCO₃ ____",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ > 6.0 mmol/L: emergency measures now (chart)",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "ECG changes: calcium gluconate first",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Repeat K⁺ 2-hourly while > 6.0, then daily",
+     "d": 1
+    },
+    {
+     "t": "Acidosis or hyperkalaemia: consult specialist for KRT",
+     "s": "adultstg2026:7.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb — FBC or ward Hb",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "Anaemia supports chronic; normal Hb suggests an acute component",
+     "s": "hiv2026:107"
+    },
+    {
+     "t": "Look for iron, B12, folate deficiency, infection",
+     "s": "adultstg2026:7.7"
+    },
+    {
+     "t": "Hb < 7 g/dL, not bleeding: transfusion trigger (1 unit at a time)",
+     "s": "adultstg2026:23.9",
+     "b": 1
+    },
+    {
+     "t": "No blood bank at ANDH → REFER if transfusion needed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC / encephalopathy",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "Hyperkalaemia with ECG changes",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Severe acidosis",
+     "s": "adultstg2026:7.7"
+    },
+    {
+     "t": "Uraemic pericarditis",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "Uraemic bleeding",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Hypertensive emergency",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Hypoglycaemia (insulin, SU)",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "Sepsis",
+     "s": "hiv2026:108"
+    },
+    {
+     "t": "Acute decline on CKD",
+     "s": "adultstg2026:7.7"
+    },
+    {
+     "t": "Urinary obstruction",
+     "s": "hiv2026:108"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "Drug toxicity (dose not adjusted)",
+     "s": "adultstg2026:7.1"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = DECOMPENSATED CKD → stabilise, discuss KRT with referral centre, REFER",
+   "s": "adultstg2026:7.7"
+  },
+  {
+   "t": "11. ADMIT",
+   "s": "adultstg2026:7.7"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Branch rows (diabetic, HIV) apply only if the condition is present",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Weight daily, same time and scale — the main guide to fluid",
+    "s": "adultstg2026:7.4",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Intake and urine output charted every shift; 24-h balance against the prescribed fluid limit",
+    "s": "adultstg2026:7.4",
+    "d": 1
+   },
+   {
+    "t": "Record whether urine is passed within 1–2 h of each furosemide dose",
+    "s": "adultstg2026:7.5",
+    "b": 1
+   },
+   {
+    "t": "BP, pulse, RR, SpO₂ 4-hourly (hourly while unstable)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Diabetic: HGT before meals and at 22:00; hourly for 6 h after IV insulin for K⁺",
+    "s": "adultstg2026:7.10",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Salt-restricted diet; no NSAIDs; every new drug checked for eGFR dose",
+    "s": "adultstg2026:7.3"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for furosemide, antihypertensives and K⁺ treatment already given. Look for the acute trigger.",
+    "feed": [
+     {
+      "t": "Overloaded: fluid limit; no IV fluids — heparin lock",
+      "s": "phcstg2026:8.5",
+      "b": 1
+     },
+     {
+      "t": "Dry / shocked (acute-on-chronic): NaCl 0.9% bolus, reassess",
+      "s": "adultstg2026:20.20"
+     },
+     {
+      "t": "Fluid balance individualised",
+      "s": "adultstg2026:7.4"
+     },
+     {
+      "t": "Limit salt; restrict dietary phosphate",
+      "s": "adultstg2026:7.5"
+     },
+     {
+      "t": "Low-K⁺ diet while K⁺ high",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + creatinine (eGFR)",
+      "s": "adultstg2026:7.1",
+      "b": 1
+     },
+     {
+      "t": "VBG: K⁺, pH, HCO₃",
+      "s": "adultstg2026:7.7",
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "FBC; ferritin, B12, folate if anaemic",
+      "s": "adultstg2026:7.7",
+      "b": 1
+     },
+     {
+      "t": "Ca, PO₄, albumin",
+      "s": "adultstg2026:7.5",
+      "b": 1
+     },
+     {
+      "t": "HGT; HbA1c if diabetic",
+      "s": "hiv2026:108",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick + UPCR / UACR",
+      "s": "adultstg2026:7.3",
+      "b": 1
+     },
+     {
+      "t": "Renal ultrasound: size, obstruction",
+      "s": "adultstg2026:7.2",
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown; CD4 + VL if HIV+",
+      "s": "adultstg2026:10.32",
+      "b": 1
+     },
+     {
+      "t": "CXR if overloaded",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Hyperkalaemia — K⁺ > 6.0"
+     },
+     {
+      "t": "Calcium gluconate 10% 10 mL slow IV over 10 min; repeat if ECG changes persist after 5 min",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "AND dextrose 50% 100 mL IV, then soluble insulin 10 units IV over 5 min; HGT hourly × 6 h",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "AND salbutamol neb 10–20 mg",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "SPS 15 g PO + 15 mL lactulose 6-hourly if dialysis not feasible",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "t": "Hold ACE-i / ARB, spironolactone",
+      "s": "adultstg2026:7.4",
+      "d": 1
+     },
+     {
+      "h": "Pulmonary oedema"
+     },
+     {
+      "t": "Fowler's; O₂ 40% face mask 6–8 L/min",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "Furosemide 40 mg slow IV; 80 mg if no response in 20–30 min",
+      "s": "adultstg2026:20.16",
+      "b": 1
+     },
+     {
+      "t": "Isosorbide dinitrate 5 mg SL every 5–10 min if not hypotensive",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "h": "Overloaded, not in oedema"
+     },
+     {
+      "t": "eGFR < 60: furosemide 40 mg/d in divided doses (8 AM, 2 PM); titrate to max 500 mg/d",
+      "s": "adultstg2026:7.5",
+      "b": 1
+     },
+     {
+      "h": "BP ≥ 180/110 with symptoms"
+     },
+     {
+      "t": "Two oral agents; lower DBP to 100 over 48–72 h; furosemide if renal insufficiency",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Hypertensive emergency → REFER",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "h": "Acute trigger"
+     },
+     {
+      "t": "Treat infection; stop NSAIDs / nephrotoxics; correct volume; exclude obstruction",
+      "s": "hiv2026:108"
+     },
+     {
+      "t": "Dose-adjust every medicine for eGFR",
+      "s": "adultstg2026:7.1"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Correct",
+    "feed": [
+     {
+      "t": "Fluid limit by weight trend",
+      "s": "adultstg2026:7.4",
+      "d": 1
+     },
+     {
+      "t": "Dietitian: salt, phosphate",
+      "s": "adultstg2026:7.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "VBG if acidotic or K⁺ was high",
+      "s": "adultstg2026:7.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate furosemide until urine within 1–2 h of dose",
+      "s": "adultstg2026:7.5"
+     },
+     {
+      "t": "Acidosis or K⁺ not settling → specialist: KRT",
+      "s": "adultstg2026:7.7",
+      "b": 1
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily (20 mg if eGFR < 30)",
+      "s": "adultstg2026:23.8"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Bone and blood",
+    "feed": [
+     {
+      "t": "Restrict phosphate",
+      "s": "adultstg2026:7.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ca, PO₄ (Ca × PO₄ product)",
+      "s": "adultstg2026:7.5",
+      "b": 1
+     },
+     {
+      "t": "Iron studies result",
+      "s": "adultstg2026:7.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ca × PO₄ < 4.4: calcium (elemental) 500 mg 8-hourly with meals; ↑ to 1 g if PO₄ stays high",
+      "s": "adultstg2026:7.5"
+     },
+     {
+      "t": "Ca × PO₄ > 4.4: aluminium hydroxide 10 mL 8-hourly with meals, 2 weeks only, then calcium carbonate",
+      "s": "adultstg2026:7.6"
+     },
+     {
+      "t": "Low Ca, normal PO₄: calcium carbonate 500 mg 8-hourly, 2 h after meals",
+      "s": "adultstg2026:7.6"
+     },
+     {
+      "t": "Iron deficient: oral iron (Section 2.1.1)",
+      "s": "adultstg2026:7.6"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Renoprotect + BP",
+    "feed": [
+     {
+      "t": "As Day 3",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ before ACE-i",
+      "s": "adultstg2026:7.4",
+      "b": 1
+     },
+     {
+      "t": "UPCR / UACR result",
+      "s": "adultstg2026:7.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Proteinuria: enalapril 5 mg 12-hourly; titrate to 20 mg 12-hourly if tolerated",
+      "s": "adultstg2026:7.4",
+      "b": 1
+     },
+     {
+      "t": "Creatinine up > 20% from baseline: stop ACE-i, consult specialist",
+      "s": "adultstg2026:7.4"
+     },
+     {
+      "t": "BP target < 130/80",
+      "s": "adultstg2026:7.4"
+     },
+     {
+      "t": "Statin / CVD risk (Section 3.1)",
+      "s": "adultstg2026:7.5"
+     }
+    ]
+   },
+   {
+    "label": "If diabetic",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Regular meals with insulin",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT before meals and 22:00",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "eGFR < 60: stop glibenclamide; metformin max 500 mg 12-hourly",
+      "s": "adultstg2026:7.5",
+      "b": 1
+     },
+     {
+      "t": "eGFR < 30: stop metformin; insulin is safer",
+      "s": "adultstg2026:7.5",
+      "b": 1
+     },
+     {
+      "t": "Insulin needs fall as CKD progresses",
+      "s": "adultstg2026:7.5"
+     }
+    ]
+   },
+   {
+    "label": "If HIV+",
+    "phase": "Branch",
+    "feed": [],
+    "tests": [
+     {
+      "t": "CD4, VL; urine PCR",
+      "s": "hiv2026:108",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "On TDF and eGFR < 50: switch to ABC + 3TC + DTG",
+      "s": "hiv2026:103",
+      "b": 1
+     },
+     {
+      "t": "3TC: eGFR 30–50 300 mg · 10–29 150 mg · < 10 50 mg daily",
+      "s": "hiv2026:107"
+     },
+     {
+      "t": "HIVAN: start ART urgently (ABC + 3TC + DTG); ACE-i if proteinuria > 1 g/day",
+      "s": "hiv2026:108"
+     },
+     {
+      "t": "Cotrimoxazole: review dose / nephrotoxicity",
+      "s": "hiv2026:108",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Referral plan",
+    "feed": [
+     {
+      "t": "Discharge fluid limit and diet plan",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Hb",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "G3 and above → refer / consult specialist",
+      "s": "adultstg2026:7.7",
+      "b": 1
+     },
+     {
+      "t": "eGFR < 30: refer early for KRT assessment",
+      "s": "phcstg2026:8.5",
+      "b": 1
+     },
+     {
+      "t": "KRT selection = MDT at referral unit; obtain their criteria",
+      "s": "adultstg2026:7.11"
+     },
+     {
+      "t": "Not a KRT candidate: conservative and palliative plan with family",
+      "s": "adultstg2026:7.6",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Salt and fluid advice; target weight",
+      "s": "adultstg2026:7.3",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺ on discharge",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge letter: stage, cause, drugs stopped, eGFR doses",
+      "d": 1
+     },
+     {
+      "t": "Rehabilitation referral (strength, BP, weight)",
+      "s": "adultstg2026:7.4"
+     },
+     {
+      "t": "Counsel: avoid NSAIDs",
+      "s": "hiv2026:108"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Emergencies · doses",
+   "items": [
+    {
+     "h": "K⁺ > 6.0 mmol/L"
+    },
+    {
+     "t": "Calcium gluconate 10% 10 mL slow IV over 10 min",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Dextrose 50% 100 mL IV + soluble insulin 10 units IV; HGT hourly × 6 h",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Salbutamol neb 10–20 mg",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "SPS 15 g PO + lactulose 6-hourly, or 30–60 g PR",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "h": "Hypoglycaemia"
+    },
+    {
+     "t": "Dextrose 50% 50 mL IV, then dextrose 10% infusion; SU cause: prolonged infusion, observe ≥ 12 h",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "h": "Pulmonary oedema"
+    },
+    {
+     "t": "Furosemide 40 mg slow IV, repeat 40 mg in 2–4 h if responding; 80 mg if no response in 20–30 min",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "KRT / dialysis → discuss and REFER"
+    },
+    {
+     "t": "Refractory overload · K⁺ > 7 · pH < 7.15 refractory",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Uraemic pericarditis, encephalopathy, bleeding",
+     "s": "adultstg2026:7.9"
+    }
+   ]
+  },
+  {
+   "title": "CKD medicines",
+   "items": [
+    {
+     "t": "Enalapril 5 mg 12-hourly → 20 mg 12-hourly; K⁺ + creatinine at 2 weeks if eGFR < 60",
+     "s": "adultstg2026:7.4",
+     "b": 1
+    },
+    {
+     "t": "Cough on ACE-i: losartan 50 → 100 mg daily (specialist)",
+     "s": "adultstg2026:7.4"
+    },
+    {
+     "t": "Furosemide 20–80 mg/d, up to 160 mg; eGFR < 60: 40 mg/d divided, max 500 mg/d",
+     "s": "adultstg2026:7.5",
+     "b": 1
+    },
+    {
+     "t": "Calcium (elemental) 500 mg 8-hourly with meals → 1 g",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "Aluminium hydroxide 10 mL 8-hourly, short courses only",
+     "s": "adultstg2026:7.6"
+    },
+    {
+     "t": "Calciferol / calcitriol: specialist only (PTH > 2 × ULN)",
+     "s": "adultstg2026:7.6"
+    },
+    {
+     "t": "ESA + iron only for patients on dialysis (specialist)",
+     "s": "adultstg2026:7.6"
+    },
+    {
+     "t": "Metformin: max 500 mg 12-hourly if eGFR < 60; stop < 30",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "t": "Enoxaparin 20 mg SC daily if eGFR < 30",
+     "s": "adultstg2026:23.8"
+    },
+    {
+     "t": "TDF stop if eGFR < 50; 3TC by eGFR",
+     "s": "hiv2026:107"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Fluid overload — tell the doctor"
+    },
+    {
+     "t": "Weight up from yesterday · RR rising · SpO₂ falling",
+     "d": 1
+    },
+    {
+     "t": "New crackles · JVP up",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "No urine 1–2 h after furosemide",
+     "s": "adultstg2026:7.5"
+    },
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "K⁺ > 6.0 or ECG change",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Confusion, seizure, rub, bleeding → KRT: REFER",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "BP ≥ 180/110 or falling from baseline",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "Creatinine rising > 20% on ACE-i",
+     "s": "adultstg2026:7.4"
+    },
+    {
+     "t": "HGT < 4 mmol/L",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration send"
+    },
+    {
+     "t": "U&E, VBG, HGT, FBC, ECG",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "Euvolaemic; weight stable on oral diuretic",
+    "d": 1
+   },
+   {
+    "t": "K⁺ stable without emergency treatment",
+    "d": 1
+   },
+   {
+    "t": "BP controlled on oral medicines",
+    "d": 1
+   },
+   {
+    "t": "Acute trigger treated; nephrotoxics stopped",
+    "s": "hiv2026:108"
+   },
+   {
+    "t": "Every drug dosed for eGFR",
+    "s": "adultstg2026:7.1"
+   },
+   {
+    "t": "Referral / KRT decision documented",
+    "s": "adultstg2026:7.7"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "K⁺ + creatinine 2 weeks after ACE-i start or change (eGFR < 60)",
+    "s": "adultstg2026:7.4"
+   },
+   {
+    "t": "CKD G3+ → specialist; eGFR < 30 → KRT assessment",
+    "s": "phcstg2026:8.5"
+   },
+   {
+    "t": "Refer back: weight gain, breathless, less urine, confusion",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — weight, fluid balance and BP",
+  "period": "one sheet per 24 h, hourly rows (4-hourly obs)",
+  "params": [
+   {
+    "h": "Weight and fluid",
+    "items": [
+     {
+      "t": "Weight daily, same time and scale — the main guide to fluid",
+      "s": "adultstg2026:7.4",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Intake and urine output charted every shift; 24-h balance against the prescribed fluid limit",
+      "s": "adultstg2026:7.4",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Furosemide response",
+    "items": [
+     {
+      "t": "Record whether urine is passed within 1–2 h of each furosemide dose",
+      "s": "adultstg2026:7.5",
+      "b": 1
+     },
+     {
+      "t": "Note dose time and first urine time",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs and HGT",
+    "items": [
+     {
+      "t": "BP, pulse, RR, SpO₂ 4-hourly (hourly while unstable)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Diabetic: HGT before meals and at 22:00; hourly for 6 h after IV insulin for K⁺",
+      "s": "adultstg2026:7.10",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "no urine 1–2 h after furosemide",
+    "s": "adultstg2026:7.5",
+    "b": 1
+   },
+   {
+    "t": "weight up, RR rising, SpO₂ falling or new crackles",
+    "d": 1
+   },
+   {
+    "t": "BP ≥ 180/110 or falling from baseline",
+    "s": "adultstg2026:3.42"
+   },
+   {
+    "t": "confusion, seizure, chest pain or bleeding",
+    "s": "adultstg2026:23.7"
+   },
+   {
+    "t": "HGT < 4 mmol/L",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Urine (mL)",
+   "Balance (mL)",
+   "Weight today (kg)",
+   "Change (kg)"
+  ]
+ }
+}

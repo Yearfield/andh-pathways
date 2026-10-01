@@ -1,0 +1,1332 @@
+{
+ "id": "acs-adult",
+ "short": "ACS (adult)",
+ "title": "Acute coronary syndrome — STEMI, NSTEMI and unstable angina (adult)",
+ "population": "Adult with suspected ischaemic chest pain; guidance is for thrombolysis, not primary PCI",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Cocaine / amphetamine chest pain → Cocaine or Amphetamines pathway",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema / shock without ischaemia → ADHF pathway",
+     "b": 1
+    },
+    {
+     "t": "Stable exertional angina, ACS excluded → CAD pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — ischaemic pain + ECG / troponin",
+   "items": [
+    {
+     "t": "Ischaemic chest pain: prolonged, ongoing, or with nausea, sweating, syncope",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "h": "STEMI"
+    },
+    {
+     "t": "Persistent ST elevation, or new / presumed new LBBB",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "h": "NSTEMI"
+    },
+    {
+     "t": "Pain at rest / increasing + raised troponin; ST depression, T inversion or normal ECG",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    },
+    {
+     "h": "Unstable angina"
+    },
+    {
+     "t": "Pain increasing or at rest, or post-infarct angina; no troponin rise",
+     "s": "adultstg2026:3.10",
+     "b": 1
+    },
+    {
+     "t": "Pain onset time ____ · maximal pain ____ h ago · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "High risk = any one of",
+   "items": [
+    {
+     "t": "STEMI (reperfusion decision now)",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Positive troponin / high TIMI or GRACE score",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Ongoing pain despite nitrates",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Cardiogenic shock / pulmonary oedema",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Sustained or compromising dysrhythmia",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "New RBBB + posterior fascicular block",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "New murmur (MR / VSD)",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous MI, angina, PCI / CABG",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Diabetes, hypertension, smoking, lipids",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "Streptokinase in the last year",
+     "s": "adultstg2026:3.5",
+     "b": 1
+    },
+    {
+     "t": "Warfarin / anticoagulant; last INR",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Recent stroke, surgery, trauma, bleeding",
+     "s": "adultstg2026:3.5",
+     "b": 1
+    },
+    {
+     "t": "HIV / ART (protease inhibitor → statin choice)",
+     "s": "adultstg2026:3.8"
+    },
+    {
+     "t": "Asthma (no β-blocker)",
+     "s": "adultstg2026:3.8"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "adultstg2026:3.5"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Onset time, duration, character",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Radiation; sweating, nausea, syncope",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "h": "Thrombolysis contra-indications"
+    },
+    {
+     "t": "Stroke < 3 months, head injury / surgery < 1 month",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Active bleeding / bleeding disorder",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Tearing back pain (dissection)",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "h": "Mimics"
+    },
+    {
+     "t": "Pleuritic / positional pain",
+     "d": 1
+    },
+    {
+     "t": "Sudden breathlessness, leg swelling (PE)",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "h": "Risk factors"
+    },
+    {
+     "t": "Smoking, family history",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "h": "Drugs"
+    },
+    {
+     "t": "Cocaine, amphetamines",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:3.4",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / cold, clammy",
+     "s": "adultstg2026:20.25",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Refractory hypertension (relative CI)",
+     "s": "adultstg2026:3.5",
+     "k": "yn"
+    },
+    {
+     "t": "BP different between arms",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Shock / failure"
+    },
+    {
+     "t": "Cold, clammy, weak pulse",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Crackles, raised JVP",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "Heart"
+    },
+    {
+     "t": "New murmur (MR / VSD)",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Pericardial rub",
+     "d": 1
+    },
+    {
+     "h": "Mimics"
+    },
+    {
+     "t": "Unequal pulses (dissection)",
+     "d": 1
+    },
+    {
+     "t": "Reduced air entry (pneumothorax)",
+     "d": 1
+    },
+    {
+     "t": "Calf swelling (DVT)",
+     "d": 1
+    },
+    {
+     "h": "Bleeding risk"
+    },
+    {
+     "t": "Active bleeding",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Neuro deficit (stroke)",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "ECG — on arrival, repeat every 20–30 min",
+   "items": [
+    {
+     "t": "Time ____ · ST ↑ leads ____ · LBBB Y / N",
+     "k": "value"
+    },
+    {
+     "t": "ST elevation / new LBBB → STEMI: reperfuse",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "ST depression / T inversion → NSTEMI / UA",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Not diagnostic: repeat every 20–30 min",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Inferior MI: right-sided leads; bradycardia → atropine",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    },
+    {
+     "t": "Heart block, VT → REFER if compromising",
+     "s": "adultstg2026:3.9"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Troponin and reperfusion clock",
+   "items": [
+    {
+     "t": "Troponin sent at ____ · result ____",
+     "k": "value"
+    },
+    {
+     "t": "Do not delay treatment waiting for troponin",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "STEMI, pain ≤ 6 h, or > 6 h with ongoing pain: thrombolyse",
+     "s": "adultstg2026:3.5",
+     "b": 1
+    },
+    {
+     "t": "> 6 h and pain-free: no thrombolysis → treat as NSTEMI",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Raised troponin without ischaemia: think HF, PE, CKD, sepsis, myopericarditis",
+     "s": "adultstg2026:3.9"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Cardiac arrest risk",
+     "b": 1
+    },
+    {
+     "t": "Cardiogenic shock",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "VT / VF",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Complete heart block",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Aortic dissection",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "t": "Tamponade",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Active bleeding",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Recent stroke",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Stimulant use",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = STEMI → thrombolyse at ANDH; failed lysis, high-risk NSTEMI, shock → REFER",
+   "s": "adultstg2026:3.9"
+  },
+  {
+   "t": "11. ADMIT (monitored bed)",
+   "s": "adultstg2026:3.3"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "STEMI",
+   "branch": "If STEMI",
+   "features": [
+    {
+     "t": "Ongoing ischaemic pain, ST elevation / new LBBB",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG; troponin (do not wait)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aspirin 150 mg chewed + clopidogrel 75 mg daily + streptokinase 1.5 MU over 30–60 min",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — failed reperfusion, shock, contra-indication with PCI available",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "NSTEMI",
+   "branch": "If NSTEMI / UA",
+   "features": [
+    {
+     "t": "Rest / crescendo pain, troponin raised",
+     "s": "adultstg2026:3.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial ECGs, troponin; TIMI / GRACE score",
+     "s": "adultstg2026:3.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aspirin + clopidogrel 300 mg then 75 mg; enoxaparin 1 mg/kg 12-hourly",
+     "s": "adultstg2026:3.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — positive troponin / high risk: discuss cardiology",
+     "s": "adultstg2026:3.12",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Unstable angina",
+   "branch": "If NSTEMI / UA",
+   "features": [
+    {
+     "t": "Rest / crescendo pain; troponin normal",
+     "s": "adultstg2026:3.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial ECG, troponin",
+     "s": "adultstg2026:3.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "As NSTEMI",
+     "s": "adultstg2026:3.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If high risk, post-infarct angina, ongoing pain",
+     "s": "adultstg2026:3.12"
+    }
+   ]
+  },
+  {
+   "dx": "Aortic dissection",
+   "branch": "If not ACS",
+   "features": [
+    {
+     "t": "Tearing pain to back, unequal pulses / BP",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR (wide mediastinum); bedside ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NO thrombolysis, no anticoagulation",
+     "s": "adultstg2026:3.5",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pulmonary embolism",
+   "branch": "If not ACS",
+   "features": [
+    {
+     "t": "Sudden breathlessness, pleuritic pain, DVT",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, CXR, calf ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Anticoagulate (Section 2.8.2)",
+     "s": "adultstg2026:2.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if unstable — thrombolysis decision",
+     "s": "adultstg2026:2.24",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pericarditis / tamponade",
+   "branch": "If not ACS",
+   "features": [
+    {
+     "t": "Positional pain, rub; raised JVP, low BP",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG (diffuse ST ↑), ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No thrombolysis; TB work-up",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — tamponade: urgent",
+     "s": "adultstg2026:20.26",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pneumothorax",
+   "branch": "If not ACS",
+   "features": [
+    {
+     "t": "Sudden pain, reduced air entry",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR / ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Tension: decompress (procedure card)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If drain needed and not available",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Oesophageal / musculoskeletal",
+   "branch": "If not ACS",
+   "features": [
+    {
+     "t": "Burning, meal-related; reproducible tenderness",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Normal serial ECGs + troponin",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat cause; consider CAD work-up",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "Thrombolysis is not for primary PCI settings · branch rows follow the ticked diagnosis",
+  "columns": {
+   "feed": "O₂, access & diet",
+   "tests": "ECG, bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Continuous ECG monitor; defibrillator at the bedside, also during transfer",
+    "s": "adultstg2026:3.5",
+    "b": 1
+   },
+   {
+    "t": "Pulse, BP, RR (full minute), SpO₂: every 15 min during thrombolysis / GTN and for the first hour, then hourly to 6 h, then 2-hourly",
+    "s": "adultstg2026:3.5",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Chest pain score with each set of obs; new pain → ECG and call doctor",
+    "s": "adultstg2026:3.4",
+    "d": 1
+   },
+   {
+    "t": "O₂ only if SpO₂ < 94%",
+    "s": "adultstg2026:3.4"
+   },
+   {
+    "t": "Watch for bleeding (IV sites, gums, urine, stool) after thrombolysis / anticoagulation",
+    "d": 1
+   },
+   {
+    "t": "Bed rest first 24 h; then mobilise as pain allows",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for aspirin, clopidogrel, nitrates or thrombolysis already given — do not repeat streptokinase.",
+    "feed": [
+     {
+      "t": "O₂ only if SpO₂ < 94%",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "2 IV lines; avoid IM injections and arterial / central punctures",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth until pain settles",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG now; repeat 20–30 min if not diagnostic",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Troponin",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine, K⁺",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, INR if on warfarin",
+      "s": "adultstg2026:3.5",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT; lipogram",
+      "s": "adultstg2026:3.1",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR (heart failure, mediastinum)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "All ACS"
+     },
+     {
+      "t": "Aspirin 150 mg chewed now, then 150 mg daily",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Isosorbide dinitrate 5 mg SL; repeat every 5 min, 3–4 doses (not if hypotensive†)",
+      "s": "adultstg2026:3.10"
+     },
+     {
+      "h": "STEMI — reperfuse"
+     },
+     {
+      "t": "Clopidogrel 75 mg daily (1 month)",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Streptokinase 1.5 MU in 100 mL NaCl 0.9% IV over 30–60 min — no heparin after SK",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Hypotension on SK: slow the infusion, finish within 60 min",
+      "s": "adultstg2026:3.4"
+     },
+     {
+      "t": "SK in last year: alteplase (> 65 kg 15 mg bolus, 50 mg / 30 min, 35 mg / 60 min; max 100 mg)",
+      "s": "adultstg2026:3.5"
+     },
+     {
+      "h": "NSTEMI / UA"
+     },
+     {
+      "t": "Clopidogrel 300 mg, then 75 mg daily (3 months)",
+      "s": "adultstg2026:3.10",
+      "b": 1
+     },
+     {
+      "t": "Enoxaparin 1 mg/kg SC 12-hourly ≥ 2 days, or UFH 5 000 units IV then 1 000–1 200 units/h (aPTT)",
+      "s": "adultstg2026:3.10",
+      "b": 1
+     },
+     {
+      "h": "Ongoing pain"
+     },
+     {
+      "t": "GTN IV 5 mcg/min, +5 every 5 min to 20, then +20 (Table 3.3)",
+      "s": "adultstg2026:3.10"
+     },
+     {
+      "t": "Severe pain despite nitrates: discuss rescue PCI; morphine IV, max 10 mg",
+      "s": "adultstg2026:3.8"
+     }
+    ]
+   },
+   {
+    "label": "20–30 min",
+    "phase": "Re-check",
+    "feed": [
+     {
+      "t": "O₂ by SpO₂",
+      "s": "adultstg2026:3.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG if first not diagnostic",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Evolving ST elevation → STEMI branch",
+      "s": "adultstg2026:3.4"
+     },
+     {
+      "t": "Tick the working diagnosis (differential sheet)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If STEMI",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Bed rest; monitored",
+      "s": "adultstg2026:3.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG at 60 min (alteplase) / 90 min (SK) after start",
+      "s": "adultstg2026:3.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "< 50% fall in ST elevation = failed reperfusion → REFER (rescue PCI)",
+      "s": "adultstg2026:3.9",
+      "b": 1
+     },
+     {
+      "t": "After alteplase: enoxaparin 30 mg IV + 1 mg/kg SC, then 1 mg/kg 12-hourly ≤ 8 days (> 75 y: no IV, 0.75 mg/kg)",
+      "s": "adultstg2026:3.6"
+     },
+     {
+      "t": "After SK: no heparin",
+      "s": "adultstg2026:3.4"
+     },
+     {
+      "t": "> 6 h, pain-free: no lysis → NSTEMI branch",
+      "s": "adultstg2026:3.5"
+     }
+    ]
+   },
+   {
+    "label": "If NSTEMI / UA",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oral diet when pain-free",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Troponin repeat; serial ECG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "TIMI / GRACE score",
+      "s": "adultstg2026:3.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enoxaparin 1 mg/kg 12-hourly ≥ 2 days",
+      "s": "adultstg2026:3.10",
+      "b": 1
+     },
+     {
+      "t": "High risk or positive troponin → discuss with cardiology (angiography)",
+      "s": "adultstg2026:3.12",
+      "b": 1
+     },
+     {
+      "t": "Ongoing pain → GTN IV; urgent REFER",
+      "s": "adultstg2026:3.11"
+     }
+    ]
+   },
+   {
+    "label": "If not ACS",
+    "phase": "Branch",
+    "feed": [],
+    "tests": [
+     {
+      "t": "CXR, ultrasound as per differential",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dissection: stop antithrombotics → REFER urgently",
+      "s": "adultstg2026:3.5",
+      "b": 1
+     },
+     {
+      "t": "PE / tamponade → urgent consult and REFER",
+      "s": "adultstg2026:20.26"
+     },
+     {
+      "t": "Low risk, normal ECGs + troponin → CAD pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6–24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Light diet; mobilise in bed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG daily and with pain",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Lipogram, HbA1c",
+      "s": "adultstg2026:3.1",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stable, no HF / hypotension / bradycardia / asthma: atenolol 50 mg daily",
+      "s": "adultstg2026:3.8",
+      "b": 1
+     },
+     {
+      "t": "Rosuvastatin 10 mg nocte (PI: atorvastatin 10 mg; amlodipine: simvastatin 10–20 mg)",
+      "s": "adultstg2026:3.8",
+      "b": 1
+     },
+     {
+      "t": "LV dysfunction / HF: enalapril, target 10 mg 12-hourly",
+      "s": "adultstg2026:3.8"
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Complications",
+    "feed": [
+     {
+      "t": "Mobilise gradually",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E after ACE-i",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Refer: refractory shock / oedema, ventricular dysrhythmia, MR / VSD, new RBBB + posterior fascicular block, post-infarct angina",
+      "s": "adultstg2026:3.9",
+      "b": 1
+     },
+     {
+      "t": "Heart failure: replace atenolol with carvedilol (CCF pathway)",
+      "s": "adultstg2026:3.12"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Prudent diet; stop smoking",
+      "s": "adultstg2026:3.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG on discharge",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aspirin 150 mg daily lifelong; clopidogrel to 1 month (STEMI) / 3 months (NSTEMI)",
+      "s": "adultstg2026:3.10",
+      "b": 1
+     },
+     {
+      "t": "Atenolol, statin, ACE-i if LV dysfunction; ISDN 5 mg SL for pain",
+      "s": "adultstg2026:3.12"
+     },
+     {
+      "t": "Discharge letter: ECGs, troponin, lysis time, risk score",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antithrombotics · thrombolysis",
+   "items": [
+    {
+     "t": "Aspirin 150 mg chewed, then 150 mg daily",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Clopidogrel: STEMI 75 mg daily × 1 month · NSTEMI / UA 300 mg, then 75 mg × 3 months",
+     "s": "adultstg2026:3.10",
+     "b": 1
+    },
+    {
+     "t": "Streptokinase 1.5 MU in 100 mL over 30–60 min; not again 5 days–12 months",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Alteplase ≤ 65 kg: 15 mg, 0.75 mg/kg over 30 min, 0.5 mg/kg over 60 min",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Enoxaparin NSTEMI 1 mg/kg 12-hourly; post-alteplase per STEMI row",
+     "s": "adultstg2026:3.10"
+    },
+    {
+     "h": "Absolute contra-indications to lysis"
+    },
+    {
+     "t": "SK in last year, allergy · stroke < 3 months · major trauma, head / spinal surgery < 1 month · surgery < 3 weeks · bleeding < 1 month, bleeding disorder · aneurysm, dissection",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "h": "Relative (consult)"
+    },
+    {
+     "t": "Refractory BP · warfarin · pregnancy · TIA < 6 months · subclavian line · traumatic CPR",
+     "s": "adultstg2026:3.5"
+    }
+   ]
+  },
+  {
+   "title": "Pain · secondary prevention",
+   "items": [
+    {
+     "t": "ISDN 5 mg SL every 5 min × 3–4",
+     "s": "adultstg2026:3.10"
+    },
+    {
+     "t": "GTN IV 5–200 mcg/min (Table 3.3: 200 mcg/mL → 3 mL/h = 10 mcg/min)",
+     "s": "adultstg2026:3.7"
+    },
+    {
+     "t": "Morphine IV max 10 mg after specialist discussion",
+     "s": "adultstg2026:3.8"
+    },
+    {
+     "t": "Atenolol 50 mg daily (no HF, hypotension, bradycardia, asthma)",
+     "s": "adultstg2026:3.8",
+     "b": 1
+    },
+    {
+     "t": "Rosuvastatin 10 mg nocte · PI: atorvastatin 10 mg · amlodipine: simvastatin 10–20 mg",
+     "s": "adultstg2026:3.8",
+     "b": 1
+    },
+    {
+     "t": "Enalapril target 10 mg 12-hourly if LV dysfunction / EF < 40%",
+     "s": "adultstg2026:3.8"
+    },
+    {
+     "t": "ACE-i intolerant: losartan 50–100 mg (specialist)",
+     "s": "adultstg2026:3.9"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New or returning chest pain → ECG",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "BP falling, cold, clammy",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Slow / irregular pulse, rhythm change on monitor",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Breathless, crackles",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Bleeding, new weakness / confusion",
+     "s": "adultstg2026:3.5",
+     "d": 1
+    },
+    {
+     "h": "Stop SK infusion"
+    },
+    {
+     "t": "Anaphylaxis; slow it if hypotensive",
+     "s": "adultstg2026:3.4",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Failed lysis · ongoing pain · shock · VT · MR / VSD",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Pain-free ≥ 24 h on oral treatment",
+    "d": 1
+   },
+   {
+    "t": "No heart failure, shock or arrhythmia",
+    "d": 1
+   },
+   {
+    "t": "Mobile on the ward",
+    "d": 1
+   },
+   {
+    "t": "Risk stratified; referral decided",
+    "s": "adultstg2026:3.12"
+   },
+   {
+    "t": "Aspirin, clopidogrel, statin, β-blocker ± ACE-i",
+    "s": "adultstg2026:3.12"
+   },
+   {
+    "t": "Lifestyle and SL nitrate use taught",
+    "s": "adultstg2026:3.1"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC in 2 weeks: BP, pulse, adherence",
+    "d": 1
+   },
+   {
+    "t": "Stop clopidogrel at 1 month (STEMI) / 3 months (NSTEMI)",
+    "s": "adultstg2026:3.10"
+   },
+   {
+    "t": "Cardiology appointment if referred",
+    "s": "adultstg2026:3.12"
+   },
+   {
+    "t": "Return now: chest pain > 15 min despite SL nitrate",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — monitor, pain and bleeding",
+  "period": "one sheet from arrival: 15-min rows for 1 h, then hourly to 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Monitor and obs",
+    "items": [
+     {
+      "t": "Continuous ECG monitor; defibrillator at the bedside, also during transfer",
+      "s": "adultstg2026:3.5",
+      "b": 1
+     },
+     {
+      "t": "Pulse, BP, RR (full minute), SpO₂: every 15 min during thrombolysis / GTN and for the first hour, then hourly to 6 h, then 2-hourly",
+      "s": "adultstg2026:3.5",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ only if SpO₂ < 94%",
+      "s": "adultstg2026:3.4"
+     }
+    ]
+   },
+   {
+    "h": "Pain",
+    "items": [
+     {
+      "t": "Chest pain score with each set of obs; new pain → ECG and call doctor",
+      "s": "adultstg2026:3.4",
+      "d": 1
+     },
+     {
+      "t": "Record nitrate / morphine given and the effect",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bleeding and rest",
+    "items": [
+     {
+      "t": "Watch for bleeding (IV sites, gums, urine, stool) after thrombolysis / anticoagulation",
+      "d": 1
+     },
+     {
+      "t": "Bed rest first 24 h; then mobilise as pain allows",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "new or returning chest pain",
+    "s": "adultstg2026:3.4",
+    "b": 1
+   },
+   {
+    "t": "BP falling or cold, clammy",
+    "s": "adultstg2026:20.25"
+   },
+   {
+    "t": "slow, irregular or fast rhythm",
+    "s": "adultstg2026:3.9"
+   },
+   {
+    "t": "breathless or crackles",
+    "s": "adultstg2026:3.9"
+   },
+   {
+    "t": "bleeding, weakness or confusion",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Pain-free since (time)",
+   "Nitrate doses",
+   "Morphine total (mg)",
+   "Lysis start / end",
+   "Bleeding Y/N"
+  ]
+ }
+}

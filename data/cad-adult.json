@@ -1,0 +1,896 @@
+{
+ "id": "cad-adult",
+ "short": "CAD (adult)",
+ "title": "Coronary artery disease — stable angina and secondary prevention (adult)",
+ "population": "Adult with stable (exertional) angina or known IHD, admitted for evaluation once ACS is excluded",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Rest / crescendo pain, ST changes or raised troponin → ACS pathway",
+     "b": 1
+    },
+    {
+     "t": "Heart failure symptoms → CCF / ADHF pathway",
+     "b": 1
+    },
+    {
+     "t": "Stimulant use → Cocaine / Amphetamines pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — typical angina, or known IHD",
+   "items": [
+    {
+     "t": "Chest pain on exertion, relieved by rest",
+     "s": "adultstg2026:3.12",
+     "b": 1
+    },
+    {
+     "t": "May be felt in shoulder or jaw; provocation by exercise is the clue",
+     "s": "adultstg2026:3.13"
+    },
+    {
+     "t": "Previous MI / ACS, PCI or CABG",
+     "s": "adultstg2026:3.12",
+     "b": 1
+    },
+    {
+     "t": "Peripheral arterial disease or atherothrombotic stroke",
+     "s": "adultstg2026:3.2"
+    },
+    {
+     "h": "ACS excluded by"
+    },
+    {
+     "t": "Serial ECGs unchanged",
+     "s": "adultstg2026:3.4",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Troponin not raised",
+     "s": "adultstg2026:3.10",
+     "k": "sub"
+    },
+    {
+     "t": "Pain pattern stable (not rest / increasing)",
+     "s": "adultstg2026:3.10",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Needs escalation = any one of",
+   "items": [
+    {
+     "t": "Pain at rest or increasing → ACS pathway",
+     "s": "adultstg2026:3.10"
+    },
+    {
+     "t": "Diagnosis in doubt → exercise stress test (REFER)",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "t": "Failed medical therapy",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "t": "Heart failure / LV dysfunction",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Random cholesterol > 7.5 or triglycerides > 10 mmol/L",
+     "s": "adultstg2026:3.3"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous MI, ECGs, echo",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Aspirin, β-blocker, statin, nitrates — adherence",
+     "s": "adultstg2026:3.13"
+    },
+    {
+     "t": "BP, HbA1c / glucose, lipids",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "CKD (eGFR < 60)",
+     "s": "adultstg2026:3.2"
+    },
+    {
+     "t": "HIV on protease inhibitor → statin choice",
+     "s": "adultstg2026:3.3"
+    },
+    {
+     "t": "Asthma / severe PAD (no β-blocker)",
+     "s": "adultstg2026:3.13"
+    },
+    {
+     "t": "Smoking pack-years",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "Family history of premature CVD",
+     "s": "adultstg2026:3.1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain pattern"
+    },
+    {
+     "t": "Effort, relief by rest, duration",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Frequency changing?",
+     "s": "adultstg2026:3.10"
+    },
+    {
+     "h": "Risk factors"
+    },
+    {
+     "t": "Diabetes, hypertension, smoking",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "Alcohol, inactivity, stress",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "h": "Other causes of pain"
+    },
+    {
+     "t": "Reflux, musculoskeletal",
+     "d": 1
+    },
+    {
+     "t": "Anaemia, thyroid",
+     "d": 1
+    },
+    {
+     "h": "Function"
+    },
+    {
+     "t": "Walking distance; claudication",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "h": "TB / HIV"
+    },
+    {
+     "t": "Screen and status",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Irregular pulse",
+     "s": "adultstg2026:3.16",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension",
+     "s": "adultstg2026:3.1",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Waist ≥ 102 cm (men) / ≥ 88 cm (women)",
+     "s": "adultstg2026:3.1",
+     "k": "yn"
+    },
+    {
+     "t": "BMI > 25",
+     "s": "adultstg2026:3.1",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Heart"
+    },
+    {
+     "t": "Murmur (aortic stenosis)",
+     "s": "adultstg2026:3.30",
+     "d": 1
+    },
+    {
+     "t": "Signs of heart failure",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "h": "Vessels"
+    },
+    {
+     "t": "Weak foot pulses (PAD)",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "t": "Carotid bruit",
+     "d": 1
+    },
+    {
+     "h": "Metabolic"
+    },
+    {
+     "t": "Xanthelasma / xanthoma",
+     "d": 1
+    },
+    {
+     "t": "Pallor (anaemia)",
+     "d": 1
+    },
+    {
+     "t": "Weight ____ kg · waist ____ cm",
+     "k": "value"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "ECG — on arrival and with any pain",
+   "items": [
+    {
+     "t": "Rhythm ____ · ST / T changes ____ · Q waves ____",
+     "k": "value"
+    },
+    {
+     "t": "New ST elevation / LBBB → STEMI (ACS pathway)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "New ST depression / T inversion with pain → ACS pathway",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    },
+    {
+     "t": "Bradycardia / heart block: no β-blocker; refer",
+     "s": "adultstg2026:3.27"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Troponin + lipids / glucose",
+   "items": [
+    {
+     "t": "Troponin ____ (time ____) · repeat ____",
+     "k": "value"
+    },
+    {
+     "t": "Raised → ACS pathway (NSTEMI)",
+     "s": "adultstg2026:3.9",
+     "b": 1
+    },
+    {
+     "t": "Lipogram, HbA1c / glucose for risk",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "Cholesterol > 7.5 or TG > 10 mmol/L → refer",
+     "s": "adultstg2026:3.3"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Rest pain > 15 min",
+     "s": "adultstg2026:3.10",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Syncope",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Breathless at rest",
+     "b": 1
+    },
+    {
+     "t": "ACS",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Aortic dissection",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "PE",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "t": "Arrhythmia",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Heart failure",
+     "s": "adultstg2026:3.12"
+    },
+    {
+     "t": "Severe anaemia",
+     "d": 1
+    },
+    {
+     "t": "Aortic stenosis",
+     "d": 1
+    },
+    {
+     "t": "Stimulant use",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = UNSTABLE → ACS pathway; doubt / failed therapy → REFER",
+   "s": "adultstg2026:3.14"
+  },
+  {
+   "t": "11. ADMIT for evaluation; PHC once ACS excluded",
+   "d": 1
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Angina steps: β-blocker → add amlodipine → add long-acting nitrate",
+  "columns": {
+   "feed": "Diet & activity",
+   "tests": "ECG, bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Every chest pain episode: time, duration, ISDN given, ECG done, effect — call doctor",
+    "s": "adultstg2026:3.13",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Pulse and BP 4-hourly; pulse before atenolol (titrate to resting rate about 60/min)",
+    "s": "adultstg2026:3.13",
+    "b": 1
+   },
+   {
+    "t": "RR, SpO₂, temperature 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "ISDN 5 mg SL at the bedside; patient taught when to use it",
+    "s": "adultstg2026:3.13"
+   },
+   {
+    "t": "Mobilise; observe pain on walking",
+    "d": 1
+   },
+   {
+    "t": "No smoking; prudent diet",
+    "s": "adultstg2026:3.1"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "Exclude ACS",
+    "lead": "Check clinic card for current doses. Any rest pain, ECG change or troponin rise → ACS pathway.",
+    "feed": [
+     {
+      "t": "Ward diet; bed rest until ACS excluded",
+      "d": 1
+     },
+     {
+      "t": "Stop smoking — essential",
+      "s": "adultstg2026:3.1",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG now and with each pain",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Troponin; repeat",
+      "s": "adultstg2026:3.4",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC (Hb), U&E, creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Lipogram, HbA1c / glucose",
+      "s": "adultstg2026:3.1",
+      "b": 1
+     },
+     {
+      "t": "TSH if tachycardic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR if breathless",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antiplatelet"
+     },
+     {
+      "t": "Aspirin 150 mg daily (150 mg chewed if not already on it)",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     },
+     {
+      "h": "Relief"
+     },
+     {
+      "t": "ISDN 5 mg SL; repeat every 5 min, 3–4 doses",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     },
+     {
+      "t": "Pain > 15 min or not relieved → ACS pathway",
+      "s": "adultstg2026:3.10",
+      "d": 1
+     },
+     {
+      "h": "Continue"
+     },
+     {
+      "t": "Usual β-blocker, statin, antihypertensives",
+      "d": 1
+     },
+     {
+      "h": "Prophylaxis"
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily if immobile (eGFR < 30: 20 mg)",
+      "s": "adultstg2026:2.25",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Step 1",
+    "feed": [
+     {
+      "t": "Mobilise; observe on stairs / walking",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pulse, BP",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Atenolol 50 mg daily → 100 mg; resting pulse about 60/min",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     },
+     {
+      "t": "β-blocker not tolerated / contra-indicated: long-acting CCB instead",
+      "s": "adultstg2026:3.13"
+     },
+     {
+      "t": "Statin: rosuvastatin 10 mg nocte (PI: atorvastatin 10 mg; amlodipine: simvastatin 10–20 mg)",
+      "s": "adultstg2026:3.14",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Steps 2–3",
+    "feed": [
+     {
+      "t": "Prudent eating plan (dietitian)",
+      "s": "adultstg2026:3.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lipogram and HbA1c result",
+      "s": "adultstg2026:3.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still angina: add amlodipine 5 mg daily → 10 mg",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     },
+     {
+      "t": "Still angina: add ISMN 10–20 mg twice daily or ISDN 20–30 mg twice daily, at 08:00 and 14:00 (nitrate-free period)",
+      "s": "adultstg2026:3.13"
+     },
+     {
+      "t": "Treat risk factors: BP, diabetes",
+      "s": "adultstg2026:3.1"
+     }
+    ]
+   },
+   {
+    "label": "If heart failure / LVD",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Salt restriction",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, K⁺",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Replace atenolol with carvedilol (CCF pathway)",
+      "s": "adultstg2026:3.12",
+      "b": 1
+     },
+     {
+      "t": "ACE-i: enalapril target 10 mg 12-hourly",
+      "s": "adultstg2026:3.11"
+     }
+    ]
+   },
+   {
+    "label": "If muscle pain on statin",
+    "phase": "Branch",
+    "feed": [],
+    "tests": [
+     {
+      "t": "CK if severe",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reduce: simvastatin 10 mg nocte, or consult specialist",
+      "s": "adultstg2026:3.14"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Exercise 150 min/week; weight; alcohol limits",
+      "s": "adultstg2026:3.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG copy in discharge letter",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aspirin 150 mg daily lifelong; β-blocker ± amlodipine ± nitrate; statin",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     },
+     {
+      "t": "Teach SL nitrate: before exertion; keep in airtight, light-proof container; not addictive",
+      "s": "adultstg2026:3.13"
+     },
+     {
+      "t": "Diagnosis in doubt or failed therapy → REFER (exercise stress test)",
+      "s": "adultstg2026:3.14",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Angina medicines",
+   "items": [
+    {
+     "t": "Aspirin 150 mg daily",
+     "s": "adultstg2026:3.13",
+     "b": 1
+    },
+    {
+     "t": "ISDN 5 mg SL every 5 min × 3–4; also before exertion",
+     "s": "adultstg2026:3.13"
+    },
+    {
+     "t": "Step 1: atenolol 50–100 mg daily (pulse about 60)",
+     "s": "adultstg2026:3.13",
+     "b": 1
+    },
+    {
+     "t": "Step 2: amlodipine 5 → 10 mg daily",
+     "s": "adultstg2026:3.13",
+     "b": 1
+    },
+    {
+     "t": "Step 3: ISMN 10–20 mg or ISDN 20–30 mg twice daily (08:00, 14:00)",
+     "s": "adultstg2026:3.13"
+    },
+    {
+     "t": "Night shift: adjust nitrate timing",
+     "s": "adultstg2026:3.14"
+    }
+   ]
+  },
+  {
+   "title": "Statins · risk factors",
+   "items": [
+    {
+     "t": "Rosuvastatin 10 mg nocte",
+     "s": "adultstg2026:3.14",
+     "b": 1
+    },
+    {
+     "t": "On protease inhibitor: atorvastatin 10 mg nocte",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "t": "On amlodipine (no PI): simvastatin 10–20 mg nocte",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "t": "Muscle pain: simvastatin 10 mg or consult",
+     "s": "adultstg2026:3.14"
+    },
+    {
+     "t": "BMI 18.5–25; alcohol ≤ 2 drinks/day (men), 1 (women)",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "Refer: cholesterol > 7.5, fasting TG > 10 mmol/L",
+     "s": "adultstg2026:3.3"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor / ACS pathway"
+    },
+    {
+     "t": "Pain at rest, > 15 min, or not relieved by 3 ISDN",
+     "s": "adultstg2026:3.10",
+     "d": 1
+    },
+    {
+     "t": "New ECG change or raised troponin",
+     "s": "adultstg2026:3.9"
+    },
+    {
+     "t": "Syncope, breathlessness, low BP",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "h": "Hold atenolol"
+    },
+    {
+     "t": "Pulse slow, BP low, wheeze",
+     "s": "adultstg2026:3.13",
+     "d": 1
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "ECG, troponin, FBC, U&E",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "ACS excluded (serial ECG, troponin)",
+    "s": "adultstg2026:3.9",
+    "d": 1
+   },
+   {
+    "t": "No pain at rest; angina controlled on walking",
+    "d": 1
+   },
+   {
+    "t": "On aspirin, β-blocker (or CCB), statin",
+    "s": "adultstg2026:3.13"
+   },
+   {
+    "t": "SL nitrate use taught",
+    "s": "adultstg2026:3.13"
+   },
+   {
+    "t": "Risk-factor plan (smoking, BP, glucose)",
+    "s": "adultstg2026:3.1"
+   },
+   {
+    "t": "Referral made if doubt or failed therapy",
+    "s": "adultstg2026:3.14"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "2–4 weeks: pulse, BP, angina frequency; titrate",
+    "d": 1
+   },
+   {
+    "t": "Annual CVD risk review",
+    "s": "adultstg2026:3.2"
+   },
+   {
+    "t": "Return now: rest pain or pain not relieved by SL nitrate",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — chest pain episodes, pulse and BP",
+  "period": "one sheet per 24 h, hourly rows (4-hourly obs)",
+  "params": [
+   {
+    "h": "Chest pain",
+    "items": [
+     {
+      "t": "Every chest pain episode: time, duration, ISDN given, ECG done, effect — call doctor",
+      "s": "adultstg2026:3.13",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ISDN 5 mg SL at the bedside; patient taught when to use it",
+      "s": "adultstg2026:3.13"
+     }
+    ]
+   },
+   {
+    "h": "Pulse and BP",
+    "items": [
+     {
+      "t": "Pulse and BP 4-hourly; pulse before atenolol (titrate to resting rate about 60/min)",
+      "s": "adultstg2026:3.13",
+      "b": 1
+     },
+     {
+      "t": "Hold atenolol and call if pulse slow or BP low",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs and lifestyle",
+    "items": [
+     {
+      "t": "RR, SpO₂, temperature 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "No smoking; prudent diet",
+      "s": "adultstg2026:3.1"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pain at rest, > 15 min or not relieved by 3 ISDN",
+    "s": "adultstg2026:3.10",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "syncope, breathlessness or low BP",
+    "s": "adultstg2026:3.4"
+   },
+   {
+    "t": "slow or irregular pulse",
+    "s": "adultstg2026:3.13",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Pain episodes (n)",
+   "ISDN doses (n)",
+   "Lowest pulse",
+   "Highest BP"
+  ]
+ }
+}

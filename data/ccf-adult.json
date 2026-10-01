@@ -1,0 +1,1113 @@
+{
+ "id": "ccf-adult",
+ "short": "CCF (adult)",
+ "title": "Congestive cardiac failure — work-up, decongestion and medicine optimisation (adult)",
+ "population": "Adult and adolescent ≥ 13 y with new or known chronic HF, not in shock or acute pulmonary oedema",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pulmonary oedema at rest or shock → ADHF pathway",
+     "b": 1
+    },
+    {
+     "t": "Ischaemic chest pain / ST changes → ACS pathway",
+     "b": 1
+    },
+    {
+     "t": "Child < 13 y → heart failure (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — symptoms + signs of HF (clinical)",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Progressive effort intolerance",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "Orthopnoea / PND",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "Ankle or body swelling, fatigue",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "h": "Signs"
+    },
+    {
+     "t": "Raised JVP · basal crackles / wheeze",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "Pitting oedema · enlarged tender liver",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Tachycardia, tachypnoea",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "h": "Breathless with (functional class)"
+    },
+    {
+     "t": "Strenuous activity · ordinary activity · minimal activity · at rest",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Wt ____ kg · target (dry) weight ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Needs escalation = any one of",
+   "items": [
+    {
+     "t": "Pulmonary oedema / hypoxic at rest → ADHF chart",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Hypotension, cold periphery → ADHF chart",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Audible murmur → specialist evaluation",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Persistent severe overload despite adequate diuretic",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Potentially reversible cause found",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "LBBB on ECG (CRT candidate)",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Cause: hypertension, IHD, valve, cardiomyopathy",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Echo / EF result",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "t": "Diuretic, enalapril, carvedilol, spironolactone doses",
+     "s": "phcstg2026:4.12"
+    },
+    {
+     "t": "Adherence; carvedilol stopped > 14 days?",
+     "s": "phcstg2026:4.13",
+     "b": 1
+    },
+    {
+     "t": "Last K⁺, creatinine, Na⁺",
+     "s": "phcstg2026:4.11",
+     "b": 1
+    },
+    {
+     "t": "RHD: penicillin prophylaxis",
+     "s": "adultstg2026:3.45"
+    },
+    {
+     "t": "AF: warfarin, last INR",
+     "s": "adultstg2026:3.17"
+    },
+    {
+     "t": "HIV / ART, diabetes, CKD",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Precipitant"
+    },
+    {
+     "t": "Missed medicines, salt, fluid",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "NSAIDs",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Infection, AF, uncontrolled BP",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "h": "Reversible cause"
+    },
+    {
+     "t": "Alcohol, poor diet (thiamine)",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Thyroid symptoms",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Angina",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "h": "Women"
+    },
+    {
+     "t": "Pregnancy plans; contraception",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "h": "Contra-indications"
+    },
+    {
+     "t": "Asthma (no carvedilol)",
+     "s": "phcstg2026:4.13"
+    },
+    {
+     "t": "Angioedema on ACE-i",
+     "s": "phcstg2026:4.12"
+    },
+    {
+     "t": "Gout (thiazide)",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "h": "TB / HIV / social"
+    },
+    {
+     "t": "TB screen, HIV status, support",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Irregular pulse (AF)",
+     "s": "adultstg2026:3.16",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94%",
+     "s": "adultstg2026:20.25",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "phcstg2026:4.13",
+     "k": "yn"
+    },
+    {
+     "t": "BP ≥ 180/110",
+     "s": "adultstg2026:3.42",
+     "k": "yn"
+    },
+    {
+     "t": "Weight above target",
+     "s": "adultstg2026:3.27",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Congestion"
+    },
+    {
+     "t": "JVP raised",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Basal crackles",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Effusion, ascites",
+     "d": 1
+    },
+    {
+     "t": "Liver enlarged",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "t": "Oedema: ankle / sacral",
+     "s": "phcstg2026:4.11"
+    },
+    {
+     "h": "Heart"
+    },
+    {
+     "t": "Murmur",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Displaced apex",
+     "d": 1
+    },
+    {
+     "t": "Irregular rhythm",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "h": "Cause clues"
+    },
+    {
+     "t": "Goitre",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    },
+    {
+     "t": "Signs of alcohol use",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    },
+    {
+     "t": "Weight now ____ kg",
+     "k": "value"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "ECG",
+   "items": [
+    {
+     "t": "Rhythm ____ rate ____ /min · QRS ____",
+     "k": "value"
+    },
+    {
+     "t": "AF: CHA₂DS₂-VASc ____ → warfarin if ≥ 2",
+     "s": "adultstg2026:3.16",
+     "b": 1
+    },
+    {
+     "t": "LBBB: discuss CRT; repeat ECG 6-monthly",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Heart block / bradycardia: no carvedilol; refer",
+     "s": "phcstg2026:4.13"
+    },
+    {
+     "t": "Ischaemic changes → ACS pathway",
+     "s": "adultstg2026:3.4"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "U&E — K⁺, Na⁺, creatinine",
+   "items": [
+    {
+     "t": "Value on arrival: K⁺ ____ · Na⁺ ____ · creatinine ____ · eGFR ____",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ > 6.0: hyperkalaemia emergency; stop spironolactone, ACE-i",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "eGFR < 30: no spironolactone",
+     "s": "adultstg2026:3.29"
+    },
+    {
+     "t": "Low K⁺: short-term KCl only",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "t": "Repeat after each new ACE-i / spironolactone dose",
+     "s": "phcstg2026:4.11",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Chest pain (ACS)",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Fast AF",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Heart block",
+     "s": "phcstg2026:4.13"
+    },
+    {
+     "t": "Hyperkalaemia",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Severe hyponatraemia",
+     "s": "phcstg2026:4.12"
+    },
+    {
+     "t": "Digoxin toxicity",
+     "s": "adultstg2026:3.29"
+    },
+    {
+     "t": "Infective endocarditis",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Kidney failure",
+     "s": "phcstg2026:4.12"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "adultstg2026:23.9"
+    },
+    {
+     "t": "DVT / PE",
+     "s": "adultstg2026:2.25"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "adultstg2026:3.27"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = CCF needing specialist work-up (murmur, reversible cause, refractory, LBBB) → REFER after optimising",
+   "s": "adultstg2026:3.30"
+  },
+  {
+   "t": "11. ADMIT",
+   "s": "adultstg2026:3.27"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Medicines are started in order: diuretic → ACE-i → spironolactone / carvedilol, as the patient allows",
+  "columns": {
+   "feed": "Fluid & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Weight daily, same time and scale; plot against target (dry) weight",
+    "s": "adultstg2026:3.27",
+    "b": 1
+   },
+   {
+    "t": "Fluid intake limit 1–1.5 L/day if overloaded on diuretic; intake and urine charted every shift",
+    "s": "adultstg2026:3.27",
+    "b": 1
+   },
+   {
+    "t": "BP and pulse before each enalapril / carvedilol / digoxin dose; hold and call if low",
+    "s": "phcstg2026:4.12",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "RR, SpO₂, temperature 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Salt-restricted diet (< 2–3 g/day); no NSAIDs",
+    "s": "phcstg2026:4.11"
+   },
+   {
+    "t": "Mobilise within symptom limits",
+    "s": "adultstg2026:3.27"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "Decongest",
+    "lead": "Check clinic card and referral letter for current doses. Find the precipitant and any reversible cause.",
+    "feed": [
+     {
+      "t": "Fluid limit 1–1.5 L/day if overloaded on diuretic",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     },
+     {
+      "t": "Salt < 2–3 g/day (dietitian if possible)",
+      "s": "phcstg2026:4.11"
+     },
+     {
+      "t": "No IV fluids",
+      "d": 1
+     },
+     {
+      "t": "Alcohol max 2 drinks/day, if at all",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine, K⁺, Na⁺",
+      "s": "phcstg2026:4.11",
+      "b": 1
+     },
+     {
+      "t": "FBC (Hb)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "s": "adultstg2026:3.30",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "TSH",
+      "s": "adultstg2026:3.27",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT / HbA1c; lipogram",
+      "s": "adultstg2026:3.2",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Digoxin trough level if on digoxin",
+      "s": "adultstg2026:3.29",
+      "b": 1
+     },
+     {
+      "t": "INR if on warfarin",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Diuretic"
+     },
+     {
+      "t": "Significant overload or abnormal kidney / liver function: furosemide 40 mg/day oral (IV if gut oedema†); higher if kidney failure",
+      "s": "adultstg2026:3.28",
+      "b": 1
+     },
+     {
+      "t": "> 80 mg/day: give 12-hourly",
+      "s": "phcstg2026:4.12"
+     },
+     {
+      "t": "Mild overload, normal kidneys: hydrochlorothiazide 25–50 mg daily",
+      "s": "adultstg2026:3.28"
+     },
+     {
+      "h": "Already on HF medicines"
+     },
+     {
+      "t": "Continue ACE-i / carvedilol unless hypotensive, bradycardic or K⁺ / creatinine prohibit",
+      "s": "phcstg2026:4.13",
+      "d": 1
+     },
+     {
+      "t": "Carvedilol stopped > 14 days: restart at 3.125 mg 12-hourly",
+      "s": "phcstg2026:4.13"
+     },
+     {
+      "h": "Prophylaxis"
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily (20 mg if eGFR < 30) or rivaroxaban 10 mg daily",
+      "s": "adultstg2026:2.25"
+     },
+     {
+      "h": "Unexplained HF"
+     },
+     {
+      "t": "Thiamine 100 mg PO/IM daily × 4 weeks",
+      "s": "adultstg2026:3.30"
+     },
+     {
+      "h": "Stop"
+     },
+     {
+      "t": "NSAIDs; atenolol (not for heart failure)",
+      "s": "phcstg2026:4.12"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Diurese",
+    "feed": [
+     {
+      "t": "Fluid limit; daily weight",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + K⁺",
+      "s": "phcstg2026:4.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate furosemide to weight loss towards target",
+      "s": "adultstg2026:3.28"
+     },
+     {
+      "t": "K⁺ low: short-term KCl only",
+      "s": "adultstg2026:3.28"
+     },
+     {
+      "t": "Precipitant treated (infection, BP, AF)",
+      "s": "adultstg2026:3.27"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "ACE-i",
+    "feed": [
+     {
+      "t": "As Day 2",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ + creatinine before first dose",
+      "s": "phcstg2026:4.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enalapril 2.5 mg 12-hourly; titrate up to 10 mg 12-hourly",
+      "s": "adultstg2026:3.29",
+      "b": 1
+     },
+     {
+      "t": "Not overloaded: reduce diuretic before adding ACE-i",
+      "s": "adultstg2026:3.28"
+     },
+     {
+      "t": "Intolerant (cough, angio-oedema): losartan 50–100 mg daily — specialist initiated",
+      "s": "adultstg2026:3.29"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Spironolactone",
+    "feed": [
+     {
+      "t": "Avoid K⁺ supplements",
+      "s": "phcstg2026:4.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ + creatinine",
+      "s": "adultstg2026:3.29",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "NYHA III–IV and eGFR ≥ 30: spironolactone 25 mg daily (up to 50 mg)",
+      "s": "adultstg2026:3.29",
+      "b": 1
+     },
+     {
+      "t": "No KCl with spironolactone; check K⁺ within 1 month",
+      "s": "phcstg2026:4.13"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Beta-blocker",
+    "feed": [
+     {
+      "t": "Euvolaemic, near target weight",
+      "s": "adultstg2026:3.29"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pulse, BP; ECG if slow pulse",
+      "s": "phcstg2026:4.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not overloaded and BP not low: carvedilol 3.125 mg 12-hourly",
+      "s": "adultstg2026:3.29",
+      "b": 1
+     },
+     {
+      "t": "Double every 2 weeks to max 25 mg 12-hourly (> 85 kg: 50 mg) — at PHC",
+      "s": "adultstg2026:3.29"
+     },
+     {
+      "t": "Contra-indicated: shock, bradycardia, heart block, severe overload, hypotension, asthma",
+      "s": "phcstg2026:4.13"
+     }
+    ]
+   },
+   {
+    "label": "If AF",
+    "phase": "Branch",
+    "feed": [],
+    "tests": [
+     {
+      "t": "INR at 48 h, then every 1–2 days to 2–3",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "CHA₂DS₂-VASc ≥ 2: warfarin 5 mg daily",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     },
+     {
+      "t": "Rate: carvedilol; add digoxin 0.125 mg daily (trough 0.6–1 nmol/L)",
+      "s": "adultstg2026:3.18"
+     },
+     {
+      "t": "Not controlled → REFER",
+      "s": "adultstg2026:3.18"
+     }
+    ]
+   },
+   {
+    "label": "If RHD / murmur",
+    "phase": "Branch",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Echo via referral",
+      "s": "adultstg2026:3.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Benzathine penicillin 1.2 MU IM every 3–4 weeks, lifelong if valve disease",
+      "s": "adultstg2026:3.45"
+     },
+     {
+      "t": "High diuretic need or previous pulmonary oedema → REFER (valve surgery)",
+      "s": "adultstg2026:3.45",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Salt, fluid and weight education",
+      "s": "adultstg2026:3.27"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E + K⁺ on discharge",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Teach daily self-weighing and diuretic adjustment",
+      "s": "adultstg2026:3.28"
+     },
+     {
+      "t": "Contraception advice: ACE-i, ARB, spironolactone not in pregnancy",
+      "s": "adultstg2026:3.27"
+     },
+     {
+      "t": "Influenza vaccine",
+      "s": "adultstg2026:3.30"
+     },
+     {
+      "t": "Persistent symptoms in sinus rhythm: digoxin 0.125 mg — specialist consultation",
+      "s": "adultstg2026:3.29"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "HF medicines · titration",
+   "items": [
+    {
+     "t": "Furosemide oral 40 mg/day start; > 80 mg/day 12-hourly",
+     "s": "phcstg2026:4.12",
+     "b": 1
+    },
+    {
+     "t": "Hydrochlorothiazide 25–50 mg daily (mild, normal kidneys)",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "t": "Enalapril 2.5 mg 12-hourly → 10 mg 12-hourly",
+     "s": "adultstg2026:3.29",
+     "b": 1
+    },
+    {
+     "t": "Losartan 50–100 mg daily if ACE-i intolerant (specialist)",
+     "s": "adultstg2026:3.29"
+    },
+    {
+     "t": "Spironolactone 25–50 mg daily (class III–IV, eGFR ≥ 30)",
+     "s": "adultstg2026:3.29",
+     "b": 1
+    },
+    {
+     "t": "Carvedilol 3.125 mg 12-hourly, double 2-weekly to 25 mg 12-hourly (> 85 kg 50 mg)",
+     "s": "adultstg2026:3.29",
+     "b": 1
+    },
+    {
+     "t": "Not tolerated: back to previous dose",
+     "s": "adultstg2026:3.29"
+    },
+    {
+     "t": "Digoxin 0.125 mg daily; trough 0.6–1 nmol/L",
+     "s": "adultstg2026:3.29"
+    }
+   ]
+  },
+  {
+   "title": "AF · prophylaxis · other",
+   "items": [
+    {
+     "t": "Warfarin 5 mg daily if CHA₂DS₂-VASc ≥ 2; INR 2–3",
+     "s": "adultstg2026:3.17"
+    },
+    {
+     "t": "Stable on warfarin: INR every 2 months",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Atenolol: contraindicated in heart failure",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Verapamil: avoid in LV dysfunction",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Enoxaparin 40 mg SC daily while admitted",
+     "s": "adultstg2026:2.25"
+    },
+    {
+     "t": "Thiamine 100 mg daily × 4 weeks (unexplained HF)",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Benzathine penicillin 1.2 MU IM every 3–4 weeks (RHD)",
+     "s": "adultstg2026:3.45"
+    },
+    {
+     "t": "Annual influenza vaccine",
+     "s": "adultstg2026:3.30"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Hold dose and call doctor"
+    },
+    {
+     "t": "Low BP or slow pulse before ACE-i / carvedilol / digoxin",
+     "s": "phcstg2026:4.13",
+     "d": 1
+    },
+    {
+     "t": "K⁺ > 6.0 or rising creatinine",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "h": "Escalate"
+    },
+    {
+     "t": "Breathless at rest, SpO₂ falling → ADHF chart",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Weight rising on diuretic",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "t": "New chest pain, irregular pulse",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Nausea, visual change, slow pulse on digoxin (toxicity)",
+     "s": "adultstg2026:3.29",
+     "d": 1
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "ECG, U&E, K⁺, digoxin level",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "At or near target weight",
+    "s": "adultstg2026:3.27",
+    "d": 1
+   },
+   {
+    "t": "Breathing comfortably at rest",
+    "d": 1
+   },
+   {
+    "t": "On diuretic + ACE-i (unless contra-indicated)",
+    "s": "adultstg2026:3.28"
+   },
+   {
+    "t": "K⁺, creatinine stable after last dose change",
+    "s": "phcstg2026:4.11",
+    "d": 1
+   },
+   {
+    "t": "Knows daily weight, salt and fluid limits",
+    "s": "adultstg2026:3.27"
+   },
+   {
+    "t": "PHC titration plan and referrals written",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC / OPD)",
+  "items": [
+   {
+    "t": "1–2 weeks: weight, BP, K⁺, creatinine; up-titrate",
+    "s": "phcstg2026:4.11",
+    "d": 1
+   },
+   {
+    "t": "Carvedilol: double every 2 weeks if tolerated",
+    "s": "phcstg2026:4.12"
+   },
+   {
+    "t": "Spironolactone: K⁺ within 1 month",
+    "s": "phcstg2026:4.13"
+   },
+   {
+    "t": "LBBB: ECG 6-monthly; murmur → specialist",
+    "s": "adultstg2026:3.30"
+   },
+   {
+    "t": "Refer back: weight gain, breathlessness, dizziness",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — weight, fluid and pre-dose checks",
+  "period": "one sheet per 24 h, hourly rows (4-hourly obs)",
+  "params": [
+   {
+    "h": "Weight and fluid",
+    "items": [
+     {
+      "t": "Weight daily, same time and scale; plot against target (dry) weight",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     },
+     {
+      "t": "Fluid intake limit 1–1.5 L/day if overloaded on diuretic; intake and urine charted every shift",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Before HF medicines",
+    "items": [
+     {
+      "t": "BP and pulse before each enalapril / carvedilol / digoxin dose; hold and call if low",
+      "s": "phcstg2026:4.12",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Record dose given or held, and why",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "RR, SpO₂, temperature 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Salt-restricted diet (< 2–3 g/day); no NSAIDs",
+      "s": "phcstg2026:4.11"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "breathless at rest or SpO₂ falling",
+    "s": "adultstg2026:20.16",
+    "b": 1
+   },
+   {
+    "t": "low BP or slow pulse before a dose",
+    "s": "phcstg2026:4.13",
+    "d": 1
+   },
+   {
+    "t": "weight up from yesterday",
+    "s": "adultstg2026:3.28"
+   },
+   {
+    "t": "chest pain or irregular pulse",
+    "s": "adultstg2026:3.4"
+   },
+   {
+    "t": "nausea or visual change on digoxin",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Intake (mL)",
+   "Urine (mL)",
+   "Balance (mL)",
+   "Weight today (kg)",
+   "Change (kg)"
+  ]
+ }
+}

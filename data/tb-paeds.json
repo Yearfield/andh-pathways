@@ -1,0 +1,1088 @@
+{
+ "id": "tb-paeds",
+ "short": "TB (child)",
+ "title": "Pulmonary TB, drug-susceptible — newly diagnosed, admitted for work-up / initiation (child)",
+ "population": "Paediatric < 15 y, HIV-negative (HIV+ → TB-HIV child pathway); excludes RR-TB, TBM / CNS / miliary TB",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "tbpaeds2024",
+  "tbqrg2025",
+  "phcstg2026",
+  "hiv2026",
+  "paedstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "HIV positive → TB-HIV (child) pathway",
+     "b": 1
+    },
+    {
+     "t": "TBM / CNS / miliary TB → REFER (different regimen)",
+     "s": "tbqrg2025:31",
+     "b": 1
+    },
+    {
+     "t": "Rif resistant or RR-TB source case → DR-TB",
+     "s": "tbqrg2025:37",
+     "b": 1
+    },
+    {
+     "t": "SAM → SAM pathway alongside",
+     "s": "tbpaeds2024:39",
+     "b": 1
+    },
+    {
+     "t": "≥ 15 y → TB (adult) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one starts TB treatment",
+   "items": [
+    {
+     "t": "Xpert / culture positive (sputum, gastric aspirate, induced sputum, NPA, stool), Rif susceptible",
+     "s": "tbpaeds2024:19",
+     "b": 1
+    },
+    {
+     "t": "Symptoms + CXR suggestive of TB, and/or TB contact or positive TST",
+     "s": "phcstg2026:17.30",
+     "b": 1
+    },
+    {
+     "t": "< 2 y or SAM, CXR unhelpful, no contact: symptom score ≥ 11",
+     "s": "hiv2026:70"
+    },
+    {
+     "t": "Cough > 2 weeks +5 · fever > 2 weeks +10 · less playful +4 · weight loss +5",
+     "s": "hiv2026:70",
+     "k": "sub"
+    },
+    {
+     "t": "Haemoptysis +9 · night sweats +6 · typical nodes +7 · tachycardia +4 · fast breathing +2 → ≥ 11 treat",
+     "s": "hiv2026:70",
+     "k": "sub"
+    },
+    {
+     "t": "TST positive: ≥ 10 mm; ≥ 5 mm if malnourished / immunosuppressed",
+     "s": "phcstg2026:17.31"
+    },
+    {
+     "t": "Wt ____ kg  Ht ____ cm  MUAC ____ cm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe TB (6 months) = any one of; else non-severe (4 months)",
+   "items": [
+    {
+     "t": "Any danger sign (§9)",
+     "s": "tbpaeds2024:36",
+     "b": 1
+    },
+    {
+     "t": "SAM (WHZ < −3 or MUAC < 11.5 cm)",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "Age < 3 months · previous TB treatment",
+     "s": "tbpaeds2024:36"
+    },
+    {
+     "t": "Asymmetric / persistent wheeze",
+     "s": "tbpaeds2024:36"
+    },
+    {
+     "t": "Extrapulmonary (except cervical nodes)",
+     "s": "tbpaeds2024:32"
+    },
+    {
+     "t": "AFB smear positive respiratory sample",
+     "s": "tbpaeds2024:35"
+    },
+    {
+     "h": "CXR"
+    },
+    {
+     "t": "Complicated nodes (airway compression) · ≥ 1 lobe · cavities",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "Complicated effusion (loculated, empyema, pneumothorax) · miliary",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "≥ 8 y with no CXR available",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "HIV (unless on ART > 3 months with VL < 1000)",
+     "s": "tbpaeds2024:36"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet",
+   "items": [
+    {
+     "t": "BCG · immunisations up to date",
+     "s": "tbpaeds2024:39"
+    },
+    {
+     "t": "Weight curve: faltering",
+     "s": "tbpaeds2024:12"
+    },
+    {
+     "t": "HIV exposure · PCR result",
+     "s": "tbpaeds2024:58"
+    },
+    {
+     "t": "TB contact · TPT given",
+     "s": "phcstg2026:17.31"
+    },
+    {
+     "t": "Previous TB treatment",
+     "s": "tbpaeds2024:32"
+    },
+    {
+     "t": "Vitamin A · deworming",
+     "s": "tbpaeds2024:39"
+    },
+    {
+     "t": "Previous SAM / admissions"
+    },
+    {
+     "t": "Milestones"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Cough > 2 weeks · haemoptysis",
+     "s": "hiv2026:70"
+    },
+    {
+     "t": "Fever > 2 weeks · night sweats",
+     "s": "hiv2026:70"
+    },
+    {
+     "t": "Weight loss · less playful",
+     "s": "hiv2026:70"
+    },
+    {
+     "t": "Neck swelling",
+     "s": "hiv2026:70"
+    },
+    {
+     "h": "TB meningitis screen"
+    },
+    {
+     "t": "Headache · persistent vomiting · irritable",
+     "s": "hiv2026:70"
+    },
+    {
+     "t": "Convulsions · drowsy",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "h": "Contact (last 12 months)"
+    },
+    {
+     "t": "Who · source DST / treatment",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Coughing adult at home",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "h": "HIV · social"
+    },
+    {
+     "t": "Mother's HIV status",
+     "s": "tbpaeds2024:58"
+    },
+    {
+     "t": "Caregiver · grant · food security",
+     "s": "tbpaeds2024:40"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fast breathing / chest indrawing",
+     "s": "tbpaeds2024:8",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 92% in room air",
+     "s": "tbpaeds2024:8",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Central cyanosis",
+     "s": "tbpaeds2024:8",
+     "k": "yn"
+    },
+    {
+     "t": "Signs of shock",
+     "s": "tbpaeds2024:8",
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / unconscious",
+     "s": "tbpaeds2024:8",
+     "k": "yn"
+    },
+    {
+     "t": "MUAC < 11.5 cm (SAM)",
+     "s": "tbpaeds2024:33",
+     "k": "yn"
+    },
+    {
+     "t": "Weight faltering on RtHB curve",
+     "s": "tbpaeds2024:12",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Wasting / oedema (SAM)",
+     "s": "tbpaeds2024:39"
+    },
+    {
+     "t": "Severe palmar pallor",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Matted cervical nodes",
+     "s": "phcstg2026:17.30"
+    },
+    {
+     "t": "Hepatosplenomegaly",
+     "s": "phcstg2026:17.30"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Asymmetric / persistent wheeze",
+     "s": "tbpaeds2024:32"
+    },
+    {
+     "t": "Asymmetric chest movement",
+     "s": "tbpaeds2024:32"
+    },
+    {
+     "t": "Dull, ↓ breath sounds (effusion)",
+     "s": "phcstg2026:17.30"
+    },
+    {
+     "h": "CNS and spine"
+    },
+    {
+     "t": "Neck stiffness · bulging fontanelle",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Gibbus (spinal TB)",
+     "d": 1
+    },
+    {
+     "h": "Baselines"
+    },
+    {
+     "t": "Jaundice (baseline)",
+     "d": 1
+    },
+    {
+     "t": "Visual response (ethambutol)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ — pulse oximetry in room air",
+   "items": [
+    {
+     "t": "Value on arrival: ____ % in room air",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "< 92%: severe respiratory illness → O₂ 1–2 L/min nasal prongs",
+     "s": "tbpaeds2024:8",
+     "b": 1
+    },
+    {
+     "t": "Not holding SpO₂ on O₂ or tiring → REFER (ICU)",
+     "s": "paedstg2026:15.5",
+     "b": 1
+    },
+    {
+     "t": "Then 4-hourly; hourly while danger signs",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "HIV test",
+   "items": [
+    {
+     "t": "Result: ____   test: PCR / rapid",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Every child assessed for TB: HIV status determined",
+     "s": "tbpaeds2024:58",
+     "b": 1
+    },
+    {
+     "t": "< 18 months: PCR · 18 months–2 y: rapid, confirm PCR · > 2 y: rapid",
+     "s": "hiv2026:18"
+    },
+    {
+     "t": "Positive → TB-HIV (child) pathway",
+     "s": "tbpaeds2024:58",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink / breastfeed",
+     "s": "tbpaeds2024:8",
+     "b": 1
+    },
+    {
+     "t": "Vomiting everything",
+     "s": "tbpaeds2024:8",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "s": "tbpaeds2024:8",
+     "b": 1
+    },
+    {
+     "t": "Unconscious or lethargic",
+     "s": "tbpaeds2024:8",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "SpO₂ < 92% · stridor · cyanosis",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Meningism / bulging fontanelle (TBM)",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Hb < 7 g/dL / severe pallor",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "SAM",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "Airway compression by nodes",
+     "s": "tbpaeds2024:43"
+    },
+    {
+     "t": "Large effusion / empyema",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "Miliary pattern on CXR",
+     "s": "tbpaeds2024:33"
+    },
+    {
+     "t": "RR-TB source case",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Jaundice",
+     "s": "tbpaeds2024:67"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "imci2022:35"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. TBM / CNS / miliary TB, RR-TB, or danger signs not stabilising → REFER",
+   "s": "tbqrg2025:31",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT = severe, complicated, or work-up (< 2 y, SAM) → start HRZE, notify, discharge to PHC",
+   "s": "tbpaeds2024:8"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Get a sample before treatment, but do not delay treatment for results · branch rows only if needed",
+  "columns": {
+   "feed": "O₂, feeds & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "TB dose given and swallowed under observation (DOT) daily; dispersed in water if needed; record vomited doses",
+    "s": "tbqrg2025:32",
+    "b": 1
+   },
+   {
+    "t": "Daily: vomiting, abdominal pain, jaundice, visual complaint",
+    "s": "tbpaeds2024:67"
+   },
+   {
+    "t": "Weight twice weekly; re-check dose band",
+    "d": 1
+   },
+   {
+    "t": "Feeds and intake (energy needs up 20–30%)",
+    "s": "tbpaeds2024:39"
+   },
+   {
+    "t": "Source case / coughing adult caregiver: mask for the first 2 weeks",
+    "s": "tbpaeds2024:39"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Check the RtHB and referral letter for TB treatment or TPT already started†.",
+    "feed": [
+     {
+      "t": "O₂ 1–2 L/min if SpO₂ < 92%",
+      "s": "tbpaeds2024:8",
+      "b": 1
+     },
+     {
+      "t": "Breastfeed / feeds; energy +20–30%",
+      "s": "tbpaeds2024:39"
+     },
+     {
+      "t": "SAM: therapeutic feeds (SAM pathway)",
+      "s": "tbpaeds2024:39"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Xpert Ultra: sputum / induced sputum / gastric aspirate / NPA / stool",
+      "s": "tbpaeds2024:19",
+      "b": 1
+     },
+     {
+      "t": "Culture if Xpert negative or previous TB",
+      "s": "tbpaeds2024:19",
+      "b": 1
+     },
+     {
+      "t": "CXR AP + lateral",
+      "s": "tbpaeds2024:18",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "tbpaeds2024:58",
+      "b": 1
+     },
+     {
+      "t": "TST if < 5 y, no clear contact and diagnosis uncertain (read at 48 h)",
+      "s": "hiv2026:70",
+      "b": 1
+     },
+     {
+      "t": "Weight, height, MUAC",
+      "s": "tbpaeds2024:39",
+      "b": 1
+     },
+     {
+      "t": "HGT if danger signs",
+      "s": "imci2022:35",
+      "b": 1
+     },
+     {
+      "t": "Hb if pale",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Start TB treatment"
+     },
+     {
+      "t": "Intensive 2 months (daily): HRZ 50/75/150 dispersible + ethambutol 400 mg by weight band (box)",
+      "s": "tbqrg2025:32",
+      "b": 1
+     },
+     {
+      "t": "Continuation: HR 50/75 dispersible daily — non-severe 2 months, severe 4 months",
+      "s": "tbqrg2025:31",
+      "b": 1
+     },
+     {
+      "t": "≥ 25 kg: HRZE 75/150/400/275 — 25–29.9 kg 2 · 30–34.9 kg 3 · 35–64.9 kg 4 · ≥ 65 kg 5 tabs",
+      "s": "tbqrg2025:32"
+     },
+     {
+      "t": "Treat without bacteriological confirmation if clinical / CXR picture fits",
+      "s": "tbpaeds2024:19"
+     },
+     {
+      "t": "Pyridoxine if SAM, HIV, breastfed, > 8 y: < 5 y 12.5 mg, ≥ 5 y 25 mg daily",
+      "s": "tbpaeds2024:43"
+     },
+     {
+      "h": "Severity → duration"
+     },
+     {
+      "t": "Non-severe: 4 months (2 HRZE + 2 HR)",
+      "s": "tbqrg2025:31"
+     },
+     {
+      "t": "Severe: 6 months (2 HRZE + 4 HR)",
+      "s": "tbqrg2025:31"
+     },
+     {
+      "h": "Notify"
+     },
+     {
+      "t": "Notify, TB register, record in RtHB",
+      "s": "tbpaeds2024:65",
+      "b": 1
+     },
+     {
+      "h": "Contacts"
+     },
+     {
+      "t": "Find the source case; screen household",
+      "s": "phcstg2026:17.31"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Results · classify",
+    "feed": [
+     {
+      "t": "Wean O₂ once SpO₂ ≥ 92%",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase Xpert, HIV results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rif resistant: STOP — REFER DR-TB",
+      "s": "tbqrg2025:37",
+      "b": 1
+     },
+     {
+      "t": "HIV positive → TB-HIV (child) pathway",
+      "s": "tbpaeds2024:58",
+      "b": 1
+     },
+     {
+      "t": "Classify severity (admission §2) and tick duration",
+      "s": "tbpaeds2024:31",
+      "b": 1
+     },
+     {
+      "t": "Counsel caregiver: TB, adherence, side effects, IPC",
+      "s": "tbpaeds2024:40"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Tolerance · TST",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Read TST (48–72 h)",
+      "s": "tbpaeds2024:18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check DOT: every dose swallowed",
+      "d": 1
+     },
+     {
+      "t": "Siblings < 5 y exposed: INH 10 mg/kg (max 300 mg) daily × 6 months",
+      "s": "phcstg2026:17.31"
+     }
+    ]
+   },
+   {
+    "label": "If airway compression / IRIS",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "O₂ as needed"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR",
+      "s": "tbpaeds2024:43",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prednisone 2 mg/kg daily × 4 weeks (max 60 mg), taper over 2 weeks: airway compression, TB-IRIS",
+      "s": "tbpaeds2024:43"
+     },
+     {
+      "t": "Stridor, SpO₂ falling on O₂ → REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If DILI / jaundice",
+    "phase": "Branch · toxicity",
+    "feed": [
+     {
+      "t": "HGT; feeds as tolerated",
+      "s": "tbpaeds2024:67"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ALT + bilirubin; full LFT + INR if stopped",
+      "s": "tbpaeds2024:68",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New jaundice, vomiting, liver tenderness, abdominal pain: ALT + bilirubin same day",
+      "s": "tbpaeds2024:67",
+      "b": 1
+     },
+     {
+      "t": "Symptomatic + ALT ≥ 100 or bilirubin ≥ 34 µmol/L (or asymptomatic ALT ≥ 200): STOP TB drugs, ART, cotrimoxazole",
+      "s": "tbpaeds2024:68",
+      "b": 1
+     },
+     {
+      "t": "INR ≥ 1.5 → REFER as liver failure; 1.2–1.5 repeat 48–72 h",
+      "s": "tbpaeds2024:68",
+      "b": 1
+     },
+     {
+      "t": "Symptomatic ALT 40–100, bilirubin < 34: continue, recheck 1–2-weekly",
+      "s": "tbpaeds2024:69"
+     },
+     {
+      "t": "Rechallenge when ALT and bilirubin < 2 × ULN: R (or H) full dose → ALT at 2–3 days → add the other → ALT at 2–3 days; Z usually not rechallenged",
+      "s": "tbpaeds2024:69"
+     },
+     {
+      "t": "Severe TB: bridge with less hepatotoxic drugs — discuss with expert",
+      "s": "tbpaeds2024:69",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Feeds; weight trend"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "tbpaeds2024:65"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Symptoms improving, tolerating: plan discharge",
+      "d": 1
+     },
+     {
+      "t": "Adjust weight band",
+      "s": "tbpaeds2024:65"
+     },
+     {
+      "t": "Visual complaint: stop ethambutol, eye referral",
+      "s": "tbpaeds2024:67"
+     }
+    ]
+   },
+   {
+    "label": "Day 14",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "s": "tbpaeds2024:65"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge to PHC: TB card, RtHB entry, supply, follow-up date",
+      "s": "tbpaeds2024:65",
+      "b": 1
+     },
+     {
+      "t": "Catch-up immunisations, vitamin A, deworming",
+      "s": "tbpaeds2024:39"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "TB drugs · weight band (< 25 kg)",
+   "items": [
+    {
+     "h": "Intensive 2 months: HRZ 50/75/150 + E 400 mg"
+    },
+    {
+     "t": "2–2.9 kg: HRZ ½ tab + E 1 mL · HR ½ tab",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "3–3.9 kg: HRZ ¾ tab (3 mL) + E 1.5 mL · HR ¾ tab",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "4–7.9 kg: HRZ 1 tab + E 2.5 mL · HR 1 tab",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "8–11.9 kg: HRZ 2 tabs + E ½ tab (4 mL) · HR 2 tabs",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "12–15.9 kg: HRZ 3 tabs + E ¾ tab (6 mL) · HR 3 tabs",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "16–24.9 kg: HRZ 4 tabs + E 1 tab (8 mL) · HR 4 tabs",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "< 2 kg: expert advice",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "h": "≥ 25 kg"
+    },
+    {
+     "t": "≥ 25 kg: HRZE 75/150/400/275 — 25–29.9 kg 2 · 30–34.9 kg 3 · 35–64.9 kg 4 · ≥ 65 kg 5 tabs",
+     "s": "tbqrg2025:32"
+    },
+    {
+     "t": "Pyridoxine if SAM, HIV, breastfed, > 8 y: < 5 y 12.5 mg, ≥ 5 y 25 mg daily",
+     "s": "tbpaeds2024:43"
+    }
+   ]
+  },
+  {
+   "title": "Steroids · adverse effects",
+   "items": [
+    {
+     "h": "Prednisone"
+    },
+    {
+     "t": "Prednisone 2 mg/kg daily × 4 weeks (max 60 mg), taper over 2 weeks: airway compression, TB-IRIS",
+     "s": "tbpaeds2024:43"
+    },
+    {
+     "h": "DILI"
+    },
+    {
+     "t": "New jaundice, vomiting, liver tenderness, abdominal pain: ALT + bilirubin same day",
+     "s": "tbpaeds2024:67",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic + ALT ≥ 100 or bilirubin ≥ 34 µmol/L (or asymptomatic ALT ≥ 200): STOP TB drugs, ART, cotrimoxazole",
+     "s": "tbpaeds2024:68",
+     "b": 1
+    },
+    {
+     "t": "INR ≥ 1.5 → REFER as liver failure; 1.2–1.5 repeat 48–72 h",
+     "s": "tbpaeds2024:68",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic ALT 40–100, bilirubin < 34: continue, recheck 1–2-weekly",
+     "s": "tbpaeds2024:69"
+    },
+    {
+     "h": "Ethambutol"
+    },
+    {
+     "t": "Visual complaint: stop ethambutol, eye referral",
+     "s": "tbpaeds2024:67"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Jaundice, vomiting, abdominal pain",
+     "s": "tbpaeds2024:67",
+     "b": 1
+    },
+    {
+     "t": "Vomited or refused dose",
+     "d": 1
+    },
+    {
+     "t": "SpO₂ < 92%, chest indrawing, lethargy, convulsion",
+     "s": "tbpaeds2024:8"
+    },
+    {
+     "t": "Weight falling",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "TBM / CNS / miliary TB (different regimen) → REFER",
+     "s": "tbqrg2025:31",
+     "b": 1
+    },
+    {
+     "t": "Rif resistant → DR-TB unit",
+     "s": "tbqrg2025:37",
+     "b": 1
+    },
+    {
+     "t": "INR ≥ 1.5 (liver failure) → REFER",
+     "s": "tbpaeds2024:68",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No danger signs",
+    "s": "tbpaeds2024:8"
+   },
+   {
+    "t": "Tolerating TB drugs ≥ 1 week, feeding",
+    "d": 1
+   },
+   {
+    "t": "HIV status known; notified",
+    "s": "tbpaeds2024:58",
+    "b": 1
+   },
+   {
+    "t": "Severity / duration decided",
+    "s": "tbqrg2025:30"
+   },
+   {
+    "t": "Caregiver counselled (adherence, jaundice)",
+    "s": "tbpaeds2024:40"
+   },
+   {
+    "t": "PHC visit and contact screening booked",
+    "s": "tbpaeds2024:65"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "Monthly × 2, then 2-monthly: symptoms, weight, adherence, side effects",
+    "s": "tbpaeds2024:65"
+   },
+   {
+    "t": "4-month regimen: review at month 1 (improved) and month 4 (resolved, weight improving) — else extend to 6 months",
+    "s": "tbqrg2025:30",
+    "b": 1
+   },
+   {
+    "t": "Household contacts: < 5 y and HIV+ → TPT",
+    "s": "phcstg2026:17.31"
+   },
+   {
+    "t": "Nutrition support; grant",
+    "s": "tbpaeds2024:40"
+   },
+   {
+    "t": "Return at once: jaundice, vomiting, breathing difficulty",
+    "s": "tbpaeds2024:40"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "14-day nursing record — TB doses (DOT), feeds, weight and toxicity",
+  "period": "one sheet per 14 days, one row per day (vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "TB dose given and swallowed under observation (DOT) daily; dispersed in water if needed; record vomited doses",
+      "s": "tbqrg2025:32",
+      "b": 1
+     },
+     {
+      "t": "Weight twice weekly; re-check dose band",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Feeds · toxicity",
+    "items": [
+     {
+      "t": "Feeds and intake (energy needs up 20–30%)",
+      "s": "tbpaeds2024:39"
+     },
+     {
+      "t": "Daily: vomiting, abdominal pain, jaundice, visual complaint",
+      "s": "tbpaeds2024:67"
+     }
+    ]
+   },
+   {
+    "h": "Observations · IPC",
+    "items": [
+     {
+      "t": "Vitals incl. SpO₂ 4-hourly; hourly while danger signs present",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Source case / coughing adult caregiver: mask for the first 2 weeks",
+      "s": "tbpaeds2024:39"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "jaundice, vomiting or abdominal pain",
+    "s": "tbpaeds2024:67",
+    "b": 1
+   },
+   {
+    "t": "vomited or refused dose",
+    "d": 1
+   },
+   {
+    "t": "SpO₂ < 92%, chest indrawing, lethargy, convulsion",
+    "s": "tbpaeds2024:8"
+   },
+   {
+    "t": "weight falling",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Doses given / due",
+   "Doses vomited",
+   "Weight change (kg)",
+   "ADR noted (Y/N)"
+  ]
+ }
+}

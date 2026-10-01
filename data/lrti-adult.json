@@ -1,0 +1,1700 @@
+{
+ "id": "lrti-adult",
+ "short": "LRTI (adult)",
+ "title": "Lower respiratory tract infection — pneumonia and bronchitis (adult)",
+ "population": "Adult and adolescent ≥ 13 y (excludes pulmonary TB, hospital-acquired pneumonia)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-09-28",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "hiv2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pulmonary TB confirmed or on treatment → TB pathway",
+     "b": 1
+    },
+    {
+     "t": "Pneumonia starting > 48 h after admission → HAP (Adult STG 9.1.3)",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    },
+    {
+     "t": "Child < 13 y → LRTI (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — acute cough + one pattern",
+   "items": [
+    {
+     "t": "Acute cough ± sputum",
+     "s": "phcstg2026:17.22",
+     "b": 1
+    },
+    {
+     "h": "Pneumonia"
+    },
+    {
+     "t": "Fever, tachypnoea, crackles / bronchial breathing",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "CXR: focal opacification or consolidation",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Severely ill, CXR clear: treat; repeat CXR at 24–48 h",
+     "s": "adultstg2026:16.15",
+     "k": "sub"
+    },
+    {
+     "h": "Acute bronchitis"
+    },
+    {
+     "t": "Cough ± purulent sputum, retrosternal burning; lungs otherwise healthy, no pneumonia signs",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "h": "Suspect PJP"
+    },
+    {
+     "t": "HIV + dry cough < 12 weeks + marked tachypnoea / hypoxia; bilateral diffuse interstitial infiltrates",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "RR ____ /min   SpO₂ ____ % RA",
+     "k": "value"
+    },
+    {
+     "t": "Temp ____ °C   Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe pneumonia = any one of",
+   "items": [
+    {
+     "t": "Cyanosis",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Confusion",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Hypotension",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "RR > 30 /min",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "h": "Also admit (not severe)"
+    },
+    {
+     "t": "> 65 y or comorbidity: COPD, HIV, cardiac failure, diabetes",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "No response to oral treatment after 48 h",
+     "s": "phcstg2026:17.25"
+    },
+    {
+     "t": "Unlikely to comply, far from care, no transport",
+     "s": "phcstg2026:17.25"
+    },
+    {
+     "t": "PJP, aspiration, effusion / empyema, AECOPD (page 2)"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "HIV status · ART regimen · adherence"
+    },
+    {
+     "t": "Last CD4 / VL (date)"
+    },
+    {
+     "t": "On cotrimoxazole prophylaxis"
+    },
+    {
+     "t": "Previous TB treatment (date)",
+     "s": "adultstg2026:16.19"
+    },
+    {
+     "t": "COPD / asthma · inhalers",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Cardiac failure · CKD (baseline creatinine)"
+    },
+    {
+     "t": "Diabetes (last HbA1c / HGT)"
+    },
+    {
+     "t": "Alcohol · epilepsy · stroke (aspiration risk)",
+     "s": "adultstg2026:16.17"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Cough duration · sputum · haemoptysis",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Fever, rigors · pleuritic pain · dyspnoea",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "h": "Aspiration risk"
+    },
+    {
+     "t": "↓ LOC episodes: alcohol, overdose, seizures",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Stroke · swallowing problems",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "h": "TB screen"
+    },
+    {
+     "t": "Cough · fever · night sweats · weight loss",
+     "s": "hiv2026:65"
+    },
+    {
+     "t": "TB contact · previous TB",
+     "s": "adultstg2026:16.19"
+    },
+    {
+     "h": "HIV"
+    },
+    {
+     "t": "Status · on ART · CPT",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Recent CD4 / VL"
+    },
+    {
+     "h": "Heart and airways"
+    },
+    {
+     "t": "Orthopnoea, oedema (heart failure)",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Known COPD / asthma, wheeze",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Lives alone · transport",
+     "s": "phcstg2026:17.25"
+    },
+    {
+     "t": "Able to take oral treatment",
+     "s": "phcstg2026:17.25"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "RR > 30 /min (severe)",
+     "s": "adultstg2026:16.16",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% on room air → O₂",
+     "s": "adultstg2026:16.15",
+     "k": "yn"
+    },
+    {
+     "t": "Confused / ↓ LOC",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    },
+    {
+     "t": "Cyanosis",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Cyanosis",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Pallor",
+     "d": 1
+    },
+    {
+     "t": "Wasting · oral thrush (advanced HIV)",
+     "d": 1
+    },
+    {
+     "t": "Frothy sputum, sweaty (pulmonary oedema)",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Confusion · GCS ____",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Unsafe swallow (aspiration)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Crackles",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Bronchial breathing",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Wheeze",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Pleural rub",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Dull, ↓ breath sounds (effusion)",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Tracheal shift (tension pneumothorax)",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "h": "Heart and baseline"
+    },
+    {
+     "t": "Raised JVP · pedal oedema",
+     "d": 1
+    },
+    {
+     "t": "Murmur / gallop",
+     "d": 1
+    },
+    {
+     "t": "Baseline RR, SpO₂, O₂ need recorded",
+     "s": "adultstg2026:16.16"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ — pulse oximetry on room air",
+   "items": [
+    {
+     "t": "Value on arrival: ____ % on room air",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "< 94%: oxygen",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "COPD: nasal 1–2 L/min, target SpO₂ 90%",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "HIV + bilateral infiltrates + SpO₂ < 92%: hypoxic PJP → add prednisone",
+     "s": "adultstg2026:10.30"
+    },
+    {
+     "t": "Hypoxic despite face-mask O₂ → REFER",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    },
+    {
+     "t": "Then hourly for 6 h and while severe, then 4-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "HIV rapid test",
+   "items": [
+    {
+     "t": "Result: ____   Known HIV+: last CD4 ____  VL ____",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Offer HIV test to all",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "HIV+: CD4 count",
+     "s": "hiv2026:61",
+     "b": 1
+    },
+    {
+     "t": "HIV+ and seriously ill: urine LF-LAM",
+     "s": "hiv2026:66",
+     "b": 1
+    },
+    {
+     "t": "Bilateral interstitial + hypoxia: treat as PJP (page 2)",
+     "s": "adultstg2026:16.17"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "RR ≥ 30 or pulse ≥ 120",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Breathless at rest / talking",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Drowsy / confused",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "hiv2026:59",
+     "b": 1
+    },
+    {
+     "t": "Septic shock",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Hypoxic despite face-mask O₂",
+     "s": "adultstg2026:16.18"
+    },
+    {
+     "t": "Haemoptysis ≥ 1 tablespoon",
+     "s": "hiv2026:59"
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "t": "Life-threatening asthma (silent chest)",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Acute pulmonary oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "COPD drowsy on O₂ (CO₂ retention)",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Empyema / large effusion",
+     "s": "adultstg2026:16.18"
+    },
+    {
+     "t": "Foreign body / chemical aspiration",
+     "s": "adultstg2026:16.18"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia if confused",
+     "d": 1
+    },
+    {
+     "t": "Advanced HIV / PJP · TB",
+     "s": "adultstg2026:16.17"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE PNEUMONIA → O₂, ceftriaxone + azithromycin · REFER: ventilation, shock after 30 mL/kg, hypoxic on face mask",
+   "s": "adultstg2026:16.16"
+  },
+  {
+   "t": "11. ADMIT",
+   "s": "adultstg2026:16.16"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Community-acquired pneumonia (bacterial)",
+   "features": [
+    {
+     "t": "Fever, rigors, productive cough, pleuritic pain",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Focal crackles, bronchial breathing",
+     "s": "phcstg2026:17.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR: focal consolidation",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Sputum Xpert Ultra (exclude TB)",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "HIV test",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Antibiotic group A / B / C: chart Day 1",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "IV → oral when RR < 25, T < 37.8 °C, stable; 5 days total",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ventilation needed or shock after 30 mL/kg",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pneumocystis pneumonia (PJP)",
+   "branch": "If PJP",
+   "features": [
+    {
+     "t": "HIV (often not on ART); dry cough < 12 weeks; marked tachypnoea, hypoxia",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "CXR bilateral interstitial; may be normal early",
+     "s": "phcstg2026:17.26"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR",
+     "s": "adultstg2026:16.17",
+     "b": 1
+    },
+    {
+     "t": "Exclude TB: Xpert + U-LAM",
+     "s": "adultstg2026:16.17",
+     "b": 1
+    },
+    {
+     "t": "CD4",
+     "s": "hiv2026:61",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cotrimoxazole 80/400 mg 6-hourly × 21 d: < 60 kg 3 tabs, ≥ 60 kg 4 tabs",
+     "s": "adultstg2026:10.29"
+    },
+    {
+     "t": "SpO₂ < 92%: prednisone 80 mg daily × 5 d, taper over 14 d",
+     "s": "adultstg2026:10.30"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Hypoxic on face-mask O₂ (no CPAP at ANDH)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Intolerant of all regimens",
+     "s": "adultstg2026:10.31"
+    }
+   ]
+  },
+  {
+   "dx": "Acute pulmonary oedema / heart failure",
+   "features": [
+    {
+     "t": "First 'asthma' > 50 y; orthopnoea",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Frothy sputum, sweaty, poorly perfused",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR · ECG",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂ 40% face mask 6–8 L/min",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Furosemide 40 mg slow IV; repeat 40 mg in 2–4 h; 80 mg if no response in 20–30 min",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "ISDN 5 mg SL every 5–10 min if not hypotensive",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not responding (NIV)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute exacerbation of COPD",
+   "branch": "If AECOPD / asthma",
+   "features": [
+    {
+     "t": "Known COPD; ↑ dyspnoea, cough, sputum volume or purulence",
+     "s": "adultstg2026:16.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; exclude pneumonia, heart failure, PE",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Blood gas if available",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Controlled O₂, target 90%; salbutamol neb + ipratropium",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Prednisone 40 mg daily × 5 d",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "t": "Amox/clav 875/125 mg 12-hourly × 5 d if purulent sputum + ↑ volume or dyspnoea",
+     "s": "adultstg2026:16.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No response in 1 h: discuss; drowsy / rising CO₂ → REFER (NIV)",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute asthma",
+   "branch": "If AECOPD / asthma",
+   "features": [
+    {
+     "t": "Wheeze, chest tightness, known asthma",
+     "s": "adultstg2026:16.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PEFR (% predicted) · SpO₂",
+     "s": "adultstg2026:16.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Salbutamol 5 mg neb every 20–30 min; add ipratropium 0.5 mg if poor response",
+     "s": "adultstg2026:16.2"
+    },
+    {
+     "t": "Prednisone 40 mg daily × 7 d; O₂ target 93–95%",
+     "s": "adultstg2026:16.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Life-threatening or poor response: REFER urgently",
+     "s": "adultstg2026:16.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Aspiration pneumonia / lung abscess",
+   "branch": "If aspiration / abscess",
+   "features": [
+    {
+     "t": "↓ LOC episodes, alcohol, seizures, stroke, poor swallow",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Indolent; cavity with fluid level (abscess)",
+     "s": "adultstg2026:16.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR",
+     "s": "adultstg2026:16.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amox/clav 1.2 g IV 8-hourly → 875/125 mg PO 12-hourly",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Abscess: 4–6 weeks + postural drainage",
+     "s": "adultstg2026:16.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "FB or chemical aspiration, non-resolving, hypoxic on face mask",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    },
+    {
+     "t": "Abscess: empyema, severe haemoptysis",
+     "s": "adultstg2026:16.14"
+    }
+   ]
+  },
+  {
+   "dx": "Parapneumonic effusion / empyema",
+   "branch": "If effusion / empyema",
+   "features": [
+    {
+     "t": "Dull, ↓ breath sounds; fever persisting on antibiotics",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Aspirate all effusions: biochemistry + MCS",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    },
+    {
+     "t": "pH < 7.2, bacteria or pus = drain",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Intercostal drain",
+     "s": "adultstg2026:16.18"
+    },
+    {
+     "t": "CAP antibiotics until drainage complete",
+     "s": "adultstg2026:16.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Loculated or inadequate drainage",
+     "s": "adultstg2026:16.19",
+     "b": 1
+    },
+    {
+     "t": "No drain capacity on site",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pulmonary TB",
+   "features": [
+    {
+     "t": "Cough, night sweats, weight loss, TB contact; poor response at 48 h",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Sputum Xpert Ultra",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "U-LAM if HIV+",
+     "s": "hiv2026:66",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "→ TB pathway; notify",
+     "s": "adultstg2026:16.19"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — TB programme",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pulmonary embolism",
+   "features": [
+    {
+     "t": "Sudden dyspnoea, pleuritic pain, haemoptysis, DVT, immobility; hypoxic with clear chest",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CTPA",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂; anticoagulate per Adult STG 2.8.2",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CTPA",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute bronchitis",
+   "features": [
+    {
+     "t": "Cough ± sputum, retrosternal burning; no pneumonia signs",
+     "s": "phcstg2026:17.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:17.22"
+    }
+   ],
+   "manage": [
+    {
+     "t": "No antibiotics unless COPD",
+     "s": "phcstg2026:17.22"
+    },
+    {
+     "t": "Paracetamol 0.5–1 g 4–6-hourly (max 4 g/24 h)",
+     "s": "phcstg2026:17.21"
+    },
+    {
+     "t": "Exclude bronchiectasis / COPD",
+     "s": "phcstg2026:17.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — usually outpatient",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Switch IV → oral when criteria are met, not on a fixed day · branch rows used only if that diagnosis applies",
+  "columns": {
+   "feed": "Oxygen & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "RR, SpO₂ + O₂ flow, pulse, BP, temperature, confusion: hourly for the first 6 h and while severe, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "O₂ if SpO₂ < 94%; COPD: controlled O₂, target SpO₂ 90%",
+    "s": "adultstg2026:16.15"
+   },
+   {
+    "t": "Shock or IV fluids: urine output hourly, target > 0.5 mL/kg/h",
+    "s": "adultstg2026:20.24"
+   },
+   {
+    "t": "Daily switch check: RR < 25, T < 37.8 °C, haemodynamically stable → tell doctor (IV → oral)",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "Sputum, cough, chest pain, oral intake",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for pre-referral ceftriaxone (dose, time) — count it as today's dose†.",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "COPD: nasal 1–2 L/min, target 90%",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Oral fluids and diet as tolerated",
+      "d": 1
+     },
+     {
+      "t": "IV fluids only if shocked or unable to drink; avoid over-hydration",
+      "s": "adultstg2026:20.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test (offer all)",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Sputum Xpert MTB/RIF Ultra — all",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Blood culture before antibiotics if septic shock",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E + creatinine, HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV+: CD4; U-LAM if seriously ill",
+      "s": "hiv2026:66",
+      "b": 1
+     },
+     {
+      "t": "Effusion: diagnostic tap (pH, MCS)",
+      "s": "adultstg2026:16.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotics — tick one group"
+     },
+     {
+      "t": "A · < 65 y, no comorbidity, not severe: ampicillin 1 g IV 6-hourly",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "B · > 65 y or comorbidity: ceftriaxone 2 g IV daily",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "C · Severe: ceftriaxone 2 g IV daily + azithromycin 500 mg IV over ≥ 60 min daily × 3 d",
+      "s": "adultstg2026:16.17",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: moxifloxacin 400 mg IV/PO daily",
+      "s": "adultstg2026:16.17"
+     },
+     {
+      "h": "Septic shock"
+     },
+     {
+      "t": "NaCl 0.9% 500 mL over 30 min, repeat to 30 mL/kg",
+      "s": "adultstg2026:20.24"
+     },
+     {
+      "t": "No response → adrenaline infusion needed: REFER",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "h": "Wheeze"
+     },
+     {
+      "t": "Salbutamol 5 mg neb; see If AECOPD / asthma",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "h": "Pain / fever"
+     },
+     {
+      "t": "Paracetamol 0.5–1 g 4–6-hourly, max 4 g/24 h",
+      "s": "phcstg2026:17.21"
+     },
+     {
+      "h": "PJP, aspiration, effusion"
+     },
+     {
+      "t": "Start the branch row below",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Stabilise / switch",
+    "feed": [
+     {
+      "t": "Wean O₂ once SpO₂ ≥ 94% on room air",
+      "d": 1
+     },
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review CXR, Xpert, HIV result",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E if Day 1 abnormal",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Oral switch when stable, RR < 25, T < 37.8 °C"
+     },
+     {
+      "t": "A → amoxicillin 1 g PO 8-hourly",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "B, C → amox/clav 875/125 mg PO 12-hourly",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "Allergy → moxifloxacin 400 mg PO daily",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "Total 5 days IV + oral",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "48-h review",
+    "feed": [
+     {
+      "t": "O₂ as needed",
+      "s": "adultstg2026:16.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Not improving: repeat CXR (effusion, abscess, pneumothorax)",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Xpert / U-LAM if not yet done",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Poor response at 48 h"
+     },
+     {
+      "t": "Exclude TB; atypical → add azithromycin 500 mg daily × 3 d",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "HIV+: consider PJP (branch)",
+      "s": "adultstg2026:16.17"
+     },
+     {
+      "t": "Persistent fever: empyema, wrong antibiotic, obstruction (FB, carcinoma)",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "Deteriorating → REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If PJP",
+    "phase": "Branch · HIV",
+    "feed": [
+     {
+      "t": "O₂; face mask if needed",
+      "s": "adultstg2026:10.30"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC + K⁺ on high-dose cotrimoxazole",
+      "s": "adultstg2026:10.29",
+      "b": 1
+     },
+     {
+      "t": "CD4, Xpert, U-LAM (exclude TB)",
+      "s": "adultstg2026:16.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cotrimoxazole 80/400 mg PO 6-hourly × 21 d: < 60 kg 3 tabs, ≥ 60 kg 4 tabs",
+      "s": "adultstg2026:10.29",
+      "b": 1
+     },
+     {
+      "t": "Vomiting: IV 240/1200 mg (< 60 kg) or 320/1600 mg (≥ 60 kg) 6-hourly",
+      "s": "adultstg2026:10.30"
+     },
+     {
+      "t": "SpO₂ < 92%: prednisone 80 mg daily × 5 d, then taper over 14 d",
+      "s": "adultstg2026:10.30"
+     },
+     {
+      "t": "Intolerance: desensitise, or clindamycin 600 mg 8-hourly + primaquine 15 mg daily × 21 d",
+      "s": "adultstg2026:10.30"
+     },
+     {
+      "t": "Then cotrimoxazole 160/800 mg daily (secondary prophylaxis); ART per HIV guideline",
+      "s": "adultstg2026:10.31"
+     }
+    ]
+   },
+   {
+    "label": "If aspiration / abscess",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Swallow check before oral intake",
+      "d": 1
+     },
+     {
+      "t": "Nutritional support (abscess)",
+      "s": "adultstg2026:16.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR; abscess: repeat every 1–2 weeks",
+      "s": "adultstg2026:16.14",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amox/clav 1.2 g IV 8-hourly until apyrexial and stable 24 h → 875/125 mg PO 12-hourly",
+      "s": "adultstg2026:16.17",
+      "b": 1
+     },
+     {
+      "t": "Allergy: moxifloxacin 400 mg IV → PO daily",
+      "s": "adultstg2026:16.18"
+     },
+     {
+      "t": "Abscess: 4–6 weeks; postural drainage 20 min 6-hourly",
+      "s": "adultstg2026:16.14"
+     },
+     {
+      "t": "REFER: FB or chemical aspiration, non-resolving, hypoxic on face-mask O₂",
+      "s": "adultstg2026:16.18",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If effusion / empyema",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Analgesia for drain",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pleural tap: biochemistry + MCS",
+      "s": "adultstg2026:16.18",
+      "b": 1
+     },
+     {
+      "t": "pH < 7.2, bacteria or pus = drain",
+      "s": "adultstg2026:16.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intercostal drain — if not possible on site: REFER",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CAP antibiotics until drainage complete",
+      "s": "adultstg2026:16.18"
+     },
+     {
+      "t": "Not after pneumonia: amox/clav 1.2 g IV 8-hourly → 875/125 mg PO 12-hourly",
+      "s": "adultstg2026:16.18"
+     },
+     {
+      "t": "REFER: loculated or inadequate drainage",
+      "s": "adultstg2026:16.19",
+      "b": 1
+     },
+     {
+      "t": "Straw-coloured fluid: TB pleurisy → TB pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If AECOPD / asthma",
+    "phase": "Branch · wheeze",
+    "feed": [
+     {
+      "t": "Controlled O₂: COPD nasal 1–2 L/min, target 90%",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Asthma: target 93–95%",
+      "s": "adultstg2026:16.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas if available",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "PEFR (asthma)",
+      "s": "adultstg2026:16.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Salbutamol 5 mg in 4 mL NaCl neb: continuous (COPD), every 20–30 min (asthma)",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Poor response: ipratropium 0.5 mg",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Prednisone 40 mg daily: COPD 5 d, asthma 7 d; hydrocortisone 100 mg IV 6-hourly if no oral",
+      "s": "adultstg2026:16.12"
+     },
+     {
+      "t": "AECOPD: amox/clav 875/125 mg 12-hourly × 5 d if purulent sputum + ↑ volume or dyspnoea",
+      "s": "adultstg2026:16.12"
+     },
+     {
+      "t": "No response in 1 h: discuss; drowsy / confused on O₂ → REFER (NIV)",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Oral",
+    "feed": [
+     {
+      "t": "Room air, normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase Xpert, HIV, culture results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue oral antibiotic",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "HIV+: link to ART and CPT",
+      "s": "hiv2026:90"
+     },
+     {
+      "t": "Xpert positive → TB pathway",
+      "s": "adultstg2026:16.19"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "End of course / discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Recheck switch criteria",
+      "s": "adultstg2026:16.16"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "5-day course complete (IV + oral)",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Discharge when all criteria met (box below)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7+",
+    "phase": "Extended courses",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR as per branch",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "≥ 7 days: MRSA or Pseudomonas",
+      "s": "adultstg2026:16.15"
+     },
+     {
+      "t": "Longer: empyema, abscess, necrotising, extrapulmonary, resistant organism",
+      "s": "adultstg2026:16.15"
+     },
+     {
+      "t": "PJP: 21 days",
+      "s": "adultstg2026:10.29"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotics · CAP",
+   "items": [
+    {
+     "h": "A · < 65 y, no comorbidity, not severe"
+    },
+    {
+     "t": "Ampicillin 1 g IV 6-hourly → amoxicillin 1 g PO 8-hourly",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "h": "B · > 65 y or comorbidity"
+    },
+    {
+     "t": "Ceftriaxone 2 g IV daily → amox/clav 875/125 mg PO 12-hourly",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "h": "C · Severe"
+    },
+    {
+     "t": "Ceftriaxone 2 g IV daily + azithromycin 500 mg IV over ≥ 60 min daily × 3 d → amox/clav PO",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "h": "Severe penicillin allergy"
+    },
+    {
+     "t": "Moxifloxacin 400 mg IV/PO daily (no macrolide needed)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "h": "All"
+    },
+    {
+     "t": "Switch when stable, RR < 25, T < 37.8 °C; 5 days total",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Poor response 48 h: exclude TB; atypical → macrolide",
+     "s": "adultstg2026:16.16"
+    }
+   ]
+  },
+  {
+   "title": "Other drugs",
+   "items": [
+    {
+     "h": "Oxygen"
+    },
+    {
+     "t": "SpO₂ < 94%; COPD target 90%; asthma 93–95%",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "h": "PJP"
+    },
+    {
+     "t": "Cotrimoxazole 80/400 mg 6-hourly × 21 d: < 60 kg 3 tabs, ≥ 60 kg 4 tabs",
+     "s": "adultstg2026:10.29"
+    },
+    {
+     "t": "SpO₂ < 92%: prednisone 80 mg daily × 5 d, taper over 14 d",
+     "s": "adultstg2026:10.30"
+    },
+    {
+     "h": "AECOPD / asthma"
+    },
+    {
+     "t": "Salbutamol 5 mg neb; ipratropium 0.5 mg; prednisone 40 mg daily (COPD 5 d, asthma 7 d)",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "h": "Pulmonary oedema"
+    },
+    {
+     "t": "Furosemide 40 mg slow IV; ISDN 5 mg SL",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "Septic shock"
+    },
+    {
+     "t": "NaCl 0.9% 500 mL over 30 min to 30 mL/kg",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "h": "Pain / fever"
+    },
+    {
+     "t": "Paracetamol 0.5–1 g 4–6-hourly, max 4 g/24 h",
+     "s": "phcstg2026:17.21"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Escalate — call the doctor"
+    },
+    {
+     "t": "RR > 30 /min or rising from baseline",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "SpO₂ < 94% despite O₂ (COPD < 90%)",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "New confusion or drowsiness",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "BP falling or pulse rising from baseline",
+     "d": 1
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Frank haemoptysis",
+     "s": "hiv2026:59"
+    },
+    {
+     "h": "IV fluids"
+    },
+    {
+     "t": "Avoid over-hydration: worsens hypoxia (ARDS)",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "h": "On deterioration"
+    },
+    {
+     "t": "Blood culture, CXR, HGT, U&E",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Ventilation / NIV, shock after 30 mL/kg, hypoxic on face-mask O₂",
+     "s": "adultstg2026:16.18",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Stable, RR < 25, T < 37.8 °C",
+    "s": "adultstg2026:16.16",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ ≥ 94% on room air (COPD: own baseline)",
+    "d": 1
+   },
+   {
+    "t": "Tolerating oral antibiotic and fluids",
+    "d": 1
+   },
+   {
+    "t": "HIV result given; Xpert sent",
+    "s": "adultstg2026:16.15"
+   },
+   {
+    "t": "Mobilising to baseline",
+    "d": 1
+   },
+   {
+    "t": "Able to complete the course at home",
+    "s": "phcstg2026:17.25"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "CXR 4–6 weeks after treatment if > 50 y or symptoms persist",
+    "s": "adultstg2026:16.15",
+    "b": 1
+   },
+   {
+    "t": "Xpert / culture results to PHC; TB pathway if positive",
+    "d": 1
+   },
+   {
+    "t": "HIV+: ART and CPT at clinic",
+    "s": "hiv2026:90"
+   },
+   {
+    "t": "COPD: annual influenza vaccine",
+    "s": "adultstg2026:16.13"
+   },
+   {
+    "t": "Refer back: fever returns, breathless, haemoptysis, not improving",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — breathing, oxygen and circulation",
+  "period": "one sheet per 24 h, hourly rows",
+  "params": [
+   {
+    "h": "Breathing and circulation",
+    "items": [
+     {
+      "t": "RR, SpO₂ + O₂ flow, pulse, BP, temperature, confusion: hourly for the first 6 h and while severe, then 4-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ if SpO₂ < 94%; COPD: controlled O₂, target SpO₂ 90%",
+      "s": "adultstg2026:16.15"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Shock or IV fluids: urine output hourly, target > 0.5 mL/kg/h",
+      "s": "adultstg2026:20.24"
+     },
+     {
+      "t": "Sputum, cough, chest pain, oral intake",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Switch check",
+    "items": [
+     {
+      "t": "Daily switch check: RR < 25, T < 37.8 °C, haemodynamically stable → tell doctor (IV → oral)",
+      "s": "adultstg2026:16.16"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "RR > 30 /min or rising from baseline",
+    "s": "adultstg2026:16.16",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ < 94% despite O₂ (COPD < 90%)",
+    "s": "adultstg2026:16.15"
+   },
+   {
+    "t": "new confusion or drowsiness",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "BP falling or pulse rising from baseline",
+    "d": 1
+   },
+   {
+    "t": "urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:20.24"
+   },
+   {
+    "t": "frank haemoptysis",
+    "s": "hiv2026:59"
+   }
+  ],
+  "totals": [
+   "Switch criteria met (Y/N)",
+   "Lowest SpO₂ / highest O₂",
+   "Urine (mL/kg/h)",
+   "IV in / out (mL)"
+  ]
+ }
+}

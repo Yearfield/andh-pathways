@@ -1,0 +1,1337 @@
+{
+ "id": "rf-adult",
+ "short": "Resp. failure (adult)",
+ "title": "Acute respiratory failure — type 1 and type 2 (adult)",
+ "population": "Adult and adolescent ≥ 13 y with hypoxaemia and / or hypercapnia; ventilation is beyond ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Bilateral infiltrates + P/F < 300 → ARDS pathway",
+     "b": 1
+    },
+    {
+     "t": "Cardiogenic pulmonary oedema → ADHF pathway",
+     "b": 1
+    },
+    {
+     "t": "Opioid overdose → Opioids pathway",
+     "b": 1
+    },
+    {
+     "t": "Organophosphate poisoning → OP pathway",
+     "b": 1
+    },
+    {
+     "t": "DKA (acidotic breathing) → DKA pathway",
+     "b": 1
+    },
+    {
+     "t": "Child < 13 y → respiratory failure (child) pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one",
+   "items": [
+    {
+     "h": "Type 1 — hypoxaemic"
+    },
+    {
+     "t": "SpO₂ < 90% or PaO₂ < 8 kPa (60 mmHg) despite O₂",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "h": "Type 2 — hypercapnic / ventilatory"
+    },
+    {
+     "t": "Raised PCO₂ with acidosis (pH < 7.35)",
+     "s": "adultstg2026:23.2",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Weak effort, low RR / tidal volume (muscle weakness, opioids)",
+     "s": "adultstg2026:23.2",
+     "b": 1
+    },
+    {
+     "t": "PCO₂ inappropriately high for the work of breathing (asthma, COPD, acidosis)",
+     "s": "adultstg2026:23.2",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ ____ on ____ · pH ____ · PCO₂ ____ · PO₂ ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Needs ventilation (REFER) = any one of",
+   "items": [
+    {
+     "t": "Hypoxaemia despite maximal face-mask O₂",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Rising PCO₂ / acidosis despite treatment",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Exhaustion, silent chest, feeble effort",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Asthma / COPD not responding within 1 h",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Drowsy, confused, can't protect airway",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Bulbar weakness (GBS, myasthenia)",
+     "s": "adultstg2026:14.48",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "COPD (known CO₂ retainer?) · home O₂",
+     "s": "adultstg2026:16.14"
+    },
+    {
+     "t": "Asthma: previous ICU / intubation",
+     "d": 1
+    },
+    {
+     "t": "Inhalers, prednisone use",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "t": "HIV, CD4; TB",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Heart failure",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Opioids, benzodiazepines, methadone",
+     "s": "adultstg2026:19.21"
+    },
+    {
+     "t": "Myasthenia, neuromuscular disease",
+     "s": "adultstg2026:14.48"
+    },
+    {
+     "t": "Ceiling of care / advance directive",
+     "s": "adultstg2026:23.50"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Sudden (PE, pneumothorax, aspiration)",
+     "d": 1
+    },
+    {
+     "t": "Hours–days (asthma, pneumonia)",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "h": "Airways"
+    },
+    {
+     "t": "Wheeze, known asthma / COPD",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Sputum change (AECOPD)",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "h": "Drive / muscles"
+    },
+    {
+     "t": "Drugs or overdose",
+     "s": "adultstg2026:19.21"
+    },
+    {
+     "t": "Ascending weakness, swallowing difficulty",
+     "s": "adultstg2026:14.48",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Chest pain, orthopnoea, calf swelling",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "t": "Fever, cough",
+     "s": "adultstg2026:16.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "RR > 30 /min",
+     "s": "adultstg2026:16.1",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "RR < 12 /min (respiratory depression)",
+     "s": "adultstg2026:15.8",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90%",
+     "s": "adultstg2026:16.1",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Pulse > 120 / bradycardia",
+     "s": "adultstg2026:16.1",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Can't complete sentences / unable to speak",
+     "s": "adultstg2026:16.1",
+     "k": "yn"
+    },
+    {
+     "t": "Drowsy, agitated or confused",
+     "s": "adultstg2026:16.1",
+     "k": "yn"
+    },
+    {
+     "t": "PEFR < 33% (asthma)",
+     "s": "adultstg2026:16.1",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Airway"
+    },
+    {
+     "t": "Stridor, secretions, can't protect",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Wheeze / silent chest",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Unilateral reduced air entry (pneumothorax)",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Crackles / consolidation",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Effusion",
+     "d": 1
+    },
+    {
+     "h": "CO₂ signs"
+    },
+    {
+     "t": "Flapping tremor, bounding pulse",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Pinpoint pupils",
+     "s": "adultstg2026:19.21"
+    },
+    {
+     "t": "Fatigable weakness, ptosis",
+     "s": "adultstg2026:14.48"
+    },
+    {
+     "h": "Heart"
+    },
+    {
+     "t": "Raised JVP, oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Blood gas — type 1 or type 2",
+   "items": [
+    {
+     "t": "pH ____ · PCO₂ ____ · PO₂ ____ · HCO₃ ____ on ____ O₂",
+     "k": "value"
+    },
+    {
+     "t": "COPD: titrate O₂ to PaO₂ 8 kPa / SpO₂ 90%; if PCO₂ rises, reduce FiO₂",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "pH < 7.35 with high PCO₂: NIV or intubation → REFER",
+     "s": "adultstg2026:16.11",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "No gas available: watch drowsiness, headache, confusion",
+     "s": "adultstg2026:16.11"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "PEFR / bedside cause test",
+   "items": [
+    {
+     "t": "PEFR ____ % predicted · HGT ____ · ECG ____",
+     "k": "value"
+    },
+    {
+     "t": "Asthma severe < 60% · life-threatening < 33%",
+     "s": "adultstg2026:16.1",
+     "b": 1
+    },
+    {
+     "t": "Pinpoint pupils + RR < 12: naloxone trial",
+     "s": "adultstg2026:19.21",
+     "b": 1
+    },
+    {
+     "t": "ECG / ultrasound for PE, tamponade, pneumothorax",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Silent chest",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Anaphylaxis",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Upper airway obstruction",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Opioid toxicity",
+     "s": "adultstg2026:19.21"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Bulbar palsy",
+     "s": "adultstg2026:14.48"
+    },
+    {
+     "t": "Septic shock",
+     "s": "adultstg2026:23.34"
+    },
+    {
+     "t": "Severe acidosis",
+     "s": "adultstg2026:23.2"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Hypokalaemia (β2-agonists)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = RESPIRATORY FAILURE needing ventilation → stabilise, discuss, REFER",
+   "s": "adultstg2026:23.2"
+  },
+  {
+   "t": "11. ADMIT (resus / high care)",
+   "s": "adultstg2026:16.2"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Acute severe / life-threatening asthma",
+   "branch": "If asthma / COPD",
+   "features": [
+    {
+     "t": "Wheeze, can't speak, PEFR < 60%; silent chest",
+     "s": "adultstg2026:16.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PEFR, SpO₂, response to salbutamol",
+     "s": "adultstg2026:16.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Salbutamol + ipratropium nebs, prednisone / hydrocortisone, MgSO₄ 2 g",
+     "s": "adultstg2026:16.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if no response in 1 h — intubation may be needed",
+     "s": "adultstg2026:16.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "COPD exacerbation (type 2)",
+   "branch": "If asthma / COPD",
+   "features": [
+    {
+     "t": "Known COPD, more sputum / breathlessness, drowsy on O₂",
+     "s": "adultstg2026:16.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood gas: PCO₂, pH",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Controlled O₂ 1–2 L/min; nebs; prednisone 40 mg × 5 d; amox/clav if purulent",
+     "s": "adultstg2026:16.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if PCO₂ rising / no response in 1 h (NIV)",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Severe pneumonia / PJP",
+   "branch": "If pneumonia / PJP",
+   "features": [
+    {
+     "t": "Fever, consolidation; HIV + diffuse infiltrates",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, cultures, HIV, Xpert",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone + azithromycin; PJP: cotrimoxazole + prednisone",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ventilation",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Opioid / sedative overdose (type 2)",
+   "branch": "If drug-induced",
+   "features": [
+    {
+     "t": "RR < 12, pinpoint pupils, reduced LOC",
+     "s": "adultstg2026:19.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Naloxone response; HGT",
+     "s": "adultstg2026:19.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Naloxone 0.4 mg IV, increase to max 10 mg; infusion 0.4 mg/h",
+     "s": "adultstg2026:19.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If no response / ventilation needed",
+     "s": "adultstg2026:19.21"
+    }
+   ]
+  },
+  {
+   "dx": "Neuromuscular: GBS, myasthenia",
+   "branch": "If neuromuscular",
+   "features": [
+    {
+     "t": "Weakness, weak cough, bulbar signs; no distress signs",
+     "s": "adultstg2026:23.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial PEFR / count-breath; gas (PCO₂)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Myasthenia: pyridostigmine 60 mg 5 × daily (specialist)",
+     "s": "adultstg2026:14.48"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — before hypoxaemia appears",
+     "s": "adultstg2026:23.2",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pulmonary embolism",
+   "branch": "If PE / pneumothorax",
+   "features": [
+    {
+     "t": "Sudden breathlessness, pleuritic pain, DVT",
+     "s": "adultstg2026:2.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, CXR, calf ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂; anticoagulate (Section 2.8.2)",
+     "s": "adultstg2026:2.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if unstable (thrombolysis decision)",
+     "s": "adultstg2026:2.24",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pneumothorax",
+   "branch": "If PE / pneumothorax",
+   "features": [
+    {
+     "t": "Sudden, unilateral reduced air entry",
+     "s": "adultstg2026:16.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR / ultrasound; tension = clinical",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Tension: needle decompression, chest drain (procedure card)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If drain fails / persistent leak",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pulmonary oedema",
+   "branch": "",
+   "features": [
+    {
+     "t": "Orthopnoea, frothy sputum, raised JVP",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, ECG",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "→ ADHF pathway",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per ADHF",
+     "s": "adultstg2026:20.16"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / Day",
+  "phase_note": "Branch rows follow the ticked cause · decide early whether ventilation will be needed (transfer takes hours)",
+  "columns": {
+   "feed": "O₂ & position",
+   "tests": "Gas, bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "SpO₂ + O₂ device/flow, RR, pulse, BP, level of alertness: every 15 min for the first hour, then hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "O₂ to the patient's target: CO₂-retainer (COPD) 88–92% via nasal cannula 1–2 L/min; asthma 93–95%; others ≥ 94%",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "Drowsiness, headache or confusion on O₂ = rising CO₂ → call doctor",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "PEFR before and after each nebulisation (asthma)",
+    "s": "adultstg2026:16.4"
+   },
+   {
+    "t": "No sedatives in the non-ventilated patient",
+    "s": "adultstg2026:16.3"
+   },
+   {
+    "t": "Strict intake and output",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for nebs, steroids, naloxone and O₂ given. Airway first; call for the most experienced clinician.",
+    "feed": [
+     {
+      "t": "Sit up (unless reduced LOC: recovery position, airway)",
+      "d": 1
+     },
+     {
+      "t": "No CO₂-retention risk: O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Known COPD: nasal cannula 1–2 L/min, target SpO₂ 90% / PaO₂ 8 kPa",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Severe / life-threatening asthma: O₂ to SpO₂ 93–95%",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     },
+     {
+      "t": "Bag-mask ventilate if apnoeic / RR very low",
+      "s": "adultstg2026:19.21",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas (ABG / VBG)",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "PEFR if able",
+      "s": "adultstg2026:16.1",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, K⁺, HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test; sputum Xpert",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Bedside ultrasound (pneumothorax, effusion)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Bronchospasm (asthma / COPD)"
+     },
+     {
+      "t": "Salbutamol 5 mg (1 mL 0.5% in 4 mL NaCl 0.9%) neb on O₂ 8 L/min, every 20–30 min",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     },
+     {
+      "t": "Poor response: add ipratropium 0.5 mg to each neb × 3",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "t": "Life-threatening asthma: salbutamol 10 mg + ipratropium 0.5 mg every 20–30 min × 4 over 2 h",
+      "s": "adultstg2026:16.3"
+     },
+     {
+      "t": "Prednisone 40 mg PO, or hydrocortisone 100 mg IV 6-hourly",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "t": "No response: MgSO₄ 50 mg/kg (max 2 g) IV over 20 min",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "t": "No IV aminophylline",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "h": "Opioid toxicity"
+     },
+     {
+      "t": "Naloxone 0.4 mg IV; repeat 0.4 → 0.8 → 2 → 4 mg every 2–3 min (max 10 mg); dependent: start 0.04–0.1 mg",
+      "s": "adultstg2026:19.21",
+      "b": 1
+     },
+     {
+      "h": "Pneumonia / PJP"
+     },
+     {
+      "t": "Ceftriaxone 2 g IV + azithromycin 500 mg IV (severe)",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "h": "Tension pneumothorax"
+     },
+     {
+      "t": "Decompress now (procedure card)",
+      "d": 1
+     },
+     {
+      "h": "Intubation before transfer"
+     },
+     {
+      "t": "RSI: ketamine 1–2 mg/kg (asthma) or etomidate 0.3 mg/kg + suxamethonium 1–1.5 mg/kg",
+      "s": "adultstg2026:20.19"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Re-check SpO₂ target; reduce O₂ if CO₂ rising",
+      "s": "adultstg2026:16.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas at 30–60 min (COPD, drowsy)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "PEFR after nebs",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Asthma: no response in 1 h (PEFR < 60%, RR > 20, impaired speech) → specialist; exclude pneumothorax, anaphylaxis, upper airway",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     },
+     {
+      "t": "COPD: no response in 1 h → discuss specialist (NIV)",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Tick the cause → branch rows",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If asthma / COPD",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Asthma 93–95%; COPD 88–92%",
+      "s": "adultstg2026:16.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ (β2-agonists)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Once stable: salbutamol neb 4–6-hourly (COPD) / 2–4-hourly (asthma)",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Prednisone 40 mg daily: asthma 7 d, COPD 5 d",
+      "s": "adultstg2026:16.3"
+     },
+     {
+      "t": "COPD purulent sputum or severe: amoxicillin/clavulanate 875/125 mg 12-hourly × 5 d",
+      "s": "adultstg2026:16.12"
+     }
+    ]
+   },
+   {
+    "label": "If pneumonia / PJP",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "O₂ to ≥ 94% (COPD 88–92%)",
+      "s": "adultstg2026:16.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture, CD4",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Severe: ceftriaxone 2 g IV daily + azithromycin 500 mg IV daily × 3 d",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "PJP: cotrimoxazole 3–4 tabs 6-hourly × 21 d + prednisone 80 mg if hypoxic",
+      "s": "adultstg2026:10.29"
+     }
+    ]
+   },
+   {
+    "label": "If drug-induced",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Airway; bag-mask if needed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT; paracetamol level if mixed overdose",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Naloxone response: infusion 0.4 mg/h; continuous monitoring",
+      "s": "adultstg2026:19.21",
+      "b": 1
+     },
+     {
+      "t": "No response after 10 mg: rethink the diagnosis",
+      "s": "adultstg2026:19.21"
+     },
+     {
+      "t": "Benzodiazepine: supportive, ventilate if needed",
+      "s": "adultstg2026:19.25",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If neuromuscular",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO if bulbar; NG feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR / count-breath 4-hourly; gas",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ventilate before frank hypoxaemia: falling PEFR, weak cough, rising PCO₂ → REFER",
+      "s": "adultstg2026:23.2",
+      "b": 1
+     },
+     {
+      "t": "Myasthenia: pyridostigmine 60 mg 5 × daily; discuss with specialist",
+      "s": "adultstg2026:14.48"
+     }
+    ]
+   },
+   {
+    "label": "If PE / pneumothorax",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "O₂ to ≥ 94%",
+      "s": "adultstg2026:16.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR after drain",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PE: anticoagulate; unstable → specialist (thrombolysis)",
+      "s": "adultstg2026:2.24"
+     },
+     {
+      "t": "Pneumothorax: chest drain; persistent leak → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6–24 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Wean O₂ to target",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Gas if was type 2; U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enoxaparin 40 mg SC daily if immobile",
+      "s": "adultstg2026:2.25"
+     },
+     {
+      "t": "Re-discuss with ICU if any §2 criterion",
+      "s": "adultstg2026:23.2"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Off O₂ (or on home O₂ plan)",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR / SpO₂ on air",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Inhaler technique; maintenance therapy; influenza vaccine",
+      "s": "adultstg2026:16.13"
+     },
+     {
+      "t": "COPD refer: recent respiratory failure, cor pulmonale, PaO₂ < 7.3 kPa (home O₂)",
+      "s": "adultstg2026:16.14"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "O₂ targets · bronchospasm",
+   "items": [
+    {
+     "t": "COPD / CO₂ retainer: nasal 1–2 L/min, SpO₂ 90% or PaO₂ 8 kPa",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Asthma severe: SpO₂ 93–95%",
+     "s": "adultstg2026:16.2"
+    },
+    {
+     "t": "Others: O₂ if SpO₂ < 94%",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Face mask ladder: nasal 1–5 · simple 6–10 · reservoir 10–15 L/min",
+     "s": "adultstg2026:9.11"
+    },
+    {
+     "t": "Salbutamol 5 mg neb every 20–30 min; life-threatening 10 mg + ipratropium 0.5 mg",
+     "s": "adultstg2026:16.3",
+     "b": 1
+    },
+    {
+     "t": "Hydrocortisone 100 mg IV 6-hourly · prednisone 40 mg",
+     "s": "adultstg2026:16.3"
+    },
+    {
+     "t": "MgSO₄ 50 mg/kg (max 2 g) in 100 mL over 20 min",
+     "s": "adultstg2026:16.4"
+    }
+   ]
+  },
+  {
+   "title": "Antidotes · RSI",
+   "items": [
+    {
+     "t": "Naloxone 0.4 mg IV, escalate to max 10 mg; infusion 0.4 mg/h",
+     "s": "adultstg2026:19.21",
+     "b": 1
+    },
+    {
+     "t": "Opioid-dependent: start 0.04–0.1 mg",
+     "s": "adultstg2026:19.21"
+    },
+    {
+     "t": "Ketamine 1–2 mg/kg (preferred in asthma / unstable)",
+     "s": "adultstg2026:20.19"
+    },
+    {
+     "t": "Etomidate 0.3 mg/kg · propofol 1.5–2.5 mg/kg",
+     "s": "adultstg2026:20.19"
+    },
+    {
+     "t": "Suxamethonium 1–1.5 mg/kg · rocuronium 0.9 mg/kg",
+     "s": "adultstg2026:20.19"
+    },
+    {
+     "t": "Post-intubation: midazolam 0.05–0.2 mg/kg/h",
+     "s": "adultstg2026:20.19"
+    },
+    {
+     "t": "Vent: Vt 5–8 mL/kg PBW, PEEP 5, RR 12–15; asthma/COPD allow longer expiration",
+     "s": "adultstg2026:23.47"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "SpO₂ below target or falling",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Drowsy, confused, headache on O₂ (CO₂)",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "RR < 12 or > 30; silent chest; feeble effort",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "PEFR falling; can't speak",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "h": "Avoid"
+    },
+    {
+     "t": "Sedation in non-ventilated patients",
+     "s": "adultstg2026:16.3"
+    },
+    {
+     "t": "High-flow O₂ in CO₂ retainers",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "IV aminophylline in asthma",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "h": "On deterioration send"
+    },
+    {
+     "t": "Gas, K⁺, HGT, CXR",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "SpO₂ at target on air (or home-O₂ plan)",
+    "d": 1
+   },
+   {
+    "t": "PEFR > 60% predicted (asthma)",
+    "s": "adultstg2026:16.2"
+   },
+   {
+    "t": "Alert; no CO₂ retention signs",
+    "d": 1
+   },
+   {
+    "t": "Cause treated; oral therapy",
+    "d": 1
+   },
+   {
+    "t": "Inhaler technique checked",
+    "s": "adultstg2026:16.10"
+   },
+   {
+    "t": "Follow-up booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC / OPD in 1 week: PEFR, inhalers, steroids course",
+    "d": 1
+   },
+   {
+    "t": "COPD: spirometry; refer if ≥ 2 exacerbations / year",
+    "s": "adultstg2026:16.14"
+   },
+   {
+    "t": "Return now: worse breathing, drowsy, blue lips",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — oxygenation and ventilation",
+  "period": "one sheet from arrival: 15-min rows for 1 h, then hourly",
+  "params": [
+   {
+    "h": "Oxygen",
+    "items": [
+     {
+      "t": "O₂ to the patient's target: CO₂-retainer (COPD) 88–92% via nasal cannula 1–2 L/min; asthma 93–95%; others ≥ 94%",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Record device + flow with every SpO₂",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Breathing and alertness",
+    "items": [
+     {
+      "t": "SpO₂ + O₂ device/flow, RR, pulse, BP, level of alertness: every 15 min for the first hour, then hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Drowsiness, headache or confusion on O₂ = rising CO₂ → call doctor",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Asthma / safety",
+    "items": [
+     {
+      "t": "PEFR before and after each nebulisation (asthma)",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "t": "No sedatives in the non-ventilated patient",
+      "s": "adultstg2026:16.3"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ below target",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "drowsy, confused or headache on O₂",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "RR < 12 or > 30, silent chest",
+    "s": "adultstg2026:16.1"
+   },
+   {
+    "t": "PEFR falling",
+    "s": "adultstg2026:16.4"
+   }
+  ],
+  "totals": [
+   "Nebs given (n)",
+   "Naloxone total (mg)",
+   "Lowest SpO₂",
+   "Highest O₂ (L/min)",
+   "Intake / output (mL)"
+  ]
+ }
+}
