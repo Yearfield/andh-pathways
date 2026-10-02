@@ -1,0 +1,1446 @@
+{
+ "id": "psychosis-adult",
+ "short": "Psychosis (adult)",
+ "title": "Acute psychosis — adult",
+ "population": "Adults and adolescents ≥ 13 years (children: Paeds STG 14.1 / 14.9 → REFER)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Clouded / fluctuating consciousness, disoriented, medically ill → DELIRIUM pathway",
+     "s": "adultstg2026:15.5",
+     "to": "delirium-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Tik / cat / cocaine intoxication → Amphetamines / Cocaine pathway",
+     "to": "amphetamines",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Head injury → TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "New focal deficit → Stroke pathway",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Pregnant / postpartum with high BP or fits → PET pathway",
+     "to": "pet",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Child under 13 → Paeds STG 14.1 / 14.9: REFER",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — ≥ 1 symptom, clear consciousness",
+   "items": [
+    {
+     "t": "Delusions",
+     "s": "adultstg2026:15.23",
+     "b": 1
+    },
+    {
+     "t": "Hallucinations",
+     "s": "adultstg2026:15.24",
+     "b": 1
+    },
+    {
+     "t": "Disorganised thinking / speech",
+     "s": "adultstg2026:15.24",
+     "b": 1
+    },
+    {
+     "t": "Grossly disorganised behaviour or catatonia",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "Negative symptoms",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "Alert, clear consciousness, medically stable",
+     "s": "adultstg2026:15.5",
+     "b": 1
+    },
+    {
+     "t": "Onset ____ · First episode Y / N · Collateral from ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "High risk / involuntary care = any one of",
+   "items": [
+    {
+     "t": "Danger to self (suicide, self-neglect)",
+     "s": "adultstg2026:15.1",
+     "b": 1
+    },
+    {
+     "t": "Danger to others / property",
+     "s": "adultstg2026:15.1",
+     "b": 1
+    },
+    {
+     "t": "Not contained by de-escalation",
+     "s": "adultstg2026:15.5"
+    },
+    {
+     "t": "Lacks insight and refuses care",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "Pregnant / postpartum",
+     "s": "adultstg2026:15.2"
+    },
+    {
+     "t": "Uncertain diagnosis; poor response",
+     "s": "adultstg2026:15.28"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous psychosis / mania; admissions",
+     "s": "adultstg2026:15.25"
+    },
+    {
+     "t": "Antipsychotic / depot and adherence",
+     "s": "adultstg2026:15.26"
+    },
+    {
+     "t": "Previous NMS or dystonia",
+     "s": "adultstg2026:15.7"
+    },
+    {
+     "t": "Epilepsy",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "HIV / ART; TB treatment",
+     "s": "phcstg2026:16.22"
+    },
+    {
+     "t": "Substance use",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "State patient / MHCA status",
+     "s": "adultstg2026:15.3"
+    },
+    {
+     "t": "Pregnancy, contraception",
+     "s": "adultstg2026:15.26"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (patient + collateral)",
+   "items": [
+    {
+     "h": "Illness"
+    },
+    {
+     "t": "Onset, duration, stressor",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "Mood: elevated / depressed",
+     "s": "phcstg2026:16.18"
+    },
+    {
+     "t": "Sleep, eating, self-care"
+    },
+    {
+     "t": "Function vs before",
+     "s": "adultstg2026:15.25"
+    },
+    {
+     "h": "Substances",
+     "s": "adultstg2026:15.3"
+    },
+    {
+     "t": "Alcohol (last drink)"
+    },
+    {
+     "t": "Cannabis, mandrax"
+    },
+    {
+     "t": "Tik, cat, cocaine"
+    },
+    {
+     "h": "Risk",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Suicidal ideation, plan, means"
+    },
+    {
+     "t": "Past attempts"
+    },
+    {
+     "t": "Violence, weapons, forensic",
+     "s": "adultstg2026:15.2"
+    },
+    {
+     "h": "TB / HIV screen",
+     "s": "phcstg2026:16.22"
+    },
+    {
+     "t": "Cough, weight loss"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "h": "Social",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "Family / carer support"
+    },
+    {
+     "t": "Children in care",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside normal adult range or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased or fluctuating consciousness",
+     "s": "adultstg2026:15.5",
+     "k": "yn"
+    },
+    {
+     "h": "After sedation — action thresholds"
+    },
+    {
+     "t": "RR < 12/min",
+     "s": "adultstg2026:15.8",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90%",
+     "s": "adultstg2026:15.8",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Mental state"
+    },
+    {
+     "t": "Appearance, behaviour"
+    },
+    {
+     "t": "Speech (rate, flow)"
+    },
+    {
+     "t": "Mood / affect"
+    },
+    {
+     "t": "Delusions (content)",
+     "s": "adultstg2026:15.23"
+    },
+    {
+     "t": "Hallucinations (type)",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "t": "Orientation, attention — abnormal = delirium",
+     "s": "adultstg2026:15.5"
+    },
+    {
+     "t": "Insight / judgement",
+     "s": "adultstg2026:15.24"
+    },
+    {
+     "h": "Physical"
+    },
+    {
+     "t": "Injuries",
+     "d": 1
+    },
+    {
+     "t": "Intoxication / withdrawal signs",
+     "s": "adultstg2026:15.3"
+    },
+    {
+     "t": "Fever, rigidity (NMS)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Dystonia / EPSE",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Focal neurology, meningism",
+     "d": 1
+    },
+    {
+     "t": "Signs of HIV",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Low: treat — hypoglycaemia mimics psychosis",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Screen glucose at baseline",
+     "s": "phcstg2026:16.22"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Risk assessment",
+   "items": [
+    {
+     "t": "Suicide: ideation · intent · plan · means · past attempt",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Violence to others",
+     "s": "adultstg2026:15.1"
+    },
+    {
+     "t": "Self-neglect / exploitation",
+     "s": "adultstg2026:15.2"
+    },
+    {
+     "t": "Overall risk: low / medium / high ____",
+     "k": "value"
+    },
+    {
+     "t": "High → 1:1 observation, MHCA, refer",
+     "s": "adultstg2026:15.28"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise after sedation",
+     "b": 1
+    },
+    {
+     "t": "Clouded consciousness (delirium)",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Suicidal with plan",
+     "b": 1
+    },
+    {
+     "t": "Fever + rigidity (NMS)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Head injury",
+     "s": "adultstg2026:15.2"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Hypoxia",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Stimulant toxicity (chest pain, hyperthermia)",
+     "d": 1
+    },
+    {
+     "t": "Alcohol withdrawal / DT",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "HIV with headache (crypto, toxo)",
+     "d": 1
+    },
+    {
+     "t": "Focal neurology",
+     "d": 1
+    },
+    {
+     "t": "Late-onset first episode (organic likely)",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Acute dystonia",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Pregnancy / postpartum",
+     "s": "adultstg2026:15.2"
+    },
+    {
+     "t": "Weapon / violence",
+     "s": "adultstg2026:15.3"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = ACUTE PSYCHOSIS, high risk or uncontainable → MHCA 72-h observation; REFER psychiatric unit if not settled"
+  },
+  {
+   "t": "11. ADMIT — medical, substance and psychiatric evaluation"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Delirium (medical cause)",
+   "features": [
+    {
+     "t": "Fluctuating consciousness, inattention, disorientation; medically ill",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT, SpO₂; DIMTOP work-up",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Switch to DELIRIUM pathway",
+     "to": "delirium-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per cause"
+    }
+   ]
+  },
+  {
+   "dx": "Alcohol withdrawal delirium (DT)",
+   "features": [
+    {
+     "t": "2–3 days after stopping; tremor, visual hallucinations, tachycardia, seizures",
+     "s": "adultstg2026:15.32"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; U&E, HGT",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Diazepam IV 10 mg (< 5 mg/min), repeat to max 50 mg",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Thiamine 300 mg daily",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "t": "Continue on DELIRIUM pathway",
+     "to": "delirium-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not controlled",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Stimulant-induced (tik, cat, cocaine)",
+   "features": [
+    {
+     "t": "Recent use, dilated pupils, tachycardia, paranoia",
+     "s": "adultstg2026:15.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine drug screen",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amphetamines / Cocaine pathway",
+     "to": "amphetamines",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Benzodiazepine first for agitation",
+     "s": "adultstg2026:15.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If psychosis persists",
+     "d": 1
+    }
+   ],
+   "branch": "Substance"
+  },
+  {
+   "dx": "Other substance (alcohol, cannabis, mandrax)",
+   "features": [
+    {
+     "t": "History, intoxication or withdrawal signs",
+     "s": "adultstg2026:15.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine drug screen",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Manage behaviour (STG 15.1); thiamine if alcohol",
+     "s": "adultstg2026:15.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Rehab / social services",
+     "s": "adultstg2026:15.31"
+    }
+   ],
+   "branch": "Substance"
+  },
+  {
+   "dx": "Medical / neurological cause",
+   "features": [
+    {
+     "t": "Epilepsy, HIV, head injury, late onset",
+     "s": "phcstg2026:16.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HIV, RPR, U&E, FBC, TSH",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CT / LP → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the cause; low-dose antipsychotic",
+     "s": "adultstg2026:15.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT / LP"
+    }
+   ],
+   "branch": "Organic"
+  },
+  {
+   "dx": "Medicine-induced",
+   "features": [
+    {
+     "t": "Steroids, efavirenz, isoniazid, anticholinergics",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Medicine review",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop / change the medicine with prescriber",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss",
+     "d": 1
+    }
+   ],
+   "branch": "Organic"
+  },
+  {
+   "dx": "Acute and transient psychotic disorder",
+   "features": [
+    {
+     "t": "Sudden onset, often after a stressor; resolves within 1 month",
+     "s": "adultstg2026:15.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Diagnosis of exclusion",
+     "s": "adultstg2026:15.24"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Behaviour (STG 15.1); psychosocial support",
+     "s": "adultstg2026:15.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Consult psychiatrist",
+     "s": "adultstg2026:15.24"
+    }
+   ],
+   "branch": "Primary"
+  },
+  {
+   "dx": "Schizophrenia spectrum",
+   "features": [
+    {
+     "t": "Previous episodes, decline in function",
+     "s": "adultstg2026:15.25"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Collateral; previous records",
+     "s": "adultstg2026:15.25"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Haloperidol 0.75–1.5 mg daily → 5 mg",
+     "s": "adultstg2026:15.26"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Consult; REFER if high risk",
+     "s": "adultstg2026:15.28"
+    }
+   ],
+   "branch": "Primary"
+  },
+  {
+   "dx": "Bipolar mania",
+   "features": [
+    {
+     "t": "Elevated or irritable mood, grandiosity, little sleep",
+     "s": "phcstg2026:16.18"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Collateral history",
+     "s": "phcstg2026:16.18"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop antidepressants; behaviour (STG 15.1)",
+     "s": "phcstg2026:16.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all",
+     "s": "phcstg2026:16.18"
+    }
+   ],
+   "branch": "Primary"
+  },
+  {
+   "dx": "Psychotic depression / postpartum psychosis",
+   "features": [
+    {
+     "t": "Depressed mood, guilt; pregnancy or < 1 y postpartum",
+     "s": "adultstg2026:15.26"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Suicide risk",
+     "s": "phcstg2026:16.23"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Safety; olanzapine if aggressive (pregnant)",
+     "s": "adultstg2026:15.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent",
+     "s": "adultstg2026:15.26"
+    }
+   ],
+   "branch": "Primary"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours from arrival; 72 h = end of the involuntary observation period. Branch rows apply to the matching working diagnosis.",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "After sedation: pulse, RR, BP, T, SpO₂ every 5–10 min × 1 h, then every 30 min until walking",
+    "s": "adultstg2026:15.8",
+    "b": 1
+   },
+   {
+    "t": "Mechanical restraint: vitals, mental state, restraint sites every 15 min; Form 48",
+    "s": "adultstg2026:15.4",
+    "b": 1
+   },
+   {
+    "t": "Seclusion / restraint: vitals and mental state every 30 min",
+    "s": "adultstg2026:15.5"
+   },
+   {
+    "t": "Recovery position (pregnant: semi-seated / left lateral)",
+    "s": "adultstg2026:15.7"
+   },
+   {
+    "t": "Falls, aggression, absconding risk",
+    "s": "adultstg2026:15.8"
+   },
+   {
+    "t": "Mental state each shift",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Arrival",
+    "lead": "Safety first: de-escalate, check SAPS Form 22 / Form 01. Alert and medically stable? If not → Delirium pathway.",
+    "feed": [
+     {
+      "t": "Oral fluids and food offered",
+      "d": 1
+     },
+     {
+      "t": "IV fluids only if dehydrated or sedated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "adultstg2026:20.13",
+      "b": 1
+     },
+     {
+      "t": "SpO₂",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, LFT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV, RPR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine drug screen",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test (women)",
+      "s": "adultstg2026:15.2",
+      "b": 1
+     },
+     {
+      "t": "TSH if mood / late onset",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CT / LP if organic features → REFER",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "De-escalate",
+      "s": "adultstg2026:15.3"
+     },
+     {
+      "t": "Calm, listen, open hands; do not argue with delusions"
+     },
+     {
+      "t": "Quiet area; never unobserved"
+     },
+     {
+      "h": "MHCA (Fig 15.1)",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "SAPS: collect Form 22 + complete Form 01 · family: Form 04"
+     },
+     {
+      "t": "Involuntary 72 h: Form 04 + two Form 05 + Form 07"
+     },
+     {
+      "t": "Restraint: Form 48",
+      "s": "adultstg2026:15.4"
+     },
+     {
+      "h": "Rapid tranquillisation — oral first",
+      "s": "adultstg2026:15.6"
+     },
+     {
+      "t": "Psychosis clear / pregnant: olanzapine ODT or IM 5–10 mg"
+     },
+     {
+      "t": "Elderly, frail, medically unwell: olanzapine 2.5–5 mg"
+     },
+     {
+      "t": "Cause unclear: lorazepam PO 0.5–2 mg or diazepam PO 5–10 mg or midazolam PO/buccal 7.5–15 mg"
+     },
+     {
+      "t": "Allow 30–60 min between doses",
+      "s": "adultstg2026:15.6"
+     },
+     {
+      "t": "No depot for rapid tranquillisation",
+      "s": "adultstg2026:15.6"
+     },
+     {
+      "h": "Alcohol suspected"
+     },
+     {
+      "t": "Thiamine PO 300 mg stat, then daily × 14 days",
+      "s": "adultstg2026:15.7"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Review dose",
+    "feed": [
+     {
+      "t": "Fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Vitals every 30 min until walking",
+      "s": "adultstg2026:15.8"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not settled after benzo: olanzapine ODT/IM 5–10 mg; repeat after 30–60 min if needed",
+      "s": "adultstg2026:15.7"
+     },
+     {
+      "t": "Olanzapine not tolerated: lorazepam IM 0.5–2 mg or midazolam IM 7.5–15 mg",
+      "s": "adultstg2026:15.7"
+     },
+     {
+      "t": "RR < 12 or SpO₂ < 90%: oxygen, be ready to ventilate",
+      "s": "adultstg2026:15.8"
+     }
+    ]
+   },
+   {
+    "label": "Organic",
+    "phase": "1–6 h",
+    "feed": [
+     {
+      "t": "Per cause",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Work-up as delirium (DIMTOP)",
+      "s": "adultstg2026:20.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Switch to DELIRIUM pathway",
+      "to": "delirium-adult",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Admit as medical patient, not MHCA",
+      "s": "adultstg2026:15.5"
+     }
+    ]
+   },
+   {
+    "label": "Substance",
+    "phase": "1–6 h",
+    "feed": [
+     {
+      "t": "Hydrate",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine drug screen result",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stimulant toxicity → Amphetamines / Cocaine pathway",
+      "to": "amphetamines",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Alcohol withdrawal: diazepam 10 mg PO, then taper (STG 15.8.1)",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "t": "Referral to social services / rehab",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "Primary",
+    "phase": "1–6 h · primary psychosis",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Baseline weight, BP, glucose",
+      "s": "phcstg2026:16.22"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phone psychiatrist; agree plan",
+      "s": "adultstg2026:15.24"
+     },
+     {
+      "t": "Start haloperidol 0.75–1.5 mg daily (if not on treatment)",
+      "s": "adultstg2026:15.26"
+     },
+     {
+      "t": "High TD risk (> 50 y, female, mood, HIV): risperidone, chlorpromazine or olanzapine instead",
+      "s": "adultstg2026:15.26"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Settled?",
+    "feed": [
+     {
+      "t": "Normal diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review results (HIV, RPR, U&E, drug screen)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Calm + cooperative: voluntary admission or discharge plan",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "Still disturbed: continue MHCA 72-h observation",
+      "s": "adultstg2026:15.5"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Mental state, risk each shift",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue sedation only while necessary",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "Contact family / carers",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "Dystonia: biperiden 2.5 mg IM",
+      "s": "phcstg2026:16.11"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "EPSE check (dystonia, parkinsonism, akathisia)",
+      "s": "adultstg2026:15.28"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate antipsychotic to response",
+      "s": "adultstg2026:15.26"
+     },
+     {
+      "t": "Psychoeducation for family",
+      "s": "adultstg2026:15.25"
+     },
+     {
+      "t": "Social worker for stressors",
+      "s": "adultstg2026:15.24"
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "MHCA decision",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat risk assessment",
+      "s": "adultstg2026:15.1"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still needs care: two Form 06 + Form 08 → REFER psychiatric unit with Form 11",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "Stable: discharge with referral letter and results",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "Uncontainable, medically stable: consult specialist, transfer (Form 11)",
+      "s": "adultstg2026:15.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–7",
+    "phase": "Stabilise / discharge",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight, BP, glucose baseline recorded",
+      "s": "phcstg2026:16.22"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Good response: consider depot for adherence",
+      "s": "adultstg2026:15.26"
+     },
+     {
+      "t": "Check discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Rehab referral if substance use",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Rapid tranquillisation — STG 15.1",
+   "items": [
+    {
+     "h": "Oral first",
+     "s": "adultstg2026:15.6"
+    },
+    {
+     "t": "Olanzapine ODT/IM 5–10 mg (psychosis, pregnant); 2.5–5 mg (elderly, frail, unwell)"
+    },
+    {
+     "t": "Lorazepam PO 0.5–2 mg · clonazepam PO 0.5–2 mg · diazepam PO 5–10 mg · midazolam PO/buccal 7.5–15 mg"
+    },
+    {
+     "h": "Inadequate response after 30–60 min",
+     "s": "adultstg2026:15.7"
+    },
+    {
+     "t": "Olanzapine ODT/IM 5–10 mg; repeat once after 30–60 min"
+    },
+    {
+     "t": "Olanzapine intolerant: lorazepam IM 0.5–2 mg, midazolam IM 7.5–15 mg or clonazepam IM 0.5–2 mg"
+    },
+    {
+     "t": "Clonazepam: ≥ 12 h between doses",
+     "s": "adultstg2026:15.7"
+    },
+    {
+     "t": "Zuclopenthixol acetate: specialist only",
+     "s": "adultstg2026:15.7"
+    },
+    {
+     "h": "Alcohol",
+     "s": "adultstg2026:15.7"
+    },
+    {
+     "t": "Thiamine PO 300 mg daily × 14 days"
+    }
+   ]
+  },
+  {
+   "title": "Starting treatment · side effects",
+   "items": [
+    {
+     "h": "Antipsychotic (with psychiatrist)",
+     "s": "adultstg2026:15.26"
+    },
+    {
+     "t": "Haloperidol 0.75–1.5 mg daily → 5 mg if tolerated"
+    },
+    {
+     "t": "High TD / EPSE risk: risperidone 2–4 mg nocte (max 6) or chlorpromazine 75–300 mg nocte or olanzapine 5–10 mg nocte (max 20)",
+     "s": "adultstg2026:15.27"
+    },
+    {
+     "t": "Depot after response: flupenthixol dec. 10 mg start, or zuclopenthixol dec. 100 mg start, 4-weekly",
+     "s": "adultstg2026:15.26"
+    },
+    {
+     "h": "Side effects"
+    },
+    {
+     "t": "Acute dystonia: biperiden 2.5 mg IM (repeat every 30 min, max 3/24 h) or promethazine 50 mg IM",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Parkinsonism: orphenadrine 50 mg 8-hourly",
+     "s": "adultstg2026:15.28"
+    },
+    {
+     "t": "Akathisia: propranolol 20 mg daily, up to 80 mg 8-hourly",
+     "s": "adultstg2026:15.28"
+    },
+    {
+     "t": "No prophylactic anticholinergic",
+     "s": "adultstg2026:15.28"
+    },
+    {
+     "t": "NMS: stop antipsychotics, cool, hydrate, urgent medical admission",
+     "s": "phcstg2026:16.12"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "RR < 12 or SpO₂ < 90% — oxygen, ready to ventilate",
+     "s": "adultstg2026:15.8"
+    },
+    {
+     "t": "Fever, rigidity, fluctuating BP (NMS)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Twisting, eye-rolling, laryngospasm (dystonia)",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Drowsy / fluctuating consciousness (delirium)",
+     "s": "adultstg2026:15.5"
+    },
+    {
+     "t": "Restraint site injury",
+     "s": "adultstg2026:15.4"
+    },
+    {
+     "t": "Suicidal act or plan",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Absconded — SAPS with Form 25",
+     "s": "adultstg2026:15.8"
+    },
+    {
+     "h": "Collapse"
+    },
+    {
+     "t": "Circulatory collapse: STG 20.1 cardiac arrest",
+     "s": "adultstg2026:15.8"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Psychiatrically and medically stable",
+    "s": "adultstg2026:15.5"
+   },
+   {
+    "t": "Low current risk to self / others",
+    "s": "adultstg2026:15.1"
+   },
+   {
+    "t": "Organic and substance causes addressed",
+    "s": "adultstg2026:15.24"
+   },
+   {
+    "t": "Treatment plan agreed with psychiatrist",
+    "s": "adultstg2026:15.24"
+   },
+   {
+    "t": "Family / carer psychoeducated",
+    "s": "adultstg2026:15.25"
+   },
+   {
+    "t": "Referral letter + results to OPD / PHC",
+    "s": "adultstg2026:15.5"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC / OPD: 6-monthly for 3 years with mental health and substance screening",
+    "s": "phcstg2026:16.19"
+   },
+   {
+    "t": "Weight, BP, glucose, EPSE every 6 months",
+    "s": "adultstg2026:15.25"
+   },
+   {
+    "t": "Substance use: rehab, SANCA, social development",
+    "s": "adultstg2026:15.25"
+   },
+   {
+    "t": "Return early: relapse signs, side effects, suicidal thoughts",
+    "s": "phcstg2026:16.19"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour post-tranquillisation and restraint record",
+  "period": "one sheet per 12 hours from the first sedative dose",
+  "params": [
+   {
+    "h": "After each dose",
+    "items": [
+     {
+      "t": "Pulse, RR, BP, T, SpO₂ every 5–10 min × 1 h",
+      "s": "adultstg2026:15.8"
+     },
+     {
+      "t": "Then every 30 min until walking",
+      "s": "adultstg2026:15.8"
+     },
+     {
+      "t": "Recovery position",
+      "s": "adultstg2026:15.7"
+     }
+    ]
+   },
+   {
+    "h": "Restraint / seclusion",
+    "items": [
+     {
+      "t": "Mechanical restraint: every 15 min — vitals, mental state, sites",
+      "s": "adultstg2026:15.4"
+     },
+     {
+      "t": "Seclusion: every 30 min",
+      "s": "adultstg2026:15.5"
+     },
+     {
+      "t": "Form 48; 15-min checks between rows go on the restraint register",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Sedation level",
+    "items": [
+     {
+      "t": "Write: agitated / calm / drowsy / asleep",
+      "d": 1
+     },
+     {
+      "t": "Never left unobserved",
+      "s": "adultstg2026:15.3"
+     }
+    ]
+   },
+   {
+    "h": "Record also",
+    "items": [
+     {
+      "t": "Drug, dose, route, time"
+     },
+     {
+      "t": "Falls, injury, absconding",
+      "s": "adultstg2026:15.8"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: RR < 12 or SpO₂ < 90%, fever with rigidity, dystonia, drowsy or fluctuating consciousness, restraint injury, suicidal act, absconding.",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Olanzapine (mg)",
+   "Benzodiazepine (mg)",
+   "Restraint (min)",
+   "Doses (n)"
+  ]
+ }
+}

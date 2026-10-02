@@ -1,0 +1,1535 @@
+{
+ "id": "delirium-adult",
+ "short": "Delirium (adult)",
+ "title": "Delirium — adult",
+ "population": "Adults and adolescents ≥ 13 years",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Alert, clear consciousness, psychotic → PSYCHOSIS pathway",
+     "s": "adultstg2026:15.5",
+     "to": "psychosis-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Head injury / subdural → TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "New focal deficit → Stroke pathway",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "After cardiac arrest → HIE (adult) pathway",
+     "to": "hie-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Poisoning / overdose → Opioids, OP, toxic alcohol pathways",
+     "to": "opioids",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "DKA / HHS → DKA (adult) pathway",
+     "to": "dka-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Disturbed attention and awareness",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    },
+    {
+     "t": "Disturbed cognition (memory, language, perception)",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    },
+    {
+     "t": "Acute onset (hours–days) and fluctuating",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    },
+    {
+     "t": "Caused by a medical condition, substance or toxin",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Hyperactive: agitated, labile",
+     "s": "adultstg2026:20.13",
+     "k": "sub"
+    },
+    {
+     "t": "Hypoactive: poorly responsive, stuporous",
+     "s": "adultstg2026:20.13",
+     "k": "sub"
+    },
+    {
+     "t": "Onset ____ · Baseline cognition (collateral) ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — CAM-ICU-7 (§8) + complicated if any",
+   "items": [
+    {
+     "t": "Severe: CAM-ICU-7 6–7",
+     "s": "adultstg2026:23.23",
+     "b": 1
+    },
+    {
+     "t": "Mild–moderate: CAM-ICU-7 3–5",
+     "s": "adultstg2026:23.23"
+    },
+    {
+     "t": "Severe aggression needing restraint",
+     "s": "adultstg2026:20.14"
+    },
+    {
+     "t": "Alcohol withdrawal delirium",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Suspected NMS",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Cause needs CT / LP / ICU",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Age > 65 y",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Dementia / baseline cognition",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Previous delirium or falls",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Stroke, epilepsy, neuro disorder",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "HIV — ART, CD4",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Multiple comorbidities",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Anticholinergics, hypnotics, opioids; polypharmacy",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Alcohol / substance use",
+     "s": "adultstg2026:20.13"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (collateral essential)",
+   "items": [
+    {
+     "h": "Course"
+    },
+    {
+     "t": "When it started; fluctuating",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Worse in the evening",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Usual cognition and function",
+     "d": 1
+    },
+    {
+     "h": "Drugs",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Last alcohol drink"
+    },
+    {
+     "t": "New / stopped medicines"
+    },
+    {
+     "t": "Recreational substances"
+    },
+    {
+     "h": "Infection / metabolic",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Fever, cough, urinary, abdominal"
+    },
+    {
+     "t": "Diabetes, liver, kidney disease"
+    },
+    {
+     "t": "Headache, stiff neck, seizure"
+    },
+    {
+     "h": "Other",
+     "s": "adultstg2026:20.14"
+    },
+    {
+     "t": "Falls / head injury"
+    },
+    {
+     "t": "Pain, constipation"
+    },
+    {
+     "t": "Hearing / vision aids"
+    },
+    {
+     "h": "TB / HIV screen"
+    },
+    {
+     "t": "Cough, weight loss"
+    },
+    {
+     "t": "HIV status / ART"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside normal adult range or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "adultstg2026:20.13",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "s": "adultstg2026:20.13",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "s": "adultstg2026:20.13",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "After sedation — action thresholds"
+    },
+    {
+     "t": "RR < 12/min",
+     "s": "adultstg2026:15.8",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90%",
+     "s": "adultstg2026:15.8",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Mental state"
+    },
+    {
+     "t": "Attention (SAVEAHAART)",
+     "s": "adultstg2026:23.23"
+    },
+    {
+     "t": "Orientation"
+    },
+    {
+     "t": "RASS ____",
+     "s": "adultstg2026:23.23"
+    },
+    {
+     "t": "Hallucinations (visual)",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Focal deficit",
+     "d": 1
+    },
+    {
+     "t": "Meningism",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Pupils",
+     "d": 1
+    },
+    {
+     "t": "Tremor, sweating (withdrawal)",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Ataxia, eye-movement palsy (Wernicke)",
+     "d": 1
+    },
+    {
+     "h": "Source of illness"
+    },
+    {
+     "t": "Chest, urine, abdomen, skin",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Head injury signs",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Urinary retention, faecal loading",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Rigidity + fever (NMS)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Low: treat now — dextrose 50% 50 mL IV",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "At risk (alcohol, malnourished): thiamine before or with glucose",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "Then 6-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "CAM-ICU-7",
+   "items": [
+    {
+     "t": "Onset / fluctuation ____ (0–1) · Inattention ____ (0–2)",
+     "k": "value"
+    },
+    {
+     "t": "Altered LOC (RASS) ____ (0–2) · Disorganised thinking ____ (0–2) · Total ____ /7",
+     "k": "value"
+    },
+    {
+     "t": "0–2: no delirium · 3–5: mild–moderate · 6–7: severe",
+     "s": "adultstg2026:23.23"
+    },
+    {
+     "t": "Repeat each shift",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway / GCS falling",
+     "b": 1
+    },
+    {
+     "t": "Hypoxia",
+     "b": 1
+    },
+    {
+     "t": "Shock / sepsis",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Meningism",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Head injury / subdural",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Focal deficit",
+     "d": 1
+    },
+    {
+     "t": "Alcohol withdrawal delirium",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Wernicke's",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "NMS (on antipsychotic)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Poisoning / overdose",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Hyponatraemia",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "CO2 narcosis / CO poisoning",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Urinary retention",
+     "d": 1
+    },
+    {
+     "t": "Severe pain",
+     "s": "adultstg2026:20.13"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = DELIRIUM with a cause beyond ANDH (CT, LP, ICU, specialist) → stabilise + REFER"
+  },
+  {
+   "t": "11. ADMIT as a medical patient — find and treat the cause"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Hypoxia / CO poisoning",
+   "features": [
+    {
+     "t": "Low SpO₂, COPD (CO₂ narcosis), fire / coal stove",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "SpO₂, VBG",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Oxygen; treat cause",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ventilation needed",
+     "d": 1
+    }
+   ],
+   "branch": "Metabolic"
+  },
+  {
+   "dx": "Hypoglycaemia / metabolic",
+   "features": [
+    {
+     "t": "Diabetes, liver or kidney failure",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT, U&E (Na), LFT",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dextrose 50% 50 mL IV; correct Na slowly",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If organ failure beyond ANDH",
+     "d": 1
+    }
+   ],
+   "branch": "Metabolic"
+  },
+  {
+   "dx": "Sepsis (pneumonia, UTI, peritonitis)",
+   "features": [
+    {
+     "t": "Fever, source of infection",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC, CRP, blood culture, urine dipstick, CXR",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat source; LRTI / AKI pathways as needed",
+     "to": "lrti-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If shock not responding",
+     "d": 1
+    }
+   ],
+   "branch": "Infection"
+  },
+  {
+   "dx": "Meningitis / HIV CNS infection",
+   "features": [
+    {
+     "t": "Headache, stiff neck, HIV",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CrAg; LP if no contra-indication",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CT → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat per STG 14.8",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT / LP"
+    }
+   ],
+   "branch": "Infection"
+  },
+  {
+   "dx": "Alcohol withdrawal delirium (DT)",
+   "features": [
+    {
+     "t": "2–3 days after stopping; tremor, visual hallucinations, tachycardia, seizures",
+     "s": "adultstg2026:15.32"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; U&E, Mg",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Diazepam IV 10 mg, repeat to max 50 mg",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Thiamine 300 mg daily",
+     "s": "adultstg2026:15.33"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not controlled",
+     "d": 1
+    }
+   ],
+   "branch": "DT"
+  },
+  {
+   "dx": "Wernicke's encephalopathy",
+   "features": [
+    {
+     "t": "Alcohol, malnutrition; ataxia, eye signs, confusion",
+     "s": "adultstg2026:14.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Thiamine IM 500 mg daily × 3–5 days, then 100 mg PO 8-hourly",
+     "s": "adultstg2026:14.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ],
+   "branch": "DT"
+  },
+  {
+   "dx": "Drug / medicine toxicity or withdrawal",
+   "features": [
+    {
+     "t": "Opioids, anticholinergics, hypnotics, polypharmacy, recreational",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Medicine review; urine drug screen",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop / wean unnecessary medicines",
+     "s": "adultstg2026:20.14"
+    },
+    {
+     "t": "Overdose → poisoning pathways",
+     "to": "opioids",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Poisons Centre if unclear",
+     "d": 1
+    }
+   ],
+   "branch": "Drugs"
+  },
+  {
+   "dx": "Head injury / subdural",
+   "features": [
+    {
+     "t": "Fall, anticoagulant, elderly",
+     "s": "adultstg2026:20.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Switch to TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y"
+    }
+   ]
+  },
+  {
+   "dx": "Stroke / seizure (post-ictal)",
+   "features": [
+    {
+     "t": "Focal deficit; witnessed fit",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT → REFER",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stroke pathway; seizures STG 14.5",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If CT needed"
+    }
+   ]
+  },
+  {
+   "dx": "Neuroleptic malignant syndrome",
+   "features": [
+    {
+     "t": "On antipsychotic: fever, rigidity, fluctuating BP",
+     "s": "phcstg2026:16.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CK, U&E",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop antipsychotics; cool; hydrate",
+     "s": "phcstg2026:16.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent",
+     "s": "phcstg2026:16.12"
+    }
+   ],
+   "branch": "Drugs"
+  },
+  {
+   "dx": "Primary psychosis / mania (not delirium)",
+   "features": [
+    {
+     "t": "Clear consciousness, attention intact",
+     "s": "adultstg2026:23.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CAM-ICU-7 0–2",
+     "s": "adultstg2026:23.23"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Switch to PSYCHOSIS pathway",
+     "to": "psychosis-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per psychosis pathway"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours / days from arrival. Branch rows apply to the working cause(s); more than one may apply.",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "CAM-ICU-7 and RASS every shift",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Pulse, BP, RR, T, SpO₂ 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "After a sedative: vitals every 5–10 min × 1 h, then every 30 min",
+    "s": "adultstg2026:15.8",
+    "b": 1
+   },
+   {
+    "t": "Restraint: vitals, mental state, sites every 15 min",
+    "s": "adultstg2026:20.14",
+    "b": 1
+   },
+   {
+    "t": "Re-orientate; clock, glasses, hearing aid; day–night routine",
+    "s": "adultstg2026:20.14"
+   },
+   {
+    "t": "Fluid in/out, bowels, urine (retention)",
+    "s": "adultstg2026:20.13"
+   },
+   {
+    "t": "HGT 6-hourly",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Arrival",
+    "lead": "Delirium is a medical emergency with a cause. Check ABC, HGT, SpO₂; then DIMTOP. Collateral history now.",
+    "feed": [
+     {
+      "t": "Hydrate; correct dehydration",
+      "s": "adultstg2026:20.13"
+     },
+     {
+      "t": "DT: avoid overhydration",
+      "s": "adultstg2026:15.32"
+     },
+     {
+      "t": "Glucose fluids: give thiamine with them",
+      "s": "adultstg2026:15.33"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "adultstg2026:20.13",
+      "b": 1
+     },
+     {
+      "t": "SpO₂ / VBG",
+      "s": "adultstg2026:20.13",
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP, U&E (Na), Ca, Mg, LFT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick ± MC&S",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture if febrile",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV, CrAg if HIV+",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG (before haloperidol, QTc)",
+      "s": "adultstg2026:15.33",
+      "b": 1
+     },
+     {
+      "t": "CT / LP → REFER if indicated",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Treat the cause (DIMTOP)",
+      "s": "adultstg2026:20.13"
+     },
+     {
+      "t": "Hypoxia, hypoglycaemia, sepsis first"
+     },
+     {
+      "t": "Review and stop unnecessary medicines",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "h": "Nursing",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Calm room, same staff; re-orientate"
+     },
+     {
+      "t": "Restraint only as last resort; 15-min checks"
+     },
+     {
+      "h": "Agitated / distressed",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Haloperidol PO 0.75–1.5 mg twice daily; may repeat 4-hourly (max 10 mg/24 h)"
+     },
+     {
+      "t": "Can't swallow: haloperidol IM 0.5–1 mg, repeat after 30–60 min, then 4-hourly (max 10 mg/24 h)"
+     },
+     {
+      "t": "No haloperidol IM: olanzapine ODT/IM 2.5–5 mg, repeat after 30–60 min, then 6-hourly (max 20 mg/24 h)",
+      "s": "adultstg2026:20.15"
+     },
+     {
+      "t": "Severe aggression: STG 15.1 rapid tranquillisation",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "h": "Alcohol / Wernicke suspected"
+     },
+     {
+      "t": "Thiamine IM 200 mg stat",
+      "s": "adultstg2026:20.15"
+     }
+    ]
+   },
+   {
+    "label": "Infection",
+    "phase": "Working cause",
+    "feed": [
+     {
+      "t": "IV / oral fluids to need",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cultures before antibiotics",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics per source (STG chapter)",
+      "d": 1
+     },
+     {
+      "t": "Pneumonia → LRTI (adult) pathway",
+      "to": "lrti-adult",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Meningism / HIV: CrAg, REFER for CT / LP",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "DT",
+    "phase": "Alcohol withdrawal delirium",
+    "feed": [
+     {
+      "t": "Avoid overhydration",
+      "s": "adultstg2026:15.32"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cardiac monitor + oximetry with large benzo doses",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "U&E, Mg",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam IV 10 mg (< 5 mg/min, not IM); repeat after 5–10 min, up to 50 mg",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "No IV: clonazepam IM 2 mg (repeat after 60 min) or lorazepam IM 1–4 mg every 30–60 min",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "Then diazepam PO 5–20 mg to keep mildly sedated",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "Thiamine 300 mg daily",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "No IM olanzapine",
+      "s": "adultstg2026:15.33"
+     }
+    ]
+   },
+   {
+    "label": "Drugs",
+    "phase": "Medicine / substance",
+    "feed": [
+     {
+      "t": "Hydrate",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine drug screen",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CK if rigid / NMS",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop anticholinergics, hypnotics, extra opioids",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Avoid abrupt withdrawal of regular substances",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "NMS: stop antipsychotics, cool, hydrate, REFER",
+      "s": "phcstg2026:16.12"
+     },
+     {
+      "t": "Overdose → Opioids / OP / toxic alcohol pathways",
+      "to": "opioids",
+      "b": 1,
+      "k": "handoff"
+     }
+    ]
+   },
+   {
+    "label": "Metabolic",
+    "phase": "Metabolic / hypoxia",
+    "feed": [
+     {
+      "t": "Fluids to correct deficit",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat U&E, glucose, VBG at 6 h",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oxygen if hypoxic",
+      "s": "adultstg2026:20.13"
+     },
+     {
+      "t": "Correct glucose, Na, Ca",
+      "d": 1
+     },
+     {
+      "t": "DKA / HHS → DKA (adult) pathway",
+      "to": "dka-adult",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Organ failure beyond ANDH → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Oral if safe swallow",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results reviewed; cause identified?",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CAM-ICU-7",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No cause found: CT / LP → REFER",
+      "d": 1
+     },
+     {
+      "t": "Keep antipsychotic doses small and regular",
+      "s": "adultstg2026:20.14"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Diet; help with feeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if abnormal",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CAM-ICU-7 each shift",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue haloperidol at lowest dose that contains behaviour",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Mobilise in the day; quiet nights",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Treat pain, constipation, retention",
+      "s": "adultstg2026:20.13"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Recover",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat abnormal bloods",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "DT: diazepam PO to mild sedation, then taper",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "Wean sedatives as delirium settles",
+      "s": "adultstg2026:20.14"
+     }
+    ]
+   },
+   {
+    "label": "Day 3–6",
+    "phase": "Recover",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CAM-ICU-7 daily",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Haloperidol usually ≤ 7 days",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Wernicke: thiamine IM 500 mg × 3–5 days, then PO 100 mg 8-hourly",
+      "s": "adultstg2026:14.7"
+     },
+     {
+      "t": "Plan rehab / referral for substance use",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cognition back to baseline?",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Stop haloperidol / sedatives before discharge",
+      "d": 1
+     },
+     {
+      "t": "Explain delirium to family",
+      "s": "adultstg2026:23.22"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Sedation doses — STG 20.8",
+   "items": [
+    {
+     "h": "First line",
+     "s": "adultstg2026:20.14"
+    },
+    {
+     "t": "Haloperidol PO 0.75–1.5 mg twice daily; repeat 4-hourly prn; max 10 mg/24 h; usually ≤ 7 days"
+    },
+    {
+     "t": "Haloperidol IM 0.5–1 mg; repeat after 30–60 min, then 4-hourly; max 10 mg/24 h"
+    },
+    {
+     "h": "If no haloperidol IM",
+     "s": "adultstg2026:20.15"
+    },
+    {
+     "t": "Olanzapine ODT/IM 2.5–5 mg; repeat after 30–60 min, then 6-hourly; max 20 mg/24 h"
+    },
+    {
+     "h": "Withdrawal, Parkinson's, antipsychotic intolerant",
+     "s": "adultstg2026:20.15"
+    },
+    {
+     "t": "Lorazepam IM 0.25–1 mg 2–4-hourly (max 3 mg/24 h), or clonazepam IM 0.5–2 mg, or diazepam IV 5–10 mg"
+    },
+    {
+     "t": "Elderly: start 2 mg; frail / respiratory risk: halve the dose",
+     "s": "adultstg2026:20.15"
+    },
+    {
+     "t": "Allow 15–30 min to act; oral safest, IV riskiest",
+     "s": "adultstg2026:20.15"
+    },
+    {
+     "h": "Thiamine"
+    },
+    {
+     "t": "Alcohol / Wernicke suspected: IM 200 mg stat",
+     "s": "adultstg2026:20.15"
+    },
+    {
+     "t": "Wernicke: IM 500 mg daily × 3–5 days, then PO 100 mg 8-hourly",
+     "s": "adultstg2026:14.7"
+    }
+   ]
+  },
+  {
+   "title": "Alcohol withdrawal delirium — STG 15.8.1.1",
+   "items": [
+    {
+     "h": "IV",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Diazepam 10 mg slow IV (< 5 mg/min, not IM); repeat after 5–10 min; then 10 mg every 5–10 min for 1–3 more doses, max 50 mg"
+    },
+    {
+     "h": "No IV access",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "t": "Clonazepam IM 2 mg; repeat after 60 min until sedated"
+    },
+    {
+     "t": "Or lorazepam IM 1–4 mg every 30–60 min"
+    },
+    {
+     "h": "Maintain",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "t": "Diazepam PO 5–20 mg to keep mildly sedated"
+    },
+    {
+     "t": "Thiamine PO/IM 300 mg daily with glucose fluids"
+    },
+    {
+     "t": "Haloperidol PO 0.75–2.5 mg 12-hourly (max 5 mg/24 h) only for hallucinations"
+    },
+    {
+     "t": "No IM olanzapine with benzodiazepines + alcohol"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "RR < 12 or SpO₂ < 90% after a sedative — oxygen, ready to ventilate",
+     "s": "adultstg2026:15.8"
+    },
+    {
+     "t": "Drowsier, GCS falling",
+     "d": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Fever, rigidity (NMS)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Dystonia: biperiden 2.5 mg IM",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "HGT low",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Restraint injury",
+     "s": "adultstg2026:20.14"
+    },
+    {
+     "h": "Not improving in 48 h"
+    },
+    {
+     "t": "Look again for the cause; REFER for CT / LP / specialist",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Cause found and treated",
+    "s": "adultstg2026:20.13"
+   },
+   {
+    "t": "CAM-ICU-7 0–2 / back to baseline",
+    "d": 1
+   },
+   {
+    "t": "Off sedatives / antipsychotics",
+    "d": 1
+   },
+   {
+    "t": "Eating, drinking, mobile as before",
+    "d": 1
+   },
+   {
+    "t": "Medicines reviewed and simplified",
+    "s": "adultstg2026:20.14"
+   },
+   {
+    "t": "Family informed; carer at home",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "OPD / PHC in 1–2 weeks: cognition, medicines",
+    "d": 1
+   },
+   {
+    "t": "Persisting cognitive problems: assess for dementia",
+    "d": 1
+   },
+   {
+    "t": "Alcohol: rehab, social services",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Return: confusion again, fever, falls",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour delirium record — CAM-ICU-7, RASS, vitals, behaviour",
+  "period": "one sheet per 24 hours",
+  "params": [
+   {
+    "h": "Mental state",
+    "items": [
+     {
+      "t": "CAM-ICU-7 and RASS each shift",
+      "d": 1
+     },
+     {
+      "t": "Hourly: calm / agitated / drowsy",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "4-hourly",
+      "d": 1
+     },
+     {
+      "t": "After sedative: every 5–10 min × 1 h, then every 30 min",
+      "s": "adultstg2026:15.8"
+     }
+    ]
+   },
+   {
+    "h": "Restraint",
+    "items": [
+     {
+      "t": "Last resort only",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Every 15 min: vitals, mental state, sites",
+      "s": "adultstg2026:20.14"
+     }
+    ]
+   },
+   {
+    "h": "Care",
+    "items": [
+     {
+      "t": "Re-orientate, glasses, hearing aid",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Day: mobilise · night: quiet, dark",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "Urine, bowels, fluids",
+      "s": "adultstg2026:20.13"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: RR < 12 or SpO₂ < 90% after a sedative, drowsier or falling GCS, seizure, fever with rigidity, low HGT, restraint needed or injury, new agitation.",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Haloperidol (mg)",
+   "Benzodiazepine (mg)",
+   "Fluid in (mL)",
+   "Urine (mL)",
+   "Hours slept"
+  ]
+ }
+}
