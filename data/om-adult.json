@@ -1,0 +1,1006 @@
+{
+ "id": "om-adult",
+ "short": "Otitis media (adult)",
+ "title": "Acute otitis media and complications (mastoiditis) — adult",
+ "population": "Adult and adolescent ≥ 13 y with ear pain / discharge; admitted if toxic, unable to take oral, mastoiditis or neurological signs",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Diffuse / furuncular otitis externa → PHC STG 19.4.1",
+     "s": "phcstg2026:19.4",
+     "b": 1
+    },
+    {
+     "t": "< 13 y → Otitis media (child)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Meningitis confirmed → meningitis / REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Vertigo without ear infection → vertigo (Adult STG 17.9)",
+     "s": "adultstg2026:17.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Acute otitis media = rapid-onset middle-ear inflammation",
+   "items": [
+    {
+     "t": "Ear pain · loss of hearing",
+     "s": "phcstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Red, bulging eardrum · loss of light reflex",
+     "s": "phcstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Drum perforation / discharge",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Fever (about half)",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Mild redness and ear rubbing are not reliable signs",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Age ____  T ____ °C  HIV ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated → ADMIT = any one of",
+   "items": [
+    {
+     "t": "Swelling and pain on palpation of the mastoid",
+     "s": "adultstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Facial nerve palsy / focal neurological signs",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Vomiting or drowsiness",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Suspected meningitis",
+     "s": "phcstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Bulging drum not responding after 24 h",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "No response to amox/clav · no pain relief",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Unable to take oral medicine",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / records",
+   "items": [
+    {
+     "t": "HIV status, CD4, ART",
+     "s": "adultstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Diabetes / immunosuppression",
+     "s": "adultstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin in the last 30 days",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Episodes this year (recurrent → refer)",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Duration of discharge",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "TB history / contact",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Previous ear surgery",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Ear"
+    },
+    {
+     "t": "Pain · hearing loss",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Discharge — how long?",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Pain worse on chewing (otitis externa)",
+     "s": "phcstg2026:19.4"
+    },
+    {
+     "h": "Spread"
+    },
+    {
+     "t": "Swelling behind the ear",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Headache, vomiting, drowsiness",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Facial weakness",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Vertigo",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "URTI · allergic congestion",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Weight loss, night sweats (TB)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Drowsy / ↓ consciousness",
+     "s": "adultstg2026:17.5",
+     "k": "yn"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "phcstg2026:19.6",
+     "k": "yn"
+    },
+    {
+     "t": "Vomiting",
+     "s": "adultstg2026:17.5",
+     "k": "yn"
+    },
+    {
+     "t": "Glucose high (diabetes)",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Ear (otoscopy)"
+    },
+    {
+     "t": "Red bulging drum",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Perforation / pus",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Attic perforation",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Canal inflamed / debris (externa)",
+     "s": "phcstg2026:19.4"
+    },
+    {
+     "h": "Mastoid"
+    },
+    {
+     "t": "Tenderness · erythema · swelling",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Pinna displaced",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Facial nerve palsy",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Other cranial nerve palsy",
+     "s": "adultstg2026:17.6"
+    },
+    {
+     "t": "Hearing (whisper test)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Otoscopy — classify",
+   "items": [
+    {
+     "t": "AOM: red bulging drum, pain",
+     "s": "phcstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "CSOM: discharge > 2 weeks → dry mop",
+     "s": "adultstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Otitis externa: inflamed canal, pain on chewing",
+     "s": "phcstg2026:19.4",
+     "b": 1
+    },
+    {
+     "t": "Necrotising OE: severe pain, diabetic / immunocompromised",
+     "s": "adultstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Right ____  Left ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Mastoid and neuro check — every admission",
+   "items": [
+    {
+     "t": "Mastoid tender / swollen → ceftriaxone 2 g IV 12-hourly, REFER",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Facial palsy, vomiting, drowsiness → REFER",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Cranial nerve palsy + severe otitis externa → necrotising OE",
+     "s": "adultstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Mastoid: Y / N   Neuro signs: Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Mastoiditis",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Meningitis",
+     "s": "phcstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Facial nerve palsy",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Necrotising otitis externa",
+     "s": "adultstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Brain abscess (drowsy, vomiting)",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Sepsis",
+     "d": 1
+    },
+    {
+     "t": "TB ear",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "HIV",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Diabetes uncontrolled",
+     "s": "adultstg2026:17.6"
+    },
+    {
+     "t": "Cholesteatoma (attic)",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Moderate / severe hearing loss",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Pregnancy (drug choice)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Mastoiditis, neurological signs, necrotising otitis externa or no response → start IV antibiotic and REFER (ENT / CT)",
+   "s": "adultstg2026:17.5"
+  },
+  {
+   "t": "11. AOM, not toxic → discharge on amoxicillin · toxic, vomiting or unable to take oral → ADMIT",
+   "s": "adultstg2026:17.3"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Treat pain early · oral amoxicillin unless complicated · mastoid and neuro check every shift · branch rows only if needed",
+  "columns": {
+   "feed": "Fluids, diet & ear care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, BP, RR 4-hourly; hourly while toxic",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Headache, vomiting, drowsiness, neck stiffness, facial weakness: each shift",
+    "s": "adultstg2026:17.5",
+    "b": 1
+   },
+   {
+    "t": "Swelling or pain on palpation of the mastoid",
+    "s": "adultstg2026:17.4"
+   },
+   {
+    "t": "Ear discharge: dry mop and record",
+    "s": "adultstg2026:17.4"
+   },
+   {
+    "t": "Antibiotic and analgesia doses timed and signed",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Feel the mastoid and test the facial nerve in every patient with ear pain. Check HIV and glucose.",
+    "feed": [
+     {
+      "t": "Oral fluids; IV fluids if vomiting",
+      "d": 1
+     },
+     {
+      "t": "Dry mop if discharge; nothing in the ear",
+      "s": "adultstg2026:17.4"
+     },
+     {
+      "t": "Keep the ear dry when bathing",
+      "s": "adultstg2026:17.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test if unknown",
+      "s": "adultstg2026:17.4",
+      "b": 1
+     },
+     {
+      "t": "Glucose",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, blood culture if toxic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Creatinine if on IV antibiotics",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotic — AOM"
+     },
+     {
+      "t": "Amoxicillin 1000 mg PO 8-hourly × 5 d (previously untreated)",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Not responding to amoxicillin: amox/clav 875/125 mg PO 12-hourly × 5 d",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: azithromycin 500 mg PO daily × 3 d",
+      "s": "adultstg2026:17.3"
+     },
+     {
+      "t": "Vomiting / cannot take oral: amox/clav 1.2 g IV 8-hourly until able",
+      "s": "adultstg2026:16.14",
+      "d": 1
+     },
+     {
+      "h": "Mastoiditis"
+     },
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h; max 15 mg/kg/dose)",
+      "s": "adultstg2026:17.3"
+     },
+     {
+      "t": "URT congestion from allergy: cetirizine 10 mg PO daily × 10 d",
+      "s": "adultstg2026:17.4"
+     }
+    ]
+   },
+   {
+    "label": "If mastoiditis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Dry mop canal",
+      "s": "adultstg2026:17.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture before antibiotic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tenderness, erythema and / or swelling over the mastoid bone",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     },
+     {
+      "t": "Confirm by CT (not at ANDH) — REFER for mastoidectomy after starting antibiotics",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If neurological signs",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth if ↓ LOC",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture, glucose",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Facial palsy, vomiting or drowsiness → REFER",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     },
+     {
+      "t": "Suspected meningitis → REFER",
+      "s": "phcstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If chronic discharge",
+    "phase": "CSOM",
+    "feed": [
+     {
+      "t": "Dry mop with a wick until it comes out dry; nothing left in the ear",
+      "s": "adultstg2026:17.4",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test · TB screen",
+      "s": "adultstg2026:17.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Purulent discharge > 2 weeks; pain suggests another condition or complication",
+      "s": "adultstg2026:17.4",
+      "b": 1
+     },
+     {
+      "t": "Acetic acid 2% in alcohol 3–4 drops 6-hourly × 5 d",
+      "s": "adultstg2026:17.5"
+     },
+     {
+      "t": "Ciprofloxacin 3 mg/mL ear drops 3–4 drops 8-hourly × 7 d after mopping",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     },
+     {
+      "t": "REFER: facial palsy, vomiting / drowsiness, mastoid swelling, no improvement after 4 weeks, attic perforation, hearing loss",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If necrotising OE",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Dry wick in the canal; replace after 2 days",
+      "s": "adultstg2026:17.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Glucose, HbA1c",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Severe otalgia + otorrhoea not responding to topical therapy; elderly diabetic / immunocompromised; cranial nerve palsy",
+      "s": "adultstg2026:17.6",
+      "b": 1
+     },
+     {
+      "t": "Ciprofloxacin 750 mg PO 12-hourly and REFER (CT)",
+      "s": "adultstg2026:17.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24-h review",
+    "feed": [
+     {
+      "t": "Oral as able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bulging drum not responding after 24 h → REFER",
+      "s": "adultstg2026:17.4",
+      "b": 1
+     },
+     {
+      "t": "IV → oral when tolerating",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "72-h review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No response to amoxicillin → amox/clav; no response to amox/clav → REFER",
+      "s": "adultstg2026:17.4",
+      "b": 1
+     },
+     {
+      "t": "No pain relief despite treatment → REFER",
+      "s": "adultstg2026:17.4"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–5",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Complete 5 days of antibiotic",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Discharge assessment (box below)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotics · pain",
+   "items": [
+    {
+     "h": "AOM"
+    },
+    {
+     "t": "Amoxicillin 1000 mg PO 8-hourly × 5 d (previously untreated)",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Not responding to amoxicillin: amox/clav 875/125 mg PO 12-hourly × 5 d",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy: azithromycin 500 mg PO daily × 3 d",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Vomiting / cannot take oral: amox/clav 1.2 g IV 8-hourly until able",
+     "s": "adultstg2026:16.14",
+     "d": 1
+    },
+    {
+     "h": "Mastoiditis"
+    },
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "h": "Necrotising OE"
+    },
+    {
+     "t": "Ciprofloxacin 750 mg PO 12-hourly and REFER (CT)",
+     "s": "adultstg2026:17.6",
+     "b": 1
+    },
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h; max 15 mg/kg/dose)",
+     "s": "adultstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "title": "Ear care · CSOM",
+   "items": [
+    {
+     "t": "Dry mop with a clean wick until dry; nothing left in the ear",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "t": "Acetic acid 2% in alcohol 3–4 drops 6-hourly × 5 d",
+     "s": "adultstg2026:17.5"
+    },
+    {
+     "t": "Ciprofloxacin 3 mg/mL ear drops 3–4 drops 8-hourly × 7 d after mopping",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Exclude TB; establish HIV status",
+     "s": "adultstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "REFER: facial palsy, vomiting / drowsiness, mastoid swelling, no improvement after 4 weeks, attic perforation, hearing loss",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · REFER",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New swelling behind the ear",
+     "s": "adultstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Facial weakness, vomiting, drowsiness",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "Neck stiffness, headache",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Uncontrolled pain",
+     "s": "adultstg2026:17.4"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Mastoiditis (mastoidectomy) · necrotising OE (CT)",
+     "s": "adultstg2026:17.5",
+     "b": 1
+    },
+    {
+     "t": "No response to amox/clav · recurrent OM",
+     "s": "adultstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "CSOM: no improvement after 4 weeks · attic perforation · hearing loss",
+     "s": "adultstg2026:17.5"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No mastoid swelling or tenderness",
+    "s": "adultstg2026:17.4",
+    "b": 1
+   },
+   {
+    "t": "No neurological signs",
+    "s": "adultstg2026:17.5",
+    "b": 1
+   },
+   {
+    "t": "Afebrile, pain controlled",
+    "d": 1
+   },
+   {
+    "t": "Taking oral antibiotic",
+    "d": 1
+   },
+   {
+    "t": "Can dry mop (if discharge)",
+    "s": "adultstg2026:17.4"
+   },
+   {
+    "t": "HIV status known",
+    "s": "adultstg2026:17.4"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "PHC review if pain, fever or vomiting persist after 72 h",
+    "s": "phcstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Recurrent OM → HIV test, ENT referral",
+    "s": "adultstg2026:17.4"
+   },
+   {
+    "t": "CSOM perforation not closed by 6 months → ENT",
+    "s": "adultstg2026:17.5"
+   },
+   {
+    "t": "Hearing loss → audiology",
+    "s": "adultstg2026:17.5"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — temperature, neuro and mastoid checks, ear care",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Temperature, pulse, BP, RR 4-hourly; hourly while toxic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Headache, vomiting, drowsiness, neck stiffness, facial weakness: each shift",
+      "s": "adultstg2026:17.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Ear",
+    "items": [
+     {
+      "t": "Swelling or pain on palpation of the mastoid",
+      "s": "adultstg2026:17.4"
+     },
+     {
+      "t": "Ear discharge: dry mop and record",
+      "s": "adultstg2026:17.4"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Antibiotic and analgesia doses timed and signed",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "headache, vomiting, drowsiness or neck stiffness",
+    "s": "adultstg2026:17.5",
+    "b": 1
+   },
+   {
+    "t": "new facial weakness",
+    "s": "adultstg2026:17.5",
+    "b": 1
+   },
+   {
+    "t": "new swelling behind the ear",
+    "s": "adultstg2026:17.4",
+    "b": 1
+   },
+   {
+    "t": "pain not controlled",
+    "s": "adultstg2026:17.4"
+   }
+  ],
+  "totals": [
+   "Antibiotic doses given / due",
+   "Analgesia doses",
+   "Highest T (°C)",
+   "Glucose range"
+  ]
+ }
+}

@@ -1,0 +1,1004 @@
+{
+ "id": "om-paeds",
+ "short": "Otitis media (child)",
+ "title": "Acute otitis media and complications (mastoiditis) — child",
+ "population": "Child 28 days – 12 years with ear pain / discharge; admitted if toxic, unable to take oral, mastoiditis or intracranial signs",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Otitis media with effusion: no antibiotics, review in 12 weeks",
+     "s": "paedstg2026:17.9",
+     "b": 1
+    },
+    {
+     "t": "Otitis externa (pain on chewing, inflamed canal) → PHC STG 19.4.1",
+     "s": "phcstg2026:19.4",
+     "b": 1
+    },
+    {
+     "t": "Meningitis confirmed → meningitis pathway / REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Neonate < 28 days → neonatal sepsis",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Acute otitis media = ear pain / fever after a URTI, PLUS",
+   "items": [
+    {
+     "t": "Ear pain (not referred), irritability, fever",
+     "s": "paedstg2026:17.7",
+     "b": 1
+    },
+    {
+     "t": "Acute purulent otorrhoea (pain eases)",
+     "s": "paedstg2026:17.7"
+    },
+    {
+     "t": "OR bulging tympanic membrane",
+     "s": "paedstg2026:17.7",
+     "b": 1
+    },
+    {
+     "t": "OR marked redness of the tympanic membrane",
+     "s": "paedstg2026:17.7",
+     "b": 1
+    },
+    {
+     "t": "Mild redness and ear rubbing are not reliable signs",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "t": "Age ____  Wt ____ kg  T ____ °C",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated → ADMIT = any one of",
+   "items": [
+    {
+     "t": "Tender swelling behind the ear (mastoiditis)",
+     "s": "imci2022:29",
+     "b": 1
+    },
+    {
+     "t": "Severe toxicity",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "Progression beyond the middle ear",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "Seizures, headache, ↓ consciousness, neck stiffness",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Severe pain / fever / vomiting not responding after 72 h",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Sick, vomiting or drowsy with ear discharge",
+     "s": "phcstg2026:19.7"
+    },
+    {
+     "t": "Unable to take oral medicine",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB) / records",
+   "items": [
+    {
+     "t": "HIV status (recurrent / chronic OM)",
+     "s": "paedstg2026:17.9",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin in the last 30 days",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "Episodes this year (recurrent → refer)",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Duration of discharge",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "Immunisations (PCV, Hib)",
+     "d": 1
+    },
+    {
+     "t": "TB contact",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "Hearing / speech concerns",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "paedstg2026:25.4"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Ear"
+    },
+    {
+     "t": "Ear pain waking the child at night",
+     "s": "imci2022:29"
+    },
+    {
+     "t": "Discharge — how long?",
+     "s": "imci2022:29"
+    },
+    {
+     "t": "Hearing loss",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "h": "Spread"
+    },
+    {
+     "t": "Swelling behind the ear",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Headache, vomiting, drowsiness",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Seizures · neck stiffness",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Facial weakness",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "URTI / runny nose",
+     "s": "paedstg2026:17.7"
+    },
+    {
+     "t": "Feeding / drinking",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age norms (IMCI) or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia for age",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea for age",
+     "k": "yn"
+    },
+    {
+     "t": "Drowsy / ↓ consciousness",
+     "s": "paedstg2026:17.6",
+     "k": "yn"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "paedstg2026:17.6",
+     "k": "yn"
+    },
+    {
+     "t": "Vomiting",
+     "s": "phcstg2026:19.6",
+     "k": "yn"
+    },
+    {
+     "t": "Signs of shock",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Ear (otoscopy)"
+    },
+    {
+     "t": "Bulging drum",
+     "s": "paedstg2026:17.7"
+    },
+    {
+     "t": "Marked redness",
+     "s": "paedstg2026:17.7"
+    },
+    {
+     "t": "Perforation / pus",
+     "s": "paedstg2026:17.7"
+    },
+    {
+     "t": "Dull intact drum, fluid / bubbles (OME)",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "h": "Mastoid"
+    },
+    {
+     "t": "Tender over mastoid antrum",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Post-auricular swelling",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Pinna pushed down and forward",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Neck abscess (mastoid tip)",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "↓ LOC · seizure",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "Facial nerve palsy",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Otoscopy — classify",
+   "items": [
+    {
+     "t": "AOM: bulging / marked redness, pain, fever",
+     "s": "paedstg2026:17.7",
+     "b": 1
+    },
+    {
+     "t": "OME: intact drum, no pain, no fever → no antibiotic",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "CSOM: discharge with perforation > 2 weeks → dry mop",
+     "s": "paedstg2026:17.9",
+     "b": 1
+    },
+    {
+     "t": "Drum not seen: review at 24 h; not responding → REFER",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Right ____  Left ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Mastoid and neuro check — every admission",
+   "items": [
+    {
+     "t": "Mastoid tender / swollen → ceftriaxone, REFER ENT",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Seizures, headache, ↓ LOC, neck stiffness → CT brain: REFER",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Blood culture + pus MCS before antibiotics",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Mastoid: Y / N   Neuro signs: Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Mastoiditis",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Meningitis",
+     "s": "phcstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Intracranial spread (brain abscess)",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Facial nerve palsy",
+     "d": 1
+    },
+    {
+     "t": "Sepsis / toxic",
+     "s": "paedstg2026:17.8"
+    },
+    {
+     "t": "Neck abscess",
+     "s": "paedstg2026:17.6"
+    },
+    {
+     "t": "HIV (recurrent / chronic)",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "TB ear",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "Foreign body in canal",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "t": "Hearing loss / speech delay",
+     "s": "paedstg2026:17.9"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Mastoiditis, intracranial signs, facial palsy or no response to treatment → ceftriaxone and REFER (ENT / CT)",
+   "s": "paedstg2026:17.7"
+  },
+  {
+   "t": "11. AOM, not toxic → discharge on amoxicillin · toxic, vomiting or unable to take oral → ADMIT",
+   "s": "paedstg2026:17.8"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Treat pain early · oral amoxicillin unless complicated · mastoid and neuro check every shift · branch rows only if needed",
+  "columns": {
+   "feed": "Fluids, feeds & ear care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, RR 4-hourly; hourly while toxic",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Drowsy, irritable, headache, vomiting, neck stiffness, seizure: each shift",
+    "s": "paedstg2026:17.6",
+    "b": 1
+   },
+   {
+    "t": "Swelling or tenderness behind the ear; pinna pushed forward",
+    "s": "paedstg2026:17.6"
+   },
+   {
+    "t": "Ear discharge: dry mop and record",
+    "s": "paedstg2026:17.6"
+   },
+   {
+    "t": "Antibiotic and analgesia doses timed and signed",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Look behind the ear and check for neck stiffness in every child with ear pain. Treat pain from the start.",
+    "feed": [
+     {
+      "t": "Oral fluids; IV fluids if vomiting / dehydrated",
+      "d": 1
+     },
+     {
+      "t": "Dry mop if discharge; nothing in the ear",
+      "s": "phcstg2026:19.5"
+     },
+     {
+      "t": "Keep the inside of the ear dry",
+      "s": "paedstg2026:17.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Mastoiditis: blood culture + pus MCS before antibiotic",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     },
+     {
+      "t": "FBC if toxic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if recurrent / chronic OM",
+      "s": "paedstg2026:17.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotic — AOM"
+     },
+     {
+      "t": "Amoxicillin 45 mg/kg/dose PO 12-hourly × 10 d (max 1.5 g 12-hourly)",
+      "s": "paedstg2026:17.8",
+      "b": 1
+     },
+     {
+      "t": "Amoxicillin in last 30 d or poor response: amox/clav PO 45 mg/kg/dose 12-hourly × 10 d (max 1.5 g)",
+      "s": "paedstg2026:17.8",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: azithromycin 10 mg/kg PO daily × 3 d",
+      "s": "phcstg2026:19.6"
+     },
+     {
+      "t": "Vomiting / cannot take oral: amox/clav 25 mg/kg/dose IV 8-hourly until able",
+      "s": "paedstg2026:6.7",
+      "d": 1
+     },
+     {
+      "h": "Mastoiditis"
+     },
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+      "s": "paedstg2026:17.3"
+     }
+    ]
+   },
+   {
+    "label": "If mastoiditis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Dry mop the external canal",
+      "s": "paedstg2026:17.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood and pus for Gram stain / MCS BEFORE antibiotics",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     },
+     {
+      "t": "Urgent REFER to ENT after starting antibiotics",
+      "s": "paedstg2026:17.7",
+      "b": 1
+     },
+     {
+      "t": "Responding: amox/clav PO 45 mg/kg 12-hourly; ≥ 14 days in total",
+      "s": "paedstg2026:17.7"
+     },
+     {
+      "t": "Consider TB as a cause",
+      "s": "paedstg2026:17.6"
+     }
+    ]
+   },
+   {
+    "label": "If intracranial signs",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth if ↓ LOC",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture; HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Seizures, headache, loss of consciousness or neck stiffness → CT brain: REFER",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     },
+     {
+      "t": "Suspected meningitis → REFER",
+      "s": "phcstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     },
+     {
+      "t": "Seizure → seizure protocol",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If chronic discharge",
+    "phase": "CSOM",
+    "feed": [
+     {
+      "t": "Dry mop (show caregiver) for 4 weeks; then wick dry",
+      "s": "paedstg2026:17.9",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "No routine ear-swab MCS",
+      "s": "phcstg2026:19.7"
+     },
+     {
+      "t": "HIV test",
+      "s": "paedstg2026:17.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge with perforation > 2 weeks = chronic suppurative OM",
+      "s": "paedstg2026:17.9",
+      "b": 1
+     },
+     {
+      "t": "Acetic acid 2% ear drops 4 drops 4 × daily × 5 d",
+      "s": "paedstg2026:17.9"
+     },
+     {
+      "t": "Ciprofloxacin ear drops 2 drops 8-hourly after dry mopping",
+      "s": "paedstg2026:17.9",
+      "b": 1
+     },
+     {
+      "t": "Check HIV status; consider TB",
+      "s": "paedstg2026:17.9"
+     },
+     {
+      "t": "Intracranial complication → emergency REFER",
+      "s": "paedstg2026:17.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24-h review",
+    "feed": [
+     {
+      "t": "Oral as able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase culture",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Drum not seen on Day 1 and still severe pain / fever / vomiting → REFER",
+      "s": "phcstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "IV → oral when tolerating",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "72-h review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Severe pain, fever or vomiting not responding after 72 h → REFER ENT",
+      "s": "phcstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "Poor response to amoxicillin → change to amox/clav",
+      "s": "paedstg2026:17.8"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–5",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Complete 10 days of antibiotic (mastoiditis ≥ 14 d)",
+      "s": "paedstg2026:17.8",
+      "b": 1
+     },
+     {
+      "t": "Discharge assessment (box below)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotics",
+   "items": [
+    {
+     "h": "AOM"
+    },
+    {
+     "t": "Amoxicillin 45 mg/kg/dose PO 12-hourly × 10 d (max 1.5 g 12-hourly)",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin in last 30 d or poor response: amox/clav PO 45 mg/kg/dose 12-hourly × 10 d (max 1.5 g)",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy: azithromycin 10 mg/kg PO daily × 3 d",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Vomiting / cannot take oral: amox/clav 25 mg/kg/dose IV 8-hourly until able",
+     "s": "paedstg2026:6.7",
+     "d": 1
+    },
+    {
+     "h": "Mastoiditis"
+    },
+    {
+     "t": "Ceftriaxone 100 mg/kg IV once daily",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Responding: amox/clav PO 45 mg/kg 12-hourly; ≥ 14 days in total",
+     "s": "paedstg2026:17.7"
+    },
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "title": "Ear care · CSOM · OME",
+   "items": [
+    {
+     "h": "Ear care"
+    },
+    {
+     "t": "Dry mop if discharge; nothing in the ear; keep dry",
+     "s": "phcstg2026:19.5"
+    },
+    {
+     "h": "CSOM"
+    },
+    {
+     "t": "Dry mop (show caregiver) for 4 weeks; then wick dry",
+     "s": "paedstg2026:17.9",
+     "b": 1
+    },
+    {
+     "t": "Acetic acid 2% ear drops 4 drops 4 × daily × 5 d",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "Ciprofloxacin ear drops 2 drops 8-hourly after dry mopping",
+     "s": "paedstg2026:17.9",
+     "b": 1
+    },
+    {
+     "t": "Check HIV status; consider TB",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "h": "OME"
+    },
+    {
+     "t": "No antibiotic or antihistamine; review in 12 weeks",
+     "s": "paedstg2026:17.9"
+    },
+    {
+     "t": "> 3 months or speech delay → audiology + ENT",
+     "s": "paedstg2026:17.9"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · REFER",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New swelling behind the ear",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Headache, vomiting, drowsy, seizure, neck stiffness",
+     "s": "paedstg2026:17.6",
+     "b": 1
+    },
+    {
+     "t": "Facial weakness",
+     "d": 1
+    },
+    {
+     "t": "Not drinking",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Mastoiditis (urgent ENT) · intracranial signs (CT)",
+     "s": "paedstg2026:17.7",
+     "b": 1
+    },
+    {
+     "t": "Persistent symptoms despite antibiotics, severe toxicity",
+     "s": "paedstg2026:17.8",
+     "b": 1
+    },
+    {
+     "t": "Recurrent OM",
+     "s": "phcstg2026:19.6"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No mastoid swelling or tenderness",
+    "s": "paedstg2026:17.6",
+    "b": 1
+   },
+   {
+    "t": "No neurological signs",
+    "s": "paedstg2026:17.6",
+    "b": 1
+   },
+   {
+    "t": "Afebrile, pain controlled",
+    "d": 1
+   },
+   {
+    "t": "Taking oral antibiotic and fluids",
+    "d": 1
+   },
+   {
+    "t": "Caregiver can dry mop (if discharge)",
+    "s": "paedstg2026:17.9"
+   },
+   {
+    "t": "Knows the full course and when to return",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "PHC review after 5 days if pain or discharge persists",
+    "s": "imci2022:29",
+    "b": 1
+   },
+   {
+    "t": "Discharge: follow up in 14 days",
+    "s": "imci2022:29"
+   },
+   {
+    "t": "Recurrent OM → HIV test; refer",
+    "s": "phcstg2026:19.5"
+   },
+   {
+    "t": "Discharge ≥ 4 weeks despite dry mopping → OPD for ear drops",
+    "s": "phcstg2026:19.7"
+   },
+   {
+    "t": "Hearing concerns → audiology",
+    "s": "paedstg2026:17.9"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — temperature, neuro and mastoid checks, ear care",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Temperature, pulse, RR 4-hourly; hourly while toxic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Drowsy, irritable, headache, vomiting, neck stiffness, seizure: each shift",
+      "s": "paedstg2026:17.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Ear",
+    "items": [
+     {
+      "t": "Swelling or tenderness behind the ear; pinna pushed forward",
+      "s": "paedstg2026:17.6"
+     },
+     {
+      "t": "Ear discharge: dry mop and record",
+      "s": "paedstg2026:17.6"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Antibiotic and analgesia doses timed and signed",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "headache, vomiting, drowsy, seizure or neck stiffness",
+    "s": "paedstg2026:17.6",
+    "b": 1
+   },
+   {
+    "t": "new swelling behind the ear",
+    "s": "paedstg2026:17.6",
+    "b": 1
+   },
+   {
+    "t": "facial weakness",
+    "d": 1
+   },
+   {
+    "t": "not drinking",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Antibiotic doses given / due",
+   "Paracetamol doses",
+   "Oral intake (mL)",
+   "Highest T (°C)"
+  ]
+ }
+}

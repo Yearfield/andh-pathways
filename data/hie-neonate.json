@@ -1,0 +1,1210 @@
+{
+ "id": "hie-neonate",
+ "short": "HIE (neonate)",
+ "title": "Hypoxic-ischaemic encephalopathy — neonate",
+ "population": "Newborn ≥ 36 weeks after perinatal asphyxia (< 36 wk: not HIE by STG criteria)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026",
+  "impcg2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "< 36 weeks: preterm / sick-newborn care (not HIE by STG)",
+     "s": "paedstg2026:19.43",
+     "b": 1
+    },
+    {
+     "t": "HIV-exposed baby → HIV (neonate) pathway for prophylaxis and PCR",
+     "to": "hiv-new-neonate",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Arrest after the neonatal period → HIE (child) pathway",
+     "to": "hie-child",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Seizures without asphyxia → STG 19.6.2 causes (sugar, Ca, Mg, meningitis)",
+     "s": "paedstg2026:19.48",
+     "b": 1
+    },
+    {
+     "t": "Mother: PPH / eclampsia → maternal pathways (PPH, PET)",
+     "to": "pph",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Gestation ≥ 36 weeks",
+     "s": "paedstg2026:19.43",
+     "b": 1
+    },
+    {
+     "t": "Asphyxia — any one:",
+     "s": "paedstg2026:19.43",
+     "b": 1
+    },
+    {
+     "t": "Apgar < 5 at 5 and 10 min",
+     "s": "paedstg2026:19.43",
+     "k": "sub"
+    },
+    {
+     "t": "pH < 7.0 and BD ≥ 12 mmol/L",
+     "s": "paedstg2026:19.43",
+     "k": "sub"
+    },
+    {
+     "t": "Ongoing resuscitation > 10 min",
+     "s": "paedstg2026:19.43",
+     "k": "sub"
+    },
+    {
+     "t": "Encephalopathy: modified Sarnat (§6) or abnormal aEEG",
+     "s": "paedstg2026:19.43",
+     "b": 1
+    },
+    {
+     "t": "Apgar ____ / ____ / ____ · Time of birth ____ · BW ____ g",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Grade — modified Sarnat (§6)",
+   "items": [
+    {
+     "t": "SEVERE: ≥ 1 severe sign in ≥ 3 of 6 categories",
+     "s": "paedstg2026:19.43",
+     "b": 1
+    },
+    {
+     "t": "MODERATE: ≥ 1 moderate sign in ≥ 3 of 6 categories",
+     "s": "paedstg2026:19.43",
+     "b": 1
+    },
+    {
+     "t": "MILD: hyperalert, jittery, normal tone, not meeting moderate",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Seizures (any grade)",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Thompson score ____ (prognosis)",
+     "s": "paedstg2026:19.43",
+     "k": "value"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternal / birth record",
+   "items": [
+    {
+     "t": "Gestation + dating method",
+     "s": "paedstg2026:19.43"
+    },
+    {
+     "t": "Birth weight (< 2 000 g: no cooling)",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Resuscitation: IPPV, compressions, adrenaline, minutes",
+     "s": "paedstg2026:19.43"
+    },
+    {
+     "t": "Cord / first blood gas",
+     "s": "impcg2024:74"
+    },
+    {
+     "t": "Sentinel event: abruption, cord prolapse, rupture, dystocia",
+     "d": 1
+    },
+    {
+     "t": "CTG / partogram abnormal",
+     "d": 1
+    },
+    {
+     "t": "Maternal fever, prolonged ROM (sepsis)",
+     "d": 1
+    },
+    {
+     "t": "Maternal HIV, RPR, blood group",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Labour and birth"
+    },
+    {
+     "t": "Duration of labour; 2nd stage"
+    },
+    {
+     "t": "Vacuum / breech / shoulder dystocia"
+    },
+    {
+     "t": "Meconium"
+    },
+    {
+     "t": "Time breathing started"
+    },
+    {
+     "h": "Since birth"
+    },
+    {
+     "t": "Seizures (time of first)",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Apnoea"
+    },
+    {
+     "t": "Suck / feeding"
+    },
+    {
+     "t": "Urine passed"
+    },
+    {
+     "h": "Mother"
+    },
+    {
+     "t": "Pethidine / morphine in labour",
+     "d": 1
+    },
+    {
+     "t": "Diabetes; pre-eclampsia",
+     "d": 1
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Mother's condition; can she travel with baby",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals",
+   "note": "Abnormal = outside gestation-appropriate norms; targets in STG 19.44",
+   "items": [
+    {
+     "t": "Hypothermia / Hyperthermia",
+     "s": "paedstg2026:19.44",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "s": "paedstg2026:19.43",
+     "k": "yn"
+    },
+    {
+     "t": "Apnoea / periodic breathing",
+     "s": "paedstg2026:19.43",
+     "k": "yn"
+    },
+    {
+     "t": "Respiratory distress",
+     "s": "paedstg2026:19.42",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ below 90%",
+     "s": "paedstg2026:19.45",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Mean BP < gestation (wk) + 5",
+     "s": "paedstg2026:19.44",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — Sarnat categories (mark M / S)",
+   "items": [
+    {
+     "h": "1 Level of consciousness"
+    },
+    {
+     "t": "Lethargic (M)"
+    },
+    {
+     "t": "Stupor / coma (S)"
+    },
+    {
+     "h": "2 Spontaneous activity"
+    },
+    {
+     "t": "Decreased (M)"
+    },
+    {
+     "t": "None (S)"
+    },
+    {
+     "h": "3 Posture"
+    },
+    {
+     "t": "Distal flexion / full extension (M)"
+    },
+    {
+     "t": "Decerebrate (S)"
+    },
+    {
+     "h": "4 Tone"
+    },
+    {
+     "t": "Hypotonia (M)"
+    },
+    {
+     "t": "Flaccid (S)"
+    },
+    {
+     "h": "5 Primitive reflexes"
+    },
+    {
+     "t": "Weak suck, incomplete Moro (M)"
+    },
+    {
+     "t": "Absent suck / Moro (S)"
+    },
+    {
+     "h": "6 Autonomic"
+    },
+    {
+     "t": "Small pupils, low HR, periodic breathing (M)"
+    },
+    {
+     "t": "Fixed / dilated pupils, variable HR, apnoea (S)"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Fontanelle full / tense",
+     "s": "paedstg2026:19.43"
+    },
+    {
+     "t": "Subgaleal swelling, bleeding (DIC)",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Major malformation",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Cyanosis (PPHN / heart)",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 2.6 mmol/L: dextrose 10% 2.5–5 mL/kg IV once — do not repeat the bolus; raise glucose infusion",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "t": "Keep 2.6–6 mmol/L",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Then hourly until stable × 2, then 3-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Cord / first blood gas",
+   "items": [
+    {
+     "t": "pH ____ · BD ____ mmol/L · time ____",
+     "k": "value"
+    },
+    {
+     "t": "pH < 7.0 and BD ≥ 12: asphyxia criterion",
+     "s": "paedstg2026:19.43"
+    },
+    {
+     "t": "Arterial pH < 7.15 or BE > −10: inform paediatrician",
+     "s": "impcg2024:74"
+    },
+    {
+     "t": "No gas: use Apgar / resuscitation criteria",
+     "s": "paedstg2026:19.43"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Not feeding / not sucking",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Apnoea",
+     "b": 1
+    },
+    {
+     "t": "Moves only when stimulated / not at all",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "t": "Hypothermia / hyperthermia",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "paedstg2026:19.46"
+    },
+    {
+     "t": "Hypoxia",
+     "s": "paedstg2026:19.45"
+    },
+    {
+     "t": "Hypocalcaemia",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "t": "Bleeding / coagulopathy",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Sepsis",
+     "s": "paedstg2026:19.45"
+    },
+    {
+     "t": "No urine (renal failure)",
+     "s": "paedstg2026:19.42"
+    },
+    {
+     "t": "Cyanotic heart disease / PPHN",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Major malformation",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Lidocaine given (toxicity)",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Mother unwell",
+     "s": "impcg2024:74"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = MODERATE / SEVERE HIE (≥ 36 wk) → REFER: reach the cooling centre before 6 h of life"
+  },
+  {
+   "t": "11. MILD HIE → ADMIT to nursery"
+  }
+ ],
+ "chart": {
+  "unit": "Hour of life",
+  "phase_note": "Hours of life (from birth). Grade branch rows apply only to the matching baby. Moderate HIE: referral clock ends at 6 h.",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature hourly — avoid hyperthermia",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR, RR, SpO₂, apnoea hourly; BP 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT hourly until stable × 2, then 3-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Seizures, including subtle (eyes, lip-smacking, cycling, apnoea)",
+    "s": "paedstg2026:19.48",
+    "b": 1
+   },
+   {
+    "t": "Fluids in / urine out",
+    "s": "paedstg2026:19.44"
+   },
+   {
+    "t": "Tone, suck, alertness each shift",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0–1 h",
+    "phase": "Birth / arrival",
+    "lead": "Write the TIME OF BIRTH — the 6-hour cooling clock starts here. Grade with Sarnat now and again at 1 h.",
+    "feed": [
+     {
+      "t": "NPO — no enteral feeds for at least 12–24 h",
+      "s": "paedstg2026:19.44",
+      "b": 1
+     },
+     {
+      "t": "Dextrose 10% or K-free neonatal maintenance",
+      "s": "paedstg2026:19.44",
+      "b": 1
+     },
+     {
+      "t": "Restrict to 40 mL/kg/24 h for the first 24–48 h",
+      "s": "paedstg2026:19.44",
+      "b": 1
+     },
+     {
+      "t": "IV line; IO if no access",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.47",
+      "b": 1
+     },
+     {
+      "t": "Cord / first blood gas",
+      "s": "impcg2024:74",
+      "b": 1
+     },
+     {
+      "t": "Hb / haematocrit (keep ≥ 40%)",
+      "s": "paedstg2026:19.44",
+      "b": 1
+     },
+     {
+      "t": "Blood culture if infection suspected",
+      "s": "paedstg2026:19.45",
+      "b": 1
+     },
+     {
+      "t": "U&E, Ca, Mg, glucose",
+      "s": "paedstg2026:19.45",
+      "b": 1
+     },
+     {
+      "t": "INR / platelets if bleeding (cooling exclusion)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Sarnat at arrival and 1 h",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Breathing"
+     },
+     {
+      "t": "Oxygen to SpO₂ 90–95%",
+      "s": "paedstg2026:19.45"
+     },
+     {
+      "t": "Apnoea / PaO₂ < 60 or PaCO₂ > 55 mmHg: needs ventilation → REFER (Neopuff while waiting)",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "h": "Temperature"
+     },
+     {
+      "t": "Avoid hyperthermia",
+      "s": "paedstg2026:19.44",
+      "b": 1
+     },
+     {
+      "t": "Mild: lower range of the neutral thermal environment",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Moderate awaiting transfer: no active warming; target per cooling centre",
+      "d": 1
+     },
+     {
+      "h": "Hypotension"
+     },
+     {
+      "t": "NaCl 0.9% 10 mL/kg over 1 h",
+      "s": "paedstg2026:19.46"
+     },
+     {
+      "t": "Still low: dopamine / dobutamine → REFER",
+      "s": "paedstg2026:19.46"
+     },
+     {
+      "h": "Seizures"
+     },
+     {
+      "t": "Phenobarbitone 20 mg/kg IV over 10 min; refractory: extra 10 mg/kg, up to 40 mg/kg total",
+      "s": "paedstg2026:19.46",
+      "b": 1
+     },
+     {
+      "t": "Maintenance 4 mg/kg/day from 12–24 h after load",
+      "s": "paedstg2026:19.46"
+     },
+     {
+      "t": "Refractory → REFER high/intensive care",
+      "s": "paedstg2026:19.46"
+     },
+     {
+      "h": "Hypoglycaemia < 2.6"
+     },
+     {
+      "t": "Dextrose 10% 2.5–5 mL/kg once; raise infusion",
+      "s": "paedstg2026:19.47"
+     },
+     {
+      "h": "Infection suspected"
+     },
+     {
+      "t": "Ampicillin 100 mg/kg/dose 8-hourly + gentamicin 5 mg/kg daily (no renal dysfunction)",
+      "s": "paedstg2026:19.45"
+     },
+     {
+      "h": "Medicolegal (5-min Apgar < 7)",
+      "s": "impcg2024:74"
+     },
+     {
+      "t": "Placenta to histology; incident report; copy file and CTG"
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "If MODERATE (≥ 36 wk)",
+    "feed": [
+     {
+      "t": "NPO; fluids as 0 h",
+      "s": "paedstg2026:19.44"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Check cooling exclusions (side 2)",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER now to reach the cooling centre before 6 h",
+      "s": "paedstg2026:19.48",
+      "b": 1
+     },
+     {
+      "t": "Cooling 33.5–34.5 °C × 72 h is done there, not at ANDH",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Not eligible for cooling: still REFER for neonatal high care",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Send cord gas, Apgar, resus notes and drug times",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "If SEVERE",
+    "feed": [
+     {
+      "t": "NPO; fluids as 0 h",
+      "s": "paedstg2026:19.44"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas if available",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Apnoea monitoring",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for neonatal high care / ventilation",
+      "s": "paedstg2026:19.44",
+      "b": 1
+     },
+     {
+      "t": "Treat seizures, hypotension, glucose",
+      "s": "paedstg2026:19.46"
+     },
+     {
+      "t": "Severe and not accepted: honest counselling, comfort care discussion with the paediatrician",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "If MILD",
+    "feed": [
+     {
+      "t": "NPO 12–24 h; IV fluids as 0 h",
+      "s": "paedstg2026:19.44"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Sarnat 4-hourly to 24 h — progression to moderate before 6 h = REFER",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stay at ANDH (nursery)",
+      "d": 1
+     },
+     {
+      "t": "Lower range of neutral thermal environment",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Avoid hyperthermia",
+      "s": "paedstg2026:19.44"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "All at ANDH",
+    "feed": [
+     {
+      "t": "Still NPO; assess for ileus",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca, Mg",
+      "s": "paedstg2026:19.45",
+      "b": 1
+     },
+     {
+      "t": "HGT 3-hourly if stable",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phenobarbitone maintenance 4 mg/kg/day if loaded (start 12–24 h)",
+      "s": "paedstg2026:19.46"
+     },
+     {
+      "t": "Ca < 1.8 (ionised < 0.7): calcium gluconate 10% 1–2 mL/kg IV over 15 min, ECG",
+      "s": "paedstg2026:19.47"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Start feeds?",
+    "feed": [
+     {
+      "t": "Ileus excluded: breast milk by NGT/cup, build up slowly",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Keep total 40 mL/kg/24 h until 48 h",
+      "s": "paedstg2026:19.44"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb / haematocrit, U&E, creatinine",
+      "s": "paedstg2026:19.45",
+      "b": 1
+     },
+     {
+      "t": "Urine output",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No feeds possible by 24 h: IV alimentation → REFER",
+      "s": "paedstg2026:19.45"
+     },
+     {
+      "t": "Mg < 0.6: MgSO₄ 50% 0.2 mL/kg IV once",
+      "s": "paedstg2026:19.47"
+     },
+     {
+      "t": "SIADH: keep 40 mL/kg/24 h; head of cot up 10–15 cm",
+      "s": "paedstg2026:19.47"
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Recover",
+    "feed": [
+     {
+      "t": "Increase fluids and feeds daily as urine output allows",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Thompson score",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cardiac failure: restrict fluid, furosemide 1 mg/kg/24 h",
+      "s": "paedstg2026:19.47"
+     },
+     {
+      "t": "Anaemia (STG thresholds): packed cells 10–20 mL/kg over 3–4 h",
+      "s": "paedstg2026:19.45"
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Recover",
+    "feed": [
+     {
+      "t": "Breastfeed / cup feed; reduce IV",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cranial ultrasound at least once",
+      "s": "paedstg2026:19.45",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics: stop at 48–72 h if culture negative and well",
+      "d": 1
+     },
+     {
+      "t": "Mother: expressing, KMC when stable",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–6",
+    "phase": "Feed and wean",
+    "feed": [
+     {
+      "t": "Full oral feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight daily",
+      "d": 1
+     },
+     {
+      "t": "Seizure chart"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Maintenance phenobarbitone if brain damage: continue until seizure-free 2 weeks, then taper",
+      "s": "paedstg2026:19.50"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Exclusive breastfeeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hearing screen",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV PCR if exposed",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "RtHB: HIE grade, seizures, drugs",
+      "d": 1
+     },
+     {
+      "t": "Counsel parents: outlook and warning signs",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "h": "Seizures",
+     "s": "paedstg2026:19.46"
+    },
+    {
+     "t": "Phenobarbitone 20 mg/kg IV over 10 min; extra 10 mg/kg up to 40 mg/kg; maintenance 4 mg/kg/day IV/PO"
+    },
+    {
+     "t": "Refractory (midazolam / lidocaine infusion) → REFER",
+     "s": "paedstg2026:19.46"
+    },
+    {
+     "t": "No lidocaine if phenytoin given or heart disease",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "h": "Glucose < 2.6",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "t": "Dextrose 10% 2.5–5 mL/kg once; no repeat bolus"
+    },
+    {
+     "h": "Calcium / magnesium",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "t": "Ca gluconate 10% 1–2 mL/kg IV over 15 min (ECG) · MgSO₄ 50% 0.2 mL/kg once"
+    },
+    {
+     "h": "Hypotension",
+     "s": "paedstg2026:19.46"
+    },
+    {
+     "t": "NaCl 0.9% 10 mL/kg over 1 h; inotropes → REFER"
+    },
+    {
+     "h": "Infection",
+     "s": "paedstg2026:19.45"
+    },
+    {
+     "t": "Ampicillin 100 mg/kg/dose (50 mg/kg once meningitis excluded), 8-hourly if > 34 wk ≤ 28 d; gentamicin 5 mg/kg daily"
+    },
+    {
+     "h": "Anaemia / heart failure",
+     "s": "paedstg2026:19.45"
+    },
+    {
+     "t": "Packed cells 10–20 mL/kg over 3–4 h · furosemide 1 mg/kg/24 h"
+    }
+   ]
+  },
+  {
+   "title": "Cooling — refer and exclusions",
+   "items": [
+    {
+     "h": "Cooling indicated",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "≥ 36 weeks with MODERATE HIE; start within 6 h of birth (receiving centre)"
+    },
+    {
+     "h": "Not eligible",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Birth weight < 2 000 g; gestation < 36 wk; cannot start by 6 h"
+    },
+    {
+     "t": "Suspected coagulopathy"
+    },
+    {
+     "t": "Complex heart disease, PPHN"
+    },
+    {
+     "t": "Major malformation, imperforate anus, neuromuscular disorder, lethal chromosomal anomaly"
+    },
+    {
+     "t": "Death appears imminent"
+    },
+    {
+     "t": "Not eligible ≠ not referred — severe HIE still needs high care",
+     "s": "paedstg2026:19.44",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Any seizure, including subtle",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Apnoea or SpO₂ < 90%",
+     "s": "paedstg2026:19.45"
+    },
+    {
+     "t": "HGT < 2.6",
+     "s": "paedstg2026:19.47"
+    },
+    {
+     "t": "Temperature rising (hyperthermia)",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "No urine in 12 h",
+     "d": 1
+    },
+    {
+     "t": "Bleeding, oozing from lines",
+     "s": "paedstg2026:19.44"
+    },
+    {
+     "t": "Bradycardia / arrhythmia (lidocaine)",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "h": "Mild becoming moderate before 6 h"
+    },
+    {
+     "t": "REFER for cooling immediately",
+     "s": "paedstg2026:19.48"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Full oral feeds (breast or cup)",
+    "d": 1
+   },
+   {
+    "t": "Seizure-free; phenobarbitone plan written",
+    "s": "paedstg2026:19.50"
+   },
+   {
+    "t": "Warm in a cot / KMC",
+    "d": 1
+   },
+   {
+    "t": "Weight stable or gaining",
+    "d": 1
+   },
+   {
+    "t": "Cranial ultrasound done",
+    "s": "paedstg2026:19.45"
+   },
+   {
+    "t": "Parents counselled; follow-up booked",
+    "s": "paedstg2026:19.48"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Neurological assessment at 3 months",
+    "s": "paedstg2026:19.48"
+   },
+   {
+    "t": "Neurodevelopment, hearing and vision follow-up",
+    "s": "paedstg2026:19.45"
+   },
+   {
+    "t": "Taper phenobarbitone after 2 seizure-free weeks; restart if seizures recur",
+    "s": "paedstg2026:19.50"
+   },
+   {
+    "t": "Return: seizures, poor feeding, floppy or stiff, head growing too fast",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neonatal record — temperature, glucose, seizures, fluids",
+  "period": "one sheet per 24 hours of life",
+  "params": [
+   {
+    "h": "Temperature",
+    "items": [
+     {
+      "t": "Hourly",
+      "d": 1
+     },
+     {
+      "t": "Avoid hyperthermia",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Moderate HIE awaiting transfer: no active warming",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "HGT",
+    "items": [
+     {
+      "t": "On arrival",
+      "s": "paedstg2026:19.47"
+     },
+     {
+      "t": "Hourly until stable × 2, then 3-hourly",
+      "d": 1
+     },
+     {
+      "t": "< 2.6 → call",
+      "s": "paedstg2026:19.47"
+     }
+    ]
+   },
+   {
+    "h": "Seizures",
+    "items": [
+     {
+      "t": "Subtle: eye deviation, lip-smacking, cycling, apnoea",
+      "s": "paedstg2026:19.48"
+     },
+     {
+      "t": "Persist when limb held (not jitter)",
+      "s": "paedstg2026:19.48"
+     },
+     {
+      "t": "Write time and duration"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "40 mL/kg/24 h for 24–48 h",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "No feeds 12–24 h",
+      "s": "paedstg2026:19.44"
+     },
+     {
+      "t": "Urine: weigh nappies",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: any seizure, apnoea, SpO₂ < 90%, HGT < 2.6, rising temperature, no urine in 12 h, bleeding, slow heart rate.",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Fluid in (mL)",
+   "mL/kg/24 h",
+   "Urine (g/mL)",
+   "Seizures (n)"
+  ]
+ }
+}

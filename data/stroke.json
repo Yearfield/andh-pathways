@@ -1,0 +1,1573 @@
+{
+ "id": "stroke",
+ "short": "Stroke",
+ "title": "Acute stroke — ischaemic and haemorrhagic",
+ "population": "Adults and adolescents ≥ 13 years (children: Paeds STG 13.10 → REFER)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Deficit fully resolved → TIA pathway",
+     "to": "tia",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Head injury before the deficit → TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "After cardiac arrest / hanging / drowning → HIE (adult) pathway",
+     "to": "hie-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Pregnant or ≤ 6 wk postpartum with high BP or fits → PET (eclampsia) pathway",
+     "to": "pet",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Child under 13 → Paeds STG 13.10: REFER all",
+     "b": 1
+    },
+    {
+     "t": "Cocaine / amphetamine use → Cocaine / Amphetamines pathway",
+     "to": "cocaine",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — sudden focal deficit, still present",
+   "items": [
+    {
+     "t": "Sudden face droop",
+     "s": "adultstg2026:14.1",
+     "b": 1
+    },
+    {
+     "t": "Arm or leg weakness / numbness, one side",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Speech or language disturbance",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Loss of vision / visual field",
+     "d": 1
+    },
+    {
+     "t": "Vertigo, ataxia, double vision (posterior)",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Sudden severe headache ± neck stiffness (SAH)",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Not resolved — resolved = TIA",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Last known well ____ : ____ · Now ____ : ____ · Hours ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer now = any one of",
+   "items": [
+    {
+     "t": "Onset ≤ 3 h — thrombolysis candidate",
+     "s": "adultstg2026:14.1",
+     "b": 1
+    },
+    {
+     "t": "Atypical presentation",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Suspected posterior-fossa haemorrhage",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Suspected SAH",
+     "s": "adultstg2026:14.6"
+    },
+    {
+     "t": "GCS ≤ 8 / falling",
+     "d": 1
+    },
+    {
+     "t": "BP > 220/120 not settling",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Hypertension",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Diabetes",
+     "d": 1
+    },
+    {
+     "t": "AF / RHD / valve / previous MI",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Previous stroke or TIA",
+     "d": 1
+    },
+    {
+     "t": "Aspirin / warfarin / DOAC",
+     "d": 1
+    },
+    {
+     "t": "HIV — on ART (PI?)",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "Syphilis serology",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Baseline function (walking, self-care)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Time last known well"
+    },
+    {
+     "t": "Sudden vs stepwise"
+    },
+    {
+     "t": "Seizure at onset"
+    },
+    {
+     "t": "Thunderclap headache, vomiting",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "h": "Cause clues"
+    },
+    {
+     "t": "Head injury"
+    },
+    {
+     "t": "Fever, HIV, subacute course",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Palpitations (AF)",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Cocaine / amphetamine"
+    },
+    {
+     "t": "Anticoagulant"
+    },
+    {
+     "h": "TB / HIV screen"
+    },
+    {
+     "t": "Cough, weight loss, night sweats"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Carer / home set-up",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Advance wishes, family contact",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside normal adult range or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Irregular pulse",
+     "s": "adultstg2026:14.1",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Action thresholds"
+    },
+    {
+     "t": "BP > 220/120",
+     "s": "adultstg2026:14.3",
+     "k": "yn"
+    },
+    {
+     "t": "GCS ≤ 8",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS ____ /15 · pupils"
+    },
+    {
+     "t": "Weakness: face / arm / leg, side ____"
+    },
+    {
+     "t": "Speech / language"
+    },
+    {
+     "t": "Gaze deviation, visual field"
+    },
+    {
+     "t": "Ataxia, nystagmus"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "h": "Swallow",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "10 mL water test: pass / fail"
+    },
+    {
+     "t": "Fail → NPO, NGT for medicines and feeds"
+    },
+    {
+     "h": "CVS",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "AF, murmur"
+    },
+    {
+     "t": "Carotid bruit"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Head injury signs"
+    },
+    {
+     "t": "Fever, signs of HIV / syphilis",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Pressure areas",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 4 mmol/L: dextrose 50% 50 mL IV — hypoglycaemia mimics stroke",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Then 6-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "ECG",
+   "items": [
+    {
+     "t": "Rhythm on arrival: ____",
+     "s": "adultstg2026:14.1",
+     "k": "value"
+    },
+    {
+     "t": "AF: cardioembolic — warfarin from day 7–21 (after CT)",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "Acute ischaemia / MI as cause",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Normal: repeat if irregular pulse",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "GCS ≤ 8 or falling",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Onset ≤ 3 h",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Thunderclap headache / neck stiffness",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "BP > 220/120",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "On anticoagulant",
+     "d": 1
+    },
+    {
+     "t": "Head injury",
+     "d": 1
+    },
+    {
+     "t": "Fever / meningism",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Aspiration risk (failed swallow)",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Young, no risk factor",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "AF / endocarditis",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Massive stroke — palliative approach",
+     "s": "adultstg2026:14.1"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = STROKE ≤ 3 h, SAH, posterior-fossa bleed or atypical → REFER for CT (± thrombolysis)"
+  },
+  {
+   "t": "11. ADMIT — > 3 h and typical: STG treatment at ANDH, CT if obtainable"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Ischaemic stroke ≤ 3 h",
+   "features": [
+    {
+     "t": "Sudden deficit, onset known ≤ 3 h",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT → REFER now",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not give aspirin",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Alteplase 0.9 mg/kg (max 90 mg) at the receiving hospital",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediately",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    }
+   ],
+   "branch": "Ischaemic"
+  },
+  {
+   "dx": "Subarachnoid haemorrhage",
+   "features": [
+    {
+     "t": "Thunderclap headache, vomiting, neck stiffness",
+     "s": "adultstg2026:14.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT; or LP xanthochromia (at referral centre)",
+     "s": "adultstg2026:14.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No aspirin",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "Paracetamol; morphine IV (max 10 mg)",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Nimodipine 60 mg 4-hourly with neurosurgeon",
+     "s": "adultstg2026:14.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all with minimal LOC impairment",
+     "s": "adultstg2026:14.6",
+     "b": 1
+    }
+   ],
+   "branch": "SAH"
+  },
+  {
+   "dx": "Intracerebral haemorrhage",
+   "features": [
+    {
+     "t": "Headache, vomiting, low GCS, very high BP, anticoagulated",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No aspirin / anticoagulant",
+     "d": 1
+    },
+    {
+     "t": "BP > 220/120: lower to ~180/110 over 24 h",
+     "s": "adultstg2026:14.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If posterior fossa or deteriorating",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    }
+   ],
+   "branch": "ICH"
+  },
+  {
+   "dx": "Ischaemic stroke > 3 h, typical",
+   "features": [
+    {
+     "t": "Typical deficit, risk factors, no SAH features",
+     "s": "adultstg2026:14.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT if obtainable",
+     "d": 1
+    },
+    {
+     "t": "ECG, HGT, lipids, RPR, HIV",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aspirin 300 mg stat, then 150 mg daily",
+     "s": "adultstg2026:14.2",
+     "b": 1
+    },
+    {
+     "t": "Statin; VTE prophylaxis",
+     "s": "adultstg2026:14.2"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — rehab; Y if atypical",
+     "s": "adultstg2026:14.3"
+    }
+   ],
+   "branch": "No CT"
+  },
+  {
+   "dx": "Cardioembolic (AF, RHD, MI)",
+   "features": [
+    {
+     "t": "AF, murmur, recent MI",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG; echo → REFER",
+     "s": "adultstg2026:14.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aspirin now; warfarin from day 7–14 (≤ 21) after CT",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "No heparin bridging",
+     "s": "adultstg2026:14.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Echo / CT only"
+    }
+   ],
+   "branch": "Ischaemic"
+  },
+  {
+   "dx": "Hypoglycaemia (mimic)",
+   "features": [
+    {
+     "t": "Diabetic medicines, sweating, low HGT",
+     "s": "adultstg2026:23.32"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT",
+     "s": "adultstg2026:23.32",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dextrose 50% 50 mL IV; recheck",
+     "s": "adultstg2026:20.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ]
+  },
+  {
+   "dx": "Seizure with Todd's paresis (mimic)",
+   "features": [
+    {
+     "t": "Witnessed fit, deficit improving within hours",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Observe; CT if new-onset fit",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Status: lorazepam / phenytoin (STG 14.5)",
+     "s": "adultstg2026:14.15"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If new focal fit: CT",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Subdural / head injury",
+   "features": [
+    {
+     "t": "Fall, elderly, alcohol, anticoagulated, fluctuating GCS",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CT → REFER",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Switch to TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "CNS infection / HIV lesion",
+   "features": [
+    {
+     "t": "Fever, HIV, subacute, headache, seizures",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CrAg, LP only after CT excludes mass",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "HIV, RPR",
+     "s": "adultstg2026:14.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat per STG 14.8 (meningitis, toxo, TB, crypto)",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y for CT",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Young: syphilis / HIV vasculopathy / dissection",
+   "features": [
+    {
+     "t": "< 45 y, no risk factors",
+     "s": "adultstg2026:14.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "RPR, HIV, urine dipstick, ANF, RF",
+     "s": "adultstg2026:14.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aspirin + statin; treat cause",
+     "s": "adultstg2026:14.2"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — echo, Doppler, angiography",
+     "s": "adultstg2026:14.1"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "One pathway until the CT; then follow the matching branch row. No CT obtainable and > 3 h = 'no CT' row.",
+  "columns": {
+   "feed": "Feeds & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "GCS, pupils, limb power, speech: hourly × 24 h if GCS < 15 or bleed, else 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "BP and pulse 4-hourly (hourly if > 220/120)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT 6-hourly",
+    "d": 1
+   },
+   {
+    "t": "Temperature 4-hourly; treat fever",
+    "d": 1
+   },
+   {
+    "t": "Swallow checked before anything by mouth",
+    "s": "adultstg2026:14.1",
+    "b": 1
+   },
+   {
+    "t": "Turn 2-hourly, pressure care, bladder and bowel",
+    "s": "adultstg2026:14.1"
+   },
+   {
+    "t": "Head up 30° if drowsy",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival — before CT",
+    "lead": "Time last known well? ≤ 3 h → REFER for CT/thrombolysis now, no aspirin. Tick the working diagnosis on page 2 of the protocol book.",
+    "feed": [
+     {
+      "t": "NPO until the swallow test is passed",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Fail: NGT for feeds and medicines",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "IV fluid: NaCl 0.9% to keep hydrated, not dextrose-only",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "adultstg2026:23.32",
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, INR if on warfarin",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Lipids (ischaemic)",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Syphilis serology, HIV",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "CT brain — REFER if ≤ 3 h, atypical, SAH or posterior fossa",
+      "s": "adultstg2026:14.3",
+      "b": 1
+     },
+     {
+      "t": "CXR if aspiration suspected",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway"
+     },
+     {
+      "t": "Protect airway if unconscious",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Oxygen only if hypoxic",
+      "d": 1
+     },
+     {
+      "t": "Head up 30° if drowsy",
+      "d": 1
+     },
+     {
+      "h": "≤ 3 h from onset"
+     },
+     {
+      "t": "No aspirin; REFER for thrombolysis",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Alteplase 0.9 mg/kg (max 90 mg): 10% bolus, rest over 1 h — at receiving hospital",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "h": "BP"
+     },
+     {
+      "t": "Do not lower BP < 220/120",
+      "s": "adultstg2026:14.3",
+      "b": 1
+     },
+     {
+      "t": "> 220/120: lower to ~180/110 over 24 h (box)",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "t": "Withhold usual antihypertensives",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "< 4: dextrose 50% 50 mL IV",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "h": "Seizure"
+     },
+     {
+      "t": "Status epilepticus: STG 14.5 ladder",
+      "s": "adultstg2026:14.15"
+     },
+     {
+      "h": "Massive stroke / deteriorating"
+     },
+     {
+      "t": "Palliative care approach; discuss with family",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "label": "Ischaemic",
+    "phase": "After CT",
+    "feed": [
+     {
+      "t": "Per swallow result",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lipids",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Echo if AF / murmur / young → REFER",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aspirin 300 mg stat, then 150 mg daily (PO or NGT)",
+      "s": "adultstg2026:14.2",
+      "b": 1
+     },
+     {
+      "t": "Statin at night (box)",
+      "s": "adultstg2026:14.2"
+     },
+     {
+      "t": "VTE: rivaroxaban 10 mg daily while in hospital",
+      "s": "adultstg2026:2.25"
+     },
+     {
+      "t": "AF: plan warfarin day 7–14 (≤ 21), no bridging",
+      "s": "adultstg2026:14.2"
+     }
+    ]
+   },
+   {
+    "label": "ICH",
+    "phase": "After CT: haemorrhage",
+    "feed": [
+     {
+      "t": "Per swallow result",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR, FBC if on warfarin",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No aspirin, no anticoagulant, no heparin",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "BP > 220/120: lower to ~180/110",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "t": "Posterior fossa / deteriorating → REFER neurosurgery",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "t": "VTE: mechanical (legs) only",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "SAH",
+    "phase": "After CT / LP",
+    "feed": [
+     {
+      "t": "Normal hydration and electrolytes",
+      "s": "adultstg2026:14.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E (sodium) daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for angiography / neurosurgery",
+      "s": "adultstg2026:14.6",
+      "b": 1
+     },
+     {
+      "t": "No aspirin; avoid NSAIDs",
+      "s": "adultstg2026:14.5"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 4–6-hourly; morphine IV (max 10 mg)",
+      "s": "adultstg2026:14.5"
+     },
+     {
+      "t": "Nimodipine 60 mg 4-hourly × 21 days, with neurosurgeon",
+      "s": "adultstg2026:14.5"
+     },
+     {
+      "t": "Control BP",
+      "s": "adultstg2026:14.5"
+     }
+    ]
+   },
+   {
+    "label": "No CT",
+    "phase": "> 3 h, typical",
+    "feed": [
+     {
+      "t": "Per swallow result",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Clinical review for SAH / ICH features",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aspirin 300 mg stat, then 150 mg daily",
+      "s": "adultstg2026:14.2",
+      "b": 1
+     },
+     {
+      "t": "Not if SAH features (headache, stiff neck)",
+      "s": "adultstg2026:14.2"
+     },
+     {
+      "t": "Low GCS, vomiting, anticoagulated: treat as possible bleed — no aspirin until CT",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1 review",
+    "feed": [
+     {
+      "t": "Repeat swallow test; dietician",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Optimise hydration and nutrition",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results: lipids, RPR, HIV, U&E",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT 6-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Physiotherapy started",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Treat chest / urinary infection",
+      "s": "adultstg2026:14.2"
+     },
+     {
+      "t": "RPR+: meningovascular syphilis (STG 14.8.3)",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Oral diet if safe; else NGT feeds",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR if warfarin",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E if on IV fluids",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Young / unexplained: ANF, RF, ANCA, PTT, antiphospholipid Ab",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Plan rehabilitation; family meeting",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "label": "Day 3–6",
+    "phase": "Rehabilitate",
+    "feed": [
+     {
+      "t": "Diet as tolerated; NGT if still unsafe",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight weekly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Physio, OT, speech therapy",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Watch for aspiration, VTE, pressure sores",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Mobilise as able",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Restart BP medicine",
+    "feed": [
+     {
+      "t": "Diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E before restarting ACE-i / diuretic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Restart antihypertensives cautiously after 7 days",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "t": "AF + ischaemic CT: start warfarin day 7–14 (large infarct later, ≤ 21)",
+      "s": "adultstg2026:14.2"
+     }
+    ]
+   },
+   {
+    "label": "Day 8–13",
+    "phase": "Rehabilitate",
+    "feed": [
+     {
+      "t": "Diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR every 1–2 days until 2–3 (warfarin)",
+      "s": "adultstg2026:14.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Train carer: transfers, feeding, positioning",
+      "d": 1
+     },
+     {
+      "t": "Home assessment / assistive devices",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 14",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Feeding plan for home",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Final review of results",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Secondary prevention prescribed",
+      "s": "adultstg2026:14.2"
+     },
+     {
+      "t": "Referral letter to PHC + rehab",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · acute and secondary prevention",
+   "items": [
+    {
+     "h": "Ischaemic (or no CT, > 3 h, no SAH features)",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "Aspirin 300 mg stat, then 150 mg daily"
+    },
+    {
+     "h": "Statin — thrombotic stroke, any LDL",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "Rosuvastatin 10 mg at night"
+    },
+    {
+     "t": "On a PI: atorvastatin 10 mg; on amlodipine (no PI): simvastatin 10–20 mg"
+    },
+    {
+     "t": "Muscle pain: simvastatin 10 mg or consult",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "h": "AF / cardioembolic, no bleed on CT",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "Warfarin from day 7–14 (up to 21 if > 1/3 hemisphere); no heparin bridging; INR 2–3"
+    },
+    {
+     "h": "VTE prophylaxis — ischaemic, paralysed",
+     "s": "adultstg2026:2.25"
+    },
+    {
+     "t": "Rivaroxaban 10 mg daily in hospital; or enoxaparin 40 mg SC daily (20 mg if eGFR < 30); or UFH 5 000 u SC 12-hourly"
+    },
+    {
+     "h": "Thrombolysis (receiving hospital)",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Alteplase 0.9 mg/kg, max 90 mg; 10% bolus, rest over 1 h"
+    }
+   ]
+  },
+  {
+   "title": "BP · SAH · symptoms",
+   "items": [
+    {
+     "h": "BP in acute stroke",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Do not lower if < 220/120 in the first days"
+    },
+    {
+     "t": "> 220/120: lower to ~180/110 over 24 h"
+    },
+    {
+     "t": "Amlodipine 5 mg daily, or HCTZ 12.5 mg daily if fluid intake assured"
+    },
+    {
+     "t": "Stop usual antihypertensives; restart cautiously after 7 days"
+    },
+    {
+     "h": "SAH",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g/24 h)"
+    },
+    {
+     "t": "Morphine IV to a total max of 10 mg"
+    },
+    {
+     "t": "Nimodipine 60 mg 4-hourly × 21 days (with neurosurgeon)"
+    },
+    {
+     "t": "No NSAIDs"
+    },
+    {
+     "h": "Fever"
+    },
+    {
+     "t": "Paracetamol 1 g 6-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "GCS down by ≥ 2 or new / worse weakness",
+     "d": 1
+    },
+    {
+     "t": "Pupil change, severe headache, vomiting",
+     "d": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "BP > 220/120",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Coughing / choking with feeds — stop oral",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Fever, new chest or urinary infection",
+     "s": "adultstg2026:14.2"
+    },
+    {
+     "t": "HGT < 4",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "h": "Deterioration"
+    },
+    {
+     "t": "Ischaemic → think bleed / oedema: REFER for CT",
+     "d": 1
+    },
+    {
+     "t": "Massive stroke: palliative care approach",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Cardiac arrest → after ROSC: HIE (adult) pathway",
+     "to": "hie-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Medically stable, BP plan in place",
+    "s": "adultstg2026:14.3"
+   },
+   {
+    "t": "Swallow safe, or feeding plan taught",
+    "s": "adultstg2026:14.1"
+   },
+   {
+    "t": "Secondary prevention started",
+    "s": "adultstg2026:14.2"
+   },
+   {
+    "t": "Carer trained; home and assistive devices arranged",
+    "d": 1
+   },
+   {
+    "t": "Rehab (physio / OT / speech) referral done",
+    "s": "adultstg2026:14.1"
+   },
+   {
+    "t": "INR plan if on warfarin",
+    "s": "adultstg2026:14.4"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC / OPD at 2 weeks: BP, INR, adherence",
+    "d": 1
+   },
+   {
+    "t": "Rehabilitation as an outpatient",
+    "s": "adultstg2026:14.1"
+   },
+   {
+    "t": "Refer back: new deficit, seizures, swallowing problem, falls",
+    "d": 1
+   },
+   {
+    "t": "Chronic care: BP, diabetes, lipids, ART, smoking",
+    "s": "adultstg2026:14.2"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro-observation record — GCS, limbs, BP, swallow, pressure care",
+  "period": "one sheet per 24 hours",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "GCS, pupils, limbs, speech",
+      "d": 1
+     },
+     {
+      "t": "Hourly × 24 h if GCS < 15 or bleed, else 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "New deficit: note the TIME, call doctor",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "BP + pulse",
+    "items": [
+     {
+      "t": "4-hourly; hourly if > 220/120",
+      "d": 1
+     },
+     {
+      "t": "Do not give BP medicine unless prescribed",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "t": "Irregular pulse → tell doctor",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "h": "Swallow + feeds",
+    "items": [
+     {
+      "t": "Nothing by mouth until swallow passed",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Sit up for feeds / NGT feeds",
+      "d": 1
+     },
+     {
+      "t": "Choking or coughing → stop, call",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "h": "Care",
+    "items": [
+     {
+      "t": "Turn 2-hourly; pressure areas",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "HGT 6-hourly",
+      "d": 1
+     },
+     {
+      "t": "Urine / bowel; temperature",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: GCS down by ≥ 2, new or worse weakness, pupil change, seizure, BP > 220/120, choking on feeds, fever, HGT < 4, severe headache or vomiting.",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Lowest GCS",
+   "Highest BP",
+   "Fluids in (mL)",
+   "Urine out (mL)",
+   "Turns (n)"
+  ]
+ }
+}

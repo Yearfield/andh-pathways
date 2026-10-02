@@ -1,0 +1,933 @@
+{
+ "id": "sinusitis-adult",
+ "short": "Sinusitis (adult)",
+ "title": "Acute bacterial sinusitis and complicated sinusitis — adult",
+ "population": "Adult and adolescent ≥ 13 y with sinusitis; admitted if orbital, intracranial or fungal complication, or not responding",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Common cold < 5–7 days → no antibiotic",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Persistent allergic rhinitis → Adult STG 17.2",
+     "s": "adultstg2026:17.1",
+     "b": 1
+    },
+    {
+     "t": "< 13 y → Sinusitis (child)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Meningitis confirmed → meningitis / REFER",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Acute bacterial sinusitis =",
+   "items": [
+    {
+     "t": "Common cold deteriorating after 5–7 days",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Purulent nasal discharge, especially unilateral",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Pain and tenderness over one or more sinuses · headache",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Nasal obstruction · fever",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Age ____  T ____ °C  HIV ____  Glucose ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated → ADMIT = any one of",
+   "items": [
+    {
+     "t": "Orbit: pain on eye movement, visual loss, ophthalmoplegia, proptosis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Eyelid oedema and erythema (may be absent)",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Intracranial: meningitis, subdural empyema, brain abscess, venous sinus thrombosis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Necrotic nasal / palatal mucosa in diabetic / immunosuppressed (mucormycosis)",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Meningeal irritation · oedema over a sinus",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Fever > 48 h or poor response > 5 days",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / records",
+   "items": [
+    {
+     "t": "HIV status, CD4, ART",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Diabetes control",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Immunosuppression (steroids, chemo)",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Recurrent sinusitis",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Antibiotics already given",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Dental problem (upper teeth)",
+     "d": 1
+    },
+    {
+     "t": "On protease inhibitor (nasal steroid choice)",
+     "s": "adultstg2026:17.2"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Nose and face"
+    },
+    {
+     "t": "Duration; worse after 5–7 days",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Unilateral purulent discharge",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Facial pain, headache",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "h": "Eye"
+    },
+    {
+     "t": "Pain on eye movement · double vision",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Vision loss",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "h": "Brain"
+    },
+    {
+     "t": "Severe headache, vomiting",
+     "d": 1
+    },
+    {
+     "t": "Drowsiness, seizures, weakness",
+     "d": 1
+    },
+    {
+     "h": "Fungal"
+    },
+    {
+     "t": "Black nasal discharge / palate lesion",
+     "s": "adultstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Fever > 48 h",
+     "s": "phcstg2026:19.9",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "↓ consciousness",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "phcstg2026:19.9",
+     "k": "yn"
+    },
+    {
+     "t": "Glucose high / ketones",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Vomiting",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Eye"
+    },
+    {
+     "t": "Lid oedema / erythema",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Proptosis",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Ophthalmoplegia",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Visual acuity each eye",
+     "d": 1
+    },
+    {
+     "t": "Pain on eye movement",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Focal signs · cranial nerve palsy",
+     "d": 1
+    },
+    {
+     "t": "GCS",
+     "d": 1
+    },
+    {
+     "h": "Nose and mouth"
+    },
+    {
+     "t": "Necrotic nasal / palatal mucosa",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Oedema / tenderness over a sinus",
+     "s": "phcstg2026:19.9"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Eye check — orbital spread?",
+   "items": [
+    {
+     "t": "Proptosis or ophthalmoplegia → ceftriaxone, urgent REFER",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Pain on eye movement or visual loss → orbital cellulitis / abscess",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Visual loss can be irreversible — do not delay",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "VA R ____  L ____  Proptosis Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Neuro and fungal screen",
+   "items": [
+    {
+     "t": "Meningism, drowsy, focal signs → intracranial: ceftriaxone, REFER (CT)",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Diabetic / immunocompromised + necrotic mucosa → mucormycosis: urgent REFER",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Glucose, HIV test on arrival",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "GCS ____  Neck stiff Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Orbital cellulitis / abscess",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Meningitis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Brain abscess / subdural empyema",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Cavernous sinus thrombosis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Mucormycosis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Other fungal sinusitis",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Visual loss",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "DKA",
+     "d": 1
+    },
+    {
+     "t": "HIV / immunosuppression",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Dental abscess",
+     "d": 1
+    },
+    {
+     "t": "Sepsis",
+     "d": 1
+    },
+    {
+     "t": "Recurrent sinusitis",
+     "s": "phcstg2026:19.9"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Any orbital, intracranial or fungal complication → ceftriaxone 2 g IV 12-hourly and REFER (urgent: proptosis, ophthalmoplegia, mucormycosis)",
+   "s": "adultstg2026:17.3"
+  },
+  {
+   "t": "11. Uncomplicated → discharge on amoxicillin · admit only while starting IV antibiotic and arranging transfer / CT",
+   "s": "adultstg2026:17.3",
+   "d": 1
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Complicated sinusitis = start ceftriaxone and REFER · eye, neuro and nose check every shift while awaiting transfer · branch rows only if needed",
+  "columns": {
+   "feed": "Fluids, diet & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, BP, RR 4-hourly; hourly while neuro or eye signs",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Eye: lid swelling, proptosis, pain on eye movement, eye movements, vision — each shift",
+    "s": "adultstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "Headache, vomiting, drowsiness, neck stiffness, seizure",
+    "s": "phcstg2026:19.9",
+    "b": 1
+   },
+   {
+    "t": "Nose / palate: black or necrotic mucosa (mucormycosis)",
+    "s": "adultstg2026:17.3"
+   },
+   {
+    "t": "Ceftriaxone 12-hourly doses timed and signed",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Examine the eyes, the nervous system and the nose / palate first. Start ceftriaxone, then arrange referral and CT.",
+    "feed": [
+     {
+      "t": "Oral fluids; IV if vomiting / drowsy",
+      "d": 1
+     },
+     {
+      "t": "NaCl 0.9% nose drops",
+      "s": "phcstg2026:19.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Glucose (ketones if high)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown",
+      "s": "phcstg2026:19.8",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, blood culture",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotic"
+     },
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly and REFER",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h; max 15 mg/kg/dose)",
+      "s": "adultstg2026:17.3"
+     },
+     {
+      "h": "Classify — tick"
+     },
+     {
+      "t": "Orbital",
+      "s": "adultstg2026:17.3"
+     },
+     {
+      "t": "Intracranial",
+      "s": "adultstg2026:17.3"
+     },
+     {
+      "t": "Fungal (mucormycosis)",
+      "s": "adultstg2026:17.3"
+     },
+     {
+      "t": "Not responding, no complication",
+      "s": "phcstg2026:19.9"
+     }
+    ]
+   },
+   {
+    "label": "If orbital signs",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Head up",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Visual acuity 4-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly and REFER",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Proptosis",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Ophthalmoplegia",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Urgent REFER — visual loss can be irreversible",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If intracranial signs",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth if ↓ LOC",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CT brain — REFER",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly and REFER",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "After starting antibiotics: REFER for CT to a centre with ophthalmology / ENT / neurosurgery",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Seizure → seizure protocol",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If mucormycosis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Correct glucose / DKA",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Glucose, ketones, HIV, CD4",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Suspected mucormycosis, especially if immunocompromised",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly and REFER",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Urgent surgical debridement + antifungal at referral centre",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Awaiting transfer",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase culture",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly and REFER",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "After starting antibiotics: REFER for CT to a centre with ophthalmology / ENT / neurosurgery",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "New proptosis / ophthalmoplegia while waiting → upgrade to urgent",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If no complication",
+    "phase": "Not responding",
+    "feed": [
+     {
+      "t": "Fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fever > 48 h or poor response > 5 days on amoxicillin → REFER",
+      "s": "phcstg2026:19.9",
+      "b": 1
+     },
+     {
+      "t": "Recurrent → HIV test, refer",
+      "s": "phcstg2026:19.9"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Complicated — treatment",
+   "items": [
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly and REFER",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h; max 15 mg/kg/dose)",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "h": "REFER urgently"
+    },
+    {
+     "t": "Proptosis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Ophthalmoplegia",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Suspected mucormycosis, especially if immunocompromised",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "h": "REFER (non-urgent)"
+    },
+    {
+     "t": "After starting antibiotics: REFER for CT to a centre with ophthalmology / ENT / neurosurgery",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Suspected fungal sinusitis other than mucormycosis",
+     "s": "adultstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "title": "Uncomplicated — discharge regimen",
+   "items": [
+    {
+     "t": "Common cold deteriorating after 5–7 days",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Purulent nasal discharge, especially unilateral",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "h": "Treatment"
+    },
+    {
+     "t": "Amoxicillin 500 mg PO 8-hourly × 5 d",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy: azithromycin 500 mg PO daily × 3 d",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Oxymetazoline 0.05% 2 drops each nostril 6–8-hourly, max 5 d",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "AND / OR NaCl 0.9% nose drops, frequently, large volumes",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h; max 15 mg/kg/dose)",
+     "s": "adultstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New proptosis, double vision, ↓ vision",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Headache, vomiting, drowsiness, neck stiffness",
+     "s": "phcstg2026:19.9",
+     "b": 1
+    },
+    {
+     "t": "Black / necrotic nasal or palatal tissue",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Glucose high or ketones",
+     "d": 1
+    },
+    {
+     "h": "Note"
+    },
+    {
+     "t": "External signs of inflammation may be absent in orbital spread",
+     "s": "adultstg2026:17.3"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge (uncomplicated only) — all six must be met",
+  "items": [
+   {
+    "t": "No orbital signs",
+    "s": "adultstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "No neurological signs",
+    "s": "phcstg2026:19.9",
+    "b": 1
+   },
+   {
+    "t": "No necrotic mucosa",
+    "s": "adultstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "Afebrile ≤ 48 h",
+    "s": "phcstg2026:19.9"
+   },
+   {
+    "t": "Glucose controlled",
+    "d": 1
+   },
+   {
+    "t": "Knows when to return",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "PHC review if fever > 48 h or no response after 5 days",
+    "s": "phcstg2026:19.9",
+    "b": 1
+   },
+   {
+    "t": "Recurrent sinusitis → HIV test, refer",
+    "s": "phcstg2026:19.9"
+   },
+   {
+    "t": "Return at once: eye swelling, vision change, severe headache",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Allergic rhinitis → nasal steroid",
+    "s": "adultstg2026:17.2"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — eye, neuro and nose checks, ceftriaxone",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Eye",
+    "items": [
+     {
+      "t": "Eye: lid swelling, proptosis, pain on eye movement, eye movements, vision — each shift",
+      "s": "adultstg2026:17.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Neuro · nose",
+    "items": [
+     {
+      "t": "Headache, vomiting, drowsiness, neck stiffness, seizure",
+      "s": "phcstg2026:19.9",
+      "b": 1
+     },
+     {
+      "t": "Nose / palate: black or necrotic mucosa (mucormycosis)",
+      "s": "adultstg2026:17.3"
+     }
+    ]
+   },
+   {
+    "h": "Observations · drug",
+    "items": [
+     {
+      "t": "Temperature, pulse, BP, RR 4-hourly; hourly while neuro or eye signs",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 12-hourly doses timed and signed",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "new proptosis, double vision or vision worse",
+    "s": "adultstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "headache, vomiting, drowsiness, neck stiffness",
+    "s": "phcstg2026:19.9",
+    "b": 1
+   },
+   {
+    "t": "black / necrotic nasal or palate tissue",
+    "s": "adultstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "glucose high",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Ceftriaxone doses given / due",
+   "Highest T (°C)",
+   "Glucose range",
+   "New eye / neuro sign (Y/N)"
+  ]
+ }
+}

@@ -1,0 +1,1188 @@
+{
+ "id": "hie-child",
+ "short": "HIE (child)",
+ "title": "Hypoxic-ischaemic brain injury — child (post-arrest, drowning, hanging)",
+ "population": "Children 1 month to 12 years after cardiac arrest, drowning, choking or hanging",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Newborn after birth asphyxia → HIE (neonate) pathway",
+     "to": "hie-neonate",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Age 13 years or older → HIE (adult) pathway",
+     "to": "hie-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Head injury (fall, dive, assault) → TBI (child) pathway — also if hanging/dive with trauma",
+     "to": "tbi-paeds",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Needs intubation → RSI (child) procedure card",
+     "to": "rsi-paeds",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Poisoning as cause → poisoning pathways (OP, opioids)",
+     "to": "op",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — event + encephalopathy",
+   "items": [
+    {
+     "t": "Hypoxic event: cardiac arrest, drowning, choking, hanging, smoke",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "ROSC after CPR, or rescued not breathing",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Altered consciousness or seizures after the event",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "No other cause (glucose normal, no head injury)",
+     "d": 1
+    },
+    {
+     "t": "Event time ____ · CPR ____ min · ROSC time ____ · Water: cold / warm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Grade — worst GCS after ROSC †",
+   "items": [
+    {
+     "t": "Grade 4: absent brainstem reflexes (fixed pupils, no gag, apnoea)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade 3: GCS ≤ 8 — coma",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade 2: GCS 9–12",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade 1: GCS 13–15, alert",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Seizures (any grade)",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "t": "SA STG has no grading; GCS bands used",
+     "d": 1,
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet",
+   "items": [
+    {
+     "t": "Immunisations up to date"
+    },
+    {
+     "t": "Known heart disease / arrhythmia",
+     "d": 1
+    },
+    {
+     "t": "Epilepsy and treatment",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Previous ALTE / near-miss",
+     "d": 1
+    },
+    {
+     "t": "HIV exposed / status"
+    },
+    {
+     "t": "Prematurity, chronic lung disease",
+     "d": 1
+    },
+    {
+     "t": "Milestones (baseline)",
+     "d": 1
+    },
+    {
+     "t": "Previous child-protection concern",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Event"
+    },
+    {
+     "t": "What happened, who found the child"
+    },
+    {
+     "t": "Time submerged / down ____ min"
+    },
+    {
+     "t": "Bystander CPR — when started"
+    },
+    {
+     "t": "Shocks, adrenaline doses"
+    },
+    {
+     "t": "Time to ROSC"
+    },
+    {
+     "h": "Cause clues"
+    },
+    {
+     "t": "Fall / dive (neck injury)"
+    },
+    {
+     "t": "Toxin, medicine, paraffin"
+    },
+    {
+     "t": "Fever, illness before"
+    },
+    {
+     "t": "Choking on food / object"
+    },
+    {
+     "h": "Supervision",
+     "d": 1
+    },
+    {
+     "t": "Who was supervising"
+    },
+    {
+     "t": "Story fits development"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Caregiver present"
+    },
+    {
+     "t": "Other children at risk",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and GCS",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "paedstg2026:1.12",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / irregular breathing",
+     "s": "paedstg2026:13.49",
+     "k": "yn"
+    },
+    {
+     "t": "SBP below 5th centile for age",
+     "s": "paedstg2026:1.12",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill ≥ 3 s",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on oxygen",
+     "s": "paedstg2026:1.11",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "GCS",
+     "d": 1
+    },
+    {
+     "t": "≤ 8",
+     "k": "yn"
+    },
+    {
+     "t": "9–12",
+     "k": "yn"
+    },
+    {
+     "t": "13–14",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS E ____ V ____ M ____"
+    },
+    {
+     "t": "Pupils size / reaction"
+    },
+    {
+     "t": "Posturing",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Seizures, subtle",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Fontanelle (infant)",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Crepitations (aspiration, pulmonary oedema)",
+     "d": 1
+    },
+    {
+     "t": "Stridor, foreign body",
+     "d": 1
+    },
+    {
+     "h": "Circulation"
+    },
+    {
+     "t": "Cold peripheries, weak pulses",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Liver size (overload)",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "h": "Injury"
+    },
+    {
+     "t": "Neck: hanging marks, C-spine",
+     "d": 1
+    },
+    {
+     "t": "Head injury",
+     "d": 1
+    },
+    {
+     "t": "Bruises / burns (NAI)",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 2.6 mmol/L: dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Raised ICP: keep 6–10 mmol/L",
+     "s": "paedstg2026:13.50"
+    },
+    {
+     "t": "Then hourly × 6 h, then 4-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas (VBG)",
+   "items": [
+    {
+     "t": "pH ____ · pCO₂ ____ · lactate ____ · Na ____ · K ____",
+     "k": "value"
+    },
+    {
+     "t": "Avoid hypo- and hypercapnia",
+     "s": "paedstg2026:1.11"
+    },
+    {
+     "t": "Raised ICP: PaCO₂ 4.5–5 kPa",
+     "s": "paedstg2026:13.50"
+    },
+    {
+     "t": "Na: keep upper-normal, up to 150 mmol/L",
+     "s": "paedstg2026:13.50"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or feed",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Not breathing well",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Hypothermia (cold water)",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "t": "Raised ICP / herniation",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Aspiration / pulmonary oedema",
+     "d": 1
+    },
+    {
+     "t": "C-spine injury (dive, hanging)",
+     "d": 1
+    },
+    {
+     "t": "Poisoning",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "t": "Arrhythmia / heart disease",
+     "d": 1
+    },
+    {
+     "t": "Non-accidental injury",
+     "d": 1
+    },
+    {
+     "t": "Sepsis / meningitis",
+     "s": "paedstg2026:13.50"
+    },
+    {
+     "t": "Electrolyte disorder",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "t": "Status epilepticus",
+     "s": "paedstg2026:13.7"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HIE AFTER ARREST (any grade) → stabilise + REFER to PICU"
+  },
+  {
+   "t": "11. NO ARREST, ALERT (grade 1) → ADMIT and observe ≥ 8 h"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours from ROSC (or rescue). Grade branch rows apply only to the matching child.",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "GCS, pupils, HR, BP, RR, SpO₂ hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Temperature hourly — treat fever aggressively",
+    "s": "paedstg2026:1.12",
+    "b": 1
+   },
+   {
+    "t": "HGT hourly × 6 h, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Seizures (subtle too)",
+    "s": "paedstg2026:13.5"
+   },
+   {
+    "t": "Fluid in / urine out (aim ≥ 1 mL/kg/h)",
+    "s": "paedstg2026:1.16"
+   },
+   {
+    "t": "Head midline, up 30°",
+    "s": "paedstg2026:13.50"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "ROSC / arrival",
+    "lead": "Post-resuscitation care: normoxia, normocapnia, normal BP, no fever, normal glucose. Write ROSC time.",
+    "feed": [
+     {
+      "t": "NPO",
+      "d": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% or Ringer's 20 mL/kg rapidly; review; up to 40 mL/kg",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "Then maintenance NaCl 0.9% / 5% dextrose; do not overhydrate",
+      "s": "paedstg2026:13.50"
+     },
+     {
+      "t": "Watch for overload: RR, crepitations, liver up",
+      "s": "paedstg2026:1.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "paedstg2026:7.31",
+      "b": 1
+     },
+     {
+      "t": "VBG: pH, pCO₂, lactate, Na, K",
+      "s": "paedstg2026:1.12",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, Ca, Mg",
+      "s": "paedstg2026:1.12",
+      "b": 1
+     },
+     {
+      "t": "Blood culture if febrile",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG (arrhythmia)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR (aspiration, oedema)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Paracetamol / toxin screen if suspected",
+      "d": 1
+     },
+     {
+      "t": "CT brain — REFER",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway / breathing"
+     },
+     {
+      "t": "Oxygen: avoid hypoxia and hyperoxia",
+      "s": "paedstg2026:1.11"
+     },
+     {
+      "t": "Not protecting airway / GCS ≤ 8 → intubate: RSI (child) card",
+      "d": 1,
+      "to": "rsi-paeds",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Avoid hypo- and hypercapnia",
+      "s": "paedstg2026:1.11"
+     },
+     {
+      "t": "C-spine control if dive / hanging",
+      "d": 1
+     },
+     {
+      "h": "Circulation"
+     },
+     {
+      "t": "Keep SBP ≥ 5th centile for age; may need fluids / inotropes",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Shock after 40 mL/kg → inotropes = REFER ICU",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "h": "Temperature"
+     },
+     {
+      "t": "Treat fever aggressively; avoid hyperthermia",
+      "s": "paedstg2026:1.12",
+      "b": 1
+     },
+     {
+      "t": "Cold drowning: rewarm; keep normothermic",
+      "d": 1
+     },
+     {
+      "h": "Seizure ≥ 5 min"
+     },
+     {
+      "t": "Lorazepam 0.1 mg/kg IV (max 4 mg) or midazolam 0.5 mg/kg buccal; then phenytoin 20 mg/kg (box)",
+      "s": "paedstg2026:13.8"
+     },
+     {
+      "h": "Raised ICP (posturing, unequal pupils, Cushing)"
+     },
+     {
+      "t": "NaCl 5% 2 mL/kg IV over 30 min",
+      "s": "paedstg2026:13.50",
+      "b": 1
+     },
+     {
+      "t": "Or mannitol 250 mg/kg over 30–60 min; max 2 doses without specialist",
+      "s": "paedstg2026:13.50"
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "< 2.6: dextrose 10% 2–5 mL/kg IV",
+      "s": "paedstg2026:7.31"
+     },
+     {
+      "h": "Pain / sedation"
+     },
+     {
+      "t": "Analgesia as needed",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly",
+      "s": "paedstg2026:13.35"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If GRADE 3–4 (GCS ≤ 8)",
+    "feed": [
+     {
+      "t": "Orogastric tube to decompress",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG hourly if ventilated",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pupils every 15–30 min",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER to PICU now",
+      "s": "paedstg2026:1.11",
+      "b": 1
+     },
+     {
+      "t": "Secure airway (RSI card)",
+      "d": 1
+     },
+     {
+      "t": "Targeted temperature management after prolonged arrest — at PICU",
+      "s": "paedstg2026:23.24"
+     },
+     {
+      "t": "Grade 4 / prolonged arrest: senior discussion of prognosis with family",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If GRADE 2 (GCS 9–12)",
+    "feed": [
+     {
+      "t": "NPO; maintenance fluids",
+      "s": "paedstg2026:13.50"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS, pupils every 30 min",
+      "d": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER to PICU / high care",
+      "s": "paedstg2026:1.11",
+      "b": 1
+     },
+     {
+      "t": "Head-up 30°, treat seizures",
+      "s": "paedstg2026:13.50"
+     },
+     {
+      "t": "Falls to GCS ≤ 8 → grade 3 row"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "GRADE 1 or no arrest (near-drowning, choking)",
+    "feed": [
+     {
+      "t": "Oral fluids once alert and safe swallow",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ continuously; CXR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT, VBG once",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Arrest with ROSC: REFER (STG) even if alert",
+      "s": "paedstg2026:1.11"
+     },
+     {
+      "t": "No arrest, alert, normal SpO₂: observe ≥ 8 h at ANDH",
+      "d": 1
+     },
+     {
+      "t": "Foreign body suspected: STG 1.1.7",
+      "s": "paedstg2026:1.14"
+     }
+    ]
+   },
+   {
+    "label": "1–2 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Maintenance; no hypotonic fluid",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat VBG, Na, K",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E if shocked",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phone PICU; send notes, drug times, gas results",
+      "d": 1
+     },
+     {
+      "t": "Treat cause: sepsis, toxin, arrhythmia",
+      "s": "paedstg2026:1.11"
+     }
+    ]
+   },
+   {
+    "label": "2–6 h",
+    "phase": "Awaiting transfer",
+    "feed": [
+     {
+      "t": "Maintenance fluids; urine ≥ 1 mL/kg/h",
+      "s": "paedstg2026:1.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Neuro-obs hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Any deterioration → escalate box"
+     },
+     {
+      "t": "Near-drowning: new cough, crackles, falling SpO₂ → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Observation review",
+    "feed": [
+     {
+      "t": "Normal diet if alert",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ on air, CXR if symptoms",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No arrest, alert, SpO₂ normal on air, chest clear: may go home (criteria)",
+      "d": 1
+     },
+     {
+      "t": "Otherwise keep and reassess / REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "If transfer delayed",
+    "feed": [
+     {
+      "t": "Start enteral feeds if safe; nutrition",
+      "s": "paedstg2026:1.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca, Mg, glucose",
+      "s": "paedstg2026:1.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Correct glucose and electrolytes",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Keep normothermic",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Re-phone PICU; document",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Ongoing",
+    "feed": [
+     {
+      "t": "Enteral feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Analgesia; plan rehabilitation needs",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Social worker / child protection if needed",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Back-referred / recovering",
+    "feed": [
+     {
+      "t": "Oral diet; swallow check",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro review daily",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rehabilitation: physio, OT, speech",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Water-safety / first-aid counselling for family",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Seizures · raised ICP — doses",
+   "items": [
+    {
+     "h": "Status epilepticus (STG 13.2)",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Lorazepam 0.1 mg/kg IV/IO (max 4 mg), or midazolam 0.25 mg/kg IV (max 10 mg), or diazepam 0.25 mg/kg IV (max 10 mg)"
+    },
+    {
+     "t": "No IV: midazolam 0.1 mg/kg IM or 0.5 mg/kg buccal; diazepam 0.5 mg/kg PR"
+    },
+    {
+     "t": "Repeat once after 5 min"
+    },
+    {
+     "t": "Then phenytoin 20 mg/kg IV over 20 min (ECG) or phenobarbital 20 mg/kg IV over 5 min",
+     "s": "paedstg2026:13.9"
+    },
+    {
+     "t": "Refractory → REFER ICU",
+     "s": "paedstg2026:13.10"
+    },
+    {
+     "h": "Raised ICP",
+     "s": "paedstg2026:13.50"
+    },
+    {
+     "t": "NaCl 5% 2 mL/kg IV over 30 min (check Na), or mannitol 250 mg/kg over 30–60 min"
+    },
+    {
+     "t": "No more than 2 doses without a specialist"
+    },
+    {
+     "t": "Head midline, up 30°; PaCO₂ 4.5–5 kPa; Na up to 150; glucose 6–10"
+    }
+   ]
+  },
+  {
+   "title": "Post-resuscitation · stopping CPR",
+   "items": [
+    {
+     "h": "Post-resuscitation principles",
+     "s": "paedstg2026:1.11"
+    },
+    {
+     "t": "Admit / refer to high or intensive care"
+    },
+    {
+     "t": "Normoxia; no hypo- or hypercapnia"
+    },
+    {
+     "t": "SBP ≥ 5th centile for age",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "t": "No fever; nutrition; glucose and electrolytes; analgesia; rehabilitation",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "h": "Stopping resuscitation",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "t": "Consider stopping if incurable disease, or asystole > 20 min"
+    },
+    {
+     "t": "Go on longer: hypothermia and drowning, poisoning, neurotoxic snakebite"
+    },
+    {
+     "h": "Lumbar puncture",
+     "s": "paedstg2026:13.46"
+    },
+    {
+     "t": "Not with GCS < 9, posturing, unequal pupils, or unstable"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "GCS down by ≥ 2",
+     "d": 1
+    },
+    {
+     "t": "New unequal pupil or posturing",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Seizure",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Fever",
+     "s": "paedstg2026:1.12"
+    },
+    {
+     "t": "SpO₂ falling, new crackles",
+     "d": 1
+    },
+    {
+     "t": "HGT < 2.6",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Urine < 1 mL/kg/h",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "t": "Cushing: BP up, HR down",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "h": "Re-arrest"
+    },
+    {
+     "t": "CPR per STG 1.1.4; after ROSC restart this chart at 0 h",
+     "s": "paedstg2026:1.11"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (no-arrest observation, or back-referred) — all",
+  "items": [
+   {
+    "t": "Back to baseline behaviour, GCS normal for age",
+    "d": 1
+   },
+   {
+    "t": "SpO₂ normal on room air, chest clear",
+    "d": 1
+   },
+   {
+    "t": "Feeding normally",
+    "d": 1
+   },
+   {
+    "t": "Observed ≥ 8 h after the event (no arrest)",
+    "d": 1
+   },
+   {
+    "t": "Safe home; supervision discussed",
+    "d": 1
+   },
+   {
+    "t": "Follow-up booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return: breathing fast, cough, fever, drowsy, seizure (secondary drowning)",
+    "d": 1
+   },
+   {
+    "t": "Clinic review in 1 week; neurodevelopment check",
+    "d": 1
+   },
+   {
+    "t": "Post-arrest survivors: rehabilitation and neurodevelopmental follow-up",
+    "s": "paedstg2026:1.12"
+   },
+   {
+    "t": "Water safety, CPR teaching for caregivers",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro-observation record — GCS, pupils, vitals, temperature, glucose",
+  "period": "one sheet per 24 hours from ROSC",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "GCS (paeds verbal < 5 y) hourly",
+      "d": 1
+     },
+     {
+      "t": "Pupils R / L hourly",
+      "d": 1
+     },
+     {
+      "t": "Seizures incl. subtle",
+      "s": "paedstg2026:13.5"
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "HR, BP, RR, SpO₂ hourly",
+      "d": 1
+     },
+     {
+      "t": "Temperature hourly; fever → call",
+      "s": "paedstg2026:1.12"
+     },
+     {
+      "t": "Head up 30°, midline",
+      "s": "paedstg2026:13.50"
+     }
+    ]
+   },
+   {
+    "h": "HGT",
+    "items": [
+     {
+      "t": "Hourly × 6 h, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "< 2.6 → call",
+      "s": "paedstg2026:7.31"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "In / out hourly",
+      "d": 1
+     },
+     {
+      "t": "Urine aim ≥ 1 mL/kg/h",
+      "s": "paedstg2026:1.16"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: GCS down by ≥ 2, new unequal pupil, seizure, T ≥ 38 °C, falling SpO₂, HGT < 2.6, urine < 1 mL/kg/h, BP up with HR down.",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Fluid in (mL)",
+   "Urine (mL/kg/h)",
+   "Lowest GCS",
+   "Max T (°C)"
+  ]
+ }
+}

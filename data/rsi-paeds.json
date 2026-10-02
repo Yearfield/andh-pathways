@@ -7,7 +7,7 @@
  "hospital": "Albert Nzula District Hospital",
  "level": "District",
  "updated": "2026-10-01",
- "regimen": "STG paediatric RSI agents",
+ "regimen": "STG paediatric RSI agents (chains I–V)",
  "card_title": "RAPID SEQUENCE INDUCTION — CHILD · CASUALTY",
  "card_sub": "1 month – 12 years · STG paediatric agents",
  "comp_title": "SUXAMETHONIUM COMPLICATIONS",
@@ -251,8 +251,155 @@
    "n": 3,
    "title": "GIVE THE DRUGS IN THIS ORDER",
    "time": "T − 3 → T 0",
-   "subtitle": "sedation always before the paralytic",
+   "subtitle": "sedation always before the paralytic; pick ONE chain by condition",
    "actions": [],
+   "pre": {
+    "m": "a",
+    "drug": "ATROPINE (optional)",
+    "when": "T − 3 min",
+    "dose": "0.02 mg/kg IV (min 0.1, max 0.5)",
+    "adjusted": "if sux, infant, septic/late shock, or before ketamine",
+    "s": "stg-paed:23.3"
+   },
+   "sequences": [
+    {
+     "id": "I",
+     "label": "Ketamine",
+     "note": "unstable, asthma, any state",
+     "cells": [
+      {
+       "m": "b",
+       "drug": "KETAMINE",
+       "when": "T 0",
+       "dose": "1–2 mg/kg IV",
+       "adjusted": "60 s / lasts 5–10 min",
+       "s": "stg-paed:23.3"
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–2 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
+       "s": "stg-paed:23.3"
+      }
+     ]
+    },
+    {
+     "id": "II",
+     "label": "Propofol",
+     "note": "stable, head injury, seizure",
+     "cells": [
+      {
+       "m": "b",
+       "drug": "PROPOFOL",
+       "when": "T 0",
+       "dose": "1–3.5 mg/kg IV",
+       "adjusted": "can produce hypotension",
+       "s": "stg-paed:23.3"
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–2 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
+       "s": "stg-paed:23.3"
+      }
+     ]
+    },
+    {
+     "id": "III",
+     "label": "Etomidate",
+     "note": "unstable, head injury",
+     "cells": [
+      {
+       "m": "b",
+       "drug": "ETOMIDATE",
+       "when": "T 0",
+       "dose": "0.3 mg/kg IV (max 20 mg)",
+       "adjusted": "adrenal suppression; caution in sepsis",
+       "s": "stg-paed:23.3"
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–2 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
+       "s": "stg-paed:23.3"
+      }
+     ]
+    },
+    {
+     "id": "IV",
+     "label": "Fentanyl",
+     "note": "3 mcg/kg stable · 1 unstable",
+     "cells": [
+      {
+       "m": "b",
+       "drug": "FENTANYL",
+       "when": "T 0",
+       "dose": "3 mcg/kg IV (1 if unstable)",
+       "adjusted": "give over 30–60 s",
+       "s": "stg-paed:23.2"
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–2 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
+       "s": "stg-paed:23.3"
+      }
+     ]
+    },
+    {
+     "id": "V",
+     "label": "Midazolam",
+     "note": "only if nothing else",
+     "cells": [
+      {
+       "m": "b",
+       "drug": "MIDAZOLAM",
+       "when": "T 0",
+       "dose": "0.2–0.3 mg/kg IV (max 10 mg)",
+       "adjusted": "not recommended routinely",
+       "s": "stg-paed:23.3"
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–2 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
+       "s": "stg-paed:23.3"
+      }
+     ]
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Normotensive",
+     "then": "chain I, II, III or IV (V only if nothing else)",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "if": "Hypotensive / hypovolaemic",
+     "then": "chain I or III; chain IV at 1 mcg/kg is an option in instability",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "if": "Head injury / status epilepticus",
+     "then": "chain II, I or III; hypotensive → chain I or III",
+     "s": "stg-paed:23.2"
+    },
+    {
+     "if": "Status asthmaticus",
+     "then": "chain I first (STG table also lists propofol, notes list etomidate)",
+     "s": "stg-paed:23.2"
+    }
+   ],
    "sequence": [
     {
      "m": "a",
@@ -264,11 +411,11 @@
     },
     {
      "m": "b",
-     "drug": "INDUCTION AGENT",
+     "drug": "KETAMINE",
      "when": "T 0",
-     "dose": "choose ONE ↓ by condition",
-     "adjusted": "ketamine 1–2 · etomidate 0.3 · propofol 1–3.5 mg/kg",
-     "s": "stg-paed:23.2"
+     "dose": "1–2 mg/kg IV",
+     "adjusted": "60 s / lasts 5–10 min",
+     "s": "stg-paed:23.3"
     },
     {
      "m": "c",
@@ -277,28 +424,6 @@
      "dose": "1–2 mg/kg IV push",
      "adjusted": "contra-indicated: ROCURONIUM 1 mg/kg IV",
      "s": "stg-paed:23.3"
-    }
-   ],
-   "decisions": [
-    {
-     "if": "Normotensive",
-     "then": "ketamine, propofol, fentanyl or etomidate (midazolam only if nothing else)",
-     "s": "stg-paed:23.2"
-    },
-    {
-     "if": "Hypotensive / hypovolaemic",
-     "then": "ketamine or etomidate (fentanyl 1 mcg/kg is an option in instability)",
-     "s": "stg-paed:23.2"
-    },
-    {
-     "if": "Head injury / status epilepticus",
-     "then": "propofol, ketamine or etomidate; hypotensive → ketamine or etomidate",
-     "s": "stg-paed:23.2"
-    },
-    {
-     "if": "Status asthmaticus",
-     "then": "ketamine first (STG table also lists propofol, notes list etomidate)",
-     "s": "stg-paed:23.2"
     }
    ]
   },
@@ -405,7 +530,7 @@
     "s": "stg-paed:23.3"
    },
    {
-    "m": "b",
+    "m": "I",
     "name": "Ketamine",
     "conc": "—",
     "dose": "1–2 mg/kg IV",
@@ -416,18 +541,7 @@
     "s": "stg-paed:23.3"
    },
    {
-    "m": "b",
-    "name": "Etomidate",
-    "conc": "—",
-    "dose": "0.3 mg/kg IV (max 20 mg)",
-    "when": "T 0",
-    "onset": "15–45 s / 10–12 min",
-    "adjusted": "",
-    "watch": "Adrenal suppression; sepsis",
-    "s": "stg-paed:23.3"
-   },
-   {
-    "m": "b",
+    "m": "II",
     "name": "Propofol",
     "conc": "—",
     "dose": "1–3.5 mg/kg IV",
@@ -438,7 +552,18 @@
     "s": "stg-paed:23.3"
    },
    {
-    "m": "b",
+    "m": "III",
+    "name": "Etomidate",
+    "conc": "—",
+    "dose": "0.3 mg/kg IV (max 20 mg)",
+    "when": "T 0",
+    "onset": "15–45 s / 10–12 min",
+    "adjusted": "",
+    "watch": "Adrenal suppression; sepsis",
+    "s": "stg-paed:23.3"
+   },
+   {
+    "m": "IV",
     "name": "Fentanyl",
     "conc": "—",
     "dose": "3 mcg/kg (1 if unstable) IV",
@@ -449,7 +574,7 @@
     "s": "stg-paed:23.2"
    },
    {
-    "m": "b",
+    "m": "V",
     "name": "Midazolam (last resort)",
     "conc": "—",
     "dose": "0.2–0.3 mg/kg IV (max 10)",
@@ -460,7 +585,7 @@
     "s": "stg-paed:23.3"
    },
    {
-    "m": "c",
+    "m": "I–V",
     "name": "Suxamethonium",
     "conc": "—",
     "dose": "1–2 mg/kg IV",
@@ -472,7 +597,7 @@
     "b": 1
    },
    {
-    "m": "c alt",
+    "m": "I–V alt",
     "name": "Rocuronium (if sux contra.)",
     "conc": "—",
     "dose": "1 mg/kg IV",
@@ -518,7 +643,7 @@
      ]
     },
     {
-     "m": "b",
+     "m": "I",
      "drug": "Ketamine",
      "basis": "1–2 mg/kg",
      "unit": "mg",
@@ -533,22 +658,7 @@
      ]
     },
     {
-     "m": "b",
-     "drug": "Etomidate",
-     "basis": "0.3 mg/kg, max 20",
-     "unit": "mg",
-     "s": "stg-paed:23.3",
-     "vals": [
-      "1.5",
-      "3",
-      "4.5",
-      "6",
-      "9",
-      "12"
-     ]
-    },
-    {
-     "m": "b",
+     "m": "II",
      "drug": "Propofol",
      "basis": "1–3.5 mg/kg",
      "unit": "mg",
@@ -563,7 +673,22 @@
      ]
     },
     {
-     "m": "b",
+     "m": "III",
+     "drug": "Etomidate",
+     "basis": "0.3 mg/kg, max 20",
+     "unit": "mg",
+     "s": "stg-paed:23.3",
+     "vals": [
+      "1.5",
+      "3",
+      "4.5",
+      "6",
+      "9",
+      "12"
+     ]
+    },
+    {
+     "m": "IV",
      "drug": "Fentanyl",
      "basis": "3 mcg/kg (1 if unstable)",
      "unit": "mcg",
@@ -578,7 +703,7 @@
      ]
     },
     {
-     "m": "b",
+     "m": "V",
      "drug": "Midazolam",
      "basis": "0.2–0.3 mg/kg, max 10",
      "unit": "mg",
@@ -593,7 +718,7 @@
      ]
     },
     {
-     "m": "c",
+     "m": "I–V",
      "drug": "Suxamethonium",
      "basis": "1–2 mg/kg",
      "unit": "mg",
@@ -608,7 +733,7 @@
      ]
     },
     {
-     "m": "c alt",
+     "m": "I–V alt",
      "drug": "Rocuronium",
      "basis": "1 mg/kg",
      "unit": "mg",

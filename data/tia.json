@@ -1,0 +1,998 @@
+{
+ "id": "tia",
+ "short": "TIA",
+ "title": "Transient ischaemic attack",
+ "population": "Adults and adolescents ≥ 13 years",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Deficit still present, or returns and persists → STROKE pathway",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Onset ≤ 3 h and deficit persisting → STROKE pathway: thrombolysis referral",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Head injury before the symptoms → TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Hypoglycaemia, seizure (Todd's), migraine aura → treat the mimic",
+     "s": "adultstg2026:14.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Sudden focal neurological deficit (brain, spinal cord or retina)",
+     "s": "adultstg2026:14.4",
+     "b": 1
+    },
+    {
+     "t": "Fully resolved — usually within 1 hour",
+     "s": "adultstg2026:14.4",
+     "b": 1
+    },
+    {
+     "t": "No hypoglycaemia (HGT done)",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Not explained by seizure or migraine",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Onset ____ : ____ · Resolved ____ : ____ · Duration ____ min",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "ABCD2 score — ≥ 4 = high risk",
+   "items": [
+    {
+     "t": "Age ≥ 60 y — 1",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "BP ≥ 140/90 at presentation — 1",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Speech disturbance without weakness — 1",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Unilateral weakness — 2",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Diabetes — 1",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Duration 10–59 min — 1 · ≥ 1 h — 2",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Total ____ /7",
+     "k": "value"
+    },
+    {
+     "t": "≥ 4: stroke risk ≥ 4% this week — urgent",
+     "s": "adultstg2026:14.4",
+     "b": 1
+    },
+    {
+     "t": "AF, crescendo TIAs (≥ 2 in a week) or ANY RED FLAG (§9)",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Hypertension and control",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Diabetes",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Atrial fibrillation / RHD / valve",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Previous TIA or stroke",
+     "d": 1
+    },
+    {
+     "t": "On aspirin / warfarin / statin",
+     "d": 1
+    },
+    {
+     "t": "HIV — on ART (PI?)",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Syphilis serology",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Smoking, alcohol",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Event"
+    },
+    {
+     "t": "Weakness face / arm / leg"
+    },
+    {
+     "t": "Speech or language"
+    },
+    {
+     "t": "Loss of vision one eye"
+    },
+    {
+     "t": "Double vision, vertigo, ataxia"
+    },
+    {
+     "t": "Onset time and duration"
+    },
+    {
+     "t": "How many episodes"
+    },
+    {
+     "h": "Mimics",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Headache with aura (migraine)"
+    },
+    {
+     "t": "Jerking, tongue bite, confusion after (seizure)"
+    },
+    {
+     "t": "Sweating, diabetic medicine (hypoglycaemia)"
+    },
+    {
+     "h": "Risk factors"
+    },
+    {
+     "t": "Palpitations (AF)",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Young, no risk factor: HIV, syphilis, drugs",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "h": "TB / HIV screen"
+    },
+    {
+     "t": "Cough, fever, weight loss, night sweats"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Lives alone; driving",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside normal adult range or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Irregular pulse",
+     "s": "adultstg2026:14.1",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Classification thresholds"
+    },
+    {
+     "t": "BP ≥ 140/90 (ABCD2)",
+     "s": "adultstg2026:14.4",
+     "k": "yn"
+    },
+    {
+     "t": "BP > 220/120",
+     "s": "adultstg2026:14.3",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro (now)"
+    },
+    {
+     "t": "Face, arm, leg power — normal?"
+    },
+    {
+     "t": "Speech / language normal"
+    },
+    {
+     "t": "Visual fields"
+    },
+    {
+     "t": "Coordination / gait"
+    },
+    {
+     "t": "Any residual deficit → STROKE pathway",
+     "b": 1
+    },
+    {
+     "h": "CVS",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Irregular pulse (AF)"
+    },
+    {
+     "t": "Murmur (RHD, endocarditis)"
+    },
+    {
+     "t": "Carotid bruit (absence does not exclude stenosis)"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Signs of HIV / syphilis",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Fundi",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 4 mmol/L: treat — hypoglycaemia mimics TIA",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "Diabetic: then 6-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "ECG",
+   "items": [
+    {
+     "t": "Rhythm on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "AF / flutter: cardioembolic → warfarin (side 2)",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Acute ischaemia: ACS pathway",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Normal ECG: repeat if palpitations",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Deficit still present",
+     "b": 1
+    },
+    {
+     "t": "Decreased consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizure",
+     "b": 1
+    },
+    {
+     "t": "BP > 220/120",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "AF / cardioembolic source",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Crescendo TIAs",
+     "d": 1
+    },
+    {
+     "t": "Severe headache / neck stiffness (SAH)",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Head injury",
+     "d": 1
+    },
+    {
+     "t": "Endocarditis (fever + murmur)",
+     "d": 1
+    },
+    {
+     "t": "Meningitis / HIV-related lesion",
+     "d": 1
+    },
+    {
+     "t": "Already anticoagulated",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HIGH-RISK TIA (ABCD2 ≥ 4) → ADMIT, urgent work-up; REFER for CT / Doppler / echo"
+  },
+  {
+   "t": "11. ADMIT (ABCD2 < 4: start treatment, work-up within 7 days)"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours/days from arrival. Any deficit that returns and persists = stroke: switch pathway.",
+  "columns": {
+   "feed": "Diet & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Neuro check (GCS, face, arm, speech) 4-hourly — new deficit = stroke pathway",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "BP and pulse (regular?) 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT 6-hourly if diabetic",
+    "d": 1
+   },
+   {
+    "t": "Mobilise; falls precautions",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Is the deficit fully gone? If not, or onset ≤ 3 h with deficit → STROKE pathway now.",
+    "feed": [
+     {
+      "t": "Normal diet if swallow normal",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Swallow test: 10 mL water",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "IV fluid only if dehydrated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "adultstg2026:23.32",
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, glucose / HbA1c",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Lipid profile",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Syphilis serology (RPR)",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick (haematuria, proteinuria)",
+      "s": "adultstg2026:14.1",
+      "b": 1
+     },
+     {
+      "t": "CT brain — REFER (urgent if ABCD2 ≥ 4)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antiplatelet (no AF)"
+     },
+     {
+      "t": "Aspirin 150 mg daily",
+      "s": "adultstg2026:14.4",
+      "b": 1
+     },
+     {
+      "t": "Start once haemorrhage / SAH features absent",
+      "s": "adultstg2026:14.2"
+     },
+     {
+      "h": "AF / cardioembolic"
+     },
+     {
+      "t": "Warfarin 5 mg daily — INR at 48 h, then every 1–2 days to INR 2–3",
+      "s": "adultstg2026:14.4"
+     },
+     {
+      "t": "CT before starting anticoagulation",
+      "d": 1
+     },
+     {
+      "h": "Lipids (all)"
+     },
+     {
+      "t": "Statin — choice on side 2",
+      "s": "adultstg2026:14.4"
+     },
+     {
+      "h": "BP"
+     },
+     {
+      "t": "Manage per STG 3.6 hypertension",
+      "s": "adultstg2026:14.5"
+     },
+     {
+      "t": "Do not drop BP fast in the first hours",
+      "d": 1
+     },
+     {
+      "h": "Mimics"
+     },
+     {
+      "t": "HGT < 4: treat",
+      "s": "adultstg2026:23.32"
+     },
+     {
+      "t": "Seizure / migraine: manage as such",
+      "s": "adultstg2026:14.4"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro + BP check",
+      "d": 1
+     },
+     {
+      "t": "Review ECG / rhythm strip",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New or returning deficit → STROKE pathway",
+      "to": "stroke",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Confirm aspirin given",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Overnight",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro + BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Pulse irregular → ECG",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check results: Hb, glucose, U&E",
+      "d": 1
+     },
+     {
+      "t": "Start statin at night",
+      "s": "adultstg2026:14.4"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Results",
+    "feed": [
+     {
+      "t": "Normal diet; low salt / fat advice",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lipids, RPR, HIV, HbA1c results",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "INR at 48 h if warfarin started",
+      "s": "adultstg2026:14.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "RPR positive: consider meningovascular syphilis (STG 14.8.3)",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "HIV positive → start ART",
+      "d": 1
+     },
+     {
+      "t": "Young (< 45) / unexplained: ANF, RF, PTT, echo, carotid Doppler — REFER",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Decide",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR (if on warfarin)",
+      "s": "adultstg2026:14.4",
+      "b": 1
+     },
+     {
+      "t": "CT result, if referred",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Murmur / AF / young: echo → REFER",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "Anterior TIA, surgical candidate: carotid Doppler → REFER",
+      "s": "adultstg2026:14.1"
+     },
+     {
+      "t": "BP control plan; restart / adjust medicines",
+      "s": "adultstg2026:14.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Diet advice",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR every 1–2 days until 2–3",
+      "s": "adultstg2026:14.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Stop-smoking advice",
+      "d": 1
+     },
+     {
+      "t": "Teach FAST warning signs",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Prevention · doses",
+   "items": [
+    {
+     "h": "No AF / not cardioembolic",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Aspirin 150 mg daily"
+    },
+    {
+     "h": "Cardioembolic (AF, RHD)",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Warfarin 5 mg daily; INR after 48 h, then every 1–2 days to INR 2–3"
+    },
+    {
+     "t": "Adjust with STG Appendix II tables",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "h": "Statin — all patients"
+    },
+    {
+     "t": "Simvastatin 40 mg at night",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "On a protease inhibitor: atorvastatin 10 mg at night",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "On amlodipine (no PI): simvastatin 10–20 mg at night",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Muscle pain: simvastatin 10 mg, or consult specialist",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "h": "Hypertension"
+    },
+    {
+     "t": "Control per STG 3.6",
+     "s": "adultstg2026:14.5"
+    }
+   ]
+  },
+  {
+   "title": "Work-up · refer for",
+   "items": [
+    {
+     "h": "At ANDH"
+    },
+    {
+     "t": "HGT, ECG, FBC, U&E, lipids, glucose/HbA1c",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Syphilis serology, HIV, urine dipstick",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "h": "REFER for"
+    },
+    {
+     "t": "CT brain (urgent if ABCD2 ≥ 4)",
+     "d": 1
+    },
+    {
+     "t": "Echo: murmur, AF, young",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Carotid Doppler: anterior TIA, fit for surgery",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Young / no risk factor: ANF, RF, ANCA, PTT, antiphospholipid Ab (women)",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Absence of a carotid bruit does not exclude stenosis",
+     "s": "adultstg2026:14.1",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New weakness, speech or vision problem",
+     "d": 1
+    },
+    {
+     "t": "Drop in GCS",
+     "d": 1
+    },
+    {
+     "t": "BP > 220/120",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Irregular pulse, chest pain",
+     "d": 1
+    },
+    {
+     "t": "HGT < 4",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "Severe headache, neck stiffness",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "h": "Switch pathway"
+    },
+    {
+     "t": "Deficit returns and persists → STROKE pathway (time of onset!)",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "ECG ischaemia / chest pain → ACS pathway",
+     "to": "acs-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No deficit; no new events",
+    "d": 1
+   },
+   {
+    "t": "Aspirin or warfarin started",
+    "s": "adultstg2026:14.4"
+   },
+   {
+    "t": "Statin started",
+    "s": "adultstg2026:14.4"
+   },
+   {
+    "t": "BP plan in place",
+    "s": "adultstg2026:14.5"
+   },
+   {
+    "t": "Results reviewed (RPR, HIV, lipids, glucose)",
+    "s": "adultstg2026:14.1"
+   },
+   {
+    "t": "Imaging done or booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic in 1 week; INR every 1–2 days until 2–3, then per Appendix II",
+    "s": "adultstg2026:14.4"
+   },
+   {
+    "t": "Refer back at once for any new deficit — it is a stroke until proven otherwise",
+    "d": 1
+   },
+   {
+    "t": "Chronic care: BP, diabetes, lipids, ART, smoking",
+    "s": "adultstg2026:14.5"
+   },
+   {
+    "t": "No driving for 1 month",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro-observation record — FAST, GCS, BP, pulse",
+  "period": "one sheet per 24 hours",
+  "params": [
+   {
+    "h": "Neuro (FAST) 4-hourly",
+    "items": [
+     {
+      "t": "Face: smile symmetric?",
+      "d": 1
+     },
+     {
+      "t": "Arm: hold both up 10 s",
+      "d": 1
+     },
+     {
+      "t": "Speech: clear, right words?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "BP + pulse 4-hourly",
+    "items": [
+     {
+      "t": "Write BP; is the pulse regular?",
+      "d": 1
+     },
+     {
+      "t": "Irregular pulse → tell doctor (ECG)",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   },
+   {
+    "h": "HGT",
+    "items": [
+     {
+      "t": "On arrival",
+      "s": "adultstg2026:23.32"
+     },
+     {
+      "t": "6-hourly if diabetic",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Record also",
+    "items": [
+     {
+      "t": "Headache, seizure, chest pain"
+     },
+     {
+      "t": "Aspirin / warfarin given"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor at once for: BP > 220/120, HGT < 4, severe headache",
+    "b": 1
+   },
+   {
+    "t": "— and for: any new face, arm, leg, speech or vision problem (note the TIME), GCS drop, irregular pulse, chest pain.",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "New events (n)",
+   "Highest BP",
+   "Lowest HGT"
+  ]
+ }
+}

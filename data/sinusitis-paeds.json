@@ -1,0 +1,943 @@
+{
+ "id": "sinusitis-paeds",
+ "short": "Sinusitis (child)",
+ "title": "Acute bacterial rhinosinusitis and complicated sinusitis — child",
+ "population": "Child 28 days – 12 years with sinusitis; admitted if periorbital swelling, orbital or intracranial signs, or not responding",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Common cold < 10 days, improving → no antibiotic",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "Allergic rhinitis (itch, sneeze, recurrent) → Paeds STG 17.10",
+     "s": "paedstg2026:17.10",
+     "b": 1
+    },
+    {
+     "t": "Eye infection without sinusitis → Eye chapter",
+     "s": "paedstg2026:16.1",
+     "b": 1
+    },
+    {
+     "t": "Neonate < 28 days → neonatal sepsis",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Acute bacterial rhinosinusitis = URTI with",
+   "items": [
+    {
+     "t": "Persistent: nasal discharge, facial pain or daytime cough > 10 days without improvement",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "OR worsening: new or worse discharge, cough, pain or fever after initial improvement",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "OR severe onset: fever ≥ 39 °C + pain + purulent nasal discharge ≥ 3 consecutive days",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "Uncommon < 5 y (sinuses not fully developed)",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Age ____  Wt ____ kg  T ____ °C",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated → ADMIT = any one of",
+   "items": [
+    {
+     "t": "Periorbital swelling and fever",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "Orbital: chemosis, proptosis, vision loss, ophthalmoplegia",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Meningeal irritation: neck stiffness, Kernig, Brudzinski",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Raised ICP: hypertension, bradycardia, papilloedema, headache",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Brain: focal signs, ataxia, seizures, ↓ consciousness",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Oedema over a sinus",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Fever > 48 h or poor response > 5 days",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB) / records",
+   "items": [
+    {
+     "t": "HIV status (recurrent sinusitis)",
+     "s": "phcstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin in the last 30 days",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "Recurrent episodes",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Allergic rhinitis / asthma",
+     "s": "paedstg2026:17.10"
+    },
+    {
+     "t": "Immunisations (Hib, PCV)",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "paedstg2026:25.4"
+    },
+    {
+     "t": "Diabetes / immunosuppression",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Previous orbital cellulitis",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Nose and face"
+    },
+    {
+     "t": "Duration of nasal discharge / cough",
+     "s": "paedstg2026:17.11"
+    },
+    {
+     "t": "Facial pain / pressure",
+     "s": "paedstg2026:17.11"
+    },
+    {
+     "t": "Purulent discharge, unilateral",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "h": "Eye"
+    },
+    {
+     "t": "Eyelid swelling, red eye",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Pain on eye movement · double vision",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "Vision change",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "h": "Brain"
+    },
+    {
+     "t": "Headache, vomiting",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Drowsiness, behaviour change, seizures",
+     "s": "paedstg2026:17.12"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age norms (IMCI) or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Fever ≥ 39 °C",
+     "s": "paedstg2026:17.11",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia for age",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension + bradycardia (raised ICP)",
+     "s": "paedstg2026:17.12",
+     "k": "yn"
+    },
+    {
+     "t": "↓ consciousness",
+     "s": "paedstg2026:17.12",
+     "k": "yn"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "paedstg2026:17.12",
+     "k": "yn"
+    },
+    {
+     "t": "Vomiting",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Signs of shock",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Eye"
+    },
+    {
+     "t": "Lid oedema / erythema only",
+     "s": "paedstg2026:16.11"
+    },
+    {
+     "t": "Chemosis · proptosis",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Ophthalmoplegia",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Visual acuity · colour vision",
+     "s": "paedstg2026:16.11"
+    },
+    {
+     "t": "Bilateral oedema",
+     "s": "paedstg2026:16.11"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Kernig · Brudzinski",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Papilloedema",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Focal signs · ataxia · paresis",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "h": "Face"
+    },
+    {
+     "t": "Tenderness / oedema over a sinus",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Purulent nasal discharge",
+     "s": "paedstg2026:17.11"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Eye check — preseptal or orbital?",
+   "items": [
+    {
+     "t": "Lid swelling only, eye exam NORMAL → preseptal cellulitis",
+     "s": "paedstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Proptosis, ophthalmoplegia, pain on movement, ↓ vision → ORBITAL: REFER urgently",
+     "s": "paedstg2026:17.13",
+     "b": 1
+    },
+    {
+     "t": "Vision cannot be assessed → treat as orbital (REFER)",
+     "s": "paedstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "VA R ____  L ____  Proptosis Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Neuro screen — intracranial spread?",
+   "items": [
+    {
+     "t": "Meningism, raised ICP or brain signs → CT brain / sinuses / orbits: REFER",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Blood (and pus) culture before ceftriaxone",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "CSF only if no raised ICP signs",
+     "d": 1
+    },
+    {
+     "t": "GCS / AVPU ____  Neck stiff Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Orbital cellulitis / abscess",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Meningitis",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "Brain abscess / subdural empyema",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Cavernous sinus thrombosis",
+     "s": "adultstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Vision loss",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Raised ICP",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Seizures",
+     "s": "paedstg2026:17.12"
+    },
+    {
+     "t": "Sepsis",
+     "d": 1
+    },
+    {
+     "t": "Mucormycosis (necrotic nasal / palate mucosa)",
+     "s": "adultstg2026:17.3"
+    },
+    {
+     "t": "HIV",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Dental abscess",
+     "d": 1
+    },
+    {
+     "t": "Nasal foreign body (unilateral)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Orbital signs, intracranial signs, or vision cannot be assessed → ceftriaxone and REFER urgently (CT)",
+   "s": "paedstg2026:17.13"
+  },
+  {
+   "t": "11. Uncomplicated → discharge on amoxicillin · periorbital / preseptal or not responding → ADMIT, IV ceftriaxone",
+   "s": "paedstg2026:17.12"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "IV ceftriaxone, reassess at 24 h and 48–72 h · eye and neuro check every shift · 14 days in total · branch rows only if needed",
+  "columns": {
+   "feed": "Fluids, feeds & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, RR, BP 4-hourly; hourly while neuro or eye signs",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Eye: lid swelling, proptosis, pain on eye movement, visual acuity, colour vision — each shift",
+    "s": "paedstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "Headache, vomiting, drowsiness, neck stiffness, seizure",
+    "s": "paedstg2026:17.12",
+    "b": 1
+   },
+   {
+    "t": "Rising BP with slowing pulse = raised ICP",
+    "s": "paedstg2026:17.12"
+   },
+   {
+    "t": "Ceftriaxone dose timed and signed",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Examine the eye and the nervous system before anything else. Orbital or brain signs mean urgent referral.",
+    "feed": [
+     {
+      "t": "Oral fluids; IV if vomiting / drowsy",
+      "d": 1
+     },
+     {
+      "t": "Steam inhalation; NaCl nose drops",
+      "s": "paedstg2026:17.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture before ceftriaxone",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Pus MCS if any",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if recurrent",
+      "s": "phcstg2026:19.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotic"
+     },
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "≤ 1 month old: cefotaxime 50 mg/kg IV 6–8-hourly",
+      "s": "paedstg2026:16.11"
+     },
+     {
+      "h": "Penicillin allergy"
+     },
+     {
+      "t": "Severe infection: 3rd-generation cephalosporin unless immediate hypersensitivity (anaphylaxis)",
+      "s": "paedstg2026:25.4"
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+      "s": "paedstg2026:17.3"
+     },
+     {
+      "h": "Classify — tick"
+     },
+     {
+      "t": "Preseptal",
+      "s": "paedstg2026:16.11"
+     },
+     {
+      "t": "Orbital",
+      "s": "paedstg2026:17.12"
+     },
+     {
+      "t": "Intracranial",
+      "s": "paedstg2026:17.12"
+     }
+    ]
+   },
+   {
+    "label": "If orbital signs",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Head up",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CT orbits / sinuses — REFER",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Gross proptosis, ophthalmoplegia, falling visual acuity or colour vision",
+      "s": "paedstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Vision cannot be assessed · bilateral oedema",
+      "s": "paedstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Urgent REFER (eye / orbital spread)",
+      "s": "paedstg2026:17.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If intracranial signs",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth if ↓ LOC",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CT brain — REFER",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Glucose",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Central signs: drowsiness, vomiting, headache, seizures, cranial nerve lesion",
+      "s": "paedstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Urgent REFER (intracranial spread)",
+      "s": "paedstg2026:17.13",
+      "b": 1
+     },
+     {
+      "t": "Seizure → seizure protocol",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24-h review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase culture",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No improvement or worse at 24 h → REFER",
+      "s": "paedstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Preseptal confirmed (eye normal) → oral amox/clav",
+      "s": "paedstg2026:16.11"
+     },
+     {
+      "t": "Responding and tolerating oral: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g); 14 days in total",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "48–72-h review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture result",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess; adjust to culture or if no improvement within 48–72 h",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Swinging fever not resolving within 36 h → REFER",
+      "s": "paedstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Responding and tolerating oral: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g); 14 days in total",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–7",
+    "phase": "Oral",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Responding and tolerating oral: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g); 14 days in total",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Discharge assessment (box below)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Complicated — antibiotics",
+   "items": [
+    {
+     "t": "Ceftriaxone 100 mg/kg IV once daily",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "t": "≤ 1 month: cefotaxime 50 mg/kg IV 6–8-hourly",
+     "s": "paedstg2026:16.11"
+    },
+    {
+     "t": "Responding and tolerating oral: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g); 14 days in total",
+     "s": "paedstg2026:17.12",
+     "b": 1
+    },
+    {
+     "h": "Penicillin allergy"
+    },
+    {
+     "t": "Severe infection: 3rd-generation cephalosporin unless immediate hypersensitivity (anaphylaxis)",
+     "s": "paedstg2026:25.4"
+    },
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "title": "Uncomplicated — discharge regimen",
+   "items": [
+    {
+     "t": "Persistent: nasal discharge, facial pain or daytime cough > 10 days without improvement",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "OR worsening: new or worse discharge, cough, pain or fever after initial improvement",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "OR severe onset: fever ≥ 39 °C + pain + purulent nasal discharge ≥ 3 consecutive days",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "h": "Treatment"
+    },
+    {
+     "t": "Amoxicillin 45 mg/kg/dose PO 12-hourly × 10 d (max 1.5 g 12-hourly)",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "Poor response / amoxicillin in last 30 d: amox/clav PO 45 mg/kg/dose 12-hourly × 5–10 d (max 1.5 g)",
+     "s": "paedstg2026:17.11",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy: azithromycin 10 mg/kg PO daily × 3 d",
+     "s": "phcstg2026:19.8"
+    },
+    {
+     "t": "Steam inhalation; NaCl 0.9% nose drops",
+     "s": "paedstg2026:17.11"
+    },
+    {
+     "t": "> 5 y: oxymetazoline 0.025% 2 drops each nostril 6–8-hourly, max 5 d",
+     "s": "phcstg2026:19.9"
+    }
+   ]
+  },
+  {
+   "title": "REFER urgently if",
+   "items": [
+    {
+     "t": "Gross proptosis, ophthalmoplegia, falling visual acuity or colour vision",
+     "s": "paedstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Vision cannot be assessed · bilateral oedema",
+     "s": "paedstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Central signs: drowsiness, vomiting, headache, seizures, cranial nerve lesion",
+     "s": "paedstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "No improvement / worse at 24 h · swinging fever > 36 h",
+     "s": "paedstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Orbital cellulitis from chronic sinusitis (multiple abscesses)",
+     "s": "paedstg2026:16.11"
+    },
+    {
+     "t": "Spread to eye / orbit or brain",
+     "s": "paedstg2026:17.13",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No orbital or neurological signs",
+    "s": "paedstg2026:17.13",
+    "b": 1
+   },
+   {
+    "t": "Lid swelling settling",
+    "d": 1
+   },
+   {
+    "t": "Afebrile ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "Taking oral amox/clav",
+    "s": "paedstg2026:17.12",
+    "b": 1
+   },
+   {
+    "t": "Knows: 14 days in total",
+    "s": "paedstg2026:17.12"
+   },
+   {
+    "t": "Knows eye / neuro danger signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "PHC review in 2–3 days",
+    "d": 1
+   },
+   {
+    "t": "Return at once: eye swelling worse, vision change, headache, vomiting",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Recurrent sinusitis → HIV test, refer",
+    "s": "phcstg2026:19.8"
+   },
+   {
+    "t": "Allergic rhinitis → nasal steroid",
+    "s": "paedstg2026:17.10"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — eye and neuro checks, ceftriaxone",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Eye",
+    "items": [
+     {
+      "t": "Eye: lid swelling, proptosis, pain on eye movement, visual acuity, colour vision — each shift",
+      "s": "paedstg2026:16.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "Headache, vomiting, drowsiness, neck stiffness, seizure",
+      "s": "paedstg2026:17.12",
+      "b": 1
+     },
+     {
+      "t": "Rising BP with slowing pulse = raised ICP",
+      "s": "paedstg2026:17.12"
+     }
+    ]
+   },
+   {
+    "h": "Observations · drug",
+    "items": [
+     {
+      "t": "Temperature, pulse, RR, BP 4-hourly; hourly while neuro or eye signs",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone dose timed and signed",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "eye bulging, cannot move the eye, or vision worse",
+    "s": "paedstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "headache, vomiting, drowsy or seizure",
+    "s": "paedstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "BP rising with slow pulse",
+    "s": "paedstg2026:17.12",
+    "b": 1
+   },
+   {
+    "t": "swelling now both eyes",
+    "s": "paedstg2026:16.11"
+   }
+  ],
+  "totals": [
+   "Ceftriaxone doses given / due",
+   "Highest T (°C)",
+   "Lid swelling: better / same / worse",
+   "Neuro sign (Y/N)"
+  ]
+ }
+}

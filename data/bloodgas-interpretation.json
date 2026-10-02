@@ -1,0 +1,465 @@
+{
+  "id": "bloodgas-interpretation",
+  "type": "calculator",
+  "short": "ABG/VBG",
+  "title": "Blood Gas — Interpretation & Calculations",
+  "population": "adult",
+  "age_range": "adult values; same approach in children",
+  "setting": "casualty / ward",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-02",
+  "tags": [
+    "blood gas",
+    "ABG",
+    "VBG",
+    "acid-base",
+    "anion gap",
+    "Winter's",
+    "delta ratio",
+    "osmolar gap",
+    "potassium",
+    "sodium",
+    "DKA",
+    "toxic alcohol",
+    "calculation",
+    "adult"
+  ],
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "LITFL",
+      "title": "LITFL: Rogers J, Cadogan M. Blood Gas Interpretation (infographic 09/2024; page updated 26 Jun 2026), CC BY-NC-SA 4.0",
+      "type": "online",
+      "country": "intl",
+      "url": "https://litfl.com/acid-base-disorders/"
+    },
+    {
+      "id": "LITFL-AG",
+      "title": "LITFL: Nickson C. Anion Gap (updated 3 Nov 2020)",
+      "type": "online",
+      "country": "intl",
+      "url": "https://litfl.com/anion-gap/"
+    },
+    {
+      "id": "LITFL-VBG",
+      "title": "LITFL: Nickson C. VBG versus ABG (updated 3 Nov 2020)",
+      "type": "online",
+      "country": "intl",
+      "url": "https://litfl.com/vbg-versus-abg/"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "t": "pH: acidaemia <7.35 · alkalaemia >7.45",
+      "d": true
+    },
+    {
+      "n": 2,
+      "t": "Primary process: pCO₂ vs HCO₃⁻ — which one explains the pH?",
+      "d": true
+    },
+    {
+      "n": 3,
+      "t": "Compensation: measured vs expected — different = mixed disorder",
+      "d": true
+    },
+    {
+      "n": 4,
+      "t": "Metabolic acidosis → AG (correct for albumin) → delta ratio",
+      "d": true
+    },
+    {
+      "n": 5,
+      "t": "↑AG unexplained → osmolar gap (toxic alcohols)",
+      "d": true
+    },
+    {
+      "n": 6,
+      "t": "Correct K⁺ for pH and Na⁺ for glucose before acting on them",
+      "d": true
+    }
+  ],
+  "ranges": [
+    {
+      "param": "pH",
+      "abg": "7.35–7.45",
+      "vbg": "≈ 0.03–0.04 lower",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "param": "pCO₂",
+      "abg": "35–45 mmHg (4.7–6.0 kPa)",
+      "vbg": "≈ +6 mmHg; screen only",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "param": "HCO₃⁻",
+      "abg": "22–26 mmol/L",
+      "vbg": "≈ ABG (±1.5)",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "param": "pO₂",
+      "abg": "80–100 (10.6–13.3 kPa), air",
+      "vbg": "useless — use SpO₂",
+      "s": null,
+      "d": true
+    },
+    {
+      "param": "AG",
+      "abg": "≈12 (8–16) mmol/L",
+      "vbg": "same",
+      "s": "HOSP:19.33",
+      "d": false
+    }
+  ],
+  "chem": [
+    {
+      "param": "Na⁺",
+      "range": "135–145",
+      "units": "mmol/L",
+      "s": "HOSP:7.14",
+      "d": false
+    },
+    {
+      "param": "K⁺",
+      "range": "3.5–5.0",
+      "units": "mmol/L",
+      "note": ">6.0 emerg.",
+      "s": "HOSP:7.11",
+      "d": true
+    },
+    {
+      "param": "Cl⁻",
+      "range": "98–107",
+      "units": "mmol/L",
+      "s": null,
+      "d": true
+    },
+    {
+      "param": "Glucose",
+      "range": "3.9–5.5 fasting",
+      "units": "mmol/L",
+      "note": "hypo <4",
+      "s": "HOSP:23.32",
+      "d": true
+    },
+    {
+      "param": "Lactate",
+      "range": "<2",
+      "units": "mmol/L",
+      "note": "shock >2",
+      "s": "HOSP:23.34",
+      "d": false
+    }
+  ],
+  "primary": [
+    {
+      "key": "RAc",
+      "name": "Respiratory acidosis",
+      "crit": "pH <7.35 + pCO₂ >45 mmHg (>6.0 kPa)",
+      "col": "#1d4ed8",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "MAc",
+      "name": "Metabolic acidosis",
+      "crit": "pH <7.35 + HCO₃⁻ <22 mmol/L",
+      "col": "#c2410c",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "RAl",
+      "name": "Respiratory alkalosis",
+      "crit": "pH >7.45 + pCO₂ <35 mmHg (<4.7 kPa)",
+      "col": "#4b5563",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "MAl",
+      "name": "Metabolic alkalosis",
+      "crit": "pH >7.45 + HCO₃⁻ >26 mmol/L",
+      "col": "#15803d",
+      "s": "LITFL",
+      "d": true
+    }
+  ],
+  "compensation": [
+    {
+      "for": "MAc",
+      "t": "Winter's: exp. pCO₂ = 1.5 × HCO₃⁻ + 8 (±2)",
+      "hint": "≈ first 2 decimals of pH",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "for": "MAl",
+      "t": "Exp. pCO₂ = 0.7 × HCO₃⁻ + 20 (±5)",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "for": "RAc",
+      "t": "Per 10 mmHg ↑pCO₂: HCO₃⁻ ↑1 acute · ↑4 chronic",
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "for": "RAl",
+      "t": "Per 10 mmHg ↓pCO₂: HCO₃⁻ ↓2 acute · ↓5 chronic",
+      "s": "LITFL",
+      "d": true
+    }
+  ],
+  "formulas": [
+    {
+      "id": "anion_gap",
+      "name": "Anion gap",
+      "expr": "AG = Na⁺ − (Cl⁻ + HCO₃⁻)",
+      "units": "mmol/L",
+      "normal": "8–16 (4–12 on ISE analysers)",
+      "vars": {
+        "Na": "mmol/L",
+        "Cl": "mmol/L",
+        "HCO3": "mmol/L"
+      },
+      "s": "HOSP:8.14",
+      "c": "STG normal: '±12' (8.14) and '8–16' (19.33); LITFL 4–12 on ion-selective electrode analysers"
+    },
+    {
+      "id": "ag_albumin_corrected",
+      "name": "AG corrected for albumin",
+      "expr": "AGcorr = AG + 0.25 × (40 − albumin g/L)",
+      "notes": "+2.5 per 10 g/L ↓",
+      "vars": {
+        "AG": "mmol/L",
+        "albumin": "g/L"
+      },
+      "s": "LITFL-AG",
+      "d": true
+    },
+    {
+      "id": "delta_ratio",
+      "name": "Delta ratio",
+      "expr": "Δ ratio = (AG − 12) / (24 − HCO₃⁻)",
+      "vars": {
+        "AG": "mmol/L",
+        "HCO3": "mmol/L"
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "winters",
+      "card": false,
+      "name": "Winter's formula",
+      "expr": "Expected pCO₂ = 1.5 × HCO₃⁻ + 8 (±2)",
+      "units": "mmHg",
+      "vars": {
+        "HCO3": "mmol/L"
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "met_alk_pco2",
+      "card": false,
+      "name": "Expected pCO₂ in metabolic alkalosis",
+      "expr": "Expected pCO₂ = 0.7 × HCO₃⁻ + 20 (±5)",
+      "units": "mmHg",
+      "vars": {
+        "HCO3": "mmol/L"
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "resp_acidosis_hco3",
+      "card": false,
+      "name": "Expected HCO₃⁻ in respiratory acidosis",
+      "expr": "HCO₃⁻ = 24 + k × (pCO₂ − 40)/10; k = 1 acute, 4 chronic",
+      "units": "mmol/L",
+      "vars": {
+        "pCO2": "mmHg",
+        "chronicity": "acute|chronic"
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "resp_alkalosis_hco3",
+      "card": false,
+      "name": "Expected HCO₃⁻ in respiratory alkalosis",
+      "expr": "HCO₃⁻ = 24 − k × (40 − pCO₂)/10; k = 2 acute, 5 chronic",
+      "units": "mmol/L",
+      "vars": {
+        "pCO2": "mmHg",
+        "chronicity": "acute|chronic"
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "k_corrected_ph",
+      "name": "K⁺ corrected for pH",
+      "expr": "K⁺corr = K⁺ − 0.6 × (7.4 − pH)/0.1",
+      "notes": "per 0.1 pH",
+      "units": "mmol/L",
+      "vars": {
+        "K": "mmol/L",
+        "pH": ""
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "na_corrected_glucose",
+      "name": "Na⁺ corrected for hyperglycaemia",
+      "expr": "Na⁺corr = Na⁺ + 0.3 × (glucose − 5.6)",
+      "notes": "≈ 1.6 per 5.6 ↑glucose",
+      "units": "mmol/L",
+      "vars": {
+        "Na": "mmol/L",
+        "glucose": "mmol/L"
+      },
+      "s": "PAED:23.12"
+    },
+    {
+      "id": "osmolarity_calc",
+      "name": "Calculated osmolarity",
+      "expr": "Osm = 2 × (Na⁺ + K⁺) + glucose + urea",
+      "notes": "+ 1.25 × EtOH if ethanol",
+      "units": "mOsm/L",
+      "vars": {
+        "Na": "mmol/L",
+        "K": "mmol/L",
+        "glucose": "mmol/L",
+        "urea": "mmol/L"
+      },
+      "s": "HOSP:8.14"
+    },
+    {
+      "id": "osmolar_gap",
+      "name": "Osmolar gap",
+      "expr": "OG = measured − calculated osm",
+      "normal": "<10",
+      "units": "mOsm",
+      "vars": {
+        "measured": "mOsm/kg",
+        "calculated": "mOsm/L"
+      },
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "id": "mmhg_kpa",
+      "card": false,
+      "name": "Unit conversion",
+      "expr": "kPa = mmHg × 0.133",
+      "s": null,
+      "d": true
+    }
+  ],
+  "delta_bands": [
+    {
+      "min": null,
+      "max": 0.4,
+      "label": "<0.4",
+      "t": "Pure NAGMA",
+      "level": "amber",
+      "d": true,
+      "s": "LITFL"
+    },
+    {
+      "min": 0.4,
+      "max": 0.8,
+      "label": "0.4–0.8",
+      "t": "NAGMA + HAGMA",
+      "level": "orange",
+      "d": true,
+      "s": "LITFL"
+    },
+    {
+      "min": 0.8,
+      "max": 2.0,
+      "label": "0.8–2.0",
+      "t": "Pure HAGMA",
+      "level": "red",
+      "d": true,
+      "s": "LITFL"
+    },
+    {
+      "min": 2.0,
+      "max": null,
+      "label": ">2.0",
+      "t": "HAGMA + met. alk / chronic resp. acid.",
+      "level": "purple",
+      "d": true,
+      "s": "LITFL"
+    }
+  ],
+  "interpretation_stg": [
+    {
+      "t": "DKA: AG >20 · HHS: osm >320",
+      "s": "HOSP:8.14",
+      "level": "red"
+    },
+    {
+      "t": "DKA child: pH <7.3, HCO₃⁻ <15",
+      "s": "PAED:7.19",
+      "level": "red"
+    },
+    {
+      "t": "DKA child: pCO₂ <20 mmHg → oedema risk",
+      "s": "PAED:7.18",
+      "level": "amber"
+    },
+    {
+      "t": "Toxic alcohol Rx: pH <7.3 / HCO₃⁻ <20",
+      "s": "HOSP:19.34",
+      "level": "amber"
+    },
+    {
+      "t": "Dialysis: refractory pH <7.15",
+      "s": "HOSP:7.9",
+      "level": "red"
+    },
+    {
+      "t": "Vent: pCO₂ 4.5–6.0 kPa (TBI 4.2–4.8); pH ≥7.20",
+      "s": "HOSP:23.48",
+      "level": "amber"
+    },
+    {
+      "t": "COPD: aim PaO₂ 8 kPa / SpO₂ 90%",
+      "s": "HOSP:16.11",
+      "level": "amber"
+    }
+  ],
+  "notes": [
+    {
+      "t": "VBG OK for pH, HCO₃⁻, lactate (<2), K⁺; pCO₂ unreliable >45 mmHg",
+      "d": true,
+      "s": "LITFL-VBG"
+    }
+  ],
+  "dagger_note": "† = not in the SA STG (from LITFL, CC BY-NC-SA 4.0). Lines with a page ref are STG. Formulas in mmHg; kPa = mmHg × 0.133 (mmHg = kPa × 7.5)."
+}

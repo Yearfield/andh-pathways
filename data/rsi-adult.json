@@ -7,7 +7,7 @@
  "hospital": "Albert Nzula District Hospital",
  "level": "District",
  "updated": "2026-09-30",
- "regimen": "Fentanyl · Midazolam · Suxamethonium",
+ "regimen": "Chains: fentanyl · midazolam · sux  |  fentanyl · propofol · sux  |  ketamine · sux",
  "sources": [
   "stg-adult"
  ],
@@ -262,8 +262,107 @@
    "n": 3,
    "title": "GIVE THE DRUGS IN THIS ORDER",
    "time": "T − 3 → T 0",
-   "subtitle": "weigh / estimate kg, say it aloud, read the dose from the table",
+   "subtitle": "weigh / estimate kg, say it aloud, read the dose from the table; pick ONE chain",
    "actions": [],
+   "sequences": [
+    {
+     "id": "I",
+     "label": "Your regimen",
+     "note": "stable",
+     "cells": [
+      {
+       "m": "a",
+       "drug": "FENTANYL",
+       "when": "T − 3 min",
+       "dose": "1–2 mcg/kg slow IV",
+       "adjusted": "shocked: 0.5–1 mcg/kg or omit",
+       "d": 1
+      },
+      {
+       "m": "b",
+       "drug": "MIDAZOLAM",
+       "when": "T 0",
+       "dose": "0.1–0.2 mg/kg IV push",
+       "adjusted": "shocked: 0.05 mg/kg",
+       "d": 1
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–1.5 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 0.9 mg/kg IV",
+       "s": "stg-adult:12.3"
+      }
+     ]
+    },
+    {
+     "id": "II",
+     "label": "STG default",
+     "note": "stable (propofol: hypotension)",
+     "cells": [
+      {
+       "m": "a",
+       "drug": "FENTANYL",
+       "when": "T − 3 min",
+       "dose": "1–2 mcg/kg slow IV",
+       "adjusted": "shocked: 0.5–1 mcg/kg or omit",
+       "d": 1
+      },
+      {
+       "m": "b",
+       "drug": "PROPOFOL",
+       "when": "T 0",
+       "dose": "1.5–2.5 mg/kg IV",
+       "adjusted": "can produce hypotension",
+       "s": "stg-adult:20.19"
+      },
+      {
+       "m": "c",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after b",
+       "dose": "1–1.5 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 0.9 mg/kg IV",
+       "s": "stg-adult:12.3"
+      }
+     ]
+    },
+    {
+     "id": "III",
+     "label": "Unstable / hypotensive",
+     "note": "ketamine or etomidate preferred",
+     "cells": [
+      {
+       "m": "a",
+       "drug": "KETAMINE",
+       "when": "T 0",
+       "dose": "1–2 mg/kg IV",
+       "adjusted": "or ETOMIDATE 0.3 mg/kg (0.2–0.6)",
+       "s": "stg-adult:20.19"
+      },
+      {
+       "m": "b",
+       "drug": "SUXAMETHONIUM",
+       "when": "T 0, straight after a",
+       "dose": "1–1.5 mg/kg IV push",
+       "adjusted": "contra-indicated: ROCURONIUM 0.9 mg/kg IV",
+       "s": "stg-adult:12.3"
+      }
+     ]
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Unstable or hypotensive",
+     "then": "use chain III; etomidate or ketamine preferred, propofol can produce hypotension",
+     "s": "stg-adult:20.19"
+    },
+    {
+     "if": "Sick and/or elderly",
+     "then": "doses shown are healthy-adult doses; substantial reductions may be needed",
+     "s": "stg-adult:20.18"
+    }
+   ],
    "sequence": [
     {
      "m": "a",
@@ -288,18 +387,6 @@
      "dose": "1–1.5 mg/kg IV push",
      "adjusted": "contra-indicated: ROCURONIUM 0.9 mg/kg IV",
      "s": "stg-adult:12.3"
-    }
-   ],
-   "decisions": [
-    {
-     "if": "Unstable or hypotensive",
-     "then": "STG alternatives to a + b: ketamine 1–2 mg/kg or etomidate 0.3 mg/kg (0.2–0.6) preferred; propofol 1.5–2.5 mg/kg causes hypotension",
-     "s": "stg-adult:20.19"
-    },
-    {
-     "if": "Sick and/or elderly",
-     "then": "healthy-adult doses shown; substantial reductions may be needed",
-     "s": "stg-adult:20.18"
     }
    ]
   },
@@ -394,7 +481,7 @@
  "reference": {
   "drugs": [
    {
-    "m": "a",
+    "m": "I II",
     "name": "Fentanyl",
     "conc": "50 mcg/mL (100 mcg/2 mL)",
     "dose": "1–2 mcg/kg slow IV",
@@ -405,7 +492,7 @@
     "d": 1
    },
    {
-    "m": "b",
+    "m": "I",
     "name": "Midazolam",
     "conc": "15 mg → 15 mL = 1 mg/mL",
     "dose": "0.1–0.2 mg/kg IV push",
@@ -416,11 +503,44 @@
     "d": 1
    },
    {
-    "m": "c",
+    "m": "II",
+    "name": "Propofol",
+    "conc": "—",
+    "dose": "1.5–2.5 mg/kg IV",
+    "when": "T 0",
+    "onset": "—",
+    "adjusted": "reduce / avoid",
+    "watch": "Hypotension",
+    "s": "stg-adult:20.19"
+   },
+   {
+    "m": "III",
+    "name": "Ketamine",
+    "conc": "—",
+    "dose": "1–2 mg/kg IV",
+    "when": "T 0",
+    "onset": "—",
+    "adjusted": "preferred",
+    "watch": "Preferred if unstable",
+    "s": "stg-adult:20.19"
+   },
+   {
+    "m": "III",
+    "name": "Etomidate",
+    "conc": "—",
+    "dose": "0.3 mg/kg IV (0.2–0.6)",
+    "when": "T 0",
+    "onset": "—",
+    "adjusted": "preferred",
+    "watch": "Preferred if unstable",
+    "s": "stg-adult:20.19"
+   },
+   {
+    "m": "I–III",
     "name": "Suxamethonium",
     "conc": "50 mg/mL (100 mg/2 mL; fridge)",
     "dose": "1–1.5 mg/kg IV (table 1.5)",
-    "when": "T 0, straight after midazolam",
+    "when": "T 0, straight after the induction agent",
     "onset": "30–60 s / 5 min",
     "adjusted": "Full dose †",
     "watch": "Bradycardia (repeat), ↑K⁺, MH",
@@ -428,7 +548,7 @@
     "b": 1
    },
    {
-    "m": "c alt",
+    "m": "I–III alt",
     "name": "Rocuronium (if sux contra.)",
     "conc": "—",
     "dose": "0.9 mg/kg IV",
@@ -451,7 +571,7 @@
    ],
    "rows": [
     {
-     "m": "a",
+     "m": "I II",
      "drug": "Fentanyl",
      "basis": "2 mcg/kg (1 if shocked)",
      "unit": "mcg",
@@ -466,7 +586,7 @@
      ]
     },
     {
-     "m": "b",
+     "m": "I",
      "drug": "Midazolam",
      "basis": "0.15 mg/kg (0.05 if shocked)",
      "unit": "mg",
@@ -481,7 +601,52 @@
      ]
     },
     {
-     "m": "c",
+     "m": "II",
+     "drug": "Propofol",
+     "basis": "1.5–2.5 mg/kg",
+     "unit": "mg",
+     "s": "stg-adult:20.19",
+     "vals": [
+      "75–125",
+      "90–150",
+      "105–175",
+      "120–200",
+      "135–225",
+      "150–250"
+     ]
+    },
+    {
+     "m": "III",
+     "drug": "Ketamine",
+     "basis": "1–2 mg/kg",
+     "unit": "mg",
+     "s": "stg-adult:20.19",
+     "vals": [
+      "50–100",
+      "60–120",
+      "70–140",
+      "80–160",
+      "90–180",
+      "100–200"
+     ]
+    },
+    {
+     "m": "III",
+     "drug": "Etomidate",
+     "basis": "0.3 mg/kg",
+     "unit": "mg",
+     "s": "stg-adult:20.19",
+     "vals": [
+      "15",
+      "18",
+      "21",
+      "24",
+      "27",
+      "30"
+     ]
+    },
+    {
+     "m": "I–III",
      "drug": "Suxamethonium",
      "basis": "1.5 mg/kg",
      "unit": "mg · mL",
@@ -496,7 +661,7 @@
      ]
     },
     {
-     "m": "c alt",
+     "m": "I–III alt",
      "drug": "Rocuronium",
      "basis": "0.9 mg/kg",
      "unit": "mg",

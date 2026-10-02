@@ -1,0 +1,1336 @@
+{
+ "id": "tbi-paeds",
+ "short": "TBI (paeds)",
+ "title": "Traumatic brain injury — paediatric",
+ "population": "Paediatric (1 month to 12 years; ≥ 13 y → adult TBI pathway)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Cardiac arrest, drowning or hanging with ROSC → HIE (child) pathway",
+     "to": "hie-child",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Age 13 years or older → TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Newborn with encephalopathy after birth → HIE (neonate) pathway",
+     "to": "hie-neonate",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Sudden focal deficit with no trauma → paeds stroke, STG 13.10: REFER",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Needs intubation → RSI (child) procedure card",
+     "to": "rsi-paeds",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — head trauma + any one",
+   "items": [
+    {
+     "t": "Headache",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Irritable, inconsolable crying",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Drowsiness",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Seizure after injury",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Change in feeding or sleeping",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Mood change; loss of interest in toys",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Loss of consciousness or amnesia",
+     "d": 1
+    },
+    {
+     "t": "Vomiting after injury",
+     "d": 1
+    },
+    {
+     "t": "Time of injury ____ · Mechanism ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — worst GCS after resuscitation",
+   "items": [
+    {
+     "t": "SEVERE: GCS < 9",
+     "s": "paedstg2026:23.22",
+     "b": 1
+    },
+    {
+     "t": "MODERATE: GCS 9–12",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "MILD: GCS 13–15",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Signs of raised ICP (Cushing: hypertension + bradycardia)",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "t": "Use the paediatric (verbal) GCS under 5 years",
+     "d": 1,
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet",
+   "items": [
+    {
+     "t": "Immunisations up to date (tetanus)",
+     "s": "paedstg2026:23.24"
+    },
+    {
+     "t": "Bleeding disorder / haemophilia",
+     "d": 1
+    },
+    {
+     "t": "VP shunt / known hydrocephalus",
+     "d": 1
+    },
+    {
+     "t": "Epilepsy on treatment",
+     "d": 1
+    },
+    {
+     "t": "Milestones (baseline behaviour)",
+     "d": 1
+    },
+    {
+     "t": "HIV exposed / status"
+    },
+    {
+     "t": "Previous injuries or admissions",
+     "d": 1
+    },
+    {
+     "t": "Previous child-protection concern",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Injury"
+    },
+    {
+     "t": "Time and mechanism"
+    },
+    {
+     "t": "Fall height ____ m"
+    },
+    {
+     "t": "Pedestrian / passenger / cyclist"
+    },
+    {
+     "t": "Witnessed"
+    },
+    {
+     "t": "LOC — duration ____"
+    },
+    {
+     "t": "Seizure after injury"
+    },
+    {
+     "t": "Vomiting — number ____"
+    },
+    {
+     "t": "Severe headache"
+    },
+    {
+     "t": "Acting normally? (caregiver)",
+     "d": 1
+    },
+    {
+     "h": "Child protection",
+     "d": 1
+    },
+    {
+     "t": "Story fits development"
+    },
+    {
+     "t": "Delay in seeking care"
+    },
+    {
+     "t": "Unexplained earlier injuries"
+    },
+    {
+     "h": "Medical"
+    },
+    {
+     "t": "Bleeding disorder / anticoagulant"
+    },
+    {
+     "t": "Medicines taken"
+    },
+    {
+     "h": "TB / HIV screen"
+    },
+    {
+     "t": "Cough > 2 weeks, TB contact"
+    },
+    {
+     "t": "Mother's HIV status"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Primary caregiver present"
+    },
+    {
+     "t": "Who was supervising"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and GCS",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / irregular breathing",
+     "s": "paedstg2026:13.49",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ ≤ 94%",
+     "s": "paedstg2026:23.22",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "GCS"
+    },
+    {
+     "t": "< 9 — severe",
+     "s": "paedstg2026:23.22",
+     "k": "yn"
+    },
+    {
+     "t": "9–12 — moderate",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "13–14 — mild, not normal",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Cushing: BP up + HR down",
+     "s": "paedstg2026:1.30",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Head"
+    },
+    {
+     "t": "Scalp haematoma (non-frontal if < 2 y)",
+     "d": 1
+    },
+    {
+     "t": "Palpable or depressed skull fracture",
+     "d": 1
+    },
+    {
+     "t": "Open wound / penetrating",
+     "d": 1
+    },
+    {
+     "t": "Bulging fontanelle (infant)",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Head circumference ____ cm (infant)",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "h": "Base of skull",
+     "d": 1
+    },
+    {
+     "t": "Raccoon eyes / Battle sign"
+    },
+    {
+     "t": "CSF from nose or ear"
+    },
+    {
+     "t": "Haemotympanum"
+    },
+    {
+     "h": "Eyes"
+    },
+    {
+     "t": "Pupils R ____ L ____ mm, reactive"
+    },
+    {
+     "t": "Sunsetting eyes",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Papilloedema",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Retinal haemorrhages",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Limb weakness R / L"
+    },
+    {
+     "t": "Decerebrate / decorticate",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Neck pain / C-spine tenderness",
+     "d": 1
+    },
+    {
+     "h": "Other injuries (secondary survey)",
+     "d": 1
+    },
+    {
+     "t": "Chest / abdomen / pelvis"
+    },
+    {
+     "t": "Long bones"
+    },
+    {
+     "h": "Skin",
+     "d": 1
+    },
+    {
+     "t": "Bruises of different ages"
+    },
+    {
+     "t": "Patterned bruises, burns"
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 2.6 mmol/L: dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Aim 4–10 mmol/L",
+     "s": "paedstg2026:23.24"
+    },
+    {
+     "t": "Then hourly while GCS < 15, else 4-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "GCS + pupils",
+   "items": [
+    {
+     "t": "On arrival: E ____ V ____ M ____ = ____ /15 · pupils R ____ L ____",
+     "k": "value"
+    },
+    {
+     "t": "GCS < 9: severe — secure airway, REFER",
+     "s": "paedstg2026:23.22"
+    },
+    {
+     "t": "Unequal or fixed pupil, posturing: treat raised ICP now",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "GCS not 15 at 2 h after injury: REFER for CT",
+     "d": 1
+    },
+    {
+     "t": "Then per obs schedule (chart)"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or feed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "GCS < 9 or falling GCS",
+     "s": "paedstg2026:23.22"
+    },
+    {
+     "t": "Unequal or fixed pupil",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Cushing response",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "Posturing",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Penetrating / open skull injury",
+     "d": 1
+    },
+    {
+     "t": "Basal skull fracture signs",
+     "d": 1
+    },
+    {
+     "t": "Shock — look for other bleeding",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "C-spine injury",
+     "d": 1
+    },
+    {
+     "t": "Suspected non-accidental injury",
+     "d": 1
+    },
+    {
+     "t": "Bleeding disorder",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Hypoxia",
+     "s": "paedstg2026:23.22"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = TBI with GCS < 13, CT criterion or red flag → stabilise + REFER"
+  },
+  {
+   "t": "11. MILD, no CT criterion → ADMIT and observe"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours from arrival. Severity branch rows (severe / moderate / mild) apply only to the matching child.",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods, obs & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "GCS, pupils, limb power, HR, BP, RR, SpO₂: every 30 min until GCS 15, then every 30 min × 2 h, hourly × 4 h, 2-hourly to 24 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT on arrival, then 4-hourly (hourly if GCS < 15)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Temperature 4-hourly; keep below 38 °C",
+    "s": "paedstg2026:23.24"
+   },
+   {
+    "t": "Vomiting, seizures, headache, behaviour (caregiver: 'acting normally?')",
+    "d": 1
+   },
+   {
+    "t": "Fluid in/out; NPO until GCS 15 and not vomiting",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "ABCDE with C-spine control. Note the time of injury. Classify on the worst GCS after resuscitation.",
+    "feed": [
+     {
+      "t": "NPO until GCS 15 and not vomiting",
+      "d": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% or Ringer's lactate 20 mL/kg rapidly, review, repeat to 40 mL/kg",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "Isotonic fluids only; no hypotonic or dextrose-containing fluid while resuscitating",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "t": "Maintenance: NaCl 0.9% / 5% dextrose, avoid overload",
+      "s": "paedstg2026:13.50"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT on arrival",
+      "s": "paedstg2026:7.31",
+      "b": 1
+     },
+     {
+      "t": "Hb (ward Hb / VBG)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E (sodium)",
+      "s": "paedstg2026:13.50",
+      "b": 1
+     },
+     {
+      "t": "INR / PTT if bleeding disorder",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Group + crossmatch if other injuries",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "GCS, pupils, limbs: every 30 min",
+      "d": 1
+     },
+     {
+      "t": "X-ray other injuries; C-spine per clinical rule",
+      "d": 1
+     },
+     {
+      "t": "CT brain within 0–6 h — not at ANDH → REFER",
+      "s": "paedstg2026:1.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway / breathing"
+     },
+     {
+      "t": "Neck in midline; remove hard collar as soon as possible",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "t": "Oxygen: SpO₂ above 94% but below 100%",
+      "s": "paedstg2026:23.22"
+     },
+     {
+      "t": "GCS < 9 or airway not protected → intubate: RSI (child) card",
+      "d": 1,
+      "to": "rsi-paeds",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "No routine hyperventilation (PaCO₂ 35–40 mmHg)",
+      "s": "paedstg2026:23.22"
+     },
+     {
+      "h": "Circulation"
+     },
+     {
+      "t": "Target MAP = 65 + 1.5 × age (y)",
+      "s": "paedstg2026:23.22"
+     },
+     {
+      "t": "Shock is rarely from the head alone — find other bleeding",
+      "d": 1
+     },
+     {
+      "h": "Position"
+     },
+     {
+      "t": "Head of bed up 30°, head neutral — not head-down",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "HGT < 2.6: dextrose 10% 2–5 mL/kg IV",
+      "s": "paedstg2026:7.31"
+     },
+     {
+      "h": "Seizure ≥ 5 min (STG 13.2)"
+     },
+     {
+      "t": "Lorazepam 0.1 mg/kg IV (max 4 mg), or diazepam 0.25 mg/kg IV (max 10 mg)",
+      "s": "paedstg2026:13.8"
+     },
+     {
+      "t": "No IV: midazolam 0.5 mg/kg buccal or diazepam 0.5 mg/kg PR",
+      "s": "paedstg2026:13.8"
+     },
+     {
+      "t": "Still fitting: phenytoin 20 mg/kg IV over 20 min",
+      "s": "paedstg2026:13.9"
+     },
+     {
+      "h": "Raised ICP (Cushing, unequal pupil, posturing)"
+     },
+     {
+      "t": "NaCl 5% 3 mL/kg IV over 20 min",
+      "s": "paedstg2026:23.25",
+      "b": 1
+     },
+     {
+      "t": "Or mannitol 0.5–1 g/kg IV over 10 min",
+      "s": "paedstg2026:23.25"
+     },
+     {
+      "t": "Not if Na > 160 mmol/L",
+      "s": "paedstg2026:23.25"
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly",
+      "s": "paedstg2026:13.35"
+     },
+     {
+      "t": "No NSAIDs for 24–48 h; no steroids",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "t": "Wound + not fully immunised: tetanus toxoid",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If SEVERE (GCS < 9)",
+    "feed": [
+     {
+      "t": "Isotonic maintenance; avoid overload",
+      "s": "paedstg2026:13.50"
+     },
+     {
+      "t": "Orogastric (not nasal) tube if base-of-skull fracture",
+      "s": "paedstg2026:23.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG (PaCO₂) if ventilated",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "GCS, pupils every 15–30 min",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER urgently — PICU / neurosurgery",
+      "s": "paedstg2026:23.22",
+      "b": 1
+     },
+     {
+      "t": "Secure airway (RSI card)",
+      "d": 1
+     },
+     {
+      "t": "Avoid the 5 Hs: hypoxaemia, hypotension, hyperthermia, hypoglycaemia, hypercarbia",
+      "s": "paedstg2026:23.22"
+     },
+     {
+      "t": "Phenytoin 20 mg/kg IV over 20 min (early-seizure prophylaxis)",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "t": "Doctor or ALS escort; send obs and drug chart",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If MODERATE (GCS 9–12)",
+    "feed": [
+     {
+      "t": "NPO; isotonic maintenance",
+      "s": "paedstg2026:13.50"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS, pupils every 30 min",
+      "d": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for CT and neurosurgical opinion",
+      "s": "paedstg2026:1.30",
+      "b": 1
+     },
+     {
+      "t": "Head-up 30°; treat seizures and raised ICP as 0 h",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "t": "Falls to GCS < 9 → severe row"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If MILD + a CT criterion",
+    "feed": [
+     {
+      "t": "Oral fluids only if alert and not vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Check the PECARN CT criteria (side 2)",
+      "d": 1
+     },
+     {
+      "t": "Obs every 30 min while waiting",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for CT brain (within 6 h)",
+      "s": "paedstg2026:1.30",
+      "b": 1
+     },
+     {
+      "t": "Observe at ANDH while transport is arranged",
+      "d": 1
+     },
+     {
+      "t": "Back with a normal CT → mild-observe row"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If MILD, no CT criterion",
+    "feed": [
+     {
+      "t": "Clear fluids once alert and not vomiting, then normal diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro-obs schedule (standing box)",
+      "d": 1
+     },
+     {
+      "t": "HGT 4-hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe at ANDH, discuss with paediatrician (STG: refer all)",
+      "s": "paedstg2026:1.30"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly",
+      "s": "paedstg2026:13.35"
+     },
+     {
+      "t": "Child-protection check before discharge",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Re-check (all)",
+    "feed": [
+     {
+      "t": "Continue as per branch",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS must be 15 at 2 h after injury",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pupils, limbs"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "GCS < 15 at 2 h → REFER for CT",
+      "d": 1
+     },
+     {
+      "t": "Vomiting ≥ 2 or new headache → REFER for CT",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet if tolerating",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly neuro-obs",
+      "d": 1
+     },
+     {
+      "t": "HGT if not eating",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Any trigger in the escalate box → REFER"
+     },
+     {
+      "t": "Still well: continue to 6 h",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "2-hourly neuro-obs from here",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observed ≥ 4–6 h after injury and well: discharge criteria may be met (PECARN observation)",
+      "d": 1
+     },
+     {
+      "t": "Otherwise keep overnight",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Overnight",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "2-hourly neuro-obs (wake child)",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persistent headache, vomiting or drowsiness → REFER for CT",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Discharge review",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Final GCS, pupils, limbs",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check the discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Give head-injury advice to caregiver",
+      "d": 1
+     },
+     {
+      "t": "Social worker if NAI concern",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Back-referred after CT / surgery",
+    "feed": [
+     {
+      "t": "Start enteral feeds within 72 h of injury, build up slowly",
+      "s": "paedstg2026:23.24"
+     },
+     {
+      "t": "No NG tube if base-of-skull fracture",
+      "s": "paedstg2026:23.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E (sodium) daily if on hypertonic saline",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT 6-hourly; aim 4–10",
+      "s": "paedstg2026:23.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Raised ICP: consider PPI until feeds established",
+      "s": "paedstg2026:23.24"
+     },
+     {
+      "t": "Phenytoin maintenance 5–10 mg/kg/day in 3 doses if loaded",
+      "s": "paedstg2026:23.23"
+     },
+     {
+      "t": "Counsel family early; plan rehabilitation",
+      "s": "paedstg2026:23.24"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Seizures · raised ICP — doses",
+   "items": [
+    {
+     "h": "Status epilepticus (STG 13.2)",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Lorazepam 0.1 mg/kg IV/IO (max 4 mg), or midazolam 0.25 mg/kg IV (max 10 mg), or diazepam 0.25 mg/kg IV (max 10 mg)",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "No IV: midazolam 0.1 mg/kg IM or 0.5 mg/kg buccal; diazepam 0.5 mg/kg PR",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Repeat benzodiazepine once after 5 min",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Then phenytoin 20 mg/kg IV over 20 min (ECG) or phenobarbital 20 mg/kg IV over 5 min",
+     "s": "paedstg2026:13.9"
+    },
+    {
+     "t": "Refractory → REFER ICU",
+     "s": "paedstg2026:13.10"
+    },
+    {
+     "h": "Severe TBI prophylaxis",
+     "s": "paedstg2026:23.23"
+    },
+    {
+     "t": "Phenytoin 20 mg/kg IV over 20 min, then 5–10 mg/kg/day in 3 doses"
+    },
+    {
+     "h": "Raised ICP",
+     "s": "paedstg2026:23.25"
+    },
+    {
+     "t": "NaCl 5% 3 mL/kg IV over 20 min, or mannitol 0.5–1 g/kg over 10 min (repeat 6-hourly)"
+    },
+    {
+     "t": "Avoid if sodium > 160 mmol/L"
+    },
+    {
+     "t": "Hyperventilation only if herniating and ventilated; PaCO₂ not below 30 mmHg"
+    }
+   ]
+  },
+  {
+   "title": "CT criteria — PECARN †",
+   "items": [
+    {
+     "h": "Under 2 years — CT"
+    },
+    {
+     "t": "GCS < 15, altered mental state, palpable skull fracture"
+    },
+    {
+     "h": "Under 2 years — CT or observe"
+    },
+    {
+     "t": "Non-frontal scalp haematoma, LOC ≥ 5 s, severe mechanism, not acting normally"
+    },
+    {
+     "h": "2 years and over — CT"
+    },
+    {
+     "t": "GCS < 15, altered mental state, signs of basal skull fracture"
+    },
+    {
+     "h": "2 years and over — CT or observe"
+    },
+    {
+     "t": "LOC, vomiting, severe mechanism, severe headache"
+    },
+    {
+     "h": "Severe mechanism"
+    },
+    {
+     "t": "Ejection, rollover or death in the vehicle; pedestrian or unhelmeted cyclist hit by a vehicle"
+    },
+    {
+     "t": "Fall > 0.9 m (< 2 y) or > 1.5 m (≥ 2 y); head hit by a high-impact object"
+    },
+    {
+     "t": "Several 'CT or observe' findings, or worsening → REFER for CT",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor / REFER"
+    },
+    {
+     "t": "GCS down by ≥ 2, or any fall in the motor score",
+     "d": 1
+    },
+    {
+     "t": "New unequal or non-reactive pupil",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "BP rising with HR falling (Cushing)",
+     "s": "paedstg2026:1.30"
+    },
+    {
+     "t": "New limb weakness or posturing",
+     "s": "paedstg2026:13.49"
+    },
+    {
+     "t": "Seizure",
+     "s": "paedstg2026:13.6"
+    },
+    {
+     "t": "Vomiting ≥ 2, severe or worsening headache, agitation",
+     "d": 1
+    },
+    {
+     "t": "SpO₂ ≤ 94%",
+     "s": "paedstg2026:23.22"
+    },
+    {
+     "t": "HGT < 2.6",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "T > 38 °C",
+     "s": "paedstg2026:23.24"
+    },
+    {
+     "h": "On deterioration"
+    },
+    {
+     "t": "ABC, head-up 30°, HGT, NaCl 5% 3 mL/kg; phone the referral centre",
+     "s": "paedstg2026:23.25"
+    },
+    {
+     "t": "Cardiac arrest → after ROSC continue on the HIE (child) pathway",
+     "to": "hie-child",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (mild TBI) — all must be met †",
+  "items": [
+   {
+    "t": "GCS 15 / normal for age and acting normally (caregiver)",
+    "d": 1
+   },
+   {
+    "t": "No CT criterion, or CT normal",
+    "d": 1
+   },
+   {
+    "t": "Not vomiting, feeding well",
+    "d": 1
+   },
+   {
+    "t": "Pain controlled on paracetamol",
+    "d": 1
+   },
+   {
+    "t": "Non-accidental injury excluded; safe home",
+    "d": 1
+   },
+   {
+    "t": "Caregiver given head-injury advice and can return",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: hard to wake, repeated vomiting, worse headache, seizure, weakness, fluid from nose/ear, behaviour change",
+    "d": 1
+   },
+   {
+    "t": "PHC review in 48 h if any symptoms",
+    "d": 1
+   },
+   {
+    "t": "No contact sport or rough play until symptom-free",
+    "d": 1
+   },
+   {
+    "t": "Moderate/severe survivors: neurodevelopment and rehabilitation follow-up",
+    "s": "paedstg2026:23.24"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro-observation record — GCS, pupils, limbs, vitals",
+  "period": "one sheet per 24 hours from arrival",
+  "params": [
+   {
+    "h": "Schedule",
+    "items": [
+     {
+      "t": "Every 30 min until GCS 15",
+      "d": 1
+     },
+     {
+      "t": "Then every 30 min × 2 h, hourly × 4 h, 2-hourly to 24 h",
+      "d": 1
+     },
+     {
+      "t": "Back to every 30 min after any drop",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "GCS + pupils",
+    "items": [
+     {
+      "t": "Paediatric (verbal) GCS under 5 years",
+      "d": 1
+     },
+     {
+      "t": "Write E, V, M and total"
+     },
+     {
+      "t": "Pupil size in mm and reaction R / L"
+     }
+    ]
+   },
+   {
+    "h": "Limbs + vitals",
+    "items": [
+     {
+      "t": "Power: N normal, W weak, A absent, each side",
+      "d": 1
+     },
+     {
+      "t": "HR, BP, RR, SpO₂ each set; temperature 4-hourly",
+      "s": "paedstg2026:23.24"
+     },
+     {
+      "t": "HGT 4-hourly (hourly if GCS < 15)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Record also",
+    "items": [
+     {
+      "t": "Vomiting, seizures, headache"
+     },
+     {
+      "t": "'Acting normally?' — ask caregiver",
+      "d": 1
+     },
+     {
+      "t": "Fluids in / urine"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: SpO₂ ≤ 94%, HGT < 2.6, T > 38 °C, BP up with HR down (Cushing)",
+    "b": 1
+   },
+   {
+    "t": "— and for: GCS down by ≥ 2 or motor score down, new unequal pupil, new weakness, seizure, vomiting ≥ 2.",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Lowest GCS",
+   "Vomits (n)",
+   "Fluids in (mL)",
+   "Urine / nappies"
+  ]
+ }
+}

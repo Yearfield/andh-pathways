@@ -1,0 +1,373 @@
+{
+  "id": "bloodgas-causes",
+  "type": "range",
+  "short": "ABG causes",
+  "title": "Blood Gas — Causes by Primary Disorder",
+  "population": "adult",
+  "age_range": "all ages (adult-oriented list)",
+  "setting": "casualty / ward",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-02",
+  "tags": [
+    "blood gas",
+    "ABG",
+    "VBG",
+    "acid-base",
+    "causes",
+    "HAGMA",
+    "NAGMA",
+    "CAT MUD PILES",
+    "USED CRAP",
+    "CHAMPS",
+    "CLEVER PD",
+    "osmolar gap",
+    "toxicology",
+    "mnemonic"
+  ],
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "LITFL",
+      "title": "LITFL: Rogers J, Cadogan M. Blood Gas Interpretation (infographic 09/2024; page updated 26 Jun 2026), CC BY-NC-SA 4.0",
+      "type": "online",
+      "country": "intl",
+      "url": "https://litfl.com/acid-base-disorders/"
+    },
+    {
+      "id": "LITFL-AG",
+      "title": "LITFL: Nickson C. Anion Gap (updated 3 Nov 2020)",
+      "type": "online",
+      "country": "intl",
+      "url": "https://litfl.com/anion-gap/"
+    }
+  ],
+  "causes": [
+    {
+      "key": "RAc",
+      "name": "Respiratory acidosis",
+      "sub": "hypoventilation · pCO₂ >45",
+      "col": "#1d4ed8",
+      "groups": [
+        {
+          "h": null,
+          "items": [
+            {
+              "t": "CNS depression (head injury, stroke, drugs/opioids)"
+            },
+            {
+              "t": "Respiratory depression (myopathy, spinal cord injury, drugs)"
+            },
+            {
+              "t": "Hypoventilation (pain, chest-wall injury/deformity, ↑intra-abdominal pressure)"
+            },
+            {
+              "t": "Respiratory failure (pneumonia, pneumothorax, oedema, bronchial obstruction)"
+            },
+            {
+              "t": "Airway obstruction"
+            },
+            {
+              "t": "Chronic: COPD, restrictive lung disease"
+            }
+          ]
+        }
+      ],
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "NAGMA",
+      "name": "Normal-AG metabolic acidosis",
+      "sub": "“USED CRAP”",
+      "col": "#ea580c",
+      "groups": [
+        {
+          "h": null,
+          "items": [
+            {
+              "t": "Ureterostomy",
+              "k": "U"
+            },
+            {
+              "t": "Small-bowel fistula",
+              "k": "S"
+            },
+            {
+              "t": "Extra chloride (large-volume saline)",
+              "k": "E"
+            },
+            {
+              "t": "Diarrhoea",
+              "k": "D"
+            },
+            {
+              "t": "Carbonic anhydrase inhibitor (acetazolamide)",
+              "k": "C"
+            },
+            {
+              "t": "Renal tubular acidosis",
+              "k": "R"
+            },
+            {
+              "t": "Addison's disease",
+              "k": "A"
+            },
+            {
+              "t": "Pancreatic-duodenal fistula",
+              "k": "P"
+            }
+          ]
+        },
+        {
+          "h": "Low / negative AG (<3)",
+          "items": [
+            {
+              "t": "↓ unmeasured anions: ↓ albumin, dilution"
+            },
+            {
+              "t": "↑ unmeasured cations: ↑Ca, ↑Mg, ↑K, lithium, paraprotein (myeloma)"
+            },
+            {
+              "t": "Pseudo-hyperchloraemia: bromide, iodide, salicylate, thiocyanate"
+            },
+            {
+              "t": "Analytical error (↑Na, ↑lipids, hyperviscosity)"
+            }
+          ]
+        }
+      ],
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "HAGMA",
+      "name": "High-AG metabolic acidosis",
+      "sub": "“Left Total Knee Replacement” · “CAT MUD PILES”",
+      "col": "#b91c1c",
+      "groups": [
+        {
+          "h": "LTKR",
+          "items": [
+            {
+              "t": "Lactate",
+              "k": "L"
+            },
+            {
+              "t": "Toxins",
+              "k": "T"
+            },
+            {
+              "t": "Ketones",
+              "k": "K"
+            },
+            {
+              "t": "Renal (uraemia)",
+              "k": "R"
+            }
+          ]
+        },
+        {
+          "h": "CAT MUD PILES",
+          "items": [
+            {
+              "t": "CO, cyanide",
+              "k": "C"
+            },
+            {
+              "t": "Alcoholic ketoacidosis",
+              "k": "A"
+            },
+            {
+              "t": "Toluene",
+              "k": "T"
+            },
+            {
+              "t": "Methanol, metformin",
+              "k": "M"
+            },
+            {
+              "t": "Uraemia",
+              "k": "U"
+            },
+            {
+              "t": "DKA",
+              "k": "D"
+            },
+            {
+              "t": "Paracetamol (pyroglutamic acid), paraldehyde, propylene glycol",
+              "k": "P"
+            },
+            {
+              "t": "Isoniazid, iron",
+              "k": "I"
+            },
+            {
+              "t": "Lactate (L- and D-)",
+              "k": "L"
+            },
+            {
+              "t": "Ethanol, ethylene glycol",
+              "k": "E"
+            },
+            {
+              "t": "Salicylates",
+              "k": "S"
+            }
+          ]
+        }
+      ],
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "RAl",
+      "name": "Respiratory alkalosis",
+      "sub": "hyperventilation · “CHAMPS”",
+      "col": "#4b5563",
+      "groups": [
+        {
+          "h": null,
+          "items": [
+            {
+              "t": "CNS disease (stroke, haemorrhage, psychogenic)",
+              "k": "C"
+            },
+            {
+              "t": "Hypoxia (pneumonia, PE, asthma, altitude)",
+              "k": "H"
+            },
+            {
+              "t": "Anxiety, pain",
+              "k": "A"
+            },
+            {
+              "t": "Mechanical / excessive ventilation",
+              "k": "M"
+            },
+            {
+              "t": "Progesterone, pregnancy",
+              "k": "P"
+            },
+            {
+              "t": "Salicylates, sepsis",
+              "k": "S"
+            }
+          ]
+        }
+      ],
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "MAl",
+      "name": "Metabolic alkalosis",
+      "sub": "“CLEVER PD”",
+      "col": "#15803d",
+      "groups": [
+        {
+          "h": null,
+          "items": [
+            {
+              "t": "Contraction (volume depletion)",
+              "k": "C"
+            },
+            {
+              "t": "Liquorice, laxative abuse",
+              "k": "L"
+            },
+            {
+              "t": "Endocrine (Conn's, Cushing's)",
+              "k": "E"
+            },
+            {
+              "t": "Vomiting, GI losses (NG drainage)",
+              "k": "V"
+            },
+            {
+              "t": "Excess alkali (antacids, bicarbonate)",
+              "k": "E"
+            },
+            {
+              "t": "Renal (Bartter's)",
+              "k": "R"
+            },
+            {
+              "t": "Post-hypercapnia",
+              "k": "P"
+            },
+            {
+              "t": "Diuretics",
+              "k": "D"
+            }
+          ]
+        }
+      ],
+      "s": "LITFL",
+      "d": true
+    },
+    {
+      "key": "OG",
+      "name": "Raised osmolar gap (>10)",
+      "sub": "suspect if unexplained HAGMA",
+      "col": "#6d28d9",
+      "groups": [
+        {
+          "h": null,
+          "items": [
+            {
+              "t": "Methanol, ethylene glycol (toxic alcohols)"
+            },
+            {
+              "t": "Ethanol"
+            },
+            {
+              "t": "Mannitol, glycine"
+            },
+            {
+              "t": "Non-metabolised glycols, maltose"
+            }
+          ]
+        }
+      ],
+      "s": "LITFL",
+      "d": true
+    }
+  ],
+  "interpretation_stg": [
+    {
+      "t": "Toxic alcohols: ↑AG + ↑osmolar gap metabolic acidosis",
+      "s": "PAED:18.3"
+    },
+    {
+      "t": "Ethylene glycol / methanol: severe HAGMA (latent 12–24 h for methanol)",
+      "s": "HOSP:19.36"
+    },
+    {
+      "t": "DKA: AG >20",
+      "s": "HOSP:8.14"
+    },
+    {
+      "t": "Salicylates: respiratory alkalosis (mild–mod) → metabolic acidosis (severe)",
+      "s": "HOSP:19.19"
+    }
+  ],
+  "notes": [
+    {
+      "t": "Mnemonic letters are bold; mixed disorders are common — work through card 1 first",
+      "d": true
+    }
+  ],
+  "dagger_note": "† = not in the SA STG (from LITFL, CC BY-NC-SA 4.0). Lines with a page ref are STG. Formulas in mmHg; kPa = mmHg × 0.133 (mmHg = kPa × 7.5)."
+}

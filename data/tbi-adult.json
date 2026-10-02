@@ -1,0 +1,1321 @@
+{
+ "id": "tbi-adult",
+ "short": "TBI (adult)",
+ "title": "Traumatic brain injury — adult",
+ "population": "Adults and adolescents ≥ 13 years (< 13 y → paeds TBI pathway)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "Cardiac arrest, hanging or drowning with ROSC → HIE (adult) pathway",
+     "to": "hie-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Age under 13 years → TBI (child) pathway",
+     "to": "tbi-paeds",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Fell because of a sudden deficit (no real trauma) → Stroke pathway",
+     "to": "stroke",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Needs intubation → RSI (adult) procedure card",
+     "to": "rsi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Collapse from chest pain / arrhythmia → ACS pathway",
+     "to": "acs-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Low GCS from poisoning, not the injury → poisoning pathways (opioids, toxic alcohols, OP)",
+     "to": "toxic-alcohols",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — head trauma + any one",
+   "items": [
+    {
+     "t": "Loss of consciousness",
+     "d": 1
+    },
+    {
+     "t": "Amnesia (before or after the injury)",
+     "d": 1
+    },
+    {
+     "t": "Confusion / GCS < 15",
+     "d": 1
+    },
+    {
+     "t": "Seizure after injury",
+     "d": 1
+    },
+    {
+     "t": "Vomiting after injury",
+     "d": 1
+    },
+    {
+     "t": "Headache",
+     "d": 1
+    },
+    {
+     "t": "Focal neurological deficit",
+     "d": 1
+    },
+    {
+     "t": "Skull fracture / scalp wound with any of the above",
+     "d": 1
+    },
+    {
+     "t": "Time of injury ____ · Mechanism ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — worst GCS after resuscitation †",
+   "items": [
+    {
+     "t": "SEVERE: GCS ≤ 8",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "MODERATE: GCS 9–12",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "MILD: GCS 13–15",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Raised ICP signs (unequal pupil, posturing, Cushing)",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "t": "SA STG gives no TBI severity bands; NICE NG232 bands used",
+     "d": 1,
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Warfarin / DOAC / antiplatelet",
+     "d": 1
+    },
+    {
+     "t": "Bleeding disorder",
+     "d": 1
+    },
+    {
+     "t": "Epilepsy and treatment",
+     "d": 1
+    },
+    {
+     "t": "Alcohol use disorder",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "HIV — on ART, last CD4",
+     "d": 1
+    },
+    {
+     "t": "Diabetes / hypertension",
+     "d": 1
+    },
+    {
+     "t": "Previous head injury",
+     "d": 1
+    },
+    {
+     "t": "Baseline function / cognition",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Injury"
+    },
+    {
+     "t": "Time and mechanism"
+    },
+    {
+     "t": "Assault / MVA / fall"
+    },
+    {
+     "t": "Fall > 1 m or 5 stairs",
+     "d": 1
+    },
+    {
+     "t": "Pedestrian hit / ejected",
+     "d": 1
+    },
+    {
+     "t": "LOC — duration ____"
+    },
+    {
+     "t": "Amnesia > 30 min before injury",
+     "d": 1
+    },
+    {
+     "t": "Seizure after injury"
+    },
+    {
+     "t": "Vomiting — number ____"
+    },
+    {
+     "t": "Headache, worsening"
+    },
+    {
+     "h": "Risk factors",
+     "d": 1
+    },
+    {
+     "t": "Age ≥ 65"
+    },
+    {
+     "t": "Anticoagulant / bleeding disorder"
+    },
+    {
+     "t": "Alcohol or drugs taken"
+    },
+    {
+     "h": "TB / HIV screen"
+    },
+    {
+     "t": "Cough, fever, weight loss, night sweats"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Responsible adult at home for 24 h",
+     "d": 1
+    },
+    {
+     "t": "Assault: J88 / SAPS case number",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and GCS",
+   "note": "Abnormal = outside normal adult range or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / irregular breathing",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension / Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94%",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "GCS",
+     "d": 1
+    },
+    {
+     "t": "≤ 8 — severe",
+     "k": "yn"
+    },
+    {
+     "t": "9–12 — moderate",
+     "k": "yn"
+    },
+    {
+     "t": "13–14 — mild, not normal",
+     "k": "yn"
+    },
+    {
+     "t": "Cushing: BP up + HR down",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Head"
+    },
+    {
+     "t": "Scalp laceration / haematoma"
+    },
+    {
+     "t": "Depressed or open skull fracture",
+     "d": 1
+    },
+    {
+     "t": "Penetrating injury",
+     "s": "adultstg2026:14.43"
+    },
+    {
+     "h": "Base of skull",
+     "s": "adultstg2026:14.43"
+    },
+    {
+     "t": "Raccoon eyes / Battle sign"
+    },
+    {
+     "t": "CSF from nose or ear"
+    },
+    {
+     "t": "Haemotympanum"
+    },
+    {
+     "h": "Eyes"
+    },
+    {
+     "t": "Pupils R ____ L ____ mm, reactive"
+    },
+    {
+     "t": "Papilloedema",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Limb weakness R / L"
+    },
+    {
+     "t": "Speech / language"
+    },
+    {
+     "t": "Posturing",
+     "d": 1
+    },
+    {
+     "t": "C-spine tenderness / deficit",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "h": "Other injuries (secondary survey)"
+    },
+    {
+     "t": "Chest / abdomen / pelvis",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Long bones",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "h": "Intoxication",
+     "d": 1
+    },
+    {
+     "t": "Alcohol on breath — do not blame it for a low GCS"
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 4 mmol/L: dextrose 50% 50 mL IV, recheck in 5–10 min",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Alcohol / malnourished: thiamine before or with dextrose",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "Then hourly while GCS < 15; 4-hourly if diabetic or alcohol",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "GCS + pupils",
+   "items": [
+    {
+     "t": "On arrival: E ____ V ____ M ____ = ____ /15 · pupils R ____ L ____",
+     "k": "value"
+    },
+    {
+     "t": "GCS ≤ 8: secure airway, REFER",
+     "d": 1
+    },
+    {
+     "t": "Unequal or fixed pupil, posturing: mannitol now, REFER",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "t": "GCS not 15 at 2 h after injury: REFER for CT",
+     "d": 1
+    },
+    {
+     "t": "Then per obs schedule (chart)"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "GCS ≤ 8 or falling",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Unequal or fixed pupil",
+     "d": 1
+    },
+    {
+     "t": "Cushing response",
+     "d": 1
+    },
+    {
+     "t": "Penetrating injury",
+     "s": "adultstg2026:14.43"
+    },
+    {
+     "t": "Depressed / open skull fracture",
+     "d": 1
+    },
+    {
+     "t": "Basal skull fracture",
+     "s": "adultstg2026:14.43"
+    },
+    {
+     "t": "C-spine / spinal cord injury",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "t": "Bleeding elsewhere",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "On anticoagulant",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "Hypoxia",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Poisoning / overdose",
+     "d": 1
+    },
+    {
+     "t": "Assault on a vulnerable person",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = TBI with GCS < 13, CT criterion or red flag → stabilise + REFER"
+  },
+  {
+   "t": "11. MILD, no CT criterion → ADMIT and observe"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours from arrival. Severity branch rows (severe / moderate / mild) apply only to the matching patient.",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods, obs & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "GCS, pupils, limb power, HR, BP, RR, SpO₂: every 30 min until GCS 15, then every 30 min × 2 h, hourly × 4 h, 2-hourly to 24 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT on arrival; hourly while GCS < 15; 4-hourly if diabetic or alcohol",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Temperature 4-hourly; treat fever",
+    "s": "adultstg2026:14.49"
+   },
+   {
+    "t": "Vomiting, seizures, headache, agitation",
+    "d": 1
+   },
+   {
+    "t": "Fluid in/out; NPO until GCS 15 and not vomiting",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "ABCDE with C-spine control. Note the time of injury. Classify on the worst GCS after resuscitation.",
+    "feed": [
+     {
+      "t": "NPO until GCS 15 and not vomiting",
+      "d": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% IV; if > 1 L needed, give blood",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "Major bleeding: keep crystalloid < 1.5 L, emergency blood (2 units O at ANDH)",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "Lyophilised plasma 1 unit per unit of emergency blood",
+      "s": "adultstg2026:20.22"
+     },
+     {
+      "t": "Avoid hypotonic / dextrose-only fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT on arrival",
+      "s": "adultstg2026:23.32",
+      "b": 1
+     },
+     {
+      "t": "Hb / VBG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, INR if anticoagulated",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Group + crossmatch if bleeding",
+      "s": "adultstg2026:20.21",
+      "b": 1
+     },
+     {
+      "t": "Breath / blood alcohol if available",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "GCS, pupils, limbs every 30 min",
+      "d": 1
+     },
+     {
+      "t": "X-ray other injuries; C-spine per clinical rule",
+      "d": 1
+     },
+     {
+      "t": "CT brain — not at ANDH → REFER (criteria side 2)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway / breathing"
+     },
+     {
+      "t": "C-spine control if indicated",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "Oxygen if SpO₂ < 94%",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "GCS ≤ 8 or airway not protected → intubate: RSI (adult) card",
+      "d": 1,
+      "to": "rsi-adult",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "No hyperventilation",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "h": "Circulation"
+     },
+     {
+      "t": "Aim MAP ≥ 80 mmHg when brain injury is suspected",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "Control external bleeding; find other bleeding",
+      "s": "adultstg2026:20.21"
+     },
+     {
+      "t": "TXA 1 g IV over 10 min, then 1 g over 8 h, if bleeding and < 3 h from injury",
+      "s": "adultstg2026:20.22"
+     },
+     {
+      "h": "Position"
+     },
+     {
+      "t": "Head up 30°, neck neutral",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "< 4 mmol/L: dextrose 50% 50 mL IV",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "At risk (alcohol, malnourished): thiamine 200 mg IM",
+      "s": "adultstg2026:14.7"
+     },
+     {
+      "h": "Seizure ≥ 5 min"
+     },
+     {
+      "t": "Lorazepam 4 mg IV or midazolam 10 mg IM/buccal; then phenytoin 20 mg/kg (box)",
+      "s": "adultstg2026:14.15"
+     },
+     {
+      "h": "Raised ICP (unequal pupil, posturing, falling GCS)"
+     },
+     {
+      "t": "Mannitol 0.25–1 g/kg IV over 30–60 min, pending neurosurgery",
+      "s": "adultstg2026:14.49",
+      "b": 1
+     },
+     {
+      "t": "Watch urine output, hypovolaemia, low K",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "No corticosteroids — harmful",
+      "s": "adultstg2026:14.49",
+      "b": 1
+     },
+     {
+      "h": "Wounds"
+     },
+     {
+      "t": "Penetrating: ceftriaxone 2 g IV 12-hourly × 7 days",
+      "s": "adultstg2026:14.43"
+     },
+     {
+      "t": "Basal skull fracture: no antibiotic prophylaxis",
+      "s": "adultstg2026:14.43"
+     },
+     {
+      "t": "Tetanus toxoid if not up to date",
+      "d": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 1 g 6-hourly (max 4 g/24 h)",
+      "s": "adultstg2026:20.8"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If SEVERE (GCS ≤ 8)",
+    "feed": [
+     {
+      "t": "Isotonic maintenance only",
+      "d": 1
+     },
+     {
+      "t": "Orogastric tube if base-of-skull fracture",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG / ABG if ventilated",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "GCS, pupils every 15–30 min",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER urgently — neurosurgery / ICU",
+      "s": "adultstg2026:14.49",
+      "b": 1
+     },
+     {
+      "t": "Secure airway (RSI card)",
+      "d": 1
+     },
+     {
+      "t": "Avoid hypoxia, hypotension, fever, hypoglycaemia",
+      "d": 1
+     },
+     {
+      "t": "Mannitol if signs of herniation",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "Doctor or ALS escort; send obs and drug chart",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If MODERATE (GCS 9–12)",
+    "feed": [
+     {
+      "t": "NPO; isotonic maintenance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS, pupils every 30 min",
+      "d": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for CT and neurosurgical opinion",
+      "s": "adultstg2026:14.49",
+      "b": 1
+     },
+     {
+      "t": "Head-up 30°; treat seizures",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "Falls to GCS ≤ 8 → severe row"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If MILD + a CT criterion",
+    "feed": [
+     {
+      "t": "Oral fluids if alert and not vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Check the NICE CT criteria (side 2)",
+      "d": 1
+     },
+     {
+      "t": "Obs every 30 min while waiting",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for CT brain (within 1 h or 8 h — side 2)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Anticoagulated: CT within 8 h even if well",
+      "d": 1
+     },
+     {
+      "t": "Back with a normal CT → mild-observe row"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If MILD, no CT criterion",
+    "feed": [
+     {
+      "t": "Clear fluids, then normal diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro-obs schedule (standing box)",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe at ANDH (intoxicated, no one at home, or symptoms)",
+      "d": 1
+     },
+     {
+      "t": "Paracetamol 1 g 6-hourly",
+      "s": "adultstg2026:20.8"
+     },
+     {
+      "t": "Well, GCS 15, adult at home: may go home with advice",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Re-check (all)",
+    "feed": [
+     {
+      "t": "Continue as per branch",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS must be 15 at 2 h after injury",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pupils, limbs"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "GCS < 15 at 2 h → REFER for CT",
+      "d": 1
+     },
+     {
+      "t": "Vomiting ≥ 2, new headache or deficit → REFER for CT",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet if tolerating",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly neuro-obs",
+      "d": 1
+     },
+     {
+      "t": "HGT per standing box",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Any escalate trigger → REFER"
+     },
+     {
+      "t": "Sober and GCS 15: continue to 6 h",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "2-hourly neuro-obs from here",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persistent headache, vomiting or drowsiness → REFER for CT",
+      "d": 1
+     },
+     {
+      "t": "Still intoxicated: keep overnight",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Overnight",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "2-hourly neuro-obs (wake patient)",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess once sober; do not blame alcohol for a low GCS",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Discharge review",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Final GCS, pupils, limbs",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check the discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Written head-injury advice",
+      "d": 1
+     },
+     {
+      "t": "Assault: J88 completed if requested",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Back-referred after CT / surgery",
+    "feed": [
+     {
+      "t": "Swallow check, then diet; NGT if unsafe",
+      "s": "adultstg2026:14.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E (sodium, K) daily if on mannitol",
+      "s": "adultstg2026:14.49",
+      "b": 1
+     },
+     {
+      "t": "HGT 6-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "VTE: heparin may be contraindicated (bleeding) — follow neurosurgeon",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "Control fever; prevent seizures",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "Rehabilitation (physio, OT, speech)",
+      "s": "adultstg2026:14.1"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Seizures · raised ICP · bleeding — doses",
+   "items": [
+    {
+     "h": "Status epilepticus (STG 14.5)",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Lorazepam 4 mg IV (≤ 2 mg/min), or midazolam 10 mg IV, or diazepam 10 mg IV over ≥ 5 min, or clonazepam 1 mg IV",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "No IV: midazolam 10 mg IM or buccal; or clonazepam 1 mg IM; or diazepam 0.2–0.5 mg/kg PR (max 20 mg)",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Repeat once after 5 min",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Then phenytoin 20 mg/kg in 200 mL NaCl 0.9%, ≤ 50 mg/min, cardiac monitor",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "No IV: levetiracetam 60 mg/kg via NGT (max 4 500 mg)",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "Refractory (propofol/midazolam infusion) → REFER ICU",
+     "s": "adultstg2026:14.17"
+    },
+    {
+     "h": "Raised ICP",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "t": "Mannitol 15–25% 0.25–1 g/kg IV over 30–60 min, pending neurosurgery; no steroids; no hyperventilation"
+    },
+    {
+     "h": "Bleeding trauma",
+     "s": "adultstg2026:20.22"
+    },
+    {
+     "t": "TXA 1 g IV over 10 min, then 1 g over 8 h; start within 3 h (later may harm)"
+    },
+    {
+     "t": "Emergency blood + lyophilised plasma 1:1; after 2 units REFER",
+     "s": "adultstg2026:20.22"
+    }
+   ]
+  },
+  {
+   "title": "CT criteria — NICE NG232 †",
+   "items": [
+    {
+     "h": "CT within 1 h"
+    },
+    {
+     "t": "GCS < 13 on first assessment; GCS < 15 at 2 h after injury"
+    },
+    {
+     "t": "Suspected open or depressed skull fracture; basal skull fracture signs"
+    },
+    {
+     "t": "Post-traumatic seizure; focal deficit; > 1 vomit"
+    },
+    {
+     "h": "CT within 8 h (if LOC or amnesia since injury)"
+    },
+    {
+     "t": "Age ≥ 65; bleeding disorder; dangerous mechanism; > 30 min amnesia before injury"
+    },
+    {
+     "h": "Anticoagulant (warfarin / DOAC)"
+    },
+    {
+     "t": "CT within 8 h even without LOC or amnesia"
+    },
+    {
+     "h": "Dangerous mechanism"
+    },
+    {
+     "t": "Pedestrian or cyclist hit by a vehicle; ejected from a vehicle; fall > 1 m or 5 stairs"
+    },
+    {
+     "t": "At ANDH every 'CT' = REFER for CT",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor / REFER"
+    },
+    {
+     "t": "GCS down by ≥ 2, or any fall in the motor score",
+     "d": 1
+    },
+    {
+     "t": "New unequal or non-reactive pupil",
+     "d": 1
+    },
+    {
+     "t": "BP rising with HR falling (Cushing)",
+     "d": 1
+    },
+    {
+     "t": "New limb weakness or speech problem",
+     "d": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Vomiting ≥ 2, severe or worsening headache, agitation",
+     "d": 1
+    },
+    {
+     "t": "SpO₂ < 94%",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "HGT < 4",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "Fever",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "h": "On deterioration"
+    },
+    {
+     "t": "ABC, head-up 30°, HGT, mannitol if herniating; phone the referral centre",
+     "s": "adultstg2026:14.49"
+    },
+    {
+     "t": "Cardiac arrest → after ROSC continue on the HIE (adult) pathway",
+     "to": "hie-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (mild TBI) — all must be met †",
+  "items": [
+   {
+    "t": "GCS 15 and back to baseline",
+    "d": 1
+   },
+   {
+    "t": "No CT criterion, or CT normal",
+    "d": 1
+   },
+   {
+    "t": "Sober; not vomiting; eating",
+    "d": 1
+   },
+   {
+    "t": "Pain controlled on paracetamol",
+    "d": 1
+   },
+   {
+    "t": "Responsible adult at home for 24 h",
+    "d": 1
+   },
+   {
+    "t": "Written head-injury advice given",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: drowsy, repeated vomiting, worse headache, seizure, weakness, confusion, fluid from nose/ear",
+    "d": 1
+   },
+   {
+    "t": "OPD / PHC review if headache, poor memory or mood change persist (post-concussion)",
+    "d": 1
+   },
+   {
+    "t": "No alcohol, driving or contact sport until symptom-free",
+    "d": 1
+   },
+   {
+    "t": "Moderate/severe survivors: rehabilitation referral",
+    "s": "adultstg2026:14.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro-observation record — GCS, pupils, limbs, vitals",
+  "period": "one sheet per 24 hours from arrival",
+  "params": [
+   {
+    "h": "Schedule",
+    "items": [
+     {
+      "t": "Every 30 min until GCS 15",
+      "d": 1
+     },
+     {
+      "t": "Then every 30 min × 2 h, hourly × 4 h, 2-hourly to 24 h",
+      "d": 1
+     },
+     {
+      "t": "Back to every 30 min after any drop",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "GCS + pupils",
+    "items": [
+     {
+      "t": "Write E, V, M and total"
+     },
+     {
+      "t": "Pupil size in mm and reaction R / L"
+     },
+     {
+      "t": "Wake the patient for each set",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Limbs + vitals",
+    "items": [
+     {
+      "t": "Power: N normal, W weak, A absent, each side",
+      "d": 1
+     },
+     {
+      "t": "HR, BP, RR, SpO₂ each set; temperature 4-hourly",
+      "s": "adultstg2026:14.49"
+     },
+     {
+      "t": "HGT hourly while GCS < 15; 4-hourly if diabetic or alcohol",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Record also",
+    "items": [
+     {
+      "t": "Vomiting, seizures, headache, agitation"
+     },
+     {
+      "t": "Fluids in / urine out"
+     },
+     {
+      "t": "Mannitol given (time, dose)",
+      "s": "adultstg2026:14.49"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: seizure, SpO₂ < 94%, HGT < 4, fever, signs of herniation",
+    "b": 1
+   },
+   {
+    "t": "— and for: GCS down by ≥ 2 or motor score down, new unequal pupil, BP up with HR down, new weakness or speech problem, vomiting ≥ 2.",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Lowest GCS",
+   "Vomits (n)",
+   "Fluids in (mL)",
+   "Urine out (mL)"
+  ]
+ }
+}

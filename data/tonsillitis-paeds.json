@@ -1,0 +1,1306 @@
+{
+ "id": "tonsillitis-paeds",
+ "short": "Sore throat / tonsillitis (child)",
+ "title": "Sore throat — tonsillitis and pharyngitis, complicated (child)",
+ "population": "Child 28 days – 12 years with sore throat; admitted if complicated (unable to swallow, peritonsillar cellulitis / abscess, airway concern)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Stridor + barking cough → Croup pathway",
+     "b": 1
+    },
+    {
+     "t": "Neonate < 28 days → neonatal sepsis",
+     "b": 1
+    },
+    {
+     "t": "≥ 13 y → adult doses†",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Ear pain with red bulging drum → Otitis media pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Sore throat — tonsillitis / pharyngitis",
+   "items": [
+    {
+     "t": "Painful red throat and / or enlarged inflamed tonsils",
+     "s": "phcstg2026:19.9",
+     "b": 1
+    },
+    {
+     "t": "White exudate (spots / patches) · tender anterior cervical nodes",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Strep clues: palatal petechiae, strawberry tongue, scarlatiniform rash",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Cough, runny nose, congestion = viral URTI",
+     "s": "paedstg2026:17.2"
+    },
+    {
+     "t": "Age ____ y   Wt ____ kg   T ____ °C",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated → ADMIT = any one of",
+   "items": [
+    {
+     "t": "Unable to swallow / drink · drooling",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Trismus (cannot open mouth)",
+     "s": "phcstg2026:19.11",
+     "b": 1
+    },
+    {
+     "t": "Unilateral swelling, uvula pushed across (peritonsillar)",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Stridor / airway concern",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "t": "Membrane in throat (diphtheria)",
+     "s": "paedstg2026:8.10",
+     "b": 1
+    },
+    {
+     "t": "Suspected rheumatic fever / glomerulonephritis / new murmur",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB) / records",
+   "items": [
+    {
+     "t": "Immunisations up to date (diphtheria)",
+     "s": "paedstg2026:8.9",
+     "b": 1
+    },
+    {
+     "t": "HIV exposure / status",
+     "d": 1
+    },
+    {
+     "t": "Episodes this year (≥ 6 → tonsillectomy referral)",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "Previous rheumatic fever / heart disease",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "Antibiotics already given (pre-referral)",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "paedstg2026:25.4"
+    },
+    {
+     "t": "Growth curve",
+     "d": 1
+    },
+    {
+     "t": "Diphtheria contact",
+     "s": "paedstg2026:8.10"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Throat"
+    },
+    {
+     "t": "Onset, duration",
+     "d": 1
+    },
+    {
+     "t": "Swallowing saliva / fluids",
+     "s": "paedstg2026:17.3"
+    },
+    {
+     "t": "Drooling · muffled voice",
+     "s": "paedstg2026:15.29"
+    },
+    {
+     "t": "Unable to open mouth (trismus)",
+     "s": "paedstg2026:17.3"
+    },
+    {
+     "t": "Earache (referred)",
+     "s": "paedstg2026:17.3"
+    },
+    {
+     "h": "Neck and airway"
+    },
+    {
+     "t": "Neck pain, stiffness, torticollis",
+     "s": "paedstg2026:17.1"
+    },
+    {
+     "t": "Noisy breathing / stridor",
+     "s": "paedstg2026:17.1"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Cough, runny nose (viral)",
+     "s": "phcstg2026:19.10"
+    },
+    {
+     "t": "Joint pain, rash (rheumatic fever)",
+     "d": 1
+    },
+    {
+     "t": "Dark urine, puffy face (AGN)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age norms (IMCI) or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia for age",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea for age",
+     "k": "yn"
+    },
+    {
+     "t": "Stridor in a calm child",
+     "s": "imci2022:25",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90% room air",
+     "s": "imci2022:25",
+     "k": "yn"
+    },
+    {
+     "t": "Drooling",
+     "s": "paedstg2026:17.3",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / toxic",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — look at the throat ONLY if no drooling / stridor",
+   "items": [
+    {
+     "h": "Throat"
+    },
+    {
+     "t": "Tonsils enlarged · exudate",
+     "s": "phcstg2026:19.10"
+    },
+    {
+     "t": "Unilateral bulge, uvula deviated",
+     "s": "paedstg2026:17.3"
+    },
+    {
+     "t": "Grey adherent membrane",
+     "s": "paedstg2026:8.10"
+    },
+    {
+     "t": "Midline posterior pharyngeal swelling",
+     "s": "paedstg2026:17.1"
+    },
+    {
+     "h": "Neck"
+    },
+    {
+     "t": "Tender anterior nodes",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Bull-neck",
+     "s": "paedstg2026:8.9"
+    },
+    {
+     "t": "Torticollis / neck extended",
+     "s": "paedstg2026:17.1"
+    },
+    {
+     "h": "Systemic"
+    },
+    {
+     "t": "Scarlatiniform rash",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "New heart murmur",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "Oedema / hypertension (AGN)",
+     "d": 1
+    },
+    {
+     "t": "Hepatosplenomegaly (EBV)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Airway and swallow check — first, before the throat",
+   "items": [
+    {
+     "t": "Sitting forward, drooling, stridor, unable to swallow → epiglottitis: do NOT examine throat",
+     "s": "paedstg2026:15.29",
+     "b": 1
+    },
+    {
+     "t": "Muffled voice + trismus → peritonsillar abscess",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Neck stiff / extended + midline swelling → retropharyngeal abscess",
+     "s": "paedstg2026:17.1",
+     "b": 1
+    },
+    {
+     "t": "Can swallow fluids: Y / N   Airway: clear / at risk",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Antibiotic criteria (rheumatic fever prevention)",
+   "items": [
+    {
+     "t": "Age 3–21 y with enlarged tonsils PLUS ≥ 1 of:",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "exudate on tonsils",
+     "s": "phcstg2026:19.10",
+     "k": "sub"
+    },
+    {
+     "t": "no cough",
+     "s": "phcstg2026:19.10",
+     "k": "sub"
+    },
+    {
+     "t": "no runny nose",
+     "s": "phcstg2026:19.10",
+     "k": "sub"
+    },
+    {
+     "t": "→ antibiotic to prevent rheumatic fever; otherwise no antibiotic",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Epiglottitis",
+     "s": "paedstg2026:15.29",
+     "b": 1
+    },
+    {
+     "t": "Retropharyngeal abscess",
+     "s": "paedstg2026:17.1",
+     "b": 1
+    },
+    {
+     "t": "Peritonsillar abscess",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "Diphtheria",
+     "s": "paedstg2026:8.10",
+     "b": 1
+    },
+    {
+     "t": "Bacterial tracheitis",
+     "s": "paedstg2026:17.4"
+    },
+    {
+     "t": "Upper airway obstruction",
+     "s": "paedstg2026:17.3"
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "t": "Sepsis",
+     "d": 1
+    },
+    {
+     "t": "Acute rheumatic fever",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "Acute glomerulonephritis",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "New heart murmur",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "Foreign body",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Airway at risk, epiglottitis, diphtheria, retropharyngeal or peritonsillar abscess needing drainage → REFER",
+   "s": "paedstg2026:17.3"
+  },
+  {
+   "t": "11. Complicated → ADMIT, IV amox/clav · Uncomplicated → discharge on the PHC regimen (box, side 2)",
+   "s": "paedstg2026:17.3"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Epiglottitis",
+   "branch": "If epiglottitis",
+   "features": [
+    {
+     "t": "High fever, dysphagia, drooling, muffled voice, sits upright head forward, mouth open",
+     "s": "paedstg2026:15.29"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical — no throat exam, no X-ray",
+     "s": "paedstg2026:15.29",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Secure the airway BEFORE IV line or bloods; prepare BVM, ETT, needle cricothyroidotomy",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone 50 mg/kg IV once daily × 7 d once airway secure",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all, once airway secured",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Retropharyngeal abscess",
+   "branch": "If retropharyngeal abscess",
+   "features": [
+    {
+     "t": "Fever, dysphagia, drooling, neck extension / torticollis, midline posterior pharyngeal swelling; stridor if severe",
+     "s": "paedstg2026:17.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lateral neck X-ray (prevertebral space widened, air, loss of lordosis) · blood culture",
+     "s": "paedstg2026:17.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "Responding: amox/clav PO 45 mg/kg 12-hourly × 14 d",
+     "s": "paedstg2026:17.2"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all (ENT drainage)",
+     "s": "paedstg2026:17.2",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Diphtheria",
+   "branch": "If diphtheria",
+   "features": [
+    {
+     "t": "Pharyngitis / tonsillitis / laryngitis, low or no fever + adherent pseudomembrane that bleeds; bull-neck; incomplete immunisation",
+     "s": "paedstg2026:8.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Nose / throat swab + membrane culture — tell the lab 'suspected diphtheria'",
+     "s": "paedstg2026:8.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "N95 mask; isolate; notify (NICD 082 883 9920)",
+     "s": "paedstg2026:8.9",
+     "b": 1
+    },
+    {
+     "t": "Unable to swallow: benzylpenicillin 50 000 units/kg IV 6-hourly · able: phenoxymethylpenicillin 15 mg/kg PO 6-hourly (max 500 mg); 14 d total",
+     "s": "paedstg2026:8.10",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all (antitoxin)",
+     "s": "paedstg2026:8.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Peritonsillar abscess / cellulitis (quinsy)",
+   "branch": "If peritonsillar abscess",
+   "features": [
+    {
+     "t": "Usually unilateral; soft palate and uvula oedematous, pushed to the other side; trismus",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical · blood culture",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:17.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If drainage needed (not available) or not responding",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Complicated bacterial tonsillitis (unable to swallow)",
+   "features": [
+    {
+     "t": "Fever, malaise, dysphagia, enlarged inflamed tonsils with pus",
+     "s": "paedstg2026:17.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood culture",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid PO 45 mg/kg/dose (amoxicillin) 12-hourly, 14:1, max 1.5 g 12-hourly",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not responding",
+     "s": "paedstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "dx": "Streptococcal tonsillitis, uncomplicated",
+   "features": [
+    {
+     "t": "Age 3–21 y with enlarged tonsils PLUS ≥ 1 of:",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "Exudate, no cough, no runny nose",
+     "s": "phcstg2026:19.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical criteria",
+     "s": "phcstg2026:19.10"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzathine benzylpenicillin IM single dose: < 30 kg 600 000 IU · ≥ 30 kg 1.2 MU",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "OR amoxicillin PO 50 mg/kg once daily × 10 d (max 2 g)",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — PHC",
+     "s": "phcstg2026:19.10"
+    }
+   ]
+  },
+  {
+   "dx": "Viral pharyngitis / URTI",
+   "features": [
+    {
+     "t": "Cough, runny nose, nasal congestion",
+     "s": "paedstg2026:17.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "paedstg2026:17.2"
+    }
+   ],
+   "manage": [
+    {
+     "t": "No antibiotic; fluids, soothe throat",
+     "s": "phcstg2026:19.9"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:17.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Infectious mononucleosis (EBV)",
+   "features": [
+    {
+     "t": "Older child; exudative tonsils, large nodes, hepatosplenomegaly, fatigue",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC (atypical lymphocytes)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Supportive; airway watch; amoxicillin may cause rash",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If airway obstruction",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Airway first · IV until swallowing and responding, then oral · 10 days of antibiotic in total · branch rows only if needed",
+  "columns": {
+   "feed": "Airway, fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Airway each round: drooling, stridor, muffled voice, sitting forward, SpO₂",
+    "s": "paedstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "Temperature, pulse, RR, SpO₂ 4-hourly; hourly while airway signs present",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Swallowing, oral intake, IV fluids and urine each shift (hydration)",
+    "s": "paedstg2026:17.1"
+   },
+   {
+    "t": "Antibiotic doses timed and signed",
+    "d": 1
+   },
+   {
+    "t": "Pain / fever: paracetamol given as needed",
+    "s": "paedstg2026:17.3"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Check the airway before anything else. Drooling or stridor: keep the child with the caregiver, sitting up, and do not examine the throat.",
+    "feed": [
+     {
+      "t": "Maintain the airway; O₂ if SpO₂ < 90%",
+      "s": "imci2022:25",
+      "b": 1
+     },
+     {
+      "t": "Unable to swallow: IV fluids or NGT",
+      "s": "paedstg2026:17.1",
+      "b": 1
+     },
+     {
+      "t": "Oral fluids as soon as able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture before antibiotics",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick if oedema / hypertension",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Throat swab only if diphtheria suspected",
+      "s": "paedstg2026:8.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotic"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "t": "Start immediately even if transfer is planned",
+      "s": "paedstg2026:17.3"
+     },
+     {
+      "h": "Penicillin allergy"
+     },
+     {
+      "t": "Severe infection: 3rd-generation cephalosporin unless immediate hypersensitivity (anaphylaxis)",
+      "s": "paedstg2026:25.4"
+     },
+     {
+      "t": "Gram-positive alternative: clindamycin 6 mg/kg/dose PO 6-hourly",
+      "s": "paedstg2026:25.4"
+     },
+     {
+      "h": "Pain / fever"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+      "s": "paedstg2026:17.3"
+     },
+     {
+      "h": "Branch — tick"
+     },
+     {
+      "t": "Peritonsillar abscess",
+      "s": "paedstg2026:17.3"
+     },
+     {
+      "t": "Retropharyngeal abscess",
+      "s": "paedstg2026:17.1"
+     },
+     {
+      "t": "Diphtheria · epiglottitis",
+      "s": "paedstg2026:8.10"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24-h review",
+    "feed": [
+     {
+      "t": "Swallowing fluids? stop IV fluids when drinking",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase blood culture",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Responding and swallowing → oral amox/clav",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid PO 45 mg/kg/dose (amoxicillin) 12-hourly, 14:1, max 1.5 g 12-hourly",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Adjust to culture result",
+      "s": "paedstg2026:17.3"
+     }
+    ]
+   },
+   {
+    "label": "If peritonsillar abscess",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Airway; IV fluids",
+      "s": "paedstg2026:17.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Usually unilateral; soft palate and uvula oedematous, pushed to the other side; trismus",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Continue IV amox/clav; maintain airway",
+      "s": "paedstg2026:17.3"
+     },
+     {
+      "t": "Drainage needed and not available at ANDH (no theatre / ENT) → REFER",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If retropharyngeal abscess",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Protect airway; IV fluids / NGT",
+      "s": "paedstg2026:17.1",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lateral neck X-ray (prevertebral space widened, air, loss of lordosis) · blood culture",
+      "s": "paedstg2026:17.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "t": "Start antibiotics immediately even if transferring; consider TB (cold abscess)",
+      "s": "paedstg2026:17.1"
+     },
+     {
+      "t": "REFER all children (ENT drainage)",
+      "s": "paedstg2026:17.2",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If diphtheria",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Isolate; N95 mask for staff",
+      "s": "paedstg2026:8.10",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Nose / throat swab + membrane culture — tell the lab 'suspected diphtheria'",
+      "s": "paedstg2026:8.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "N95 mask; isolate; notify (NICD 082 883 9920)",
+      "s": "paedstg2026:8.9",
+      "b": 1
+     },
+     {
+      "t": "Unable to swallow: benzylpenicillin 50 000 units/kg IV 6-hourly · able: phenoxymethylpenicillin 15 mg/kg PO 6-hourly (max 500 mg); 14 d total",
+      "s": "paedstg2026:8.10",
+      "b": 1
+     },
+     {
+      "t": "Diphtheria antitoxin to all probable cases — REFER all",
+      "s": "paedstg2026:8.11",
+      "b": 1
+     },
+     {
+      "t": "Contacts: benzathine benzylpenicillin IM < 6 y 600 000 u, > 6 y and adults 1.2 MU; swab; watch 7 d",
+      "s": "paedstg2026:8.11"
+     }
+    ]
+   },
+   {
+    "label": "If epiglottitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Sitting up with caregiver; humidified O₂ if needed",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "No bloods until airway secure",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Secure the airway BEFORE IV line or bloods; prepare BVM, ETT, needle cricothyroidotomy",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 50 mg/kg IV once daily × 7 d once airway secure",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     },
+     {
+      "t": "REFER all once airway secured; transport sitting up; inform receiving hospital",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "48–72-h review",
+    "feed": [
+     {
+      "t": "Normal diet as able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture result",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not responding / local complication → REFER",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Joint pain, murmur, haematuria → think rheumatic fever / AGN: REFER",
+      "s": "phcstg2026:19.11"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–7",
+    "phase": "Oral",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amoxicillin/clavulanic acid PO 45 mg/kg/dose (amoxicillin) 12-hourly, 14:1, max 1.5 g 12-hourly",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Complete 10 days of antibiotic in total (IV + oral)",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Admitted — antibiotics",
+   "items": [
+    {
+     "h": "IV"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "h": "Oral (once swallowing)"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid PO 45 mg/kg/dose (amoxicillin) 12-hourly, 14:1, max 1.5 g 12-hourly",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "10 days in total",
+     "s": "paedstg2026:17.3"
+    },
+    {
+     "h": "Penicillin allergy"
+    },
+    {
+     "t": "Severe infection: 3rd-generation cephalosporin unless immediate hypersensitivity (anaphylaxis)",
+     "s": "paedstg2026:25.4"
+    },
+    {
+     "t": "Gram-positive alternative: clindamycin 6 mg/kg/dose PO 6-hourly",
+     "s": "paedstg2026:25.4"
+    },
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:17.3"
+    }
+   ]
+  },
+  {
+   "title": "Not admitted — PHC regimen",
+   "items": [
+    {
+     "t": "Age 3–21 y with enlarged tonsils PLUS ≥ 1 of:",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "Benzathine benzylpenicillin IM single dose: < 30 kg 600 000 IU · ≥ 30 kg 1.2 MU",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "OR amoxicillin PO 50 mg/kg once daily × 10 d (max 2 g)",
+     "s": "phcstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "OR phenoxymethylpenicillin PO 12-hourly × 10 d: 18 months–11 y 250 mg · > 11 y 500 mg",
+     "s": "phcstg2026:19.10"
+    },
+    {
+     "t": "Severe penicillin allergy (> 3 y): azithromycin 10 mg/kg PO daily × 3 d",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "t": "Salt gargle if able; fluids; < 6 y soothe with breast milk / warm drinks",
+     "s": "phcstg2026:19.9"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · REFER",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New stridor, drooling, cannot swallow saliva",
+     "s": "paedstg2026:15.29",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 90%",
+     "s": "imci2022:25",
+     "b": 1
+    },
+    {
+     "t": "Not drinking, no urine",
+     "d": 1
+    },
+    {
+     "t": "Rash, joint pain, murmur, dark urine",
+     "s": "phcstg2026:19.11"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Airway at risk · epiglottitis · diphtheria",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    },
+    {
+     "t": "Abscess needing drainage · not responding",
+     "s": "paedstg2026:17.3",
+     "b": 1
+    },
+    {
+     "t": "≥ 6 episodes / year (tonsillectomy, elective)",
+     "s": "phcstg2026:19.11"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Airway clear, no drooling or stridor",
+    "s": "paedstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "Swallowing fluids and oral antibiotic",
+    "s": "paedstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "Afebrile, improving",
+    "d": 1
+   },
+   {
+    "t": "No abscess needing drainage",
+    "s": "paedstg2026:17.3"
+   },
+   {
+    "t": "Caregiver knows the full 10-day course",
+    "s": "paedstg2026:17.3"
+   },
+   {
+    "t": "Knows danger signs to return",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "PHC review in 5 days if not improving",
+    "s": "imci2022:29",
+    "b": 1
+   },
+   {
+    "t": "Complete 10 days of antibiotic",
+    "s": "paedstg2026:17.3",
+    "b": 1
+   },
+   {
+    "t": "Joint pain, murmur, dark urine later → return (ARF / AGN)",
+    "s": "phcstg2026:19.11"
+   },
+   {
+    "t": "≥ 6 episodes / year → ENT referral for tonsillectomy",
+    "s": "phcstg2026:19.11"
+   },
+   {
+    "t": "Catch-up immunisations",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — airway, swallowing and antibiotics",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Airway",
+    "items": [
+     {
+      "t": "Airway each round: drooling, stridor, muffled voice, sitting forward, SpO₂",
+      "s": "paedstg2026:17.3",
+      "b": 1
+     },
+     {
+      "t": "Temperature, pulse, RR, SpO₂ 4-hourly; hourly while airway signs present",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Swallowing · hydration",
+    "items": [
+     {
+      "t": "Swallowing, oral intake, IV fluids and urine each shift (hydration)",
+      "s": "paedstg2026:17.1"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Antibiotic doses timed and signed",
+      "d": 1
+     },
+     {
+      "t": "Pain / fever: paracetamol given as needed",
+      "s": "paedstg2026:17.3"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "new drooling, stridor or unable to swallow saliva",
+    "s": "paedstg2026:15.29",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ < 90%",
+    "s": "imci2022:25",
+    "b": 1
+   },
+   {
+    "t": "no urine 8 h or not drinking",
+    "d": 1
+   },
+   {
+    "t": "muffled voice or cannot open mouth",
+    "s": "paedstg2026:17.3"
+   }
+  ],
+  "totals": [
+   "Oral intake (mL)",
+   "IV fluids (mL)",
+   "Urine (times)",
+   "Antibiotic doses given / due"
+  ]
+ }
+}

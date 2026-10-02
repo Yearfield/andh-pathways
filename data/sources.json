@@ -1,5 +1,6 @@
 {
   "_note": "offset = PDF page number minus printed page number. Items cite printed pages. Calibrate in the app (Sources tab) if a link lands on the wrong page.",
+  "_todo": "Scales and Calculations cite STG pages as 'chapter.page' (e.g. PHC:21.64). TODO: add a per-book chapter.page -> PDF page lookup from claude/guideline_catalogue.json (not available locally yet); until then, calibrate each chapter's page offset in the app (Scales page > Guideline PDFs). HOSP and PAED are aliases onto the existing stg-adult / stg-paed chapter PDFs.",
   "sources": [
     {"id": "imci2022", "short": "IMCI 2022", "title": "IMCI Chart Booklet (South Africa)", "edition": "2022 (final, May 2023 print)", "offset": 2},
     {"id": "imam2015", "short": "IMAM 2015", "title": "Integrated Management of Children with Acute Malnutrition in South Africa: Operational Guidelines", "edition": "NDoH 2015", "offset": 0},
@@ -24,14 +25,30 @@
     {"id": "tbadult2017", "short": "TB Adults 2017", "title": "South African National TB Guidelines – Adults (MIC/UCT wall chart, based on NTCP 2014)", "edition": "Mar 2017", "offset": 0},
     {"id": "tbpaeds2024", "short": "Paeds TB 2024", "title": "Clinical Guideline for the Diagnosis and Treatment of DS-TB in Children and Adolescents", "edition": "NDoH Sept 2024", "offset": 8},
     {"id": "tbqrg2025", "short": "Paeds TB QRG 2025", "title": "Management of TB in Children and Adolescents – Quick Reference Guide", "edition": "Sept 2025", "offset": 0},
-    {"id": "stg-adult", "short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
+    {"id": "PHC", "short": "PHC STG", "title": "STG & EML Primary Healthcare (one PDF per chapter)", "edition": "8th ed. 2024 (updated Sept 2026)", "offset": 0, "chapters": {
+    "21": {"title": "Chapter 21", "offset": 0}
+    }},
+    {"id": "HOSP", "alias": "stg-adult", "short": "STG Adult", "title": "STG & EML Hospital Level Adults (same chapter PDFs as stg-adult)", "edition": "6th ed. 2024 (updated Mar 2026)", "offset": 0},
+    {"id": "PAED", "alias": "stg-paed", "short": "STG Paeds", "title": "STG & EML Paediatric Hospital Level (same chapter PDFs as stg-paed)", "edition": "2025-2029 cycle (updated Mar 2026)", "offset": 0},
+    {"id": "LITFL", "short": "LITFL", "title": "LITFL: Rogers J, Cadogan M. Blood Gas Interpretation (infographic 09/2024; page updated 26 Jun 2026)", "type": "online", "url": "https://litfl.com/acid-base-disorders/", "licence": "CC BY-NC-SA 4.0", "licence_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/", "accessed": "2026-10-02"},
+    {"id": "LITFL-AG", "short": "LITFL AG", "title": "LITFL: Nickson C. Anion Gap (updated 3 Nov 2020)", "type": "online", "url": "https://litfl.com/anion-gap/", "licence": "CC BY-NC-SA 4.0", "licence_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/", "accessed": "2026-10-02"},
+    {"id": "LITFL-VBG", "short": "LITFL VBG", "title": "LITFL: Nickson C. VBG versus ABG (updated 3 Nov 2020)", "type": "online", "url": "https://litfl.com/vbg-versus-abg/", "licence": "CC BY-NC-SA 4.0", "licence_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/", "accessed": "2026-10-02"},
+    {"id": "MSD","short": "MSD", "title": "MSD Manual Professional: Modified Glasgow Coma Scale for Infants and Children", "type": "online", "url": "https://www.msdmanuals.com/professional/multimedia/table/modified-glasgow-coma-scale-for-infants-and-children", "accessed": "2026-10-01"},
+    {"id": "stg-adult","short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
     "7": {"title": "Chapter 7", "offset": 0},
     "12": {"title": "Chapter 12", "offset": 0},
+    "8": {"title": "Chapter 8", "offset": 0},
+    "14": {"title": "Chapter 14", "offset": 0},
+    "16": {"title": "Chapter 16", "offset": 0},
+    "19": {"title": "Chapter 19", "offset": 0},
     "20": {"title": "Chapter 20", "offset": 0},
     "23": {"title": "Chapter 23", "offset": 0}
     }},
     {"id": "stg-paed", "short": "STG Paeds", "title": "Paediatric Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
     "1": {"title": "Chapter 1", "offset": 0},
+    "7": {"title": "Chapter 7", "offset": 0},
+    "13": {"title": "Chapter 13", "offset": 0},
+    "18": {"title": "Chapter 18", "offset": 0},
     "22": {"title": "Chapter 22", "offset": 0},
     "23": {"title": "Chapter 23", "offset": 0}
     }}

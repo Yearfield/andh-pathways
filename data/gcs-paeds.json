@@ -1,0 +1,318 @@
+{
+  "id": "gcs-paeds",
+  "type": "scale",
+  "short": "pGCS",
+  "title": "Glasgow Coma Scale — Paediatric (modified)",
+  "population": "paediatric",
+  "age_range": "preverbal / <2 y (infant column); verbal child ≥2 y (child column)",
+  "setting": "casualty / ward",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-01",
+  "tags": [
+    "scale",
+    "neuro",
+    "consciousness",
+    "trauma",
+    "head injury",
+    "TBI",
+    "paediatric",
+    "infant",
+    "airway",
+    "emergency",
+    "GCS",
+    "pGCS",
+    "calculation"
+  ],
+  "sources": [
+    {
+      "id": "MSD",
+      "title": "MSD Manual Professional: Modified Glasgow Coma Scale for Infants and Children (online, accessed 2026-10-01)",
+      "type": "online",
+      "country": "intl",
+      "url": "https://www.msdmanuals.com/professional/multimedia/table/modified-glasgow-coma-scale-for-infants-and-children"
+    },
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "age_split": {
+    "infant": "preverbal or <2 y",
+    "child": "verbal ≥2 y",
+    "d": true
+  },
+  "components": [
+    {
+      "key": "E",
+      "name": "Eye opening",
+      "min": 1,
+      "max": 4,
+      "items": [
+        {
+          "score": 4,
+          "t_infant": "Opens spontaneously",
+          "t_child": "Spontaneous",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 3,
+          "t_infant": "Opens to verbal stimuli",
+          "t_child": "To voice",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 2,
+          "t_infant": "Opens to pain only",
+          "t_child": "To pain",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 1,
+          "t_infant": "No response",
+          "t_child": "None",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        }
+      ]
+    },
+    {
+      "key": "V",
+      "name": "Best verbal response",
+      "min": 1,
+      "max": 5,
+      "items": [
+        {
+          "score": 5,
+          "t_infant": "Coos and babbles",
+          "t_child": "Orientated",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 4,
+          "t_infant": "Irritable cries",
+          "t_child": "Confused",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 3,
+          "t_infant": "Cries to pain",
+          "t_child": "Inappropriate words",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 2,
+          "t_infant": "Moans to pain",
+          "t_child": "Incomprehensible sounds",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 1,
+          "t_infant": "No response",
+          "t_child": "None",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        }
+      ]
+    },
+    {
+      "key": "M",
+      "name": "Best motor response",
+      "min": 1,
+      "max": 6,
+      "items": [
+        {
+          "score": 6,
+          "t_infant": "Moves spontaneously, purposefully",
+          "t_child": "Obeys commands",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 5,
+          "t_infant": "Withdraws to touch",
+          "t_child": "Localises to pain",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 4,
+          "t_infant": "Withdraws to pain",
+          "t_child": "Withdraws from pain",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 3,
+          "t_infant": "Abnormal flexion (decorticate)",
+          "t_child": "Abnormal flexion to pain",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 2,
+          "t_infant": "Abnormal extension (decerebrate)",
+          "t_child": "Extends to pain",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        },
+        {
+          "score": 1,
+          "t_infant": "No response",
+          "t_child": "None",
+          "s": "PHC:21.64",
+          "s_infant": "MSD",
+          "d_infant": true
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "id": "gcs_total",
+      "name": "GCS total",
+      "expr": "GCS = E + V + M",
+      "vars": {
+        "E": "eye opening 1–4",
+        "V": "verbal 1–5",
+        "M": "motor 1–6"
+      },
+      "range": [
+        3,
+        15
+      ],
+      "notation": "Record components, e.g. E3 V4 M5 = 12",
+      "s": "PHC:21.64"
+    },
+    {
+      "id": "target_map_paeds_tbi",
+      "name": "Target MAP in TBI (no ICP monitor)",
+      "expr": "MAP = 65 + 1.5 × age (years)",
+      "vars": {
+        "age": "years"
+      },
+      "units": "mmHg",
+      "s": "PAED:23.22",
+      "d": false
+    },
+    {
+      "id": "cpp",
+      "name": "Cerebral perfusion pressure",
+      "expr": "CPP = MAP − ICP",
+      "target": "CPP 40–50 mmHg",
+      "units": "mmHg",
+      "s": "PAED:23.22",
+      "d": false
+    },
+    {
+      "id": "min_sbp_child",
+      "name": "Lowest acceptable SBP (child, trauma)",
+      "expr": "SBP ≥ 70 + (2 × age in years)",
+      "units": "mmHg",
+      "s": "PHC:21.64",
+      "d": false
+    }
+  ],
+  "interpretation_stg": [
+    {
+      "min": 3,
+      "max": 8,
+      "t": "Severe TBI = GCS <9 → refer to specialised centre",
+      "s": "PAED:23.22",
+      "level": "red"
+    },
+    {
+      "min": 3,
+      "max": 8,
+      "t": "GCS <9 = contraindication to LP",
+      "s": "PAED:13.46",
+      "level": "red"
+    },
+    {
+      "min": 9,
+      "max": 12,
+      "t": "Moderate head injury = GCS 9–12",
+      "s": "PHC:21.63",
+      "level": "amber",
+      "c": "STG prints 11–14; corrected to 9–12"
+    },
+    {
+      "min": 3,
+      "max": 15,
+      "t": "Major-injury indicators: ↓ level of consciousness; age <2 y → admit",
+      "s": "PHC:21.63",
+      "level": "amber"
+    }
+  ],
+  "interpretation_classic": [
+    {
+      "min": 3,
+      "max": 8,
+      "label": "≤8: consider intubation/ventilation + ICP monitoring",
+      "level": "red",
+      "d": true,
+      "s": "MSD"
+    },
+    {
+      "min": 3,
+      "max": 12,
+      "label": "≤12: severe head injury",
+      "level": "amber",
+      "d": true,
+      "s": "MSD"
+    }
+  ],
+  "tbi_goals": {
+    "t": "Avoid the 5 H's: hypoxaemia, hypotension, hyperthermia, hypoglycaemia, hypercarbia. SpO₂ >94% but <100%; PaCO₂ 35–40 mmHg (4.7–6 kPa)",
+    "s": "PAED:23.22"
+  },
+  "notes": [
+    {
+      "t": "If intubated, unconscious or preverbal, the MOTOR score matters most",
+      "d": true,
+      "s": "MSD"
+    },
+    {
+      "t": "Use the infant column for preverbal children of any age (e.g. developmental delay)",
+      "d": true
+    },
+    {
+      "t": "Ask caregiver what is 'normal' for the child; score best response",
+      "d": true
+    },
+    {
+      "t": "Check glucose in every child with ↓ consciousness",
+      "d": true
+    }
+  ],
+  "dagger_note": "† = not in the SA STG (clinician craft or non-SA source). Lines with a page ref are STG. ‡ = STG misprint corrected (printed value given in JSON)."
+}

@@ -1,0 +1,1298 @@
+{
+ "id": "croup-paeds",
+ "short": "Stridor / croup (child)",
+ "title": "Stridor — acute viral laryngotracheobronchitis (croup), child",
+ "population": "Child 28 days – 12 years with acute stridor; managed in casualty / ward over the first 24 hours",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-02",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Wheeze without stridor → LRTI / bronchiolitis / asthma",
+     "b": 1
+    },
+    {
+     "t": "Sore throat, drooling, no barking cough → Sore throat pathway",
+     "b": 1
+    },
+    {
+     "t": "Neonate < 28 days → discuss / REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Anaphylaxis with shock → resuscitation protocol",
+     "s": "paedstg2026:1.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Croup = previously healthy child with",
+   "items": [
+    {
+     "t": "Barking cough + stridor 1–2 days after a URTI",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Progressive airway obstruction",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Mild fever may be present",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Commonest age 6 months – 2 years",
+     "s": "paedstg2026:15.30"
+    },
+    {
+     "t": "Stridor becomes SOFTER as obstruction worsens",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Age ____  Wt ____ kg  SpO₂ ____ % RA",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity grade — ADMIT if grade ≥ 2 or any extra sign",
+   "items": [
+    {
+     "t": "Grade 1 — inspiratory stridor only",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Grade 2 — inspiratory + expiratory stridor (passive expiration)",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Grade 3 — inspiratory + expiratory stridor, active expiration with abdominal muscles, pulsus paradoxus",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Grade 4 — cyanosis, apathy, marked retractions, impending apnoea",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Chest indrawing · rapid breathing",
+     "s": "phcstg2026:17.20",
+     "b": 1
+    },
+    {
+     "t": "Altered consciousness · unable to drink / feed",
+     "s": "phcstg2026:17.20",
+     "b": 1
+    },
+    {
+     "t": "Uncertain diagnosis",
+     "s": "paedstg2026:15.33"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB) / referral letter",
+   "items": [
+    {
+     "t": "Immunisations (measles, diphtheria, Hib)",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Steroid / adrenaline already given (dose, time)",
+     "s": "phcstg2026:17.20",
+     "b": 1
+    },
+    {
+     "t": "Previous episodes (recurrent → papilloma)",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "HIV exposure / status",
+     "d": 1
+    },
+    {
+     "t": "Measles contact",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Known allergy",
+     "d": 1
+    },
+    {
+     "t": "Growth curve",
+     "d": 1
+    },
+    {
+     "t": "Congenital airway problem",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "URTI prodrome 1–2 days",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Sudden onset, no prodrome (foreign body / angio-oedema)",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Choking episode while eating / playing",
+     "d": 1
+    },
+    {
+     "h": "Other features"
+    },
+    {
+     "t": "High fever, dysphagia, drooling, sitting forward",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Measles rash · cold sores (herpes)",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Recurrent obstruction",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "New food, drug, sting (allergy)",
+     "d": 1
+    },
+    {
+     "h": "Feeding"
+    },
+    {
+     "t": "Drinking / feeding",
+     "s": "phcstg2026:17.20"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age norms (IMCI) or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia for age",
+     "s": "paedstg2026:15.31",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea for age",
+     "s": "phcstg2026:17.20",
+     "k": "yn"
+    },
+    {
+     "t": "Chest indrawing",
+     "s": "phcstg2026:17.20",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90% room air",
+     "s": "imci2022:25",
+     "k": "yn"
+    },
+    {
+     "t": "Cyanosis",
+     "s": "paedstg2026:15.31",
+     "k": "yn"
+    },
+    {
+     "t": "Apathy / drowsy",
+     "s": "paedstg2026:15.31",
+     "k": "yn"
+    },
+    {
+     "t": "Unable to drink",
+     "s": "phcstg2026:17.20",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — keep the child calm",
+   "items": [
+    {
+     "h": "Airway"
+    },
+    {
+     "t": "Inspiratory stridor",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Expiratory stridor",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Active expiration (abdominal)",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Pulsus paradoxus",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Marked retractions",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "h": "Mouth and skin"
+    },
+    {
+     "t": "Drooling (epiglottitis)",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Membrane (diphtheria)",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Cold sores / measles rash",
+     "s": "paedstg2026:15.32"
+    },
+    {
+     "t": "Urticaria, lip / face swelling",
+     "d": 1
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Crackles / wheeze (pneumonia)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Croup grade now — re-grade after every neb",
+   "items": [
+    {
+     "t": "Grade: 1 · 2 · 3 · 4 (circle)   Time ____",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Grade 1: steroid only",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Grade 2: steroid + adrenaline neb",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Grade 3: as grade 2; no improvement in 1 h → intubate, REFER",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Grade 4: intubate / bag-mask, REFER urgently",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Pulse oximetry — no blood gas",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on ____ L/min O₂",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "O₂ to keep SpO₂ 93–95%",
+     "s": "phcstg2026:17.20",
+     "b": 1
+    },
+    {
+     "t": "Do NOT do ABG — clinical grade is more reliable",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Falling SpO₂ = late sign",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Epiglottitis",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Bacterial tracheitis",
+     "s": "paedstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Foreign body",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Angio-oedema / anaphylaxis",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Diphtheria",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Retropharyngeal abscess",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Grade 4 obstruction",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Measles / herpes (no steroid)",
+     "s": "paedstg2026:15.32"
+    },
+    {
+     "t": "Recurrent (papilloma)",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Pneumonia co-infection",
+     "s": "paedstg2026:17.4"
+    },
+    {
+     "t": "Exhaustion / soft stridor",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "t": "Unable to drink",
+     "s": "phcstg2026:17.20"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Grade 3 not improving in 1 h, grade 4, intubated, epiglottitis, tracheitis, foreign body or uncertain diagnosis → REFER",
+   "s": "paedstg2026:15.33"
+  },
+  {
+   "t": "11. Grade 1 → steroid, observe · Grade 2 → ADMIT: steroid + adrenaline nebs on the hourly chart",
+   "s": "paedstg2026:15.32"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Epiglottitis",
+   "branch": "If epiglottitis / tracheitis",
+   "features": [
+    {
+     "t": "High fever, dysphagia, drooling, muffled voice, sits upright head forward, mouth open",
+     "s": "paedstg2026:15.29"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical — do not examine throat, no X-ray",
+     "s": "paedstg2026:15.29",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Secure the airway BEFORE IV line or bloods; prepare BVM, ETT, needle cricothyroidotomy",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone 50 mg/kg IV once daily × 7 d once airway secure",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all, once airway secured",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bacterial tracheitis",
+   "branch": "If epiglottitis / tracheitis",
+   "features": [
+    {
+     "t": "Toxic, insidious onset, brassy cough, neck pain, dysphagia, NO drooling; poor response to adrenaline",
+     "s": "paedstg2026:17.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lateral neck X-ray: hazy tracheal air column · blood culture",
+     "s": "paedstg2026:17.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 80 mg/kg IV once daily",
+     "s": "paedstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:17.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — if intubation needed",
+     "s": "paedstg2026:17.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Foreign body aspiration",
+   "features": [
+    {
+     "t": "Sudden onset, no prodrome, otherwise healthy",
+     "s": "phcstg2026:17.19"
+    },
+    {
+     "t": "Choking episode",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR / lateral neck X-ray (may be normal)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "REFER for bronchoscopy",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Keep calm; O₂; do not attempt blind finger sweep",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — suspected foreign body",
+     "s": "phcstg2026:17.20",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Angio-oedema / anaphylaxis",
+   "features": [
+    {
+     "t": "Acute onset without prodrome; swelling, urticaria",
+     "s": "paedstg2026:15.31"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Adrenaline 1:1000 IM 0.01 mL/kg (10 mcg/kg), max 0.5 mL, repeat every 5 min as needed",
+     "s": "paedstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "Grade ≥ 2: adrenaline 1:1000 1 mL + NaCl 0.9% 1 mL nebulised with O₂",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If airway not controlled",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Diphtheria",
+   "features": [
+    {
+     "t": "Incomplete immunisation + membrane in the upper airway",
+     "s": "paedstg2026:15.31"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Nose / throat swab + membrane culture — tell the lab 'suspected diphtheria'",
+     "s": "paedstg2026:8.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "N95 mask; isolate; notify (NICD 082 883 9920)",
+     "s": "paedstg2026:8.9",
+     "b": 1
+    },
+    {
+     "t": "Unable to swallow: benzylpenicillin 50 000 units/kg IV 6-hourly · able: phenoxymethylpenicillin 15 mg/kg PO 6-hourly (max 500 mg); 14 d total",
+     "s": "paedstg2026:8.10",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all (antitoxin)",
+     "s": "paedstg2026:8.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Retropharyngeal abscess",
+   "features": [
+    {
+     "t": "Fever, dysphagia, drooling, neck extension / torticollis, midline posterior pharyngeal swelling; stridor if severe",
+     "s": "paedstg2026:17.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lateral neck X-ray (prevertebral space widened, air, loss of lordosis) · blood culture",
+     "s": "paedstg2026:17.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all (ENT drainage)",
+     "s": "paedstg2026:17.2",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Viral croup",
+   "branch": "0 min",
+   "features": [
+    {
+     "t": "Barking cough + stridor after URTI prodrome, mild fever",
+     "s": "paedstg2026:15.31"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical grade 1–4",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Prednisone 2 mg/kg PO single dose (max < 2 y 20 mg · 2–5 y 30 mg · 6–12 y 40 mg)",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Grade ≥ 2: adrenaline 1:1000 1 mL + NaCl 0.9% 1 mL nebulised with O₂",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If grade 3 not improving in 1 h, or grade 4",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Laryngeal papilloma",
+   "features": [
+    {
+     "t": "Recurrent upper airway obstruction, hoarse voice",
+     "s": "paedstg2026:15.31"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for laryngoscopy",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the acute episode as croup",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — elective ENT",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Steroid for all grades · adrenaline nebs for grade ≥ 2 · re-grade after every neb · no ABG · branch rows only if needed",
+  "columns": {
+   "feed": "O₂, fluids & care",
+   "tests": "Monitoring & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Croup grade, SpO₂, heart rate, RR: before and 15–30 min after each adrenaline neb, then hourly × 4 h, then 2-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "O₂ to keep SpO₂ 93–95%",
+    "s": "phcstg2026:17.20",
+    "b": 1
+   },
+   {
+    "t": "Keep calm on caregiver's lap; avoid distressing procedures",
+    "s": "phcstg2026:17.20"
+   },
+   {
+    "t": "Oral fluids if swallowing; record intake and urine",
+    "s": "phcstg2026:17.20"
+   },
+   {
+    "t": "No arterial blood gas — grade clinically",
+    "s": "paedstg2026:15.31"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "Arrival",
+    "lead": "Keep the child calm on the caregiver's lap. Grade the obstruction, then treat. Check the letter for steroid or adrenaline already given.",
+    "feed": [
+     {
+      "t": "O₂ to keep SpO₂ 93–95%",
+      "s": "phcstg2026:17.20",
+      "b": 1
+     },
+     {
+      "t": "Nebulise with O₂ (6–8 L/min)",
+      "s": "phcstg2026:17.20"
+     },
+     {
+      "t": "Oral fluids if able to swallow",
+      "s": "phcstg2026:17.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, heart rate, RR",
+      "s": "paedstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "No ABG; no bloods unless intubation planned",
+      "s": "paedstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Glucose if not drinking",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "All grades — steroid"
+     },
+     {
+      "t": "Prednisone 2 mg/kg PO single dose (max < 2 y 20 mg · 2–5 y 30 mg · 6–12 y 40 mg)",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "OR dexamethasone 0.5 mg/kg IV / IM single dose",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Avoid steroids in measles or herpes infection",
+      "s": "paedstg2026:15.32"
+     },
+     {
+      "h": "Grade ≥ 2"
+     },
+     {
+      "t": "Grade ≥ 2: adrenaline 1:1000 1 mL + NaCl 0.9% 1 mL nebulised with O₂",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Repeat every 15–30 min until expiratory stridor is abolished",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "h": "Grade 4"
+     },
+     {
+      "t": "Intubate / bag-mask; REFER urgently",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "h": "Fever"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+      "s": "paedstg2026:17.3"
+     }
+    ]
+   },
+   {
+    "label": "15–30 min",
+    "phase": "First re-grade",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-grade, SpO₂, HR, RR",
+      "s": "paedstg2026:15.31",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Expiratory stridor still present: repeat adrenaline neb",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Worse / grade 4: intubate, REFER",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Decision",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-grade",
+      "s": "paedstg2026:15.31",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Grade 3 not improving within 1 h of adrenaline: intubate (preferably under GA), REFER",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Improving: reduce the frequency of nebs with time",
+      "s": "paedstg2026:15.32"
+     },
+     {
+      "t": "Grade 1 after steroid, drinking: observe; plan discharge",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids",
+      "s": "phcstg2026:17.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-grade hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe ≥ 2 h after the last adrenaline neb for rebound",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Stridor returns: repeat adrenaline neb",
+      "s": "paedstg2026:15.32"
+     }
+    ]
+   },
+   {
+    "label": "If not responding",
+    "phase": "Grade 3–4",
+    "feed": [
+     {
+      "t": "100% warm humidified O₂",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Prepare intubation (smaller tube than usual)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Grade 3 not improving within 1 h of adrenaline: intubate (preferably under GA), REFER",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Grade 4: continue steroid + adrenaline neb with 100% warm humidified O₂; intubate; if unable, bag-mask and REFER urgently",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Intubated children → ICU (REFER)",
+      "s": "paedstg2026:15.33",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If epiglottitis / tracheitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Sitting up with caregiver; do not lie down",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Bloods and swabs only once airway is secure",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 50 mg/kg IV once daily × 7 d once airway secure",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 80 mg/kg IV once daily",
+      "s": "paedstg2026:17.4",
+      "b": 1
+     },
+     {
+      "t": "REFER all once airway secured; transport sitting up; inform receiving hospital",
+      "s": "paedstg2026:15.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If herpes / bacterial",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture if bacterial suspected",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Suspected herpes: aciclovir 10–15 mg/kg IV 8-hourly × 5–7 d",
+      "s": "paedstg2026:15.32"
+     },
+     {
+      "t": "Suspected bacterial infection: amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly",
+      "s": "paedstg2026:6.7"
+     },
+     {
+      "t": "No steroid if herpes or measles",
+      "s": "paedstg2026:15.32",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4–12 h",
+    "phase": "Ward",
+    "feed": [
+     {
+      "t": "Wean O₂ when SpO₂ stays 93–95% in air",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-grade 2-hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Grade 2 persisting: continue nebs, reduce frequency as improving",
+      "s": "paedstg2026:15.32"
+     },
+     {
+      "t": "Needing nebs every 15–30 min after 4 h → discuss / REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12–24 h",
+    "phase": "Discharge?",
+    "feed": [
+     {
+      "t": "Drinking well",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-grade",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No stridor at rest and ≥ 4 h since last neb → discharge (criteria below)",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Steroid · adrenaline",
+   "items": [
+    {
+     "h": "Steroid — all grades"
+    },
+    {
+     "t": "Prednisone 2 mg/kg PO single dose (max < 2 y 20 mg · 2–5 y 30 mg · 6–12 y 40 mg)",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "OR dexamethasone 0.5 mg/kg IV / IM single dose",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Avoid steroids in measles or herpes infection",
+     "s": "paedstg2026:15.32"
+    },
+    {
+     "h": "Adrenaline — grade ≥ 2"
+    },
+    {
+     "t": "Grade ≥ 2: adrenaline 1:1000 1 mL + NaCl 0.9% 1 mL nebulised with O₂",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Repeat every 15–30 min until expiratory stridor is abolished",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Improving: reduce the frequency of nebs with time",
+     "s": "paedstg2026:15.32"
+    }
+   ]
+  },
+  {
+   "title": "Not responding · other causes",
+   "items": [
+    {
+     "t": "Grade 3 not improving within 1 h of adrenaline: intubate (preferably under GA), REFER",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Grade 4: continue steroid + adrenaline neb with 100% warm humidified O₂; intubate; if unable, bag-mask and REFER urgently",
+     "s": "paedstg2026:15.32",
+     "b": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Suspected herpes: aciclovir 10–15 mg/kg IV 8-hourly × 5–7 d",
+     "s": "paedstg2026:15.32"
+    },
+    {
+     "t": "Suspected bacterial infection: amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly",
+     "s": "paedstg2026:6.7"
+    },
+    {
+     "t": "Ceftriaxone 80 mg/kg IV once daily",
+     "s": "paedstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone 50 mg/kg IV once daily × 7 d once airway secure",
+     "s": "paedstg2026:15.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · REFER",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Stridor softer but child more tired",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Cyanosis, apathy, marked retractions",
+     "s": "paedstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ below 93% on O₂",
+     "s": "phcstg2026:17.20"
+    },
+    {
+     "t": "Drooling, high fever, cannot swallow",
+     "s": "paedstg2026:15.31"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Grade 3 not improving in 1 h · grade 4 · intubated",
+     "s": "paedstg2026:15.33",
+     "b": 1
+    },
+    {
+     "t": "Uncertain diagnosis · foreign body · epiglottitis",
+     "s": "paedstg2026:15.33",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ 93–95% during transfer; continue nebs",
+     "s": "phcstg2026:17.20"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No stridor at rest",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "≥ 4 h since last adrenaline neb",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "SpO₂ ≥ 93% in room air",
+    "d": 1
+   },
+   {
+    "t": "Drinking well",
+    "s": "phcstg2026:17.20"
+   },
+   {
+    "t": "Steroid given (dose, time on letter)",
+    "s": "paedstg2026:15.32"
+   },
+   {
+    "t": "Caregiver knows to return if stridor at rest",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC review in 1–2 days",
+    "d": 1
+   },
+   {
+    "t": "Return at once: stridor at rest, indrawing, not drinking, drowsy",
+    "s": "phcstg2026:17.20",
+    "b": 1
+   },
+   {
+    "t": "Recurrent croup → ENT referral (papilloma)",
+    "s": "paedstg2026:15.31"
+   },
+   {
+    "t": "Catch-up immunisations (measles, diphtheria, Hib)",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour croup observation record — grade, SpO₂ and adrenaline nebs",
+  "period": "one sheet per 24 hours; 15-minute rows in the first hour, then widening",
+  "params": [
+   {
+    "h": "Grade and oxygen",
+    "items": [
+     {
+      "t": "Croup grade, SpO₂, heart rate, RR: before and 15–30 min after each adrenaline neb, then hourly × 4 h, then 2-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ to keep SpO₂ 93–95%",
+      "s": "phcstg2026:17.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Comfort · fluids",
+    "items": [
+     {
+      "t": "Keep calm on caregiver's lap; avoid distressing procedures",
+      "s": "phcstg2026:17.20"
+     },
+     {
+      "t": "Oral fluids if swallowing; record intake and urine",
+      "s": "phcstg2026:17.20"
+     }
+    ]
+   },
+   {
+    "h": "Note",
+    "items": [
+     {
+      "t": "No arterial blood gas — grade clinically",
+      "s": "paedstg2026:15.31"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "grade rises or stridor at rest returns",
+    "s": "paedstg2026:15.31",
+    "b": 1
+   },
+   {
+    "t": "stridor softer but child more tired, cyanosis, apathy",
+    "s": "paedstg2026:15.31",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ below 93% on O₂",
+    "s": "phcstg2026:17.20",
+    "b": 1
+   },
+   {
+    "t": "drooling or cannot swallow",
+    "s": "paedstg2026:15.31"
+   }
+  ],
+  "totals": [
+   "Adrenaline nebs (n)",
+   "Time of last neb",
+   "Steroid dose / time",
+   "Oral intake (mL)"
+  ]
+ }
+}

@@ -1,17 +1,19 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v37";
+const VERSION = "andh-v52";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
   "fonts/plex-serif-400.woff2", "fonts/plex-serif-700.woff2",
-  "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json"];
+  "calc.js", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json",
+  "data/tonsillitis-paeds.json", "data/croup-paeds.json", "data/om-paeds.json", "data/om-adult.json", "data/sinusitis-paeds.json", "data/sinusitis-adult.json"];
 
 self.addEventListener("install", e => e.waitUntil((async () => {
   const c = await caches.open(VERSION);
   await c.addAll(SHELL);
   const idx = await (await fetch("data/index.json", { cache: "no-store" })).json();
   await c.addAll(idx.diagnoses.map(d => "data/" + d.file));
+  await c.addAll((idx.scores || []).map(d => "data/" + d.file)); // Scales and Calculations cards
   self.skipWaiting();
 })()));
 

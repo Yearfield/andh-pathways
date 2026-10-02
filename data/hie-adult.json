@@ -1,0 +1,1206 @@
+{
+ "id": "hie-adult",
+ "short": "HIE (adult)",
+ "title": "Hypoxic-ischaemic brain injury — adult (post-cardiac arrest)",
+ "population": "Adults and adolescents ≥ 13 years after cardiac arrest, hanging, drowning or asphyxia",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-01",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (sub|value|yn|info|handoff), h=heading, to=target pathway id for handoff",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these continue on their own pathway",
+   "items": [
+    {
+     "t": "STEMI / ischaemia on ECG as the cause → ACS pathway (in parallel)",
+     "to": "acs-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Head injury as the cause → TBI (adult) pathway",
+     "to": "tbi-adult",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Age under 13 → HIE (child) pathway",
+     "to": "hie-child",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Pregnant / postpartum with eclampsia → PET pathway",
+     "to": "pet",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Poisoning as the cause → OP / opioid / toxic alcohol pathways",
+     "to": "op",
+     "b": 1,
+     "k": "handoff"
+    },
+    {
+     "t": "Needs intubation → RSI (adult) procedure card",
+     "to": "rsi-adult",
+     "b": 1,
+     "k": "handoff"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — event + encephalopathy",
+   "items": [
+    {
+     "t": "Cardiac arrest with ROSC, or hanging / drowning / asphyxia",
+     "s": "adultstg2026:20.6",
+     "b": 1
+    },
+    {
+     "t": "Not back to normal consciousness, or seizures / myoclonus after ROSC",
+     "s": "adultstg2026:20.6",
+     "b": 1
+    },
+    {
+     "t": "No other cause: glucose, sedatives, head injury",
+     "d": 1
+    },
+    {
+     "t": "Arrest time ____ · CPR ____ min · Rhythm ____ · ROSC ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Grade — worst GCS after ROSC †",
+   "items": [
+    {
+     "t": "Grade 4: absent brainstem reflexes",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade 3: GCS ≤ 8 — coma",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade 2: GCS 9–12",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade 1: GCS 13–15",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:20.8"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    },
+    {
+     "t": "No prognosis before 72 h after ROSC",
+     "d": 1,
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Ischaemic heart disease / MI",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Heart failure / valve / arrhythmia",
+     "d": 1
+    },
+    {
+     "t": "Epilepsy and treatment",
+     "d": 1
+    },
+    {
+     "t": "Diabetes, CKD (K⁺)",
+     "d": 1
+    },
+    {
+     "t": "HIV / TB on treatment",
+     "d": 1
+    },
+    {
+     "t": "Overdose / poisoning risk",
+     "d": 1
+    },
+    {
+     "t": "Baseline function, frailty",
+     "d": 1
+    },
+    {
+     "t": "Advance directive / wishes",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Arrest"
+    },
+    {
+     "t": "Witnessed? Bystander CPR?"
+    },
+    {
+     "t": "First rhythm; shocks; adrenaline doses"
+    },
+    {
+     "t": "No-flow / low-flow minutes"
+    },
+    {
+     "h": "Cause",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Chest pain before"
+    },
+    {
+     "t": "Breathless, haemoptysis (PE)"
+    },
+    {
+     "t": "Bleeding / trauma"
+    },
+    {
+     "t": "Hanging / drowning"
+    },
+    {
+     "t": "Poison / overdose"
+    },
+    {
+     "t": "Pregnancy"
+    },
+    {
+     "h": "TB / HIV screen"
+    },
+    {
+     "t": "Cough, weight loss"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Next of kin contacted",
+     "d": 1
+    },
+    {
+     "t": "Patient's known wishes",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and GCS",
+   "note": "Abnormal = outside normal adult range or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "adultstg2026:20.7",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Arrhythmia on monitor",
+     "s": "adultstg2026:20.6",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "MAP < 65 mmHg",
+     "s": "adultstg2026:20.7",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94%",
+     "s": "adultstg2026:20.6",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "GCS",
+     "d": 1
+    },
+    {
+     "t": "≤ 8",
+     "k": "yn"
+    },
+    {
+     "t": "9–12",
+     "k": "yn"
+    },
+    {
+     "t": "13–14",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS E ____ V ____ M ____"
+    },
+    {
+     "t": "Pupils R / L, reactive"
+    },
+    {
+     "t": "Corneal / cough / gag reflex",
+     "d": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:20.8"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "ETT position, air entry",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Crepitations (aspiration, oedema)",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Rib fractures from CPR",
+     "d": 1
+    },
+    {
+     "h": "Circulation"
+    },
+    {
+     "t": "Perfusion, urine output",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Basal crepitations after fluid",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Hanging marks / C-spine",
+     "d": 1
+    },
+    {
+     "t": "Trauma, bleeding",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "DVT (PE)",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Hypoglycaemia (< 4): dextrose 50% 50 mL IV, recheck in 5–10 min",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Keep 8–10 mmol/L; avoid hypoglycaemia",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Then hourly × 6 h, then 2–4-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "12-lead ECG",
+   "items": [
+    {
+     "t": "Rhythm / ST: ____",
+     "s": "adultstg2026:20.6",
+     "k": "value"
+    },
+    {
+     "t": "STEMI: urgent treatment — discuss PCI / ACS pathway",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Prolonged CPR may contra-indicate thrombolysis — consult",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Hyperkalaemia / arrhythmia: treat cause",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway not protected",
+     "b": 1
+    },
+    {
+     "t": "Shock / MAP < 65",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Re-arrest risk (arrhythmia)",
+     "b": 1
+    },
+    {
+     "t": "STEMI",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Hypovolaemia / bleeding",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "PE / tamponade",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Hyper- / hypokalaemia",
+     "d": 1
+    },
+    {
+     "t": "Poisoning",
+     "d": 1
+    },
+    {
+     "t": "Aspiration",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Fever",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "C-spine injury (hanging, dive)",
+     "d": 1
+    },
+    {
+     "t": "Head injury",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Raised ICP signs",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = POST-ARREST BRAIN INJURY → stabilise, discuss + REFER to ICU"
+  },
+  {
+   "t": "11. ADMIT — awake after ROSC, or ICU not available"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hours from ROSC. Grade branch rows apply only to the matching patient.",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "GCS, pupils, HR, BP/MAP, RR, SpO₂ hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Temperature hourly — prevent fever for 24 h",
+    "s": "adultstg2026:20.7",
+    "b": 1
+   },
+   {
+    "t": "HGT hourly × 6 h, then 2–4-hourly; keep 8–10",
+    "s": "adultstg2026:20.7",
+    "b": 1
+   },
+   {
+    "t": "Seizures",
+    "s": "adultstg2026:20.8"
+   },
+   {
+    "t": "Urine output hourly",
+    "s": "adultstg2026:20.6"
+   },
+   {
+    "t": "Head up 30°",
+    "s": "adultstg2026:20.7"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "ROSC",
+    "lead": "Find the cause (ECG, glucose, Hb, gas, CXR, eFAST). Write ROSC time. Phone ICU early.",
+    "feed": [
+     {
+      "t": "NPO",
+      "d": 1
+     },
+     {
+      "t": "Hypovolaemia: judicious NaCl 0.9% bolus; watch for basal crepitations",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "No dextrose-only maintenance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG",
+      "s": "adultstg2026:20.6",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "adultstg2026:20.6",
+      "b": 1
+     },
+     {
+      "t": "Hb, VBG / ABG",
+      "s": "adultstg2026:20.6",
+      "b": 1
+     },
+     {
+      "t": "U&E (K⁺), Mg, Ca",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Troponin if available",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR (ETT, aspiration)",
+      "s": "adultstg2026:20.6",
+      "b": 1
+     },
+     {
+      "t": "eFAST if trauma / bleeding",
+      "s": "adultstg2026:20.6"
+     },
+     {
+      "t": "CT brain — REFER",
+      "s": "adultstg2026:20.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway"
+     },
+     {
+      "t": "Patent, protected airway",
+      "s": "adultstg2026:20.6"
+     },
+     {
+      "t": "Not waking after ROSC → intubate: RSI (adult) card",
+      "s": "adultstg2026:20.6",
+      "to": "rsi-adult",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "h": "Breathing"
+     },
+     {
+      "t": "SpO₂ ≥ 94%; wean O₂ — avoid hyperoxia",
+      "s": "adultstg2026:20.6",
+      "b": 1
+     },
+     {
+      "t": "Ventilated: normal PaCO₂",
+      "s": "adultstg2026:20.6"
+     },
+     {
+      "h": "Circulation"
+     },
+     {
+      "t": "MAP > 65 mmHg; 80 mmHg if brain / spinal injury suspected",
+      "s": "adultstg2026:20.7",
+      "b": 1
+     },
+     {
+      "t": "Hypotension after fluids → inotrope (adrenaline infusion) = REFER ICU",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "h": "Neurological"
+     },
+     {
+      "t": "Head up 30°",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "Seizures: treat; load antiseizure medicine",
+      "s": "adultstg2026:20.8"
+     },
+     {
+      "h": "Glucose"
+     },
+     {
+      "t": "< 4: dextrose 50% 50 mL IV",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "Keep 8–10 mmol/L",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "h": "Temperature"
+     },
+     {
+      "t": "Prevent fever for 24 h: ice packs, fans, paracetamol",
+      "s": "adultstg2026:20.7",
+      "b": 1
+     },
+     {
+      "h": "Cause"
+     },
+     {
+      "t": "STEMI → treat now (ACS pathway); PCI discussion",
+      "s": "adultstg2026:20.6",
+      "to": "acs-adult",
+      "b": 1,
+      "k": "handoff"
+     },
+     {
+      "t": "Treat reversible causes",
+      "s": "adultstg2026:20.6"
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If GRADE 3–4 (GCS ≤ 8)",
+    "feed": [
+     {
+      "t": "Orogastric tube",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ABG / VBG after intubation",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pupils every 30 min",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discuss with ICU and REFER",
+      "s": "adultstg2026:20.8",
+      "b": 1
+     },
+     {
+      "t": "Analgosedation if ventilated: RASS −2 to 0",
+      "s": "adultstg2026:23.19"
+     },
+     {
+      "t": "No prognosis or withdrawal decisions before 72 h",
+      "d": 1
+     },
+     {
+      "t": "Family: honest update, next of kin",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "0–1 h",
+    "phase": "If GRADE 1–2 (GCS ≥ 9)",
+    "feed": [
+     {
+      "t": "NPO until swallow safe",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS, pupils hourly",
+      "d": 1
+     },
+     {
+      "t": "HGT hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discuss with ICU (STG: all cases)",
+      "s": "adultstg2026:20.8"
+     },
+     {
+      "t": "Cardiology if MI suspected",
+      "s": "adultstg2026:20.8"
+     },
+     {
+      "t": "Falls to GCS ≤ 8 → grade 3–4 row"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Maintenance isotonic fluid",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas, K⁺",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adrenaline infusion 0.1 mcg/kg/min only as bridge while ICU transfer is arranged (box)",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "Send notes, ECGs, drug times",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Awaiting transfer",
+    "feed": [
+     {
+      "t": "Maintenance fluids; urine output hourly",
+      "s": "adultstg2026:20.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 2-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Keep MAP, SpO₂, glucose, temperature on target",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "VTE prophylaxis when not bleeding",
+      "s": "adultstg2026:20.7"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "If ICU unavailable",
+    "feed": [
+     {
+      "t": "NGT feeds if no ileus",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Mg",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-phone ICU; document each call",
+      "d": 1
+     },
+     {
+      "t": "Ceiling-of-care discussion with senior and family",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Fever window ends",
+    "feed": [
+     {
+      "t": "Enteral feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, U&E, CRP",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Neuro exam: pupils, corneal, motor",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue normothermia",
+      "d": 1
+     },
+     {
+      "t": "Aspiration pneumonia: treat per STG 16.7",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Support",
+    "feed": [
+     {
+      "t": "Feeds; swallow check if awake",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Wean sedation if possible to assess",
+      "d": 1
+     },
+     {
+      "t": "Pressure care, physio",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Prognosis (earliest)",
+    "feed": [
+     {
+      "t": "Feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Off sedation: GCS motor, pupils, corneal reflexes",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Earliest time to discuss prognosis — senior / specialist only",
+      "d": 1
+     },
+     {
+      "t": "Absent pupil + corneal reflexes, GCS motor ≤ 3 at ≥ 72 h: poor outcome likely",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–7",
+    "phase": "Rehabilitate",
+    "feed": [
+     {
+      "t": "Oral diet if safe",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Echo / cardiology follow-up if cardiac cause",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Physio, OT, speech",
+      "d": 1
+     },
+     {
+      "t": "Secondary prevention of cardiac cause",
+      "d": 1
+     },
+     {
+      "t": "Palliative approach if no recovery",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Home / step-down",
+    "feed": [
+     {
+      "t": "Diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Final neuro and cognition check",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check discharge criteria (all)",
+      "d": 1
+     },
+     {
+      "t": "Referral letter: cause, rhythm, CPR time",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "h": "Status epilepticus (STG 14.5)",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Lorazepam 4 mg IV (≤ 2 mg/min) or midazolam 10 mg IV/IM/buccal or diazepam 10 mg IV; repeat once at 5 min"
+    },
+    {
+     "t": "Phenytoin 20 mg/kg in 200 mL NaCl 0.9%, ≤ 50 mg/min, cardiac monitor",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "Refractory → ICU (propofol / midazolam infusion)",
+     "s": "adultstg2026:14.17"
+    },
+    {
+     "h": "Hypotension after fluids",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Adrenaline 10 mg in 1 L NaCl 0.9%: 0.1 mcg/kg/min = 30 mL/h (50 kg), 42 mL/h (70 kg), 54 mL/h (90 kg)"
+    },
+    {
+     "t": "Inotropes = REFER ICU"
+    },
+    {
+     "h": "Glucose / fever",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Dextrose 50% 50 mL IV · paracetamol 500 mg–1 g 4–6-hourly (max 4 g)",
+     "s": "adultstg2026:20.8"
+    },
+    {
+     "h": "VTE prophylaxis",
+     "s": "adultstg2026:2.25"
+    },
+    {
+     "t": "Enoxaparin 40 mg SC daily (20 mg if eGFR < 30) or UFH 5 000 u SC 12-hourly"
+    }
+   ]
+  },
+  {
+   "title": "Targets after ROSC — STG 20.2",
+   "items": [
+    {
+     "h": "Breathing",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "SpO₂ ≥ 94%; avoid hyperoxia; normal PaCO₂ if ventilated"
+    },
+    {
+     "h": "Circulation",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "MAP > 65 (80 if brain / spinal injury)"
+    },
+    {
+     "h": "Brain",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "Head up 30°; treat seizures; glucose 8–10, no hypoglycaemia; prevent fever 24 h"
+    },
+    {
+     "h": "Prognosis",
+     "d": 1
+    },
+    {
+     "t": "Not before 72 h after ROSC and off sedation (ERC–ESICM 2021)"
+    },
+    {
+     "t": "Senior decision with family; document"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "GCS down by ≥ 2, new unequal pupil",
+     "d": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:20.8"
+    },
+    {
+     "t": "MAP < 65",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "SpO₂ < 94%",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "t": "Temperature rising (fever)",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "HGT < 4 or > 10",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "t": "New arrhythmia / chest pain",
+     "d": 1
+    },
+    {
+     "t": "Urine output falling",
+     "s": "adultstg2026:20.6"
+    },
+    {
+     "h": "Re-arrest"
+    },
+    {
+     "t": "CPR per STG 20.1; after ROSC restart this chart at 0 h",
+     "s": "adultstg2026:20.6"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / step-down criteria — all must be met",
+  "items": [
+   {
+    "t": "Awake, GCS at or near baseline",
+    "d": 1
+   },
+   {
+    "t": "Stable rhythm, BP off support",
+    "d": 1
+   },
+   {
+    "t": "Cause found and treated or referred",
+    "s": "adultstg2026:20.6"
+   },
+   {
+    "t": "Swallow safe / feeding plan",
+    "d": 1
+   },
+   {
+    "t": "Rehab plan (physio / OT / speech)",
+    "d": 1
+   },
+   {
+    "t": "Family informed; follow-up booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Cardiology / medical OPD for the cause (MI, arrhythmia)",
+    "s": "adultstg2026:20.8"
+   },
+   {
+    "t": "Cognitive and mood screen at follow-up",
+    "d": 1
+   },
+   {
+    "t": "Rehabilitation as outpatient",
+    "d": 1
+   },
+   {
+    "t": "Return: chest pain, palpitations, collapse, seizures",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro-observation record — GCS, pupils, MAP, temperature, glucose",
+  "period": "one sheet per 24 hours from ROSC",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "GCS and pupils hourly",
+      "d": 1
+     },
+     {
+      "t": "Seizures: time and type",
+      "s": "adultstg2026:20.8"
+     },
+     {
+      "t": "Head up 30°",
+      "s": "adultstg2026:20.7"
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "HR, BP, MAP, RR, SpO₂ hourly",
+      "d": 1
+     },
+     {
+      "t": "MAP > 65 (80 if brain injury)",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "SpO₂ ≥ 94%; avoid hyperoxia",
+      "s": "adultstg2026:20.6"
+     }
+    ]
+   },
+   {
+    "h": "Temperature",
+    "items": [
+     {
+      "t": "Hourly for 24 h",
+      "d": 1
+     },
+     {
+      "t": "Fever: ice packs, fan, paracetamol",
+      "s": "adultstg2026:20.7"
+     }
+    ]
+   },
+   {
+    "h": "HGT + urine",
+    "items": [
+     {
+      "t": "HGT hourly × 6 h, then 2–4-hourly; keep 8–10",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "Urine output hourly",
+      "s": "adultstg2026:20.6"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: GCS drop, new unequal pupil, seizure or myoclonus, MAP < 65, SpO₂ < 94%, fever, HGT < 4 or > 10, new arrhythmia, falling urine output.",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Fluid in (mL)",
+   "Urine out (mL)",
+   "Lowest MAP",
+   "Max T (°C)"
+  ]
+ }
+}
