@@ -25,6 +25,10 @@
     {"id": "tbadult2017", "short": "TB Adults 2017", "title": "South African National TB Guidelines – Adults (MIC/UCT wall chart, based on NTCP 2014)", "edition": "Mar 2017", "offset": 0},
     {"id": "tbpaeds2024", "short": "Paeds TB 2024", "title": "Clinical Guideline for the Diagnosis and Treatment of DS-TB in Children and Adolescents", "edition": "NDoH Sept 2024", "offset": 8},
     {"id": "tbqrg2025", "short": "Paeds TB QRG 2025", "title": "Management of TB in Children and Adolescents – Quick Reference Guide", "edition": "Sept 2025", "offset": 0},
+    {"id": "wsesasbo2017", "short": "WSES SBO 2017", "title": "Bologna guidelines for adhesive small bowel obstruction, WSES 2017 update", "edition": "World J Emerg Surg 2018;13:24 · international guideline, not SA (†) · citations are section labels: Dx / NOM / Surg", "offset": 0, "international": true, "sections": ["Dx", "NOM", "Surg"]},
+    {"id": "wseshernia2017", "short": "WSES Hernia 2017", "title": "WSES guidelines for emergency repair of complicated abdominal wall hernias, 2017", "edition": "World J Emerg Surg 2017;12:37 · international guideline, not SA (†) · citations are section labels: Def / Lab / Surg", "offset": 0, "international": true, "sections": ["Def", "Lab", "Surg"]},
+    {"id": "herniasurge2018", "short": "HerniaSurge 2018", "title": "International guidelines for groin hernia management, HerniaSurge Group", "edition": "Hernia 2018;22:1–165 · international guideline, not SA (†) · citations are chapter labels: Ch3 / Ch5", "offset": 0, "international": true, "sections": ["Ch3", "Ch5"]},
+    {"id": "taxis2020", "short": "Taxis 2020", "title": "Recommendations for patient management after manual reduction of incarcerated inguinal hernia: a literature review", "edition": "Rozhl Chir 2020;99(2) · international literature review, not SA (†) · citation is the section label: Rev", "offset": 0, "international": true, "sections": ["Rev"]},
     {"id": "PHC", "short": "PHC STG", "title": "STG & EML Primary Healthcare (one PDF per chapter)", "edition": "8th ed. 2024 (updated Sept 2026)", "offset": 0, "chapters": {
     "21": {"title": "Chapter 21", "offset": 0}
     }},

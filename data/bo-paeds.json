@@ -1,0 +1,1447 @@
+{
+ "id": "bo-paeds",
+ "short": "Bowel obstruction (child)",
+ "title": "Bowel obstruction — partial and complete (child)",
+ "population": "Paediatric (1 month and older; excludes neonates, SAM)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-03",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "wsesasbo2017"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days (NEC, atresia, malrotation) → neonatal care / refer",
+     "b": 1
+    },
+    {
+     "t": "Severe acute malnutrition → SAM pathway",
+     "b": 1
+    },
+    {
+     "t": "Groin / umbilical lump without obstruction → Hernia pathway",
+     "b": 1
+    },
+    {
+     "t": "Bloody diarrhoea → PR bleeding pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — cardinal features",
+   "items": [
+    {
+     "t": "Colicky abdominal pain / episodic crying",
+     "s": "paedstg2026:2.49",
+     "b": 1
+    },
+    {
+     "t": "Vomiting — bile-stained = surgical until proven otherwise",
+     "s": "paedstg2026:2.9",
+     "b": 1
+    },
+    {
+     "t": "Abdominal distension",
+     "s": "paedstg2026:2.9",
+     "b": 1
+    },
+    {
+     "t": "No stool or flatus passed (complete)",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    },
+    {
+     "t": "Wt ____ kg · Last stool ____ · Vomits/24 h ____ · Bile Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — any one = SURGICAL → REFER urgently",
+   "items": [
+    {
+     "t": "SHOCK: cold peripheries · weak pulse · CRT ≥ 3 s · ↓ LOC",
+     "s": "paedstg2026:1.15",
+     "b": 1
+    },
+    {
+     "t": "Peritonism / abdominal tenderness with guarding",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    },
+    {
+     "t": "Intussusception: red-currant jelly, mass, bile-stained vomit",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Irreducible groin lump / scrotal swelling",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Complete obstruction, necrosis or perforation",
+     "s": "paedstg2026:2.50",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet and referral letter",
+   "items": [
+    {
+     "t": "Previous abdominal surgery",
+     "s": "wsesasbo2017:Dx",
+     "d": 1
+    },
+    {
+     "t": "Known hernia / prematurity",
+     "d": 1
+    },
+    {
+     "t": "Weight-for-age curve"
+    },
+    {
+     "t": "Deworming given"
+    },
+    {
+     "t": "Constipation since birth",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "HIV exposed / status"
+    },
+    {
+     "t": "TB contact",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Pre-referral fluids given (mL)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain and vomiting"
+    },
+    {
+     "t": "Episodic screaming, drawing up legs",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Bile-stained (green) vomit",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Projectile non-bilious vomit (infant)",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Worms vomited / passed",
+     "s": "paedstg2026:2.49"
+    },
+    {
+     "h": "Bowel"
+    },
+    {
+     "t": "Last stool and flatus",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Red-currant-jelly stool",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Long-standing constipation",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Groin / scrotal swelling",
+     "d": 1
+    },
+    {
+     "t": "Purpuric rash, joint pain (HSP)",
+     "s": "paedstg2026:12.1"
+    },
+    {
+     "t": "Fever",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Cough, weight loss (TB)",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "h": "Intake"
+    },
+    {
+     "t": "Urine passed in last 6 h"
+    },
+    {
+     "t": "Drinking / feeding"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill ≥ 3 s",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Dehydration",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Sunken eyes / slow skin pinch",
+     "s": "paedstg2026:2.9",
+     "k": "yn"
+    },
+    {
+     "h": "SAM screen → SAM pathway if Y"
+    },
+    {
+     "t": "MUAC < 11.5 cm or WFH z < −3",
+     "s": "paedstg2026:2.38",
+     "k": "yn"
+    },
+    {
+     "t": "Abdominal girth: ____ cm",
+     "d": 1,
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "Circulation and hydration",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Cold peripheries / weak pulse"
+    },
+    {
+     "t": "Sunken eyes"
+    },
+    {
+     "t": "Slow skin pinch"
+    },
+    {
+     "t": "Lethargic / irritable"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distension",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Sausage-shaped mass",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Worm mass",
+     "s": "paedstg2026:2.49"
+    },
+    {
+     "t": "Tenderness / guarding",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "h": "Groin and scrotum — always †"
+    },
+    {
+     "t": "Inguinal lump (both sides)"
+    },
+    {
+     "t": "Scrotal swelling / tender testis"
+    },
+    {
+     "t": "Umbilical lump"
+    },
+    {
+     "h": "PR / nappy"
+    },
+    {
+     "t": "Red-currant jelly",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Intussusceptum at anus",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "U&E / VBG and HGT",
+   "items": [
+    {
+     "t": "Na ____ K ____ urea/creat ____ HGT ____",
+     "k": "value"
+    },
+    {
+     "t": "K 2.5–3.5: KCl PO only once vomiting stops; K < 2.5: IV K needs ECG monitoring → REFER",
+     "s": "paedstg2026:2.15"
+    },
+    {
+     "t": "HGT < 2.6 mmol/L: dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bedside ultrasound (no X-ray on site)",
+   "items": [
+    {
+     "t": "Findings: ____",
+     "k": "value"
+    },
+    {
+     "t": "Dilated loops · target sign (intussusception) · worm mass · free fluid",
+     "d": 1
+    },
+    {
+     "t": "REFER for X-ray / contrast study / CT",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink or breastfeed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Intussusception",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Malrotation / volvulus (bile vomit)",
+     "d": 1
+    },
+    {
+     "t": "Incarcerated hernia / testicular torsion",
+     "d": 1
+    },
+    {
+     "t": "Perforation / peritonitis",
+     "s": "paedstg2026:2.50"
+    },
+    {
+     "t": "Appendicitis",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Hypokalaemia",
+     "s": "paedstg2026:2.15"
+    },
+    {
+     "t": "IgA vasculitis (HSP)",
+     "s": "paedstg2026:12.1"
+    },
+    {
+     "t": "Abdominal TB",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "SAM",
+     "s": "paedstg2026:2.38"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Bile-stained vomit · peritonism · shock · intussusception · irreducible hernia · complete obstruction → resuscitate, drip and suck, REFER urgently",
+   "s": "paedstg2026:2.50"
+  },
+  {
+   "t": "11. ADMIT: partial obstruction from worm bolus → drip and suck; REFER if not relieved after 48 h",
+   "s": "paedstg2026:2.50"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Intussusception",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Episodic pain, bile-stained vomit, red-currant jelly, mass, intussusceptum at anus",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Also complicates HSP",
+     "s": "paedstg2026:12.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (target sign)",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth, NG, IV fluids, analgesia",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — urgently",
+     "s": "phcstg2026:2.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Malrotation with volvulus",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Infant with sudden bile-stained vomiting; may look well early",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for contrast study",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth, NG, IV fluids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — immediately",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Incarcerated inguinal hernia",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Tense, tender irreducible groin / scrotal lump",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Examine both groins; ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; drip and suck if obstructed",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — urgently (Hernia pathway)",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Appendicitis / peritonitis",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Periumbilical → RIF pain, fever, guarding, rebound",
+     "s": "phcstg2026:2.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth; NaCl 0.9% IV",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg IV 8-hourly",
+     "s": "paedstg2026:6.7",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL",
+     "s": "phcstg2026:2.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Worm bolus (Ascaris)",
+   "branch": "If worm bolus / partial",
+   "features": [
+    {
+     "t": "Cramping pain ± palpable worm mass; worms vomited or passed",
+     "s": "paedstg2026:2.49"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (worm mass)",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth, free drainage, IV fluids",
+     "s": "paedstg2026:2.50",
+     "b": 1
+    },
+    {
+     "t": "After resolution: mebendazole 1–2 y 100 mg 12-hourly × 3 d; > 2 y 500 mg once",
+     "s": "paedstg2026:2.50"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not relieved after 48 h; complete obstruction, necrosis, perforation",
+     "s": "paedstg2026:2.50",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Adhesions (previous surgery)",
+   "branch": "If worm bolus / partial",
+   "features": [
+    {
+     "t": "Previous laparotomy; colicky pain, vomiting, distension",
+     "s": "wsesasbo2017:Dx",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck",
+     "s": "wsesasbo2017:NOM",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss ALL with surgeon",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hirschsprung / severe constipation",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Constipation from birth, distension, faecal mass",
+     "s": "paedstg2026:2.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; PR",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "manage": [
+    {
+     "t": "No laxatives if obstructed",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Suspected organic cause (e.g. from birth)",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pyloric stenosis",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Infant, projectile NON-bilious vomiting",
+     "s": "phcstg2026:2.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Correct dehydration and K first",
+     "s": "paedstg2026:2.15",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL infants with projectile vomiting",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Abdominal TB",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Ascites, masses, possible bowel obstruction; TB contact, HIV",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; HIV test",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck if obstructed",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL suspected extrapulmonary TB",
+     "s": "phcstg2026:10.22",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Branch rows start once the working diagnosis is ticked; only worm bolus / partial obstruction stays for drip and suck",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Shock: pulse, CRT, BP, LOC every 15 min until stable",
+    "s": "paedstg2026:1.16",
+    "b": 1
+   },
+   {
+    "t": "Then pulse, CRT, temperature, RR 4-hourly; hourly if unstable",
+    "d": 1
+   },
+   {
+    "t": "NG aspirate: volume and colour 4-hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Every vomit (bile?), stool, flatus",
+    "d": 1
+   },
+   {
+    "t": "Abdominal girth and pain score 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Urine output ≥ 1 mL/kg/h",
+    "s": "paedstg2026:1.16",
+    "b": 1
+   },
+   {
+    "t": "HGT 4-hourly while nil by mouth",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Nil by mouth",
+    "s": "paedstg2026:2.50",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Examine both groins and the scrotum. Bile-stained vomit = surgical until proven otherwise. Call the surgeon early.",
+    "feed": [
+     {
+      "h": "Drip"
+     },
+     {
+      "t": "Nil by mouth",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% or Ringer's 20 mL/kg rapidly; review every 15 min; up to 40 mL/kg",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     },
+     {
+      "t": "Maintenance NaCl 0.9%/dextrose 5%: ≤ 1 y 120 mL/kg/24 h; > 1 y 100 / 50 / 20 mL/kg/24 h",
+      "s": "paedstg2026:2.16"
+     },
+     {
+      "t": "Replace NG losses mL for mL with NaCl 0.9%",
+      "d": 1
+     },
+     {
+      "h": "Suck"
+     },
+     {
+      "t": "NG tube on free drainage",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E / VBG (Na, K, urea, creatinine)",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "paedstg2026:7.31",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     },
+     {
+      "t": "Bedside ultrasound",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV status",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Analgesia"
+     },
+     {
+      "t": "Paracetamol IV 15 mg/kg 6-hourly",
+      "s": "paedstg2026:20.8"
+     },
+     {
+      "t": "Morphine IV (4-hourly bolus): 1–6 mo 0.05 mg/kg · 6–12 mo 0.05–0.2 · 1–12 y 0.1–0.2 mg/kg; titrate slowly",
+      "s": "paedstg2026:20.10",
+      "b": 1
+     },
+     {
+      "h": "Do NOT give"
+     },
+     {
+      "t": "Anti-emetics in children",
+      "s": "phcstg2026:2.5",
+      "b": 1
+     },
+     {
+      "t": "Laxatives / enemas if obstructed",
+      "d": 1
+     },
+     {
+      "h": "Shock not resolved after 40 mL/kg"
+     },
+     {
+      "t": "REFER (ICU)",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     },
+     {
+      "h": "Strangulation / peritonitis suspected"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 25 mg/kg IV 8-hourly",
+      "s": "paedstg2026:6.7",
+      "d": 1
+     },
+     {
+      "t": "REFER urgently",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "HGT < 2.6: dextrose 10% 2–5 mL/kg IV",
+      "s": "paedstg2026:7.31"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Resuscitate",
+    "feed": [
+     {
+      "t": "Fluids per response",
+      "s": "paedstg2026:1.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E result",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Surgeon called; decision recorded",
+      "d": 1
+     },
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Drip and suck",
+    "feed": [
+     {
+      "t": "Replace NG losses",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 1 mL/kg/h?",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "Pain controlled?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bile vomit, guarding, mass, shock → REFER urgently",
+      "s": "paedstg2026:2.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "NG volume, girth, stool/flatus trend",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transfer done? If not, escalate",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Worm bolus: resolving?",
+      "s": "paedstg2026:2.50"
+     }
+    ]
+   },
+   {
+    "label": "If surgical",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; IV fluids",
+      "s": "phcstg2026:2.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, FBC, HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intussusception, volvulus, hernia, appendicitis: REFER urgently (no theatre)",
+      "s": "phcstg2026:2.17",
+      "b": 1
+     },
+     {
+      "t": "Antibiotics if peritonitis / strangulation",
+      "s": "paedstg2026:6.7",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If worm bolus / partial",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth, free drainage, IV fluids",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E daily",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Observe for failure, complete obstruction, necrosis, perforation",
+      "s": "paedstg2026:2.50"
+     },
+     {
+      "t": "Adhesions: only with surgeon's agreement",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If other",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV / TB work-up if suspected",
+      "s": "phcstg2026:10.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pyloric stenosis, Hirschsprung, TB: REFER",
+      "s": "phcstg2026:2.5"
+     },
+     {
+      "t": "Correct K before transfer",
+      "s": "paedstg2026:2.15"
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "Trial",
+    "feed": [
+     {
+      "t": "Nil by mouth until passing stool / flatus",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not improving → REFER",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Trial limit",
+    "feed": [
+     {
+      "t": "Clear fluids if stool passed and NG output low",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Worm bolus NOT relieved after 48 h → REFER",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Recovery",
+    "feed": [
+     {
+      "t": "Normal feeds if tolerating",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Mebendazole once the bolus has resolved",
+      "s": "paedstg2026:2.50"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Day 4+",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Discharge criteria (below)"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids, electrolytes, analgesia",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% / Ringer's 20 mL/kg, review every 15 min, up to 40 mL/kg",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "t": "Maintenance: ≤ 1 y 120 mL/kg/24 h; > 1 y 100 / 50 / 20 mL/kg/24 h",
+     "s": "paedstg2026:2.16"
+    },
+    {
+     "t": "K 2.5–3.5: KCl PO 25–50 mg/kg/dose 8-hourly once tolerating oral",
+     "s": "paedstg2026:2.15"
+    },
+    {
+     "t": "K < 2.5: IV K only with continuous ECG + bedside K → REFER",
+     "s": "paedstg2026:2.15"
+    },
+    {
+     "t": "Paracetamol IV 15 mg/kg 6-hourly; morphine IV 0.1–0.2 mg/kg 4-hourly (1–12 y)",
+     "s": "paedstg2026:20.10"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Peritonitis / strangulation"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg IV 8-hourly",
+     "s": "paedstg2026:6.7",
+     "d": 1
+    },
+    {
+     "h": "Worm bolus — after resolution"
+    },
+    {
+     "t": "Mebendazole: 1–2 y 100 mg 12-hourly × 3 d; > 2 y 500 mg once",
+     "s": "paedstg2026:2.50"
+    },
+    {
+     "h": "Hypoglycaemia"
+    },
+    {
+     "t": "Dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "h": "Do not give"
+    },
+    {
+     "t": "Anti-emetics in children",
+     "s": "phcstg2026:2.5"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor / REFER urgently"
+    },
+    {
+     "t": "Bile-stained vomit, red-currant jelly, guarding, mass",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Shock signs; CRT ≥ 3 s",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "t": "Urine < 1 mL/kg/h",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "U&E · HGT · ultrasound",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Complete obstruction, necrosis, perforation",
+     "s": "paedstg2026:2.50",
+     "b": 1
+    },
+    {
+     "t": "Worm bolus not relieved after 48 h",
+     "s": "paedstg2026:2.50",
+     "b": 1
+    },
+    {
+     "t": "Infants with projectile vomiting",
+     "s": "phcstg2026:2.5"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Passing stool and flatus",
+    "d": 1
+   },
+   {
+    "t": "Feeding, no vomiting",
+    "d": 1
+   },
+   {
+    "t": "Abdomen soft, pain controlled orally",
+    "d": 1
+   },
+   {
+    "t": "Hydrated, passing urine",
+    "s": "paedstg2026:2.13"
+   },
+   {
+    "t": "Mebendazole given (worm bolus)",
+    "s": "paedstg2026:2.50"
+   },
+   {
+    "t": "Surgeon agreed / cause excluded",
+    "d": 1
+   },
+   {
+    "t": "Caregiver knows danger signs",
+    "d": 1
+   },
+   {
+    "t": "HIV status known",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: green vomit, swollen belly, no stool, severe pain, blood in stool",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Deworm household; iron if deficient",
+    "s": "paedstg2026:2.50"
+   },
+   {
+    "t": "Elective hernia repair referral if found",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — drip and suck: NG, fluids, bowels, urine",
+  "period": "One sheet per 24 h; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Shock: every 15 min until stable",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "Then pulse, CRT, temperature, RR 4-hourly; hourly if unstable",
+      "d": 1
+     },
+     {
+      "t": "Pain score and girth 4-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "NG tube",
+    "items": [
+     {
+      "t": "Free drainage; record volume and colour 4-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bowels",
+    "items": [
+     {
+      "t": "Every vomit (bile?), stool, flatus",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth",
+      "s": "paedstg2026:2.50"
+     }
+    ]
+   },
+   {
+    "h": "In / out · HGT",
+    "items": [
+     {
+      "t": "IV in (mL)"
+     },
+     {
+      "t": "Urine output ≥ 1 mL/kg/h",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "HGT 4-hourly while nil by mouth",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "green (bile) vomit, red-currant jelly, guarding or a new mass",
+    "s": "paedstg2026:2.23",
+    "b": 1
+   },
+   {
+    "t": "CRT ≥ 3 s, weak pulse, ↓ LOC",
+    "s": "paedstg2026:1.15"
+   },
+   {
+    "t": "urine < 1 mL/kg/h",
+    "s": "paedstg2026:1.16"
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:7.31"
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "NG out (mL)",
+   "Urine (mL/kg/h)",
+   "Balance"
+  ]
+ }
+}

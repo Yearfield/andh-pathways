@@ -1,0 +1,1301 @@
+{
+ "id": "hernia-paeds",
+ "short": "Hernia (child)",
+ "title": "Groin / umbilical hernia and groin swelling — incl. incarcerated / strangulated (child)",
+ "population": "Child, 1 month – 13 years (inguinal, umbilical hernia; groin / scrotal swelling); neonates excluded",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-03",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "wseshernia2017",
+  "taxis2020"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonates (< 1 month) → neonatal care / REFER",
+     "b": 1
+    },
+    {
+     "t": "Obstruction without a hernia → Bowel obstruction pathway",
+     "b": 1
+    },
+    {
+     "t": "SAM → SAM pathway",
+     "b": 1
+    },
+    {
+     "t": "Trauma",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — lump at a hernial site",
+   "items": [
+    {
+     "t": "Groin or scrotal lump that comes and goes (crying, straining)",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Umbilical bulge",
+     "s": "paedstg2026:7.37",
+     "d": 1
+    },
+    {
+     "t": "Reducible: goes back · Irreducible: does not",
+     "s": "wseshernia2017:Def",
+     "b": 1
+    },
+    {
+     "t": "Site: inguinal L / R · scrotal · umbilical",
+     "k": "value"
+    },
+    {
+     "t": "Irreducible since: ____ h",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — tick the highest that applies",
+   "items": [
+    {
+     "t": "STRANGULATED: tender, tense, red / blue lump, irritable, fever",
+     "s": "wseshernia2017:Def",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "OBSTRUCTED: vomiting (bile?), distension, no stool / flatus",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    },
+    {
+     "t": "INCARCERATED: irreducible inguinal hernia, not strangulated",
+     "s": "wseshernia2017:Def",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "SHOCK: cold peripheries · weak pulse · CRT ≥ 3 s · ↓ LOC",
+     "s": "paedstg2026:1.15",
+     "b": 1
+    },
+    {
+     "t": "REDUCIBLE inguinal hernia (needs elective repair)",
+     "d": 1
+    },
+    {
+     "t": "Umbilical hernia, uncomplicated",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet / clinic card",
+   "items": [
+    {
+     "t": "Born preterm (higher incarceration risk)",
+     "d": 1
+    },
+    {
+     "t": "Age: ____",
+     "k": "value"
+    },
+    {
+     "t": "Previous episodes of irreducibility",
+     "d": 1
+    },
+    {
+     "t": "Testes descended at birth?",
+     "d": 1
+    },
+    {
+     "t": "Thyroid screen (umbilical hernia, constipation)",
+     "s": "paedstg2026:7.37"
+    },
+    {
+     "t": "HIV exposed / status"
+    },
+    {
+     "t": "Weight: ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "Pre-referral fluids given (mL)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "The lump"
+    },
+    {
+     "t": "Comes with crying / straining, goes away at rest",
+     "d": 1
+    },
+    {
+     "t": "Now stuck / painful: since when?",
+     "s": "wseshernia2017:Surg"
+    },
+    {
+     "t": "Inconsolable crying",
+     "d": 1
+    },
+    {
+     "h": "Obstruction"
+    },
+    {
+     "t": "Vomiting — bile-stained = surgical",
+     "s": "paedstg2026:2.9",
+     "b": 1
+    },
+    {
+     "t": "Last stool / flatus",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Distension",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "h": "Scrotum"
+    },
+    {
+     "t": "Sudden scrotal pain (torsion)",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Swelling present since birth, not painful",
+     "d": 1
+    },
+    {
+     "h": "Intake"
+    },
+    {
+     "t": "Feeding / drinking",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Urine passed in last 6 h"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill ≥ 3 s",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Dehydration",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Sunken eyes / slow skin pinch",
+     "s": "paedstg2026:2.9",
+     "k": "yn"
+    },
+    {
+     "h": "SAM screen → SAM pathway if Y"
+    },
+    {
+     "t": "MUAC < 11.5 cm or WFH z < −3",
+     "s": "paedstg2026:2.38",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 9,
+   "items": [
+    {
+     "h": "The lump †",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "t": "Tender"
+    },
+    {
+     "t": "Tense / hard"
+    },
+    {
+     "t": "Red / blue skin"
+    },
+    {
+     "t": "Reduces with gentle pressure"
+    },
+    {
+     "h": "Scrotum †"
+    },
+    {
+     "t": "Can get above the swelling (hydrocele)"
+    },
+    {
+     "t": "Both testes in scrotum"
+    },
+    {
+     "t": "Testis high / tender (torsion)",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distension",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Tenderness / guarding",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "h": "Other side"
+    },
+    {
+     "t": "Hernia on the other side",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bedside ultrasound",
+   "items": [
+    {
+     "t": "Content: bowel / omentum / fluid / ovary ____",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Thick bowel wall, no peristalsis, free fluid → strangulation?",
+     "d": 1
+    },
+    {
+     "t": "Not a hernia: hydrocele, node, torsion, undescended testis",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Point-of-care tests",
+   "items": [
+    {
+     "t": "HGT ____ (nil by mouth, vomiting)",
+     "k": "value"
+    },
+    {
+     "t": "HGT < 2.6 mmol/L: dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31",
+     "b": 1
+    },
+    {
+     "t": "U&E / VBG if vomiting or shocked",
+     "s": "paedstg2026:2.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway: aspiration risk",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.15",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Strangulation",
+     "s": "wseshernia2017:Surg",
+     "d": 1
+    },
+    {
+     "t": "Bowel obstruction",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Bile-stained vomit",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Peritonitis",
+     "s": "paedstg2026:2.50"
+    },
+    {
+     "t": "Testicular torsion",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:7.31"
+    },
+    {
+     "t": "Infant / preterm",
+     "d": 1
+    },
+    {
+     "t": "SAM",
+     "s": "paedstg2026:2.38"
+    },
+    {
+     "t": "Hypothyroidism",
+     "s": "paedstg2026:7.37"
+    },
+    {
+     "t": "Ovary in hernia (girl)",
+     "d": 1
+    },
+    {
+     "t": "Sepsis",
+     "s": "paedstg2026:6.7"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Strangulated · obstructed · irreducible · torsion → resuscitate, analgesia, nil by mouth, REFER urgently (no theatre)",
+   "s": "phcstg2026:12.8"
+  },
+  {
+   "t": "11. ADMIT while transfer is arranged · reducible inguinal → early elective surgical referral, home · umbilical uncomplicated → reassure, review",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Strangulated / obstructed inguinal hernia",
+   "branch": "If strangulated / obstructed",
+   "features": [
+    {
+     "t": "Irreducible, tender, discoloured lump; vomiting, distension, irritable",
+     "s": "wseshernia2017:Def",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical ± ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth; drip and suck (Bowel obstruction pathway)",
+     "s": "paedstg2026:2.50"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg IV 8-hourly",
+     "s": "paedstg2026:6.7",
+     "d": 1
+    },
+    {
+     "t": "Do NOT reduce",
+     "s": "taxis2020:Rev",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — urgently",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Testicular torsion",
+   "branch": "If not a hernia",
+   "features": [
+    {
+     "t": "Sudden scrotal pain; testis high, rotated, tender",
+     "s": "phcstg2026:12.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; do not delay for ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; nil by mouth",
+     "s": "paedstg2026:20.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Urgently",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Incarcerated inguinal hernia (no strangulation)",
+   "branch": "If incarcerated",
+   "features": [
+    {
+     "t": "Irreducible, mildly tender, child well, no vomiting",
+     "s": "wseshernia2017:Def",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; discuss with surgeon; one gentle reduction by a doctor only if early and no strangulation signs",
+     "s": "taxis2020:Rev",
+     "d": 1
+    },
+    {
+     "t": "After reduction: observe 12–24 h",
+     "s": "taxis2020:Rev",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss with surgeon; urgent if not reduced; repair soon after reduction",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Reducible inguinal hernia",
+   "branch": "If reducible / umbilical",
+   "features": [
+    {
+     "t": "Groin lump with crying, reduces fully",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Teach parents return signs",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "All: elective surgical referral (does not resolve)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Umbilical hernia",
+   "branch": "If reducible / umbilical",
+   "features": [
+    {
+     "t": "Soft umbilical bulge; rarely incarcerates",
+     "s": "paedstg2026:7.37",
+     "d": 1
+    },
+    {
+     "t": "Check thyroid if other signs",
+     "s": "paedstg2026:7.37"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reassure; most close without surgery; no strapping or coins",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Persists at school age, very large, or painful / irreducible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hydrocele",
+   "branch": "If not a hernia",
+   "features": [
+    {
+     "t": "Painless scrotal swelling; can get above it; does not reduce",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reassure; many resolve",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Persists or varies in size (communicating)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Undescended testis · inguinal lymphadenitis",
+   "branch": "If not a hernia",
+   "features": [
+    {
+     "t": "Empty scrotum, groin lump; or hot tender node with a lower-limb / perineal source",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Node: treat the source; abscess drained",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Undescended testis: elective surgical referral",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Branch rows start once the working diagnosis is ticked; time from irreducibility drives risk",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Shock: pulse, CRT, BP, LOC every 15 min until stable",
+    "s": "paedstg2026:1.16",
+    "b": 1
+   },
+   {
+    "t": "Then pulse, CRT, temperature, RR hourly while irreducible",
+    "d": 1
+   },
+   {
+    "t": "Hernia site hourly: tender, tense, colour, reducible?",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Pain score hourly",
+    "d": 1
+   },
+   {
+    "t": "Every vomit (bile?), stool, flatus",
+    "d": 1
+   },
+   {
+    "t": "Urine output ≥ 1 mL/kg/h",
+    "s": "paedstg2026:1.16",
+    "b": 1
+   },
+   {
+    "t": "HGT 4-hourly while nil by mouth",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "After reduction: observe 12–24 h",
+    "s": "taxis2020:Rev",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Record the time the lump became irreducible. Examine both groins and both testes.",
+    "feed": [
+     {
+      "h": "Irreducible / obstructed"
+     },
+     {
+      "t": "Nil by mouth",
+      "s": "paedstg2026:2.50",
+      "b": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% or Ringer's 20 mL/kg rapidly; review every 15 min; up to 40 mL/kg",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     },
+     {
+      "t": "Maintenance NaCl 0.9%/dextrose 5%: ≤ 1 y 120 mL/kg/24 h; > 1 y 100 / 50 / 20 mL/kg/24 h",
+      "s": "paedstg2026:2.16"
+     },
+     {
+      "t": "Obstructed: NG tube on free drainage",
+      "s": "paedstg2026:2.50"
+     },
+     {
+      "h": "Reducible"
+     },
+     {
+      "t": "Normal feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "paedstg2026:7.31",
+      "b": 1
+     },
+     {
+      "t": "U&E / VBG if vomiting or shocked",
+      "s": "paedstg2026:2.9",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Bedside ultrasound",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Analgesia"
+     },
+     {
+      "t": "Paracetamol IV 15 mg/kg 6-hourly",
+      "s": "paedstg2026:20.8"
+     },
+     {
+      "t": "Morphine IV (4-hourly bolus): 1–6 mo 0.05 mg/kg · 6–12 mo 0.05–0.2 · 1–12 y 0.1–0.2 mg/kg; titrate slowly",
+      "s": "paedstg2026:20.10",
+      "b": 1
+     },
+     {
+      "h": "Strangulation suspected"
+     },
+     {
+      "t": "Do NOT reduce",
+      "s": "taxis2020:Rev",
+      "d": 1
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 25 mg/kg IV 8-hourly",
+      "s": "paedstg2026:6.7",
+      "d": 1
+     },
+     {
+      "t": "REFER urgently",
+      "s": "phcstg2026:2.5",
+      "b": 1
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "HGT < 2.6: dextrose 10% 2–5 mL/kg IV",
+      "s": "paedstg2026:7.31"
+     },
+     {
+      "h": "Incarcerated, early, no strangulation signs"
+     },
+     {
+      "t": "Discuss with surgeon; one gentle reduction under analgesia by a doctor",
+      "s": "taxis2020:Rev",
+      "d": 1
+     },
+     {
+      "t": "Never force",
+      "d": 1
+     },
+     {
+      "h": "Torsion suspected"
+     },
+     {
+      "t": "REFER urgently — do not wait for ultrasound",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     },
+     {
+      "h": "Reducible"
+     },
+     {
+      "t": "Elective referral; teach return signs",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if nil by mouth",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Surgeon called; decision recorded",
+      "d": 1
+     },
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Lump more tender, discoloured, bile vomit → strangulation → REFER",
+      "s": "paedstg2026:2.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 1 mL/kg/h?",
+      "s": "paedstg2026:1.16"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Still irreducible → REFER urgently",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If strangulated / obstructed",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; IV fluids; NG free drainage",
+      "s": "paedstg2026:2.50"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E / VBG, HGT",
+      "s": "paedstg2026:2.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics",
+      "s": "paedstg2026:6.7",
+      "d": 1
+     },
+     {
+      "t": "REFER urgently",
+      "s": "phcstg2026:2.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If incarcerated",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth until reduced",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Reduced: observe 12–24 h (side 2)",
+      "s": "taxis2020:Rev",
+      "d": 1
+     },
+     {
+      "t": "Not reduced: REFER urgently",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If reducible / umbilical",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Inguinal: discharge, elective referral",
+      "d": 1
+     },
+     {
+      "t": "Umbilical: reassure",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If not a hernia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Torsion: REFER urgently",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     },
+     {
+      "t": "Hydrocele / undescended testis: elective referral",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Feeds if reduced and no vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if still nil by mouth",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-check site: recurrence, tenderness, distension",
+      "s": "taxis2020:Rev",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "18 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Passing stool / flatus?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Discharge / transfer",
+    "feed": [
+     {
+      "t": "Normal feeds"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Discharge criteria (below); early repair booked",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% or Ringer's 20 mL/kg; review every 15 min; up to 40 mL/kg",
+     "s": "paedstg2026:1.16"
+    },
+    {
+     "t": "Maintenance NaCl 0.9%/dextrose 5%: ≤ 1 y 120 mL/kg/24 h; > 1 y 100 / 50 / 20 mL/kg/24 h",
+     "s": "paedstg2026:2.16"
+    },
+    {
+     "t": "Obstructed: nil by mouth, NG free drainage",
+     "s": "paedstg2026:2.50"
+    },
+    {
+     "t": "HGT < 2.6: dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.31"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Analgesia"
+    },
+    {
+     "t": "Paracetamol IV 15 mg/kg 6-hourly",
+     "s": "paedstg2026:20.8"
+    },
+    {
+     "t": "Morphine IV 0.1–0.2 mg/kg 4-hourly (1–12 y)",
+     "s": "paedstg2026:20.10"
+    },
+    {
+     "t": "Ibuprofen PO 5–10 mg/kg 8-hourly",
+     "s": "paedstg2026:22.13"
+    },
+    {
+     "h": "Strangulation / peritonitis"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg IV 8-hourly",
+     "s": "paedstg2026:6.7",
+     "d": 1
+    },
+    {
+     "h": "Reduction (taxis) rules †"
+    },
+    {
+     "t": "Only after surgeon discussion, early, no strangulation signs, with analgesia, by a doctor; observe 12–24 h",
+     "s": "taxis2020:Rev",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor / REFER urgently"
+    },
+    {
+     "t": "Tender, discoloured lump; inconsolable",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Bile-stained vomit, distension",
+     "s": "paedstg2026:2.9"
+    },
+    {
+     "t": "CRT ≥ 3 s, weak pulse, ↓ LOC",
+     "s": "paedstg2026:1.15"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Strangulated, obstructed, irreducible",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    },
+    {
+     "t": "Suspected torsion",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Hernia reduced and soft, or uncomplicated",
+    "d": 1
+   },
+   {
+    "t": "Comfortable on oral analgesia",
+    "d": 1
+   },
+   {
+    "t": "Feeding, no vomiting, passing stool",
+    "d": 1
+   },
+   {
+    "t": "Observed 12–24 h after any reduction",
+    "s": "taxis2020:Rev",
+    "d": 1
+   },
+   {
+    "t": "Surgical referral made",
+    "d": 1
+   },
+   {
+    "t": "Parents know return signs",
+    "d": 1
+   },
+   {
+    "t": "Surgeon agreed (if incarcerated)",
+    "d": 1
+   },
+   {
+    "t": "RTHB updated",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: lump stuck, hard, painful, discoloured, or vomiting",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Surgical OPD for repair",
+    "d": 1
+   },
+   {
+    "t": "Umbilical hernia: review at clinic visits",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — hernia site, pain, bowels, vitals",
+  "period": "One sheet per 24 h; hourly rows while irreducible, 4-hourly after reduction",
+  "params": [
+   {
+    "h": "Hernia site",
+    "items": [
+     {
+      "t": "Hourly while irreducible: tender, tense, colour, reducible?",
+      "d": 1
+     },
+     {
+      "t": "After reduction: 4-hourly for 12–24 h",
+      "s": "taxis2020:Rev",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Shock: every 15 min until stable",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "Then pulse, CRT, temperature, RR hourly while irreducible",
+      "d": 1
+     },
+     {
+      "t": "Pain score hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bowels",
+    "items": [
+     {
+      "t": "Every vomit (bile?), stool, flatus",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth while irreducible",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "In / out · HGT",
+    "items": [
+     {
+      "t": "Urine output ≥ 1 mL/kg/h",
+      "s": "paedstg2026:1.16"
+     },
+     {
+      "t": "HGT 4-hourly while nil by mouth",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "tender, discoloured or hard lump; inconsolable crying",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "green (bile) vomit or distension",
+    "s": "paedstg2026:2.9"
+   },
+   {
+    "t": "CRT ≥ 3 s, weak pulse, ↓ LOC",
+    "s": "paedstg2026:1.15"
+   },
+   {
+    "t": "urine < 1 mL/kg/h",
+    "s": "paedstg2026:1.16"
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:7.31"
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine (mL/kg/h)",
+   "Reduced at (time)",
+   "Pain trend"
+  ]
+ }
+}

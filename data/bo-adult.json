@@ -1,0 +1,1433 @@
+{
+ "id": "bo-adult",
+ "short": "Bowel obstruction (adult)",
+ "title": "Bowel obstruction — partial and complete (adult)",
+ "population": "Adult (excludes pregnancy, neonates; palliative malignant obstruction branch included)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-03",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "wsesasbo2017",
+  "wseshernia2017"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pregnancy → maternity",
+     "b": 1
+    },
+    {
+     "t": "Groin / abdominal-wall lump without obstruction → Hernia pathway",
+     "b": 1
+    },
+    {
+     "t": "Upper GI bleed / PR bleeding pathways",
+     "b": 1
+    },
+    {
+     "t": "Constipation without obstruction signs → PHC 2.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — cardinal features",
+   "items": [
+    {
+     "t": "Colicky abdominal pain",
+     "s": "wsesasbo2017:Dx",
+     "b": 1
+    },
+    {
+     "t": "Vomiting (bilious / faeculent)",
+     "s": "wsesasbo2017:Dx",
+     "b": 1
+    },
+    {
+     "t": "Abdominal distension",
+     "s": "wsesasbo2017:Dx",
+     "b": 1
+    },
+    {
+     "t": "No stool or flatus passed (complete) · some flatus (partial)",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    },
+    {
+     "t": "Not all features present, especially in the elderly",
+     "s": "wsesasbo2017:Dx",
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Last stool ____ · Last flatus ____ · Vomits/24 h ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — any one = OPERATE NOW → REFER urgently",
+   "items": [
+    {
+     "t": "Peritonitis: guarding, rebound, tenderness on percussion",
+     "s": "wsesasbo2017:Surg",
+     "b": 1
+    },
+    {
+     "t": "Signs of strangulation / ischaemia: constant pain, fever, tachycardia, SIRS + guarding",
+     "s": "wseshernia2017:Lab",
+     "b": 1
+    },
+    {
+     "t": "Irreducible tender hernia (incarcerated / strangulated)",
+     "s": "wseshernia2017:Surg",
+     "b": 1
+    },
+    {
+     "t": "SHOCK",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "Complete obstruction",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous abdominal surgery (adhesions)",
+     "s": "wsesasbo2017:Dx"
+    },
+    {
+     "t": "Known hernia",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "t": "Cancer / weight loss / altered bowel habit",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "TB / HIV: ART, CD4",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Opioids, anticholinergics",
+     "s": "phcstg2026:22.3",
+     "d": 1
+    },
+    {
+     "t": "Cardiac / renal disease",
+     "d": 1
+    },
+    {
+     "t": "CKD — baseline creatinine: ____",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Pre-referral fluids given (mL)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Onset, site, colicky vs constant",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Constant / worsening = ischaemia",
+     "s": "wseshernia2017:Lab",
+     "d": 1
+    },
+    {
+     "h": "Bowel"
+    },
+    {
+     "t": "Last stool and flatus",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Vomiting: bilious / faeculent",
+     "s": "wsesasbo2017:Dx"
+    },
+    {
+     "t": "Change in bowel habit, blood PR",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Constipation history",
+     "s": "phcstg2026:22.3"
+    },
+    {
+     "h": "Causes"
+    },
+    {
+     "t": "Previous laparotomy / C-section",
+     "s": "wsesasbo2017:Dx"
+    },
+    {
+     "t": "Groin / umbilical lump",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "t": "Weight loss",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "Worms passed",
+     "s": "phcstg2026:2.21"
+    },
+    {
+     "h": "Screen"
+    },
+    {
+     "t": "TB symptoms, HIV",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Medicines (opioids)",
+     "s": "phcstg2026:22.3"
+    },
+    {
+     "t": "Pregnancy possible",
+     "s": "phcstg2026:2.5"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "wseshernia2017:Lab",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / postural drop",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air (SpO₂ < 94%)",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "s": "phcstg2026:2.8",
+     "k": "yn"
+    },
+    {
+     "t": "Oliguria",
+     "s": "adultstg2026:7.9",
+     "k": "yn"
+    },
+    {
+     "t": "Abdominal girth on arrival: ____ cm",
+     "d": 1,
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "Circulation and hydration",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Clammy / cold peripheries"
+    },
+    {
+     "t": "Weak pulses"
+    },
+    {
+     "t": "Dry mucosa, sunken eyes"
+    },
+    {
+     "t": "Altered mental state"
+    },
+    {
+     "h": "Abdomen",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Distension"
+    },
+    {
+     "t": "Visible peristalsis",
+     "d": 1
+    },
+    {
+     "t": "Tenderness / guarding / rebound"
+    },
+    {
+     "t": "Mass"
+    },
+    {
+     "t": "Bowel sounds: absent / tinkling",
+     "d": 1
+    },
+    {
+     "h": "Hernial orifices — always",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "t": "Inguinal (both sides)"
+    },
+    {
+     "t": "Femoral (below ligament)"
+    },
+    {
+     "t": "Umbilical / incisional"
+    },
+    {
+     "h": "PR †"
+    },
+    {
+     "t": "Empty rectum / faecal impaction / mass / blood"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "U&E / VBG — K and creatinine",
+   "items": [
+    {
+     "t": "Na ____ K ____ creat ____ lactate ____",
+     "k": "value"
+    },
+    {
+     "t": "K < 3.5: hypokalaemia plan (side 2)",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Creat ↑ ≥ 26.5 µmol/L in 48 h or ≥ 1.5 × baseline = AKI",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Lactate ≥ 2 mmol/L: suspect non-viable bowel",
+     "s": "wseshernia2017:Lab",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bedside ultrasound (no X-ray / CT on site)",
+   "items": [
+    {
+     "t": "Dilated fluid-filled loops / to-and-fro peristalsis: ____",
+     "s": "wsesasbo2017:Dx",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Free fluid · hernia content · mass",
+     "s": "wsesasbo2017:Dx",
+     "d": 1
+    },
+    {
+     "t": "REFER for X-ray / CT abdomen",
+     "s": "wsesasbo2017:Dx",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway: aspiration risk",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Peritonitis / perforation",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Strangulated hernia",
+     "s": "wseshernia2017:Surg"
+    },
+    {
+     "t": "Bowel ischaemia",
+     "s": "wsesasbo2017:Surg"
+    },
+    {
+     "t": "Sigmoid volvulus",
+     "d": 1
+    },
+    {
+     "t": "AKI",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Hypokalaemia",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Sepsis",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Appendicitis",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Abdominal TB",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Malignancy",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "Diverticulitis",
+     "s": "adultstg2026:1.1"
+    },
+    {
+     "t": "Aspiration pneumonia",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Peritonitis · strangulation · irreducible hernia · shock · complete obstruction → resuscitate, drip and suck, REFER urgently to surgery",
+   "s": "phcstg2026:22.3"
+  },
+  {
+   "t": "11. ADMIT for drip and suck while transfer is arranged · partial adhesive obstruction: non-operative trial ONLY if the surgeon agrees",
+   "s": "wsesasbo2017:NOM",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Strangulated / incarcerated hernia",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Tender, tense, irreducible lump at a hernial orifice; femoral highest risk",
+     "s": "wseshernia2017:Surg"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Examine all orifices; ultrasound of lump",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck; analgesia; antibiotics if strangulated",
+     "s": "adultstg2026:1.23",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — immediate repair if strangulation suspected",
+     "s": "wseshernia2017:Surg",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Adhesive small-bowel obstruction",
+   "branch": "If adhesive / partial",
+   "features": [
+    {
+     "t": "Previous abdominal surgery; colicky pain, vomiting, distension",
+     "s": "wsesasbo2017:Dx"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; REFER for CT with water-soluble contrast",
+     "s": "wsesasbo2017:Dx"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth, NG decompression, fluids, electrolytes",
+     "s": "wsesasbo2017:NOM",
+     "b": 1
+    },
+    {
+     "t": "Non-operative trial up to 72 h if no peritonitis / strangulation",
+     "s": "wsesasbo2017:NOM"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss all; operate if peritonitis, strangulation, ischaemia or failed trial",
+     "s": "wsesasbo2017:Surg",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Peritonitis / perforation (incl. appendicitis)",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Guarding, rigidity, rebound, fever",
+     "s": "phcstg2026:2.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound free fluid",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "IV fluids, NG suction",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — prompt surgery",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Colorectal / malignant obstruction",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Older, weight loss, altered bowel habit, gradual distension",
+     "s": "adultstg2026:24.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CT / colonoscopy",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck; no metoclopramide in complete obstruction",
+     "s": "adultstg2026:24.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss with surgeon; palliative care if inoperable",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sigmoid volvulus",
+   "branch": "If surgical",
+   "features": [
+    {
+     "t": "Elderly, gross distension, constipation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for X-ray / CT",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — decompression is a specialist procedure",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Abdominal TB",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Ascites, abdominal masses, possible bowel obstruction; HIV",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; HIV, CD4",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck if obstructed",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL suspected extrapulmonary TB",
+     "s": "phcstg2026:10.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Worm bolus (Ascaris)",
+   "branch": "If adhesive / partial",
+   "features": [
+    {
+     "t": "Worms passed / vomited; endemic area",
+     "s": "phcstg2026:2.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (worm mass)",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck; mebendazole 500 mg once only after obstruction resolves",
+     "s": "phcstg2026:2.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Signs of obstruction",
+     "s": "phcstg2026:2.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Faecal impaction / constipation",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Hard stool, opioids, elderly; flatus still passed",
+     "s": "phcstg2026:22.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PR examination",
+     "s": "phcstg2026:22.3"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Laxatives / manual removal with analgesia",
+     "s": "phcstg2026:22.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If any obstruction signs",
+     "s": "phcstg2026:22.3"
+    }
+   ]
+  },
+  {
+   "dx": "Ileus (hypokalaemia, sepsis, drugs)",
+   "branch": "If other",
+   "features": [
+    {
+     "t": "Distension, absent bowel sounds; low K",
+     "s": "adultstg2026:7.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "U&E",
+     "s": "adultstg2026:7.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Correct K (side 2); treat cause",
+     "s": "adultstg2026:7.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If no improvement in 48 h",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Branch rows start once the working diagnosis is ticked; non-operative trial only with a surgeon's agreement",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, temperature, RR 4-hourly; hourly if shocked or septic",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "NG aspirate: volume and colour 4-hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Vomits, stool, flatus — every episode",
+    "d": 1
+   },
+   {
+    "t": "Abdominal girth and pain score 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Urine output: < 0.5 mL/kg/h for 6 h = AKI",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "U&E daily (K, creatinine)",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Nil by mouth",
+    "s": "wsesasbo2017:NOM",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Examine every hernial orifice. Call the surgeon early — every suspected obstruction is discussed or referred.",
+    "feed": [
+     {
+      "h": "Drip"
+     },
+     {
+      "t": "Nil by mouth",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% IV 1–2 L; monitor BP, pulse, response",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "Then NaCl 0.9% maintenance + replace NG losses mL for mL",
+      "s": "adultstg2026:12.10",
+      "d": 1
+     },
+     {
+      "h": "Suck"
+     },
+     {
+      "t": "NG tube on free drainage + 4-hourly aspiration",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Urinary catheter; measure output",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E (Na, K, creatinine)",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "VBG + lactate if available",
+      "s": "wseshernia2017:Lab",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Bedside ultrasound",
+      "s": "wsesasbo2017:Dx",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV test (offer)",
+      "s": "phcstg2026:10.22",
+      "b": 1
+     },
+     {
+      "t": "ECG if K abnormal",
+      "s": "adultstg2026:7.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Analgesia (surgical abdomen)"
+     },
+     {
+      "t": "Morphine IV 3–5 mg, then 1–2 mg boluses; max 10 mg; repeat after 4 h",
+      "s": "phcstg2026:2.3",
+      "b": 1
+     },
+     {
+      "t": "Or morphine IM 5–10 mg",
+      "s": "phcstg2026:2.2"
+     },
+     {
+      "h": "Do NOT give"
+     },
+     {
+      "t": "Metoclopramide in complete obstruction",
+      "s": "adultstg2026:24.4",
+      "b": 1
+     },
+     {
+      "t": "Laxatives / enemas if obstructed",
+      "d": 1
+     },
+     {
+      "h": "Suspected strangulation / peritonitis"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "REFER urgently for surgery",
+      "s": "wseshernia2017:Surg",
+      "b": 1
+     },
+     {
+      "h": "Hypokalaemia"
+     },
+     {
+      "t": "Severe / symptomatic: KCl 40 mmol in 1 L NaCl 0.9% over 3 h (max 20 mmol/h)",
+      "s": "adultstg2026:7.12"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Resuscitate",
+    "feed": [
+     {
+      "t": "Fluids per response",
+      "s": "adultstg2026:20.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E result",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Surgeon called; decision recorded",
+      "d": 1
+     },
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Drip and suck",
+    "feed": [
+     {
+      "t": "Replace NG losses",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 0.5 mL/kg/h?",
+      "s": "adultstg2026:7.9"
+     },
+     {
+      "t": "Pain controlled?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat lactate if it was raised",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New guarding, fever, tachycardia, constant pain → REFER urgently",
+      "s": "wseshernia2017:Lab",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "NG volume, girth, flatus trend",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K if it was low",
+      "s": "adultstg2026:7.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transfer done? If not, escalate",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Trial: improving? (less NG output, flatus, softer abdomen)",
+      "s": "wsesasbo2017:NOM",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If surgical",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; IV fluids",
+      "s": "phcstg2026:2.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, FBC",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics if strangulation / peritonitis",
+      "s": "adultstg2026:1.23"
+     },
+     {
+      "t": "REFER urgently (no theatre)",
+      "s": "wseshernia2017:Surg",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If adhesive / partial",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; NG decompression; replace losses",
+      "s": "wsesasbo2017:NOM",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E daily",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Non-operative trial only with surgeon's agreement",
+      "s": "wsesasbo2017:NOM",
+      "d": 1
+     },
+     {
+      "t": "Worms: mebendazole 500 mg once, after resolution",
+      "s": "phcstg2026:2.21"
+     }
+    ]
+   },
+   {
+    "label": "If other",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV, CD4 if TB suspected",
+      "s": "phcstg2026:10.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Malignant: surgeon + palliative care",
+      "s": "adultstg2026:24.3"
+     },
+     {
+      "t": "Ileus: correct K, treat cause",
+      "s": "adultstg2026:7.12"
+     },
+     {
+      "t": "Impaction: manual removal with analgesia",
+      "s": "phcstg2026:22.3"
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "Trial",
+    "feed": [
+     {
+      "t": "Nil by mouth until flatus and NG output falling",
+      "s": "wsesasbo2017:NOM",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Not improving → REFER",
+      "s": "wsesasbo2017:Surg",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Trial",
+    "feed": [
+     {
+      "t": "Clear fluids if flatus passed and NG output low",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Remove NG if tolerating fluids",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Trial ends",
+    "feed": [
+     {
+      "t": "Diet if tolerating fluids",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Not resolved by 72 h → REFER for surgery",
+      "s": "wsesasbo2017:NOM",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Day 4+",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Discharge criteria (below); elective hernia / cause referral",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids, electrolytes, analgesia",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% 1–2 L IV; monitor BP, pulse, response",
+     "s": "adultstg2026:20.20"
+    },
+    {
+     "t": "Maintenance NaCl 0.9% (Ringer's if hyponatraemic) + replace NG losses",
+     "s": "adultstg2026:12.10"
+    },
+    {
+     "t": "K 3–3.4, not vomiting: KCl 1 200 mg PO 8-hourly (not if nil by mouth)",
+     "s": "adultstg2026:7.12"
+    },
+    {
+     "t": "Severe / symptomatic ↓ K: KCl 40 mmol in 1 L NaCl 0.9% over 3 h, max 20 mmol/h",
+     "s": "adultstg2026:7.12"
+    },
+    {
+     "t": "Morphine IV 3–5 mg, then 1–2 mg; max 10 mg; repeat after 4 h",
+     "s": "phcstg2026:2.3"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Strangulation / peritonitis"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "h": "Vomiting"
+    },
+    {
+     "t": "Metoclopramide contraindicated in complete obstruction",
+     "s": "adultstg2026:24.4"
+    },
+    {
+     "t": "Inoperable (palliative): haloperidol 1.5–5 mg daily; promethazine 12.5–25 mg IM/IV 4–6-hourly",
+     "s": "adultstg2026:24.4"
+    },
+    {
+     "h": "Worm bolus"
+    },
+    {
+     "t": "Mebendazole 500 mg PO once, after resolution",
+     "s": "phcstg2026:2.21"
+    },
+    {
+     "h": "TB / HIV"
+    },
+    {
+     "t": "Refer extrapulmonary TB; offer HIV test",
+     "s": "phcstg2026:10.22"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor / REFER urgently"
+    },
+    {
+     "t": "Constant pain, fever, rising pulse, guarding (strangulation)",
+     "s": "wseshernia2017:Lab",
+     "b": 1
+    },
+    {
+     "t": "Faeculent vomiting or rising NG output",
+     "d": 1
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "U&E · FBC · lactate · ultrasound",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "All suspected obstruction (surgeon decides)",
+     "s": "phcstg2026:22.3",
+     "b": 1
+    },
+    {
+     "t": "Failed non-operative trial at 72 h",
+     "s": "wsesasbo2017:NOM",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Passing flatus and stool",
+    "d": 1
+   },
+   {
+    "t": "Tolerating diet, no vomiting",
+    "d": 1
+   },
+   {
+    "t": "Abdomen soft, pain controlled orally",
+    "d": 1
+   },
+   {
+    "t": "U&E normal / improving",
+    "s": "adultstg2026:7.9"
+   },
+   {
+    "t": "Cause identified or referral booked",
+    "s": "phcstg2026:22.3"
+   },
+   {
+    "t": "Surgeon agreed with discharge",
+    "d": 1
+   },
+   {
+    "t": "Knows return signs",
+    "d": 1
+   },
+   {
+    "t": "HIV test offered",
+    "s": "phcstg2026:10.22"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: vomiting, distension, no flatus, severe pain",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Elective hernia repair / CT / colonoscopy referral as indicated",
+    "d": 1
+   },
+   {
+    "t": "Palliative care follow-up if malignant",
+    "s": "adultstg2026:24.3"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — drip and suck: NG, fluids, bowels, urine",
+  "period": "One sheet per 24 h; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Pulse, BP, temperature, RR 4-hourly; hourly if shocked or septic",
+      "d": 1
+     },
+     {
+      "t": "Pain score and abdominal girth 4-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "NG tube",
+    "items": [
+     {
+      "t": "Free drainage; aspirate and record volume and colour 4-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bowels",
+    "items": [
+     {
+      "t": "Every vomit, stool and flatus",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth",
+      "s": "wsesasbo2017:NOM"
+     }
+    ]
+   },
+   {
+    "h": "In / out",
+    "items": [
+     {
+      "t": "IV in (mL)"
+     },
+     {
+      "t": "Urine: < 0.5 mL/kg/h for 6 h = AKI",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "constant or worsening pain, new guarding, fever, rising pulse",
+    "s": "wseshernia2017:Lab",
+    "b": 1
+   },
+   {
+    "t": "faeculent vomit or rising NG output",
+    "d": 1
+   },
+   {
+    "t": "falling BP or confusion"
+   },
+   {
+    "t": "urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9"
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "NG out (mL)",
+   "Urine (mL/kg/h)",
+   "Balance"
+  ]
+ }
+}

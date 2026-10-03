@@ -1,0 +1,1337 @@
+{
+ "id": "hernia-adult",
+ "short": "Hernia (adult)",
+ "title": "Abdominal wall and groin hernia — incl. incarcerated / strangulated (adult)",
+ "population": "Adult (groin, umbilical, incisional, epigastric hernia; excludes hiatus hernia)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-03",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "wseshernia2017",
+  "herniasurge2018",
+  "taxis2020"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Obstruction without a hernia → Bowel obstruction pathway",
+     "b": 1
+    },
+    {
+     "t": "Hiatus hernia / reflux → GORD (Adult STG 1.1.4)",
+     "b": 1
+    },
+    {
+     "t": "Pregnancy → maternity",
+     "b": 1
+    },
+    {
+     "t": "Trauma",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — lump at a hernial site",
+   "items": [
+    {
+     "t": "Lump in groin, umbilicus, scar or linea alba",
+     "s": "herniasurge2018:Ch3",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Cough impulse / enlarges on standing, straining",
+     "s": "herniasurge2018:Ch3",
+     "d": 1
+    },
+    {
+     "t": "Reducible: goes back · Irreducible: does not",
+     "s": "wseshernia2017:Def",
+     "b": 1
+    },
+    {
+     "t": "Site: inguinal L / R · femoral · umbilical · incisional · epigastric",
+     "k": "value"
+    },
+    {
+     "t": "Duration of irreducibility: ____ h",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — tick the highest that applies",
+   "items": [
+    {
+     "t": "STRANGULATED: blood supply compromised — constant pain, tender red tense lump, fever, tachycardia, guarding",
+     "s": "wseshernia2017:Def",
+     "b": 1
+    },
+    {
+     "t": "OBSTRUCTED: vomiting, distension, no stool/flatus",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    },
+    {
+     "t": "INCARCERATED: irreducible, not strangulated",
+     "s": "wseshernia2017:Def",
+     "b": 1
+    },
+    {
+     "t": "FEMORAL hernia (high risk of bowel resection)",
+     "s": "wseshernia2017:Surg",
+     "b": 1
+    },
+    {
+     "t": "REDUCIBLE, uncomplicated",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous hernia repair / laparotomy",
+     "s": "herniasurge2018:Ch3",
+     "d": 1
+    },
+    {
+     "t": "Chronic cough, constipation, prostatism",
+     "d": 1
+    },
+    {
+     "t": "Ascites / liver disease",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulant",
+     "d": 1
+    },
+    {
+     "t": "Cardiac / respiratory disease (anaesthetic risk)",
+     "d": 1
+    },
+    {
+     "t": "HIV: ART, CD4",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "CKD — baseline creatinine: ____",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Time lump became irreducible: ____",
+     "s": "wseshernia2017:Surg",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "The lump"
+    },
+    {
+     "t": "Duration; previously reducible?",
+     "s": "wseshernia2017:Def",
+     "d": 1
+    },
+    {
+     "t": "Became painful / irreducible: when?",
+     "s": "wseshernia2017:Surg"
+    },
+    {
+     "t": "Painful, red, tense",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "h": "Obstruction"
+    },
+    {
+     "t": "Vomiting",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Last stool / flatus",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Distension",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "h": "Groin alternatives",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Scrotal pain / swelling",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Hot tender inguinal node (bubo)",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "Urethral discharge / STI",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "h": "Screen"
+    },
+    {
+     "t": "HIV status",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "Smoking, heavy lifting",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "wseshernia2017:Lab",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "s": "wseshernia2017:Lab",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / postural drop",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air (SpO₂ < 94%)",
+     "s": "adultstg2026:20.20",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "k": "yn"
+    },
+    {
+     "t": "Oliguria",
+     "s": "adultstg2026:7.9",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "The lump",
+     "s": "wseshernia2017:Def"
+    },
+    {
+     "t": "Tender"
+    },
+    {
+     "t": "Tense / hard"
+    },
+    {
+     "t": "Red / discoloured skin"
+    },
+    {
+     "t": "Reducible on gentle pressure",
+     "d": 1
+    },
+    {
+     "h": "Site †",
+     "s": "herniasurge2018:Ch3"
+    },
+    {
+     "t": "Above and medial to pubic tubercle (inguinal)"
+    },
+    {
+     "t": "Below and lateral (femoral)"
+    },
+    {
+     "t": "Umbilical / scar / linea alba"
+    },
+    {
+     "t": "Other side checked"
+    },
+    {
+     "h": "Scrotum",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Testis elevated / rotated (torsion)"
+    },
+    {
+     "t": "Non-tender swelling (hydrocele?)"
+    },
+    {
+     "h": "Abdomen",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Distension"
+    },
+    {
+     "t": "Guarding / peritonism"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bedside ultrasound",
+   "items": [
+    {
+     "t": "Content: bowel / omentum / fluid ____",
+     "s": "herniasurge2018:Ch3",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Bowel wall thick, no peristalsis, free fluid → strangulation?",
+     "d": 1
+    },
+    {
+     "t": "Not a hernia: node, abscess, hydrocele, torsion",
+     "s": "phcstg2026:12.10",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods — strangulation markers",
+   "items": [
+    {
+     "t": "WCC ____ lactate ____ U&E ____",
+     "k": "value"
+    },
+    {
+     "t": "Raised WCC / SIRS + guarding: suspect strangulation",
+     "s": "wseshernia2017:Lab"
+    },
+    {
+     "t": "Lactate ≥ 2 mmol/L: suspect non-viable bowel",
+     "s": "wseshernia2017:Lab",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway: aspiration risk",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Strangulation",
+     "s": "wseshernia2017:Surg"
+    },
+    {
+     "t": "Bowel obstruction",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "t": "Peritonitis / perforation",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Femoral hernia",
+     "s": "wseshernia2017:Surg"
+    },
+    {
+     "t": "Testicular torsion",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Bubo / abscess",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "Femoral aneurysm",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "Sepsis",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "AKI",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Ascites / cirrhosis",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulated",
+     "d": 1
+    },
+    {
+     "t": "Elderly / frail",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Strangulated · obstructed · femoral irreducible → resuscitate, analgesia, REFER for emergency repair (no theatre)",
+   "s": "wseshernia2017:Surg"
+  },
+  {
+   "t": "11. ADMIT complicated hernia while transfer is arranged · reducible, uncomplicated → elective surgical referral, home",
+   "s": "herniasurge2018:Ch5",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Strangulated hernia",
+   "branch": "If strangulated / obstructed",
+   "features": [
+    {
+     "t": "Constant pain, tender tense red lump, fever, tachycardia, guarding",
+     "s": "wseshernia2017:Lab"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical ± ultrasound; WCC, lactate",
+     "s": "wseshernia2017:Lab",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Nil by mouth, IV fluids, analgesia",
+     "s": "phcstg2026:2.3"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "d": 1
+    },
+    {
+     "t": "Do NOT reduce",
+     "s": "taxis2020:Rev",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — emergency repair",
+     "s": "wseshernia2017:Surg",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Obstructed hernia",
+   "branch": "If strangulated / obstructed",
+   "features": [
+    {
+     "t": "Irreducible lump + vomiting, distension, no stool / flatus",
+     "s": "phcstg2026:2.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Drip and suck (Bowel obstruction pathway)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — urgently",
+     "s": "phcstg2026:2.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Femoral hernia",
+   "branch": "If incarcerated",
+   "features": [
+    {
+     "t": "Below and lateral to pubic tubercle; women, elderly",
+     "s": "herniasurge2018:Ch3",
+     "d": 1
+    },
+    {
+     "t": "Highest risk of bowel resection",
+     "s": "wseshernia2017:Surg"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "s": "herniasurge2018:Ch3",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; no taxis",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Irreducible: urgently · reducible: early elective",
+     "s": "wseshernia2017:Surg",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Incarcerated (no strangulation)",
+   "branch": "If incarcerated",
+   "features": [
+    {
+     "t": "Irreducible, mildly tender, no systemic signs",
+     "s": "wseshernia2017:Def"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; one gentle reduction by a doctor only if early and no strangulation signs",
+     "s": "taxis2020:Rev",
+     "d": 1
+    },
+    {
+     "t": "After reduction: observe 12–24 h",
+     "s": "taxis2020:Rev",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss with surgeon; urgent if irreducible",
+     "s": "wseshernia2017:Surg",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Reducible inguinal / umbilical / incisional hernia",
+   "branch": "If reducible",
+   "features": [
+    {
+     "t": "Cough impulse, reduces fully, no pain",
+     "s": "herniasurge2018:Ch3",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound if unsure",
+     "s": "herniasurge2018:Ch3",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Asymptomatic men: watchful waiting acceptable",
+     "s": "herniasurge2018:Ch5",
+     "d": 1
+    },
+    {
+     "t": "Teach warning signs",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Elective surgical referral (symptomatic)",
+     "s": "herniasurge2018:Ch5",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Testicular torsion / scrotal swelling",
+   "branch": "If not a hernia",
+   "features": [
+    {
+     "t": "Testis rotated and elevated; trauma; non-tender swelling",
+     "s": "phcstg2026:12.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Epididymo-orchitis: ceftriaxone 250 mg IM + azithromycin 1 g PO once",
+     "s": "phcstg2026:12.8"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Urgently if torsion suspected",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bubo / inguinal abscess",
+   "branch": "If not a hernia",
+   "features": [
+    {
+     "t": "Hot tender inguinal swelling, erythema; exclude hernia / femoral aneurysm",
+     "s": "phcstg2026:12.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; HIV test",
+     "s": "phcstg2026:12.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Azithromycin 1 g PO, then 1 g weekly × 2 weeks; aspirate if fluctuant",
+     "s": "phcstg2026:12.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No improvement after 14 days",
+     "s": "phcstg2026:12.10"
+    }
+   ]
+  },
+  {
+   "dx": "Femoral aneurysm · lipoma · lymph node",
+   "branch": "If not a hernia",
+   "features": [
+    {
+     "t": "Pulsatile (aneurysm); soft non-reducible (lipoma); firm node",
+     "s": "phcstg2026:12.10",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Never aspirate a pulsatile lump",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Aneurysm: urgently",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Branch rows start once the working diagnosis is ticked; time from irreducibility drives risk",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, temperature, RR hourly while irreducible",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Hernia site hourly: tender, tense, colour, reducible?",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Pain score hourly",
+    "d": 1
+   },
+   {
+    "t": "Vomiting, stool, flatus — every episode",
+    "s": "phcstg2026:2.5",
+    "d": 1
+   },
+   {
+    "t": "Urine output: < 0.5 mL/kg/h for 6 h = AKI",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "After reduction: observe 12–24 h",
+    "s": "taxis2020:Rev",
+    "d": 1
+   },
+   {
+    "t": "Nil by mouth while irreducible",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Record the time the lump became irreducible — risk rises with every hour. Examine both groins and the scrotum.",
+    "feed": [
+     {
+      "h": "Irreducible / obstructed"
+     },
+     {
+      "t": "Nil by mouth",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% IV 1–2 L",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "Obstructed: NG tube + IV fluids (Bowel obstruction pathway)",
+      "s": "adultstg2026:1.23"
+     },
+     {
+      "h": "Reducible, uncomplicated"
+     },
+     {
+      "t": "Normal diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC (WCC)",
+      "s": "wseshernia2017:Lab",
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Lactate (VBG) if available",
+      "s": "wseshernia2017:Lab",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Bedside ultrasound",
+      "s": "herniasurge2018:Ch3",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV test (offer)",
+      "s": "phcstg2026:12.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Analgesia"
+     },
+     {
+      "t": "Morphine IV 3–5 mg, then 1–2 mg boluses; max 10 mg; repeat after 4 h",
+      "s": "phcstg2026:2.3",
+      "b": 1
+     },
+     {
+      "t": "Or morphine IM 5–10 mg",
+      "s": "phcstg2026:2.2"
+     },
+     {
+      "h": "Strangulation suspected"
+     },
+     {
+      "t": "Do NOT reduce",
+      "s": "taxis2020:Rev",
+      "d": 1
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+      "s": "adultstg2026:1.23",
+      "d": 1
+     },
+     {
+      "t": "REFER for emergency repair",
+      "s": "wseshernia2017:Surg",
+      "b": 1
+     },
+     {
+      "h": "Incarcerated, early, no strangulation signs"
+     },
+     {
+      "t": "Discuss with surgeon; one gentle reduction under analgesia by a doctor",
+      "s": "taxis2020:Rev",
+      "d": 1
+     },
+     {
+      "t": "Never force; no reduction of a femoral hernia",
+      "d": 1
+     },
+     {
+      "h": "Reducible"
+     },
+     {
+      "t": "Elective referral; teach warning signs",
+      "s": "herniasurge2018:Ch5",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "WCC, U&E results",
+      "s": "wseshernia2017:Lab",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Surgeon called; decision recorded",
+      "d": 1
+     },
+     {
+      "t": "Tick working diagnosis (page 2)"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Lump more tender, red, constant pain → strangulation → REFER",
+      "s": "wseshernia2017:Lab",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lactate if it was raised",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine output ≥ 0.5 mL/kg/h?",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Still irreducible → REFER urgently",
+      "s": "wseshernia2017:Surg",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If strangulated / obstructed",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; IV fluids; NG if obstructed",
+      "s": "adultstg2026:1.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, FBC",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics",
+      "s": "adultstg2026:1.23",
+      "d": 1
+     },
+     {
+      "t": "REFER — emergency repair",
+      "s": "wseshernia2017:Surg",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If incarcerated",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth until reduced",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Reduced: observe 12–24 h (side 2)",
+      "s": "taxis2020:Rev",
+      "d": 1
+     },
+     {
+      "t": "Not reduced / femoral: REFER urgently",
+      "s": "wseshernia2017:Surg",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If reducible",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Discharge; elective surgical referral",
+      "s": "herniasurge2018:Ch5",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If not a hernia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test",
+      "s": "phcstg2026:12.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Torsion: REFER urgently",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     },
+     {
+      "t": "Bubo: azithromycin (page 2)",
+      "s": "phcstg2026:12.10"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Diet if reduced and no vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Re-check site: recurrence, tenderness, peritonism (reduction en masse?)",
+      "s": "taxis2020:Rev",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "18 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Passing flatus / stool?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Discharge / transfer",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if AKI",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria (below); elective repair booked",
+      "s": "herniasurge2018:Ch5",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids and analgesia",
+   "items": [
+    {
+     "t": "Shock: NaCl 0.9% 1–2 L IV; monitor BP, pulse, response",
+     "s": "adultstg2026:20.20"
+    },
+    {
+     "t": "Obstructed: nil by mouth, NG suction, IV fluids",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Morphine IV 3–5 mg, then 1–2 mg; max 10 mg; repeat after 4 h",
+     "s": "phcstg2026:2.3"
+    },
+    {
+     "t": "Morphine IM 5–10 mg, repeat after 4–6 h",
+     "s": "phcstg2026:2.2"
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "Strangulation / peritonitis"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "d": 1
+    },
+    {
+     "h": "Epididymo-orchitis"
+    },
+    {
+     "t": "Ceftriaxone 250 mg IM + azithromycin 1 g PO, single doses",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "h": "Bubo"
+    },
+    {
+     "t": "Azithromycin 1 g PO, then 1 g weekly × 2 weeks",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "h": "Reduction (taxis) rules †"
+    },
+    {
+     "t": "Only early, no strangulation signs, with analgesia, by a doctor; never a femoral hernia; observe 12–24 h",
+     "s": "taxis2020:Rev",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor / REFER urgently"
+    },
+    {
+     "t": "Constant pain, red tense lump, fever, rising pulse, guarding",
+     "s": "wseshernia2017:Lab",
+     "b": 1
+    },
+    {
+     "t": "Vomiting, distension, no flatus",
+     "s": "phcstg2026:2.5"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "FBC · U&E · lactate · ultrasound",
+     "b": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Strangulated, obstructed, irreducible",
+     "s": "wseshernia2017:Surg",
+     "b": 1
+    },
+    {
+     "t": "Any femoral hernia",
+     "s": "wseshernia2017:Surg",
+     "d": 1
+    },
+    {
+     "t": "Suspected torsion",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Hernia reduced and soft, or uncomplicated",
+    "d": 1
+   },
+   {
+    "t": "No pain at rest",
+    "d": 1
+   },
+   {
+    "t": "Eating, passing flatus / stool",
+    "d": 1
+   },
+   {
+    "t": "Observed 12–24 h after any reduction",
+    "s": "taxis2020:Rev",
+    "d": 1
+   },
+   {
+    "t": "Elective repair referral made",
+    "s": "herniasurge2018:Ch5",
+    "d": 1
+   },
+   {
+    "t": "Knows return signs",
+    "d": 1
+   },
+   {
+    "t": "Surgeon agreed (if incarcerated)",
+    "d": 1
+   },
+   {
+    "t": "HIV test offered",
+    "s": "phcstg2026:12.10"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return at once: lump will not go back, becomes painful, red or hard, or vomiting",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Surgical OPD for elective repair",
+    "s": "herniasurge2018:Ch5",
+    "d": 1
+   },
+   {
+    "t": "Treat cough / constipation / prostatism",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — hernia site, pain, bowels, vitals",
+  "period": "One sheet per 24 h; hourly rows while irreducible, 4-hourly after reduction",
+  "params": [
+   {
+    "h": "Hernia site",
+    "items": [
+     {
+      "t": "Hourly while irreducible: tender, tense, colour, reducible?",
+      "d": 1
+     },
+     {
+      "t": "After reduction: 4-hourly for 12–24 h",
+      "s": "taxis2020:Rev",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Vitals and pain",
+    "items": [
+     {
+      "t": "Pulse, BP, temperature, RR hourly while irreducible",
+      "d": 1
+     },
+     {
+      "t": "Pain score hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bowels",
+    "items": [
+     {
+      "t": "Every vomit, stool, flatus",
+      "s": "phcstg2026:2.5",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth while irreducible",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Urine",
+    "items": [
+     {
+      "t": "Urine: < 0.5 mL/kg/h for 6 h = AKI",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "constant pain, red / tense / hard lump, fever, rising pulse",
+    "s": "wseshernia2017:Lab",
+    "b": 1
+   },
+   {
+    "t": "vomiting, distension or no flatus",
+    "s": "phcstg2026:2.5"
+   },
+   {
+    "t": "lump comes back or pain returns after reduction",
+    "s": "taxis2020:Rev",
+    "d": 1
+   },
+   {
+    "t": "urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9"
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine (mL/kg/h)",
+   "Reduced at (time)",
+   "Pain trend"
+  ]
+ }
+}
