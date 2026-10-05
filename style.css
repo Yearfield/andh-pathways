@@ -34,6 +34,7 @@ html, body { margin: 0; background: var(--bg); color: var(--ink);
   font-family: var(--font-body); font-size: 16px; line-height: 1.4; }
 button, input { font: inherit; color: inherit; }
 button { cursor: pointer; }
+[hidden] { display: none !important; } /* component display rules (.dx { display:flex } etc.) must not defeat the hidden attribute the filters rely on */
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 svg.i { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
@@ -351,7 +352,6 @@ li.handoff .ho:active { background: #dcebe7; }
 li.handoff.b .txt { font-weight: 700; }
 .fchip.none { opacity: .45; } .chips.sys { margin-top: -6px; } .chips.sys .fchip[aria-pressed="true"] { background: var(--tab); border-color: var(--tab); }
 .chips.sys + .chips.sys { margin-top: -6px; }
-.chips.off { opacity: .35; filter: grayscale(1); pointer-events: none; }
 
 /* ---------- scales and calculations ---------- */
 main.scores [hidden] { display: none; }
@@ -457,3 +457,22 @@ main.causes [hidden] { display: none; }
 @media (min-width: 900px) { main.causes { max-width: 1120px; } }
 
 .btn.clrall { min-height: 42px; width: 100%; border-color: var(--warn); color: var(--warn-ink); font-weight: 700; }
+
+/* chips that link out (online sources such as Orthobullets) */
+a.chip { display: inline-flex; align-items: center; text-decoration: none; }
+a.btn { text-decoration: none; color: inherit; }
+a.btn.primary { color: #fff; }
+
+/* hub page (one list entry that opens every site) and grouped Differentials */
+.hub .btn.wide { width: 100%; min-height: 52px; justify-content: space-between; text-align: left; font-weight: 700; background: var(--ink); color: #fff; border-color: var(--ink); line-height: 1.25; padding: 8px 14px; }
+.hub .btn.wide svg.i { flex: 0 0 auto; }
+.seg2 small { display: block; font-size: .68rem; font-weight: 400; opacity: .8; }
+.hometop > .seg2 { flex: 0 0 auto; }
+.dx.hx { min-height: 52px; }
+.dx.hx .hn { flex: 1; min-width: 0; font-family: var(--font-head); font-weight: 700; font-size: 1rem; line-height: 1.25; }
+.dx.hx .hb { flex: 0 0 auto; max-width: 38%; font-size: .7rem; font-weight: 700; color: var(--muted); background: var(--bg); border: 1px solid var(--hair); border-radius: 6px; padding: 2px 6px; text-align: center; line-height: 1.2; }
+h2.glabel.dg { margin: 8px 4px 0; scroll-margin-top: 140px; }
+section.card.flash { animation: cflash 2.4s ease-out; box-shadow: 0 0 0 4px var(--amber); }
+
+/* very narrow phones: long one-word column names (e.g. "Immobilisation") must fit their segment */
+@media (max-width: 340px) { .seg button { font-size: .76rem; padding: 4px 2px; letter-spacing: -.01em; } }

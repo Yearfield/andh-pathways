@@ -1,0 +1,2024 @@
+{
+ "id": "fracture-paeds",
+ "short": "FX Paeds",
+ "title": "Fractures (paediatric)",
+ "population": "Paediatric (open growth plates)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-05",
+ "sources": [
+  "phc2024",
+  "paed2023",
+  "ob"
+ ],
+ "dagger_note": "† = not in the SA STG (Orthobullets, accessed 5 Oct 2026, or clinical addition)",
+ "item_format": "t=text, s=source:printed page (ob:<Orthobullets topic id>), d=dagger, b=bold, k=kind (value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Skeletally mature adolescents (closed physes) → Fracture (adult) set",
+     "d": 1
+    },
+    {
+     "t": "Major trauma resuscitation → resuscitation card first",
+     "s": "phc2024:21.64"
+    },
+    {
+     "t": "Head injury → TBI pathway",
+     "s": "paed2023:1.30"
+    },
+    {
+     "t": "Neonates: birth injury → neonatal team",
+     "d": 1
+    },
+    {
+     "t": "Sprains without fracture → PHC STG 21.3.8 (think non-accidental injury)",
+     "s": "phc2024:21.67"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms fracture",
+   "items": [
+    {
+     "t": "X-ray: fracture on 2 views (AP + lateral), joint above and below",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Clinical deformity, crepitus or abnormal movement",
+     "d": 1
+    },
+    {
+     "t": "Physis tender, X-ray normal = Salter–Harris I: treat as fracture",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Elbow: posterior fat pad = occult fracture",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Toddler limping/refusing to walk: X-ray tibia; cast if tender",
+     "s": "ob:4026",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Weight ____ kg · Site ____ Side L / R · Time of injury ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated fracture = any one of",
+   "items": [
+    {
+     "t": "Open fracture",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Neurovascular deficit (pulse, AIN, radial, ulnar)",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Compartment syndrome signs",
+     "s": "ob:1001",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Displaced supracondylar (Gartland II–IV)",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Displaced physeal or intra-articular (SH III–IV)",
+     "s": "ob:4002",
+     "d": 1
+    },
+    {
+     "t": "Femoral shaft, pelvic or spinal fracture",
+     "d": 1
+    },
+    {
+     "t": "Suspected non-accidental injury",
+     "s": "ob:4001",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Child < 2 years with a major injury (admit)",
+     "s": "phc2024:21.63"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet",
+   "items": [
+    {
+     "t": "Immunisations up to date (tetanus)",
+     "s": "paed2023:8.36"
+    },
+    {
+     "t": "Weight-for-age curve",
+     "d": 1
+    },
+    {
+     "t": "HIV exposed / status",
+     "d": 1
+    },
+    {
+     "t": "Previous fractures or casualty visits",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Walking yet? (non-walker = red flag)",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Rickets risk / vitamin D",
+     "d": 1
+    },
+    {
+     "t": "Chronic illness, steroids",
+     "d": 1
+    },
+    {
+     "t": "Social worker involved before",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Mechanism"
+    },
+    {
+     "t": "Time of injury; who saw it",
+     "d": 1
+    },
+    {
+     "t": "Fall height / MVA / sport / unknown",
+     "s": "phc2024:21.63"
+    },
+    {
+     "t": "Story matches injury and development",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Delay in seeking care",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Head injury / loss of consciousness",
+     "s": "phc2024:21.63"
+    },
+    {
+     "h": "Before arrival"
+    },
+    {
+     "t": "Splint, analgesia given — time",
+     "d": 1
+    },
+    {
+     "h": "AMPLE"
+    },
+    {
+     "t": "Allergies · medication · past history",
+     "s": "phc2024:21.64"
+    },
+    {
+     "t": "Last meal / feed — time (sedation)",
+     "s": "phc2024:21.64"
+    },
+    {
+     "h": "Social"
+    },
+    {
+     "t": "Primary caregiver present",
+     "d": 1
+    },
+    {
+     "t": "Safety at home / school",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's baseline",
+   "items": [
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension (late sign)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "s": "phc2024:21.64",
+     "k": "yn"
+    },
+    {
+     "t": "Pain score ____ (FLACC / faces)",
+     "d": 1,
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Limb — look, feel, move"
+    },
+    {
+     "t": "Deformity / swelling",
+     "d": 1
+    },
+    {
+     "t": "Open wound — size ____ cm",
+     "d": 1
+    },
+    {
+     "t": "Skin tenting / puckering (supracondylar)",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Tense compartment",
+     "s": "ob:1001",
+     "d": 1
+    },
+    {
+     "t": "Pain on passive stretch of digits",
+     "s": "ob:1001",
+     "d": 1
+    },
+    {
+     "t": "Tender joint above / below / physis",
+     "d": 1
+    },
+    {
+     "h": "Distal — compare other side"
+    },
+    {
+     "t": "Radial / foot pulse present",
+     "d": 1
+    },
+    {
+     "t": "Hand/foot pink, capillary refill normal",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Sensation intact",
+     "d": 1
+    },
+    {
+     "t": "Movement intact",
+     "d": 1
+    },
+    {
+     "h": "Nerves at the elbow"
+    },
+    {
+     "t": "AIN: 'OK' sign (thumb–index)",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Radial: thumb extension · ulnar: finger spread",
+     "d": 1
+    },
+    {
+     "h": "Non-accidental injury screen"
+    },
+    {
+     "t": "Bruises in a non-mobile child, patterned bruises, burns",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Other fractures, rib tenderness",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Torn frenulum",
+     "d": 1
+    },
+    {
+     "h": "Secondary survey"
+    },
+    {
+     "t": "Spine, chest, abdomen (seat-belt sign)",
+     "s": "phc2024:21.63"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Neurovascular status — bedside",
+   "items": [
+    {
+     "t": "Status on arrival: intact / deficit ____",
+     "k": "value"
+    },
+    {
+     "t": "Pulseless, WHITE hand (supracondylar): EMERGENCY REFER",
+     "s": "ob:4007",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Pulseless, PINK hand: urgent REFER",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Splint elbow at 20–40° flexion — never hyperflex",
+     "d": 1
+    },
+    {
+     "t": "Passive-stretch pain / tense compartment: split cast to skin, limb at heart level, EMERGENCY REFER",
+     "s": "ob:1001",
+     "d": 1
+    },
+    {
+     "t": "Neurovascular check hourly for 24 h after injury, reduction or new cast, then 4-hourly while admitted if all normal",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Plain X-ray — on site, 24 h",
+   "items": [
+    {
+     "t": "Views done: ____",
+     "k": "value"
+    },
+    {
+     "t": "AP + lateral, joint above and below; views per sheet (p2–3)",
+     "d": 1
+    },
+    {
+     "t": "Compare with the other side if unsure of a physis",
+     "d": 1
+    },
+    {
+     "t": "Skeletal survey if NAI suspected (< 2 y)",
+     "s": "ob:4001",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Post-reduction / post-cast X-ray every time",
+     "d": 1
+    },
+    {
+     "t": "Hb if femur, pelvis, open or multiple fractures: ____ g/dL",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway / breathing compromise",
+     "s": "phc2024:21.64",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "phc2024:21.64",
+     "b": 1
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "s": "phc2024:21.64",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Open fracture",
+     "d": 1
+    },
+    {
+     "t": "Pulseless / white hand",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Compartment syndrome",
+     "s": "ob:1001",
+     "d": 1
+    },
+    {
+     "t": "Fracture in a non-walker",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Metaphyseal corner / posterior rib fracture",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "t": "Displaced physeal / intra-articular",
+     "s": "ob:4002",
+     "d": 1
+    },
+    {
+     "t": "Slipped capital femoral epiphysis",
+     "d": 1
+    },
+    {
+     "t": "Femoral shaft (blood loss)",
+     "d": 1
+    },
+    {
+     "t": "Head or abdominal injury",
+     "s": "phc2024:21.63"
+    },
+    {
+     "t": "Pathological: osteomyelitis, tumour, rickets",
+     "d": 1
+    },
+    {
+     "t": "Child < 2 y with major injury",
+     "s": "phc2024:21.63"
+    },
+    {
+     "t": "Abuse suspected",
+     "s": "phc2024:21.63"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = COMPLICATED or OPERATIVE FRACTURE → splint, analgesia, antibiotics if open, then REFER"
+  },
+  {
+   "t": "11. ADMIT — or cast and discharge if §2 and §9 are clear and the child is safe; continue on the Fracture inpatient chart and the 24-hour neurovascular record"
+  }
+ ],
+ "differentials": [
+  {
+   "group": "Upper limb",
+   "dx": "Clavicle",
+   "features": [
+    {
+     "t": "Fall on shoulder; birth injury",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP clavicle",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Sling or figure-of-eight 2–4 wk, then ROM; no reduction",
+     "s": "ob:322128",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Open · skin tenting",
+     "s": "ob:322128",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Proximal humerus",
+   "features": [
+    {
+     "t": "Older child/adolescent; remodels well",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + scapular Y",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Sling / collar & cuff 3–4 wk",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Open · NV deficit · severe displacement near skeletal maturity",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Humeral shaft",
+   "features": [
+    {
+     "t": "Infant: think NAI; check radial nerve",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral humerus",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Collar & cuff or U-slab 3–4 wk",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Open · NV deficit · NAI → admit",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Supracondylar humerus (Gartland)",
+   "features": [
+    {
+     "t": "Fall on outstretched hand; S-deformity; check radial pulse + AIN",
+     "s": "ob:4007",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral elbow; fat pad",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Type I: above-elbow cast/backslab, elbow < 90°, 3–4 wk; X-ray at 1 wk",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "t": "Never hyperflex (Volkmann)",
+     "s": "ob:4007",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Type II–IV → urgent REFER (pinning) · white pulseless hand = EMERGENCY · pink pulseless = urgent",
+     "s": "ob:4007",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "branch": "If NV / compartment"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Lateral condyle",
+   "features": [
+    {
+     "t": "Lateral elbow swelling, tender lateral condyle",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP, lateral + internal oblique",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "< 2 mm: above-elbow cast 4–6 wk; X-ray at 1 wk (can displace)",
+     "s": "ob:4009",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "≥ 2 mm displaced → REFER (pinning/ORIF); high nonunion risk",
+     "s": "ob:4009",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Medial epicondyle",
+   "features": [
+    {
+     "t": "Often with elbow dislocation; check ulnar nerve",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral, compare other side",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Above-elbow cast at 90° for 1–3 wk",
+     "s": "ob:4008",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Fragment trapped in joint · open · articular extension · marked displacement",
+     "s": "ob:4008",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Radial neck",
+   "features": [
+    {
+     "t": "Lateral elbow pain on rotation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral elbow",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "< 30° angulation: collar & cuff / backslab 1–2 wk, early movement",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "> 30° after closed reduction · > 60° · displaced",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Monteggia (child)",
+   "features": [
+    {
+     "t": "Ulna fracture/bow + radial head dislocation: check radiocapitellar line on EVERY forearm film",
+     "s": "ob:1024",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral incl. elbow",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reduce the ulna → radial head reduces; above-elbow cast",
+     "s": "ob:1024",
+     "d": 1
+    },
+    {
+     "t": "4–6 wk",
+     "d": 1,
+     "k": "sub"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Radial head not reduced/unstable · missed > 2–3 wk",
+     "s": "ob:1024",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Forearm both-bone (greenstick / complete)",
+   "features": [
+    {
+     "t": "Deformity; check skin and nerves",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral incl. elbow and wrist",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reduce under sedation, above-elbow cast; accept < 10 y: angle < 15°, rotation < 45°, bayonet < 1 cm · ≥ 10 y: < 10°, < 30°, no bayonet",
+     "s": "ob:4126",
+     "d": 1
+    },
+    {
+     "t": "About 6 wk",
+     "d": 1,
+     "k": "sub"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Outside limits after 1 reduction · near maturity · open · unstable",
+     "s": "ob:4126",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Distal radius — torus / buckle",
+   "features": [
+    {
+     "t": "Single-cortex buckle, no angulation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral wrist",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Below-elbow cast or splint 2–3 wk; no reduction",
+     "s": "ob:4014",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not needed",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Distal radius — greenstick / complete / SH I–II",
+   "features": [
+    {
+     "t": "Dorsal angulation, deformity",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral wrist",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reduce if outside limits (< 10 y: dorsal 30°, bayonet < 1 cm · > 10 y: dorsal 20°, no bayonet); cast 3–4 wk",
+     "s": "ob:4014",
+     "d": 1
+    },
+    {
+     "t": "Physeal: ONE reduction attempt only",
+     "s": "ob:4014",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "SH III–IV · failed reduction · unstable · near maturity",
+     "s": "ob:4014",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Upper limb",
+   "dx": "Hand: metacarpal / phalanx",
+   "features": [
+    {
+     "t": "Rotation; nail-bed injury with physeal fracture (Seymour)",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PA + lateral/oblique",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Gutter splint / buddy strap 3 wk",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Rotation · displaced intra-articular · Seymour = open → antibiotics + REFER",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Femoral shaft — by age",
+   "features": [
+    {
+     "t": "< 3 y / non-walker: strongly suspect NAI",
+     "s": "ob:4019",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral femur incl. hip and knee",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Splint/skin traction, analgesia, fascia iliaca block",
+     "d": 1
+    },
+    {
+     "t": "Definitive: < 6 mo Pavlik/spica · 6 mo–5 y spica · 5–11 y flexible nails · > 11 y/49 kg rigid nail",
+     "s": "ob:4019",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL → REFER (spica needs theatre); accept < 10° coronal, < 20° sagittal, < 2 cm short",
+     "s": "ob:4019",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "branch": "If femur / NAI"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Slipped capital femoral epiphysis",
+   "features": [
+    {
+     "t": "Adolescent, often overweight; hip or KNEE pain, limp, external rotation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + frog-lateral both hips",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Strict non-weight-bearing; wheelchair",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL → urgent REFER (unable to walk = emergency)",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "branch": "If femur / NAI"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Knee: distal femur / proximal tibia physis, tibial spine, tibial tubercle",
+   "features": [
+    {
+     "t": "Haemarthrosis; check popliteal pulse",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral knee",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Long-leg backslab, non-weight-bearing",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL displaced → REFER (growth arrest risk)",
+     "s": "ob:4002",
+     "d": 1
+    }
+   ],
+   "branch": "If NV / compartment"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Tibial shaft",
+   "features": [
+    {
+     "t": "Compartment syndrome possible",
+     "s": "ob:4026",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral incl. knee and ankle",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Long-leg cast, knee ~30° flexed",
+     "s": "ob:4026",
+     "d": 1
+    },
+    {
+     "t": "6–8 wk; X-ray at 1 wk",
+     "d": 1,
+     "k": "sub"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Open · unstable/displaced · compartment syndrome",
+     "s": "ob:4026",
+     "d": 1
+    }
+   ],
+   "branch": "If NV / compartment"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Toddler's fracture",
+   "features": [
+    {
+     "t": "< 2.5 y, spiral distal tibia, fibula intact; refuses to walk",
+     "s": "ob:4026",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + lateral tibia (may be normal)",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Long-leg cast 3–4 wk",
+     "s": "ob:4026",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not needed · not yet walking → NAI work-up",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Ankle — SH I / II",
+   "features": [
+    {
+     "t": "Tender over distal physis",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP, lateral, mortise",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Undisplaced: boot or NWB below-knee cast 4 wk",
+     "s": "ob:4027",
+     "d": 1
+    },
+    {
+     "t": "Displaced: reduce, NWB cast 6 wk",
+     "s": "ob:4027",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "SH III–IV · Tillaux/triplane > 2 mm (CT) · medial malleolus SH IV",
+     "s": "ob:4027",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Lower limb",
+   "dx": "Foot: metatarsal / 5th MT / toes",
+   "features": [
+    {
+     "t": "Crush, inversion",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP + oblique foot",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Below-knee cast or stiff-sole shoe 3–6 wk",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Displaced · Lisfranc pattern · open",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Axial / special",
+   "dx": "Pelvis / spine",
+   "features": [
+    {
+     "t": "High energy",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "AP pelvis; spine views",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Immobilise, analgesia, resuscitate",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL → REFER",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "branch": "If femur / NAI"
+  },
+  {
+   "group": "Axial / special",
+   "dx": "Any physeal fracture (Salter–Harris)",
+   "features": [
+    {
+     "t": "I through physis · II exits metaphysis · III exits epiphysis · IV crosses all · V crush",
+     "s": "ob:4002",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Compare other side",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "I–II: closed reduction (one attempt) + cast",
+     "s": "ob:4002",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "III–IV (intra-articular): anatomical reduction → REFER · V/crush",
+     "s": "ob:4002",
+     "d": 1
+    },
+    {
+     "t": "Follow up for growth arrest",
+     "d": 1
+    }
+   ],
+   "branch": "If castable"
+  },
+  {
+   "group": "Axial / special",
+   "dx": "Fracture suspicious for non-accidental injury",
+   "features": [
+    {
+     "t": "Non-walker · metaphyseal corner/bucket-handle · posterior rib · multiple ages · story inconsistent · delay",
+     "s": "ob:4001",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Skeletal survey (< 2 y)",
+     "s": "ob:4001",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the fracture; ADMIT; social worker; report (mandatory)",
+     "s": "ob:4001",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Paediatrics / forensic review as needed",
+     "d": 1
+    }
+   ],
+   "branch": "If femur / NAI"
+  }
+ ],
+ "chart": {
+  "unit": "Hour → Day",
+  "phase_note": "Branch rows A–D: complete only the branch that applies",
+  "columns": {
+   "feed": "Immobilisation & fluids",
+   "tests": "X-ray, bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Neurovascular check hourly for 24 h after injury, reduction or new cast, then 4-hourly while admitted if all normal",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Colour & warmth, capillary refill, pulse, sensation, movement — compare with the other limb",
+    "d": 1
+   },
+   {
+    "t": "Pain score (FLACC < 4 y, faces ≥ 4 y) with every check; pain on passive stretch of fingers/toes = call doctor",
+    "s": "ob:1001",
+    "d": 1
+   },
+   {
+    "t": "Elevate the limb; keep at heart level if compartment syndrome is suspected",
+    "s": "ob:1001",
+    "d": 1
+   },
+   {
+    "t": "Cast/splint check: tight, wet, cracked, rubbing; wound ooze",
+    "d": 1
+   },
+   {
+    "t": "After an opioid: watch closely for 15 min, then every 30 min for 1 h, then 4-hourly",
+    "s": "paed2023:20.12"
+   },
+   {
+    "t": "Heart rate, RR, SpO₂, temperature 4-hourly on the observation chart; caregiver present",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Primary survey first. Weigh the child (doses). Check the referral note for analgesia already given — do not duplicate.",
+    "feed": [
+     {
+      "t": "Splint every fracture site",
+      "s": "phc2024:21.65",
+      "b": 1
+     },
+     {
+      "t": "Remove rings, tight clothing",
+      "d": 1
+     },
+     {
+      "t": "Elevate; heart level if compartment concern",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth if reduction or transfer likely",
+      "d": 1
+     },
+     {
+      "t": "IV/IO access if open, femur, pelvis or shock",
+      "s": "phc2024:21.64"
+     }
+    ],
+    "tests": [
+     {
+      "t": "X-ray per §8",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Hb if femur, pelvis, open or multiple fractures",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "FBC, U&E, group & crossmatch",
+      "s": "phc2024:21.65",
+      "b": 1
+     },
+     {
+      "t": "Skeletal survey if NAI suspected (< 2 y)",
+      "s": "ob:4001",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Shock"
+     },
+     {
+      "t": "NaCl 0.9% or Ringer's lactate 20 mL/kg rapidly; reassess; repeat to 40 mL/kg",
+      "s": "paed2023:1.16"
+     },
+     {
+      "t": "Blood loss: packed cells or whole blood 10–20 mL/kg",
+      "s": "paed2023:1.17"
+     },
+     {
+      "t": "No blood bank: lyophilised plasma 1 unit per unit of emergency blood → urgent transfer",
+      "s": "paed2023:1.19"
+     },
+     {
+      "h": "Open fracture"
+     },
+     {
+      "t": "Remove gross debris, saline-soaked dressing, splint; antibiotic within 1 h (side 2)",
+      "s": "ob:1004",
+      "d": 1
+     },
+     {
+      "t": "Tetanus toxoid 0.5 mL IM unless booster in last 5 years",
+      "s": "paed2023:8.36"
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Intranasal fentanyl 1–2 mcg/kg, or morphine IV (side 2)",
+      "s": "paed2023:20.18"
+     },
+     {
+      "h": "Pulseless limb"
+     },
+     {
+      "t": "Supracondylar, white hand: EMERGENCY REFER",
+      "s": "ob:4007",
+      "d": 1
+     },
+     {
+      "t": "Splint elbow at 20–40° flexion — never hyperflex",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Working diagnosis",
+    "feed": [
+     {
+      "t": "Backslab/splint per differential sheet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "X-ray reviewed — tick the working diagnosis (Doc 1 p2–3)",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Decide: cast at ANDH / REFER / admit for observation or safety",
+      "d": 1
+     },
+     {
+      "t": "Pain reassessed; regular (not PRN) analgesia",
+      "s": "paed2023:22.13"
+     }
+    ]
+   },
+   {
+    "label": "If open",
+    "phase": "Branch A",
+    "feed": [
+     {
+      "t": "Sterile saline dressing, backslab; do not irrigate in casualty",
+      "s": "ob:1004",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth, IV fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, U&E, group & crossmatch",
+      "s": "phc2024:21.65",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cefazolin 30 mg/kg IV 8-hourly (max 2 g); Gustilo III add gentamicin",
+      "s": "paed2023:11.2",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Tetanus ± immunoglobulin (side 2)",
+      "s": "paed2023:8.36"
+     },
+     {
+      "t": "REFER for debridement: within 24 h (III); 6–12 h if grossly contaminated",
+      "s": "ob:1004",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If NV / compartment",
+    "phase": "Branch B",
+    "feed": [
+     {
+      "t": "Split cast and padding to skin; limb at heart level; elbow not flexed > 90°",
+      "s": "ob:4007",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "NV check every 15 min until resolved or transferred",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "White pulseless hand → EMERGENCY REFER",
+      "s": "ob:4007",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Compartment syndrome → EMERGENCY REFER for fasciotomy",
+      "s": "ob:1001",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If femur / NAI",
+    "phase": "Branch C",
+    "feed": [
+     {
+      "t": "Skin traction / splint; pressure care",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, crossmatch",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Skeletal survey (< 2 y); document injuries",
+      "s": "ob:4001",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fascia iliaca / femoral block",
+      "s": "paed2023:22.4"
+     },
+     {
+      "t": "NAI: ADMIT, social worker, report; do not discharge home",
+      "s": "ob:4001",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "REFER femur (spica/nails by age)",
+      "s": "ob:4019",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If castable",
+    "phase": "Branch D",
+    "feed": [
+     {
+      "t": "Reduce under procedural sedation (side 2)",
+      "s": "paed2023:20.17"
+     },
+     {
+      "t": "Backslab for the first 24–48 h while swelling settles",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Post-reduction X-ray",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Acceptable (sheet limits) → discharge criteria",
+      "d": 1
+     },
+     {
+      "t": "Physeal: one reduction attempt only, then REFER",
+      "s": "ob:4014",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Post-reduction / cast",
+    "feed": [
+     {
+      "t": "Elevate; check cast edges",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "NV hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Regular paracetamol + ibuprofen",
+      "s": "paed2023:20.8"
+     },
+     {
+      "t": "Outpatient: discharge if criteria met",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Elevate",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "NV hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Escalate any NV change (side 2 box)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Mobilise per sheet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "NV hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Confirm referral accepted / transport booked",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Swelling settled: complete the cast",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "NV → 4-hourly if all normal for 24 h",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Wean opioid if used",
+      "s": "paed2023:20.12"
+     },
+     {
+      "t": "Social worker outcome if NAI",
+      "s": "ob:4001",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Ward",
+    "feed": [
+     {
+      "t": "Check cast; split if tight",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Check X-ray if manipulated or cast changed",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral analgesia; lactulose if on opioids",
+      "s": "paed2023:20.11"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Ward / awaiting transfer",
+    "feed": [
+     {
+      "t": "Skin and pressure care",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if drop suspected",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Chase transfer daily; document delay",
+      "d": 1
+     },
+     {
+      "t": "Safe discharge plan (NAI) agreed",
+      "s": "ob:4001",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–5",
+    "phase": "Awaiting transfer",
+    "feed": [
+     {
+      "t": "Mobilise as allowed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC/U&E if unwell",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Watch for compartment syndrome, infection, pressure sores",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge / transfer",
+    "phase": "Exit",
+    "feed": [
+     {
+      "t": "Final cast check, X-ray filed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Last NV check normal",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cast counselling to caregiver (box below)",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Follow-up booked; RtHB updated",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Analgesia · sedation",
+   "items": [
+    {
+     "h": "Simple — give regularly"
+    },
+    {
+     "t": "Paracetamol 15 mg/kg PO 6-hourly (3 mo–12 y), max 90 mg/kg/d or 4 g",
+     "s": "paed2023:20.8"
+    },
+    {
+     "t": "+ Ibuprofen 5–10 mg/kg PO 6–8-hourly with food, max 40 mg/kg/d (> 3 mo)",
+     "s": "paed2023:20.9"
+    },
+    {
+     "h": "Opioid"
+    },
+    {
+     "t": "Morphine PO > 12 mo: 0.2–0.4 mg/kg 4–6-hourly",
+     "s": "paed2023:20.9"
+    },
+    {
+     "t": "Morphine IV 1–12 y: 0.1–0.2 mg/kg, small doses every 5–10 min to effect",
+     "s": "paed2023:20.10"
+    },
+    {
+     "t": "Fentanyl intranasal 1–2 mcg/kg (preferred for procedures)",
+     "s": "paed2023:20.18"
+    },
+    {
+     "t": "Naloxone 10 mcg/kg IV/IM for opioid respiratory depression",
+     "s": "paed2023:20.11"
+    },
+    {
+     "h": "Procedural sedation"
+    },
+    {
+     "t": "Ketamine IV 0.25–1 mg/kg · intranasal 5 mg/kg · IM 2–4 mg/kg",
+     "s": "paed2023:20.18"
+    },
+    {
+     "t": "Lidocaine (blocks): max 3 mg/kg",
+     "s": "phc2024:21.66"
+    }
+   ]
+  },
+  {
+   "title": "Open fracture · tetanus",
+   "items": [
+    {
+     "h": "Antibiotic — start within 1 h",
+     "s": "ob:1004",
+     "d": 1
+    },
+    {
+     "t": "Cefazolin 30 mg/kg IV 8-hourly (max 2 g)",
+     "s": "paed2023:11.2",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Gustilo III: add gentamicin 6 mg/kg IV daily",
+     "s": "paed2023:11.3",
+     "d": 1
+    },
+    {
+     "t": "Penicillin anaphylaxis: clindamycin 6 mg/kg IV",
+     "s": "paed2023:11.2"
+    },
+    {
+     "t": "Continue 24 h after wound closure (48 h for type III if closure delayed)",
+     "s": "ob:1004",
+     "d": 1
+    },
+    {
+     "h": "Tetanus"
+    },
+    {
+     "t": "Toxoid 0.5 mL IM unless booster in the last 5 years",
+     "s": "paed2023:8.36"
+    },
+    {
+     "t": "Penetrating wound, not fully immunised: tetanus immunoglobulin < 5 y 75 IU · 5–10 y 125 IU · > 10 y 250 IU",
+     "s": "paed2023:8.36"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Compartment syndrome",
+     "s": "ob:1001"
+    },
+    {
+     "t": "Pain out of proportion, more analgesia needed, pain on passive stretch, tense compartment — pulse often still present",
+     "s": "ob:1001",
+     "d": 1
+    },
+    {
+     "t": "Split cast to skin, heart level, EMERGENCY REFER",
+     "s": "ob:1001",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "h": "Supracondylar"
+    },
+    {
+     "t": "Hand turns white/pulseless → EMERGENCY REFER",
+     "s": "ob:4007",
+     "d": 1
+    },
+    {
+     "h": "Cast problem"
+    },
+    {
+     "t": "Tight, wet, cracked, rubbing, smell → split/replace",
+     "d": 1
+    },
+    {
+     "h": "Opioid"
+    },
+    {
+     "t": "Drowsy, slow breathing → stop opioid, oxygen, naloxone",
+     "s": "paed2023:20.11"
+    },
+    {
+     "h": "Safeguarding"
+    },
+    {
+     "t": "New bruises, story changes, caregiver concern → social worker, report",
+     "s": "ob:4001",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "Hb · FBC · U&E · VBG",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "Pain controlled on oral analgesia",
+    "s": "paed2023:20.8"
+   },
+   {
+    "t": "NV normal at last check, ≥ 2 h after reduction/cast",
+    "d": 1
+   },
+   {
+    "t": "Post-cast X-ray acceptable (sheet limits)",
+    "d": 1
+   },
+   {
+    "t": "Caregiver can manage sling/crutches and weight-bearing",
+    "d": 1
+   },
+   {
+    "t": "Cast counselling given to caregiver (written)",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "No safeguarding concern, or social worker plan in place",
+    "s": "ob:4001",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · cast counselling",
+  "items": [
+   {
+    "t": "Cast/X-ray check at 1 week (supracondylar I, lateral condyle, reduced fractures); cast off per sheet",
+    "s": "ob:4007",
+    "d": 1
+   },
+   {
+    "t": "Physeal fractures: review for growth arrest (length, angulation)",
+    "s": "ob:4002",
+    "d": 1
+   },
+   {
+    "h": "Return at once if"
+   },
+   {
+    "t": "Pain getting worse, child crying more · numb or tingling · fingers/toes pale, blue or cold · cannot move fingers/toes · cast tight, cracked, wet, smelly or loose · fever",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Keep raised for 48 h, wiggle fingers/toes, keep cast dry, nothing inside the cast",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neurovascular record — pain, circulation, sensation, movement",
+  "period": "One sheet per 24 h; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Neurovascular",
+    "items": [
+     {
+      "t": "Neurovascular check hourly for 24 h after injury, reduction or new cast, then 4-hourly while admitted if all normal",
+      "d": 1
+     },
+     {
+      "t": "Colour & warmth, capillary refill, pulse, sensation, movement — compare with the other limb",
+      "d": 1
+     },
+     {
+      "t": "Record N (normal) or ✗ (abnormal) per column",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Pain & compartment",
+    "items": [
+     {
+      "t": "Pain score (FLACC < 4 y, faces ≥ 4 y) with every check; pain on passive stretch of fingers/toes = call doctor",
+      "s": "ob:1001",
+      "d": 1
+     },
+     {
+      "t": "Needing more analgesia, or inconsolable = call doctor",
+      "s": "ob:1001",
+      "d": 1
+     },
+     {
+      "t": "After an opioid: watch closely for 15 min, then every 30 min for 1 h, then 4-hourly",
+      "s": "paed2023:20.12"
+     }
+    ]
+   },
+   {
+    "h": "Limb, cast & safety",
+    "items": [
+     {
+      "t": "Elevate; heart level if compartment concern",
+      "s": "ob:1001",
+      "d": 1
+     },
+     {
+      "t": "Cast tight, wet, cracked, rubbing; wound ooze",
+      "d": 1
+     },
+     {
+      "t": "Caregiver present; report any concern about the injury story",
+      "s": "ob:4001",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: pain increasing or out of proportion, pain on passive stretch, new numbness or tingling, pale/dusky/cold hand or foot or slower capillary refill than the other side, absent pulse, unable to move fingers/toes, cast tight/wet/cracked, child drowsy or breathing slowly after opioid, or any worry about how the injury happened",
+    "b": 1,
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Abnormal checks (number)",
+   "Doctor called at (times)",
+   "Analgesia doses given",
+   "Changed to 4-hourly at"
+  ]
+ }
+}

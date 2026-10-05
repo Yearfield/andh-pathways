@@ -1,0 +1,1455 @@
+{
+ "id": "cirrhosis-adult",
+ "short": "Cirrhosis (adult)",
+ "title": "Decompensated cirrhosis — ascites, SBP, encephalopathy, AKI (adult)",
+ "population": "Adult with known or suspected cirrhosis admitted with ascites, infection, encephalopathy, jaundice or AKI",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-05",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "easldc2018",
+  "easlhcc2025"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Haematemesis / melaena → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Liver mass → HCC pathway",
+     "b": 1
+    },
+    {
+     "t": "Acute liver failure, no prior liver disease (Adult STG 1.2.2)",
+     "b": 1
+    },
+    {
+     "t": "Alcohol withdrawal delirium → Delirium pathway",
+     "b": 1
+    },
+    {
+     "t": "Pregnancy → maternity",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — cirrhosis with decompensation",
+   "items": [
+    {
+     "t": "Known cirrhosis, or risk: alcohol, hepatitis B / C",
+     "s": "adultstg2026:1.15",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Portal hypertension: ascites, splenomegaly, varices",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    },
+    {
+     "t": "Ultrasound: small nodular liver, splenomegaly, ascites",
+     "d": 1
+    },
+    {
+     "t": "Decompensation: ascites · variceal bleed · encephalopathy · hepatorenal",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    },
+    {
+     "t": "Jaundice",
+     "s": "adultstg2026:1.9"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — tick all that apply",
+   "items": [
+    {
+     "t": "TENSE ascites (breathless, cannot eat)",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    },
+    {
+     "t": "SUSPECTED SBP: fever, abdominal pain, new / worse encephalopathy or AKI",
+     "s": "easldc2018:SBP",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "ENCEPHALOPATHY grade ____ (West Haven 1–4)",
+     "s": "easldc2018:HE",
+     "b": 1,
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "AKI: urine < 0.5 mL/kg/h for 6 h or rising creatinine",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "Jaundiced with INR > 2",
+     "s": "adultstg2026:1.9",
+     "b": 1
+    },
+    {
+     "t": "Na < 125 mmol/L",
+     "s": "easldc2018:Na",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Cause: alcohol / HBV / HCV / other ____",
+     "k": "value"
+    },
+    {
+     "t": "Previous SBP, HE, variceal bleed",
+     "d": 1
+    },
+    {
+     "t": "Diuretic doses ____",
+     "k": "value"
+    },
+    {
+     "t": "Propranolol",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "HBsAg, HIV status, ART, tenofovir",
+     "s": "adultstg2026:1.15"
+    },
+    {
+     "t": "Last tap: date, volume",
+     "d": 1
+    },
+    {
+     "t": "Dry weight ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "Baseline creatinine ____",
+     "s": "adultstg2026:7.9",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Decompensation"
+    },
+    {
+     "t": "Distension, weight gain",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Confusion, sleep reversal",
+     "s": "easldc2018:HE",
+     "d": 1
+    },
+    {
+     "t": "Black stool / vomiting blood",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Less urine",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "Precipitants",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "Fever, abdominal pain (infection)"
+    },
+    {
+     "t": "Sedatives, NSAIDs, ACE-inhibitors"
+    },
+    {
+     "t": "Over-diuresis, vomiting, diarrhoea"
+    },
+    {
+     "t": "Constipation, high protein load"
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Alcohol: last drink ____",
+     "s": "adultstg2026:15.31",
+     "k": "value"
+    },
+    {
+     "t": "Traditional / herbal medicine",
+     "d": 1
+    },
+    {
+     "t": "HBV, HIV, TB symptoms",
+     "s": "phcstg2026:10.22"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "s": "easldc2018:SBP",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air (SpO₂ < 94%)",
+     "s": "adultstg2026:20.20",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Oliguria",
+     "s": "adultstg2026:7.9",
+     "k": "yn"
+    },
+    {
+     "t": "Weight ____ kg · girth ____ cm",
+     "s": "adultstg2026:1.11",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "Liver †"
+    },
+    {
+     "t": "Jaundice"
+    },
+    {
+     "t": "Flapping tremor (asterixis)"
+    },
+    {
+     "t": "Spider naevi, palmar erythema"
+    },
+    {
+     "t": "Liver hard / mass → HCC pathway",
+     "s": "easlhcc2025:320"
+    },
+    {
+     "h": "Portal hypertension",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Ascites: shifting dullness / tense"
+    },
+    {
+     "t": "Splenomegaly"
+    },
+    {
+     "t": "Leg / sacral oedema"
+    },
+    {
+     "h": "Abdomen †",
+     "s": "easldc2018:SBP"
+    },
+    {
+     "t": "Tender abdomen, guarding"
+    },
+    {
+     "t": "PR: melaena"
+    },
+    {
+     "h": "Other causes of ascites †"
+    },
+    {
+     "t": "Raised JVP (heart failure)"
+    },
+    {
+     "t": "Periorbital oedema (nephrotic)"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bedside ultrasound",
+   "items": [
+    {
+     "t": "Ascites: small / moderate / large",
+     "d": 1
+    },
+    {
+     "t": "Liver nodular · mass (→ HCC pathway)",
+     "s": "easlhcc2025:320",
+     "d": 1
+    },
+    {
+     "t": "Spleen · kidneys · pleural effusion",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Diagnostic tap and bloods",
+   "items": [
+    {
+     "t": "Diagnostic tap in all new ascites",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    },
+    {
+     "t": "Ascitic neutrophils > 0.25 × 10⁹/L = SBP; send culture",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "U&E, Na, K, FBC, INR, LFT, HGT, HBsAg, HIV",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway: HE grade 3–4",
+     "s": "easldc2018:HE",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Variceal bleed",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "SBP / sepsis",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "AKI / hepatorenal",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "t": "Tense ascites",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "Coagulopathy, bleeding",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "t": "Hyponatraemia / hyperkalaemia",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Alcohol withdrawal",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "HCC",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "TB peritonitis",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Heart failure",
+     "d": 1
+    },
+    {
+     "t": "Nephrotic syndrome",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Variceal bleed · HE grade 3–4 · shock · hepatorenal · SBP not better at 48 h · tap ≥ 5 L needed (no albumin) → stabilise, REFER",
+   "s": "adultstg2026:1.12"
+  },
+  {
+   "t": "11. ADMIT: new / tense ascites · SBP · HE grade 1–2 · AKI · jaundice with INR > 2 → chart day 0–7",
+   "s": "adultstg2026:1.11"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Spontaneous bacterial peritonitis (SBP)",
+   "branch": "If SBP",
+   "features": [
+    {
+     "t": "Fever, abdominal pain, worse encephalopathy or AKI; may be silent",
+     "s": "easldc2018:SBP",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Diagnostic tap: neutrophils > 0.25 × 10⁹/L; culture",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 1 g IV daily",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Stop diuretics and NSAIDs if AKI",
+     "s": "easldc2018:AKI",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not responding after 48 h; AKI (needs albumin)",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hepatic encephalopathy",
+   "branch": "If HE",
+   "features": [
+    {
+     "t": "Confusion, sleep reversal, asterixis, drowsy",
+     "s": "easldc2018:HE",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; HGT; look for precipitant: sepsis, bleed, sedatives, over-diuresis, electrolytes",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose 10–30 mL 8-hourly, aim 2 soft stools / day",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "Treat the precipitant",
+     "s": "adultstg2026:1.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Grade 3–4 or no improvement",
+     "s": "easldc2018:HE",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "AKI / hepatorenal syndrome",
+   "branch": "If AKI / HRS",
+   "features": [
+    {
+     "t": "Urine < 0.5 mL/kg/h for 6 h, rising creatinine",
+     "s": "adultstg2026:7.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "U&E daily; urine dipstick; ultrasound kidneys",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop diuretics, NSAIDs, nephrotoxins; treat precipitant",
+     "s": "easldc2018:AKI",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not resolving in 48 h: hepatorenal needs albumin + vasoconstrictor",
+     "s": "easldc2018:AKI",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Variceal bleed",
+   "branch": "If GI bleed",
+   "features": [
+    {
+     "t": "Haematemesis, melaena, shock",
+     "s": "adultstg2026:1.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; Hb",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Upper GI bleed pathway",
+     "s": "adultstg2026:1.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — immediately",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Tense / refractory ascites",
+   "branch": "If ascites",
+   "features": [
+    {
+     "t": "Tense, breathless; or recurs despite maximum diuretics and salt restriction",
+     "s": "adultstg2026:1.12"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; U&E before tap",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No albumin at ANDH: tap < 5 L only; no tap if renal dysfunction",
+     "s": "adultstg2026:1.12",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Needs ≥ 5 L drained; refractory (TIPS / transplant)",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Uncomplicated cirrhotic ascites",
+   "branch": "If ascites",
+   "features": [
+    {
+     "t": "Ascites with portal hypertension, no SBP",
+     "s": "adultstg2026:1.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Diagnostic tap",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Salt ≤ 2 g/day; spironolactone 100 mg + furosemide 40 mg daily",
+     "s": "adultstg2026:1.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No",
+     "s": "adultstg2026:1.11"
+    }
+   ]
+  },
+  {
+   "dx": "TB peritonitis",
+   "branch": "If not cirrhosis",
+   "features": [
+    {
+     "t": "Ascites with no signs of portal hypertension; masses; HIV",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Tap: cells, protein, GeneXpert; HIV",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "TB pathway",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL suspected extra-pulmonary TB",
+     "s": "phcstg2026:10.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Heart failure · nephrotic syndrome · malignant ascites",
+   "branch": "If not cirrhosis",
+   "features": [
+    {
+     "t": "Raised JVP; heavy proteinuria and periorbital oedema; liver mass or known cancer",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine dipstick; ultrasound heart / liver",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "CCF or HCC pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per pathway",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Branch rows start once the working diagnosis is ticked; diuretics are titrated every 3–5 days by weight, Na, K and creatinine",
+  "columns": {
+   "feed": "Diet & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, temperature, RR 4-hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Encephalopathy grade 4-hourly",
+    "s": "easldc2018:HE",
+    "d": 1
+   },
+   {
+    "t": "Weight daily, same scale",
+    "s": "adultstg2026:1.11",
+    "b": 1
+   },
+   {
+    "t": "Girth daily",
+    "d": 1
+   },
+   {
+    "t": "Urine output and fluid balance",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Stools: number per day (aim 2 soft)",
+    "s": "adultstg2026:1.12"
+   },
+   {
+    "t": "HGT 6-hourly",
+    "s": "adultstg2026:1.9",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Salt ≤ 2 g/day; protein 1–1.5 g/kg/day",
+    "s": "adultstg2026:1.11"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Find and treat the precipitant: infection, bleed, sedatives, over-diuresis, electrolytes, HCC. Tap every new ascites.",
+    "feed": [
+     {
+      "h": "Diet"
+     },
+     {
+      "t": "Salt ≤ 2 g/day",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     },
+     {
+      "t": "Protein 1–1.5 g/kg/day; acute HE: restrict (dietician)",
+      "s": "adultstg2026:1.11"
+     },
+     {
+      "h": "Fluids"
+     },
+     {
+      "t": "Shock: NaCl 0.9% IV 1–2 L",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "Hypoglycaemia: dextrose 50% 50 mL IV; recheck 5–10 min",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Diagnostic tap: cell count, culture",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "U&E, Na, K",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     },
+     {
+      "t": "FBC, INR, LFT",
+      "s": "adultstg2026:1.9",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "adultstg2026:1.9",
+      "b": 1
+     },
+     {
+      "t": "HBsAg, HIV",
+      "s": "adultstg2026:1.15",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Stop / avoid"
+     },
+     {
+      "t": "NSAIDs, ACE-inhibitors",
+      "s": "adultstg2026:1.12",
+      "b": 1
+     },
+     {
+      "t": "Sedatives",
+      "s": "adultstg2026:1.12"
+     },
+     {
+      "t": "Diuretics if AKI, Na < 125 or HE worse",
+      "s": "easldc2018:Na",
+      "d": 1
+     },
+     {
+      "h": "Infection"
+     },
+     {
+      "t": "SBP: ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "h": "Jaundiced, INR > 2"
+     },
+     {
+      "t": "Vitamin K1 10 mg slow IV",
+      "s": "adultstg2026:1.9",
+      "d": 1
+     },
+     {
+      "t": "Bleeding: FDP 15 mL/kg over 20–30 min",
+      "s": "adultstg2026:1.9"
+     },
+     {
+      "h": "Encephalopathy"
+     },
+     {
+      "t": "Lactulose 10–30 mL 8-hourly, aim 2 soft stools / day",
+      "s": "adultstg2026:1.12",
+      "b": 1
+     },
+     {
+      "h": "Alcohol"
+     },
+     {
+      "t": "Thiamine 300 mg PO daily × 14 days",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "h": "Tense ascites"
+     },
+     {
+      "t": "Tap < 5 L only (no albumin); not if renal dysfunction",
+      "s": "adultstg2026:1.12",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 6-hourly, max 2 g/24 h",
+      "s": "adultstg2026:25.3",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Assess",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Tap results: neutrophils",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis (page 2)"
+     },
+     {
+      "t": "Urine output ≥ 0.5 mL/kg/h?",
+      "s": "adultstg2026:7.9"
+     }
+    ]
+   },
+   {
+    "label": "Day 1",
+    "phase": "Reassess → branch",
+    "feed": [
+     {
+      "t": "Salt ≤ 2 g/day",
+      "s": "adultstg2026:1.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Na, K",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Start / continue diuretics if no AKI, Na ≥ 125, K normal",
+      "s": "easldc2018:Na",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "SBP not better at 48 h → specialist / REFER",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If SBP",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Salt ≤ 2 g/day"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E daily",
+      "s": "easldc2018:AKI",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:1.23"
+     },
+     {
+      "t": "Hold diuretics if AKI",
+      "s": "easldc2018:AKI",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If HE",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Acute HE: protein restrict (dietician)",
+      "s": "adultstg2026:1.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, Na, K",
+      "s": "adultstg2026:1.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lactulose; treat precipitant",
+      "s": "adultstg2026:1.12"
+     },
+     {
+      "t": "Grade 3–4: airway, REFER",
+      "s": "easldc2018:HE",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If AKI / HRS",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Strict fluid balance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E daily",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop diuretics, NSAIDs, nephrotoxins",
+      "s": "easldc2018:AKI",
+      "d": 1
+     },
+     {
+      "t": "Not resolving 48 h → REFER",
+      "s": "easldc2018:AKI",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If ascites",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Salt ≤ 2 g/day",
+      "s": "adultstg2026:1.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E every 3–5 days",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Spironolactone 100 mg + furosemide 40 mg daily",
+      "s": "adultstg2026:1.11"
+     },
+     {
+      "t": "≥ 5 L needed / refractory → REFER",
+      "s": "adultstg2026:1.12",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If GI bleed",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Upper GI bleed pathway"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER immediately",
+      "s": "adultstg2026:1.12",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If not cirrhosis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Tap protein, GeneXpert; urine dipstick",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "TB peritonitis: REFER",
+      "s": "phcstg2026:10.22",
+      "b": 1
+     },
+     {
+      "t": "CCF / nephrotic / HCC: own pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Salt ≤ 2 g/day"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Na, K",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Weight loss on target? (500 g/day; 1 000 g/day if oedema)",
+      "s": "adultstg2026:1.11"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Salt ≤ 2 g/day"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "s": "adultstg2026:1.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Increase spironolactone by 100 mg and furosemide by 40 mg if needed",
+      "s": "adultstg2026:1.11"
+     },
+     {
+      "t": "SBP: switch to ciprofloxacin PO when appropriate",
+      "s": "adultstg2026:1.24"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Salt ≤ 2 g/day"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria (below)"
+     },
+     {
+      "t": "Propranolol if varices, once stable",
+      "s": "adultstg2026:1.12"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Ascites and diuretics",
+   "items": [
+    {
+     "t": "Spironolactone 100 mg + furosemide 40 mg PO daily",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Increase by 100 mg / 40 mg every 3–5 days; max 400 mg / 160 mg",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Avoid spironolactone if eGFR < 30; may cause hyperkalaemia",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "STOP if AKI, Na < 125, K < 3 (furosemide), K > 6 (spironolactone), HE worse",
+     "s": "easldc2018:Na",
+     "d": 1
+    },
+    {
+     "t": "Tap without albumin: < 5 L; ≥ 5 L or renal dysfunction → REFER",
+     "s": "adultstg2026:1.12",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Drugs",
+   "items": [
+    {
+     "h": "SBP"
+    },
+    {
+     "t": "Ceftriaxone 1 g IV daily; then ciprofloxacin 500 mg PO 12-hourly; total 14 days",
+     "s": "adultstg2026:1.24"
+    },
+    {
+     "h": "Encephalopathy"
+    },
+    {
+     "t": "Lactulose 10–30 mL 8-hourly, aim 2 soft stools / day",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "h": "Varices (prevent bleeding)"
+    },
+    {
+     "t": "Propranolol 20–40 mg 12-hourly; titrate to resting pulse 50–60",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "h": "Hepatitis B"
+    },
+    {
+     "t": "Tenofovir (TDF) 300 mg daily if eGFR > 50; TAF 25 mg if eGFR 15–50",
+     "s": "adultstg2026:1.15"
+    },
+    {
+     "h": "Alcohol"
+    },
+    {
+     "t": "Thiamine 300 mg PO daily × 14 days",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New confusion, drowsy, flap",
+     "s": "easldc2018:HE",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Fever, abdominal pain",
+     "s": "easldc2018:SBP",
+     "d": 1
+    },
+    {
+     "t": "Black stool / vomiting blood",
+     "s": "adultstg2026:1.11",
+     "b": 1
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Variceal bleed; HE grade 3–4",
+     "s": "adultstg2026:1.12",
+     "b": 1
+    },
+    {
+     "t": "Hepatorenal; SBP not better at 48 h",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "Refractory ascites (TIPS / transplant)",
+     "s": "adultstg2026:1.12"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Precipitant treated; no fever",
+    "d": 1
+   },
+   {
+    "t": "Alert, oriented; 2 soft stools / day",
+    "s": "adultstg2026:1.12"
+   },
+   {
+    "t": "Creatinine, Na, K stable on diuretics",
+    "s": "adultstg2026:1.11"
+   },
+   {
+    "t": "Weight falling on target",
+    "s": "adultstg2026:1.11"
+   },
+   {
+    "t": "SBP: 14-day course planned",
+    "s": "adultstg2026:1.24"
+   },
+   {
+    "t": "Salt and alcohol advice given",
+    "s": "adultstg2026:1.11"
+   },
+   {
+    "t": "HBsAg / HIV result acted on",
+    "s": "adultstg2026:1.15"
+   },
+   {
+    "t": "Follow-up booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic in 1 week: weight, U&E before each diuretic increase",
+    "s": "adultstg2026:1.11",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Return at once: confusion, fever, black stool, vomiting blood",
+    "d": 1
+   },
+   {
+    "t": "Ultrasound ± AFP every 6 months (HCC surveillance)",
+    "s": "easlhcc2025:320",
+    "d": 1
+   },
+   {
+    "t": "Refer for endoscopy / variceal ligation",
+    "s": "adultstg2026:1.12"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — encephalopathy, bowels, urine, weight, vitals",
+  "period": "One sheet per 24 h; 2-hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Vitals and HE",
+    "items": [
+     {
+      "t": "Pulse, BP, temperature, RR 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Encephalopathy grade 4-hourly: 0 normal · 1 confused · 2 drowsy, flap · 3 rousable only · 4 coma",
+      "s": "easldc2018:HE",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bowels",
+    "items": [
+     {
+      "t": "Count stools: aim 2 soft / day",
+      "s": "adultstg2026:1.12"
+     },
+     {
+      "t": "Black stool or blood → doctor",
+      "s": "adultstg2026:1.11"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Urine output and oral intake",
+      "s": "adultstg2026:7.9"
+     },
+     {
+      "t": "Tap volume drained",
+      "s": "adultstg2026:1.12"
+     }
+    ]
+   },
+   {
+    "h": "Daily",
+    "items": [
+     {
+      "t": "Weight, same scale, same time",
+      "s": "adultstg2026:1.11"
+     },
+     {
+      "t": "Girth",
+      "d": 1
+     },
+     {
+      "t": "HGT 6-hourly",
+      "s": "adultstg2026:1.9",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "new confusion, drowsy or flap",
+    "s": "easldc2018:HE",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "fever or abdominal pain",
+    "s": "easldc2018:SBP",
+    "d": 1
+   },
+   {
+    "t": "black stool or vomiting blood",
+    "s": "adultstg2026:1.11",
+    "b": 1
+   },
+   {
+    "t": "urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9"
+   },
+   {
+    "t": "low HGT",
+    "s": "adultstg2026:1.9"
+   }
+  ],
+  "totals": [
+   "Weight (kg)",
+   "Girth (cm)",
+   "Urine (mL/kg/h)",
+   "Stools (n)"
+  ]
+ }
+}

@@ -10,7 +10,7 @@ const ls = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } 
 const S = {
   index: null, sources: {}, dx: {}, verified: ls(LS_VER, {}), offsets: ls(LS_OFF, {}),
   verify: localStorage.getItem(LS_MODE) === "1", checked: ls(LS_CHK, {}), recent: ls(LS_REC, []),
-  open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All",
+  open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", hub: {}, // hub: chosen member (0 = first) per hub id
   sd: {}, sc: null, spop: "All", stag: "All", // scales and calculations: loaded cards, live scorer state, list filters
 };
 
@@ -76,6 +76,8 @@ async function init() {
 function resolveSrc(src) {
   let [id, pg = ""] = src.split(":"); let s = S.sources[id] || { id, short: id, title: id };
   if (s.alias && S.sources[s.alias]) { id = s.alias; s = S.sources[id]; } // e.g. HOSP -> stg-adult: share the chapter PDFs already loaded
+  if (s.url_template && pg) // online source cited by topic id (e.g. ob:1011): no PDF, the cite links to the topic page
+    return { id, s, pdf: id, chapter: null, pg, num: false, offset: 0, online: s.url_template.replace("{id}", encodeURIComponent(pg)), label: s.short + " " + (s.cite_prefix || "") + pg };
   const m = s.chapters && /^(\d+)\.(\d+)$/.exec(pg);
   if (m) { const ch = s.chapters[m[1]] || { title: "Chapter " + m[1] };
     return { id, s, pdf: id + ":" + m[1], chapter: m[1], pg: m[2], num: true, offset: S.offsets[id + ":" + m[1]] ?? ch.offset ?? 0, label: s.short + " Ch" + m[1] + " p" + m[2] }; }
@@ -105,6 +107,7 @@ const doneCount = (d, items) => { const r = (items || []).filter(i => i.t); retu
 function chip(src) {
   if (!src) return "";
   const r = resolveSrc(src); // numeric = printed page; otherwise a recommendation number (e.g. ESGE R13)
+  if (r.online) return `<a class="chip" href="${esc(r.online)}" target="_blank" rel="noopener" aria-label="Open ${esc(r.label)} online">${esc(r.label)} ↗</a>`;
   return `<button class="chip" data-src="${esc(src)}" aria-label="Open ${esc(r.label)}">${esc(r.label)}</button>`;
 }
 const dag = it => it.d ? '<span class="dag">†</span>' : "";
@@ -127,9 +130,10 @@ const card = (d, title, items, cls = "") => `<section class="card ${cls}"><h2 cl
 function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
   const [v, n] = d ? progress(d) : [0, 0];
   const e = d ? entry(d.id) || d : null;
+  const hub = e.hub && (S.index.hubs || []).find(h => h.id === e.hub);
   app.innerHTML = `
   <header class="top"><div class="bar">
-    <button class="iconbtn" aria-label="Back to all pathways" data-go="#/diagnoses">${ico("back")}</button>
+    <button class="iconbtn" aria-label="${hub ? "Back to " + esc(hub.short) : "Back to all pathways"}" data-go="${hub ? "#/hub/" + hub.id : "#/diagnoses"}">${ico("back")}</button>
     <div class="ttl"><div class="row1"><h1>${esc(e.short || d.title)}</h1><span class="badge ${popClass(popOf(e) || d.population)}">${esc(popName(popOf(e) || d.population))}</span></div>
       <div class="sub">${esc(d.title)}</div></div>
     <button class="iconbtn" id="more" aria-label="More: verify mode, reset checklist" aria-haspopup="true">${MORE}</button></div>
@@ -142,7 +146,7 @@ function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
 
 /* ---------- start page + procedures ---------- */
 function landing() {
-  const nd = S.index.diagnoses.length, np = (S.index.procedures || []).length, ns = (S.index.scores || []).filter(e => !e.hidden).length;
+  const nd = listRows().length, np = (S.index.procedures || []).length, ns = (S.index.scores || []).filter(e => !e.hidden).length;
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><img class="logo" src="icons/jad-logo.webp" alt="JAD">
     <div class="ttl"><h1>Pathways</h1><div class="sub">ANDH · works offline</div></div>
@@ -214,47 +218,61 @@ async function procView(id, tab) {
     ${body}</main>`;
 }
 
+/* Diagnosis list rows. Members of a hub (index.json "hubs", e.g. Fracture adult + paeds) collapse into ONE row that opens the hub page. */
+function listRows() {
+  const hubs = S.index.hubs || [];
+  return [...S.index.diagnoses.filter(e => !e.hub).map(e => ({ e })),
+    ...hubs.map(h => ({ e: { ...h, population: h.population || "Adult + Paediatric" }, hub: h }))];
+}
 function home() {
-  const dx = S.index.diagnoses;
-  const groups = [...new Set(dx.map(e => popName(popOf(e))))];
+  const rows = listRows();
+  const groups = [...new Set(rows.map(r => popName(popOf(r.e))))];
   const rec = S.recent.map(r => ({ ...r, e: entry(r.id) })).filter(r => r.e).slice(0, 3);
   const tabName = { arrival: "Arrival", days: "Timeline", differentials: "Differentials", doses: "Doses", nursing: "Nursing", sources: "Sources" };
   const recent = rec.length ? `<section id="recent"><h2 class="glabel">Recent</h2><div class="recent">${rec.map(r =>
     `<button class="rcard" data-go="#/dx/${r.id}/${r.tab}${r.tab === "days" && r.row ? "/" + r.row : ""}"><b>${esc(r.e.short)}</b><span>${esc(tabName[r.tab] || "")}</span></button>`).join("")}</div></section>` : "";
-  const lists = groups.map(g => { const items = dx.filter(e => popName(popOf(e)) === g);
-    return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(popOf(items[0]))}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
-      <div class="list">${items.map(e => `<button class="dx" data-go="#/dx/${e.id}/arrival" data-q="${esc((e.short + " " + e.title + " " + e.population + " " + e.id).toLowerCase())}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
-        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)}</span>${ico("next")}</button>`).join("")}</div></section>`; }).join("");
+  const rowHtml = ({ e, hub }) => {
+    // a hub row is listed once (under Adult + paeds) but must still show when the population filter is Adult or Paediatric
+    const pops = hub ? [...hub.members.map(m => m.label), popName(popOf(e))] : [popName(popOf(e))];
+    return `<button class="dx" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
+        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)}</span>${ico("next")}</button>`;
+  };
+  const lists = groups.map(g => { const items = rows.filter(r => popName(popOf(r.e)) === g);
+    return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(popOf(items[0].e))}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
+      <div class="list">${items.map(rowHtml).join("")}</div></section>`; }).join("");
   app.innerHTML = `
   <header class="top"><div class="hometop">
     <div class="brand"><button class="iconbtn" aria-label="Back to start" data-go="#/">${ico("back")}</button>
-      <div class="ttl"><h1>Diagnosis pathways</h1><div class="sub">ANDH · ${dx.length} pathways · works offline</div></div>
+      <div class="ttl"><h1>Diagnosis pathways</h1><div class="sub">ANDH · ${rows.length} pathways · works offline</div></div>
       ${navigator.serviceWorker?.controller ? `<span class="pill-ok">${ico("check")}Saved</span>` : ""}</div>
     <label class="search">${ico("search")}<span class="sr">Search pathways</span>
       <input id="q" type="search" placeholder="Search — e.g. PPH, DKA, rat poison" autocomplete="off"></label>
     <div class="chips">${["All", ...groups].map(g => `<button class="fchip" data-filter="${esc(g)}" aria-pressed="${S.filter === g}">${esc(g)}</button>`).join("")}</div>
-    <div class="chips sys" aria-label="Body system">${SYSTEMS.map(g => `<button class="fchip sysc ${g !== "All" && !dx.some(e => (e.tags?.system || []).includes(g)) ? "none" : ""}" data-sysfilter="${g}" aria-pressed="${S.sys === g}">${g}</button>`).join("")}</div>
-    <div class="chips sys" aria-label="Category">${CATS.map(g => `<button class="fchip catc ${g !== "All" && !dx.some(e => (e.tags?.cat || []).includes(g)) ? "none" : ""}" data-catfilter="${g}" aria-pressed="${S.cat === g}">${g}</button>`).join("")}</div>
+    <div class="chips sys" aria-label="Body system">${SYSTEMS.map(g => `<button class="fchip sysc ${g !== "All" && !rows.some(r => (r.e.tags?.system || []).includes(g)) ? "none" : ""}" data-sysfilter="${g}" aria-pressed="${S.sys === g}">${g}</button>`).join("")}</div>
+    <div class="chips sys" aria-label="Category">${CATS.map(g => `<button class="fchip catc ${g !== "All" && !rows.some(r => (r.e.tags?.cat || []).includes(g)) ? "none" : ""}" data-catfilter="${g}" aria-pressed="${S.cat === g}">${g}</button>`).join("")}</div>
   </div></header>
   <main class="fade home">${recent}${lists}<p class="empty" id="none" hidden>No pathway matches.</p>
     <p class="hint">Reference only — no patient details are stored. Amber tags open the guideline page they come from. † = clinical or local addition, not in the SA guideline.</p></main>`;
   applyFilter();
+  // let a search such as "clavicle" find the Fracture row: add each hub's site names to its search text once the member files are loaded
+  (S.index.hubs || []).forEach(async h => { try {
+    const ds = await Promise.all(h.members.map(m => getDx(m.id))); const b = $(`.dx[data-hub="${h.id}"]`); if (!b) return;
+    b.dataset.q += " " + ds.flatMap(d => (d.differentials || []).map(x => x.dx + " " + (x.group || ""))).join(" ").toLowerCase(); applyFilter();
+  } catch {} });
 }
 const CATS = ["All", "Endo", "Toxins", "Infections"];
-const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "MSK", "Gynae", "Uro", "Nephro"];
+const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "MSK", "Ortho", "Gynae", "Uro", "Nephro"];
 function applyFilter() {
   const q = ($("#q")?.value || "").trim().toLowerCase(); let any = 0;
   $$(".grp").forEach(g => {
-    let n = 0; const show = S.filter === "All" || g.dataset.grp === S.filter;
-    $$(".dx", g).forEach(b => { const ok = show && (S.sys === "All" || b.dataset.sys.split("|").includes(S.sys)) && (S.cat === "All" || b.dataset.cat.split("|").includes(S.cat)) && (!q || q.split(/\s+/).every(w => b.dataset.q.includes(w))); b.hidden = !ok; if (ok) n++; });
+    let n = 0;
+    $$(".dx", g).forEach(b => { const ok = (S.filter === "All" || b.dataset.pops.split("|").includes(S.filter)) && (S.sys === "All" || b.dataset.sys.split("|").includes(S.sys)) && (S.cat === "All" || b.dataset.cat.split("|").includes(S.cat)) && (!q || q.split(/\s+/).every(w => b.dataset.q.includes(w))); b.hidden = !ok; if (ok) n++; });
     g.hidden = !n; $(".gc", g).textContent = n; any += n;
   });
   const r = $("#recent"); if (r) r.hidden = !!q || S.filter !== "All" || S.sys !== "All" || S.cat !== "All";
   $("#none").hidden = !!any;
   $$(".fchip[data-filter]").forEach(b => b.setAttribute("aria-pressed", b.dataset.filter === S.filter));
-  const catOn = S.cat !== "All"; // category chosen: body-system row is greyed out, shows nothing selected and is ignored
-  $$(".fchip[data-sysfilter]").forEach(b => { b.setAttribute("aria-pressed", !catOn && b.dataset.sysfilter === S.sys); b.disabled = catOn; });
-  $(".chips[aria-label='Body system']")?.classList.toggle("off", catOn);
+  $$(".fchip[data-sysfilter]").forEach(b => b.setAttribute("aria-pressed", b.dataset.sysfilter === S.sys));
   $$(".fchip[data-catfilter]").forEach(b => b.setAttribute("aria-pressed", b.dataset.catfilter === S.cat));
 }
 
@@ -314,15 +332,53 @@ function doseLine(d, it, hs) {
   const txt = m ? `<b class="dose">${esc(m[1])}</b>${esc(rest)}` : esc(it.t);
   return `<div class="ln ${w ? "warn" : ""} ${it.b && !m ? "bold" : ""}">${w ? ico("warn") : ""}<div class="body"><span class="txt">${txt}${dag(it)}</span>${it.s !== hs ? chip(it.s) : ""}</div>${tick(k)}</div>`;
 }
-function differentials(d) {
-  const rows = d.chart.rows; const sub = (t, a) => a && a.length ? `<h3 class="dsub">${t}</h3>${list(d, a)}` : "";
-  const body = `<p class="hint">Tap “Chart” on a card to open the timeline row for that branch.</p>` + d.differentials.map(x => {
-    const j = rows.findIndex(r => r.label === x.branch);
-    return `<section class="card"><h2 class="ctitle">${esc(x.dx)}</h2>
+function differentials(d, focus) {
+  const rows = d.chart.rows, dd = d.differentials; const sub = (t, a) => a && a.length ? `<h3 class="dsub">${t}</h3>${list(d, a)}` : "";
+  const one = (x, i) => { const j = rows.findIndex(r => r.label === x.branch); // branch = label of the chart row this condition continues in
+    return `<section class="card" id="dx${i}"><h2 class="ctitle">${esc(x.dx)}</h2>
       ${j >= 0 ? `<div class="toolrow"><button class="btn" data-go="#/dx/${d.id}/days/${j}">Chart: ${esc(x.branch)}${ico("next")}</button></div>` : ""}
-      ${sub("Features", x.features)}${sub("Confirm", x.confirm)}${sub("Manage", x.manage)}${sub("Refer", x.refer)}</section>`;
-  }).join("");
-  shell({ d, tab: "differentials", body });
+      ${sub("Features", x.features)}${sub("Confirm", x.confirm)}${sub("Manage", x.manage)}${sub("Refer", x.refer)}</section>`; };
+  const names = []; dd.forEach(x => { const g = x.group || ""; if (!names.includes(g)) names.push(g); }); // optional x.group: sections in order of first use
+  const grouped = names.some(g => g);
+  const body = `<p class="hint">Tap “Chart” on a card to open the timeline row for that branch.</p>` + (grouped
+    ? names.map((g, gi) => { const mine = dd.map((x, i) => [x, i]).filter(([x]) => (x.group || "") === g);
+        return `<h2 class="glabel dg" id="dg${gi}">${esc(g || "Other")}<span class="c">· ${mine.length}</span></h2>${mine.map(([x, i]) => one(x, i)).join("")}`; }).join("")
+    : dd.map(one).join(""));
+  const head = grouped && names.length > 1 ? `<nav class="boxnav" aria-label="Groups">${names.map((g, gi) => `<button class="fchip" data-jump="dg${gi}">${esc(g || "Other")}</button>`).join("")}</nav>` : "";
+  shell({ d, tab: "differentials", body, head });
+  const t = Number.isInteger(focus) && $("#dx" + focus); if (t) { t.scrollIntoView({ block: "start" }); t.classList.add("flash"); }
+}
+
+/* ---------- hub page: one list entry (e.g. Fracture) that opens every site, per population ---------- */
+async function hubView(id) {
+  const h = (S.index.hubs || []).find(x => x.id === id); if (!h) throw new Error("unknown group " + id);
+  const ds = await Promise.all(h.members.map(m => getDx(m.id)));
+  const k = Math.max(0, Math.min(h.members.length - 1, S.hub[id] ?? 0)), m = h.members[k], d = ds[k];
+  const dd = d.differentials || [], names = [];
+  dd.forEach(x => { const g = x.group || ""; if (!names.includes(g)) names.push(g); });
+  const rowsHtml = names.map(g => { const mine = dd.map((x, i) => [x, i]).filter(([x]) => (x.group || "") === g);
+    return `<section class="grp"><h2 class="glabel">${esc(g || "Other")}<span class="c">· <span class="gc">${mine.length}</span></span></h2>
+      <div class="list">${mine.map(([x, i]) => `<button class="dx hx" data-go="#/dx/${d.id}/differentials/${i}" data-q="${esc((x.dx + " " + g + " " + (x.branch || "")).toLowerCase())}">
+        <span class="hn">${esc(x.dx)}</span>${x.branch ? `<span class="hb">${esc(x.branch.replace(/^If /i, ""))}</span>` : ""}${ico("next")}</button>`).join("")}</div></section>`; }).join("");
+  app.innerHTML = `
+  <header class="top"><div class="hometop">
+    <div class="brand"><button class="iconbtn" aria-label="Back to all pathways" data-go="#/diagnoses">${ico("back")}</button>
+      <div class="ttl"><h1>${esc(h.short)}</h1><div class="sub">${esc((h.tags?.system || []).join(" · "))} · ${dd.length} sites · works offline</div></div></div>
+    <div class="seg2" role="group" aria-label="Population">${h.members.map((x, i) => `<button data-hubpop="${esc(id)}|${i}" aria-pressed="${i === k}">${esc(x.label)}<small>${esc(x.note || "")}</small></button>`).join("")}</div>
+    <label class="search">${ico("search")}<span class="sr">Search sites</span>
+      <input id="hq" type="search" placeholder="Search site — e.g. clavicle, ankle, hip" autocomplete="off"></label>
+  </div></header>
+  <main class="fade home hub">
+    <button class="btn wide" data-go="#/dx/${d.id}/arrival"><span>Open the ${esc(m.label.toLowerCase())} pathway: arrival, timeline, doses, nursing</span>${ico("next")}</button>
+    ${rowsHtml}<p class="empty" id="hnone" hidden>No site matches.</p>
+    <p class="hint">${esc(d.population)}. Tap a site for its features, confirmation, management and when to refer. † = not in the SA guideline.</p></main>`;
+}
+function hubFilter() {
+  const q = ($("#hq")?.value || "").trim().toLowerCase(); let any = 0;
+  $$("main.hub .grp").forEach(g => { let n = 0;
+    $$(".dx", g).forEach(b => { const ok = !q || q.split(/\s+/).every(w => b.dataset.q.includes(w)); b.hidden = !ok; if (ok) n++; });
+    g.hidden = !n; $(".gc", g).textContent = n; any += n; });
+  $("#hnone").hidden = !!any;
 }
 
 function doses(d) {
@@ -351,7 +407,10 @@ async function sources(d) {
   const units = d.sources.flatMap(id => { const s = S.sources[id] || { id, short: id, title: id, edition: "" };
     return s.chapters ? Object.entries(s.chapters).map(([c, ch]) => ({ key: id + ":" + c, s, title: s.short + " — " + ch.title })) : [{ key: id, s, title: s.title }]; });
   const rows = await Promise.all(units.map(async u => {
-    const { s, key: id } = u; const has = await getPdf(id);
+    const { s, key: id } = u;
+    if (s.type === "online") return `<div class="srow"><div class="t">${esc(u.title)}</div><div class="e">${esc(s.edition || "")}</div>
+      <div class="acts"><span class="status ok">Online source — no PDF to load</span>${s.url ? `<a class="btn primary" href="${esc(s.url)}" target="_blank" rel="noopener">Open online${ico("next")}</a>` : ""}</div></div>`;
+    const has = await getPdf(id);
     const off = S.offsets[id] ?? (s.chapters ? s.chapters[id.split(":")[1]].offset : s.offset) ?? 0;
     return `<div class="srow"><div class="t">${esc(u.title)}</div><div class="e">${esc(s.edition)}</div>
       <div class="acts"><span class="status ${has ? "ok" : "no"}">${has ? "PDF on this phone" : "No PDF loaded"}</span>
@@ -772,9 +831,10 @@ document.addEventListener("click", async e => {
   if (t.dataset.go !== undefined) { location.hash = t.dataset.go || "#/"; return; }
   if (t.dataset.src) { openSource(t.dataset.src); return; }
   if (t.id === "more") { const p = (location.hash || "").slice(2).split("/"); toggleMenu(await getDx(p[1])); return; }
-  if (t.dataset.catfilter) { S.cat = t.dataset.catfilter; if (S.cat !== "All") S.sys = "All"; applyFilter(); return; }  // a category pick overrides the body-system row
-  if (t.dataset.sysfilter) { if (S.cat !== "All") return; S.sys = t.dataset.sysfilter; applyFilter(); return; }
+  if (t.dataset.catfilter) { S.cat = t.dataset.catfilter; applyFilter(); return; }
+  if (t.dataset.sysfilter) { S.sys = t.dataset.sysfilter; applyFilter(); return; }
   if (t.dataset.filter) { S.filter = t.dataset.filter; applyFilter(); return; }
+  if (t.dataset.hubpop) { const [hid, i] = t.dataset.hubpop.split("|"); S.hub[hid] = +i; route(); return; }
   if (t.dataset.sec) {
     const n = +t.dataset.sec; const id = (location.hash || "").slice(2).split("/")[1]; const set = S.open[id];
     const sec = t.closest("section"); const closed = sec.classList.toggle("closed");
@@ -824,6 +884,7 @@ document.addEventListener("click", async e => {
 });
 document.addEventListener("input", e => {
   if (e.target.id === "q") applyFilter();
+  if (e.target.id === "hq") hubFilter();
   if (e.target.id === "sq") applyScoreFilter();
   if (e.target.id === "cq") causeFilter();
   if (e.target.dataset.bg) { S.sc.vars[e.target.dataset.bg] = e.target.value; const o = $("#bg-out"); if (o) o.innerHTML = bgResults(); }
@@ -849,6 +910,7 @@ async function route() {
   try {
     if (p[0] === "") return landing();
     if (p[0] === "diagnoses") return home();
+    if (p[0] === "hub") return hubView(p[1]);
     if (p[0] === "procedures") return procHome();
     if (p[0] === "proc") return procView(p[1], p[2]);
     if (p[0] === "scores") return scoresHome();
@@ -856,8 +918,9 @@ async function route() {
     if (p[0] !== "dx") return landing();
     const d = await getDx(p[1]); const tab = ["days", "differentials", "doses", "nursing", "sources"].includes(p[2]) ? p[2] : "arrival";
     remember(d.id, tab, p[3]);
+    const hb = entry(d.id)?.hub; if (hb) S.hub[hb] = ((S.index.hubs || []).find(h => h.id === hb)?.members || []).findIndex(m => m.id === d.id); // hub reopens on the population you were in
     if (tab === "days") return days(d, parseInt(p[3] || "0", 10));
-    if (tab === "differentials" && (d.differentials || []).length) return differentials(d);
+    if (tab === "differentials" && (d.differentials || []).length) return differentials(d, p[3] === undefined ? undefined : parseInt(p[3], 10));
     if (tab === "doses") return doses(d);
     if (tab === "nursing") return nursing(d);
     if (tab === "sources") return sources(d);

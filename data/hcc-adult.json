@@ -1,0 +1,1286 @@
+{
+ "id": "hcc-adult",
+ "short": "Liver mass / HCC (adult)",
+ "title": "Liver mass / suspected hepatocellular carcinoma (adult)",
+ "population": "Adult with a liver mass, hard irregular liver or suspected HCC (cirrhosis, chronic hepatitis B)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-05",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "easlhcc2025",
+  "bclc2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Ascites / decompensation, no mass → Cirrhosis pathway",
+     "b": 1
+    },
+    {
+     "t": "Haematemesis / melaena → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Cholangitis / cholecystitis (Adult STG 1.2.7)",
+     "b": 1
+    },
+    {
+     "t": "Pregnancy → maternity",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — suspected HCC",
+   "items": [
+    {
+     "t": "Liver mass on ultrasound, or hard irregular liver",
+     "s": "easlhcc2025:320",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "At-risk: cirrhosis or chronic hepatitis B",
+     "s": "adultstg2026:1.14",
+     "b": 1
+    },
+    {
+     "t": "Weight loss, right upper quadrant pain, distension",
+     "d": 1
+    },
+    {
+     "t": "AFP ____ (supports, does not exclude)",
+     "s": "easlhcc2025:321",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Diagnosis needs multiphase CT / MRI or biopsy → REFER",
+     "s": "easlhcc2025:327",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Stage and severity — tick all that apply",
+   "items": [
+    {
+     "t": "RUPTURE: sudden pain, shock, blood in abdomen on ultrasound",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Performance status (ECOG) ____ — > 2 = bed-bound most of the day",
+     "s": "bclc2022:Stg",
+     "b": 1,
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Liver function impaired: jaundice, ascites, encephalopathy",
+     "s": "bclc2022:Stg",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "END-STAGE (BCLC D): PS > 2 and/or impaired liver function",
+     "s": "bclc2022:Stg",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "POTENTIALLY TREATABLE: PS ≤ 2, liver function preserved",
+     "s": "bclc2022:Stg",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "HBsAg, HIV status, ART, tenofovir",
+     "s": "adultstg2026:1.15"
+    },
+    {
+     "t": "Known cirrhosis",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Previous ultrasound / AFP",
+     "s": "easlhcc2025:320",
+     "d": 1
+    },
+    {
+     "t": "Alcohol",
+     "d": 1
+    },
+    {
+     "t": "Known primary cancer elsewhere",
+     "d": 1
+    },
+    {
+     "t": "TB history / treatment",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Patient's wishes, advance directive",
+     "s": "adultstg2026:24.14"
+    },
+    {
+     "t": "Main caregiver ____",
+     "s": "adultstg2026:24.5",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "The mass"
+    },
+    {
+     "t": "Right upper quadrant pain",
+     "d": 1
+    },
+    {
+     "t": "Weight loss, anorexia",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Sudden severe pain, collapse (rupture)",
+     "d": 1
+    },
+    {
+     "h": "Abscess clues",
+     "s": "adultstg2026:1.17"
+    },
+    {
+     "t": "Fever, rigors, tender liver"
+    },
+    {
+     "t": "Diarrhoea / dysentery (amoebic)",
+     "s": "adultstg2026:1.17"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Jaundice, distension, confusion",
+     "s": "bclc2022:Stg",
+     "d": 1
+    },
+    {
+     "t": "Cough, night sweats (TB)",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "Dog contact (hydatid)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air (SpO₂ < 94%)",
+     "s": "adultstg2026:20.20",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pain score ____ / 10",
+     "s": "adultstg2026:25.3",
+     "k": "value"
+    },
+    {
+     "t": "Weight ____ kg",
+     "s": "adultstg2026:24.2",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 10,
+   "items": [
+    {
+     "h": "Liver †"
+    },
+    {
+     "t": "Hard, nodular, enlarged"
+    },
+    {
+     "t": "Tender (abscess?)"
+    },
+    {
+     "t": "Bruit over liver"
+    },
+    {
+     "t": "Jaundice"
+    },
+    {
+     "h": "Abdomen †",
+     "s": "bclc2022:Stg"
+    },
+    {
+     "t": "Ascites"
+    },
+    {
+     "t": "Splenomegaly"
+    },
+    {
+     "t": "Guarding, distension (rupture)"
+    },
+    {
+     "h": "Other †"
+    },
+    {
+     "t": "Flapping tremor"
+    },
+    {
+     "t": "Cachexia"
+    },
+    {
+     "t": "Lymph nodes; breast / rectal mass"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bedside ultrasound",
+   "items": [
+    {
+     "t": "Lesion: single / multiple · solid / cystic · size ____ cm",
+     "s": "easlhcc2025:320",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Cirrhotic liver · ascites · free blood",
+     "d": 1
+    },
+    {
+     "t": "Cyst with daughter cysts (hydatid): do NOT aspirate",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods",
+   "items": [
+    {
+     "t": "AFP, HBsAg, HIV",
+     "s": "easlhcc2025:321",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "FBC, INR, U&E, LFT, HGT",
+     "s": "adultstg2026:1.9",
+     "b": 1
+    },
+    {
+     "t": "Amoebic serology if abscess possible",
+     "s": "adultstg2026:1.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Ruptured HCC",
+     "d": 1
+    },
+    {
+     "t": "Variceal bleed",
+     "s": "adultstg2026:1.11"
+    },
+    {
+     "t": "Encephalopathy",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "t": "Liver abscess / sepsis",
+     "s": "adultstg2026:1.17"
+    },
+    {
+     "t": "AKI",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Uncontrolled pain",
+     "s": "adultstg2026:25.5"
+    },
+    {
+     "t": "Vomiting",
+     "s": "adultstg2026:24.4"
+    },
+    {
+     "t": "Tense ascites",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "t": "Coagulopathy",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "t": "TB",
+     "s": "phcstg2026:10.22"
+    },
+    {
+     "t": "End of life",
+     "s": "adultstg2026:24.14"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Rupture / shock → resuscitate, REFER urgently · PS ≤ 2 and liver function preserved → REFER for CT / MRI and HCC team",
+   "s": "bclc2022:Stg",
+   "d": 1
+  },
+  {
+   "t": "11. ADMIT: end-stage (BCLC D), abscess, symptom control → chart day 0–5; palliative care plan with patient and family",
+   "s": "adultstg2026:24.14"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Ruptured HCC",
+   "branch": "If ruptured",
+   "features": [
+    {
+     "t": "Sudden abdominal pain, shock, distension; known or new liver mass",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound: free fluid / blood; Hb",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NaCl 0.9% 1–2 L; 2 units emergency O-neg, then FDP",
+     "s": "adultstg2026:20.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL — urgently",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "HCC — potentially treatable (BCLC 0–C)",
+   "branch": "If treatable",
+   "features": [
+    {
+     "t": "PS ≤ 2; liver function preserved; cirrhosis or HBV",
+     "s": "bclc2022:Stg",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for multiphase CT / MRI; biopsy if no cirrhosis / HBV",
+     "s": "easlhcc2025:327",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hepatitis B: tenofovir 300 mg daily (eGFR > 50)",
+     "s": "adultstg2026:1.15"
+    }
+   ],
+   "refer": [
+    {
+     "t": "YES — HCC team: resection, ablation, TACE, systemic therapy",
+     "s": "bclc2022:Stg",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "HCC — end-stage (BCLC D)",
+   "branch": "If end-stage",
+   "features": [
+    {
+     "t": "PS > 2 and/or impaired liver function; median survival about 3 months",
+     "s": "bclc2022:Stg",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical + ultrasound; CT not needed if it will not change care",
+     "s": "bclc2022:Stg",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Symptom control and palliative care (side 2)",
+     "s": "adultstg2026:24.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No; palliative care provider if symptoms persist",
+     "s": "adultstg2026:24.4"
+    }
+   ]
+  },
+  {
+   "dx": "Pyogenic liver abscess",
+   "branch": "If abscess",
+   "features": [
+    {
+     "t": "Fever, rigors, tender liver; often multiple",
+     "s": "adultstg2026:1.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; diagnostic aspirate if doubt",
+     "s": "adultstg2026:1.17"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "YES — drainage is essential",
+     "s": "adultstg2026:1.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Amoebic liver abscess",
+   "branch": "If abscess",
+   "features": [
+    {
+     "t": "Tender liver, fever; dysentery in a third",
+     "s": "adultstg2026:1.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Amoebic serology (negative excludes)",
+     "s": "adultstg2026:1.17",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Metronidazole 800 mg PO 8-hourly × 10 days",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Large (> 10 cm), left lobe or near surface: drainage",
+     "s": "adultstg2026:1.18"
+    }
+   ]
+  },
+  {
+   "dx": "Liver metastases",
+   "branch": "If not HCC",
+   "features": [
+    {
+     "t": "Multiple lesions, known or found primary cancer",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CT / biopsy",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Symptom control as for end-stage",
+     "s": "adultstg2026:24.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If fit for treatment",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hydatid cyst",
+   "branch": "If not HCC",
+   "features": [
+    {
+     "t": "Cyst with daughter cysts / septa; dog contact",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; do NOT aspirate",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia",
+     "s": "adultstg2026:25.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "YES — surgical",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "TB of liver / disseminated TB",
+   "branch": "If not HCC",
+   "features": [
+    {
+     "t": "Hepatomegaly, fever, HIV wasting",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "GeneXpert, urine LAM if HIV",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "TB pathway",
+     "s": "phcstg2026:10.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "ALL suspected extra-pulmonary TB",
+     "s": "phcstg2026:10.22",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Branch rows start once the working diagnosis and stage are ticked; end-stage care is symptom control with the patient and family",
+  "columns": {
+   "feed": "Diet & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, temperature, RR 4-hourly; stop routine vitals at end of life",
+    "s": "adultstg2026:24.15",
+    "b": 1
+   },
+   {
+    "t": "Pain score 4-hourly and before / after each dose",
+    "s": "adultstg2026:25.5",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Nausea, vomiting, bowels daily",
+    "s": "adultstg2026:24.4"
+   },
+   {
+    "t": "Confusion (encephalopathy)",
+    "s": "adultstg2026:1.12"
+   },
+   {
+    "t": "Intake, urine output",
+    "d": 1
+   },
+   {
+    "t": "HGT 6-hourly while unwell",
+    "s": "adultstg2026:1.9",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Weight twice weekly",
+    "s": "adultstg2026:24.2",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Exclude rupture and abscess first. Stage by performance status and liver function — this decides refer versus palliative care.",
+    "feed": [
+     {
+      "h": "Shock / rupture"
+     },
+     {
+      "t": "NaCl 0.9% IV 1–2 L",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "2 units emergency O-neg; then FDP 1 unit per unit; urgent transfer",
+      "s": "adultstg2026:20.22",
+      "b": 1
+     },
+     {
+      "h": "Others"
+     },
+     {
+      "t": "Eat small amounts of enjoyable food often",
+      "s": "adultstg2026:24.2"
+     },
+     {
+      "t": "Ascites: salt ≤ 2 g/day",
+      "s": "adultstg2026:1.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "AFP",
+      "s": "easlhcc2025:321",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HBsAg, HIV",
+      "s": "adultstg2026:1.15",
+      "b": 1
+     },
+     {
+      "t": "FBC, INR, U&E, LFT",
+      "s": "adultstg2026:1.9",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "adultstg2026:1.9",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 6-hourly, max 2 g/24 h (liver disease)",
+      "s": "adultstg2026:25.3",
+      "d": 1
+     },
+     {
+      "t": "Morphine solution PO 2.5–5 mg 4-hourly (frail); longer interval in liver impairment",
+      "s": "adultstg2026:25.4",
+      "b": 1
+     },
+     {
+      "t": "No NSAIDs",
+      "s": "adultstg2026:1.12"
+     },
+     {
+      "h": "Hypoglycaemia"
+     },
+     {
+      "t": "Dextrose 50% 50 mL IV; recheck 5–10 min",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "h": "Nausea"
+     },
+     {
+      "t": "Metoclopramide 10 mg PO/IM/IV 8-hourly (5 mg if renal impairment)",
+      "s": "adultstg2026:24.4"
+     },
+     {
+      "h": "Encephalopathy"
+     },
+     {
+      "t": "Lactulose 10–30 mL 8-hourly, aim 2 soft stools / day",
+      "s": "adultstg2026:1.12"
+     },
+     {
+      "h": "Abscess"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+      "s": "adultstg2026:1.17"
+     }
+    ]
+   },
+   {
+    "label": "Day 1",
+    "phase": "Stage → branch",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results: AFP, HBsAg, INR",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis and ECOG PS (page 2)",
+      "s": "bclc2022:Stg",
+      "d": 1
+     },
+     {
+      "t": "Pain controlled?",
+      "s": "adultstg2026:25.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Per branch"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Family meeting: diagnosis, prognosis, place of care",
+      "s": "adultstg2026:24.14",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If ruptured",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Nil by mouth; NaCl 0.9%",
+      "s": "adultstg2026:20.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, INR, crossmatch sample",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Blood / FDP (0 h)",
+      "s": "adultstg2026:20.22"
+     },
+     {
+      "t": "REFER urgently",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If treatable",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E (eGFR for tenofovir)",
+      "s": "adultstg2026:1.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER: CT / MRI, HCC team",
+      "s": "easlhcc2025:327",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HBV: tenofovir 300 mg daily",
+      "s": "adultstg2026:1.15"
+     }
+    ]
+   },
+   {
+    "label": "If end-stage",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Food and fluid as wished",
+      "s": "adultstg2026:24.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Stop non-essential tests",
+      "s": "adultstg2026:24.15"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Regular analgesia, laxative, anti-emetic (side 2)",
+      "s": "adultstg2026:25.6"
+     },
+     {
+      "t": "Palliative care plan",
+      "s": "adultstg2026:24.14"
+     }
+    ]
+   },
+   {
+    "label": "If abscess",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Amoebic serology",
+      "s": "adultstg2026:1.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pyogenic: amoxicillin/clavulanic acid; REFER for drainage",
+      "s": "adultstg2026:1.17",
+      "b": 1
+     },
+     {
+      "t": "Amoebic: metronidazole 800 mg 8-hourly × 10 days",
+      "s": "adultstg2026:1.18"
+     }
+    ]
+   },
+   {
+    "label": "If not HCC",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Per cause"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GeneXpert, LAM (TB)",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "TB: REFER",
+      "s": "phcstg2026:10.22",
+      "b": 1
+     },
+     {
+      "t": "Hydatid: do not aspirate; REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "As wished"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Breakthrough doses in 24 h ÷ 6 = increase of the 4-hourly dose",
+      "s": "adultstg2026:25.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "As wished"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Anorexia: prednisone trial; stop after 1 week if no benefit",
+      "s": "adultstg2026:24.2"
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "As wished"
+     }
+    ],
+    "tests": [],
+    "treatment": [
+     {
+      "t": "Discharge criteria (below); hospice / home-based care linked",
+      "s": "adultstg2026:24.14"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Pain",
+   "items": [
+    {
+     "t": "Paracetamol 500 mg–1 g 6-hourly, max 2 g/24 h",
+     "s": "adultstg2026:25.3",
+     "d": 1
+    },
+    {
+     "t": "Morphine solution PO: 5–10 mg 4-hourly; frail 2.5–5 mg; longer interval in liver impairment",
+     "s": "adultstg2026:25.4"
+    },
+    {
+     "t": "Cancer pain: no maximum dose; breakthrough = 1/6 of daily dose",
+     "s": "adultstg2026:25.5"
+    },
+    {
+     "t": "Every patient on morphine: laxative — sennosides 13.5 mg 1–2 at night, or lactulose 10–20 mL 12–24-hourly",
+     "s": "adultstg2026:25.6"
+    },
+    {
+     "t": "No NSAIDs",
+     "s": "adultstg2026:1.12"
+    }
+   ]
+  },
+  {
+   "title": "Other symptoms",
+   "items": [
+    {
+     "h": "Nausea"
+    },
+    {
+     "t": "Metoclopramide 10 mg 8-hourly",
+     "s": "adultstg2026:24.4"
+    },
+    {
+     "t": "If ineffective: haloperidol 1.5–5 mg PO daily",
+     "s": "adultstg2026:24.5"
+    },
+    {
+     "h": "Anorexia"
+    },
+    {
+     "t": "Prednisone 20–30 mg daily",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "h": "Encephalopathy"
+    },
+    {
+     "t": "Lactulose 10–30 mL 8-hourly",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "h": "Breathlessness"
+    },
+    {
+     "t": "Morphine 2.5–5 mg PO 4-hourly as needed",
+     "s": "adultstg2026:24.11"
+    },
+    {
+     "h": "End of life"
+    },
+    {
+     "t": "Secretions: hyoscine butylbromide 20 mg SC, max 120 mg",
+     "s": "adultstg2026:24.12"
+    },
+    {
+     "t": "Terminal agitation: midazolam 1–5 mg SC/IV, titrate",
+     "s": "adultstg2026:24.13"
+    }
+   ]
+  },
+  {
+   "title": "Hepatitis B · escalate · refer",
+   "items": [
+    {
+     "t": "HBsAg+: tenofovir 300 mg daily if eGFR > 50; TAF 25 mg if eGFR 15–50",
+     "s": "adultstg2026:1.15"
+    },
+    {
+     "t": "Not on HBV therapy: screen caregivers (HBsAg, HBsAb); vaccinate non-immune",
+     "s": "adultstg2026:24.5"
+    },
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Sudden pain, collapse",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Confusion, black stool, fever",
+     "s": "adultstg2026:1.12"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Rupture; potentially treatable HCC; abscess for drainage",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Pain controlled on oral medicines",
+    "s": "adultstg2026:25.5"
+   },
+   {
+    "t": "No vomiting; bowels open",
+    "s": "adultstg2026:24.4"
+   },
+   {
+    "t": "Goals of care agreed with patient / family",
+    "s": "adultstg2026:24.14"
+   },
+   {
+    "t": "Caregiver taught medicines",
+    "s": "adultstg2026:24.14"
+   },
+   {
+    "t": "Hospice / home-based care linked",
+    "d": 1
+   },
+   {
+    "t": "Caregivers HBV-screened",
+    "s": "adultstg2026:24.5"
+   },
+   {
+    "t": "Referral letter if treatable",
+    "s": "bclc2022:Stg",
+    "d": 1
+   },
+   {
+    "t": "Emergency contact given",
+    "s": "adultstg2026:24.14"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic / home-based care in 1 week: pain, bowels, appetite",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Return at once: sudden pain, black stool, confusion, fever",
+    "d": 1
+   },
+   {
+    "t": "Treatable HCC: HCC team appointment",
+    "s": "bclc2022:Stg",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — pain, symptoms, bowels, vitals",
+  "period": "One sheet per 24 h; 2-hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Pain",
+    "items": [
+     {
+      "t": "Score 4-hourly and before / after each dose",
+      "s": "adultstg2026:25.5",
+      "d": 1
+     },
+     {
+      "t": "Record every breakthrough dose",
+      "s": "adultstg2026:25.5"
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "Pulse, BP, temperature, RR 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "End of life: stop routine vitals",
+      "s": "adultstg2026:24.15"
+     }
+    ]
+   },
+   {
+    "h": "Symptoms",
+    "items": [
+     {
+      "t": "Nausea, vomiting, confusion",
+      "s": "adultstg2026:24.4"
+     },
+     {
+      "t": "Bowels daily on morphine",
+      "s": "adultstg2026:25.6"
+     }
+    ]
+   },
+   {
+    "h": "Intake · HGT",
+    "items": [
+     {
+      "t": "Intake, urine",
+      "d": 1
+     },
+     {
+      "t": "HGT 6-hourly while unwell",
+      "s": "adultstg2026:1.9",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "sudden severe pain or collapse",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "pain ≥ 2 breakthrough doses in 4 h",
+    "s": "adultstg2026:25.5",
+    "d": 1
+   },
+   {
+    "t": "confusion, black stool, fever",
+    "s": "adultstg2026:1.12"
+   },
+   {
+    "t": "low HGT",
+    "s": "adultstg2026:1.9"
+   }
+  ],
+  "totals": [
+   "Breakthrough doses (n)",
+   "Total morphine (mg)",
+   "Bowels (Y/N)",
+   "Intake (mL)"
+  ]
+ }
+}
