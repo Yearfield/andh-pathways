@@ -661,3 +661,12 @@ section.card.red .shead .st { color: var(--warn-ink); }
 .wres .spacer { flex: 1; }
 .wreset { min-height: 36px; padding: 0 16px; border: 1.5px solid var(--line); border-radius: 999px; background: none; font-weight: 700; }
 .wsrc { font-size: .8rem; color: var(--muted); margin: 0 4px; }
+/* ---------- weight calculator ---------- */
+.wpad { display: flex; align-items: center; gap: 12px; padding: 12px 14px 4px; } .wlabel { font-weight: 700; }
+.winp { display: flex; align-items: center; gap: 8px; } .winp input { width: 120px; height: 52px; font-size: 1.4rem; font-weight: 700; text-align: center; border: 2px solid var(--tab); border-radius: 12px; background: #fff; color: var(--ink); }
+.winp em { font-style: normal; color: var(--muted); font-weight: 700; }
+.wlist { padding: 6px 14px 0; } .wrow { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 1px solid var(--hair); align-items: flex-start; }
+.wrow:first-child { border-top: 0; } .wd { font-weight: 700; flex: 0 1 45%; } .wv { display: flex; flex-direction: column; align-items: flex-end; text-align: right; gap: 2px; font-variant-numeric: tabular-nums; }
+.wv b { font-size: 1.05rem; } .walt { font-size: .78rem; color: var(--warn-ink, #8a3b33); }
+.calc .hint { padding: 0 14px 12px; margin: 6px 0 0; }
+.footnote { margin-top: 8px; }

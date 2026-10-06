@@ -166,6 +166,33 @@ function procHome() {
     <span class="t">${esc(e.short || e.title)}</span><span class="p">${esc(e.title)} · ${esc(e.population)} · ${esc(e.setting)}</span>${ico("next")}</button>`).join("")}</div></section>
     <p class="hint">† = clinical or local addition, not in the SA guideline.</p></main>`;
 }
+/* ---- exact doses from the dose-table "basis" text, e.g. "0.02 mg/kg, min 0.1, max 0.5" or "2 mcg/kg (1 if shocked)" ---- */
+const fmtD = n => String(parseFloat((+n).toFixed(2)));
+function parseBasis(b) {
+  const m = /^([\d.]+)(?:\s*[–-]\s*([\d.]+))?\s*(mcg|mg)\/kg(?:\s*\(([\d.]+)\s+if\s+(\w+)\))?(?:,\s*min\s+([\d.]+))?(?:,\s*max\s+([\d.]+))?/i.exec(b || "");
+  return m ? { lo: +m[1], hi: m[2] ? +m[2] : +m[1], unit: m[3], alt: m[4] ? +m[4] : null, altWhen: m[5], min: m[6] ? +m[6] : null, max: m[7] ? +m[7] : null } : null;
+}
+function concOf(R, row) { // mg or mcg per mL, from the matching drug card's "conc" text (e.g. "50 mcg/mL", "… = 1 mg/mL")
+  const x = (R.drugs || []).find(q => q.m === row.m && q.name.toLowerCase().startsWith(row.drug.toLowerCase())) || (R.drugs || []).find(q => q.name.toLowerCase().startsWith(row.drug.toLowerCase()));
+  const m = x && /([\d.]+)\s*(mg|mcg)\/mL\s*(?:\(|$|;)|=\s*([\d.]+)\s*(mg|mcg)\/mL/.exec(x.conc || ""); if (!m) return null;
+  return { per: +(m[1] || m[3]), unit: m[2] || m[4] };
+}
+function doseFor(R, row, kg) {
+  const b = parseBasis(row.basis); if (!b) return null;
+  const lim = v => { if (b.min != null) v = Math.max(v, b.min); if (b.max != null) v = Math.min(v, b.max); return v; };
+  const c = concOf(R, row), ml = v => c && c.unit === b.unit ? ` · ${fmtD(v / c.per)} mL` : "";
+  const lo = lim(b.lo * kg), hi = lim(b.hi * kg), range = lo === hi ? fmtD(lo) : `${fmtD(lo)}–${fmtD(hi)}`;
+  const mlTxt = lo === hi ? ml(lo) : c && c.unit === b.unit ? ` · ${fmtD(lo / c.per)}–${fmtD(hi / c.per)} mL` : "";
+  const alt = b.alt != null ? { v: lim(b.alt * kg), when: b.altWhen } : null;
+  return { main: `${range} ${b.unit}${mlTxt}`, alt: alt ? `${fmtD(alt.v)} ${b.unit}${ml(alt.v)} if ${alt.when}` : "", capped: (b.max != null && b.hi * kg > b.max) || (b.min != null && b.lo * kg < b.min) };
+}
+const numeralTxt = m => esc(String(m).replace(/\s+(?!\s*alt)/g, " · "));
+function weightCalc(R, kg) {
+  if (!(kg > 0)) return `<p class="hint">Type the weight to see exact doses for every drug.</p>`;
+  const rows = R.dose_table.rows.map(r => { const x = doseFor(R, r, kg);
+    return `<div class="wrow"><div class="wd"><span class="mk">${numeralTxt(r.m)}</span>${esc(r.drug)}</div><div class="wv">${x ? `<b>${esc(x.main)}</b>${x.alt ? `<span class="walt">${esc(x.alt)}</span>` : ""}${x.capped ? '<span class="walt">dose limit applied</span>' : ""}` : `<span class="walt">see table: ${esc(r.basis)}</span>`}</div></div>`; }).join("");
+  return `<div class="wlist" aria-live="polite">${rows}</div><p class="hint">Calculated from the basis shown on each table row (${R.dose_table.rows.length} drugs) for ${fmtD(kg)} kg; always check the dose against the STG before giving.</p>`;
+}
 async function procView(id, tab) {
   const e = (S.index.procedures || []).find(x => x.id === id); if (!e) throw new Error("unknown procedure " + id);
   const d = S.dx[id] ||= await loadJSON(e.path);
@@ -199,6 +226,10 @@ async function procView(id, tab) {
   const drug = x => `<section class="card drug"><h2 class="ctitle"><span class="mk">${numeral(x.m)}</span>${esc(x.name)}${dg(x)}</h2><dl class="dl">
     ${[["Conc.", x.conc], ["Dose", x.dose, 1], ["Give", x.when], ["Onset / duration", x.onset], ["Shocked / frail", x.adjusted], ["Watch", x.watch]].filter(r => r[1] && r[1] !== "—")
       .map(([l, v, b]) => `<div><dt>${l}</dt><dd class="${b ? "b" : ""}">${esc(v)}</dd></div>`).join("")}</dl>${x.s ? `<div class="drugsrc">${chip(x.s)}</div>` : ""}</section>`;
+  S.procR = R;
+  const calc = R.dose_table ? `<section class="card calc"><h2 class="ctitle">Exact doses for this patient</h2><div class="wpad"><label class="wlabel" for="wt">Weight</label>
+    <span class="winp"><input id="wt" type="number" inputmode="decimal" min="0.5" max="250" step="any" placeholder="e.g. 70" value="${esc(S.procKg ?? "")}" autocomplete="off"><em>kg</em></span></div>
+    <div id="wout">${weightCalc(R, parseFloat(S.procKg))}</div></section>` : "";
   const dt = R.dose_table, table = dt ? `<section class="card"><h2 class="ctitle">Dose by weight (${esc(dt.unit)})</h2><div class="tscroll"><table class="dtab">
     <thead><tr><th>Drug</th>${dt.weights.map(w => `<th>${w}</th>`).join("")}</tr>${dt.ages_approx ? `<tr class="ages"><th>Approx. age</th>${dt.ages_approx.map(a => `<th>${esc(a)}</th>`).join("")}</tr>` : ""}</thead><tbody>${dt.rows.map(r =>
     `<tr><th><span class="mk">${numeral(r.m)}</span>${esc(r.drug)}${dg(r)}<small>${esc(r.basis)} · ${esc(r.unit)}</small>${chip(r.s)}</th>${r.vals.map(v => `<td>${esc(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>${dt.ages_note ? `<p class="hint" style="padding:0 14px 12px">${esc(dt.ages_note)}</p>` : ""}</section>` : "";
@@ -207,15 +238,15 @@ async function procView(id, tab) {
   const body = { indications: `<h2 class="glabel">Indications</h2>${secs(d.indications)}`,
     contraindications: `<h2 class="glabel">Contraindications</h2>${secs(d.contraindications)}`,
     procedure: steps,
-    drugs: `<h2 class="glabel">Drugs in order of giving</h2>${(R.drugs || []).map(drug).join("")}${table}`,
+    drugs: `<h2 class="glabel">Drugs in order of giving</h2>${calc}${(R.drugs || []).map(drug).join("")}${table}`,
     after: `<h2 class="glabel">Sedation, ventilation and deterioration</h2>${secs(R.later)}<h2 class="glabel">${esc(d.complications.title)}</h2>${secs(d.complications.sections, "red")}` }[tab];
   app.innerHTML = `
   <header class="top"><div class="bar"><button class="iconbtn" aria-label="Back to procedures" data-go="#/procedures">${ico("back")}</button>
     <div class="ttl"><div class="row1"><h1>${esc(d.short)}</h1><span class="badge ${popClass(d.population)}">${esc(popName(d.population))}</span></div>
       <div class="sub">${esc(d.title)} · ${esc(d.setting)}</div></div></div>
     <nav class="ptabs" aria-label="Sections">${tabs.map(([k, l]) => `<button data-go="#/proc/${id}/${k}" ${k === tab ? 'class="on" aria-current="page"' : ""}>${l}</button>`).join("")}</nav></header>
-  <main class="fade proc"><p class="hint">${esc(d.regimen)} · ${esc(d.hospital)} · updated ${esc(d.updated)}. ${esc(d.dagger_note)}</p>
-    ${body}</main>`;
+  <main class="fade proc">${body}
+    <p class="hint footnote">${esc(d.regimen)} · ${esc(d.hospital)} · updated ${esc(d.updated)}. ${esc(d.dagger_note)}</p></main>`;
 }
 
 /* In the diagnosis list the group heading already says Adult or Paediatric, so the same word is dropped from each row's name and
@@ -1025,6 +1056,7 @@ document.addEventListener("click", async e => {
 });
 document.addEventListener("input", e => {
   if (e.target.id === "q") applyFilter();
+  if (e.target.id === "wt" && S.procR) { S.procKg = e.target.value; $("#wout").innerHTML = weightCalc(S.procR, parseFloat(e.target.value)); }
   if (e.target.id === "hq") hubFilter();
   if (e.target.id === "dxq") dxFilter();
   if (e.target.id === "sq") applyScoreFilter();
