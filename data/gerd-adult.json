@@ -1,0 +1,1287 @@
+{
+ "id": "gerd-adult",
+ "short": "GORD (adult)",
+ "title": "Gastro-oesophageal reflux disease — admitted with severe symptoms or alarm features (adult)",
+ "population": "Adult admitted with severe heartburn / retrosternal pain, painful or difficult swallowing, or persistent vomiting; no endoscopy at ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Ischaemic chest pain / ECG changes → ACS pathway",
+     "b": 1
+    },
+    {
+     "t": "Haematemesis / melaena → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Epigastric pain, ulcer, perforation → PUD pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features",
+   "items": [
+    {
+     "t": "Heartburn and regurgitation",
+     "s": "adultstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Epigastric discomfort (dyspepsia)",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Triggers: NSAIDs, pain powders, spicy food, alcohol, fizzy drinks, smoking",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Improvement on PPI confirms acid-related disease",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    },
+    {
+     "t": "Two-thirds have a normal endoscopy (NERD)",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Symptoms for ____ weeks · PPI tried Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Alarm symptoms → endoscopy (REFER)",
+   "items": [
+    {
+     "t": "Dysphagia / odynophagia",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Weight loss, anorexia",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "GI bleeding, haematemesis, melaena",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Iron-deficiency anaemia",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Persistent vomiting",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "New dyspepsia > 60 y",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Chest pain",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "GI cancer in first-degree relative",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous PPI courses, endoscopy result",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "HIV status, CD4, ART",
+     "s": "adultstg2026:10.21",
+     "b": 1
+    },
+    {
+     "t": "NSAIDs, aspirin, pain powders",
+     "s": "adultstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "Doxycycline, KCl, bisphosphonates (pill injury)",
+     "d": 1
+    },
+    {
+     "t": "Cardiac risk factors",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "Alcohol, smoking",
+     "s": "adultstg2026:1.2"
+    },
+    {
+     "t": "Barrett's / hiatus hernia",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "phcstg2026:2.4"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Reflux"
+    },
+    {
+     "t": "Burning, worse lying / after meals",
+     "d": 1
+    },
+    {
+     "t": "Sour regurgitation, night cough",
+     "d": 1
+    },
+    {
+     "h": "Swallowing"
+    },
+    {
+     "t": "Pain on swallowing",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Food sticking; saliva?",
+     "d": 1
+    },
+    {
+     "h": "Cardiac"
+    },
+    {
+     "t": "Exertional, sweating, radiating",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Weight loss",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Forceful vomiting before pain",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.24",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "k": "yn"
+    },
+    {
+     "t": "Weight loss on record",
+     "s": "adultstg2026:1.4",
+     "k": "yn"
+    },
+    {
+     "t": "Pale (check Hb)",
+     "s": "adultstg2026:1.3",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Mouth"
+    },
+    {
+     "t": "Oral thrush",
+     "s": "adultstg2026:10.21",
+     "b": 1
+    },
+    {
+     "t": "Drooling (cannot swallow saliva)",
+     "d": 1
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Epigastric tenderness",
+     "d": 1
+    },
+    {
+     "t": "Mass, hepatomegaly",
+     "s": "phcstg2026:2.4"
+    },
+    {
+     "t": "Peritonism",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "h": "Chest / neck"
+    },
+    {
+     "t": "Surgical emphysema (rupture)",
+     "d": 1
+    },
+    {
+     "t": "Crackles (aspiration)",
+     "d": 1
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Pallor, wasting, nodes",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care on arrival",
+   "items": [
+    {
+     "t": "ECG: ischaemia Y / N ____",
+     "s": "adultstg2026:3.4",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Hb ____ · HGT ____",
+     "s": "adultstg2026:1.3",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "ECG changes / troponin rise → ACS pathway",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "HIV rapid test if status unknown",
+     "d": 1
+    },
+    {
+     "t": "β-hCG in women of child-bearing age",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and imaging",
+   "items": [
+    {
+     "t": "FBC (anaemia)",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    },
+    {
+     "t": "Troponin if chest pain",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "U&E, K⁺ if vomiting",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CD4 if HIV-positive",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CXR: aspiration, mediastinal air",
+     "d": 1
+    },
+    {
+     "t": "Endoscopy not on site → REFER for alarm symptoms",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway / cannot swallow saliva",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "ACS",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "GI bleeding",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Oesophageal rupture",
+     "d": 1
+    },
+    {
+     "t": "Aortic dissection",
+     "s": "adultstg2026:3.5"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "s": "adultstg2026:2.24"
+    },
+    {
+     "t": "Pericarditis",
+     "d": 1
+    },
+    {
+     "t": "Aspiration pneumonia",
+     "d": 1
+    },
+    {
+     "t": "Perforated ulcer",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "t": "Weight loss / mass",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Advanced HIV",
+     "s": "adultstg2026:10.21"
+    },
+    {
+     "t": "Pancreatitis",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Biliary colic",
+     "s": "adultstg2026:1.18"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Alarm symptoms → REFER for endoscopy · ACS / rupture / bleeding → own pathway or urgent REFER",
+   "s": "adultstg2026:1.4"
+  },
+  {
+   "t": "11. ADMIT only if unable to swallow, dehydrated, severe pain or awaiting work-up",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Acute coronary syndrome",
+   "branch": "If not oesophageal",
+   "features": [
+    {
+     "t": "Dyspepsia may be cardiac; risk factors, sweating, exertional",
+     "s": "phcstg2026:2.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, troponin",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ACS pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per ACS pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Oesophageal rupture",
+   "branch": "If not oesophageal",
+   "features": [
+    {
+     "t": "Severe pain after forceful vomiting; surgical emphysema",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR / erect CXR (mediastinal air)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, IV fluids, amox-clav 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediate",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Food bolus obstruction",
+   "branch": "If dysphagia",
+   "features": [
+    {
+     "t": "Sudden, cannot swallow saliva, drooling",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, upright, IV fluids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent endoscopy",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Oesophageal candidiasis",
+   "branch": "If candidiasis",
+   "features": [
+    {
+     "t": "Painful / difficult swallowing; oral thrush; HIV",
+     "s": "adultstg2026:10.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HIV test, CD4; response to fluconazole",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fluconazole 200 mg daily × 14 days (IV if unable to swallow)",
+     "s": "adultstg2026:10.22",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "No response: fungal MC&S → endoscopy",
+     "s": "adultstg2026:10.22"
+    }
+   ]
+  },
+  {
+   "dx": "Stricture / oesophageal cancer",
+   "branch": "If dysphagia",
+   "features": [
+    {
+     "t": "Progressive dysphagia, weight loss, anaemia",
+     "s": "adultstg2026:1.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb; REFER for endoscopy",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Soft / liquid diet; PPI",
+     "s": "adultstg2026:1.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — endoscopy (alarm symptom)",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Reflux oesophagitis / GORD",
+   "branch": "If reflux",
+   "features": [
+    {
+     "t": "Heartburn, regurgitation, worse lying down",
+     "s": "adultstg2026:1.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Response to PPI",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Pantoprazole 40 mg daily × 4 weeks + lifestyle",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Alarm symptoms; PPI-dependent young; large hiatus hernia",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  },
+  {
+   "dx": "Pill oesophagitis",
+   "branch": "If reflux",
+   "features": [
+    {
+     "t": "Doxycycline, KCl, NSAID taken with little water",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Drug history",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop / change drug; take upright with water; PPI",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Peptic ulcer / gastritis",
+   "branch": "If not oesophageal",
+   "features": [
+    {
+     "t": "Epigastric pain, NSAIDs, H. pylori",
+     "s": "adultstg2026:1.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Endoscopy (REFER) if alarm features",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "PUD pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per PUD pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Biliary colic / pancreatitis",
+   "branch": "If not oesophageal",
+   "features": [
+    {
+     "t": "RUQ / epigastric pain to back, after fatty meals",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound, amylase / lipase",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Pancreatitis or Cholangitis pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per those pathways",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "Endoscopy is not on site: every alarm symptom is a referral · branch rows follow the ticked diagnosis",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, RR, SpO₂, temp, pain score: hourly × 2 h, 2-hourly to 12 h, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "New or worse chest pain → ECG now and call the doctor",
+    "s": "adultstg2026:3.4",
+    "b": 1
+   },
+   {
+    "t": "Record what is swallowed: saliva / fluids / soft / solid",
+    "d": 1
+   },
+   {
+    "t": "Vomiting: volume, blood, coffee grounds",
+    "s": "adultstg2026:1.4"
+   },
+   {
+    "t": "Head of bed raised; small frequent meals once eating",
+    "s": "adultstg2026:1.3"
+   },
+   {
+    "t": "No NSAIDs",
+    "s": "adultstg2026:1.3"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Treat chest pain as cardiac until the ECG and troponin say otherwise.",
+    "feed": [
+     {
+      "t": "Cannot swallow saliva / vomiting: NPO + IV NaCl 0.9%",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Otherwise sips → soft diet as tolerated",
+      "d": 1
+     },
+     {
+      "t": "Sit upright; head of bed raised",
+      "s": "adultstg2026:1.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG now; troponin if chest pain",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "FBC / Hb",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     },
+     {
+      "t": "U&E if vomiting",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test, CD4",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR if aspiration / rupture suspected",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Stop"
+     },
+     {
+      "t": "NSAIDs, aspirin, pain powders",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     },
+     {
+      "h": "Acid suppression"
+     },
+     {
+      "t": "Pantoprazole 40 mg oral daily",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     },
+     {
+      "t": "Unable to swallow: pantoprazole 40 mg IV daily",
+      "s": "adultstg2026:23.25",
+      "d": 1
+     },
+     {
+      "h": "Pain and nausea"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g / 24 h)",
+      "s": "adultstg2026:12.5"
+     },
+     {
+      "t": "Metoclopramide 10 mg IV 8-hourly as required",
+      "s": "adultstg2026:1.13"
+     }
+    ]
+   },
+   {
+    "label": "2–6 h",
+    "phase": "Re-assess",
+    "feed": [
+     {
+      "t": "Trial of fluids if pain allows",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG / troponin if chest pain persists",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick the working diagnosis (differential sheet)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Cannot swallow saliva → food bolus: REFER urgently",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If reflux",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Small frequent meals; no late, fatty meals or fizzy drinks",
+      "s": "adultstg2026:1.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb; weight",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pantoprazole 40 mg daily × 4 weeks; ensure adherence",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     },
+     {
+      "t": "Stop smoking, limit alcohol, sleep upper body raised, left side",
+      "s": "adultstg2026:1.3"
+     },
+     {
+      "t": "Pill oesophagitis: stop / change the drug, take upright with water",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If candidiasis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Maintain hydration",
+      "s": "adultstg2026:10.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CD4, CrAg, TB screen",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fluconazole 200 mg daily × 14 days — IV if unable to swallow / vomiting",
+      "s": "adultstg2026:10.22",
+      "b": 1
+     },
+     {
+      "t": "Early relapse: 4-week course, same dose",
+      "s": "adultstg2026:10.22"
+     },
+     {
+      "t": "AIDS-defining: start / review ART (HIV pathway)",
+      "s": "adultstg2026:10.21"
+     }
+    ]
+   },
+   {
+    "label": "If dysphagia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Liquid / soft diet; NPO if bolus",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, albumin; weight",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Food bolus (cannot swallow saliva) → REFER urgently (endoscopy)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Progressive dysphagia, weight loss → REFER for endoscopy",
+      "s": "adultstg2026:1.4",
+      "b": 1
+     },
+     {
+      "t": "Continue PPI until scoped",
+      "s": "adultstg2026:1.3"
+     }
+    ]
+   },
+   {
+    "label": "If not oesophageal",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As per pathway",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, troponin, amylase / lipase, ultrasound",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "ACS → ACS pathway · ulcer → PUD pathway · bleeding → UGIB pathway",
+      "d": 1
+     },
+     {
+      "t": "Rupture → NPO, amox-clav 1.2 g IV 8-hourly, REFER now",
+      "s": "adultstg2026:1.23",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 1–2",
+    "phase": "Settling",
+    "feed": [
+     {
+      "t": "Soft → normal diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Switch IV → oral PPI once swallowing",
+      "d": 1
+     },
+     {
+      "t": "Not settling on PPI or alarm symptoms → REFER for endoscopy",
+      "s": "adultstg2026:1.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Lifestyle advice given",
+      "s": "adultstg2026:1.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb rechecked if anaemic",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pantoprazole 40 mg daily to complete 4 weeks",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     },
+     {
+      "t": "Endoscopy referral letter if alarm symptom",
+      "s": "adultstg2026:1.4"
+     },
+     {
+      "t": "Return now: chest pain, black stool, vomiting blood",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Pantoprazole 40 mg oral daily × 4 weeks (new onset)",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    },
+    {
+     "t": "Recurrence after endoscopy: 40 mg daily, then 20 mg after 4 weeks (not LA C/D or Barrett's)",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Pantoprazole 40 mg IV daily while unable to swallow",
+     "s": "adultstg2026:23.25",
+     "d": 1
+    },
+    {
+     "t": "Fluconazole 200 mg daily × 14 days (oesophageal candidiasis)",
+     "s": "adultstg2026:10.22",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly; max 4 g / 24 h",
+     "s": "adultstg2026:12.5"
+    },
+    {
+     "t": "Metoclopramide 10 mg IV / oral 8-hourly as required",
+     "s": "adultstg2026:1.13"
+    }
+   ]
+  },
+  {
+   "title": "Lifestyle (teach before discharge)",
+   "items": [
+    {
+     "t": "Stop smoking · limit alcohol · lose weight if overweight",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Small frequent meals · no late-night, fatty meals or fizzy drinks",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Sleep upper body raised, on the left side",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Avoid excessive exercise · stop NSAIDs",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "h": "Discuss with specialist"
+    },
+    {
+     "t": "Young PPI-dependent · cannot take PPI · high-dose PPI · large / rolling hiatus hernia",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "New or worse chest pain",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Cannot swallow saliva, drooling",
+     "d": 1
+    },
+    {
+     "t": "Vomiting blood or black stool",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Pulse rising, BP falling",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Breathless, fever (aspiration)",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Alarm symptoms · food bolus · rupture · no response to fluconazole",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "ACS excluded",
+    "s": "adultstg2026:3.4"
+   },
+   {
+    "t": "Swallowing fluids and soft diet",
+    "d": 1
+   },
+   {
+    "t": "Pain controlled on oral treatment",
+    "d": 1
+   },
+   {
+    "t": "Not anaemic or anaemia plan made",
+    "s": "adultstg2026:1.3"
+   },
+   {
+    "t": "Endoscopy referral if alarm symptom",
+    "s": "adultstg2026:1.4"
+   },
+   {
+    "t": "Lifestyle and PPI use taught",
+    "s": "adultstg2026:1.3"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC at 4 weeks: symptoms, adherence",
+    "d": 1
+   },
+   {
+    "t": "Recurrence after PPI course → refer",
+    "s": "phcstg2026:2.4"
+   },
+   {
+    "t": "HIV: ART clinic within 1 week",
+    "d": 1
+   },
+   {
+    "t": "Return now: chest pain, black stool, vomiting blood, cannot swallow",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — pain, swallowing and intake",
+  "period": "one sheet from arrival: hourly × 2 h, 2-hourly to 12 h, then 4-hourly",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Pulse, BP, RR, SpO₂, temp, pain score: hourly × 2 h, 2-hourly to 12 h, then 4-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "New or worse chest pain → ECG now and call the doctor",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Swallowing and intake",
+    "items": [
+     {
+      "t": "Record what is swallowed: saliva / fluids / soft / solid",
+      "d": 1
+     },
+     {
+      "t": "Vomiting: volume, blood, coffee grounds",
+      "s": "adultstg2026:1.4"
+     },
+     {
+      "t": "Fluid balance",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Positioning and drugs",
+    "items": [
+     {
+      "t": "Head of bed raised; small frequent meals once eating",
+      "s": "adultstg2026:1.3"
+     },
+     {
+      "t": "No NSAIDs",
+      "s": "adultstg2026:1.3"
+     },
+     {
+      "t": "PPI 30–60 min before breakfast",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "new or worse chest pain",
+    "s": "adultstg2026:3.4",
+    "b": 1
+   },
+   {
+    "t": "cannot swallow saliva or drooling",
+    "d": 1
+   },
+   {
+    "t": "vomiting blood or black stool",
+    "s": "adultstg2026:1.4"
+   },
+   {
+    "t": "pulse rising or BP falling",
+    "s": "adultstg2026:20.21"
+   },
+   {
+    "t": "breathless or fever",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Oral in (mL)",
+   "IV in (mL)",
+   "Urine out (mL)",
+   "Vomit (mL)",
+   "Diet reached"
+  ]
+ }
+}

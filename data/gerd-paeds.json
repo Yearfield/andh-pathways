@@ -1,0 +1,1282 @@
+{
+ "id": "gerd-paeds",
+ "short": "GORD (paeds)",
+ "title": "Gastro-oesophageal reflux disease — complicated reflux in infants and children",
+ "population": "Infant or child admitted with recurrent vomiting / regurgitation plus respiratory symptoms, faltering growth or abnormal posturing",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Bile-stained vomiting / distension → Bowel obstruction pathway",
+     "b": 1
+    },
+    {
+     "t": "Diarrhoea + vomiting → AGE pathway · SAM → SAM pathway",
+     "b": 1
+    },
+    {
+     "t": "Haematemesis / melaena → Upper GI bleed pathway (paeds)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — complicated GOR (GORD)",
+   "items": [
+    {
+     "t": "Recurrent vomiting or regurgitation PLUS any of:",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Respiratory: recurrent wheeze / cough, aspiration, pneumonia, stridor, apnoea, life-threatening event",
+     "s": "paedstg2026:2.24",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Faltering growth",
+     "s": "paedstg2026:2.24",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Abnormal posturing / opisthotonus (Sandifer)",
+     "s": "paedstg2026:2.24",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Small frequent vomits only = uncomplicated GOR: reassure, no treatment",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Age ____ · Wt ____ kg · birth wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — admit if any",
+   "items": [
+    {
+     "t": "Apnoea / life-threatening event",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Aspiration pneumonia / respiratory distress",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:2.10"
+    },
+    {
+     "t": "Faltering growth / weight loss",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Haematemesis (→ UGIB)",
+     "s": "paedstg2026:2.25"
+    },
+    {
+     "t": "Feeding refusal, irritability with feeds",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road-to-Health booklet / previous records",
+   "items": [
+    {
+     "t": "Growth curve: crossing down?",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Prematurity, neonatal problems",
+     "d": 1
+    },
+    {
+     "t": "HIV exposure / status",
+     "d": 1
+    },
+    {
+     "t": "Immunisations (pertussis)",
+     "s": "paedstg2026:8.29"
+    },
+    {
+     "t": "Feeding: breast / formula, volume, thickener",
+     "s": "paedstg2026:2.25",
+     "b": 1
+    },
+    {
+     "t": "Family atopy, cow's milk allergy",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Neurological impairment (CP)",
+     "d": 1
+    },
+    {
+     "t": "Previous admissions, pneumonia",
+     "s": "paedstg2026:2.24"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Vomit"
+    },
+    {
+     "t": "Effortless vs projectile",
+     "d": 1
+    },
+    {
+     "t": "Bile-stained, blood",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Timing with feeds",
+     "d": 1
+    },
+    {
+     "h": "Breathing"
+    },
+    {
+     "t": "Cough, choking with feeds",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Pauses, colour change",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Paroxysmal cough (pertussis)",
+     "s": "paedstg2026:8.29"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Fever, diarrhoea",
+     "d": 1
+    },
+    {
+     "t": "Arching, back posturing",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Blood / mucus in stool (CMPA)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "paedstg2026:1.15",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / chest indrawing",
+     "s": "paedstg2026:2.10",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ low → oxygen",
+     "s": "paedstg2026:1.16",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "CRT ≥ 3 s / cold peripheries",
+     "s": "paedstg2026:1.15",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated (skin pinch, sunken eyes)",
+     "s": "paedstg2026:2.10",
+     "k": "yn"
+    },
+    {
+     "t": "Weight-for-age falling",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / floppy",
+     "s": "paedstg2026:2.10",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distension",
+     "s": "paedstg2026:2.10"
+    },
+    {
+     "t": "Olive mass, visible peristalsis",
+     "d": 1
+    },
+    {
+     "t": "Hernias, testes",
+     "d": 1
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Crackles, wheeze",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Stridor",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Fontanelle (bulging)",
+     "d": 1
+    },
+    {
+     "t": "Tone, posturing",
+     "s": "paedstg2026:2.10"
+    },
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Eczema (allergy)",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care on arrival",
+   "items": [
+    {
+     "t": "HGT ____ · urine dipstick ____",
+     "s": "paedstg2026:2.10",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Weight on growth chart ____ (z-score / centile)",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Leucocytes / nitrites → UTI",
+     "s": "paedstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Blood gas: alkalosis + low Cl / K⁺ (pyloric stenosis)",
+     "d": 1
+    },
+    {
+     "t": "Observe a feed yourself",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and imaging",
+   "items": [
+    {
+     "t": "Routine investigations seldom needed — discuss with specialist first",
+     "s": "paedstg2026:2.25",
+     "b": 1
+    },
+    {
+     "t": "U&E, K⁺, Cl⁻ if vomiting / dehydrated",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "FBC, CRP if febrile",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Urine MC&S",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Ultrasound: pylorus, malrotation signs",
+     "d": 1
+    },
+    {
+     "t": "CXR if aspiration suspected",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "paedstg2026:1.15",
+     "b": 1
+    },
+    {
+     "t": "Bile-stained vomit",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "b": 1
+    },
+    {
+     "t": "Projectile vomiting (pyloric)",
+     "d": 1
+    },
+    {
+     "t": "Intussusception",
+     "s": "paedstg2026:2.23"
+    },
+    {
+     "t": "Sepsis / meningitis",
+     "s": "paedstg2026:8.44"
+    },
+    {
+     "t": "Bulging fontanelle",
+     "d": 1
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2026:2.10"
+    },
+    {
+     "t": "Aspiration pneumonia",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Pertussis",
+     "s": "paedstg2026:8.29"
+    },
+    {
+     "t": "Haematemesis",
+     "s": "paedstg2026:2.25"
+    },
+    {
+     "t": "SAM",
+     "s": "paedstg2026:2.10"
+    },
+    {
+     "t": "UTI",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "DKA (older child)",
+     "s": "paedstg2026:7.19"
+    },
+    {
+     "t": "Child protection concern",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Surgical cause (pyloric, malrotation, intussusception) → REFER urgently · GORD with apnoea, aspiration or no response → REFER",
+   "s": "paedstg2026:2.25"
+  },
+  {
+   "t": "11. ADMIT to observe feeds, rehydrate and treat complications",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Malrotation / volvulus",
+   "branch": "If surgical cause",
+   "features": [
+    {
+     "t": "Bile-stained vomiting, distension, any age (often neonate)",
+     "s": "paedstg2026:2.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, NG free drainage, IV fluids — BO pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediate",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pyloric stenosis",
+   "branch": "If surgical cause",
+   "features": [
+    {
+     "t": "Projectile non-bile vomiting, 2–8 weeks, hungry, olive mass",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound pylorus; blood gas, U&E (low Cl, K⁺)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, NG, correct fluids / K⁺ before transfer",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — paediatric surgeon",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Intussusception",
+   "branch": "If surgical cause",
+   "features": [
+    {
+     "t": "Colicky pain, bile-stained vomit, red-currant-jelly stool",
+     "s": "paedstg2026:2.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (target sign)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "BO pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent",
+     "s": "phcstg2026:2.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sepsis / meningitis / UTI",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Fever, lethargy, poor feeding; bulging fontanelle",
+     "s": "paedstg2026:8.44"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood culture, urine MC&S; LP if no contraindication",
+     "s": "paedstg2026:8.44",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 100 mg/kg IV daily (sepsis)",
+     "s": "paedstg2026:8.44",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If shock not resolving after 40 mL/kg",
+     "s": "paedstg2026:1.17"
+    }
+   ]
+  },
+  {
+   "dx": "Pertussis",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Paroxysmal cough → vomiting; apnoea in young infants",
+     "s": "paedstg2026:8.29"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PCR nasopharyngeal aspirate",
+     "s": "paedstg2026:8.29",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Azithromycin < 6 mo 10 mg/kg/day × 5 days; ≥ 6 mo 10 mg/kg day 1, then 5 mg/kg days 2–5",
+     "s": "paedstg2026:8.29",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Apnoea / respiratory failure",
+     "s": "paedstg2026:8.29"
+    }
+   ]
+  },
+  {
+   "dx": "Cow's milk protein allergy",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Vomiting + eczema, blood / mucus in stool, faltering growth",
+     "s": "paedstg2026:2.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; response to exclusion",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dietitian; specialised formula",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — suspected CMPA",
+     "s": "phcstg2026:2.5"
+    }
+   ]
+  },
+  {
+   "dx": "Complicated GOR (GORD)",
+   "branch": "If GORD",
+   "features": [
+    {
+     "t": "Effortless regurgitation + respiratory symptoms, faltering growth or Sandifer",
+     "s": "paedstg2026:2.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Feed observation; exclusion of above",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Positioning, thickened / small frequent feeds; omeprazole (specialist initiated)",
+     "s": "paedstg2026:2.25",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Investigations not local; not responding",
+     "s": "paedstg2026:2.25"
+    }
+   ]
+  },
+  {
+   "dx": "Uncomplicated GOR / overfeeding",
+   "branch": "If GORD",
+   "features": [
+    {
+     "t": "Small frequent vomits only, thriving",
+     "s": "paedstg2026:2.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Normal growth; feed volume history",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reassure: resolves by 12–18 months; upright after feeds",
+     "s": "phcstg2026:2.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — no treatment needed",
+     "s": "paedstg2026:2.24"
+    }
+   ]
+  },
+  {
+   "dx": "Peptic ulcer (older child)",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Epigastric pain, haematemesis / melaena, NSAIDs",
+     "s": "paedstg2026:2.25"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb; REFER for endoscopy",
+     "s": "paedstg2026:2.26",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop NSAIDs; omeprazole (specialist initiated)",
+     "s": "paedstg2026:2.26"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Poor response; underlying cause",
+     "s": "paedstg2026:2.26"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "Omeprazole is specialist-initiated — phone first · branch rows follow the ticked diagnosis · all doses per kg",
+  "columns": {
+   "feed": "Feeds & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HR, RR, SpO₂, temp: with every feed (3-hourly)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Watch every feed: cough, choking, colour change, apnoea",
+    "s": "paedstg2026:2.24",
+    "b": 1
+   },
+   {
+    "t": "Vomit: volume, projectile, bile-stained, blood",
+    "s": "paedstg2026:2.23",
+    "b": 1
+   },
+   {
+    "t": "Weigh daily, same scale, naked",
+    "d": 1
+   },
+   {
+    "t": "Upright after feeds; left side when awake and watched",
+    "s": "paedstg2026:2.25"
+   },
+   {
+    "t": "Sleep on the back (safe sleep)",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Weigh the child and plot on the growth chart. Watch a feed before deciding.",
+    "feed": [
+     {
+      "t": "Shock: NaCl 0.9% or Ringer's 20 mL/kg rapidly, review after each bolus, max 40 mL/kg",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     },
+     {
+      "t": "Bile-stained / projectile vomiting: NPO, NG free drainage, IV maintenance",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Maintenance: 100 mL/kg/24 h first 10 kg, 50 next 10 kg; ≤ 1 y 120 mL/kg/24 h",
+      "s": "paedstg2026:2.16"
+     },
+     {
+      "t": "Otherwise continue breast / formula feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, urine dipstick",
+      "s": "paedstg2026:2.10",
+      "b": 1
+     },
+     {
+      "t": "U&E, K⁺, Cl⁻ / blood gas if vomiting",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP, blood culture if febrile",
+      "s": "paedstg2026:8.44",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound abdomen",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "CXR if crackles / hypoxia",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Decide"
+     },
+     {
+      "t": "Surgical signs → surgical row now",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Fever / sepsis → ceftriaxone 100 mg/kg IV",
+      "s": "paedstg2026:8.44",
+      "b": 1
+     },
+     {
+      "t": "Reflux only → GORD row",
+      "d": 1
+     },
+     {
+      "h": "Breathing"
+     },
+     {
+      "t": "O₂ if SpO₂ low; apnoea → bag-mask, monitor",
+      "s": "paedstg2026:1.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6–24 h",
+    "phase": "Feed observation",
+    "feed": [
+     {
+      "t": "Observe and record every feed",
+      "s": "paedstg2026:2.24",
+      "b": 1
+     },
+     {
+      "t": "Small frequent feeds",
+      "s": "paedstg2026:2.25"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat U&E if on IV fluids",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick the working diagnosis (differential sheet)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Apnoea or aspiration during feeds → REFER",
+      "s": "paedstg2026:2.24",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If GORD",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Not breastfed: frequent small feeds or anti-reflux formula",
+      "s": "paedstg2026:2.25",
+      "b": 1
+     },
+     {
+      "t": "Feed thickeners",
+      "s": "paedstg2026:2.25"
+     },
+     {
+      "t": "Breastfed: continue breastfeeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Daily weight",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lie on the left side (awake, watched); upright after feeds",
+      "s": "paedstg2026:2.25"
+     },
+     {
+      "t": "Phone paediatrician: omeprazole 0.7–1.4 mg/kg/day once daily, empty stomach, × 4 weeks then stop",
+      "s": "paedstg2026:2.25",
+      "b": 1
+     },
+     {
+      "t": "1 mo–2 y 5 mg · > 2–6 y 10 mg · 7–12 y 20 mg daily",
+      "s": "paedstg2026:2.25",
+      "b": 1
+     },
+     {
+      "t": "Aspiration pneumonia → LRTI pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If surgical cause",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; NG on free drainage",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "IV maintenance + replace losses",
+      "s": "paedstg2026:2.16",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, K⁺, Cl⁻ before transfer",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bile-stained vomiting = malrotation until proven otherwise → REFER immediately",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pyloric stenosis → REFER paediatric surgeon (correct fluids first)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Intussusception → BO pathway, REFER urgently",
+      "s": "phcstg2026:2.17"
+     }
+    ]
+   },
+   {
+    "label": "If other cause",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Continue feeds if tolerated; NG feeds in pertussis if not feeding",
+      "s": "paedstg2026:8.29"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine MC&S, blood culture, PCR (pertussis)",
+      "s": "paedstg2026:8.29",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Sepsis: ceftriaxone 100 mg/kg IV daily",
+      "s": "paedstg2026:8.44",
+      "b": 1
+     },
+     {
+      "t": "Pertussis: azithromycin (see doses); droplet precautions 5 days",
+      "s": "paedstg2026:8.29",
+      "b": 1
+     },
+     {
+      "t": "CMPA → dietitian, REFER",
+      "s": "phcstg2026:2.5"
+     },
+     {
+      "t": "Older child with ulcer / haematemesis → UGIB pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Weight trend",
+    "feed": [
+     {
+      "t": "Feeds as per plan; record volumes",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Daily weight on chart",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Gaining weight, no respiratory events → discharge plan",
+      "d": 1
+     },
+     {
+      "t": "Still losing weight / events → REFER (investigations not local)",
+      "s": "paedstg2026:2.25",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Caregiver shows the feeding plan",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Discharge weight",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Omeprazole only if started by specialist: stop after 4 weeks; restart if symptoms recur > 3–4 days",
+      "s": "paedstg2026:2.25"
+     },
+     {
+      "t": "GOR resolves in most by 12–18 months",
+      "s": "phcstg2026:2.4"
+     },
+     {
+      "t": "Return now: blue spells, bile vomit, not feeding",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses (per kg)",
+   "items": [
+    {
+     "t": "Omeprazole 0.7–1.4 mg/kg/day once daily × 4 weeks (specialist initiated); max 20–40 mg/dose",
+     "s": "paedstg2026:2.25",
+     "b": 1
+    },
+    {
+     "t": "1 mo–2 y 5 mg · > 2–6 y 10 mg · 7–12 y 20 mg",
+     "s": "paedstg2026:2.25"
+    },
+    {
+     "t": "Ceftriaxone 100 mg/kg IV once daily (sepsis)",
+     "s": "paedstg2026:8.44"
+    },
+    {
+     "t": "Azithromycin < 6 mo 10 mg/kg/day × 5 days · ≥ 6 mo 10 mg/kg (max 500 mg) day 1, then 5 mg/kg (max 250 mg) days 2–5",
+     "s": "paedstg2026:8.29"
+    },
+    {
+     "t": "Bolus 20 mL/kg; maintenance ≤ 1 y 120 mL/kg/24 h",
+     "s": "paedstg2026:2.16"
+    }
+   ]
+  },
+  {
+   "title": "Feeding and positioning",
+   "items": [
+    {
+     "t": "Left side when awake; upright after feeds",
+     "s": "paedstg2026:2.25"
+    },
+    {
+     "t": "Sleep on the back (safe sleep)",
+     "d": 1
+    },
+    {
+     "t": "Thickeners; small frequent feeds or anti-reflux formula if not breastfed",
+     "s": "paedstg2026:2.25"
+    },
+    {
+     "t": "Medicine not needed without GORD features",
+     "s": "phcstg2026:2.4"
+    },
+    {
+     "h": "Refer from PHC / ward"
+    },
+    {
+     "t": "Faltering growth · Sandifer · respiratory symptoms · suspected CMPA · overweight infant",
+     "s": "phcstg2026:2.4"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Apnoea, blue or grey spell",
+     "s": "paedstg2026:2.24",
+     "b": 1
+    },
+    {
+     "t": "Bile-stained or projectile vomit",
+     "s": "paedstg2026:2.23",
+     "b": 1
+    },
+    {
+     "t": "Choking / cough with feeds, fast breathing",
+     "s": "paedstg2026:2.24"
+    },
+    {
+     "t": "Drowsy, floppy, not feeding",
+     "s": "paedstg2026:2.10"
+    },
+    {
+     "t": "Fewer wet nappies",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Surgical cause · apnoea · aspiration · faltering growth not improving",
+     "s": "paedstg2026:2.25",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No apnoea or respiratory events 48 h",
+    "d": 1
+   },
+   {
+    "t": "Feeding well; weight stable or rising",
+    "d": 1
+   },
+   {
+    "t": "Surgical and infective causes excluded",
+    "d": 1
+   },
+   {
+    "t": "Caregiver taught positioning and feeding",
+    "s": "paedstg2026:2.25"
+   },
+   {
+    "t": "Specialist plan if omeprazole started",
+    "s": "paedstg2026:2.25"
+   },
+   {
+    "t": "Follow-up booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic weight check in 1 week",
+    "d": 1
+   },
+   {
+    "t": "Paediatric OPD if omeprazole / referral",
+    "s": "paedstg2026:2.25"
+   },
+   {
+    "t": "Immunisations up to date",
+    "d": 1
+   },
+   {
+    "t": "Return now: blue spells, bile vomit, not feeding, fewer wet nappies",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour feed and nursing record — reflux (child)",
+  "period": "one row per 3-hourly feed",
+  "params": [
+   {
+    "h": "Every feed",
+    "items": [
+     {
+      "t": "HR, RR, SpO₂, temp: with every feed (3-hourly)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Watch every feed: cough, choking, colour change, apnoea",
+      "s": "paedstg2026:2.24",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Vomit and weight",
+    "items": [
+     {
+      "t": "Vomit: volume, projectile, bile-stained, blood",
+      "s": "paedstg2026:2.23",
+      "b": 1
+     },
+     {
+      "t": "Weigh daily, same scale, naked",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Positioning",
+    "items": [
+     {
+      "t": "Upright after feeds; left side when awake and watched",
+      "s": "paedstg2026:2.25"
+     },
+     {
+      "t": "Sleep on the back (safe sleep)",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "apnoea or a blue / grey spell",
+    "s": "paedstg2026:2.24",
+    "b": 1
+   },
+   {
+    "t": "bile-stained or projectile vomit",
+    "s": "paedstg2026:2.23",
+    "b": 1
+   },
+   {
+    "t": "choking or fast breathing with feeds",
+    "s": "paedstg2026:2.24"
+   },
+   {
+    "t": "drowsy, floppy or not feeding",
+    "s": "paedstg2026:2.10"
+   },
+   {
+    "t": "fewer wet nappies",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Feeds offered (mL)",
+   "Feeds taken (mL)",
+   "Vomits (n)",
+   "Wet nappies (n)",
+   "Weight today (kg)"
+  ]
+ }
+}

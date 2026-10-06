@@ -1,0 +1,1336 @@
+{
+ "id": "pud-adult",
+ "short": "Peptic ulcer (adult)",
+ "title": "Peptic ulcer disease — admitted with severe pain, vomiting or complications (adult)",
+ "population": "Adult admitted with severe epigastric pain, persistent vomiting or suspected ulcer complication; no endoscopy or theatre at ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Haematemesis / melaena → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Amylase / lipase > 3× → Pancreatitis pathway",
+     "b": 1
+    },
+    {
+     "t": "Ischaemic chest pain / ECG changes → ACS pathway",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features",
+   "items": [
+    {
+     "t": "Epigastric pain / discomfort (dyspepsia)",
+     "s": "adultstg2026:1.2",
+     "b": 1
+    },
+    {
+     "t": "NSAIDs, aspirin, pain powders",
+     "s": "adultstg2026:1.8",
+     "b": 1
+    },
+    {
+     "t": "H. pylori: most gastric and duodenal ulcers",
+     "s": "adultstg2026:1.7"
+    },
+    {
+     "t": "Smoking, alcohol",
+     "s": "adultstg2026:1.7"
+    },
+    {
+     "t": "Diagnosis = endoscopy; all gastric ulcers biopsied",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "Pain for ____ days · NSAID ____ · last dose ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated ulcer = any one of",
+   "items": [
+    {
+     "t": "Bleeding (→ UGIB pathway)",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "Perforation: sudden severe pain, rigid abdomen",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "Gastric outlet obstruction: persistent vomiting of undigested food",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Penetration: pain through to back, raised amylase",
+     "d": 1
+    },
+    {
+     "t": "Alarm symptoms: weight loss, anaemia, dysphagia, mass",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "New dyspepsia > 60 y",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous ulcer, endoscopy, H. pylori result",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "Previous gastric surgery",
+     "s": "phcstg2026:2.4"
+    },
+    {
+     "t": "NSAIDs, aspirin, steroids, anticoagulants",
+     "s": "adultstg2026:1.8",
+     "b": 1
+    },
+    {
+     "t": "Family history of gastric cancer",
+     "s": "phcstg2026:2.4"
+    },
+    {
+     "t": "Cardiac risk factors",
+     "s": "adultstg2026:3.1"
+    },
+    {
+     "t": "HIV status",
+     "d": 1
+    },
+    {
+     "t": "Alcohol, smoking",
+     "s": "adultstg2026:1.7"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "adultstg2026:1.7"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Epigastric, relation to meals",
+     "d": 1
+    },
+    {
+     "t": "Sudden, severe, generalised (perforation)",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "h": "Vomiting"
+    },
+    {
+     "t": "Undigested food, projectile",
+     "d": 1
+    },
+    {
+     "t": "Blood, coffee grounds",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "h": "Stool"
+    },
+    {
+     "t": "Black, tarry (melaena)",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "h": "Alarm"
+    },
+    {
+     "t": "Weight loss, anorexia",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Dysphagia",
+     "s": "adultstg2026:1.4"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.24",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / cold peripheries",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Poor urine output",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "k": "yn"
+    },
+    {
+     "t": "Pale (check Hb)",
+     "s": "adultstg2026:1.3",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Epigastric tenderness",
+     "d": 1
+    },
+    {
+     "t": "Guarding, rigidity — peritonitis",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "Succussion splash, visible peristalsis",
+     "d": 1
+    },
+    {
+     "t": "Epigastric mass",
+     "s": "phcstg2026:2.4"
+    },
+    {
+     "h": "PR"
+    },
+    {
+     "t": "Melaena",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Pallor",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Wasting, nodes",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care on arrival",
+   "items": [
+    {
+     "t": "Hb ____ · HGT ____",
+     "s": "adultstg2026:1.3",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "ECG: ischaemia Y / N ____",
+     "s": "phcstg2026:2.3",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Melaena on PR → UGIB pathway",
+     "b": 1
+    },
+    {
+     "t": "Blood gas: alkalosis, low K⁺ (outlet obstruction)",
+     "d": 1
+    },
+    {
+     "t": "β-hCG in women of child-bearing age",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and imaging",
+   "items": [
+    {
+     "t": "FBC (anaemia)",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    },
+    {
+     "t": "U&E, K⁺, creatinine",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Amylase / lipase",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "LFT; troponin if chest pain",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Erect CXR: free air under diaphragm",
+     "d": 1
+    },
+    {
+     "t": "Endoscopy not on site → REFER",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "Peritonitis",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "GI bleeding",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    },
+    {
+     "t": "Perforation (free air)",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Outlet obstruction",
+     "d": 1
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "adultstg2026:1.3"
+    },
+    {
+     "t": "Low K⁺, dehydration",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Pancreatitis",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Inferior MI",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Ruptured AAA",
+     "d": 1
+    },
+    {
+     "t": "Mesenteric ischaemia",
+     "d": 1
+    },
+    {
+     "t": "Cholangitis",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "t": "Weight loss / mass",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Anticoagulated",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Perforation → REFER urgently · outlet obstruction / alarm symptoms → REFER for endoscopy · bleeding → UGIB pathway",
+   "s": "adultstg2026:1.23"
+  },
+  {
+   "t": "11. ADMIT for pain, vomiting or complication; uncomplicated dyspepsia → PHC",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Perforated peptic ulcer",
+   "branch": "If perforation",
+   "features": [
+    {
+     "t": "Sudden severe pain, rigid abdomen, shock",
+     "s": "adultstg2026:1.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Erect CXR (free air)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, IV fluids, NG suction; amox-clav 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent surgery",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bleeding ulcer",
+   "branch": "If not PUD",
+   "features": [
+    {
+     "t": "Haematemesis, melaena, pallor",
+     "s": "adultstg2026:1.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PR, Hb",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Upper GI bleed pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per UGIB pathway (endoscopy)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Gastric outlet obstruction",
+   "branch": "If outlet obstruction",
+   "features": [
+    {
+     "t": "Vomiting undigested food, succussion splash, weight loss",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "U&E, K⁺; ultrasound (dilated stomach)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, NG drainage, NaCl 0.9% + KCl; pantoprazole IV",
+     "s": "adultstg2026:7.12",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — endoscopy (stricture vs cancer)",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Uncomplicated ulcer / NSAID gastritis",
+   "branch": "If uncomplicated",
+   "features": [
+    {
+     "t": "Epigastric pain, NSAID use, no alarm features",
+     "s": "adultstg2026:1.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Response to PPI; endoscopy if alarm / > 60 y",
+     "s": "adultstg2026:1.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop NSAID; pantoprazole 40 mg daily (DU 4 weeks, GU 8 weeks)",
+     "s": "adultstg2026:1.8",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Cannot stop NSAID; not healing",
+     "s": "adultstg2026:1.8"
+    }
+   ]
+  },
+  {
+   "dx": "H. pylori ulcer (confirmed)",
+   "branch": "If uncomplicated",
+   "features": [
+    {
+     "t": "Ulcer on endoscopy, H. pylori positive",
+     "s": "adultstg2026:1.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "RUT / biopsy at scope (REFER)",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amoxicillin 1 g + metronidazole 400 mg + pantoprazole 40 mg, all 12-hourly × 14 days",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Eradication failure: discuss specialist",
+     "s": "adultstg2026:1.8"
+    }
+   ]
+  },
+  {
+   "dx": "Gastric cancer",
+   "branch": "If uncomplicated",
+   "features": [
+    {
+     "t": "Weight loss, anaemia, mass, > 50 y, family history",
+     "s": "phcstg2026:2.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb; REFER for endoscopy + biopsy",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "PPI; nutrition",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — endoscopy",
+     "s": "adultstg2026:1.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute pancreatitis",
+   "branch": "If not PUD",
+   "features": [
+    {
+     "t": "Epigastric pain to back; amylase / lipase > 3×",
+     "s": "adultstg2026:1.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Amylase / lipase; ultrasound",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Pancreatitis pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Inferior MI / ACS",
+   "branch": "If not PUD",
+   "features": [
+    {
+     "t": "Dyspepsia may be cardiac; sweating, risk factors",
+     "s": "phcstg2026:2.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, troponin",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ACS pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per ACS pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Biliary colic / cholecystitis",
+   "branch": "If not PUD",
+   "features": [
+    {
+     "t": "RUQ pain after fatty meals, Murphy's sign",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound, LFT",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cholangitis pathway (cholecystitis branch)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per pathway",
+     "s": "adultstg2026:1.18"
+    }
+   ]
+  },
+  {
+   "dx": "Ruptured AAA / mesenteric ischaemia",
+   "branch": "If not PUD",
+   "features": [
+    {
+     "t": "Back pain + shock; pain out of proportion, AF",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Bedside ultrasound (aorta); lactate",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Resuscitate",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediate",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "No endoscopy or theatre on site · empiric H. pylori eradication is NOT recommended · branch rows follow the ticked diagnosis",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, RR, SpO₂, temp, pain score: hourly × 4 h, 2-hourly to 12 h, then 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Abdomen: pain spreading or board-like → call the doctor (perforation)",
+    "s": "adultstg2026:1.23",
+    "b": 1
+   },
+   {
+    "t": "Stool colour (melaena) and vomit (blood, coffee grounds)",
+    "s": "adultstg2026:1.4",
+    "b": 1
+   },
+   {
+    "t": "NG drainage volume and fluid balance every shift",
+    "d": 1
+   },
+   {
+    "t": "No NSAIDs, aspirin or pain powders",
+    "s": "adultstg2026:1.7"
+   },
+   {
+    "t": "O₂ if SpO₂ < 94%",
+    "s": "adultstg2026:20.24"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Do a PR — melaena moves the patient to the UGIB pathway. Weigh the patient.",
+    "feed": [
+     {
+      "t": "Peritonism / vomiting: NPO, IV NaCl 0.9%",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% 1–2 L, monitor BP, pulse, response",
+      "s": "adultstg2026:20.20",
+      "b": 1
+     },
+     {
+      "t": "Vomiting / distended: NG tube on free drainage",
+      "s": "adultstg2026:1.23"
+     },
+     {
+      "t": "Otherwise sips → light diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC / Hb",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     },
+     {
+      "t": "U&E, K⁺",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Amylase / lipase, LFT",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "ECG; troponin if chest pain",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Erect CXR",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Stop"
+     },
+     {
+      "t": "NSAIDs, aspirin, pain powders",
+      "s": "adultstg2026:1.8",
+      "b": 1
+     },
+     {
+      "h": "Acid suppression"
+     },
+     {
+      "t": "Pantoprazole 40 mg oral daily",
+      "s": "adultstg2026:1.8",
+      "b": 1
+     },
+     {
+      "t": "NPO: pantoprazole 40 mg IV daily",
+      "s": "adultstg2026:23.25",
+      "d": 1
+     },
+     {
+      "h": "Pain and nausea"
+     },
+     {
+      "t": "Morphine IV 3–5 mg, then boluses every 5–10 min; total max 10 mg",
+      "s": "adultstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g / 24 h)",
+      "s": "adultstg2026:12.5"
+     },
+     {
+      "t": "Metoclopramide 10 mg IV 8-hourly as required — not if outlet obstruction",
+      "s": "adultstg2026:1.13"
+     }
+    ]
+   },
+   {
+    "label": "2–6 h",
+    "phase": "Re-assess",
+    "feed": [
+     {
+      "t": "NPO continues if peritonism or vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat Hb if pale / tachycardic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-examine the abdomen after analgesia",
+      "d": 1
+     },
+     {
+      "t": "Tick the working diagnosis (differential sheet)",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If perforation",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; IV fluids; NG suction",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Catheter, urine output",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E; blood culture if febrile",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amox-clav 1.2 g IV 8-hourly",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Prompt surgery is essential → REFER urgently",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Pantoprazole 40 mg IV daily",
+      "s": "adultstg2026:23.25",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If outlet obstruction",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; NG on free drainage",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "NaCl 0.9% + KCl 40 mmol / L over 3 h (max 20 mmol/h) if K⁺ low",
+      "s": "adultstg2026:7.12",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, K⁺ daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pantoprazole 40 mg IV daily",
+      "s": "adultstg2026:23.25",
+      "d": 1
+     },
+     {
+      "t": "REFER for endoscopy (benign stricture vs cancer)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "No metoclopramide",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If uncomplicated",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Light diet; dietary advice",
+      "s": "adultstg2026:1.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb; weight",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop NSAID until healed; cannot stop → specialist",
+      "s": "adultstg2026:1.8",
+      "b": 1
+     },
+     {
+      "t": "Pantoprazole 40 mg daily: DU up to 4 weeks, GU up to 8 weeks",
+      "s": "adultstg2026:1.8",
+      "b": 1
+     },
+     {
+      "t": "H. pylori only if confirmed: amoxicillin 1 g + metronidazole 400 mg + pantoprazole 40 mg 12-hourly × 14 days",
+      "s": "adultstg2026:1.7"
+     },
+     {
+      "t": "Alarm symptoms or > 60 y new dyspepsia → REFER for endoscopy",
+      "s": "adultstg2026:1.3"
+     }
+    ]
+   },
+   {
+    "label": "If not PUD",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "As per pathway",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, troponin, amylase, ultrasound",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bleeding → UGIB · pancreatitis → Pancreatitis · ACS → ACS · biliary → Cholangitis pathway",
+      "d": 1
+     },
+     {
+      "t": "AAA / ischaemia → REFER now",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 1–2",
+    "phase": "Settling",
+    "feed": [
+     {
+      "t": "Fluids → light diet as pain allows",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Switch IV → oral PPI once eating",
+      "d": 1
+     },
+     {
+      "t": "Worse pain, peritonism, falling Hb → re-assess for perforation / bleeding",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "No smoking, no alcohol; dietary advice",
+      "s": "adultstg2026:1.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb rechecked if anaemic",
+      "s": "adultstg2026:1.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pantoprazole 40 mg daily to complete course",
+      "s": "adultstg2026:1.8",
+      "b": 1
+     },
+     {
+      "t": "Endoscopy referral letter (all GUs rescoped until healed)",
+      "s": "adultstg2026:1.7"
+     },
+     {
+      "t": "Return now: black stool, vomiting blood, sudden severe pain",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Pantoprazole 40 mg oral daily: DU ≤ 4 weeks, GU ≤ 8 weeks (H. pylori negative)",
+     "s": "adultstg2026:1.8",
+     "b": 1
+    },
+    {
+     "t": "Pantoprazole 40 mg IV daily while NPO",
+     "s": "adultstg2026:23.25",
+     "d": 1
+    },
+    {
+     "t": "Morphine IV 3–5 mg then boluses; max 10 mg",
+     "s": "adultstg2026:12.5"
+    },
+    {
+     "t": "Amox-clav 1.2 g IV 8-hourly (perforation)",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "KCl IV 40 mmol in 1 L NaCl over 3 h; max 20 mmol/h",
+     "s": "adultstg2026:7.12"
+    },
+    {
+     "t": "Metoclopramide 10 mg IV 8-hourly as required",
+     "s": "adultstg2026:1.13"
+    }
+   ]
+  },
+  {
+   "title": "H. pylori eradication (confirmed only)",
+   "items": [
+    {
+     "t": "Amoxicillin 1 g 12-hourly × 14 days",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "Penicillin allergy: azithromycin 500 mg daily × 3 days",
+     "s": "adultstg2026:1.7"
+    },
+    {
+     "t": "+ Metronidazole 400 mg 12-hourly × 14 days",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "+ Pantoprazole 40 mg 12-hourly × 14 days",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    },
+    {
+     "t": "Then pantoprazole 40 mg daily: DU up to 2 weeks, GU up to 6 weeks",
+     "s": "adultstg2026:1.8"
+    },
+    {
+     "t": "Empiric eradication is NOT recommended",
+     "s": "adultstg2026:1.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Pain spreading, rigid abdomen",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "Black stool, vomiting blood",
+     "s": "adultstg2026:1.4"
+    },
+    {
+     "t": "Pulse rising, BP falling",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "t": "Large NG volumes, persistent vomiting",
+     "d": 1
+    },
+    {
+     "t": "Chest pain",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Perforation · outlet obstruction · alarm symptoms · not healing",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Pain controlled on oral treatment",
+    "d": 1
+   },
+   {
+    "t": "Eating, no vomiting",
+    "d": 1
+   },
+   {
+    "t": "No peritonism; Hb stable",
+    "d": 1
+   },
+   {
+    "t": "NSAID stopped or plan made",
+    "s": "adultstg2026:1.8"
+   },
+   {
+    "t": "Endoscopy referral if alarm / > 60 y",
+    "s": "adultstg2026:1.3"
+   },
+   {
+    "t": "PPI course and duration explained",
+    "s": "adultstg2026:1.8"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC 2–4 weeks: symptoms, adherence, Hb",
+    "d": 1
+   },
+   {
+    "t": "Endoscopy appointment; GU rescoped until healed",
+    "s": "adultstg2026:1.7"
+   },
+   {
+    "t": "No response in 7 days / recurrence → refer",
+    "s": "phcstg2026:2.4"
+   },
+   {
+    "t": "Return now: black stool, vomiting blood, sudden severe pain",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — pain, abdomen and bleeding watch",
+  "period": "one sheet from arrival: hourly × 4 h, 2-hourly to 12 h, then 4-hourly",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Pulse, BP, RR, SpO₂, temp, pain score: hourly × 4 h, 2-hourly to 12 h, then 4-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:20.24"
+     }
+    ]
+   },
+   {
+    "h": "Abdomen and bleeding",
+    "items": [
+     {
+      "t": "Abdomen: pain spreading or board-like → call the doctor (perforation)",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Stool colour (melaena) and vomit (blood, coffee grounds)",
+      "s": "adultstg2026:1.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids and drugs",
+    "items": [
+     {
+      "t": "NG drainage volume and fluid balance every shift",
+      "d": 1
+     },
+     {
+      "t": "No NSAIDs, aspirin or pain powders",
+      "s": "adultstg2026:1.7"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pain spreading or a rigid abdomen",
+    "s": "adultstg2026:1.23",
+    "b": 1
+   },
+   {
+    "t": "black stool or vomiting blood",
+    "s": "adultstg2026:1.4"
+   },
+   {
+    "t": "pulse rising or BP falling",
+    "s": "adultstg2026:20.21"
+   },
+   {
+    "t": "large NG volumes or persistent vomiting",
+    "d": 1
+   },
+   {
+    "t": "chest pain",
+    "s": "adultstg2026:3.4"
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine out (mL)",
+   "NG / vomit (mL)",
+   "Morphine total (mg)",
+   "Stool: melaena Y / N"
+  ]
+ }
+}
