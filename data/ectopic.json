@@ -1,0 +1,956 @@
+{
+ "id": "ectopic",
+ "short": "Ectopic pregnancy",
+ "title": "Ectopic pregnancy — unruptured (methotrexate) and ruptured",
+ "population": "Women with a positive pregnancy test and suspected or confirmed ectopic pregnancy, including pregnancy of unknown location",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10",
+ "sources": [
+  "impcg2024",
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — tick",
+   "items": [
+    {
+     "t": "Positive pregnancy test",
+     "s": "impcg2024:55",
+     "b": 1
+    },
+    {
+     "t": "LMP ____ · amenorrhoea ____ wk",
+     "k": "value"
+    },
+    {
+     "t": "Early pregnancy symptoms",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Abdominal / pelvic pain",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Tender on vaginal examination",
+     "s": "impcg2024:56"
+    },
+    {
+     "h": "Ultrasound"
+    },
+    {
+     "t": "Empty uterus ± adnexal mass ± free fluid",
+     "s": "impcg2024:55",
+     "k": "sub"
+    },
+    {
+     "t": "β-hCG > 1500 IU/L + empty uterus = PUL / ectopic until proven otherwise",
+     "s": "adultstg2026:5.19",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Intrauterine pregnancy seen → not this pathway (miscarriage)",
+     "s": "adultstg2026:5.19",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Ruptured = any one of → REFER",
+   "items": [
+    {
+     "t": "Unstable: low BP, tachycardia, tachypnoea, collapse, pallor",
+     "s": "impcg2024:56",
+     "b": 1
+    },
+    {
+     "t": "Acute abdomen, distension, rebound tenderness",
+     "s": "impcg2024:56",
+     "b": 1
+    },
+    {
+     "t": "Cervical excitation tenderness",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Free fluid on ultrasound",
+     "s": "impcg2024:55"
+    },
+    {
+     "t": "Non-clotting blood on culdocentesis / paracentesis",
+     "s": "impcg2024:55"
+    },
+    {
+     "t": "Positive pregnancy test + acute abdomen = ruptured ectopic",
+     "s": "impcg2024:55",
+     "b": 1
+    },
+    {
+     "t": "No response to 2 L NaCl 0.9% → urgent surgery",
+     "s": "impcg2024:55",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Records and risk",
+   "items": [
+    {
+     "t": "Previous ectopic",
+     "d": 1
+    },
+    {
+     "t": "PID / STI",
+     "d": 1
+    },
+    {
+     "t": "Tubal surgery",
+     "d": 1
+    },
+    {
+     "t": "IUCD / contraception",
+     "d": 1
+    },
+    {
+     "t": "Rh group (anti-D)",
+     "s": "impcg2024:89"
+    },
+    {
+     "t": "Last Hb ____",
+     "k": "value"
+    },
+    {
+     "t": "HIV · ART"
+    },
+    {
+     "t": "Height ____ cm · weight ____ kg (BSA)",
+     "s": "adultstg2026:5.20",
+     "k": "value"
+    },
+    {
+     "t": "Able to return for follow-up",
+     "s": "adultstg2026:5.19",
+     "b": 1
+    },
+    {
+     "t": "Lives near / phone ____",
+     "d": 1,
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Onset, side ____"
+    },
+    {
+     "t": "Sudden severe pain"
+    },
+    {
+     "t": "Shoulder-tip pain",
+     "d": 1
+    },
+    {
+     "t": "Dizzy · fainted"
+    },
+    {
+     "h": "Bleeding"
+    },
+    {
+     "t": "PV bleeding / spotting"
+    },
+    {
+     "t": "Tissue passed",
+     "d": 1
+    },
+    {
+     "h": "Pregnancy"
+    },
+    {
+     "t": "Nausea, breast tenderness"
+    },
+    {
+     "t": "Previous scan this pregnancy",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "s": "impcg2024:56",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "impcg2024:56",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "s": "impcg2024:56",
+     "k": "yn"
+    },
+    {
+     "t": "Collapse · decreased LOC",
+     "s": "impcg2024:56",
+     "k": "yn"
+    },
+    {
+     "t": "Pallor",
+     "s": "impcg2024:56",
+     "k": "yn"
+    },
+    {
+     "t": "Fever → septic miscarriage?",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "h": "Shock"
+    },
+    {
+     "t": "No response to 2 L NaCl 0.9%",
+     "s": "impcg2024:55",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 6,
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distension",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Rebound tenderness",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Guarding",
+     "d": 1
+    },
+    {
+     "t": "Tender side: L / R"
+    },
+    {
+     "t": "Mass palpable",
+     "d": 1
+    },
+    {
+     "h": "Speculum / VE",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Cervical excitation tenderness",
+     "s": "impcg2024:56",
+     "b": 1
+    },
+    {
+     "t": "Adnexal tenderness / mass",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Os closed / open",
+     "d": 1
+    },
+    {
+     "t": "Bleeding through os",
+     "d": 1
+    },
+    {
+     "t": "Uterus size ____ wk",
+     "d": 1,
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Ultrasound",
+   "items": [
+    {
+     "t": "Uterus: empty / IUP / unclear",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Adnexal mass ____ mm · heartbeat Y / N",
+     "s": "adultstg2026:5.19",
+     "k": "value"
+    },
+    {
+     "t": "Free fluid in pelvis / Morison's pouch",
+     "s": "impcg2024:55",
+     "b": 1
+    },
+    {
+     "t": "Mass < 35 mm, no heartbeat → may suit methotrexate",
+     "s": "adultstg2026:5.19"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "β-hCG and bloods",
+   "items": [
+    {
+     "t": "Quantitative β-hCG ____ IU/L (day 0)",
+     "s": "adultstg2026:5.19",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Hb ____ g/dL · group + Rh · cross-match",
+     "s": "impcg2024:55",
+     "k": "value"
+    },
+    {
+     "t": "Urea, creatinine, ALT, FBC before methotrexate",
+     "s": "adultstg2026:5.20",
+     "b": 1
+    },
+    {
+     "t": "β-hCG < 1500 + empty uterus → repeat in 48 h",
+     "s": "impcg2024:56"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Shock",
+     "s": "impcg2024:56",
+     "b": 1
+    },
+    {
+     "t": "Acute abdomen",
+     "s": "impcg2024:55",
+     "b": 1
+    },
+    {
+     "t": "Free fluid",
+     "s": "impcg2024:55",
+     "b": 1
+    },
+    {
+     "t": "Collapse",
+     "s": "impcg2024:56",
+     "b": 1
+    },
+    {
+     "t": "Septic miscarriage",
+     "d": 1
+    },
+    {
+     "t": "Appendicitis",
+     "d": 1
+    },
+    {
+     "t": "Ovarian torsion / cyst",
+     "d": 1
+    },
+    {
+     "t": "PID",
+     "d": 1
+    },
+    {
+     "t": "Molar pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Heterotopic pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Severe anaemia",
+     "d": 1
+    },
+    {
+     "t": "Rh-negative (anti-D)",
+     "s": "impcg2024:89"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. RUPTURED / UNSTABLE → 2 L NaCl 0.9%, 2 O-neg + 2 FDP, REFER urgently for laparotomy (do not wait for blood)",
+   "s": "impcg2024:55"
+  },
+  {
+   "t": "11. UNRUPTURED, stable, meets criteria → ADMIT: methotrexate 50 mg/m² IM. PUL → repeat β-hCG at 48 h — Ruptured: do not wait for blood or β-hCG. Stable: continue on the ectopic management chart and nursing record.",
+   "s": "adultstg2026:5.19"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Methotrexate day 1 = treatment day. Ruptured branch applies at any time.",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Tests & monitoring",
+   "treatment": "Treatment"
+  },
+  "standing": [
+   {
+    "t": "BP, pulse, pain and PV loss hourly × 24 h, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Unstable / awaiting transfer: BP and pulse every 15 min",
+    "d": 1
+   },
+   {
+    "t": "IV line in place until stable and pain-free",
+    "d": 1
+   },
+   {
+    "t": "Rh-negative: anti-D 100 µg IM",
+    "s": "impcg2024:89",
+    "b": 1
+   },
+   {
+    "t": "Rupture at any time → resuscitate and REFER for laparotomy",
+    "s": "impcg2024:55",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Admission",
+    "phase": "0–1 h",
+    "feed": [
+     {
+      "t": "IV line, NaCl 0.9% to keep open",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth until rupture excluded",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Quantitative β-hCG",
+      "s": "adultstg2026:5.19",
+      "b": 1
+     },
+     {
+      "t": "Hb, group + Rh, cross-match",
+      "s": "impcg2024:55",
+      "b": 1
+     },
+     {
+      "t": "Urea, creatinine, ALT, FBC",
+      "s": "adultstg2026:5.20",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound: uterus, adnexa, free fluid",
+      "s": "impcg2024:55"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Methotrexate criteria — all",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "t": "Haemodynamically stable, no significant pain",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "t": "Unruptured, mass < 35 mm, no heartbeat",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "t": "β-hCG ideally < 1500 (up to 5000) IU/L",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "t": "No intrauterine pregnancy (certain)",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "t": "Willing to attend follow-up",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "h": "Then"
+     },
+     {
+      "t": "All met → Day 1 row",
+      "s": "adultstg2026:5.19",
+      "b": 1
+     },
+     {
+      "t": "β-hCG < 1500 + empty uterus → PUL row",
+      "s": "impcg2024:56"
+     },
+     {
+      "t": "Any rupture sign → ruptured row, REFER",
+      "s": "impcg2024:55",
+      "b": 1
+     },
+     {
+      "t": "Analgesia: paracetamol",
+      "d": 1
+     }
+    ],
+    "lead": "Stable? confirm no rupture, no intrauterine pregnancy"
+   },
+   {
+    "label": "If ruptured",
+    "phase": "Any time",
+    "feed": [
+     {
+      "t": "Large-bore IV access",
+      "d": 1
+     },
+     {
+      "t": "NaCl 0.9% up to 2 L",
+      "s": "impcg2024:55",
+      "b": 1
+     },
+     {
+      "t": "2 O-neg + 2 FDP",
+      "s": "impcg2024:154",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse every 15 min",
+      "d": 1
+     },
+     {
+      "t": "Hb, cross-match — do not wait for result",
+      "s": "impcg2024:55"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER urgently for laparotomy",
+      "s": "impcg2024:55",
+      "b": 1
+     },
+     {
+      "t": "No response to 2 L → urgent surgery; no spinal anaesthetic",
+      "s": "impcg2024:55"
+     },
+     {
+      "t": "Anti-D if Rh-negative",
+      "s": "impcg2024:89"
+     }
+    ]
+   },
+   {
+    "label": "Day 1",
+    "phase": "Methotrexate",
+    "feed": [
+     {
+      "t": "Normal diet once stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Bloods normal: urea, creatinine, ALT, FBC",
+      "s": "adultstg2026:5.20",
+      "b": 1
+     },
+     {
+      "t": "BSA = √(height cm × weight kg ÷ 3600) = ____ m²",
+      "s": "adultstg2026:5.20",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Methotrexate 50 mg/m² IM = ____ mg",
+      "s": "adultstg2026:5.20",
+      "b": 1,
+      "k": "value"
+     },
+     {
+      "t": "Counsel: report sore throat, bruising, mouth ulcers, nausea, vomiting, abdominal discomfort, dark urine, breathlessness",
+      "s": "adultstg2026:5.20"
+     },
+     {
+      "t": "Anti-D 100 µg IM if Rh-negative",
+      "s": "impcg2024:89",
+      "b": 1
+     },
+     {
+      "t": "Observe 24 h, then outpatient if stable",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "PUL",
+    "phase": "48 h",
+    "feed": [
+     {
+      "t": "Outpatient if stable and pain-free",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat β-hCG at 48 h: ____ IU/L",
+      "s": "adultstg2026:5.19",
+      "b": 1,
+      "k": "value"
+     },
+     {
+      "t": "Rise > 50% or above 1500 → repeat ultrasound for IUP",
+      "s": "adultstg2026:5.19"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Falling → conservative management may be appropriate; discuss with specialist",
+      "s": "impcg2024:56"
+     },
+     {
+      "t": "Rise < 53% (STG) / < two-thirds (MAT) → ectopic likely → methotrexate criteria",
+      "s": "adultstg2026:5.19"
+     },
+     {
+      "t": "Doubling → likely IUP; rescan in 2 weeks",
+      "s": "impcg2024:56"
+     }
+    ]
+   },
+   {
+    "label": "Day 4",
+    "phase": "β-hCG",
+    "feed": [
+     {
+      "t": "Outpatient visit if stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "β-hCG day 4: ____ IU/L",
+      "s": "adultstg2026:5.20",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rising from day 1 is expected only to day 4",
+      "d": 1
+     },
+     {
+      "t": "Pain, dizziness or falling Hb → ultrasound, rupture?",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "β-hCG",
+    "feed": [
+     {
+      "t": "Outpatient visit if stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "β-hCG day 7: ____ IU/L · fall from day 4 ____ %",
+      "s": "adultstg2026:5.20",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fall ≥ 15% → β-hCG weekly until undetectable",
+      "s": "adultstg2026:5.20",
+      "b": 1
+     },
+     {
+      "t": "Fall < 15% and still meets criteria → 2nd methotrexate 50 mg/m² IM",
+      "s": "adultstg2026:5.20",
+      "b": 1
+     },
+     {
+      "t": "Repeat urea, creatinine, ALT, FBC before 2nd dose",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 14",
+    "phase": "β-hCG",
+    "feed": [
+     {
+      "t": "Outpatient visit if stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "β-hCG day 14: ____ IU/L",
+      "s": "adultstg2026:5.20",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still < 15% fall after 2 doses → REFER to specialist",
+      "s": "adultstg2026:5.20",
+      "b": 1
+     },
+     {
+      "t": "Falling → weekly β-hCG until undetectable",
+      "s": "adultstg2026:5.20"
+     }
+    ]
+   },
+   {
+    "label": "Weekly",
+    "phase": "Until undetectable",
+    "feed": [
+     {
+      "t": "Outpatient visit if stable",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "β-hCG weekly: ____ / ____ / ____",
+      "s": "adultstg2026:5.20",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Undetectable → discharge from follow-up",
+      "s": "adultstg2026:5.20"
+     },
+     {
+      "t": "Contraception counselling",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Methotrexate (single dose)",
+   "items": [
+    {
+     "t": "50 mg/m² IM day 1; BSA = √(height × weight ÷ 3600)",
+     "s": "adultstg2026:5.20",
+     "b": 1
+    },
+    {
+     "t": "β-hCG day 4 and day 7",
+     "s": "adultstg2026:5.20"
+    },
+    {
+     "t": "Fall day 4→7 ≥ 15% → weekly; < 15% → 2nd dose",
+     "s": "adultstg2026:5.20",
+     "b": 1
+    },
+    {
+     "t": "Day 14 still < 15% after 2 doses → REFER",
+     "s": "adultstg2026:5.20",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "β-hCG rules",
+   "items": [
+    {
+     "t": "Discriminatory zone > 1500 IU/L (TVUS)",
+     "s": "adultstg2026:5.19"
+    },
+    {
+     "t": "Viable pregnancy: rise ≥ 53% per 2 days",
+     "s": "adultstg2026:5.19"
+    },
+    {
+     "t": "MAT: doubling = IUP; rise < two-thirds = ectopic",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Fall → conservative may be appropriate",
+     "s": "adultstg2026:5.19"
+    }
+   ]
+  },
+  {
+   "title": "Safety",
+   "items": [
+    {
+     "t": "Methotrexate: blood disorders, liver toxicity, respiratory effects",
+     "s": "adultstg2026:5.20"
+    },
+    {
+     "t": "Report sore throat, bruising, mouth ulcers, dark urine, breathlessness",
+     "s": "adultstg2026:5.20"
+    },
+    {
+     "t": "Anti-D 100 µg IM if Rh-negative",
+     "s": "impcg2024:89",
+     "b": 1
+    },
+    {
+     "t": "Pain, collapse → return immediately; rupture possible until undetectable",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (after methotrexate) — all must be met",
+  "items": [
+   {
+    "t": "Stable, no significant pain",
+    "s": "adultstg2026:5.19"
+   },
+   {
+    "t": "Hb stable",
+    "d": 1
+   },
+   {
+    "t": "Day 4 β-hCG date given",
+    "s": "adultstg2026:5.20"
+   },
+   {
+    "t": "Understands warning signs",
+    "s": "adultstg2026:5.20"
+   },
+   {
+    "t": "Anti-D given if Rh-negative",
+    "s": "impcg2024:89"
+   },
+   {
+    "t": "Can return at once if pain / collapse",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "β-hCG day 4, 7, 14, then weekly to undetectable",
+    "s": "adultstg2026:5.20",
+    "b": 1
+   },
+   {
+    "t": "Contraception / next pregnancy: early scan",
+    "d": 1
+   },
+   {
+    "t": "Refer if < 15% fall on day 14 after 2 doses",
+    "s": "adultstg2026:5.20"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Ectopic pregnancy — 24-hour nursing record",
+  "period": "One sheet per 24 hours; 15-min rows for the first hour, then hourly",
+  "params": [
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "BP, pulse hourly × 24 h, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Unstable / awaiting transfer: every 15 min",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Abdomen",
+    "items": [
+     {
+      "t": "Pain score, distension, shoulder-tip pain hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bleeding",
+    "items": [
+     {
+      "t": "Pads / PV loss hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Methotrexate time ____",
+      "s": "adultstg2026:5.20",
+      "k": "value"
+     },
+     {
+      "t": "Anti-D if Rh-negative",
+      "s": "impcg2024:89"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: falling BP · rising pulse · dizzy or fainting · pallor · worse pain, distension or shoulder-tip pain · heavy bleeding · breathless",
+    "s": "impcg2024:56",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine out (mL)",
+   "Pads"
+  ]
+ }
+}

@@ -1,5 +1,5 @@
 // JAD Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
-import { REG, analyse, KPA_TO_MMHG } from "./calc.js"; // pure calculation registry
+import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -10,7 +10,7 @@ const ls = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } 
 const S = {
   index: null, sources: {}, dx: {}, verified: ls(LS_VER, {}), offsets: ls(LS_OFF, {}),
   verify: localStorage.getItem(LS_MODE) === "1", checked: ls(LS_CHK, {}), recent: ls(LS_REC, []),
-  open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", hub: {}, // hub: chosen member (0 = first) per hub id
+  open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", dxo: {}, hub: {}, // dxo: open differential cards per pathway; hub: chosen member (0 = first) per hub id
   sd: {}, sc: null, spop: "All", stag: "All", // scales and calculations: loaded cards, live scorer state, list filters
 };
 
@@ -218,6 +218,17 @@ async function procView(id, tab) {
     ${body}</main>`;
 }
 
+/* In the diagnosis list the group heading already says Adult or Paediatric, so the same word is dropped from each row's name and
+   description ("TB (child)" under Paediatric -> "TB"). Display only: the data, the pathway header badge and Recent cards keep full names. */
+const unpop = t => String(t)
+  .replace(/\s*\((?:adult|child|paeds|paediatric)\)/gi, "")                 // "(adult)" / "(child)"
+  .replace(/\(child\s*([<≥][^)]*)\)/gi, "($1)")                             // "(child < 2 years)" -> "(< 2 years)"
+  .replace(/\s*[—–]\s*(?:adult|child|paediatric|paeds|neonate)(?=\s*(?:\(|$))/gi, "") // "— adult", "— child (post-arrest …)", "— neonate"
+  .replace(/,\s*(?:adult|child|paediatric|paeds)\s*$/i, "")                 // "…(croup), child"
+  .replace(/admitted\s+adult\b/gi, "admitted")                               // "— admitted adult"
+  .replace(/admitted\s+child\s+/gi, "admitted, ")                            // "— admitted child 28 days to < 15 years"
+  .replace(/\s{2,}/g, " ").replace(/\s*[—–]\s*$/, "").trim();
+
 /* Diagnosis list rows. Members of a hub (index.json "hubs", e.g. Fracture adult + paeds) collapse into ONE row that opens the hub page. */
 function listRows() {
   const hubs = S.index.hubs || [];
@@ -234,8 +245,9 @@ function home() {
   const rowHtml = ({ e, hub }) => {
     // a hub row is listed once (under Adult + paeds) but must still show when the population filter is Adult or Paediatric
     const pops = hub ? [...hub.members.map(m => m.label), popName(popOf(e))] : [popName(popOf(e))];
-    return `<button class="dx" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
-        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)}</span>${ico("next")}</button>`;
+    const trim = !hub && /^(Adult|Paediatric)$/.test(pops[0]) ? unpop : t => t;
+    return `<button class="dx" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + popName(popOf(e)) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
+        <span class="t">${esc(trim(e.short))}</span><span class="p">${esc(trim(e.title))}</span>${ico("next")}</button>`;
   };
   const lists = groups.map(g => { const items = rows.filter(r => popName(popOf(r.e)) === g);
     return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(popOf(items[0].e))}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
@@ -261,7 +273,7 @@ function home() {
   } catch {} });
 }
 const CATS = ["All", "Endo", "Toxins", "Infections"];
-const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "MSK", "Ortho", "Gynae", "Uro", "Nephro"];
+const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "Ortho", "Gynae", "Uro", "Nephro"];
 function applyFilter() {
   const q = ($("#q")?.value || "").trim().toLowerCase(); let any = 0;
   $$(".grp").forEach(g => {
@@ -291,7 +303,7 @@ function arrival(d) {
       <h2><button class="shead" data-sec="${s.n}" aria-expanded="${open.has(s.n)}"><span class="n">${s.n}</span><span class="st">${esc(s.title)}</span>
         <span class="cnt ${n && c === n ? "all" : ""}">${c}/${n}</span>${ico("down")}</button></h2>
       ${s.note ? `<div class="note">${esc(s.note)}</div>` : ""}${list(d, s.items)}</section>`).join("") +
-    `<div id="dec" style="display:flex;flex-direction:column;gap:8px;scroll-margin-top:130px">${d.decision.map((x, i) =>
+    `<div id="dec" style="display:flex;flex-direction:column;gap:8px;scroll-margin-top:90px">${d.decision.map((x, i) =>
       `<div class="decision ${i ? "ok" : ""}">${esc(x.t)}${chip(x.s)}</div>`).join("")}</div>`;
   shell({ d, tab: "arrival", body, head: jump });
 }
@@ -301,7 +313,7 @@ const shortCol = t => t.split(/,| & | · /)[0];
 function days(d, i) {
   const rows = d.chart.rows; i = Math.max(0, Math.min(rows.length - 1, i | 0)); const r = rows[i];
   const steps = `<nav class="steps" aria-label="Time points">${rows.map((x, j) =>
-    `<button class="step ${j === i ? "on" : j < i ? "past" : ""}" data-go="#/dx/${d.id}/days/${j}" ${j === i ? 'aria-current="step"' : ""}>
+    `<button class="step ${j === i ? "on" : j < i ? "past" : ""} ${x.label.length > 12 ? "wide" : ""}" data-go="#/dx/${d.id}/days/${j}" ${j === i ? 'aria-current="step"' : ""}>
       <span class="ln"><i class="${j === 0 ? "none" : j <= i ? "dark" : ""}"></i><span class="d"></span><i class="${j === rows.length - 1 ? "none" : j < i ? "dark" : ""}"></i></span>
       <b>${esc(x.label)}</b><span>${esc(clip(x.phase, 15))}</span></button>`).join("")}</nav>`;
   const c = d.chart.columns; const cols = [["feed", c.feed], ["tests", c.tests], ["treatment", c.treatment]];
@@ -334,19 +346,40 @@ function doseLine(d, it, hs) {
 }
 function differentials(d, focus) {
   const rows = d.chart.rows, dd = d.differentials; const sub = (t, a) => a && a.length ? `<h3 class="dsub">${t}</h3>${list(d, a)}` : "";
+  const open = S.dxo[d.id] ||= new Set(); if (Number.isInteger(focus)) open.add(focus); // a deep link (#/dx/<id>/differentials/<n>) opens that card
+  const texts = x => [x.dx, x.group, x.branch, ...["features", "confirm", "manage", "refer"].flatMap(k => (x[k] || []).map(i => i.t || i.h || ""))].filter(Boolean).join(" ").toLowerCase();
   const one = (x, i) => { const j = rows.findIndex(r => r.label === x.branch); // branch = label of the chart row this condition continues in
-    return `<section class="card" id="dx${i}"><h2 class="ctitle">${esc(x.dx)}</h2>
+    const isOpen = open.has(i);
+    return `<section class="card dxc ${isOpen ? "" : "closed"}" id="dx${i}" data-q="${esc(texts(x))}">
+      <h2><button class="shead" data-dxtoggle="${i}" aria-expanded="${isOpen}"><span class="st">${esc(x.dx)}</span>${x.branch ? `<span class="hb">${esc(x.branch.replace(/^If /i, ""))}</span>` : ""}${ico("down")}</button></h2>
       ${j >= 0 ? `<div class="toolrow"><button class="btn" data-go="#/dx/${d.id}/days/${j}">Chart: ${esc(x.branch)}${ico("next")}</button></div>` : ""}
       ${sub("Features", x.features)}${sub("Confirm", x.confirm)}${sub("Manage", x.manage)}${sub("Refer", x.refer)}</section>`; };
   const names = []; dd.forEach(x => { const g = x.group || ""; if (!names.includes(g)) names.push(g); }); // optional x.group: sections in order of first use
   const grouped = names.some(g => g);
-  const body = `<p class="hint">Tap “Chart” on a card to open the timeline row for that branch.</p>` + (grouped
+  const body = `<p class="hint">Tap a condition to open it. “Chart” on a card opens the timeline row for that branch.</p>` + (grouped
     ? names.map((g, gi) => { const mine = dd.map((x, i) => [x, i]).filter(([x]) => (x.group || "") === g);
-        return `<h2 class="glabel dg" id="dg${gi}">${esc(g || "Other")}<span class="c">· ${mine.length}</span></h2>${mine.map(([x, i]) => one(x, i)).join("")}`; }).join("")
-    : dd.map(one).join(""));
-  const head = grouped && names.length > 1 ? `<nav class="boxnav" aria-label="Groups">${names.map((g, gi) => `<button class="fchip" data-jump="dg${gi}">${esc(g || "Other")}</button>`).join("")}</nav>` : "";
+        return `<section class="dgrp"><h2 class="glabel dg" id="dg${gi}">${esc(g || "Other")}<span class="c">· <span class="gc">${mine.length}</span></span></h2>${mine.map(([x, i]) => one(x, i)).join("")}</section>`; }).join("")
+    : `<section class="dgrp">${dd.map(one).join("")}</section>`) + `<p class="empty" id="dnone" hidden>No condition matches.</p>`;
+  const head = `<div class="dsearch"><label class="search">${ico("search")}<span class="sr">Search conditions</span>
+      <input id="dxq" type="search" placeholder="Search conditions…" autocomplete="off"></label>
+      <button class="btn" data-dxall="toggle" aria-label="Expand or collapse all conditions">Expand all</button></div>` +
+    (grouped && names.length > 1 ? `<nav class="boxnav" aria-label="Groups">${names.map((g, gi) => `<button class="fchip" data-jump="dg${gi}">${esc(g || "Other")}</button>`).join("")}</nav>` : "");
   shell({ d, tab: "differentials", body, head });
+  dxAllLabel();
   const t = Number.isInteger(focus) && $("#dx" + focus); if (t) { t.scrollIntoView({ block: "start" }); t.classList.add("flash"); }
+}
+// the "Expand all" button offers whichever action applies to the cards currently shown
+function dxAllLabel() { const b = $("[data-dxall]"); if (!b) return; const v = $$("section.dxc").filter(c => !c.hidden); b.textContent = v.length && v.every(c => !c.classList.contains("closed")) ? "Collapse all" : "Expand all"; }
+function dxFilter() {
+  const q = ($("#dxq")?.value || "").trim().toLowerCase(); let any = 0;
+  $$(".dgrp").forEach(g => { let n = 0;
+    $$("section.dxc", g).forEach(c => { const ok = !q || q.split(/\s+/).every(w => c.dataset.q.includes(w)); c.hidden = !ok; if (ok) n++; });
+    g.hidden = !n; const gc = $(".gc", g); if (gc) gc.textContent = n; any += n; });
+  $("#dnone").hidden = !!any; dxAllLabel();
+}
+function dxSet(c, on) { // open / close one card and remember it for this pathway
+  const id = (location.hash || "").slice(2).split("/")[1], n = +c.id.slice(2), set = S.dxo[id] ||= new Set();
+  c.classList.toggle("closed", !on); on ? set.add(n) : set.delete(n); $(".shead", c)?.setAttribute("aria-expanded", on);
 }
 
 /* ---------- hub page: one list entry (e.g. Fracture) that opens every site, per population ---------- */
@@ -391,8 +424,8 @@ function doses(d) {
       ${g.h ? `<div class="dh"><h3>${esc(g.h.h)}${dag(g.h)}</h3>${chip(g.h.s)}</div>` : ""}${g.lines.map(it => doseLine(d, it, g.h && g.h.s)).join("")}</div>`).join("")}</article>`;
   };
   const body = d.boxes.map(box).join("") +
-    `<div id="bdis" style="scroll-margin-top:120px">${card(d, d.discharge.title, d.discharge.items)}</div>` +
-    `<div id="bfu" style="scroll-margin-top:120px">${card(d, d.followup.title, d.followup.items)}</div>`;
+    `<div id="bdis" style="scroll-margin-top:84px">${card(d, d.discharge.title, d.discharge.items)}</div>` +
+    `<div id="bfu" style="scroll-margin-top:84px">${card(d, d.followup.title, d.followup.items)}</div>`;
   shell({ d, tab: "doses", body, head: nav });
 }
 
@@ -607,6 +640,7 @@ function scPick(key, v) { S.sc.sel[key] = S.sc.sel[key] === v ? undefined : v; i
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
   const d = S.sd[id] ||= await loadJSON("data/" + e.file);
+  if (d.versions) return checkView(id, e, d); // checklist score cards (Wells PE / DVT)
   if (d.type === "calculator") return calcView(id, d, tab, key);
   if (d.type === "range") return rangeView(id, d, tab);
   if (!S.sc || S.sc.id !== id) { // fresh card: nothing carries over between patients, nothing is stored
@@ -699,10 +733,10 @@ const scSrcList = d => `<section class="card"><h2 class="ctitle">Sources</h2><ul
     ${g.accessed ? `<span class="lic">Accessed ${esc(g.accessed)}</span>` : ""}</div></li>`; }).join("")}</ul></section>`;
 async function scPdfRows(d) { // Load / offset controls for each STG chapter this card cites (same markup as a pathway's Sources tab)
   const cited = new Set(); (function walk(o) { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) {
-    if ((k === "s" || k.startsWith("s_")) && typeof v === "string") { if (resolveSrc(v).chapter) cited.add(v); } else walk(v); } })(d);
+    if ((k === "s" || k.startsWith("s_")) && typeof v === "string") { const r = resolveSrc(v); if (r.chapter || (r.num && !r.online)) cited.add(v); } else walk(v); } })(d); // chaptered STGs, or a whole-book PDF cited by page (e.g. MAT24:130)
   const units = new Map(); [...cited].forEach(c => { const x = resolveSrc(c); if (!units.has(x.pdf)) units.set(x.pdf, x); });
   const rows = await Promise.all([...units].map(async ([key, x]) => { const has = await getPdf(key);
-    return `<div class="srow"><div class="t">${esc(x.s.short)} — ${esc(x.s.chapters[x.chapter]?.title || "Chapter " + x.chapter)}</div><div class="e">${esc(x.s.edition || "")}</div>
+    return `<div class="srow"><div class="t">${esc(x.s.short)}${x.chapter ? " — " + esc(x.s.chapters[x.chapter]?.title || "Chapter " + x.chapter) : ""}</div><div class="e">${esc(x.s.edition || "")}</div>
       <div class="acts"><span class="status ${has ? "ok" : "no"}">${has ? "PDF on this phone" : "No PDF loaded"}</span>
       <label class="btn primary">${has ? "Replace PDF" : "Load PDF"}<input type="file" accept="application/pdf" data-load="${key}" hidden></label>${has ? `<button class="btn" data-del="${key}">Remove</button>` : ""}</div>
       <div class="acts off"><label>Page offset <input type="number" inputmode="numeric" value="${x.offset}" data-off="${key}"></label><span class="hint">PDF page minus printed page</span></div></div>`; }));
@@ -822,6 +856,79 @@ async function rangeView(id, d, key) {
   causeFlash(key);
 }
 
+/* ---------- checklist score cards: versions[] + components[].points (Wells PE, Wells DVT) ---------- */
+const SA_SRC = /^(HOSP|MAT24|PHC|PAED)(:|$)/; // SA guideline ids: only these get a green ✚ inline; every other source is listed in the footer
+const plus = s => s && SA_SRC.test(s) ? `<button class="plus" data-src="${esc(s)}" aria-label="Open ${esc(s.replace(":", " "))} in the guideline">✚</button>` : "";
+const fmtG = n => String(+Number(n).toFixed(2)); // 1.5 -> "1.5", 2 -> "2"
+const sgn = n => (n < 0 ? "−" : "") + fmtG(Math.abs(n));
+const wRange = (a, b) => a === b ? sgn(a) : `${sgn(a)}–${sgn(b)}`;
+const verLabel = k => k.charAt(0).toUpperCase() + k.slice(1);
+
+function wUpdate() {
+  const d = S.sc.d, it = interpretCard(d, S.sc.ver, scoreCard(d, S.sc.ver, S.sc.ticked).total);
+  if (S.sc.lastLikely !== it.likely) { S.sc.nsFlip = new Set(); S.sc.lastLikely = it.likely; } // a new likely/unlikely call re-opens the matching block
+  $("#w-top").innerHTML = wTop(d); $("#w-interp").innerHTML = wInterp(d); $("#w-next").innerHTML = wNext(d);
+  const p = $("#w-perc"); if (p) p.innerHTML = wPerc(d);
+  wDdimer();
+}
+function wTop(d) {
+  const v = S.sc.ver, m = scoreCard(d, v, S.sc.ticked), it = interpretCard(d, v, m.total), others = d.versions.filter(x => x.key !== v);
+  const sw = `<div class="seg2 wver" role="group" aria-label="Score version">${d.versions.map(x => `<button data-wver="${esc(x.key)}" aria-pressed="${x.key === v}">${esc(x.name)}</button>`).join("")}</div>`;
+  const rows = d.components.map(c => { const p = c.points[v], na = p == null, on = !na && S.sc.ticked.has(c.key);
+    return `<div class="crit ${p < 0 ? "neg" : ""} ${on ? "on" : ""} ${na ? "na" : ""}"><button class="ck" data-wtick="${esc(c.key)}" aria-pressed="${on}" ${na ? "disabled" : ""}><span class="box" aria-hidden="true">${on ? "✓" : ""}</span><span class="ct">${esc(c.t)}</span></button>
+      ${plus(c.s)}<span class="cp"><b>${na ? "—" : (p > 0 ? "+" : "") + sgn(p)}</b>${others.map(o => `<small>${esc(verLabel(o.key))} ${c.points[o.key] == null ? "—" : (c.points[o.key] > 0 ? "+" : "") + sgn(c.points[o.key])}</small>`).join("")}</span></div>`; }).join("");
+  const chips = it.schemes.map(x => x.band ? `<span class="lvl lvl-${x.band.level}">${esc(x.band.label)}</span>` : "").join("");
+  return `${sw}<section class="card"><h2 class="ctitle">Criteria <span class="cs2">${esc(d.versions.find(x => x.key === v).name)}</span></h2>${rows}</section>
+    <div class="wtotal" aria-live="polite"><div class="wl">Total</div><div class="wv"><b>${sgn(m.total)}</b><span> / ${sgn(m.min)}–${fmtG(m.max)}</span></div>
+      <div class="tsub">${chips}<button class="clr" data-wreset>Reset</button></div></div>`;
+}
+function wInterp(d) {
+  const v = S.sc.ver, total = scoreCard(d, v, S.sc.ticked).total, it = interpretCard(d, v, total);
+  return `<h2 class="ctitle">Interpretation <span class="cs2">score ${sgn(total)}</span></h2>` + it.schemes.map(x => `<div class="wsch"><div class="wst">${esc(x.scheme)}${plus(x.s)}</div>
+    <div class="wchips">${x.bands.map(b => `<div class="wchip lvl-${b.level} ${b === x.band ? "on" : ""}"><b>${esc(b.label)}</b>${b.risk ? `<small>${esc(b.risk)}</small>` : ""}<span>${wRange(b.min, b.max)}</span></div>`).join("")}</div></div>`).join("");
+}
+function wNext(d) {
+  const it = interpretCard(d, S.sc.ver, scoreCard(d, S.sc.ver, S.sc.ticked).total);
+  const basis = it.likely === null ? "" : `<p class="hint">${it.likely ? "Likely" : "Unlikely"} — from the ${esc(it.basis)} scheme${it.mapped ? " (mapped from three-tier: High = likely; Low/Moderate = unlikely)" : ""}.</p>`;
+  return `<h2 class="glabel">Next steps</h2>${basis}` + d.next_steps.map(n => { const match = it.likely !== null && (n.level === "red") === it.likely, open = match !== S.sc.nsFlip.has(n.level);
+    return `<section class="card ${n.level === "red" ? "red" : "green"} ${open ? "" : "closed"}"><h2><button class="shead" data-wns="${esc(n.level)}" aria-expanded="${open}"><span class="st">${esc(n.if)}${match && it.mapped ? " (mapped from three-tier)" : ""}${plus(n.s)}</span>${match ? '<span class="cnt all">this score</span>' : ""}${ico("down")}</button></h2>
+      <ul class="items">${n.steps.map((t, i) => `<li><span class="stn">${i + 1}</span><div class="body"><span class="txt">${esc(t)}</span></div></li>`).join("")}</ul></section>`; }).join("");
+}
+function wPerc(d) {
+  const p = d.perc, any = S.sc.perc.size > 0;
+  return `<button class="btn wpbtn" data-wpercopen aria-expanded="${S.sc.percOpen}">Low clinical suspicion (gestalt &lt;15%) — PERC ${ico("down")}</button>` + (S.sc.percOpen ? `<section class="card"><h2 class="ctitle">PERC rule${plus(p.s)}</h2><p class="hint" style="padding:8px 14px 0">${esc(p.when)}</p>
+    <ul class="items">${p.items.map((t, i) => `<li class="${S.sc.perc.has(String(i)) ? "checked" : ""}"><button class="chk ${S.sc.perc.has(String(i)) ? "on" : ""}" data-wperc="${i}" aria-pressed="${S.sc.perc.has(String(i))}" aria-label="${esc(t)}"></button><div class="body"><span class="txt">${esc(t)}</span></div></li>`).join("")}</ul>
+    <div class="percres ${any ? "amber" : "green"}">${any ? "PERC cannot be applied — use Wells" : "PERC negative: PE excluded — no further testing"}</div></section>` : "");
+}
+function wDdimer() {
+  const o = $("#w-ddout"); if (!o) return;
+  const raw = String(S.sc.age ?? "").trim(), age = raw === "" ? NaN : Number(raw);
+  if (!Number.isFinite(age)) o.innerHTML = `<span class="muted">Enter the patient's age</span>`;
+  else if (age < 0 || age > 120) o.innerHTML = `<span class="bad">Age should be 0–120 years</span>`;
+  else { const c = REG.ddimer_age_adjusted({ age }); o.innerHTML = c === null ? `Age ≤50: use the <b>standard cut-off (500 µg/L FEU)</b>` : `Age &gt;50: cut-off = ${fmtG(age)} × 10 = <b class="cv">${fmtG(c)}</b> µg/L FEU`; }
+}
+async function checkView(id, e, d) {
+  if (!S.sc || S.sc.id !== id) { // fresh card: nothing carries over between patients, nothing is stored
+    const bad = [...validateScoreCard(d), ...srcCheck(d)]; if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
+    S.sc = { id, d, sel: {}, cor: new Set(), vars: {}, ver: (d.versions.find(x => x.key === "modified") || d.versions[0]).key, ticked: new Set(), perc: new Set(), percOpen: false, age: "", nsFlip: new Set(), lastLikely: undefined }; }
+  S.sc.d = d;
+  const dd = d.formulas.find(f => f.id === "ddimer_age_adjusted");
+  const sec = (title, inner) => inner ? `<section class="card"><h2 class="ctitle">${title}</h2>${inner}</section>` : "";
+  const stg = (d.interpretation_stg || []).length ? sec("SA guidelines", `<ul class="items bands">${d.interpretation_stg.map(b => `<li class="band lvl-${b.level} on"><div class="body"><span class="txt">${esc(b.t)}${plus(b.s)}</span></div></li>`).join("")}</ul>`) : "";
+  const notes = (d.notes || []).length ? sec("Pearls", `<ul class="items">${d.notes.map(n => `<li><div class="body"><span class="txt">${esc(n.t)}${plus(n.s)}</span></div></li>`).join("")}</ul>`) : "";
+  app.innerHTML = cardHeader(d, TYPE_LABEL[d.type]).replace("{{extra}}", "") + `<main class="fade scorepage wells"><p class="hint">${esc(d.setting)} · ${esc(d.hospital)} · updated ${esc(d.updated)}</p>
+    <div id="w-top" class="sctop">${wTop(d)}</div>
+    <section class="card" id="w-interp">${wInterp(d)}</section>
+    <div id="w-next" class="wnext">${wNext(d)}</div>
+    ${d.perc ? `<div id="w-perc" class="wperc">${wPerc(d)}</div>` : ""}
+    ${dd ? `<section class="card"><h2 class="ctitle">${esc(dd.name)}${plus(dd.s)}</h2><div class="fm"><div class="fx">${esc(dd.expr)}</div>${dd.notes ? `<div class="fmeta">${esc(dd.notes)}</div>` : ""}
+      <div class="fin"><label>Age<span class="inp"><input type="number" inputmode="decimal" min="0" max="120" step="any" data-wage value="${esc(S.sc.age ?? "")}" autocomplete="off"><em>years</em></span></label></div><div class="fo" id="w-ddout"></div></div></section>` : ""}
+    ${stg}${notes}
+    <p class="hint">${esc(d.card_note)}</p>${e.pdf ? `<div class="toolrow" style="justify-content:flex-start;padding:0 4px"><a class="btn" href="${esc(e.pdf)}" target="_blank" rel="noopener">Printable PDF</a></div>` : ""}
+    ${scSrcList(d)}${await scPdfRows(d)}</main>`;
+  wDdimer();
+}
+
 /* ---------- events ---------- */
 const rerender = async () => { const y = window.scrollY; await route(); window.scrollTo(0, y); };
 document.addEventListener("click", async e => {
@@ -834,6 +941,8 @@ document.addEventListener("click", async e => {
   if (t.dataset.catfilter) { S.cat = t.dataset.catfilter; applyFilter(); return; }
   if (t.dataset.sysfilter) { S.sys = t.dataset.sysfilter; applyFilter(); return; }
   if (t.dataset.filter) { S.filter = t.dataset.filter; applyFilter(); return; }
+  if (t.dataset.dxtoggle !== undefined) { const c = t.closest("section.dxc"); dxSet(c, c.classList.contains("closed")); dxAllLabel(); return; }
+  if (t.dataset.dxall) { const v = $$("section.dxc").filter(c => !c.hidden), on = !v.every(c => !c.classList.contains("closed")); v.forEach(c => dxSet(c, on)); dxAllLabel(); return; }
   if (t.dataset.hubpop) { const [hid, i] = t.dataset.hubpop.split("|"); S.hub[hid] = +i; route(); return; }
   if (t.dataset.sec) {
     const n = +t.dataset.sec; const id = (location.hash || "").slice(2).split("/")[1]; const set = S.open[id];
@@ -851,6 +960,12 @@ document.addEventListener("click", async e => {
     $$(".chaintabs button").forEach(b => { const on = +b.dataset.chain === k; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
     $$(".chain").forEach(c => c.classList.toggle("on", +c.dataset.chainbox === k)); return;
   }
+  if (t.dataset.wver) { S.sc.ver = t.dataset.wver; S.sc.nsFlip = new Set(); wUpdate(true); return; }
+  if (t.dataset.wtick) { const k = t.dataset.wtick; S.sc.ticked.has(k) ? S.sc.ticked.delete(k) : S.sc.ticked.add(k); wUpdate(); return; }
+  if (t.dataset.wperc !== undefined) { const k = t.dataset.wperc; S.sc.perc.has(k) ? S.sc.perc.delete(k) : S.sc.perc.add(k); wUpdate(); return; }
+  if (t.dataset.wpercopen !== undefined) { S.sc.percOpen = !S.sc.percOpen; wUpdate(); return; }
+  if (t.dataset.wns) { const f = S.sc.nsFlip, k = t.dataset.wns; f.has(k) ? f.delete(k) : f.add(k); wUpdate(); return; }
+  if (t.dataset.wreset !== undefined) { S.sc.ticked = new Set(); S.sc.perc = new Set(); S.sc.percOpen = false; S.sc.nsFlip = new Set(); wUpdate(); return; }
   if (t.dataset.pick) { scPick(t.dataset.pick, +t.dataset.v); return; }
   if (t.dataset.scage) { S.sc.age = t.dataset.scage; scUpdate(); return; }
   if (t.dataset.scvt !== undefined) { S.sc.vt = !S.sc.vt; scUpdate(); return; }
@@ -885,8 +1000,10 @@ document.addEventListener("click", async e => {
 document.addEventListener("input", e => {
   if (e.target.id === "q") applyFilter();
   if (e.target.id === "hq") hubFilter();
+  if (e.target.id === "dxq") dxFilter();
   if (e.target.id === "sq") applyScoreFilter();
   if (e.target.id === "cq") causeFilter();
+  if (e.target.dataset.wage !== undefined) { S.sc.age = e.target.value; wDdimer(); }
   if (e.target.dataset.bg) { S.sc.vars[e.target.dataset.bg] = e.target.value; const o = $("#bg-out"); if (o) o.innerHTML = bgResults(); }
   if (e.target.dataset.var) { // calculator input: keep every field for the same variable in step, then recompute
     S.sc.vars[e.target.dataset.var] = e.target.value;

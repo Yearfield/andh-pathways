@@ -100,3 +100,36 @@ export function analyse(i, data = {}) {
     if (rule && rule.test(r, i)) r.stg.push(k); });
   return r;
 }
+
+/* ---------- checklist score cards (Wells PE, Wells DVT; any card with versions[] + components[].points) ---------- */
+REG.ddimer_age_adjusted = v => (v.age > 50 ? v.age * 10 : null); // µg/L FEU; null = use the standard cut-off (500)
+const SCALE = 1000; // add as integers so 1.5 + 1 + ... can never drift
+// points[version] null/undefined = the item is not part of that version and is ignored
+export function scoreCard(card, version, ticked) {
+  const on = new Set(ticked); let total = 0, lo = 0, hi = 0;
+  for (const c of card.components) { const p = c.points?.[version]; if (p == null) continue;
+    const n = Math.round(p * SCALE); if (n < 0) lo += n; else hi += n; if (on.has(c.key)) total += n; }
+  return { total: total / SCALE, min: lo / SCALE, max: hi / SCALE };
+}
+export const wells_pe = (card, ticked, version) => scoreCard(card, version, ticked).total;
+export const wells_dvt = (card, ticked, version) => scoreCard(card, version, ticked).total;
+export const bandFor = (bands, total) => bands.find(b => b.min <= total && total <= b.max); // inclusive; the gaps between bands are intentional
+// every scheme for the version with its matching band, plus the likely/unlikely call that picks the next steps
+export function interpretCard(card, version, total) {
+  const schemes = card.interpretation.filter(x => x.version === version).map(x => ({ ...x, band: bandFor(x.bands, total) }));
+  const two = schemes.find(x => /two-level/i.test(x.scheme)), three = schemes.find(x => /three-tier/i.test(x.scheme)), use = two || three;
+  const lvl = use?.band?.level;
+  return { schemes, likely: lvl === undefined ? null : lvl === "red", mapped: !two && !!three, basis: use?.scheme };
+}
+export function validateScoreCard(card) { // returns warnings (empty = fine)
+  const bad = [];
+  card.versions.forEach((v, i) => { const r = card.formulas[i]?.range, t = scoreCard(card, v.key, []);
+    if (!r) { bad.push(`formulas[${i}] has no range for version ${v.key}`); return; }
+    if (t.min !== r[0]) bad.push(`${v.key}: negative points sum to ${t.min}, formulas[${i}].range[0] is ${r[0]}`);
+    if (t.max !== r[1]) bad.push(`${v.key}: positive points sum to ${t.max}, formulas[${i}].range[1] is ${r[1]}`); });
+  card.interpretation.forEach(x => { const i = card.versions.findIndex(v => v.key === x.version), r = card.formulas[i]?.range;
+    if (!r) { bad.push(`interpretation for unknown version ${x.version}`); return; }
+    if (x.bands[0].min !== r[0]) bad.push(`${x.version}/${x.scheme}: first band starts at ${x.bands[0].min}, range starts at ${r[0]}`);
+    if (x.bands[x.bands.length - 1].max !== r[1]) bad.push(`${x.version}/${x.scheme}: last band ends at ${x.bands[x.bands.length - 1].max}, range ends at ${r[1]}`); });
+  return bad;
+}

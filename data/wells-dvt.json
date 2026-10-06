@@ -1,0 +1,321 @@
+{
+  "id": "wells-dvt",
+  "type": "score",
+  "short": "Wells DVT",
+  "title": "Wells Score — Deep Vein Thrombosis",
+  "population": "adult",
+  "age_range": "adults, non-pregnant; not validated in pregnancy",
+  "setting": "casualty / ward",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-05",
+  "tags": [
+    "score",
+    "calculator",
+    "VTE",
+    "DVT",
+    "deep vein thrombosis",
+    "Wells",
+    "D-dimer",
+    "ultrasound",
+    "cardiovascular",
+    "adult",
+    "emergency"
+  ],
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "MAT24",
+      "title": "National Integrated Maternal & Perinatal Care Guidelines for SA, 5th ed. 2024",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "NICE",
+      "title": "NICE NG158 Venous thromboembolic diseases: diagnosis, management and thrombophilia testing (2020, updated 2023)",
+      "type": "guideline",
+      "country": "UK",
+      "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations"
+    },
+    {
+      "id": "WELLS-DVT",
+      "title": "Wells PS et al. Lancet 1997;350:1795; N Engl J Med 2003;349:1227",
+      "type": "paper",
+      "country": "intl"
+    },
+    {
+      "id": "ADJUST",
+      "title": "Righini M et al. ADJUST-PE. JAMA 2014;311:1117",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "versions": [
+    {
+      "key": "original",
+      "name": "Original (1997, three-tier)",
+      "s": "WELLS-DVT",
+      "d": true
+    },
+    {
+      "key": "modified",
+      "name": "Modified (2003, two-level, + previous DVT)",
+      "s": "NICE",
+      "d": true
+    }
+  ],
+  "components": [
+    {
+      "key": "DVT1",
+      "t": "Active cancer (treatment ongoing, within 6 months, or palliative)",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT2",
+      "t": "Paralysis, paresis or recent plaster immobilisation of the legs",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT3",
+      "t": "Bedridden ≥3 days or major surgery within 12 weeks",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT4",
+      "t": "Localised tenderness along the deep venous system",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT5",
+      "t": "Entire leg swollen",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT6",
+      "t": "Calf swelling ≥3 cm vs asymptomatic side (10 cm below tibial tuberosity)",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT7",
+      "t": "Pitting oedema confined to the symptomatic leg",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT8",
+      "t": "Collateral superficial veins (non-varicose)",
+      "points": {
+        "original": 1,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT9",
+      "t": "Previously documented DVT",
+      "points": {
+        "original": null,
+        "modified": 1
+      },
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "key": "DVT10",
+      "t": "Alternative diagnosis at least as likely as DVT",
+      "points": {
+        "original": -2,
+        "modified": -2
+      },
+      "s": "NICE",
+      "d": true
+    }
+  ],
+  "formulas": [
+    {
+      "id": "wells_dvt_original",
+      "name": "Wells DVT original",
+      "expr": "Sum of points (−2 to 8)",
+      "range": [
+        -2,
+        8
+      ],
+      "s": "WELLS-DVT",
+      "d": true
+    },
+    {
+      "id": "wells_dvt_modified",
+      "name": "Wells DVT modified",
+      "expr": "Sum of points (−2 to 9)",
+      "range": [
+        -2,
+        9
+      ],
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "id": "ddimer_age_adjusted",
+      "name": "Age-adjusted D-dimer cut-off (age >50)",
+      "expr": "cut-off (µg/L FEU) = age × 10",
+      "vars": {
+        "age": "years"
+      },
+      "units": "µg/L FEU",
+      "notes": "validated in PE (ADJUST-PE); NICE: consider if >50",
+      "s": "ADJUST",
+      "d": true
+    }
+  ],
+  "interpretation": [
+    {
+      "version": "original",
+      "scheme": "three-tier",
+      "bands": [
+        {
+          "min": -2,
+          "max": 0,
+          "label": "Low (≤0)",
+          "level": "green"
+        },
+        {
+          "min": 1,
+          "max": 2,
+          "label": "Moderate (1–2)",
+          "level": "amber"
+        },
+        {
+          "min": 3,
+          "max": 8,
+          "label": "High (≥3)",
+          "level": "red"
+        }
+      ],
+      "s": "WELLS-DVT",
+      "d": true
+    },
+    {
+      "version": "modified",
+      "scheme": "two-level",
+      "bands": [
+        {
+          "min": -2,
+          "max": 1,
+          "label": "DVT unlikely (≤1)",
+          "level": "green"
+        },
+        {
+          "min": 2,
+          "max": 9,
+          "label": "DVT likely (≥2)",
+          "level": "red"
+        }
+      ],
+      "s": "NICE",
+      "d": true
+    }
+  ],
+  "next_steps": [
+    {
+      "if": "DVT likely (≥2)",
+      "level": "red",
+      "steps": [
+        "Proximal leg vein ultrasound, result within 4 h if possible",
+        "Scan delayed → D-dimer + interim anticoagulation; scan within 24 h",
+        "Scan negative + D-dimer positive → stop anticoag; repeat scan at 6–8 days"
+      ],
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "if": "DVT unlikely (≤1)",
+      "level": "green",
+      "steps": [
+        "D-dimer (result within 4 h); anticoagulate if delayed",
+        "D-dimer positive → proximal leg vein ultrasound (as for 'likely')",
+        "D-dimer negative → DVT unlikely; stop anticoagulation"
+      ],
+      "s": "NICE",
+      "d": true
+    }
+  ],
+  "interpretation_stg": [
+    {
+      "t": "Diagnosis is clinical, confirmed with Duplex Doppler",
+      "s": "HOSP:2.24",
+      "level": "amber"
+    },
+    {
+      "t": "DDx: cellulitis, superficial thrombophlebitis, Baker's cyst, calf muscle tear, lymphoedema, venous insufficiency, knee derangement",
+      "s": "HOSP:2.23",
+      "level": "amber"
+    },
+    {
+      "t": "Proximal DVT Rx: rivaroxaban 15 mg 12-hourly × 3 wk, then 20 mg daily × 3 months (check Table 2.5)",
+      "s": "HOSP:2.28",
+      "level": "amber"
+    },
+    {
+      "t": "Pregnancy: confirm with compression duplex US; strong suspicion → enoxaparin 1 mg/kg SC 12-hourly + refer",
+      "s": "MAT24:130",
+      "level": "red"
+    }
+  ],
+  "notes": [
+    {
+      "t": "Score the symptomatic leg; if both legs symptomatic, score the worse leg",
+      "d": true
+    },
+    {
+      "t": "Do not use D-dimer alone to rule out DVT in 'likely' patients",
+      "s": "NICE",
+      "d": true
+    },
+    {
+      "t": "Original 1997 score has no 'previous DVT' item — modified adds +1",
+      "d": true
+    }
+  ],
+  "dagger_note": "d=true items are not in the SA STG (NICE NG158 / original papers).",
+  "card_note": "✚ = SA STG / SA maternity guideline (pages listed above). Unmarked content: NICE NG158 and original papers. Wells is a pre-test probability tool — apply only after clinical suspicion of VTE."
+}

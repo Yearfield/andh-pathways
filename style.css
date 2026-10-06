@@ -26,12 +26,16 @@
   --lead-border: #b7d3cd;
   --r: 12px;
   --tabh: 60px;
+  --fs: 0.7;               /* text scale: every rem size in this file is multiplied by this (1 = original size, 0.7 = 30% smaller) */
   --font-body: "Plex Sans", system-ui, sans-serif;
   --font-head: "Plex Serif", Georgia, serif;
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { font-size: calc(16px * var(--fs)); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 html, body { margin: 0; background: var(--bg); color: var(--ink);
-  font-family: var(--font-body); font-size: 16px; line-height: 1.4; }
+  font-family: var(--font-body); line-height: 1.4; }
+body { font-size: 1rem; }
+/* text boxes stay at 16px: iPhones zoom the whole page when you tap into a field smaller than that */
 button, input { font: inherit; color: inherit; }
 button { cursor: pointer; }
 [hidden] { display: none !important; } /* component display rules (.dx { display:flex } etc.) must not defeat the hidden attribute the filters rely on */
@@ -189,7 +193,7 @@ ul.items li.checked .txt { text-decoration: line-through; color: #6b7b7d; }
 .step .d { flex: 0 0 auto; width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2px solid #9fb0ae; }
 .step.past .d { background: var(--ink); border-color: var(--ink); }
 .step.on .d { width: 16px; height: 16px; background: var(--amber); border: 3px solid var(--ink); }
-.step b { font-size: .85rem; font-variant-numeric: tabular-nums; color: var(--ink-2); font-weight: 500; white-space: nowrap; }
+.step b { font-size: .85rem; font-variant-numeric: tabular-nums; color: var(--ink-2); font-weight: 500; text-align: center; line-height: 1.15; max-width: 100%; padding: 0 3px; overflow-wrap: break-word; } /* long branch labels ("If hip / femur / pelvis") wrap inside their own step instead of running into the next one */
 .step.on b { color: var(--ink); font-weight: 700; }
 .step span { font-size: .68rem; line-height: 1.2; color: var(--muted); text-align: center; padding: 0 2px; }
 .dayhead { display: flex; align-items: baseline; flex-wrap: wrap; column-gap: 12px; margin: 2px 4px 0; }
@@ -470,9 +474,184 @@ a.btn.primary { color: #fff; }
 .hometop > .seg2 { flex: 0 0 auto; }
 .dx.hx { min-height: 52px; }
 .dx.hx .hn { flex: 1; min-width: 0; font-family: var(--font-head); font-weight: 700; font-size: 1rem; line-height: 1.25; }
-.dx.hx .hb { flex: 0 0 auto; max-width: 38%; font-size: .7rem; font-weight: 700; color: var(--muted); background: var(--bg); border: 1px solid var(--hair); border-radius: 6px; padding: 2px 6px; text-align: center; line-height: 1.2; }
+.hb { flex: 0 0 auto; max-width: 38%; font-size: .7rem; font-weight: 700; color: var(--muted); background: var(--bg); border: 1px solid var(--hair); border-radius: 6px; padding: 2px 6px; text-align: center; line-height: 1.2; }
 h2.glabel.dg { margin: 8px 4px 0; scroll-margin-top: 140px; }
 section.card.flash { animation: cflash 2.4s ease-out; box-shadow: 0 0 0 4px var(--amber); }
 
 /* very narrow phones: long one-word column names (e.g. "Immobilisation") must fit their segment */
 @media (max-width: 340px) { .seg button { font-size: .76rem; padding: 4px 2px; letter-spacing: -.01em; } }
+
+/* collapsible Differentials cards + search */
+.dsearch { display: flex; gap: 8px; align-items: center; padding: 0 12px 10px; max-width: 720px; margin: 0 auto; }
+.dsearch .search { flex: 1; min-width: 0; }
+.dsearch .btn { flex: 0 0 auto; min-height: 48px; }
+section.dxc.closed .toolrow, section.dxc.closed .dsub { display: none; }
+section.dxc .shead .st { font-size: 1rem; }
+section.dxc .shead .hb { margin-left: auto; }
+.dgrp { display: flex; flex-direction: column; gap: 12px; }
+.dgrp > h2.glabel.dg { margin-bottom: -4px; }
+
+.step.wide { width: 108px; } /* long branch labels get a wider slot so they wrap at word breaks */
+
+/* ============================================================================
+   compact density — tighter padding on rows, buttons and cards, and the source
+   chip sits at the right end of its row instead of under the text.
+   (Appended last on purpose: these rules override the roomier ones above.)
+   Small visual controls keep an invisible, larger tap area (see .chk / .chip).
+   ========================================================================== */
+:root { --tabh: 46px; }
+main { padding: 8px 8px calc(var(--tabh) + 24px + env(safe-area-inset-bottom)); gap: 8px; }
+main.home { padding-bottom: 20px; gap: 10px; }
+main.withpager { padding-bottom: calc(var(--tabh) + 64px + env(safe-area-inset-bottom)); }
+
+/* header and home controls */
+.bar { padding: 3px 4px 2px; gap: 2px; }
+.iconbtn { width: 34px; height: 34px; border-radius: 8px; }
+.ttl .row1 { gap: 6px; }
+.badge { padding: 1px 6px; }
+.meter { margin: 0 12px 4px; }
+.menu { top: calc(40px + env(safe-area-inset-top)); padding: 4px; }
+.menu button { min-height: 36px; padding: 0 10px; }
+.hometop { padding: 8px 12px 6px; gap: 6px; }
+.brand { gap: 8px; }
+.logo { width: 32px; height: 32px; border-radius: 8px; }
+.pill-ok { padding: 3px 8px; }
+.search { height: 34px; padding: 0 10px; gap: 8px; border-radius: 10px; }
+.chips { gap: 5px; margin: 0 -12px; padding: 0 12px; }
+.fchip { height: 26px; padding: 0 10px; }
+.chips.sys, .chips.sys + .chips.sys { margin-top: -2px; }
+.glabel { margin: 0 0 4px; }
+.recent { gap: 6px; }
+.rcard { min-height: 44px; padding: 5px 8px; gap: 2px; border-radius: 10px; }
+.empty { padding: 12px; }
+
+/* list rows (home, hub) */
+.dx { min-height: 36px; padding: 4px 8px 4px 10px; gap: 8px; }
+.dx .t { width: 112px; }
+.dx.hx { min-height: 34px; }
+
+/* arrival: section jump bar and cards */
+.jump { gap: 4px; padding: 2px 8px 6px; }
+.jump button { height: 28px; padding: 0 8px; gap: 4px; border-radius: 8px; }
+.shead { min-height: 34px; padding: 5px 10px; gap: 8px; }
+.shead .n { width: 22px; height: 22px; border-radius: 6px; }
+.ctitle { padding: 7px 10px; }
+.note { padding: 6px 10px 0; }
+
+/* checklist rows */
+ul.items li { gap: 8px; padding: 5px 10px; min-height: 30px; }
+ul.items li.sub { padding-left: 40px; }
+ul.items li.head { padding: 8px 10px 1px; }
+.body { gap: 2px; padding-top: 1px; }
+ul.items li .txt { line-height: 1.3; }
+.chk { width: 22px; height: 22px; border-radius: 6px; margin-top: 0; }
+.chk::before { inset: -8px; }
+.chk.on::after { left: 6.5px; top: 2.5px; width: 6px; height: 11px; border-width: 0 2.2px 2.2px 0; }
+.tick { width: 24px; height: 24px; border-radius: 6px; font-size: .8rem; }
+
+/* source chip: small, pinned to the right end of its row */
+.chip { height: 18px; padding: 0 6px; border-radius: 5px; position: relative; }
+.chip::before { content: ""; position: absolute; inset: -6px -4px; } /* keeps a comfortable tap area */
+ul.items li:not(.handoff) > .body, .drug .ln > .body { flex-direction: row; align-items: flex-start; gap: 8px; }
+ul.items li:not(.handoff) > .body > .txt, .drug .ln > .body > .txt { flex: 1; min-width: 0; }
+ul.items li > .body > .chip, .drug .ln > .body > .chip, .decision > .chip { flex: 0 0 auto; margin-left: auto; align-self: flex-start; margin-top: 1px; }
+.decision { padding: 7px 10px; gap: 8px; flex-direction: row; align-items: flex-start; justify-content: space-between; }
+.act .body { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 8px; align-items: start; }
+.act .body > :not(.chip) { grid-column: 1; }
+.act .body > .chip { grid-column: 2; grid-row: 1; margin-top: 1px; }
+
+/* buttons, notes, lead */
+.btn { min-height: 30px; padding: 0 10px; border-radius: 8px; gap: 4px; }
+.toolrow { padding: 5px 10px 0; }
+.dsub { padding: 6px 10px 0; } h3.dsub { padding: 6px 10px 2px; }
+.lead { padding: 7px 10px; }
+.btn.clrall { min-height: 32px; }
+
+/* timeline */
+.steps { padding: 2px 8px 6px; }
+.step { width: 70px; gap: 2px; }
+.step.wide { width: 96px; }
+.seg { padding: 3px; gap: 3px; border-radius: 10px; }
+.seg button { min-height: 28px; padding: 2px; border-radius: 8px; }
+.pager .in { padding: 5px 8px; gap: 6px; }
+.pager .prev { width: 40px; height: 40px; border-radius: 10px; }
+.pager .next { height: 40px; border-radius: 10px; padding: 0 10px 0 12px; }
+
+/* doses, nursing, sources, tab bar */
+.boxnav { gap: 5px; padding: 0 8px 6px; }
+article.box > h2 { padding: 7px 10px; }
+.drug { padding: 7px 10px; gap: 4px; }
+.drug .ln { gap: 6px; }
+.drug .ln.warn { padding: 4px 8px; }
+nav.tabs button { padding: 3px 2px 2px; gap: 1px; }
+.srow { padding: 8px 10px; }
+.srow .acts { margin-top: 6px; gap: 6px; }
+.off input { height: 32px; }
+
+/* differentials, hub */
+.dsearch { padding: 0 8px 6px; gap: 6px; }
+.dsearch .btn { min-height: 34px; }
+.hub .btn.wide { min-height: 36px; padding: 5px 10px; }
+h2.glabel.dg { margin: 4px 4px 0; }
+.dgrp { gap: 8px; }
+
+/* start page, procedures, scales and calculators */
+.tiles { gap: 8px; }
+.tile { padding: 10px 12px; min-height: 80px; }
+.ptabs { padding: 2px 8px 6px; }
+.ptabs button, .chaintabs button { height: 28px; padding: 0 10px; }
+.flownav button { padding: 3px 6px; }
+.pbody { padding: 8px; gap: 6px; }
+li.act { padding: 5px 0; }
+.dtab th, .dtab td { padding: 5px 8px; }
+.seg2 button { min-height: 34px; padding: 2px 6px; }
+.bgctl .seg2 button { min-height: 32px; }
+button.vt { min-height: 34px; padding: 2px 10px 2px 8px; }
+.pick { min-height: 34px; padding: 3px 6px; gap: 8px; }
+.pick .sv { width: 26px; height: 26px; }
+.comp { padding: 7px 8px 6px; }
+.totalbox { padding: 6px 10px; }
+.fm { padding: 7px 10px; }
+.fin .inp, .bgf .inp { height: 36px; }
+.bggrid { padding: 6px 10px 8px; gap: 6px; }
+.rh { padding: 5px 44px 5px 10px; }
+.rd { padding: 5px 10px 6px; }
+.xl { padding: 6px 10px; }
+.cbox h2 { padding: 7px 10px; }
+.cf { padding: 2px 10px 6px; }
+.scorepage { gap: 8px; }
+.sctop { gap: 8px; }
+
+/* jump / deep-link landing offsets for the now shorter sticky header */
+section.card { scroll-margin-top: 88px; }
+section.card.dxc, h2.glabel.dg { scroll-margin-top: 120px; }
+article.box { scroll-margin-top: 84px; }
+
+/* checklist score cards (Wells PE / DVT) */
+.plus { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; min-height: 24px; margin-left: 4px; padding: 0 3px; border: 0; background: none; color: var(--ok); font-weight: 700; font-size: .95rem; line-height: 1; vertical-align: baseline; }
+.wver { flex: 1 1 100%; } .wver button { font-size: .8rem; line-height: 1.2; }
+.crit { display: flex; align-items: center; gap: 4px; padding: 0 10px 0 4px; border-top: 1px solid var(--hair); }
+.crit:first-of-type { border-top: 0; }
+.crit .ck { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 4px 6px; border: 0; background: none; text-align: left; }
+.crit .box { flex: 0 0 auto; width: 24px; height: 24px; border: 2px solid var(--line); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: .9rem; background: #fff; }
+.crit.on { background: var(--ok-bg); } .crit.on .box { background: var(--ok); border-color: var(--ok); } .crit.on .ct { font-weight: 700; }
+.crit.neg { background: var(--warn-bg); } .crit.neg .box { border-color: var(--warn); } .crit.neg.on .box { background: var(--warn); border-color: var(--warn); } .crit.neg .cp b { color: var(--warn-ink); }
+.crit.na { opacity: .45; } .crit.na .ct { text-decoration: line-through; } .crit.na .ck { cursor: not-allowed; }
+.cp { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; min-width: 64px; font-variant-numeric: tabular-nums; } .cp b { font-size: 1.05rem; } .cp small { font-size: .68rem; color: var(--muted); opacity: .8; }
+.wtotal { position: sticky; bottom: calc(8px + env(safe-area-inset-bottom)); z-index: 4; background: var(--ink); color: #fff; border-radius: var(--r); padding: 6px 12px; box-shadow: 0 6px 18px rgba(20,40,45,.28); }
+.wtotal .wl { font-size: .7rem; letter-spacing: 1px; text-transform: uppercase; color: #cfe0dc; font-weight: 700; }
+.wtotal .wv b { font-family: var(--font-head); font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; } .wtotal .wv span { color: #cfe0dc; font-size: .9rem; }
+.wsch { padding: 6px 10px 8px; border-top: 1px solid var(--hair); } .wsch:first-of-type { border-top: 0; }
+.wst { font-size: .72rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.wchips { display: flex; flex-wrap: wrap; gap: 6px; }
+.wchip { flex: 1 1 110px; display: flex; flex-direction: column; gap: 1px; padding: 6px 10px; border-radius: 10px; border: 1.5px solid var(--c, var(--soft)); background: #fff; color: var(--ink); opacity: .6; }
+.wchip.lvl-green { --c: var(--ok); } .wchip.lvl-amber { --c: #b7791f; } .wchip.lvl-red { --c: var(--warn); }
+.wchip small { font-weight: 700; } .wchip span { font-size: .72rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.wchip.on { opacity: 1; background: var(--c); color: #fff; box-shadow: 0 0 0 2px var(--c); } .wchip.on span { color: #fff; }
+.wnext { display: flex; flex-direction: column; gap: 8px; }
+section.card.green { border-color: var(--ok); background: var(--ok-bg); } section.card.green .shead .st { color: var(--ok); }
+section.card.red .shead .st { color: var(--warn-ink); }
+.stn { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.wpbtn { width: 100%; justify-content: space-between; min-height: 44px; font-weight: 700; } .wperc { display: flex; flex-direction: column; gap: 8px; }
+.percres { padding: 10px 14px; font-weight: 700; } .percres.green { background: var(--ok-bg); color: var(--ok); } .percres.amber { background: #fff4de; color: #7d5212; }
+.wells .items.bands li.band { border-left: 5px solid transparent; }

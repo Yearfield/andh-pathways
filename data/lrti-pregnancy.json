@@ -1,0 +1,1473 @@
+{
+ "id": "lrti-pregnancy",
+ "short": "LRTI in pregnancy",
+ "title": "Lower respiratory tract infection / shortness of breath in pregnancy and up to 6 weeks postpartum",
+ "population": "Pregnant women (any gestation) and women up to 6 weeks postpartum with cough, fever or shortness of breath",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10",
+ "sources": [
+  "impcg2024",
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Non-pregnant adults, > 6 weeks postpartum (adult CAP)"
+    },
+    {
+     "t": "Confirmed TB → TB pathway"
+    },
+    {
+     "t": "Confirmed COVID-19 / influenza → national guideline"
+    },
+    {
+     "t": "Eclampsia / PET with pulmonary oedema → PET pathway"
+    },
+    {
+     "t": "Known cardiac failure → cardiac pathway"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — pneumonia",
+   "items": [
+    {
+     "t": "Pregnant, GA ____ wk · OR delivered ____ (≤ 6 wk)",
+     "k": "value"
+    },
+    {
+     "t": "Cough",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Fever",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Tachypnoea",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Signs of consolidation",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Chest X-ray: focal opacification / consolidation",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary signs + raised WCC / purulent sputum = chest infection",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "Breathless but normal exam, SpO₂ and CXR → physiological?",
+     "s": "impcg2024:130"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe / refer = any one of",
+   "items": [
+    {
+     "t": "Severe pneumonia: cyanosis, confusion, hypotension, RR > 30",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 95% · HR > 120 · RR > 24",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Altered mental status · stridor · diffuse crackles",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Cannot speak full sentences",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "SBP < 100 → ambulance to tertiary centre within 24 h",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Suspected PE or pulmonary oedema",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Needs CPAP / ventilation",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Poor response after 48 h",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record and medical history",
+   "items": [
+    {
+     "t": "GA / delivery date"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    },
+    {
+     "t": "HIV · CD4 · VL · ART",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "On cotrimoxazole prophylaxis",
+     "d": 1
+    },
+    {
+     "t": "TB history / contact"
+    },
+    {
+     "t": "Asthma · inhalers",
+     "s": "impcg2024:129"
+    },
+    {
+     "t": "Heart disease / RHD",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Hypertension / PET",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Diabetes",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Previous VTE",
+     "s": "impcg2024:129"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "Smoker",
+     "s": "impcg2024:129"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Cough ____ days"
+    },
+    {
+     "t": "Sputum · haemoptysis",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Pleuritic chest pain",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Wheeze"
+    },
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Sudden breathlessness · syncope",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Orthopnoea / PND",
+     "d": 1
+    },
+    {
+     "t": "Leg swelling, pain",
+     "s": "impcg2024:130"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Weight loss, night sweats, > 2 wk",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Flu / COVID contact",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "Contractions · FM"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values (thresholds = MAT red flags)",
+   "items": [
+    {
+     "t": "SpO₂ < 95%",
+     "s": "impcg2024:130",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "HR > 120",
+     "s": "impcg2024:130",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "RR > 24",
+     "s": "impcg2024:130",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "RR > 30 (severe pneumonia)",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    },
+    {
+     "t": "SBP < 100",
+     "s": "impcg2024:130",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Cyanosis",
+     "s": "impcg2024:130",
+     "k": "yn"
+    },
+    {
+     "t": "Confusion",
+     "s": "adultstg2026:16.16",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension → PET?",
+     "s": "impcg2024:131",
+     "k": "yn"
+    },
+    {
+     "h": "Fetus"
+    },
+    {
+     "t": "FHR abnormal",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Contractions",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "split": 6,
+   "items": [
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Consolidation: dull, bronchial breathing",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Diffuse crackles",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Wheeze",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Stridor",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Effusion",
+     "d": 1
+    },
+    {
+     "h": "Heart / legs",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Raised JVP",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Pedal oedema",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Murmur (RHD)",
+     "d": 1
+    },
+    {
+     "t": "Unilateral leg swelling (DVT)",
+     "s": "impcg2024:130"
+    },
+    {
+     "h": "Obstetric"
+    },
+    {
+     "t": "SFH ____ · FHR ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ and respiratory rate (bedside)",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on air · RR ____ /min",
+     "k": "value"
+    },
+    {
+     "t": "O₂ if SpO₂ < 94%",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 95% = MAT red flag",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Asthma: PEFR ____ % predicted",
+     "s": "adultstg2026:16.1",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Rapid HIV, sputum Xpert, CXR and bloods",
+   "items": [
+    {
+     "t": "Rapid HIV test (offer to all)",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Sputum Xpert MTB/RIF Ultra",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "Chest X-ray (abdominal shield†)",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    },
+    {
+     "t": "FBC, U&E, LFT, CRP, clotting, ABG",
+     "s": "impcg2024:131",
+     "b": 1
+    },
+    {
+     "t": "ECG",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "Exclude influenza / COVID-19",
+     "s": "impcg2024:131"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Hypoxaemia",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Septic shock",
+     "s": "impcg2024:136",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary embolus",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Life-threatening asthma",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "PJP (HIV)",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "TB",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "PET / eclampsia",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "Pneumothorax",
+     "d": 1
+    },
+    {
+     "t": "Empyema",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Preterm labour",
+     "d": 1
+    },
+    {
+     "t": "Cardiac disease",
+     "s": "impcg2024:130"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. ANY §2 RED FLAG, PE or PULMONARY OEDEMA → O₂, start treatment, REFER (tertiary within 24 h)",
+   "s": "impcg2024:130"
+  },
+  {
+   "t": "11. NON-SEVERE PNEUMONIA, PJP without CPAP need, or ASTHMA responding → ADMIT ANDH — follow the chart branch — Tick the working diagnosis on page 2, then follow its branch on the LRTI chart and the 24-hour nursing record.",
+   "s": "adultstg2026:16.16"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Severe pneumonia",
+   "features": [
+    {
+     "t": "Cyanosis, confusion, hypotension or RR > 30",
+     "s": "adultstg2026:16.16"
+    },
+    {
+     "t": "MAT red flags (SpO₂ < 95%, HR > 120, RR > 24)",
+     "s": "impcg2024:130"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "SpO₂, CXR",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "FBC, U&E, CRP, ABG",
+     "s": "impcg2024:131"
+    }
+   ],
+   "manage": [
+    {
+     "t": "O₂ if SpO₂ < 94%",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Ceftriaxone 2 g IV daily + Azithromycin 500 mg slow IV (≥ 60 min) daily × 3 days",
+     "s": "adultstg2026:16.17",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — tertiary within 24 h; ventilation",
+     "s": "impcg2024:130",
+     "b": 1
+    }
+   ],
+   "branch": "If severe"
+  },
+  {
+   "dx": "Pulmonary embolus",
+   "features": [
+    {
+     "t": "Sudden breathlessness, pleuritic pain, hypoxaemia, tachycardia, haemoptysis, syncope",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Unilateral leg swelling",
+     "s": "impcg2024:130"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR normal, ABG ↓PO₂ ↓PCO₂",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "REFER for CTPA / V/Q",
+     "s": "impcg2024:130"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Strong suspicion: enoxaparin 1 mg/kg SC 12-hourly",
+     "s": "impcg2024:130",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — specialist to confirm",
+     "s": "impcg2024:130",
+     "b": 1
+    }
+   ],
+   "branch": "If PE / oedema"
+  },
+  {
+   "dx": "Pulmonary oedema (PET / cardiac)",
+   "features": [
+    {
+     "t": "Crackles, pedal oedema, raised JVP",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Hypertension → PET; no HT → cardiac",
+     "s": "impcg2024:131"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "BP, urine protein, CXR, ECG",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "REFER for echo",
+     "s": "impcg2024:131"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Furosemide 40 mg IV + O₂ by face mask before transfer",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "PET → PET pathway",
+     "s": "impcg2024:131"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "impcg2024:131",
+     "b": 1
+    }
+   ],
+   "branch": "If PE / oedema"
+  },
+  {
+   "dx": "Acute asthma",
+   "features": [
+    {
+     "t": "Wheeze, chest tightness, cough, distress",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Severe: SpO₂ < 90%, talks in words, HR > 120, PEFR < 60%",
+     "s": "adultstg2026:16.1"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PEFR, SpO₂",
+     "s": "adultstg2026:16.1"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Salbutamol + prednisone 40 mg (see branch)",
+     "s": "adultstg2026:16.2"
+    },
+    {
+     "t": "All asthma drugs safe in pregnancy",
+     "s": "impcg2024:129"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If poor response → urgently",
+     "s": "adultstg2026:16.3"
+    },
+    {
+     "t": "Recurrent severe → specialist",
+     "s": "impcg2024:129"
+    }
+   ],
+   "branch": "If asthma"
+  },
+  {
+   "dx": "Pneumocystis pneumonia (PJP)",
+   "features": [
+    {
+     "t": "HIV; dry cough < 12 wk; marked tachypnoea; hypoxaemia",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Bilateral diffuse interstitial infiltrates",
+     "s": "adultstg2026:16.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Rapid HIV, CD4, CXR",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Exclude TB: Xpert",
+     "s": "adultstg2026:16.17"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cotrimoxazole high dose × 21 days (see branch)",
+     "s": "adultstg2026:10.29",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If CPAP needed",
+     "s": "adultstg2026:10.30"
+    }
+   ],
+   "branch": "If PJP"
+  },
+  {
+   "dx": "Pneumonia with comorbidity",
+   "features": [
+    {
+     "t": "Not severe; HIV, diabetes, cardiac failure, COPD",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR, rapid HIV",
+     "s": "adultstg2026:16.15"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV daily → amoxicillin/clavulanate 875/125 mg PO 12-hourly, 5 days",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If no response at 48 h",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "branch": "CAP + comorbidity"
+  },
+  {
+   "dx": "Pneumonia, no comorbidity",
+   "features": [
+    {
+     "t": "Cough, fever, tachypnoea, consolidation; not severe",
+     "s": "adultstg2026:16.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CXR focal opacity",
+     "s": "adultstg2026:16.15"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ampicillin 1 g IV 6-hourly → amoxicillin 1 g PO 8-hourly; 5 days total",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If no response at 48 h",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "branch": "Non-severe CAP"
+  },
+  {
+   "dx": "Pulmonary TB",
+   "features": [
+    {
+     "t": "Cough > 2 weeks, weight loss, night sweats; HIV",
+     "s": "adultstg2026:16.15"
+    },
+    {
+     "t": "Poor response at 48 h",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Sputum Xpert MTB/RIF Ultra",
+     "s": "adultstg2026:16.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "TB pathway"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per TB pathway"
+    }
+   ]
+  },
+  {
+   "dx": "Influenza / COVID-19",
+   "features": [
+    {
+     "t": "Contact, outbreak, fever, myalgia",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Exclude respiratory viral infection",
+     "s": "impcg2024:131"
+    },
+    {
+     "t": "Test per national guideline",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Isolate; national guideline",
+     "d": 1
+    },
+    {
+     "t": "Bacterial pneumonia on top → CAP branch",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If MAT red flags",
+     "s": "impcg2024:130"
+    }
+   ]
+  },
+  {
+   "dx": "Atypical pneumonia",
+   "features": [
+    {
+     "t": "Poor response to β-lactam at 48 h",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Exclude TB first",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Add a macrolide",
+     "s": "adultstg2026:16.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If still no response",
+     "d": 1
+    }
+   ],
+   "branch": "Day 2"
+  },
+  {
+   "dx": "Upper RTI / bronchitis",
+   "features": [
+    {
+     "t": "Cough, temperature < 38 °C, no chest signs",
+     "s": "impcg2024:159"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Normal SpO₂ and chest exam",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Safe soothing remedy; stop smoking",
+     "s": "impcg2024:159"
+    },
+    {
+     "t": "No antibiotics",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ]
+  },
+  {
+   "dx": "Physiological breathlessness of pregnancy",
+   "features": [
+    {
+     "t": "Common in normal pregnancy",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "No red flags, normal exam",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Normal SpO₂, RR, CXR",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reassure; return if worse",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Branch / day",
+  "phase_note": "Admission row for all; then tick the working-diagnosis branch; day 2 review and discharge rows for all.",
+  "columns": {
+   "feed": "Oxygen, fluids & diet",
+   "tests": "Tests & monitoring",
+   "treatment": "Treatment"
+  },
+  "standing": [
+   {
+    "t": "O₂ if SpO₂ < 94%",
+    "s": "adultstg2026:16.15",
+    "b": 1
+   },
+   {
+    "t": "SpO₂, RR, pulse, BP, temp hourly × 6 h, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Red flag (SpO₂ < 95%, HR > 120, RR > 24, SBP < 100, confusion) → REFER",
+    "s": "impcg2024:130",
+    "b": 1
+   },
+   {
+    "t": "FHR 4-hourly if viable; postpartum: breastfeed",
+    "d": 1
+   },
+   {
+    "t": "Postpartum + acute infection is a VTE risk factor",
+    "s": "impcg2024:129"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Admission",
+    "phase": "0–1 h",
+    "feed": [
+     {
+      "t": "O₂ by face mask if SpO₂ < 94%",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "IV line; oral fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, RR, CXR",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "Rapid HIV · Xpert Ultra",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, LFT, CRP, ABG, ECG",
+      "s": "impcg2024:131",
+      "b": 1
+     },
+     {
+      "t": "Exclude influenza / COVID",
+      "s": "impcg2024:131"
+     },
+     {
+      "t": "FHR / CTG",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis on Doc 1 page 2",
+      "b": 1
+     },
+     {
+      "t": "Start antibiotics for pneumonia now",
+      "d": 1
+     },
+     {
+      "t": "Analgesia for pleuritic pain",
+      "s": "adultstg2026:16.15"
+     },
+     {
+      "t": "Paracetamol for fever",
+      "d": 1
+     },
+     {
+      "t": "Red flag → REFER tertiary within 24 h",
+      "s": "impcg2024:130",
+      "b": 1
+     },
+     {
+      "t": "Fluid overload → furosemide 40 mg IV + O₂ before transfer",
+      "s": "impcg2024:130"
+     },
+     {
+      "t": "Penicillin allergy: moxifloxacin per STG — caution in pregnancy, discuss",
+      "s": "adultstg2026:16.16",
+      "d": 1
+     },
+     {
+      "t": "Contractions → preterm labour pathway",
+      "d": 1
+     }
+    ],
+    "lead": "Oxygen, tests, choose branch"
+   },
+   {
+    "label": "If severe",
+    "phase": "REFER",
+    "feed": [
+     {
+      "t": "O₂ face mask",
+      "s": "adultstg2026:16.15",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ continuous",
+      "d": 1
+     },
+     {
+      "t": "BP, pulse, RR every 30 min",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV daily",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "+ Azithromycin 500 mg slow IV (≥ 60 min) daily × 3 days",
+      "s": "adultstg2026:16.17",
+      "b": 1
+     },
+     {
+      "t": "REFER: ventilation / tertiary centre",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Non-severe CAP",
+    "phase": "No comorbidity",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "RR, temp, SpO₂ 4-hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ampicillin 1 g IV 6-hourly",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "Stable, RR < 25, temp < 37.8 °C → amoxicillin 1 g PO 8-hourly; 5 days total",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "CAP + comorbidity",
+    "phase": "HIV, diabetes, cardiac",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CD4, VL if HIV",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV daily",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "Stable, RR < 25, temp < 37.8 °C → amoxicillin/clavulanate 875/125 mg PO 12-hourly; 5 days",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If PJP",
+    "phase": "HIV",
+    "feed": [
+     {
+      "t": "O₂ face mask",
+      "s": "adultstg2026:10.30"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC and potassium on high dose",
+      "s": "adultstg2026:10.29"
+     },
+     {
+      "t": "Xpert to exclude TB",
+      "s": "adultstg2026:16.17"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cotrimoxazole 80/400 mg PO 6-hourly × 21 days: < 60 kg 3 tabs, ≥ 60 kg 4 tabs",
+      "s": "adultstg2026:10.29",
+      "b": 1
+     },
+     {
+      "t": "Vomiting: IV 240/1200 mg (< 60 kg) or 320/1600 mg (≥ 60 kg) 6-hourly",
+      "s": "adultstg2026:10.30"
+     },
+     {
+      "t": "SpO₂ < 92%: prednisone 80 mg daily × 5 days, then taper over 14 days",
+      "s": "adultstg2026:10.30",
+      "b": 1
+     },
+     {
+      "t": "Needs CPAP → REFER",
+      "s": "adultstg2026:10.30",
+      "b": 1
+     },
+     {
+      "t": "Near term: inform paediatrician (cotrimoxazole)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If asthma",
+    "phase": "Acute attack",
+    "feed": [
+     {
+      "t": "O₂ to SpO₂ 93–95% (severe)",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR, SpO₂ before and after",
+      "s": "adultstg2026:16.2"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Salbutamol 5 mg (1 mL) in 4 mL NaCl 0.9% neb at 8 L/min O₂, every 20–30 min",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     },
+     {
+      "t": "Or MDI 400–1000 mcg via spacer",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "Poor response: add ipratropium 0.5 mg to neb, 3 doses",
+      "s": "adultstg2026:16.3"
+     },
+     {
+      "t": "Prednisone 40 mg PO daily × 7 days (or hydrocortisone 100 mg IV 6-hourly)",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "t": "Avoid sedation; poor response → REFER",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If PE / oedema",
+    "phase": "REFER",
+    "feed": [
+     {
+      "t": "O₂ by face mask",
+      "s": "impcg2024:130",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ABG, ECG, CXR",
+      "s": "impcg2024:131"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PE: enoxaparin 1 mg/kg SC 12-hourly",
+      "s": "impcg2024:130",
+      "b": 1
+     },
+     {
+      "t": "Oedema: furosemide 40 mg IV",
+      "s": "impcg2024:130",
+      "b": 1
+     },
+     {
+      "t": "Hypertension → PET pathway",
+      "s": "impcg2024:131"
+     },
+     {
+      "t": "REFER to specialist / tertiary",
+      "s": "impcg2024:130",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "48 h review",
+    "feed": [
+     {
+      "t": "Wean O₂",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Xpert / culture results",
+      "s": "adultstg2026:16.15"
+     },
+     {
+      "t": "Repeat CXR if no opacity at first",
+      "s": "adultstg2026:16.15"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Poor response: exclude TB, consider atypical → add macrolide",
+      "s": "adultstg2026:16.16",
+      "b": 1
+     },
+     {
+      "t": "Complications (empyema) → REFER",
+      "d": 1
+     },
+     {
+      "t": "Still red flags → REFER",
+      "s": "impcg2024:130"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Day 3–5",
+    "feed": [
+     {
+      "t": "Room air",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "RR < 25, temp < 37.8 °C, stable",
+      "s": "adultstg2026:16.16"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Complete oral course (5 days CAP / 21 days PJP)",
+      "s": "adultstg2026:16.16"
+     },
+     {
+      "t": "PJP: then cotrimoxazole 160/800 mg daily",
+      "s": "adultstg2026:10.31"
+     },
+     {
+      "t": "Postpartum: assess LMWH need",
+      "s": "impcg2024:129"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotic doses",
+   "items": [
+    {
+     "t": "Ampicillin 1 g IV 6-hourly → amoxicillin 1 g PO 8-hourly",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone 2 g IV daily → amoxicillin/clavulanate 875/125 mg PO 12-hourly",
+     "s": "adultstg2026:16.16",
+     "b": 1
+    },
+    {
+     "t": "Severe: + Azithromycin 500 mg slow IV (≥ 60 min) daily × 3 days",
+     "s": "adultstg2026:16.17"
+    },
+    {
+     "t": "Switch: stable, RR < 25, temp < 37.8 °C",
+     "s": "adultstg2026:16.16"
+    }
+   ]
+  },
+  {
+   "title": "MAT red flags → tertiary",
+   "items": [
+    {
+     "t": "SpO₂ < 95% · HR > 120 · RR > 24",
+     "s": "impcg2024:130",
+     "b": 1
+    },
+    {
+     "t": "Altered mental state · stridor · diffuse crackles",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "Cannot speak full sentences · cyanosis",
+     "s": "impcg2024:130"
+    },
+    {
+     "t": "SBP < 100",
+     "s": "impcg2024:130",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Pregnancy cautions",
+   "items": [
+    {
+     "t": "Asthma drugs and steroids are safe",
+     "s": "impcg2024:129"
+    },
+    {
+     "t": "Moxifloxacin: avoid in pregnancy if possible",
+     "d": 1
+    },
+    {
+     "t": "VTE: postpartum LMWH if ≥ 2 intermediate risks",
+     "s": "impcg2024:129"
+    },
+    {
+     "t": "Enoxaparin prophylaxis 40 mg SC daily (< 100 kg)",
+     "s": "impcg2024:130"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Haemodynamically stable",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "RR < 25, temp < 37.8 °C",
+    "s": "adultstg2026:16.16"
+   },
+   {
+    "t": "SpO₂ normal on room air",
+    "d": 1
+   },
+   {
+    "t": "On oral treatment"
+   },
+   {
+    "t": "HIV result + Xpert result / plan",
+    "s": "adultstg2026:16.15"
+   },
+   {
+    "t": "FHR normal, no contractions",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Review in 1 week",
+    "d": 1
+   },
+   {
+    "t": "CXR 4–6 weeks after therapy if symptoms persist",
+    "s": "adultstg2026:16.15"
+   },
+   {
+    "t": "HIV positive: ART, CPT per HIV pathway",
+    "d": 1
+   },
+   {
+    "t": "Asthma: high-risk ANC clinic",
+    "s": "impcg2024:129"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "LRTI in pregnancy — 24-hour nursing record",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Breathing",
+    "items": [
+     {
+      "t": "SpO₂, RR hourly × 6 h, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:16.15"
+     }
+    ]
+   },
+   {
+    "h": "Circulation",
+    "items": [
+     {
+      "t": "Pulse, BP, temp same times",
+      "d": 1
+     },
+     {
+      "t": "Severe: every 30 min",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fetus",
+    "items": [
+     {
+      "t": "FHR, contractions 4-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Antibiotic / nebuliser / steroid times"
+     },
+     {
+      "t": "Enoxaparin if prescribed",
+      "s": "impcg2024:130"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: SpO₂ < 95% or falling · RR > 24 · pulse > 120 · SBP < 100 · confused or drowsy · cannot speak full sentences · stridor · chest pain · haemoptysis · contractions · FHR abnormal",
+    "s": "impcg2024:130",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Oral in (mL)",
+   "IV in (mL)",
+   "Urine out (mL)"
+  ]
+ }
+}

@@ -7,6 +7,13 @@
       "runtimeArgs": ["-c", "import os, http.server as h; h.test(HandlerClass=h.SimpleHTTPRequestHandler, port=int(os.environ.get('PORT', '9451')))"],
       "port": 9451,
       "autoPort": true
+    },
+    {
+      "name": "andh-repo",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-c", "import os, functools, http.server as h; h.test(HandlerClass=functools.partial(h.SimpleHTTPRequestHandler, directory=r'C:\\Users\\jharm\\OneDrive\\Documents\\GitHub\\andh-pathways'), port=int(os.environ.get('PORT', '9452')))"],
+      "port": 9452,
+      "autoPort": true
     }
   ]
 }

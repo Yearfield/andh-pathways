@@ -1,0 +1,1005 @@
+{
+ "id": "uti-pregnancy",
+ "short": "UTI in pregnancy",
+ "title": "Urinary tract infection in pregnancy — asymptomatic bacteriuria, cystitis, acute pyelonephritis",
+ "population": "Pregnant women at any gestation with asymptomatic bacteriuria, cystitis or acute pyelonephritis",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10",
+ "sources": [
+  "impcg2024",
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — tick the tier",
+   "items": [
+    {
+     "t": "Pregnant, GA ____ wk (dating ____ )",
+     "k": "value"
+    },
+    {
+     "h": "Asymptomatic bacteriuria (ASB)",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "No symptoms + positive urine culture → treat per sensitivity",
+     "s": "impcg2024:147",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "h": "Cystitis",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Dysuria, frequency, lower abdominal pain, offensive urine, ± haematuria",
+     "s": "impcg2024:147",
+     "k": "sub"
+    },
+    {
+     "t": "No fever, no features of sepsis",
+     "s": "adultstg2026:6.31",
+     "k": "sub"
+    },
+    {
+     "t": "Dipstick leucocytes AND nitrites positive → treat empirically",
+     "s": "impcg2024:147",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "h": "Acute pyelonephritis",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Temperature ≥ 38 °C",
+     "s": "adultstg2026:6.32",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Renal angle tenderness (often bilateral), loin pain, rigors",
+     "s": "adultstg2026:6.32",
+     "k": "sub"
+    },
+    {
+     "t": "± vomiting, tachypnoea, tachycardia, confusion, hypotension",
+     "s": "adultstg2026:6.32",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / refer = any one of",
+   "items": [
+    {
+     "t": "Pyelonephritis (any) → ADMIT",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Septic shock: SBP < 90 with HR ≥ 100 and signs of infection → resuscitate, REFER",
+     "s": "impcg2024:136",
+     "b": 1
+    },
+    {
+     "t": "Sepsis features: vomiting, tachypnoea, tachycardia, confusion",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Unable to keep oral fluids / antibiotics down",
+     "d": 1
+    },
+    {
+     "t": "Contractions → preterm labour pathway too",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "No response to treatment → renal ultrasound",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Obstruction / calculi on renal ultrasound → REFER",
+     "d": 1
+    },
+    {
+     "t": "Cystitis not responding, or resistant organism → REFER",
+     "s": "adultstg2026:6.31"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP / SFH"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    },
+    {
+     "t": "Booking urine / previous UTI this pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy"
+    },
+    {
+     "t": "HIV · ART · VL · CD4"
+    },
+    {
+     "t": "Diabetes",
+     "d": 1
+    },
+    {
+     "t": "Known renal disease / calculi",
+     "d": 1
+    },
+    {
+     "t": "Hb · Rh group"
+    },
+    {
+     "t": "Previous preterm birth",
+     "d": 1
+    },
+    {
+     "t": "Travel to malaria area",
+     "s": "impcg2024:147"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Urinary"
+    },
+    {
+     "t": "Dysuria · frequency"
+    },
+    {
+     "t": "Offensive urine · haematuria"
+    },
+    {
+     "t": "Lower abdominal pain"
+    },
+    {
+     "t": "Loin pain"
+    },
+    {
+     "h": "Systemic"
+    },
+    {
+     "t": "Fever · rigors"
+    },
+    {
+     "t": "Vomiting · not drinking"
+    },
+    {
+     "t": "Confusion"
+    },
+    {
+     "t": "Antibiotics already taken"
+    },
+    {
+     "h": "Pregnancy"
+    },
+    {
+     "t": "Tightenings / contractions"
+    },
+    {
+     "t": "Leaking liquor · PV bleeding"
+    },
+    {
+     "t": "Fetal movements reduced"
+    },
+    {
+     "t": "Vaginal discharge",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Fever (≥ 38 °C = pyelonephritis)",
+     "s": "adultstg2026:6.32",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:6.32",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "s": "adultstg2026:6.32",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "adultstg2026:6.32",
+     "k": "yn"
+    },
+    {
+     "t": "Confusion · decreased LOC",
+     "s": "adultstg2026:6.32",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension → PET pathway too",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "h": "Septic shock / fetus"
+    },
+    {
+     "t": "SBP < 90 + HR ≥ 100 → septic shock",
+     "s": "impcg2024:136",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Urine output low",
+     "s": "impcg2024:136",
+     "k": "yn"
+    },
+    {
+     "t": "FHR abnormal (viable)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Contractions",
+     "s": "adultstg2026:6.32",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — look for another source of fever too",
+   "split": 8,
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Dehydrated"
+    },
+    {
+     "t": "Pallor"
+    },
+    {
+     "t": "Jaundice",
+     "d": 1
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Suprapubic tenderness"
+    },
+    {
+     "t": "Renal angle tenderness",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Uterine tenderness → chorioamnionitis",
+     "d": 1
+    },
+    {
+     "t": "Contractions · SFH ____ cm"
+    },
+    {
+     "h": "Other source (MAT: exclude)",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Chest — pneumonia",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Throat · breasts",
+     "d": 1
+    },
+    {
+     "t": "Drip sites · skin",
+     "d": 1
+    },
+    {
+     "t": "Neck stiffness — meningitis",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Malaria risk → RDT / smear",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Speculum if leaking / discharge",
+     "d": 1
+    },
+    {
+     "t": "FHR ____ /min",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urine dipstick (bedside) + MSU",
+   "items": [
+    {
+     "t": "Leucocytes ____ nitrites ____ blood ____ protein ____ glucose ____",
+     "k": "value"
+    },
+    {
+     "t": "Leucocytes AND nitrites + symptoms → treat empirically",
+     "s": "impcg2024:147",
+     "b": 1
+    },
+    {
+     "t": "Send midstream urine MCS — before the first antibiotic dose",
+     "s": "impcg2024:147",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Protein + raised BP → PET pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods (pyelonephritis) and fetal check",
+   "items": [
+    {
+     "t": "FBC, CRP, U&E, blood cultures",
+     "s": "impcg2024:147",
+     "b": 1
+    },
+    {
+     "t": "Creatinine known before gentamicin (normal renal function)",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "HGT ____ mmol/L",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "FHR; CTG if viable and contracting",
+     "d": 1
+    },
+    {
+     "t": "Malaria RDT / smear if travel",
+     "s": "impcg2024:147"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Septic shock",
+     "s": "impcg2024:136",
+     "b": 1
+    },
+    {
+     "t": "Confusion",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Preterm labour",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Chorioamnionitis",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Pneumonia",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Malaria",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Meningitis",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Pre-eclampsia",
+     "d": 1
+    },
+    {
+     "t": "Abruptio (pain + bleeding)",
+     "d": 1
+    },
+    {
+     "t": "Obstruction / calculi",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Renal impairment",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Appendicitis",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. ASB or CYSTITIS (no fever, no sepsis) → outpatient: fosfomycin 3 g single dose OR nitrofurantoin 100 mg 6-hourly × 5 days; MSU MCS; oral fluids",
+   "s": "impcg2024:147"
+  },
+  {
+   "t": "11. PYELONEPHRITIS → ADMIT: ceftriaxone 1 g IV daily (or gentamicin 6 mg/kg IV daily) + NaCl 0.9% up to 3 L/24 h. SEPTIC SHOCK → resuscitate, REFER — Pyelonephritis: start antibiotics promptly†, then continue on the UTI management chart and the 24-hour nursing record.",
+   "s": "adultstg2026:6.32"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Rows run from admission; the cystitis/ASB row is for outpatients and the septic-shock row applies at any time.",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Tests & monitoring",
+   "treatment": "Treatment"
+  },
+  "standing": [
+   {
+    "t": "Vitals (temp, pulse, BP, RR, SpO₂†) hourly until afebrile and stable, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Septic shock: BP, pulse, RR every 30 min; urine output continuously",
+    "s": "impcg2024:136"
+   },
+   {
+    "t": "FHR and contractions 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Fluid balance chart; urine output",
+    "s": "impcg2024:136"
+   },
+   {
+    "t": "NO ceftriaxone with calcium-containing fluids (e.g. Ringer's lactate)",
+    "s": "phcstg2026:6.18",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Admission",
+    "phase": "0–1 h",
+    "feed": [
+     {
+      "t": "IV NaCl 0.9% — up to 3 L over 24 h",
+      "s": "adultstg2026:6.32",
+      "b": 1
+     },
+     {
+      "t": "Oral fluids as tolerated",
+      "s": "impcg2024:147"
+     },
+     {
+      "t": "Rate ____ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick",
+      "s": "impcg2024:147"
+     },
+     {
+      "t": "MSU MCS before 1st dose",
+      "s": "impcg2024:147",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "FBC, CRP, U&E, blood cultures",
+      "s": "impcg2024:147",
+      "b": 1
+     },
+     {
+      "t": "Malaria RDT if travel",
+      "s": "impcg2024:147"
+     },
+     {
+      "t": "FHR · CTG if viable",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:6.32",
+      "b": 1
+     },
+     {
+      "t": "OR gentamicin 6 mg/kg IV daily — only if renal function normal",
+      "s": "adultstg2026:6.32",
+      "b": 1
+     },
+     {
+      "t": "Dose given at ____ (no delay†)",
+      "k": "value"
+     },
+     {
+      "t": "Paracetamol + tepid sponging, fan",
+      "s": "impcg2024:147"
+     },
+     {
+      "t": "Consider thromboprophylaxis if reduced mobility + dehydration",
+      "s": "impcg2024:147"
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily (< 100 kg) · 60 mg (≥ 100 kg)",
+      "s": "impcg2024:130",
+      "d": 1
+     },
+     {
+      "t": "Septic shock? → branch row, REFER",
+      "s": "impcg2024:136",
+      "b": 1
+     },
+     {
+      "t": "Contractions → preterm labour pathway",
+      "s": "adultstg2026:6.32"
+     }
+    ],
+    "lead": "Pyelonephritis — start antibiotics without delay"
+   },
+   {
+    "label": "4–6 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Continue IV; count total ____ L",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Temp, pulse, BP trend"
+     },
+     {
+      "t": "Urine output"
+     },
+     {
+      "t": "FHR, contractions",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still shocked / confused → REFER",
+      "s": "impcg2024:136",
+      "b": 1
+     },
+     {
+      "t": "Vomiting → keep IV route",
+      "d": 1
+     },
+     {
+      "t": "Analgesia, antipyretic"
+     }
+    ]
+   },
+   {
+    "label": "Day 1",
+    "phase": "24 h",
+    "feed": [
+     {
+      "t": "Reduce IV once drinking",
+      "d": 1
+     },
+     {
+      "t": "Oral fluids, normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if on gentamicin",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Fever curve"
+     },
+     {
+      "t": "FHR daily · contractions",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "2nd dose ceftriaxone 1 g IV (or gentamicin)",
+      "s": "adultstg2026:6.32"
+     },
+     {
+      "t": "Creatinine rising on gentamicin → change to ceftriaxone",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "48 h",
+    "feed": [
+     {
+      "t": "Stop IV fluids when drinking well",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "MCS result: organism ____ sensitive to ____",
+      "s": "impcg2024:147",
+      "k": "value"
+     },
+     {
+      "t": "Still febrile → renal ultrasound",
+      "s": "impcg2024:147",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone for 48 h or until fever subsides",
+      "s": "adultstg2026:6.32"
+     },
+     {
+      "t": "Switch when taking orally: amoxicillin/clavulanate 875/125 mg PO 12-hourly × 7 days",
+      "s": "adultstg2026:6.32",
+      "b": 1
+     },
+     {
+      "t": "Change antibiotic per culture sensitivity",
+      "s": "adultstg2026:6.32"
+     },
+     {
+      "t": "No response at 48 h / obstruction → REFER",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge?",
+    "feed": [
+     {
+      "t": "Oral, normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Afebrile ≥ 24 h",
+      "d": 1
+     },
+     {
+      "t": "FHR normal, no contractions",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge on oral amoxicillin/clavulanate to complete 7 days",
+      "s": "adultstg2026:6.32"
+     },
+     {
+      "t": "Book MSU MCS 7–10 days after the course",
+      "s": "impcg2024:147",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If septic shock",
+    "phase": "Any time",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 1–2 L (20 mL/kg) rapidly",
+      "s": "impcg2024:136",
+      "b": 1
+     },
+     {
+      "t": "Urinary catheter",
+      "s": "impcg2024:136"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, RR every 30 min",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "SpO₂ · urine output continuously",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "Aim SBP ≥ 100, urine 30 mL/h",
+      "s": "impcg2024:136"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "O₂ by face mask",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "Antibiotic given / repeat if due",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "REFER to specialist once reasonably stable, with full notes",
+      "s": "impcg2024:136",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If cystitis / ASB",
+    "phase": "Outpatient",
+    "feed": [
+     {
+      "t": "Encourage oral fluids",
+      "s": "impcg2024:147"
+     }
+    ],
+    "tests": [
+     {
+      "t": "MSU MCS",
+      "s": "adultstg2026:6.31",
+      "b": 1
+     },
+     {
+      "t": "Dipstick L + N",
+      "s": "impcg2024:147"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fosfomycin 3 g PO single dose",
+      "s": "impcg2024:147",
+      "b": 1
+     },
+     {
+      "t": "OR nitrofurantoin 100 mg PO 6-hourly × 5 days",
+      "s": "impcg2024:147",
+      "b": 1
+     },
+     {
+      "t": "ASB: treat per culture sensitivity",
+      "s": "impcg2024:147"
+     },
+     {
+      "t": "No response / resistant → REFER",
+      "s": "adultstg2026:6.31"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotic doses",
+   "items": [
+    {
+     "t": "Ceftriaxone 1 g IV daily, 48 h or until fever subsides",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Gentamicin 6 mg/kg IV daily — normal renal function only",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin/clavulanate 875/125 mg PO 12-hourly × 7 days",
+     "s": "adultstg2026:6.32",
+     "b": 1
+    },
+    {
+     "t": "Fosfomycin 3 g PO once · nitrofurantoin 100 mg PO 6-hourly × 5 days",
+     "s": "impcg2024:147"
+    }
+   ]
+  },
+  {
+   "title": "Fluids and fever",
+   "items": [
+    {
+     "t": "NaCl 0.9% up to 3 L / 24 h",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Septic shock: 1–2 L (20 mL/kg) rapidly",
+     "s": "impcg2024:136"
+    },
+    {
+     "t": "No ceftriaxone with Ringer's lactate",
+     "s": "phcstg2026:6.18",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol, tepid sponging, fan",
+     "s": "impcg2024:147"
+    }
+   ]
+  },
+  {
+   "title": "Fetus and pregnancy",
+   "items": [
+    {
+     "t": "Pyelonephritis may cause preterm labour",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Contractions → preterm labour pathway",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Uterine tenderness, offensive liquor → chorioamnionitis pathway",
+     "d": 1
+    },
+    {
+     "t": "FHR and contractions 4-hourly",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Afebrile ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "Taking oral fluids and tablets"
+   },
+   {
+    "t": "Switched to oral amoxicillin/clavulanate",
+    "s": "adultstg2026:6.32"
+   },
+   {
+    "t": "No contractions; FHR normal",
+    "d": 1
+   },
+   {
+    "t": "Culture result seen or follow-up arranged",
+    "d": 1
+   },
+   {
+    "t": "Follow-up MSU date given",
+    "s": "impcg2024:147"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "MSU MCS 7–10 days after the course",
+    "s": "impcg2024:147",
+    "b": 1
+   },
+   {
+    "t": "Two negative urine specimens confirm eradication",
+    "s": "adultstg2026:6.32"
+   },
+   {
+    "t": "Back to ANC clinic; dipstick at each visit",
+    "d": 1
+   },
+   {
+    "t": "Return at once: fever, loin pain, contractions, leaking",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Pyelonephritis in pregnancy — 24-hour nursing record",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "Temp, pulse, BP, RR, SpO₂† hourly until afebrile and stable, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Septic shock: every 30 min",
+      "s": "impcg2024:136"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "IV NaCl 0.9% up to 3 L / 24 h",
+      "s": "adultstg2026:6.32"
+     },
+     {
+      "t": "Record oral in, IV in, urine out",
+      "s": "impcg2024:136"
+     }
+    ]
+   },
+   {
+    "h": "Fetus",
+    "items": [
+     {
+      "t": "FHR and contractions 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Leaking, bleeding, fetal movements",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "First antibiotic without delay",
+      "d": 1
+     },
+     {
+      "t": "Ceftriaxone never with Ringer's lactate",
+      "s": "phcstg2026:6.18"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: SBP < 90 or pulse ≥ 100 with fever · confusion · urine < 30 mL/h · temp still ≥ 38 °C after 48 h · contractions, leaking or bleeding · FHR abnormal · vomiting, can't take tablets · breathless",
+    "s": "impcg2024:136",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Oral in (mL)",
+   "IV in (mL)",
+   "Urine out (mL)"
+  ]
+ }
+}

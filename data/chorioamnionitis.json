@@ -1,0 +1,969 @@
+{
+ "id": "chorioamnionitis",
+ "short": "Chorioamnionitis",
+ "title": "Chorioamnionitis — before and in labour, and after delivery",
+ "population": "Pregnant women with suspected chorioamnionitis before or during labour, continued to 5 days after delivery; includes postpartum fever",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10",
+ "sources": [
+  "impcg2024",
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — signs include",
+   "items": [
+    {
+     "t": "Temperature ≥ 38 °C",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Maternal heart rate ≥ 100/min",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Uterine tenderness and/or irritability",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Fetal heart rate ≥ 160/min",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Offensive or meconium-stained liquor",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "h": "Associated with",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Preterm labour · pre-labour or prolonged ROM",
+     "s": "impcg2024:86",
+     "k": "sub"
+    },
+    {
+     "t": "Intrauterine death · APH of unknown origin",
+     "s": "impcg2024:86",
+     "k": "sub"
+    },
+    {
+     "t": "GA ____ wk · ROM at ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer = any one of",
+   "items": [
+    {
+     "t": "GA < 32 weeks → specialist hospital",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Not in established labour → needs induction (not at ANDH)",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Caesarean section indication",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Septic shock: SBP < 90 with HR ≥ 100 + infection",
+     "s": "impcg2024:136",
+     "b": 1
+    },
+    {
+     "t": "Severe puerperal sepsis after delivery",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Postpartum: no response after 48 h of antibiotics",
+     "s": "adultstg2026:6.29"
+    },
+    {
+     "t": "Retained products → evacuation in theatre",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP / SFH"
+    },
+    {
+     "t": "Booking BP (baseline) ____",
+     "k": "value"
+    },
+    {
+     "t": "ROM date / time ____",
+     "k": "value"
+    },
+    {
+     "t": "PPROM on preterm pathway"
+    },
+    {
+     "t": "Antenatal steroids given"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "HIV · ART · VL"
+    },
+    {
+     "t": "Hb · Rh group"
+    },
+    {
+     "t": "Previous CS"
+    },
+    {
+     "t": "Diabetes",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Membranes / liquor"
+    },
+    {
+     "t": "Duration since ROM"
+    },
+    {
+     "t": "Offensive liquor"
+    },
+    {
+     "t": "Meconium"
+    },
+    {
+     "t": "Leaking colour ____"
+    },
+    {
+     "h": "Maternal"
+    },
+    {
+     "t": "Fever · rigors"
+    },
+    {
+     "t": "Abdominal pain"
+    },
+    {
+     "t": "Contractions"
+    },
+    {
+     "t": "Urinary symptoms (UTI?)"
+    },
+    {
+     "h": "Fetus"
+    },
+    {
+     "t": "Fetal movements reduced"
+    },
+    {
+     "t": "PV bleeding"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or her own booking values",
+   "items": [
+    {
+     "t": "Temperature ≥ 38 °C",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Maternal HR ≥ 100/min",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "impcg2024:136",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "s": "impcg2024:135",
+     "k": "yn"
+    },
+    {
+     "t": "Confusion · decreased LOC",
+     "s": "impcg2024:135",
+     "k": "yn"
+    },
+    {
+     "h": "Shock / fetus"
+    },
+    {
+     "t": "SBP < 90 + HR ≥ 100 → septic shock",
+     "s": "impcg2024:136",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "FHR ≥ 160/min",
+     "s": "impcg2024:86",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "FHR absent → IUD",
+     "s": "impcg2024:86",
+     "k": "yn"
+    },
+    {
+     "t": "Urine output low",
+     "s": "impcg2024:136",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — and look for another source of fever",
+   "split": 6,
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Uterine tenderness",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Irritable uterus",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Contractions ____ /10 min"
+    },
+    {
+     "t": "SFH ____ cm · lie"
+    },
+    {
+     "t": "Renal angle tenderness"
+    },
+    {
+     "h": "Speculum / VE"
+    },
+    {
+     "t": "Liquor offensive",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Meconium-stained",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Cervix ____ cm · established labour?"
+    },
+    {
+     "t": "Cord prolapse",
+     "d": 1
+    },
+    {
+     "h": "Other source",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Chest",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Breasts · drip sites",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Neck stiffness",
+     "s": "impcg2024:135"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Fetal heart / CTG",
+   "items": [
+    {
+     "t": "FHR ____ /min (not maternal)",
+     "k": "value"
+    },
+    {
+     "t": "CTG in labour — suspected chorioamnionitis is a CTG indication",
+     "s": "impcg2024:66",
+     "b": 1
+    },
+    {
+     "t": "FHR ≥ 160/min is a sign of chorioamnionitis",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Ultrasound: fetal heart, presentation, liquor",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and urine",
+   "items": [
+    {
+     "t": "FBC, U&E, blood cultures",
+     "s": "impcg2024:136",
+     "b": 1
+    },
+    {
+     "t": "Urine dipstick (UTI?)",
+     "d": 1
+    },
+    {
+     "t": "Hb ____ g/dL · group + Rh",
+     "k": "value"
+    },
+    {
+     "t": "Malaria RDT if travel",
+     "s": "impcg2024:147"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Septic shock",
+     "s": "impcg2024:136",
+     "b": 1
+    },
+    {
+     "t": "Intrauterine death",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Preterm < 32 wk",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Confusion",
+     "s": "impcg2024:135",
+     "b": 1
+    },
+    {
+     "t": "Abruptio (pain + bleeding)",
+     "d": 1
+    },
+    {
+     "t": "Cord prolapse",
+     "d": 1
+    },
+    {
+     "t": "Fetal distress",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "Pyelonephritis",
+     "d": 1
+    },
+    {
+     "t": "Pneumonia",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Meningitis",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Malaria",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. < 32 WEEKS, NOT IN LABOUR (needs induction), CS INDICATION or SEPTIC SHOCK → start ampicillin + metronidazole, REFER",
+   "s": "impcg2024:86"
+  },
+  {
+   "t": "11. ≥ 32 WEEKS IN ESTABLISHED LABOUR → ADMIT to labour ward: antibiotics, CTG, vaginal delivery at ANDH; antibiotics 5 days after delivery — Antibiotics now; deliver at ANDH only if in established labour ≥ 32 wk — then use the chorioamnionitis chart and nursing record.",
+   "s": "impcg2024:86"
+  }
+ ],
+ "chart": {
+  "unit": "Stage / day",
+  "phase_note": "Rows follow the stage: before delivery, delivery, then postnatal days 1–5. Branch rows apply at any time.",
+  "columns": {
+   "feed": "Fluids & diet",
+   "tests": "Tests & monitoring",
+   "treatment": "Treatment"
+  },
+  "standing": [
+   {
+    "t": "Chorioamnionitis is an indication for delivery",
+    "s": "impcg2024:86",
+    "b": 1
+   },
+   {
+    "t": "Ampicillin + metronidazole until 5 days after delivery",
+    "s": "impcg2024:86",
+    "b": 1
+   },
+   {
+    "t": "In labour: monitor the fetus closely, CTG if possible",
+    "s": "impcg2024:86"
+   },
+   {
+    "t": "Avoid caesarean section where possible — do it for the usual indications",
+    "s": "impcg2024:86"
+   },
+   {
+    "t": "Temp, pulse, BP, RR hourly in labour, 4-hourly after delivery",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Admission",
+    "phase": "0–1 h",
+    "feed": [
+     {
+      "t": "IV line, NaCl 0.9%",
+      "d": 1
+     },
+     {
+      "t": "Oral fluids in labour",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, U&E, blood cultures",
+      "s": "impcg2024:136",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "d": 1
+     },
+     {
+      "t": "CTG",
+      "s": "impcg2024:66",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound: fetal heart, presentation",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ampicillin 2 g IV, then 1 g IV 6-hourly",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Metronidazole 400 mg PO 8-hourly",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Penicillin allergy: clindamycin 600 mg IV 8-hourly instead of ampicillin",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "Given at ____",
+      "k": "value"
+     },
+     {
+      "t": "< 32 wk → REFER to specialist hospital",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Not in labour → REFER for induction (Foley, misoprostol, oxytocin)",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Septic shock → branch row, REFER",
+      "s": "impcg2024:136",
+      "b": 1
+     },
+     {
+      "t": "In labour ≥ 32 wk → deliver here",
+      "s": "impcg2024:86"
+     }
+    ],
+    "lead": "Antibiotics now — then refer or deliver"
+   },
+   {
+    "label": "In labour",
+    "phase": "To delivery",
+    "feed": [
+     {
+      "t": "Oral fluids; IV if vomiting",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CTG; FHR closely",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Partogram (term labour pathway)",
+      "d": 1
+     },
+     {
+      "t": "Temp, pulse hourly",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue ampicillin 1 g IV 6-hourly + metronidazole",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "Fetal distress / CS indication → REFER",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Poor progress → prolonged labour pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Delivery",
+    "phase": "+ 1 h",
+    "feed": [
+     {
+      "t": "Oral fluids, eat"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Uterus contracted, blood loss ____ mL",
+      "k": "value"
+     },
+     {
+      "t": "Baby: resuscitate with Neopuff if needed",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oxytocin 10 units IM (active 3rd stage)",
+      "s": "adultstg2026:6.29",
+      "b": 1
+     },
+     {
+      "t": "Baby at risk of infection — neonatal review",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Placenta complete?",
+      "s": "adultstg2026:6.29"
+     }
+    ]
+   },
+   {
+    "label": "Day 1",
+    "phase": "Postnatal",
+    "feed": [
+     {
+      "t": "Normal diet, oral fluids",
+      "s": "impcg2024:135"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Temp, pulse, BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Uterine tenderness, lochia odour",
+      "s": "impcg2024:135"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue ampicillin + metronidazole (day 1 of 5)",
+      "s": "impcg2024:86",
+      "b": 1
+     },
+     {
+      "t": "Breast care; mobilise; prevent DVT",
+      "s": "adultstg2026:6.29"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "48 h",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Fever curve; lochia",
+      "s": "impcg2024:135"
+     },
+     {
+      "t": "Culture result ____",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Day 2 of 5",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "Still febrile at 48 h → REFER",
+      "s": "adultstg2026:6.29",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3–5",
+    "phase": "Complete",
+    "feed": [
+     {
+      "t": "Normal diet"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Afebrile ≥ 24 h",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Day 3 / 4 / 5 of antibiotics",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "Stop after 5 days post-delivery",
+      "s": "impcg2024:86",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If postpartum fever",
+    "phase": "New fever after delivery",
+    "feed": [
+     {
+      "t": "Oral fluids",
+      "s": "impcg2024:135"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Speculum + VE: retained products?",
+      "s": "impcg2024:135"
+     },
+     {
+      "t": "FBC, U&E, blood cultures",
+      "s": "impcg2024:136"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amoxicillin/clavulanate 1.2 g IV 8-hourly until apyrexial 24 h",
+      "s": "adultstg2026:6.29",
+      "b": 1
+     },
+     {
+      "t": "Then 875/125 mg PO 12-hourly",
+      "s": "adultstg2026:6.29"
+     },
+     {
+      "t": "Retained products → REFER (theatre)",
+      "s": "impcg2024:135",
+      "b": 1
+     },
+     {
+      "t": "Severe: temp ≥ 37.5 + HR ≥ 100 + tender uterus → specialist",
+      "s": "impcg2024:135",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If septic shock",
+    "phase": "Any time",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 1–2 L (20 mL/kg) rapidly",
+      "s": "impcg2024:136",
+      "b": 1
+     },
+     {
+      "t": "Urinary catheter",
+      "s": "impcg2024:136"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, pulse, RR every 30 min",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "SpO₂, urine output continuously",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "Aim SBP ≥ 100, urine 30 mL/h",
+      "s": "impcg2024:136"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "O₂ by face mask",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "Antibiotics given",
+      "s": "impcg2024:136"
+     },
+     {
+      "t": "REFER once reasonably stable, with full notes",
+      "s": "impcg2024:136",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotics",
+   "items": [
+    {
+     "t": "Ampicillin 2 g IV, then 1 g IV 6-hourly",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Metronidazole 400 mg PO 8-hourly",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "Penicillin allergy: clindamycin 600 mg IV 8-hourly instead of ampicillin",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Continue 5 days after delivery",
+     "s": "impcg2024:86",
+     "b": 1
+    },
+    {
+     "t": "New postpartum fever: amoxicillin/clavulanate 1.2 g IV 8-hourly",
+     "s": "adultstg2026:6.29"
+    }
+   ]
+  },
+  {
+   "title": "Delivery at ANDH",
+   "items": [
+    {
+     "t": "Only in established labour, ≥ 32 wk",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "CTG throughout labour",
+     "s": "impcg2024:66"
+    },
+    {
+     "t": "No induction / oxytocin / CS at ANDH → REFER",
+     "s": "impcg2024:86"
+    },
+    {
+     "t": "Active 3rd stage: oxytocin 10 units IM",
+     "s": "adultstg2026:6.29"
+    }
+   ]
+  },
+  {
+   "title": "Puerperal sepsis",
+   "items": [
+    {
+     "t": "Severe: temp ≥ 37.5 °C and HR ≥ 100 ± offensive lochia, uterine tenderness",
+     "s": "impcg2024:135",
+     "b": 1
+    },
+    {
+     "t": "Severe → specialist level",
+     "s": "impcg2024:135"
+    },
+    {
+     "t": "Septic shock: SBP < 90 + HR ≥ 100",
+     "s": "impcg2024:136"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "5 days of antibiotics after delivery done",
+    "s": "impcg2024:86"
+   },
+   {
+    "t": "Afebrile ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "Uterus non-tender, lochia not offensive",
+    "s": "impcg2024:135"
+   },
+   {
+    "t": "Baby reviewed and well",
+    "d": 1
+   },
+   {
+    "t": "Breastfeeding established",
+    "d": 1
+   },
+   {
+    "t": "Knows warning signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Postnatal check 3–6 days and 6 weeks",
+    "d": 1
+   },
+   {
+    "t": "Return: fever, offensive lochia, abdominal pain",
+    "s": "impcg2024:135"
+   },
+   {
+    "t": "Baby: return if feeding poorly, fever, jaundice",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Chorioamnionitis — 24-hour nursing record",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "Temp, pulse, BP, RR hourly in labour, 4-hourly after delivery",
+      "d": 1
+     },
+     {
+      "t": "Septic shock: every 30 min",
+      "s": "impcg2024:136"
+     }
+    ]
+   },
+   {
+    "h": "Fetus",
+    "items": [
+     {
+      "t": "CTG / FHR closely in labour",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "Liquor colour and odour",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "After delivery",
+    "items": [
+     {
+      "t": "Uterine tenderness, lochia odour",
+      "s": "impcg2024:135"
+     },
+     {
+      "t": "Blood loss",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Ampicillin 6-hourly; metronidazole 8-hourly",
+      "s": "impcg2024:86"
+     },
+     {
+      "t": "For 5 days after delivery",
+      "s": "impcg2024:86"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for: SBP < 90 or pulse ≥ 100 · temp ≥ 38 °C persisting · FHR ≥ 160 or decelerations · confusion · urine < 30 mL/h · heavy bleeding · offensive lochia · breathless",
+    "s": "impcg2024:86",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Oral in (mL)",
+   "IV in (mL)",
+   "Urine out (mL)"
+  ]
+ }
+}
