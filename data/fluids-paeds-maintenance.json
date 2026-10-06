@@ -1,0 +1,362 @@
+{
+ "id": "fluids-paeds-maintenance",
+ "short": "Fluids – maintenance (child)",
+ "title": "Maintenance fluids",
+ "population": "Child (>28 days)",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Enteral first · isotonic + dextrose (NaCl 0.9%/D5) · 4/2/1 · 80% if critically ill",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Use when",
+   "col": 1,
+   "items": [
+    {
+     "t": "Cannot take enough orally / enterally",
+     "d": 1
+    },
+    {
+     "t": "After circulatory stabilisation",
+     "s": "stg-paed:1.16"
+    },
+    {
+     "t": "The ideal maintenance fluid is enteral feed",
+     "s": "stg-paed:23.9",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Give less",
+   "col": 1,
+   "items": [
+    {
+     "t": "Critically ill: 80% of 4/2/1",
+     "s": "stg-paed:23.9",
+     "b": 1
+    },
+    {
+     "t": "Head injury, pneumonia, CNS infection, post-op (↑ADH): 60–80%",
+     "s": "stg-paed:23.9"
+    }
+   ]
+  },
+  {
+   "h": "Avoid",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypotonic maintenance (0.45% / RHS): must be isotonic",
+     "s": "stg-paed:23.9",
+     "s_more": [
+      "stg-paed:23.10"
+     ]
+    },
+    {
+     "t": "IV in SAM unless essential",
+     "s": "stg-paed:2.40"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Prefer the gut",
+   "timing": "at Rx",
+   "time": "at Rx",
+   "subtitle": "oral · NGT · feeds",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Give feeds orally or by gastric tube if possible",
+     "s": "stg-paed:23.9"
+    },
+    {
+     "n": "1.2",
+     "t": "Separate: resuscitate · rehydrate · maintain · ongoing losses",
+     "s": "stg-paed:23.9"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Calculate",
+   "timing": "24-h plan",
+   "time": "24-h plan",
+   "subtitle": "100/50/20 per day = 4/2/1 per hour",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "First 10 kg 100 mL/kg · next 10 kg 50 · each kg >20: 20 (per 24 h)",
+     "s": "stg-paed:23.10",
+     "s_more": [
+      "stg-paed:1.26"
+     ],
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "≤1 year (burns, hypernatraemia sections): 120 mL/kg/24 h",
+     "s": "stg-paed:1.26",
+     "s_more": [
+      "stg-paed:2.16"
+     ]
+    },
+    {
+     "n": "2.3",
+     "t": "Obese: use ideal body weight",
+     "s": "stg-paed:7.20"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Adjust for illness",
+   "timing": "before starting",
+   "time": "before starting",
+   "subtitle": "reduce, then add losses",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Critically ill → 80%",
+     "s": "stg-paed:23.9"
+    },
+    {
+     "n": "3.2",
+     "t": "↑ADH states → 60–80%",
+     "s": "stg-paed:23.9"
+    },
+    {
+     "n": "3.3",
+     "t": "Add ongoing losses (diarrhoea, fistula, burns, DKA polyuria) separately",
+     "s": "stg-paed:23.9"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Choose and make the fluid",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "isotonic with dextrose",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "NaCl 0.9%/D5 or balanced solution + dextrose",
+     "s": "stg-paed:23.9",
+     "b": 1
+    },
+    {
+     "n": "4.2",
+     "t": "Make: 1 L NaCl 0.9% + 100 mL D50 (≈4.5% dextrose)",
+     "s": "stg-paed:2.17"
+    },
+    {
+     "n": "4.3",
+     "t": "Add KCl 20 mmol/L once passing urine and K normal",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Monitor and stop early",
+   "timing": "6–12-hourly",
+   "time": "6–12-hourly",
+   "subtitle": "weight · urine · glucose · Na/K",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Weigh daily (6-hourly if very ill)",
+     "s": "stg-paed:2.10"
+    },
+    {
+     "n": "5.2",
+     "t": "Urine ≥1 mL/kg/h",
+     "s": "stg-paed:1.16"
+    },
+    {
+     "n": "5.3",
+     "t": "Na, K, glucose at least daily",
+     "d": 1
+    },
+    {
+     "n": "5.4",
+     "t": "De-escalate IV as soon as enteral fluids tolerated",
+     "s": "stg-paed:23.9"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Maintenance by weight",
+    "s": "stg-paed:23.9",
+    "cols": [
+     "Weight",
+     "mL/24 h",
+     "4/2/1 mL/h",
+     "80% mL/h",
+     "60–80% mL/h"
+    ],
+    "rows": [
+     [
+      "3 kg",
+      "300",
+      "12",
+      "10",
+      "7–10"
+     ],
+     [
+      "5 kg",
+      "500",
+      "20",
+      "16",
+      "12–16"
+     ],
+     [
+      "7 kg",
+      "700",
+      "28",
+      "22",
+      "17–22"
+     ],
+     [
+      "10 kg",
+      "1 000",
+      "40",
+      "32",
+      "24–32"
+     ],
+     [
+      "12 kg",
+      "1 100",
+      "44",
+      "35",
+      "26–35"
+     ],
+     [
+      "15 kg",
+      "1 250",
+      "50",
+      "40",
+      "30–40"
+     ],
+     [
+      "20 kg",
+      "1 500",
+      "60",
+      "48",
+      "36–48"
+     ],
+     [
+      "25 kg",
+      "1 600",
+      "65",
+      "52",
+      "39–52"
+     ],
+     [
+      "30 kg",
+      "1 700",
+      "70",
+      "56",
+      "42–56"
+     ],
+     [
+      "40 kg",
+      "1 900",
+      "80",
+      "64",
+      "48–64"
+     ],
+     [
+      "50 kg",
+      "2 100",
+      "90",
+      "72",
+      "54–72"
+     ],
+     [
+      "60 kg",
+      "2 300",
+      "100",
+      "80",
+      "60–80"
+     ]
+    ],
+    "s_more": [
+     "stg-paed:23.10"
+    ]
+   },
+   {
+    "h": "By age, ill children (mL/kg/day)",
+    "s": "stg-paed:23.9",
+    "cols": [
+     "Age",
+     "mL/kg/day"
+    ],
+    "rows": [
+     [
+      "1–3 months",
+      "100–120"
+     ],
+     [
+      "3–12 months",
+      "80–100"
+     ],
+     [
+      "1–5 years",
+      "70–80"
+     ],
+     [
+      "5–12 years",
+      "40–70"
+     ]
+    ]
+   }
+  ]
+ }
+}

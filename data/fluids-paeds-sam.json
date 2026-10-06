@@ -1,0 +1,355 @@
+{
+ "id": "fluids-paeds-sam",
+ "short": "Fluids – SAM (child)",
+ "title": "Fluids in severe acute malnutrition",
+ "population": "Child 6–60 months",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Feed first · NaCl 0.9% 10 mL/kg over 20 min only for shock · oral rehydration · blood 5 mL/kg",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "SAM",
+   "col": 1,
+   "items": [
+    {
+     "t": "WHZ <−3, MUAC <11.5 cm, or bilateral pedal oedema",
+     "s": "stg-paed:2.38",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Danger signs → inpatient",
+   "col": 1,
+   "items": [
+    {
+     "t": "Shock, lethargy, hypoglycaemia, hypothermia, dehydration, vomiting everything, respiratory distress",
+     "s": "stg-paed:2.38",
+     "s_more": [
+      "stg-paed:2.39"
+     ]
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Poor cardiac reserve",
+   "col": 1,
+   "items": [
+    {
+     "t": "Do not start or keep IV infusions unless absolutely necessary",
+     "s": "stg-paed:2.40",
+     "b": 1
+    },
+    {
+     "t": "Use a heparin lock for IV antibiotics",
+     "s": "stg-paed:2.42"
+    },
+    {
+     "t": "Deterioration may be overload or sepsis, not hypovolaemia",
+     "s": "stg-paed:2.11"
+    }
+   ]
+  },
+  {
+   "h": "Sodium",
+   "col": 1,
+   "items": [
+    {
+     "t": "Excess body Na: high-Na fluids dangerous",
+     "s": "stg-paed:2.41",
+     "b": 1
+    },
+    {
+     "t": "No diuretics for oedema",
+     "s": "stg-paed:2.41"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Shock only: cautious boluses",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "10 mL/kg over 20 min",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Give NaCl 0.9% 10 mL/kg over 20 min",
+     "s": "stg-paed:1.16",
+     "s_more": [
+      "stg-paed:2.11"
+     ],
+     "b": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Reassess after each; max 4 boluses (40 mL/kg) → high care",
+     "s": "stg-paed:2.11"
+    },
+    {
+     "n": "1.3",
+     "t": "Start ampicillin IV 50 mg/kg 6-hourly + gentamicin 6 mg/kg daily",
+     "s": "stg-paed:2.18"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Check and treat glucose",
+   "timing": "T 0 → T + 30 min",
+   "time": "T 0 → T + 30 min",
+   "subtitle": "BG <3 mmol/L",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Well: F75 15 mL/kg or D10 10 mL/kg or sugar water 10 mL/kg PO",
+     "s": "stg-paed:2.40"
+    },
+    {
+     "n": "2.2",
+     "t": "Symptomatic / persistent: D10 IV 5 mL/kg",
+     "s": "stg-paed:2.40",
+     "b": 1
+    },
+    {
+     "n": "2.3",
+     "t": "Recheck in 30 min; then 3-hourly × 24 h",
+     "s": "stg-paed:2.40"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Feed — this is the maintenance fluid",
+   "timing": "within 30 min",
+   "time": "within 30 min",
+   "subtitle": "F75 130 mL/kg/day",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "F75 130 mL/kg/day, 3-hourly (8 feeds)",
+     "s": "stg-paed:2.45",
+     "b": 1
+    },
+    {
+     "n": "3.2",
+     "t": "Gross oedema: start 100 mL/kg/day",
+     "s": "stg-paed:2.45"
+    },
+    {
+     "n": "3.3",
+     "t": "Danger signs / hypothermia / hypoglycaemia: 2-hourly (12 feeds)",
+     "s": "stg-paed:2.45"
+    },
+    {
+     "n": "3.4",
+     "t": "No mineral-vitamin complex: add KCl and Mg",
+     "s": "stg-paed:2.41",
+     "s_more": [
+      "stg-paed:2.42"
+     ]
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Rehydrate orally",
+   "timing": "if needed",
+   "time": "if needed",
+   "subtitle": "as acute diarrhoea, more frequent checks",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Use ORS / NGT per Dehydration card; avoid IV",
+     "s": "stg-paed:2.11",
+     "s_more": [
+      "stg-paed:2.41"
+     ]
+    },
+    {
+     "n": "4.2",
+     "t": "Reassess hourly: pulse, RR, liver, eyes, urine",
+     "d": 1
+    },
+    {
+     "n": "4.3",
+     "t": "WHO option: ReSoMal 5 mL/kg every 30 min × 2 h, then 5–10 mL/kg/h",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "↑pulse + ↑RR, liver growing, gallop",
+     "then": "overload → stop fluid, treat as cardiac dysfunction",
+     "s": "stg-paed:2.11"
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Transfuse only if essential",
+   "timing": "if Hb <4",
+   "time": "if Hb <4",
+   "subtitle": "Hb <4 or Hb low + respiratory distress",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Packed red cells 5 mL/kg over 3 h",
+     "s": "stg-paed:2.44",
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Furosemide 1 mg/kg IV at the start",
+     "s": "stg-paed:2.44"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Volumes by weight (mL)",
+    "s": "stg-paed:2.11",
+    "cols": [
+     "Weight",
+     "Shock bolus",
+     "D10 IV",
+     "F75 3-hourly",
+     "F75 2-hourly",
+     "Oedema 3-hourly",
+     "PRC"
+    ],
+    "rows": [
+     [
+      "3 kg",
+      "30",
+      "15",
+      "49",
+      "33",
+      "38",
+      "15"
+     ],
+     [
+      "4 kg",
+      "40",
+      "20",
+      "65",
+      "43",
+      "50",
+      "20"
+     ],
+     [
+      "5 kg",
+      "50",
+      "25",
+      "81",
+      "54",
+      "63",
+      "25"
+     ],
+     [
+      "6 kg",
+      "60",
+      "30",
+      "98",
+      "65",
+      "75",
+      "30"
+     ],
+     [
+      "7 kg",
+      "70",
+      "35",
+      "114",
+      "76",
+      "88",
+      "35"
+     ],
+     [
+      "8 kg",
+      "80",
+      "40",
+      "130",
+      "87",
+      "100",
+      "40"
+     ],
+     [
+      "10 kg",
+      "100",
+      "50",
+      "163",
+      "108",
+      "125",
+      "50"
+     ],
+     [
+      "12 kg",
+      "120",
+      "60",
+      "195",
+      "130",
+      "150",
+      "60"
+     ],
+     [
+      "15 kg",
+      "150",
+      "75",
+      "244",
+      "163",
+      "188",
+      "75"
+     ]
+    ],
+    "s_more": [
+     "stg-paed:2.40",
+     "stg-paed:2.44",
+     "stg-paed:2.45"
+    ]
+   }
+  ]
+ }
+}

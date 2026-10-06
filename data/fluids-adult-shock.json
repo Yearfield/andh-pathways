@@ -1,0 +1,553 @@
+{
+ "id": "fluids-adult-shock",
+ "short": "Fluids – shock (adult)",
+ "title": "Fluid resuscitation — shock",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Crystalloid by shock type · blood early in haemorrhage · adrenaline if fluid-refractory",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Recognise shock",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypotension, tachycardia, weak pulses, clammy skin, pallor, altered mental state, poor urine output, ↑ lactate",
+     "s": "stg-adult:20.21"
+    },
+    {
+     "t": "Shock in a bleeding patient = large volume already lost",
+     "s": "stg-adult:20.21",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Use this card for",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypovolaemic, non-trauma: severe diarrhoea, dehydration, haemorrhage, fluid shifts",
+     "s": "stg-adult:20.20"
+    },
+    {
+     "t": "Trauma / major bleeding (GI bleed, ruptured ectopic, obstetric)",
+     "s": "stg-adult:20.21"
+    },
+    {
+     "t": "Septic, neurogenic, cardiogenic (RV infarct)",
+     "s": "stg-adult:20.23",
+     "s_more": [
+      "stg-adult:20.24",
+      "stg-adult:20.25"
+     ]
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Cautions",
+   "col": 1,
+   "items": [
+    {
+     "t": "Major bleeding: keep total crystalloid <1.5 L; replace blood with blood",
+     "s": "stg-adult:20.21",
+     "b": 1
+    },
+    {
+     "t": "Sepsis: avoid over-hydration (ARDS / hypoxia)",
+     "s": "stg-adult:20.24"
+    },
+    {
+     "t": "No colloids in sepsis or AKI",
+     "s": "stg-adult:23.4"
+    },
+    {
+     "t": "Dextrose 5% is not a resuscitation fluid (no electrolytes)",
+     "s": "stg-adult:1.19"
+    }
+   ]
+  },
+  {
+   "h": "Not a fluid problem",
+   "col": 1,
+   "items": [
+    {
+     "t": "Cardiogenic: 250–500 mL challenge only, then inotrope",
+     "s": "stg-adult:20.25",
+     "b": 1
+    },
+    {
+     "t": "Obstructive (tension PTX, tamponade, PE): treat the cause; consult",
+     "s": "stg-adult:20.25"
+    },
+    {
+     "t": "Anaphylaxis → anaphylaxis card (HOSP 20.7)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Stop the loss, get access",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "ABC · bleeding control · 2 lines · bloods",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Give oxygen",
+     "x": "if SpO₂ <94%",
+     "s": "stg-adult:20.21"
+    },
+    {
+     "n": "1.2",
+     "t": "Control bleeding",
+     "x": "direct pressure · tourniquet (BP cuff, ≤6 h) · Foley balloon tamponade for neck/axilla/groin",
+     "s": "stg-adult:20.21"
+    },
+    {
+     "n": "1.3",
+     "t": "Insert 2 large-bore IV lines",
+     "x": "peripheral lines are adequate; IO if 2 attempts fail †",
+     "s": "stg-adult:20.20",
+     "s_more": [
+      "stg-adult:20.21"
+     ]
+    },
+    {
+     "n": "1.4",
+     "t": "Send bloods now",
+     "x": "type & screen / X-match early, warn blood bank of possible massive transfusion; FBC, U&E, glucose, VBG + lactate †",
+     "s": "stg-adult:20.21"
+    },
+    {
+     "n": "1.5",
+     "t": "Keep warm",
+     "x": "prevent hypothermia; warm fluids if available †",
+     "s": "stg-adult:20.21"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Give the first bolus by shock type",
+   "timing": "T 0 → T + 30 min",
+   "time": "T 0 → T + 30 min",
+   "subtitle": "pick ONE row; reassess after every bolus",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "HYPOVOLAEMIC",
+     "sub": "non-trauma",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "1–2 L IV",
+       "note": "monitor BP, pulse, clinical response",
+       "s": "stg-adult:20.20"
+      }
+     ]
+    },
+    {
+     "label": "BLEEDING",
+     "sub": "trauma / GI / obstetric",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "up to 1 L",
+       "note": "limit total <1.5 L",
+       "s": "stg-adult:20.21"
+      },
+      {
+       "m": "b",
+       "name": "Emergency blood",
+       "dose": "if >1 L needed / unstable",
+       "note": "O-neg: ♀ childbearing Rh−/unknown · O-pos: ♂, ♀ >50 y, Rh+ ♀",
+       "s": "stg-adult:20.21"
+      }
+     ]
+    },
+    {
+     "label": "SEPTIC",
+     "sub": "suspected infection",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9% or Ringer's lactate",
+       "dose": "500 mL over 30 min",
+       "note": "repeat to 30 mL/kg; RL if ↓Na or prior KRT",
+       "s": "stg-adult:20.24"
+      },
+      {
+       "m": "b",
+       "name": "Ceftriaxone",
+       "dose": "2 g IV",
+       "note": "after blood culture",
+       "s": "stg-adult:20.24"
+      }
+     ]
+    },
+    {
+     "label": "NEUROGENIC",
+     "sub": "spinal cord injury",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "titrated boluses up to 1 L",
+       "note": "then adrenaline",
+       "s": "stg-adult:20.23"
+      }
+     ]
+    },
+    {
+     "label": "CARDIOGENIC",
+     "sub": "RV infarct only",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "250–500 mL bolus",
+       "note": "assess fluid responsiveness",
+       "s": "stg-adult:20.25"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a bolus ▶ b reassess ▶ c repeat / escalate",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Reassess after every bolus",
+   "timing": "every 15–30 min",
+   "time": "every 15–30 min",
+   "subtitle": "response = perfusion, not a BP number",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Check perfusion",
+     "x": "urine >0.5 mL/kg/h and adequate cerebral perfusion define response",
+     "s": "stg-adult:20.24"
+    },
+    {
+     "n": "3.2",
+     "t": "Aim MAP ≥65 mmHg",
+     "x": "CRT <3 s; lactate clearance >20% over 2 h",
+     "s": "stg-adult:23.4",
+     "s_more": [
+      "stg-adult:23.35"
+     ]
+    },
+    {
+     "n": "3.3",
+     "t": "Catheterise, chart hourly urine",
+     "x": "with ECG, SpO₂, BP",
+     "s": "stg-adult:23.3"
+    },
+    {
+     "n": "3.4",
+     "t": "Look for overload before each repeat",
+     "x": "↑RR, crackles, ↓SpO₂, ↑JVP → stop boluses",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "Responds then deteriorates",
+     "then": "occult bleed (abdomen, retroperitoneum, chest) or obstructive cause",
+     "s": "stg-adult:20.22",
+     "s_more": [
+      "stg-adult:20.23"
+     ]
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Escalate if not responding",
+   "timing": "after 2 units blood / 30 mL/kg",
+   "time": "after 2 units blood / 30 mL/kg",
+   "subtitle": "blood products · TXA · adrenaline · dobutamine",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Activate massive transfusion",
+     "x": "after 2 units emergency blood; pack 6 RBC : 6 FFP (or plasma 1:1 per unit) : 1 mega-unit platelets = 1:1:1",
+     "s": "stg-adult:20.21",
+     "s_more": [
+      "stg-adult:20.22"
+     ],
+     "b": 1
+    },
+    {
+     "n": "4.2",
+     "t": "No blood bank / stock out",
+     "x": "lyophilised plasma 1 unit per unit of emergency blood + urgent transfer",
+     "s": "stg-adult:20.22"
+    },
+    {
+     "n": "4.3",
+     "t": "Give tranexamic acid in trauma",
+     "x": "1 g IV over 10 min, then 1 g over 8 h; best <1 h, harmful >3 h after injury",
+     "s": "stg-adult:20.22"
+    },
+    {
+     "n": "4.4",
+     "t": "Start adrenaline (septic / neurogenic)",
+     "x": "0.05 mcg/kg/min, titrate to MAP 65 + urine 0.5 mL/kg/h; max 1 mcg/kg/min",
+     "s": "stg-adult:20.24",
+     "s_more": [
+      "stg-adult:23.35"
+     ]
+    },
+    {
+     "n": "4.5",
+     "t": "Start dobutamine (cardiogenic)",
+     "x": "5–10 mcg/kg/min; consult specialist",
+     "s": "stg-adult:20.25"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Stabilised: hand over to maintenance",
+   "timing": "shock resolved",
+   "time": "shock resolved",
+   "subtitle": "stop boluses · maintain · refer",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Stop boluses; prescribe maintenance",
+     "x": "see Maintenance card; replace ongoing losses separately",
+     "d": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Keep hourly urine + MAP chart",
+     "s": "stg-adult:23.3"
+    },
+    {
+     "n": "5.3",
+     "t": "Refer",
+     "x": "vasopressor need → ICU; cardiogenic / obstructive → specialist after initial measures",
+     "s": "stg-adult:20.25"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Adrenaline infusion mL/h — 10 mg in 1 L NaCl 0.9% (10 mcg/mL)",
+    "s": "stg-adult:20.23",
+    "cols": [
+     "mcg/kg/min",
+     "50 kg",
+     "60 kg",
+     "70 kg",
+     "80 kg",
+     "90 kg",
+     "100 kg"
+    ],
+    "rows": [
+     [
+      "0.05",
+      "15",
+      "18",
+      "21",
+      "24",
+      "27",
+      "30"
+     ],
+     [
+      "0.1",
+      "30",
+      "36",
+      "42",
+      "48",
+      "54",
+      "60"
+     ],
+     [
+      "0.2",
+      "60",
+      "72",
+      "84",
+      "96",
+      "108",
+      "120"
+     ],
+     [
+      "0.3",
+      "90",
+      "108",
+      "126",
+      "144",
+      "162",
+      "180"
+     ],
+     [
+      "0.5",
+      "150",
+      "180",
+      "210",
+      "240",
+      "270",
+      "300"
+     ],
+     [
+      "1.0",
+      "300",
+      "360",
+      "420",
+      "480",
+      "540",
+      "600"
+     ]
+    ]
+   },
+   {
+    "h": "Dobutamine mL/h — 250 mg to 50 mL (5 mg/mL)",
+    "s": "stg-adult:20.25",
+    "cols": [
+     "mcg/kg/min",
+     "50 kg",
+     "60 kg",
+     "70 kg",
+     "80 kg",
+     "90 kg",
+     "100 kg"
+    ],
+    "rows": [
+     [
+      "5",
+      "3",
+      "3.6",
+      "4.2",
+      "4.8",
+      "5.4",
+      "6"
+     ],
+     [
+      "7.5",
+      "4.5",
+      "5.4",
+      "6.3",
+      "7.2",
+      "8.1",
+      "9"
+     ],
+     [
+      "10",
+      "6",
+      "7.2",
+      "8.4",
+      "9.6",
+      "10.8",
+      "12"
+     ]
+    ]
+   },
+   {
+    "h": "Septic shock: 30 mL/kg target",
+    "s": "stg-adult:20.24",
+    "cols": [
+     "Weight",
+     "30 mL/kg",
+     "× 500 mL"
+    ],
+    "rows": [
+     [
+      "50 kg",
+      "1 500",
+      "3"
+     ],
+     [
+      "60 kg",
+      "1 800",
+      "3.6"
+     ],
+     [
+      "70 kg",
+      "2 100",
+      "4.2"
+     ],
+     [
+      "80 kg",
+      "2 400",
+      "4.8"
+     ],
+     [
+      "90 kg",
+      "2 700",
+      "5.4"
+     ],
+     [
+      "100 kg",
+      "3 000",
+      "6"
+     ]
+    ]
+   },
+   {
+    "h": "ANDH reality †",
+    "type": "list",
+    "items": [
+     {
+      "t": "2 units O-neg on site: phone referral centre at first unit, not after the second",
+      "d": 1
+     },
+     {
+      "t": "ICU sepsis bundle: balanced crystalloid 30 mL/kg over 3 h",
+      "s": "stg-adult:23.35"
+     },
+     {
+      "t": "Obstetric haemorrhage → PPH / APH pathway (MAT24 p112–117)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ }
+}

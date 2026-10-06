@@ -1,0 +1,408 @@
+{
+ "id": "fluids-paeds-burns",
+ "short": "Fluids – burns (child)",
+ "title": "Burns fluid resuscitation",
+ "population": "Child (<8 y: age-adjusted chart)",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Replacement 4 mL × kg × %TBSA (NaCl 0.9% / RL) + maintenance (NaCl 0.9%/D5) · urine 1–2 mL/kg/h",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Fluids by size",
+   "col": 1,
+   "items": [
+    {
+     "t": "<10% TBSA: oral fluids",
+     "s": "stg-paed:1.25"
+    },
+    {
+     "t": ">10% TBSA: IV resuscitation + maintenance",
+     "s": "stg-paed:1.25",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Major burn (admit / refer)",
+   "col": 1,
+   "items": [
+    {
+     "t": "Partial thickness >10% · full thickness >3% · face, hands, feet, perineum · inhalational · circumferential · electrical · neonate",
+     "s": "stg-paed:1.23"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "First",
+   "col": 1,
+   "items": [
+    {
+     "t": "Shock → Shock card before burns formula",
+     "s": "stg-paed:1.25",
+     "b": 1
+    },
+    {
+     "t": "Soot, hoarse voice, stridor → early intubation (delayed obstruction)",
+     "s": "stg-paed:1.22",
+     "s_more": [
+      "stg-paed:1.24"
+     ]
+    }
+   ]
+  },
+  {
+   "h": "Avoid",
+   "col": 1,
+   "items": [
+    {
+     "t": "Cooling >20 min (hypothermia)",
+     "s": "stg-paed:1.22"
+    },
+    {
+     "t": "Circumferential taping of lines",
+     "s": "stg-paed:1.26"
+    },
+    {
+     "t": "Over-resuscitation: stop resus fluid if urine >1–2 mL/kg/h or BE better than −4",
+     "s": "stg-paed:1.27"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Stop the burn, airway, oxygen",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "remove · cool ≤20 min · O₂",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Remove smouldering and tight clothing, rings",
+     "s": "stg-paed:1.22"
+    },
+    {
+     "n": "1.2",
+     "t": "Soak in cold water ≤20 min",
+     "s": "stg-paed:1.22"
+    },
+    {
+     "n": "1.3",
+     "t": "O₂ 15 L/min if >10% or CO risk",
+     "s": "stg-paed:1.22"
+    },
+    {
+     "n": "1.4",
+     "t": "Warm room 26 °C",
+     "s": "stg-paed:1.24"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Access; treat shock",
+   "timing": "T 0 → T + 15 min",
+   "time": "T 0 → T + 15 min",
+   "subtitle": "IV / IO · shock card",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Insert IV (IO if no IV in 5 min)",
+     "s": "stg-paed:1.20"
+    },
+    {
+     "n": "2.2",
+     "t": "Shocked → bolus per Shock card, then calculate burns fluid",
+     "s": "stg-paed:1.25"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Measure %TBSA and weigh",
+   "timing": "T + 15 min",
+   "time": "T + 15 min",
+   "subtitle": "age-adjusted chart · palm = 1%",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Use age table (head bigger, legs smaller <9 y)",
+     "s": "stg-paed:1.24"
+    },
+    {
+     "n": "3.2",
+     "t": "Child's palm = 1%",
+     "s": "stg-paed:1.24"
+    },
+    {
+     "n": "3.3",
+     "t": "Weigh; note TIME OF BURN",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Calculate both fluids",
+   "timing": "from time of burn",
+   "time": "from time of burn",
+   "subtitle": "replacement + maintenance",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "REPLACEMENT",
+     "sub": "4 mL × kg × %",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9% / RL",
+       "dose": "½ in 8 h",
+       "s": "stg-paed:1.25",
+       "s_more": [
+        "stg-paed:1.26"
+       ]
+      },
+      {
+       "m": "b",
+       "name": "NaCl 0.9%",
+       "dose": "½ over 16 h",
+       "s": "stg-paed:1.26"
+      },
+      {
+       "m": "c",
+       "name": "NaCl 0.9%",
+       "dose": "1.5 mL/kg/% / 24 h",
+       "note": "if urine adequate",
+       "s": "stg-paed:1.27"
+      }
+     ]
+    },
+    {
+     "label": "MAINTENANCE",
+     "sub": "≤1 y 120 mL/kg/d; >1 y 100/50/20",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%/D5",
+       "dose": "⅓ in 8 h",
+       "s": "stg-paed:1.26"
+      },
+      {
+       "m": "b",
+       "name": "NaCl 0.9%/D5",
+       "dose": "⅔ over 16 h",
+       "s": "stg-paed:1.26"
+      },
+      {
+       "m": "c",
+       "name": "NaCl 0.9%/D5",
+       "dose": "full maintenance",
+       "note": "part as enteral feeds",
+       "s": "stg-paed:1.27"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a first 8 h ▶ b next 16 h ▶ c day 2",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Titrate hourly; feed early",
+   "timing": "hourly",
+   "time": "hourly",
+   "subtitle": "urine 1–2 mL/kg/h",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Urine low → ↑ fluids 50% for next hour, until adequate",
+     "s": "stg-paed:1.26",
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "NGT on free drainage if >10%; NG feeds day 1 if >15%",
+     "s": "stg-paed:1.25"
+    },
+    {
+     "n": "5.3",
+     "t": "Enteral feeds within 6 h",
+     "s": "stg-paed:1.25"
+    },
+    {
+     "n": "5.4",
+     "t": "Hb <7: packed cells 10 mL/kg over 3 h",
+     "s": "stg-paed:1.27"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Rates (mL/h) — maintenance + replacement per 10% TBSA",
+    "s": "stg-paed:1.26",
+    "cols": [
+     "Weight",
+     "Maint / 24 h",
+     "Maint 1st 8 h",
+     "Maint next 16 h",
+     "Repl / 24 h per 10%",
+     "Repl 1st 8 h",
+     "Repl next 16 h"
+    ],
+    "rows": [
+     [
+      "5 kg",
+      "500",
+      "21",
+      "21",
+      "200",
+      "13",
+      "6"
+     ],
+     [
+      "10 kg",
+      "1 000",
+      "42",
+      "42",
+      "400",
+      "25",
+      "13"
+     ],
+     [
+      "15 kg",
+      "1 250",
+      "52",
+      "52",
+      "600",
+      "38",
+      "19"
+     ],
+     [
+      "20 kg",
+      "1 500",
+      "63",
+      "63",
+      "800",
+      "50",
+      "25"
+     ],
+     [
+      "24 kg",
+      "1 580",
+      "66",
+      "66",
+      "960",
+      "60",
+      "30"
+     ],
+     [
+      "30 kg",
+      "1 700",
+      "71",
+      "71",
+      "1 200",
+      "75",
+      "38"
+     ],
+     [
+      "40 kg",
+      "1 900",
+      "79",
+      "79",
+      "1 600",
+      "100",
+      "50"
+     ]
+    ],
+    "note": "Scale replacement by %TBSA ÷ 10. Infants ≤1 y: maintenance 120 mL/kg/24 h. STG example 24 kg 10%: 480 + 527 mL in 8 h; 480 + 1 053 mL in 16 h."
+   },
+   {
+    "h": "TBSA by age (%)",
+    "s": "stg-paed:1.24",
+    "cols": [
+     "Age (y)",
+     "<1",
+     "1–<2",
+     "2–<3",
+     "3–<4",
+     "4–<5",
+     "5–<6",
+     "6–<7",
+     "7–<8",
+     "8–<9",
+     "≥9"
+    ],
+    "rows": [
+     [
+      "Head + neck",
+      "18",
+      "17",
+      "16",
+      "15",
+      "14",
+      "13",
+      "12",
+      "11",
+      "10",
+      "9"
+     ],
+     [
+      "Each leg",
+      "14",
+      "14.5",
+      "15",
+      "15.5",
+      "16",
+      "16.5",
+      "17",
+      "17.5",
+      "18",
+      "18"
+     ]
+    ],
+    "note": "Torso front 18 · back 18 · each arm 9 (all ages)."
+   }
+  ]
+ }
+}

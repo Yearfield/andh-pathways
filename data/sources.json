@@ -53,6 +53,8 @@
     {"id": "PERC", "short": "PERC", "title": "Kline JA et al. PERC rule. J Thromb Haemost 2004;2:1247 (via MDCalc)", "type": "paper", "country": "intl", "url": "https://www.mdcalc.com/calc/347/perc-rule-pulmonary-embolism", "accessed": "2026-10-06"},
     {"id": "ADJUST", "short": "ADJUST-PE", "title": "Righini M et al. ADJUST-PE. JAMA 2014;311:1117", "type": "paper", "country": "intl"},
     {"id": "stg-adult","short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
+    "1": {"title": "Chapter 1", "offset": 0},
+    "6": {"title": "Chapter 6", "offset": 0},
     "7": {"title": "Chapter 7", "offset": 0},
     "2": {"title": "Chapter 2", "offset": 0},
     "12": {"title": "Chapter 12", "offset": 0},
@@ -65,9 +67,11 @@
     }},
     {"id": "stg-paed", "short": "STG Paeds", "title": "Paediatric Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
     "1": {"title": "Chapter 1", "offset": 0},
+    "2": {"title": "Chapter 2", "offset": 0},
     "7": {"title": "Chapter 7", "offset": 0},
     "13": {"title": "Chapter 13", "offset": 0},
     "18": {"title": "Chapter 18", "offset": 0},
+    "19": {"title": "Chapter 19", "offset": 0},
     "22": {"title": "Chapter 22", "offset": 0},
     "23": {"title": "Chapter 23", "offset": 0}
     }}

@@ -1,0 +1,439 @@
+{
+ "id": "fluids-paeds-dehydration",
+ "short": "Fluids – dehydration (child)",
+ "title": "Rehydration — acute diarrhoea",
+ "population": "Child (1 month – 12 years)",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Shock: NaCl 0.9% 10 mL/kg over 20 min · ORS 80 mL/kg / 4 h (or NGT 20 mL/kg/h) · ± IV 10 mL/kg/h × 4 h",
+ "sources": [
+  "stg-paed",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Severe dehydration",
+   "col": 1,
+   "items": [
+    {
+     "t": "Sunken eyes · very slow skin pinch (≥2 s) · drinking poorly",
+     "s": "stg-paed:2.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Some dehydration",
+   "col": 1,
+   "items": [
+    {
+     "t": "Sunken eyes · slow pinch (<2 s) · drinks eagerly · irritable / restless",
+     "s": "stg-paed:2.9"
+    }
+   ]
+  },
+  {
+   "h": "Shock",
+   "col": 1,
+   "items": [
+    {
+     "t": "CRT >3 s, rapid weak pulse, cool peripheries; late: ↓LOC, ↓BP",
+     "s": "stg-paed:2.9"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Do not",
+   "col": 1,
+   "items": [
+    {
+     "t": "Antidiarrhoeals or antiemetics",
+     "s": "stg-paed:2.11",
+     "b": 1
+    },
+    {
+     "t": "Dextrose 5% / hypotonic fluid for rehydration",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Take extra care",
+   "col": 1,
+   "items": [
+    {
+     "t": "Severe malnutrition: avoid IV, max 4 boluses (SAM card)",
+     "s": "stg-paed:2.11"
+    },
+    {
+     "t": "<2 months or SAM: bacterial co-infection common",
+     "s": "stg-paed:2.9"
+    },
+    {
+     "t": "Na >150: slow correction (box below)",
+     "s": "stg-paed:2.16"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Treat shock first",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "IO if no IV in 5 min · oxygen",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Give NaCl 0.9% 10 mL/kg over 20 min",
+     "s": "stg-paed:2.11",
+     "b": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Reassess after each bolus; repeat up to 6× if no overload",
+     "s": "stg-paed:2.11"
+    },
+    {
+     "n": "1.3",
+     "t": "After 40 mL/kg with poor response → 5th bolus + ICU / inotropes",
+     "s": "stg-paed:2.11"
+    },
+    {
+     "n": "1.4",
+     "t": "SAM: 10 mL/kg over 20 min, max 4 boluses",
+     "s": "stg-paed:2.11"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Grade dehydration and weigh",
+   "timing": "after shock",
+   "time": "after shock",
+   "subtitle": "severe · some · none",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Grade with eyes, skin pinch, drinking",
+     "s": "stg-paed:2.9"
+    },
+    {
+     "n": "2.2",
+     "t": "Weigh (6-hourly if very ill)",
+     "s": "stg-paed:2.10"
+    },
+    {
+     "n": "2.3",
+     "t": "Severe / shock: send Na, K, urea, creatinine, gas",
+     "s": "stg-paed:2.10"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Rehydrate over 4 hours",
+   "timing": "T 0 → T + 4 h",
+   "time": "T 0 → T + 4 h",
+   "subtitle": "pick ONE row",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Keep breastfeeding; feed normally if alert, not shocked, no surgical abdomen",
+     "s": "stg-paed:2.10",
+     "s_more": [
+      "stg-paed:2.12"
+     ]
+    }
+   ],
+   "sequence": [
+    {
+     "label": "PLAN 2a",
+     "sub": "no shock, not failed ORS",
+     "cells": [
+      {
+       "m": "a",
+       "name": "ORS",
+       "dose": "80 mL/kg over 4 h",
+       "note": "5 mL/kg every 15 min; or NGT 20 mL/kg/h",
+       "s": "stg-paed:2.12"
+      }
+     ]
+    },
+    {
+     "label": "PLAN 2b",
+     "sub": "was shocked / failed oral / failed at clinic",
+     "cells": [
+      {
+       "m": "a",
+       "name": "ORS or NGT",
+       "dose": "as 2a",
+       "s": "stg-paed:2.12"
+      },
+      {
+       "m": "b",
+       "name": "NaCl 0.9%/dextrose 5%",
+       "dose": "10 mL/kg/h IV × 4 h",
+       "note": "or NaCl 0.9% / RL",
+       "s": "stg-paed:2.13"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a ORS / NGT ▶ b + IV if failed ▶ c reassess at 4 h",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Reassess at 4 hours",
+   "timing": "T + 4 h, then 4-hourly",
+   "time": "T + 4 h, then 4-hourly",
+   "subtitle": "re-grade, re-plan",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Check general state, CRT, LOC, turgor, eyes, RR, liver span, urine, stools",
+     "s": "stg-paed:2.13"
+    },
+    {
+     "n": "4.2",
+     "t": "Urine ≥1 mL/kg/h",
+     "s": "stg-paed:2.10"
+    },
+    {
+     "n": "4.3",
+     "t": "Still dehydrated → repeat step 3",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "K 2.5–3.5",
+     "then": "KCl oral 25–50 mg/kg 8-hourly",
+     "s": "stg-paed:2.15"
+    },
+    {
+     "if": "K <2.5",
+     "then": "IV KCl ≤40 mmol/L, ≤0.5–1 mmol/kg/h, over 4 h, ECG monitoring",
+     "s": "stg-paed:2.15"
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Maintain and prevent",
+   "timing": "until diarrhoea stops",
+   "time": "until diarrhoea stops",
+   "subtitle": "ORS per stool · zinc · K",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Give ORS 10 mL/kg after each stool",
+     "s": "stg-paed:2.13",
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Zinc 10 mg daily × 14 days",
+     "s": "stg-paed:2.19"
+    },
+    {
+     "n": "5.3",
+     "t": "KCl oral 8-hourly: <6 m 125 mg · >6 m 250 mg",
+     "s": "stg-paed:2.19"
+    },
+    {
+     "n": "5.4",
+     "t": "Teach SSS: ½ tsp salt + 8 tsp sugar in 1 L boiled cooled water",
+     "s": "stg-paed:2.13"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Volumes by weight (mL)",
+    "s": "stg-paed:2.11",
+    "cols": [
+     "Weight",
+     "Bolus 10/kg",
+     "ORS 4 h (80/kg)",
+     "ORS per 15 min",
+     "NGT mL/h",
+     "IV mL/h",
+     "ORS per stool"
+    ],
+    "rows": [
+     [
+      "3 kg",
+      "30",
+      "240",
+      "15",
+      "60",
+      "30",
+      "30"
+     ],
+     [
+      "5 kg",
+      "50",
+      "400",
+      "25",
+      "100",
+      "50",
+      "50"
+     ],
+     [
+      "7 kg",
+      "70",
+      "560",
+      "35",
+      "140",
+      "70",
+      "70"
+     ],
+     [
+      "10 kg",
+      "100",
+      "800",
+      "50",
+      "200",
+      "100",
+      "100"
+     ],
+     [
+      "12 kg",
+      "120",
+      "960",
+      "60",
+      "240",
+      "120",
+      "120"
+     ],
+     [
+      "15 kg",
+      "150",
+      "1 200",
+      "75",
+      "300",
+      "150",
+      "150"
+     ],
+     [
+      "20 kg",
+      "200",
+      "1 600",
+      "100",
+      "400",
+      "200",
+      "200"
+     ],
+     [
+      "25 kg",
+      "250",
+      "2 000",
+      "125",
+      "500",
+      "250",
+      "250"
+     ]
+    ],
+    "s_more": [
+     "stg-paed:2.12",
+     "stg-paed:2.13"
+    ]
+   },
+   {
+    "h": "Hypernatraemia (Na 150–169)",
+    "s": "stg-paed:2.16",
+    "cols": [
+     "Weight",
+     "IV mL/h (48 h)"
+    ],
+    "rows": [
+     [
+      "3 kg",
+      "18"
+     ],
+     [
+      "5 kg",
+      "30"
+     ],
+     [
+      "7 kg",
+      "42"
+     ],
+     [
+      "10 kg",
+      "60"
+     ],
+     [
+      "15 kg",
+      "75"
+     ],
+     [
+      "20 kg",
+      "100"
+     ],
+     [
+      "30 kg",
+      "120"
+     ],
+     [
+      "40 kg",
+      "160"
+     ]
+    ],
+    "note": "Deficit 50–70 mL/kg + maintenance over 48 h; prefer ORS/NGT 10 mL/kg/h; fall ≤0.5 mmol/L/h; Na >170 → specialist / ICU (P 2.17)."
+   },
+   {
+    "h": "Arrived on IMCI Plan C from a clinic",
+    "type": "list",
+    "items": [
+     {
+      "t": "Clinic gives NaCl 0.9% 20 mL/kg IV in 30 min (repeat ×2 if pulse weak), then 20 mL/kg/h for 5 h",
+      "s": "imci2022:43"
+     },
+     {
+      "t": "Add up what was given, reassess, then continue from step 2 of this card",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ }
+}

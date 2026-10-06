@@ -1,0 +1,319 @@
+{
+ "id": "fluids-adult-maintenance",
+ "short": "Fluids – maintenance (adult)",
+ "title": "Maintenance IV fluids and sodium safety",
+ "population": "Adult",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Oral first · NaCl 0.9% (or Ringer's lactate) · 25–30 mL/kg/day † · add K · reassess daily",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Need IV maintenance",
+   "col": 1,
+   "items": [
+    {
+     "t": "Nil per mouth / cannot drink enough; peri-operative",
+     "s": "stg-adult:12.9"
+    },
+    {
+     "t": "After shock resuscitation, alongside replacement of losses",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Use less / caution",
+   "col": 1,
+   "items": [
+    {
+     "t": "Elderly, CCF, CKD, cirrhosis, malnourished: 20–25 mL/kg/day",
+     "d": 1
+    },
+    {
+     "t": "Obese: use ideal body weight",
+     "d": 1
+    },
+    {
+     "t": "KCl ampoules must always be diluted",
+     "s": "stg-adult:7.12",
+     "b": 1
+    },
+    {
+     "t": "TURP / hyponatraemia risk: higher-Na fluid",
+     "s": "stg-adult:12.10"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Decide if IV is needed",
+   "timing": "at Rx",
+   "time": "at Rx",
+   "subtitle": "oral / NGT first",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Use oral or NGT fluids if the gut works",
+     "d": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Separate the 3 needs: resuscitate · replace losses · maintain",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Choose the fluid",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "isotonic crystalloid",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "NaCl 0.9% for routine maintenance",
+     "s": "stg-adult:12.10",
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Ringer's lactate if hyponatraemia or previous KRT",
+     "s": "stg-adult:12.10"
+    },
+    {
+     "n": "2.3",
+     "t": "Dextrose 5% only for free-water (hypernatraemia)",
+     "s": "stg-adult:7.14"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Calculate the daily volume",
+   "timing": "24-h plan",
+   "time": "24-h plan",
+   "subtitle": "water · Na · K · glucose",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Water 25–30 mL/kg/day",
+     "x": "table below",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "n": "3.2",
+     "t": "Na, K, Cl ≈ 1 mmol/kg/day each",
+     "d": 1
+    },
+    {
+     "n": "3.3",
+     "t": "Glucose 50–100 g/day (limits starvation ketosis)",
+     "d": 1
+    },
+    {
+     "n": "3.4",
+     "t": "Add ongoing losses (vomit, NGT, stoma, fever) on top",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Add potassium",
+   "timing": "once passing urine",
+   "time": "once passing urine",
+   "subtitle": "check K first",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Normal K: add KCl 20 mmol per litre",
+     "d": 1
+    },
+    {
+     "n": "4.2",
+     "t": "Severe hypo-K: 40 mmol in 1 L over 3 h; ≤20 mmol/h peripheral",
+     "s": "stg-adult:7.12"
+    },
+    {
+     "n": "4.3",
+     "t": "Max 3 mmol/kg/day (400 mmol)",
+     "s": "stg-adult:7.12"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Monitor and correct sodium safely",
+   "timing": "daily",
+   "time": "daily",
+   "subtitle": "weight · balance · U&E",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Daily weight, fluid balance chart, U&E",
+     "d": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Hypo-Na: rise <8 mmol/L/day (ODS); consult before IV saline",
+     "s": "stg-adult:7.14",
+     "s_more": [
+      "stg-adult:7.15"
+     ],
+     "b": 1
+    },
+    {
+     "n": "5.3",
+     "t": "Hyper-Na: fall <10 mmol/L/24 h; water deficit + 30 mL/h insensible",
+     "s": "stg-adult:7.14",
+     "b": 1
+    },
+    {
+     "n": "5.4",
+     "t": "Stop IV as soon as drinking",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Maintenance by weight",
+    "d": 1,
+    "cols": [
+     "Weight",
+     "25 mL/kg/day",
+     "30 mL/kg/day",
+     "mL/h",
+     "Na/K mmol/day",
+     "KCl/day at 20 mmol/L"
+    ],
+    "rows": [
+     [
+      "40 kg",
+      "1 000",
+      "1 200",
+      "42–50",
+      "40",
+      "24 mmol"
+     ],
+     [
+      "50 kg",
+      "1 250",
+      "1 500",
+      "52–63",
+      "50",
+      "30 mmol"
+     ],
+     [
+      "60 kg",
+      "1 500",
+      "1 800",
+      "63–75",
+      "60",
+      "36 mmol"
+     ],
+     [
+      "70 kg",
+      "1 750",
+      "2 100",
+      "73–88",
+      "70",
+      "42 mmol"
+     ],
+     [
+      "80 kg",
+      "2 000",
+      "2 400",
+      "83–100",
+      "80",
+      "48 mmol"
+     ],
+     [
+      "90 kg",
+      "2 250",
+      "2 700",
+      "94–113",
+      "90",
+      "54 mmol"
+     ],
+     [
+      "100 kg",
+      "2 500",
+      "3 000",
+      "104–125",
+      "100",
+      "60 mmol"
+     ]
+    ]
+   },
+   {
+    "h": "Hypernatraemia (STG)",
+    "type": "list",
+    "items": [
+     {
+      "t": "TBW = factor × kg (♂ 0.6 · ♀ / elderly ♂ 0.5 · elderly ♀ 0.45)",
+      "s": "stg-adult:7.13"
+     },
+     {
+      "t": "Water deficit = TBW × (1 − 140 ÷ Na)",
+      "s": "stg-adult:7.13"
+     },
+     {
+      "t": "Day-1 water = deficit × 10 ÷ (Na − 140); rate = that ÷ 24 + 30 mL/h",
+      "s": "stg-adult:7.14"
+     },
+     {
+      "t": "Give oral/NGT water; else dextrose 5% IV, watch glucose",
+      "s": "stg-adult:7.14"
+     }
+    ]
+   }
+  ]
+ }
+}

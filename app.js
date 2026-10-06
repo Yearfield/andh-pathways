@@ -69,6 +69,7 @@ async function init() {
     if (bad.length) console.warn("Diagnoses with missing/invalid tags:", bad.join(", "));
   }
   (await loadJSON("data/sources.json")).sources.forEach(s => (S.sources[s.id] = s));
+  try { S.pm = await loadJSON("data/page-map.json"); } catch (e) { S.pm = null; console.warn("page-map.json not loaded; STG cites use per-chapter offsets only"); }
   window.addEventListener("hashchange", route); route();
 }
 /* A source cite is "id:page". Sources split into one PDF per chapter (s.chapters) cite "id:chapter.page";
@@ -80,7 +81,12 @@ function resolveSrc(src) {
     return { id, s, pdf: id, chapter: null, pg, num: false, offset: 0, online: s.url_template.replace("{id}", encodeURIComponent(pg)), label: s.short + " " + (s.cite_prefix || "") + pg };
   const m = s.chapters && /^(\d+)\.(\d+)$/.exec(pg);
   if (m) { const ch = s.chapters[m[1]] || { title: "Chapter " + m[1] };
-    return { id, s, pdf: id + ":" + m[1], chapter: m[1], pg: m[2], num: true, offset: S.offsets[id + ":" + m[1]] ?? ch.offset ?? 0, label: s.short + " Ch" + m[1] + " p" + m[2] }; }
+    const r = { id, s, pdf: id + ":" + m[1], chapter: m[1], pg: m[2], num: true, offset: S.offsets[id + ":" + m[1]] ?? ch.offset ?? 0, label: s.short + " Ch" + m[1] + " p" + m[2] };
+    // chapter.page -> PDF page through data/page-map.json (built from the guideline catalogue): the chapter's own document + offset,
+    // because one offset per book cannot resolve STG cites. r.pdf stays the older per-chapter key, used as a fallback.
+    const pm = S.pm?.books?.[id]?.[m[1]];
+    if (pm) { const dk = "doc:" + pm[0]; r.doc = dk; r.mapped = +m[2] + pm[1] + (S.offsets[dk] ?? 0); }
+    return r; }
   const num = /^\d/.test(pg);
   return { id, s, pdf: id, chapter: null, pg, num, offset: S.offsets[id] ?? s.offset ?? 0, label: s.short + " " + (num ? "p" : "") + pg };
 }
@@ -104,6 +110,7 @@ const progress = d => { const a = allItems(d); const v = a.filter(i => S.verifie
 const doneCount = (d, items) => { const r = (items || []).filter(i => i.t); return [r.filter(i => S.checked[key(d.id, i)]).length, r.length]; };
 
 /* ---------- item rendering ---------- */
+const chipx = it => chip(it.s) + (it.s_more || []).map(chip).join(""); // an item's own cite plus any s_more extra cites
 function chip(src) {
   if (!src) return "";
   const r = resolveSrc(src); // numeric = printed page; otherwise a recommendation number (e.g. ESGE R13)
@@ -114,14 +121,14 @@ const dag = it => it.d ? '<span class="dag">†</span>' : "";
 const tick = (k) => { const v = S.verified[k]; return S.verify ? `<button class="tick ${v ? "on" : ""}" data-tick="${k}" aria-pressed="${!!v}" aria-label="${v ? "Verified " + v : "Mark verified"}">✓</button>` : ""; };
 function li(d, it) {
   if (it.k === "handoff") { // jump to another pathway (#/dx/…) or procedure card (#/proc/…) named in "to"
-    const to = it.to, href = (S.index.diagnoses || []).some(x => x.id === to) ? `#/dx/${to}/arrival` : (S.index.procedures || []).some(x => x.id === to) ? `#/proc/${to}/procedure` : "";
-    return `<li class="handoff ${it.b ? "b" : ""}"><div class="body">${href ? `<button class="ho" data-go="${esc(href)}"><span class="arr" aria-hidden="true">➜</span><span class="txt">${esc(it.t)}${dag(it)}</span></button>` : `<span class="txt">${esc(it.t)}${dag(it)}</span>`}${chip(it.s)}</div>${tick(key(d.id, it))}</li>`;
+    const to = it.to, href = (S.index.diagnoses || []).some(x => x.id === to) ? `#/dx/${to}/arrival` : [...(S.index.procedures || []), ...(S.index.fluids || [])].some(x => x.id === to) ? `#/proc/${to}/procedure` : "";
+    return `<li class="handoff ${it.b ? "b" : ""}"><div class="body">${href ? `<button class="ho" data-go="${esc(href)}"><span class="arr" aria-hidden="true">➜</span><span class="txt">${esc(it.t)}${dag(it)}</span></button>` : `<span class="txt">${esc(it.t)}${dag(it)}</span>`}${chipx(it)}</div>${tick(key(d.id, it))}</li>`;
   }
-  if (it.h && !it.t) return `<li class="head"><span class="txt" style="flex:1">${esc(it.h)}${dag(it)}</span>${chip(it.s)}</li>`;
+  if (it.h && !it.t) return `<li class="head"><span class="txt" style="flex:1">${esc(it.h)}${dag(it)}</span>${chipx(it)}</li>`;
   const k = key(d.id, it); const cOn = S.checked[k];
   const cls = [it.k === "sub" ? "sub" : "", it.k === "info" ? "info" : "", it.k === "value" ? "value" : "", it.b ? "b" : "", it.k === "yn" ? "yn" : "", cOn ? "checked" : ""].join(" ");
   const chk = `<button class="chk ${cOn ? "on" : ""}" data-chk="${k}" aria-pressed="${!!cOn}" aria-label="${cOn ? "Checked off" : "Mark done"}"></button>`;
-  return `<li class="${cls}">${chk}<div class="body"><span class="txt">${esc(it.t)}${dag(it)}</span>${chip(it.s)}</div>${tick(k)}</li>`;
+  return `<li class="${cls}">${chk}<div class="body"><span class="txt">${esc(it.t)}${dag(it)}</span>${chipx(it)}</div>${tick(k)}</li>`;
 }
 const list = (d, items) => `<ul class="items">${(items || []).map(i => li(d, i)).join("")}</ul>`;
 const card = (d, title, items, cls = "") => `<section class="card ${cls}"><h2 class="ctitle">${esc(title)}</h2>${list(d, items)}</section>`;
@@ -146,7 +153,7 @@ function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
 
 /* ---------- start page + procedures ---------- */
 function landing() {
-  const nd = listRows().length, np = (S.index.procedures || []).length, ns = (S.index.scores || []).filter(e => !e.hidden).length;
+  const nd = listRows().length, np = (S.index.procedures || []).length, ns = (S.index.scores || []).filter(e => !e.hidden).length + (S.index.fluids || []).length;
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><img class="logo" src="icons/jad-logo.webp" alt="JAD">
     <div class="ttl"><h1>Pathways</h1><div class="sub">ANDH · works offline</div></div>
@@ -194,17 +201,20 @@ function weightCalc(R, kg) {
   return `<div class="wlist" aria-live="polite">${rows}</div><p class="hint">Calculated from the basis shown on each table row (${R.dose_table.rows.length} drugs) for ${fmtD(kg)} kg; always check the dose against the STG before giving.</p>`;
 }
 async function procView(id, tab) {
-  const e = (S.index.procedures || []).find(x => x.id === id); if (!e) throw new Error("unknown procedure " + id);
+  const fe = (S.index.fluids || []).find(x => x.id === id), e = fe || (S.index.procedures || []).find(x => x.id === id); if (!e) throw new Error("unknown procedure " + id);
+  const isFl = !!fe; // Fluids Rx cards (Scales and Calculations) use this renderer with their own tabs: Steps / Reference / Sources
+  if (isFl && fe.pop !== "Adult + paeds") S.hub.fluids = (S.index.fluids_hub?.members || []).findIndex(m => m.pop === fe.pop) || 0; // the hub reopens on the population you were in
+  const tm = s => s.time ?? s.timing ?? ""; // steps carry both "timing" and "time"
   const d = S.dx[id] ||= await loadJSON(e.path);
   const R = d.reference || {}, dg = x => x.d ? '<span class="dag">†</span>' : "";
   const secs = (arr, cls = "") => (arr || []).map(s => card(d, s.h, s.items, cls)).join("");
   const chips = x => x.m ? `<span class="mk">${esc(x.m)}</span>` : "";
   const act = a => { const k = key(d.id, { t: a.t, s: a.s }), on = S.checked[k];
     return `<li class="act ${a.b ? "b" : ""} ${on ? "checked" : ""}"><button class="chk ${on ? "on" : ""}" data-chk="${k}" aria-pressed="${!!on}" aria-label="${on ? "Done" : "Mark done"}"></button>
-      <div class="body"><div class="at"><span class="an">${esc(a.n)}</span><span class="txt">${esc(a.t)}${dg(a)}</span></div>${a.x ? `<div class="ax">${esc(a.x)}</div>` : ""}${chip(a.s)}</div></li>`; };
+      <div class="body"><div class="at"><span class="an">${esc(a.n)}</span><span class="txt">${esc(a.t)}${dg(a)}</span></div>${a.x ? `<div class="ax">${esc(a.x)}</div>` : ""}${chipx(a)}</div></li>`; };
   const dec = x => { const flow = x.then.split(" → "), red = /fail/i.test(x.if);
     return `<div class="dec ${red ? "red" : ""}"><div class="if"><b>IF</b> ${esc(x.if)}${dg(x)}</div>
-      <div class="then"><b>THEN</b>${flow.length > 1 ? `<ol class="plans">${flow.map(p => `<li>${esc(p)}</li>`).join("")}</ol>` : ` ${esc(x.then)}`}${chip(x.s)}</div></div>`; };
+      <div class="then"><b>THEN</b>${flow.length > 1 ? `<ol class="plans">${flow.map(p => `<li>${esc(p)}</li>`).join("")}</ol>` : ` ${esc(x.then)}`}${chipx(x)}</div></div>`; };
   const numeral = m => esc(String(m).replace(/\s+(?!\s*alt)/g, " · "));
   const cell = q => `<li><span class="mk big">${esc(q.m)}</span><div class="sb"><div class="sn">${esc(q.drug)}${dg(q)}</div>
     <div class="sw">${esc(q.when)}</div><div class="sd">${esc(q.dose)}</div><div class="sa">${esc(q.adjusted)}</div>${chip(q.s)}</div></li>`;
@@ -218,10 +228,20 @@ async function procView(id, tab) {
       ${multi ? `<div class="chead"><span class="cnum">${esc(c.id)}</span><div><b>${esc(c.label)}</b>${c.note ? `<span>${esc(c.note)}</span>` : ""}</div></div>` : ""}
       <ol class="seq">${(c.cells || []).map(cell).join("")}</ol></div>`).join("")}</div>
     <div class="toolrow"><button class="btn" data-go="#/proc/${id}/drugs">Dose table by weight${ico("next")}</button></div>`; };
-  const flowNav = `<nav class="flownav" aria-label="Steps">${d.steps.map(s => `<button data-jump="p${s.n}"><b>${s.n}</b><span>${esc(s.time)}</span></button>`).join("")}</nav>`;
+  const flowNav = `<nav class="flownav" aria-label="Steps">${d.steps.map(s => `<button data-jump="p${s.n}"><b>${s.n}</b><span>${esc(tm(s))}</span></button>`).join("")}</nav>`;
+  // steps[].sequence as ROWS ({label, sub, cells[{m, name, dose, note, s, s_more}]}) plus sequence_order: Fluids Rx cards. The older format
+  // (sequence = flat cells, or sequences = parallel chains) keeps its own renderer above.
+  const fcell = q => `<li><span class="mk big">${esc(q.m || "")}</span><div class="sb"><div class="sn">${esc(q.name)}${dg(q)}</div>${q.dose ? `<div class="sd">${esc(q.dose)}</div>` : ""}${q.note ? `<div class="sa">${esc(q.note)}</div>` : ""}${chipx(q)}</div></li>`;
+  const seqRows = s => `${s.sequence_order ? `<div class="seqord">${esc(s.sequence_order)}</div>` : ""}<div class="srows">${s.sequence.map(r =>
+    `<div class="srow2"><div class="srl"><b>${esc(r.label)}</b>${r.sub ? `<span>${esc(r.sub)}</span>` : ""}</div><ol class="seq">${(r.cells || []).map(fcell).join("")}</ol></div>`).join("")}</div>`;
+  const seqAny = s => s.sequences?.length ? seqHtml(s) : s.sequence?.[0]?.cells ? seqRows(s) : (s.sequence || []).length ? seqHtml(s) : "";
+  const refBlock = b => `<section class="card"><h2 class="ctitle">${esc(b.h)}${chipx(b)}</h2>` + (b.cols
+    ? `<div class="tscroll"><table class="dtab"><thead><tr>${b.cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${b.rows.map(r => `<tr>${r.map((c, k) => k ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join("")}</tr>`).join("")}</tbody></table></div>`
+    : `<ul class="items">${(b.items || []).map(it => `<li><div class="body"><span class="txt">${esc(it.t)}${dg(it)}</span>${chipx(it)}</div></li>`).join("")}</ul>`) +
+    `${b.note ? `<p class="hint" style="padding:6px 14px 12px">${esc(b.note)}</p>` : ""}</section>`;
   const steps = flowNav + d.steps.map((s, i) => `<section class="pstep" id="p${s.n}"><div class="rail"><span class="node">${s.n}</span></div>
-    <div class="pbody"><div class="phead"><h2>${esc(s.title)}</h2><span class="tpill">${esc(s.time)}</span></div><div class="psub">${esc(s.subtitle)}</div>
-      ${(s.actions || []).length ? `<ul class="items acts">${s.actions.map(act).join("")}</ul>` : ""}${s.sequences || s.sequence ? seqHtml(s) : ""}
+    <div class="pbody"><div class="phead"><h2>${esc(s.title)}</h2><span class="tpill">${esc(tm(s))}</span></div><div class="psub">${esc(s.subtitle)}</div>
+      ${(s.actions || []).length ? `<ul class="items acts">${s.actions.map(act).join("")}</ul>` : ""}${seqAny(s)}
       ${(s.decisions || []).map(dec).join("")}</div></section>`).join("");
   const drug = x => `<section class="card drug"><h2 class="ctitle"><span class="mk">${numeral(x.m)}</span>${esc(x.name)}${dg(x)}</h2><dl class="dl">
     ${[["Conc.", x.conc], ["Dose", x.dose, 1], ["Give", x.when], ["Onset / duration", x.onset], ["Shocked / frail", x.adjusted], ["Watch", x.watch]].filter(r => r[1] && r[1] !== "—")
@@ -233,16 +253,19 @@ async function procView(id, tab) {
   const dt = R.dose_table, table = dt ? `<section class="card"><h2 class="ctitle">Dose by weight (${esc(dt.unit)})</h2><div class="tscroll"><table class="dtab">
     <thead><tr><th>Drug</th>${dt.weights.map(w => `<th>${w}</th>`).join("")}</tr>${dt.ages_approx ? `<tr class="ages"><th>Approx. age</th>${dt.ages_approx.map(a => `<th>${esc(a)}</th>`).join("")}</tr>` : ""}</thead><tbody>${dt.rows.map(r =>
     `<tr><th><span class="mk">${numeral(r.m)}</span>${esc(r.drug)}${dg(r)}<small>${esc(r.basis)} · ${esc(r.unit)}</small>${chip(r.s)}</th>${r.vals.map(v => `<td>${esc(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>${dt.ages_note ? `<p class="hint" style="padding:0 14px 12px">${esc(dt.ages_note)}</p>` : ""}</section>` : "";
-  const tabs = [["indications", "Indications"], ["contraindications", "Contra-indications"], ["procedure", "Procedure"], ["drugs", "Drugs"], ["after", "After & problems"]];
+  const tabs = isFl ? [["indications", "Indications"], ["contraindications", "Cautions"], ["procedure", "Steps"], ["reference", "Reference"], ["sources", "Sources"]]
+    : [["indications", "Indications"], ["contraindications", "Contra-indications"], ["procedure", "Procedure"], ["drugs", "Drugs"], ["after", "After & problems"]];
   tab = tabs.some(x => x[0] === tab) ? tab : "procedure";
   const body = { indications: `<h2 class="glabel">Indications</h2>${secs(d.indications)}`,
-    contraindications: `<h2 class="glabel">Contraindications</h2>${secs(d.contraindications)}`,
+    contraindications: `<h2 class="glabel">${isFl ? "Cautions" : "Contraindications"}</h2>${secs(d.contraindications)}`,
     procedure: steps,
     drugs: `<h2 class="glabel">Drugs in order of giving</h2>${calc}${(R.drugs || []).map(drug).join("")}${table}`,
-    after: `<h2 class="glabel">Sedation, ventilation and deterioration</h2>${secs(R.later)}<h2 class="glabel">${esc(d.complications.title)}</h2>${secs(d.complications.sections, "red")}` }[tab];
+    after: d.complications ? `<h2 class="glabel">Sedation, ventilation and deterioration</h2>${secs(R.later)}<h2 class="glabel">${esc(d.complications.title)}</h2>${secs(d.complications.sections, "red")}` : "",
+    reference: `<h2 class="glabel">${esc(R.title || "Reference")}</h2>${(R.blocks || []).map(refBlock).join("")}`,
+    sources: tab === "sources" ? `<section class="card"><h2 class="ctitle">Sources</h2><ul class="items">${(d.sources || []).map(i => `<li><div class="body"><span class="txt"><b>${esc(S.sources[i]?.short || i)}</b> — ${esc(S.sources[i]?.title || i)}</span></div></li>`).join("")}</ul></section>${await scPdfRows(d)}` : "" }[tab];
   app.innerHTML = `
-  <header class="top"><div class="bar"><button class="iconbtn" aria-label="Back to procedures" data-go="#/procedures">${ico("back")}</button>
-    <div class="ttl"><div class="row1"><h1>${esc(d.short)}</h1><span class="badge ${popClass(d.population)}">${esc(popName(d.population))}</span></div>
+  <header class="top"><div class="bar"><button class="iconbtn" aria-label="${isFl ? "Back to Fluids Rx" : "Back to procedures"}" data-go="${isFl ? "#/fluids" : "#/procedures"}">${ico("back")}</button>
+    <div class="ttl"><div class="row1"><h1>${esc(d.short)}</h1><span class="badge ${popClass(isFl ? e.pop : d.population)}">${esc(popName(isFl ? e.pop : d.population))}</span></div>
       <div class="sub">${esc(d.title)} · ${esc(d.setting)}</div></div></div>
     <nav class="ptabs" aria-label="Sections">${tabs.map(([k, l]) => `<button data-go="#/proc/${id}/${k}" ${k === tab ? 'class="on" aria-current="page"' : ""}>${l}</button>`).join("")}</nav></header>
   <main class="fade proc">${body}
@@ -437,6 +460,25 @@ async function hubView(id) {
     ${rowsHtml}<p class="empty" id="hnone" hidden>No site matches.</p>
     <p class="hint">${esc(d.population)}. Tap a site for its features, confirmation, management and when to refer. † = not in the SA guideline.</p></main>`;
 }
+/* ---------- Fluids Rx hub (#/fluids): Adult | Paediatric, with "which fluid — all ages" shown under each (same page layout as the Fracture hub) ---------- */
+function fluidsHub() {
+  const fl = S.index.fluids || [], h = S.index.fluids_hub || { short: "Fluids Rx", members: [{ label: "Adult", pop: "Adult" }, { label: "Paediatric", pop: "Paediatric" }], all: "Which fluid — all ages" };
+  const k = Math.max(0, Math.min(h.members.length - 1, S.hub.fluids ?? 0)), m = h.members[k];
+  const all = fl.filter(e => e.pop === "Adult + paeds"), mine = fl.filter(e => e.pop === m.pop);
+  const group = (title, items) => `<section class="grp"><h2 class="glabel">${esc(title)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
+    <div class="list">${items.map(e => `<button class="dx hx" data-go="#/proc/${e.id}/procedure" data-q="${esc([e.short, e.title, ...(e.tags || [])].join(" ").toLowerCase())}">
+      <span class="hn">${esc(e.short.replace(/^Fluids – /, "").replace(/ \((adult|child)\)$/, ""))}</span><span class="hb">${esc(e.title)}</span>${ico("next")}</button>`).join("")}</div></section>`;
+  app.innerHTML = `
+  <header class="top"><div class="hometop">
+    <div class="brand"><button class="iconbtn" aria-label="Back to scales and calculations" data-go="#/scores">${ico("back")}</button>
+      <div class="ttl"><h1>${esc(h.short)}</h1><div class="sub">${mine.length + all.length} cards for ${esc(m.label.toLowerCase())} · works offline</div></div></div>
+    <div class="seg2" role="group" aria-label="Population">${h.members.map((x, i) => `<button data-hubpop="fluids|${i}" aria-pressed="${i === k}">${esc(x.label)}<small>${esc(x.note || "")}</small></button>`).join("")}</div>
+    <label class="search">${ico("search")}<span class="sr">Search fluids</span>
+      <input id="hq" type="search" placeholder="Search — e.g. burns, DKA, neonate, maintenance" autocomplete="off"></label>
+  </div></header>
+  <main class="fade home hub">${group(h.all || "Which fluid — all ages", all)}${group(m.label + " fluids", mine)}<p class="empty" id="hnone" hidden>No fluid card matches.</p>
+    <p class="hint">Prescribe fluid like a drug: indication · fluid · volume · rate · review time. † = not in the SA guideline.</p></main>`;
+}
 function hubFilter() {
   const q = ($("#hq")?.value || "").trim().toLowerCase(); let any = 0;
   $$("main.hub .grp").forEach(g => { let n = 0;
@@ -467,6 +509,16 @@ function nursing(d) {
   shell({ d, tab: "nursing", body });
 }
 
+/* Guideline files found through page-map.json: one row per catalogue document (a whole book, or one part of the split hospital STG).
+   The page adjustment is added to the catalogue page, for an edition that differs from the one the catalogue was built on. */
+const docKeysFor = ids => ids.flatMap(i => { const id = S.sources[i]?.alias || i; return Object.values(S.pm?.books?.[id] || {}).map(([doc]) => "doc:" + doc); });
+async function docRowsHtml(keys) {
+  return (await Promise.all([...new Set(keys)].map(async k => { const dm = S.pm?.docs?.[k.slice(4)]; if (!dm) return ""; const has = await getPdf(k);
+    return `<div class="srow"><div class="t">${esc(dm.title)} — chapters ${esc(dm.chapters)}</div><div class="e">${esc(dm.file)} · ${dm.pages} pages</div>
+      <div class="acts"><span class="status ${has ? "ok" : "no"}">${has ? "PDF on this phone" : "No PDF loaded"}</span>
+      <label class="btn primary">${has ? "Replace PDF" : "Load PDF"}<input type="file" accept="application/pdf" data-load="${k}" hidden></label>${has ? `<button class="btn" data-del="${k}">Remove</button>` : ""}</div>
+      <div class="acts off"><label>Page adjustment <input type="number" inputmode="numeric" value="${S.offsets[k] ?? 0}" data-off="${k}"></label><span class="hint">0 unless your edition differs from the catalogue</span></div></div>`; }))).join("");
+}
 async function sources(d) {
   const units = d.sources.flatMap(id => { const s = S.sources[id] || { id, short: id, title: id, edition: "" };
     return s.chapters ? Object.entries(s.chapters).map(([c, ch]) => ({ key: id + ":" + c, s, title: s.short + " — " + ch.title })) : [{ key: id, s, title: s.title }]; });
@@ -483,7 +535,8 @@ async function sources(d) {
       <div class="acts off"><label>Page offset <input type="number" inputmode="numeric" value="${off}" data-off="${id}"></label>
       <span class="hint">PDF page minus printed page</span></div></div>`;
   }));
-  shell({ d, tab: "sources", body: `<p class="hint">Guideline PDFs are stored only on this phone, so they work offline. Loading a newer edition replaces the old one; the page offset may then need adjusting.</p>${rows.join("")}` });
+  const dr = await docRowsHtml(docKeysFor(d.sources));
+  shell({ d, tab: "sources", body: `<p class="hint">Guideline PDFs are stored only on this phone, so they work offline. Loading a newer edition replaces the old one; the page offset may then need adjusting.</p>${dr ? `<h2 class="glabel">Guideline files (STG chapter.page cites open the right page)</h2>${dr}<h2 class="glabel">Older: one PDF per chapter</h2>` : ""}${rows.join("")}` });
 }
 
 /* ---------- overflow menu ---------- */
@@ -510,15 +563,19 @@ function swipe(d, i, n) {
 let pdfjs = null;
 async function openSource(src) {
   const r = resolveSrc(src), s = r.s, pg = r.pg, id = r.pdf;
-  const printed = parseInt(pg, 10) || 1; const off = Number(r.offset);
+  const printed = parseInt(pg, 10) || 1;
   const v = document.createElement("div"); v.className = "viewer";
   v.innerHTML = `<div class="vbar"><button data-x>Close</button><span class="vt">${esc(r.chapter ? s.short + " Ch" + r.chapter : s.short)} · ${r.num ? "printed p" + printed : esc(pg) + " (page 1 shown)"}</span>
     <button data-p="-1" aria-label="Previous page">‹</button><button data-p="1" aria-label="Next page">›</button>
     <button data-z="-1" aria-label="Zoom out">−</button><button data-z="1" aria-label="Zoom in">+</button></div><div class="stage"></div>`;
   document.body.appendChild(v); const stage = $(".stage", v);
   v.querySelector("[data-x]").onclick = () => v.remove();
-  const blob = await getPdf(id);
-  if (!blob) { stage.innerHTML = `<div class="msg">No PDF loaded for ${esc(s.title)}.<br><br>Open the Sources tab and load it from your phone. It stays available offline.</div>`; return; }
+  // 1) the guideline file named by page-map.json (r.doc, page already worked out); 2) an older per-chapter PDF (r.pdf + its offset)
+  let blob = r.doc ? await getPdf(r.doc) : null; const mapped = blob ? r.mapped : null;
+  if (!blob) blob = await getPdf(id);
+  const off = mapped != null ? mapped - printed : Number(r.offset);
+  if (!blob) { const dm = r.doc && S.pm?.docs?.[r.doc.slice(4)];
+    stage.innerHTML = `<div class="msg">No PDF loaded for ${esc(s.title)}.<br><br>${dm ? `Load <b>${esc(dm.file)}</b> (${esc(s.short)}, chapters ${esc(dm.chapters)}) from the Sources page of a card that cites it.` : "Open the Sources tab and load it from your phone."} It stays available offline.</div>`; return; }
   try {
     pdfjs = pdfjs || await import("./vendor/pdfjs/pdf.min.mjs");
     pdfjs.GlobalWorkerOptions.workerSrc = "vendor/pdfjs/pdf.worker.min.mjs";
@@ -585,14 +642,19 @@ function scValidate(d) { // console warnings only: bad data should never stop th
 
 function scoresHome() {
   const ss = (S.index.scores || []).filter(e => !e.hidden), pops = [...new Set(ss.map(e => popName(e.population)))];
-  const tags = [...new Set(ss.flatMap(e => e.tags || []))].sort((a, b) => a.localeCompare(b));
+  const fl = S.index.fluids || [], fh = S.index.fluids_hub || { short: "Fluids Rx", title: "IV fluids" }; // Fluids Rx: procedure-style cards (data/fluids-*.json) behind one hub row
+  const tags = [...new Set([...ss, ...fl].flatMap(e => e.tags || []))].sort((a, b) => a.localeCompare(b));
   const lists = pops.map(g => { const items = ss.filter(e => popName(e.population) === g);
     return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(items[0].population)}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
-      <div class="list">${items.map(e => `<button class="dx" data-go="#/score/${e.id}" data-q="${esc([e.short, e.title, e.population, e.age_range, e.id, ...(e.tags || [])].join(" ").toLowerCase())}" data-tags="${esc((e.tags || []).join("|"))}">
-        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)} · ${esc(e.age_range)} <span class="tbadge">${esc(TYPE_LABEL[e.type] || e.type)}</span></span>${ico("next")}</button>`).join("")}</div></section>`; }).join("");
+      <div class="list">${items.map(e => `<button class="dx" data-go="#/score/${e.id}" data-pop="${esc(popName(e.population))}" data-q="${esc([e.short, e.title, e.population, e.age_range, e.id, ...(e.tags || [])].join(" ").toLowerCase())}" data-tags="${esc((e.tags || []).join("|"))}">
+        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)} · ${esc(e.age_range)} <span class="tbadge">${esc(TYPE_LABEL[e.type] || e.type)}</span></span>${ico("next")}</button>`).join("")}</div></section>`; }).join("")
+    // Fluids Rx is ONE row (like Fracture in the pathways list) that opens #/fluids: Adult | Paediatric, "which fluid" under each. It shows under either population filter.
+    + (fl.length ? `<section class="grp" data-grp="Adult + paeds"><h2 class="glabel"><span class="dot pop-tox"></span>Adult + paeds<span class="c">· <span class="gc">1</span></span></h2>
+      <div class="list"><button class="dx" data-go="#/fluids" data-pop="Adult + paeds" data-q="${esc(["fluids rx", fh.title, ...fl.flatMap(e => [e.short, e.title, ...(e.tags || [])])].join(" ").toLowerCase())}" data-tags="${esc([...new Set(fl.flatMap(e => e.tags || []))].join("|"))}">
+        <span class="t">${esc(fh.short)}</span><span class="p">${esc(fh.title)} · ${fl.length} cards <span class="tbadge">Fluids</span></span>${ico("next")}</button></div></section>` : "");
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><button class="iconbtn" aria-label="Back to start" data-go="#/">${ico("back")}</button>
-    <div class="ttl"><h1>Scales and Calculations</h1><div class="sub">ANDH · ${ss.length} card${ss.length === 1 ? "" : "s"} · works offline</div></div></div>
+    <div class="ttl"><h1>Scales and Calculations</h1><div class="sub">ANDH · ${ss.length + fl.length} cards · works offline</div></div></div>
     <label class="search">${ico("search")}<span class="sr">Search scales</span><input id="sq" type="search" placeholder="Search — e.g. GCS, head injury, MAP" autocomplete="off"></label>
     <div class="chips">${["All", ...pops].map(g => `<button class="fchip" data-spop="${g === "All" ? "All" : esc(g)}" aria-pressed="${S.spop === g}">${esc(g)}</button>`).join("")}</div>
     <div class="chips sys" aria-label="Tags">${["All", ...tags].map(g => `<button class="fchip" data-stag="${esc(g)}" aria-pressed="${S.stag === g}">${esc(g)}</button>`).join("")}</div></div></header>
@@ -603,8 +665,8 @@ function scoresHome() {
 function applyScoreFilter() {
   const q = ($("#sq")?.value || "").trim().toLowerCase(); let any = 0;
   $$(".grp").forEach(g => {
-    let n = 0; const show = S.spop === "All" || g.dataset.grp === S.spop;
-    $$(".dx", g).forEach(b => { const ok = show && (S.stag === "All" || b.dataset.tags.split("|").includes(S.stag)) && (!q || q.split(/\s+/).every(w => b.dataset.q.includes(w))); b.hidden = !ok; if (ok) n++; });
+    let n = 0; // population chips filter per row; an "Adult + paeds" card (which fluid) belongs to both
+    $$(".dx", g).forEach(b => { const ok = (S.spop === "All" || b.dataset.pop === S.spop || b.dataset.pop === "Adult + paeds") && (S.stag === "All" || b.dataset.tags.split("|").includes(S.stag)) && (!q || q.split(/\s+/).every(w => b.dataset.q.includes(w))); b.hidden = !ok; if (ok) n++; });
     g.hidden = !n; $(".gc", g).textContent = n; any += n;
   });
   $("#none").hidden = !!any;
@@ -716,15 +778,7 @@ async function scoreView(id, tab, key) {
   const notes = (d.notes || []).length ? `<section class="card"><h2 class="ctitle">Notes and pearls</h2><ul class="items">${d.notes.map(n =>
     `<li><div class="body"><span class="txt">${esc(n.t)}${scDag(n.d)}</span>${scRef(n.s)}</div></li>`).join("")}</ul></section>` : "";
   const extra = (k, title) => d[k] ? `<section class="card"><h2 class="ctitle">${title}</h2><ul class="items"><li><div class="body"><span class="txt">${esc(d[k].t)}${scCor(k, d[k].c)}</span>${scCorNote(k, d[k].c)}${scRef(d[k].s)}</div></li></ul></section>` : "";
-  // guideline PDFs: the same Load / offset controls as a pathway's Sources tab, for each STG chapter this card cites
-  const cited = new Set(); (function walk(o) { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) {
-    if ((k === "s" || k.startsWith("s_")) && typeof v === "string") { if (resolveSrc(v).chapter) cited.add(v); } else walk(v); } })(d);
-  const units = new Map(); [...cited].forEach(c => { const x = resolveSrc(c); if (!units.has(x.pdf)) units.set(x.pdf, x); });
-  const pdfRows = await Promise.all([...units].map(async ([key, x]) => { const has = await getPdf(key);
-    return `<div class="srow"><div class="t">${esc(x.s.short)} — ${esc(x.s.chapters[x.chapter]?.title || "Chapter " + x.chapter)}</div><div class="e">${esc(x.s.edition || "")}</div>
-      <div class="acts"><span class="status ${has ? "ok" : "no"}">${has ? "PDF on this phone" : "No PDF loaded"}</span>
-      <label class="btn primary">${has ? "Replace PDF" : "Load PDF"}<input type="file" accept="application/pdf" data-load="${key}" hidden></label>${has ? `<button class="btn" data-del="${key}">Remove</button>` : ""}</div>
-      <div class="acts off"><label>Page offset <input type="number" inputmode="numeric" value="${x.offset}" data-off="${key}"></label><span class="hint">PDF page minus printed page</span></div></div>`; }));
+  const pdfHtml = tab === "sources" ? await scPdfRows(d) : ""; // guideline files this card cites (shared with the other card types)
   const srcList = (d.sources || []).map(s => `<li><div class="body"><span class="txt"><b>${esc(s.id)}</b> — ${esc(s.title)}${s.url ? ` · <a class="ref" href="${esc(s.url)}" target="_blank" rel="noopener">open online</a>` : ""}</span></div></li>`).join("");
   const tabs = [["scale", "Score"], ["interp", "Interpretation"], ["formulas", "Formulas"], ["sources", "Sources"]];
   tab = tabs.some(x => x[0] === tab) ? tab : "scale";
@@ -732,7 +786,7 @@ async function scoreView(id, tab, key) {
     interp: `<div id="sc-mini" class="sctop mini">${scTotal(d)}</div><section class="card" id="sc-interp">${scInterp(d)}</section>${notes}${extra("sofa_cns", "SOFA CNS points")}${extra("tbi_goals", "TBI goals")}`,
     formulas: `<section class="card"><h2 class="ctitle">Formulas</h2><div class="fms">${d.formulas.map(fm).join("")}</div></section>`,
     sources: `<section class="card"><h2 class="ctitle">Sources</h2><ul class="items">${srcList}</ul></section>
-      ${pdfRows.length ? `<h2 class="glabel">Guideline PDFs</h2><p class="hint">Stored only on this phone so refs open offline. Chapter page offsets may need calibrating once per chapter.</p>${pdfRows.join("")}` : ""}` }[tab];
+      ${pdfHtml}` }[tab];
   app.innerHTML = `
   <header class="top"><div class="bar"><button class="iconbtn" aria-label="Back to scales and calculations" data-go="#/scores">${ico("back")}</button>
     <div class="ttl"><div class="row1"><h1>${esc(d.short)}</h1><span class="badge ${popClass(d.population)}">${esc(popName(d.population))}</span><span class="badge rng" title="Score range">${r[0]}–${r[1]}</span></div>
@@ -793,8 +847,8 @@ const scSrcList = d => `<section class="card"><h2 class="ctitle">Sources</h2><ul
 async function scPdfRows(d) { // Load / offset controls for each STG chapter this card cites (same markup as a pathway's Sources tab)
   const cited = new Set(); (function walk(o) { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) {
     if ((k === "s" || k.startsWith("s_")) && typeof v === "string") { const r = resolveSrc(v); if (r.chapter || (r.num && !r.online)) cited.add(v); } else walk(v); } })(d); // chaptered STGs, or a whole-book PDF cited by page (e.g. MAT24:130)
-  const units = new Map(); [...cited].forEach(c => { const x = resolveSrc(c); if (!units.has(x.pdf)) units.set(x.pdf, x); });
-  const rows = await Promise.all([...units].map(async ([key, x]) => { const has = await getPdf(key);
+  const units = new Map(); [...cited].forEach(c => { const x = resolveSrc(c); const k = x.doc || x.pdf; if (!units.has(k)) units.set(k, x); });
+  const rows = await Promise.all([...units].map(async ([key, x]) => { if (x.doc) return docRowsHtml([x.doc]); const has = await getPdf(key);
     return `<div class="srow"><div class="t">${esc(x.s.short)}${x.chapter ? " — " + esc(x.s.chapters[x.chapter]?.title || "Chapter " + x.chapter) : ""}</div><div class="e">${esc(x.s.edition || "")}</div>
       <div class="acts"><span class="status ${has ? "ok" : "no"}">${has ? "PDF on this phone" : "No PDF loaded"}</span>
       <label class="btn primary">${has ? "Replace PDF" : "Load PDF"}<input type="file" accept="application/pdf" data-load="${key}" hidden></label>${has ? `<button class="btn" data-del="${key}">Remove</button>` : ""}</div>
@@ -1086,6 +1140,7 @@ async function route() {
     if (p[0] === "") return landing();
     if (p[0] === "diagnoses") return home();
     if (p[0] === "hub") return hubView(p[1]);
+    if (p[0] === "fluids") return fluidsHub();
     if (p[0] === "procedures") return procHome();
     if (p[0] === "proc") return procView(p[1], p[2]);
     if (p[0] === "scores") return scoresHome();

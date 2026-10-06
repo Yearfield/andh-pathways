@@ -1,0 +1,423 @@
+{
+ "id": "fluids-neonate",
+ "short": "Fluids – neonate",
+ "title": "Neonatal fluids — volume, glucose, maintenance",
+ "population": "Neonate (0–28 days)",
+ "setting": "Casualty / nursery",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "NaCl 0.9% 10–20 mL/kg (preterm 10) · D10 2.5 mL/kg then 6–12 mg/kg/min · maintenance by day of life",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Use for",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypovolaemia at resuscitation",
+     "s": "stg-paed:19.3"
+    },
+    {
+     "t": "Unstable circulation (RDS, sepsis)",
+     "s": "stg-paed:19.15"
+    },
+    {
+     "t": "Hypoglycaemia <2.6 mmol/L",
+     "s": "stg-paed:19.53"
+    },
+    {
+     "t": "Cannot feed enterally (preterm, NEC, HIE, sepsis)",
+     "s": "stg-paed:19.19"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Restrict",
+   "col": 1,
+   "items": [
+    {
+     "t": "HIE: 40 mL/kg/24 h for 24–48 h; K-free until renal function known",
+     "s": "stg-paed:19.44",
+     "b": 1
+    },
+    {
+     "t": "SIADH (HIE): 40 mL/kg/24 h for 24–48 h",
+     "s": "stg-paed:19.47"
+    },
+    {
+     "t": "Heart failure: 75% of daily requirement",
+     "s": "stg-paed:19.29"
+    },
+    {
+     "t": "Renal impairment: potassium-free fluid",
+     "s": "stg-paed:19.19"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Restore volume",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "only if hypovolaemic",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "At resuscitation: NaCl 0.9% 10–20 mL/kg slow IV over 5–10 min",
+     "s": "stg-paed:19.3",
+     "b": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Unstable circulation: NaCl 0.9% 10–20 mL/kg over 1–2 h (preterm 10)",
+     "s": "stg-paed:19.15"
+    },
+    {
+     "n": "1.3",
+     "t": "or FFP / lyophilised plasma 10–20 mL/kg over 1–2 h",
+     "s": "stg-paed:19.15"
+    },
+    {
+     "n": "1.4",
+     "t": "Still hypotensive: dopamine 5–15 mcg/kg/min",
+     "s": "stg-paed:19.15"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Fix glucose",
+   "timing": "T 0 → T + 30 min",
+   "time": "T 0 → T + 30 min",
+   "subtitle": "heel-prick <2.6 mmol/L",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "D10 2.5 mL/kg IV bolus — once only",
+     "s": "stg-paed:19.53",
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Then D10 infusion 6–12 mg/kg/min",
+     "s": "stg-paed:19.54"
+    },
+    {
+     "n": "2.3",
+     "t": "Still <2.6: D15 via central line ≥15 mg/kg/min",
+     "s": "stg-paed:19.54"
+    },
+    {
+     "n": "2.4",
+     "t": "Glucose 2-hourly until stable",
+     "s": "stg-paed:19.54"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Set daily maintenance",
+   "timing": "by day of life",
+   "time": "by day of life",
+   "subtitle": "neonatal maintenance solution",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Term day 1: 60–80 mL/kg/24 h; adapt daily",
+     "s": "stg-paed:19.15"
+    },
+    {
+     "n": "3.2",
+     "t": "Preterm: day 1 70 → 90 → 110 → 130 → day 5 150 mL/kg/24 h",
+     "s": "stg-paed:19.19",
+     "b": 1
+    },
+    {
+     "n": "3.3",
+     "t": "Up to 180 mL/kg/24 h after day 6",
+     "s": "stg-paed:19.19"
+    },
+    {
+     "n": "3.4",
+     "t": "NEC: add gastric aspirate volume",
+     "s": "stg-paed:19.22"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Restrict when indicated",
+   "timing": "day 1–2",
+   "time": "day 1–2",
+   "subtitle": "HIE · SIADH · heart failure",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "HIE: 40 mL/kg/24 h D10 or K-free solution",
+     "s": "stg-paed:19.44"
+    },
+    {
+     "n": "4.2",
+     "t": "Heart failure: 75% of requirement",
+     "s": "stg-paed:19.29"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Monitor and wean",
+   "timing": "until feeds retained",
+   "time": "until feeds retained",
+   "subtitle": "glucose ≥2.6 · weight · urine",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Keep glucose ≥2.6 mmol/L",
+     "s": "stg-paed:19.19"
+    },
+    {
+     "n": "5.2",
+     "t": "Daily weight, urine output, electrolytes",
+     "d": 1
+    },
+    {
+     "n": "5.3",
+     "t": "Wean IV gradually once several feeds retained",
+     "s": "stg-paed:19.19"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "Dextrose need >12 mg/kg/min",
+     "then": "suspect metabolic / biochemical cause; discuss",
+     "s": "stg-paed:19.54"
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Preterm maintenance mL/h by day of life",
+    "s": "stg-paed:19.19",
+    "cols": [
+     "Weight",
+     "D1 70",
+     "D2 90",
+     "D3 110",
+     "D4 130",
+     "D5+ 150",
+     "HIE 40"
+    ],
+    "rows": [
+     [
+      "0.8 kg",
+      "2.3",
+      "3",
+      "3.7",
+      "4.3",
+      "5",
+      "1.3"
+     ],
+     [
+      "1.0 kg",
+      "2.9",
+      "3.8",
+      "4.6",
+      "5.4",
+      "6.3",
+      "1.7"
+     ],
+     [
+      "1.5 kg",
+      "4.4",
+      "5.6",
+      "6.9",
+      "8.1",
+      "9.4",
+      "2.5"
+     ],
+     [
+      "2.0 kg",
+      "5.8",
+      "7.5",
+      "9.2",
+      "10.8",
+      "12.5",
+      "3.3"
+     ],
+     [
+      "2.5 kg",
+      "7.3",
+      "9.4",
+      "11.5",
+      "13.5",
+      "15.6",
+      "4.2"
+     ],
+     [
+      "3.0 kg",
+      "8.8",
+      "11.3",
+      "13.8",
+      "16.3",
+      "18.8",
+      "5"
+     ],
+     [
+      "3.5 kg",
+      "10.2",
+      "13.1",
+      "16",
+      "19",
+      "21.9",
+      "5.8"
+     ],
+     [
+      "4.0 kg",
+      "11.7",
+      "15",
+      "18.3",
+      "21.7",
+      "25",
+      "6.7"
+     ]
+    ],
+    "s_more": [
+     "stg-paed:19.44"
+    ]
+   },
+   {
+    "h": "D10 infusion mL/h for GIR (mg/kg/min) · bolus · volume",
+    "s": "stg-paed:19.53",
+    "cols": [
+     "Weight",
+     "GIR 4",
+     "GIR 6",
+     "GIR 8",
+     "GIR 12",
+     "D10 bolus",
+     "NaCl 10/kg"
+    ],
+    "rows": [
+     [
+      "0.8 kg",
+      "1.9",
+      "2.9",
+      "3.8",
+      "5.8",
+      "2",
+      "8"
+     ],
+     [
+      "1.0 kg",
+      "2.4",
+      "3.6",
+      "4.8",
+      "7.2",
+      "2.5",
+      "10"
+     ],
+     [
+      "1.5 kg",
+      "3.6",
+      "5.4",
+      "7.2",
+      "10.8",
+      "3.8",
+      "15"
+     ],
+     [
+      "2.0 kg",
+      "4.8",
+      "7.2",
+      "9.6",
+      "14.4",
+      "5",
+      "20"
+     ],
+     [
+      "2.5 kg",
+      "6",
+      "9",
+      "12",
+      "18",
+      "6.3",
+      "25"
+     ],
+     [
+      "3.0 kg",
+      "7.2",
+      "10.8",
+      "14.4",
+      "21.6",
+      "7.5",
+      "30"
+     ],
+     [
+      "3.5 kg",
+      "8.4",
+      "12.6",
+      "16.8",
+      "25.2",
+      "8.8",
+      "35"
+     ],
+     [
+      "4.0 kg",
+      "9.6",
+      "14.4",
+      "19.2",
+      "28.8",
+      "10",
+      "40"
+     ]
+    ],
+    "note": "GIR = (% dextrose × mL/h) ÷ (kg × 6). GIR 4 shown for weaning †.",
+    "s_more": [
+     "stg-paed:19.54",
+     "stg-paed:19.3"
+    ]
+   }
+  ]
+ }
+}

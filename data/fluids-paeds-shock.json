@@ -1,0 +1,413 @@
+{
+ "id": "fluids-paeds-shock",
+ "short": "Fluids – shock (child)",
+ "title": "Fluid resuscitation — shock",
+ "population": "Child (1 month – 12 years)",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Hypovolaemic 20 mL/kg · septic 10 mL/kg · SAM 10 mL/kg over 20 min · stop at 40 mL/kg → inotropes",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Compensated shock",
+   "col": 1,
+   "items": [
+    {
+     "t": "Cold peripheries, weak pulses (peripheral < central), CRT ≥3 s",
+     "s": "stg-paed:1.15",
+     "b": 1
+    },
+    {
+     "t": "Agitation / confusion / ↓LOC, pallor, tachycardia",
+     "s": "stg-paed:1.15"
+    },
+    {
+     "t": "Hypotension is a late, ominous sign",
+     "s": "stg-paed:1.15"
+    }
+   ]
+  },
+  {
+   "h": "Types",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypovolaemic (dehydration, haemorrhage), septic, cardiogenic, obstructive, neurogenic",
+     "s": "stg-paed:1.15"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Use a different card / dose",
+   "col": 1,
+   "items": [
+    {
+     "t": "Severe malnutrition: 10 mL/kg over 20 min, max 4 boluses",
+     "s": "stg-paed:1.16",
+     "s_more": [
+      "stg-paed:2.11"
+     ],
+     "b": 1
+    },
+    {
+     "t": "Diarrhoeal dehydration with shock: 10 mL/kg over 20 min (Dehydration card)",
+     "s": "stg-paed:2.11"
+    },
+    {
+     "t": "Cardiogenic: inotropes, no repeated boluses; high care",
+     "s": "stg-paed:1.17"
+    },
+    {
+     "t": "Neonate → Neonatal card",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Stop boluses if overload",
+   "col": 1,
+   "items": [
+    {
+     "t": "↑RR, ↑basal crepitations, ↑pulse, ↑liver size, ↑JVP, ↑O₂ need",
+     "s": "stg-paed:1.16",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Oxygen and weight",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "ABCDE · high-flow O₂",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Give O₂ 15 L/min via reservoir mask",
+     "x": "or 6–10 L/min",
+     "s": "stg-paed:1.16"
+    },
+    {
+     "n": "1.2",
+     "t": "SpO₂ <92% → consider intubation",
+     "s": "stg-paed:1.16"
+    },
+    {
+     "n": "1.3",
+     "t": "Weigh or estimate weight; check glucose",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Get access",
+   "timing": "T 0 → T + 5 min",
+   "time": "T 0 → T + 5 min",
+   "subtitle": "IV, else IO at 5 min",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Insert IV; 2 large-bore lines in trauma",
+     "s": "stg-paed:1.15"
+    },
+    {
+     "n": "2.2",
+     "t": "No IV within 5 min → intra-osseous",
+     "x": "2 cm below tibial tuberosity, medial flat surface",
+     "s": "stg-paed:1.20",
+     "b": 1
+    },
+    {
+     "n": "2.3",
+     "t": "Take blood and urine cultures before antibiotics",
+     "s": "stg-paed:1.18"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Give the bolus by shock type",
+   "timing": "T + 5 min",
+   "time": "T + 5 min",
+   "subtitle": "pick ONE row",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "HYPOVOLAEMIC",
+     "sub": "fluid deficit",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9% or Ringer's lactate",
+       "dose": "20 mL/kg rapidly",
+       "s": "stg-paed:1.16"
+      }
+     ]
+    },
+    {
+     "label": "BLOOD LOSS",
+     "sub": "haemorrhage",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Packed red cells / whole blood",
+       "dose": "10–20 mL/kg",
+       "note": "crystalloid while waiting",
+       "s": "stg-paed:1.17"
+      }
+     ]
+    },
+    {
+     "label": "SEPTIC",
+     "sub": "",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9% or Ringer's lactate",
+       "dose": "10 mL/kg rapidly",
+       "s": "stg-paed:1.17"
+      },
+      {
+       "m": "b",
+       "name": "Empiric antibiotics",
+       "dose": "immediately",
+       "note": "after cultures",
+       "s": "stg-paed:1.18"
+      }
+     ]
+    },
+    {
+     "label": "SAM",
+     "sub": "severe malnutrition",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "10 mL/kg over 20 min",
+       "s": "stg-paed:1.16"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a bolus ▶ b reassess 15 min ▶ c repeat to 40 mL/kg",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Reassess after every bolus",
+   "timing": "every 15 min",
+   "time": "every 15 min",
+   "subtitle": "resolved · better · worse",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Resolved (CRT <3 s, good pulse, normal BP, urine, LOC) → no more boluses",
+     "s": "stg-paed:1.16"
+    },
+    {
+     "n": "4.2",
+     "t": "Better but still shocked → repeat bolus up to 40 mL/kg total",
+     "s": "stg-paed:1.16",
+     "b": 1
+    },
+    {
+     "n": "4.3",
+     "t": "Overload signs → stop fluid",
+     "s": "stg-paed:1.16"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Still shocked after 40 mL/kg",
+   "timing": "≈ T + 45–60 min",
+   "time": "≈ T + 45–60 min",
+   "subtitle": "inotropes · blood · ICU",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Start adrenaline 0.05–1 mcg/kg/min",
+     "s": "stg-paed:1.17",
+     "s_more": [
+      "stg-paed:1.18"
+     ],
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Add dobutamine 5–15 mcg/kg/min if inadequate",
+     "x": "cardiogenic: start slowly (may drop BP)",
+     "s": "stg-paed:1.17",
+     "s_more": [
+      "stg-paed:1.18"
+     ]
+    },
+    {
+     "n": "5.3",
+     "t": "Septic, inotrope-refractory: hydrocortisone 1–2 mg/kg 6-hourly",
+     "s": "stg-paed:1.18"
+    },
+    {
+     "n": "5.4",
+     "t": "Massive bleed: MTP 1:1:1; no blood bank → lyophilised plasma 1:1 + transfer",
+     "s": "stg-paed:1.19"
+    },
+    {
+     "n": "5.5",
+     "t": "Stabilise before referral; then maintenance, urine ≥1 mL/kg/h",
+     "s": "stg-paed:1.16",
+     "s_more": [
+      "stg-paed:1.18"
+     ]
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Bolus volumes (mL)",
+    "s": "stg-paed:1.16",
+    "cols": [
+     "Weight",
+     "10 mL/kg",
+     "20 mL/kg",
+     "Max 40 mL/kg",
+     "Blood 10–20"
+    ],
+    "rows": [
+     [
+      "3 kg",
+      "30",
+      "60",
+      "120",
+      "30–60"
+     ],
+     [
+      "5 kg",
+      "50",
+      "100",
+      "200",
+      "50–100"
+     ],
+     [
+      "7 kg",
+      "70",
+      "140",
+      "280",
+      "70–140"
+     ],
+     [
+      "10 kg",
+      "100",
+      "200",
+      "400",
+      "100–200"
+     ],
+     [
+      "12 kg",
+      "120",
+      "240",
+      "480",
+      "120–240"
+     ],
+     [
+      "15 kg",
+      "150",
+      "300",
+      "600",
+      "150–300"
+     ],
+     [
+      "20 kg",
+      "200",
+      "400",
+      "800",
+      "200–400"
+     ],
+     [
+      "25 kg",
+      "250",
+      "500",
+      "1 000",
+      "250–500"
+     ],
+     [
+      "30 kg",
+      "300",
+      "600",
+      "1 200",
+      "300–600"
+     ],
+     [
+      "40 kg",
+      "400",
+      "800",
+      "1 600",
+      "400–800"
+     ]
+    ],
+    "s_more": [
+     "stg-paed:1.17"
+    ]
+   },
+   {
+    "h": "Infusion set-up †",
+    "type": "list",
+    "items": [
+     {
+      "t": "Adrenaline 0.3 mg/kg in 50 mL: 1 mL/h = 0.1 mcg/kg/min",
+      "d": 1
+     },
+     {
+      "t": "Dobutamine 15 mg/kg in 50 mL: 1 mL/h = 5 mcg/kg/min",
+      "d": 1
+     },
+     {
+      "t": "Peripheral / IO adrenaline acceptable while awaiting central access",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ }
+}

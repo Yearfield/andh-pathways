@@ -1,0 +1,370 @@
+{
+ "id": "fluids-paeds-dka",
+ "short": "Fluids – DKA (child)",
+ "title": "DKA — fluids, potassium, insulin",
+ "population": "Child / adolescent",
+ "setting": "Casualty → high care",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "Bolus only if shocked · maintenance + deficit over 48 h · KCl 40 mmol/L · insulin 0.05–0.1 U/kg/h",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Diagnose DKA",
+   "col": 1,
+   "items": [
+    {
+     "t": "Glucose >11 + ketonuria 2+; pH <7.3, HCO₃ <15",
+     "s": "stg-paed:7.19",
+     "b": 1
+    },
+    {
+     "t": "Polyuria, polydipsia, dehydration; Kussmaul, vomiting, ↓LOC are late",
+     "s": "stg-paed:7.19"
+    }
+   ]
+  },
+  {
+   "h": "Not this card",
+   "col": 1,
+   "items": [
+    {
+     "t": "Mild dehydration, well → oral fluids + SC insulin (sick-day rules)",
+     "s": "stg-paed:7.19"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Cerebral oedema risk",
+   "col": 1,
+   "items": [
+    {
+     "t": "Rehydrate more slowly than other dehydration",
+     "s": "stg-paed:7.18",
+     "b": 1
+    },
+    {
+     "t": "Usually 4–12 h into treatment; ~80% mortality",
+     "s": "stg-paed:7.18"
+    },
+    {
+     "t": "Higher risk: high urea, PCO₂ <2.7 kPa",
+     "s": "stg-paed:7.18"
+    }
+   ]
+  },
+  {
+   "h": "Never",
+   "col": 1,
+   "items": [
+    {
+     "t": "Routine bicarbonate",
+     "s": "stg-paed:7.22"
+    },
+    {
+     "t": "Insulin in the fluid bag",
+     "s": "stg-paed:7.23"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Airway, tubes, specialist",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "ABC · NGT · catheter · call",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Comatose: secure airway, urinary catheter",
+     "s": "stg-paed:7.19"
+    },
+    {
+     "n": "1.2",
+     "t": "Comatose or vomiting: NGT on free drainage",
+     "s": "stg-paed:7.20"
+    },
+    {
+     "n": "1.3",
+     "t": "O₂ if hypoxaemic; seek specialist advice early",
+     "s": "stg-paed:7.20"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Bolus ONLY if shocked",
+   "timing": "T 0 → T + 30 min",
+   "time": "T 0 → T + 30 min",
+   "subtitle": "NaCl 0.9%",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "NaCl 0.9% 10–20 mL/kg over 10–30 min; repeat if shock persists",
+     "s": "stg-paed:7.20",
+     "b": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Calculate and run the 48-h plan",
+   "timing": "T + 30 min",
+   "time": "T + 30 min",
+   "subtitle": "maintenance + deficit + losses",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Start insulin after fluids are running (≈1 h)",
+     "d": 1
+    }
+   ],
+   "sequence": [
+    {
+     "label": "48-H PLAN",
+     "sub": "obese: ideal weight",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "maint 100/50/20 per 24 h + deficit (5% = 50, 10% = 100 mL/kg) over 48 h",
+       "note": "+ urine >2 mL/kg/h",
+       "s": "stg-paed:7.20"
+      },
+      {
+       "m": "b",
+       "name": "KCl 15% 20 mL / L",
+       "dose": "= 40 mmol/L",
+       "note": "start now unless anuric",
+       "s": "stg-paed:7.22"
+      },
+      {
+       "m": "c",
+       "name": "Insulin infusion",
+       "dose": "0.05–0.1 U/kg/h",
+       "note": "50 U in 50 mL = 1 U/mL, own line",
+       "s": "stg-paed:7.22",
+       "s_more": [
+        "stg-paed:7.23"
+       ]
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a fluid ▶ b potassium ▶ c insulin",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Switch fluids as glucose falls",
+   "timing": "glucose hourly · VBG 4–6-hourly",
+   "time": "glucose hourly · VBG 4–6-hourly",
+   "subtitle": "add dextrose, never stop insulin",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Glucose ≤12 → NaCl 0.45%/D5",
+     "s": "stg-paed:7.21"
+    },
+    {
+     "n": "4.2",
+     "t": "Fall >5 mmol/L/h or glucose 17 → add dextrose",
+     "s": "stg-paed:7.23"
+    },
+    {
+     "n": "4.3",
+     "t": "Glucose <5 → D10 2 mL/kg; ↑ dextrose %",
+     "s": "stg-paed:7.23"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "Headache, irritability, ↓LOC, precipitous Na drop",
+     "then": "cerebral oedema: fluids to ⅔ maintenance, deficit over 72 h, head up; manage raised ICP (PAED 13.12)",
+     "s": "stg-paed:7.19",
+     "s_more": [
+      "stg-paed:7.21"
+     ]
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Stop when resolved",
+   "timing": "hours 12–48",
+   "time": "hours 12–48",
+   "subtitle": "BD <5 / HCO₃ ≥15 · no ketonuria · glucose ≤10",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Continue IV insulin until resolved",
+     "s": "stg-paed:7.23"
+    },
+    {
+     "n": "5.2",
+     "t": "Reduce IV as oral fluids tolerated",
+     "s": "stg-paed:7.23"
+    },
+    {
+     "n": "5.3",
+     "t": "SC insulin 30 min before a meal; stop infusion 90 min after",
+     "s": "stg-paed:7.23"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Volumes and rates by weight",
+    "s": "stg-paed:7.20",
+    "cols": [
+     "Weight",
+     "Shock bolus mL",
+     "Maint mL/24 h",
+     "Maint + 5% mL/h",
+     "Maint + 10% mL/h",
+     "STG table mL/h*"
+    ],
+    "rows": [
+     [
+      "5 kg",
+      "50–100",
+      "500",
+      "26",
+      "31",
+      "27"
+     ],
+     [
+      "10 kg",
+      "100–200",
+      "1 000",
+      "52",
+      "63",
+      "53"
+     ],
+     [
+      "15 kg",
+      "150–300",
+      "1 250",
+      "68",
+      "83",
+      "74"
+     ],
+     [
+      "20 kg",
+      "200–400",
+      "1 500",
+      "83",
+      "104",
+      "93"
+     ],
+     [
+      "30 kg",
+      "300–600",
+      "1 700",
+      "102",
+      "133",
+      "128"
+     ],
+     [
+      "40 kg",
+      "400–800",
+      "1 900",
+      "121",
+      "163",
+      "154"
+     ],
+     [
+      "50 kg",
+      "500–1 000",
+      "2 100",
+      "140",
+      "192",
+      "175"
+     ],
+     [
+      "60 kg",
+      "600–1 200",
+      "2 300",
+      "158",
+      "221",
+      "193"
+     ],
+     [
+      "70 kg",
+      "700–1 400",
+      "2 500",
+      "177",
+      "250",
+      "208"
+     ]
+    ],
+    "note": "* STG example table (p 7.21) uses lower maintenance and 5% deficit over 24 h; it differs from the formula on p 7.20. Use the formula; discuss with specialist.",
+    "s_more": [
+     "stg-paed:7.21"
+    ]
+   },
+   {
+    "h": "Two-bag system (specialist)",
+    "s": "stg-paed:7.22",
+    "cols": [
+     "Glucose",
+     ">15",
+     "10–15",
+     "<10"
+    ],
+    "rows": [
+     [
+      "Bag 1 (0.45% + KCl)",
+      "100%",
+      "50%",
+      "0%"
+     ],
+     [
+      "Bag 2 (D10 + 5% NaCl + KCl)",
+      "0%",
+      "50%",
+      "100%"
+     ]
+    ]
+   }
+  ]
+ }
+}

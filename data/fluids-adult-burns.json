@@ -1,0 +1,359 @@
+{
+ "id": "fluids-adult-burns",
+ "short": "Fluids – burns (adult)",
+ "title": "Burns fluid resuscitation (Parkland)",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "regimen": "NaCl 0.9% 4 mL × kg × %TBSA / 24 h · ½ in 8 h · titrate to urine 0.5 mL/kg/h",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Fluids by size",
+   "col": 1,
+   "items": [
+    {
+     "t": "Burns ≤10% TBSA: oral rehydration solution",
+     "s": "stg-adult:20.29"
+    },
+    {
+     "t": ">10% TBSA: NaCl 0.9% IV for resuscitation, replacement and maintenance",
+     "s": "stg-adult:20.29",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Count in %TBSA",
+   "col": 1,
+   "items": [
+    {
+     "t": "Partial and full thickness only; not simple erythema",
+     "d": 1
+    },
+    {
+     "t": "Rule of nines (adult chart)",
+     "s": "stg-adult:20.27"
+    },
+    {
+     "t": "Patient's palm ≈ 1% for scattered burns",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Airway / breathing first",
+   "col": 1,
+   "items": [
+    {
+     "t": "Inhalational injury, pharyngeal swelling, unconscious, hypoxic → intubate early",
+     "s": "stg-adult:20.27",
+     "b": 1
+    },
+    {
+     "t": "Tight circumferential trunk burn → escharotomy (consult burns centre)",
+     "s": "stg-adult:20.27"
+    }
+   ]
+  },
+  {
+   "h": "Watch",
+   "col": 1,
+   "items": [
+    {
+     "t": "Shock early after a burn → look for associated injury / internal bleeding",
+     "s": "stg-adult:20.28"
+    },
+    {
+     "t": "Electrical: cardiac monitor; suspect compartment syndrome",
+     "s": "stg-adult:20.28"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Airway, breathing, access",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "ABC · C-spine · 2 large-bore lines",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Assess airway for inhalation injury",
+     "x": "hot gas, smoke, steam, soot, stridor, hoarse",
+     "s": "stg-adult:20.27"
+    },
+    {
+     "n": "1.2",
+     "t": "Secure 2 large-bore IV lines",
+     "x": "through burned skin if needed (suture)",
+     "s": "stg-adult:20.27",
+     "s_more": [
+      "stg-adult:20.28"
+     ]
+    },
+    {
+     "n": "1.3",
+     "t": "Immobilise C-spine if mechanism suggests trauma; stop bleeding",
+     "s": "stg-adult:20.28"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Stop the burning, cool, keep warm",
+   "timing": "T 0 → T + 30 min",
+   "time": "T 0 → T + 30 min",
+   "subtitle": "remove heat · cool <3 h burns · dry",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Remove clothing, jewellery, heat or chemical source",
+     "s": "stg-adult:20.28"
+    },
+    {
+     "n": "2.2",
+     "t": "Cool burns <3 h old with tap water ≥30 min, then dry",
+     "s": "stg-adult:20.28"
+    },
+    {
+     "n": "2.3",
+     "t": "Chemical: flush ≥30 min; never neutralise",
+     "s": "stg-adult:20.28"
+    },
+    {
+     "n": "2.4",
+     "t": "Cover, warm room, warm blankets",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Measure %TBSA and weight",
+   "timing": "T + 15 min",
+   "time": "T + 15 min",
+   "subtitle": "rule of nines · depth",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Map burn on chart; add up %TBSA",
+     "x": "head 9 · each arm 9 · front trunk 18 · back 18 · each leg 18 · perineum 1",
+     "s": "stg-adult:20.27"
+    },
+    {
+     "n": "3.2",
+     "t": "Record depth",
+     "x": "superficial / partial superficial / deep dermal / full thickness",
+     "s": "stg-adult:20.26"
+    },
+    {
+     "n": "3.3",
+     "t": "Weigh or estimate weight; note TIME OF BURN",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Calculate and start Parkland",
+   "timing": "from time of burn",
+   "time": "from time of burn",
+   "subtitle": "24-h total = 4 mL × kg × %TBSA",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "NaCl 0.9%",
+     "sub": "IV",
+     "cells": [
+      {
+       "m": "a",
+       "name": "½ of total",
+       "dose": "in first 8 h",
+       "note": "subtract fluid already given †",
+       "s": "stg-adult:20.29"
+      },
+      {
+       "m": "b",
+       "name": "½ of total",
+       "dose": "over next 16 h",
+       "s": "stg-adult:20.29"
+      },
+      {
+       "m": "c",
+       "name": "Urine 0.5 mL/kg/h",
+       "dose": "low → ↑ rate 50% for 1 h",
+       "note": "repeat until adequate, then resume",
+       "s": "stg-adult:20.29"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a first 8 h ▶ b next 16 h ▶ c titrate hourly",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Titrate to urine and support",
+   "timing": "hourly",
+   "time": "hourly",
+   "subtitle": "catheter · analgesia · tetanus · feed",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Catheterise; hourly urine output",
+     "x": "aim 0.5 mL/kg/h",
+     "s": "stg-adult:20.29"
+    },
+    {
+     "n": "5.2",
+     "t": "Give morphine IV (max 10 mg) + paracetamol",
+     "s": "stg-adult:20.29"
+    },
+    {
+     "n": "5.3",
+     "t": "Tetanus toxoid 0.5 mL IM if none in 5 y",
+     "s": "stg-adult:20.29"
+    },
+    {
+     "n": "5.4",
+     "t": "Feed early; pantoprazole 40 mg IV daily until feeding",
+     "s": "stg-adult:20.29"
+    },
+    {
+     "n": "5.5",
+     "t": "Refer to burns unit: >20% TBSA, face/hands/perineum, inhalational, electrical, circumferential",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Parkland NaCl 0.9% rate (mL/h): first 8 h / next 16 h",
+    "s": "stg-adult:20.29",
+    "cols": [
+     "Weight",
+     "10% TBSA",
+     "20% TBSA",
+     "30% TBSA",
+     "40% TBSA",
+     "50% TBSA"
+    ],
+    "rows": [
+     [
+      "50 kg",
+      "125 / 63",
+      "250 / 125",
+      "375 / 188",
+      "500 / 250",
+      "625 / 313"
+     ],
+     [
+      "60 kg",
+      "150 / 75",
+      "300 / 150",
+      "450 / 225",
+      "600 / 300",
+      "750 / 375"
+     ],
+     [
+      "70 kg",
+      "175 / 88",
+      "350 / 175",
+      "525 / 263",
+      "700 / 350",
+      "875 / 438"
+     ],
+     [
+      "80 kg",
+      "200 / 100",
+      "400 / 200",
+      "600 / 300",
+      "800 / 400",
+      "1 000 / 500"
+     ],
+     [
+      "90 kg",
+      "225 / 113",
+      "450 / 225",
+      "675 / 338",
+      "900 / 450",
+      "1 125 / 563"
+     ],
+     [
+      "100 kg",
+      "250 / 125",
+      "500 / 250",
+      "750 / 375",
+      "1 000 / 500",
+      "1 250 / 625"
+     ]
+    ],
+    "note": "Count from the time of burn and deduct pre-hospital fluid †. Example 70 kg 30%: 8 400 mL / 24 h → 525 mL/h × 8 h, then 263 mL/h × 16 h."
+   },
+   {
+    "h": "Depth",
+    "type": "list",
+    "items": [
+     {
+      "t": "Superficial: dry, erythema, painful, heals 7 d",
+      "s": "stg-adult:20.26"
+     },
+     {
+      "t": "Partial superficial: blisters, moist, painful, 10–14 d",
+      "s": "stg-adult:20.26"
+     },
+     {
+      "t": "Deep dermal: white/yellow slough, less painful → graft",
+      "s": "stg-adult:20.26"
+     },
+     {
+      "t": "Full thickness: dry, charred, painless, firm → graft",
+      "s": "stg-adult:20.26"
+     }
+    ]
+   }
+  ]
+ }
+}

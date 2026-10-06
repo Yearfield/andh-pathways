@@ -661,6 +661,13 @@ section.card.red .shead .st { color: var(--warn-ink); }
 .wres .spacer { flex: 1; }
 .wreset { min-height: 36px; padding: 0 16px; border: 1.5px solid var(--line); border-radius: 999px; background: none; font-weight: 700; }
 .wsrc { font-size: .8rem; color: var(--muted); margin: 0 4px; }
+
+/* Fluids Rx: steps[].sequence rows (label + ordered cells a ▶ b ▶ c) */
+.seqord { font-size: .78rem; font-weight: 700; color: var(--tab); background: #eef5f3; border-radius: 8px; padding: 4px 10px; align-self: flex-start; }
+.srows { display: flex; flex-direction: column; gap: 10px; }
+.srow2 { border-left: 4px solid var(--tab); padding-left: 8px; display: flex; flex-direction: column; gap: 6px; }
+.srl { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; } .srl b { font-family: var(--font-head); font-size: .85rem; letter-spacing: .6px; } .srl span { font-size: .78rem; color: var(--muted); }
+.srow2 .sn { font-weight: 700; } .srow2 .sd { font-weight: 700; color: var(--tab); } .srow2 .sa { font-size: .82rem; color: var(--ink-2); }
 /* ---------- weight calculator ---------- */
 .wpad { display: flex; align-items: center; gap: 12px; padding: 12px 14px 4px; } .wlabel { font-weight: 700; }
 .winp { display: flex; align-items: center; gap: 8px; } .winp input { width: 120px; height: 52px; font-size: 1.4rem; font-weight: 700; text-align: center; border: 2px solid var(--tab); border-radius: 12px; background: #fff; color: var(--ink); }
