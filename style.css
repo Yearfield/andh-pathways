@@ -373,22 +373,6 @@ button.cor { border: 0; background: none; padding: 0 6px; min-width: 28px; min-h
 .seg2 button { flex: 1; min-height: 48px; border: 0; background: none; font-size: .88rem; font-weight: 500; padding: 4px 8px; }
 .seg2 button + button { border-left: 1.5px solid var(--line); }
 .seg2 button[aria-pressed="true"] { background: var(--ink); color: #fff; }
-button.vt { display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 4px 14px 4px 10px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--panel); text-align: left; font-weight: 600; }
-button.vt small { display: block; font-weight: 400; font-size: .72rem; color: var(--muted); margin-left: 4px; }
-button.vt .box { width: 24px; height: 24px; border: 2px solid var(--line); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: .9rem; flex: 0 0 auto; }
-button.vt[aria-pressed="true"] { background: #eef5f3; border-color: var(--tab); } button.vt[aria-pressed="true"] .box { background: var(--tab); border-color: var(--tab); }
-.comp { background: var(--panel); border: 1.5px solid var(--line); border-top: 5px solid var(--c); border-radius: var(--r); padding: 10px 10px 8px; }
-.comp h3 { margin: 0 0 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-family: var(--font-head); font-size: 1rem; }
-.comp .cl { width: 28px; height: 28px; border-radius: 7px; background: var(--c); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; flex: 0 0 auto; }
-.comp .cs { margin-left: auto; min-width: 28px; text-align: center; font-weight: 700; color: var(--c); font-variant-numeric: tabular-nums; font-size: 1.2rem; }
-.comp.off { opacity: .6; border-top-color: var(--soft); } .comp .vtnote { margin: 0; font-size: .85rem; color: var(--muted); }
-.opts { display: flex; flex-direction: column; gap: 6px; }
-.opt { display: flex; align-items: center; gap: 4px; border: 1.5px solid var(--soft); border-radius: 10px; background: #fff; padding-right: 6px; }
-.pick { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; min-height: 48px; border: 0; background: none; text-align: left; padding: 6px 8px; }
-.pick .sv { flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--c); color: var(--c); font-weight: 700; display: flex; align-items: center; justify-content: center; font-variant-numeric: tabular-nums; }
-.pick .st { line-height: 1.3; }
-.opt.on { border-color: var(--c); background: color-mix(in srgb, var(--c) 11%, #fff); box-shadow: inset 0 0 0 1px var(--c); }
-.opt.on .sv { background: var(--c); color: #fff; } .opt.on .st { font-weight: 700; }
 .totalbox { position: sticky; bottom: calc(var(--tabh) + 8px + env(safe-area-inset-bottom)); z-index: 4; background: var(--ink); color: #fff; border-radius: var(--r); padding: 10px 14px; box-shadow: 0 6px 18px rgba(20,40,45,.28); }
 .tline { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .tline .tl { font-size: .72rem; letter-spacing: 1px; text-transform: uppercase; color: #cfe0dc; font-weight: 700; }
@@ -606,10 +590,6 @@ li.act { padding: 5px 0; }
 .dtab th, .dtab td { padding: 5px 8px; }
 .seg2 button { min-height: 34px; padding: 2px 6px; }
 .bgctl .seg2 button { min-height: 32px; }
-button.vt { min-height: 34px; padding: 2px 10px 2px 8px; }
-.pick { min-height: 34px; padding: 3px 6px; gap: 8px; }
-.pick .sv { width: 26px; height: 26px; }
-.comp { padding: 7px 8px 6px; }
 .totalbox { padding: 6px 10px; }
 .fm { padding: 7px 10px; }
 .fin .inp, .bgf .inp { height: 36px; }
@@ -655,3 +635,29 @@ section.card.red .shead .st { color: var(--warn-ink); }
 .wpbtn { width: 100%; justify-content: space-between; min-height: 44px; font-weight: 700; } .wperc { display: flex; flex-direction: column; gap: 8px; }
 .percres { padding: 10px 14px; font-weight: 700; } .percres.green { background: var(--ok-bg); color: var(--ok); } .percres.amber { background: #fff4de; color: #7d5212; }
 .wells .items.bands li.band { border-left: 5px solid transparent; }
+
+/* GCS wheel calculator (replaces the old word-row input). The plate keeps its white background and the wheel its own colours. */
+.wheel-h { margin: 0; font-family: var(--font-head); font-size: 1.15rem; }
+.wage, .wair { display: flex; flex-wrap: wrap; gap: 8px; }
+.wchk { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 4px 12px; border: 1.5px solid var(--soft); border-radius: 999px; background: var(--panel); font-weight: 600; font-size: .9rem; cursor: pointer; user-select: none; }
+.wchk input { width: 18px; height: 18px; margin: 0; accent-color: var(--tab); }
+.wchk:has(input:checked) { border-color: var(--tab); background: #eef5f3; }
+.wchk:has(input:focus-visible) { outline: 3px solid var(--amber); outline-offset: 2px; }
+.wplate { background: #fff; border: 1.5px solid var(--line); border-radius: var(--r); padding: 6px; }
+.wplate .wheel-svg { display: block; width: 100%; height: auto; max-width: 560px; margin: 0 auto; }
+.wheel-svg * { pointer-events: none; }
+.wheel-svg .opt, .wheel-svg .grp { pointer-events: auto; cursor: pointer; transition: fill-opacity .15s; }
+.wheel-svg .opt.dim { fill-opacity: .35; }
+.wheel-svg .opt.off { fill-opacity: .18; cursor: not-allowed; }
+.wheel-svg .hl path { fill: none; stroke: #0b2545; stroke-width: 7; stroke-linejoin: round; }
+.wheel-svg .opt.hint { animation: wheelhint .9s ease-in-out 1; }
+@keyframes wheelhint { 50% { fill-opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .wheel-svg .opt.hint { animation: none; } }
+.wres { background: var(--panel); border: 1.5px solid var(--line); border-radius: var(--r); padding: 10px 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.wscore { font-family: var(--font-head); font-weight: 700; font-size: 1.8rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.wparts { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 700; }
+.wchipr { padding: 3px 12px; border-radius: 999px; font-weight: 700; font-size: .85rem; background: #e8edec; color: var(--ink-2); }
+.wchipr.mild { color: var(--ok); background: var(--ok-bg); } .wchipr.mod { color: #7d5212; background: #fff4de; } .wchipr.sev { color: var(--warn-ink); background: var(--warn-bg); }
+.wres .spacer { flex: 1; }
+.wreset { min-height: 36px; padding: 0 16px; border: 1.5px solid var(--line); border-radius: 999px; background: none; font-weight: 700; }
+.wsrc { font-size: .8rem; color: var(--muted); margin: 0 4px; }

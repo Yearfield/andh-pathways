@@ -549,7 +549,6 @@ function scValidate(d) { // console warnings only: bad data should never stop th
   [...seen].forEach(s => { const id = s.split(":")[0]; if (!S.sources[id]) bad.push(`source "${id}" (from "${s}") is not in sources.json`); });
   const r = d.formulas?.[0]?.range, lo = d.components.reduce((a, c) => a + c.min, 0), hi = d.components.reduce((a, c) => a + c.max, 0);
   if (!r || r[0] !== lo || r[1] !== hi) bad.push(`component min/max sum ${lo}–${hi} does not match formulas[0].range ${r ? r.join("–") : "(missing)"}`);
-  d.components.forEach(c => c.items.forEach(i => { if (i.score < c.min || i.score > c.max) bad.push(`${c.key} item score ${i.score} outside ${c.min}–${c.max}`); }));
   if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
 }
 
@@ -583,10 +582,8 @@ function applyScoreFilter() {
 }
 
 /* scorer maths and rendering */
-const scHasVT = d => d.formulas.some(f => f.id === "gcs_intubated"); // adult card: V can be recorded as "T" (intubated / aphasic)
-const scSplit = d => d.components.some(c => c.items.some(i => i.t_infant));
 function scCalc(d) {
-  const vt = S.sc.vt && scHasVT(d), sel = S.sc.sel;
+  const vt = !!(S.sc.tube || S.sc.vent), sel = S.sc.sel; // intubated or ventilated: V is recorded as T and left out of the total
   const used = d.components.filter(c => !(vt && c.key === "V"));
   const total = used.reduce((a, c) => a + (sel[c.key] ?? 0), 0);
   return { vt, used, total, picked: used.filter(c => sel[c.key] != null).length, complete: used.every(c => sel[c.key] != null) };
@@ -598,22 +595,53 @@ function scBands(d, m) { // bands whose min <= total <= max; for an intubated to
   return [...(d.interpretation_stg || []), ...(d.interpretation_classic || [])].filter(b => b.min <= t && t <= b.max);
 }
 const shortLbl = b => { const l = b.label.split(" — ")[0].split(":")[0]; return /\d/.test(l) ? `${b.min}–${b.max}` : `${l} ${b.min}–${b.max}`; };
-function scTop(d) {
-  const m = scCalc(d), split = scSplit(d), inf = split && S.sc.age === "infant", sel = S.sc.sel;
-  const ctl = (split ? `<div class="seg2" role="group" aria-label="Age group">${[["infant", "Infant (preverbal/<2 y)"], ["child", "Child (≥2 y)"]].map(([k, l]) =>
-      `<button data-scage="${k}" aria-pressed="${S.sc.age === k}">${l}</button>`).join("")}</div>` : "") +
-    (scHasVT(d) ? `<button class="vt" data-scvt aria-pressed="${m.vt}"><span class="box" aria-hidden="true">${m.vt ? "✓" : ""}</span>Intubated (VT)<small>V not scored</small></button>` : "");
-  const comps = d.components.map((c, ci) => {
-    const col = SC_COLOURS[ci % 5], off = m.vt && c.key === "V";
-    const txt = it => inf && it.t_infant ? it.t_infant : (split ? it.t_child : it.t), src = it => inf ? (it.s_infant || it.s) : it.s, dg = it => inf ? it.d_infant : it.d;
-    const refs = new Set(c.items.map(src)), shared = refs.size === 1 ? [...refs][0] : null;
-    return `<section class="comp ${off ? "off" : ""}" style="--c:${col}"><h3><span class="cl">${esc(c.key)}</span>${esc(c.name)}
-        <span class="cs">${off ? "VT" : sel[c.key] ?? "–"}</span>${shared ? scRef(shared) : ""}</h3>
-      ${off ? `<p class="vtnote">Intubated: V is recorded as T and left out of the total.</p>` : `<div class="opts">${c.items.map(it =>
-        `<div class="opt ${sel[c.key] === it.score ? "on" : ""}"><button class="pick" data-pick="${esc(c.key)}" data-v="${it.score}" aria-pressed="${sel[c.key] === it.score}"><span class="sv">${it.score}</span><span class="st">${esc(txt(it))}${scDag(dg(it))}</span></button>${shared ? "" : scRef(src(it))}</div>`).join("")}</div>`}</section>`;
-  }).join("");
-  return `${ctl ? `<div class="sctl">${ctl}</div>` : ""}${comps}${scTotal(d, m)}`;
+/* --- the tappable GCS wheel (wheel/gcs-wheel-<age>.svg, inlined; sectors carry data-d = E|V|M and data-s = score) --- */
+const WHEEL_AGES = [["adult", "> 5 years"], ["child", "2–5 years"], ["infant", "0–23 months"]];
+async function wheelLoad() { // fetched once, then served from the service-worker cache, so it works offline
+  if (S.wheel) return;
+  try { const w = {}; await Promise.all(WHEEL_AGES.map(async ([a]) => { const r = await fetch(`wheel/gcs-wheel-${a}.svg`); if (!r.ok) throw new Error(r.status); w[a] = await r.text(); })); S.wheel = w; }
+  catch (e) { console.warn("GCS wheel could not be loaded:", e.message); }
 }
+function scTop(d) {
+  const wheel = a => S.wheel?.[a] ?? `<p class="empty">The wheel could not be loaded. Open the app once with signal.</p>`;
+  return `<h2 class="wheel-h">Glasgow Coma Scale (GCS)</h2>
+    <div class="wage" role="group" aria-label="Age">${WHEEL_AGES.map(([k, l]) => `<label class="wchk"><input type="checkbox" data-gage="${k}" ${S.sc.age === k ? "checked" : ""}> ${l}</label>`).join("")}</div>
+    <div class="wplate">${WHEEL_AGES.map(([k]) => `<div data-wbox="${k}" ${S.sc.age === k ? "" : "hidden"}>${wheel(k)}</div>`).join("")}</div>
+    <div class="wair" role="group" aria-label="Airway"><label class="wchk"><input type="checkbox" data-gair="tube" ${S.sc.tube ? "checked" : ""}> Intubated (tube)</label>
+      <label class="wchk"><input type="checkbox" data-gair="vent" ${S.sc.vent ? "checked" : ""}> Ventilated</label></div>
+    <section class="wres" aria-live="polite"><span class="wscore" id="wscore">–</span><span class="wparts" id="wparts">E– V– M–</span><span class="wchipr" id="wchip"></span><span class="spacer"></span><button class="wreset" data-greset>Reset</button></section>
+    <p class="hint">Tap NORMAL or SPEECH to see their higher scores in the outer ring. Intubated or ventilated scores verbal as T.</p>
+    <p class="wsrc" id="wsrc"></p>`;
+}
+function wheelPaint() { // port of the reference wheel: select / dim / outline the sectors, centre total, result line and severity chip
+  const d = S.sc.d, box = $(`[data-wbox="${S.sc.age}"]`), svg = box && $("svg", box); if (!svg) return;
+  const m = scCalc(d), sel = S.sc.sel, hl = $(".hl", svg); hl.innerHTML = "";
+  $$(".opt", svg).forEach(p => { const dom = p.dataset.d, v = +p.dataset.s; p.classList.remove("dim", "off");
+    if (dom === "V" && m.vt) { p.classList.add("off"); return; }
+    if (sel[dom] != null) { if (sel[dom] === v) { const c = document.createElementNS("http://www.w3.org/2000/svg", "path"); c.setAttribute("d", p.getAttribute("d")); hl.appendChild(c); } else p.classList.add("dim"); } });
+  const parts = `E${sel.E ?? "–"} V${m.vt ? "T" : sel.V ?? "–"} M${sel.M ?? "–"}`, main = $(".res-main", svg), sub = $(".res-sub", svg), chip = $("#wchip");
+  $("#wparts").textContent = parts;
+  if (!m.complete) { $("#wscore").textContent = "–"; main.textContent = "GCS"; sub.textContent = parts; chip.className = "wchipr"; chip.textContent = "Tap one Eyes, Verbal and Motor section"; }
+  else if (m.vt) { const t = m.total + "T"; $("#wscore").textContent = t; main.textContent = t; sub.textContent = parts; chip.className = "wchipr"; chip.textContent = "Verbal not testable (E + M only)"; }
+  else { const t = m.total; $("#wscore").textContent = t + "/15"; main.textContent = t; sub.textContent = parts;
+    if (t >= 13) { chip.className = "wchipr mild"; chip.textContent = "Mild (13–15)"; } else if (t >= 9) { chip.className = "wchipr mod"; chip.textContent = "Moderate (9–12)"; } else { chip.className = "wchipr sev"; chip.textContent = "Severe (≤ 8): protect airway"; } }
+  const inf = S.sc.age === "infant" && d.components[0].s_infant, src = inf ? d.components[0].s_infant : d.components[0].s;
+  $("#wsrc").innerHTML = `${inf ? "Infant column" : "Wheel"} from ${scRef(src)}${scDag(inf ? d.components[0].d_infant : d.components[0].d)}`;
+}
+function wheelTap(p) { // a sector: tap = select, tap again = clear. NORMAL / SPEECH only pulse the outer-ring sectors and never score.
+  const svg = p.closest("svg");
+  if (p.classList.contains("grp")) { $$(`.opt[data-d="${p.dataset.d}"]`, svg).forEach(o => { if (+o.dataset.s >= 4) { o.classList.remove("hint"); void o.getBBox(); o.classList.add("hint"); setTimeout(() => o.classList.remove("hint"), 950); } }); return; }
+  if (p.classList.contains("off")) return;
+  const k = p.dataset.d, v = +p.dataset.s, sel = S.sc.sel; if (sel[k] === v) delete sel[k]; else sel[k] = v;
+  scUpdate();
+}
+document.addEventListener("click", e => { const p = e.target.closest?.(".wheel-svg .opt, .wheel-svg .grp"); if (p && S.sc?.d?.input === "wheel") wheelTap(p); });
+document.addEventListener("change", e => {
+  const t = e.target; if (S.sc?.d?.input !== "wheel") return;
+  if (t.dataset.gage) { S.sc.age = t.dataset.gage; S.sc.sel = {}; // behaves like a radio group; switching age resets the score
+    $$("[data-gage]").forEach(c => { c.checked = c.dataset.gage === S.sc.age; }); $$("[data-wbox]").forEach(b => { b.hidden = b.dataset.wbox !== S.sc.age; }); scUpdate(); }
+  if (t.dataset.gair) { S.sc[t.dataset.gair] = t.checked; scUpdate(); }
+});
 function scTotal(d, m = scCalc(d)) {
   const r = d.formulas[0].range, sel = S.sc.sel, bands = scBands(d, m).filter(b => b.label);
   return `<div class="totalbox ${m.complete ? "done" : ""}" aria-live="polite"><div class="tline"><span class="tl">Total</span><span class="eqs">${scEq(d, m)}</span><span class="tv">= ${m.picked ? m.total + (m.vt ? "T" : "") : "–"}</span></div>
@@ -631,11 +659,10 @@ function scInterp(d) {
 }
 function scUpdate() {
   const d = S.sc.d; // only the parts of the current tab exist
-  if ($("#sc-top")) $("#sc-top").innerHTML = scTop(d); if ($("#sc-interp")) $("#sc-interp").innerHTML = scInterp(d); if ($("#sc-mini")) $("#sc-mini").innerHTML = scTotal(d);
+  if ($("#sc-top")) wheelPaint(); if ($("#sc-interp")) $("#sc-interp").innerHTML = scInterp(d); if ($("#sc-mini")) $("#sc-mini").innerHTML = scTotal(d);
   $$("[data-out='gcs_total']").forEach(o => { const m = scCalc(d); o.innerHTML = `${scEq(d, m)} <b class="cv">= ${m.picked ? m.total + (m.vt ? "T" : "") : "–"}</b>`; });
   calcRefresh();
 }
-function scPick(key, v) { S.sc.sel[key] = S.sc.sel[key] === v ? undefined : v; if (S.sc.sel[key] === undefined) delete S.sc.sel[key]; scUpdate(); }
 
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
@@ -644,7 +671,8 @@ async function scoreView(id, tab, key) {
   if (d.type === "calculator") return calcView(id, d, tab, key);
   if (d.type === "range") return rangeView(id, d, tab);
   if (!S.sc || S.sc.id !== id) { // fresh card: nothing carries over between patients, nothing is stored
-    S.sc = { id, d, sel: {}, vt: false, age: scSplit(d) ? "infant" : "child", vars: {}, cor: new Set() }; scValidate(d); }
+    S.sc = { id, d, sel: {}, tube: false, vent: false, age: id === "gcs-paeds" ? "infant" : "adult", vars: {}, cor: new Set() }; scValidate(d); }
+  if (!tab || tab === "scale") await wheelLoad();
   S.sc.d = d;
   const r = d.formulas[0].range;
   const fm = f => { const c = CALCS[f.id], live = f.id === "gcs_total";
@@ -966,9 +994,7 @@ document.addEventListener("click", async e => {
   if (t.dataset.wpercopen !== undefined) { S.sc.percOpen = !S.sc.percOpen; wUpdate(); return; }
   if (t.dataset.wns) { const f = S.sc.nsFlip, k = t.dataset.wns; f.has(k) ? f.delete(k) : f.add(k); wUpdate(); return; }
   if (t.dataset.wreset !== undefined) { S.sc.ticked = new Set(); S.sc.perc = new Set(); S.sc.percOpen = false; S.sc.nsFlip = new Set(); wUpdate(); return; }
-  if (t.dataset.pick) { scPick(t.dataset.pick, +t.dataset.v); return; }
-  if (t.dataset.scage) { S.sc.age = t.dataset.scage; scUpdate(); return; }
-  if (t.dataset.scvt !== undefined) { S.sc.vt = !S.sc.vt; scUpdate(); return; }
+  if (t.dataset.greset !== undefined) { S.sc.sel = {}; S.sc.tube = S.sc.vent = false; $$("[data-gair]").forEach(c => { c.checked = false; }); scUpdate(); return; }
   if (t.dataset.scclear !== undefined) { S.sc.sel = {}; scUpdate(); return; }
   if (t.dataset.cor) { const c = S.sc.cor; c.has(t.dataset.cor) ? c.delete(t.dataset.cor) : c.add(t.dataset.cor); S.sc.d.type === "scale" ? scUpdate() : rerender(); return; }
   if (t.dataset.bgclear !== undefined) { S.sc.vars = {}; S.sc.open.clear(); rerender(); return; }

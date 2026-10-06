@@ -4,7 +4,7 @@
   "short": "GCS",
   "title": "Glasgow Coma Scale — Adult",
   "population": "adult",
-  "age_range": "adults and verbal children (≥2 y)",
+  "age_range": "adults and children > 5 y (adult wheel); child and infant wheels also on the card",
   "setting": "casualty / ward",
   "hospital": "ANDH",
   "level": "district",
@@ -48,114 +48,24 @@
       "name": "Eye opening",
       "min": 1,
       "max": 4,
-      "items": [
-        {
-          "score": 4,
-          "t": "Spontaneous",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 3,
-          "t": "To voice",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 2,
-          "t": "To pain",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 1,
-          "t": "None",
-          "s": "PHC:21.64",
-          "d": false
-        }
-      ]
+      "s": "PHC:21.64",
+      "d": false
     },
     {
       "key": "V",
       "name": "Best verbal response",
       "min": 1,
       "max": 5,
-      "items": [
-        {
-          "score": 5,
-          "t": "Orientated",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 4,
-          "t": "Confused",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 3,
-          "t": "Inappropriate words",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 2,
-          "t": "Incomprehensible sounds",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 1,
-          "t": "None",
-          "s": "PHC:21.64",
-          "d": false
-        }
-      ]
+      "s": "PHC:21.64",
+      "d": false
     },
     {
       "key": "M",
       "name": "Best motor response",
       "min": 1,
       "max": 6,
-      "items": [
-        {
-          "score": 6,
-          "t": "Obeys commands",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 5,
-          "t": "Localises to pain",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 4,
-          "t": "Withdraws from pain",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 3,
-          "t": "Abnormal flexion to pain",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 2,
-          "t": "Extends to pain",
-          "s": "PHC:21.64",
-          "d": false
-        },
-        {
-          "score": 1,
-          "t": "None",
-          "s": "PHC:21.64",
-          "d": false
-        }
-      ]
+      "s": "PHC:21.64",
+      "d": false
     }
   ],
   "formulas": [
@@ -270,5 +180,6 @@
       "d": true
     }
   ],
-  "dagger_note": "† = not in the SA STG (clinician craft or non-SA source). Lines with a page ref are STG. ‡ = STG misprint corrected (printed value given in JSON)."
+  "dagger_note": "† = not in the SA STG (clinician craft or non-SA source). Lines with a page ref are STG. ‡ = STG misprint corrected (printed value given in JSON).",
+  "input": "wheel"
 }
