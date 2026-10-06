@@ -1,0 +1,970 @@
+{
+ "id": "pid",
+ "short": "PID",
+ "title": "Pelvic inflammatory disease (lower abdominal pain syndrome) — staged management",
+ "population": "Sexually active women with lower abdominal pain ± vaginal discharge; stage I discharged on TTO, stage II–IV admitted",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Positive pregnancy test + pain / bleeding → ectopic pathway",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Recent delivery, TOP or miscarriage → septic miscarriage / puerperal sepsis",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Urine findings of UTI and no CMT → UTI pathway",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Discharge without pain or CMT → VDS pathway",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "PID / LAP = sexually active woman with",
+   "items": [
+    {
+     "t": "Lower abdominal pain ± vaginal discharge",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Cervical motion tenderness",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Uterine and / or adnexal tenderness",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "LMP ____  IUCD Y / N  Pregnancy test ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Stage — ADMIT stage II–IV and if any extra criterion",
+   "items": [
+    {
+     "t": "Stage I — cervical motion, uterine and / or adnexal tenderness",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Stage II — stage I + pelvic peritonitis",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Stage III — stage II + tubo-ovarian complex / abscess",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Stage IV — generalised peritonitis, ruptured TOA, septicaemia",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Surgical emergency not excluded · clinically severe",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "Tubo-ovarian abscess · pregnancy",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "Intolerant of / not responding to oral therapy",
+     "s": "adultstg2026:5.4"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Records / clinic file",
+   "items": [
+    {
+     "t": "LMP · contraception · IUCD",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Recent delivery, TOP, miscarriage",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "HIV status",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Previous PID / STI",
+     "s": "adultstg2026:5.3"
+    },
+    {
+     "t": "Previous ectopic",
+     "s": "adultstg2026:5.3"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "adultstg2026:5.5"
+    },
+    {
+     "t": "Partner treated?",
+     "s": "phcstg2026:12.16"
+    },
+    {
+     "t": "Treatment already given (PHC)",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Onset, site, severity",
+     "d": 1
+    },
+    {
+     "t": "Dyspareunia",
+     "d": 1
+    },
+    {
+     "t": "Missed period",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "h": "Gynae"
+    },
+    {
+     "t": "Abnormal vaginal bleeding",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Vaginal discharge",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Recent instrumentation / IUCD insertion",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Vomiting, diarrhoea (appendicitis / GI)",
+     "d": 1
+    },
+    {
+     "t": "Dysuria, frequency (UTI)",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Sexual history, partners",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever > 38 °C",
+     "s": "phcstg2026:12.6",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "phcstg2026:12.6",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "Septicaemia signs",
+     "s": "adultstg2026:5.4",
+     "k": "yn"
+    },
+    {
+     "t": "Reduced urine output",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — abdominal and vaginal",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Lower abdominal tenderness",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Guarding / rebound",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Generalised peritonitis",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Abdominal / pelvic mass",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "h": "Speculum / bimanual"
+    },
+    {
+     "t": "Cervical motion tenderness",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Adnexal tenderness / mass",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "Mucopurulent cervicitis",
+     "s": "phcstg2026:12.4"
+    },
+    {
+     "t": "IUCD strings",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "Bleeding",
+     "s": "phcstg2026:12.6"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Pregnancy test — every sexually active woman",
+   "items": [
+    {
+     "t": "Ectopic pregnancy is in the differential",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Positive + pain / bleeding → ectopic pathway",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Pregnant with PID → ADMIT (parenteral)",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Result ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Ultrasound and screening tests",
+   "items": [
+    {
+     "t": "Ultrasound: tubo-ovarian complex / abscess, free fluid, ectopic",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "HIV test — emphasise",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "STI screening incl. syphilis",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Urine dipstick (UTI?)",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "FBC, creatinine if admitted",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Ectopic pregnancy",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Generalised peritonitis",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Ruptured TOA",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Septicaemia / shock",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Septic miscarriage",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Appendicitis / surgical abdomen",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "IUCD in situ",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "UTI / pyelonephritis",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "HIV",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Ovarian torsion / cyst",
+     "d": 1
+    },
+    {
+     "t": "GBV",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Stage III–IV, ruptured TOA, peritonitis, surgical emergency or no response in 48 h → REFER gynaecology (no theatre at ANDH)",
+   "s": "adultstg2026:5.5"
+  },
+  {
+   "t": "11. Stage II (or extra admit criterion) → ADMIT, IV antibiotics · Stage I → DISCHARGE on TTO, review 48–72 h",
+   "s": "adultstg2026:5.4"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "IV until definite clinical improvement (24–48 h), then oral to complete 10 days · surgery triggers = REFER · branch rows only if needed",
+  "columns": {
+   "feed": "Fluids, diet & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, BP, RR 4-hourly; hourly while shocked or peritonitic",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Abdominal and pelvic signs: pain, guarding, rebound, distension — each shift",
+    "s": "adultstg2026:5.4",
+    "b": 1
+   },
+   {
+    "t": "IV fluids in, urine out, vomiting",
+    "d": 1
+   },
+   {
+    "t": "Vaginal bleeding / discharge",
+    "s": "phcstg2026:12.6"
+   },
+   {
+    "t": "IV antibiotic doses timed and signed; switch to oral after definite improvement",
+    "s": "adultstg2026:5.5"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Do a pregnancy test before treating. Remove an IUCD if present. Severely ill: IV line and treat shock first.",
+    "feed": [
+     {
+      "t": "IV line; treat shock if present",
+      "s": "phcstg2026:12.6",
+      "b": 1
+     },
+     {
+      "t": "Analgesia; nil by mouth if surgical abdomen",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pregnancy test",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     },
+     {
+      "t": "HIV, syphilis, STI screen",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, creatinine (gentamicin)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "s": "phcstg2026:12.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Stage II–IV"
+     },
+     {
+      "t": "Ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "AND metronidazole 500 mg IV 8-hourly",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "AND azithromycin 1 g PO stat",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "h": "Allergy"
+     },
+     {
+      "t": "Severe penicillin allergy: clindamycin 600 mg IV 8-hourly + gentamicin 6 mg/kg IV daily + azithromycin 1 g PO stat",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Ibuprofen 400 mg PO 8-hourly with food",
+      "s": "phcstg2026:12.6"
+     },
+     {
+      "h": "Other"
+     },
+     {
+      "t": "Remove IUCD; alternative contraception",
+      "s": "adultstg2026:5.4"
+     }
+    ]
+   },
+   {
+    "label": "If stage III (TOA)",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ultrasound mass size",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Manage with a gynaecologist — REFER / consult",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "AND metronidazole 500 mg IV 8-hourly",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "AND azithromycin 1 g PO stat",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "Surgery if uncertain diagnosis, no response at 48 h, or deterioration",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If stage IV / shock",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "IV fluids; treat shock",
+      "s": "phcstg2026:12.6",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture, lactate if available",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Generalised peritonitis, ruptured TOA, septicaemia → URGENT REFER gynaecology",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "AND metronidazole 500 mg IV 8-hourly",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "AND azithromycin 1 g PO stat",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If pregnant",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ultrasound: intra-uterine pregnancy?",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ectopic not excluded → ectopic pathway",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     },
+     {
+      "t": "PID in pregnancy → ADMIT for parenteral therapy",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24–48 h",
+    "feed": [
+     {
+      "t": "Diet as tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Definite clinical improvement → switch to oral",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "Definite improvement (24–48 h): amox/clav 875/125 mg PO 12-hourly to complete 10 days (no metronidazole needed)",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "Then clindamycin 450 mg PO 8-hourly + ciprofloxacin 500 mg PO 12-hourly to complete 10 days",
+      "s": "adultstg2026:5.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "48-h review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ultrasound if not improving",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No adequate response after 48 h or deteriorating → REFER for surgery",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     },
+     {
+      "t": "Partner treatment arranged",
+      "s": "phcstg2026:12.16"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–10",
+    "phase": "Oral",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Definite improvement (24–48 h): amox/clav 875/125 mg PO 12-hourly to complete 10 days (no metronidazole needed)",
+      "s": "adultstg2026:5.5",
+      "b": 1
+     },
+     {
+      "t": "Discharge assessment (box below)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "DISCHARGE TTO — stage I",
+   "items": [
+    {
+     "t": "Ceftriaxone 250 mg IM stat (in 0.9 mL lidocaine 1%)",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "AND azithromycin 1 g PO stat",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "AND metronidazole 400 mg PO 12-hourly × 7 d",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy: azithromycin 2 g PO stat + metronidazole 400 mg 12-hourly × 7 d",
+     "s": "adultstg2026:5.5"
+    },
+    {
+     "t": "Pain: ibuprofen 400 mg PO 8-hourly with food",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Remove IUCD; give alternative contraception",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "t": "Review 48–72 h: pain not improving → urgent gynaecological assessment",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Admitted — antibiotics",
+   "items": [
+    {
+     "t": "Ceftriaxone 1 g IV daily",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "t": "AND metronidazole 500 mg IV 8-hourly",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "t": "AND azithromycin 1 g PO stat",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "t": "Definite improvement (24–48 h): amox/clav 875/125 mg PO 12-hourly to complete 10 days (no metronidazole needed)",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "h": "Severe penicillin allergy"
+    },
+    {
+     "t": "Severe penicillin allergy: clindamycin 600 mg IV 8-hourly + gentamicin 6 mg/kg IV daily + azithromycin 1 g PO stat",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "t": "Then clindamycin 450 mg PO 8-hourly + ciprofloxacin 500 mg PO 12-hourly to complete 10 days",
+     "s": "adultstg2026:5.5"
+    },
+    {
+     "h": "Partner"
+    },
+    {
+     "t": "Partner: ceftriaxone 250 mg IM + metronidazole 2 g PO + azithromycin 1 g PO stat, plus treatment for any syndrome",
+     "s": "phcstg2026:12.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Surgery triggers → REFER (stage III)",
+   "items": [
+    {
+     "t": "Diagnosis uncertain",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "No adequate response after 48 h",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Deteriorating on treatment",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Large / symptomatic pelvic mass after 6 weeks",
+     "s": "adultstg2026:5.4"
+    },
+    {
+     "h": "Also REFER"
+    },
+    {
+     "t": "Stage III and IV: manage with a gynaecologist",
+     "s": "adultstg2026:5.5",
+     "b": 1
+    },
+    {
+     "t": "Stage I not improving after 48–72 h",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Not improved after 7 days",
+     "s": "phcstg2026:12.6"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Definite clinical improvement",
+    "s": "adultstg2026:5.5",
+    "b": 1
+   },
+   {
+    "t": "Afebrile, abdomen soft",
+    "d": 1
+   },
+   {
+    "t": "Taking oral antibiotic (10 days total)",
+    "s": "adultstg2026:5.5",
+    "b": 1
+   },
+   {
+    "t": "Pregnancy excluded / addressed",
+    "s": "adultstg2026:5.4"
+   },
+   {
+    "t": "HIV and STI screening done",
+    "s": "adultstg2026:5.4"
+   },
+   {
+    "t": "Partner treatment and condoms",
+    "s": "phcstg2026:12.16"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Stage I: review in 48–72 h",
+    "s": "phcstg2026:12.6",
+    "b": 1
+   },
+   {
+    "t": "Improved after 7 days → discharge; not improved → refer",
+    "s": "phcstg2026:12.6"
+   },
+   {
+    "t": "Repeat HIV test in 6 weeks if negative",
+    "s": "phcstg2026:12.2"
+   },
+   {
+    "t": "Counsel: recurrence, infertility, ectopic risk",
+    "s": "adultstg2026:5.3"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — sepsis and abdominal observations, IV antibiotics",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Temperature, pulse, BP, RR 4-hourly; hourly while shocked or peritonitic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Abdominal and pelvic signs: pain, guarding, rebound, distension — each shift",
+      "s": "adultstg2026:5.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids · PV",
+    "items": [
+     {
+      "t": "IV fluids in, urine out, vomiting",
+      "d": 1
+     },
+     {
+      "t": "Vaginal bleeding / discharge",
+      "s": "phcstg2026:12.6"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "IV antibiotic doses timed and signed; switch to oral after definite improvement",
+      "s": "adultstg2026:5.5"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "hypotension, rising pulse or confusion",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "new guarding, rigidity or distension",
+    "s": "adultstg2026:5.4",
+    "b": 1
+   },
+   {
+    "t": "heavy vaginal bleeding",
+    "s": "phcstg2026:12.6"
+   },
+   {
+    "t": "no urine 6 h",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine out (mL)",
+   "Antibiotic doses given / due",
+   "Highest T (°C)"
+  ]
+ }
+}

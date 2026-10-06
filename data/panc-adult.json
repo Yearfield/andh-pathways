@@ -1,0 +1,1368 @@
+{
+ "id": "panc-adult",
+ "short": "Acute pancreatitis (adult)",
+ "title": "Acute pancreatitis (adult)",
+ "population": "Adult with acute upper abdominal pain and raised amylase / lipase; no ICU, CT or ERCP at ANDH",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Fever + jaundice + RUQ pain → Cholangitis pathway",
+     "b": 1
+    },
+    {
+     "t": "Haematemesis / melaena → Upper GI bleed pathway",
+     "b": 1
+    },
+    {
+     "t": "Chronic pancreatitis pain only → OPD / chronic pain",
+     "s": "adultstg2026:1.6",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any 2 of 3",
+   "items": [
+    {
+     "t": "Clinical: upper abdominal pain",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "Laboratory: serum amylase or lipase > 3× upper limit of normal",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "Imaging: ultrasound (or CT / MRI) features",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "Pain onset ____ h ago · amylase ____ · lipase ____",
+     "k": "value"
+    },
+    {
+     "t": "Calcium, renal function and electrolytes help to grade severity",
+     "s": "adultstg2026:1.5"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity (revised Atlanta†)",
+   "items": [
+    {
+     "t": "Mild: no organ failure, no local complications",
+     "d": 1
+    },
+    {
+     "t": "Moderately severe: organ failure < 48 h and / or local complication",
+     "d": 1
+    },
+    {
+     "t": "Severe: organ failure > 48 h",
+     "s": "adultstg2026:23.27",
+     "b": 1
+    },
+    {
+     "t": "Organ failure: shock, hypoxia, AKI",
+     "s": "adultstg2026:23.27",
+     "d": 1
+    },
+    {
+     "t": "BISAP† ≥ 3 = high risk: urea > 8.9 mmol/L · confused · SIRS · age > 60 · pleural effusion",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Alcohol: amount, last drink",
+     "s": "adultstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Gallstones / biliary colic",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "t": "Triglycerides, diabetes",
+     "s": "adultstg2026:8.20"
+    },
+    {
+     "t": "Previous pancreatitis",
+     "s": "adultstg2026:1.6"
+    },
+    {
+     "t": "HIV, ART regimen",
+     "s": "adultstg2026:19.29"
+    },
+    {
+     "t": "Valproate, azathioprine, steroids",
+     "d": 1
+    },
+    {
+     "t": "Hypercalcaemia",
+     "s": "adultstg2026:8.21"
+    },
+    {
+     "t": "Recent trauma / procedure",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Epigastric, radiates to back",
+     "d": 1
+    },
+    {
+     "t": "Onset, severity, eased sitting forward",
+     "d": 1
+    },
+    {
+     "h": "GIT"
+    },
+    {
+     "t": "Vomiting, distension",
+     "d": 1
+    },
+    {
+     "t": "Blood in vomit / stool",
+     "d": 1
+    },
+    {
+     "h": "Biliary"
+    },
+    {
+     "t": "Fever, jaundice, dark urine",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "h": "Mimics"
+    },
+    {
+     "t": "Chest pain, sweating (MI)",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Sudden, tearing (AAA)",
+     "d": 1
+    },
+    {
+     "h": "Alcohol"
+    },
+    {
+     "t": "Tremor, seizures, DTs before",
+     "s": "adultstg2026:15.32"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.24",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / cold peripheries",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Poor urine output",
+     "s": "adultstg2026:20.24",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Confusion / reduced LOC",
+     "k": "yn"
+    },
+    {
+     "t": "HGT high",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Epigastric tenderness, guarding",
+     "d": 1
+    },
+    {
+     "t": "Distension, absent bowel sounds (ileus)",
+     "d": 1
+    },
+    {
+     "t": "Rigid, board-like (perforation?)",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Tense abdomen (compartment)",
+     "s": "adultstg2026:23.28"
+    },
+    {
+     "h": "Haemorrhagic†"
+    },
+    {
+     "t": "Flank / periumbilical bruising",
+     "d": 1
+    },
+    {
+     "h": "Systemic"
+    },
+    {
+     "t": "Jaundice",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "t": "Effusion, crackles",
+     "d": 1
+    },
+    {
+     "t": "Tetany, Chvostek (low Ca)",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "h": "Alcohol"
+    },
+    {
+     "t": "Tremor, sweating, agitation",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care on arrival",
+   "items": [
+    {
+     "t": "HGT ____ · urine dipstick ____",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Blood gas: pH ____ HCO₃ ____ lactate ____",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "ECG — exclude inferior MI",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "HGT high + ketones → DKA pathway (amylase may be raised)",
+     "s": "adultstg2026:8.14",
+     "d": 1
+    },
+    {
+     "t": "β-hCG in women of child-bearing age",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and imaging",
+   "items": [
+    {
+     "t": "Amylase or lipase",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "U&E, creatinine, calcium, magnesium",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "FBC, LFT, glucose, triglycerides, CRP",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Ultrasound: gallstones, dilated bile duct, fluid",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Erect CXR: free air, effusion",
+     "d": 1
+    },
+    {
+     "t": "CT not on site — only if unsure or not improving at 72 h → REFER",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "adultstg2026:20.21",
+     "b": 1
+    },
+    {
+     "t": "Hypoxia",
+     "s": "adultstg2026:20.24",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "AKI / oliguria",
+     "s": "adultstg2026:23.27"
+    },
+    {
+     "t": "Perforated viscus",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Ruptured AAA",
+     "d": 1
+    },
+    {
+     "t": "Mesenteric ischaemia",
+     "d": 1
+    },
+    {
+     "t": "Inferior MI",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Cholangitis",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "t": "DKA",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Symptomatic low Ca",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Alcohol withdrawal / DTs",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Compartment syndrome",
+     "s": "adultstg2026:23.28"
+    },
+    {
+     "t": "GI bleeding",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Mild → admit at ANDH · organ failure not reversing with fluids, local complication, infection → REFER",
+   "s": "adultstg2026:23.27"
+  },
+  {
+   "t": "11. ADMIT (high-care bed if any organ failure)",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Gallstone pancreatitis",
+   "branch": "If gallstone",
+   "features": [
+    {
+     "t": "Biliary colic before; jaundice; ALT up",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound: stones, dilated bile duct",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "This pathway; cholangitis → amox-clav 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Cholangitis / duct stone: urgent (ERCP)†; others: cholecystectomy same admission†",
+     "s": "adultstg2026:23.27",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Alcohol",
+   "branch": "If alcohol",
+   "features": [
+    {
+     "t": "Heavy drinking; previous attacks",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "History; GGT, MCV",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Thiamine 300 mg daily × 14 days; withdrawal: diazepam schedule",
+     "s": "adultstg2026:15.31"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — counselling, support groups",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "dx": "Hypertriglyceridaemia",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Fasting triglycerides > 10 mmol/L",
+     "s": "adultstg2026:8.20",
+     "b": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lipogram (lipaemic serum)",
+     "s": "adultstg2026:8.20",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Bezafibrate SR 400 mg daily once eating",
+     "s": "adultstg2026:8.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss with lipid specialist",
+     "s": "adultstg2026:8.20"
+    }
+   ]
+  },
+  {
+   "dx": "Drug-induced (ARVs, valproate, azathioprine)",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Recent start of a causative drug",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lipase; drug history",
+     "s": "adultstg2026:19.29",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop the drug; discuss ART switch",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — HIV clinician",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypercalcaemia",
+   "branch": "If other cause",
+   "features": [
+    {
+     "t": "Thirst, constipation, confusion; malignancy",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Calcium, PTH",
+     "s": "adultstg2026:8.22",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NaCl 0.9% 4–6 L / 24 h; monitor urine output",
+     "s": "adultstg2026:8.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Ca > 3 mmol/L or still symptomatic at 24 h (bisphosphonate)",
+     "s": "adultstg2026:8.22"
+    }
+   ]
+  },
+  {
+   "dx": "Perforated peptic ulcer",
+   "branch": "If not pancreatitis",
+   "features": [
+    {
+     "t": "Sudden pain, rigid abdomen",
+     "s": "adultstg2026:1.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Erect CXR (free air)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "IV fluids, NG suction; amox-clav 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent surgery",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Ruptured AAA / mesenteric ischaemia",
+   "branch": "If not pancreatitis",
+   "features": [
+    {
+     "t": "Back pain + shock + pulsatile mass; pain out of proportion, AF",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Bedside ultrasound (aorta); lactate",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Resuscitate; permissive BP for AAA",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediate",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Inferior MI",
+   "branch": "If not pancreatitis",
+   "features": [
+    {
+     "t": "Epigastric pain, sweating, risk factors",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, troponin",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ACS pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per ACS pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "DKA",
+   "branch": "If not pancreatitis",
+   "features": [
+    {
+     "t": "Polyuria, vomiting, deep breathing",
+     "s": "adultstg2026:8.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT, ketones, blood gas",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "DKA pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per DKA pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Cholecystitis / cholangitis",
+   "branch": "If not pancreatitis",
+   "features": [
+    {
+     "t": "RUQ pain, fever ± jaundice",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound, LFT",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amox-clav 1.2 g IV 8-hourly → Cholangitis pathway",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Deterioration / perforation",
+     "s": "adultstg2026:1.18"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "Organ failure lasting > 48 h = severe → ICU (REFER) · branch rows follow the ticked cause",
+  "columns": {
+   "feed": "Fluids & feeding",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, RR, SpO₂, temp, pain score: hourly × 6 h, 2-hourly to 24 h, then 4-hourly to 48 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Urine output hourly (catheter if shocked): aim > 0.5 mL/kg/h",
+    "s": "adultstg2026:20.24",
+    "b": 1
+   },
+   {
+    "t": "HGT 6-hourly",
+    "d": 1
+   },
+   {
+    "t": "Fluid balance every shift; watch for overload (breathless, crackles)",
+    "d": 1
+   },
+   {
+    "t": "O₂ if SpO₂ < 94%",
+    "s": "adultstg2026:20.24"
+   },
+   {
+    "t": "Alcohol use: withdrawal signs (tremor, sweating, agitation)",
+    "s": "adultstg2026:15.32"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Weigh the patient. Ask about the last drink.",
+    "feed": [
+     {
+      "t": "Shock: NaCl 0.9% or Ringer's 500 mL over 30 min, repeat to 30 mL/kg",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "No shock: Ringer's 10 mL/kg if dry, then 1.5 mL/kg/h; avoid overload",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Parenteral fluid to correct metabolic and electrolyte losses",
+      "s": "adultstg2026:1.5"
+     },
+     {
+      "t": "NPO only while vomiting / ileus; NG if vomiting",
+      "d": 1
+     },
+     {
+      "t": "Catheter if shocked",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Amylase or lipase",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine, Ca, Mg",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "FBC, LFT, triglycerides",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood gas, lactate; ECG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ultrasound abdomen",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "Erect CXR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Pain and nausea"
+     },
+     {
+      "t": "Morphine IV 3–5 mg, then boluses every 5–10 min; total max 10 mg; repeat after 4 h",
+      "s": "adultstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Paracetamol 1 g 6-hourly (max 4 g / 24 h)",
+      "s": "adultstg2026:12.5"
+     },
+     {
+      "t": "Metoclopramide 10 mg IV 8-hourly as required",
+      "s": "adultstg2026:1.13"
+     },
+     {
+      "h": "No routine antibiotics"
+     },
+     {
+      "t": "Prophylactic antibiotics not necessary",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "h": "Calcium / magnesium"
+     },
+     {
+      "t": "Symptomatic low Ca: calcium gluconate 10% 10 mL IV over 10 min, then 60–120 mL in 1 L NaCl 0.9% over 12–24 h",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "Mg < 0.5 mmol/L: MgSO₄ 25–50 mmol IV over 12–24 h (1 mL 50% = 2 mmol)",
+      "s": "adultstg2026:1.5"
+     },
+     {
+      "h": "Alcohol"
+     },
+     {
+      "t": "Thiamine 300 mg daily — before glucose-containing fluids",
+      "s": "adultstg2026:15.33"
+     }
+    ]
+   },
+   {
+    "label": "6–12 h",
+    "phase": "Fluid review",
+    "feed": [
+     {
+      "t": "Reduce fluids once pulse, BP, urine output normal",
+      "d": 1
+     },
+     {
+      "t": "Start oral diet when pain and nausea allow (aim < 24 h)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca; HGT 6-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still shocked after 30 mL/kg: adrenaline 0.05 mcg/kg/min → REFER (ICU)",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "Breathless, crackles, falling SpO₂ → stop boluses",
+      "s": "adultstg2026:20.24"
+     }
+    ]
+   },
+   {
+    "label": "24–48 h",
+    "phase": "Day 1–2",
+    "feed": [
+     {
+      "t": "Oral low-fat diet as tolerated",
+      "d": 1
+     },
+     {
+      "t": "Not eating: NG / enteral feeds; parenteral only if enteral not tolerated",
+      "s": "adultstg2026:1.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca 12-hourly while on calcium",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "CRP at 48 h",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Organ failure > 48 h = severe → REFER (ICU)",
+      "s": "adultstg2026:23.27",
+      "b": 1
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily (eGFR < 30: 20 mg) or UFH 5 000 units SC 12-hourly",
+      "s": "adultstg2026:2.25"
+     },
+     {
+      "t": "Tick the cause on the differential sheet",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If gallstone",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Low-fat diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat LFT; ultrasound bile duct",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fever + jaundice = cholangitis: amox-clav 1.2 g IV 8-hourly + REFER urgently (ERCP)",
+      "s": "adultstg2026:1.18",
+      "b": 1
+     },
+     {
+      "t": "Mild: refer for cholecystectomy, ideally same admission",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If alcohol",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Thiamine before glucose",
+      "s": "adultstg2026:15.33"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GGT, MCV, Mg",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 300 mg daily × 14 days",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Withdrawal: diazepam 10 mg now, then 5 mg 6-hourly × 3 days, 12-hourly × 2, daily × 2",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "t": "Delirium tremens → Delirium pathway",
+      "s": "adultstg2026:15.32"
+     }
+    ]
+   },
+   {
+    "label": "If other cause",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Triglycerides high: low-fat diet, no alcohol",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lipogram, calcium",
+      "s": "adultstg2026:8.20",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "TG > 10 mmol/L: discuss lipid specialist; bezafibrate SR 400 mg daily",
+      "s": "adultstg2026:8.21"
+     },
+     {
+      "t": "Drug cause: stop it (ART switch with HIV clinician)",
+      "d": 1
+     },
+     {
+      "t": "Hypercalcaemia: NaCl 0.9% 4–6 L / 24 h",
+      "s": "adultstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "If not pancreatitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; NG suction if perforation",
+      "s": "adultstg2026:1.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Erect CXR, ECG, troponin, ketones",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Perforation: amox-clav 1.2 g IV 8-hourly → REFER urgently",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "MI → ACS pathway · DKA → DKA pathway · AAA / ischaemia → REFER now",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3 +",
+    "phase": "Not improving",
+    "feed": [
+     {
+      "t": "NG feeds if not eating",
+      "s": "adultstg2026:1.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, CRP, U&E; blood cultures if fever",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fever, worse pain, new organ failure: necrosis, abscess, pseudocyst → REFER (CT, surgeon)",
+      "s": "adultstg2026:23.27",
+      "b": 1
+     },
+     {
+      "t": "Infected necrosis: amox-clav 1.2 g IV 8-hourly for 10 days",
+      "s": "adultstg2026:1.5"
+     },
+     {
+      "t": "Tense abdomen + new organ failure: compartment syndrome → NG tube, catheter, REFER (decompression)",
+      "s": "adultstg2026:23.28"
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Eating a low-fat diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Final U&E, LFT; lipogram if TG cause",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cause addressed: stop alcohol, stop drug, cholecystectomy referral, lipid treatment",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Letter: cause, severity, results, follow-up",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Morphine IV 3–5 mg then boluses; total max 10 mg; repeat after 4 h",
+     "s": "adultstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly; max 4 g / 24 h",
+     "s": "adultstg2026:12.5"
+    },
+    {
+     "t": "Calcium gluconate 10% 10 mL / 10 min, then 60–120 mL in 1 L over 12–24 h; Ca 12-hourly",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "MgSO₄ 25–50 mmol over 12–24 h if Mg < 0.5",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Amox-clav 1.2 g IV 8-hourly — infected necrosis / cholangitis only",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "Thiamine 300 mg daily · enoxaparin 40 mg SC daily",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "title": "Fluids · feeding",
+   "items": [
+    {
+     "t": "Shock: 500 mL boluses to 30 mL/kg; response = urine > 0.5 mL/kg/h and alert, not a BP number",
+     "s": "adultstg2026:20.24",
+     "b": 1
+    },
+    {
+     "t": "No shock: moderate fluids (Ringer's 1.5 mL/kg/h); aggressive fluids cause overload",
+     "d": 1
+    },
+    {
+     "t": "Oral diet early; enteral (NG) before parenteral — parenteral is linked to worse outcomes",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Pulse rising, BP falling, urine < 0.5 mL/kg/h",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "SpO₂ falling, breathless",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Confused, agitated, tremor",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Tetany, twitching (low Ca)",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Fever, jaundice, tense abdomen",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Organ failure > 48 h · necrosis · abscess · pseudocyst · compartment syndrome · infected",
+     "s": "adultstg2026:23.27",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Pain controlled on oral analgesia",
+    "d": 1
+   },
+   {
+    "t": "Eating without pain or vomiting",
+    "d": 1
+   },
+   {
+    "t": "No organ failure; normal observations",
+    "d": 1
+   },
+   {
+    "t": "Cause identified and plan in place",
+    "d": 1
+   },
+   {
+    "t": "Alcohol counselling done (if relevant)",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Return advice given",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Surgical OPD for cholecystectomy if gallstones",
+    "d": 1
+   },
+   {
+    "t": "PHC 1–2 weeks: pain, diet, alcohol, glucose",
+    "d": 1
+   },
+   {
+    "t": "Lipid / HIV clinic as per cause",
+    "s": "adultstg2026:8.20"
+   },
+   {
+    "t": "Return now: severe pain, vomiting, fever, jaundice",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "48-hour nursing record — fluids, pain and organ failure",
+  "period": "one sheet from arrival: hourly × 6 h, then 2-hourly to 24 h, then 4-hourly to 48 h",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Pulse, BP, RR, SpO₂, temp, pain score: hourly × 6 h, 2-hourly to 24 h, then 4-hourly to 48 h",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:20.24"
+     },
+     {
+      "t": "HGT 6-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Urine output hourly (catheter if shocked): aim > 0.5 mL/kg/h",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "Fluid balance every shift; watch for overload (breathless, crackles)",
+      "d": 1
+     },
+     {
+      "t": "Record IV rate and type each hour",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Pain and alcohol",
+    "items": [
+     {
+      "t": "Pain score before and 30 min after analgesia",
+      "d": 1
+     },
+     {
+      "t": "Alcohol use: withdrawal signs (tremor, sweating, agitation)",
+      "s": "adultstg2026:15.32"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pulse rising, BP falling or urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:20.24",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ falling or breathless",
+    "s": "adultstg2026:20.24"
+   },
+   {
+    "t": "confusion, agitation or tremor",
+    "s": "adultstg2026:15.32"
+   },
+   {
+    "t": "twitching or tetany",
+    "s": "adultstg2026:1.5"
+   },
+   {
+    "t": "fever, yellow eyes or a tense abdomen",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine out (mL)",
+   "NG / vomit (mL)",
+   "Morphine total (mg)",
+   "Calcium given (mL)"
+  ]
+ }
+}

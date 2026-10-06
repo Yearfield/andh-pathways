@@ -1,0 +1,1324 @@
+{
+ "id": "appy-adult",
+ "short": "Appendicitis (adult)",
+ "title": "Acute appendicitis and right iliac fossa pain (adult)",
+ "population": "Adult and adolescent ≥ 13 y with acute right iliac fossa or periumbilical pain; no theatre at ANDH — confirm, stabilise, refer",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Positive pregnancy test + pain / bleeding → Ectopic pathway",
+     "b": 1
+    },
+    {
+     "t": "Distension, no flatus / stool → Bowel obstruction pathway",
+     "b": 1
+    },
+    {
+     "t": "Groin lump → Hernia pathway · trauma → trauma protocol",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features",
+   "items": [
+    {
+     "t": "Sudden periumbilical pain migrating to the RIF",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Nausea, vomiting, loss of appetite",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Fever",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "RIF tenderness and rebound",
+     "s": "phcstg2026:2.8",
+     "b": 1
+    },
+    {
+     "t": "Guarding / rigidity, pain on periumbilical percussion",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Constipation or occasionally diarrhoea; bloating",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Pain onset ____ h ago · Alvarado ____ /10",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Alvarado score† (MANTRELS)",
+   "items": [
+    {
+     "t": "Migration of pain to RIF — 1",
+     "d": 1
+    },
+    {
+     "t": "Anorexia — 1",
+     "d": 1
+    },
+    {
+     "t": "Nausea / vomiting — 1",
+     "d": 1
+    },
+    {
+     "t": "Tenderness in RIF — 2",
+     "d": 1
+    },
+    {
+     "t": "Rebound — 1",
+     "d": 1
+    },
+    {
+     "t": "Elevated temp ≥ 37.3 °C — 1",
+     "d": 1
+    },
+    {
+     "t": "Leucocytosis > 10 × 10⁹/L — 2",
+     "d": 1
+    },
+    {
+     "t": "Shift to left (neutrophils > 75%) — 1",
+     "d": 1
+    },
+    {
+     "t": "≤ 4 unlikely · 5–6 equivocal: observe · ≥ 7 likely: surgeon now",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous appendicectomy (scar)",
+     "d": 1
+    },
+    {
+     "t": "LMP, contraception, pregnancy",
+     "s": "phcstg2026:2.2",
+     "b": 1
+    },
+    {
+     "t": "Vaginal discharge, STI history",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Diabetes (DKA can mimic)",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "HIV status, CD4, ART",
+     "d": 1
+    },
+    {
+     "t": "Kidney stones, recent UTI",
+     "s": "adultstg2026:7.24"
+    },
+    {
+     "t": "Anticoagulants, NSAIDs",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Recent travel, typhoid contact",
+     "s": "adultstg2026:9.20"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Onset, site, migration, severity",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Worse on moving / coughing",
+     "d": 1
+    },
+    {
+     "h": "GIT"
+    },
+    {
+     "t": "Vomiting before or after pain",
+     "d": 1
+    },
+    {
+     "t": "Diarrhoea, blood PR",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "h": "Urinary"
+    },
+    {
+     "t": "Dysuria, frequency, loin pain",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "h": "Gynae"
+    },
+    {
+     "t": "Missed period, PV bleeding",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Discharge, dyspareunia",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "h": "Male"
+    },
+    {
+     "t": "Testicular pain / swelling",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.24",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / cold peripheries",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Poor urine output",
+     "s": "adultstg2026:20.21",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "HGT high (DKA?)",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "RIF tenderness, rebound",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "t": "Guarding / rigidity — peritonitis",
+     "s": "phcstg2026:2.2",
+     "b": 1
+    },
+    {
+     "t": "RIF mass (appendix mass)",
+     "d": 1
+    },
+    {
+     "t": "Distension, bowel sounds",
+     "s": "phcstg2026:2.8"
+    },
+    {
+     "h": "Signs†"
+    },
+    {
+     "t": "Rovsing's, psoas, obturator",
+     "d": 1
+    },
+    {
+     "t": "Pain on cough / heel drop",
+     "d": 1
+    },
+    {
+     "h": "Exclude"
+    },
+    {
+     "t": "Hernial orifices, testes",
+     "d": 1
+    },
+    {
+     "t": "Renal angle tenderness",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Chest (RLL pneumonia)",
+     "d": 1
+    },
+    {
+     "h": "PV / speculum (women)"
+    },
+    {
+     "t": "Cervical excitation, adnexal mass",
+     "s": "adultstg2026:5.3"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care on arrival",
+   "items": [
+    {
+     "t": "Urine β-hCG (every woman 12–50 y) ____",
+     "s": "phcstg2026:2.2",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Urine dipstick ____ · HGT ____",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Positive β-hCG → Ectopic pathway",
+     "b": 1
+    },
+    {
+     "t": "Leucocytes / nitrites: UTI possible — does not exclude appendicitis",
+     "d": 1
+    },
+    {
+     "t": "HGT high + ketones → DKA pathway",
+     "s": "adultstg2026:8.14"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and imaging",
+   "items": [
+    {
+     "t": "FBC (WCC, neutrophils) ____ · CRP ____",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "U&E, creatinine",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Ultrasound: non-compressible appendix, collection, free fluid, adnexa",
+     "d": 1
+    },
+    {
+     "t": "Erect CXR if peritonitis (free air)",
+     "d": 1
+    },
+    {
+     "t": "Normal ultrasound does not exclude appendicitis",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CT not on site → surgeon decides at referral hospital",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Sepsis",
+     "b": 1
+    },
+    {
+     "t": "Generalised peritonitis",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "Septic shock",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Ruptured ectopic",
+     "s": "adultstg2026:5.19"
+    },
+    {
+     "t": "Testicular / ovarian torsion",
+     "d": 1
+    },
+    {
+     "t": "Perforated ulcer (free air)",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "DKA",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Ruptured AAA (> 50 y)",
+     "d": 1
+    },
+    {
+     "t": "Inferior MI",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "phcstg2026:2.2"
+    },
+    {
+     "t": "Typhoid perforation",
+     "s": "adultstg2026:9.20"
+    },
+    {
+     "t": "Intussusception (young)",
+     "d": 1
+    },
+    {
+     "t": "Mesenteric ischaemia",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = appendicitis → all patients REFER for surgery (no theatre at ANDH)",
+   "s": "phcstg2026:2.8"
+  },
+  {
+   "t": "11. ADMIT while observing (equivocal) or awaiting transfer",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Acute appendicitis",
+   "branch": "If appendicitis",
+   "features": [
+    {
+     "t": "Migrating pain to RIF, anorexia, RIF tenderness / rebound",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Alvarado ≥ 7; FBC, CRP; ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, NaCl 0.9% IV, analgesia",
+     "s": "phcstg2026:2.8"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all patients",
+     "s": "phcstg2026:2.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Perforation / peritonitis / appendix mass",
+   "branch": "If appendicitis",
+   "features": [
+    {
+     "t": "Generalised guarding, rigidity, fever, shock; RIF mass",
+     "s": "phcstg2026:2.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Erect CXR, ultrasound (collection)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "IV fluids, NG suction; amox-clav 1.2 g IV 8-hourly",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent; prompt surgery essential",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Ectopic pregnancy",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Missed period, PV bleeding, shock",
+     "s": "phcstg2026:2.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine / serum β-hCG; ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ectopic pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ruptured — urgent",
+     "s": "adultstg2026:5.19"
+    }
+   ]
+  },
+  {
+   "dx": "PID / tubo-ovarian abscess",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Bilateral lower pain, discharge, cervical excitation",
+     "s": "adultstg2026:5.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Speculum, β-hCG, ultrasound (TOA)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stage II–IV: ceftriaxone 1 g IV daily + metronidazole 500 mg IV 8-hourly + azithromycin 1 g",
+     "s": "adultstg2026:5.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If abscess / no response 48 h",
+     "s": "adultstg2026:5.5"
+    }
+   ]
+  },
+  {
+   "dx": "Ovarian torsion / cyst rupture",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Sudden severe pain, vomiting, adnexal mass",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (adnexa)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, analgesia, fluids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent gynae",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pyelonephritis / UTI",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Dysuria, loin pain, renal angle tenderness",
+     "s": "adultstg2026:7.19"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Dipstick, MC&S, U&E",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Gentamicin 6 mg/kg IV daily; impaired renal function: ceftriaxone 1 g IV daily",
+     "s": "adultstg2026:7.19"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — poor response: ultrasound",
+     "s": "adultstg2026:7.19"
+    }
+   ]
+  },
+  {
+   "dx": "Ureteric colic",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Colicky loin-to-groin pain, haematuria",
+     "s": "adultstg2026:7.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Dipstick (blood), ultrasound (hydronephrosis)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ibuprofen 400 mg 8-hourly / diclofenac 75 mg IM; morphine IV max 10 mg",
+     "s": "adultstg2026:7.24"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If obstruction + infection / ongoing pain",
+     "s": "adultstg2026:7.25"
+    }
+   ]
+  },
+  {
+   "dx": "Testicular torsion",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Sudden testicular pain, high-riding testis",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical — do not wait for ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia, NPO",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediate",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Typhoid (± perforation)",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Fever, headache, cough, abdominal pain, later diarrhoea",
+     "s": "adultstg2026:9.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood culture; stool culture",
+     "s": "adultstg2026:9.20",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly; notify",
+     "s": "adultstg2026:9.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if perforation / peritonitis",
+     "s": "adultstg2026:1.23"
+    }
+   ]
+  },
+  {
+   "dx": "Gastroenteritis / mesenteric adenitis",
+   "branch": "If not appendicitis",
+   "features": [
+    {
+     "t": "Diarrhoea first, diffuse pain, no peritonism",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial examination; score falls",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fluids, analgesia; safety-net advice",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — re-assess if pain localises",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "No theatre on site: every confirmed appendicitis is referred · branch rows follow the ticked diagnosis",
+  "columns": {
+   "feed": "Fluids & feeding",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Nil per mouth until the surgeon decides",
+    "s": "phcstg2026:2.8",
+    "b": 1
+   },
+   {
+    "t": "Pulse, BP, RR, temp, SpO₂, pain score: hourly × 4 h, then 2-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Re-examine the abdomen with every review — same doctor if possible",
+    "d": 1
+   },
+   {
+    "t": "Fluid balance; urine output (catheter if shocked)",
+    "d": 1
+   },
+   {
+    "t": "Analgesia on time — it does not hide the diagnosis",
+    "d": 1
+   },
+   {
+    "t": "O₂ only if SpO₂ < 94%",
+    "s": "adultstg2026:20.24"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for analgesia and antibiotics already given. Weigh the patient.",
+    "feed": [
+     {
+      "t": "Nil per mouth",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "IV line; NaCl 0.9% to hydrate",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "Shock: NaCl 0.9% 500 mL over 30 min, repeat to 30 mL/kg",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "Vomiting / distended: NG tube on free drainage",
+      "s": "adultstg2026:1.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine β-hCG (women 12–50 y)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick, HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP, U&E",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ultrasound abdomen + pelvis",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Erect CXR if peritonitis",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture if febrile / septic",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Score and decide"
+     },
+     {
+      "t": "Alvarado ≥ 7 or peritonitis → phone surgeon now",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Alvarado 5–6 → observe (equivocal row)",
+      "d": 1
+     },
+     {
+      "h": "Pain and nausea"
+     },
+     {
+      "t": "Morphine IV 3–5 mg, then 1–2 mg boluses; max 10 mg; repeat after 4 h",
+      "s": "phcstg2026:2.3",
+      "b": 1
+     },
+     {
+      "t": "Paracetamol 1 g oral / IV 6-hourly (max 4 g / 24 h)",
+      "s": "adultstg2026:12.5"
+     },
+     {
+      "t": "Metoclopramide 10 mg IV 8-hourly as required",
+      "s": "adultstg2026:1.13"
+     },
+     {
+      "h": "Peritonitis / sepsis"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Septic shock not responding to 30 mL/kg: adrenaline 0.05 mcg/kg/min → REFER",
+      "s": "adultstg2026:20.24"
+     }
+    ]
+   },
+   {
+    "label": "2–4 h",
+    "phase": "Re-assess",
+    "feed": [
+     {
+      "t": "NPO continues",
+      "s": "phcstg2026:2.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-score Alvarado with results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-examine after analgesia",
+      "d": 1
+     },
+     {
+      "t": "Tick the working diagnosis (differential sheet)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Worsening pain, peritonism or shock → appendicitis row now",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If appendicitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; IV fluids",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "NG tube if vomiting / distended",
+      "s": "adultstg2026:1.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat U&E if vomiting / on gentamicin",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER to surgeon — all patients",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "Start amox-clav 1.2 g IV 8-hourly before transfer (peritonitis, mass, perforation; or surgeon asks)",
+      "s": "adultstg2026:1.23",
+      "b": 1
+     },
+     {
+      "t": "Do not attempt antibiotic-only treatment at ANDH — surgeon's decision",
+      "d": 1
+     },
+     {
+      "t": "Penicillin allergy: discuss with surgeon",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If equivocal",
+    "phase": "Branch · 6–12 h",
+    "feed": [
+     {
+      "t": "NPO; maintenance IV fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat FBC, CRP at 6–12 h",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Repeat ultrasound",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Active observation: re-examine 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Score rises / peritonism → REFER",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Score falls, pain settles, eating → discharge with return advice",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If not appendicitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Diet as tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Speculum, MC&S, cultures as per differential",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "PID stage II–IV: ceftriaxone 1 g IV daily + metronidazole 500 mg IV 8-hourly + azithromycin 1 g",
+      "s": "adultstg2026:5.5"
+     },
+     {
+      "t": "Pyelonephritis: gentamicin 6 mg/kg IV daily (ceftriaxone 1 g if renal impairment)",
+      "s": "adultstg2026:7.19"
+     },
+     {
+      "t": "Ureteric colic: ibuprofen / diclofenac IM; morphine IV",
+      "s": "adultstg2026:7.24"
+     },
+     {
+      "t": "Ectopic → Ectopic pathway · torsion → REFER now",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Awaiting transfer",
+    "phase": "Until handover",
+    "feed": [
+     {
+      "t": "NPO; IV maintenance fluids",
+      "d": 1
+     },
+     {
+      "t": "Urine output; catheter if shocked",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat U&E if > 12 h",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue amox-clav 8-hourly and analgesia on time",
+      "s": "adultstg2026:1.23"
+     },
+     {
+      "t": "Escalate: shock, spreading peritonism → phone referral hospital again",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Letter: time of onset, score, results, drugs and times",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Not appendicitis",
+    "feed": [
+     {
+      "t": "Eating and drinking",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Follow up culture results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral analgesia; complete antibiotics for the alternative diagnosis",
+      "d": 1
+     },
+     {
+      "t": "Return now if pain worsens, fever, vomiting",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Morphine IM 5–10 mg, or IV 3–5 mg then 1–2 mg; max 10 mg; repeat after 4 h",
+     "s": "phcstg2026:2.2",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly; max 4 g / 24 h",
+     "s": "adultstg2026:12.5"
+    },
+    {
+     "t": "Metoclopramide 10 mg IV 8-hourly as required",
+     "s": "adultstg2026:1.13"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly; oral 875/125 mg 12-hourly once eating",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "NaCl 0.9% shock: 500 mL / 30 min to 30 mL/kg",
+     "s": "adultstg2026:20.24"
+    }
+   ]
+  },
+  {
+   "title": "Alvarado† · peritonitis",
+   "items": [
+    {
+     "t": "Migration 1 · anorexia 1 · nausea / vomiting 1 · RIF tenderness 2 · rebound 1 · temp ≥ 37.3 °C 1 · WCC > 10 2 · neutrophils > 75% 1",
+     "d": 1
+    },
+    {
+     "t": "≤ 4 unlikely · 5–6 observe · ≥ 7 refer",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "Secondary peritonitis"
+    },
+    {
+     "t": "IV fluids, NG suction; prompt surgery is essential",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    },
+    {
+     "t": "Higher perforation risk: elderly, diabetic, immunosuppressed, pregnant, delay",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Pain worse or spreading; rigid abdomen",
+     "d": 1
+    },
+    {
+     "t": "Pulse rising, BP falling, cold, poor urine output",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Fever, rigors, confusion",
+     "d": 1
+    },
+    {
+     "t": "Vomiting despite NG; distension",
+     "d": 1
+    },
+    {
+     "h": "REFER now"
+    },
+    {
+     "t": "Peritonitis · septic shock · mass / abscess · pregnancy",
+     "s": "adultstg2026:1.23",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (not appendicitis) — all must be met",
+  "items": [
+   {
+    "t": "Pain settling, abdomen soft",
+    "d": 1
+   },
+   {
+    "t": "Alvarado ≤ 4 on repeat",
+    "d": 1
+   },
+   {
+    "t": "Eating, no vomiting",
+    "d": 1
+   },
+   {
+    "t": "Normal observations",
+    "d": 1
+   },
+   {
+    "t": "Alternative diagnosis treated",
+    "d": 1
+   },
+   {
+    "t": "Return advice given and understood",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Return immediately if pain worsens, fever, vomiting",
+    "d": 1
+   },
+   {
+    "t": "PHC review in 24–48 h if discharged on observation",
+    "d": 1
+   },
+   {
+    "t": "After appendicectomy: wound check and histology at PHC",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — observations, pain and fluids",
+  "period": "one sheet from arrival: hourly × 4 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Pulse, BP, RR, temp, SpO₂, pain score: hourly × 4 h, then 2-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ only if SpO₂ < 94%",
+      "s": "adultstg2026:20.24"
+     }
+    ]
+   },
+   {
+    "h": "Pain and abdomen",
+    "items": [
+     {
+      "t": "Pain score 0–10 before and 30 min after analgesia",
+      "d": 1
+     },
+     {
+      "t": "Note if the pain spreads or the belly becomes hard",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Nil per mouth until the surgeon decides",
+      "s": "phcstg2026:2.8",
+      "b": 1
+     },
+     {
+      "t": "Fluid balance; urine output (catheter if shocked)",
+      "d": 1
+     },
+     {
+      "t": "NG drainage volume",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pain worse or spreading, or a hard abdomen",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "pulse rising or BP falling",
+    "s": "adultstg2026:20.24"
+   },
+   {
+    "t": "fever or rigors",
+    "d": 1
+   },
+   {
+    "t": "vomiting or distension",
+    "d": 1
+   },
+   {
+    "t": "poor urine output or confusion",
+    "s": "adultstg2026:20.24"
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine out (mL)",
+   "NG out (mL)",
+   "Morphine total (mg)",
+   "Last antibiotic (time)"
+  ]
+ }
+}

@@ -1,0 +1,982 @@
+{
+ "id": "vds",
+ "short": "Vaginal discharge (VDS)",
+ "title": "Vaginal discharge syndrome — syndromic management, including pregnancy",
+ "population": "Women and adolescents with abnormal vaginal discharge; usually discharged on TTO; pregnant women included",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "phcstg2026",
+  "adultstg2026",
+  "impcg2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Lower abdominal pain or cervical motion tenderness → PID pathway",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Child with genital discharge → REFER (abuse work-up)",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Postpartum / post-miscarriage offensive discharge + fever → puerperal / septic miscarriage",
+     "s": "impcg2024:135",
+     "b": 1
+    },
+    {
+     "t": "Sexual assault → post-exposure / forensic protocol",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "VDS = complaint of abnormal vaginal discharge",
+   "items": [
+    {
+     "t": "Itchy, excessive, yellow / green, or offensive",
+     "s": "impcg2024:145",
+     "b": 1
+    },
+    {
+     "t": "Physiological: clear–white, non-offensive, non-adherent",
+     "s": "impcg2024:145"
+    },
+    {
+     "t": "Sexually active in the last 3 months?  Y / N",
+     "s": "phcstg2026:12.5",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Pregnant?  Y / N   GA ____ wk",
+     "k": "value"
+    },
+    {
+     "t": "Age ____  LMP ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Change pathway / refer if any",
+   "items": [
+    {
+     "t": "Lower abdominal pain or pain on moving the cervix → PID",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Pregnant with abdominal pain or bleeding → obstetric assessment",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Missed period, recent delivery, TOP or miscarriage + pain",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Guarding / rebound · abdominal mass · fever > 38 °C",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Genital ulcer too → VDS + GUS regimen",
+     "s": "phcstg2026:12.15"
+    },
+    {
+     "t": "No response after 7 days of syndromic treatment",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Records (antenatal card / clinic file)",
+   "items": [
+    {
+     "t": "HIV status / last test date",
+     "s": "phcstg2026:12.2",
+     "b": 1
+    },
+    {
+     "t": "Syphilis result (ANC)",
+     "s": "impcg2024:146",
+     "b": 1
+    },
+    {
+     "t": "Previous STI episodes and treatment",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Last cervical smear",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Contraception · IUCD",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "phcstg2026:12.5"
+    },
+    {
+     "t": "Recent antibiotics",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Partner treated before?",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Sexual and general history",
+   "items": [
+    {
+     "h": "Sexual history"
+    },
+    {
+     "t": "Partners, new partner, orientation",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Oral / vaginal / anal sex",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Condom use",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "h": "Discharge"
+    },
+    {
+     "t": "Itch, curd-like (candida)",
+     "s": "phcstg2026:12.5"
+    },
+    {
+     "t": "Fishy, grey (BV)",
+     "s": "impcg2024:145"
+    },
+    {
+     "t": "Douching, soaps, perfumes",
+     "s": "impcg2024:145"
+    },
+    {
+     "h": "Safety"
+    },
+    {
+     "t": "Domestic / gender-based violence → social worker",
+     "s": "phcstg2026:12.2",
+     "b": 1
+    },
+    {
+     "t": "Overseas travel",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Temperature > 38 °C",
+     "s": "phcstg2026:12.6",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Pain score high",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Pregnant",
+     "k": "yn"
+    },
+    {
+     "t": "Vaginal bleeding",
+     "s": "phcstg2026:12.6",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — speculum in ALL women with VDS",
+   "items": [
+    {
+     "h": "External"
+    },
+    {
+     "t": "Vulva red / scratched / inflamed",
+     "s": "phcstg2026:12.5"
+    },
+    {
+     "t": "Ulcers · warts",
+     "s": "phcstg2026:12.9"
+    },
+    {
+     "t": "Inguinal bubo",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "h": "Speculum"
+    },
+    {
+     "t": "Discharge colour / smell",
+     "s": "impcg2024:145"
+    },
+    {
+     "t": "Curd-like discharge",
+     "s": "phcstg2026:12.5"
+    },
+    {
+     "t": "Cervicitis: inflamed, mucopurulent, red granular erosion, friable, oedema",
+     "s": "phcstg2026:12.4"
+    },
+    {
+     "h": "Bimanual / abdomen"
+    },
+    {
+     "t": "Cervical motion tenderness",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Lower abdominal tenderness",
+     "s": "phcstg2026:12.6"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Speculum findings — decide the regimen",
+   "items": [
+    {
+     "t": "Sexually active + no CMT / LAP → syndromic triple therapy",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Candida signs → ADD clotrimazole",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Not sexually active → candida or BV route (chart row)",
+     "s": "phcstg2026:12.4",
+     "b": 1
+    },
+    {
+     "t": "CMT / lower abdominal pain → PID pathway",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Cervical smear after treatment per screening guideline",
+     "s": "phcstg2026:12.5"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Tests on the day",
+   "items": [
+    {
+     "t": "HIV test (negative → repeat in 6 weeks)",
+     "s": "phcstg2026:12.2",
+     "b": 1
+    },
+    {
+     "t": "Syphilis test (RPR / rapid)",
+     "s": "impcg2024:146",
+     "b": 1
+    },
+    {
+     "t": "Pregnancy test if possible pregnancy",
+     "s": "phcstg2026:12.2",
+     "b": 1
+    },
+    {
+     "t": "No swabs at first visit — syndromic",
+     "d": 1
+    },
+    {
+     "t": "HIV ____  Syphilis ____  Preg ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out",
+   "items": [
+    {
+     "t": "PID / pelvic peritonitis",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Ectopic pregnancy",
+     "s": "adultstg2026:5.4",
+     "b": 1
+    },
+    {
+     "t": "Septic miscarriage / puerperal sepsis",
+     "s": "impcg2024:135",
+     "b": 1
+    },
+    {
+     "t": "Child (abuse)",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "GBV / sexual assault",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Genital ulcer (GUS)",
+     "s": "phcstg2026:12.15"
+    },
+    {
+     "t": "Syphilis in pregnancy",
+     "s": "impcg2024:146"
+    },
+    {
+     "t": "HIV",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Retained tampon / foreign body",
+     "d": 1
+    },
+    {
+     "t": "Cervical lesion (cancer)",
+     "s": "impcg2024:178"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. LAP / CMT → PID pathway · child → REFER · no response after 7 days → hospital-level swabs and treatment (chart row)",
+   "s": "phcstg2026:12.5"
+  },
+  {
+   "t": "11. VDS → treat on the day, DISCHARGE on TTO, partner slip, HIV and syphilis tests",
+   "s": "phcstg2026:12.5"
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Syndromic treatment on the day · same regimen in pregnancy · review at 7 days · partners treated · branch rows only if needed",
+  "columns": {
+   "feed": "Counselling & advice",
+   "tests": "Tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Stat doses given under observation, time and initials recorded",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Observe 15–30 min after ceftriaxone IM (allergy)",
+    "d": 1
+   },
+   {
+    "t": "HIV, syphilis and pregnancy test results recorded",
+    "s": "phcstg2026:12.2",
+    "b": 1
+   },
+   {
+    "t": "Contact slip(s) issued; partners recorded when treated",
+    "s": "phcstg2026:12.2"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Visit 1",
+    "phase": "Day 0",
+    "lead": "Do a speculum examination in every woman with VDS. Treat on the day and give partner contact slips.",
+    "feed": [
+     {
+      "t": "Counsel; HIV test (negative → repeat after 6 weeks)",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     },
+     {
+      "t": "Condoms: promote, provide, demonstrate",
+      "s": "phcstg2026:12.2"
+     },
+     {
+      "t": "Partner notification and treatment (contact slip)",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     },
+     {
+      "t": "Adherence; circumcision promotion; cervical screening",
+      "s": "phcstg2026:12.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     },
+     {
+      "t": "Syphilis test",
+      "s": "impcg2024:146",
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Sexually active — all incl. pregnant"
+     },
+     {
+      "t": "Ceftriaxone 250 mg IM stat (dissolve in 0.9 mL lidocaine 1% without adrenaline)",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Azithromycin 1 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Metronidazole 2 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "h": "Candida signs"
+     },
+     {
+      "t": "Candida (red / scratched vulva, curd-like discharge): clotrimazole 500 mg vaginal pessary stat at night OR vaginal cream 12-hourly × 7 d",
+      "s": "phcstg2026:12.5"
+     },
+     {
+      "h": "Severe penicillin allergy"
+     },
+     {
+      "t": "Severe penicillin allergy (angioedema, anaphylaxis, bronchospasm): omit ceftriaxone, azithromycin 2 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "h": "Partners"
+     },
+     {
+      "t": "Partner (with or without symptoms): ceftriaxone 250 mg IM + metronidazole 2 g PO + azithromycin 1 g PO stat, plus treatment for any syndrome",
+      "s": "phcstg2026:12.15",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If not sexually active",
+    "phase": "> 3 months",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Candida (red / scratched vulva, curd-like discharge): clotrimazole 500 mg vaginal pessary stat at night OR vaginal cream 12-hourly × 7 d",
+      "s": "phcstg2026:12.5"
+     },
+     {
+      "t": "Prominent vulval symptoms: clotrimazole topical cream 12-hourly × 7 d",
+      "s": "phcstg2026:12.4"
+     },
+     {
+      "t": "No candida signs → BV: metronidazole 2 g PO stat",
+      "s": "phcstg2026:12.4",
+      "b": 1
+     },
+     {
+      "t": "No response at 7 d: PV + speculum — CMT → PID; cervicitis → ceftriaxone 250 mg IM + azithromycin 1 g; else metronidazole 400 mg 12-hourly × 7 d",
+      "s": "phcstg2026:12.4"
+     }
+    ]
+   },
+   {
+    "label": "If pregnant",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Partner treatment needed as well",
+      "s": "impcg2024:145",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Syphilis and HIV per ANC schedule",
+      "s": "impcg2024:146",
+      "b": 1
+     },
+     {
+      "t": "Cervical smear if none in past year (up to 20 wk)",
+      "s": "impcg2024:145"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Same syndromic regimen: ceftriaxone 250 mg IM + azithromycin 1 g + metronidazole 2 g stat",
+      "s": "impcg2024:145",
+      "b": 1
+     },
+     {
+      "t": "Candida: clotrimazole 500 mg pessary stat or cream 12-hourly × 7 d",
+      "s": "impcg2024:145"
+     },
+     {
+      "t": "Doxycycline is contraindicated in pregnancy",
+      "s": "impcg2024:145",
+      "b": 1
+     },
+     {
+      "t": "Syphilis positive: benzathine benzylpenicillin 2.4 MU IM weekly × 3",
+      "s": "impcg2024:146",
+      "b": 1
+     },
+     {
+      "t": "Penicillin-allergic and pregnant → REFER for desensitisation",
+      "s": "phcstg2026:12.14"
+     }
+    ]
+   },
+   {
+    "label": "If ulcer too",
+    "phase": "VDS + GUS",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Syphilis test",
+      "s": "phcstg2026:12.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 250 mg IM stat (dissolve in 0.9 mL lidocaine 1% without adrenaline)",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Metronidazole 2 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Azithromycin 1 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Ulcer present too: ADD aciclovir 400 mg PO 8-hourly × 7 d (only if HIV positive or unknown)",
+      "s": "phcstg2026:12.15"
+     },
+     {
+      "t": "Treat candida if required",
+      "s": "phcstg2026:12.15"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Partners treated?",
+      "s": "phcstg2026:12.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Symptoms persist: metronidazole 400 mg PO 12-hourly × 7 d",
+      "s": "phcstg2026:12.5"
+     },
+     {
+      "t": "No response after 7 days → hospital-level investigation (swabs) — chart row",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If no response",
+    "phase": "Hospital level",
+    "feed": [
+     {
+      "t": "Referral letter: HIV status, treatment history, partner management",
+      "s": "adultstg2026:26.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Endocervical swab 1 → Amies → NHLS GC culture on ice < 24 h",
+      "s": "adultstg2026:26.2",
+      "b": 1
+     },
+     {
+      "t": "Endocervical swab 2 → NICD PCR",
+      "s": "adultstg2026:26.3",
+      "b": 1
+     },
+     {
+      "t": "Vaginal swab → NHLS MCS (BV, Candida)",
+      "s": "adultstg2026:26.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persistent cervicitis on speculum: ceftriaxone 1 g IM stat (in 3.6 mL lidocaine 1%) + azithromycin 2 g PO stat",
+      "s": "adultstg2026:26.3",
+      "b": 1
+     },
+     {
+      "t": "Metronidazole 2 g PO stat if not given at PHC",
+      "s": "adultstg2026:26.3"
+     },
+     {
+      "t": "Severe penicillin allergy: gentamicin 6 mg/kg IM stat + azithromycin 2 g PO stat",
+      "s": "adultstg2026:26.3"
+     },
+     {
+      "t": "Return in 2 weeks for results and review",
+      "s": "adultstg2026:26.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 2",
+    "phase": "Results",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Swab results reviewed",
+      "s": "adultstg2026:26.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat according to results",
+      "s": "adultstg2026:26.3"
+     }
+    ]
+   },
+   {
+    "label": "Week 6",
+    "phase": "HIV repeat",
+    "feed": [
+     {
+      "t": "Condoms",
+      "s": "phcstg2026:12.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat HIV test if negative",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Positive → ART initiation",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "DISCHARGE TTO — sexually active (incl. pregnant)",
+   "items": [
+    {
+     "t": "Give on the day (stat, observed):",
+     "d": 1
+    },
+    {
+     "t": "Ceftriaxone 250 mg IM stat (dissolve in 0.9 mL lidocaine 1% without adrenaline)",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Azithromycin 1 g PO stat",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Metronidazole 2 g PO stat",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "h": "If candida"
+    },
+    {
+     "t": "Candida (red / scratched vulva, curd-like discharge): clotrimazole 500 mg vaginal pessary stat at night OR vaginal cream 12-hourly × 7 d",
+     "s": "phcstg2026:12.5"
+    },
+    {
+     "h": "Allergy"
+    },
+    {
+     "t": "Severe penicillin allergy (angioedema, anaphylaxis, bronchospasm): omit ceftriaxone, azithromycin 2 g PO stat",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "h": "Take home"
+    },
+    {
+     "t": "Condoms · partner contact slip(s)",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Return if not better: metronidazole 400 mg 12-hourly × 7 d",
+     "s": "phcstg2026:12.5"
+    }
+   ]
+  },
+  {
+   "title": "TTO — not sexually active · partners",
+   "items": [
+    {
+     "t": "Candida (red / scratched vulva, curd-like discharge): clotrimazole 500 mg vaginal pessary stat at night OR vaginal cream 12-hourly × 7 d",
+     "s": "phcstg2026:12.5"
+    },
+    {
+     "t": "Prominent vulval symptoms: clotrimazole topical cream 12-hourly × 7 d",
+     "s": "phcstg2026:12.4"
+    },
+    {
+     "t": "No candida signs: metronidazole 2 g PO stat (BV)",
+     "s": "phcstg2026:12.4"
+    },
+    {
+     "h": "Partners"
+    },
+    {
+     "t": "Partner (with or without symptoms): ceftriaxone 250 mg IM + metronidazole 2 g PO + azithromycin 1 g PO stat, plus treatment for any syndrome",
+     "s": "phcstg2026:12.15",
+     "b": 1
+    },
+    {
+     "h": "Pregnant"
+    },
+    {
+     "t": "Doxycycline contraindicated",
+     "s": "impcg2024:145"
+    }
+   ]
+  },
+  {
+   "title": "Escalate · REFER",
+   "items": [
+    {
+     "t": "CMT / lower abdominal pain → PID pathway",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Pregnant + pain or bleeding → obstetric assessment",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "No response after 7 days → swabs, ceftriaxone 1 g + azithromycin 2 g",
+     "s": "adultstg2026:26.3",
+     "b": 1
+    },
+    {
+     "t": "Child → REFER",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Penicillin-allergic pregnant woman needing syphilis treatment → desensitisation (REFER)",
+     "s": "impcg2024:146"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Before she leaves — all six",
+  "items": [
+   {
+    "t": "Stat doses given and recorded",
+    "s": "phcstg2026:12.5",
+    "b": 1
+   },
+   {
+    "t": "No CMT / LAP (else PID pathway)",
+    "s": "phcstg2026:12.5",
+    "b": 1
+   },
+   {
+    "t": "HIV and syphilis tested",
+    "s": "phcstg2026:12.2",
+    "b": 1
+   },
+   {
+    "t": "Partner slip(s) issued",
+    "s": "phcstg2026:12.2"
+   },
+   {
+    "t": "Condoms given and demonstrated",
+    "s": "phcstg2026:12.2"
+   },
+   {
+    "t": "Return date: 7 days if not better",
+    "s": "phcstg2026:12.5"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Day 7: if symptoms persist → metronidazole 400 mg 12-hourly × 7 d; no response → hospital swabs",
+    "s": "phcstg2026:12.5",
+    "b": 1
+   },
+   {
+    "t": "Week 6: repeat HIV test if negative",
+    "s": "phcstg2026:12.2"
+   },
+   {
+    "t": "Cervical screening after treatment",
+    "s": "phcstg2026:12.5"
+   },
+   {
+    "t": "Pregnant: syphilis testing 4-weekly with ANC visits",
+    "s": "impcg2024:146"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "STI treatment and partner record — VDS",
+  "period": "one sheet per episode; index patient, partners and review visits",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "Stat doses given under observation, time and initials recorded",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Observe 15–30 min after ceftriaxone IM (allergy)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Tests",
+    "items": [
+     {
+      "t": "HIV, syphilis and pregnancy test results recorded",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Partners",
+    "items": [
+     {
+      "t": "Contact slip(s) issued; partners recorded when treated",
+      "s": "phcstg2026:12.2"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "lower abdominal pain or pelvic tenderness",
+    "s": "phcstg2026:12.5",
+    "b": 1
+   },
+   {
+    "t": "rash, wheeze or swelling after ceftriaxone",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "pregnant with pain or bleeding",
+    "s": "phcstg2026:12.6"
+   },
+   {
+    "t": "disclosure of violence or assault",
+    "s": "phcstg2026:12.2"
+   }
+  ],
+  "totals": [
+   "Partners notified",
+   "Partners treated",
+   "HIV result",
+   "Syphilis result"
+  ]
+ }
+}

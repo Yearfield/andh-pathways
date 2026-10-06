@@ -1,0 +1,884 @@
+{
+ "id": "uti-paeds",
+ "short": "UTI (child)",
+ "title": "Urinary tract infection — uncomplicated and complicated (pyelonephritis), child",
+ "population": "Child 28 days – 12 years; discharge on TTO if > 3 months and not acutely ill, otherwise admit",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Neonate < 28 days → neonatal sepsis",
+     "b": 1
+    },
+    {
+     "t": "≥ 13 y → UTI (adult)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Haematuria + oedema / hypertension → glomerulonephritis (Paeds STG 6.1)",
+     "s": "paedstg2026:6.4",
+     "b": 1
+    },
+    {
+     "t": "Genital discharge / injury → suspected abuse: REFER",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "UTI — suspect in any febrile child",
+   "items": [
+    {
+     "t": "Exclude UTI in every child with fever of unknown origin",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Infant: failure to thrive, persisting fever, abdominal pain, diarrhoea",
+     "s": "phcstg2026:8.10"
+    },
+    {
+     "t": "Older child: dysuria, frequency, urgency, enuresis, cloudy urine, lower abdominal pain",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "Dipstick: leucocyte esterase, nitrites, haematuria",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "Age ____  Wt ____ kg  T ____ °C",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated / acutely ill → ADMIT, IV = any one of",
+   "items": [
+    {
+     "t": "Age ≤ 3 months with any UTI",
+     "s": "phcstg2026:8.11",
+     "b": 1
+    },
+    {
+     "t": "Child ≥ 3 months who appears ill",
+     "s": "phcstg2026:8.11",
+     "b": 1
+    },
+    {
+     "t": "Vomiting / cannot take oral",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "High fever, systemic features (pyelonephritis)",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Sepsis / shock",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Renal failure / suspected obstruction",
+     "s": "paedstg2026:6.8"
+    },
+    {
+     "t": "Known urinary tract abnormality",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Book (RtHB) / records",
+   "items": [
+    {
+     "t": "Previous UTIs (recurrent → refer)",
+     "s": "paedstg2026:6.8",
+     "b": 1
+    },
+    {
+     "t": "Previous renal ultrasound",
+     "s": "paedstg2026:6.6",
+     "b": 1
+    },
+    {
+     "t": "Known VUR / tract abnormality",
+     "s": "paedstg2026:6.8"
+    },
+    {
+     "t": "Constipation · pinworm",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "t": "Growth curve",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "HIV exposure / status",
+     "d": 1
+    },
+    {
+     "t": "Antibiotics in last 30 days",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "paedstg2026:25.4"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Urinary"
+    },
+    {
+     "t": "Dysuria, frequency, urgency",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "New enuresis / wetting",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "Poor stream (boys — PUV)",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "h": "Systemic"
+    },
+    {
+     "t": "Fever, vomiting, poor feeding",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "Lethargy",
+     "d": 1
+    },
+    {
+     "t": "Abdominal / flank pain",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "h": "Safeguarding"
+    },
+    {
+     "t": "Genital / anal injury, secondary incontinence, marked fear of exam",
+     "s": "paedstg2026:6.6",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age norms (IMCI) or the child's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "paedstg2026:6.5",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia for age",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea for age",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion / shock",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "s": "paedstg2026:6.6",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension for age",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Flank / suprapubic tenderness",
+     "d": 1
+    },
+    {
+     "t": "Palpable bladder / kidneys",
+     "d": 1
+    },
+    {
+     "t": "Constipation (faecal loading)",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "h": "Genitals"
+    },
+    {
+     "t": "Phimosis / labial adhesions",
+     "d": 1
+    },
+    {
+     "t": "Bruising, abrasion, laceration",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Hydration",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "t": "Growth (failure to thrive)",
+     "s": "paedstg2026:6.5"
+    },
+    {
+     "t": "Spine (neuropathic bladder)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urine — dipstick then aseptic sample for MCS",
+   "items": [
+    {
+     "t": "Bag specimen = screening only",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Dipstick positive → aseptic sample: in-out catheter / SPA if acutely ill or < 2 y; clean-catch MSU if older",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Leucocytes only → repeat on 2nd specimen; positive again → treat",
+     "s": "phcstg2026:8.10"
+    },
+    {
+     "t": "Leucocytes and nitrites, or either + symptoms → treat empirically",
+     "s": "phcstg2026:8.10",
+     "b": 1
+    },
+    {
+     "t": "Leuc ____  Nitrite ____  Blood ____  Sample: bag / cath / SPA / MSU",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bedside tests on arrival",
+   "items": [
+    {
+     "t": "HGT",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Creatinine / U&E if acutely ill",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Blood culture if septic",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Renal ultrasound for every first UTI (boys: PUV)",
+     "s": "paedstg2026:6.6",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Septic shock",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Age ≤ 3 months",
+     "s": "phcstg2026:8.11",
+     "b": 1
+    },
+    {
+     "t": "Renal failure",
+     "s": "paedstg2026:6.5",
+     "b": 1
+    },
+    {
+     "t": "Obstruction (PUV, hydronephrosis)",
+     "s": "paedstg2026:6.6",
+     "b": 1
+    },
+    {
+     "t": "Meningitis (infant)",
+     "d": 1
+    },
+    {
+     "t": "Severe dehydration",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "t": "Sexual abuse",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "t": "SAM",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Recurrent UTI",
+     "s": "paedstg2026:6.8"
+    },
+    {
+     "t": "Hypertension / GN",
+     "s": "paedstg2026:6.4"
+    },
+    {
+     "t": "Neuropathic bladder",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Obstruction or renal failure, no response, recurrent UTI or abnormal ultrasound (MCUG) → REFER",
+   "s": "paedstg2026:6.8"
+  },
+  {
+   "t": "11. ≤ 3 months, ill-appearing or vomiting → ADMIT, IV · > 3 months, not acutely ill, not vomiting → DISCHARGE on TTO (side 2)",
+   "s": "paedstg2026:6.7"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "IV until afebrile and feeding, then oral amox/clav · 7 days total (10–14 d infant pyelonephritis / sepsis) · ultrasound every first UTI",
+  "columns": {
+   "feed": "Fluids, feeds & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, RR, perfusion 4-hourly; hourly while septic",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Feeds / oral fluids, vomiting, wet nappies or urine each shift",
+    "s": "paedstg2026:6.6"
+   },
+   {
+    "t": "Antibiotic doses timed and signed; IV → oral when afebrile and feeding",
+    "s": "paedstg2026:6.7"
+   },
+   {
+    "t": "HGT if not feeding or lethargic",
+    "d": 1
+   },
+   {
+    "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+    "s": "paedstg2026:6.7"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Collect an aseptic urine sample for MCS before the first antibiotic dose — bag urine is for screening only.",
+    "feed": [
+     {
+      "t": "Oral and / or IV fluids — maintain hydration",
+      "s": "paedstg2026:6.6",
+      "b": 1
+     },
+     {
+      "t": "Continue breastfeeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Aseptic urine for MCS",
+      "s": "paedstg2026:6.5",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E / creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood culture if septic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "IV antibiotic"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "t": "OR cefotaxime 50 mg/kg/dose IV 8-hourly",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "h": "Penicillin allergy"
+     },
+     {
+      "t": "Penicillin allergy — ciprofloxacin PO: infant 6 mg/kg/dose 8-hourly · > 1 y 10 mg/kg/dose 12-hourly",
+      "s": "paedstg2026:25.5"
+     },
+     {
+      "t": "Cephalosporin may be used unless immediate hypersensitivity to penicillin",
+      "s": "paedstg2026:25.5"
+     },
+     {
+      "h": "Pain / fever"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+      "s": "paedstg2026:6.7"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24-h review",
+    "feed": [
+     {
+      "t": "Feeds as tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase MCS",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No improvement after 24 h of IV amox/clav: resistant organism — treat per culture, consult specialist",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "t": "Adjust to culture and sensitivity",
+      "s": "paedstg2026:6.7"
+     }
+    ]
+   },
+   {
+    "label": "If poor response",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat culture",
+      "s": "paedstg2026:6.8",
+      "b": 1
+     },
+     {
+      "t": "Urgent renal ultrasound",
+      "s": "paedstg2026:6.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persistent positive culture and / or fever → REFER",
+      "s": "paedstg2026:6.8",
+      "b": 1
+     },
+     {
+      "t": "Obstruction or renal failure → REFER",
+      "s": "paedstg2026:6.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Oral switch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Renal ultrasound (first UTI)",
+      "s": "paedstg2026:6.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Good response: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g) to complete 7 d",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "t": "Total 7 days; 10–14 days in infants with pyelonephritis or septicaemia",
+      "s": "paedstg2026:6.6",
+      "b": 1
+     },
+     {
+      "t": "Abnormal kidneys / ureter / bladder on ultrasound → MCUG (REFER)",
+      "s": "paedstg2026:6.6"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–7",
+    "phase": "Oral / home",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Good response: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g) to complete 7 d",
+      "s": "paedstg2026:6.7",
+      "b": 1
+     },
+     {
+      "t": "Discharge assessment (box below)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 8–14",
+    "phase": "Infant pyelonephritis",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Infant with pyelonephritis or septicaemia: continue to 10–14 d",
+      "s": "paedstg2026:6.6",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "DISCHARGE TTO — not admitted",
+   "items": [
+    {
+     "t": "Child > 3 months, unwell but not acutely ill, not vomiting:",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid PO 45 mg/kg/dose (amoxicillin) 12-hourly × 7 d, 14:1, max 1.5 g 12-hourly",
+     "s": "phcstg2026:8.11",
+     "b": 1
+    },
+    {
+     "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+     "s": "paedstg2026:6.7"
+    },
+    {
+     "t": "Fluids; return if fever persists, vomiting, poor feeding",
+     "d": 1
+    },
+    {
+     "t": "Book renal ultrasound (first UTI) and MCS result follow-up",
+     "s": "paedstg2026:6.6",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Admitted — antibiotics",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid 25 mg/kg/dose IV 8-hourly (caution > 15 mg/kg/day clavulanate)",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "OR cefotaxime 50 mg/kg/dose IV 8-hourly",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "Good response: amox/clav PO 45 mg/kg/dose 12-hourly (max 1.5 g) to complete 7 d",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "t": "Total 7 days; 10–14 days in infants with pyelonephritis or septicaemia",
+     "s": "paedstg2026:6.6",
+     "b": 1
+    },
+    {
+     "t": "No improvement after 24 h of IV amox/clav: resistant organism — treat per culture, consult specialist",
+     "s": "paedstg2026:6.7",
+     "b": 1
+    },
+    {
+     "h": "Penicillin allergy"
+    },
+    {
+     "t": "Penicillin allergy — ciprofloxacin PO: infant 6 mg/kg/dose 8-hourly · > 1 y 10 mg/kg/dose 12-hourly",
+     "s": "paedstg2026:25.5"
+    },
+    {
+     "t": "Cephalosporin may be used unless immediate hypersensitivity to penicillin",
+     "s": "paedstg2026:25.5"
+    }
+   ]
+  },
+  {
+   "title": "Recurrence · REFER",
+   "items": [
+    {
+     "h": "Prevent recurrence"
+    },
+    {
+     "t": "Avoid bubble baths / irritant soaps; treat constipation and pinworm; perineal hygiene; double voiding",
+     "s": "paedstg2026:6.6"
+    },
+    {
+     "t": "Asymptomatic bacteriuria: no treatment; no long-term prophylaxis",
+     "s": "paedstg2026:6.8"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Persistent positive culture / fever · obstruction · renal failure",
+     "s": "paedstg2026:6.8",
+     "b": 1
+    },
+    {
+     "t": "Recurrent UTI or repeated pure growth",
+     "s": "paedstg2026:6.8",
+     "b": 1
+    },
+    {
+     "t": "All proven UTIs: non-urgent referral after treatment",
+     "s": "phcstg2026:8.12"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Afebrile, feeding well",
+    "s": "paedstg2026:6.7",
+    "b": 1
+   },
+   {
+    "t": "Taking oral antibiotic",
+    "s": "paedstg2026:6.7",
+    "b": 1
+   },
+   {
+    "t": "Hydrated, passing urine",
+    "d": 1
+   },
+   {
+    "t": "MCS result known or follow-up arranged",
+    "d": 1
+   },
+   {
+    "t": "Renal ultrasound done or booked",
+    "s": "paedstg2026:6.6",
+    "b": 1
+   },
+   {
+    "t": "Caregiver knows full course and return signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC / paeds OPD)",
+  "items": [
+   {
+    "t": "PHC review in 2–3 days",
+    "d": 1
+   },
+   {
+    "t": "Ultrasound result reviewed",
+    "s": "paedstg2026:6.6",
+    "b": 1
+   },
+   {
+    "t": "Proven UTI → non-urgent referral after treatment",
+    "s": "phcstg2026:8.12"
+   },
+   {
+    "t": "Recurrent UTI → assessment for prophylaxis",
+    "s": "phcstg2026:8.12"
+   },
+   {
+    "t": "Known tract abnormality: dipstick if T > 38.5 °C or UTI symptoms",
+    "s": "paedstg2026:6.7"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — fever, feeds, urine and antibiotics",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Temperature, pulse, RR, perfusion 4-hourly; hourly while septic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT if not feeding or lethargic",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Feeds · urine",
+    "items": [
+     {
+      "t": "Feeds / oral fluids, vomiting, wet nappies or urine each shift",
+      "s": "paedstg2026:6.6"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Antibiotic doses timed and signed; IV → oral when afebrile and feeding",
+      "s": "paedstg2026:6.7"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg/dose PO 6-hourly as needed",
+      "s": "paedstg2026:6.7"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "lethargic, cold peripheries or poor perfusion",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "vomiting all feeds / doses",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "no wet nappy / urine 6 h",
+    "d": 1
+   },
+   {
+    "t": "fever persisting after 24 h of IV",
+    "s": "paedstg2026:6.7"
+   }
+  ],
+  "totals": [
+   "Oral / IV in (mL)",
+   "Wet nappies / voids",
+   "Antibiotic doses given / due",
+   "Highest T (°C)"
+  ]
+ }
+}

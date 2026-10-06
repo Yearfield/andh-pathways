@@ -1,13 +1,14 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v69";
+const VERSION = "andh-v71";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
   "fonts/plex-serif-400.woff2", "fonts/plex-serif-700.woff2",
   "calc.js", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json",
   "wheel/gcs-wheel-adult.svg", "wheel/gcs-wheel-child.svg", "wheel/gcs-wheel-infant.svg", "cards/wells-pe.pdf", "cards/wells-dvt.pdf", // printable Wells cards (the JSON is precached via index.json "scores")
-  "data/tonsillitis-paeds.json", "data/croup-paeds.json", "data/om-paeds.json", "data/om-adult.json", "data/sinusitis-paeds.json", "data/sinusitis-adult.json"];
+  "data/tonsillitis-paeds.json", "data/croup-paeds.json", "data/om-paeds.json", "data/om-adult.json", "data/sinusitis-paeds.json", "data/sinusitis-adult.json",
+  "data/uti-adult.json", "data/uti-paeds.json", "data/vds.json", "data/uds.json", "data/pid.json"];
 
 self.addEventListener("install", e => e.waitUntil((async () => {
   const c = await caches.open(VERSION);

@@ -1,0 +1,943 @@
+{
+ "id": "uti-adult",
+ "short": "UTI (adult)",
+ "title": "Urinary tract infection — cystitis and acute pyelonephritis, non-pregnant adult",
+ "population": "Adults and adolescents ≥ 13 y, not pregnant; discharge on TTO or admit for pyelonephritis / urosepsis",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pregnant → UTI in pregnancy pathway",
+     "b": 1
+    },
+    {
+     "t": "< 13 y → UTI (child)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Urethral / vaginal discharge → UDS / VDS pathway",
+     "b": 1
+    },
+    {
+     "t": "Lower abdominal pain + cervical motion tenderness → PID",
+     "s": "phcstg2026:12.6",
+     "b": 1
+    },
+    {
+     "t": "Catheter-associated UTI → Adult STG 9.1.4",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Treat as UTI only if (fresh urine dipstick)",
+   "items": [
+    {
+     "t": "Leucocytes AND nitrites positive",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "OR leucocytes or nitrites + UTI symptoms (dysuria, frequency, lower abdominal pain)",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "OR systemic signs of upper UTI / urosepsis",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Asymptomatic bacteriuria in non-pregnant adults: do not treat",
+     "d": 1
+    },
+    {
+     "t": "Sex M / F   Age ____   eGFR ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Upper UTI (pyelonephritis) — and when to ADMIT",
+   "items": [
+    {
+     "t": "Flank pain / renal angle tenderness",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Temperature > 38 °C",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Sepsis: tachypnoea, tachycardia, confusion, hypotension",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Nausea / vomiting",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "ADMIT: vomiting, sepsis, diabetes, eGFR < 60",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "t": "Men, women beyond reproductive age",
+     "s": "phcstg2026:8.11"
+    },
+    {
+     "t": "Obstruction on ultrasound",
+     "s": "adultstg2026:7.20"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / records",
+   "items": [
+    {
+     "t": "UTIs in past year (> 3 uncomplicated / > 1 complicated)",
+     "s": "adultstg2026:7.20",
+     "b": 1
+    },
+    {
+     "t": "Antibiotics in last 30 days",
+     "d": 1
+    },
+    {
+     "t": "Diabetes · CKD / eGFR",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "t": "ACE-inhibitor / ARB (ciprofloxacin)",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Indwelling catheter · known tract abnormality",
+     "s": "phcstg2026:8.9"
+    },
+    {
+     "t": "HIV / immunosuppression",
+     "s": "phcstg2026:8.9"
+    },
+    {
+     "t": "LMP / contraception (diaphragm)",
+     "s": "adultstg2026:7.18"
+    },
+    {
+     "t": "Previous MCS results",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Lower"
+    },
+    {
+     "t": "Dysuria, frequency, urgency",
+     "s": "adultstg2026:6.31"
+    },
+    {
+     "t": "Lower abdominal pain · haematuria",
+     "s": "adultstg2026:6.31"
+    },
+    {
+     "h": "Upper"
+    },
+    {
+     "t": "Flank pain, fever, rigors",
+     "s": "adultstg2026:7.18"
+    },
+    {
+     "t": "Vomiting",
+     "s": "adultstg2026:7.18"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Urethral / vaginal discharge (STI)",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Hesitancy, poor stream, retention (men)",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Colicky flank pain (stone)",
+     "s": "phcstg2026:8.15"
+    },
+    {
+     "t": "Possible pregnancy",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Temperature > 38 °C",
+     "s": "adultstg2026:7.18",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:7.18",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "s": "adultstg2026:7.18",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "adultstg2026:7.18",
+     "k": "yn"
+    },
+    {
+     "t": "Confusion",
+     "s": "adultstg2026:7.18",
+     "k": "yn"
+    },
+    {
+     "t": "Vomiting",
+     "s": "adultstg2026:7.18",
+     "k": "yn"
+    },
+    {
+     "t": "HGT high (diabetes)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Reduced urine output",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Renal angle tenderness",
+     "s": "adultstg2026:6.32"
+    },
+    {
+     "t": "Suprapubic tenderness",
+     "d": 1
+    },
+    {
+     "t": "Palpable bladder (retention)",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "h": "Genital / PR"
+    },
+    {
+     "t": "Urethral discharge",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Tender prostate (PR)",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Vaginal discharge · CMT",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Dehydration",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Confusion · perfusion",
+     "s": "adultstg2026:7.18"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urine dipstick and MSU",
+   "items": [
+    {
+     "t": "Leuc ____  Nitrite ____  Blood ____  Glucose ____",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "MSU for MCS: complicated, recurrent or upper UTI",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Blood without UTI features ≠ infection → haematuria work-up",
+     "s": "phcstg2026:8.13"
+    },
+    {
+     "t": "Leucocytes, nitrites negative: UTI unlikely — other cause",
+     "s": "phcstg2026:8.10"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bedside tests on arrival",
+   "items": [
+    {
+     "t": "Pregnancy test (women) — positive → pregnancy pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "HGT",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Creatinine / eGFR before gentamicin",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "t": "Ultrasound if poor response (obstruction)",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Septic shock",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Urinary obstruction",
+     "s": "adultstg2026:7.20",
+     "b": 1
+    },
+    {
+     "t": "Urinary retention",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "Renal impairment",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "t": "Diabetes / DKA",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "adultstg2026:7.20"
+    },
+    {
+     "t": "Prostatitis",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "STI urethritis / cervicitis",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Renal colic / stone",
+     "s": "phcstg2026:8.15"
+    },
+    {
+     "t": "PID",
+     "s": "phcstg2026:12.6"
+    },
+    {
+     "t": "Indwelling catheter",
+     "s": "phcstg2026:8.9"
+    },
+    {
+     "t": "Elderly · confusion",
+     "s": "adultstg2026:7.19"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Obstruction on ultrasound, septic shock, no improvement in 72 h or retention → REFER",
+   "s": "adultstg2026:7.20"
+  },
+  {
+   "t": "11. Pyelonephritis with vomiting, sepsis, diabetes or eGFR < 60 → ADMIT, IV · cystitis / mild pyelonephritis → DISCHARGE on TTO (side 2)",
+   "s": "adultstg2026:7.19"
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "IV until able to take oral, then ciprofloxacin per MCS · ultrasound if poor response · branch rows only if needed",
+  "columns": {
+   "feed": "Fluids & care",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, pulse, BP, RR, mental state 4-hourly; hourly while septic",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "IV / oral fluid in and urine out each shift; vomiting",
+    "s": "adultstg2026:7.19"
+   },
+   {
+    "t": "Antibiotic doses timed and signed; IV → oral when tolerating",
+    "s": "adultstg2026:7.19"
+   },
+   {
+    "t": "HGT 6-hourly if diabetic",
+    "d": 1
+   },
+   {
+    "t": "Palpable bladder / not passing urine (retention)",
+    "s": "adultstg2026:7.21"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "On arrival",
+    "lead": "Send the MSU before the first dose. Check creatinine before gentamicin.",
+    "feed": [
+     {
+      "t": "IV fluids — ensure adequate hydration",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     },
+     {
+      "t": "Oral fluids as tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "MSU for MCS",
+      "s": "adultstg2026:7.18",
+      "b": 1
+     },
+     {
+      "t": "Creatinine / eGFR",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     },
+     {
+      "t": "FBC, blood culture if septic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "IV antibiotic"
+     },
+     {
+      "t": "Normal renal function: gentamicin 6 mg/kg IV daily",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     },
+     {
+      "t": "Impaired renal function: ceftriaxone 1 g IV daily",
+      "s": "adultstg2026:7.20",
+      "b": 1
+     },
+     {
+      "h": "Pain / fever"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h)",
+      "s": "phcstg2026:19.6"
+     },
+     {
+      "h": "Sepsis"
+     },
+     {
+      "t": "Septic shock / not responding to fluids → REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "24–48 h",
+    "feed": [
+     {
+      "t": "Oral fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase MCS; adjust to sensitivity",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Able to take oral: ciprofloxacin 500 mg PO 12-hourly (per MCS) — 7–10 d; renal impairment 7 d; eGFR < 10: 50% dose",
+      "s": "adultstg2026:7.20",
+      "b": 1
+     },
+     {
+      "t": "Ciprofloxacin + ACE-inhibitor / ARB: avoid if eGFR ≤ 30 or elderly; check renal function",
+      "s": "adultstg2026:7.19"
+     },
+     {
+      "t": "Duration: fluoroquinolone 7 d · other antibiotics 14 d · complicated pyelonephritis 2–3 weeks",
+      "s": "adultstg2026:7.19"
+     }
+    ]
+   },
+   {
+    "label": "If poor response",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urgent ultrasound (inpatient)",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     },
+     {
+      "t": "Repeat MCS / blood culture",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Obstruction on ultrasound → urgent REFER",
+      "s": "adultstg2026:7.20",
+      "b": 1
+     },
+     {
+      "t": "No improvement within 72 h → REFER",
+      "s": "adultstg2026:7.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If prostatitis",
+    "phase": "Men",
+    "feed": [
+     {
+      "t": "Catheter if retention",
+      "s": "adultstg2026:7.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "MSU; STI screen",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pyrexia, pelvic / perineal pain, dysuria, retention, acutely tender prostate (PR)",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     },
+     {
+      "t": "With urethritis features: ceftriaxone 250 mg IM stat + azithromycin 1 g PO stat",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     },
+     {
+      "t": "No urethritis: ciprofloxacin 500 mg PO 12-hourly × 14 d",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     },
+     {
+      "t": "Retention, no response, chronic / relapsing → REFER urologist",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "72-h review",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "MCS result reviewed",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Failure to improve within 72 h → REFER (non-urgent)",
+      "s": "adultstg2026:7.20",
+      "b": 1
+     },
+     {
+      "t": "Able to take oral: ciprofloxacin 500 mg PO 12-hourly (per MCS) — 7–10 d; renal impairment 7 d; eGFR < 10: 50% dose",
+      "s": "adultstg2026:7.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–7",
+    "phase": "Oral",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Complete the course at home (ciprofloxacin 7–10 d)",
+      "s": "adultstg2026:7.19"
+     },
+     {
+      "t": "Discharge assessment (box below)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "DISCHARGE TTO — not admitted",
+   "items": [
+    {
+     "h": "Uncomplicated cystitis (non-pregnant woman)"
+    },
+    {
+     "t": "Fosfomycin 3 g PO single dose",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "OR gentamicin 5 mg/kg IM single dose (not if renal impairment or pregnant)",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "OR nitrofurantoin 100 mg PO 6-hourly × 5 d",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "h": "Complicated cystitis"
+    },
+    {
+     "t": "Complicated cystitis (men, catheter, diabetes, abnormal tract): ciprofloxacin 500 mg PO 12-hourly × 7 d",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "h": "Mild pyelonephritis (woman of reproductive age)"
+    },
+    {
+     "t": "Pyelonephritis, woman of reproductive age, no admit criteria: ciprofloxacin 500 mg PO 12-hourly × 7–10 d (at least 7 d)",
+     "s": "phcstg2026:8.11",
+     "b": 1
+    },
+    {
+     "t": "Ciprofloxacin + ACE-inhibitor / ARB: avoid if eGFR ≤ 30 or elderly; check renal function",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "h": "All"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g PO 4–6-hourly as needed (max 4 g / 24 h)",
+     "s": "phcstg2026:19.6"
+    },
+    {
+     "t": "Fluids; return if fever, vomiting, flank pain",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Admitted — antibiotics",
+   "items": [
+    {
+     "t": "Normal renal function: gentamicin 6 mg/kg IV daily",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "t": "Impaired renal function: ceftriaxone 1 g IV daily",
+     "s": "adultstg2026:7.20",
+     "b": 1
+    },
+    {
+     "t": "Able to take oral: ciprofloxacin 500 mg PO 12-hourly (per MCS) — 7–10 d; renal impairment 7 d; eGFR < 10: 50% dose",
+     "s": "adultstg2026:7.20",
+     "b": 1
+    },
+    {
+     "t": "Duration: fluoroquinolone 7 d · other antibiotics 14 d · complicated pyelonephritis 2–3 weeks",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "h": "Recurrent (> 3 / year)"
+    },
+    {
+     "t": "Treat per MCS; prophylaxis cotrimoxazole 80/400 mg nocte × 6 months",
+     "s": "adultstg2026:7.20"
+    },
+    {
+     "t": "Women: void after intercourse and at night; do not postpone voiding; avoid diaphragm",
+     "s": "adultstg2026:7.18"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · REFER",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Hypotension, confusion, rising RR",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Not passing urine / palpable bladder",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "Vomiting all oral doses",
+     "d": 1
+    },
+    {
+     "t": "HGT high",
+     "d": 1
+    },
+    {
+     "h": "Gentamicin"
+    },
+    {
+     "t": "Rising creatinine → stop, change to ceftriaxone",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Obstruction · no improvement in 72 h",
+     "s": "adultstg2026:7.20",
+     "b": 1
+    },
+    {
+     "t": "> 3 uncomplicated or > 1 complicated UTI / year",
+     "s": "adultstg2026:7.20"
+    },
+    {
+     "t": "Prostatitis with retention or no response (urologist)",
+     "s": "adultstg2026:7.21"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Afebrile, no sepsis signs",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Taking oral antibiotic and fluids",
+    "s": "adultstg2026:7.19",
+    "b": 1
+   },
+   {
+    "t": "Passing urine",
+    "d": 1
+   },
+   {
+    "t": "Creatinine stable / improving",
+    "d": 1
+   },
+   {
+    "t": "MCS result known or follow-up arranged",
+    "s": "adultstg2026:7.19"
+   },
+   {
+    "t": "Knows full course and return signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up (PHC)",
+  "items": [
+   {
+    "t": "PHC review in 3 days if not improving",
+    "d": 1
+   },
+   {
+    "t": "No response to treatment → refer",
+    "s": "phcstg2026:8.12",
+    "b": 1
+   },
+   {
+    "t": "Men: > 1 UTI ever → refer for investigation",
+    "s": "phcstg2026:8.12"
+   },
+   {
+    "t": "Women: > 3 UTIs in a year → refer",
+    "s": "phcstg2026:8.12"
+   },
+   {
+    "t": "Haematuria persisting after treatment → investigate",
+    "s": "phcstg2026:8.13"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "72-hour nursing record — sepsis observations, fluids and antibiotics",
+  "period": "one sheet per 72 hours, one row every 4 hours (full vitals stay on the ward chart)",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Temperature, pulse, BP, RR, mental state 4-hourly; hourly while septic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT 6-hourly if diabetic",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids · urine",
+    "items": [
+     {
+      "t": "IV / oral fluid in and urine out each shift; vomiting",
+      "s": "adultstg2026:7.19"
+     },
+     {
+      "t": "Palpable bladder / not passing urine (retention)",
+      "s": "adultstg2026:7.21"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Antibiotic doses timed and signed; IV → oral when tolerating",
+      "s": "adultstg2026:7.19"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "hypotension, confusion or rising RR",
+    "s": "adultstg2026:7.18",
+    "b": 1
+   },
+   {
+    "t": "no urine 6 h or palpable bladder",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "vomiting oral doses",
+    "d": 1
+   },
+   {
+    "t": "HGT high",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "IV / oral in (mL)",
+   "Urine out (mL)",
+   "Antibiotic doses given / due",
+   "Highest T (°C)"
+  ]
+ }
+}

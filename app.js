@@ -301,7 +301,7 @@ function home() {
     const pops = hub ? [...hub.members.map(m => m.label), popName(popOf(e))] : [popName(popOf(e))];
     const trim = !hub && /^(Adult|Paediatric)$/.test(pops[0]) ? unpop : t => t;
     return `<button class="dx" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + popName(popOf(e)) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
-        <span class="t">${esc(trim(e.short))}</span><span class="p">${esc(trim(e.title))}</span>${ico("next")}</button>`;
+        <span class="t">${esc(trim(e.short))}</span><span class="p">${trim(e.title).toLowerCase() === trim(e.short).toLowerCase() ? "" : esc(trim(e.title))}</span>${ico("next")}</button>`; // a description that only repeats the name is left blank
   };
   const lists = groups.map(g => { const items = rows.filter(r => popName(popOf(r.e)) === g);
     return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(popOf(items[0].e))}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
@@ -375,7 +375,7 @@ function days(d, i) {
   const body =
     `<div class="dayhead"><span class="big">${esc(r.label)}</span><span class="ph">${esc(r.phase)}</span></div>` +
     (r.lead ? `<div class="lead">${esc(r.lead)}</div>` : "") +
-    (i === 0 && d.chart.standing ? card(d, /\/|^time$/i.test(d.chart.unit) ? "Throughout — every shift" : `Every ${d.chart.unit.toLowerCase()}, every shift`, d.chart.standing) : "") +
+    (i === 0 && d.chart.standing ? card(d, /\/|^time$/i.test(d.chart.unit) ? "Throughout — every shift" : /^visit$/i.test(d.chart.unit) ? "At every visit" : `Every ${d.chart.unit.toLowerCase()}, every shift`, d.chart.standing) : "") +
     `<div class="seg" role="tablist" aria-label="Chart columns">${cols.map(([k, t], j) =>
       `<button role="tab" data-seg="${j}" aria-selected="${j === seg}">${esc(shortCol(t))} <span>${(r[k] || []).filter(x => x.t).length}</span></button>`).join("")}</div>` +
     card(d, cols[seg][1], r[cols[seg][0]]) +

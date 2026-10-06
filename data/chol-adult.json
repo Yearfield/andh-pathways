@@ -1,0 +1,1296 @@
+{
+ "id": "chol-adult",
+ "short": "Cholangitis (adult)",
+ "title": "Acute cholangitis — fever with jaundice (adult)",
+ "population": "Adult with fever and jaundice ± RUQ pain; no ERCP, drainage or ICU at ANDH — resuscitate, treat sepsis, refer for drainage",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Ascites, known cirrhosis, encephalopathy → Cirrhosis pathway",
+     "b": 1
+    },
+    {
+     "t": "Raised amylase / lipase → Pancreatitis pathway",
+     "b": 1
+    },
+    {
+     "t": "Pregnant + jaundice / high BP → Pre-eclampsia pathway (HELLP)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria (Tokyo 2018†)",
+   "items": [
+    {
+     "t": "A — Inflammation: fever / rigors; raised WCC, CRP",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "B — Cholestasis: jaundice; abnormal LFT",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "C — Imaging: dilated bile ducts; stone / stricture",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Suspected = A + B or A + C · Definite = A + B + C",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Charcot triad: fever, jaundice, RUQ pain",
+     "d": 1
+    },
+    {
+     "t": "Onset ____ · temp ____ · bilirubin ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity grade (Tokyo 2018†)",
+   "items": [
+    {
+     "h": "Grade III — any organ dysfunction"
+    },
+    {
+     "t": "Shock needing adrenaline · confusion · needs O₂ (P/F < 300) · oliguria or creatinine > 177 µmol/L · INR > 1.5 · platelets < 100",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "Grade II — any two"
+    },
+    {
+     "t": "WCC > 12 or < 4 · temp ≥ 39 °C · age ≥ 75 · bilirubin ≥ 85 µmol/L · low albumin",
+     "d": 1
+    },
+    {
+     "h": "Grade I"
+    },
+    {
+     "t": "Neither — responds to antibiotics",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Gallstones, biliary surgery, ERCP / stent",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "HIV, CD4, ART",
+     "d": 1
+    },
+    {
+     "t": "TB treatment, ART, other hepatotoxic drugs",
+     "s": "adultstg2026:1.9",
+     "b": 1
+    },
+    {
+     "t": "Alcohol",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "t": "Hepatitis B, previous jaundice",
+     "s": "adultstg2026:1.13"
+    },
+    {
+     "t": "Weight loss, known cancer",
+     "d": 1
+    },
+    {
+     "t": "Travel to a malaria area",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Anticoagulants",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Biliary"
+    },
+    {
+     "t": "RUQ pain, fever, rigors",
+     "d": 1
+    },
+    {
+     "t": "Dark urine, pale stool, itch",
+     "d": 1
+    },
+    {
+     "h": "Malignant†"
+    },
+    {
+     "t": "Painless jaundice, weight loss",
+     "d": 1
+    },
+    {
+     "h": "Hepatitis"
+    },
+    {
+     "t": "Prodrome, contacts, alcohol",
+     "s": "adultstg2026:1.13"
+    },
+    {
+     "t": "New drugs (TB, ART)",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "h": "Malaria"
+    },
+    {
+     "t": "Travel, headache, myalgia",
+     "s": "adultstg2026:9.15"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.24",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / cold peripheries",
+     "s": "adultstg2026:20.21",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Poor urine output",
+     "s": "adultstg2026:20.24",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Confusion / reduced LOC",
+     "k": "yn"
+    },
+    {
+     "t": "HGT low",
+     "s": "adultstg2026:1.10",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Jaundice",
+     "d": 1
+    },
+    {
+     "t": "RUQ tenderness, Murphy's sign",
+     "d": 1
+    },
+    {
+     "t": "Tender enlarged liver (abscess)",
+     "s": "adultstg2026:1.17"
+    },
+    {
+     "t": "Palpable gallbladder (tumour?)",
+     "d": 1
+    },
+    {
+     "t": "Peritonism (perforation)",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "h": "Liver"
+    },
+    {
+     "t": "Ascites, spider naevi",
+     "d": 1
+    },
+    {
+     "t": "Flap, confusion",
+     "s": "adultstg2026:1.10"
+    },
+    {
+     "h": "Sepsis"
+    },
+    {
+     "t": "Cold, mottled, slow CRT",
+     "s": "adultstg2026:20.21"
+    },
+    {
+     "h": "Extra findings:"
+    },
+    {
+     "t": "________________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care on arrival",
+   "items": [
+    {
+     "t": "HGT ____ · urine dipstick ____",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Blood gas: lactate ____ pH ____",
+     "d": 1,
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Malaria RDT / smear if any travel",
+     "s": "adultstg2026:9.15",
+     "b": 1
+    },
+    {
+     "t": "Bedside ultrasound: dilated ducts, gallbladder, liver abscess",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "β-hCG in women of child-bearing age",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods and imaging",
+   "items": [
+    {
+     "t": "Blood cultures × 2 before antibiotics",
+     "s": "adultstg2026:20.24",
+     "b": 1
+    },
+    {
+     "t": "FBC, CRP, LFT, U&E, INR",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Amylase / lipase",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    },
+    {
+     "t": "HBsAg, HAV IgM, HIV",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Ultrasound abdomen (formal)",
+     "d": 1
+    },
+    {
+     "t": "CT / MRCP not on site → REFER",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Septic shock",
+     "s": "adultstg2026:20.24",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:1.10",
+     "b": 1
+    },
+    {
+     "t": "AKI / oliguria",
+     "d": 1
+    },
+    {
+     "t": "Bleeding, INR > 2",
+     "s": "adultstg2026:1.9"
+    },
+    {
+     "t": "Liver failure",
+     "s": "adultstg2026:1.10"
+    },
+    {
+     "t": "Perforated gallbladder",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "t": "Ruptured liver abscess",
+     "d": 1
+    },
+    {
+     "t": "Pancreatitis",
+     "s": "adultstg2026:1.5"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Hypoxia",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Peritonitis",
+     "s": "adultstg2026:1.23"
+    },
+    {
+     "t": "Alcohol withdrawal",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Immunosuppression",
+     "s": "adultstg2026:1.18"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Cholangitis needs bile drainage — not at ANDH → REFER: grade II–III urgently; grade I if not better in 24 h",
+   "s": "adultstg2026:1.18"
+  },
+  {
+   "t": "11. ADMIT (high-care bed); antibiotics within 1 h",
+   "d": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Acute cholangitis",
+   "branch": "If cholangitis",
+   "features": [
+    {
+     "t": "Fever, rigors, jaundice, RUQ pain; gallstones",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound: dilated ducts, stones; LFT, cultures",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amox-clav 1.2 g IV 8-hourly; septic shock: ± gentamicin",
+     "s": "adultstg2026:23.38",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — drainage (ERCP / PTBD)",
+     "s": "adultstg2026:1.18",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute cholecystitis",
+   "branch": "If cholecystitis",
+   "features": [
+    {
+     "t": "RUQ pain, Murphy's sign, fever; jaundice mild or absent",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound: thick wall, stones, fluid",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amox-clav if infection or > 60 y, comorbid, immunocompromised",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Deterioration, no improvement, perforation; acalculous: all",
+     "s": "adultstg2026:23.27",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pyogenic liver abscess",
+   "branch": "If liver abscess",
+   "features": [
+    {
+     "t": "Fever, tender hepatomegaly; often multiple",
+     "s": "adultstg2026:1.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amox-clav 1.2 g IV 8-hourly; drainage essential",
+     "s": "adultstg2026:1.17",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ultrasound-guided drainage",
+     "s": "adultstg2026:1.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Amoebic liver abscess",
+   "branch": "If liver abscess",
+   "features": [
+    {
+     "t": "Fever, RUQ pain; dysentery in only a third",
+     "s": "adultstg2026:1.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound; amoebic serology",
+     "s": "adultstg2026:1.17",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Metronidazole 800 mg oral 8-hourly × 10 days",
+     "s": "adultstg2026:1.18",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If > 10 cm, left lobe, near surface: drainage",
+     "s": "adultstg2026:1.18"
+    }
+   ]
+  },
+  {
+   "dx": "Viral hepatitis",
+   "branch": "If not biliary",
+   "features": [
+    {
+     "t": "Prodrome, very high ALT, no duct dilatation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HBsAg, HAV IgM; INR",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Supportive; metoclopramide 10 mg 8-hourly; no alcohol",
+     "s": "adultstg2026:1.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If liver failure (INR ≥ 1.5 + encephalopathy)",
+     "s": "adultstg2026:1.10"
+    }
+   ]
+  },
+  {
+   "dx": "Drug-induced liver injury",
+   "branch": "If not biliary",
+   "features": [
+    {
+     "t": "TB drugs, ART, cotrimoxazole; recent start",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LFT pattern, drug history",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop hepatotoxic drugs with a specialist",
+     "s": "adultstg2026:1.9",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Non-resolving hepatitis",
+     "s": "adultstg2026:1.9"
+    }
+   ]
+  },
+  {
+   "dx": "Severe malaria",
+   "branch": "If not biliary",
+   "features": [
+    {
+     "t": "Travel; jaundice, confusion, anaemia, low HGT",
+     "s": "adultstg2026:9.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "RDT / smear",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Artesunate 2.4 mg/kg IV at 0, 12, 24 h, then daily",
+     "s": "adultstg2026:9.16",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ICU needed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Gallstone pancreatitis",
+   "branch": "If not biliary",
+   "features": [
+    {
+     "t": "Epigastric pain to back; amylase / lipase > 3×",
+     "s": "adultstg2026:1.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Amylase / lipase; ultrasound",
+     "s": "adultstg2026:1.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Pancreatitis pathway; + cholangitis → amox-clav",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If cholangitis or organ failure",
+     "s": "adultstg2026:23.27"
+    }
+   ]
+  },
+  {
+   "dx": "Malignant obstruction",
+   "branch": "If cholangitis",
+   "features": [
+    {
+     "t": "Painless jaundice, weight loss, palpable gallbladder",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ultrasound (dilated ducts, mass)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat cholangitis if febrile",
+     "s": "adultstg2026:1.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT, stent (urgent if infected)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time / Day",
+  "phase_note": "Antibiotics do not replace drainage: every cholangitis needs a referral plan · branch rows follow the ticked diagnosis",
+  "columns": {
+   "feed": "O₂, fluids & feeding",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, RR, SpO₂, temp, AVPU: every 15 min × 1 h, hourly to 6 h, then 2-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Urine output hourly (catheter if shocked): aim > 0.5 mL/kg/h",
+    "s": "adultstg2026:20.24",
+    "b": 1
+   },
+   {
+    "t": "HGT 4-hourly — hypoglycaemia is common in liver injury",
+    "s": "adultstg2026:1.10"
+   },
+   {
+    "t": "O₂ if SpO₂ < 94%",
+    "s": "adultstg2026:20.24"
+   },
+   {
+    "t": "Antibiotic doses on time — record the time of each dose",
+    "d": 1
+   },
+   {
+    "t": "Watch for bleeding (IV sites, gums, stool) if INR raised",
+    "d": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival — first hour",
+    "lead": "Cultures, then antibiotics — do not wait for the ultrasound. Weigh the patient.",
+    "feed": [
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "Hypotension: NaCl 0.9% or Ringer's 500 mL over 30 min, repeat to 30 mL/kg",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "Response = urine > 0.5 mL/kg/h and alert, not a BP number",
+      "s": "adultstg2026:20.24"
+     },
+     {
+      "t": "NPO until surgical plan; IV maintenance",
+      "d": 1
+     },
+     {
+      "t": "Catheter if shocked",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood cultures × 2",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP, LFT, U&E, INR",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Amylase / lipase",
+      "s": "adultstg2026:1.5",
+      "b": 1
+     },
+     {
+      "t": "HGT, lactate",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Malaria RDT if travel",
+      "s": "adultstg2026:9.15",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound abdomen",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotics — within 1 h"
+     },
+     {
+      "t": "Amoxicillin/clavulanic acid 1.2 g IV 8-hourly",
+      "s": "adultstg2026:1.18",
+      "b": 1
+     },
+     {
+      "t": "Septic shock: add gentamicin 6 mg/kg IV daily if no AKI",
+      "s": "adultstg2026:23.38"
+     },
+     {
+      "h": "Shock"
+     },
+     {
+      "t": "No response to 30 mL/kg: adrenaline 0.05 mcg/kg/min, target MAP 65 → REFER (ICU)",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "h": "Liver / bleeding"
+     },
+     {
+      "t": "INR > 2 + jaundice: vitamin K1 10 mg slow IV",
+      "s": "adultstg2026:1.9"
+     },
+     {
+      "t": "Bleeding: lyophilised plasma 15 mL/kg over 20–30 min",
+      "s": "adultstg2026:1.9"
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Morphine IV 3–5 mg, then boluses; total max 10 mg",
+      "s": "adultstg2026:12.5"
+     }
+    ]
+   },
+   {
+    "label": "1–6 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Reduce fluids once perfused; watch for overload",
+      "s": "adultstg2026:20.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat lactate, U&E; HGT 4-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Grade the severity (§2) and tick the working diagnosis",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Phone the referral surgeon / gastroenterologist now for grade II–III",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If cholangitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO until drainage plan",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LFT, INR daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Grade II–III → REFER urgently for drainage (ERCP / PTBD)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Grade I → continue amox-clav; REFER if not better in 24 h",
+      "s": "adultstg2026:1.18",
+      "b": 1
+     },
+     {
+      "t": "Antibiotics 4–7 days after the duct is drained",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If cholecystitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Clear fluids → low-fat diet as pain allows",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ultrasound if worse",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics if infection, > 60 y, comorbid or immunocompromised: amox-clav 875/125 mg oral 12-hourly (IV 1.2 g 8-hourly if not tolerating)",
+      "s": "adultstg2026:1.18"
+     },
+     {
+      "t": "REFER: deterioration, no improvement, fistula / perforation, complicated surgery; acalculous: all",
+      "s": "adultstg2026:1.18",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If liver abscess",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oral diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Amoebic serology; CRP weekly",
+      "s": "adultstg2026:1.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pyogenic: amox-clav 1.2 g IV 8-hourly → REFER for drainage (essential)",
+      "s": "adultstg2026:1.17",
+      "b": 1
+     },
+     {
+      "t": "Amoebic: metronidazole 800 mg oral 8-hourly × 10 days",
+      "s": "adultstg2026:1.18",
+      "b": 1
+     },
+     {
+      "t": "Large (> 10 cm), left lobe, near surface: aspiration under ultrasound → REFER",
+      "s": "adultstg2026:1.18"
+     }
+    ]
+   },
+   {
+    "label": "If not biliary",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Normal diet if no encephalopathy",
+      "s": "adultstg2026:1.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HBsAg, HAV IgM, INR; malaria smear",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Drug-induced: stop hepatotoxic drugs with a specialist",
+      "s": "adultstg2026:1.9",
+      "b": 1
+     },
+     {
+      "t": "Severe malaria: artesunate 2.4 mg/kg IV at 0, 12, 24 h",
+      "s": "adultstg2026:9.16",
+      "b": 1
+     },
+     {
+      "t": "Viral hepatitis: supportive; acute liver failure → discuss specialist",
+      "s": "adultstg2026:1.10"
+     },
+     {
+      "t": "Stop antibiotics if no bacterial infection",
+      "s": "adultstg2026:1.10"
+     }
+    ]
+   },
+   {
+    "label": "Day 1–3",
+    "phase": "Awaiting transfer",
+    "feed": [
+     {
+      "t": "Diet as tolerated once plan made",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, CRP, LFT, U&E, INR daily",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Culture results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amox-clav IV; oral 875/125 mg 12-hourly when eating and afebrile",
+      "s": "adultstg2026:1.18"
+     },
+     {
+      "t": "Fever, jaundice or organ failure not improving → REFER urgently",
+      "s": "adultstg2026:1.18",
+      "b": 1
+     },
+     {
+      "t": "Letter: grade, cultures, ultrasound, antibiotic times",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Low-fat diet if gallstones",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LFT trending down",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Complete antibiotic course",
+      "d": 1
+     },
+     {
+      "t": "Cholecystectomy / stent follow-up booked",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Return now: fever, rigors, jaundice",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Amox-clav 1.2 g IV 8-hourly; oral 875/125 mg 12-hourly",
+     "s": "adultstg2026:1.18",
+     "b": 1
+    },
+    {
+     "t": "Gentamicin 6 mg/kg IV daily (septic shock, no AKI)",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Metronidazole 800 mg oral 8-hourly × 10 days (amoebic)",
+     "s": "adultstg2026:1.18"
+    },
+    {
+     "t": "NaCl 0.9% / Ringer's 500 mL / 30 min to 30 mL/kg",
+     "s": "adultstg2026:20.24",
+     "b": 1
+    },
+    {
+     "t": "Adrenaline 0.05 mcg/kg/min: 10 mg in 1 L NaCl 0.9% (70 kg = 21 mL/h)",
+     "s": "adultstg2026:20.23"
+    },
+    {
+     "t": "Vitamin K1 10 mg slow IV · plasma 15 mL/kg",
+     "s": "adultstg2026:1.9"
+    }
+   ]
+  },
+  {
+   "title": "Tokyo 2018† grades → action",
+   "items": [
+    {
+     "t": "Grade I: antibiotics; drain if no response in 24 h",
+     "d": 1
+    },
+    {
+     "t": "Grade II: early drainage",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Grade III: resuscitate, organ support, urgent drainage",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "h": "At ANDH"
+    },
+    {
+     "t": "Drainage, ICU, CT not on site → REFER per grade",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "BP falling, pulse rising, urine < 0.5 mL/kg/h",
+     "s": "adultstg2026:20.24"
+    },
+    {
+     "t": "New confusion or drowsiness",
+     "d": 1
+    },
+    {
+     "t": "HGT low",
+     "s": "adultstg2026:1.10"
+    },
+    {
+     "t": "Bleeding, SpO₂ falling",
+     "d": 1
+    },
+    {
+     "t": "Rigors despite antibiotics",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Grade II–III · septic shock · no response in 24 h · abscess · perforation",
+     "s": "adultstg2026:1.18",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / back-transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "Afebrile 48 h; eating",
+    "d": 1
+   },
+   {
+    "t": "Bile duct drained or source controlled",
+    "d": 1
+   },
+   {
+    "t": "LFT and CRP improving",
+    "d": 1
+   },
+   {
+    "t": "Normal observations; no organ failure",
+    "d": 1
+   },
+   {
+    "t": "Oral antibiotics to complete course",
+    "s": "adultstg2026:1.18"
+   },
+   {
+    "t": "Definitive surgery / stent plan in letter",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Surgical OPD: cholecystectomy / stent change",
+    "d": 1
+   },
+   {
+    "t": "PHC 1 week: LFT, wound, adherence",
+    "d": 1
+   },
+   {
+    "t": "Hepatitis B: contact screening and vaccination",
+    "s": "adultstg2026:1.13"
+   },
+   {
+    "t": "Return now: fever, rigors, jaundice, dark urine",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — sepsis, fluids and liver",
+  "period": "one sheet from arrival: 15-min rows for 1 h, hourly to 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Observations",
+    "items": [
+     {
+      "t": "Pulse, BP, RR, SpO₂, temp, AVPU: every 15 min × 1 h, hourly to 6 h, then 2-hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "O₂ if SpO₂ < 94%",
+      "s": "adultstg2026:20.24"
+     },
+     {
+      "t": "HGT 4-hourly — hypoglycaemia is common in liver injury",
+      "s": "adultstg2026:1.10"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Urine output hourly (catheter if shocked): aim > 0.5 mL/kg/h",
+      "s": "adultstg2026:20.24",
+      "b": 1
+     },
+     {
+      "t": "Fluid balance every shift",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Antibiotics and bleeding",
+    "items": [
+     {
+      "t": "Antibiotic doses on time — record the time of each dose",
+      "d": 1
+     },
+     {
+      "t": "Watch for bleeding (IV sites, gums, stool) if INR raised",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "BP falling, pulse rising or urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:20.24",
+    "b": 1
+   },
+   {
+    "t": "new confusion or drowsiness",
+    "d": 1
+   },
+   {
+    "t": "HGT low",
+    "s": "adultstg2026:1.10"
+   },
+   {
+    "t": "bleeding or SpO₂ falling",
+    "d": 1
+   },
+   {
+    "t": "rigors despite antibiotics",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Urine out (mL)",
+   "Antibiotic times",
+   "Cultures sent (time)",
+   "Lowest HGT"
+  ]
+ }
+}

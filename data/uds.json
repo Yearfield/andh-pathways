@@ -1,0 +1,931 @@
+{
+ "id": "uds",
+ "short": "Urethral discharge (UDS / MUS)",
+ "title": "Urethral discharge syndrome (male urethritis syndrome) — syndromic management",
+ "population": "Men and adolescent boys with urethral discharge or dysuria; usually discharged on TTO",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-06",
+ "sources": [
+  "phcstg2026",
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Dysuria without discharge, dipstick positive → UTI (adult)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Acute scrotal pain with rotated / elevated testis → torsion: URGENT surgical REFER",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "Child with urethral discharge → REFER (abuse work-up)",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Sexual assault → post-exposure / forensic protocol",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "UDS = complaint of urethral discharge or dysuria",
+   "items": [
+    {
+     "t": "Urethral discharge or dysuria",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "No visible discharge → ask him to milk the urethra",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "Discharge confirmed?  Y / N",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Age ____  Partners (3 months) ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Add another syndrome / escalate if",
+   "items": [
+    {
+     "t": "Scrotal swelling or pain → SSW regimen (chart row)",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "Genital ulcer → MUS + GUS regimen",
+     "s": "phcstg2026:12.14",
+     "b": 1
+    },
+    {
+     "t": "Balanitis → MUS + clotrimazole cream",
+     "s": "phcstg2026:12.14"
+    },
+    {
+     "t": "Fever, perineal pain, retention → prostatitis",
+     "s": "adultstg2026:7.21",
+     "b": 1
+    },
+    {
+     "t": "Discharge persists after 7 days → ceftriaxone failure (chart row)",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Records / clinic file",
+   "items": [
+    {
+     "t": "HIV status / last test",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "Previous STI episodes and treatment (dates, doses)",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Treated for MUS in last 7 days?",
+     "s": "adultstg2026:26.1",
+     "b": 1
+    },
+    {
+     "t": "Partner notified / treated before",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "phcstg2026:12.7"
+    },
+    {
+     "t": "Circumcised",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Recent antibiotics",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Overseas travel",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Sexual and general history",
+   "items": [
+    {
+     "h": "Sexual history"
+    },
+    {
+     "t": "Partners, new partner",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Sexual orientation; oral / anal sex",
+     "s": "phcstg2026:12.7"
+    },
+    {
+     "t": "Condom use",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Discharge, dysuria",
+     "s": "phcstg2026:12.7"
+    },
+    {
+     "t": "Scrotal pain / swelling",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Genital sores",
+     "s": "phcstg2026:12.9"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Perineal pain, hesitancy, fever",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Violence / coercion",
+     "s": "phcstg2026:12.2"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "t": "High fever (prostatitis)",
+     "s": "phcstg2026:8.13",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Urinary retention",
+     "s": "adultstg2026:7.21",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination — genital and inguinal",
+   "items": [
+    {
+     "h": "Penis"
+    },
+    {
+     "t": "Urethral discharge (after milking)",
+     "s": "phcstg2026:12.7"
+    },
+    {
+     "t": "Balanitis / balanoposthitis",
+     "s": "phcstg2026:12.11"
+    },
+    {
+     "t": "Ulcers · warts",
+     "s": "phcstg2026:12.9"
+    },
+    {
+     "h": "Scrotum"
+    },
+    {
+     "t": "Swelling / tenderness",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "t": "Testis rotated / elevated (torsion)",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Inguinal bubo",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "Tender prostate (PR) if perineal pain / fever",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Mouth / anus if exposed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urethral examination — decide the regimen",
+   "items": [
+    {
+     "t": "Discharge present → MUS treatment",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "Partner has VDS → ADD metronidazole 2 g",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "Scrotal swelling → SSW regimen (no torsion)",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "No discharge after milking, dysuria only → urine dipstick (UTI?)",
+     "d": 1
+    },
+    {
+     "t": "Persistent after 7 days → 2 urethral swabs + ceftriaxone 1 g",
+     "s": "adultstg2026:26.2",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Tests on the day",
+   "items": [
+    {
+     "t": "HIV test — emphasise (negative → repeat in 6 weeks)",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "Syphilis test",
+     "s": "phcstg2026:12.12",
+     "b": 1
+    },
+    {
+     "t": "Urine dipstick if no discharge",
+     "d": 1
+    },
+    {
+     "t": "No swabs at first visit — syndromic",
+     "d": 1
+    },
+    {
+     "t": "HIV ____  Syphilis ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out",
+   "items": [
+    {
+     "t": "Testicular torsion",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone-resistant gonorrhoea",
+     "s": "adultstg2026:26.1",
+     "b": 1
+    },
+    {
+     "t": "Prostatitis with retention",
+     "s": "adultstg2026:7.21",
+     "b": 1
+    },
+    {
+     "t": "Child (abuse)",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Genital ulcer / syphilis",
+     "s": "phcstg2026:12.14"
+    },
+    {
+     "t": "Bubo",
+     "s": "phcstg2026:12.10"
+    },
+    {
+     "t": "HIV",
+     "s": "phcstg2026:12.7"
+    },
+    {
+     "t": "Sexual assault",
+     "d": 1
+    },
+    {
+     "t": "Disseminated gonococcal infection (rash, joints)",
+     "d": 1
+    },
+    {
+     "t": "Fournier gangrene",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Torsion → URGENT surgical REFER · retention / high fever (prostatitis) → REFER · discharge persisting after 7 d → hospital swabs + ceftriaxone 1 g",
+   "s": "phcstg2026:12.8"
+  },
+  {
+   "t": "11. UDS → treat on the day, DISCHARGE on TTO, partner tracing, HIV and syphilis tests",
+   "s": "phcstg2026:12.7"
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Syndromic treatment on the day · partner tracing · review at 7 days · persistent discharge = suspected ceftriaxone failure",
+  "columns": {
+   "feed": "Counselling & advice",
+   "tests": "Tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Stat doses given under observation, time and initials recorded",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Observe 15–30 min after ceftriaxone IM (allergy)",
+    "d": 1
+   },
+   {
+    "t": "HIV and syphilis test results recorded",
+    "s": "phcstg2026:12.7",
+    "b": 1
+   },
+   {
+    "t": "Partner tracing emphasised; contact slips issued and recorded",
+    "s": "phcstg2026:12.7",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "Visit 1",
+    "phase": "Day 0",
+    "lead": "Milk the urethra if no discharge is visible. Treat on the day and emphasise partner tracing.",
+    "feed": [
+     {
+      "t": "Counsel; HIV test (negative → repeat after 6 weeks)",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     },
+     {
+      "t": "Condoms: promote, provide, demonstrate",
+      "s": "phcstg2026:12.2"
+     },
+     {
+      "t": "Partner notification and treatment (contact slip)",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     },
+     {
+      "t": "Adherence; circumcision promotion; cervical screening",
+      "s": "phcstg2026:12.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test",
+      "s": "phcstg2026:12.7",
+      "b": 1
+     },
+     {
+      "t": "Syphilis test",
+      "s": "phcstg2026:12.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "MUS"
+     },
+     {
+      "t": "Ceftriaxone 250 mg IM stat (dissolve in 0.9 mL lidocaine 1% without adrenaline)",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Azithromycin 1 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "t": "Partner has VDS: ADD metronidazole 2 g PO stat",
+      "s": "phcstg2026:12.7",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy (angioedema, anaphylaxis, bronchospasm): omit ceftriaxone, azithromycin 2 g PO stat",
+      "s": "phcstg2026:12.5",
+      "b": 1
+     },
+     {
+      "h": "Partners"
+     },
+     {
+      "t": "Partner (with or without symptoms): ceftriaxone 250 mg IM + azithromycin 1 g PO stat, plus treatment for any syndrome",
+      "s": "phcstg2026:12.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If scrotal swelling",
+    "phase": "MUS + SSW",
+    "feed": [
+     {
+      "t": "Scrotal support",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Exclude torsion clinically",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Testes rotated and elevated, trauma, or non-tender swelling not from sex → surgical opinion; suspected torsion = URGENT REFER",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     },
+     {
+      "t": "Otherwise: ceftriaxone 250 mg IM stat + azithromycin 1 g PO stat",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     },
+     {
+      "t": "Pain: ibuprofen 400 mg PO 8-hourly with food",
+      "s": "phcstg2026:12.8"
+     },
+     {
+      "t": "Review after 7 days (earlier if needed); not improving → surgical referral",
+      "s": "phcstg2026:12.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If ulcer / balanitis",
+    "phase": "Combined",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Syphilis test",
+      "s": "phcstg2026:12.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MUS + GUS: ceftriaxone 250 mg IM + azithromycin 1 g PO stat",
+      "s": "phcstg2026:12.14",
+      "b": 1
+     },
+     {
+      "t": "Ulcer present too: ADD aciclovir 400 mg PO 8-hourly × 7 d (only if HIV positive or unknown)",
+      "s": "phcstg2026:12.15"
+     },
+     {
+      "t": "MUS + balanitis: MUS regimen + clotrimazole cream 12-hourly × 7 d",
+      "s": "phcstg2026:12.14"
+     }
+    ]
+   },
+   {
+    "label": "If prostatitis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Catheter if retention",
+      "s": "adultstg2026:7.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick / MSU",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fever, perineal / pelvic pain, retention, tender prostate on PR",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     },
+     {
+      "t": "With urethritis: ceftriaxone 250 mg IM + azithromycin 1 g PO stat",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     },
+     {
+      "t": "No urethritis: ciprofloxacin 500 mg PO 12-hourly × 14 d",
+      "s": "adultstg2026:7.21"
+     },
+     {
+      "t": "Retention, high fever, no response → REFER",
+      "s": "phcstg2026:8.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Partners treated?",
+      "s": "phcstg2026:12.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Re-examine urethra",
+      "s": "adultstg2026:26.1",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cured → complete; condoms",
+      "d": 1
+     },
+     {
+      "t": "Discharge persists → suspected ceftriaxone 250 mg failure (next row)",
+      "s": "phcstg2026:12.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If persistent",
+    "phase": "Hospital level",
+    "feed": [
+     {
+      "t": "Referral letter: HIV status, treatment history, partner management",
+      "s": "adultstg2026:26.1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urethral swab 1 (2 cm, 5–10 s) → Amies → NHLS GC culture on ice < 24 h",
+      "s": "adultstg2026:26.1",
+      "b": 1
+     },
+     {
+      "t": "Urethral swab 2 → sterile container → NICD PCR",
+      "s": "adultstg2026:26.1",
+      "b": 1
+     },
+     {
+      "t": "Lab form: requesting clinician cellphone + email",
+      "s": "adultstg2026:26.1"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persistent discharge confirmed: ceftriaxone 1 g IM stat (in 3.6 mL lidocaine 1%) + azithromycin 2 g PO stat",
+      "s": "adultstg2026:26.2",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: gentamicin 6 mg/kg IM stat + azithromycin 2 g PO stat",
+      "s": "adultstg2026:26.2"
+     },
+     {
+      "t": "Return in 2 weeks for results and review",
+      "s": "adultstg2026:26.2",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 2",
+    "phase": "Results",
+    "feed": [
+     {
+      "t": "—"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture / PCR results",
+      "s": "adultstg2026:26.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat according to results",
+      "s": "adultstg2026:26.2"
+     }
+    ]
+   },
+   {
+    "label": "Week 6",
+    "phase": "HIV repeat",
+    "feed": [
+     {
+      "t": "Condoms; circumcision",
+      "s": "phcstg2026:12.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat HIV test if negative",
+      "s": "phcstg2026:12.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Positive → ART initiation",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "DISCHARGE TTO — MUS",
+   "items": [
+    {
+     "t": "Give on the day (stat, observed):",
+     "d": 1
+    },
+    {
+     "t": "Ceftriaxone 250 mg IM stat (dissolve in 0.9 mL lidocaine 1% without adrenaline)",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Azithromycin 1 g PO stat",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "t": "Partner has VDS: ADD metronidazole 2 g PO stat",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy (angioedema, anaphylaxis, bronchospasm): omit ceftriaxone, azithromycin 2 g PO stat",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    },
+    {
+     "h": "Take home"
+    },
+    {
+     "t": "Condoms · partner contact slip(s)",
+     "s": "phcstg2026:12.2"
+    },
+    {
+     "t": "Return in 7 days if discharge persists",
+     "s": "phcstg2026:12.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Partners · combined syndromes",
+   "items": [
+    {
+     "t": "Partner (with or without symptoms): ceftriaxone 250 mg IM + azithromycin 1 g PO stat, plus treatment for any syndrome",
+     "s": "phcstg2026:12.16",
+     "b": 1
+    },
+    {
+     "h": "SSW"
+    },
+    {
+     "t": "Otherwise: ceftriaxone 250 mg IM stat + azithromycin 1 g PO stat",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "Pain: ibuprofen 400 mg PO 8-hourly with food",
+     "s": "phcstg2026:12.8"
+    },
+    {
+     "h": "GUS"
+    },
+    {
+     "t": "Ulcer present too: ADD aciclovir 400 mg PO 8-hourly × 7 d (only if HIV positive or unknown)",
+     "s": "phcstg2026:12.15"
+    },
+    {
+     "h": "Balanitis"
+    },
+    {
+     "t": "Clotrimazole cream 12-hourly × 7 d",
+     "s": "phcstg2026:12.14"
+    }
+   ]
+  },
+  {
+   "title": "Escalate · REFER",
+   "items": [
+    {
+     "t": "Suspected torsion → URGENT surgical REFER",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "SSW not improving at 7 d → surgical opinion",
+     "s": "phcstg2026:12.8",
+     "b": 1
+    },
+    {
+     "t": "Persistent discharge → swabs + ceftriaxone 1 g IM + azithromycin 2 g",
+     "s": "adultstg2026:26.2",
+     "b": 1
+    },
+    {
+     "t": "Prostatitis: retention, no response → REFER urologist",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "t": "Child → REFER",
+     "s": "phcstg2026:12.5",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Before he leaves — all six",
+  "items": [
+   {
+    "t": "Stat doses given and recorded",
+    "s": "phcstg2026:12.7",
+    "b": 1
+   },
+   {
+    "t": "Torsion excluded if scrotal pain",
+    "s": "phcstg2026:12.8",
+    "b": 1
+   },
+   {
+    "t": "HIV and syphilis tested",
+    "s": "phcstg2026:12.7",
+    "b": 1
+   },
+   {
+    "t": "Partner slip(s) issued",
+    "s": "phcstg2026:12.7"
+   },
+   {
+    "t": "Condoms given and demonstrated",
+    "s": "phcstg2026:12.2"
+   },
+   {
+    "t": "Return date: 7 days if not better",
+    "s": "phcstg2026:12.7"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Day 7: discharge persists → hospital swabs and ceftriaxone 1 g + azithromycin 2 g",
+    "s": "adultstg2026:26.2",
+    "b": 1
+   },
+   {
+    "t": "Week 2: swab results",
+    "s": "adultstg2026:26.2"
+   },
+   {
+    "t": "Week 6: repeat HIV test if negative",
+    "s": "phcstg2026:12.2"
+   },
+   {
+    "t": "Circumcision promotion (keep using condoms)",
+    "s": "phcstg2026:12.2"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "STI treatment and partner record — UDS",
+  "period": "one sheet per episode; index patient, partners and review visits",
+  "params": [
+   {
+    "h": "Doses",
+    "items": [
+     {
+      "t": "Stat doses given under observation, time and initials recorded",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Observe 15–30 min after ceftriaxone IM (allergy)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Tests",
+    "items": [
+     {
+      "t": "HIV and syphilis test results recorded",
+      "s": "phcstg2026:12.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Partners",
+    "items": [
+     {
+      "t": "Partner tracing emphasised; contact slips issued and recorded",
+      "s": "phcstg2026:12.7",
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "scrotal pain with high or rotated testis",
+    "s": "phcstg2026:12.8",
+    "b": 1
+   },
+   {
+    "t": "rash, wheeze or swelling after ceftriaxone",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "unable to pass urine",
+    "s": "adultstg2026:7.21"
+   },
+   {
+    "t": "disclosure of violence or assault",
+    "s": "phcstg2026:12.2"
+   }
+  ],
+  "totals": [
+   "Partners notified",
+   "Partners treated",
+   "HIV result",
+   "Syphilis result"
+  ]
+ }
+}
