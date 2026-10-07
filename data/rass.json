@@ -1,0 +1,260 @@
+{
+  "id": "rass",
+  "type": "scale",
+  "short": "RASS",
+  "title": "Richmond Agitation–Sedation Scale (RASS)",
+  "population": "adult",
+  "age_range": "adults (ICU/ward); Paeds STG also lists RASS or COMFORT-B",
+  "setting": "casualty / ward / high care",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-07",
+  "tags": [
+    "scale",
+    "sedation",
+    "agitation",
+    "delirium",
+    "consciousness",
+    "ICU",
+    "ventilation",
+    "analgosedation",
+    "neuro",
+    "adult"
+  ],
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "SESSLER",
+      "title": "Sessler CN et al. The Richmond Agitation-Sedation Scale. Am J Respir Crit Care Med 2002;166:1338-44",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "components": [
+    {
+      "key": "RASS",
+      "name": "Richmond Agitation–Sedation Scale",
+      "min": -5,
+      "max": 4,
+      "items": [
+        {
+          "score": 4,
+          "term": "Combative",
+          "t": "Overtly combative, violent, immediate danger to staff",
+          "stimulation": "none",
+          "level": "red",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": 3,
+          "term": "Very agitated",
+          "t": "Pulls or removes tube(s) or catheter(s); aggressive",
+          "stimulation": "none",
+          "level": "red",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": 2,
+          "term": "Agitated",
+          "t": "Frequent non-purposeful movement, fights ventilator",
+          "stimulation": "none",
+          "level": "red",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": 1,
+          "term": "Restless",
+          "t": "Anxious but movements not aggressive or vigorous",
+          "stimulation": "none",
+          "level": "amber",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": 0,
+          "term": "Alert and calm",
+          "t": "",
+          "stimulation": "none",
+          "level": "green",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": -1,
+          "term": "Drowsy",
+          "t": "Not fully alert, but sustained awakening (eye opening/eye contact) to voice (≥10 s)",
+          "stimulation": "verbal",
+          "level": "green",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": -2,
+          "term": "Light sedation",
+          "t": "Briefly awakens with eye contact to voice (<10 s)",
+          "stimulation": "verbal",
+          "level": "green",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": -3,
+          "term": "Moderate sedation",
+          "t": "Movement or eye opening to voice (but no eye contact)",
+          "stimulation": "verbal",
+          "level": "blue",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": -4,
+          "term": "Deep sedation",
+          "t": "No response to voice, but movement or eye opening to physical stimulation",
+          "stimulation": "physical",
+          "level": "blue",
+          "s": "HOSP:23.20"
+        },
+        {
+          "score": -5,
+          "term": "Unarousable",
+          "t": "No response to voice or physical stimulation",
+          "stimulation": "physical",
+          "level": "blue",
+          "s": "HOSP:23.20"
+        }
+      ]
+    }
+  ],
+  "stimulation_groups": {
+    "none": "Without stimulation",
+    "verbal": "Verbal stimulation",
+    "physical": "Physical stimulation"
+  },
+  "formulas": [
+    {
+      "id": "rass",
+      "name": "RASS",
+      "expr": "Single score −5 to +4 (0 = alert and calm)",
+      "range": [
+        -5,
+        4
+      ],
+      "s": "HOSP:23.20"
+    }
+  ],
+  "procedure": [
+    {
+      "n": 1,
+      "t": "Observe the patient",
+      "detail": "Alert and calm → 0 · restless or agitated → +1 to +4",
+      "s": "SESSLER",
+      "d": true
+    },
+    {
+      "n": 2,
+      "t": "If not alert: say name loudly, ask to open eyes and look at you",
+      "detail": "Eye contact sustained (≥10 s) → −1 · eye contact <10 s → −2 · any movement, no eye contact → −3",
+      "s": "SESSLER",
+      "d": true
+    },
+    {
+      "n": 3,
+      "t": "No response to voice: shake shoulder, then sternal rub if no response",
+      "detail": "Any movement → −4 · no response → −5",
+      "s": "SESSLER",
+      "d": true
+    }
+  ],
+  "interpretation_stg": [
+    {
+      "min": -2,
+      "max": 0,
+      "t": "Target RASS −2 to 0; lighter sedation preferred over deeper",
+      "s": "HOSP:23.19",
+      "level": "green"
+    },
+    {
+      "t": "Exclude and manage delirium before routine sedation",
+      "s": "HOSP:23.19",
+      "level": "amber"
+    },
+    {
+      "t": "Analgesia first (analgo-sedation), then sedate if still needed",
+      "s": "HOSP:23.19",
+      "level": "amber"
+    },
+    {
+      "t": "Sedation indicated for: severe acute respiratory failure, status epilepticus, raised ICP/TBI, status asthmaticus",
+      "s": "HOSP:23.19",
+      "level": "amber"
+    },
+    {
+      "t": "CAM-ICU-7: RASS 0 = 0 · RASS ±1 = 1 · RASS >+1 or <−1 = 2 (altered consciousness)",
+      "s": "HOSP:23.23",
+      "level": "amber"
+    },
+    {
+      "t": "Children: RASS or COMFORT-B, 4–8-hourly",
+      "s": "PAED:23.4",
+      "level": "amber"
+    }
+  ],
+  "sedatives": {
+    "title": "Commonly used sedatives in the ICU (Table 23.4)",
+    "s": "HOSP:23.21",
+    "rows": [
+      {
+        "drug": "Propofol IV",
+        "load": "—",
+        "maint": "5–50 mcg/kg/min (50–200 mg/h); titrate every 5 min",
+        "onset": "1 min",
+        "duration": "3–10 min",
+        "ae": "PRIS, vasodilation, negative inotropy, ↑triglycerides"
+      },
+      {
+        "drug": "Midazolam IV",
+        "load": "1–5 mg",
+        "maint": "1–5 mg/h",
+        "onset": "<5 min",
+        "duration": "30 min",
+        "ae": "↑delirium risk"
+      },
+      {
+        "drug": "Lorazepam IV",
+        "load": "1–4 mg",
+        "maint": "1–5 mg/h",
+        "onset": "15 min",
+        "duration": "6–8 h",
+        "ae": "↑delirium risk"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "t": "Record the score and the stimulus used; reassess after every dose change",
+      "d": true
+    },
+    {
+      "t": "Positive = agitation (look for pain, hypoxia, delirium, withdrawal); negative = sedation",
+      "d": true
+    },
+    {
+      "t": "RASS −4/−5: GCS and airway first — not a target outside ventilated care",
+      "d": true
+    }
+  ],
+  "discrepancies": [
+    {
+      "t": "STG Table 23.3 cites Khan 2017 (CAM-ICU-7) and Table 23.1 (BPS) cites Sessler 2002 — the two citations appear swapped; RASS source is Sessler 2002 (also cited at p.23.54)",
+      "s": "HOSP:23.20"
+    }
+  ],
+  "dagger_note": "d=true items are not in the SA STG (Sessler 2002).",
+  "card_note": "✚ = SA STG (pages listed above). Unmarked content: Sessler 2002 (original RASS paper, cited by the STG)."
+}

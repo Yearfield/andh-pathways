@@ -52,6 +52,7 @@
     {"id": "WELLS-DVT", "short": "Wells DVT", "title": "Wells PS et al. Lancet 1997;350:1795; N Engl J Med 2003;349:1227", "type": "paper", "country": "intl"},
     {"id": "PERC", "short": "PERC", "title": "Kline JA et al. PERC rule. J Thromb Haemost 2004;2:1247 (via MDCalc)", "type": "paper", "country": "intl", "url": "https://www.mdcalc.com/calc/347/perc-rule-pulmonary-embolism", "accessed": "2026-10-06"},
     {"id": "ADJUST", "short": "ADJUST-PE", "title": "Righini M et al. ADJUST-PE. JAMA 2014;311:1117", "type": "paper", "country": "intl"},
+    {"id": "SESSLER", "short": "Sessler 2002", "title": "Sessler CN et al. The Richmond Agitation-Sedation Scale. Am J Respir Crit Care Med 2002;166:1338-44", "type": "paper", "country": "intl"},
     {"id": "stg-adult","short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
     "1": {"title": "Chapter 1", "offset": 0},
     "6": {"title": "Chapter 6", "offset": 0},

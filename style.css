@@ -668,6 +668,19 @@ section.card.red .shead .st { color: var(--warn-ink); }
 .srow2 { border-left: 4px solid var(--tab); padding-left: 8px; display: flex; flex-direction: column; gap: 6px; }
 .srl { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; } .srl b { font-family: var(--font-head); font-size: .85rem; letter-spacing: .6px; } .srl span { font-size: .78rem; color: var(--muted); }
 .srow2 .sn { font-weight: 700; } .srow2 .sd { font-weight: 700; color: var(--tab); } .srow2 .sa { font-size: .82rem; color: var(--ink-2); }
+
+/* RASS wheel: result card under the wheel (the wheel itself reuses the GCS plate / sector styles) */
+.rres { background: var(--panel); border: 1.5px solid var(--line); border-radius: var(--r); padding: 10px 14px; display: flex; flex-direction: column; gap: 8px; }
+.rr-top { display: flex; align-items: flex-start; gap: 12px; }
+.rscore { flex: 0 0 auto; min-width: 58px; text-align: center; padding: 6px 8px; border-radius: 10px; font-family: var(--font-head); font-weight: 700; font-size: 1.7rem; line-height: 1; font-variant-numeric: tabular-nums; color: #fff; }
+.rscore.r-red { background: #b91c1c; } .rscore.r-amber { background: #b7791f; } .rscore.r-green { background: var(--ok); } .rscore.r-blue { background: #2f6fa8; }
+.rr-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; } .rr-main b { font-size: 1.1rem; } .rr-main span { color: var(--ink-2); line-height: 1.35; }
+.rr-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.rstim { font-size: .78rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: #e8edec; color: var(--ink-2); }
+.rtarget { font-size: .82rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; } .rtarget.in { background: var(--ok-bg); color: var(--ok); } .rtarget.out { background: #fff4de; color: #7d5212; }
+.rr-empty { color: var(--muted); } .rrbar { display: flex; justify-content: flex-end; margin-top: -2px; } .rdet { font-size: .85rem; color: var(--muted); }
+.rdisc { border-color: #c9a24a; background: #fff9e8; }
+#rsed .shead .st { font-size: .95rem; }
 /* ---------- weight calculator ---------- */
 .wpad { display: flex; align-items: center; gap: 12px; padding: 12px 14px 4px; } .wlabel { font-weight: 700; }
 .winp { display: flex; align-items: center; gap: 8px; } .winp input { width: 120px; height: 52px; font-size: 1.4rem; font-weight: 700; text-align: center; border: 2px solid var(--tab); border-radius: 12px; background: #fff; color: var(--ink); }

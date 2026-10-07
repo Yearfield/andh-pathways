@@ -760,6 +760,7 @@ function scUpdate() {
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
   const d = S.sd[id] ||= await loadJSON("data/" + e.file);
+  if (d.id === "rass") return rassView(id, e, d); // RASS wheel
   if (d.versions) return checkView(id, e, d); // checklist score cards (Wells PE / DVT)
   if (d.type === "calculator") return calcView(id, d, tab, key);
   if (d.type === "range") return rangeView(id, d, tab);
@@ -1040,6 +1041,73 @@ async function checkView(id, e, d) {
     <p class="hint">${esc(d.card_note)}</p>${e.pdf ? `<div class="toolrow" style="justify-content:flex-start;padding:0 4px"><a class="btn" href="${esc(e.pdf)}" target="_blank" rel="noopener">Printable PDF</a></div>` : ""}
     ${scSrcList(d)}${await scPdfRows(d)}</main>`;
   wDdimer();
+}
+
+/* ---------- RASS wheel (wheel/rass-wheel.svg). Every score has 3 sectors (number, icon, content ring); ALL text comes from data/rass.json ---------- */
+const rMinus = n => n > 0 ? "+" + n : n < 0 ? "−" + Math.abs(n) : "0"; // true minus sign
+async function rassLoad() { // fetched once, then served from the service-worker cache, so it works offline
+  if (S.rassSvg) return;
+  try { const r = await fetch("wheel/rass-wheel.svg"); if (!r.ok) throw new Error(r.status); S.rassSvg = await r.text(); }
+  catch (e) { console.warn("RASS wheel could not be loaded:", e.message); }
+}
+function rassCheck(d) { // console warnings only
+  const bad = [], c = d.components[0], r = d.formulas[0].range, sc = c.items.map(i => i.score).sort((a, b) => a - b);
+  if (r[0] !== c.min || r[1] !== c.max) bad.push(`component range ${c.min}..${c.max} does not match formulas[0].range ${r.join("..")}`);
+  for (let v = c.min; v <= c.max; v++) if (sc.filter(x => x === v).length !== 1) bad.push(`score ${v} should have exactly one item`);
+  c.items.forEach(i => { if (!d.stimulation_groups[i.stimulation]) bad.push(`item ${i.score}: unknown stimulation group "${i.stimulation}"`); });
+  if (S.rassSvg) for (let v = c.min; v <= c.max; v++) { const n = (S.rassSvg.match(new RegExp(`class="opt" data-s="${v}"`, "g")) || []).length; if (n !== 3) bad.push(`wheel has ${n} sectors for score ${v} (expected 3)`); }
+  return bad;
+}
+const rassItem = d => d.components[0].items.find(i => i.score === S.sc.sel);
+function rassResult(d) {
+  const it = rassItem(d), tg = d.interpretation_stg.find(b => b.min != null), grp = d.stimulation_groups;
+  if (!it) return `<div class="rr-empty">Tap a section of the wheel.</div>`;
+  const inT = tg && it.score >= tg.min && it.score <= tg.max;
+  return `<div class="rr-top"><span class="rscore r-${esc(it.level)}">${rMinus(it.score)}</span><div class="rr-main"><b>${esc(it.term)}</b>${it.t ? `<span>${esc(it.t)}</span>` : ""}</div>${plus(it.s)}</div>
+    <div class="rr-tags"><span class="rstim">${esc(grp[it.stimulation] || it.stimulation)}</span>${tg ? (inT ? `<span class="rtarget in">Target RASS ${rMinus(tg.min)} to ${rMinus(tg.max)}${plus(tg.s)}</span>` : `<span class="rtarget out">Outside target</span>`) : ""}</div>`;
+}
+function rassPaint() { // select = dark outline on all three sectors of the score, the others fade; centre circle shows the signed score and its term
+  const d = S.sc.d, svg = $("[data-wheel='rass']"); if (!svg) return;
+  const sel = S.sc.sel, hl = $(".hl", svg); hl.innerHTML = "";
+  $$(".opt", svg).forEach(p => { const v = +p.dataset.s; p.classList.toggle("dim", sel != null && v !== sel);
+    if (sel != null && v === sel) { const c = document.createElementNS("http://www.w3.org/2000/svg", "path"); c.setAttribute("d", p.getAttribute("d")); hl.appendChild(c); } });
+  const it = rassItem(d), r = d.formulas[0].range;
+  $(".res-main", svg).textContent = it ? rMinus(it.score) : "RASS"; $(".res-sub", svg).textContent = it ? it.term : `${rMinus(r[0])} to ${rMinus(r[1])}`;
+  $("#rres").innerHTML = rassResult(d);
+}
+function rassSed() {
+  const d = S.sc.d, s = d.sedatives, open = S.sc.sedOpen;
+  $("#rsed").innerHTML = `<h2><button class="shead" data-rsed aria-expanded="${open}"><span class="st">${esc(s.title)}</span>${ico("down")}</button></h2>` + (open
+    ? `<div class="tscroll"><table class="dtab"><thead><tr><th>Drug</th><th>Load</th><th>Maintenance</th><th>Onset</th><th>Duration</th><th>Adverse effects</th></tr></thead><tbody>${s.rows.map(r =>
+      `<tr><th>${esc(r.drug)}</th><td>${esc(r.load)}</td><td>${esc(r.maint)}</td><td>${esc(r.onset)}</td><td>${esc(r.duration)}</td><td>${esc(r.ae)}</td></tr>`).join("")}</tbody></table></div><div class="drugsrc" style="padding:6px 14px 10px">${plus(s.s)}</div>` : "");
+  $("#rsed").classList.toggle("closed", !open);
+}
+document.addEventListener("click", e => {
+  if (S.sc?.d?.id !== "rass") return;
+  const p = e.target.closest?.(".wheel-svg .opt");
+  if (p) { const v = +p.dataset.s; S.sc.sel = S.sc.sel === v ? null : v; rassPaint(); return; } // tap again to clear
+  if (e.target.closest?.("[data-rreset]")) { S.sc.sel = null; rassPaint(); return; }
+  if (e.target.closest?.("[data-rsed]")) { S.sc.sedOpen = !S.sc.sedOpen; rassSed(); }
+});
+async function rassView(id, e, d) {
+  await rassLoad();
+  if (!S.sc || S.sc.id !== id) { // fresh card: nothing carries over between patients, nothing is stored
+    const bad = [...srcCheck(d), ...rassCheck(d)]; if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
+    S.sc = { id, d, sel: null, sedOpen: false, cor: new Set(), vars: {} }; }
+  S.sc.d = d;
+  const mark = x => `${scDag(x.d)}${plus(x.s)}`, sec = (title, inner) => `<section class="card"><h2 class="ctitle">${title}</h2>${inner}</section>`;
+  const how = sec("How to assess", `<ol class="steps2">${d.procedure.map(p => `<li><span class="n">${p.n}</span><div class="body"><span class="txt"><b>${esc(p.t)}</b>${mark(p)}</span>${p.detail ? `<span class="rdet">${esc(p.detail)}</span>` : ""}</div></li>`).join("")}</ol>`);
+  const stg = sec("SA guidelines", `<ul class="items bands">${d.interpretation_stg.map(b => `<li class="band lvl-${esc(b.level)} on"><div class="body"><span class="txt">${esc(b.t)}${mark(b)}</span></div></li>`).join("")}</ul>`);
+  const notes = (d.notes || []).length ? sec("Notes", `<ul class="items">${d.notes.map(n => `<li><div class="body"><span class="txt">${esc(n.t)}${mark(n)}</span></div></li>`).join("")}</ul>`) : "";
+  const disc = (d.discrepancies || []).length ? `<section class="card rdisc"><h2 class="ctitle">STG discrepancy <span class="dag">‡</span></h2><ul class="items">${d.discrepancies.map(x => `<li><div class="body"><span class="txt">${esc(x.t)}${plus(x.s)}</span></div></li>`).join("")}</ul></section>` : "";
+  app.innerHTML = cardHeader(d, TYPE_LABEL[d.type]).replace("{{extra}}", "") + `<main class="fade scorepage rass"><p class="hint">${esc(d.setting)} · ${esc(d.hospital)} · updated ${esc(d.updated)}. ${esc(d.dagger_note)}</p>
+    <div class="wplate" id="rwheel">${S.rassSvg ?? `<p class="empty">The wheel could not be loaded. Open the app once with signal.</p>`}</div>
+    <section class="rres" id="rres" aria-live="polite"></section><div class="rrbar"><button class="wreset" data-rreset>Reset</button></div>
+    ${how}${stg}${notes}${disc}
+    <section class="card closed" id="rsed"></section>
+    <p class="hint">${esc(d.card_note)}</p>${e.pdf ? `<div class="toolrow" style="justify-content:flex-start;padding:0 4px"><a class="btn" href="${esc(e.pdf)}" target="_blank" rel="noopener">Printable PDF</a></div>` : ""}
+    ${scSrcList(d)}${await scPdfRows(d)}</main>`;
+  rassSed(); rassPaint();
 }
 
 /* ---------- events ---------- */
