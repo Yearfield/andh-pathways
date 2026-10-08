@@ -1,0 +1,1807 @@
+{
+ "id": "hte-adult",
+ "short": "HTE_Adult",
+ "title": "Hypertensive emergency (adult)",
+ "population": "Adult, non-pregnant",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-08",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pregnant / ≤ 6 weeks postpartum (eclampsia, severe PET) → PET pathway",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "Acute stroke / TIA → Stroke / TIA pathway (lower BP only if > 220/120)",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    },
+    {
+     "t": "Cocaine / amphetamine toxicity → Cocaine / Amphetamines pathways (benzodiazepines first)",
+     "s": "adultstg2026:19.30",
+     "b": 1
+    },
+    {
+     "t": "Child → paediatric STG",
+     "d": 1
+    },
+    {
+     "t": "Without a life-threatening complication → Hypertensive urgency pathway",
+     "s": "adultstg2026:3.42"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Severe HTN: SBP ≥ 180 and/or DBP ≥ 110 mmHg",
+     "s": "adultstg2026:3.42",
+     "b": 1
+    },
+    {
+     "t": "PLUS ≥ 1 life-threatening complication:",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "Hypertensive encephalopathy",
+     "s": "adultstg2026:3.43",
+     "k": "sub"
+    },
+    {
+     "t": "Unstable angina / myocardial infarction",
+     "s": "adultstg2026:3.43",
+     "k": "sub"
+    },
+    {
+     "t": "Acute LVF with severe pulmonary oedema",
+     "s": "adultstg2026:3.43",
+     "k": "sub"
+    },
+    {
+     "t": "Acute kidney failure with encephalopathy",
+     "s": "adultstg2026:3.43",
+     "k": "sub"
+    },
+    {
+     "t": "Acute aortic dissection",
+     "s": "adultstg2026:3.43",
+     "k": "sub"
+    },
+    {
+     "t": "Usually present: grade 3–4 retinopathy, impaired renal function, proteinuria. Tick working dx on the differential sheet.",
+     "s": "adultstg2026:3.43",
+     "k": "info"
+    },
+    {
+     "t": "Arrival BP ____ · × 0.75 = ____ (floor for first 2 h) · Wt ____ kg · Time ____",
+     "s": "adultstg2026:3.43",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Transfer now (after first stabilisation) = any one of",
+   "items": [
+    {
+     "t": "Suspected aortic dissection",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Falling GCS / recurrent seizures",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Needs ventilation / NIPPV",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "STEMI — reperfusion decision",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "AKI with uraemic features → dialysis",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "No IV labetalol / GTN or infusion pump",
+     "d": 1
+    },
+    {
+     "t": "Not at 160/100 by 6 h, or organ features worsening",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9) not settling",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known HTN since ____",
+     "k": "value"
+    },
+    {
+     "t": "Current antihypertensives",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "Adherence / ran out of Rx",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "Pre-referral dose given (time)",
+     "s": "phcstg2026:4.25"
+    },
+    {
+     "t": "DM / CKD / IHD / stroke",
+     "s": "adultstg2026:3.35"
+    },
+    {
+     "t": "Last creatinine / eGFR",
+     "s": "adultstg2026:3.38"
+    },
+    {
+     "t": "Previous BP admissions",
+     "d": 1
+    },
+    {
+     "t": "ART regimen (interactions)"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Neurological",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Severe headache",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Visual disturbance",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Confusion",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Cardiac / respiratory"
+    },
+    {
+     "t": "Chest pain (onset)",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Breathless at rest",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Orthopnoea / PND",
+     "d": 1
+    },
+    {
+     "t": "Tearing pain → back",
+     "d": 1
+    },
+    {
+     "h": "Renal"
+    },
+    {
+     "t": "Little / no urine",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Haematuria, frothy urine",
+     "d": 1
+    },
+    {
+     "h": "Triggers"
+    },
+    {
+     "t": "Stopped antihypertensives",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "Cocaine / tik",
+     "s": "adultstg2026:19.30"
+    },
+    {
+     "t": "Alcohol withdrawal",
+     "d": 1
+    },
+    {
+     "t": "NSAIDs / steroids",
+     "d": 1
+    },
+    {
+     "h": "HIV / TB · women"
+    },
+    {
+     "t": "HIV status, ART"
+    },
+    {
+     "t": "LMP / pregnant → PET",
+     "s": "adultstg2026:3.43"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock signs",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "h": "BP classification (STG)"
+    },
+    {
+     "t": "SBP ≥ 180 and/or DBP ≥ 110 severe",
+     "s": "adultstg2026:3.42",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Acute stroke and BP > 220/120",
+     "s": "adultstg2026:14.3",
+     "k": "yn"
+    },
+    {
+     "t": "BP different between arms",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Eyes — fundoscopy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Papilloedema",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Haemorrhages / exudates",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Retinopathy grade ____",
+     "s": "adultstg2026:3.43",
+     "k": "value"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS ____ (baseline)",
+     "k": "value"
+    },
+    {
+     "t": "Focal deficit → Stroke",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Neck stiffness (SAH)",
+     "d": 1
+    },
+    {
+     "t": "Agitated / tremor",
+     "d": 1
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Palpable bladder"
+    },
+    {
+     "t": "Pulsatile mass",
+     "d": 1
+    },
+    {
+     "h": "CVS"
+    },
+    {
+     "t": "Pulse deficit / asymmetry",
+     "d": 1
+    },
+    {
+     "t": "New diastolic murmur",
+     "d": 1
+    },
+    {
+     "t": "Gallop / raised JVP"
+    },
+    {
+     "t": "Cold, clammy, poorly perfused",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Crepitations",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Frothy sputum",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Fowler's position tolerated / needed",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "12-lead ECG",
+   "items": [
+    {
+     "t": "Findings on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "ST elevation / new LBBB → ACS branch + ACS pathway",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Ischaemia, no STE → GTN IV + furosemide (chart)",
+     "s": "adultstg2026:3.44"
+    },
+    {
+     "t": "Dissection suspected: no thrombolysis",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Repeat with any new chest pain",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Urine dipstick + HGT",
+   "items": [
+    {
+     "t": "Dipstick: ____ · HGT: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Protein / blood: renal involvement → creatinine, K⁺ now",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "HGT low with confusion: treat, re-assess (mimic)",
+     "d": 1
+    },
+    {
+     "t": "Women 15–49 y: urine β-hCG — positive → PET",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Catheter for hourly urine output",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "Severe pulmonary oedema",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Hypoxia on O₂",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Ongoing chest pain",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Tearing chest / back pain",
+     "d": 1
+    },
+    {
+     "t": "New focal deficit (stroke)",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Pregnant / postpartum",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Sympathomimetic toxicity",
+     "s": "adultstg2026:19.30"
+    },
+    {
+     "t": "Hypoglycaemia (mimic)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HYPERTENSIVE EMERGENCY → controlled lowering, then REFER",
+   "s": "adultstg2026:3.43",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (resus / high-care bed until transfer) — stabilise, then continue on the 24-hour hourly chart and the 12-hour nursing BP record",
+   "s": "adultstg2026:3.43",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Acute aortic dissection",
+   "branch": "If dissection",
+   "features": [
+    {
+     "t": "Tearing chest pain to the back",
+     "d": 1
+    },
+    {
+     "t": "Pulse / BP difference between arms",
+     "d": 1
+    },
+    {
+     "t": "New diastolic murmur",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG (exclude STEMI)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "CXR: wide mediastinum",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "REFER for CT",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No thrombolysis (contraindicated)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "No anticoagulation",
+     "d": 1
+    },
+    {
+     "t": "Labetalol IV first-line for HR + BP",
+     "d": 1
+    },
+    {
+     "t": "Morphine IV titrated, max 10 mg",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediately (CT, cardiothoracic)",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute coronary syndrome (UA / MI)",
+   "branch": "If ACS",
+   "features": [
+    {
+     "t": "Ischaemic chest pain",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Sweating, nausea"
+    },
+    {
+     "t": "ST / T changes",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial ECG",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Troponin if available",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "GTN IV 5–10 mcg/min + furosemide IV 40–80 mg",
+     "s": "adultstg2026:3.44"
+    },
+    {
+     "t": "Aspirin 150 mg chewed + clopidogrel 300 mg (ACS pathway)",
+     "s": "adultstg2026:3.10"
+    },
+    {
+     "t": "Refractory HTN: thrombolysis relative CI → specialist",
+     "s": "adultstg2026:3.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — STEMI / ongoing pain (PCI)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute LVF / pulmonary oedema",
+   "branch": "If LVF / pulm. oedema",
+   "features": [
+    {
+     "t": "Extreme breathlessness at rest",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Crepitations, frothy sputum",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Sweaty, poorly perfused",
+     "s": "adultstg2026:20.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "SpO₂, ECG",
+     "s": "adultstg2026:20.16",
+     "b": 1
+    },
+    {
+     "t": "CXR",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "U&E, creatinine",
+     "s": "adultstg2026:20.16",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fowler's position; O₂ 40% 6–8 L/min",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Furosemide 40 mg slow IV; ISDN 5 mg SL or GTN IV",
+     "s": "adultstg2026:20.16"
+    },
+    {
+     "t": "Labetalol: caution · no morphine",
+     "s": "adultstg2026:20.17",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If NIPPV / ventilation needed, or no response",
+     "s": "adultstg2026:20.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypertensive encephalopathy",
+   "branch": "If encephalopathy",
+   "features": [
+    {
+     "t": "Severe headache, visual disturbance",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Confusion, seizures, coma",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Papilloedema",
+     "s": "adultstg2026:3.43"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "GCS, HGT, Na⁺",
+     "s": "adultstg2026:14.14",
+     "b": 1
+    },
+    {
+     "t": "Fundoscopy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "REFER for CT to exclude stroke / bleed",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Labetalol IV 2 mg/min to 1–2 mg/kg",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "≤ 25% fall in 2 h, 160/100 by 6 h",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Seizure: lorazepam 4 mg IV / midazolam 10 mg",
+     "s": "adultstg2026:14.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — specialist / high care",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "AKI with encephalopathy",
+   "branch": "If AKI",
+   "features": [
+    {
+     "t": "Oliguria, oedema"
+    },
+    {
+     "t": "Confusion, seizures (uraemia)",
+     "s": "adultstg2026:23.7"
+    },
+    {
+     "t": "Haematuria / proteinuria",
+     "s": "adultstg2026:3.43"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Creatinine, urea, K⁺",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "VBG",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Urine dipstick, catheter output"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Furosemide IV 40–80 mg if overloaded",
+     "s": "adultstg2026:3.44"
+    },
+    {
+     "t": "Treat hyperkalaemia (STG 7.2.1)",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "ACE-I only with renal monitoring",
+     "s": "adultstg2026:3.44"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — dialysis (uraemia, overload, K⁺, acidosis)",
+     "s": "adultstg2026:23.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Malignant / accelerated HTN (no acute organ failure)",
+   "features": [
+    {
+     "t": "Grade 3–4 retinopathy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Impaired renal function, proteinuria",
+     "s": "adultstg2026:3.43"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Fundoscopy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Creatinine, urine dipstick / ACR",
+     "s": "adultstg2026:3.38",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Oral 2-agent Rx as for urgency (HTU pathway)",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Enalapril 2.5 mg test dose if creatinine allows",
+     "s": "adultstg2026:3.44"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — complicated urgency",
+     "s": "adultstg2026:3.42",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute stroke / ICH / SAH",
+   "features": [
+    {
+     "t": "Focal deficit",
+     "s": "adultstg2026:14.1"
+    },
+    {
+     "t": "Thunderclap headache, neck stiffness",
+     "s": "adultstg2026:14.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT",
+     "b": 1
+    },
+    {
+     "t": "REFER for CT",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stroke pathway: lower only if > 220/120, to ~180/110 over 24 h (amlodipine 5 mg)",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT",
+     "s": "adultstg2026:14.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Eclampsia / severe PET",
+   "features": [
+    {
+     "t": "Pregnant ≥ 20 wk or postpartum",
+     "s": "adultstg2026:6.8"
+    },
+    {
+     "t": "Proteinuria, seizures",
+     "s": "adultstg2026:6.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine β-hCG",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Dipstick"
+    }
+   ],
+   "manage": [
+    {
+     "t": "PET pathway (MgSO₄, nifedipine)",
+     "s": "adultstg2026:6.9",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per PET pathway"
+    }
+   ]
+  },
+  {
+   "dx": "Cocaine / amphetamine toxicity",
+   "features": [
+    {
+     "t": "Agitation, dilated pupils, sweating",
+     "s": "adultstg2026:19.31"
+    },
+    {
+     "t": "Tachycardia, hyperthermia",
+     "s": "adultstg2026:19.30"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine drug screen",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "CK, ECG",
+     "s": "adultstg2026:19.30",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzodiazepines first",
+     "s": "adultstg2026:19.30"
+    },
+    {
+     "t": "No β-blockers other than labetalol",
+     "s": "adultstg2026:19.30",
+     "b": 1
+    },
+    {
+     "t": "Own pathway"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If organ complication persists",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Fall ≤ 25% in the first 30 min – 2 h, then 160/100 by 2–6 h · branch rows by working diagnosis",
+  "columns": {
+   "feed": "BP target & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "BP + pulse every 15 min for the first 2 h and during any IV titration",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "BP + pulse every 30 min to 6 h, then hourly to 24 h",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "RR + SpO₂ with each BP",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "GCS hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Urine output hourly (catheter)",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Infusion rate + cumulative dose with each BP",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Record on the 12-hour nursing BP record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for pre-referral amlodipine 10 mg oral or furosemide 40 mg IV (dose, time) — do not repeat. Call the specialist early: the true emergency is preferably managed by a specialist.",
+    "feed": [
+     {
+      "t": "Resus / high-care bed, cardiac monitor",
+      "d": 1
+     },
+     {
+      "t": "Do not lower BP by > 25% within 30 min – 2 h (floor in patient box)",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "Then 160/100 over the next 2–6 h",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "IV line; no fluid boluses unless shocked",
+      "d": 1
+     },
+     {
+      "t": "Catheter, strict fluid balance",
+      "d": 1
+     },
+     {
+      "t": "Nil by mouth until GCS and swallow safe",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT · 12-lead ECG",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "Creatinine, urea, U&E (Na⁺, K⁺)",
+      "s": "adultstg2026:3.44",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick (protein, blood)",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "FBC · CXR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Urine β-hCG women 15–49 y",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Troponin if chest pain · VBG if AKI / distress",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Fundoscopy: papilloedema, haemorrhages",
+      "s": "adultstg2026:3.43"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Airway / breathing"
+     },
+     {
+      "t": "Oxygen if SpO₂ < 94%; pulmonary oedema: 40% mask 6–8 L/min",
+      "s": "adultstg2026:3.10"
+     },
+     {
+      "t": "Pulmonary oedema: sit up (Fowler's)",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "h": "Seizure",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "t": "Lorazepam 4 mg IV (≤ 2 mg/min) OR midazolam 10 mg IV / IM / buccal OR diazepam 10 mg IV over ≥ 5 min",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "t": "Check HGT",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "h": "Acute stroke on exam"
+     },
+     {
+      "t": "→ Stroke pathway (lower only if > 220/120)",
+      "s": "adultstg2026:14.3"
+     },
+     {
+      "h": "Start BP lowering — by branch",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Labetalol IV 2 mg/min to a total of 1–2 mg/kg (1 mg/mL: 120 mL/h). Caution in pulmonary oedema",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "Ischaemia / CCF / pulmonary oedema: GTN IV 5–10 mcg/min AND furosemide IV 40–80 mg",
+      "s": "adultstg2026:3.44",
+      "b": 1
+     },
+     {
+      "t": "No IV agent / pump: enalapril 2.5 mg oral test dose and REFER",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "h": "Never"
+     },
+     {
+      "t": "Sublingual / chewed nifedipine",
+      "d": 1
+     },
+     {
+      "t": "β-blocker other than labetalol if cocaine / tik",
+      "s": "adultstg2026:19.30"
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "BP ____/____ — above the 25% floor?",
+      "s": "adultstg2026:3.43",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review ECG, HGT",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "GTN: +5 mcg/min every 5 min to 20 mcg/min, then +20 mcg/min every 5 min",
+      "s": "adultstg2026:3.6"
+     },
+     {
+      "t": "At the floor: slow / pause the infusion",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "BP ____/____ · urine ____ mL",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺ results",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pulmonary oedema not responding at 20–30 min: furosemide 80 mg IV",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "Labetalol cumulative ____ mg (stop at max)",
+      "s": "adultstg2026:3.43",
+      "k": "value"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "≤ 25% check",
+    "feed": [
+     {
+      "t": "Fall ≤ 25% from arrival — not more · BP ____/____",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS vs baseline",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Next: aim 160/100 over 2–6 h",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Labetalol max reached and BP still severe: add GTN / oral agent, discuss with specialist",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Toward target",
+    "feed": [
+     {
+      "t": "BP ____/____ · urine output trend",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, creatinine if furosemide / AKI",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pulmonary oedema responding: furosemide 40 mg IV again (2–4 h)",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "Creatinine and K⁺ acceptable: enalapril 2.5 mg oral test dose",
+      "s": "adultstg2026:3.44"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Target",
+    "feed": [
+     {
+      "t": "160/100 reached? ____/____",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG if ACS branch",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reached: start / continue oral Rx, wean IV",
+      "d": 1
+     },
+     {
+      "t": "Not reached, or organ features worse → transfer now (§2)",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Oral Rx",
+    "feed": [
+     {
+      "t": "Hold 160/100; no further fast fall",
+      "s": "adultstg2026:3.41"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enalapril: increase by response to max 20 mg daily; monitor renal function",
+      "s": "adultstg2026:3.44"
+     },
+     {
+      "t": "Add a second oral agent (HTU chart, side 2)",
+      "s": "adultstg2026:3.43"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Transfer / step-down",
+    "feed": [
+     {
+      "t": "Then DBP 100 over 48–72 h",
+      "s": "adultstg2026:3.43"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transferred: handover (BP trend, doses with times, ECG, results)"
+     },
+     {
+      "t": "Kept at ANDH with specialist agreement: continue on the HTU chart from its 24 h row",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If encephalopathy",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "≤ 25% in 2 h, 160/100 by 6 h",
+      "s": "adultstg2026:3.43"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS hourly",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HGT, Na⁺",
+      "s": "adultstg2026:14.14",
+      "b": 1
+     },
+     {
+      "t": "REFER for CT to exclude stroke / bleed",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Labetalol IV 2 mg/min to 1–2 mg/kg",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Seizures: benzodiazepine (side 1) and treat the cause",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "t": "Focal signs → Stroke pathway BP rule",
+      "s": "adultstg2026:14.3"
+     }
+    ]
+   },
+   {
+    "label": "If LVF / pulm. oedema",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fowler's position",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "Restrict fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, ECG, U&E",
+      "s": "adultstg2026:20.16",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "O₂ 40% 6–8 L/min · furosemide 40 mg slow IV (80 mg if no response in 20–30 min)",
+      "s": "adultstg2026:20.16"
+     },
+     {
+      "t": "ISDN 5 mg SL every 5–10 min, or GTN IV · labetalol with caution · no morphine",
+      "s": "adultstg2026:20.17",
+      "b": 1
+     },
+     {
+      "t": "Consider NIPPV → REFER if needed",
+      "s": "adultstg2026:20.16"
+     }
+    ]
+   },
+   {
+    "label": "If ACS",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Pain-free; BP per side 1"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Serial ECG",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Troponin",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "GTN IV 5–10 mcg/min (titrate) + furosemide IV 40–80 mg",
+      "s": "adultstg2026:3.44"
+     },
+     {
+      "t": "Aspirin 150 mg chewed + clopidogrel 300 mg (ACS pathway)",
+      "s": "adultstg2026:3.10"
+     },
+     {
+      "t": "STEMI: refractory HTN is a relative CI to thrombolysis → specialist / REFER",
+      "s": "adultstg2026:3.4"
+     }
+    ]
+   },
+   {
+    "label": "If AKI",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Hourly urine output; fluid balance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, urea, K⁺",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "VBG",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Furosemide IV 40–80 mg if overloaded",
+      "s": "adultstg2026:3.44"
+     },
+     {
+      "t": "Hyperkalaemia: treat per STG 7.2.1",
+      "s": "adultstg2026:7.11"
+     },
+     {
+      "t": "REFER for dialysis: uraemic features, refractory overload, K⁺ or acidosis",
+      "s": "adultstg2026:23.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If dissection",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Lower HR and BP first",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "BP both arms",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No thrombolysis",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "No anticoagulation",
+      "d": 1
+     },
+     {
+      "t": "Labetalol IV first-line · morphine IV titrated, max 10 mg",
+      "d": 1
+     },
+     {
+      "t": "REFER immediately for CT / cardiothoracic",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "IV drugs · first 6 h",
+   "items": [
+    {
+     "h": "Labetalol"
+    },
+    {
+     "t": "IV 2 mg/min to a total of 1–2 mg/kg",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Make 1 mg/mL: discard 40 mL from 200 mL NaCl 0.9%, add 2 × 100 mg vials → 2 mg/min = 120 mL/h",
+     "s": "adultstg2026:6.9"
+    },
+    {
+     "t": "Caution in acute pulmonary oedema",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Glyceryl trinitrate — ischaemia / CCF / pulmonary oedema"
+    },
+    {
+     "t": "Start 5–10 mcg/min; +5 every 5 min to 20, then +20 every 5 min",
+     "s": "adultstg2026:3.6"
+    },
+    {
+     "t": "100 mcg/mL = 25 mL of 1 mg/mL in 250 mL (remove 25 mL first)",
+     "s": "adultstg2026:3.7"
+    },
+    {
+     "t": "Rate at 100 mcg/mL: 5 mcg/min = 3 mL/h · 10 = 6 · 20 = 12 · 40 = 24 · 60 = 36 · 100 = 60 mL/h",
+     "s": "adultstg2026:3.7"
+    },
+    {
+     "h": "Furosemide"
+    },
+    {
+     "t": "IV 40–80 mg (acts ~6 h; potentiates the above)",
+     "s": "adultstg2026:3.44"
+    }
+   ]
+  },
+  {
+   "title": "Oral · step-down · special cases",
+   "items": [
+    {
+     "h": "Oral (STG 3.6.3)"
+    },
+    {
+     "t": "Enalapril 2.5 mg test dose → increase by response to max 20 mg daily; monitor renal function",
+     "s": "adultstg2026:3.44"
+    },
+    {
+     "t": "ACE-I intolerant: losartan 50–100 mg daily, specialist initiated",
+     "s": "adultstg2026:3.44"
+    },
+    {
+     "t": "Pre-referral (PHC): amlodipine 10 mg oral once — check before repeating",
+     "s": "phcstg2026:4.25"
+    },
+    {
+     "h": "Step-down"
+    },
+    {
+     "t": "Two oral agents as for urgency (HTU chart): HCTZ 12.5 mg + amlodipine 5 mg or enalapril",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Special cases"
+    },
+    {
+     "t": "Acute stroke: lower only if > 220/120, to ~180/110 in 24 h (amlodipine 5 mg)",
+     "s": "adultstg2026:14.3"
+    },
+    {
+     "t": "Cocaine / tik: benzodiazepines first; no β-blocker except labetalol",
+     "s": "adultstg2026:19.30"
+    },
+    {
+     "t": "Pregnant: PET pathway (nifedipine, MgSO₄)",
+     "s": "adultstg2026:6.9"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Falling too fast — slow / stop infusion, call doctor"
+    },
+    {
+     "t": "BP below the 25% floor in the first 2 h",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Below 160/100 before 6 h",
+     "d": 1
+    },
+    {
+     "t": "New drowsiness, chest pain or oliguria as BP falls",
+     "d": 1
+    },
+    {
+     "h": "Drug problems"
+    },
+    {
+     "t": "Labetalol: pulse slowing / bradycardia, wheeze, worse pulmonary oedema → stop",
+     "d": 1
+    },
+    {
+     "t": "GTN: hypotension, headache → reduce rate",
+     "d": 1
+    },
+    {
+     "h": "Escalate / transfer (§2)"
+    },
+    {
+     "t": "GCS falling, seizures recurring, SpO₂ falling, new tearing pain"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · ECG · U&E + creatinine",
+     "b": 1
+    },
+    {
+     "t": "VBG",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Step-down / transfer criteria — all five must be met before step-down at ANDH",
+  "items": [
+   {
+    "t": "BP at ~160/100 and stable on oral Rx",
+    "s": "adultstg2026:3.43"
+   },
+   {
+    "t": "Organ features resolved (GCS baseline, no chest pain, no pulmonary oedema)"
+   },
+   {
+    "t": "Creatinine / K⁺ stable, urine output kept",
+    "d": 1
+   },
+   {
+    "t": "Specialist agrees to step-down at ANDH",
+    "d": 1
+   },
+   {
+    "t": "Moved to the HTU chart (oral 2-agent Rx)",
+    "s": "adultstg2026:3.43"
+   },
+   {
+    "t": "Otherwise: transfer with letter, doses + times, ECG, results",
+    "k": "info"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "After discharge: PHC / OPD within 1 week, then monthly until controlled",
+    "d": 1
+   },
+   {
+    "t": "Target < 140/90 over 1–3 months",
+    "s": "adultstg2026:3.41"
+   },
+   {
+    "t": "Refer back if headache, chest pain, breathlessness or confusion return, or creatinine rises",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing BP record — BP, GCS, urine and infusion",
+  "period": "12 hours (15-min rows to 2 h, 30-min to 6 h, hourly to 12 h)",
+  "params": [
+   {
+    "h": "BP + pulse",
+    "items": [
+     {
+      "t": "Every 15 min for the first 2 h and during any IV titration",
+      "d": 1
+     },
+     {
+      "t": "Every 30 min to 6 h, then hourly",
+      "d": 1
+     },
+     {
+      "t": "Compare with the 25% floor each time",
+      "s": "adultstg2026:3.43"
+     }
+    ]
+   },
+   {
+    "h": "RR + SpO₂, GCS",
+    "items": [
+     {
+      "t": "RR + SpO₂ with each BP",
+      "d": 1
+     },
+     {
+      "t": "GCS hourly; baseline on arrival",
+      "d": 1
+     },
+     {
+      "t": "Pupils if GCS falls",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Urine output",
+    "items": [
+     {
+      "t": "Catheter; measure hourly",
+      "d": 1
+     },
+     {
+      "t": "Total at 12 h",
+      "d": 1
+     },
+     {
+      "t": "Strict fluid balance",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Infusion",
+    "items": [
+     {
+      "t": "Rate (mL/h) with each BP",
+      "d": 1
+     },
+     {
+      "t": "Cumulative labetalol mg — stop at max",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Furosemide doses + times",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "BP below the 25% floor in the first 2 h, or below 160/100 before 6 h",
+    "s": "adultstg2026:3.43",
+    "b": 1
+   },
+   {
+    "t": "New drowsiness, chest pain or oliguria as BP falls",
+    "d": 1
+   },
+   {
+    "t": "GCS falling, seizure, SpO₂ falling, new tearing pain"
+   },
+   {
+    "t": "Pulse slowing, wheeze or worse breathlessness on labetalol",
+    "d": 1
+   },
+   {
+    "t": "Labetalol cumulative dose at the max",
+    "s": "adultstg2026:3.43"
+   }
+  ],
+  "totals": [
+   "BP at 2 h",
+   "% fall from arrival",
+   "BP at 6 h",
+   "Labetalol total mg",
+   "Furosemide mg",
+   "Urine total mL"
+  ]
+ }
+}

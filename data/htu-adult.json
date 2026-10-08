@@ -1,0 +1,1230 @@
+{
+ "id": "htu-adult",
+ "short": "HTU_Adult",
+ "title": "Hypertensive urgency (adult) incl. asymptomatic severe hypertension",
+ "population": "Adult, non-pregnant",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-08",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Includes asymptomatic severe hypertension",
+     "k": "info"
+    },
+    {
+     "t": "Pregnant / ≤ 6 weeks postpartum → PET pathway",
+     "s": "adultstg2026:3.41",
+     "b": 1
+    },
+    {
+     "t": "Acute stroke or TIA → Stroke / TIA pathway (BP rule differs)",
+     "s": "adultstg2026:3.42",
+     "b": 1
+    },
+    {
+     "t": "Any life-threatening complication (§9) → Hypertensive emergency pathway",
+     "s": "adultstg2026:3.42",
+     "b": 1
+    },
+    {
+     "t": "Child → paediatric STG",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Severe HTN: SBP ≥ 180 and/or DBP ≥ 110 mmHg",
+     "s": "adultstg2026:3.42",
+     "b": 1
+    },
+    {
+     "t": "Still at that level after 1 h rest (≥ 3 readings, correct cuff)",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "No immediate life-threatening neurological or cardiac complication (§9 all N)",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "h": "Then classify"
+    },
+    {
+     "t": "Urgency: symptomatic and/or acutely progressive organ damage",
+     "s": "adultstg2026:3.42",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Asymptomatic severe HTN: no symptoms, no acute organ damage",
+     "s": "adultstg2026:3.42",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "BP 1 ____ · BP 2 ____ · BP at 1 h ____ · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated urgency = any one of → REFER",
+   "items": [
+    {
+     "t": "Malignant / accelerated HTN (grade 3–4 retinopathy)",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "Severe heart failure with hypertension",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "Suspected secondary hypertension",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "Age < 30 years",
+     "s": "phcstg2026:4.25"
+    },
+    {
+     "t": "Resistant: ≥ 3–4 classes incl. diuretic, adherent",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "eGFR < 30 mL/min",
+     "s": "phcstg2026:4.25"
+    },
+    {
+     "t": "ANY RED FLAG (§9) → hypertensive emergency pathway",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known HTN since ____",
+     "k": "value"
+    },
+    {
+     "t": "Current antihypertensives",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "Adherence: pill count, family",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "Took today's dose",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "DM / CKD / IHD / stroke",
+     "s": "adultstg2026:3.35"
+    },
+    {
+     "t": "Last creatinine / eGFR",
+     "s": "adultstg2026:3.38"
+    },
+    {
+     "t": "Last K⁺ / urine ACR",
+     "s": "phcstg2026:4.16"
+    },
+    {
+     "t": "Previous BP admissions",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms (urgency)",
+     "s": "phcstg2026:4.18"
+    },
+    {
+     "t": "Severe headache",
+     "s": "phcstg2026:4.18"
+    },
+    {
+     "t": "Shortness of breath",
+     "s": "phcstg2026:4.18"
+    },
+    {
+     "t": "Oedema",
+     "s": "phcstg2026:4.18"
+    },
+    {
+     "t": "Blurred vision",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Emergency screen — any Y → §9",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Chest pain",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Confusion / seizure",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Breathless at rest",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Tearing back pain",
+     "d": 1
+    },
+    {
+     "h": "Triggers & causes"
+    },
+    {
+     "t": "Stopped / ran out of Rx",
+     "s": "adultstg2026:3.39"
+    },
+    {
+     "t": "NSAIDs, steroids, OCP",
+     "d": 1
+    },
+    {
+     "t": "Cocaine / tik / alcohol",
+     "s": "adultstg2026:19.30"
+    },
+    {
+     "t": "Palpitations, sweats",
+     "d": 1
+    },
+    {
+     "h": "Risk factors",
+     "s": "adultstg2026:3.35"
+    },
+    {
+     "t": "Smoking / diabetes",
+     "s": "adultstg2026:3.35"
+    },
+    {
+     "t": "Family history CVD",
+     "s": "phcstg2026:4.18"
+    },
+    {
+     "h": "HIV / TB"
+    },
+    {
+     "t": "HIV status / ART regimen"
+    },
+    {
+     "t": "TB symptoms screen"
+    },
+    {
+     "h": "Women"
+    },
+    {
+     "t": "LMP / pregnant? → PET",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "Contraception",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "BP classification (STG)"
+    },
+    {
+     "t": "SBP ≥ 180 and/or DBP ≥ 110 severe",
+     "s": "adultstg2026:3.42",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Still severe after 1 h rest",
+     "s": "adultstg2026:3.42",
+     "k": "yn"
+    },
+    {
+     "t": "Acute stroke and BP > 220/120",
+     "s": "adultstg2026:3.42",
+     "k": "yn"
+    },
+    {
+     "t": "Postural drop (elderly / frail)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Waist: men > 102 cm / women > 88 cm",
+     "s": "adultstg2026:3.38",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Eyes — fundoscopy"
+    },
+    {
+     "t": "Retinopathy grade ____",
+     "s": "adultstg2026:3.35",
+     "k": "value"
+    },
+    {
+     "t": "Papilloedema / haemorrhages → refer",
+     "s": "adultstg2026:3.42",
+     "b": 1
+    },
+    {
+     "h": "CVS"
+    },
+    {
+     "t": "Displaced apex (LVH)",
+     "s": "adultstg2026:3.35"
+    },
+    {
+     "t": "Gallop / raised JVP"
+    },
+    {
+     "t": "Murmur"
+    },
+    {
+     "t": "Radio-femoral delay",
+     "d": 1
+    },
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Basal crepitations",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Pleural effusion",
+     "d": 1
+    },
+    {
+     "h": "Abdomen / renal"
+    },
+    {
+     "t": "Renal bruit",
+     "d": 1
+    },
+    {
+     "t": "Palpable kidneys"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Focal deficit → Stroke",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "GCS ____ / 15 (baseline)",
+     "k": "value"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Peripheral oedema",
+     "s": "phcstg2026:4.18"
+    },
+    {
+     "t": "Cushingoid / thyroid signs",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Urine dipstick — protein, blood, glucose",
+   "items": [
+    {
+     "t": "Result on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "Protein or blood: spot urine ACR + creatinine / eGFR",
+     "s": "adultstg2026:3.38",
+     "b": 1
+    },
+    {
+     "t": "Haematuria > 1+: investigate further",
+     "s": "adultstg2026:3.38"
+    },
+    {
+     "t": "Glycosuria: HGT / HbA1c, exclude diabetes",
+     "s": "adultstg2026:3.38",
+     "b": 1
+    },
+    {
+     "t": "Women 15–49 y: urine β-hCG — positive → PET",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Resting 12-lead ECG",
+   "items": [
+    {
+     "t": "Findings on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "LVH: compelling indication → ACE-inhibitor",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "Ischaemia / acute change → Hypertensive emergency + ACS",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "AF / arrhythmia: treat per STG 3.3",
+     "s": "adultstg2026:3.15"
+    },
+    {
+     "t": "Repeat if chest pain develops",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival — any one = hypertensive emergency",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC / confusion",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:3.43",
+     "b": 1
+    },
+    {
+     "t": "Encephalopathy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Unstable angina / MI",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Acute LVF, breathless at rest",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Acute aortic dissection",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "AKI with encephalopathy",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Eclampsia / severe PET",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "New focal deficit (stroke)",
+     "s": "adultstg2026:3.42"
+    },
+    {
+     "t": "Cocaine / amphetamine",
+     "s": "adultstg2026:19.30"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = URGENCY → oral Rx, consult specialist · §2 → REFER",
+   "s": "adultstg2026:3.43",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (asymptomatic severe HTN: oral Rx, may discharge, review ≤ 1 week) — stabilise, then continue on the 72-hour inpatient chart and the 24-hour nursing BP record",
+   "s": "phcstg2026:4.18",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Aim: DBP to 100 mmHg slowly over 48–72 h — never a fast fall",
+  "columns": {
+   "feed": "BP target & diet",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "BP + pulse 4-hourly (seated, same arm, after 5 min rest)",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "BP before each antihypertensive dose",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Symptom check with each BP: headache, vision, chest pain, breathlessness, confusion",
+    "d": 1
+   },
+   {
+    "t": "Postural BP daily if elderly/frail or dizzy",
+    "d": 1
+   },
+   {
+    "t": "Fluid balance + daily weight if on furosemide",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing BP record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter / clinic card for antihypertensives already taken today (e.g. amlodipine 10 mg pre-referral) — do not double the dose. Any §9 red flag → hypertensive emergency pathway.",
+    "feed": [
+     {
+      "t": "Rest 1 h, then repeat BP (≥ 3 readings, correct cuff)",
+      "s": "adultstg2026:3.42",
+      "b": 1
+     },
+     {
+      "t": "Target: DBP 100 mmHg over 48–72 h",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "Do not aim for normal BP now — a sudden fall is dangerous, esp. elderly",
+      "s": "adultstg2026:3.41"
+     },
+     {
+      "t": "Acute stroke: do not lower unless > 220/120 (Stroke pathway)",
+      "s": "adultstg2026:3.42"
+     },
+     {
+      "t": "Ward diet, no added salt",
+      "s": "adultstg2026:3.38"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine / eGFR",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "U&E: Na⁺, K⁺ (Na⁺ < 130 → no ACE-I)",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick; protein/blood → urine ACR",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "12-lead ECG (LVH, ischaemia)",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "Random total cholesterol",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "HGT; HbA1c if diabetic",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV test if status unknown",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Urine β-hCG women 15–49 y",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Start after the 1-h BP confirms severe HTN",
+      "s": "adultstg2026:3.42"
+     },
+     {
+      "t": "Two oral agents together",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Hydrochlorothiazide 12.5 mg daily",
+      "s": "adultstg2026:3.40",
+      "b": 1
+     },
+     {
+      "t": "PLUS amlodipine 5 mg daily OR enalapril 10 mg daily",
+      "s": "adultstg2026:3.40",
+      "b": 1
+     },
+     {
+      "t": "Renal insufficiency or pulmonary congestion: furosemide 40 mg oral daily in place of HCTZ",
+      "s": "adultstg2026:3.43",
+      "b": 1
+     },
+     {
+      "t": "Already on Rx and adherent: increase to max doses / add the class not yet used (side 2)",
+      "s": "adultstg2026:3.40"
+     },
+     {
+      "h": "Unable to swallow"
+     },
+     {
+      "t": "Needs parenteral Rx → discuss with specialist / REFER",
+      "d": 1
+     },
+     {
+      "h": "Choose by compelling indication",
+      "s": "adultstg2026:3.41"
+     },
+     {
+      "t": "DM, CKD, LVH → ACE-inhibitor",
+      "s": "adultstg2026:3.41"
+     },
+     {
+      "t": "Angina → β-blocker or CCB",
+      "s": "adultstg2026:3.41"
+     },
+     {
+      "t": "Stroke, isolated systolic → HCTZ or CCB",
+      "s": "adultstg2026:3.41"
+     },
+     {
+      "h": "Headache"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g oral 4–6-hourly PRN, max 4 g/24 h",
+      "s": "adultstg2026:14.5"
+     },
+     {
+      "t": "Avoid NSAIDs",
+      "d": 1
+     },
+     {
+      "h": "Consult specialist (telephone) for every urgency",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Continue ART / other chronic Rx"
+     },
+     {
+      "t": "Adherence: pill count, ask family",
+      "s": "adultstg2026:3.39"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Confirm + classify",
+    "feed": [
+     {
+      "t": "Repeat BP after 1 h rest: ____/____",
+      "s": "adultstg2026:3.42",
+      "k": "value"
+     },
+     {
+      "t": "Below severe → stepwise STG Rx, not this chart",
+      "s": "adultstg2026:3.39"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review dipstick and ECG",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     },
+     {
+      "t": "Fundoscopy done (grade 3–4 → REFER)",
+      "s": "adultstg2026:3.42"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Asymptomatic severe (no symptoms, no acute organ damage)",
+      "s": "adultstg2026:3.42"
+     },
+     {
+      "t": "Start HCTZ 12.5 mg + amlodipine 5 mg or enalapril 10 mg",
+      "s": "adultstg2026:3.42"
+     },
+     {
+      "t": "May discharge: review within 1 week; refer if > 160/100 at 4 weeks",
+      "s": "phcstg2026:4.18"
+     },
+     {
+      "h": "Urgency",
+      "s": "adultstg2026:3.43"
+     },
+     {
+      "t": "Admit; give both oral agents now; consult specialist",
+      "s": "adultstg2026:3.43"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Early response",
+    "feed": [
+     {
+      "t": "BP falling slowly, not toward normal",
+      "s": "adultstg2026:3.41"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Chase creatinine, Na⁺, K⁺ before the next ACE-I dose",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No extra stat doses for numbers alone — aim slow fall",
+      "d": 1
+     },
+     {
+      "t": "New red flag → hypertensive emergency pathway",
+      "s": "adultstg2026:3.43"
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Early response",
+    "feed": [
+     {
+      "t": "Symptoms easing? BP ____/____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Postural BP if elderly, frail or dizzy",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dizzy / postural drop → hold next dose, call doctor",
+      "d": 1
+     },
+     {
+      "t": "Na⁺ < 130 → stop ACE-I, use CCB",
+      "s": "adultstg2026:3.43"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Trend toward DBP 100 by 48–72 h",
+      "s": "adultstg2026:3.43"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ if on ACE-I or eGFR < 30",
+      "s": "phcstg2026:4.16",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pulmonary congestion: furosemide 40 mg oral daily",
+      "s": "adultstg2026:3.28"
+     },
+     {
+      "t": "Confirm drug choice against contraindications (side 2)",
+      "s": "phcstg2026:4.24"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1 review",
+    "feed": [
+     {
+      "t": "BP ____/____ · symptoms ____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine + K⁺ if ACE-I or diuretic started",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "DBP still ≥ 110: increase 2nd agent to max, or add the class not used (ACE-I / CCB)",
+      "s": "adultstg2026:3.40"
+     },
+     {
+      "t": "Creatinine rising from baseline → hold ACE-I, recheck",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Day 2 · titrate",
+    "feed": [
+     {
+      "t": "BP ____/____ · DBP approaching 100",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine + K⁺ if on ACE-I (monitor renal function)",
+      "s": "adultstg2026:3.44",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not settling on 2 agents: add 3rd (ACE-I / CCB not used; spironolactone 25–50 mg if eGFR ≥ 30; atenolol 50 mg)",
+      "s": "adultstg2026:3.41"
+     },
+     {
+      "t": "Counsel: salt, alcohol, smoking, weight, exercise",
+      "s": "adultstg2026:3.38"
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Day 3 · target",
+    "feed": [
+     {
+      "t": "DBP ≈ 100 reached? ____/____",
+      "s": "adultstg2026:3.43",
+      "b": 1,
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ if spironolactone started",
+      "s": "phcstg2026:4.23",
+      "b": 1
+     },
+     {
+      "t": "Urine ACR if dipstick positive",
+      "s": "adultstg2026:3.38",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reached + criteria met → discharge plan"
+     },
+     {
+      "t": "Not reached on 3–4 classes incl. diuretic (adherent) → REFER (resistant)",
+      "s": "adultstg2026:3.42",
+      "b": 1
+     },
+     {
+      "t": "Cardiovascular risk: statin if indicated (STG 3.1)",
+      "s": "adultstg2026:3.1"
+     }
+    ]
+   },
+   {
+    "label": "D4+",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Long-term target < 140/90 over 1–3 months",
+      "s": "adultstg2026:3.41"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results on the discharge letter (creatinine, K⁺, ACR, ECG)"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fixed-dose combination if available (adherence)",
+      "s": "adultstg2026:3.39"
+     },
+     {
+      "t": "Take Rx daily, incl. the morning of clinic visits",
+      "s": "adultstg2026:3.39"
+     },
+     {
+      "t": "Letter to PHC: regimen, doses, BP trend, next step"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · oral antihypertensives",
+   "items": [
+    {
+     "h": "Thiazide"
+    },
+    {
+     "t": "Hydrochlorothiazide 12.5 mg daily → max 25 mg",
+     "s": "adultstg2026:3.40"
+    },
+    {
+     "h": "Long-acting CCB"
+    },
+    {
+     "t": "Amlodipine 5 mg daily → max 10 mg",
+     "s": "adultstg2026:3.40"
+    },
+    {
+     "h": "ACE-inhibitor"
+    },
+    {
+     "t": "Enalapril 10 mg daily → max 20 mg",
+     "s": "adultstg2026:3.40"
+    },
+    {
+     "t": "ACE-I cough: losartan 50 mg daily, specialist initiated",
+     "s": "adultstg2026:3.40"
+    },
+    {
+     "h": "Add-on"
+    },
+    {
+     "t": "Spironolactone 25–50 mg daily (not if eGFR < 30; check K⁺ within 1 month)",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "Atenolol 50 mg daily (refractory)",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "h": "Loop diuretic — renal insufficiency / pulmonary congestion"
+    },
+    {
+     "t": "Furosemide 40 mg oral daily",
+     "s": "adultstg2026:3.28"
+    },
+    {
+     "h": "Unable to swallow"
+    },
+    {
+     "t": "Parenteral Rx → specialist / REFER",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Choice · compelling indications & cautions",
+   "items": [
+    {
+     "h": "Compelling indication → class",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "Angina → β-blocker / CCB · post-MI → β-blocker + ACE-I",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "Heart failure → ACE-I + carvedilol / spironolactone (+ diuretic)",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "LVH, diabetes, CKD → ACE-I (usually + diuretic)",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "t": "Stroke, isolated systolic → HCTZ / CCB",
+     "s": "adultstg2026:3.41"
+    },
+    {
+     "h": "Avoid",
+     "s": "phcstg2026:4.24"
+    },
+    {
+     "t": "HCTZ: gout, eGFR < 30, severe liver impairment",
+     "s": "phcstg2026:4.24"
+    },
+    {
+     "t": "CCB: untreated heart failure",
+     "s": "phcstg2026:4.24"
+    },
+    {
+     "t": "ACE-I: angioedema, hyperkalaemia, eGFR < 30, bilateral renal artery stenosis, aortic stenosis, Na⁺ < 130, pregnancy",
+     "s": "phcstg2026:4.25"
+    },
+    {
+     "t": "Spironolactone: eGFR < 30; no K⁺ supplements or NSAIDs",
+     "s": "phcstg2026:4.23"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Falling too fast — hold next dose, call doctor"
+    },
+    {
+     "t": "DBP < 100 before 48 h",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Dizziness, syncope, postural drop",
+     "d": 1
+    },
+    {
+     "h": "Becomes an emergency → HTE pathway now",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "t": "Chest pain · confusion / seizure · breathless at rest · new deficit · tearing pain",
+     "s": "adultstg2026:3.43"
+    },
+    {
+     "h": "Drug problems"
+    },
+    {
+     "t": "Lip / tongue swelling → stop ACE-I (angioedema)",
+     "s": "phcstg2026:4.25"
+    },
+    {
+     "t": "K⁺ or creatinine rising from baseline → hold ACE-I / spironolactone, recheck",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "ECG · creatinine · U&E · urine dipstick · HGT",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "No symptoms, no red flags"
+   },
+   {
+    "t": "BP falling toward DBP 100, no hypotension",
+    "s": "adultstg2026:3.43"
+   },
+   {
+    "t": "Oral regimen tolerated ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "Creatinine / K⁺ stable on ACE-I / diuretic",
+    "s": "phcstg2026:4.16"
+   },
+   {
+    "t": "Counselled: lifestyle, adherence, angioedema",
+    "s": "phcstg2026:4.25"
+   },
+   {
+    "t": "PHC review booked ≤ 1 week",
+    "s": "phcstg2026:4.18"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD",
+  "items": [
+   {
+    "t": "Review within 1 week, then monthly until controlled, then 3–6-monthly",
+    "s": "adultstg2026:3.39"
+   },
+   {
+    "t": "Target < 140/90",
+    "s": "adultstg2026:3.38"
+   },
+   {
+    "t": "Refer back if > 160/100 after 4 weeks",
+    "s": "phcstg2026:4.18",
+    "b": 1
+   },
+   {
+    "t": "Refer back if uncontrolled on 3–4 classes, emergency symptoms, or creatinine rising",
+    "s": "adultstg2026:3.42"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing BP record — BP, pulse and symptoms",
+  "period": "24 hours",
+  "params": [
+   {
+    "h": "BP + pulse",
+    "items": [
+     {
+      "t": "On arrival, and repeat after 1 h rest",
+      "s": "adultstg2026:3.42"
+     },
+     {
+      "t": "Then 4-hourly and before each antihypertensive dose",
+      "d": 1
+     },
+     {
+      "t": "Seated, same arm, after 5 min rest",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Symptom check",
+    "items": [
+     {
+      "t": "With each BP: headache, vision, chest pain",
+      "d": 1
+     },
+     {
+      "t": "Breathlessness, confusion, weakness",
+      "d": 1
+     },
+     {
+      "t": "Write Y/N for each new symptom",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Postural BP",
+    "items": [
+     {
+      "t": "Daily if elderly or frail, and whenever dizzy",
+      "d": 1
+     },
+     {
+      "t": "Lying, then standing after 1 min",
+      "d": 1
+     },
+     {
+      "t": "If on furosemide: fluid balance + daily weight",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Chest pain, confusion, seizure, breathlessness at rest, new weakness or visual loss (emergency)",
+    "s": "adultstg2026:3.43",
+    "b": 1
+   },
+   {
+    "t": "DBP < 100 before 48 h, dizziness, syncope or postural drop (falling too fast — hold next dose)",
+    "s": "adultstg2026:3.43"
+   },
+   {
+    "t": "Lip or tongue swelling",
+    "s": "phcstg2026:4.25"
+   },
+   {
+    "t": "BP still SBP ≥ 180 / DBP ≥ 110 at 24 h",
+    "s": "adultstg2026:3.40"
+   }
+  ],
+  "totals": [
+   "Highest BP",
+   "Lowest BP",
+   "Doses given (drug / time)"
+  ]
+ }
+}

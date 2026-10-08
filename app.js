@@ -281,6 +281,7 @@ const unpop = t => String(t)
   .replace(/,\s*(?:adult|child|paediatric|paeds)\s*$/i, "")                 // "…(croup), child"
   .replace(/admitted\s+adult\b/gi, "admitted")                               // "— admitted adult"
   .replace(/admitted\s+child\s+/gi, "admitted, ")                            // "— admitted child 28 days to < 15 years"
+  .replace(/[_\s](?:adult|paeds|child)$/i, "")                                // "HTU_Adult"
   .replace(/\s{2,}/g, " ").replace(/\s*[—–]\s*$/, "").trim();
 
 /* Diagnosis list rows. Members of a hub (index.json "hubs", e.g. Fracture adult + paeds) collapse into ONE row that opens the hub page. */
