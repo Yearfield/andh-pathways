@@ -1,0 +1,369 @@
+{
+ "id": "lytes-paeds-hypona",
+ "short": "Hyponatraemia (child)",
+ "title": "Hyponatraemia",
+ "population": "Child (1 month – 12 years)",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Seizing: hypertonic bolus † · then by volume: restrict (SIADH) or replace Na deficit · rise ≤10–12 mmol/L / 24 h",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Treat when",
+   "col": 1,
+   "items": [
+    {
+     "t": "Na <135; correction usually needed if <120 or symptomatic",
+     "s": "stg-paed:23.10",
+     "s_more": [
+      "stg-paed:2.17"
+     ],
+     "b": 1
+    },
+    {
+     "t": "Symptoms: lethargy, vomiting, seizures, ↓LOC",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Types",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypovolaemic: UNa >20 renal / cerebral salt wasting; <20 GI loss, burns",
+     "s": "stg-paed:23.12"
+    },
+    {
+     "t": "Euvolaemic: SIADH, water excess · hypervolaemic: CCF, cirrhosis, nephrotic",
+     "s": "stg-paed:23.12"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Safety",
+   "col": 1,
+   "items": [
+    {
+     "t": "Rise ≤10–12 mmol/L per 24 h (myelinolysis)",
+     "s": "stg-paed:23.13",
+     "s_more": [
+      "stg-paed:23.10"
+     ],
+     "b": 1
+    },
+    {
+     "t": "Pseudohyponatraemia needs no treatment",
+     "s": "stg-paed:23.12"
+    },
+    {
+     "t": "DKA: a precipitous Na fall warns of cerebral oedema",
+     "s": "stg-paed:7.21"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Confirm and correct for glucose",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "true? symptomatic?",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Corrected Na = Na + 0.3 × (glucose − 5.6)",
+     "s": "stg-paed:23.12"
+    },
+    {
+     "n": "1.2",
+     "t": "Grade symptoms; seizures → step 2",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Seizing or comatose: hypertonic bolus",
+   "timing": "T 0 → T + 15 min",
+   "time": "T 0 → T + 15 min",
+   "subtitle": "not in STG — senior decision †",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "NaCl 3% 2 mL/kg IV over 10–15 min; repeat up to 2× until seizure stops",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Make 3%: 3 mL NaCl 5% + 2 mL water",
+     "s": "stg-paed:15.15"
+    },
+    {
+     "n": "2.3",
+     "t": "Aim +5 mmol/L only, then slow correction",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Classify volume and urine Na",
+   "timing": "T + 30 min",
+   "time": "T + 30 min",
+   "subtitle": "algorithm",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Examine volume; send urine Na and osmolality",
+     "s": "stg-paed:23.12"
+    },
+    {
+     "n": "3.2",
+     "t": "SIADH: low serum osm <270, urine >150, UNa >20, euvolaemic",
+     "s": "stg-paed:23.12"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Treat by cause",
+   "timing": "T + 1 h",
+   "time": "T + 1 h",
+   "subtitle": "pick ONE row",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "SIADH",
+     "sub": "euvolaemic",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Fluid restriction",
+       "dose": "e.g. 60–80% maintenance",
+       "s": "stg-paed:23.12",
+       "s_more": [
+        "stg-paed:23.9"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Na DEFICIT",
+     "sub": "salt wasting, D&V",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Na needed (mmol)",
+       "dose": "(Na target − Na) × kg × 0.6",
+       "s": "stg-paed:23.12"
+      }
+     ]
+    },
+    {
+     "label": "DIARRHOEA",
+     "sub": "Na <120",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9% (+ KCl, dextrose)",
+       "dose": "(130 − Na) × kg × 4 mL",
+       "note": "at rehydration rate",
+       "s": "stg-paed:2.17"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a treat ▶ b recheck Na 4–6-hourly",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Monitor the rise",
+   "timing": "Na 4–6-hourly",
+   "time": "Na 4–6-hourly",
+   "subtitle": "≤10–12 mmol/L / 24 h",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Chart Na; slow down if rising too fast",
+     "s": "stg-paed:23.13"
+    },
+    {
+     "n": "5.2",
+     "t": "Stop hypotonic fluids; use isotonic + dextrose",
+     "s": "stg-paed:23.9"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Sodium to 130 by weight",
+    "s": "stg-paed:23.12",
+    "cols": [
+     "Weight",
+     "Na now",
+     "Na mmol (×0.6)",
+     "as NaCl 0.9% mL",
+     "Diarrhoea vol mL (×4)",
+     "3% 2 mL/kg †",
+     "3% 3 mL/kg †"
+    ],
+    "rows": [
+     [
+      "5 kg",
+      "120",
+      "30",
+      "200",
+      "200",
+      "10",
+      "15"
+     ],
+     [
+      "5 kg",
+      "125",
+      "15",
+      "100",
+      "100",
+      "10",
+      "15"
+     ],
+     [
+      "10 kg",
+      "120",
+      "60",
+      "400",
+      "400",
+      "20",
+      "30"
+     ],
+     [
+      "10 kg",
+      "125",
+      "30",
+      "200",
+      "200",
+      "20",
+      "30"
+     ],
+     [
+      "15 kg",
+      "120",
+      "90",
+      "600",
+      "600",
+      "30",
+      "45"
+     ],
+     [
+      "15 kg",
+      "125",
+      "45",
+      "300",
+      "300",
+      "30",
+      "45"
+     ],
+     [
+      "20 kg",
+      "120",
+      "120",
+      "800",
+      "800",
+      "40",
+      "60"
+     ],
+     [
+      "20 kg",
+      "125",
+      "60",
+      "400",
+      "400",
+      "40",
+      "60"
+     ],
+     [
+      "30 kg",
+      "120",
+      "180",
+      "1 200",
+      "1 200",
+      "60",
+      "90"
+     ],
+     [
+      "30 kg",
+      "125",
+      "90",
+      "600",
+      "600",
+      "60",
+      "90"
+     ],
+     [
+      "40 kg",
+      "120",
+      "240",
+      "1 600",
+      "1 600",
+      "80",
+      "120"
+     ],
+     [
+      "40 kg",
+      "125",
+      "120",
+      "800",
+      "800",
+      "80",
+      "120"
+     ]
+    ],
+    "note": "Content: NaCl 5% 0.85 · 3% 0.5 · 0.9% 0.15 · NaHCO₃ 8.5% 1 mmol/mL (P 23.13). The ×0.6 and ×4 formulas give different volumes — give the deficit over ≥24 h within the rise limit.",
+    "s_more": [
+     "stg-paed:2.17"
+    ]
+   }
+  ]
+ }
+}

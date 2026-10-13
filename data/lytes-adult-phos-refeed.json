@@ -1,0 +1,273 @@
+{
+ "id": "lytes-adult-phos-refeed",
+ "short": "Phosphate, refeeding, TLS (adult)",
+ "title": "Phosphate, refeeding and tumour lysis",
+ "population": "Adult",
+ "setting": "Ward / high care",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Feed slowly + supplement Mg, PO₄, K · TLS: NaCl 0.9% 1 L 6–8-hourly + allopurinol",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Refeeding syndrome",
+   "col": 1,
+   "items": [
+    {
+     "t": "Hypophosphataemia when re-fed too fast with high-carbohydrate feeds; starts within 4 days",
+     "s": "stg-adult:12.17",
+     "b": 1
+    },
+    {
+     "t": "Respiratory / cardiac failure, arrhythmias, rhabdomyolysis, seizures, coma",
+     "s": "stg-adult:12.17"
+    }
+   ]
+  },
+  {
+   "h": "Tumour lysis (Cairo-Bishop)",
+   "col": 1,
+   "items": [
+    {
+     "t": "PO₄ >1.45, K >6.0, Ca <1.75, urate >0.476 mmol/L, azotaemia",
+     "s": "stg-adult:21.1",
+     "s_more": [
+      "stg-adult:21.2"
+     ]
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Cautions",
+   "col": 1,
+   "items": [
+    {
+     "t": "TLS: no diuretics if normal heart/kidneys; never if hypovolaemic",
+     "s": "stg-adult:21.2"
+    },
+    {
+     "t": "TLS + high Na or overload → consult",
+     "s": "stg-adult:21.2"
+    },
+    {
+     "t": "IV phosphate binds Ca: separate lines; watch Ca, K",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Identify who is at risk",
+   "timing": "at admit",
+   "time": "at admit",
+   "subtitle": "before the first feed",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Flag: little intake >5–10 days, BMI <16, weight loss >15%, alcohol, low K/PO₄/Mg",
+     "d": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Check PO₄, Mg, K, glucose before feeding",
+     "d": 1
+    },
+    {
+     "n": "1.3",
+     "t": "Thiamine 100 mg before glucose / feeds",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Start feeds slowly",
+   "timing": "day 1",
+   "time": "day 1",
+   "subtitle": "oral > enteral > TPN",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Start feeds slowly with aggressive Mg, PO₄, K supplementation",
+     "s": "stg-adult:12.17",
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "≈10 kcal/kg/day, increase over 4–7 days",
+     "d": 1
+    },
+    {
+     "n": "2.3",
+     "t": "Oral feeding preferred; NGT next; TPN only exceptionally",
+     "s": "stg-adult:12.17"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Monitor daily for 4 days",
+   "timing": "day 1–4",
+   "time": "day 1–4",
+   "subtitle": "PO₄ · Mg · K · glucose · fluid",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Daily PO₄, Mg, K, glucose; watch for oedema, arrhythmia",
+     "d": 1
+    },
+    {
+     "n": "3.2",
+     "t": "Syndrome usually begins within 4 days",
+     "s": "stg-adult:12.17"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Replace phosphate",
+   "timing": "when PO₄ low",
+   "time": "when PO₄ low",
+   "subtitle": "oral if mild · IV if severe",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "MODERATE",
+     "sub": "0.32–0.6 mmol/L",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Oral phosphate",
+       "dose": "or IV 0.16 mmol/kg over 6 h",
+       "d": 1
+      }
+     ]
+    },
+    {
+     "label": "SEVERE",
+     "sub": "<0.32 or symptomatic",
+     "cells": [
+      {
+       "m": "a",
+       "name": "K / Na phosphate IV",
+       "dose": "0.32 mmol/kg over 6–12 h",
+       "note": "slow feeds down",
+       "d": 1
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a grade ▶ b replace ▶ c recheck 6–12-hourly",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Tumour lysis: hydrate and protect kidneys",
+   "timing": "if TLS",
+   "time": "if TLS",
+   "subtitle": "fluid · allopurinol · lytes",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "NaCl 0.9% 1 L 6–8-hourly (2–3 L/m²/day); urine 80–100 mL/m²/h",
+     "s": "stg-adult:21.2",
+     "b": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Allopurinol 100 mg 8-hourly (max 300 mg 8-hourly; 50 mg if eGFR <20)",
+     "s": "stg-adult:21.2"
+    },
+    {
+     "n": "5.3",
+     "t": "Treat high K (Hyperkalaemia card) and low Ca (Ca card); transfer to oncology",
+     "s": "stg-adult:21.2"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "IV phosphate (mmol) by weight",
+    "d": 1,
+    "cols": [
+     "Weight",
+     "0.08 mmol/kg",
+     "0.16 mmol/kg",
+     "0.32 mmol/kg"
+    ],
+    "rows": [
+     [
+      "40 kg",
+      "3.2",
+      "6.4",
+      "12.8"
+     ],
+     [
+      "50 kg",
+      "4",
+      "8",
+      "16"
+     ],
+     [
+      "60 kg",
+      "4.8",
+      "9.6",
+      "19.2"
+     ],
+     [
+      "70 kg",
+      "5.6",
+      "11.2",
+      "22.4"
+     ],
+     [
+      "80 kg",
+      "6.4",
+      "12.8",
+      "25.6"
+     ]
+    ],
+    "note": "Potassium phosphate 15% contains 2 mmol/mL K (PAED 23.15) — count the potassium. Give over ≥6 h."
+   }
+  ]
+ }
+}

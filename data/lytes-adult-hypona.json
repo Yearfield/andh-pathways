@@ -1,0 +1,324 @@
+{
+ "id": "lytes-adult-hypona",
+ "short": "Hyponatraemia (adult)",
+ "title": "Hyponatraemia",
+ "population": "Adult",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Severe symptoms: 5% NaCl 60 mL over 15 min · then treat by volume status · rise ≤8 mmol/L in 24 h",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Severity",
+   "col": 1,
+   "items": [
+    {
+     "t": "Na <135 mmol/L",
+     "s": "stg-adult:7.14"
+    },
+    {
+     "t": "Mild–moderate: headache, nausea, vomiting, fatigue, gait disturbance, confusion",
+     "s": "stg-adult:7.14"
+    },
+    {
+     "t": "Severe: seizures, obtundation, coma, respiratory arrest",
+     "s": "stg-adult:7.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Exclude",
+   "col": 1,
+   "items": [
+    {
+     "t": "Pseudo-hyponatraemia: hyperglycaemia, lipids, protein — treat cause",
+     "s": "stg-adult:7.15"
+    },
+    {
+     "t": "Low Na + high K: adrenal crisis",
+     "s": "stg-adult:8.2"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Osmotic demyelination",
+   "col": 1,
+   "items": [
+    {
+     "t": "Rise <8 mmol/L per day in chronic hyponatraemia",
+     "s": "stg-adult:7.14",
+     "b": 1
+    },
+    {
+     "t": "Hypertonic saline only for Na <120 with severe symptoms / exceptional cases",
+     "s": "stg-adult:7.16"
+    },
+    {
+     "t": "Consult a specialist before IV saline (except NaCl 0.9% for dehydration)",
+     "s": "stg-adult:7.15"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Confirm and grade",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "true or pseudo? symptoms?",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Correct for glucose (Na + glucose ÷ 3)",
+     "s": "stg-adult:8.15"
+    },
+    {
+     "n": "1.2",
+     "t": "Grade symptoms: severe vs mild–moderate vs none",
+     "s": "stg-adult:7.14"
+    },
+    {
+     "n": "1.3",
+     "t": "Acute (hours, water intoxication) or chronic?",
+     "s": "stg-adult:7.14"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe symptoms: hypertonic bolus",
+   "timing": "T 0 → T + 15 min",
+   "time": "T 0 → T + 15 min",
+   "subtitle": "Na <120 + seizures / coma",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "SEVERE / ACUTE",
+     "sub": "Na <120",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 5%",
+       "dose": "60 mL IV over 15 min",
+       "note": "+2–3 mmol/L per 60 mL",
+       "s": "stg-adult:7.16"
+      },
+      {
+       "m": "b",
+       "name": "Aim",
+       "dose": "+4–6 mmol/L now",
+       "note": "max 8 in 1st 24 h",
+       "s": "stg-adult:7.16"
+      },
+      {
+       "m": "c",
+       "name": "Persisting / worse",
+       "dose": "consult specialist",
+       "s": "stg-adult:7.16"
+      }
+     ]
+    },
+    {
+     "label": "MILD–MOD",
+     "sub": "Na <120 or chronic",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 5%",
+       "dose": "30 mL IV over 15 min",
+       "note": "max 8 mmol/L in 1st 24 h",
+       "s": "stg-adult:7.16"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a bolus ▶ b recheck ▶ c consult",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Assess volume and urine Na",
+   "timing": "T + 30 min",
+   "time": "T + 30 min",
+   "subtitle": "over · normal · dehydrated",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Examine volume status",
+     "s": "stg-adult:7.15"
+    },
+    {
+     "n": "3.2",
+     "t": "Send urinary Na (spot)",
+     "x": "<20 vs >20 mmol/L",
+     "s": "stg-adult:7.15"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Treat by volume status",
+   "timing": "T + 1 h",
+   "time": "T + 1 h",
+   "subtitle": "pick ONE row",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "OVERLOADED",
+     "sub": "CCF, cirrhosis, nephrotic, renal",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Water + salt restriction",
+       "dose": "treat cause",
+       "s": "stg-adult:7.15"
+      },
+      {
+       "m": "b",
+       "name": "Furosemide",
+       "dose": "40 mg PO 12-hourly",
+       "note": "increase to control overload",
+       "s": "stg-adult:7.15"
+      }
+     ]
+    },
+    {
+     "label": "NORMAL",
+     "sub": "SIADH, water intake",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Water + salt restriction",
+       "dose": "treat cause",
+       "s": "stg-adult:7.15"
+      },
+      {
+       "m": "b",
+       "name": "Furosemide",
+       "dose": "if needed",
+       "s": "stg-adult:7.15"
+      }
+     ]
+    },
+    {
+     "label": "DEHYDRATED",
+     "sub": "GI / renal Na loss, Addison",
+     "cells": [
+      {
+       "m": "a",
+       "name": "NaCl 0.9%",
+       "dose": "1 L 8-hourly",
+       "note": "Na >120, mild / no symptoms",
+       "s": "stg-adult:7.16"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a treat cause ▶ b fluid plan",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Monitor the rate of rise",
+   "timing": "Na 4–6-hourly × 24 h",
+   "time": "Na 4–6-hourly × 24 h",
+   "subtitle": "stop at 8 mmol/L / 24 h",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Recheck Na every 4–6 h; chart the rise",
+     "d": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Rising too fast → stop saline, consult",
+     "d": 1
+    },
+    {
+     "n": "5.3",
+     "t": "Infusion rate: calculate with specialist",
+     "s": "stg-adult:7.16"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Sodium content (mmol/L)",
+    "s": "stg-adult:7.16",
+    "cols": [
+     "Fluid",
+     "Na",
+     "Use"
+    ],
+    "rows": [
+     [
+      "NaCl 5%",
+      "855",
+      "severe symptomatic"
+     ],
+     [
+      "NaCl 0.9%",
+      "154",
+      "dehydrated, Na >120"
+     ],
+     [
+      "Ringer's lactate †",
+      "130",
+      "—"
+     ]
+    ]
+   },
+   {
+    "h": "Urine Na guide (Fig 7.2)",
+    "type": "list",
+    "items": [
+     {
+      "t": "<20: GI loss, burns, sweating (dry); cardiac/liver failure, nephrotic (wet); water intoxication",
+      "s": "stg-adult:7.15"
+     },
+     {
+      "t": ">20: renal loss, diuretics, Addison (dry); SIADH (euvolaemic); renal failure (wet)",
+      "s": "stg-adult:7.15"
+     }
+    ]
+   }
+  ]
+ }
+}

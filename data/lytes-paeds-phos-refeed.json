@@ -1,0 +1,323 @@
+{
+ "id": "lytes-paeds-phos-refeed",
+ "short": "Phosphate + refeeding (child)",
+ "title": "Phosphate and refeeding",
+ "population": "Child (incl. SAM)",
+ "setting": "Ward / high care",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Slow feeds (F75) · monitor PO₄ · oral phosphate by level · IV KPO₄ 0.15–0.6 mmol/kg/day if severe",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "At risk",
+   "col": 1,
+   "items": [
+    {
+     "t": "Severe acute malnutrition: refeeding can occur at any stage of stabilisation",
+     "s": "stg-paed:2.42",
+     "b": 1
+    },
+    {
+     "t": "Sepsis in ICU: 60–80% have low PO₄",
+     "s": "stg-paed:23.19"
+    }
+   ]
+  },
+  {
+   "h": "Severe low PO₄",
+   "col": 1,
+   "items": [
+    {
+     "t": "<0.32 mmol/L: mortality ↑30%; confusion, seizures, CCF, respiratory failure, haemolysis, rhabdo",
+     "s": "stg-paed:23.19"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Cautions",
+   "col": 1,
+   "items": [
+    {
+     "t": "KPO₄ also gives 2 mmol/mL potassium — K rate usually limits",
+     "s": "stg-paed:23.20",
+     "b": 1
+    },
+    {
+     "t": "Never mix with calcium",
+     "s": "stg-paed:23.19"
+    },
+    {
+     "t": "SAM: no diuretics, no high-Na fluids",
+     "s": "stg-paed:2.41"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Identify risk; baseline bloods",
+   "timing": "at admit",
+   "time": "at admit",
+   "subtitle": "SAM · starvation · sepsis",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Flag SAM, prolonged starvation, septic ICU child",
+     "s": "stg-paed:2.42",
+     "s_more": [
+      "stg-paed:23.19"
+     ]
+    },
+    {
+     "n": "1.2",
+     "t": "Baseline PO₄, K, Mg, glucose",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Feed cautiously",
+   "timing": "≤30 min",
+   "time": "≤30 min",
+   "subtitle": "F75 · slow advance",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "F75 130 mL/kg/day (100 if gross oedema)",
+     "s": "stg-paed:2.45",
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Advance feeds slowly; regular phosphate monitoring",
+     "s": "stg-paed:2.42"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Monitor phosphate",
+   "timing": "day 1–7",
+   "time": "day 1–7",
+   "subtitle": "plus K, Mg",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "PO₄ daily for the first days of feeding",
+     "x": "regular monitoring advised",
+     "s": "stg-paed:2.42"
+    },
+    {
+     "n": "3.2",
+     "t": "K and Mg with combined mineral-vitamin complex or supplements",
+     "s": "stg-paed:2.41",
+     "s_more": [
+      "stg-paed:2.42"
+     ]
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Replace by level",
+   "timing": "when low",
+   "time": "when low",
+   "subtitle": "pick ONE row",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "0.73–0.96",
+     "sub": "mmol/L",
+     "cells": [
+      {
+       "m": "a",
+       "name": "0.32 mmol/kg/day PO",
+       "dose": "Lenolax® 0.25 mL/kg · Fosenema® 0.18 mL/kg",
+       "note": "divided doses",
+       "s": "stg-paed:2.42"
+      }
+     ]
+    },
+    {
+     "label": "0.51–0.72",
+     "sub": "mmol/L",
+     "cells": [
+      {
+       "m": "a",
+       "name": "0.64 mmol/kg/day PO",
+       "dose": "Lenolax® 0.5 mL/kg · Fosenema® 0.37 mL/kg",
+       "s": "stg-paed:2.42"
+      }
+     ]
+    },
+    {
+     "label": "<0.5",
+     "sub": "or symptomatic",
+     "cells": [
+      {
+       "m": "a",
+       "name": "1.0 mmol/kg/day PO",
+       "dose": "Lenolax® 0.75 · Fosenema® 0.57 mL/kg",
+       "s": "stg-paed:2.42"
+      },
+      {
+       "m": "b",
+       "name": "Severe: KPO₄ IV",
+       "dose": "0.15–0.6 mmol/kg/day over 6 h, diluted 1:4",
+       "note": "repeat 6-hourly until >0.6",
+       "s": "stg-paed:23.20"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a replace ▶ b recheck 6-hourly (IV) / daily (oral)",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "High phosphate",
+   "timing": "if raised",
+   "time": "if raised",
+   "subtitle": "AKI · TLS · rhabdo",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Treat cause; give fluids (rhabdo / tumour lysis)",
+     "s": "stg-paed:23.20"
+    },
+    {
+     "n": "5.2",
+     "t": "Cut phosphate intake; calcium carbonate binder",
+     "s": "stg-paed:23.20"
+    },
+    {
+     "n": "5.3",
+     "t": "Treat low Ca (Ca card); refer for dialysis",
+     "s": "stg-paed:23.20"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Phosphate doses by weight (mL/day, divided)",
+    "s": "stg-paed:2.42",
+    "cols": [
+     "Weight",
+     "Lenolax 0.25/kg",
+     "Lenolax 0.5/kg",
+     "Lenolax 0.75/kg",
+     "Fosenema 0.18/kg",
+     "Fosenema 0.37/kg",
+     "Fosenema 0.57/kg",
+     "IV KPO₄ mmol/day"
+    ],
+    "rows": [
+     [
+      "3 kg",
+      "0.75",
+      "1.5",
+      "2.25",
+      "0.54",
+      "1.11",
+      "1.71",
+      "0.45–1.8"
+     ],
+     [
+      "5 kg",
+      "1.25",
+      "2.5",
+      "3.75",
+      "0.9",
+      "1.85",
+      "2.85",
+      "0.75–3"
+     ],
+     [
+      "7 kg",
+      "1.75",
+      "3.5",
+      "5.25",
+      "1.26",
+      "2.59",
+      "3.99",
+      "1.05–4.2"
+     ],
+     [
+      "10 kg",
+      "2.5",
+      "5",
+      "7.5",
+      "1.8",
+      "3.7",
+      "5.7",
+      "1.5–6"
+     ],
+     [
+      "15 kg",
+      "3.75",
+      "7.5",
+      "11.25",
+      "2.7",
+      "5.55",
+      "8.55",
+      "2.25–9"
+     ],
+     [
+      "20 kg",
+      "5",
+      "10",
+      "15",
+      "3.6",
+      "7.4",
+      "11.4",
+      "3–12"
+     ]
+    ],
+    "note": "Phosphate enema given orally. KPO₄ 1 mmol/mL PO₄ + 2 mmol/mL K. STG example 20 kg: 3 mmol = 3 mL KPO₄ + 12 mL NaCl over 6 h.",
+    "s_more": [
+     "stg-paed:23.20"
+    ]
+   }
+  ]
+ }
+}

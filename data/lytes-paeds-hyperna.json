@@ -1,0 +1,287 @@
+{
+ "id": "lytes-paeds-hyperna",
+ "short": "Hypernatraemia (child)",
+ "title": "Hypernatraemia",
+ "population": "Child (1 month – 12 years)",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Shock: NaCl 0.9% 20 mL/kg · ORS/NGT 10 mL/kg/h or IV over 48 h · fall ≤0.5 mmol/L/h",
+ "sources": [
+  "stg-paed"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Grades",
+   "col": 1,
+   "items": [
+    {
+     "t": "Moderate hypernatraemic dehydration: Na 150–169",
+     "s": "stg-paed:2.16",
+     "b": 1
+    },
+    {
+     "t": "Severe: Na >170 — emergency, discuss / ICU",
+     "s": "stg-paed:2.17",
+     "b": 1
+    },
+    {
+     "t": "Doughy skin, high-pitched cry, irritability, hyperreflexia, seizures",
+     "s": "stg-paed:2.16"
+    }
+   ]
+  },
+  {
+   "h": "Causes",
+   "col": 1,
+   "items": [
+    {
+     "t": "Gastroenteritis, diabetes insipidus, solute load (bicarbonate, hypertonic saline)",
+     "s": "stg-paed:23.13",
+     "s_more": [
+      "stg-paed:23.14"
+     ]
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Safety",
+   "col": 1,
+   "items": [
+    {
+     "t": "Fall >1 mmol/L/h → cerebral oedema; aim 10–12 mmol/L per 24 h",
+     "s": "stg-paed:2.16",
+     "b": 1
+    },
+    {
+     "t": "Dehydration is underestimated (intravascular volume preserved)",
+     "s": "stg-paed:2.16"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Treat shock",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "only if shocked",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "NaCl 0.9% 20 mL/kg bolus; repeat per Shock card",
+     "s": "stg-paed:2.16",
+     "b": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Plan 48-hour rehydration",
+   "timing": "T + 30 min",
+   "time": "T + 30 min",
+   "subtitle": "deficit + maintenance over 48 h",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Deficit 50–70 mL/kg + maintenance, over 48 h",
+     "s": "stg-paed:2.16",
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Free-water deficit (L) = (Na ÷ 140 − 1) × 0.6 × kg",
+     "s": "stg-paed:23.14"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Rehydrate — gut first",
+   "timing": "T + 30 min → 48 h",
+   "time": "T + 30 min → 48 h",
+   "subtitle": "pick ONE row",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "FIRST",
+     "sub": "",
+     "cells": [
+      {
+       "m": "a",
+       "name": "ORS / NGT",
+       "dose": "10 mL/kg/h",
+       "note": "continuous NGT preferred; keep feeding",
+       "s": "stg-paed:2.16"
+      }
+     ]
+    },
+    {
+     "label": "IF ORAL FAILS",
+     "sub": "",
+     "cells": [
+      {
+       "m": "b",
+       "name": "NaCl 0.9%/D5",
+       "dose": "2–10 kg 6 · 10–20 kg 5 · 20–40 kg 4 mL/kg/h",
+       "s": "stg-paed:2.16"
+      }
+     ]
+    },
+    {
+     "label": "Na >170",
+     "sub": "specialist",
+     "cells": [
+      {
+       "m": "c",
+       "name": "1 L NaCl 0.9% + 100 mL D50 + 10 mL KCl 15%",
+       "dose": "same rate",
+       "s": "stg-paed:2.17"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a ORS / NGT ▶ b IV if fails ▶ c Na >170 recipe",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Monitor closely",
+   "timing": "2-hourly · Na 8–12-hourly",
+   "time": "2-hourly · Na 8–12-hourly",
+   "subtitle": "fluid · losses · neuro",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Fluid status, ongoing losses, neuro 2-hourly",
+     "s": "stg-paed:2.17"
+    },
+    {
+     "n": "4.2",
+     "t": "Na falling >1 mmol/L/h → reduce rate",
+     "s": "stg-paed:2.16",
+     "b": 1
+    },
+    {
+     "n": "4.3",
+     "t": "Na not falling → rate too slow",
+     "s": "stg-paed:2.17"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Prevent seizures; find the cause",
+   "timing": "throughout",
+   "time": "throughout",
+   "subtitle": "phenobarbitone · DI",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "High Na + ↓LOC / irritable: phenobarbitone 20 mg/kg IV (or 20–30 mg/kg PO)",
+     "s": "stg-paed:2.17"
+    },
+    {
+     "n": "5.2",
+     "t": "Polyuria → diabetes insipidus: desmopressin (PAED 7.4)",
+     "s": "stg-paed:23.14"
+    },
+    {
+     "n": "5.3",
+     "t": "Refer: Na >170 or not correcting",
+     "s": "stg-paed:2.19"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Free-water deficit (mL) and IV rate",
+    "s": "stg-paed:23.14",
+    "cols": [
+     "Weight",
+     "Na 155",
+     "Na 160",
+     "Na 170",
+     "IV mL/h (48 h)"
+    ],
+    "rows": [
+     [
+      "5 kg",
+      "321",
+      "429",
+      "643",
+      "30"
+     ],
+     [
+      "10 kg",
+      "643",
+      "857",
+      "1 286",
+      "60"
+     ],
+     [
+      "15 kg",
+      "964",
+      "1 286",
+      "1 929",
+      "75"
+     ],
+     [
+      "20 kg",
+      "1 286",
+      "1 714",
+      "2 571",
+      "100"
+     ],
+     [
+      "30 kg",
+      "1 929",
+      "2 571",
+      "3 857",
+      "120"
+     ]
+    ],
+    "note": "Give the free-water deficit over 24–72 h (max fall 10–15 mmol/L/24 h, P 23.14); tap water by mouth preferred, else D5W.",
+    "s_more": [
+     "stg-paed:2.16"
+    ]
+   }
+  ]
+ }
+}

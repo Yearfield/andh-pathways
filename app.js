@@ -110,8 +110,11 @@ const progress = d => { const a = allItems(d); const v = a.filter(i => S.verifie
 const doneCount = (d, items) => { const r = (items || []).filter(i => i.t); return [r.filter(i => S.checked[key(d.id, i)]).length, r.length]; };
 
 /* ---------- item rendering ---------- */
-const chipx = it => chip(it.s) + (it.s_more || []).map(chip).join(""); // an item's own cite plus any s_more extra cites
-function chip(src) {
+// every source tag is folded behind one small "ref." button: tap to show the source(s), tap a source to open it
+const refbox = (html, inl) => html ? `<span class="rf${inl ? " inl" : ""}"><button class="rfb" data-rf aria-expanded="false" aria-label="Show source">ref.</button><span class="rfx" hidden>${html}</span></span>` : "";
+const chipx = it => refbox(chip1(it.s) + (it.s_more || []).map(x => chip1(x)).join("")); // an item's own cite plus any s_more extra cites
+const chip = src => refbox(chip1(src));
+function chip1(src) {
   if (!src) return "";
   const r = resolveSrc(src); // numeric = printed page; otherwise a recommendation number (e.g. ESGE R13)
   if (r.online) return `<a class="chip" href="${esc(r.online)}" target="_blank" rel="noopener" aria-label="Open ${esc(r.label)} online">${esc(r.label)} ↗</a>`;
@@ -119,6 +122,9 @@ function chip(src) {
 }
 const dag = it => it.d ? '<span class="dag">†</span>' : "";
 const tick = (k) => { const v = S.verified[k]; return S.verify ? `<button class="tick ${v ? "on" : ""}" data-tick="${k}" aria-pressed="${!!v}" aria-label="${v ? "Verified " + v : "Mark verified"}">✓</button>` : ""; };
+// Instruction lines: bold the leading action verb so a page scans as a list of actions
+const LEAD = /^(give|insert|start|stop|check|monitor|refer|repeat|administer|add|obtain|send|assess|consider|review|measure|record|discuss|admit|transfer|call|request|order|perform|treat|continue|titrate|reassess|examine|take|document|ensure|position|apply|prepare|place|use|hold|withhold|discontinue|switch|increase|reduce|stabilise|resuscitate|intubate|cannulate|catheterise|observe|reassure|counsel|inform|notify|arrange|escalate|correct|replace|insert|bolus|infuse|nebulise|ventilate|suction|splint|dress|clean|swab|culture|test|image|scan|reconsider|re-?check|re-?assess)(?=[\s:,;]|$)/i;
+const lead = t => { const m = t.match(LEAD); return m ? `<b class="vb">${esc(m[1])}</b>${esc(t.slice(m[1].length))}` : esc(t); };
 function li(d, it) {
   if (it.k === "handoff") { // jump to another pathway (#/dx/…) or procedure card (#/proc/…) named in "to"
     const to = it.to, href = (S.index.diagnoses || []).some(x => x.id === to) ? `#/dx/${to}/arrival` : [...(S.index.procedures || []), ...(S.index.fluids || [])].some(x => x.id === to) ? `#/proc/${to}/procedure` : "";
@@ -128,7 +134,7 @@ function li(d, it) {
   const k = key(d.id, it); const cOn = S.checked[k];
   const cls = [it.k === "sub" ? "sub" : "", it.k === "info" ? "info" : "", it.k === "value" ? "value" : "", it.b ? "b" : "", it.k === "yn" ? "yn" : "", cOn ? "checked" : ""].join(" ");
   const chk = `<button class="chk ${cOn ? "on" : ""}" data-chk="${k}" aria-pressed="${!!cOn}" aria-label="${cOn ? "Checked off" : "Mark done"}"></button>`;
-  return `<li class="${cls}">${chk}<div class="body"><span class="txt">${esc(it.t)}${dag(it)}</span>${chipx(it)}</div>${tick(k)}</li>`;
+  return `<li class="${cls}">${chk}<div class="body"><span class="txt">${it.b || it.k === "info" || it.k === "value" ? esc(it.t) : lead(it.t)}${dag(it)}</span>${chipx(it)}</div>${tick(k)}</li>`;
 }
 const list = (d, items) => `<ul class="items">${(items || []).map(i => li(d, i)).join("")}</ul>`;
 const card = (d, title, items, cls = "") => `<section class="card ${cls}"><h2 class="ctitle">${esc(title)}</h2>${list(d, items)}</section>`;
@@ -164,12 +170,25 @@ function landing() {
     <button class="tile" data-go="#/scores">${ico("scales")}<b>Scales and Calculations</b><span>Scores, grades and calculators · ${ns} card${ns === 1 ? "" : "s"}</span></button></div>
     <p class="hint">Reference only — no patient details are stored.</p></main>`;
 }
+/* Procedures can be grouped (index.json "proc_groups"; a procedure joins one with "group": id). A group is ONE row in the procedures list
+   and opens #/procgroup/<id>, which lists its cards. */
+function procGroup(gid) {
+  const g = (S.index.proc_groups || []).find(x => x.id === gid); if (!g) throw new Error("unknown group " + gid);
+  const ms = g.members.map(id => (S.index.procedures || []).find(x => x.id === id)).filter(Boolean);
+  app.innerHTML = `
+  <header class="top"><div class="hometop"><div class="brand"><button class="iconbtn" aria-label="Back to procedures" data-go="#/procedures">${ico("back")}</button>
+    <div class="ttl"><h1>${esc(g.short)}</h1><div class="sub">${ms.length} cards · ${esc(g.setting)} · works offline</div></div></div></div></header>
+  <main class="fade home hub"><section class="grp"><div class="list">${ms.map(e => `<button class="dx hx" data-go="#/proc/${e.id}/procedure">
+    <span class="hn">${esc(e.short.replace(/\s*\((adult|child)\)$/i, ""))}</span><span class="hb">${esc(e.title)}</span>${ico("next")}</button>`).join("")}</div></section>
+    <p class="hint">† = clinical or local addition, not in the SA guideline.</p></main>`;
+}
 function procHome() {
-  const ps = S.index.procedures || [];
+  const all = S.index.procedures || [], groups = S.index.proc_groups || [], ps = all.filter(e => !e.group);
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><button class="iconbtn" aria-label="Back to start" data-go="#/">${ico("back")}</button>
-    <div class="ttl"><h1>Procedures pathways</h1><div class="sub">ANDH · ${ps.length} procedure${ps.length === 1 ? "" : "s"} · works offline</div></div></div></div></header>
-  <main class="fade home"><section class="grp"><div class="list">${ps.map(e => `<button class="dx" data-go="#/proc/${e.id}">
+    <div class="ttl"><h1>Procedures pathways</h1><div class="sub">ANDH · ${ps.length + groups.length} entr${ps.length + groups.length === 1 ? "y" : "ies"} · works offline</div></div></div></div></header>
+  <main class="fade home"><section class="grp"><div class="list">${groups.map(g => `<button class="dx" data-go="#/procgroup/${g.id}">
+    <span class="t">${esc(g.short)}</span><span class="p">${g.members.length} cards · ${esc(g.population)} · ${esc(g.setting)}</span>${ico("next")}</button>`).join("")}${ps.map(e => `<button class="dx" data-go="#/proc/${e.id}">
     <span class="t">${esc(e.short || e.title)}</span><span class="p">${esc(e.title)} · ${esc(e.population)} · ${esc(e.setting)}</span>${ico("next")}</button>`).join("")}</div></section>
     <p class="hint">† = clinical or local addition, not in the SA guideline.</p></main>`;
 }
@@ -206,6 +225,7 @@ async function procView(id, tab) {
   if (isFl && fe.pop !== "Adult + paeds") S.hub.fluids = (S.index.fluids_hub?.members || []).findIndex(m => m.pop === fe.pop) || 0; // the hub reopens on the population you were in
   const tm = s => s.time ?? s.timing ?? ""; // steps carry both "timing" and "time"
   const d = S.dx[id] ||= await loadJSON(e.path);
+  const fcard = isFl || !!(d.reference && d.reference.blocks); // card format (Steps / Reference / Sources): Fluids Rx and the electrolyte cards in procedures
   const R = d.reference || {}, dg = x => x.d ? '<span class="dag">†</span>' : "";
   const secs = (arr, cls = "") => (arr || []).map(s => card(d, s.h, s.items, cls)).join("");
   const chips = x => x.m ? `<span class="mk">${esc(x.m)}</span>` : "";
@@ -239,10 +259,12 @@ async function procView(id, tab) {
     ? `<div class="tscroll"><table class="dtab"><thead><tr>${b.cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${b.rows.map(r => `<tr>${r.map((c, k) => k ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join("")}</tr>`).join("")}</tbody></table></div>`
     : `<ul class="items">${(b.items || []).map(it => `<li><div class="body"><span class="txt">${esc(it.t)}${dg(it)}</span>${chipx(it)}</div></li>`).join("")}</ul>`) +
     `${b.note ? `<p class="hint" style="padding:6px 14px 12px">${esc(b.note)}</p>` : ""}</section>`;
+  const refLinks = s => { const bl = (s.reference_refs || []).map(i => (R.blocks || [])[i]).filter(Boolean);
+    return bl.length ? `<div class="toolrow">${bl.map(b => `<button class="btn" data-go="#/proc/${id}/reference">${esc(b.h)}${ico("next")}</button>`).join("")}</div>` : ""; };
   const steps = flowNav + d.steps.map((s, i) => `<section class="pstep" id="p${s.n}"><div class="rail"><span class="node">${s.n}</span></div>
     <div class="pbody"><div class="phead"><h2>${esc(s.title)}</h2><span class="tpill">${esc(tm(s))}</span></div><div class="psub">${esc(s.subtitle)}</div>
       ${(s.actions || []).length ? `<ul class="items acts">${s.actions.map(act).join("")}</ul>` : ""}${seqAny(s)}
-      ${(s.decisions || []).map(dec).join("")}</div></section>`).join("");
+      ${(s.decisions || []).map(dec).join("")}${refLinks(s)}</div></section>`).join("");
   const drug = x => `<section class="card drug"><h2 class="ctitle"><span class="mk">${numeral(x.m)}</span>${esc(x.name)}${dg(x)}</h2><dl class="dl">
     ${[["Conc.", x.conc], ["Dose", x.dose, 1], ["Give", x.when], ["Onset / duration", x.onset], ["Shocked / frail", x.adjusted], ["Watch", x.watch]].filter(r => r[1] && r[1] !== "—")
       .map(([l, v, b]) => `<div><dt>${l}</dt><dd class="${b ? "b" : ""}">${esc(v)}</dd></div>`).join("")}</dl>${x.s ? `<div class="drugsrc">${chip(x.s)}</div>` : ""}</section>`;
@@ -253,18 +275,18 @@ async function procView(id, tab) {
   const dt = R.dose_table, table = dt ? `<section class="card"><h2 class="ctitle">Dose by weight (${esc(dt.unit)})</h2><div class="tscroll"><table class="dtab">
     <thead><tr><th>Drug</th>${dt.weights.map(w => `<th>${w}</th>`).join("")}</tr>${dt.ages_approx ? `<tr class="ages"><th>Approx. age</th>${dt.ages_approx.map(a => `<th>${esc(a)}</th>`).join("")}</tr>` : ""}</thead><tbody>${dt.rows.map(r =>
     `<tr><th><span class="mk">${numeral(r.m)}</span>${esc(r.drug)}${dg(r)}<small>${esc(r.basis)} · ${esc(r.unit)}</small>${chip(r.s)}</th>${r.vals.map(v => `<td>${esc(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>${dt.ages_note ? `<p class="hint" style="padding:0 14px 12px">${esc(dt.ages_note)}</p>` : ""}</section>` : "";
-  const tabs = isFl ? [["indications", "Indications"], ["contraindications", "Cautions"], ["procedure", "Steps"], ["reference", "Reference"], ["sources", "Sources"]]
+  const tabs = fcard ? [["indications", "Indications"], ["contraindications", "Cautions"], ["procedure", "Steps"], ["reference", "Reference"], ["sources", "Sources"]]
     : [["indications", "Indications"], ["contraindications", "Contra-indications"], ["procedure", "Procedure"], ["drugs", "Drugs"], ["after", "After & problems"]];
   tab = tabs.some(x => x[0] === tab) ? tab : "procedure";
   const body = { indications: `<h2 class="glabel">Indications</h2>${secs(d.indications)}`,
-    contraindications: `<h2 class="glabel">${isFl ? "Cautions" : "Contraindications"}</h2>${secs(d.contraindications)}`,
+    contraindications: `<h2 class="glabel">${fcard ? "Cautions" : "Contraindications"}</h2>${secs(d.contraindications)}`,
     procedure: steps,
     drugs: `<h2 class="glabel">Drugs in order of giving</h2>${calc}${(R.drugs || []).map(drug).join("")}${table}`,
     after: d.complications ? `<h2 class="glabel">Sedation, ventilation and deterioration</h2>${secs(R.later)}<h2 class="glabel">${esc(d.complications.title)}</h2>${secs(d.complications.sections, "red")}` : "",
     reference: `<h2 class="glabel">${esc(R.title || "Reference")}</h2>${(R.blocks || []).map(refBlock).join("")}`,
     sources: tab === "sources" ? `<section class="card"><h2 class="ctitle">Sources</h2><ul class="items">${(d.sources || []).map(i => `<li><div class="body"><span class="txt"><b>${esc(S.sources[i]?.short || i)}</b> — ${esc(S.sources[i]?.title || i)}</span></div></li>`).join("")}</ul></section>${await scPdfRows(d)}` : "" }[tab];
   app.innerHTML = `
-  <header class="top"><div class="bar"><button class="iconbtn" aria-label="${isFl ? "Back to Fluids Rx" : "Back to procedures"}" data-go="${isFl ? "#/fluids" : "#/procedures"}">${ico("back")}</button>
+  <header class="top"><div class="bar"><button class="iconbtn" aria-label="${isFl ? "Back to Fluids Rx" : "Back to procedures"}" data-go="${isFl ? "#/fluids" : e.group ? "#/procgroup/" + e.group : "#/procedures"}">${ico("back")}</button>
     <div class="ttl"><div class="row1"><h1>${esc(d.short)}</h1><span class="badge ${popClass(isFl ? e.pop : d.population)}">${esc(popName(isFl ? e.pop : d.population))}</span></div>
       <div class="sub">${esc(d.title)} · ${esc(d.setting)}</div></div></div>
     <nav class="ptabs" aria-label="Sections">${tabs.map(([k, l]) => `<button data-go="#/proc/${id}/${k}" ${k === tab ? 'class="on" aria-current="page"' : ""}>${l}</button>`).join("")}</nav></header>
@@ -327,7 +349,7 @@ function home() {
     b.dataset.q += " " + ds.flatMap(d => (d.differentials || []).map(x => x.dx + " " + (x.group || ""))).join(" ").toLowerCase(); applyFilter();
   } catch {} });
 }
-const CATS = ["All", "Endo", "Toxins", "Infections"];
+const CATS = ["All", "Endo", "Toxins", "Infections", "Electrolytes"];
 const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "Ortho", "Gynae", "Uro", "Nephro"];
 function applyFilter() {
   const q = ($("#q")?.value || "").trim().toLowerCase(); let any = 0;
@@ -392,12 +414,23 @@ function days(d, i) {
 }
 
 const DOSE = /^((?:max\.?\s)?[\d.,]+(?:\s?[–-]\s?[\d.,]+)?\s?(?:U|IU|units?|mg|g|µg|mcg|mL|ml|mmol|L|drops?|tabs?|ampoules?)(?:\/(?:kg|h|min|day|dose))*(?:\s(?:IV|IM|SC|PO|SL|PR|IO|NGT|stat))?)(?=[\s,;·(]|$)/;
+// "Nifedipine 10 mg PO", "and/or amlodipine 5 mg": prefix, then drug name + dose + route (all coloured)
+const RX = /^((?:and\/or |or |then )?)([A-Za-z][\w₀-₉'’-]*(?:\s[\w₀-₉\/()+'’-]+){0,3}?\s[\d.,]+(?:\s?[–-]\s?[\d.,]+)?\s?(?:U|IU|units?|mg|g|µg|mcg|mL|ml|mmol|L|drops?|tabs?|ampoules?)(?:\/(?:kg|h|min|day|dose))*(?:\s(?:IV|IM|SC|PO|SL|PR|IO|NGT|stat)(?:\/(?:IV|IM|SC|PO))*)?)(?=[\s,;·(—–→]|$)/;
 const WARN = /^(not |no |avoid|caution|contra|do not|don't|never|stop )|contraindicat/i;
+function doseText(t, w) { // name + dose + route in teal; a leading dose bold; a leading action verb bold
+  const m = !w && t.match(DOSE);
+  if (m) return { m, html: `<b class="dose">${esc(m[1])}</b>${esc(t.slice(m[1].length).replace(/^[\s,;·]+/, ""))}` };
+  let r = !w && t.match(RX);
+  if (r && !r[1] && !/^[A-Z]/.test(t)) r = null; // bare lowercase starts are prose, not drug names
+  return { m, html: r ? `${esc(r[1])}<b class="rx">${esc(r[2])}</b>${esc(t.slice(r[0].length))}` : w ? esc(t) : lead(t) };
+}
 function doseLine(d, it, hs) {
-  const k = key(d.id, it); const w = WARN.test(it.t); const m = !w && it.t.match(DOSE);
-  const rest = m ? it.t.slice(m[1].length).replace(/^[\s,;·]+/, "") : "";
-  const txt = m ? `<b class="dose">${esc(m[1])}</b>${esc(rest)}` : esc(it.t);
-  return `<div class="ln ${w ? "warn" : ""} ${it.b && !m ? "bold" : ""}">${w ? ico("warn") : ""}<div class="body"><span class="txt">${txt}${dag(it)}</span>${it.s !== hs ? chip(it.s) : ""}</div>${tick(k)}</div>`;
+  const k = key(d.id, it); const w = WARN.test(it.t);
+  // "a · b · c" is a list, not one sentence: the first part is the line, the rest are indented lines under it
+  const parts = w ? [it.t] : it.t.split(/\s·\s/).map(x => x.trim()).filter(Boolean);
+  const first = doseText(parts[0], w), n = parts.length;
+  const kids = parts.slice(1).map((x, i) => `<div class="ln sub"><div class="body"><span class="txt">${doseText(x, false).html}${i === n - 2 ? dag(it) : ""}</span></div></div>`).join("");
+  return `<div class="ln ${w ? "warn" : ""} ${it.b && !first.m ? "bold" : ""}">${w ? ico("warn") : ""}<div class="body"><span class="txt">${first.html}${n === 1 ? dag(it) : ""}</span>${it.s !== hs ? chip(it.s) : ""}</div>${tick(k)}</div>${kids}`;
 }
 function differentials(d, focus) {
   const rows = d.chart.rows, dd = d.differentials; const sub = (t, a) => a && a.length ? `<h3 class="dsub">${t}</h3>${list(d, a)}` : "";
@@ -620,7 +653,8 @@ function calcOut(id) {
 }
 function calcRefresh() { $$("[data-out]").forEach(o => { if (CALCS[o.dataset.out]) o.innerHTML = calcOut(o.dataset.out); }); }
 
-const scRef = (src, cls = "") => { // small grey source tag; STG refs open the guideline PDF at that page, online sources open their URL
+const scRef = (src, cls = "") => refbox(scRef1(src, cls), true);
+const scRef1 = (src, cls = "") => { // small grey source tag; STG refs open the guideline PDF at that page, online sources open their URL
   if (!src) return "";
   const s = S.sources[src.split(":")[0]];
   if (s?.url && !src.includes(":")) return `<a class="ref ${cls}" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.short || src)}</a>`;
@@ -973,7 +1007,7 @@ async function rangeView(id, d, key) {
 
 /* ---------- checklist score cards: versions[] + components[].points (Wells PE, Wells DVT) ---------- */
 const SA_SRC = /^(HOSP|MAT24|PHC|PAED)(:|$)/; // SA guideline ids: only these get a green ✚ inline; every other source is listed in the footer
-const plus = s => s && SA_SRC.test(s) ? `<button class="plus" data-src="${esc(s)}" aria-label="Open ${esc(s.replace(":", " "))} in the guideline">✚</button>` : "";
+const plus = s => s && SA_SRC.test(s) ? refbox(`<button class="ref" data-src="${esc(s)}" aria-label="Open ${esc(s.replace(":", " "))} in the guideline">${esc(s.replace(":", " "))}</button>`, true) : "";
 const fmtG = n => String(+Number(n).toFixed(2)); // 1.5 -> "1.5", 2 -> "2"
 const sgn = n => (n < 0 ? "−" : "") + fmtG(Math.abs(n));
 const wRange = (a, b) => a === b ? sgn(a) : `${sgn(a)}–${sgn(b)}`;
@@ -1118,6 +1152,7 @@ document.addEventListener("click", async e => {
   if (t.dataset.closemenu !== undefined) { $(".menu")?.remove(); t.remove(); return; }
   if (t.closest(".menu")) { $(".menu")?.remove(); $(".scrim")?.remove(); }
   if (t.dataset.go !== undefined) { location.hash = t.dataset.go || "#/"; return; }
+  if (t.dataset.rf !== undefined) { const x = t.nextElementSibling, o = x.hidden; x.hidden = !o; t.setAttribute("aria-expanded", o); t.setAttribute("aria-label", o ? "Hide source" : "Show source"); return; }
   if (t.dataset.src) { openSource(t.dataset.src); return; }
   if (t.id === "more") { const p = (location.hash || "").slice(2).split("/"); toggleMenu(await getDx(p[1])); return; }
   if (t.dataset.catfilter) { S.cat = t.dataset.catfilter; applyFilter(); return; }
@@ -1211,6 +1246,7 @@ async function route() {
     if (p[0] === "hub") return hubView(p[1]);
     if (p[0] === "fluids") return fluidsHub();
     if (p[0] === "procedures") return procHome();
+    if (p[0] === "procgroup") return procGroup(p[1]);
     if (p[0] === "proc") return procView(p[1], p[2]);
     if (p[0] === "scores") return scoresHome();
     if (p[0] === "score") return scoreView(p[1], p[2], p[3]);

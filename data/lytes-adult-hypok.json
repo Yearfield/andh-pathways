@@ -1,0 +1,309 @@
+{
+ "id": "lytes-adult-hypok",
+ "short": "Hypokalaemia (adult)",
+ "title": "Hypokalaemia",
+ "population": "Adult",
+ "setting": "Casualty / ward",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Oral KCl if 3.0–3.4 and not vomiting · IV KCl 40 mmol / L over 3 h, ≤20 mmol/h · check Mg",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Definition and severity",
+   "col": 1,
+   "items": [
+    {
+     "t": "Serum K <3.5 mmol/L",
+     "s": "stg-adult:7.11",
+     "b": 1
+    },
+    {
+     "t": "Mild–moderate: weakness, cramps, ileus",
+     "s": "stg-adult:7.11"
+    },
+    {
+     "t": "Severe: paralysis, rhabdomyolysis, arrhythmia, diaphragm weakness",
+     "s": "stg-adult:7.11"
+    }
+   ]
+  },
+  {
+   "h": "Causes",
+   "col": 1,
+   "items": [
+    {
+     "t": "GI loss (diarrhoea); renal loss (diuretics, hyperaldosteronism, vomiting)",
+     "s": "stg-adult:7.11"
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Safety",
+   "col": 1,
+   "items": [
+    {
+     "t": "KCl ampoules ALWAYS diluted; never IV push",
+     "s": "stg-adult:7.12",
+     "b": 1
+    },
+    {
+     "t": "Peripheral ≤20 mmol/h; ≤3 mmol/kg/day (400 mmol)",
+     "s": "stg-adult:7.12",
+     "b": 1
+    },
+    {
+     "t": "Beware volume overload",
+     "s": "stg-adult:7.12"
+    }
+   ]
+  },
+  {
+   "h": "Do not",
+   "col": 1,
+   "items": [
+    {
+     "t": "Routinely add KCl to diuretics — use ACE-i / spironolactone",
+     "s": "stg-adult:7.12"
+    },
+    {
+     "t": "DKA → DKA card (K by level per litre)",
+     "s": "stg-adult:8.15"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Grade and get an ECG",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "symptoms · ECG · Mg",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Look for weakness, paralysis, arrhythmia",
+     "s": "stg-adult:7.11"
+    },
+    {
+     "n": "1.2",
+     "t": "Record ECG (prolonged QT, bradycardia)",
+     "s": "stg-adult:7.11"
+    },
+    {
+     "n": "1.3",
+     "t": "Send Mg, U&E; find the cause",
+     "x": "Mg if not responding",
+     "s": "stg-adult:7.13"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Choose route",
+   "timing": "T + 10 min",
+   "time": "T + 10 min",
+   "subtitle": "pick ONE row",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "MILD–MOD",
+     "sub": "K 3–3.4, not vomiting",
+     "cells": [
+      {
+       "m": "a",
+       "name": "KCl 600 mg tabs",
+       "dose": "2 tabs (16 mmol) 8-hourly",
+       "note": "or KCl 1 g/5 mL 10–30 mL/day; max 6 g/day",
+       "s": "stg-adult:7.12"
+      }
+     ]
+    },
+    {
+     "label": "SEVERE",
+     "sub": "symptomatic / vomiting",
+     "cells": [
+      {
+       "m": "a",
+       "name": "KCl IV 40 mmol",
+       "dose": "in 1 L NaCl 0.9% or 0.45% over 3 h",
+       "note": "mix thoroughly; ≤20 mmol/h",
+       "s": "stg-adult:7.12"
+      }
+     ]
+    },
+    {
+     "label": "CHRONIC",
+     "sub": "asymptomatic",
+     "cells": [
+      {
+       "m": "a",
+       "name": "KCl 600 mg",
+       "dose": "1–2 tabs 8-hourly",
+       "note": "recheck at 4 weeks",
+       "s": "stg-adult:7.11",
+       "s_more": [
+        "stg-adult:7.12"
+       ]
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a give ▶ b recheck K",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Run IV potassium safely",
+   "timing": "during infusion",
+   "time": "during infusion",
+   "subtitle": "pump · monitor · site",
+   "actions": [
+    {
+     "n": "3.1",
+     "t": "Use an infusion pump; label the bag",
+     "d": 1
+    },
+    {
+     "n": "3.2",
+     "t": "Cardiac monitor if rate >10 mmol/h or arrhythmia",
+     "d": 1
+    },
+    {
+     "n": "3.3",
+     "t": "Repeat as required, measuring K after each dose",
+     "s": "stg-adult:7.12"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Recheck and step down",
+   "timing": "after each bag",
+   "time": "after each bag",
+   "subtitle": "IV → oral",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "No longer severe → slow IV or switch to oral",
+     "s": "stg-adult:7.13"
+    },
+    {
+     "n": "4.2",
+     "t": "Continue until K persistently >3.5 and symptoms resolved",
+     "s": "stg-adult:7.12",
+     "s_more": [
+      "stg-adult:7.13"
+     ]
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "K not rising",
+     "then": "check Mg; replace (Ca/Mg card)",
+     "s": "stg-adult:7.13"
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Fix the cause",
+   "timing": "before discharge",
+   "time": "before discharge",
+   "subtitle": "drugs · losses · aldosterone",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Review diuretics; add ACE-i / spironolactone rather than KCl",
+     "s": "stg-adult:7.12"
+    },
+    {
+     "n": "5.2",
+     "t": "Hypo-K on K-sparing / ACE-i → suspect primary hyperaldosteronism",
+     "s": "stg-adult:7.12"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Potassium quantities",
+    "s": "stg-adult:7.12",
+    "cols": [
+     "K dose",
+     "KCl 15% ampoules (20 mmol)",
+     "600 mg tabs (8 mmol)",
+     "Fluid at 40 mmol/L (mL)",
+     "Min hours at 20 mmol/h"
+    ],
+    "rows": [
+     [
+      "20 mmol",
+      "1",
+      "2.5",
+      "500",
+      "1"
+     ],
+     [
+      "40 mmol",
+      "2",
+      "5",
+      "1 000",
+      "2"
+     ],
+     [
+      "60 mmol",
+      "3",
+      "7.5",
+      "1 500",
+      "3"
+     ],
+     [
+      "80 mmol",
+      "4",
+      "10",
+      "2 000",
+      "4"
+     ]
+    ],
+    "note": "Max 40 mmol per litre peripherally (STG regimen); 1 g KCl ≈ 13 mmol (PAED 7.36)."
+   }
+  ]
+ }
+}

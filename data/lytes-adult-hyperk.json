@@ -1,0 +1,322 @@
+{
+ "id": "lytes-adult-hyperk",
+ "short": "Hyperkalaemia (adult)",
+ "title": "Hyperkalaemia",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "regimen": "Calcium gluconate 10 mL → dextrose 50% 100 mL + insulin 10 U → salbutamol neb → resin / dialysis",
+ "sources": [
+  "stg-adult"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the cited guideline.",
+ "item_format": "Items: t=text, x=detail, s=source 'source-id:printed page' (STG pages are chapter.page), s_more=extra refs, d=1 dagger, b=1 bold. steps[].actions[] are the ordered spine (flow view); steps[].sequence.rows[].cells[] are ordered fluid/drug cells (m=a/b/c); steps[].decisions[] are IF/then branches; reference.blocks[] are tables (cols/rows) or lists (items).",
+ "indications": [
+  {
+   "h": "Treat as emergency",
+   "col": 1,
+   "items": [
+    {
+     "t": "Serum K⁺ >6.0 mmol/L",
+     "s": "stg-adult:7.10",
+     "b": 1
+    },
+    {
+     "t": "Any K⁺ rise with ECG change: peaked T, wide QRS, brady / heart block",
+     "s": "stg-adult:3.27"
+    }
+   ]
+  },
+  {
+   "h": "Look for the cause",
+   "col": 1,
+   "items": [
+    {
+     "t": "AKI / CKD; ACE-i, ARB, spironolactone",
+     "s": "stg-adult:7.9",
+     "s_more": [
+      "stg-adult:7.4",
+      "stg-adult:1.11"
+     ]
+    },
+    {
+     "t": "Low Na + high K → think adrenal crisis",
+     "s": "stg-adult:8.2"
+    },
+    {
+     "t": "Tumour lysis; suxamethonium in burns / denervation",
+     "s": "stg-adult:21.1",
+     "s_more": [
+      "stg-adult:12.3"
+     ]
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Cautions",
+   "col": 1,
+   "items": [
+    {
+     "t": "Insulin → hypoglycaemia: glucose hourly for 6 h",
+     "s": "stg-adult:7.10",
+     "b": 1
+    },
+    {
+     "t": "Calcium, insulin, salbutamol are short-term only — K must still be removed",
+     "s": "stg-adult:7.10"
+    },
+    {
+     "t": "Haemolysed sample: repeat (VBG) but treat now if ECG changed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Stop",
+   "col": 1,
+   "items": [
+    {
+     "t": "KCl, Ringer's lactate (K 4 mmol/L), ACE-i/ARB, spironolactone, NSAIDs",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "title": "Monitor, ECG, stop K sources",
+   "timing": "T 0",
+   "time": "T 0",
+   "subtitle": "cardiac monitor · 12-lead · IV line",
+   "actions": [
+    {
+     "n": "1.1",
+     "t": "Attach cardiac monitor; record 12-lead ECG",
+     "d": 1
+    },
+    {
+     "n": "1.2",
+     "t": "Insert IV line; send U&E, VBG, glucose",
+     "d": 1
+    },
+    {
+     "n": "1.3",
+     "t": "Stop all potassium intake and K-raising drugs",
+     "d": 1
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Protect the heart",
+   "timing": "T 0 → T + 10 min",
+   "time": "T 0 → T + 10 min",
+   "subtitle": "if ECG changes or K >6.0",
+   "actions": [
+    {
+     "n": "2.1",
+     "t": "Give calcium gluconate 10% 10 mL IV over 10 min",
+     "s": "stg-adult:7.10",
+     "b": 1
+    },
+    {
+     "n": "2.2",
+     "t": "Repeat if ECG changes persist after 5 min or recur",
+     "s": "stg-adult:7.10"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Shift K into cells",
+   "timing": "T + 10 min",
+   "time": "T + 10 min",
+   "subtitle": "all three together",
+   "actions": [],
+   "sequence": [
+    {
+     "label": "SHIFT",
+     "sub": "",
+     "cells": [
+      {
+       "m": "a",
+       "name": "Dextrose 50%",
+       "dose": "100 mL IV bolus",
+       "s": "stg-adult:7.10"
+      },
+      {
+       "m": "b",
+       "name": "Soluble insulin",
+       "dose": "10 U IV push over 5 min",
+       "note": "glucose hourly × 6 h",
+       "s": "stg-adult:7.10"
+      },
+      {
+       "m": "c",
+       "name": "Salbutamol neb",
+       "dose": "10–20 mg",
+       "note": "5 mg (1 mL 0.5%) to 4 mL NaCl per neb",
+       "s": "stg-adult:7.10"
+      }
+     ]
+    }
+   ],
+   "sequence_order": "a dextrose ▶ b insulin ▶ c salbutamol (at the same time)",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Remove K from the body",
+   "timing": "T + 30 min → hours",
+   "time": "T + 30 min → hours",
+   "subtitle": "dialysis is definitive",
+   "actions": [
+    {
+     "n": "4.1",
+     "t": "Phone referral centre for dialysis",
+     "x": "these measures are short-term",
+     "s": "stg-adult:7.10",
+     "b": 1
+    },
+    {
+     "n": "4.2",
+     "t": "If dialysis not feasible: sodium polystyrene sulfonate 15 g + lactulose 15 mL PO 6-hourly",
+     "s": "stg-adult:7.10"
+    },
+    {
+     "n": "4.3",
+     "t": "or SPS 30–60 g rectal enema; wash out with phosphate enema after 8 h (less effective)",
+     "s": "stg-adult:7.10"
+    },
+    {
+     "n": "4.4",
+     "t": "Treat the cause",
+     "x": "adrenal crisis: hydrocortisone 100 mg IV 6-hourly",
+     "s": "stg-adult:8.2"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [],
+   "reference_refs": [
+    0
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Recheck and refer",
+   "timing": "K at 1 h, 2 h, then 2–4-hourly",
+   "time": "K at 1 h, 2 h, then 2–4-hourly",
+   "subtitle": "repeat shift if K climbs",
+   "actions": [
+    {
+     "n": "5.1",
+     "t": "Recheck K and glucose after shift therapy",
+     "d": 1
+    },
+    {
+     "n": "5.2",
+     "t": "Repeat calcium for recurrent ECG change",
+     "s": "stg-adult:7.10"
+    }
+   ],
+   "sequence": [],
+   "sequence_order": "",
+   "decisions": [
+    {
+     "if": "K >7 refractory, pH <7.15, pulmonary oedema, uraemic complications",
+     "then": "acute dialysis — transfer",
+     "s": "stg-adult:7.9"
+    }
+   ],
+   "reference_refs": [
+    0
+   ]
+  }
+ ],
+ "reference": {
+  "title": "Reference",
+  "blocks": [
+   {
+    "h": "Onset and duration",
+    "d": 1,
+    "cols": [
+     "Drug",
+     "Acts by",
+     "Onset",
+     "Lasts"
+    ],
+    "rows": [
+     [
+      "Calcium gluconate",
+      "membrane stabilisation",
+      "1–3 min",
+      "30–60 min"
+     ],
+     [
+      "Insulin + dextrose",
+      "shift into cells",
+      "15–30 min",
+      "4–6 h"
+     ],
+     [
+      "Salbutamol neb",
+      "shift into cells",
+      "≈30 min",
+      "2–4 h"
+     ],
+     [
+      "SPS resin",
+      "GI removal",
+      "hours",
+      "—"
+     ],
+     [
+      "Dialysis",
+      "removal",
+      "immediate",
+      "definitive"
+     ]
+    ]
+   },
+   {
+    "h": "Preparation",
+    "type": "list",
+    "items": [
+     {
+      "t": "Calcium gluconate 10%: 1 ampoule = 10 mL",
+      "d": 1
+     },
+     {
+      "t": "Salbutamol 0.5% = 5 mg/mL: 1 mL made up to 4 mL with NaCl 0.9%",
+      "s": "stg-adult:7.10"
+     },
+     {
+      "t": "Insulin 10 U soluble, push over 5 min (not SC)",
+      "s": "stg-adult:7.10"
+     }
+    ]
+   }
+  ]
+ }
+}

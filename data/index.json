@@ -1,12 +1,12 @@
 {
   "app": "JAD Pathways",
   "diagnoses": [
-    {"id": "sam", "file": "sam.json", "title": "Severe acute malnutrition", "short": "SAM", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": [], "cat": ["Endo"]}},
+    {"id": "sam", "file": "sam.json", "title": "Severe acute malnutrition", "short": "SAM", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": [], "cat": ["Endo", "Electrolytes"]}},
     {"id": "pet", "file": "pet.json", "title": "Pre-eclampsia", "short": "PET", "population": "Obstetric", "tags": {"pop": "Obstetric", "system": ["Gynae"], "cat": []}},
-    {"id": "dka-adult", "file": "dka-adult.json", "title": "Diabetic ketoacidosis — adult", "short": "DKA (adult)", "population": "Adult", "tags": {"pop": "Adult", "system": [], "cat": ["Endo"]}},
-    {"id": "dka-paeds", "file": "dka-paeds.json", "title": "Diabetic ketoacidosis — paediatric", "short": "DKA (paeds)", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": [], "cat": ["Endo"]}},
-    {"id": "age-paeds", "file": "age-paeds.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (child)", "short": "AGE (child)", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": ["ABDO", "GIT"], "cat": ["Infections"]}},
-    {"id": "age-adult", "file": "age-adult.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (adult)", "short": "AGE (adult)", "population": "Adult", "tags": {"pop": "Adult", "system": ["ABDO", "GIT"], "cat": ["Infections"]}},
+    {"id": "dka-adult", "file": "dka-adult.json", "title": "Diabetic ketoacidosis — adult", "short": "DKA (adult)", "population": "Adult", "tags": {"pop": "Adult", "system": [], "cat": ["Endo", "Electrolytes"]}},
+    {"id": "dka-paeds", "file": "dka-paeds.json", "title": "Diabetic ketoacidosis — paediatric", "short": "DKA (paeds)", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": [], "cat": ["Endo", "Electrolytes"]}},
+    {"id": "age-paeds", "file": "age-paeds.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (child)", "short": "AGE (child)", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": ["ABDO", "GIT"], "cat": ["Infections", "Electrolytes"]}},
+    {"id": "age-adult", "file": "age-adult.json", "title": "Acute gastroenteritis — nausea, vomiting, diarrhoea (adult)", "short": "AGE (adult)", "population": "Adult", "tags": {"pop": "Adult", "system": ["ABDO", "GIT"], "cat": ["Infections", "Electrolytes"]}},
     {"id": "op", "file": "op.json", "title": "Organophosphate / carbamate poisoning", "short": "OP poisoning", "population": "Adult + Paediatric", "tags": {"pop": "Adult + paeds", "system": ["CNS", "Resp"], "cat": ["Toxins"]}},
     {"id": "amphetamines", "file": "amphetamines.json", "title": "Amphetamines and methamphetamine (tik, ecstasy/MDMA) poisoning", "short": "Amphetamines", "population": "Adult + Paediatric", "tags": {"pop": "Adult + paeds", "system": ["CNS", "CVS"], "cat": ["Toxins"]}},
     {"id": "opioids", "file": "opioids.json", "title": "Opioid poisoning (heroin, nyaope, codeine, morphine)", "short": "Opioids", "population": "Adult + Paediatric", "tags": {"pop": "Adult + paeds", "system": ["CNS", "Resp"], "cat": ["Toxins"]}},
@@ -33,10 +33,10 @@
     {"id": "hiv-new-neonate", "file": "hiv-new-neonate.json", "title": "HIV-positive neonate (< 28 days), starting ART — admitted", "short": "New HIV (neonate)", "population": "Neonate < 28 days with a positive HIV PCR (birth or later), not yet on ART", "tags": {"pop": "Paediatric", "system": [], "cat": ["Infections"]}},
     {"id": "hiv-defaulter-adult", "file": "hiv-defaulter-adult.json", "title": "HIV treatment defaulter re-engaging in care, TB excluded — admitted adult", "short": "HIV defaulter (adult)", "population": "Adult and adolescent ≥ 15 y previously on ART who interrupted treatment; TB excluded; excludes pregnancy, TB, meningitis", "tags": {"pop": "Adult", "system": [], "cat": ["Infections"]}},
     {"id": "hiv-defaulter-child", "file": "hiv-defaulter-child.json", "title": "HIV treatment defaulter re-engaging in care, TB excluded — admitted child 28 days to < 15 years", "short": "HIV defaulter (child)", "population": "Child 28 d – < 15 y previously on ART who interrupted treatment; TB excluded; excludes TB, meningitis", "tags": {"pop": "Paediatric", "system": [], "cat": ["Infections"]}},
-    {"id": "aki-adult", "file": "aki-adult.json", "title": "Acute kidney injury (adult)", "short": "AKI (adult)", "population": "Adult and adolescent ≥ 13 y; excludes pregnancy-related AKI, DKA/HHS, toxic alcohols", "tags": {"pop": "Adult", "system": ["Nephro"], "cat": []}},
-    {"id": "aki-paeds", "file": "aki-paeds.json", "title": "Acute kidney injury (child)", "short": "AKI (child)", "population": "Child < 13 y, including neonates; excludes SAM and DKA", "tags": {"pop": "Paediatric", "system": ["Nephro"], "cat": []}},
-    {"id": "ckd-adult", "file": "ckd-adult.json", "title": "Chronic kidney disease — admitted with a complication (adult)", "short": "CKD (adult)", "population": "Adult and adolescent ≥ 13 y with known or suspected CKD; excludes pregnancy and dialysis patients", "tags": {"pop": "Adult", "system": ["Nephro"], "cat": []}},
-    {"id": "ckd-paeds", "file": "ckd-paeds.json", "title": "Chronic kidney disease — admitted with a complication (child)", "short": "CKD (child)", "population": "Child < 13 y with known or suspected CKD; excludes SAM and children on dialysis", "tags": {"pop": "Paediatric", "system": ["Nephro"], "cat": []}},
+    {"id": "aki-adult", "file": "aki-adult.json", "title": "Acute kidney injury (adult)", "short": "AKI (adult)", "population": "Adult and adolescent ≥ 13 y; excludes pregnancy-related AKI, DKA/HHS, toxic alcohols", "tags": {"pop": "Adult", "system": ["Nephro"], "cat": ["Electrolytes"]}},
+    {"id": "aki-paeds", "file": "aki-paeds.json", "title": "Acute kidney injury (child)", "short": "AKI (child)", "population": "Child < 13 y, including neonates; excludes SAM and DKA", "tags": {"pop": "Paediatric", "system": ["Nephro"], "cat": ["Electrolytes"]}},
+    {"id": "ckd-adult", "file": "ckd-adult.json", "title": "Chronic kidney disease — admitted with a complication (adult)", "short": "CKD (adult)", "population": "Adult and adolescent ≥ 13 y with known or suspected CKD; excludes pregnancy and dialysis patients", "tags": {"pop": "Adult", "system": ["Nephro"], "cat": ["Electrolytes"]}},
+    {"id": "ckd-paeds", "file": "ckd-paeds.json", "title": "Chronic kidney disease — admitted with a complication (child)", "short": "CKD (child)", "population": "Child < 13 y with known or suspected CKD; excludes SAM and children on dialysis", "tags": {"pop": "Paediatric", "system": ["Nephro"], "cat": ["Electrolytes"]}},
     {"id": "adhf-adult", "file": "adhf-adult.json", "title": "Acute decompensated heart failure — pulmonary oedema / cardiogenic shock (adult)", "short": "ADHF (adult)", "population": "Adult and adolescent ≥ 13 y; first 48 h of acute pulmonary oedema or congestion, then CCF chart", "tags": {"pop": "Adult", "system": ["CVS"], "cat": []}},
     {"id": "ccf-adult", "file": "ccf-adult.json", "title": "Congestive cardiac failure — work-up, decongestion and medicine optimisation (adult)", "short": "CCF (adult)", "population": "Adult and adolescent ≥ 13 y with new or known chronic HF, not in shock or acute pulmonary oedema", "tags": {"pop": "Adult", "system": ["CVS"], "cat": []}},
     {"id": "acs-adult", "file": "acs-adult.json", "title": "Acute coronary syndrome — STEMI, NSTEMI and unstable angina (adult)", "short": "ACS (adult)", "population": "Adult with suspected ischaemic chest pain; guidance is for thrombolysis, not primary PCI", "tags": {"pop": "Adult", "system": ["CVS"], "cat": []}},
@@ -96,7 +96,51 @@
   ],
   "procedures": [
     {"id": "rsi-adult", "short": "RSI (adult)", "title": "Rapid sequence induction and intubation", "population": "Adult", "setting": "Casualty", "path": "data/rsi-adult.json"},
-    {"id": "rsi-paeds", "short": "RSI (child)", "title": "Rapid sequence induction and intubation", "population": "Child (1 month – 12 years)", "setting": "Casualty", "path": "data/rsi-paeds.json"}
+    {"id": "rsi-paeds", "short": "RSI (child)", "title": "Rapid sequence induction and intubation", "population": "Child (1 month – 12 years)", "setting": "Casualty", "path": "data/rsi-paeds.json"},
+    {"id": "lytes-adult-hyperk", "short": "Hyperkalaemia (adult)", "title": "Hyperkalaemia", "population": "Adult", "setting": "Casualty", "path": "data/lytes-adult-hyperk.json", "group": "lytes-adult"},
+    {"id": "lytes-adult-hypok", "short": "Hypokalaemia (adult)", "title": "Hypokalaemia", "population": "Adult", "setting": "Casualty / ward", "path": "data/lytes-adult-hypok.json", "group": "lytes-adult"},
+    {"id": "lytes-adult-hypona", "short": "Hyponatraemia (adult)", "title": "Hyponatraemia", "population": "Adult", "setting": "Casualty / ward", "path": "data/lytes-adult-hypona.json", "group": "lytes-adult"},
+    {"id": "lytes-adult-hyperna", "short": "Hypernatraemia (adult)", "title": "Hypernatraemia", "population": "Adult", "setting": "Casualty / ward", "path": "data/lytes-adult-hyperna.json", "group": "lytes-adult"},
+    {"id": "lytes-adult-ca-mg", "short": "Calcium + magnesium (adult)", "title": "Calcium and magnesium", "population": "Adult", "setting": "Casualty / ward", "path": "data/lytes-adult-ca-mg.json", "group": "lytes-adult"},
+    {"id": "lytes-adult-phos-refeed", "short": "Phosphate, refeeding, TLS (adult)", "title": "Phosphate, refeeding and tumour lysis", "population": "Adult", "setting": "Ward / high care", "path": "data/lytes-adult-phos-refeed.json", "group": "lytes-adult"},
+    {"id": "lytes-paeds-hyperk", "short": "Hyperkalaemia (child)", "title": "Hyperkalaemia", "population": "Child (1 month – 12 years)", "setting": "Casualty", "path": "data/lytes-paeds-hyperk.json", "group": "lytes-paeds"},
+    {"id": "lytes-paeds-hypok", "short": "Hypokalaemia (child)", "title": "Hypokalaemia", "population": "Child (1 month – 12 years)", "setting": "Casualty / ward", "path": "data/lytes-paeds-hypok.json", "group": "lytes-paeds"},
+    {"id": "lytes-paeds-hypona", "short": "Hyponatraemia (child)", "title": "Hyponatraemia", "population": "Child (1 month – 12 years)", "setting": "Casualty / ward", "path": "data/lytes-paeds-hypona.json", "group": "lytes-paeds"},
+    {"id": "lytes-paeds-hyperna", "short": "Hypernatraemia (child)", "title": "Hypernatraemia", "population": "Child (1 month – 12 years)", "setting": "Casualty / ward", "path": "data/lytes-paeds-hyperna.json", "group": "lytes-paeds"},
+    {"id": "lytes-paeds-ca-mg", "short": "Calcium + magnesium (child, neonate)", "title": "Calcium and magnesium", "population": "Child and neonate", "setting": "Casualty / nursery", "path": "data/lytes-paeds-ca-mg.json", "group": "lytes-paeds"},
+    {"id": "lytes-paeds-phos-refeed", "short": "Phosphate + refeeding (child)", "title": "Phosphate and refeeding", "population": "Child (incl. SAM)", "setting": "Ward / high care", "path": "data/lytes-paeds-phos-refeed.json", "group": "lytes-paeds"}
+  ],
+  "proc_groups": [
+    {
+      "id": "lytes-adult",
+      "short": "Electrolyte abnormalities (adult)",
+      "title": "Electrolyte abnormalities — potassium, sodium, calcium, magnesium, phosphate",
+      "population": "Adult",
+      "setting": "Casualty / ward",
+      "members": [
+        "lytes-adult-hyperk",
+        "lytes-adult-hypok",
+        "lytes-adult-hypona",
+        "lytes-adult-hyperna",
+        "lytes-adult-ca-mg",
+        "lytes-adult-phos-refeed"
+      ]
+    },
+    {
+      "id": "lytes-paeds",
+      "short": "Electrolyte abnormalities (child)",
+      "title": "Electrolyte abnormalities — potassium, sodium, calcium, magnesium, phosphate",
+      "population": "Paediatric (1 month – 12 years)",
+      "setting": "Casualty / ward",
+      "members": [
+        "lytes-paeds-hyperk",
+        "lytes-paeds-hypok",
+        "lytes-paeds-hypona",
+        "lytes-paeds-hyperna",
+        "lytes-paeds-ca-mg",
+        "lytes-paeds-phos-refeed"
+      ]
+    }
   ],
   "scores": [
     {"id": "gcs-adult", "short": "GCS", "title": "Glasgow Coma Scale — Adult", "population": "adult", "age_range": "adults and children > 5 y (adult wheel); child and infant wheels also on the card", "type": "scale", "tags": ["scale", "neuro", "consciousness", "trauma", "head injury", "TBI", "poisoning", "airway", "adult", "emergency", "GCS"], "file": "gcs-adult.json"},
