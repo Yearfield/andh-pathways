@@ -1,0 +1,1810 @@
+{
+ "id": "miscarriage",
+ "short": "Miscarriage",
+ "title": "Miscarriage (all types)",
+ "population": "Obstetric (bleeding in pregnancy < 22 weeks)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "sources": [
+  "impcg2024",
+  "stghosp",
+  "phcstg2024",
+  "contra2019"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "NOT THIS PATHWAY — these have their own pathways",
+   "items": [
+    {
+     "t": "Suspected or confirmed ectopic pregnancy → ectopic pathway",
+     "s": "impcg2024:50",
+     "b": 1
+    },
+    {
+     "t": "Bleeding ≥ 22 weeks → APH pathway",
+     "s": "phcstg2024:6.6",
+     "b": 1
+    },
+    {
+     "t": "Bleeding after delivery → PPH pathway",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Vaginal bleeding ± lower abdominal pain",
+     "s": "phcstg2024:6.4",
+     "b": 1
+    },
+    {
+     "t": "Pregnant — urine pregnancy test if any doubt",
+     "s": "impcg2024:50",
+     "b": 1
+    },
+    {
+     "t": "Gestation < 22 weeks",
+     "s": "impcg2024:50",
+     "b": 1
+    },
+    {
+     "h": "Type — os and uterus (fig 6-1)",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Os closed, uterus = dates: threatened",
+     "s": "impcg2024:50",
+     "k": "sub"
+    },
+    {
+     "t": "Os closed, uterus < dates, pain settled: complete",
+     "s": "impcg2024:51",
+     "k": "sub"
+    },
+    {
+     "t": "Os closed, no fetal heart on US: missed",
+     "s": "stghosp:5.8",
+     "k": "sub"
+    },
+    {
+     "t": "Os open, no products passed: inevitable",
+     "s": "impcg2024:50",
+     "k": "sub"
+    },
+    {
+     "t": "Os open, partial expulsion: incomplete",
+     "s": "impcg2024:50",
+     "k": "sub"
+    },
+    {
+     "t": "Uterus > dates, partial expulsion: molar",
+     "s": "impcg2024:50",
+     "k": "sub"
+    },
+    {
+     "t": "GA ____ wk by ____ · LMP ____ · Pregnancy test ____ · Uterus ____ wk · Pads/h ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Unsafe (septic) miscarriage = any one of",
+   "items": [
+    {
+     "t": "Pulse ≥ 90 · RR ≥ 20 · temp ≥ 37.5 °C",
+     "s": "impcg2024:51",
+     "b": 1
+    },
+    {
+     "t": "Hb < 10 g/dL",
+     "s": "impcg2024:51",
+     "b": 1
+    },
+    {
+     "t": "Uterus ≥ 12 weeks in size (palpable abdominally)",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Not counted when uterine size matches a 14–22 wk gestation",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Offensive products or vaginal discharge",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Signs of infection: chills, malaise",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "History of interference (attempted TOP)",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Persistent heavy bleeding",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Suspicious findings at evacuation",
+     "s": "impcg2024:51"
+    },
+    {
+     "h": "Organ dysfunction",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "SBP < 90 · RR > 24",
+     "s": "impcg2024:51",
+     "k": "sub"
+    },
+    {
+     "t": "Urine < 30 mL over 2 h despite fluid load",
+     "s": "impcg2024:51",
+     "k": "sub"
+    },
+    {
+     "t": "Altered mental status · poor capillary filling",
+     "s": "impcg2024:51",
+     "k": "sub"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record / clinic card",
+   "items": [
+    {
+     "t": "GA dating: early US / LMP",
+     "s": "impcg2024:143"
+    },
+    {
+     "t": "Intra-uterine pregnancy seen on a previous scan",
+     "d": 1
+    },
+    {
+     "t": "Previous miscarriages: ____ (trimester)",
+     "s": "impcg2024:90",
+     "k": "value"
+    },
+    {
+     "t": "Previous caesarean (misoprostol dose differs)",
+     "s": "stghosp:5.10"
+    },
+    {
+     "t": "Rh group known: pos / neg",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "HIV status · ART · last VL",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "Syphilis result",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "Hb on card",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "Mental health history",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "IUCD in situ",
+     "d": 1
+    },
+    {
+     "t": "Diabetes / SLE / uterine abnormality",
+     "s": "stghosp:5.10"
+    },
+    {
+     "t": "Not booked",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Bleeding and pain",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Onset, amount, clots",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Tissue passed (kept?)",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Cramping lower abdominal pain",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Pain settled",
+     "s": "impcg2024:51"
+    },
+    {
+     "h": "Unsafe / sepsis",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Interference: pills, herbs, instrument",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Fever, chills, malaise",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Offensive discharge",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Dizziness, fainting",
+     "s": "impcg2024:54"
+    },
+    {
+     "h": "Safety",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Physical trauma / domestic violence",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Pregnancy intended?",
+     "s": "impcg2024:51"
+    },
+    {
+     "h": "Screen"
+    },
+    {
+     "t": "TB symptom screen",
+     "d": 1
+    },
+    {
+     "t": "Contraception wishes",
+     "s": "impcg2024:53"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Thresholds below are the SA 'safe miscarriage' and organ-dysfunction criteria",
+   "items": [
+    {
+     "t": "Pulse ≥ 90",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "t": "Respiratory rate ≥ 20",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "t": "Temperature ≥ 37.5 °C",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension (SBP < 90)",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "t": "RR > 24 (organ dysfunction)",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "s": "impcg2024:51",
+     "k": "yn"
+    },
+    {
+     "h": "Bleeding"
+    },
+    {
+     "t": "Heavy: new pad soaked in < 5 min",
+     "s": "impcg2024:50",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Massive: SBP < 80, pulse > 120 or shock index > 1.5",
+     "s": "impcg2024:154",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General and abdomen",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Pallor",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Cold peripheries",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Uterus ____ wk: < / = / > dates",
+     "s": "impcg2024:50",
+     "k": "value"
+    },
+    {
+     "t": "Uterus palpable abdominally",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Abdominal tenderness, guarding",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Distension",
+     "s": "impcg2024:56"
+    },
+    {
+     "h": "Bimanual",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Adnexal mass",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Cervical motion tenderness → ectopic",
+     "s": "impcg2024:50"
+    },
+    {
+     "h": "Speculum",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "Os open / closed",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Products at os — removed",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "Membranes felt at os",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Vesicles (molar)",
+     "d": 1
+    },
+    {
+     "t": "Offensive products / pus",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Injury or foreign body (interference)",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Cervical lesion / ulcer",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Products kept for inspection",
+     "s": "impcg2024:51"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bedside ultrasound",
+   "items": [
+    {
+     "t": "Finding on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "Live intra-uterine pregnancy → threatened",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "No fetal heart in a gestation sac / fetus → missed",
+     "s": "stghosp:5.8"
+    },
+    {
+     "t": "Retained products → incomplete",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "Empty uterus, no IUP seen before: ectopic not excluded → ectopic pathway (β-hCG)",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Adnexal mass / free fluid → ectopic pathway",
+     "s": "impcg2024:54"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Hb — ward Hb or FBC",
+   "items": [
+    {
+     "t": "Value on arrival: ____ g/dL",
+     "k": "value"
+    },
+    {
+     "t": "< 10 g/dL: not a safe miscarriage → stabilise and REFER (if evacuated: MVA, not medical)",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "< 7 g/dL: urgent transfusion may be needed; delay implant / IUCD",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "Massive bleeding: 2 un-crossmatched O-neg + 2 FDP (MTP), then REFER",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Repeat after evacuation / expulsion",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Shock",
+     "s": "impcg2024:50",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "impcg2024:51",
+     "b": 1
+    },
+    {
+     "t": "Heavy / massive bleeding",
+     "s": "impcg2024:154",
+     "b": 1
+    },
+    {
+     "t": "Septic shock",
+     "s": "impcg2024:52",
+     "b": 1
+    },
+    {
+     "t": "Ruptured ectopic",
+     "s": "impcg2024:54"
+    },
+    {
+     "t": "Uterine / bowel injury (interference)",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Peritonitis",
+     "d": 1
+    },
+    {
+     "t": "Organ dysfunction",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Molar pregnancy",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "impcg2024:53"
+    },
+    {
+     "t": "Cervical cancer / lesion",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Assault / domestic violence",
+     "s": "impcg2024:50"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = UNSAFE (SEPTIC) MISCARRIAGE, MOLAR, or CURETTAGE NEEDED (≥ 14 wk) → stabilise (fluids, oxytocin, antibiotics) then REFER",
+   "s": "impcg2024:51"
+  },
+  {
+   "t": "11. SAFE MISCARRIAGE → MANAGE AT ANDH (threatened / complete: discharge with advice) — continue on the miscarriage inpatient management chart and the 24-hour nursing record",
+   "s": "impcg2024:51"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Unsafe (septic) miscarriage",
+   "branch": "A",
+   "features": [
+    {
+     "t": "Interference, fever, chills",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Pulse ≥ 90, RR ≥ 20, temp ≥ 37.5",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Offensive products, uterus ≥ 12 wk, heavy bleeding",
+     "s": "phcstg2024:6.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC, U&E, blood culture",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "US: retained products",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "Exclude other fever source (pneumonia)",
+     "s": "impcg2024:52"
+    }
+   ],
+   "manage": [
+    {
+     "t": "NaCl 0.9% 1 L; shocked: 1 L over 20 min, repeat once",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "Oxytocin 20 U in 1 L NaCl 0.9% at 125 mL/h",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Amoxicillin/clavulanate 1.2 g IV 8-hourly — 1st dose before transfer",
+     "s": "impcg2024:52",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all. Evacuation under GA (not MVA)",
+     "s": "stghosp:5.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Ectopic pregnancy",
+   "features": [
+    {
+     "t": "Pain, adnexal mass, cervical motion tenderness",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Shock, distension",
+     "s": "impcg2024:56"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "US: empty uterus ± adnexal mass / free fluid",
+     "s": "impcg2024:56"
+    },
+    {
+     "t": "Quantitative β-hCG",
+     "s": "impcg2024:56",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Leave this pathway → ectopic pathway",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Ruptured: Y",
+     "s": "impcg2024:54",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Incomplete miscarriage",
+   "branch": "C",
+   "features": [
+    {
+     "t": "Os open, partial expulsion, clots",
+     "s": "phcstg2024:6.4"
+    },
+    {
+     "t": "Uterus smaller than dates",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Bleeding light or heavy",
+     "s": "impcg2024:52"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Speculum: products at os",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "US: retained products",
+     "s": "impcg2024:52"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Remove products at os (ring forceps); oxytocin infusion",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "< 14 wk heavy: MVA. Mild + safe: expectant, misoprostol or MVA",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "≥ 14 wk: oxytocin until expulsion",
+     "s": "impcg2024:52"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ≥ 14 wk with retained products or heavy bleeding (curettage)",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "dx": "Inevitable miscarriage",
+   "branch": "C",
+   "features": [
+    {
+     "t": "Bleeding increasing, os dilated",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Membranes felt at os; cramps",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Uterus = dates",
+     "s": "impcg2024:50"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Speculum / VE",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "US",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "If bleeding: oxytocin 20 U in 1 L at 125 mL/h; await expulsion",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Inspect products; evacuate if incomplete",
+     "s": "impcg2024:51"
+    }
+   ],
+   "refer": [
+    {
+     "t": "As for incomplete",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "dx": "Molar pregnancy",
+   "branch": "F",
+   "features": [
+    {
+     "t": "Uterus larger than dates",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Partial expulsion (vesicles)",
+     "s": "impcg2024:50"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "US",
+     "d": 1
+    },
+    {
+     "t": "Quantitative β-hCG",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No misoprostol (dissemination)",
+     "s": "stghosp:5.11",
+     "b": 1
+    },
+    {
+     "t": "Resuscitate; products for histology",
+     "s": "stghosp:5.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all",
+     "s": "stghosp:5.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Missed miscarriage (early fetal death)",
+   "branch": "D",
+   "features": [
+    {
+     "t": "Little or no bleeding, os closed",
+     "d": 1
+    },
+    {
+     "t": "Uterus smaller than dates",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "US: no fetal heart",
+     "s": "stghosp:5.8"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Counsel; her choice",
+     "s": "stghosp:5.8"
+    },
+    {
+     "t": "Misoprostol 600 µg oral/PV, repeat at 24 h",
+     "s": "stghosp:5.9",
+     "b": 1
+    },
+    {
+     "t": "or MVA after misoprostol 400 µg PV",
+     "s": "stghosp:5.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ≥ 14 wk and retained products after expulsion",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "dx": "Mid-trimester miscarriage (≥ 14 wk; STG 13–22)",
+   "branch": "E",
+   "features": [
+    {
+     "t": "Cramps, bleeding, cervix dilating, ROM",
+     "d": 1
+    },
+    {
+     "t": "Minimal pain → cervical weakness",
+     "s": "stghosp:5.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "US; speculum",
+     "d": 1
+    },
+    {
+     "t": "Na⁺ if oxytocin > 24 h",
+     "s": "stghosp:5.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Not dilated: misoprostol 200 µg 4–6-hourly, max 5 doses/24 h (100 µg if previous CS)",
+     "s": "stghosp:5.10",
+     "b": 1
+    },
+    {
+     "t": "Dilated: oxytocin infusion",
+     "s": "stghosp:5.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Retained products / heavy bleeding; cervical weakness (follow-up)",
+     "s": "stghosp:5.10"
+    }
+   ]
+  },
+  {
+   "dx": "Threatened miscarriage",
+   "branch": "B",
+   "features": [
+    {
+     "t": "Mild bleeding, os closed",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Uterus = dates",
+     "s": "impcg2024:51"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "US: live intra-uterine fetus",
+     "s": "impcg2024:51"
+    }
+   ],
+   "manage": [
+    {
+     "t": "No admission; no oxytocin",
+     "s": "phcstg2024:6.5",
+     "b": 1
+    },
+    {
+     "t": "Avoid strenuous and sexual activity; return if bleeding worse or pain",
+     "s": "impcg2024:51"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ]
+  },
+  {
+   "dx": "Complete miscarriage",
+   "branch": "B",
+   "features": [
+    {
+     "t": "Bleeding mild, os closed",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Uterus smaller; pain settled",
+     "s": "impcg2024:51"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "US: empty uterus — only if IUP seen before; otherwise β-hCG (ectopic not excluded)",
+     "s": "impcg2024:56",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No evacuation needed",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Return if bleeding persists",
+     "s": "impcg2024:51"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N"
+    }
+   ]
+  },
+  {
+   "dx": "Recurrent miscarriage",
+   "features": [
+    {
+     "t": "≥ 3 consecutive 1st-trimester or ≥ 2 consecutive 2nd-trimester losses",
+     "s": "impcg2024:90"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "History; card",
+     "s": "impcg2024:90"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Manage this episode by type"
+    },
+    {
+     "t": "Counsel before next pregnancy",
+     "s": "impcg2024:50"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — regional, elective, before next pregnancy",
+     "s": "impcg2024:50"
+    }
+   ]
+  },
+  {
+   "dx": "Non-pregnancy bleeding (cervical lesion, cancer, trauma)",
+   "features": [
+    {
+     "t": "Os closed, lesion seen, contact bleeding",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Trauma / assault",
+     "s": "impcg2024:50"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Speculum",
+     "s": "impcg2024:50"
+    },
+    {
+     "t": "Pregnancy test",
+     "s": "impcg2024:50"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Manage the cause; assault care per protocol",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Suspected cancer: Y (gynae)",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour / branch",
+  "phase_note": "After 1 h follow ONE branch (A–F) — the working diagnosis ticked on the differential sheet",
+  "columns": {
+   "feed": "Fluids & uterotonic",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pulse, BP, RR, temperature · pad count and clots · tissue passed (keep it) · pain · oxytocin bag and rate",
+    "s": "phcstg2024:6.4",
+    "b": 1
+   },
+   {
+    "t": "Every 15 min while bleeding is heavy or she is unstable",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Then hourly × 4 h, then 4-hourly while admitted",
+    "d": 1
+   },
+   {
+    "t": "After MVA: every 15 min × 1 h; discharge at 1–2 h if well",
+    "s": "impcg2024:54",
+    "d": 1
+   },
+   {
+    "t": "Unsafe / septic: urine output (< 30 mL over 2 h = organ dysfunction)",
+    "s": "impcg2024:51",
+    "b": 1
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for misoprostol, oxytocin, antibiotics and anti-D already given (dose, time). † Privacy, kindness, consent — manage away from pregnant and postnatal mothers.",
+    "feed": [
+     {
+      "t": "IV line, NaCl 0.9%",
+      "s": "impcg2024:52"
+     },
+     {
+      "t": "Inevitable / incomplete: oxytocin 20 U in 1 L NaCl 0.9% at 125 mL/h",
+      "s": "phcstg2024:6.5",
+      "b": 1
+     },
+     {
+      "t": "Not in threatened miscarriage",
+      "s": "phcstg2024:6.5",
+      "b": 1
+     },
+     {
+      "t": "Remove products at the os with ring forceps",
+      "s": "impcg2024:52"
+     },
+     {
+      "t": "Pads checked: heavy = new pad soaked in < 5 min",
+      "s": "impcg2024:50"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine pregnancy test if any doubt",
+      "s": "impcg2024:50",
+      "b": 1
+     },
+     {
+      "t": "Ward Hb / FBC",
+      "s": "impcg2024:51",
+      "b": 1
+     },
+     {
+      "t": "Rh group if unknown",
+      "s": "impcg2024:53",
+      "b": 1
+     },
+     {
+      "t": "HIV and syphilis test offered",
+      "s": "impcg2024:53",
+      "b": 1
+     },
+     {
+      "t": "Bedside ultrasound (Doc 1 §7)",
+      "s": "impcg2024:51",
+      "b": 1
+     },
+     {
+      "t": "Unsafe: FBC, U&E, blood culture",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Heavy bleeding: cross-match sample",
+      "s": "impcg2024:154",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Shock / heavy bleeding",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Oxygen; 2 large-bore lines; left lateral",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Crystalloid 1–2 L",
+      "s": "impcg2024:154"
+     },
+     {
+      "t": "Massive (SBP < 80, pulse > 120, shock index > 1.5): 2 un-crossmatched O-neg units, tranexamic acid 1 g IV, 2 FDP → REFER",
+      "s": "impcg2024:154",
+      "b": 1
+     },
+     {
+      "h": "Unsafe / septic",
+      "s": "impcg2024:52"
+     },
+     {
+      "t": "NaCl 0.9% 1 L over 20 min; no response: repeat 1 L; still none = septic shock → REFER",
+      "s": "impcg2024:52"
+     },
+     {
+      "t": "Amoxicillin/clavulanate 1.2 g IV before transfer",
+      "s": "impcg2024:52",
+      "b": 1
+     },
+     {
+      "h": "Pain",
+      "s": "stghosp:5.9"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g PO 4–6-hourly, max 4 g/24 h",
+      "s": "stghosp:5.9"
+     },
+     {
+      "h": "Classify (1 h row)"
+     },
+     {
+      "t": "Speculum + ultrasound → type; tick the differential sheet",
+      "s": "impcg2024:50"
+     },
+     {
+      "t": "Ectopic not excluded → ectopic pathway",
+      "s": "impcg2024:56"
+     },
+     {
+      "h": "Every woman",
+      "s": "impcg2024:51"
+     },
+     {
+      "t": "Emotional support; explain causes, options, outcomes",
+      "s": "impcg2024:51"
+     },
+     {
+      "t": "Consider trauma / domestic violence",
+      "s": "impcg2024:50"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Classify",
+    "feed": [
+     {
+      "t": "Oxytocin continues only if inevitable / incomplete",
+      "s": "phcstg2024:6.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb result; any unsafe criterion (Doc 1 §2)?",
+      "s": "impcg2024:51"
+     },
+     {
+      "t": "Products inspected: complete?",
+      "s": "impcg2024:51"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Unsafe → A · threatened / complete → B · incomplete / inevitable < 14 wk → C · missed < 14 wk → D · 14–22 wk → E · molar → F",
+      "s": "impcg2024:50",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "A",
+    "phase": "Unsafe / septic",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 1 L; oxytocin 20 U can be added",
+      "s": "impcg2024:52"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, U&E, blood culture",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Urine output; exclude other fever source",
+      "s": "impcg2024:52"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amoxicillin/clavulanate 1.2 g IV 8-hourly (allergy: see Doses)",
+      "s": "stghosp:5.11",
+      "b": 1
+     },
+     {
+      "t": "REFER urgently: evacuation under GA (not MVA) within 2–4 h of antibiotics; organ dysfunction → specialist",
+      "s": "impcg2024:52",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "B",
+    "phase": "Threatened / complete",
+    "feed": [
+     {
+      "t": "No IV needed; no oxytocin",
+      "s": "phcstg2024:6.5",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Threatened: US live intra-uterine fetus",
+      "s": "impcg2024:51"
+     },
+     {
+      "t": "Complete: empty uterus counts only if an IUP was seen before — else β-hCG → ectopic pathway",
+      "s": "impcg2024:56",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not admitted: avoid strenuous and sexual activity; return if bleeding worsens or pain; continue antenatal care",
+      "s": "impcg2024:51"
+     },
+     {
+      "t": "Complete: return if bleeding persists; anti-D if Rh-neg",
+      "s": "impcg2024:51"
+     }
+    ]
+   },
+   {
+    "label": "C",
+    "phase": "Incomplete / inevitable < 14 wk",
+    "feed": [
+     {
+      "t": "Oxytocin 20 U in 1 L at 125 mL/h",
+      "s": "impcg2024:52"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb",
+      "s": "impcg2024:51",
+      "b": 1
+     },
+     {
+      "t": "Inspect products after expulsion",
+      "s": "impcg2024:51"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Heavy after removal of products → MVA",
+      "s": "impcg2024:52",
+      "b": 1
+     },
+     {
+      "t": "Mild + safe — her choice: expectant · misoprostol 800 µg SL/PV/buccal, repeat at 24 h (MAT24: 600 µg oral or 400 µg SL) · or MVA",
+      "s": "stghosp:5.9",
+      "b": 1
+     },
+     {
+      "t": "Inevitable: await expulsion; incomplete → MVA",
+      "s": "impcg2024:51"
+     }
+    ]
+   },
+   {
+    "label": "D",
+    "phase": "Missed < 14 wk",
+    "feed": [
+     {
+      "t": "IV only if bleeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "US: no fetal heart",
+      "s": "stghosp:5.8"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Counsel; her choice:",
+      "s": "stghosp:5.8"
+     },
+     {
+      "t": "Misoprostol 600 µg oral/PV, repeat at 24 h if needed",
+      "s": "stghosp:5.9",
+      "b": 1
+     },
+     {
+      "t": "or MVA after misoprostol 400 µg PV (cervical ripening, 3 h before)",
+      "s": "stghosp:5.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "E",
+    "phase": "14–22 wk (STG 13–22)",
+    "feed": [
+     {
+      "t": "Os dilated: oxytocin 20 U in 1 L at 125 mL/h; reduce if strong contractions",
+      "s": "stghosp:5.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na⁺ if oxytocin runs > 24 h (hyponatraemia)",
+      "s": "stghosp:5.10",
+      "b": 1
+     },
+     {
+      "t": "Inspect fetus, placenta, products",
+      "s": "impcg2024:52"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not dilated: misoprostol 200 µg PV/SL/buccal 4–6-hourly, max 5 doses/24 h (previous CS: 100 µg)",
+      "s": "stghosp:5.10",
+      "b": 1
+     },
+     {
+      "t": "Morphine IV, max 10 mg",
+      "s": "stghosp:5.10"
+     },
+     {
+      "t": "Heavy bleeding or retained products → REFER for curettage (not MVA)",
+      "s": "impcg2024:52",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "F",
+    "phase": "Molar",
+    "feed": [
+     {
+      "t": "Resuscitate as 0 h"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Quantitative β-hCG",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Products for histology",
+      "s": "stghosp:5.11"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No misoprostol (risk of dissemination)",
+      "s": "stghosp:5.11",
+      "b": 1
+     },
+     {
+      "t": "REFER all",
+      "s": "stghosp:5.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "MVA",
+    "phase": "< 14 wk, safe",
+    "feed": [
+     {
+      "t": "Bladder emptied. Oxytocin 10 U IM at the start",
+      "s": "impcg2024:54",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Written consent",
+      "s": "impcg2024:53"
+     },
+     {
+      "t": "Bimanual: uterine size, position",
+      "s": "impcg2024:54"
+     },
+     {
+      "t": "Completion: red / pink foam, grating, uterus contracts on cannula",
+      "s": "impcg2024:54"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol 1 g PO 30 min before",
+      "s": "impcg2024:53"
+     },
+     {
+      "t": "Morphine 0.1 mg/kg IM (max 10 mg) 30 min before, or paracervical block (see Doses)",
+      "s": "stghosp:5.9",
+      "b": 1
+     },
+     {
+      "t": "No IV benzodiazepine with parenteral opioid",
+      "s": "stghosp:5.13"
+     },
+     {
+      "t": "Products inspected (vesicles → molar)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1–2 h",
+    "phase": "After MVA / expulsion",
+    "feed": [
+     {
+      "t": "Eat, drink, walk",
+      "s": "impcg2024:54"
+     },
+     {
+      "t": "Stop oxytocin when bleeding settled",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Obs and pads (nursing record)",
+      "s": "impcg2024:54"
+     },
+     {
+      "t": "Hb repeat if heavy loss",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol 1 g 6-hourly + ibuprofen 400 mg 8-hourly for 48 h",
+      "s": "stghosp:5.9"
+     },
+     {
+      "t": "Offer: contraception (incl. immediate IUCD after MVA), HIV and syphilis testing, Rh group",
+      "s": "impcg2024:54"
+     },
+     {
+      "t": "Discharge at 1–2 h after MVA if criteria met",
+      "s": "impcg2024:54"
+     }
+    ]
+   },
+   {
+    "label": "24–72 h",
+    "phase": "Medical / mid-trimester",
+    "feed": [
+     {
+      "t": "Oxytocin > 24 h: check Na⁺",
+      "s": "stghosp:5.10",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Still not expelled / bleeding: US",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Mid-trimester: products complete?",
+      "s": "impcg2024:52"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat misoprostol at 24 h (C, D) if needed",
+      "s": "stghosp:5.9"
+     },
+     {
+      "t": "Rh-neg: anti-D within 72 h (up to 7 days)",
+      "s": "phcstg2024:6.5",
+      "b": 1
+     },
+     {
+      "t": "No response to antibiotics in 48 h → REFER",
+      "s": "stghosp:5.11"
+     },
+     {
+      "t": "Failed medical evacuation → MVA (< 14 wk) or REFER",
+      "s": "phcstg2024:6.6"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Uterotonics · misoprostol",
+   "items": [
+    {
+     "h": "Oxytocin (inevitable / incomplete / 14–22 wk / septic)",
+     "s": "stghosp:5.10"
+    },
+    {
+     "t": "20 U in 1 L NaCl 0.9% at 125 mL/h; reduce if strong contractions; Na⁺ if > 24 h",
+     "s": "stghosp:5.10"
+    },
+    {
+     "t": "Not in threatened miscarriage",
+     "s": "phcstg2024:6.5"
+    },
+    {
+     "h": "Misoprostol — never in molar pregnancy",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Incomplete < 14 wk: 800 µg SL/PV/buccal, repeat at 24 h (MAT24: 600 µg oral or 400 µg SL)",
+     "s": "stghosp:5.9"
+    },
+    {
+     "t": "Missed < 14 wk: 600 µg oral/PV, repeat at 24 h",
+     "s": "stghosp:5.9"
+    },
+    {
+     "t": "Before MVA (ripening): 400 µg PV, 3 h before",
+     "s": "stghosp:5.13"
+    },
+    {
+     "t": "14–22 wk, not dilated: 200 µg PV/SL/buccal 4–6-hourly, max 5 doses/24 h; previous CS 100 µg",
+     "s": "stghosp:5.10"
+    },
+    {
+     "h": "Massive bleeding",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Tranexamic acid 1 g IV; 2 O-neg + 2 FDP → REFER",
+     "s": "impcg2024:154"
+    }
+   ]
+  },
+  {
+   "title": "Analgesia · anti-D · antibiotics",
+   "items": [
+    {
+     "h": "MVA analgesia",
+     "s": "stghosp:5.9"
+    },
+    {
+     "t": "Morphine 0.1 mg/kg IM (max 10 mg) 30 min before, or",
+     "s": "stghosp:5.9"
+    },
+    {
+     "t": "Paracervical block: lidocaine 1% (no adrenaline) 20 mL — 2 mL at 12 o'clock, then 4–5 mL at 2, 4, 8, 10 o'clock to 3 cm; start after 3 min",
+     "s": "stghosp:5.14"
+    },
+    {
+     "t": "After: paracetamol 500 mg–1 g 4–6-hourly (max 4 g) + ibuprofen 400 mg 8-hourly, 48 h",
+     "s": "stghosp:5.9"
+    },
+    {
+     "h": "Anti-D (Rh-neg, no antibodies)",
+     "s": "stghosp:6.31"
+    },
+    {
+     "t": "< 20 wk: 50 µg IM; ≥ 20 wk: 100 µg IM, within 72 h (MAT24: 100 µg for all)",
+     "s": "stghosp:6.31",
+     "b": 1
+    },
+    {
+     "h": "Septic miscarriage",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Amoxicillin/clavulanate 1.2 g IV 8-hourly → 875/125 mg PO 12-hourly, 7–10 days",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Severe penicillin allergy: clindamycin 600 mg IV 8-hourly + gentamicin 6 mg/kg IV daily → clindamycin 450 mg PO 8-hourly + ciprofloxacin 500 mg PO 12-hourly, 5 days",
+     "s": "stghosp:5.11"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER (district cannot manage)"
+    },
+    {
+     "t": "Any unsafe criterion, sepsis, organ dysfunction",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Massive bleeding after O-neg + FDP",
+     "s": "impcg2024:154"
+    },
+    {
+     "t": "Curettage needed (≥ 14 wk retained / heavy)",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": "Molar; trauma or injury from interference",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "No response to antibiotics in 48 h",
+     "s": "stghosp:5.11"
+    },
+    {
+     "t": "Positive pregnancy test 3 weeks after medical management",
+     "s": "phcstg2024:6.6"
+    },
+    {
+     "h": "Call the doctor",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Pulse ≥ 90, RR ≥ 20, temp ≥ 37.5 °C; SBP < 90; RR > 24",
+     "s": "impcg2024:51"
+    },
+    {
+     "t": "Pad soaked in < 5 min; fainting; increasing pain; fever, chills",
+     "s": "impcg2024:54"
+    },
+    {
+     "t": "Urine < 30 mL over 2 h",
+     "s": "impcg2024:51"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "FBC, U&E, cross-match; blood culture",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all seven must be met",
+  "items": [
+   {
+    "t": "Bleeding light, pain settled",
+    "s": "impcg2024:51"
+   },
+   {
+    "t": "Pulse, RR, temperature below the unsafe thresholds",
+    "s": "impcg2024:51"
+   },
+   {
+    "t": "Rh known; anti-D given if Rh-neg",
+    "s": "impcg2024:53",
+    "b": 1
+   },
+   {
+    "t": "HIV and syphilis testing offered",
+    "s": "impcg2024:53"
+   },
+   {
+    "t": "Contraception counselled / started",
+    "s": "impcg2024:53"
+   },
+   {
+    "t": "Emotional support; SADAG 0800 456 789 · Lifeline 0861 322 322",
+    "s": "impcg2024:53"
+   },
+   {
+    "t": "Told to return for: cramps > 2 days, bleeding > 2 weeks or heavier than a period, increasing pain, fever, fainting",
+    "s": "impcg2024:54"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "1 week: bleeding stopped (sooner if worse)",
+    "s": "stghosp:5.9",
+    "b": 1
+   },
+   {
+    "t": "Expectant / medical: not settled by 2 weeks → review",
+    "s": "impcg2024:52"
+   },
+   {
+    "t": "Pregnancy test at 3 weeks after medical management — positive → REFER",
+    "s": "phcstg2024:6.6",
+    "b": 1
+   },
+   {
+    "t": "IUCD after medical / expectant management: wait 6 weeks",
+    "s": "impcg2024:53"
+   },
+   {
+    "t": "Next pregnancy after ≥ 6 months; fertility returns within 2 weeks (1st trimester) / 4 weeks (2nd)",
+    "s": "contra2019:37"
+   },
+   {
+    "t": "Recurrent (≥ 3 first- or ≥ 2 second-trimester) → regional work-up before the next pregnancy",
+    "s": "impcg2024:50",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — vitals, bleeding and uterotonics",
+  "period": "One sheet per 24 hours; 15-min rows for the first 2 h, then hourly; heavy rules every 4 h",
+  "params": [
+   {
+    "h": "Vitals — pulse, BP, RR, temperature",
+    "items": [
+     {
+      "t": "Every 15 min while bleeding is heavy or she is unstable",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Then hourly × 4 h, then 4-hourly (heavy rules)",
+      "d": 1
+     },
+     {
+      "t": "After MVA: every 15 min × 1 h",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bleeding",
+    "items": [
+     {
+      "t": "Count pads; heavy = new pad soaked in < 5 min",
+      "s": "impcg2024:50",
+      "b": 1
+     },
+     {
+      "t": "Keep all tissue passed for the doctor to inspect",
+      "s": "impcg2024:51"
+     },
+     {
+      "t": "Pain, cramps, fainting",
+      "s": "impcg2024:54"
+     }
+    ]
+   },
+   {
+    "h": "Drugs and fluids",
+    "items": [
+     {
+      "t": "Oxytocin 20 U in 1 L NaCl 0.9% at 125 mL/h — bag no. and time",
+      "s": "phcstg2024:6.5"
+     },
+     {
+      "t": "Misoprostol: dose, route, time",
+      "d": 1
+     },
+     {
+      "t": "Unsafe / septic: urine output",
+      "s": "impcg2024:51"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Call the doctor for pulse ≥ 90, RR ≥ 20, temperature ≥ 37.5 °C, SBP < 90, RR > 24, a pad soaked in < 5 min, fainting, increasing pain, fever or chills, urine < 30 mL over 2 h, or tissue passed",
+    "s": "impcg2024:51",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Pads used",
+   "IV in (mL)",
+   "Urine out (mL)",
+   "Oxytocin bags",
+   "Misoprostol doses",
+   "Tissue passed (time)",
+   "Anti-D given"
+  ]
+ }
+}

@@ -1,0 +1,1352 @@
+{
+ "id": "fungal-paeds",
+ "short": "Fungal skin (paeds)",
+ "title": "Fungal skin and scalp infection — child (outpatient-first)",
+ "population": "Child 2 months to 12 years · clinic-visit pathway; refer if any §2 criterion",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "→ Young infant < 2 months",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Bacterial skin infection, impetigo",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Eczema, seborrhoeic dermatitis, nappy dermatitis alone",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Scabies: IMCI skin p. 61",
+     "s": "imci2022:61",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features — any one (site)",
+   "items": [
+    {
+     "t": "Skin folds: red raw patch, satellite white pustules",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Body: itchy circle, raised edge, fine scale",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Scalp: patchy bald areas, scale, broken hair stumps",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Nappy area flexures: red, candida suspected",
+     "s": "phcstg2026:5.24"
+    },
+    {
+     "t": "Feet: itch, white macerated toe webs",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Trunk: round macules, often lighter than skin",
+     "s": "phcstg2026:5.13"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer or treat as complicated = any one of",
+   "items": [
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Recalcitrant candidiasis",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Mouth and perineum involved: suggests systemic disease",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Nappy rash: no improvement after 3 days",
+     "s": "phcstg2026:5.24"
+    },
+    {
+     "t": "Extensive tinea in a child: look for HIV and nails",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Scalp: boggy, pus, tender nodes",
+     "d": 1
+    },
+    {
+     "t": "Fever, unwell child",
+     "d": 1
+    },
+    {
+     "t": "Web-space pain: bacterial infection",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet",
+   "items": [
+    {
+     "t": "Weight-for-age; weight ____ kg",
+     "d": 1
+    },
+    {
+     "t": "HIV exposure / status",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Immunisations; antibiotics or steroids recently",
+     "d": 1
+    },
+    {
+     "t": "Previous fungal infection",
+     "d": 1
+    },
+    {
+     "t": "Treatment already tried: ______",
+     "d": 1
+    },
+    {
+     "t": "Siblings or pets with similar rash",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Lesion"
+    },
+    {
+     "t": "Itch; how long; spreading",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Hair loss (scalp)",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Shared combs, brushes, towels",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Contact with infected children or pets",
+     "d": 1
+    },
+    {
+     "t": "Head shaved",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Nappy changing; waterproof pants",
+     "s": "phcstg2026:5.24"
+    },
+    {
+     "h": "Host"
+    },
+    {
+     "t": "Diabetes (rare) · HIV · malnutrition",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Mother's nipple or breast care (infant thrush)",
+     "s": "paedstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / decreased consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Weight low for age",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Ring: raised, scaly edge",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Moist red patch, satellite pustules",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Body surface involved ____ %",
+     "d": 1
+    },
+    {
+     "t": "Pus, crusts (secondary infection)",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "h": "Scalp and nails"
+    },
+    {
+     "t": "Patchy hair loss with scale",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Boggy swelling, tender nodes",
+     "d": 1
+    },
+    {
+     "t": "Nail changes",
+     "s": "imci2022:61"
+    },
+    {
+     "h": "Folds and mouth"
+    },
+    {
+     "t": "Nappy flexures red",
+     "s": "phcstg2026:5.24"
+    },
+    {
+     "t": "Oral thrush",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Looks unwell / malnourished",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care test 1 — weight and HGT",
+   "items": [
+    {
+     "t": "Weight ____ kg; HGT ______ mmol/L",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Weight sets the fluconazole dose (mg/kg)",
+     "s": "phcstg2026:AIV.6"
+    },
+    {
+     "t": "HGT if unwell, drowsy or malnourished; < 3 mmol/L: treat",
+     "s": "imci2022:35"
+    },
+    {
+     "t": "Diabetes: rare in children; check if candida recurs",
+     "d": 1
+    },
+    {
+     "t": "Repeat if unwell",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Point-of-care test 2 — HIV test",
+   "items": [
+    {
+     "t": "Result: ______",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Extensive or recurrent infection: test",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Candida in mouth and perineum: immune state",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "KOH wet preparation of scraping if available",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Treat on clinical picture; do not wait for KOH",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Not able to drink or breastfeed",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Mouth and perineal candida",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Fever, unwell",
+     "d": 1
+    },
+    {
+     "t": "Boggy scalp or pus",
+     "d": 1
+    },
+    {
+     "t": "Web-space pain",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "HIV or malnutrition",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Spreading on treatment",
+     "d": 1
+    },
+    {
+     "t": "Adolescent girl who may be pregnant",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Systemic, extensive or recalcitrant fungal infection → REFER",
+   "s": "paedstg2026:5.12"
+  },
+  {
+   "t": "11. Not complicated → OUTPATIENT, Clinic Visit Chart (admit only if unwell)",
+   "s": "paedstg2026:5.12"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Candidiasis of skin",
+   "branch": "If candidiasis",
+   "features": [
+    {
+     "t": "Red raw patch, satellite white pustules",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Axillae, neck, perineum; mucosa",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Nappy rash in the flexures",
+     "s": "phcstg2026:5.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "KOH wet prep if available",
+     "s": "paedstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "HIV test",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Clotrimazole 1% topical 8-hourly × 14 d",
+     "s": "paedstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "No response: fluconazole 3–6 mg/kg/day PO × 14 d",
+     "s": "paedstg2026:5.12",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Recalcitrant",
+     "s": "paedstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Tinea corporis (ringworm)",
+   "branch": "If tinea corporis",
+   "features": [
+    {
+     "t": "Itchy circle, raised edge, fine scale",
+     "s": "imci2022:61"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "HIV test if extensive",
+     "s": "imci2022:61",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Clotrimazole 1% 3× daily until 2 wk after clear",
+     "s": "imci2022:61",
+     "b": 1
+    },
+    {
+     "t": "Wash and dry skin before cream",
+     "s": "imci2022:61"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Tinea capitis",
+   "branch": "If tinea capitis",
+   "features": [
+    {
+     "t": "Round or patchy bald areas, scale, stumps",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Weight for dose",
+     "s": "phcstg2026:AIV.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fluconazole 6 mg/kg PO once daily × 28 d",
+     "s": "phcstg2026:5.13",
+     "b": 1
+    },
+    {
+     "t": "Do not shave the head",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No response; boggy scalp (kerion)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Tinea pedis",
+   "branch": "If tinea pedis",
+   "features": [
+    {
+     "t": "Itch, burning between toes",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Moist, white, fissured webs",
+     "s": "phcstg2026:5.12"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.12"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Clotrimazole 1% twice daily × 4 wk",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Keep feet dry; open sandals",
+     "s": "phcstg2026:5.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No improvement after 4 weeks",
+     "s": "phcstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Pityriasis versicolor",
+   "branch": "If versicolor",
+   "features": [
+    {
+     "t": "Round macules, upper chest and back",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Selenium sulfide 2.5% weekly × 3 wk, overnight",
+     "s": "phcstg2026:5.13",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not indicated",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Mimics (not fungal)",
+   "features": [
+    {
+     "t": "Eczema, seborrhoeic dermatitis, psoriasis",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Impetigo, alopecia areata, pityriasis alba",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; KOH negative if available",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not use topical steroid alone on suspected tinea",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Uncertain diagnosis",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Reviews at weeks 2, 4, 8, 12; refer when criteria are met",
+  "columns": {
+   "feed": "Skin care and prevention",
+   "tests": "Tests and review",
+   "treatment": "Treatment and actions"
+  },
+  "standing": [
+   {
+    "t": "Weight, new spread, itch",
+    "d": 1
+   },
+   {
+    "t": "Cream applied correctly; doses given / missed",
+    "d": 1
+   },
+   {
+    "t": "Look for secondary infection",
+    "s": "phcstg2026:5.12"
+   },
+   {
+    "t": "Refer if no response, extensive or unwell",
+    "s": "paedstg2026:5.12"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 0",
+    "phase": "First visit",
+    "lead": "Weigh the child; choose the branch by site; look for secondary infection and HIV.",
+    "feed": [
+     {
+      "t": "Wash and dry the skin before the cream",
+      "s": "imci2022:61"
+     },
+     {
+      "t": "No sharing of clothes, towels, combs, brushes",
+      "s": "imci2022:61"
+     },
+     {
+      "t": "Do not shave the head",
+      "s": "phcstg2026:5.13"
+     },
+     {
+      "t": "Nappy: change promptly; air; no waterproof pants",
+      "s": "phcstg2026:5.24"
+     },
+     {
+      "t": "Keep feet dry",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight ____ kg",
+      "s": "phcstg2026:AIV.6",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "imci2022:61",
+      "b": 1
+     },
+     {
+      "t": "KOH wet prep of scraping if available",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "Body surface involved ____ %",
+      "d": 1
+     },
+     {
+      "t": "HGT if unwell",
+      "s": "imci2022:35",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Skin yeast, ringworm"
+     },
+     {
+      "t": "Clotrimazole 1% topical; ringworm 3× daily until 2 wk after clear",
+      "s": "imci2022:61",
+      "b": 1
+     },
+     {
+      "t": "Candida: 8-hourly × 14 d",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     },
+     {
+      "h": "Tinea capitis"
+     },
+     {
+      "t": "Fluconazole 6 mg/kg PO once daily × 28 d",
+      "s": "phcstg2026:5.13",
+      "b": 1
+     },
+     {
+      "h": "Versicolor"
+     },
+     {
+      "t": "Selenium sulfide 2.5% weekly × 3 wk",
+      "s": "phcstg2026:5.13",
+      "b": 1
+     },
+     {
+      "h": "Secondary infection"
+     },
+     {
+      "t": "Cefalexin 25 mg/kg/dose 12-hourly × 5 d (≤ 7 y)",
+      "s": "phcstg2026:5.12",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If candidiasis",
+    "phase": "Branch A",
+    "feed": [
+     {
+      "t": "Keep folds dry; mother's hygiene before breastfeeding",
+      "s": "paedstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "KOH prep if available",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clotrimazole 1% 8-hourly × 14 d",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "No response: fluconazole 3–6 mg/kg/day PO × 14 d",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If nappy rash with candida",
+    "phase": "Branch B",
+    "feed": [
+     {
+      "t": "Change often; air the area; no waterproof pants",
+      "s": "phcstg2026:5.24"
+     },
+     {
+      "t": "Rinse and dry nappies well",
+      "s": "phcstg2026:5.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Flexure involvement?",
+      "s": "phcstg2026:5.24"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Zinc and castor oil after each change",
+      "s": "phcstg2026:5.24"
+     },
+     {
+      "t": "Clotrimazole 1% beneath it after each change until resolved",
+      "s": "phcstg2026:5.24",
+      "b": 1
+     },
+     {
+      "t": "No improvement after 3 days → REFER",
+      "s": "phcstg2026:5.24"
+     }
+    ]
+   },
+   {
+    "label": "If tinea corporis",
+    "phase": "Branch C",
+    "feed": [
+     {
+      "t": "Wash and dry before cream",
+      "s": "imci2022:61"
+     },
+     {
+      "t": "No sharing of clothes or towels",
+      "s": "imci2022:61"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test if extensive",
+      "s": "imci2022:61",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clotrimazole 1% 3× daily until 2 wk after clear",
+      "s": "imci2022:61",
+      "b": 1
+     },
+     {
+      "t": "Extensive disease → REFER",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "label": "If tinea capitis",
+    "phase": "Branch D",
+    "feed": [
+     {
+      "t": "No shaving; no shared combs or brushes",
+      "s": "phcstg2026:5.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight for dose",
+      "s": "phcstg2026:AIV.6",
+      "b": 1
+     },
+     {
+      "t": "Adolescent girl: pregnancy test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fluconazole 6 mg/kg PO once daily × 28 d (see dose table)",
+      "s": "phcstg2026:5.13",
+      "b": 1
+     },
+     {
+      "t": "Weight band: > 7–9 kg 50 mg; > 11–14 kg 70 mg; > 17.5–25 kg 125 mg; > 35 kg 200 mg",
+      "s": "phcstg2026:AIV.6"
+     }
+    ]
+   },
+   {
+    "label": "If tinea pedis",
+    "phase": "Branch E",
+    "feed": [
+     {
+      "t": "Wash and dry feet twice daily",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Open sandals; no synthetic socks",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Web-space pain: bacterial infection?",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clotrimazole 1% twice daily × 4 wk",
+      "s": "phcstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "No improvement at 4 wk → REFER",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "label": "If versicolor",
+    "phase": "Branch F",
+    "feed": [
+     {
+      "t": "Loose, ventilated clothing in heat",
+      "s": "phcstg2026:5.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Warn: pigment returns over months",
+      "s": "phcstg2026:5.13"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Selenium sulfide 2.5% lather, leave overnight; weekly × 3 wk",
+      "s": "phcstg2026:5.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If secondary infection",
+    "phase": "Branch G",
+    "feed": [
+     {
+      "t": "Pus, crust, tender",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Look at the web space or scalp",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cefalexin 25 mg/kg/dose 12-hourly × 5 d (≤ 7 y)",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     },
+     {
+      "t": "Flucloxacillin 12–25 mg/kg/dose 6-hourly × 5 d",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     },
+     {
+      "t": "Allergy: azithromycin 10 mg/kg/dose daily × 3 d",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 2",
+    "phase": "Review 1",
+    "feed": [
+     {
+      "t": "Itch less? new spots?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "d": 1
+     },
+     {
+      "t": "Secondary infection?",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Candida course ends at 14 d",
+      "s": "paedstg2026:5.12"
+     },
+     {
+      "t": "Continue cream 2 wk after skin clears",
+      "s": "imci2022:61"
+     },
+     {
+      "t": "Worse or spreading → review diagnosis",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 4",
+    "phase": "Review 2",
+    "feed": [
+     {
+      "t": "Scalp: hair regrowing?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight; compare with Day 0",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tinea capitis fluconazole ends at 28 d",
+      "s": "phcstg2026:5.13"
+     },
+     {
+      "t": "Tinea pedis course ends; no improvement → REFER",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "label": "Week 8",
+    "phase": "Review 3",
+    "feed": [
+     {
+      "t": "Re-infection: shared combs, towels, pets",
+      "s": "imci2022:61"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Scalp and skin clear?",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persisting scalp infection → REFER",
+      "d": 1
+     },
+     {
+      "t": "Retreat recurrence; find cause",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 12",
+    "phase": "Recurrence",
+    "feed": [
+     {
+      "t": "Hygiene; dry skin",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test if recurrent",
+      "s": "imci2022:61",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrent or extensive → REFER",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · child fungal skin",
+   "items": [
+    {
+     "h": "Skin yeast, ringworm, feet"
+    },
+    {
+     "t": "Clotrimazole 1% topical",
+     "s": "paedstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Candida: 8-hourly × 14 d",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Ringworm: 3× daily to 2 wk after clear",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Tinea pedis: twice daily × 4 wk",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "h": "Tinea capitis"
+    },
+    {
+     "t": "Fluconazole 6 mg/kg PO once daily × 28 d",
+     "s": "phcstg2026:5.13",
+     "b": 1
+    },
+    {
+     "t": "Dose by weight: > 5–7 kg 30 mg; > 9–11 kg 60 mg; > 14–17.5 kg 100 mg; > 25–35 kg 150 mg",
+     "s": "phcstg2026:AIV.6"
+    },
+    {
+     "h": "Candida, no response"
+    },
+    {
+     "t": "Fluconazole 3–6 mg/kg/day PO × 14 d",
+     "s": "paedstg2026:5.12",
+     "b": 1
+    },
+    {
+     "h": "Versicolor"
+    },
+    {
+     "t": "Selenium sulfide 2.5% weekly × 3 wk, overnight",
+     "s": "phcstg2026:5.13",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Skin care and prevention",
+   "items": [
+    {
+     "h": "Every site"
+    },
+    {
+     "t": "Wash and dry skin before cream",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "No sharing clothes, towels, combs, brushes",
+     "s": "imci2022:61"
+    },
+    {
+     "h": "Scalp"
+    },
+    {
+     "t": "Do not shave the head",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "h": "Nappy area"
+    },
+    {
+     "t": "Change promptly; air; no waterproof pants",
+     "s": "phcstg2026:5.24"
+    },
+    {
+     "h": "Feet"
+    },
+    {
+     "t": "Keep dry; open sandals",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "h": "Prevent recurrence"
+    },
+    {
+     "t": "Treat family and pets if infected",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "t": "Any general danger sign",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Recalcitrant candidiasis",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Mouth and perineal candida",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Nappy rash no better after 3 days",
+     "s": "phcstg2026:5.24"
+    },
+    {
+     "t": "Boggy scalp, pus, tender nodes",
+     "d": 1
+    },
+    {
+     "t": "Fever, unwell",
+     "d": 1
+    },
+    {
+     "t": "Send with child: weight, sites, treatments tried",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "End of treatment — all 6 must be met",
+  "items": [
+   {
+    "t": "Itch gone; child comfortable"
+   },
+   {
+    "t": "Skin clear or hair regrowing"
+   },
+   {
+    "t": "Full course completed"
+   },
+   {
+    "t": "Cream continued 2 wk after clear (ringworm)"
+   },
+   {
+    "t": "Source addressed (sharing, nappy, feet)"
+   },
+   {
+    "t": "Caregiver knows what recurrence looks like"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow-up",
+  "items": [
+   {
+    "t": "PHC clinic at week 12 if scalp or extensive",
+    "d": 1
+   },
+   {
+    "t": "Return if rash returns, spreads, or pus appears",
+    "d": 1
+   },
+   {
+    "t": "Recurrent infection: HIV test; refer",
+    "s": "imci2022:61"
+   },
+   {
+    "t": "Scalp not clearing: refer",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Home and clinic care record — child, 28 days",
+  "period": "one sheet per episode, one row per day (clinic visits at week 2, 4, 8, 12)",
+  "params": [
+   {
+    "h": "Cream",
+    "items": [
+     {
+      "t": "Wash and dry skin first",
+      "s": "imci2022:61"
+     },
+     {
+      "t": "Tick each application: ringworm 3× daily",
+      "s": "imci2022:61"
+     }
+    ]
+   },
+   {
+    "h": "Fluconazole",
+    "items": [
+     {
+      "t": "Once daily for scalp; tick each dose",
+      "s": "phcstg2026:5.13"
+     },
+     {
+      "t": "Give with the weight-based dose",
+      "s": "phcstg2026:AIV.6"
+     }
+    ]
+   },
+   {
+    "h": "Itch and spread",
+    "items": [
+     {
+      "t": "Score itch 0–10 daily",
+      "d": 1
+     },
+     {
+      "t": "Mark new spread Y",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Prevention",
+    "items": [
+     {
+      "t": "No shared towels, combs, brushes",
+      "s": "phcstg2026:5.13"
+     },
+     {
+      "t": "Keep cream 2 wk after clear",
+      "s": "imci2022:61"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "spreading rash, pus or pain",
+    "s": "phcstg2026:5.12",
+    "b": 1
+   },
+   {
+    "t": "boggy scalp swelling",
+    "d": 1
+   },
+   {
+    "t": "fever, unwell, not drinking",
+    "s": "imci2022:24",
+    "b": 1
+   },
+   {
+    "t": "vomiting or yellow eyes on fluconazole",
+    "d": 1
+   },
+   {
+    "t": "not better by next visit",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Days cream applied",
+   "of",
+   "Days drug given",
+   "Missed days"
+  ]
+ }
+}

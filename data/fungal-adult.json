@@ -1,0 +1,1403 @@
+{
+ "id": "fungal-adult",
+ "short": "Fungal skin (adult)",
+ "title": "Fungal skin and nail infection — adult (outpatient-first)",
+ "population": "Adult ≥ 13 years · clinic-visit pathway; refer if any §2 criterion",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "→ Bacterial skin infection, cellulitis, impetigo",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Eczema, seborrhoeic dermatitis, psoriasis",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Scabies, lice: PHC STG 5.7",
+     "s": "phcstg2026:5.15",
+     "b": 1
+    },
+    {
+     "t": "→ Vaginal candidiasis: PHC STG 12.1",
+     "s": "phcstg2026:5.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features — any one (site)",
+   "items": [
+    {
+     "t": "Skin folds: red raw moist patch, white satellite pustules",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Body: itchy ring, raised edge, clearing centre",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Feet: itch, white macerated toe webs, fissures",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Scalp: patchy hair loss, scale, broken stumps",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Trunk: round macules, often lighter than skin",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Nail: lifted, distorted, crumbling, discoloured",
+     "s": "phcstg2026:5.15"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer or treat as complicated = any one of",
+   "items": [
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Immunocompromised with extensive skin infection",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "Systemic infection, or fever and unwell",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "No improvement after 4 weeks (feet)",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Non-responsive after a full course",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "Web-space pain or tenderness: bacterial infection",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Distressed by nail appearance",
+     "s": "phcstg2026:5.15"
+    },
+    {
+     "t": "Woman who may be pregnant, needing fluconazole",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Diabetes; last HGT ____"
+    },
+    {
+     "t": "HIV status / ART / VL",
+     "d": 1
+    },
+    {
+     "t": "Previous fungal infection",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "Steroid or immunosuppressant use",
+     "d": 1
+    },
+    {
+     "t": "Contraception / pregnancy",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Treatment already tried: ______",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Lesion"
+    },
+    {
+     "t": "Itch; how long; spreading",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Hair loss (scalp)",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "h": "Exposure"
+    },
+    {
+     "t": "Shared towels, combs, brushes",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Shared bathing or swimming areas",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Contact with animals or infected people",
+     "d": 1
+    },
+    {
+     "t": "Occlusive, sweaty clothing or shoes",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "h": "Host"
+    },
+    {
+     "t": "Diabetes · HIV · obesity",
+     "s": "adultstg2026:4.13"
+    },
+    {
+     "t": "Eczema or maceration",
+     "s": "adultstg2026:4.13"
+    },
+    {
+     "t": "Recurring after treatment",
+     "s": "adultstg2026:4.14"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Weight loss",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Edge: ring, raised, scaly",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Moist, red, satellite pustules (folds)",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Body surface involved ____ % (1 hand = 1%)",
+     "d": 1
+    },
+    {
+     "t": "Secondary infection: pus, crust",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "h": "Feet and nails"
+    },
+    {
+     "t": "Macerated, fissured toe webs",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Nail lifted or crumbling",
+     "s": "phcstg2026:5.15"
+    },
+    {
+     "t": "Nailfold swollen, pus (paronychia)",
+     "s": "phcstg2026:5.14"
+    },
+    {
+     "h": "Scalp and hair"
+    },
+    {
+     "t": "Patchy hair loss, scale",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Tender, boggy swelling or nodes",
+     "d": 1
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Oral thrush",
+     "d": 1
+    },
+    {
+     "t": "Extensive in HIV: no clear centres",
+     "s": "phcstg2026:5.11"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care test 1 — blood glucose (HGT)",
+   "items": [
+    {
+     "t": "Value on arrival: ______ mmol/L",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Exclude diabetes with candidiasis",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "≥ 11.1 mmol/L random: possible diabetes — manage and review",
+     "d": 1
+    },
+    {
+     "t": "Known diabetic: control the diabetes as well",
+     "s": "adultstg2026:4.13"
+    },
+    {
+     "t": "Repeat if recurrent infection",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Point-of-care test 2 — HIV test",
+   "items": [
+    {
+     "t": "Result: ______",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Extensive or recurrent infection: offer test",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Positive → ART pathway; extensive disease may need fluconazole",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "KOH wet preparation of scraping if available",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Decide treatment on clinical picture; do not wait for KOH",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway or breathing compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock / hypotension",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC / confusion",
+     "b": 1
+    },
+    {
+     "t": "Seizure",
+     "b": 1
+    },
+    {
+     "t": "Fever, unwell (systemic fungal)",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Painful, tender web space",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Oral thrush, weight loss, immunosuppressed",
+     "d": 1
+    },
+    {
+     "t": "Pus, boggy scalp swelling",
+     "d": 1
+    },
+    {
+     "t": "Diabetes poorly controlled",
+     "s": "adultstg2026:4.13"
+    },
+    {
+     "t": "Pregnant or may be",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Spreading despite treatment",
+     "s": "adultstg2026:4.14"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Systemic or extensive fungal infection, no response → REFER",
+   "s": "adultstg2026:4.14"
+  },
+  {
+   "t": "11. Not complicated → OUTPATIENT, Clinic Visit Chart (admit only if unwell)",
+   "s": "adultstg2026:4.14"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Candidiasis of skin",
+   "branch": "If candidiasis",
+   "features": [
+    {
+     "t": "Red raw moist patch",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Satellite white pustules",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Folds: breast, axilla, groin, natal cleft",
+     "s": "phcstg2026:5.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "HGT",
+     "s": "phcstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "KOH wet prep if available",
+     "s": "paedstg2026:5.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Clotrimazole 1% topical 3× daily × 14 d",
+     "s": "phcstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "Control diabetes / HIV",
+     "s": "paedstg2026:5.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Recalcitrant",
+     "s": "paedstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Tinea corporis (ringworm)",
+   "branch": "If tinea corporis",
+   "features": [
+    {
+     "t": "Itchy ring, raised border, clear centre",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "Extensive in HIV, no clear centres",
+     "s": "phcstg2026:5.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "HIV test if extensive",
+     "s": "phcstg2026:5.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Clotrimazole 1% 3× daily; keep going ≥ 2 wk after clear",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Treat secondary infection",
+     "s": "phcstg2026:5.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Tinea pedis",
+   "branch": "If tinea pedis",
+   "features": [
+    {
+     "t": "Itch, burning between toes",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Moist white maceration, fissures",
+     "s": "phcstg2026:5.12"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "HGT in diabetics",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Clotrimazole 1% twice daily × 4 wk",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Keep feet dry; open sandals",
+     "s": "phcstg2026:5.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No improvement after 4 weeks",
+     "s": "phcstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Tinea capitis",
+   "branch": "If tinea capitis",
+   "features": [
+    {
+     "t": "Patchy bald areas, scale, stumps",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; KOH / culture REFER if unsure",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fluconazole 200 mg PO weekly × 6 wk",
+     "s": "phcstg2026:5.13",
+     "b": 1
+    },
+    {
+     "t": "Not to women of child-bearing age without contraception",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Non-response; boggy or pustular scalp",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pityriasis versicolor",
+   "branch": "If versicolor",
+   "features": [
+    {
+     "t": "Round macules, often lighter",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Upper chest and back",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Selenium sulfide 2.5% weekly × 3 wk, overnight",
+     "s": "phcstg2026:5.13",
+     "b": 1
+    },
+    {
+     "t": "No oral antifungal",
+     "s": "phcstg2026:5.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not indicated",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Nail: tinea unguium, chronic paronychia",
+   "branch": "If nail",
+   "features": [
+    {
+     "t": "Lifted, crumbling, discoloured nail",
+     "s": "phcstg2026:5.15"
+    },
+    {
+     "t": "Chronic red swollen nailfold",
+     "s": "phcstg2026:5.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.15"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Topical is generally ineffective for nails",
+     "s": "phcstg2026:5.15"
+    },
+    {
+     "t": "Paronychia: gloves, betamethasone 0.1% at night (doctor prescribed)",
+     "s": "phcstg2026:5.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Cosmetic distress; paronychia no response",
+     "s": "phcstg2026:5.15"
+    }
+   ]
+  },
+  {
+   "dx": "Mimics (not fungal)",
+   "features": [
+    {
+     "t": "Eczema, psoriasis, seborrhoeic dermatitis",
+     "d": 1
+    },
+    {
+     "t": "Impetigo, erythrasma, pityriasis rosea",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; KOH negative if available",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not give topical steroid alone on suspected tinea",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Uncertain diagnosis",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Review at weeks 2, 4, 6 and 12; refer when criteria are met, not on a fixed row",
+  "columns": {
+   "feed": "Skin care and prevention",
+   "tests": "Tests and review",
+   "treatment": "Treatment and actions"
+  },
+  "standing": [
+   {
+    "t": "new spread? itch 0–10",
+    "d": 1
+   },
+   {
+    "t": "Cream applied correctly; doses missed",
+    "d": 1
+   },
+   {
+    "t": "Look for secondary infection",
+    "s": "phcstg2026:5.12"
+   },
+   {
+    "t": "Refer if no response, extensive or systemic",
+    "s": "adultstg2026:4.14"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 0",
+    "phase": "First visit",
+    "lead": "Choose the branch by site; check HGT and offer HIV test; look for secondary infection.",
+    "feed": [
+     {
+      "t": "Wash and dry the skin before the cream",
+      "s": "phcstg2026:5.11"
+     },
+     {
+      "t": "Do not share towels, clothes, combs",
+      "s": "phcstg2026:5.11"
+     },
+     {
+      "t": "Keep skin and feet dry; open sandals",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Loose, ventilated clothing",
+      "s": "phcstg2026:5.13"
+     },
+     {
+      "t": "Avoid shared bathing areas",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "phcstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "phcstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "KOH wet prep of scraping if available",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "Body surface involved ____ %",
+      "d": 1
+     },
+     {
+      "t": "Pregnancy test if fluconazole planned",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Skin or skin-fold yeast, tinea"
+     },
+     {
+      "t": "Clotrimazole 1% topical 8-hourly until clear; ≥ 2 wk after clear",
+      "s": "adultstg2026:4.14",
+      "b": 1
+     },
+     {
+      "h": "Pityriasis versicolor"
+     },
+     {
+      "t": "Selenium sulfide 2.5% weekly × 3 wk",
+      "s": "adultstg2026:4.14",
+      "b": 1
+     },
+     {
+      "h": "Secondary infection"
+     },
+     {
+      "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d (or cefalexin 500 mg)",
+      "s": "phcstg2026:5.12",
+      "b": 1
+     },
+     {
+      "h": "Extensive in immunocompromised"
+     },
+     {
+      "t": "Fluconazole 200 mg PO weekly × 6 wk",
+      "s": "adultstg2026:4.14",
+      "b": 1
+     },
+     {
+      "h": "Unwell, systemic"
+     },
+     {
+      "t": "REFER",
+      "s": "adultstg2026:4.14",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If candidiasis",
+    "phase": "Branch A",
+    "feed": [
+     {
+      "t": "Keep folds dry; exclude diabetes",
+      "s": "phcstg2026:5.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "phcstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "KOH prep if available",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clotrimazole 1% 3× daily × 14 d",
+      "s": "phcstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "No response: refer for fluconazole",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If tinea corporis",
+    "phase": "Branch B",
+    "feed": [
+     {
+      "t": "Wash and dry before cream",
+      "s": "phcstg2026:5.11"
+     },
+     {
+      "t": "Do not share clothing",
+      "s": "phcstg2026:5.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test if extensive",
+      "s": "phcstg2026:5.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clotrimazole 1% 3× daily; ≥ 2 wk after clear",
+      "s": "phcstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "Extensive disease → REFER",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "label": "If tinea pedis",
+    "phase": "Branch C",
+    "feed": [
+     {
+      "t": "Wash and dry feet twice daily",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Dry between toes; open sandals",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Web-space pain: look for bacterial infection",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "HGT if diabetic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clotrimazole 1% twice daily × 4 wk",
+      "s": "phcstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "No improvement at 4 wk → REFER",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Secondary hand eczema: see eczema pathway",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "label": "If tinea capitis",
+    "phase": "Branch D",
+    "feed": [
+     {
+      "t": "No sharing combs or brushes",
+      "s": "phcstg2026:5.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pregnancy status",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "LFT baseline if prolonged course",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fluconazole 200 mg PO weekly × 6 wk",
+      "s": "phcstg2026:5.13",
+      "b": 1
+     },
+     {
+      "t": "Not in women of child-bearing age unless effective contraception",
+      "s": "phcstg2026:5.13"
+     }
+    ]
+   },
+   {
+    "label": "If versicolor",
+    "phase": "Branch E",
+    "feed": [
+     {
+      "t": "Avoid unventilated clothing in heat",
+      "s": "phcstg2026:5.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Warn: pigment returns over months",
+      "s": "phcstg2026:5.13"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Selenium sulfide 2.5%: lather, leave overnight, rinse; weekly × 3 wk",
+      "s": "phcstg2026:5.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If nail",
+    "phase": "Branch F",
+    "feed": [
+     {
+      "t": "Paronychia: keep hands dry; rubber gloves",
+      "s": "phcstg2026:5.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Clinical",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Topical is ineffective for nail fungus",
+      "s": "phcstg2026:5.15"
+     },
+     {
+      "t": "Chronic paronychia: betamethasone 0.1% at night until clear (doctor)",
+      "s": "phcstg2026:5.14",
+      "b": 1
+     },
+     {
+      "t": "Distressed by nails → REFER",
+      "s": "phcstg2026:5.15"
+     }
+    ]
+   },
+   {
+    "label": "If extensive / immunocompromised",
+    "phase": "Branch G",
+    "feed": [
+     {
+      "t": "Treat the underlying condition",
+      "s": "adultstg2026:4.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test; HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fluconazole 200 mg PO weekly × 6 wk; onychomycosis weekly × 6 mo",
+      "s": "adultstg2026:4.14",
+      "b": 1
+     },
+     {
+      "t": "Systemic infection → REFER",
+      "s": "adultstg2026:4.14"
+     }
+    ]
+   },
+   {
+    "label": "Week 2",
+    "phase": "Review 1",
+    "feed": [
+     {
+      "t": "Itch less? new spots?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Secondary infection?",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Candidiasis course ends at 14 d",
+      "s": "phcstg2026:5.11"
+     },
+     {
+      "t": "Continue cream ≥ 2 wk after skin clears",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Worse or spreading → review diagnosis",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 4",
+    "phase": "Review 2",
+    "feed": [
+     {
+      "t": "Feet dry; footwear changed",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Compare with Day 0",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tinea pedis: course ends; no improvement → REFER",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Non-responsive infection → REFER",
+      "s": "adultstg2026:4.14"
+     }
+    ]
+   },
+   {
+    "label": "Week 6",
+    "phase": "Review 3",
+    "feed": [
+     {
+      "t": "Re-infection: shoes, socks, towels",
+      "s": "phcstg2026:5.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hair regrowth or clear skin?",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Fluconazole (scalp, extensive) ends at 6 wk",
+      "s": "phcstg2026:5.13"
+     },
+     {
+      "t": "Versicolor: repeat only if recurs",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 12",
+    "phase": "Recurrence",
+    "feed": [
+     {
+      "t": "Predisposing factors: sweat, occlusion",
+      "s": "adultstg2026:4.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT; HIV test if recurrent",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrence: retreat, find cause",
+      "s": "adultstg2026:4.14"
+     },
+     {
+      "t": "Recurrent or extensive → REFER",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · adult fungal skin",
+   "items": [
+    {
+     "h": "Yeast and dermatophytes"
+    },
+    {
+     "t": "Clotrimazole 1% topical 8-hourly until clear; ≥ 2 wk after clear",
+     "s": "adultstg2026:4.14",
+     "b": 1
+    },
+    {
+     "t": "Skin yeast: 3× daily × 14 d (PHC)",
+     "s": "phcstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "Tinea corporis: 3× daily (PHC)",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Tinea pedis: twice daily × 4 wk (PHC)",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "h": "Pityriasis versicolor"
+    },
+    {
+     "t": "Selenium sulfide 2.5% weekly × 3 wk, overnight",
+     "s": "adultstg2026:4.14",
+     "b": 1
+    },
+    {
+     "h": "Systemic (specialist-level indications)"
+    },
+    {
+     "t": "Fluconazole 200 mg PO weekly × 6 wk (extensive in immunocompromised; scalp)",
+     "s": "adultstg2026:4.14",
+     "b": 1
+    },
+    {
+     "t": "Onychomycosis: 200 mg weekly × 6 months",
+     "s": "adultstg2026:4.14",
+     "b": 1
+    },
+    {
+     "t": "Not to women of child-bearing age without contraception",
+     "s": "phcstg2026:5.13"
+    }
+   ]
+  },
+  {
+   "title": "Skin care and prevention",
+   "items": [
+    {
+     "h": "Every site"
+    },
+    {
+     "t": "Wash and dry skin before cream",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "t": "No sharing clothes, towels, combs, brushes",
+     "s": "phcstg2026:5.11"
+    },
+    {
+     "h": "Feet"
+    },
+    {
+     "t": "Wash and dry twice daily; dry between toes",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Open sandals; no synthetic socks",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "h": "Prevent recurrence"
+    },
+    {
+     "t": "Manage diabetes, eczema, immunocompromise",
+     "s": "adultstg2026:4.13"
+    },
+    {
+     "t": "Avoid shared bathing and swimming areas while infected",
+     "s": "phcstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "t": "Extensive disease",
+     "s": "phcstg2026:5.12",
+     "b": 1
+    },
+    {
+     "t": "Fever, systemic infection",
+     "s": "adultstg2026:4.14",
+     "b": 1
+    },
+    {
+     "t": "Immunocompromised with extensive infection",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "No improvement: feet 4 wk; others after full course",
+     "s": "adultstg2026:4.14"
+    },
+    {
+     "t": "Web-space pain: add antibiotic",
+     "s": "phcstg2026:5.12"
+    },
+    {
+     "t": "Pregnancy: no fluconazole",
+     "s": "phcstg2026:5.13"
+    },
+    {
+     "t": "Nail: distressed by appearance",
+     "s": "phcstg2026:5.15"
+    },
+    {
+     "t": "Send with patient: sites, % body, treatments tried",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "End of treatment — all 6 must be met",
+  "items": [
+   {
+    "t": "Itch gone"
+   },
+   {
+    "t": "Skin clear or scaling resolved"
+   },
+   {
+    "t": "Full course completed"
+   },
+   {
+    "t": "Cream continued ≥ 2 wk after clear (tinea)"
+   },
+   {
+    "t": "Cause addressed (feet, diabetes, sharing)"
+   },
+   {
+    "t": "Patient knows what recurrence looks like"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow-up",
+  "items": [
+   {
+    "t": "PHC clinic at week 12 if it was extensive",
+    "d": 1
+   },
+   {
+    "t": "Return if rash returns, spreads, or pus appears",
+    "d": 1
+   },
+   {
+    "t": "Recurrent infection: HGT and HIV test; refer",
+    "s": "adultstg2026:4.14"
+   },
+   {
+    "t": "Nail distress → refer",
+    "s": "phcstg2026:5.15"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Home and clinic care record — 28 days",
+  "period": "one sheet per episode, one row per day (clinic visits at week 2, 4, 6, 12)",
+  "params": [
+   {
+    "h": "Cream",
+    "items": [
+     {
+      "t": "Wash and dry skin first",
+      "s": "phcstg2026:5.11"
+     },
+     {
+      "t": "Tick each application: 3× daily, feet 2×",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "h": "Itch and spread",
+    "items": [
+     {
+      "t": "Score itch 0–10 daily",
+      "d": 1
+     },
+     {
+      "t": "Mark new spread Y",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Prevention",
+    "items": [
+     {
+      "t": "Skin and feet dry; no shared towels",
+      "s": "phcstg2026:5.12"
+     },
+     {
+      "t": "Keep cream ≥ 2 wk after clear",
+      "s": "phcstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "h": "Systemic drug",
+    "items": [
+     {
+      "t": "Fluconazole weekly: tick the day taken",
+      "s": "adultstg2026:4.14"
+     },
+     {
+      "t": "Report yellow eyes, dark urine, vomiting",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "spreading rash, pus or pain",
+    "s": "phcstg2026:5.12",
+    "b": 1
+   },
+   {
+    "t": "fever or very unwell",
+    "s": "adultstg2026:4.14",
+    "b": 1
+   },
+   {
+    "t": "yellow eyes, dark urine on fluconazole",
+    "d": 1
+   },
+   {
+    "t": "no better by next visit",
+    "s": "adultstg2026:4.14"
+   },
+   {
+    "t": "pregnancy",
+    "s": "phcstg2026:5.13"
+   }
+  ],
+  "totals": [
+   "Days cream applied",
+   "of",
+   "Missed days",
+   "Days itch ≥ 5"
+  ]
+ }
+}

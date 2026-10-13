@@ -1,0 +1,1514 @@
+{
+ "id": "bsi-adult",
+ "short": "Bacterial skin (adult)",
+ "title": "Bacterial skin and soft-tissue infection — adult (outpatient-first)",
+ "population": "Adult ≥ 13 years · clinic-visit pathway; admit or refer if any §2 criterion",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "→ Fungal skin infection (tinea, candida)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Eczema, even weeping (infected eczema stays here)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Scabies, lice: PHC STG 5.7",
+     "s": "phcstg2026:5.15",
+     "b": 1
+    },
+    {
+     "t": "→ Chronic leg or foot ulcer: PHC STG 5.4.4, REFER",
+     "s": "phcstg2026:5.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features — any one",
+   "items": [
+    {
+     "t": "Cellulitis: red, warm, tender, oedematous, indistinct border",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Erysipelas: raised, sharply demarcated red border",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Boil / abscess: tender red swollen lump ± fluctuant",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "Impetigo: pus blisters, honey-coloured crusts",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Acute paronychia: pus under the nailfold",
+     "s": "phcstg2026:5.14"
+    },
+    {
+     "t": "Mark the edge of redness with a pen; time ____",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit or refer = any one of",
+   "items": [
+    {
+     "t": "Confusion, hypotension or other systemic features",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Erythema progressing fast",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Extensive cellulitis; hand, face or scalp",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Poorly controlled diabetes or immunocompromised",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Palm or finger-pulp, deep, neck, peri-rectal, breast abscess",
+     "s": "phcstg2026:5.7"
+    },
+    {
+     "t": "Vomiting or cannot take oral antibiotics",
+     "d": 1
+    },
+    {
+     "t": "No better after 48–72 h of oral antibiotic",
+     "d": 1
+    },
+    {
+     "t": "Impetigo: no better after 2nd course; blood on dipstick > 5–7 d",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Diabetes; last HGT ____"
+    },
+    {
+     "t": "HIV status / ART / VL",
+     "d": 1
+    },
+    {
+     "t": "Previous cellulitis",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Lymphoedema / venous disease",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Severe penicillin allergy",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Antibiotic taken: ________",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Days; spreading?",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Fever, chills, rigors",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "h": "Portal of entry"
+    },
+    {
+     "t": "Cut, bite, trauma",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "t": "Tinea pedis",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Water wound (salt/fresh)",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Scabies, eczema, ulcer",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "h": "Host"
+    },
+    {
+     "t": "Diabetes · HIV · malnutrition",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "Recurrent boils; contacts",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "TB symptoms",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Confusion / drowsy",
+     "k": "yn"
+    },
+    {
+     "t": "Pain out of proportion to signs",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "General"
+    },
+    {
+     "t": "Looks unwell / dehydrated",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "h": "Lesion"
+    },
+    {
+     "t": "Raised demarcated edge (erysipelas)",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Swollen · warm · tender",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "t": "Fluctuant — pus",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "Lymphangitis / tender nodes",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "h": "Danger signs"
+    },
+    {
+     "t": "Haemorrhagic bullae",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Gas in tissues",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Gangrene / necrosis",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "h": "Site and legs"
+    },
+    {
+     "t": "Hand, face or scalp",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Calf tender (DVT mimic)",
+     "d": 1
+    },
+    {
+     "t": "Tinea pedis in toe webs",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Nailfold pus",
+     "s": "phcstg2026:5.14"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care test 1 — blood glucose (HGT)",
+   "items": [
+    {
+     "t": "Value on arrival: ______ mmol/L",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Check in recurrent boils; every cellulitis†",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "≥ 11.1 mmol/L random: possible diabetes — manage and review",
+     "d": 1
+    },
+    {
+     "t": "Known diabetic and poorly controlled → ADMIT",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Repeat HGT at each visit if diabetic",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Point-of-care test 2 — urine dipstick",
+   "items": [
+    {
+     "t": "Blood ______  Protein ______",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Impetigo or sores > 1 week: dipstick for blood",
+     "s": "phcstg2026:5.7"
+    },
+    {
+     "t": "Blood still present after 5–7 days → REFER",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "t": "Oedema, raised BP, dark urine → nephritic syndrome, REFER",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "t": "Ketones if HGT raised",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway or breathing compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock / hypotension",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC / confusion",
+     "b": 1
+    },
+    {
+     "t": "Seizure",
+     "b": 1
+    },
+    {
+     "t": "Pain out of proportion",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Haemorrhagic bullae",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Gas in tissues / gangrene",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Erythema spreading fast",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Hand, face or scalp",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Bone or joint pain",
+     "d": 1
+    },
+    {
+     "t": "Perineal / genital site",
+     "d": 1
+    },
+    {
+     "t": "Immunosuppressed",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Necrotising fasciitis or sepsis → IV antibiotic, URGENT REFER",
+   "s": "adultstg2026:4.2"
+  },
+  {
+   "t": "11. Any §2 criterion → ADMIT · none → OUTPATIENT, Clinic Visit Chart",
+   "s": "adultstg2026:4.2"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Necrotising fasciitis",
+   "branch": "If necrotising fasciitis",
+   "features": [
+    {
+     "t": "Pain out of proportion to signs",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Haemorrhagic bullae, gas, gangrene",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Rapid spread, toxic, shocked",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical diagnosis",
+     "d": 1
+    },
+    {
+     "t": "X-ray for gas only if it does not delay transfer",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "HGT",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Broad-spectrum IV antibiotic before transfer, e.g. amoxicillin/clavulanic acid (dose per STG)",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "IV fluids if shocked",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "URGENT REFER for debridement",
+     "s": "adultstg2026:4.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Severe cellulitis / erysipelas",
+   "branch": "If severe cellulitis",
+   "features": [
+    {
+     "t": "Rapid spread, systemic features",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Hand, face, scalp; extensive",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Diabetic or immunocompromised",
+     "s": "phcstg2026:5.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "HGT",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Creatinine if on IV drugs",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ADMIT: cefazolin IV 1 g 8-hourly",
+     "s": "adultstg2026:4.2",
+     "b": 1
+    },
+    {
+     "t": "Elevate limb; hydrate; analgesia",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "DVT prophylaxis if bed-bound",
+     "s": "adultstg2026:4.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If sepsis, no response or necrosis",
+     "s": "phcstg2026:5.9"
+    }
+   ]
+  },
+  {
+   "dx": "Non-severe cellulitis / erysipelas",
+   "branch": "If non-severe cellulitis",
+   "features": [
+    {
+     "t": "Red, warm, tender; no systemic features",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Usually leg; after minor trauma",
+     "s": "phcstg2026:5.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "HGT once",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Look for tinea pedis",
+     "s": "adultstg2026:4.3"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cefalexin or flucloxacillin 500 mg PO 6-hourly × 5 d",
+     "s": "adultstg2026:4.2",
+     "b": 1
+    },
+    {
+     "t": "Elevate limb, hydrate",
+     "s": "adultstg2026:4.2"
+    }
+   ],
+   "refer": [
+    {
+     "t": "No response by day 3–5 → surgeon/REFER",
+     "s": "adultstg2026:4.3"
+    }
+   ]
+  },
+  {
+   "dx": "Boil / abscess",
+   "branch": "If abscess / boil",
+   "features": [
+    {
+     "t": "Hot, tender, swollen lump",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "Fluctuant = pus",
+     "s": "phcstg2026:5.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Palpate fluctuance",
+     "s": "phcstg2026:5.6"
+    },
+    {
+     "t": "HGT; HIV test if recurrent",
+     "s": "adultstg2026:4.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Small: warm compress; large: incise and drain",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "Antibiotic only if face, fever, nodes, cellulitis",
+     "s": "adultstg2026:4.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Neck, peri-rectal, near nerve/vessel, palm, deep, breast",
+     "s": "adultstg2026:4.4"
+    }
+   ]
+  },
+  {
+   "dx": "Impetigo",
+   "branch": "If impetigo",
+   "features": [
+    {
+     "t": "Honey-coloured crusts",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Often with scabies or eczema",
+     "s": "phcstg2026:5.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.7"
+    },
+    {
+     "t": "Urine dipstick if > 1 week",
+     "s": "phcstg2026:5.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Soak crusts; povidone-iodine 8-hourly",
+     "s": "phcstg2026:5.7"
+    },
+    {
+     "t": "If extensive/febrile: flucloxacillin 500 mg 6-hourly × 5 d",
+     "s": "adultstg2026:4.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Blood on dipstick > 5–7 d; no better after 2 courses",
+     "s": "phcstg2026:5.8"
+    }
+   ]
+  },
+  {
+   "dx": "Acute paronychia",
+   "branch": "If acute paronychia",
+   "features": [
+    {
+     "t": "Pus under the nailfold",
+     "s": "phcstg2026:5.14"
+    },
+    {
+     "t": "Nail biting, short nails",
+     "s": "phcstg2026:5.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.14"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Puncture or incise to drain",
+     "s": "phcstg2026:5.14"
+    },
+    {
+     "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+     "s": "phcstg2026:5.14",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Pulp-space abscess of a finger",
+     "s": "phcstg2026:5.7"
+    }
+   ]
+  },
+  {
+   "dx": "Mimics (not bacterial)",
+   "features": [
+    {
+     "t": "Calf swelling → DVT",
+     "d": 1
+    },
+    {
+     "t": "Both legs, itchy, scaly → stasis eczema",
+     "d": 1
+    },
+    {
+     "t": "Gout, insect bite, drug reaction",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Duplex/clinical score — REFER for DVT work-up",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not treat as cellulitis without erythema/warmth/tenderness",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "DVT suspected",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Review on day 3, 5, 7, 14 and week 4; admit or refer when criteria are met, not on a fixed row",
+  "columns": {
+   "feed": "Skin and wound care",
+   "tests": "Tests and review",
+   "treatment": "Treatment and actions"
+  },
+  "standing": [
+   {
+    "t": "temperature, edge of redness vs mark (↑ ↔ ↓)",
+    "d": 1
+   },
+   {
+    "t": "Pain score; limb elevated",
+    "d": 1
+   },
+   {
+    "t": "Doses taken / missed",
+    "d": 1
+   },
+   {
+    "t": "Stop and admit if any §2 criterion appears",
+    "s": "phcstg2026:5.9"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 0",
+    "phase": "First visit",
+    "lead": "Mark the edge of redness; check HGT and urine; decide treat, admit or refer from the §2 criteria.",
+    "feed": [
+     {
+      "t": "Mark the edge of redness; time ____",
+      "d": 1
+     },
+     {
+      "t": "Elevate the limb",
+      "s": "adultstg2026:4.2"
+     },
+     {
+      "t": "Hydrate",
+      "s": "adultstg2026:4.2"
+     },
+     {
+      "t": "Wash and soak crusts (impetigo)",
+      "s": "phcstg2026:5.7"
+     },
+     {
+      "t": "Warm compress to boils",
+      "s": "adultstg2026:4.4"
+     },
+     {
+      "t": "Treat tinea pedis if present",
+      "s": "adultstg2026:4.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "adultstg2026:4.4",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick (blood, protein)",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     },
+     {
+      "t": "HIV test if boils recurrent or status unknown",
+      "s": "adultstg2026:4.4",
+      "b": 1
+     },
+     {
+      "t": "Pulse, BP, temp",
+      "d": 1
+     },
+     {
+      "t": "Photograph or draw the lesion",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Non-severe cellulitis"
+     },
+     {
+      "t": "Cefalexin 500 mg PO 6-hourly × 5 d, or flucloxacillin 500 mg PO 6-hourly × 5 d",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: azithromycin 500 mg PO daily × 3 d",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Ibuprofen 400 mg PO 8-hourly with meals, or paracetamol 500 mg–1 g 4–6-hourly (max 4 g/24 h)",
+      "s": "adultstg2026:4.3"
+     },
+     {
+      "h": "Shock or sepsis"
+     },
+     {
+      "t": "IV access, fluids; first IV antibiotic dose; URGENT REFER",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "h": "Admit"
+     },
+     {
+      "t": "Cefazolin 1 g IV 8-hourly; clindamycin 600 mg IV 8-hourly if severe penicillin allergy",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "t": "Tetanus toxoid if wound and not current",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If non-severe cellulitis",
+    "phase": "Branch A",
+    "feed": [
+     {
+      "t": "Elevate; hydrate",
+      "s": "adultstg2026:4.2"
+     },
+     {
+      "t": "Limb out of dependent position",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Edge vs mark each visit",
+      "d": 1
+     },
+     {
+      "t": "HGT if diabetic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral antibiotic as Day 0 for 5 d",
+      "s": "adultstg2026:4.2"
+     },
+     {
+      "t": "Extend if not improved at 5 d",
+      "s": "adultstg2026:4.2"
+     },
+     {
+      "t": "Ibuprofen or paracetamol as needed",
+      "s": "adultstg2026:4.3"
+     }
+    ]
+   },
+   {
+    "label": "If severe cellulitis",
+    "phase": "Branch B · admit",
+    "feed": [
+     {
+      "t": "Elevate; IV or oral fluids",
+      "s": "adultstg2026:4.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 6-hourly if diabetic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, blood culture if febrile",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cefazolin 1 g IV 8-hourly",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "t": "Switch to flucloxacillin 500 mg PO 6-hourly when improving",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "t": "Penicillin allergy: clindamycin 600 mg IV 8-hourly, then 450 mg PO 8-hourly",
+      "s": "adultstg2026:4.3",
+      "b": 1
+     },
+     {
+      "t": "DVT prophylaxis if bed-bound",
+      "s": "adultstg2026:4.3"
+     },
+     {
+      "t": "IV preferred if erythema spreading fast",
+      "s": "adultstg2026:4.3"
+     }
+    ]
+   },
+   {
+    "label": "If abscess / boil",
+    "phase": "Branch C",
+    "feed": [
+     {
+      "t": "Small: warm compress several times a day",
+      "s": "adultstg2026:4.4"
+     },
+     {
+      "t": "Large fluctuant: incise and drain",
+      "s": "adultstg2026:4.4"
+     },
+     {
+      "t": "Keep nails short; shower often",
+      "s": "phcstg2026:5.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT; HIV test if recurrent",
+      "s": "adultstg2026:4.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotic only if face, fever, tender nodes, cellulitis, diabetic, immunocompromised",
+      "s": "phcstg2026:5.6"
+     },
+     {
+      "t": "Cefalexin or flucloxacillin 500 mg PO 6-hourly × 5 d",
+      "s": "phcstg2026:5.6",
+      "b": 1
+     },
+     {
+      "t": "REFER: neck, peri-rectal, palm/pulp, deep, breast; near nerve/vessel",
+      "s": "adultstg2026:4.4"
+     }
+    ]
+   },
+   {
+    "label": "If impetigo",
+    "phase": "Branch D",
+    "feed": [
+     {
+      "t": "Soak in soapy water to remove crusts",
+      "s": "phcstg2026:5.7"
+     },
+     {
+      "t": "Trim nails; hygiene",
+      "s": "phcstg2026:5.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick if sores > 1 week",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Povidone-iodine 5% cream / 10% ointment 8-hourly",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     },
+     {
+      "t": "If extensive/febrile ADD flucloxacillin 500 mg PO 6-hourly × 5 d",
+      "s": "adultstg2026:4.4",
+      "b": 1
+     },
+     {
+      "t": "Improved but not cured: 2nd 5-day course",
+      "s": "phcstg2026:5.8"
+     }
+    ]
+   },
+   {
+    "label": "If acute paronychia",
+    "phase": "Branch E",
+    "feed": [
+     {
+      "t": "Avoid nail biting and cutting too short",
+      "s": "phcstg2026:5.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Clinical review at day 3",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Puncture or incise to drain",
+      "s": "phcstg2026:5.14"
+     },
+     {
+      "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+      "s": "phcstg2026:5.14",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If necrotising fasciitis",
+    "phase": "Branch F · refer",
+    "feed": [
+     {
+      "t": "Nil by mouth",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Broad-spectrum IV antibiotic, e.g. amoxicillin/clavulanic acid (dose per STG)",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "t": "URGENT REFER for debridement — no theatre at ANDH",
+      "s": "adultstg2026:4.3",
+      "b": 1
+     },
+     {
+      "t": "Resuscitate for shock before transfer",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Review 1",
+    "feed": [
+     {
+      "t": "Edge vs mark: ↑ ↔ ↓",
+      "d": 1
+     },
+     {
+      "t": "Limb still elevated?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Temperature, pulse",
+      "d": 1
+     },
+     {
+      "t": "HGT if diabetic",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick if impetigo",
+      "s": "phcstg2026:5.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Spreading, fever or no better → ADMIT / REFER",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Better → continue; confirm doses taken",
+      "d": 1
+     },
+     {
+      "t": "Collect abscess pus for culture if not healing",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5",
+    "phase": "Course end",
+    "feed": [
+     {
+      "t": "Wound clean and dry?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Temperature",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recommended 5 days; extend if not improved",
+      "s": "adultstg2026:4.2",
+      "b": 1
+     },
+     {
+      "t": "Impetigo improved, not cured: 2nd 5-day course",
+      "s": "phcstg2026:5.8"
+     },
+     {
+      "t": "Abscess: antibiotic 5–10 days by response",
+      "s": "adultstg2026:4.5"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review 2",
+    "feed": [
+     {
+      "t": "Redness and swelling settled?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Urine dipstick if impetigo or poststreptococcal signs",
+      "s": "phcstg2026:5.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not settled → surgeon/REFER (non-response)",
+      "s": "adultstg2026:4.3"
+     },
+     {
+      "t": "Cellulitis after aquatic wound or no response → REFER for investigation/biopsy",
+      "s": "adultstg2026:4.3"
+     }
+    ]
+   },
+   {
+    "label": "Day 14",
+    "phase": "Review 3",
+    "feed": [
+     {
+      "t": "Skin intact; no new lesions",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if diabetic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat predisposing causes: tinea pedis, eczema, scabies",
+      "s": "adultstg2026:4.3"
+     },
+     {
+      "t": "Discharge if all criteria below are met",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 4",
+    "phase": "Prevention",
+    "feed": [
+     {
+      "t": "Foot and skin care; moisturise",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT; HIV test if recurrent",
+      "s": "adultstg2026:4.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrent cellulitis, lymphoedema or recurrent boils → REFER",
+      "s": "phcstg2026:5.9"
+     },
+     {
+      "t": "Hygiene: shower, short nails, no sharing towels",
+      "s": "phcstg2026:5.6"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · adult bacterial skin infection",
+   "items": [
+    {
+     "h": "Non-severe cellulitis · abscess with indication · impetigo (extensive)"
+    },
+    {
+     "t": "Cefalexin 500 mg PO 6-hourly × 5 d",
+     "s": "adultstg2026:4.2",
+     "b": 1
+    },
+    {
+     "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+     "s": "adultstg2026:4.2",
+     "b": 1
+    },
+    {
+     "t": "Severe penicillin allergy: azithromycin 500 mg PO daily × 3 d",
+     "s": "adultstg2026:4.2",
+     "b": 1
+    },
+    {
+     "h": "Severe cellulitis · abscess with systemic signs"
+    },
+    {
+     "t": "Cefazolin 1 g IV 8-hourly; abscess 5–10 d by response",
+     "s": "adultstg2026:4.5",
+     "b": 1
+    },
+    {
+     "t": "Improving: flucloxacillin 500 mg PO 6-hourly",
+     "s": "adultstg2026:4.2",
+     "b": 1
+    },
+    {
+     "t": "Severe allergy: clindamycin 600 mg IV 8-hourly → 450 mg PO 8-hourly",
+     "s": "adultstg2026:4.3",
+     "b": 1
+    },
+    {
+     "h": "Topical · pain"
+    },
+    {
+     "t": "Povidone-iodine 5% cream or 10% ointment 8-hourly",
+     "s": "phcstg2026:5.7",
+     "b": 1
+    },
+    {
+     "t": "Ibuprofen 400 mg PO 8-hourly with meals",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly, max 4 g/24 h",
+     "s": "adultstg2026:4.3"
+    }
+   ]
+  },
+  {
+   "title": "Wound and skin care",
+   "items": [
+    {
+     "h": "Boils and abscesses"
+    },
+    {
+     "t": "Fluctuant → incise and drain; needle aspiration is not enough",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "t": "Warm compresses promote drainage in small boils",
+     "s": "adultstg2026:4.4"
+    },
+    {
+     "h": "Cellulitis"
+    },
+    {
+     "t": "Elevate limb; hydrate",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "DVT prophylaxis if admitted and bed-bound",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "h": "Impetigo"
+    },
+    {
+     "t": "Soak crusts; trim nails; hygiene",
+     "s": "phcstg2026:5.7"
+    },
+    {
+     "h": "Prevent recurrence"
+    },
+    {
+     "t": "Treat tinea pedis, scabies, eczema",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Test HGT and HIV if boils recurrent",
+     "s": "adultstg2026:4.4"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "t": "Confusion, hypotension, rigors",
+     "s": "phcstg2026:5.9",
+     "b": 1
+    },
+    {
+     "t": "Erythema spreading despite antibiotic",
+     "s": "adultstg2026:4.3"
+    },
+    {
+     "t": "Haemorrhagic bullae, gas, gangrene → URGENT",
+     "s": "adultstg2026:4.3",
+     "b": 1
+    },
+    {
+     "t": "Pain out of proportion to signs",
+     "s": "adultstg2026:4.2"
+    },
+    {
+     "t": "Hand, face, scalp; extensive",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Blood on dipstick > 5–7 d; oedema, raised BP (poststreptococcal GN)",
+     "s": "phcstg2026:5.8"
+    },
+    {
+     "t": "No response to initial antibiotic",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Recurrent cellulitis; lymphoedema",
+     "s": "phcstg2026:5.9"
+    },
+    {
+     "t": "Send with patient: times of doses, HGT, creatinine, mark time",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "End of treatment — all 6 must be met",
+  "items": [
+   {
+    "t": "Afebrile; no systemic features"
+   },
+   {
+    "t": "Redness and swelling gone or clearly receding"
+   },
+   {
+    "t": "Abscess drained and healing"
+   },
+   {
+    "t": "Antibiotic course completed"
+   },
+   {
+    "t": "Predisposing cause treated (tinea, scabies, eczema)"
+   },
+   {
+    "t": "Patient knows when to return"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow-up",
+  "items": [
+   {
+    "t": "PHC clinic at week 4 for recurrence check",
+    "d": 1
+   },
+   {
+    "t": "Return if redness spreads, fever, pus, or pain increases",
+    "d": 1
+   },
+   {
+    "t": "Recurrent boils/cellulitis: test HGT and HIV; refer",
+    "s": "adultstg2026:4.4"
+   },
+   {
+    "t": "Sores with dark urine or swollen face → return same day",
+    "s": "phcstg2026:5.8"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Home and clinic care record — 14 days",
+  "period": "one sheet per episode, one row per day (clinic visits on days 0, 3, 5, 7, 14)",
+  "params": [
+   {
+    "h": "Temperature",
+    "items": [
+     {
+      "t": "Daily, same time; fever or chills = Y",
+      "d": 1
+     },
+     {
+      "t": "Fever or rigors on day 3 or later → return",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Redness",
+    "items": [
+     {
+      "t": "Compare with the pen mark each day",
+      "d": 1
+     },
+     {
+      "t": "Beyond the mark = ↑ → return the same day",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Pain and care",
+    "items": [
+     {
+      "t": "Score 0–10 daily",
+      "d": 1
+     },
+     {
+      "t": "Limb elevated; abscess compress/dressing",
+      "s": "adultstg2026:4.2"
+     }
+    ]
+   },
+   {
+    "h": "Antibiotic",
+    "items": [
+     {
+      "t": "Tick each dose; record missed doses",
+      "d": 1
+     },
+     {
+      "t": "Complete the 5-day course",
+      "s": "adultstg2026:4.2"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "redness beyond the mark",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "fever, rigors, confusion or faintness",
+    "s": "phcstg2026:5.9",
+    "b": 1
+   },
+   {
+    "t": "black skin, blood blisters, gas, pain out of proportion",
+    "s": "adultstg2026:4.3",
+    "b": 1
+   },
+   {
+    "t": "no better by day 3",
+    "d": 1
+   },
+   {
+    "t": "dark urine or swollen face (impetigo)",
+    "s": "phcstg2026:5.8"
+   }
+  ],
+  "totals": [
+   "Doses taken",
+   "of",
+   "Days of fever",
+   "Missed doses"
+  ]
+ }
+}

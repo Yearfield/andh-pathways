@@ -1,0 +1,1377 @@
+{
+ "id": "eczema-adult",
+ "short": "Eczema (adult)",
+ "title": "Eczema and atopic dermatitis — adult (outpatient-first)",
+ "population": "Adult ≥ 13 years · clinic-visit pathway; admit or refer if any §2 criterion",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "→ Fungal skin infection (tinea)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Bacterial skin infection without eczema",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Psoriasis: Adult STG 4.8",
+     "b": 1
+    },
+    {
+     "t": "→ Scabies, urticaria, drug rash (SJS/TEN)",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features — itchy skin plus",
+   "items": [
+    {
+     "t": "Itch, worse at night",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Flexures of elbows and knees, face, neck",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Acute: vesicles, weeping, crusting",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Chronic: thick scaly skin, lichenification",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Personal or family asthma, hay fever, eczema",
+     "s": "phcstg2026:5.19"
+    },
+    {
+     "t": "Body surface involved ____ % (1 hand = 1%)",
+     "s": "adultstg2026:4.5"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit or refer = any one of",
+   "items": [
+    {
+     "t": "Eczema herpeticum: vesicles, crusting, fever",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Cannot swallow (aciclovir IV needed)",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Severe: > 30% body surface or acute changes",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Non-responsive to step-up in 2 weeks",
+     "s": "phcstg2026:5.21"
+    },
+    {
+     "t": "Severe acute moist or weeping eczema",
+     "s": "phcstg2026:5.23"
+    },
+    {
+     "t": "Fever or toxic with infected eczema",
+     "d": 1
+    },
+    {
+     "t": "Uncertain diagnosis",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Eye involvement with vesicles",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Asthma, hay fever",
+     "s": "phcstg2026:5.19"
+    },
+    {
+     "t": "Steroid used: name, strength, days ____",
+     "d": 1
+    },
+    {
+     "t": "HIV status / ART",
+     "d": 1
+    },
+    {
+     "t": "Diabetes",
+     "d": 1
+    },
+    {
+     "t": "Previous infected eczema",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Previous cold sores or HSV",
+     "s": "phcstg2026:5.19"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Itch; sleep lost",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Weeping, crusts, pustules",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "h": "Triggers"
+    },
+    {
+     "t": "Soap, detergents, hot baths",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "t": "Wool, nylon, heat at night",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Smoking",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "t": "Work: hands in water, chemicals",
+     "d": 1
+    },
+    {
+     "h": "Treatment so far"
+    },
+    {
+     "t": "Soap used; emollient used",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Steroid: potency, how long, face?",
+     "d": 1
+    },
+    {
+     "t": "Contact with cold sores or HSV",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Distribution"
+    },
+    {
+     "t": "Flexures; face and neck",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Hands, feet",
+     "d": 1
+    },
+    {
+     "h": "Skin changes"
+    },
+    {
+     "t": "Vesicles, weeping, crusting",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Lichenification, scaling",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Excoriation",
+     "d": 1
+    },
+    {
+     "h": "Infection"
+    },
+    {
+     "t": "Yellow pustules, honey crusts",
+     "s": "phcstg2026:5.22"
+    },
+    {
+     "t": "Clustered punched-out vesicles or erosions",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Tender regional nodes",
+     "d": 1
+    },
+    {
+     "h": "Extent"
+    },
+    {
+     "t": "Body surface ____ %",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Red all over (erythroderma)",
+     "d": 1
+    },
+    {
+     "t": "Nails",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care test 1 — severity (% body surface)",
+   "items": [
+    {
+     "t": "Value on arrival: ______ % (1 hand = 1%)",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "< 5%, no acute changes: mild",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "5–30%, or mild with acute changes: moderate",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "> 30%, or moderate with acute changes: severe",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Impact on sleep and life: moves it up a grade",
+     "s": "adultstg2026:4.5"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Point-of-care test 2 — HIV test",
+   "items": [
+    {
+     "t": "Result: ______",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Extensive or recurrent: offer test",
+     "d": 1
+    },
+    {
+     "t": "HGT if recurrent infection",
+     "d": 1
+    },
+    {
+     "t": "Positive → ART pathway",
+     "d": 1
+    },
+    {
+     "t": "Swab lesions if herpetic; treat without waiting",
+     "s": "adultstg2026:4.7"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway or breathing compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock / hypotension",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC / confusion",
+     "b": 1
+    },
+    {
+     "t": "Seizure",
+     "b": 1
+    },
+    {
+     "t": "Eczema herpeticum",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Fever, toxic, infected eczema",
+     "d": 1
+    },
+    {
+     "t": "Red all over, > 30% body surface",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "Cannot swallow",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Eye involvement",
+     "d": 1
+    },
+    {
+     "t": "Drug rash, blisters, mouth sores (SJS/TEN)",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Uncertain diagnosis",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Immunosuppressed",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Eczema herpeticum or toxic infected eczema → aciclovir, ADMIT / REFER",
+   "s": "adultstg2026:4.7"
+  },
+  {
+   "t": "11. Any §2 criterion → ADMIT / REFER · none → OUTPATIENT, Clinic Visit Chart",
+   "s": "adultstg2026:4.7"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Eczema herpeticum",
+   "branch": "If eczema herpeticum",
+   "features": [
+    {
+     "t": "Large areas of vesicles and crusting",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Red surround; fever; known eczema",
+     "s": "phcstg2026:5.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; swab if available",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "HGT",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aciclovir 400 mg PO 8-hourly × 7 d without delay",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Cannot swallow: aciclovir 5 mg/kg IV 8-hourly × 7 d",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Disseminated or uncertain",
+     "s": "adultstg2026:4.7"
+    }
+   ]
+  },
+  {
+   "dx": "Infected eczema",
+   "branch": "If infected",
+   "features": [
+    {
+     "t": "Yellow pustules, crusts",
+     "s": "phcstg2026:5.22"
+    },
+    {
+     "t": "Usually staphylococcal",
+     "s": "adultstg2026:4.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Swab if no response",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Allergy: clindamycin 450 mg PO 8-hourly × 5 d",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "No wet wraps",
+     "s": "adultstg2026:4.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Fever, toxic, no response",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute moist / weeping eczema",
+   "branch": "If acute weeping",
+   "features": [
+    {
+     "t": "Vesicles, oozing, crusting",
+     "s": "phcstg2026:5.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "phcstg2026:5.21"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Saline 0.9% dressings once or twice daily",
+     "s": "phcstg2026:5.22"
+    },
+    {
+     "t": "Hydrocortisone 1% 12-hourly; creams, not ointment",
+     "s": "phcstg2026:5.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Severe; no better after a week",
+     "s": "phcstg2026:5.23"
+    }
+   ]
+  },
+  {
+   "dx": "Atopic eczema (chronic)",
+   "branch": "If mild atopic eczema",
+   "features": [
+    {
+     "t": "Itch, flexures, lichenification",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Atopy in family",
+     "s": "phcstg2026:5.19"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; severity by % body surface",
+     "s": "adultstg2026:4.5"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Steps: soap substitute + emollient; hydrocortisone 1%; betamethasone 0.1%",
+     "s": "phcstg2026:5.20",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "No improvement in 2 weeks; extensive",
+     "s": "phcstg2026:5.21"
+    }
+   ]
+  },
+  {
+   "dx": "Seborrhoeic dermatitis",
+   "branch": "If seborrhoeic dermatitis",
+   "features": [
+    {
+     "t": "Scalp, face, ears, folds; greasy scale",
+     "s": "phcstg2026:5.23"
+    },
+    {
+     "t": "Extensive in HIV",
+     "s": "phcstg2026:5.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; HIV test if extensive",
+     "s": "phcstg2026:5.23",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hydrocortisone 1% twice daily until better",
+     "s": "phcstg2026:5.23"
+    },
+    {
+     "t": "Scalp: selenium sulfide 2.5% weekly",
+     "s": "phcstg2026:5.23",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Not responding",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Mimics (not eczema)",
+   "features": [
+    {
+     "t": "Scabies: burrows, night itch, contacts",
+     "s": "adultstg2026:4.12"
+    },
+    {
+     "t": "Psoriasis, tinea, drug rash, contact allergy",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; examine for burrows",
+     "s": "adultstg2026:4.12"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the real cause",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Uncertain diagnosis",
+     "s": "adultstg2026:4.7"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Reviews day 7, week 2, 4, 12; admit or refer when criteria are met",
+  "columns": {
+   "feed": "Skin care and triggers",
+   "tests": "Tests and review",
+   "treatment": "Treatment and actions"
+  },
+  "standing": [
+   {
+    "t": "% body surface, itch and sleep score",
+    "d": 1
+   },
+   {
+    "t": "Steroid and emollient used correctly",
+    "d": 1
+   },
+   {
+    "t": "Look for infection or herpes",
+    "s": "adultstg2026:4.7"
+   },
+   {
+    "t": "Refer if no response, extensive or complicated",
+    "s": "adultstg2026:4.7"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 0",
+    "phase": "First visit",
+    "lead": "Grade severity by % body surface; look for infection or herpes first; start at the right step.",
+    "feed": [
+     {
+      "t": "Wash with soap substitute; no soap on affected skin",
+      "s": "phcstg2026:5.20"
+     },
+     {
+      "t": "Emollient daily; keep it up when clear",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "Short nails; silk or cotton, not wool",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "Avoid detergents, hot baths, smoke",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "No diet changes",
+      "s": "adultstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "% body surface ____",
+      "s": "adultstg2026:4.5",
+      "b": 1
+     },
+     {
+      "t": "Temperature",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if extensive or recurrent",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Look for pustules and clustered vesicles",
+      "s": "phcstg2026:5.20"
+     },
+     {
+      "t": "Itch and sleep score",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Mild"
+     },
+     {
+      "t": "Hydrocortisone 1% 12-hourly until control",
+      "s": "adultstg2026:4.6",
+      "b": 1
+     },
+     {
+      "h": "Moderate or severe"
+     },
+     {
+      "t": "Betamethasone 0.1% once daily × 7 d; sparingly on face, neck, folds",
+      "s": "adultstg2026:4.6",
+      "b": 1
+     },
+     {
+      "h": "Itch"
+     },
+     {
+      "t": "Chlorphenamine 4 mg PO at night ≤ 2 wk",
+      "s": "phcstg2026:5.21",
+      "b": 1
+     },
+     {
+      "h": "Infected"
+     },
+     {
+      "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     },
+     {
+      "h": "Herpeticum"
+     },
+     {
+      "t": "Aciclovir 400 mg PO 8-hourly × 7 d; ADMIT",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If mild atopic eczema",
+    "phase": "Branch A",
+    "feed": [
+     {
+      "t": "Soap substitute; emollient daily",
+      "s": "phcstg2026:5.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "< 5%, no acute changes",
+      "s": "adultstg2026:4.5"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 1% 12-hourly to body and face until control; sparingly on face",
+      "s": "adultstg2026:4.6",
+      "b": 1
+     },
+     {
+      "t": "Cautious near the eyes",
+      "s": "adultstg2026:4.6"
+     }
+    ]
+   },
+   {
+    "label": "If moderate / severe",
+    "phase": "Branch B",
+    "feed": [
+     {
+      "t": "Wet wraps may help; not if infected",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "Moisturise during and after steroid",
+      "s": "adultstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "5–30% or > 30%",
+      "s": "adultstg2026:4.5"
+     },
+     {
+      "t": "Temperature",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Betamethasone 0.1% daily × 7 d; sparingly to face, neck, flexures",
+      "s": "adultstg2026:4.6",
+      "b": 1
+     },
+     {
+      "t": "No benefit from more than once daily",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "Step 3 (PHC): do not use on face, neck, flexures",
+      "s": "phcstg2026:5.21"
+     }
+    ]
+   },
+   {
+    "label": "If acute weeping",
+    "phase": "Branch C",
+    "feed": [
+     {
+      "t": "Saline 0.9% dressings once or twice daily",
+      "s": "phcstg2026:5.22"
+     },
+     {
+      "t": "Creams, not ointment, on oozing skin",
+      "s": "adultstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Yellow pustules and crust = infection",
+      "s": "phcstg2026:5.21"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 1% 12-hourly to moist and dry areas",
+      "s": "phcstg2026:5.22",
+      "b": 1
+     },
+     {
+      "t": "No better in a week or severe → REFER",
+      "s": "phcstg2026:5.23"
+     }
+    ]
+   },
+   {
+    "label": "If infected",
+    "phase": "Branch D",
+    "feed": [
+     {
+      "t": "No wet wraps",
+      "s": "adultstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Swab if no response",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Temperature",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Allergy: clindamycin 450 mg PO 8-hourly × 5 d",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Or cefalexin 500 mg 6-hourly; azithromycin 500 mg × 3 d if allergy (PHC)",
+      "s": "phcstg2026:5.22"
+     }
+    ]
+   },
+   {
+    "label": "If eczema herpeticum",
+    "phase": "Branch E · admit",
+    "feed": [
+     {
+      "t": "Fluids; protect the eyes",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Swab for HSV if available",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aciclovir 400 mg PO 8-hourly × 7 d, without delay",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Cannot swallow: aciclovir 5 mg/kg IV 8-hourly × 7 d, over 1 h",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Disseminated or eye → REFER",
+      "s": "adultstg2026:4.7"
+     }
+    ]
+   },
+   {
+    "label": "If non-responsive / severe",
+    "phase": "Branch F",
+    "feed": [
+     {
+      "t": "Check adherence and technique",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "% body surface; compare with Day 0",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for dermatologist opinion",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "While waiting: prednisone 0.5 mg/kg PO daily ≤ 2 wk (specialist initiated)",
+      "s": "adultstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If seborrhoeic dermatitis",
+    "phase": "Branch G",
+    "feed": [
+     {
+      "t": "Trim nails; avoid scratching; no perfumed soap",
+      "s": "phcstg2026:5.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test if extensive",
+      "s": "phcstg2026:5.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 1% twice daily until better, then weekly",
+      "s": "phcstg2026:5.23",
+      "b": 1
+     },
+     {
+      "t": "Scalp: selenium sulfide 2.5% weekly, rinse after 10 min",
+      "s": "phcstg2026:5.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review 1",
+    "feed": [
+     {
+      "t": "Itch and sleep better?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "% body surface; infection signs",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No response in 7 days: step up",
+      "s": "phcstg2026:5.20"
+     },
+     {
+      "t": "Response: reduce steroid to once daily, then stop; keep emollient",
+      "s": "phcstg2026:5.20"
+     }
+    ]
+   },
+   {
+    "label": "Week 2",
+    "phase": "Review 2",
+    "feed": [
+     {
+      "t": "Triggers identified and avoided?",
+      "s": "adultstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Compare with Day 0",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No improvement in 2 weeks → REFER",
+      "s": "phcstg2026:5.21"
+     },
+     {
+      "t": "Stop chlorphenamine after 2 weeks",
+      "s": "phcstg2026:5.21"
+     },
+     {
+      "t": "Itch uncontrolled or day-time: cetirizine 10 mg daily",
+      "s": "phcstg2026:5.21",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 4",
+    "phase": "Maintenance",
+    "feed": [
+     {
+      "t": "Moisturiser each day",
+      "s": "adultstg2026:4.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Skin clear?",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Wean to lowest steroid that keeps remission; twice a week",
+      "s": "adultstg2026:4.7"
+     },
+     {
+      "t": "Relapse: restart as Day 0",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 12",
+    "phase": "Long term",
+    "feed": [
+     {
+      "t": "Long-term care; keep emollient and soap substitute",
+      "s": "phcstg2026:5.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Frequent infections: HIV test, HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Eczema is chronic: plan flares",
+      "s": "phcstg2026:5.19"
+     },
+     {
+      "t": "Frequent flares or poor control → REFER",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · adult eczema",
+   "items": [
+    {
+     "h": "Moisturise and wash"
+    },
+    {
+     "t": "Aqueous cream to wash; not as emollient",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Emulsifying ointment daily",
+     "s": "adultstg2026:4.6",
+     "b": 1
+    },
+    {
+     "h": "Steroid ladder"
+    },
+    {
+     "t": "Mild: hydrocortisone 1% 12-hourly",
+     "s": "adultstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Moderate / severe: betamethasone 0.1% daily × 7 d",
+     "s": "adultstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Maintenance: lowest potency, twice a week",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "h": "Itch"
+    },
+    {
+     "t": "Chlorphenamine 4 mg PO at night ≤ 2 wk",
+     "s": "phcstg2026:5.21",
+     "b": 1
+    },
+    {
+     "t": "Cetirizine 10 mg PO daily",
+     "s": "phcstg2026:5.21",
+     "b": 1
+    },
+    {
+     "h": "Infection"
+    },
+    {
+     "t": "Flucloxacillin 500 mg PO 6-hourly × 5 d",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Aciclovir 400 mg PO 8-hourly × 7 d",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Skin care and triggers",
+   "items": [
+    {
+     "h": "Daily"
+    },
+    {
+     "t": "Wash once a day; soap substitute",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "t": "Emollient every day, even when clear",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "h": "Avoid"
+    },
+    {
+     "t": "Strong detergents, antiseptics, foam baths",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "t": "Wool and rough clothes",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "t": "Overheating at night; smoking",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "h": "Habits"
+    },
+    {
+     "t": "Short nails; no scratching",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "t": "No diet changes",
+     "s": "adultstg2026:4.6"
+    },
+    {
+     "h": "Prevent flares"
+    },
+    {
+     "t": "Treat early; follow the written plan",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "t": "Eczema herpeticum",
+     "s": "adultstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Fever, toxic, infected eczema",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "> 30% body surface, red all over",
+     "s": "adultstg2026:4.5"
+    },
+    {
+     "t": "No improvement in 2 weeks",
+     "s": "phcstg2026:5.21"
+    },
+    {
+     "t": "Severe acute weeping",
+     "s": "phcstg2026:5.23"
+    },
+    {
+     "t": "Cannot swallow",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Uncertain diagnosis",
+     "s": "adultstg2026:4.7"
+    },
+    {
+     "t": "Send with patient: % body surface, steroids and days used",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "End of treatment — all 6 must be met",
+  "items": [
+   {
+    "t": "Itch controlled; sleep not disturbed"
+   },
+   {
+    "t": "Skin clear or mild with no weeping"
+   },
+   {
+    "t": "No infection signs"
+   },
+   {
+    "t": "Steroid weaned; maintenance emollient continues"
+   },
+   {
+    "t": "Triggers known and avoided"
+   },
+   {
+    "t": "Patient knows the flare plan and when to return"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow-up",
+  "items": [
+   {
+    "t": "PHC clinic at week 12 for the chronic plan",
+    "d": 1
+   },
+   {
+    "t": "Return at first flare; restart the ladder",
+    "d": 1
+   },
+   {
+    "t": "Return urgently for painful clustered blisters or fever",
+    "s": "adultstg2026:4.7"
+   },
+   {
+    "t": "Refer if frequent flares or poor control",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Home and clinic care record — eczema, 28 days",
+  "period": "one sheet per flare, one row per day (clinic visits on day 0, 7, 14, week 4)",
+  "params": [
+   {
+    "h": "Skin care",
+    "items": [
+     {
+      "t": "Wash once a day with soap substitute",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "Emollient every day, also when clear",
+      "s": "adultstg2026:4.6"
+     }
+    ]
+   },
+   {
+    "h": "Steroid",
+    "items": [
+     {
+      "t": "Apply as prescribed; sparingly on face",
+      "s": "adultstg2026:4.6"
+     },
+     {
+      "t": "Reduce when better, then stop",
+      "s": "phcstg2026:5.20"
+     }
+    ]
+   },
+   {
+    "h": "Itch and sleep",
+    "items": [
+     {
+      "t": "Itch 0–10 daily",
+      "d": 1
+     },
+     {
+      "t": "Y if sleep was disturbed",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Watch for",
+    "items": [
+     {
+      "t": "Pus or crusts; fever",
+      "s": "phcstg2026:5.22"
+     },
+     {
+      "t": "Clustered painful blisters",
+      "s": "adultstg2026:4.7"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "clustered painful blisters",
+    "s": "adultstg2026:4.7",
+    "b": 1
+   },
+   {
+    "t": "fever or feeling very unwell",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "pus or yellow crusts",
+    "s": "phcstg2026:5.22"
+   },
+   {
+    "t": "red all over, eye involved",
+    "d": 1
+   },
+   {
+    "t": "no better in 7 days",
+    "s": "phcstg2026:5.20"
+   }
+  ],
+  "totals": [
+   "Days steroid used",
+   "of",
+   "Nights sleep lost",
+   "Days itch ≥ 5"
+  ]
+ }
+}

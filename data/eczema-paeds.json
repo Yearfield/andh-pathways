@@ -1,0 +1,1391 @@
+{
+ "id": "eczema-paeds",
+ "short": "Eczema (paeds)",
+ "title": "Eczema and atopic dermatitis — child (outpatient-first)",
+ "population": "Child 2 months to 12 years · clinic-visit pathway; admit or refer if any §2 criterion",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-13",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "→ Young infant < 2 months",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Fungal or bacterial skin infection without eczema",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "→ Scabies, papular urticaria: IMCI p. 61",
+     "s": "imci2022:61",
+     "b": 1
+    },
+    {
+     "t": "→ Drug rash, SJS: IMCI p. 64, REFER",
+     "s": "imci2022:64",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic features — itchy skin plus",
+   "items": [
+    {
+     "t": "Intractable itch",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Family history of allergies",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Onset under 2 years",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Dry skin",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Face, knee and elbow flexures, neck creases",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Acute: vesicles, weeping, crusting · chronic: scaling",
+     "s": "paedstg2026:5.10"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit or refer = any one of",
+   "items": [
+    {
+     "t": "Any general danger sign (§9)",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Eczema herpeticum suspected",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Severe acute moist or weeping eczema",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "No improvement after 2 weeks",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Extensive involvement",
+     "s": "phcstg2026:5.21"
+    },
+    {
+     "t": "Needs more than 1% hydrocortisone (PHC level)",
+     "s": "phcstg2026:5.21"
+    },
+    {
+     "t": "Recalcitrant, or food allergy suspected",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Fever or toxic with infected eczema",
+     "d": 1
+    },
+    {
+     "t": "Cannot take oral medicine",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet",
+   "items": [
+    {
+     "t": "Weight ____ kg; growth on curve",
+     "d": 1
+    },
+    {
+     "t": "HIV exposure / status",
+     "d": 1
+    },
+    {
+     "t": "Immunisations up to date",
+     "d": 1
+    },
+    {
+     "t": "Family allergy, asthma",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Food allergy or reaction",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Previous infected eczema",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Onset age; itch; sleep lost",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Weeping, crusts, pustules",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "h": "Triggers"
+    },
+    {
+     "t": "Soap, detergents, residue in clothes",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Sun; overheating at night",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Wool or rough clothes",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "t": "Foods that bring on a flare",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "h": "Treatment so far"
+    },
+    {
+     "t": "Soap used; emollient used",
+     "d": 1
+    },
+    {
+     "t": "Steroid: name, days, sites",
+     "d": 1
+    },
+    {
+     "t": "Contact with cold sores",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Lethargic / decreased consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Weight low for age",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Distribution"
+    },
+    {
+     "t": "Face; neck creases",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Elbow and knee flexures",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Scalp, nappy area",
+     "d": 1
+    },
+    {
+     "h": "Skin changes"
+    },
+    {
+     "t": "Dry skin",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Vesicles, weeping, crusting",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Scaling, lichenification",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Excoriation",
+     "d": 1
+    },
+    {
+     "h": "Infection"
+    },
+    {
+     "t": "Yellow pustules, crust",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Clustered punched-out erosions",
+     "d": 1
+    },
+    {
+     "h": "Extent"
+    },
+    {
+     "t": "Body surface ____ %",
+     "d": 1
+    },
+    {
+     "t": "Red all over",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Point-of-care test 1 — weight and extent",
+   "items": [
+    {
+     "t": "Weight ____ kg; body surface ______ %",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Weight sets antihistamine and antibiotic doses",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Child's own hand = about 1% of body surface",
+     "d": 1
+    },
+    {
+     "t": "Extensive involvement → REFER",
+     "s": "phcstg2026:5.21"
+    },
+    {
+     "t": "Repeat weight at each visit",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Point-of-care test 2 — HIV test",
+   "items": [
+    {
+     "t": "Result: ______",
+     "b": 1,
+     "k": "value"
+    },
+    {
+     "t": "Extensive, recurrent or severe: offer test",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Seborrhoeic dermatitis is often severe in HIV",
+     "s": "imci2022:63"
+    },
+    {
+     "t": "HGT if unwell, drowsy or malnourished; < 3 mmol/L: treat",
+     "s": "imci2022:35"
+    },
+    {
+     "t": "Swab if herpetic; treat without waiting",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Not able to drink or breastfeed",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Lethargic or unconscious",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Eczema herpeticum",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Fever, toxic, infected eczema",
+     "d": 1
+    },
+    {
+     "t": "Severe weeping, red all over",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Eye involvement",
+     "d": 1
+    },
+    {
+     "t": "Blisters with mouth or eye sores (SJS)",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Food reaction: swelling, wheeze",
+     "d": 1
+    },
+    {
+     "t": "Malnourished or HIV",
+     "d": 1
+    },
+    {
+     "t": "Dehydrated",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Eczema herpeticum or toxic infected eczema → ADMIT, aciclovir, REFER if disseminated",
+   "s": "paedstg2026:5.11"
+  },
+  {
+   "t": "11. Any §2 criterion → ADMIT / REFER · none → OUTPATIENT, Clinic Visit Chart",
+   "s": "imci2022:64"
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Eczema herpeticum",
+   "branch": "If eczema herpeticum",
+   "features": [
+    {
+     "t": "Vesicles, crusting, erosions on eczema",
+     "d": 1
+    },
+    {
+     "t": "Fever, unwell; HSV contact",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; swab if available",
+     "d": 1
+    },
+    {
+     "t": "HGT",
+     "s": "imci2022:35",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aciclovir 250 mg/m²/dose PO 8-hourly × 7 d",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "ADMIT; fluids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Disseminated, eye, cannot swallow",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Infected eczema",
+   "branch": "If infected",
+   "features": [
+    {
+     "t": "Yellow pustules, crust",
+     "s": "imci2022:64"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Swab if no response",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cephalexin 25 mg/kg/dose PO 6-hourly",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "× 5 d",
+     "s": "imci2022:64"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Fever, toxic, no response",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute moist / weeping eczema",
+   "branch": "If acute weeping",
+   "features": [
+    {
+     "t": "Vesicles, oozing, crusting",
+     "s": "paedstg2026:5.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "paedstg2026:5.10"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dressings soaked in sodium chloride 0.9%",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Hydrocortisone 1% 12-hourly to face and folds",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Severe acute moist or weeping",
+     "s": "imci2022:64"
+    }
+   ]
+  },
+  {
+   "dx": "Atopic eczema (chronic)",
+   "branch": "If mild eczema",
+   "features": [
+    {
+     "t": "Itch; family allergy; onset < 2 years",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Dry skin; flexures",
+     "s": "paedstg2026:5.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "paedstg2026:5.10"
+    },
+    {
+     "t": "Weight",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Emulsifying ointment; aqueous cream to wash",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "Steroid ladder: hydrocortisone 1%, betamethasone 0.1%",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Recalcitrant; food allergy",
+     "s": "paedstg2026:5.12"
+    }
+   ]
+  },
+  {
+   "dx": "Seborrhoeic dermatitis",
+   "branch": "If seborrhoeic dermatitis",
+   "features": [
+    {
+     "t": "Greasy scale, central face, folds, scalp",
+     "s": "imci2022:63"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; HIV test if severe",
+     "s": "imci2022:63",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hydrocortisone 1% to face and flexures",
+     "s": "imci2022:63",
+     "b": 1
+    },
+    {
+     "t": "Scalp: selenium sulfide 2.5% 2–3× weekly",
+     "s": "imci2022:63",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Severe",
+     "s": "imci2022:63"
+    }
+   ]
+  },
+  {
+   "dx": "Mimics (not eczema)",
+   "features": [
+    {
+     "t": "Scabies: burrows, contacts",
+     "s": "imci2022:61"
+    },
+    {
+     "t": "Papular urticaria, tinea, nappy dermatitis, drug rash",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; look for burrows",
+     "s": "imci2022:61"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the real cause",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Uncertain diagnosis",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Visit",
+  "phase_note": "Reviews day 7, week 2, 4, 12; admit or refer when criteria are met",
+  "columns": {
+   "feed": "Skin care and triggers",
+   "tests": "Tests and review",
+   "treatment": "Treatment and actions"
+  },
+  "standing": [
+   {
+    "t": "Weight, body surface, itch and sleep",
+    "d": 1
+   },
+   {
+    "t": "Steroid and emollient used correctly",
+    "d": 1
+   },
+   {
+    "t": "Look for infection or herpes",
+    "s": "imci2022:64"
+   },
+   {
+    "t": "Refer if no response, extensive or complicated",
+    "s": "imci2022:64"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 0",
+    "phase": "First visit",
+    "lead": "Weigh the child; look for infection or herpes first; start emollient and the right steroid.",
+    "feed": [
+     {
+      "t": "Neutral soap or aqueous cream to bathe",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Emulsifying ointment on dry skin",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Short nails; rinse clothes well",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Avoid sunlight; sunscreen",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "No wool; avoid overheating at night",
+      "s": "phcstg2026:5.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight ____ kg",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Body surface ____ %",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Temperature",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if severe or recurrent",
+      "s": "imci2022:64",
+      "b": 1
+     },
+     {
+      "t": "Look for pustules and clustered erosions",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Face and skin folds"
+     },
+     {
+      "t": "Hydrocortisone 1% topical 12-hourly",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "h": "Body"
+     },
+     {
+      "t": "Betamethasone 0.1% undiluted once daily × 7 d, then moisturise",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "h": "Itch"
+     },
+     {
+      "t": "≥ 2 y: cetirizine 2–6 y 5 mg, 6–12 y 10 mg PO once daily",
+      "s": "paedstg2026:5.10",
+      "b": 1
+     },
+     {
+      "t": "< 2 y: chlorphenamine 0.1 mg/kg PO at night (max 4 mg)",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "h": "Infected"
+     },
+     {
+      "t": "Cephalexin 25 mg/kg/dose PO 6-hourly",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "h": "Herpeticum"
+     },
+     {
+      "t": "Aciclovir 250 mg/m²/dose PO 8-hourly × 7 d; ADMIT",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If mild eczema",
+    "phase": "Branch A",
+    "feed": [
+     {
+      "t": "Aqueous cream wash; emulsifying ointment",
+      "s": "paedstg2026:5.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Face and folds only?",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 1% 12-hourly to face and folds",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "Apply sparingly; not around the eyes",
+      "s": "phcstg2026:5.20"
+     },
+     {
+      "t": "Moisturise (emulsifying ointment) after the steroid",
+      "s": "imci2022:64"
+     }
+    ]
+   },
+   {
+    "label": "If body flare",
+    "phase": "Branch B",
+    "feed": [
+     {
+      "t": "Moisturise during and for weeks after steroid",
+      "s": "paedstg2026:5.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight; body surface",
+      "d": 1
+     },
+     {
+      "t": "Temperature",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Betamethasone 0.1% undiluted once daily × 7 d to the body",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "Short-term steroid only",
+      "s": "paedstg2026:5.12"
+     },
+     {
+      "t": "No oral steroid",
+      "s": "paedstg2026:5.12"
+     }
+    ]
+   },
+   {
+    "label": "If acute weeping",
+    "phase": "Branch C",
+    "feed": [
+     {
+      "t": "Dressings soaked in sodium chloride 0.9%",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "No soap on affected skin",
+      "s": "phcstg2026:5.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Yellow pustules and crust = infection",
+      "s": "imci2022:64"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 1% 12-hourly on moist and dry areas",
+      "s": "phcstg2026:5.22",
+      "b": 1
+     },
+     {
+      "t": "< 2 y itch: calamine lotion",
+      "s": "phcstg2026:5.23"
+     },
+     {
+      "t": "Severe or no better in a week → REFER",
+      "s": "phcstg2026:5.23"
+     }
+    ]
+   },
+   {
+    "label": "If infected",
+    "phase": "Branch D",
+    "feed": [
+     {
+      "t": "Soak crusts gently",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Swab if no response",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Temperature",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cephalexin 25 mg/kg/dose PO 6-hourly",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "Duration 5 d (IMCI); flucloxacillin 12–25 mg/kg/dose 6-hourly × 5 d",
+      "s": "imci2022:64",
+      "b": 1
+     },
+     {
+      "t": "Allergy: azithromycin 10 mg/kg/dose daily × 3 d",
+      "s": "phcstg2026:5.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If eczema herpeticum",
+    "phase": "Branch E · admit",
+    "feed": [
+     {
+      "t": "Fluids; protect the eyes",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "imci2022:35",
+      "b": 1
+     },
+     {
+      "t": "Swab for HSV if available",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aciclovir 250 mg/m²/dose PO 8-hourly × 7 d, without delay",
+      "s": "paedstg2026:5.11",
+      "b": 1
+     },
+     {
+      "t": "BSA ____ m²; dose ____ mg",
+      "d": 1
+     },
+     {
+      "t": "Cannot swallow, disseminated, eye → REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If non-responsive / food allergy",
+    "phase": "Branch F",
+    "feed": [
+     {
+      "t": "Check adherence and technique",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight; compare with Day 0",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recalcitrant → REFER",
+      "s": "paedstg2026:5.12"
+     },
+     {
+      "t": "Food allergy suspected → allergy clinic",
+      "s": "paedstg2026:5.12",
+      "b": 1
+     },
+     {
+      "t": "No improvement in 2 weeks → REFER",
+      "s": "imci2022:64"
+     }
+    ]
+   },
+   {
+    "label": "If seborrhoeic dermatitis",
+    "phase": "Branch G",
+    "feed": [
+     {
+      "t": "Trim nails; no perfumed soap",
+      "s": "phcstg2026:5.23"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HIV test if severe",
+      "s": "imci2022:63",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 1% to face and flexures",
+      "s": "imci2022:63",
+      "b": 1
+     },
+     {
+      "t": "Scalp: selenium sulfide 2.5% 2–3× weekly",
+      "s": "imci2022:63",
+      "b": 1
+     },
+     {
+      "t": "Severe → REFER",
+      "s": "imci2022:63"
+     }
+    ]
+   },
+   {
+    "label": "Day 7",
+    "phase": "Review 1",
+    "feed": [
+     {
+      "t": "Itch and sleep better?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight; body surface; infection signs",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Steroid course ends at 7 d",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Response: stop steroid; keep emollient",
+      "d": 1
+     },
+     {
+      "t": "No response: review diagnosis, adherence",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 2",
+    "phase": "Review 2",
+    "feed": [
+     {
+      "t": "Triggers identified and avoided?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Compare with Day 0",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No improvement after 2 weeks → REFER",
+      "s": "imci2022:64"
+     },
+     {
+      "t": "Stop night antihistamine after 2 weeks",
+      "s": "phcstg2026:5.21"
+     }
+    ]
+   },
+   {
+    "label": "Week 4",
+    "phase": "Maintenance",
+    "feed": [
+     {
+      "t": "Moisturiser each day",
+      "s": "paedstg2026:5.11"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight against Road to Health curve",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Moisturise in the weeks after the steroid",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Relapse: restart as Day 0",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 12",
+    "phase": "Long term",
+    "feed": [
+     {
+      "t": "Long-term care; keep emollient",
+      "s": "phcstg2026:5.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Frequent infections: HIV test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Eczema is chronic: plan for flares",
+      "s": "phcstg2026:5.19"
+     },
+     {
+      "t": "Frequent flares or poor control → REFER",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · child eczema",
+   "items": [
+    {
+     "h": "Moisturise and wash"
+    },
+    {
+     "t": "Aqueous cream for baths",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Emulsifying ointment on dry skin",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "h": "Steroids"
+    },
+    {
+     "t": "Face and folds: hydrocortisone 1% 12-hourly",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "Body: betamethasone 0.1% once daily × 7 d",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "h": "Itch"
+    },
+    {
+     "t": "≥ 2 y: cetirizine 2–6 y 5 mg; 6–12 y 10 mg once daily",
+     "s": "paedstg2026:5.10",
+     "b": 1
+    },
+    {
+     "t": "< 2 y: chlorphenamine 0.1 mg/kg at night, max 4 mg",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "h": "Infection"
+    },
+    {
+     "t": "Cephalexin 25 mg/kg/dose PO 6-hourly",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    },
+    {
+     "t": "Aciclovir 250 mg/m²/dose PO 8-hourly × 7 d",
+     "s": "paedstg2026:5.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Skin care and triggers",
+   "items": [
+    {
+     "h": "Daily"
+    },
+    {
+     "t": "Neutral soap or aqueous cream; rinse clothes well",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Emulsifying ointment every day",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "h": "Avoid"
+    },
+    {
+     "t": "Sunlight; use sunscreen",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Wool; overheating at night",
+     "s": "phcstg2026:5.20"
+    },
+    {
+     "h": "Habits"
+    },
+    {
+     "t": "Short nails",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "t": "Dressings soaked in saline for weeping skin",
+     "s": "paedstg2026:5.11"
+    },
+    {
+     "h": "Not helpful"
+    },
+    {
+     "t": "Oral steroids",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Diet changes without proven allergy",
+     "s": "phcstg2026:5.20"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "t": "Any general danger sign",
+     "s": "imci2022:24",
+     "b": 1
+    },
+    {
+     "t": "Eczema herpeticum",
+     "s": "imci2022:64",
+     "b": 1
+    },
+    {
+     "t": "Fever, toxic, infected eczema",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "No improvement in 2 weeks",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Severe weeping; extensive",
+     "s": "imci2022:64"
+    },
+    {
+     "t": "Recalcitrant; food allergy",
+     "s": "paedstg2026:5.12"
+    },
+    {
+     "t": "Send with child: weight, % body surface, steroids and days used",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "End of treatment — all 6 must be met",
+  "items": [
+   {
+    "t": "Itch controlled; sleeping"
+   },
+   {
+    "t": "Skin clear or mild without weeping"
+   },
+   {
+    "t": "No infection signs"
+   },
+   {
+    "t": "Steroid stopped; emollient continues"
+   },
+   {
+    "t": "Triggers known and avoided"
+   },
+   {
+    "t": "Caregiver knows the flare plan and when to return"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow-up",
+  "items": [
+   {
+    "t": "PHC clinic at week 12 for the chronic plan",
+    "d": 1
+   },
+   {
+    "t": "Return at first flare; restart the ladder",
+    "d": 1
+   },
+   {
+    "t": "Return urgently for painful clustered blisters or fever",
+    "d": 1
+   },
+   {
+    "t": "Refer recalcitrant or food-allergic child",
+    "s": "paedstg2026:5.12"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Home and clinic care record — child eczema, 28 days",
+  "period": "one sheet per flare, one row per day (clinic visits on day 0, 7, 14, week 4)",
+  "params": [
+   {
+    "h": "Skin care",
+    "items": [
+     {
+      "t": "Bathe with aqueous cream or neutral soap",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Emulsifying ointment every day",
+      "s": "paedstg2026:5.11"
+     }
+    ]
+   },
+   {
+    "h": "Steroid",
+    "items": [
+     {
+      "t": "Face and folds: hydrocortisone 1% 12-hourly",
+      "s": "paedstg2026:5.11"
+     },
+     {
+      "t": "Body: betamethasone 0.1% once daily × 7 d",
+      "s": "paedstg2026:5.11"
+     }
+    ]
+   },
+   {
+    "h": "Itch and sleep",
+    "items": [
+     {
+      "t": "Itch 0–10 daily",
+      "d": 1
+     },
+     {
+      "t": "Y if the child lost sleep",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Watch for",
+    "items": [
+     {
+      "t": "Pus or yellow crusts; fever",
+      "s": "imci2022:64"
+     },
+     {
+      "t": "Clustered painful blisters",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "clustered painful blisters",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "fever, not drinking, drowsy",
+    "s": "imci2022:24",
+    "b": 1
+   },
+   {
+    "t": "pus or yellow crusts",
+    "s": "imci2022:64"
+   },
+   {
+    "t": "red all over",
+    "d": 1
+   },
+   {
+    "t": "no better in 2 weeks",
+    "s": "imci2022:64"
+   }
+  ],
+  "totals": [
+   "Days steroid used",
+   "of",
+   "Nights sleep lost",
+   "Days itch ≥ 5"
+  ]
+ }
+}

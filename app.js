@@ -79,6 +79,12 @@ function resolveSrc(src) {
   if (s.alias && S.sources[s.alias]) { id = s.alias; s = S.sources[id]; } // e.g. HOSP -> stg-adult: share the chapter PDFs already loaded
   if (s.url_template && pg) // online source cited by topic id (e.g. ob:1011): no PDF, the cite links to the topic page
     return { id, s, pdf: id, chapter: null, pg, num: false, offset: 0, online: s.url_template.replace("{id}", encodeURIComponent(pg)), label: s.short + " " + (s.cite_prefix || "") + pg };
+  const ap = s.appendices && /^(A[IVX]+)\.(\d+)$/i.exec(pg), apx = ap && s.appendices[ap[1].toUpperCase()];
+  if (apx) { // appendix page: PDF page = n + offset, in the catalogue document named by apx.doc (page-map.json) or, failing that, the source's own PDF
+    const code = ap[1].toUpperCase();
+    const r = { id, s, pdf: id, chapter: null, part: code, pg: ap[2], num: true, offset: Number(S.offsets[id] ?? s.offset ?? 0) + apx.offset, label: s.short + " " + code + " p" + ap[2] };
+    if (apx.doc && S.pm?.docs?.[apx.doc]) { const dk = "doc:" + apx.doc; r.doc = dk; r.mapped = +ap[2] + apx.offset + (S.offsets[dk] ?? 0); }
+    return r; }
   const m = s.chapters && /^(\d+)\.(\d+)$/.exec(pg);
   if (m) { const ch = s.chapters[m[1]] || { title: "Chapter " + m[1] };
     const r = { id, s, pdf: id + ":" + m[1], chapter: m[1], pg: m[2], num: true, offset: S.offsets[id + ":" + m[1]] ?? ch.offset ?? 0, label: s.short + " Ch" + m[1] + " p" + m[2] };
@@ -349,8 +355,8 @@ function home() {
     b.dataset.q += " " + ds.flatMap(d => (d.differentials || []).map(x => x.dx + " " + (x.group || ""))).join(" ").toLowerCase(); applyFilter();
   } catch {} });
 }
-const CATS = ["All", "Endo", "Toxins", "Infections", "Electrolytes"];
-const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "Ortho", "Gynae", "Uro", "Nephro"];
+const CATS = ["All", "Endo", "Toxins", "Infections", "Electrolytes", "Derms", "Allergy"];
+const SYSTEMS = ["All", "Resp", "CVS", "ABDO", "GIT", "CNS", "ENT", "Skin", "Ortho", "Gynae", "Uro", "Nephro"];
 function applyFilter() {
   const q = ($("#q")?.value || "").trim().toLowerCase(); let any = 0;
   $$(".grp").forEach(g => {
@@ -599,7 +605,7 @@ async function openSource(src) {
   const r = resolveSrc(src), s = r.s, pg = r.pg, id = r.pdf;
   const printed = parseInt(pg, 10) || 1;
   const v = document.createElement("div"); v.className = "viewer";
-  v.innerHTML = `<div class="vbar"><button data-x>Close</button><span class="vt">${esc(r.chapter ? s.short + " Ch" + r.chapter : s.short)} · ${r.num ? "printed p" + printed : esc(pg) + " (page 1 shown)"}</span>
+  v.innerHTML = `<div class="vbar"><button data-x>Close</button><span class="vt">${esc(r.part ? s.short + " " + r.part : r.chapter ? s.short + " Ch" + r.chapter : s.short)} · ${r.num ? "printed p" + printed : esc(pg) + " (page 1 shown)"}</span>
     <button data-p="-1" aria-label="Previous page">‹</button><button data-p="1" aria-label="Next page">›</button>
     <button data-z="-1" aria-label="Zoom out">−</button><button data-z="1" aria-label="Zoom in">+</button></div><div class="stage"></div>`;
   document.body.appendChild(v); const stage = $(".stage", v);
@@ -621,7 +627,7 @@ async function openSource(src) {
       const vp = p.getViewport({ scale: scale * dpr }); const c = document.createElement("canvas");
       c.width = vp.width; c.height = vp.height; c.style.width = vp.width / dpr + "px";
       await p.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
-      stage.replaceChildren(c); $(".vt", v).textContent = `${r.chapter ? s.short + " Ch" + r.chapter : s.short} · printed p${page - off} · PDF p${page}/${doc.numPages}`;
+      stage.replaceChildren(c); $(".vt", v).textContent = `${r.part ? s.short + " " + r.part : r.chapter ? s.short + " Ch" + r.chapter : s.short} · printed p${page - off} · PDF p${page}/${doc.numPages}`;
     };
     v.querySelectorAll("[data-p]").forEach(b => b.onclick = () => { page = Math.min(doc.numPages, Math.max(1, page + +b.dataset.p)); draw(); });
     v.querySelectorAll("[data-z]").forEach(b => b.onclick = () => { zoom = Math.min(3, Math.max(.6, zoom * (b.dataset.z > 0 ? 1.3 : 1 / 1.3))); draw(); });
