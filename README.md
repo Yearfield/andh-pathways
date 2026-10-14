@@ -57,6 +57,18 @@ If you change app files (app.js, style.css, index.html, sw.js), also change
 `t` text · `s` source as `sourceid:printedpage` (ids in `data/sources.json`) ·
 `d` † flag · `b` bold · `k` kind (`check`, `value`, `yn`, `info`, `sub`) · `h` heading.
 
+## Alternative Medicine (pathogen reference + feature search)
+
+Home tile **Alternative Medicine** → `#/altmed`. **Find**: tap features (once = *has*, twice = *must NOT have*, third tap clears) and
+pathogens are ranked by how many "has" features they match; **Browse** is an A–Z list; **About** explains the data. Spring-green theme, scoped
+to this section only. Reference data only — imported from the owner's master sheets, not SA STG, not clinically verified.
+
+- The CSV source, build script, import script and tests live on the **`altmed-source`** branch, which is not published. This branch
+  holds only what the app needs: `altmed.js` and `data/altmed/index.json` + `prose.json`. To change the data, edit the CSVs on
+  `altmed-source`, rebuild and test there, then copy the two JSON files here (see `altmed-src/README.md` on that branch).
+- Only positive facts are stored; a feature that is not listed for a pathogen counts as **no**.
+- Data is loaded on first use (about 0.6 MB over the wire) and cached by the service worker; it is not part of the app's first install.
+
 ## Licences
 
 PDF.js (Apache 2.0) in `vendor/pdfjs/`; IBM Plex Sans/Serif fonts (SIL OFL) in `fonts/`.
