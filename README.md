@@ -63,13 +63,10 @@ Home tile **Alternative Medicine** → `#/altmed`. **Find**: tap features (once 
 pathogens are ranked by how many "has" features they match; **Browse** is an A–Z list; **About** explains the data. Spring-green theme, scoped
 to this section only. Reference data only — imported from the owner's master sheets, not SA STG, not clinically verified.
 
-- Source of truth: `altmed-src/*.csv` (pathogens, features, facts, prose, strains). Edit these, e.g. set `review_status` to `verified`
-  or `disputed` on a fact or prose row. Near-duplicate features that were deliberately kept separate are listed in
-  `altmed-src/review/features_final_review.csv`.
-- Build the app files: `python3 -I tools/build_altmed.py` → `data/altmed/index.json` + `prose.json` (commit both).
+- The CSV source, build script, import script and tests live on the **`altmed-source`** branch, which is not published. This branch
+  holds only what the app needs: `altmed.js` and `data/altmed/index.json` + `prose.json`. To change the data, edit the CSVs on
+  `altmed-source`, rebuild and test there, then copy the two JSON files here (see `altmed-src/README.md` on that branch).
 - Only positive facts are stored; a feature that is not listed for a pathogen counts as **no**.
-- `tools/xlsx_to_altmed_csv.py` was the one-off import from the workbook. Do not re-run it over reviewed CSVs (ids are regenerated).
-- Tests: `node tests/altmed.test.mjs`.
 - Data is loaded on first use (about 0.6 MB over the wire) and cached by the service worker; it is not part of the app's first install.
 
 ## Licences
