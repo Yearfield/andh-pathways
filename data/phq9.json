@@ -1,0 +1,376 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "phq9",
+  "folder": "PHQ9",
+  "type": "score",
+  "short": "PHQ-9",
+  "population": "adult",
+  "title": "PHQ-9 — Depression Severity",
+  "subtitle": "adults & adolescents · over the last 2 weeks · OPD / ward",
+  "badge": "PHQ-9 0–27",
+  "sources": [
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "MAT24",
+      "title": "National Integrated Maternal & Perinatal Care Guidelines for SA, 5th ed. 2024",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PHQ9",
+      "title": "Kroenke K et al. PHQ-9. J Gen Intern Med 2001;16:606-13 (Pfizer, free to use)",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "psychiatry",
+    "mental health",
+    "depression",
+    "suicide",
+    "screening",
+    "adult"
+  ],
+  "left": [
+    {
+      "type": "grid",
+      "title": "Over the last 2 weeks, how often bothered by…",
+      "s": "PHQ9",
+      "head": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "first_bold": false,
+      "rows": [
+        [
+          "Not at all",
+          "Several days",
+          "More than half the days",
+          "Nearly every day"
+        ]
+      ]
+    },
+    {
+      "type": "points",
+      "title": "Items (each 0–3)",
+      "head": "Item",
+      "s": "PHQ9",
+      "cols": [
+        {
+          "key": "r",
+          "label": "0–3"
+        }
+      ],
+      "rows": [
+        {
+          "t": "1. Little interest or pleasure in doing things",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "2. Feeling down, depressed or hopeless",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "3. Trouble falling/staying asleep, or sleeping too much",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "4. Feeling tired or having little energy",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "5. Poor appetite or overeating",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "6. Feeling bad about yourself — a failure, or let yourself or family down",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "7. Trouble concentrating (e.g. reading, TV)",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "8. Moving/speaking so slowly others notice — or fidgety/restless",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "9. Thoughts that you would be better off dead, or of hurting yourself",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        }
+      ],
+      "total": [
+        "0–27"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Function (not scored)",
+      "items": [
+        {
+          "t": "How difficult have these problems made it to work, take care of things at home or get along with others? Not / somewhat / very / extremely",
+          "s": "PHQ9"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Severity",
+      "rows": true,
+      "items": [
+        {
+          "min": 0,
+          "max": 4,
+          "label": "0–4",
+          "t": "Minimal",
+          "level": "green",
+          "s": "PHQ9"
+        },
+        {
+          "min": 5,
+          "max": 9,
+          "label": "5–9",
+          "t": "Mild — watchful waiting, repeat",
+          "level": "teal",
+          "s": "PHQ9"
+        },
+        {
+          "min": 10,
+          "max": 14,
+          "label": "10–14",
+          "t": "Moderate — treatment plan (counselling ± medication)",
+          "level": "amber",
+          "s": "PHQ9"
+        },
+        {
+          "min": 15,
+          "max": 19,
+          "label": "15–19",
+          "t": "Moderately severe — active treatment",
+          "level": "orange",
+          "s": "PHQ9"
+        },
+        {
+          "min": 20,
+          "max": 27,
+          "label": "20–27",
+          "t": "Severe — medication + psychotherapy; refer if poor response",
+          "level": "red",
+          "s": "PHQ9"
+        }
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "Item 9",
+      "rows": true,
+      "items": [
+        {
+          "label": "Item 9 ≥1",
+          "t": "Any positive answer → suicide risk assessment today, regardless of total",
+          "level": "red",
+          "s": "PHQ9"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA guidelines",
+      "grow": true,
+      "items": [
+        {
+          "t": "Depression = low mood and/or reduced capacity to enjoy life; often not recognised — may lead to suicide",
+          "s": "PHC:16.15",
+          "level": "amber"
+        },
+        {
+          "t": "Antenatal MCR 3-question screen: self-harm thoughts AND plans, or previous attempt → urgent mental health assessment",
+          "s": "MAT24:22",
+          "level": "red"
+        },
+        {
+          "t": "Diagnosis ≥10 has ~88% sensitivity & specificity for major depression",
+          "s": "PHQ9",
+          "level": "grey"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Items (each 0–3)",
+      "cols": [
+        {
+          "key": "r",
+          "label": "0–3"
+        }
+      ],
+      "rows": [
+        {
+          "t": "1. Little interest or pleasure in doing things",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "2. Feeling down, depressed or hopeless",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "3. Trouble falling/staying asleep, or sleeping too much",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "4. Feeling tired or having little energy",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "5. Poor appetite or overeating",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "6. Feeling bad about yourself — a failure, or let yourself or family down",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "7. Trouble concentrating (e.g. reading, TV)",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "8. Moving/speaking so slowly others notice — or fidgety/restless",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        },
+        {
+          "t": "9. Thoughts that you would be better off dead, or of hurting yourself",
+          "pts": {
+            "r": "0–3"
+          },
+          "s": "PHQ9"
+        }
+      ]
+    }
+  ],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "Severity",
+      "items": [
+        {
+          "min": 0,
+          "max": 4,
+          "label": "0–4",
+          "t": "Minimal",
+          "level": "green",
+          "s": "PHQ9"
+        },
+        {
+          "min": 5,
+          "max": 9,
+          "label": "5–9",
+          "t": "Mild — watchful waiting, repeat",
+          "level": "teal",
+          "s": "PHQ9"
+        },
+        {
+          "min": 10,
+          "max": 14,
+          "label": "10–14",
+          "t": "Moderate — treatment plan (counselling ± medication)",
+          "level": "amber",
+          "s": "PHQ9"
+        },
+        {
+          "min": 15,
+          "max": 19,
+          "label": "15–19",
+          "t": "Moderately severe — active treatment",
+          "level": "orange",
+          "s": "PHQ9"
+        },
+        {
+          "min": 20,
+          "max": 27,
+          "label": "20–27",
+          "t": "Severe — medication + psychotherapy; refer if poor response",
+          "level": "red",
+          "s": "PHQ9"
+        }
+      ]
+    },
+    {
+      "title": "Item 9",
+      "items": [
+        {
+          "label": "Item 9 ≥1",
+          "t": "Any positive answer → suicide risk assessment today, regardless of total",
+          "level": "red",
+          "s": "PHQ9"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

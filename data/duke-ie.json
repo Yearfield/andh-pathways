@@ -1,0 +1,172 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "duke-ie",
+  "folder": "Duke",
+  "type": "grade",
+  "short": "Duke",
+  "population": "all ages",
+  "title": "Modified Duke Criteria — Infective Endocarditis",
+  "subtitle": "suspected IE · adults and children (limitations in children)",
+  "badge": "Duke IE",
+  "sources": [
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "ISCVID",
+      "title": "Fowler VG et al. 2023 Duke-ISCVID criteria. Clin Infect Dis 2023;77:518-26",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "criteria",
+    "cardiology",
+    "endocarditis",
+    "infection",
+    "fever",
+    "paediatric",
+    "adult"
+  ],
+  "left": [
+    {
+      "type": "list",
+      "title": "Major criteria",
+      "s": "PAED:4.10",
+      "items": [
+        {
+          "b": "Positive blood culture:",
+          "t": "typical organisms in 2 separate cultures (S. viridans incl. nutritional variants, S. bovis, HACEK, S. aureus, or community enterococci without a primary focus); OR persistent bacteraemia (cultures >12 h apart, or all 3 / majority of ≥4 with first and last ≥1 h apart); OR Q fever serology / single positive culture for Coxiella burnetii or anti-phase-1 IgG >1:800",
+          "s": "PAED:4.10"
+        },
+        {
+          "b": "Endocardial involvement:",
+          "t": "positive echo (oscillating intracardiac mass on valve, supporting structures, in regurgitant jet path or on implanted material; abscess; new partial dehiscence of a prosthetic valve) OR new valvular regurgitation",
+          "s": "PAED:4.10"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Minor criteria",
+      "s": "PAED:4.10",
+      "items": [
+        {
+          "t": "Predisposing heart condition or IV drug use",
+          "s": "PAED:4.10"
+        },
+        {
+          "t": "Fever ≥38 °C",
+          "s": "PAED:4.10"
+        },
+        {
+          "t": "Vascular: major arterial emboli, septic pulmonary infarcts, mycotic aneurysm, intracranial haemorrhage, conjunctival haemorrhages, Janeway lesions",
+          "s": "PAED:4.10"
+        },
+        {
+          "t": "Immunologic: Osler's nodes, Roth spots, glomerulonephritis, rheumatoid factor",
+          "s": "PAED:4.10"
+        },
+        {
+          "t": "Microbiologic: positive culture not meeting a major criterion, or serology of active infection with an IE organism",
+          "s": "PAED:4.10"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Diagnosis",
+      "rows": true,
+      "s": "PAED:4.11",
+      "items": [
+        {
+          "label": "Definite IE",
+          "t": "Pathology (organisms in vegetation/emboli/abscess, or histology of active IE) OR 2 major OR 1 major + 3 minor OR 5 minor",
+          "level": "red",
+          "s": "PAED:4.11"
+        },
+        {
+          "label": "Possible IE",
+          "t": "1 major + 1 minor OR 3 minor",
+          "level": "amber",
+          "s": "PAED:4.11"
+        },
+        {
+          "label": "Rejected",
+          "t": "Firm alternative diagnosis; resolution with ≤4 days of antibiotics; or no pathological IE at surgery/autopsy after ≤4 days of antibiotics",
+          "level": "green",
+          "s": "PAED:4.11"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG — workup",
+      "items": [
+        {
+          "t": "3 blood cultures from different sites within 2 h if very ill, otherwise within 24 h; little gain from >5",
+          "s": "PAED:4.11",
+          "level": "amber"
+        },
+        {
+          "t": "Suspect IE in every child with fever and underlying heart disease",
+          "s": "PAED:4.9",
+          "level": "red"
+        },
+        {
+          "t": "Children: criteria rely on rare features; splenomegaly, clubbing, haematuria, CRP/ESR are not included",
+          "s": "PAED:4.11",
+          "level": "amber"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Note",
+      "grow": true,
+      "items": [
+        {
+          "t": "2023 Duke-ISCVID update (not in STG): adds cardiac CT / PET-CT and intra-operative findings, expands typical organisms",
+          "s": "ISCVID"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "Diagnosis",
+      "items": [
+        {
+          "label": "Definite IE",
+          "t": "Pathology (organisms in vegetation/emboli/abscess, or histology of active IE) OR 2 major OR 1 major + 3 minor OR 5 minor",
+          "level": "red",
+          "s": "PAED:4.11"
+        },
+        {
+          "label": "Possible IE",
+          "t": "1 major + 1 minor OR 3 minor",
+          "level": "amber",
+          "s": "PAED:4.11"
+        },
+        {
+          "label": "Rejected",
+          "t": "Firm alternative diagnosis; resolution with ≤4 days of antibiotics; or no pathological IE at surgery/autopsy after ≤4 days of antibiotics",
+          "level": "green",
+          "s": "PAED:4.11"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

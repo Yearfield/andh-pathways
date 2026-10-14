@@ -1,0 +1,344 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "curb65",
+  "folder": "CURB65",
+  "type": "score",
+  "short": "CURB-65",
+  "population": "adult",
+  "title": "CURB-65 — Community-Acquired Pneumonia Severity",
+  "subtitle": "adults with CAP · casualty",
+  "badge": "CURB-65 0–5",
+  "sources": [
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "CURB65",
+      "title": "Lim WS et al. Thorax 2003;58:377-82",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "respiratory",
+    "pneumonia",
+    "CAP",
+    "sepsis",
+    "adult",
+    "emergency"
+  ],
+  "left": [
+    {
+      "type": "points",
+      "title": "Criteria (1 point each)",
+      "head": "Item",
+      "s": "CURB65",
+      "cols": [
+        {
+          "key": "c",
+          "label": "CURB-65"
+        },
+        {
+          "key": "r",
+          "label": "CRB-65"
+        }
+      ],
+      "rows": [
+        {
+          "t": "Confusion (new disorientation in person, place or time)",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "Urea >7 mmol/L",
+          "pts": {
+            "c": 1,
+            "r": null
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "Respiratory rate ≥30/min",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "BP: systolic <90 or diastolic ≤60 mmHg",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "Age ≥65 years",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        }
+      ],
+      "total": [
+        "0–5",
+        "0–4"
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "CURB-65 — 30-day mortality",
+      "rows": true,
+      "s": "CURB65",
+      "items": [
+        {
+          "min": 0,
+          "max": 1,
+          "label": "0–1",
+          "t": "Low (0.7–3.2%) — home treatment possible",
+          "level": "green",
+          "s": "CURB65"
+        },
+        {
+          "min": 2,
+          "max": 2,
+          "label": "2",
+          "t": "Moderate (13%) — hospital (short stay / supervised)",
+          "level": "amber",
+          "s": "CURB65"
+        },
+        {
+          "min": 3,
+          "max": 5,
+          "label": "3–5",
+          "t": "Severe (17–57%) — admit; 4–5 assess for ICU/high care",
+          "level": "red",
+          "s": "CURB65"
+        }
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "CRB-65 (no urea)",
+      "rows": true,
+      "s": "CURB65",
+      "items": [
+        {
+          "min": 0,
+          "max": 0,
+          "label": "0",
+          "t": "Low — home",
+          "level": "green",
+          "s": "CURB65"
+        },
+        {
+          "min": 1,
+          "max": 2,
+          "label": "1–2",
+          "t": "Increased — consider hospital",
+          "level": "amber",
+          "s": "CURB65"
+        },
+        {
+          "min": 3,
+          "max": 4,
+          "label": "3–4",
+          "t": "High — urgent admission",
+          "level": "red",
+          "s": "CURB65"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "items": [
+        {
+          "t": "Severe pneumonia = ≥2 of: confusion/↓LOC, RR ≥30, SBP <90, DBP <60, age >65",
+          "s": "PHC:17.26",
+          "level": "red",
+          "c": "STG uses DBP <60 (CURB-65: ≤60)"
+        },
+        {
+          "t": "Severe: oxygen to SpO₂ 92%; ceftriaxone 1 g IV/IM single dose before referral",
+          "s": "PHC:17.26",
+          "level": "red"
+        },
+        {
+          "t": "Refer if any: confusion/↓LOC, cyanosis, RR ≥30, SBP <90, DBP <60",
+          "s": "PHC:17.25",
+          "level": "amber"
+        },
+        {
+          "t": "Hospital: severe pneumonia = cyanosis, confusion, hypotension or RR >30",
+          "s": "HOSP:16.16",
+          "level": "red"
+        },
+        {
+          "t": "IV → oral switch when haemodynamically stable, RR <25 and T <37.8 °C",
+          "s": "HOSP:16.16",
+          "level": "green"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "items": [
+        {
+          "t": "Score supports, not replaces, judgement — hypoxia, comorbidity (HIV, TB) and social factors also decide admission",
+          "s": "CURB65"
+        },
+        {
+          "t": "CRB-65 is for settings without urea results",
+          "s": "CURB65"
+        },
+        {
+          "t": "Underestimates severity in young patients with sepsis — check lactate/SpO₂",
+          "s": "CURB65"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Criteria (1 point each)",
+      "cols": [
+        {
+          "key": "c",
+          "label": "CURB-65"
+        },
+        {
+          "key": "r",
+          "label": "CRB-65"
+        }
+      ],
+      "rows": [
+        {
+          "t": "Confusion (new disorientation in person, place or time)",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "Urea >7 mmol/L",
+          "pts": {
+            "c": 1,
+            "r": null
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "Respiratory rate ≥30/min",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "BP: systolic <90 or diastolic ≤60 mmHg",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        },
+        {
+          "t": "Age ≥65 years",
+          "pts": {
+            "c": 1,
+            "r": 1
+          },
+          "s": "CURB65"
+        }
+      ]
+    }
+  ],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "CURB-65 — 30-day mortality",
+      "items": [
+        {
+          "min": 0,
+          "max": 1,
+          "label": "0–1",
+          "t": "Low (0.7–3.2%) — home treatment possible",
+          "level": "green",
+          "s": "CURB65"
+        },
+        {
+          "min": 2,
+          "max": 2,
+          "label": "2",
+          "t": "Moderate (13%) — hospital (short stay / supervised)",
+          "level": "amber",
+          "s": "CURB65"
+        },
+        {
+          "min": 3,
+          "max": 5,
+          "label": "3–5",
+          "t": "Severe (17–57%) — admit; 4–5 assess for ICU/high care",
+          "level": "red",
+          "s": "CURB65"
+        }
+      ]
+    },
+    {
+      "title": "CRB-65 (no urea)",
+      "items": [
+        {
+          "min": 0,
+          "max": 0,
+          "label": "0",
+          "t": "Low — home",
+          "level": "green",
+          "s": "CURB65"
+        },
+        {
+          "min": 1,
+          "max": 2,
+          "label": "1–2",
+          "t": "Increased — consider hospital",
+          "level": "amber",
+          "s": "CURB65"
+        },
+        {
+          "min": 3,
+          "max": 4,
+          "label": "3–4",
+          "t": "High — urgent admission",
+          "level": "red",
+          "s": "CURB65"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

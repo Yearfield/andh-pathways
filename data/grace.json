@@ -1,0 +1,360 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "grace",
+  "folder": "GRACE",
+  "type": "score",
+  "short": "GRACE",
+  "population": "adult",
+  "title": "GRACE Score — ACS In-hospital & 6-month Mortality",
+  "subtitle": "adults with confirmed ACS (STEMI / NSTE-ACS) · ward / casualty",
+  "badge": "GRACE (in-hospital)",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "GRACE",
+      "title": "Granger CB et al. GRACE in-hospital mortality. Arch Intern Med 2003;163:2345-53",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "cardiology",
+    "ACS",
+    "NSTEMI",
+    "STEMI",
+    "mortality",
+    "adult"
+  ],
+  "split": 0.6,
+  "left": [
+    {
+      "type": "grid",
+      "title": "Points (in-hospital nomogram)",
+      "s": "GRACE",
+      "head": [
+        "Age (y)",
+        "Pts",
+        "HR (/min)",
+        "Pts",
+        "SBP (mmHg)",
+        "Pts",
+        "Creatinine µmol/L",
+        "Pts"
+      ],
+      "rows": [
+        [
+          "<30",
+          "0",
+          "<50",
+          "0",
+          "<80",
+          "58",
+          "<35",
+          "1"
+        ],
+        [
+          "30–39",
+          "8",
+          "50–69",
+          "3",
+          "80–99",
+          "53",
+          "35–70",
+          "4"
+        ],
+        [
+          "40–49",
+          "25",
+          "70–89",
+          "9",
+          "100–119",
+          "43",
+          "71–105",
+          "7"
+        ],
+        [
+          "50–59",
+          "41",
+          "90–109",
+          "15",
+          "120–139",
+          "34",
+          "106–140",
+          "10"
+        ],
+        [
+          "60–69",
+          "58",
+          "110–149",
+          "24",
+          "140–159",
+          "24",
+          "141–176",
+          "13"
+        ],
+        [
+          "70–79",
+          "75",
+          "150–199",
+          "38",
+          "160–199",
+          "10",
+          "177–353",
+          "21"
+        ],
+        [
+          "80–89",
+          "91",
+          "≥200",
+          "46",
+          "≥200",
+          "0",
+          "≥354",
+          "28"
+        ],
+        [
+          "≥90",
+          "100",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "points",
+      "title": "Other variables",
+      "head": "Finding",
+      "s": "GRACE",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Pts"
+        }
+      ],
+      "rows": [
+        {
+          "t": "Killip I — no heart failure",
+          "pts": {
+            "p": 0
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Killip II — crackles, S3, ↑JVP",
+          "pts": {
+            "p": 20
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Killip III — pulmonary oedema",
+          "pts": {
+            "p": 39
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Killip IV — cardiogenic shock",
+          "pts": {
+            "p": 59
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Cardiac arrest at admission",
+          "pts": {
+            "p": 39
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "ST-segment deviation",
+          "pts": {
+            "p": 28
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Elevated cardiac enzymes / troponin",
+          "pts": {
+            "p": 14
+          },
+          "s": "GRACE"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "grid",
+      "title": "Risk categories (total points)",
+      "s": "GRACE",
+      "head": [
+        "",
+        "Low",
+        "Intermediate",
+        "High"
+      ],
+      "rows": [
+        {
+          "section": "NSTE-ACS"
+        },
+        [
+          "In-hospital death",
+          "≤108 (<1%)",
+          "109–140 (1–3%)",
+          ">140 (>3%)"
+        ],
+        [
+          "6-month death",
+          "≤88 (<3%)",
+          "89–118 (3–8%)",
+          ">118 (>8%)"
+        ],
+        {
+          "section": "STEMI"
+        },
+        [
+          "In-hospital death",
+          "≤125 (<2%)",
+          "126–154 (2–5%)",
+          ">154 (>5%)"
+        ],
+        [
+          "6-month death",
+          "≤99 (<4.5%)",
+          "100–127 (4.5–11%)",
+          ">127 (>11%)"
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "title": "Conversion",
+      "items": [
+        {
+          "name": "Creatinine",
+          "expr": "µmol/L = mg/dL × 88.4",
+          "notes": "original bands in mg/dL (<0.40 … ≥4.0)",
+          "s": "GRACE"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "items": [
+        {
+          "t": "UA/NSTEMI: TIMI and GRACE are well-validated risk scores; high-risk patients (incl. positive troponin) → discuss with cardiology for angiography",
+          "s": "HOSP:3.12",
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Use",
+      "grow": true,
+      "items": [
+        {
+          "t": "NSTE-ACS: GRACE >140 → early invasive strategy (<24 h) — discuss with cardiology",
+          "s": "GRACE"
+        },
+        {
+          "t": "Score at presentation; Killip class from examination",
+          "s": "GRACE"
+        },
+        {
+          "t": "Prefer the online GRACE 2.0 calculator if available (continuous variables)",
+          "s": "GRACE"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Other variables",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Pts"
+        }
+      ],
+      "rows": [
+        {
+          "t": "Killip I — no heart failure",
+          "pts": {
+            "p": 0
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Killip II — crackles, S3, ↑JVP",
+          "pts": {
+            "p": 20
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Killip III — pulmonary oedema",
+          "pts": {
+            "p": 39
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Killip IV — cardiogenic shock",
+          "pts": {
+            "p": 59
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Cardiac arrest at admission",
+          "pts": {
+            "p": 39
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "ST-segment deviation",
+          "pts": {
+            "p": 28
+          },
+          "s": "GRACE"
+        },
+        {
+          "t": "Elevated cardiac enzymes / troponin",
+          "pts": {
+            "p": 14
+          },
+          "s": "GRACE"
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "name": "Creatinine",
+      "expr": "µmol/L = mg/dL × 88.4",
+      "notes": "original bands in mg/dL (<0.40 … ≥4.0)",
+      "s": "GRACE"
+    }
+  ],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

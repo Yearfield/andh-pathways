@@ -1,0 +1,226 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "copd-gold",
+  "folder": "COPD",
+  "type": "grade",
+  "short": "GOLD",
+  "population": "adult",
+  "title": "COPD — GOLD Grade, ABE Group & SA STG Treatment",
+  "subtitle": "adults with spirometry-confirmed COPD · OPD / casualty",
+  "badge": "GOLD 1–4 · A/B/E",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "GOLD",
+      "title": "GOLD 2025 Report, Global Initiative for Chronic Obstructive Lung Disease",
+      "type": "guideline",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "grade",
+    "respiratory",
+    "COPD",
+    "spirometry",
+    "exacerbation",
+    "inhaler",
+    "adult"
+  ],
+  "left": [
+    {
+      "type": "formula",
+      "title": "Diagnosis",
+      "items": [
+        {
+          "name": "Airflow obstruction",
+          "expr": "post-bronchodilator FEV₁/FVC < 0.70",
+          "s": "HOSP:16.9"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Spirometric grade (FEV₁ % predicted)",
+      "s": "GOLD",
+      "head": [
+        "GOLD",
+        "Severity",
+        "FEV₁"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1",
+            "Mild",
+            "≥80%"
+          ],
+          "level": "green"
+        },
+        {
+          "cells": [
+            "2",
+            "Moderate",
+            "50–79%"
+          ],
+          "level": "amber"
+        },
+        {
+          "cells": [
+            "3",
+            "Severe",
+            "30–49%"
+          ],
+          "level": "orange"
+        },
+        {
+          "cells": [
+            "4",
+            "Very severe",
+            "<30%"
+          ],
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "mMRC dyspnoea scale",
+      "s": "HOSP:16.10",
+      "head": [
+        "Grade",
+        "Breathless…"
+      ],
+      "rows": [
+        [
+          "0",
+          "only with strenuous exercise"
+        ],
+        [
+          "1",
+          "when hurrying on level ground or walking up a slight hill"
+        ],
+        [
+          "2",
+          "walks slower than peers, or stops for breath at own pace"
+        ],
+        [
+          "3",
+          "stops after ~91 m (100 yards) or a few minutes on level ground"
+        ],
+        [
+          "4",
+          "too breathless to leave the house, or when dressing"
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Group (exacerbations in past year)",
+      "s": "HOSP:16.10",
+      "head": [
+        "",
+        "mMRC 0–1",
+        "mMRC ≥2"
+      ],
+      "rows": [
+        [
+          "<2, no hospital admission",
+          {
+            "v": "A",
+            "level": "green"
+          },
+          {
+            "v": "B",
+            "level": "amber"
+          }
+        ],
+        [
+          "≥2, or ≥1 leading to hospital admission",
+          {
+            "v": "E",
+            "level": "red"
+          },
+          {
+            "v": "E",
+            "level": "red"
+          }
+        ]
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA STG — maintenance",
+      "items": [
+        {
+          "t": "All: salbutamol MDI 200 mcg 6-hourly as needed",
+          "s": "HOSP:16.12",
+          "level": "green"
+        },
+        {
+          "t": "Group B: + formoterol 12 mcg 12-hourly",
+          "s": "HOSP:16.12",
+          "level": "amber"
+        },
+        {
+          "t": "Group E: eosinophils <0.1 → formoterol; ≥0.1 × 10⁹/L → salmeterol/fluticasone 50/250 12-hourly",
+          "s": "HOSP:16.12",
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG — exacerbation",
+      "grow": true,
+      "items": [
+        {
+          "t": "Controlled O₂ 1–2 L/min nasal; target SpO₂ 90% / PaO₂ 8 kPa",
+          "s": "HOSP:16.11",
+          "level": "red"
+        },
+        {
+          "t": "Salbutamol 5 mg neb (refill every 20 min); poor response → add ipratropium 0.5 mg",
+          "s": "HOSP:16.11",
+          "level": "amber"
+        },
+        {
+          "t": "Prednisone 40 mg daily 5 days (or hydrocortisone 100 mg IV 6-hourly)",
+          "s": "HOSP:16.12",
+          "level": "amber"
+        },
+        {
+          "t": "Antibiotic if ↑purulence + ↑volume or dyspnoea, or severe: amoxicillin/clavulanate 875/125 mg 12-hourly 5 days (allergy: azithromycin 500 mg daily 3 days)",
+          "s": "HOSP:16.12",
+          "level": "amber"
+        },
+        {
+          "t": "STG table header misprinted ('Grade Exacerbations in past year')",
+          "s": "HOSP:16.10",
+          "level": "grey",
+          "c": "misprint"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "Airflow obstruction",
+      "expr": "post-bronchodilator FEV₁/FVC < 0.70",
+      "s": "HOSP:16.9"
+    }
+  ],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

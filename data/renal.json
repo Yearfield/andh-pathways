@@ -1,0 +1,317 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "renal",
+  "folder": "Renal",
+  "type": "calculator",
+  "short": "eGFR",
+  "population": "adult + paediatric",
+  "title": "Renal Function — eGFR, CrCl & Urea:Creatinine + KDIGO CKD",
+  "subtitle": "adults and children · creatinine in µmol/L",
+  "badge": "eGFR / CKD",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "CKDEPI",
+      "title": "Inker LA et al. CKD-EPI 2021 (race-free). N Engl J Med 2021;385:1737-49",
+      "type": "paper",
+      "country": "intl"
+    },
+    {
+      "id": "MDRD",
+      "title": "Levey AS et al. MDRD (IDMS). Ann Intern Med 2006;145:247-54",
+      "type": "paper",
+      "country": "intl"
+    },
+    {
+      "id": "CG",
+      "title": "Cockcroft DW, Gault MH. Nephron 1976;16:31-41",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "calculator",
+    "nephrology",
+    "CKD",
+    "AKI",
+    "eGFR",
+    "creatinine",
+    "drug dosing",
+    "adult",
+    "paediatric"
+  ],
+  "split": 0.56,
+  "left": [
+    {
+      "type": "formula",
+      "title": "Formulas",
+      "items": [
+        {
+          "name": "CKD-EPI 2021 (adults, STG)",
+          "expr": "142 × min(Scr/κ,1)^α × max(Scr/κ,1)^−1.200 × 0.9938^age × 1.012 [F]",
+          "notes": "Scr mg/dL = µmol/L ÷ 88.4; κ 0.7 F / 0.9 M; α −0.241 F / −0.302 M; race-free",
+          "s": "CKDEPI",
+          "vars": {
+            "Scr": "creatinine mg/dL",
+            "age": "years",
+            "sex": "M/F"
+          },
+          "units": "mL/min/1.73 m²"
+        },
+        {
+          "name": "MDRD (IDMS)",
+          "expr": "175 × Scr^−1.154 × age^−0.203 × 0.742 [F]",
+          "notes": "Scr mg/dL; original × 1.212 if Black (not recommended)",
+          "s": "MDRD",
+          "units": "mL/min/1.73 m²"
+        },
+        {
+          "name": "Cockcroft-Gault",
+          "expr": "(140 − age) × weight × 1.23 [M] or 1.04 [F] ÷ Scr",
+          "notes": "Scr µmol/L, weight kg → CrCl mL/min; drug dosing",
+          "s": "CG",
+          "units": "mL/min"
+        },
+        {
+          "name": "Schwartz (children, STG)",
+          "expr": "eCrCl = K × height (cm) ÷ creatinine (µmol/L)",
+          "notes": "K: LBW <2.5 kg 30 · infant 0–8 mo 40 · girls 2–16 y 49 · boys 2–12 y 49 · boys 13–16 y 60",
+          "s": "PAED:6.15",
+          "units": "mL/min/1.73 m²"
+        },
+        {
+          "name": "Urea:creatinine (SI)",
+          "expr": "urea (mmol/L) ÷ creatinine (µmol/L) × 1000",
+          "notes": ">100 suggests prerenal / UGIB; <40 intrinsic renal (approximate)",
+          "units": "ratio"
+        },
+        {
+          "name": "BUN:Cr (US)",
+          "expr": "≈ SI ratio × 0.2475  (BUN mg/dL = urea mmol/L × 2.8)",
+          "notes": ">20 prerenal"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Notes",
+      "grow": true,
+      "items": [
+        {
+          "t": "Use CKD-EPI for adults, Schwartz for children",
+          "s": "HOSP:7.1"
+        },
+        {
+          "t": "eGFR invalid in AKI (non-steady state), extremes of muscle mass, pregnancy"
+        },
+        {
+          "t": "Schwartz K table has no value for 8 months–2 years; bedside Schwartz (2009) uses K = 36.5 for all ages",
+          "c": true
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "grid",
+      "title": "KDIGO 2024 CKD heat map (Figure 7.1)",
+      "s": "HOSP:7.3",
+      "head": [
+        "eGFR",
+        "A1 <3",
+        "A2 3–30",
+        "A3 >30 mg/mmol"
+      ],
+      "rows": [
+        [
+          "G1 ≥90",
+          {
+            "v": "low",
+            "level": "green"
+          },
+          {
+            "v": "moderate",
+            "level": "amber"
+          },
+          {
+            "v": "high",
+            "level": "orange"
+          }
+        ],
+        [
+          "G2 60–89",
+          {
+            "v": "low",
+            "level": "green"
+          },
+          {
+            "v": "moderate",
+            "level": "amber"
+          },
+          {
+            "v": "high",
+            "level": "orange"
+          }
+        ],
+        [
+          "G3a 45–59",
+          {
+            "v": "moderate",
+            "level": "amber"
+          },
+          {
+            "v": "high",
+            "level": "orange"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          }
+        ],
+        [
+          "G3b 30–44",
+          {
+            "v": "high",
+            "level": "orange"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          }
+        ],
+        [
+          "G4 15–29",
+          {
+            "v": "REFER",
+            "level": "red"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          }
+        ],
+        [
+          "G5 <15",
+          {
+            "v": "REFER",
+            "level": "red"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          },
+          {
+            "v": "REFER",
+            "level": "red"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "items": [
+        {
+          "t": "CKD = kidney damage or eGFR <60 for >3 months",
+          "s": "HOSP:7.1",
+          "level": "amber"
+        },
+        {
+          "t": "Stages 0–3 can be managed at primary care once cause and plan are set; all stage 4–5 → specialist",
+          "s": "HOSP:7.2",
+          "level": "red"
+        },
+        {
+          "t": "PHC: refer G1–G3a with A2/A3, and all G3b or worse",
+          "s": "PHC:8.3",
+          "level": "red",
+          "c": "PHC and HOSP referral cells differ"
+        },
+        {
+          "t": "STG prints UACR '30 mg/mol' — read mg/mmol",
+          "s": "HOSP:7.1",
+          "level": "grey",
+          "c": "misprint"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "CKD-EPI 2021 (adults, STG)",
+      "expr": "142 × min(Scr/κ,1)^α × max(Scr/κ,1)^−1.200 × 0.9938^age × 1.012 [F]",
+      "notes": "Scr mg/dL = µmol/L ÷ 88.4; κ 0.7 F / 0.9 M; α −0.241 F / −0.302 M; race-free",
+      "s": "CKDEPI",
+      "vars": {
+        "Scr": "creatinine mg/dL",
+        "age": "years",
+        "sex": "M/F"
+      },
+      "units": "mL/min/1.73 m²"
+    },
+    {
+      "name": "MDRD (IDMS)",
+      "expr": "175 × Scr^−1.154 × age^−0.203 × 0.742 [F]",
+      "notes": "Scr mg/dL; original × 1.212 if Black (not recommended)",
+      "s": "MDRD",
+      "units": "mL/min/1.73 m²"
+    },
+    {
+      "name": "Cockcroft-Gault",
+      "expr": "(140 − age) × weight × 1.23 [M] or 1.04 [F] ÷ Scr",
+      "notes": "Scr µmol/L, weight kg → CrCl mL/min; drug dosing",
+      "s": "CG",
+      "units": "mL/min"
+    },
+    {
+      "name": "Schwartz (children, STG)",
+      "expr": "eCrCl = K × height (cm) ÷ creatinine (µmol/L)",
+      "notes": "K: LBW <2.5 kg 30 · infant 0–8 mo 40 · girls 2–16 y 49 · boys 2–12 y 49 · boys 13–16 y 60",
+      "s": "PAED:6.15",
+      "units": "mL/min/1.73 m²"
+    },
+    {
+      "name": "Urea:creatinine (SI)",
+      "expr": "urea (mmol/L) ÷ creatinine (µmol/L) × 1000",
+      "notes": ">100 suggests prerenal / UGIB; <40 intrinsic renal (approximate)",
+      "units": "ratio"
+    },
+    {
+      "name": "BUN:Cr (US)",
+      "expr": "≈ SI ratio × 0.2475  (BUN mg/dL = urea mmol/L × 2.8)",
+      "notes": ">20 prerenal"
+    }
+  ],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

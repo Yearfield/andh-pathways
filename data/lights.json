@@ -1,0 +1,197 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "lights",
+  "folder": "Lights",
+  "type": "grade",
+  "short": "Light's",
+  "population": "adult",
+  "title": "Light's Criteria — Pleural Effusion (Exudate vs Transudate)",
+  "subtitle": "diagnostic pleural tap with paired serum · ward",
+  "badge": "Light's",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "LIGHT",
+      "title": "Light RW et al. Ann Intern Med 1972;77:507-13",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "criteria",
+    "respiratory",
+    "pleural effusion",
+    "empyema",
+    "TB",
+    "adult"
+  ],
+  "left": [
+    {
+      "type": "formula",
+      "title": "Exudate if ANY one is true",
+      "items": [
+        {
+          "name": "Protein ratio",
+          "expr": "pleural protein ÷ serum protein > 0.5",
+          "s": "LIGHT"
+        },
+        {
+          "name": "LDH ratio",
+          "expr": "pleural LDH ÷ serum LDH > 0.6",
+          "s": "LIGHT"
+        },
+        {
+          "name": "Pleural LDH",
+          "expr": "> 2/3 × upper limit of normal serum LDH",
+          "s": "LIGHT"
+        }
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "Result",
+      "rows": true,
+      "items": [
+        {
+          "label": "Any criterion met",
+          "t": "Exudate",
+          "level": "red",
+          "s": "LIGHT"
+        },
+        {
+          "label": "None met",
+          "t": "Transudate",
+          "level": "green",
+          "s": "LIGHT"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Common causes",
+      "head": [
+        "Transudate",
+        "Exudate"
+      ],
+      "first_bold": false,
+      "rows": [
+        [
+          "Heart failure",
+          "TB (lymphocytic) — most common in SA"
+        ],
+        [
+          "Cirrhosis (hepatic hydrothorax)",
+          "Parapneumonic effusion / empyema"
+        ],
+        [
+          "Nephrotic syndrome, hypoalbuminaemia",
+          "Malignancy"
+        ],
+        [
+          "Peritoneal dialysis",
+          "PE, pancreatitis, connective tissue disease"
+        ]
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "items": [
+        {
+          "t": "Tube drainage if pleural pH <7.2, bacteria on Gram stain/culture, or frank pus",
+          "s": "HOSP:16.18",
+          "level": "red"
+        },
+        {
+          "t": "Lymphocytic exudate in a high-TB-burden area → empiric TB treatment",
+          "s": "HOSP:16.21",
+          "level": "amber"
+        },
+        {
+          "t": "Drain max 1 L at a time; TB empyema needs an intercostal drain",
+          "s": "HOSP:16.21",
+          "level": "amber"
+        },
+        {
+          "t": "Children: Light's criteria (calculator) for pleural fluid",
+          "s": "PAED:15.13",
+          "level": "amber"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "items": [
+        {
+          "t": "Send pleural protein, LDH, glucose, pH, cell count & differential, Gram/AFB/GeneXpert, ADA; serum protein + LDH same time",
+          "s": "LIGHT"
+        },
+        {
+          "t": "Light's misclassifies ~25% of diuretic-treated heart failure as exudate — serum–pleural albumin gradient >12 g/L favours transudate",
+          "s": "LIGHT"
+        },
+        {
+          "t": "Sensitivity ≈98% for exudate",
+          "s": "LIGHT"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "Protein ratio",
+      "expr": "pleural protein ÷ serum protein > 0.5",
+      "s": "LIGHT"
+    },
+    {
+      "name": "LDH ratio",
+      "expr": "pleural LDH ÷ serum LDH > 0.6",
+      "s": "LIGHT"
+    },
+    {
+      "name": "Pleural LDH",
+      "expr": "> 2/3 × upper limit of normal serum LDH",
+      "s": "LIGHT"
+    }
+  ],
+  "interpretation": [
+    {
+      "title": "Result",
+      "items": [
+        {
+          "label": "Any criterion met",
+          "t": "Exudate",
+          "level": "red",
+          "s": "LIGHT"
+        },
+        {
+          "label": "None met",
+          "t": "Transudate",
+          "level": "green",
+          "s": "LIGHT"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

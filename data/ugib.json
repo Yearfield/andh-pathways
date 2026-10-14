@@ -1,0 +1,618 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "ugib",
+  "folder": "UGIB",
+  "type": "score",
+  "short": "GBS / Rockall",
+  "population": "adult",
+  "title": "Upper GI Bleed — Glasgow-Blatchford & Rockall",
+  "subtitle": "adults with haematemesis / melaena · casualty",
+  "badge": "GBS 0–23 · Rockall 0–7",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "GBS",
+      "title": "Blatchford O et al. Lancet 2000;356:1318-21",
+      "type": "paper",
+      "country": "intl"
+    },
+    {
+      "id": "ROCKALL",
+      "title": "Rockall TA et al. Gut 1996;38:316-21",
+      "type": "paper",
+      "country": "intl"
+    },
+    {
+      "id": "NICEUGIB",
+      "title": "NICE CG141 Acute upper GI bleeding in over 16s (2012, updated 2016)",
+      "type": "guideline",
+      "country": "UK"
+    }
+  ],
+  "tags": [
+    "score",
+    "gastroenterology",
+    "GI bleed",
+    "UGIB",
+    "haematemesis",
+    "melaena",
+    "endoscopy",
+    "adult",
+    "emergency"
+  ],
+  "split": 0.52,
+  "left": [
+    {
+      "type": "points",
+      "title": "Glasgow-Blatchford score (pre-endoscopy)",
+      "head": "Admission finding",
+      "s": "GBS",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Points"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Blood urea (mmol/L)"
+        },
+        {
+          "t": "6.5–7.9",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "8.0–9.9",
+          "pts": {
+            "p": 3
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "10.0–24.9",
+          "pts": {
+            "p": 4
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "≥25",
+          "pts": {
+            "p": 6
+          },
+          "s": "GBS"
+        },
+        {
+          "section": "Haemoglobin (g/dL) — men | women"
+        },
+        {
+          "t": "Men 12.0–12.9 | women 10.0–11.9",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Men 10.0–11.9",
+          "pts": {
+            "p": 3
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Men or women <10.0",
+          "pts": {
+            "p": 6
+          },
+          "s": "GBS"
+        },
+        {
+          "section": "Systolic BP (mmHg)"
+        },
+        {
+          "t": "100–109",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "90–99",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "<90",
+          "pts": {
+            "p": 3
+          },
+          "s": "GBS"
+        },
+        {
+          "section": "Other markers"
+        },
+        {
+          "t": "Pulse ≥100/min",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Presentation with melaena",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Presentation with syncope",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Hepatic disease (history or clinical/lab evidence)",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Cardiac failure",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        }
+      ],
+      "total": [
+        "0–23"
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "GBS interpretation",
+      "rows": true,
+      "items": [
+        {
+          "min": 0,
+          "max": 0,
+          "label": "0",
+          "t": "Low risk — consider early discharge with outpatient endoscopy",
+          "level": "green",
+          "s": "NICEUGIB"
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "label": "1–5",
+          "t": "Admit; risk of intervention rises with score",
+          "level": "amber",
+          "s": "GBS"
+        },
+        {
+          "min": 6,
+          "max": 23,
+          "label": "≥6",
+          "t": ">50% need intervention (transfusion / endoscopy / surgery)",
+          "level": "red",
+          "s": "GBS"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "points",
+      "title": "Pre-endoscopy (clinical) Rockall",
+      "head": "Variable",
+      "s": "ROCKALL",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Pts"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Age"
+        },
+        {
+          "t": "<60 y",
+          "pts": {
+            "p": 0
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "60–79 y",
+          "pts": {
+            "p": 1
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "≥80 y",
+          "pts": {
+            "p": 2
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "section": "Shock"
+        },
+        {
+          "t": "None (HR <100, SBP ≥100)",
+          "pts": {
+            "p": 0
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Tachycardia: HR ≥100, SBP ≥100",
+          "pts": {
+            "p": 1
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Hypotension: SBP <100",
+          "pts": {
+            "p": 2
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "section": "Comorbidity"
+        },
+        {
+          "t": "None major",
+          "pts": {
+            "p": 0
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Cardiac failure, IHD, any major comorbidity",
+          "pts": {
+            "p": 2
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Renal failure, liver failure, disseminated malignancy",
+          "pts": {
+            "p": 3
+          },
+          "s": "ROCKALL"
+        }
+      ],
+      "total": [
+        "0–7"
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "Rockall (pre-endoscopy)",
+      "rows": true,
+      "items": [
+        {
+          "min": 0,
+          "max": 0,
+          "label": "0",
+          "t": "Low risk of death",
+          "level": "green",
+          "s": "ROCKALL"
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "label": "≥1",
+          "t": "Not low risk — full Rockall after endoscopy adds diagnosis & stigmata (max 11)",
+          "level": "amber",
+          "s": "ROCKALL"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "grow": true,
+      "items": [
+        {
+          "t": "Variceal bleeding: endoscopic variceal ligation and/or immediate referral for advanced management",
+          "s": "HOSP:1.11",
+          "level": "red"
+        },
+        {
+          "t": "Alarm symptoms (haematemesis or melaena, anaemia, weight loss, dysphagia, chest pain, >60 y new dyspepsia) → endoscopy",
+          "s": "HOSP:1.3",
+          "level": "amber"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Glasgow-Blatchford score (pre-endoscopy)",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Points"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Blood urea (mmol/L)"
+        },
+        {
+          "t": "6.5–7.9",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "8.0–9.9",
+          "pts": {
+            "p": 3
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "10.0–24.9",
+          "pts": {
+            "p": 4
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "≥25",
+          "pts": {
+            "p": 6
+          },
+          "s": "GBS"
+        },
+        {
+          "section": "Haemoglobin (g/dL) — men | women"
+        },
+        {
+          "t": "Men 12.0–12.9 | women 10.0–11.9",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Men 10.0–11.9",
+          "pts": {
+            "p": 3
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Men or women <10.0",
+          "pts": {
+            "p": 6
+          },
+          "s": "GBS"
+        },
+        {
+          "section": "Systolic BP (mmHg)"
+        },
+        {
+          "t": "100–109",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "90–99",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "<90",
+          "pts": {
+            "p": 3
+          },
+          "s": "GBS"
+        },
+        {
+          "section": "Other markers"
+        },
+        {
+          "t": "Pulse ≥100/min",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Presentation with melaena",
+          "pts": {
+            "p": 1
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Presentation with syncope",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Hepatic disease (history or clinical/lab evidence)",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        },
+        {
+          "t": "Cardiac failure",
+          "pts": {
+            "p": 2
+          },
+          "s": "GBS"
+        }
+      ]
+    },
+    {
+      "title": "Pre-endoscopy (clinical) Rockall",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Pts"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Age"
+        },
+        {
+          "t": "<60 y",
+          "pts": {
+            "p": 0
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "60–79 y",
+          "pts": {
+            "p": 1
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "≥80 y",
+          "pts": {
+            "p": 2
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "section": "Shock"
+        },
+        {
+          "t": "None (HR <100, SBP ≥100)",
+          "pts": {
+            "p": 0
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Tachycardia: HR ≥100, SBP ≥100",
+          "pts": {
+            "p": 1
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Hypotension: SBP <100",
+          "pts": {
+            "p": 2
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "section": "Comorbidity"
+        },
+        {
+          "t": "None major",
+          "pts": {
+            "p": 0
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Cardiac failure, IHD, any major comorbidity",
+          "pts": {
+            "p": 2
+          },
+          "s": "ROCKALL"
+        },
+        {
+          "t": "Renal failure, liver failure, disseminated malignancy",
+          "pts": {
+            "p": 3
+          },
+          "s": "ROCKALL"
+        }
+      ]
+    }
+  ],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "GBS interpretation",
+      "items": [
+        {
+          "min": 0,
+          "max": 0,
+          "label": "0",
+          "t": "Low risk — consider early discharge with outpatient endoscopy",
+          "level": "green",
+          "s": "NICEUGIB"
+        },
+        {
+          "min": 1,
+          "max": 5,
+          "label": "1–5",
+          "t": "Admit; risk of intervention rises with score",
+          "level": "amber",
+          "s": "GBS"
+        },
+        {
+          "min": 6,
+          "max": 23,
+          "label": "≥6",
+          "t": ">50% need intervention (transfusion / endoscopy / surgery)",
+          "level": "red",
+          "s": "GBS"
+        }
+      ]
+    },
+    {
+      "title": "Rockall (pre-endoscopy)",
+      "items": [
+        {
+          "min": 0,
+          "max": 0,
+          "label": "0",
+          "t": "Low risk of death",
+          "level": "green",
+          "s": "ROCKALL"
+        },
+        {
+          "min": 1,
+          "max": 7,
+          "label": "≥1",
+          "t": "Not low risk — full Rockall after endoscopy adds diagnosis & stigmata (max 11)",
+          "level": "amber",
+          "s": "ROCKALL"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

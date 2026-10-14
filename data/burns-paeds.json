@@ -1,0 +1,279 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "burns-paeds",
+  "folder": "Burns",
+  "type": "calculator",
+  "short": "Burns paeds",
+  "population": "paediatric",
+  "title": "Burns — Children: Fluids, TBSA by Age & Nutrition",
+  "subtitle": "children with burns · casualty / ward",
+  "badge": "4 mL × kg × % + maint",
+  "sources": [
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "tags": [
+    "calculator",
+    "burns",
+    "trauma",
+    "fluids",
+    "Parkland",
+    "nutrition",
+    "paediatric",
+    "emergency"
+  ],
+  "left": [
+    {
+      "type": "formula",
+      "title": "Fluids (from time of burn)",
+      "items": [
+        {
+          "name": "Resuscitation 24 h",
+          "expr": "4 mL × kg × %TBSA (NaCl 0.9% or Ringer's lactate); ½ in first 8 h",
+          "s": "PAED:1.26",
+          "vars": {
+            "weight": "kg",
+            "tbsa": "%"
+          },
+          "units": "mL"
+        },
+        {
+          "name": "PLUS maintenance",
+          "expr": "≤1 y: 120 mL/kg/24 h · >1 y: 100/50/20 mL/kg rule (dextrose-saline)",
+          "s": "PAED:1.26"
+        },
+        {
+          "name": "Target urine output",
+          "expr": "1–2 mL/kg/h; if inadequate ↑ fluids by 50% for the next hour",
+          "s": "PAED:1.26"
+        },
+        {
+          "name": "Day 2",
+          "expr": "NaCl 0.9% 1.5 mL × kg × % + maintenance",
+          "s": "PAED:1.27"
+        },
+        {
+          "name": "Energy",
+          "expr": "250 kJ/kg + 150 kJ × %TBSA per day",
+          "s": "PAED:1.25"
+        },
+        {
+          "name": "Protein",
+          "expr": "3 g/kg + 1 g × %TBSA per day (max %TBSA 50)",
+          "s": "PAED:1.25"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "TBSA % by age (years) — torso front 18 + back 18, each arm 9 at all ages",
+      "s": "PAED:1.24",
+      "head": [
+        "Age",
+        "Head+neck",
+        "Each leg",
+        "Age",
+        "Head+neck",
+        "Each leg"
+      ],
+      "rows": [
+        [
+          "<1",
+          "18",
+          "14",
+          "5–<6",
+          "13",
+          "16.5"
+        ],
+        [
+          "1–<2",
+          "17",
+          "14.5",
+          "6–<7",
+          "12",
+          "17"
+        ],
+        [
+          "2–<3",
+          "16",
+          "15",
+          "7–<8",
+          "11",
+          "17.5"
+        ],
+        [
+          "3–<4",
+          "15",
+          "15.5",
+          "8–<9",
+          "10",
+          "18"
+        ],
+        [
+          "4–<5",
+          "14",
+          "16",
+          "≥9",
+          "9",
+          "18"
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Worked example 24 h (resus + maintenance) mL",
+      "head": [
+        "kg \\ %",
+        "10%",
+        "15%",
+        "20%",
+        "30%"
+      ],
+      "rows": [
+        [
+          "10",
+          "400 + 1000",
+          "600 + 1000",
+          "800 + 1000",
+          "1200 + 1000"
+        ],
+        [
+          "15",
+          "600 + 1250",
+          "900 + 1250",
+          "1200 + 1250",
+          "1800 + 1250"
+        ],
+        [
+          "20",
+          "800 + 1500",
+          "1200 + 1500",
+          "1600 + 1500",
+          "2400 + 1500"
+        ],
+        [
+          "24",
+          "960 + 1580",
+          "1440 + 1580",
+          "1920 + 1580",
+          "2880 + 1580"
+        ],
+        [
+          "30",
+          "1200 + 1700",
+          "1800 + 1700",
+          "2400 + 1700",
+          "3600 + 1700"
+        ]
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "Major burns — admit / refer",
+      "items": [
+        {
+          "t": "Partial thickness >10% or full thickness >3%",
+          "s": "PAED:1.23",
+          "level": "red"
+        },
+        {
+          "t": "Head, face, hands, feet, perineum; circumferential; inhalation; electrical",
+          "s": "PAED:1.23",
+          "level": "red"
+        },
+        {
+          "t": "Neonates; comorbid injuries",
+          "s": "PAED:1.23",
+          "level": "red"
+        },
+        {
+          "t": "Minor = partial thickness <10% in a child >1 year",
+          "s": "PAED:1.23",
+          "level": "green"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG — management",
+      "grow": true,
+      "items": [
+        {
+          "t": "Soak in cold water for not more than 20 min; oxygen in all burns >10% or possible CO poisoning",
+          "s": "PAED:1.22",
+          "level": "amber"
+        },
+        {
+          "t": "Child's palm = 1% TBSA; adult percentages from age 9 (plus 1% perineum)",
+          "s": "PAED:1.24",
+          "level": "amber"
+        },
+        {
+          "t": "NG tube on free drainage in all burns >10%; start enteral feeds within 6 h",
+          "s": "PAED:1.25",
+          "level": "amber"
+        },
+        {
+          "t": "Stop resuscitation fluids if UO >1–2 mL/kg/h or base excess better than −4",
+          "s": "PAED:1.27",
+          "level": "green"
+        },
+        {
+          "t": "Hb <7 g/dL: packed red cells 10 mL/kg over 3 h; symptomatic hypoalbuminaemia: albumin 20% 2 g/kg/day",
+          "s": "PAED:1.27",
+          "level": "amber"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "Resuscitation 24 h",
+      "expr": "4 mL × kg × %TBSA (NaCl 0.9% or Ringer's lactate); ½ in first 8 h",
+      "s": "PAED:1.26",
+      "vars": {
+        "weight": "kg",
+        "tbsa": "%"
+      },
+      "units": "mL"
+    },
+    {
+      "name": "PLUS maintenance",
+      "expr": "≤1 y: 120 mL/kg/24 h · >1 y: 100/50/20 mL/kg rule (dextrose-saline)",
+      "s": "PAED:1.26"
+    },
+    {
+      "name": "Target urine output",
+      "expr": "1–2 mL/kg/h; if inadequate ↑ fluids by 50% for the next hour",
+      "s": "PAED:1.26"
+    },
+    {
+      "name": "Day 2",
+      "expr": "NaCl 0.9% 1.5 mL × kg × % + maintenance",
+      "s": "PAED:1.27"
+    },
+    {
+      "name": "Energy",
+      "expr": "250 kJ/kg + 150 kJ × %TBSA per day",
+      "s": "PAED:1.25"
+    },
+    {
+      "name": "Protein",
+      "expr": "3 g/kg + 1 g × %TBSA per day (max %TBSA 50)",
+      "s": "PAED:1.25"
+    }
+  ],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

@@ -1,0 +1,213 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "liver",
+  "folder": "Liver",
+  "type": "calculator",
+  "short": "R factor / King's",
+  "population": "adult + paediatric",
+  "title": "Liver Injury — R Factor (DILI pattern) & King's College Criteria",
+  "subtitle": "drug-induced liver injury · acute liver failure · ward / casualty",
+  "badge": "R = ALT÷ALP (×ULN)",
+  "sources": [
+    {
+      "id": "TBPAED",
+      "title": "Management of TB in Children & Adolescents (DS-TB), NDoH Sept 2024",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "DILI",
+      "title": "Chalasani NP et al. ACG DILI guideline. Am J Gastroenterol 2021;116:878-98",
+      "type": "guideline",
+      "country": "intl"
+    },
+    {
+      "id": "KINGS",
+      "title": "O'Grady JG et al. Gastroenterology 1989;97:439-45; Bernal W et al. Lancet 2002;359:558-63",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "calculator",
+    "hepatology",
+    "DILI",
+    "liver failure",
+    "paracetamol",
+    "TB",
+    "ART",
+    "transplant"
+  ],
+  "left": [
+    {
+      "type": "formula",
+      "title": "R factor",
+      "items": [
+        {
+          "name": "R",
+          "expr": "(ALT ÷ ALT ULN) ÷ (ALP ÷ ALP ULN)",
+          "s": "TBPAED:68",
+          "vars": {
+            "ALT": "U/L",
+            "ALT_ULN": "U/L",
+            "ALP": "U/L",
+            "ALP_ULN": "U/L"
+          }
+        }
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "Pattern",
+      "rows": true,
+      "items": [
+        {
+          "label": "Hepatocellular",
+          "t": "ALT ≥3 × ULN and R ≥5 — INH, PZA, NVP, EFV, viral hepatitis, IRIS",
+          "level": "red",
+          "s": "TBPAED:68"
+        },
+        {
+          "label": "Mixed",
+          "t": "R >2 to <5",
+          "level": "amber",
+          "s": "DILI"
+        },
+        {
+          "label": "Cholestatic",
+          "t": "ALP ≥2 × ULN and R ≤2 — rifampicin, amoxicillin-clavulanate, cephalosporins, sulfonylureas",
+          "level": "purple",
+          "s": "TBPAED:68"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG — ALT on ART",
+      "grow": true,
+      "items": [
+        {
+          "t": "ALT <2.5 × ULN: continue; repeat in 2 weeks",
+          "s": "HOSP:10.16",
+          "level": "green"
+        },
+        {
+          "t": "ALT 2.5–5 × ULN: continue; repeat in 1 week",
+          "s": "HOSP:10.16",
+          "level": "amber"
+        },
+        {
+          "t": "ALT >5 × ULN: stop ART (earlier if symptoms or jaundice); hepatitis screen, LFT, INR",
+          "s": "HOSP:10.16",
+          "level": "red"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "steps",
+      "title": "King's College criteria — refer for transplant",
+      "items": [
+        {
+          "if": "Paracetamol-induced",
+          "level": "red",
+          "s": "KINGS",
+          "steps": [
+            "Arterial pH <7.30 after fluid resuscitation, OR",
+            "ALL of: INR >6.5 + creatinine >300 µmol/L + grade III–IV encephalopathy",
+            "Modified: lactate >3.5 mmol/L at 4 h or >3.0 after fluids"
+          ]
+        },
+        {
+          "if": "Non-paracetamol",
+          "level": "orange",
+          "s": "KINGS",
+          "steps": [
+            "INR >6.5, OR any 3 of:",
+            "Age <10 or >40 y · non-A non-B hepatitis or drug-induced",
+            "Jaundice → encephalopathy >7 days · INR >3.5 · bilirubin >300 µmol/L"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG — paracetamol",
+      "grow": true,
+      "items": [
+        {
+          "t": "Children — refer severe hepatotoxicity: INR >2 at 24 h or >3 any time, pH <7.3, HCO₃ <18 or lactate >3, hypotension despite fluids, encephalopathy, creatinine >200",
+          "s": "PAED:18.20",
+          "level": "red"
+        },
+        {
+          "t": "Adults with liver failure → refer for possible transplant",
+          "s": "HOSP:19.19",
+          "level": "red"
+        },
+        {
+          "t": "NAC IV 200 mg/kg over 4 h, then 100 mg/kg over 16 h",
+          "s": "HOSP:19.18",
+          "level": "amber"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "R",
+      "expr": "(ALT ÷ ALT ULN) ÷ (ALP ÷ ALP ULN)",
+      "s": "TBPAED:68",
+      "vars": {
+        "ALT": "U/L",
+        "ALT_ULN": "U/L",
+        "ALP": "U/L",
+        "ALP_ULN": "U/L"
+      }
+    }
+  ],
+  "interpretation": [
+    {
+      "title": "Pattern",
+      "items": [
+        {
+          "label": "Hepatocellular",
+          "t": "ALT ≥3 × ULN and R ≥5 — INH, PZA, NVP, EFV, viral hepatitis, IRIS",
+          "level": "red",
+          "s": "TBPAED:68"
+        },
+        {
+          "label": "Mixed",
+          "t": "R >2 to <5",
+          "level": "amber",
+          "s": "DILI"
+        },
+        {
+          "label": "Cholestatic",
+          "t": "ALP ≥2 × ULN and R ≤2 — rifampicin, amoxicillin-clavulanate, cephalosporins, sulfonylureas",
+          "level": "purple",
+          "s": "TBPAED:68"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

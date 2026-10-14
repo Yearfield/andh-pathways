@@ -1,5 +1,6 @@
 // JAD Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
 import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
+import { createScoreCards } from "./scores.js"; // interface for the block-schema score cards (Alvarado … COPD-GOLD)
 import { altmed } from "./altmed.js"; // Alternative Medicine: pathogen reference + feature filter (own data in data/altmed/, loaded on demand)
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -684,18 +685,22 @@ function scValidate(d) { // console warnings only: bad data should never stop th
   if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
 }
 
+let SC22 = null; // scores.js instance, created on first use
 function scoresHome() {
   const ss = (S.index.scores || []).filter(e => !e.hidden), pops = [...new Set(ss.map(e => popName(e.population)))];
   const fl = S.index.fluids || [], fh = S.index.fluids_hub || { short: "Fluids Rx", title: "IV fluids" }; // Fluids Rx: procedure-style cards (data/fluids-*.json) behind one hub row
-  const tags = [...new Set([...ss, ...fl].flatMap(e => e.tags || []))].sort((a, b) => a.localeCompare(b));
-  const lists = pops.map(g => { const items = ss.filter(e => popName(e.population) === g);
-    return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(items[0].population)}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
-      <div class="list">${items.map(e => `<button class="dx" data-go="#/score/${e.id}" data-pop="${esc(popName(e.population))}" data-q="${esc([e.short, e.title, e.population, e.age_range, e.id, ...(e.tags || [])].join(" ").toLowerCase())}" data-tags="${esc((e.tags || []).join("|"))}">
-        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)} · ${esc(e.age_range)} <span class="tbadge">${esc(TYPE_LABEL[e.type] || e.type)}</span></span>${ico("next")}</button>`).join("")}</div></section>`; }).join("")
-    // Fluids Rx is ONE row (like Fracture in the pathways list) that opens #/fluids: Adult | Paediatric, "which fluid" under each. It shows under either population filter.
-    + (fl.length ? `<section class="grp" data-grp="Adult + paeds"><h2 class="glabel"><span class="dot pop-tox"></span>Adult + paeds<span class="c">· <span class="gc">1</span></span></h2>
-      <div class="list"><button class="dx" data-go="#/fluids" data-pop="Adult + paeds" data-q="${esc(["fluids rx", fh.title, ...fl.flatMap(e => [e.short, e.title, ...(e.tags || [])])].join(" ").toLowerCase())}" data-tags="${esc([...new Set(fl.flatMap(e => e.tags || []))].join("|"))}">
-        <span class="t">${esc(fh.short)}</span><span class="p">${esc(fh.title)} · ${fl.length} cards <span class="tbadge">Fluids</span></span>${ico("next")}</button></div></section>` : "");
+  // tag chips: only tags shared by two or more cards (the search box finds every tag, including single-card ones)
+  const tagCount = {}; [...ss, ...fl].forEach(e => new Set(e.tags || []).forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
+  const tags = Object.keys(tagCount).filter(t => tagCount[t] >= 2).sort((a, b) => a.localeCompare(b));
+  if (fl.length && !pops.includes("Adult + paeds")) pops.push("Adult + paeds");
+  const scoreRow = e => `<button class="dx" data-go="#/score/${e.id}" data-pop="${esc(popName(e.population))}" data-q="${esc([e.short, e.title, e.population, e.age_range, e.badge, e.id, ...(e.tags || [])].join(" ").toLowerCase())}" data-tags="${esc((e.tags || []).join("|"))}">
+        <span class="t">${esc(e.short)}</span><span class="p">${esc(e.title)} · ${esc(e.age_range)} <span class="tbadge">${esc(TYPE_LABEL[e.type] || e.type)}</span></span>${ico("next")}</button>`;
+  // Fluids Rx is ONE row (like Fracture in the pathways list) that opens #/fluids: Adult | Paediatric, "which fluid" under each. It shows under either population filter.
+  const fluidsRow = () => `<button class="dx" data-go="#/fluids" data-pop="Adult + paeds" data-q="${esc(["fluids rx", fh.title, ...fl.flatMap(e => [e.short, e.title, ...(e.tags || [])])].join(" ").toLowerCase())}" data-tags="${esc([...new Set(fl.flatMap(e => e.tags || []))].join("|"))}">
+        <span class="t">${esc(fh.short)}</span><span class="p">${esc(fh.title)} · ${fl.length} cards <span class="tbadge">Fluids</span></span>${ico("next")}</button>`;
+  const lists = pops.map(g => { const items = ss.filter(e => popName(e.population) === g).sort((a, b) => a.short.localeCompare(b.short)), withFl = g === "Adult + paeds" && fl.length;
+    return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(items[0]?.population || "adult + paediatric")}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length + (withFl ? 1 : 0)}</span></span></h2>
+      <div class="list">${items.map(scoreRow).join("")}${withFl ? fluidsRow() : ""}</div></section>`; }).join("");
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><button class="iconbtn" aria-label="Back to start" data-go="#/">${ico("back")}</button>
     <div class="ttl"><h1>Scales and Calculations</h1><div class="sub">ANDH · ${ss.length + fl.length} cards · works offline</div></div></div>
@@ -804,6 +809,7 @@ function scUpdate() {
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
   const d = S.sd[id] ||= await loadJSON("data/" + e.file);
+  if (d.left || d.right) return (SC22 ||= createScoreCards({ S, esc, $, $$, ico, plus, cardHeader, TYPE_LABEL, scSrcList, scPdfRows, srcCheck, app })).render(id, e, d); // block-schema score cards (scores.js)
   if (d.id === "rass") return rassView(id, e, d); // RASS wheel
   if (d.versions) return checkView(id, e, d); // checklist score cards (Wells PE / DVT)
   if (d.type === "calculator") return calcView(id, d, tab, key);
@@ -1015,7 +1021,7 @@ async function rangeView(id, d, key) {
 }
 
 /* ---------- checklist score cards: versions[] + components[].points (Wells PE, Wells DVT) ---------- */
-const SA_SRC = /^(HOSP|MAT24|PHC|PAED)(:|$)/; // SA guideline ids: only these get a green ✚ inline; every other source is listed in the footer
+const SA_SRC = /^(HOSP|MAT24|PHC|PAED|TBPAED)(:|$)/; // SA guideline ids: only these get a green ✚ inline; every other source is listed in the footer
 const plus = s => s && SA_SRC.test(s) ? refbox(`<button class="ref" data-src="${esc(s)}" aria-label="Open ${esc(s.replace(":", " "))} in the guideline">${esc(s.replace(":", " "))}</button>`, true) : "";
 const fmtG = n => String(+Number(n).toFixed(2)); // 1.5 -> "1.5", 2 -> "2"
 const sgn = n => (n < 0 ? "−" : "") + fmtG(Math.abs(n));

@@ -1,0 +1,328 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "alvarado",
+  "folder": "Alvarado",
+  "type": "score",
+  "short": "Alvarado",
+  "population": "adult",
+  "title": "Alvarado Score — Acute Appendicitis (MANTRELS)",
+  "subtitle": "adults with RIF pain · casualty",
+  "badge": "Alvarado 0–10",
+  "sources": [
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "ALVARADO",
+      "title": "Alvarado A. Ann Emerg Med 1986;15:557-64",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "surgery",
+    "appendicitis",
+    "abdominal pain",
+    "adult",
+    "emergency"
+  ],
+  "left": [
+    {
+      "type": "points",
+      "title": "Criteria (MANTRELS)",
+      "head": "Item",
+      "s": "ALVARADO",
+      "cols": [
+        {
+          "key": "pts",
+          "label": "Points"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Symptoms"
+        },
+        {
+          "t": "Migration of pain to the right iliac fossa",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Anorexia (or ketonuria)",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Nausea or vomiting",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "section": "Signs"
+        },
+        {
+          "t": "Tenderness in the right iliac fossa",
+          "pts": {
+            "pts": 2
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Rebound tenderness",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Elevated temperature ≥37.3 °C",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "section": "Laboratory"
+        },
+        {
+          "t": "Leucocytosis >10 × 10⁹/L",
+          "pts": {
+            "pts": 2
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Shift to the left (neutrophils >75%)",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        }
+      ],
+      "total": [
+        "0–10"
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "cols": 2,
+      "items": [
+        {
+          "t": "Supports, never replaces, clinical judgement and serial examination",
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Women of child-bearing age: pregnancy test first — exclude ectopic",
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Less reliable in children (use PAS), pregnancy, the elderly and HIV",
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Mnemonic MANTRELS = Migration, Anorexia, Nausea, Tenderness, Rebound, Elevated T, Leucocytosis, Shift",
+          "s": "ALVARADO"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Interpretation",
+      "rows": true,
+      "s": "ALVARADO",
+      "items": [
+        {
+          "min": 0,
+          "max": 4,
+          "label": "1–4",
+          "t": "Appendicitis unlikely — consider other causes; re-examine",
+          "level": "green",
+          "s": "ALVARADO"
+        },
+        {
+          "min": 5,
+          "max": 6,
+          "label": "5–6",
+          "t": "Compatible / equivocal — observe, repeat score, surgical opinion",
+          "level": "amber",
+          "s": "ALVARADO"
+        },
+        {
+          "min": 7,
+          "max": 8,
+          "label": "7–8",
+          "t": "Probable appendicitis — surgical referral",
+          "level": "orange",
+          "s": "ALVARADO"
+        },
+        {
+          "min": 9,
+          "max": 10,
+          "label": "9–10",
+          "t": "Very probable appendicitis — surgical referral",
+          "level": "red",
+          "s": "ALVARADO"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "grow": true,
+      "items": [
+        {
+          "t": "Suspected appendicitis: nil by mouth; sodium chloride 0.9% IV",
+          "s": "PHC:2.8",
+          "level": "amber"
+        },
+        {
+          "t": "Refer ALL patients with suspected appendicitis",
+          "s": "PHC:2.8",
+          "level": "red"
+        },
+        {
+          "t": "Treat associated pain while awaiting transfer",
+          "s": "PHC:2.7",
+          "level": "amber"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Criteria (MANTRELS)",
+      "cols": [
+        {
+          "key": "pts",
+          "label": "Points"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Symptoms"
+        },
+        {
+          "t": "Migration of pain to the right iliac fossa",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Anorexia (or ketonuria)",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Nausea or vomiting",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "section": "Signs"
+        },
+        {
+          "t": "Tenderness in the right iliac fossa",
+          "pts": {
+            "pts": 2
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Rebound tenderness",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Elevated temperature ≥37.3 °C",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "section": "Laboratory"
+        },
+        {
+          "t": "Leucocytosis >10 × 10⁹/L",
+          "pts": {
+            "pts": 2
+          },
+          "s": "ALVARADO"
+        },
+        {
+          "t": "Shift to the left (neutrophils >75%)",
+          "pts": {
+            "pts": 1
+          },
+          "s": "ALVARADO"
+        }
+      ]
+    }
+  ],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "Interpretation",
+      "items": [
+        {
+          "min": 0,
+          "max": 4,
+          "label": "1–4",
+          "t": "Appendicitis unlikely — consider other causes; re-examine",
+          "level": "green",
+          "s": "ALVARADO"
+        },
+        {
+          "min": 5,
+          "max": 6,
+          "label": "5–6",
+          "t": "Compatible / equivocal — observe, repeat score, surgical opinion",
+          "level": "amber",
+          "s": "ALVARADO"
+        },
+        {
+          "min": 7,
+          "max": 8,
+          "label": "7–8",
+          "t": "Probable appendicitis — surgical referral",
+          "level": "orange",
+          "s": "ALVARADO"
+        },
+        {
+          "min": 9,
+          "max": 10,
+          "label": "9–10",
+          "t": "Very probable appendicitis — surgical referral",
+          "level": "red",
+          "s": "ALVARADO"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

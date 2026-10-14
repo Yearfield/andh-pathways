@@ -1,0 +1,245 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "sofa",
+  "folder": "SOFA",
+  "type": "score",
+  "short": "SOFA",
+  "population": "adult",
+  "title": "SOFA Score & qSOFA — Sepsis (Sepsis-3)",
+  "subtitle": "adults with suspected infection · casualty / ward / ICU",
+  "badge": "SOFA 0–24",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "SEPSIS3",
+      "title": "Singer M et al. Sepsis-3. JAMA 2016;315:801-10; Seymour CW et al. JAMA 2016;315:762-74",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "sepsis",
+    "septic shock",
+    "ICU",
+    "organ failure",
+    "critical care",
+    "adult",
+    "emergency"
+  ],
+  "split": 0.64,
+  "left": [
+    {
+      "type": "grid",
+      "title": "SOFA (Table 23.6)",
+      "s": "HOSP:23.34",
+      "head": [
+        "System",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "PaO₂/FiO₂ (mmHg)",
+          "≥400",
+          "<400",
+          "<300",
+          "<200 + resp. support",
+          "<100 + resp. support"
+        ],
+        [
+          "Platelets ×10⁹/L",
+          "≥150",
+          "<150",
+          "<100",
+          "<50",
+          "<20"
+        ],
+        [
+          "Bilirubin µmol/L",
+          "<20",
+          "20–32",
+          "33–101",
+          "102–204",
+          ">204"
+        ],
+        [
+          "Cardiovascular",
+          "MAP ≥70",
+          "MAP <70",
+          "Dopamine <5 or dobutamine (any)",
+          "Dopamine 5.1–15 or adrenaline ≤0.1",
+          "Dopamine >15 or adrenaline >0.1"
+        ],
+        [
+          "GCS",
+          "15",
+          "13–14",
+          "10–12 ‡",
+          "6–9",
+          "<6"
+        ],
+        [
+          "Creatinine µmol/L (or UO)",
+          "<110",
+          "110–170",
+          "171–299",
+          "300–440 or UO <500 mL/d",
+          ">440 or UO <200 mL/d"
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "title": "Definitions",
+      "items": [
+        {
+          "name": "SOFA",
+          "expr": "sum of 6 systems (0–4 each) = 0–24",
+          "s": "HOSP:23.34"
+        },
+        {
+          "name": "Sepsis",
+          "expr": "infection + acute ↑SOFA ≥2 (baseline 0 if unknown)",
+          "s": "HOSP:23.34"
+        },
+        {
+          "name": "Septic shock",
+          "expr": "vasopressors for MAP ≥65 AND lactate >2 mmol/L despite fluids",
+          "s": "HOSP:23.34"
+        },
+        {
+          "name": "qSOFA",
+          "expr": "RR ≥22 + altered mentation + SBP ≤100 (1 each, 0–3)",
+          "s": "SEPSIS3"
+        },
+        {
+          "name": "MAP",
+          "expr": "(SBP + 2 × DBP) ÷ 3"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "qSOFA (bedside screen)",
+      "rows": true,
+      "items": [
+        {
+          "label": "≥2",
+          "t": "High risk of poor outcome — full SOFA, lactate, cultures, escalate",
+          "level": "red",
+          "s": "SEPSIS3"
+        },
+        {
+          "label": "0–1",
+          "t": "Does not exclude sepsis — keep reassessing",
+          "level": "amber",
+          "s": "SEPSIS3"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG — first hour",
+      "items": [
+        {
+          "t": "Balanced crystalloid 30 mL/kg over 3 h; reassess for fluid overload",
+          "s": "HOSP:23.35",
+          "level": "red"
+        },
+        {
+          "t": "Target MAP >65 mmHg; lactate clearance >20% over 2 h",
+          "s": "HOSP:23.35",
+          "level": "amber"
+        },
+        {
+          "t": "Adrenaline 0.01–1.0 mcg/kg/min if hypotensive after fluids",
+          "s": "HOSP:23.35",
+          "level": "amber"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Notes",
+      "grow": true,
+      "items": [
+        {
+          "t": "Catecholamine doses in mcg/kg/min for ≥1 h",
+          "s": "SEPSIS3"
+        },
+        {
+          "t": "‡ STG Table 23.6 prints GCS 10–11 for 2 points; Sepsis-3 uses 10–12",
+          "c": true,
+          "s": "HOSP:23.34"
+        },
+        {
+          "t": "STG table unit labels incomplete — values as Sepsis-3 (SI)",
+          "c": true,
+          "s": "HOSP:23.34"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "SOFA",
+      "expr": "sum of 6 systems (0–4 each) = 0–24",
+      "s": "HOSP:23.34"
+    },
+    {
+      "name": "Sepsis",
+      "expr": "infection + acute ↑SOFA ≥2 (baseline 0 if unknown)",
+      "s": "HOSP:23.34"
+    },
+    {
+      "name": "Septic shock",
+      "expr": "vasopressors for MAP ≥65 AND lactate >2 mmol/L despite fluids",
+      "s": "HOSP:23.34"
+    },
+    {
+      "name": "qSOFA",
+      "expr": "RR ≥22 + altered mentation + SBP ≤100 (1 each, 0–3)",
+      "s": "SEPSIS3"
+    },
+    {
+      "name": "MAP",
+      "expr": "(SBP + 2 × DBP) ÷ 3"
+    }
+  ],
+  "interpretation": [
+    {
+      "title": "qSOFA (bedside screen)",
+      "items": [
+        {
+          "label": "≥2",
+          "t": "High risk of poor outcome — full SOFA, lactate, cultures, escalate",
+          "level": "red",
+          "s": "SEPSIS3"
+        },
+        {
+          "label": "0–1",
+          "t": "Does not exclude sepsis — keep reassessing",
+          "level": "amber",
+          "s": "SEPSIS3"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

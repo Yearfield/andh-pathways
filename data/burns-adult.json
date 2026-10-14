@@ -1,0 +1,241 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "burns-adult",
+  "folder": "Burns",
+  "type": "calculator",
+  "short": "Parkland",
+  "population": "adult",
+  "title": "Burns — Adults: Parkland Fluids, TBSA & Referral",
+  "subtitle": "adult burns · casualty / ward",
+  "badge": "4 mL × kg × %TBSA",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "tags": [
+    "calculator",
+    "burns",
+    "trauma",
+    "fluids",
+    "Parkland",
+    "resuscitation",
+    "adult",
+    "emergency"
+  ],
+  "left": [
+    {
+      "type": "formula",
+      "title": "Parkland (NaCl 0.9% IV) if >10% TBSA",
+      "items": [
+        {
+          "name": "24-h volume (mL)",
+          "expr": "4 × weight (kg) × %TBSA",
+          "s": "HOSP:20.29",
+          "vars": {
+            "weight": "kg",
+            "tbsa": "%"
+          },
+          "units": "mL"
+        },
+        {
+          "name": "First 8 h",
+          "expr": "½ of total (from time of burn)",
+          "s": "HOSP:20.29"
+        },
+        {
+          "name": "Next 16 h",
+          "expr": "remaining ½",
+          "s": "HOSP:20.29"
+        },
+        {
+          "name": "Target urine output",
+          "expr": "0.5 mL/kg/h; if inadequate ↑ rate by 50% next hour",
+          "s": "HOSP:20.29"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Worked example — mL/h first 8 h | next 16 h",
+      "head": [
+        "kg \\ %TBSA",
+        "15%",
+        "20%",
+        "30%",
+        "40%",
+        "50%"
+      ],
+      "rows": [
+        [
+          "50",
+          "188 | 94",
+          "250 | 125",
+          "375 | 188",
+          "500 | 250",
+          "625 | 312"
+        ],
+        [
+          "60",
+          "225 | 112",
+          "300 | 150",
+          "450 | 225",
+          "600 | 300",
+          "750 | 375"
+        ],
+        [
+          "70",
+          "262 | 131",
+          "350 | 175",
+          "525 | 262",
+          "700 | 350",
+          "875 | 438"
+        ],
+        [
+          "80",
+          "300 | 150",
+          "400 | 200",
+          "600 | 300",
+          "800 | 400",
+          "1000 | 500"
+        ],
+        [
+          "90",
+          "338 | 169",
+          "450 | 225",
+          "675 | 338",
+          "900 | 450",
+          "1125 | 562"
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Rule of nines (adult)",
+      "head": [
+        "Area",
+        "%",
+        "Area",
+        "%"
+      ],
+      "rows": [
+        [
+          "Head & neck",
+          "9",
+          "Each arm",
+          "9"
+        ],
+        [
+          "Front of trunk",
+          "18",
+          "Each leg",
+          "18"
+        ],
+        [
+          "Back of trunk",
+          "18",
+          "Perineum",
+          "1"
+        ],
+        [
+          "Patient's palm",
+          "≈1",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA STG — first aid & treatment",
+      "items": [
+        {
+          "t": "Cool burns <3 h old with cold tap water ≥30 min; chemical burns: running water ≥30 min",
+          "s": "HOSP:20.28",
+          "level": "amber"
+        },
+        {
+          "t": "Electrical burns: cardiac monitor; suspect compartment syndrome",
+          "s": "HOSP:20.28",
+          "level": "amber"
+        },
+        {
+          "t": "≤10% TBSA: oral rehydration solution; >10%: NaCl 0.9% IV",
+          "s": "HOSP:20.29",
+          "level": "amber"
+        },
+        {
+          "t": "Morphine IV (total max 10 mg) + paracetamol 0.5–1 g 4–6-hourly; tetanus toxoid 0.5 mL IM if not immunised in 5 y",
+          "s": "HOSP:20.29",
+          "level": "amber"
+        },
+        {
+          "t": "Pantoprazole 40 mg IV daily; stop once tolerating enteral feeds",
+          "s": "HOSP:20.29",
+          "level": "amber"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "Discuss with burns specialist",
+      "grow": true,
+      "items": [
+        {
+          "t": ">15% TBSA, or >10% if age >50 years",
+          "s": "HOSP:20.30",
+          "level": "red"
+        },
+        {
+          "t": "Face, hands, feet, genitalia, perineum, major joints; circumferential burns",
+          "s": "HOSP:20.30",
+          "level": "red"
+        },
+        {
+          "t": "Electrical / lightning, chemical, inhalation injury; major trauma",
+          "s": "HOSP:20.30",
+          "level": "red"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "24-h volume (mL)",
+      "expr": "4 × weight (kg) × %TBSA",
+      "s": "HOSP:20.29",
+      "vars": {
+        "weight": "kg",
+        "tbsa": "%"
+      },
+      "units": "mL"
+    },
+    {
+      "name": "First 8 h",
+      "expr": "½ of total (from time of burn)",
+      "s": "HOSP:20.29"
+    },
+    {
+      "name": "Next 16 h",
+      "expr": "remaining ½",
+      "s": "HOSP:20.29"
+    },
+    {
+      "name": "Target urine output",
+      "expr": "0.5 mL/kg/h; if inadequate ↑ rate by 50% next hour",
+      "s": "HOSP:20.29"
+    }
+  ],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

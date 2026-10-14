@@ -1,0 +1,463 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "framingham",
+  "folder": "Framingham",
+  "type": "score",
+  "short": "Framingham",
+  "population": "adult",
+  "title": "Framingham 10-year CVD Risk (lipid-based) — SA STG",
+  "subtitle": "adults 30–79 y without known CVD · PHC / OPD",
+  "badge": "10-y CVD risk",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "tags": [
+    "score",
+    "cardiology",
+    "cardiovascular risk",
+    "statin",
+    "hypertension",
+    "diabetes",
+    "lipids",
+    "adult"
+  ],
+  "split": 0.58,
+  "left": [
+    {
+      "type": "grid",
+      "title": "Points — men | women",
+      "s": "HOSP:AVII.4",
+      "head": [
+        "Age",
+        "M",
+        "W",
+        "Total chol mmol/L",
+        "M",
+        "W",
+        "HDL mmol/L",
+        "M/W"
+      ],
+      "rows": [
+        [
+          "30–34",
+          "0",
+          "0",
+          "<4.1",
+          "0",
+          "0",
+          ">1.5",
+          "−2"
+        ],
+        [
+          "35–39",
+          "2",
+          "2",
+          "4.1–5.19",
+          "1",
+          "1",
+          "1.3–1.49",
+          "−1"
+        ],
+        [
+          "40–44",
+          "5",
+          "4",
+          "5.2–6.19",
+          "2",
+          "3",
+          "1.2–1.29",
+          "0"
+        ],
+        [
+          "45–49",
+          "6",
+          "5",
+          "6.2–7.2",
+          "3",
+          "4",
+          "0.9–1.19 ‡",
+          "+1"
+        ],
+        [
+          "50–54",
+          "8",
+          "7",
+          ">7.2",
+          "4",
+          "5",
+          "<0.9",
+          "+2"
+        ],
+        [
+          "55–59",
+          "10",
+          "8",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "60–64",
+          "11",
+          "9",
+          "Smoker",
+          "4",
+          "3",
+          "",
+          ""
+        ],
+        [
+          "65–69",
+          "12",
+          "10",
+          "Diabetic",
+          "3",
+          "4",
+          "",
+          ""
+        ],
+        [
+          "70–74",
+          "14",
+          "11",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "75–79",
+          "15",
+          "12",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Systolic BP — untreated | on treatment",
+      "s": "HOSP:AVII.4",
+      "head": [
+        "SBP",
+        "<120",
+        "120–129",
+        "130–139",
+        "140–149",
+        "150–159",
+        "≥160"
+      ],
+      "rows": [
+        [
+          "Men",
+          "−2 | 0",
+          "0 | 2",
+          "1 | 3",
+          "2 | 4",
+          "2 | 4",
+          "3 | 5"
+        ],
+        [
+          "Women",
+          "−3 | −1",
+          "0 | 2",
+          "1 | 3",
+          "2 | 5",
+          "4 | 6",
+          "5 | 7"
+        ]
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "Statin regardless of score",
+      "items": [
+        {
+          "t": "Type 2 diabetes >40 years; diabetes >10 years; diabetes with CKD (eGFR <60)",
+          "s": "PHC:4.2",
+          "level": "red"
+        },
+        {
+          "t": "Established CVD (IHD, stroke/TIA, PAD) = secondary prevention — do not calculate",
+          "s": "HOSP:3.2",
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Notes",
+      "grow": true,
+      "items": [
+        {
+          "t": "SA STG uses the general CVD Framingham (D'Agostino 2008) — not the ATP III 'hard CHD' version in some apps"
+        },
+        {
+          "t": "No lipids: use the BMI-based (non-lab) chart in PHC Appendix III / HOSP Appendix VII"
+        },
+        {
+          "t": "Hospital STG prints HDL '0.9–1.119' (PHC AIII.4 prints 0.9–1.19)",
+          "c": true
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Management (SA STG)",
+      "rows": true,
+      "items": [
+        {
+          "label": "<10%",
+          "t": "Low — lifestyle advice; reassess every 5 years",
+          "level": "green",
+          "s": "PHC:4.2"
+        },
+        {
+          "label": "10–20%",
+          "t": "Moderate — lifestyle; reassess annually",
+          "level": "amber",
+          "s": "PHC:4.2"
+        },
+        {
+          "label": "≥20%",
+          "t": "High — lifestyle + statin",
+          "level": "red",
+          "s": "PHC:4.2"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "10-year CVD risk (%) by total points",
+      "s": "HOSP:AVII.5",
+      "head": [
+        "Pts",
+        "Men",
+        "Women",
+        "Pts",
+        "Men",
+        "Women"
+      ],
+      "rows": [
+        [
+          "≤−3",
+          "<1",
+          "<1",
+          "9",
+          "7.9",
+          "5.3"
+        ],
+        [
+          "−2",
+          "1.1",
+          "<1",
+          "10",
+          "9.4",
+          "6.3"
+        ],
+        [
+          "−1",
+          "1.4",
+          "1.0",
+          "11",
+          {
+            "v": "11.2",
+            "level": "amber"
+          },
+          "7.3"
+        ],
+        [
+          "0",
+          "1.6",
+          "1.2",
+          "12",
+          {
+            "v": "13.2",
+            "level": "amber"
+          },
+          "8.6"
+        ],
+        [
+          "1",
+          "1.9",
+          "1.5",
+          "13",
+          {
+            "v": "15.6",
+            "level": "amber"
+          },
+          {
+            "v": "10.0",
+            "level": "amber"
+          }
+        ],
+        [
+          "2",
+          "2.3",
+          "1.7",
+          "14",
+          {
+            "v": "18.4",
+            "level": "amber"
+          },
+          {
+            "v": "11.7",
+            "level": "amber"
+          }
+        ],
+        [
+          "3",
+          "2.8",
+          "2.0",
+          "15",
+          {
+            "v": "21.6",
+            "level": "red"
+          },
+          {
+            "v": "13.7",
+            "level": "amber"
+          }
+        ],
+        [
+          "4",
+          "3.3",
+          "2.4",
+          "16",
+          {
+            "v": "25.3",
+            "level": "red"
+          },
+          {
+            "v": "15.9",
+            "level": "amber"
+          }
+        ],
+        [
+          "5",
+          "3.9",
+          "2.8",
+          "17",
+          {
+            "v": "29.4",
+            "level": "red"
+          },
+          {
+            "v": "18.5",
+            "level": "amber"
+          }
+        ],
+        [
+          "6",
+          "4.7",
+          "3.3",
+          "18",
+          {
+            "v": ">30",
+            "level": "red"
+          },
+          {
+            "v": "21.5",
+            "level": "red"
+          }
+        ],
+        [
+          "7",
+          "5.6",
+          "3.9",
+          "19",
+          {
+            "v": ">30",
+            "level": "red"
+          },
+          {
+            "v": "24.8",
+            "level": "red"
+          }
+        ],
+        [
+          "8",
+          "6.7",
+          "4.5",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "extra_formulas": [
+    {
+      "name": "Framingham total",
+      "expr": "Age + TC + HDL + SBP (treated/untreated) + smoker + diabetes points",
+      "s": "HOSP:AVII.3"
+    },
+    {
+      "name": "High risk",
+      "expr": "≥15 points men · ≥18 points women (≥20% 10-y risk)",
+      "s": "HOSP:AVII.5"
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "Framingham total",
+      "expr": "Age + TC + HDL + SBP (treated/untreated) + smoker + diabetes points",
+      "s": "HOSP:AVII.3"
+    },
+    {
+      "name": "High risk",
+      "expr": "≥15 points men · ≥18 points women (≥20% 10-y risk)",
+      "s": "HOSP:AVII.5"
+    }
+  ],
+  "interpretation": [
+    {
+      "title": "Management (SA STG)",
+      "items": [
+        {
+          "label": "<10%",
+          "t": "Low — lifestyle advice; reassess every 5 years",
+          "level": "green",
+          "s": "PHC:4.2"
+        },
+        {
+          "label": "10–20%",
+          "t": "Moderate — lifestyle; reassess annually",
+          "level": "amber",
+          "s": "PHC:4.2"
+        },
+        {
+          "label": "≥20%",
+          "t": "High — lifestyle + statin",
+          "level": "red",
+          "s": "PHC:4.2"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

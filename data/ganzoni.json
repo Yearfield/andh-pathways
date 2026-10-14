@@ -1,0 +1,220 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "ganzoni",
+  "folder": "Ganzoni",
+  "type": "calculator",
+  "short": "Ganzoni",
+  "population": "adult",
+  "title": "Ganzoni Formula — Total Iron Deficit (IV iron)",
+  "subtitle": "adults >35 kg with iron-deficiency anaemia · ward / antenatal",
+  "badge": "Iron deficit (mg)",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "MAT24",
+      "title": "National Integrated Maternal & Perinatal Care Guidelines for SA, 5th ed. 2024",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "GANZONI",
+      "title": "Ganzoni AM. Schweiz Med Wochenschr 1970;100:301-3; SAHPRA PI Monofer (2023)",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "calculator",
+    "haematology",
+    "anaemia",
+    "iron",
+    "IV iron",
+    "pregnancy",
+    "adult"
+  ],
+  "left": [
+    {
+      "type": "formula",
+      "title": "Formula",
+      "items": [
+        {
+          "name": "Total iron deficit (mg)",
+          "expr": "weight (kg) × (target Hb − actual Hb) (g/dL) × 2.4 + iron stores (mg)",
+          "notes": "target Hb 15 g/dL (lower in pregnancy); stores 500 mg if >35 kg",
+          "s": "GANZONI",
+          "vars": {
+            "weight": "kg",
+            "target_hb": "g/dL",
+            "actual_hb": "g/dL",
+            "stores": "mg"
+          },
+          "units": "mg"
+        },
+        {
+          "name": "Weight",
+          "expr": "ideal body weight if obese; pre-pregnancy weight in pregnancy",
+          "s": "GANZONI"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Worked deficits (target 15, stores 500 mg) — mg",
+      "head": [
+        "Hb g/dL",
+        "50 kg",
+        "60 kg",
+        "70 kg",
+        "80 kg"
+      ],
+      "rows": [
+        [
+          "6",
+          "1580",
+          "1796",
+          "2012",
+          "2228"
+        ],
+        [
+          "7",
+          "1460",
+          "1652",
+          "1844",
+          "2036"
+        ],
+        [
+          "8",
+          "1340",
+          "1508",
+          "1676",
+          "1844"
+        ],
+        [
+          "9",
+          "1220",
+          "1364",
+          "1508",
+          "1652"
+        ],
+        [
+          "10",
+          "1100",
+          "1220",
+          "1340",
+          "1460"
+        ],
+        [
+          "11",
+          "980",
+          "1076",
+          "1172",
+          "1268"
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Simplified dose table (ferric derisomaltose PI)",
+      "s": "GANZONI",
+      "head": [
+        "Hb",
+        "50 to <70 kg",
+        "≥70 kg"
+      ],
+      "rows": [
+        [
+          "≥10 g/dL",
+          "1 000 mg",
+          "1 500 mg"
+        ],
+        [
+          "<10 g/dL",
+          "1 500 mg",
+          "2 000 mg"
+        ]
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA STG — IV iron",
+      "items": [
+        {
+          "t": "Iron sucrose 200 mg in 200 mL NaCl 0.9% over 30 min, up to 3 × weekly until total calculated dose",
+          "s": "HOSP:2.3",
+          "level": "amber"
+        },
+        {
+          "t": "An initial total of 600 mg is usually adequate",
+          "s": "HOSP:2.3",
+          "level": "amber"
+        },
+        {
+          "t": "Low-molecular-weight iron dextran 100–200 mg 2–3 × weekly, or total-dose infusion up to 20 mg/kg over 4–6 h",
+          "s": "HOSP:2.3",
+          "level": "amber"
+        },
+        {
+          "t": "Pregnancy: iron sucrose on alternate days to 600 mg, in specialist consultation",
+          "s": "MAT24:123",
+          "level": "amber"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "items": [
+        {
+          "t": "Max single dose depends on product — check the package insert (iron sucrose 200 mg/dose)",
+          "s": "GANZONI"
+        },
+        {
+          "t": "Observe 30 min after each infusion for hypersensitivity; resuscitation available",
+          "s": "GANZONI"
+        },
+        {
+          "t": "<35 kg or children: check the product PI (not verified here)",
+          "c": true
+        },
+        {
+          "t": "Recheck Hb and ferritin after ≥4 weeks"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "Total iron deficit (mg)",
+      "expr": "weight (kg) × (target Hb − actual Hb) (g/dL) × 2.4 + iron stores (mg)",
+      "notes": "target Hb 15 g/dL (lower in pregnancy); stores 500 mg if >35 kg",
+      "s": "GANZONI",
+      "vars": {
+        "weight": "kg",
+        "target_hb": "g/dL",
+        "actual_hb": "g/dL",
+        "stores": "mg"
+      },
+      "units": "mg"
+    },
+    {
+      "name": "Weight",
+      "expr": "ideal body weight if obese; pre-pregnancy weight in pregnancy",
+      "s": "GANZONI"
+    }
+  ],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

@@ -1,0 +1,207 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "caprini",
+  "folder": "Caprini",
+  "type": "score",
+  "short": "Caprini",
+  "population": "adult",
+  "title": "Caprini VTE Risk (surgical) + SA STG VTE Prophylaxis",
+  "subtitle": "adult surgical / orthopaedic patients · ward / theatre",
+  "badge": "Caprini",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "CAPRINI",
+      "title": "Caprini JA. Dis Mon 2005;51:70-8; Gould MK et al. Chest 2012;141(2 Suppl):e227S",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "haematology",
+    "VTE",
+    "DVT",
+    "PE",
+    "prophylaxis",
+    "surgery",
+    "orthopaedics",
+    "adult"
+  ],
+  "split": 0.6,
+  "left": [
+    {
+      "type": "grid",
+      "title": "Risk factors — points",
+      "s": "CAPRINI",
+      "head": [
+        "Pts",
+        "Factors"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1",
+            "Age 41–60 · minor surgery · major surgery <1 month · varicose veins · IBD · swollen legs · BMI >25 · acute MI · CCF <1 month · sepsis <1 month · serious lung disease incl. pneumonia <1 month · abnormal PFT/COPD · medical patient at bed rest · OCP/HRT · pregnant or postpartum · unexplained stillbirth / recurrent abortion"
+          ],
+          "level": "green",
+          "s": "CAPRINI"
+        },
+        {
+          "cells": [
+            "2",
+            "Age 61–74 · arthroscopic surgery · major open surgery >45 min · laparoscopic surgery >45 min · malignancy · confined to bed >72 h · immobilising plaster cast · central venous access"
+          ],
+          "level": "amber",
+          "s": "CAPRINI"
+        },
+        {
+          "cells": [
+            "3",
+            "Age ≥75 · history of VTE · family history of VTE · factor V Leiden · prothrombin 20210A · lupus anticoagulant · anticardiolipin antibodies · ↑homocysteine · HIT · other thrombophilia"
+          ],
+          "level": "orange",
+          "s": "CAPRINI"
+        },
+        {
+          "cells": [
+            "5",
+            "Stroke <1 month · elective major lower-limb arthroplasty · hip, pelvis or leg fracture · acute spinal cord injury (<1 month) · multiple trauma"
+          ],
+          "level": "red",
+          "s": "CAPRINI"
+        }
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "Risk (total)",
+      "items": [
+        {
+          "label": "0",
+          "t": "Very low",
+          "level": "green",
+          "s": "CAPRINI"
+        },
+        {
+          "label": "1–2",
+          "t": "Low",
+          "level": "teal",
+          "s": "CAPRINI"
+        },
+        {
+          "label": "3–4",
+          "t": "Moderate",
+          "level": "amber",
+          "s": "CAPRINI"
+        },
+        {
+          "label": "≥5",
+          "t": "High",
+          "level": "red",
+          "s": "CAPRINI"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA STG — prophylaxis",
+      "items": [
+        {
+          "t": "Assess VTE risk (predisposing + exposing factors, Table 2.3) in every admitted patient",
+          "s": "HOSP:2.24",
+          "level": "amber"
+        },
+        {
+          "t": "Enoxaparin 40 mg SC daily (20 mg if eGFR <30), or unfractionated heparin 5 000 units SC 12-hourly",
+          "s": "HOSP:2.25",
+          "level": "amber"
+        },
+        {
+          "t": "Medical high risk: rivaroxaban 10 mg oral daily is an option",
+          "s": "HOSP:2.25",
+          "level": "amber"
+        },
+        {
+          "t": "Orthopaedic trauma: low–moderate risk aspirin 150 mg daily; high risk enoxaparin",
+          "s": "HOSP:2.26",
+          "level": "amber"
+        },
+        {
+          "t": "Hip arthroplasty: rivaroxaban 10 mg daily up to 10 days, then aspirin to 28 days",
+          "s": "HOSP:2.26",
+          "level": "green"
+        },
+        {
+          "t": "Knee arthroplasty: rivaroxaban 10 mg daily 2–7 days, then aspirin to 14 days total",
+          "s": "HOSP:2.26",
+          "level": "green"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Notes",
+      "grow": true,
+      "items": [
+        {
+          "t": "Caprini is not in the SA STG; STG uses its own predisposing/exposing risk table",
+          "s": "CAPRINI"
+        },
+        {
+          "t": "Use mechanical prophylaxis when bleeding risk is high",
+          "s": "CAPRINI"
+        },
+        {
+          "t": "Risk bands per ACCP 2012 (Gould) for general/abdominal-pelvic surgery",
+          "s": "CAPRINI"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "Risk (total)",
+      "items": [
+        {
+          "label": "0",
+          "t": "Very low",
+          "level": "green",
+          "s": "CAPRINI"
+        },
+        {
+          "label": "1–2",
+          "t": "Low",
+          "level": "teal",
+          "s": "CAPRINI"
+        },
+        {
+          "label": "3–4",
+          "t": "Moderate",
+          "level": "amber",
+          "s": "CAPRINI"
+        },
+        {
+          "label": "≥5",
+          "t": "High",
+          "level": "red",
+          "s": "CAPRINI"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

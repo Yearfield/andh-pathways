@@ -1,0 +1,169 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "pecarn",
+  "folder": "PECARN",
+  "type": "grade",
+  "short": "PECARN",
+  "population": "paediatric",
+  "title": "PECARN Paediatric Head Injury Rule — CT Decision",
+  "subtitle": "children <18 y, GCS 14–15, within 24 h of head trauma",
+  "badge": "PECARN",
+  "sources": [
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PECARN",
+      "title": "Kuppermann N et al. PECARN head injury rules. Lancet 2009;374:1160-70",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "rule",
+    "trauma",
+    "head injury",
+    "TBI",
+    "CT",
+    "paediatric",
+    "neuro"
+  ],
+  "split": 0.6,
+  "left": [
+    {
+      "type": "grid",
+      "title": "Risk groups and ciTBI risk",
+      "s": "PECARN",
+      "head": [
+        "Group",
+        "Age <2 years",
+        "Age ≥2 years",
+        "Action"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "High",
+            "GCS 14 or other altered mental status, OR palpable skull fracture",
+            "GCS 14 or other altered mental status, OR signs of basal skull fracture",
+            "CT recommended (ciTBI ≈4.4% / 4.3%)"
+          ],
+          "level": "red",
+          "s": "PECARN"
+        },
+        {
+          "cells": [
+            "Intermediate",
+            "Non-frontal scalp haematoma, LOC ≥5 s, severe mechanism, or not acting normally per parent",
+            "Any LOC, vomiting, severe mechanism, or severe headache",
+            "Observation vs CT (ciTBI ≈0.9%) — CT more likely if several findings, worsening, age <3 months, parental preference"
+          ],
+          "level": "amber",
+          "s": "PECARN"
+        },
+        {
+          "cells": [
+            "Low",
+            "None of the above",
+            "None of the above",
+            "CT not recommended (ciTBI <0.02% / <0.05%)"
+          ],
+          "level": "green",
+          "s": "PECARN"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Severe mechanism",
+      "s": "PECARN",
+      "items": [
+        {
+          "t": "MVC with ejection, death of another passenger or rollover",
+          "s": "PECARN"
+        },
+        {
+          "t": "Pedestrian or unhelmeted cyclist struck by a motorised vehicle",
+          "s": "PECARN"
+        },
+        {
+          "t": "Fall >0.9 m (3 ft) if <2 y; >1.5 m (5 ft) if ≥2 y",
+          "s": "PECARN"
+        },
+        {
+          "t": "Head struck by a high-impact object",
+          "s": "PECARN"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "stg",
+      "title": "SA guidelines",
+      "items": [
+        {
+          "t": "TBI: CT within 0–6 hours; refer all children with TBI",
+          "s": "PAED:1.30",
+          "level": "red"
+        },
+        {
+          "t": "Major-injury indicators include decreased level of consciousness; children <2 years with these require admission",
+          "s": "PHC:21.63",
+          "level": "amber"
+        },
+        {
+          "t": "Moderate head injury = GCS 9–12",
+          "s": "PHC:21.63",
+          "level": "amber",
+          "c": "STG prints GCS 11–14; corrected to 9–12"
+        },
+        {
+          "t": "Severe TBI = GCS <9 → refer to a specialised centre",
+          "s": "PAED:23.22",
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "items": [
+        {
+          "t": "Applies only to GCS 14–15; GCS ≤13 → CT/referral regardless",
+          "s": "PECARN"
+        },
+        {
+          "t": "ciTBI = death, neurosurgery, intubation >24 h or admission ≥2 nights for TBI",
+          "s": "PECARN"
+        },
+        {
+          "t": "Isolated vomiting as the only finding (≥2 y): observation is reasonable",
+          "s": "PECARN"
+        },
+        {
+          "t": "Suspected non-accidental injury: rule does not apply — act on safeguarding",
+          "s": "PECARN"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [],
+  "interpretation": [],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

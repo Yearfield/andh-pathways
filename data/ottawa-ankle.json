@@ -1,0 +1,160 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "ottawa-ankle",
+  "folder": "Ottawa",
+  "type": "grade",
+  "short": "Ottawa",
+  "population": "adult",
+  "title": "Ottawa Ankle & Foot Rules — X-ray Decision",
+  "subtitle": "acute ankle/midfoot injury · casualty",
+  "badge": "Ottawa rules",
+  "sources": [
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "OTTAWA",
+      "title": "Stiell IG et al. Ottawa ankle rules. JAMA 1993;269:1127-32; JAMA 1994;271:827-32",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "rule",
+    "trauma",
+    "orthopaedics",
+    "ankle",
+    "foot",
+    "fracture",
+    "x-ray",
+    "adult"
+  ],
+  "left": [
+    {
+      "type": "steps",
+      "title": "Ankle X-ray series if malleolar-zone pain AND any of",
+      "s": "OTTAWA",
+      "items": [
+        {
+          "if": "Ankle",
+          "level": "blue",
+          "steps": [
+            "A — bone tenderness at the posterior edge or tip of the LATERAL malleolus (distal 6 cm)",
+            "B — bone tenderness at the posterior edge or tip of the MEDIAL malleolus (distal 6 cm)",
+            "Unable to bear weight (4 steps) both immediately after injury and in casualty"
+          ],
+          "s": "OTTAWA"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "Foot X-ray series if midfoot pain AND any of",
+      "s": "OTTAWA",
+      "items": [
+        {
+          "if": "Foot",
+          "level": "purple",
+          "steps": [
+            "C — bone tenderness at the base of the 5th metatarsal",
+            "D — bone tenderness at the navicular",
+            "Unable to bear weight (4 steps) both immediately after injury and in casualty"
+          ],
+          "s": "OTTAWA"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Interpretation",
+      "rows": true,
+      "s": "OTTAWA",
+      "items": [
+        {
+          "label": "Any positive",
+          "t": "X-ray indicated",
+          "level": "red",
+          "s": "OTTAWA"
+        },
+        {
+          "label": "All negative",
+          "t": "Fracture very unlikely (sensitivity ≈98–99%) — no X-ray; treat as sprain",
+          "level": "green",
+          "s": "OTTAWA"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Do not apply if",
+      "s": "OTTAWA",
+      "items": [
+        {
+          "t": "Intoxication, head injury, multiple injuries, reduced sensation in the leg",
+          "s": "OTTAWA"
+        },
+        {
+          "t": "Injury >10 days old, or re-assessment of a known injury",
+          "s": "OTTAWA"
+        },
+        {
+          "t": "Children: validated from about 5 years; use with caution",
+          "s": "OTTAWA"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "grow": true,
+      "items": [
+        {
+          "t": "Minor injuries (incl. sprains) are managed as outpatients — exclude fractures",
+          "s": "PHC:21.63",
+          "level": "amber"
+        },
+        {
+          "t": "Sprain: immobilise with a firm bandage and/or temporary splint; analgesia",
+          "s": "PHC:21.67",
+          "level": "green"
+        },
+        {
+          "t": "Children: always consider non-accidental injury",
+          "s": "PHC:21.67",
+          "level": "amber"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "Interpretation",
+      "items": [
+        {
+          "label": "Any positive",
+          "t": "X-ray indicated",
+          "level": "red",
+          "s": "OTTAWA"
+        },
+        {
+          "label": "All negative",
+          "t": "Fracture very unlikely (sensitivity ≈98–99%) — no X-ray; treat as sprain",
+          "level": "green",
+          "s": "OTTAWA"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

@@ -1,0 +1,299 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "chest-pain",
+  "folder": "ChestPain",
+  "type": "score",
+  "short": "HEART / T-MACS",
+  "population": "adult",
+  "title": "Chest Pain Risk — HEART Score & T-MACS",
+  "subtitle": "adults with suspected ACS, non-diagnostic ECG · casualty",
+  "badge": "HEART 0–10",
+  "sources": [
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "HEART",
+      "title": "Six AJ et al. Neth Heart J 2008;16:191-6; Backus BE et al. Int J Cardiol 2013;168:2153-8",
+      "type": "paper",
+      "country": "intl"
+    },
+    {
+      "id": "TMACS",
+      "title": "Body R et al. T-MACS decision aid. Emerg Med J 2017;34:349-56",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "cardiology",
+    "chest pain",
+    "ACS",
+    "troponin",
+    "MACE",
+    "adult",
+    "emergency"
+  ],
+  "split": 0.56,
+  "left": [
+    {
+      "type": "grid",
+      "title": "HEART score",
+      "s": "HEART",
+      "head": [
+        "",
+        "0",
+        "1",
+        "2"
+      ],
+      "rows": [
+        [
+          "History",
+          "Slightly suspicious",
+          "Moderately suspicious",
+          "Highly suspicious"
+        ],
+        [
+          "ECG",
+          "Normal",
+          "Non-specific repolarisation (LBBB, LVH, paced, digoxin)",
+          "Significant ST deviation"
+        ],
+        [
+          "Age",
+          "<45 y",
+          "45–64 y",
+          "≥65 y"
+        ],
+        [
+          "Risk factors*",
+          "None known",
+          "1–2",
+          "≥3 or known atherosclerotic disease"
+        ],
+        [
+          "Troponin",
+          "≤ normal limit",
+          "1–3 × normal limit",
+          ">3 × normal limit"
+        ]
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "HEART — 6-week MACE",
+      "rows": true,
+      "items": [
+        {
+          "min": 0,
+          "max": 3,
+          "label": "0–3",
+          "t": "Low (≈1.7%) — consider discharge after serial troponin",
+          "level": "green",
+          "s": "HEART"
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "label": "4–6",
+          "t": "Moderate (≈12–17%) — admit, serial troponin, cardiology",
+          "level": "amber",
+          "s": "HEART"
+        },
+        {
+          "min": 7,
+          "max": 10,
+          "label": "7–10",
+          "t": "High (≈50–65%) — early invasive strategy",
+          "level": "red",
+          "s": "HEART"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Notes",
+      "grow": true,
+      "items": [
+        {
+          "t": "*Risk factors: hypertension, hypercholesterolaemia, DM, obesity (BMI >30), smoking (current or quit ≤3 months), family history",
+          "s": "HEART"
+        },
+        {
+          "t": "Do not use if ST elevation (STEMI pathway) or haemodynamically unstable",
+          "s": "HEART"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "list",
+      "title": "T-MACS variables (on arrival)",
+      "s": "TMACS",
+      "items": [
+        {
+          "t": "ECG ischaemia",
+          "s": "TMACS"
+        },
+        {
+          "t": "Worsening or crescendo angina",
+          "s": "TMACS"
+        },
+        {
+          "t": "Pain radiating to the right arm or shoulder",
+          "s": "TMACS"
+        },
+        {
+          "t": "Pain associated with vomiting",
+          "s": "TMACS"
+        },
+        {
+          "t": "Sweating observed",
+          "s": "TMACS"
+        },
+        {
+          "t": "Hypotension (SBP <100 mmHg)",
+          "s": "TMACS"
+        },
+        {
+          "t": "hs-troponin T (Roche, ng/L) on arrival — single sample",
+          "s": "TMACS"
+        }
+      ]
+    },
+    {
+      "type": "bands",
+      "title": "T-MACS probability of ACS",
+      "rows": true,
+      "items": [
+        {
+          "label": "<2%",
+          "t": "Very low — ACS ruled out; consider discharge",
+          "level": "green",
+          "s": "TMACS"
+        },
+        {
+          "label": "2–5%",
+          "t": "Low — repeat troponin at 3 h, low-dependency area",
+          "level": "teal",
+          "s": "TMACS"
+        },
+        {
+          "label": "5–95%",
+          "t": "Moderate — serial troponin, admit to ward",
+          "level": "amber",
+          "s": "TMACS"
+        },
+        {
+          "label": "≥95%",
+          "t": "High — ACS ruled in; cardiology",
+          "level": "red",
+          "s": "TMACS"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "T-MACS note",
+      "items": [
+        {
+          "t": "Logistic equation validated for Roche hs-cTnT only — use the official calculator; coefficients not printed here (not verified)",
+          "s": "TMACS"
+        },
+        {
+          "t": "Rules out ≈40% with one blood test (sensitivity ≈98%, NPV ≈99%)",
+          "s": "TMACS"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "grow": true,
+      "items": [
+        {
+          "t": "Repeat ECG at 20–30-min intervals if the initial ECG is not diagnostic",
+          "s": "HOSP:3.4",
+          "level": "amber"
+        },
+        {
+          "t": "Do not delay treatment while waiting for troponin results",
+          "s": "HOSP:3.4",
+          "level": "red"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "HEART — 6-week MACE",
+      "items": [
+        {
+          "min": 0,
+          "max": 3,
+          "label": "0–3",
+          "t": "Low (≈1.7%) — consider discharge after serial troponin",
+          "level": "green",
+          "s": "HEART"
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "label": "4–6",
+          "t": "Moderate (≈12–17%) — admit, serial troponin, cardiology",
+          "level": "amber",
+          "s": "HEART"
+        },
+        {
+          "min": 7,
+          "max": 10,
+          "label": "7–10",
+          "t": "High (≈50–65%) — early invasive strategy",
+          "level": "red",
+          "s": "HEART"
+        }
+      ]
+    },
+    {
+      "title": "T-MACS probability of ACS",
+      "items": [
+        {
+          "label": "<2%",
+          "t": "Very low — ACS ruled out; consider discharge",
+          "level": "green",
+          "s": "TMACS"
+        },
+        {
+          "label": "2–5%",
+          "t": "Low — repeat troponin at 3 h, low-dependency area",
+          "level": "teal",
+          "s": "TMACS"
+        },
+        {
+          "label": "5–95%",
+          "t": "Moderate — serial troponin, admit to ward",
+          "level": "amber",
+          "s": "TMACS"
+        },
+        {
+          "label": "≥95%",
+          "t": "High — ACS ruled in; cardiology",
+          "level": "red",
+          "s": "TMACS"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

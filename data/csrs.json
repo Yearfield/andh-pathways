@@ -1,0 +1,322 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "csrs",
+  "folder": "Syncope",
+  "type": "score",
+  "short": "CSRS",
+  "population": "adult",
+  "title": "Canadian Syncope Risk Score",
+  "subtitle": "adults (≥16 y) with syncope · casualty · 30-day serious outcome",
+  "badge": "CSRS −3 to 11",
+  "sources": [
+    {
+      "id": "CSRS",
+      "title": "Thiruganasambandamoorthy V et al. Canadian Syncope Risk Score. CMAJ 2016;188:E289-98",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "cardiology",
+    "syncope",
+    "arrhythmia",
+    "risk",
+    "adult",
+    "emergency"
+  ],
+  "left": [
+    {
+      "type": "points",
+      "title": "Criteria",
+      "head": "Item",
+      "s": "CSRS",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Points"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Clinical evaluation"
+        },
+        {
+          "t": "Predisposition to vasovagal symptoms (warm crowded place, prolonged standing, fear, emotion, pain)",
+          "pts": {
+            "p": -1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "History of heart disease (CAD, AF/flutter, CCF, valvular disease)",
+          "pts": {
+            "p": 1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Any SBP <90 or >180 mmHg in casualty",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        },
+        {
+          "section": "Investigations"
+        },
+        {
+          "t": "Troponin >99th percentile",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Abnormal QRS axis (<−30° or >100°)",
+          "pts": {
+            "p": 1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "QRS duration >130 ms",
+          "pts": {
+            "p": 1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Corrected QT >480 ms",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        },
+        {
+          "section": "Diagnosis in casualty"
+        },
+        {
+          "t": "Vasovagal syncope",
+          "pts": {
+            "p": -2
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Cardiac syncope",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        }
+      ],
+      "total": [
+        "−3 to 11"
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "30-day serious adverse outcome",
+      "rows": true,
+      "items": [
+        {
+          "label": "≤−2",
+          "t": "Very low (≈0.2%)",
+          "level": "green",
+          "s": "CSRS"
+        },
+        {
+          "label": "−1 to 0",
+          "t": "Low (≈0.7%)",
+          "level": "teal",
+          "s": "CSRS"
+        },
+        {
+          "label": "1–3",
+          "t": "Medium (≈8%)",
+          "level": "amber",
+          "s": "CSRS"
+        },
+        {
+          "label": "4–5",
+          "t": "High (≈19%)",
+          "level": "orange",
+          "s": "CSRS"
+        },
+        {
+          "label": "≥6",
+          "t": "Very high (≈51%)",
+          "level": "red",
+          "s": "CSRS"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Use",
+      "items": [
+        {
+          "t": "Very low / low: consider discharge with follow-up",
+          "s": "CSRS"
+        },
+        {
+          "t": "Medium–very high: monitor, admit / specialist input",
+          "s": "CSRS"
+        },
+        {
+          "t": "Serious outcome = death, arrhythmia, MI, structural heart disease, PE, haemorrhage, procedural intervention",
+          "s": "CSRS"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Do not use if",
+      "grow": true,
+      "items": [
+        {
+          "t": "LOC >5 min, change in mental status, obvious seizure, head trauma causing LOC",
+          "s": "CSRS"
+        },
+        {
+          "t": "Serious diagnosis already found in casualty",
+          "s": "CSRS"
+        },
+        {
+          "t": "Not in the SA STGs"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Criteria",
+      "cols": [
+        {
+          "key": "p",
+          "label": "Points"
+        }
+      ],
+      "rows": [
+        {
+          "section": "Clinical evaluation"
+        },
+        {
+          "t": "Predisposition to vasovagal symptoms (warm crowded place, prolonged standing, fear, emotion, pain)",
+          "pts": {
+            "p": -1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "History of heart disease (CAD, AF/flutter, CCF, valvular disease)",
+          "pts": {
+            "p": 1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Any SBP <90 or >180 mmHg in casualty",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        },
+        {
+          "section": "Investigations"
+        },
+        {
+          "t": "Troponin >99th percentile",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Abnormal QRS axis (<−30° or >100°)",
+          "pts": {
+            "p": 1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "QRS duration >130 ms",
+          "pts": {
+            "p": 1
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Corrected QT >480 ms",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        },
+        {
+          "section": "Diagnosis in casualty"
+        },
+        {
+          "t": "Vasovagal syncope",
+          "pts": {
+            "p": -2
+          },
+          "s": "CSRS"
+        },
+        {
+          "t": "Cardiac syncope",
+          "pts": {
+            "p": 2
+          },
+          "s": "CSRS"
+        }
+      ]
+    }
+  ],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "30-day serious adverse outcome",
+      "items": [
+        {
+          "label": "≤−2",
+          "t": "Very low (≈0.2%)",
+          "level": "green",
+          "s": "CSRS"
+        },
+        {
+          "label": "−1 to 0",
+          "t": "Low (≈0.7%)",
+          "level": "teal",
+          "s": "CSRS"
+        },
+        {
+          "label": "1–3",
+          "t": "Medium (≈8%)",
+          "level": "amber",
+          "s": "CSRS"
+        },
+        {
+          "label": "4–5",
+          "t": "High (≈19%)",
+          "level": "orange",
+          "s": "CSRS"
+        },
+        {
+          "label": "≥6",
+          "t": "Very high (≈51%)",
+          "level": "red",
+          "s": "CSRS"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

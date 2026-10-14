@@ -1,0 +1,336 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "apgar",
+  "folder": "APGAR",
+  "type": "scale",
+  "short": "APGAR",
+  "population": "neonate",
+  "title": "Apgar Score — Newborn",
+  "subtitle": "all newborns · labour ward / casualty · record at 1 and 5 min",
+  "badge": "Apgar 0–10",
+  "sources": [
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "MAT24",
+      "title": "National Integrated Maternal & Perinatal Care Guidelines for SA, 5th ed. 2024",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level, 2025-2029 cycle (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "tags": [
+    "scale",
+    "neonate",
+    "newborn",
+    "resuscitation",
+    "obstetrics",
+    "HIE"
+  ],
+  "scale": [
+    {
+      "key": "Heart rate",
+      "name": "Heart rate",
+      "min": 0,
+      "max": 2,
+      "items": [
+        {
+          "score": 0,
+          "t": "Absent",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 1,
+          "t": "<100/min",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 2,
+          "t": ">100/min",
+          "s": "PHC:6.26"
+        }
+      ]
+    },
+    {
+      "key": "Respiration",
+      "name": "Respiration",
+      "min": 0,
+      "max": 2,
+      "items": [
+        {
+          "score": 0,
+          "t": "Absent",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 1,
+          "t": "Slow or irregular",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 2,
+          "t": "Good, crying",
+          "s": "PHC:6.26"
+        }
+      ]
+    },
+    {
+      "key": "Muscle tone",
+      "name": "Muscle tone",
+      "min": 0,
+      "max": 2,
+      "items": [
+        {
+          "score": 0,
+          "t": "Limp",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 1,
+          "t": "Slight flexion",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 2,
+          "t": "Active, moves",
+          "s": "PHC:6.26"
+        }
+      ]
+    },
+    {
+      "key": "Response to stimulation",
+      "name": "Response to stimulation",
+      "min": 0,
+      "max": 2,
+      "items": [
+        {
+          "score": 0,
+          "t": "No response",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 1,
+          "t": "Grimace",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 2,
+          "t": "Vigorous cry",
+          "s": "PHC:6.26"
+        }
+      ]
+    },
+    {
+      "key": "Colour",
+      "name": "Colour",
+      "min": 0,
+      "max": 2,
+      "items": [
+        {
+          "score": 0,
+          "t": "Blue or pale",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 1,
+          "t": "Body pink, limbs blue",
+          "s": "PHC:6.26"
+        },
+        {
+          "score": 2,
+          "t": "Pink all over",
+          "s": "PHC:6.26"
+        }
+      ]
+    }
+  ],
+  "left": [
+    {
+      "type": "grid",
+      "title": "Apgar score",
+      "s": "PHC:6.26",
+      "head": [
+        "Sign",
+        "0",
+        "1",
+        "2"
+      ],
+      "rows": [
+        [
+          "Heart rate",
+          "Absent",
+          "<100/min",
+          ">100/min"
+        ],
+        [
+          "Respiration",
+          "Absent",
+          "Slow or irregular",
+          "Good, crying"
+        ],
+        [
+          "Muscle tone",
+          "Limp",
+          "Slight flexion",
+          "Active, moves"
+        ],
+        [
+          "Response to stimulation",
+          "No response",
+          "Grimace",
+          "Vigorous cry"
+        ],
+        [
+          "Colour",
+          "Blue or pale",
+          "Body pink, limbs blue",
+          "Pink all over"
+        ]
+      ]
+    },
+    {
+      "type": "formula",
+      "title": "Formula",
+      "items": [
+        {
+          "name": "Apgar",
+          "expr": "Sum of 5 signs (0–2 each) = 0–10",
+          "s": "PHC:6.26"
+        },
+        {
+          "name": "Timing",
+          "expr": "1 min and 5 min; if <7 at 5 min, repeat every 5 min to 20 min",
+          "notes": "AAP/ACOG"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "items": [
+        {
+          "t": "Never wait for the 1-min Apgar to start resuscitation — breathing and heart rate guide it"
+        },
+        {
+          "t": "Apgar alone does not diagnose asphyxia; record cord pH/BD when available"
+        },
+        {
+          "t": "Mnemonic: Appearance, Pulse, Grimace, Activity, Respiration"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Interpretation",
+      "rows": true,
+      "items": [
+        {
+          "min": 7,
+          "max": 10,
+          "label": "7–10",
+          "t": "Reassuring",
+          "level": "green"
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "label": "4–6",
+          "t": "Moderately abnormal",
+          "level": "amber"
+        },
+        {
+          "min": 0,
+          "max": 3,
+          "label": "0–3",
+          "t": "Low",
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA guidelines",
+      "grow": true,
+      "items": [
+        {
+          "t": "Check and record the Apgar score after birth",
+          "s": "PHC:6.26",
+          "level": "amber"
+        },
+        {
+          "t": "Refer to a neonatal unit if Apgar <8 at 5 minutes",
+          "s": "PHC:6.27",
+          "level": "red"
+        },
+        {
+          "t": "5-min Apgar <7: follow the post-birth action flowchart",
+          "s": "MAT24:74",
+          "level": "red"
+        },
+        {
+          "t": "HIE cooling criterion: Apgar <5 at 5 AND 10 min (or pH <7.0 & BD ≥12, or resus >10 min)",
+          "s": "PAED:19.43",
+          "level": "red"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "formulas": [
+    {
+      "name": "Apgar",
+      "expr": "Sum of 5 signs (0–2 each) = 0–10",
+      "s": "PHC:6.26"
+    },
+    {
+      "name": "Timing",
+      "expr": "1 min and 5 min; if <7 at 5 min, repeat every 5 min to 20 min",
+      "notes": "AAP/ACOG"
+    }
+  ],
+  "interpretation": [
+    {
+      "title": "Interpretation",
+      "items": [
+        {
+          "min": 7,
+          "max": 10,
+          "label": "7–10",
+          "t": "Reassuring",
+          "level": "green"
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "label": "4–6",
+          "t": "Moderately abnormal",
+          "level": "amber"
+        },
+        {
+          "min": 0,
+          "max": 3,
+          "label": "0–3",
+          "t": "Low",
+          "level": "red"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}

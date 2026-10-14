@@ -1,0 +1,328 @@
+{
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-14",
+  "setting": "casualty / ward",
+  "id": "ipss",
+  "folder": "IPSS",
+  "type": "score",
+  "short": "IPSS",
+  "population": "adult",
+  "title": "IPSS / AUA Symptom Index — BPH",
+  "subtitle": "men with lower urinary tract symptoms · over the past month",
+  "badge": "IPSS 0–35",
+  "sources": [
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare, 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "IPSS",
+      "title": "Barry MJ et al. AUA Symptom Index. J Urol 1992;148:1549-57",
+      "type": "paper",
+      "country": "intl"
+    }
+  ],
+  "tags": [
+    "score",
+    "urology",
+    "BPH",
+    "LUTS",
+    "prostate",
+    "adult",
+    "male"
+  ],
+  "left": [
+    {
+      "type": "grid",
+      "title": "Questions 1–6: how often over the past month?",
+      "s": "IPSS",
+      "head": [
+        "Score",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "",
+          "Not at all",
+          "<1 in 5 times",
+          "< half the time",
+          "About half",
+          "> half the time",
+          "Almost always"
+        ]
+      ],
+      "first_bold": false
+    },
+    {
+      "type": "points",
+      "title": "Symptoms (each 0–5)",
+      "head": "Question",
+      "s": "IPSS",
+      "cols": [
+        {
+          "key": "r",
+          "label": "Score"
+        }
+      ],
+      "rows": [
+        {
+          "t": "1. Incomplete emptying — sensation of not emptying the bladder",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "2. Frequency — urinating again <2 hours after finishing",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "3. Intermittency — stopping and starting several times",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "4. Urgency — difficult to postpone urination",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "5. Weak stream",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "6. Straining to begin urination",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "7. Nocturia — times up at night to urinate (none = 0 … ≥5 = 5)",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        }
+      ],
+      "total": [
+        "0–35"
+      ]
+    },
+    {
+      "type": "grid",
+      "title": "Quality of life (scored separately, 0–6)",
+      "s": "IPSS",
+      "head": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "rows": [
+        [
+          "Delighted",
+          "Pleased",
+          "Mostly satisfied",
+          "Mixed",
+          "Mostly dissatisfied",
+          "Unhappy",
+          "Terrible"
+        ]
+      ],
+      "first_bold": false
+    }
+  ],
+  "right": [
+    {
+      "type": "bands",
+      "title": "Interpretation (questions 1–7)",
+      "rows": true,
+      "s": "IPSS",
+      "items": [
+        {
+          "min": 0,
+          "max": 7,
+          "label": "0–7",
+          "t": "Mild symptoms",
+          "level": "green",
+          "s": "IPSS"
+        },
+        {
+          "min": 8,
+          "max": 19,
+          "label": "8–19",
+          "t": "Moderate symptoms",
+          "level": "amber",
+          "s": "IPSS"
+        },
+        {
+          "min": 20,
+          "max": 35,
+          "label": "20–35",
+          "t": "Severe symptoms",
+          "level": "red",
+          "s": "IPSS"
+        }
+      ]
+    },
+    {
+      "type": "stg",
+      "title": "SA STG",
+      "items": [
+        {
+          "t": "BPH: obstructive (weak, intermittent stream, hesitancy) and irritative (frequency, nocturia, urgency) symptoms",
+          "s": "PHC:8.13",
+          "level": "amber"
+        },
+        {
+          "t": "Palpate for a distended bladder — retention may occur without severe symptoms",
+          "s": "PHC:8.13",
+          "level": "amber"
+        },
+        {
+          "t": "Refer all patients with suspected BPH",
+          "s": "PHC:8.14",
+          "level": "red"
+        },
+        {
+          "t": "Hard, nodular prostate on DRE → suspect cancer → refer",
+          "s": "PHC:8.14",
+          "level": "red"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Pearls",
+      "grow": true,
+      "items": [
+        {
+          "t": "Self-completed by the patient; use to track response to treatment",
+          "s": "IPSS"
+        },
+        {
+          "t": "Score is symptom severity only — always check for retention, haematuria, UTI and renal function",
+          "s": "IPSS"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "Symptoms (each 0–5)",
+      "cols": [
+        {
+          "key": "r",
+          "label": "Score"
+        }
+      ],
+      "rows": [
+        {
+          "t": "1. Incomplete emptying — sensation of not emptying the bladder",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "2. Frequency — urinating again <2 hours after finishing",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "3. Intermittency — stopping and starting several times",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "4. Urgency — difficult to postpone urination",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "5. Weak stream",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "6. Straining to begin urination",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        },
+        {
+          "t": "7. Nocturia — times up at night to urinate (none = 0 … ≥5 = 5)",
+          "pts": {
+            "r": "0–5"
+          },
+          "s": "IPSS"
+        }
+      ]
+    }
+  ],
+  "formulas": [],
+  "interpretation": [
+    {
+      "title": "Interpretation (questions 1–7)",
+      "items": [
+        {
+          "min": 0,
+          "max": 7,
+          "label": "0–7",
+          "t": "Mild symptoms",
+          "level": "green",
+          "s": "IPSS"
+        },
+        {
+          "min": 8,
+          "max": 19,
+          "label": "8–19",
+          "t": "Moderate symptoms",
+          "level": "amber",
+          "s": "IPSS"
+        },
+        {
+          "min": 20,
+          "max": 35,
+          "label": "20–35",
+          "t": "Severe symptoms",
+          "level": "red",
+          "s": "IPSS"
+        }
+      ]
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages listed above). Unmarked content: international source named above. ‡ = STG misprint or sources differ (see app).",
+  "dagger_note": "Items whose s is not an SA STG source id are non-STG (international); d=true marks them explicitly."
+}
