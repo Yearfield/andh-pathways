@@ -1,0 +1,419 @@
+id,label,group,type,also_in_groups,aliases
+F001,abdominal,GIT,clinical,,
+F002,abdominal pain,GIT,clinical,,
+F003,abscess,General,clinical,,abcess
+F004,acute,Stage,stage,,
+F005,acute sinusitus,ENT,clinical,,
+F006,adult,lifecycle,stage,,adults
+F007,africa,regions,region,,
+F008,allergic asthma,Ungrouped,clinical,,
+F009,allergic reaction,General,clinical,,
+F010,allergy,RESP,clinical,,
+F011,alopecia,Skin,clinical,,allopecia
+F012,america,regions,region,,
+F013,anaphylactic,General,clinical,,
+F014,anemia,Hematological,clinical,,
+F015,animal,Species,host,,
+F016,animal bite or scratch,Ungrouped,clinical,,
+F017,animal contact,Ungrouped,clinical,,
+F018,appendicitis,GIT,clinical,,apendicitis
+F019,arbo,Species,host,,
+F020,argentina,regions,region,,
+F021,arrhythmia,CVS,clinical,,Arrythmia;arrythmia
+F022,arthralgia,Musculo Skeletal,clinical,,
+F023,arthritis,Musculo Skeletal,clinical,,
+F024,arthropod,Transmission,exposure,,
+F025,asia,regions,region,,
+F026,asthma,RESP,clinical,,
+F027,atrial fibrillation,CVS,clinical,,
+F028,australia,regions,region,,
+F029,bacteremia,Immunological,clinical,,
+F030,bat,Species,host,,bats
+F031,bird,Species,host,,birds
+F032,bite,General,clinical,Trauma,
+F033,blindness,EYE,clinical,,
+F034,blister,Reproductive,clinical,,blisters
+F035,blood,tissue,exposure,Transmission,
+F036,bloody,Appearance,finding,,
+F037,bodily fluid,Transmission,exposure,,
+F038,bolivia,regions,region,,
+F039,brain abscess,CNS,clinical,,brain abcess
+F040,brain fog,CNS,clinical,,
+F041,brazil,regions,region,,
+F042,bronchiectasis,RESP,clinical,,
+F043,bronchiolitis,RESP,clinical,,
+F044,bronchitis,RESP,clinical,,
+F045,bronchopneumonia,RESP,clinical,,broncho pneumonia
+F046,bronchopulmonary,RESP,clinical,,
+F047,bruising,Hematological,clinical,,
+F048,bullae,Skin,clinical,Hematological,
+F049,bursitis,Musculo Skeletal,clinical,,
+F050,cachexia,General,clinical,,
+F051,cancer,General,clinical,,
+F052,canine,Species,host,,
+F053,cat,Species,host,,cats
+F054,catheter,exposure,exposure,Surface,
+F055,cattle,Species,host,,
+F056,cellulitis,Skin,clinical,,
+F057,cervical gland,ENT,clinical,,cervical glands
+F058,cervicitis,Reproductive,clinical,,
+F059,chancre,Reproductive,clinical,,
+F060,chancroid,Reproductive,clinical,,
+F061,chest pain,RESP,clinical,,
+F062,chile,regions,region,,
+F063,chill,General,clinical,,Chills;chills
+F064,china,regions,region,,
+F065,cholecystitis,GIT,clinical,,Cholecistitis
+F066,chronic,Stage,stage,,
+F067,chronic fatigue,General,clinical,,
+F068,chronic sinusitus,ENT,clinical,,
+F069,cns,System,body_system,,
+F070,cns brain nerve,System,body_system,,CNS brain Nerves
+F071,cockroach,Species,host,,
+F072,cold,ENT,clinical,,
+F073,colitis,GIT,clinical,,
+F074,columbia,regions,region,,
+F075,coma,CNS,clinical,,
+F076,community,General,clinical,,
+F077,condylomata,Reproductive,clinical,,
+F078,confusion,CNS,clinical,,
+F079,conjunctivitis,EYE,clinical,,
+F080,convulsion,CNS,clinical,,
+F081,corneal ulcer,EYE,clinical,,
+F082,coronary,CVS,clinical,,
+F083,coryza,ENT,clinical,,
+F084,cough,RESP,clinical,,
+F085,cramp,GIT,clinical,,cramps
+F086,cramping,Ungrouped,clinical,,
+F087,crohn ,GIT,clinical,,Chron's;chron's
+F088,croup,ENT,clinical,,
+F089,cut,Trauma,exposure,,
+F090,cutaneous,Skin,clinical,,
+F091,cvas heart muscle valves bloodvessel,System,body_system,,CVAS Heart Muscle Valves Bloodvessels
+F092,cvs,System,body_system,,
+F093,cyst,Skin,clinical,,
+F094,cystitis,Urinary,clinical,,
+F095,deafness,ENT,clinical,,Deaf;deaf
+F096,deer,Species,host,,
+F097,dehydration,GIT,clinical,,
+F098,dental,Oral,clinical,,
+F099,dental abscess,Oral,clinical,,dental abcess
+F100,dental work,Ungrouped,clinical,,
+F101,depression,CNS,clinical,,
+F102,dermatitis,Ungrouped,clinical,,
+F103,dermatophyte,Skin,clinical,,
+F104,diarrhea,GIT,clinical,,
+F105,discharge,Urinary,clinical,,
+F106,disorientation,CNS,clinical,,
+F107,dog,Species,host,,dogs
+F108,droplet,exposure,exposure,,droplets
+F109,duck,Species,host,,ducks
+F110,duodenal ulcer,GIT,clinical,,
+F111,duodenitis,GIT,clinical,,
+F112,dvt,Ungrouped,clinical,,
+F113,dysentry,GIT,clinical,,
+F114,ear pain,ENT,clinical,,
+F115,ecuador,regions,region,,
+F116,eczema,Skin,clinical,,
+F117,effusion,Musculo Skeletal,clinical,,
+F118,egg,exposure,exposure,lifecycle,eggs
+F119,emboli,Hematological,clinical,,
+F120,embolus,CVS,clinical,,
+F121,encephalitis,CNS,clinical,,Enchephalitis;enchephalitis
+F122,endocarditis,CVS,clinical,,endocardits
+F123,endocrine,System,body_system,,
+F124,endocrine glands hormone,System,body_system,,Endocrine glands Hormones
+F125,endometritis,Reproductive,clinical,,
+F126,endophthalmitis,EYE,clinical,,endopthalmitis
+F127,endothelial,CVS,clinical,,
+F128,endothelitis,CVS,clinical,,
+F129,enlarged gland,Immunological,clinical,,enlarged glands
+F130,ent,System,body_system,,
+F131,ent ear nose throat,System,body_system,,
+F132,enterocolitis,GIT,clinical,,
+F133,epididymitis,Urinary,clinical,,epididimytis
+F134,epididymo orchitis,Urinary,clinical,,epididymo-orchitis
+F135,epididymo-orchitis,Ungrouped,clinical,,epididimo orchitis
+F136,epiglottitis,ENT,clinical,,epiglotittis
+F137,epilepsy,CNS,clinical,,
+F138,epistaxis,ENT,clinical,,nosebleed
+F139,equine,Species,host,,
+F140,erysipela,Skin,clinical,,erisypelas
+F141,esophagitis,GIT,clinical,,
+F142,europe,regions,region,,
+F143,eye,System,body_system,,
+F144,fatigue,General,clinical,,
+F145,fecie,Route,exposure,,fecies
+F146,feco oral,Route,exposure,,
+F147,feline,Species,host,,felines
+F148,fever,General,clinical,,
+F149,fibrosis,Appearance,finding,,
+F150,fish,Route,exposure,,
+F151,flea,Species,host,,
+F152,flu like,General,clinical,,
+F153,fly,Species,host,,
+F154,fomite,exposure,exposure,,fomites
+F155,food,Route,exposure,,
+F156,food animal,Species,host,,
+F157,foxe,Species,host,,foxes
+F158,fresh water,exposure,exposure,,
+F159,gastric ulcer,GIT,clinical,,
+F160,gastritis,GIT,clinical,,
+F161,gastroenteritis,GIT,clinical,,
+F162,geese,Species,host,,
+F163,genital ulcer,Reproductive,clinical,,
+F164,gingivitis,Oral,clinical,,
+F165,git,System,body_system,,
+F166,git liver gallbladder stomach intestines small intestines large pancreas spleen,System,body_system,,
+F167,gland,Immunological,clinical,,glands
+F168,glandular fever,Immunological,clinical,,
+F169,glomerulonephritis,Urinary,clinical,,
+F170,glossitis,Oral,clinical,,Glosittis;glosittis
+F171,goat,Species,host,,goats
+F172,granule,Appearance,finding,,granules
+F173,granuloma,Appearance,finding,,
+F174,hacek,CVS,clinical,,
+F175,haemolytic,Ungrouped,clinical,,hemolytic
+F176,hairloss,Skin,clinical,,
+F177,headache,CNS,clinical,,
+F178,hematological blood cells red white plattelets plasma chemistry protein,System,body_system,,Hematological Blood Cells Red White plattelets Plasma Chemistry Proteins
+F179,hemochromatosis,Hematological,clinical,,
+F180,hemolysis,Hematological,clinical,,
+F181,hemorrhagic,Skin,clinical,,
+F182,hemorrhagic fever,Skin,clinical,,
+F183,hemorrhaging,Ungrouped,clinical,,
+F184,hepatic failure,GIT,clinical,,
+F185,hepatitis,GIT,clinical,,
+F186,high fever,General,clinical,,
+F187,horse,Species,host,,
+F188,hospital,exposure,exposure,,
+F189,hospital equipment,exposure,exposure,,
+F190,human,Species,host,,
+F191,human to human,Transmission,exposure,,
+F192,hypertension,CVS,clinical,,
+F193,hypotension,CVS,clinical,,hypotention
+F194,hypovolemic,GIT,clinical,,
+F195,ibs,GIT,clinical,,
+F196,illeitis,GIT,clinical,,
+F197,illeocolitis,GIT,clinical,,
+F198,immune system,System,body_system,,
+F199,immunocompromised,General,clinical,,
+F200,immunosuppressed,Immunological,clinical,,
+F201,infertility,Reproductive,clinical,,
+F202,inflammatory bowel disease,GIT,clinical,,
+F203,inguinal gland,Urinary,clinical,,inguinal glands
+F204,inhalation,exposure,exposure,,
+F205,insect,Species,host,,
+F206,irritable bowel syndrome,GIT,clinical,,
+F207,itching,Skin,clinical,,
+F208,japan,regions,region,,
+F209,jaundice,GIT,clinical,,
+F210,jejunitis,GIT,clinical,,
+F211,joint,Musculo Skeletal,clinical,System,Joints;joints
+F212,keratitis,EYE,clinical,,
+F213,laceration,Ungrouped,clinical,,
+F214,larvae,lifecycle,stage,,
+F215,laryngitis,ENT,clinical,,
+F216,latin america,regions,region,,
+F217,lethargic,General,clinical,,
+F218,lethargy,CNS,clinical,,
+F219,leucocytosis,Hematological,clinical,,
+F220,leucopenia,Hematological,clinical,,
+F221,liberia,regions,region,,
+F222,lifecycle,lifecycle,stage,,
+F223,ligament,System,body_system,,Ligaments
+F224,liver,GIT,clinical,,
+F225,liver abcess,GIT,clinical,,
+F226,liver failure,GIT,clinical,,
+F227,loss of consciousness,CNS,clinical,,
+F228,low grade fever,General,clinical,,
+F229,lymph,Lymphatic,clinical,,
+F230,lymphadenitis,Immunological,clinical,,
+F231,lymphadenopathy,Immunological,clinical,,
+F232,lymphatic,System,body_system,,
+F233,macule,Skin,clinical,,macules
+F234,maculopapular,Skin,clinical,,
+F235,malaise,Musculo Skeletal,clinical,,
+F236,mastoiditis,ENT,clinical,,
+F237,meningitis,CNS,clinical,,
+F238,mesentery,Ungrouped,clinical,,
+F239,mesential adentitis,GIT,clinical,,
+F240,mexico,regions,region,,
+F241,mice,Species,host,,
+F242,mosquito,Species,host,,
+F243,mouse,Species,host,,
+F244,mouth ulcer,Oral,clinical,,
+F245,ms muscles skeleton bones joint,System,body_system,,MS Muscles Skeleton Bones joints
+F246,muscle,System,body_system,,Muscles
+F247,muscle ache,Musculo Skeletal,clinical,,muscle aches
+F248,muscle or body ache,Ungrouped,clinical,,muscle or body aches
+F249,muscle pain,Musculo Skeletal,clinical,,muscle pains
+F250,myalgia,Musculo Skeletal,clinical,,
+F251,myocarditis,CVS,clinical,,
+F252,myopathy,CVS,clinical,,
+F253,myositis,Musculo Skeletal,clinical,,
+F254,nail infection,Skin,clinical,,
+F255,namibia,regions,region,,
+F256,nausea,GIT,clinical,,
+F257,neck stiffness,CNS,clinical,,
+F258,neonate,General,clinical,,neonates
+F259,nephritis,Urinary,clinical,,
+F260,neuralgia,CNS,clinical,,
+F261,neuritis,CNS,clinical,,
+F262,neuropathy,CNS,clinical,,
+F263,neutropenia,Hematological,clinical,,
+F264,nigeria,regions,region,,
+F265,night sweat,General,clinical,,Nightsweats;night sweats
+F266,nodule,Skin,clinical,,
+F267,non-pathogenic,Importance,flag,,non pathogenic
+F268,north america,regions,region,,
+F269,nosocomial,General,clinical,,
+F270,oophoritis,Reproductive,clinical,,oopheritis
+F271,opportunistic,General,clinical,,
+F272,opthalmic eye,System,body_system,,
+F273,orchitis,Reproductive,clinical,,
+F274,osteomyelitis,Musculo Skeletal,clinical,,
+F275,otitis externa,ENT,clinical,,
+F276,otitis media,ENT,clinical,,
+F277,painful gland,Immunological,clinical,,painful glands;painfull glands
+F278,painful joint,Musculo Skeletal,clinical,,painful joints
+F279,palpitation,CVS,clinical,,palpitations
+F280,pancreatitis,GIT,clinical,,
+F281,papule,Skin,clinical,,papules
+F282,paralysis,CNS,clinical,,
+F283,pelvic inflammatory disease,Reproductive,clinical,,pid
+F284,perinephric abscess,Urinary,clinical,,
+F285,periodontal,Oral,clinical,,
+F286,periorbital cellulitis,EYE,clinical,,
+F287,peritonitis,GIT,clinical,,
+F288,peritonsillar abscess,ENT,clinical,,
+F289,peru,regions,region,,
+F290,petechiae,Skin,clinical,Hematological,ptechiae
+F291,pharyngitis,ENT,clinical,,
+F292,photophobia,CNS,clinical,,
+F293,pig,Species,host,,pigs
+F294,pink eye,EYE,clinical,,pink eyes
+F295,plant,Species,host,,
+F296,platelet,Ungrouped,clinical,,plattelets
+F297,pleuritis,RESP,clinical,,
+F298,pneumonia,RESP,clinical,,
+F299,polyarthritis,Musculo Skeletal,clinical,,
+F300,polycythemia,Hematological,clinical,,
+F301,poultry,Route,exposure,,
+F302,prostatitis,Urinary,clinical,,
+F303,prosthesis,exposure,exposure,,
+F304,pseudoappendicitis,GIT,clinical,,
+F305,psoriasis,Skin,clinical,,
+F306,pulmonary,RESP,clinical,,
+F307,purpura,Hematological,clinical,,
+F308,pus,General,clinical,,
+F309,pustule,Skin,clinical,,
+F310,pyelonephritis,Urinary,clinical,,pyelonefritis
+F311,rash,Skin,clinical,,
+F312,rat,Species,host,,rats
+F313,reactive,Musculo Skeletal,clinical,,
+F314,reflux,GIT,clinical,,
+F315,relapse,Stage,stage,,
+F316,renal,Urinary,clinical,,
+F317,renal failure,Urinary,clinical,,
+F318,reproductive,System,body_system,,
+F319,resp,System,body_system,,
+F320,resp ent bronchi lung pleura diaphragm,System,body_system,,
+F321,retinitis,EYE,clinical,,
+F322,rheumatoid,Musculo Skeletal,clinical,,
+F323,rheumatoid arthritis,Ungrouped,clinical,,rheumathoid arthritits
+F324,rhinitis,ENT,clinical,,
+F325,rigor,General,clinical,,Rigors;rigors
+F326,ringworm,Skin,clinical,,
+F327,river,exposure,exposure,,
+F328,rodent,Species,host,,rodents
+F329,rosacea,Skin,clinical,,
+F330,saliva,Transmission,exposure,,
+F331,salpingitis,Reproductive,clinical,,
+F332,sandfly,Species,host,,
+F333,scratch,Trauma,exposure,,
+F334,seafood,Route,exposure,,
+F335,septic arthritis,Musculo Skeletal,clinical,,
+F336,septicemia,Immunological,clinical,,
+F337,sexual,Transmission,exposure,,
+F338,sexually transmitted disease,Reproductive,clinical,,
+F339,sheep,Species,host,,
+F340,shellfish,Route,exposure,,
+F341,shock,CVS,clinical,GIT,
+F342,sibo,GIT,clinical,,
+F343,sinuse,Appearance,finding,,sinuses
+F344,sinusitis,ENT,clinical,,Sinusitus
+F345,skeleton,System,body_system,,
+F346,skin,Skin,clinical,System,
+F347,skin infection,Skin,clinical,,
+F348,skin rash,Skin,clinical,,
+F349,skin soft tissues nails hair,System,body_system,,
+F350,skin ulcer,Skin,clinical,,
+F351,snail,Transmission,exposure,,
+F352,sneezing,Ungrouped,clinical,,
+F353,soil,Route,exposure,,
+F354,soil to lung,exposure,exposure,,
+F355,sore throat,ENT,clinical,,
+F356,south america,regions,region,,
+F357,south east asia,regions,region,,
+F358,southern africa,regions,region,,
+F359,spore,exposure,exposure,,spores
+F360,std,Reproductive,clinical,,
+F361,sting,General,clinical,,
+F362,strep throat,ENT,clinical,,
+F363,stye,EYE,clinical,,
+F364,subacute,Stage,stage,,
+F365,surface,exposure,exposure,,surfaces
+F366,surgery,Trauma,exposure,,
+F367,surgical,Trauma,exposure,,
+F368,sweat,General,clinical,,Sweats;sweats
+F369,swollen gland,Immunological,clinical,,swollen glands
+F370,swollen joint,Musculo Skeletal,clinical,,swollen joints
+F371,taenia,Skin,clinical,,
+F372,telangiectasia,Ungrouped,clinical,,
+F373,tendonitis,Musculo Skeletal,clinical,,
+F374,thailand,regions,region,,
+F375,thrombi,Hematological,clinical,,
+F376,thrombocytopenia,Hematological,clinical,,
+F377,thrombosis,Hematological,clinical,,
+F378,thrombosus,CVS,clinical,,
+F379,thrombus,CVS,clinical,,
+F380,tibo,Species,host,,
+F381,tick,Species,host,,
+F382,tinnitus,ENT,clinical,,
+F383,tissue barrier break,Trauma,exposure,,
+F384,tonsillitis,ENT,clinical,,
+F385,tooth decay,Oral,clinical,,
+F386,toxin,exposure,exposure,,
+F387,trauma,Trauma,exposure,,
+F388,tremor,CNS,clinical,,
+F389,typhoid,GIT,clinical,,
+F390,ug kidneys adrenals ureters bladder urethra genital,System,body_system,,UG Kidneys Adrenals Ureters Bladder Urethra Genitals
+F391,ulcer,GIT,clinical,,
+F392,ulcerative colitis,GIT,clinical,,
+F393,urethritis,Urinary,clinical,,
+F394,urinary,Urinary,clinical,System,
+F395,urinary tract infection,Urinary,clinical,,
+F396,urogenital,General,clinical,,
+F397,uti,Urinary,clinical,,
+F398,uveitis,Ungrouped,clinical,,
+F399,vaginitis,Reproductive,clinical,,
+F400,vasculitis,CVS,clinical,,
+F401,vertigo,ENT,clinical,,
+F402,vesicle,Skin,clinical,,vesicles
+F403,vomiting,GIT,clinical,,
+F404,wasting,General,clinical,,
+F405,water,Route,exposure,,
+F406,water bourne,Transmission,exposure,,
+F407,weakness,General,clinical,,
+F408,weight loss,General,clinical,,weightloss
+F409,wheal,Skin,clinical,,
+F410,wheezing,RESP,clinical,,
+F411,white cell count,Hematological,clinical,,
+F412,whooping cough,RESP,clinical,,
+F413,wild animal,Species,host,,wild animals
+F414,wild bird,Species,host,,wild birds
+F415,worldwide,regions,region,,
+F416,wound,General,clinical,Trauma,
+F417,zambia,regions,region,,
+F418,zoonosis,Transmission,exposure,,

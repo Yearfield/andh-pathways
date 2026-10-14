@@ -1,0 +1,42 @@
+full_name,ids
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium hemophilum,P0139;P4527
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp jdm601 cp002329,P0473;P0474
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp jls cp000580,P0475;P0476
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp kms,P0477;P0478;P0479;P0480
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp kms cp000518,P0481;P0482
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp mcs cp000384,P0483;P0488
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp kms plasmid pmkms01cp001028,P0484;P0485
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp kms plasmid pmkms02he616529,P0486;P0487
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp mcs plasmid 1 cp000039,P0490;P0491
+bacteria actinobacteria actinomycetales corynebacterineae mycobacteriaceae mycobacterium sp mcs plasmid1 cp000385,P0492;P0493
+bacteria firmicutes bacilli lactobacillales streptococcus pyogenes group a bhs serotype m3 mgas315,P1124;P1125
+bacteria firmicutes staphylococcaceae staphylococcus aureus col chromosome,P1173;P1174;P1175;P1176;P1182;P1184;P1186;P1192;P1193;P1195
+bacteria firmicutes staphylococcaceae staphylococcus aureus e1 plasmid edina,P1248;P1249;P1250;P1251;P1252;P1253;P1254;P1255;P1256;P1257;P1258;P1259
+bacteria firmicutes clostridia clostridium sordelli atcc 9714 plasmid,P1601;P1602
+bacteria proteobacteria alphaproteobacteria rhizobiales brucella abortus bv 6 str 870,P1757;P1758
+bacteria proteobacteria alphaproteobacteria rhizobiales brucella melitensis bv. 1 str. 16m chromosome,P1784;P1785
+bacteria proteobacteria alphaproteobacteria rhizobiales brucella melitensis chromosome,P1787;P1788
+bacteria proteobacteriaceae alphaproteobacteria ricketsiaceae rickettsiales anaplasma,P1811;P1812
+bacteria protobacteria alphaprotobaceria ricketsiales wolbachia pipientis endosymbiont of nematoda oncocerca volvulus cm000432,P1869;P1870
+bacteria protobacteria alphaprotobacteria ricketsiales ricketsiaceae rickettsia prowazekii str nmrc madrid e ae017197,P1883;P1884
+bacteria proteobacteria betaproteobacteria burkholderiales burkholderia ambifaria ammd chromosome 1,P1906;P1907
+bacteria proteobacteria betaproteobacteria burkholderiales burkholderiales bordetella avium 197n,P2014;P2015
+bacteria proteobacteria betaproteobacteria neisseriales neisseria meningitidis alpha710,P2048;P2049
+bacteria proteobacteraceae moraxellaceae acinetobacter baumannii mdrtj,P2368;P2370
+bacteria proteobacteriaceae gammaproteobacteria pasteurellaceae agregatibacter actinomycetemcomitans serotype c strd11s-1,P2418;P2419
+bacteria proteobacteriaceae gammaproteobacteria pasteurellaceae agregatibacter actinomycetemcomitans hk1561,P2420;P2421
+bacteria proteobacteriaceae gammaproteobacteria enterobacteriales enterobacteriaceae enterobacteriales enterobacteria phage spp.,P2680;P2681;P2682;P2683;P2684;P2685;P2686
+bacteria proteobacteriaceae gammaproteobacteria pseudomonadaceae pseudomonas aeruginosa ucbpppa14,P3429;P3430
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae 1587,P3671;P3673
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae lma39844 chromosome 1,P3796;P3797
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae m662 chromosome 1,P3800;P3801
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae mo10,P3809;P3810
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae o1 biovar el tor,P3819;P3820
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae o1 biovar el tor str inaba,P3821;P3822
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae o1 str 2010el-17,P3839;P3840;P3841;P3842
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae o1 str 2010el-20,P3849;P3850
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio cholerae o1 str 95412,P3862;P3863
+bacteria proteobacteriaceae gammaproteobacteria vibrioneales vibrio vulnificus cmcp6 chromosome 1,P3928;P3930
+bacteria spirochaetae spirochaetales treponema denticola atcc 35405,P4379;P4380;P4382
+fungi cryptomycota incertae sedis incertae sedis incertae sedis rozella allomycis,P4827;P4828
+fungi incertae sedis crypromycota paramicrosporidium saccamoebae,P4832;P4833

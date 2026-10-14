@@ -1,5 +1,6 @@
 // JAD Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
 import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
+import { altmed } from "./altmed.js"; // Alternative Medicine: pathogen reference + feature filter (own data in data/altmed/, loaded on demand)
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -31,6 +32,7 @@ const P = {
   analyse: '<path d="M4 20V10M10 20V4M16 20v-7"/><path d="M2 20h20"/>',
   ref: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M19 19v2H6"/>',
   scales: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
+  leaf: '<path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14zM5 19l7-7"/>',
 };
 const ico = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${P[n]}</svg>`;
 const MORE = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>';
@@ -173,7 +175,8 @@ function landing() {
   <main class="fade home"><div class="tiles">
     <button class="tile" data-go="#/diagnoses">${ico("arrival")}<b>Diagnoses Pathways</b><span>Admission, timeline, doses and nursing · ${nd} pathways</span></button>
     <button class="tile" data-go="#/procedures">${ico("doses")}<b>Procedures Pathways</b><span>Step-by-step emergency procedures · ${np} procedure${np === 1 ? "" : "s"}</span></button>
-    <button class="tile" data-go="#/scores">${ico("scales")}<b>Scales and Calculations</b><span>Scores, grades and calculators · ${ns} card${ns === 1 ? "" : "s"}</span></button></div>
+    <button class="tile" data-go="#/scores">${ico("scales")}<b>Scales and Calculations</b><span>Scores, grades and calculators · ${ns} card${ns === 1 ? "" : "s"}</span></button>
+    <button class="tile spring" data-go="#/altmed">${ico("leaf")}<b>Alternative Medicine</b><span>Pathogen reference and feature search · imported, unverified</span></button></div>
     <p class="hint">Reference only — no patient details are stored.</p></main>`;
 }
 /* Procedures can be grouped (index.json "proc_groups"; a procedure joins one with "group": id). A group is ONE row in the procedures list
@@ -1246,7 +1249,11 @@ function remember(id, tab, row) {
 async function route() {
   $(".menu")?.remove(); $(".scrim")?.remove();
   const p = (location.hash || "#/").slice(2).split("/");
+  const alt = p[0] === "altmed"; // the Alternative Medicine section has its own spring-green palette (style.css :root.alt-on)
+  document.documentElement.classList.toggle("alt-on", alt);
+  $('meta[name="theme-color"]')?.setAttribute("content", alt ? "#eef9e0" : "#f5f7f6");
   try {
+    if (alt) return await altmed(p.slice(1), { app, esc, ico, loadJSON, $, $$ });
     if (p[0] === "") return landing();
     if (p[0] === "diagnoses") return home();
     if (p[0] === "hub") return hubView(p[1]);

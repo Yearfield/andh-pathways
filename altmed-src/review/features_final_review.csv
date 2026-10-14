@@ -1,0 +1,169 @@
+section,feature_id,feature,group,note
+1_merged,F003,abscess,General,absorbed: abcess
+1_merged,F006,adult,lifecycle,absorbed: adults
+1_merged,F011,alopecia,Skin,absorbed: allopecia
+1_merged,F018,appendicitis,GIT,absorbed: apendicitis
+1_merged,F021,arrhythmia,CVS,absorbed: Arrythmia; arrythmia
+1_merged,F030,bat,Species,absorbed: bats
+1_merged,F031,bird,Species,absorbed: birds
+1_merged,F034,blister,Reproductive,absorbed: blisters
+1_merged,F039,brain abscess,CNS,absorbed: brain abcess
+1_merged,F045,bronchopneumonia,RESP,absorbed: broncho pneumonia
+1_merged,F053,cat,Species,absorbed: cats
+1_merged,F057,cervical gland,ENT,absorbed: cervical glands
+1_merged,F063,chill,General,absorbed: Chills; chills
+1_merged,F065,cholecystitis,GIT,absorbed: Cholecistitis
+1_merged,F070,cns brain nerve,System,absorbed: CNS brain Nerves
+1_merged,F085,cramp,GIT,absorbed: cramps
+1_merged,F087,crohn ,GIT,absorbed: Chron's; chron's
+1_merged,F091,cvas heart muscle valves bloodvessel,System,absorbed: CVAS Heart Muscle Valves Bloodvessels
+1_merged,F095,deafness,ENT,absorbed: Deaf; deaf
+1_merged,F099,dental abscess,Oral,absorbed: dental abcess
+1_merged,F107,dog,Species,absorbed: dogs
+1_merged,F108,droplet,exposure,absorbed: droplets
+1_merged,F109,duck,Species,absorbed: ducks
+1_merged,F118,egg,exposure,absorbed: eggs
+1_merged,F121,encephalitis,CNS,absorbed: Enchephalitis; enchephalitis
+1_merged,F122,endocarditis,CVS,absorbed: endocardits
+1_merged,F124,endocrine glands hormone,System,absorbed: Endocrine glands Hormones
+1_merged,F126,endophthalmitis,EYE,absorbed: endopthalmitis
+1_merged,F129,enlarged gland,Immunological,absorbed: enlarged glands
+1_merged,F133,epididymitis,Urinary,absorbed: epididimytis
+1_merged,F134,epididymo orchitis,Urinary,absorbed: epididymo-orchitis
+1_merged,F135,epididymo-orchitis,Ungrouped,absorbed: epididimo orchitis
+1_merged,F136,epiglottitis,ENT,absorbed: epiglotittis
+1_merged,F138,epistaxis,ENT,absorbed: nosebleed
+1_merged,F140,erysipela,Skin,absorbed: erisypelas
+1_merged,F145,fecie,Route,absorbed: fecies
+1_merged,F147,feline,Species,absorbed: felines
+1_merged,F154,fomite,exposure,absorbed: fomites
+1_merged,F157,foxe,Species,absorbed: foxes
+1_merged,F167,gland,Immunological,absorbed: glands
+1_merged,F170,glossitis,Oral,absorbed: Glosittis; glosittis
+1_merged,F171,goat,Species,absorbed: goats
+1_merged,F172,granule,Appearance,absorbed: granules
+1_merged,F175,haemolytic,Ungrouped,absorbed: hemolytic
+1_merged,F178,hematological blood cells red white plattelets plasma chemistry protein,System,absorbed: Hematological Blood Cells Red White plattelets Plasma Chemistry Proteins
+1_merged,F193,hypotension,CVS,absorbed: hypotention
+1_merged,F203,inguinal gland,Urinary,absorbed: inguinal glands
+1_merged,F211,joint,Musculo Skeletal,absorbed: Joints; joints
+1_merged,F223,ligament,System,absorbed: Ligaments
+1_merged,F233,macule,Skin,absorbed: macules
+1_merged,F245,ms muscles skeleton bones joint,System,absorbed: MS Muscles Skeleton Bones joints
+1_merged,F246,muscle,System,absorbed: Muscles
+1_merged,F247,muscle ache,Musculo Skeletal,absorbed: muscle aches
+1_merged,F248,muscle or body ache,Ungrouped,absorbed: muscle or body aches
+1_merged,F249,muscle pain,Musculo Skeletal,absorbed: muscle pains
+1_merged,F258,neonate,General,absorbed: neonates
+1_merged,F265,night sweat,General,absorbed: Nightsweats; night sweats
+1_merged,F267,non-pathogenic,Importance,absorbed: non pathogenic
+1_merged,F270,oophoritis,Reproductive,absorbed: oopheritis
+1_merged,F277,painful gland,Immunological,absorbed: painful glands; painfull glands
+1_merged,F278,painful joint,Musculo Skeletal,absorbed: painful joints
+1_merged,F279,palpitation,CVS,absorbed: palpitations
+1_merged,F281,papule,Skin,absorbed: papules
+1_merged,F283,pelvic inflammatory disease,Reproductive,absorbed: pid
+1_merged,F290,petechiae,Skin,absorbed: ptechiae
+1_merged,F293,pig,Species,absorbed: pigs
+1_merged,F294,pink eye,EYE,absorbed: pink eyes
+1_merged,F296,platelet,Ungrouped,absorbed: plattelets
+1_merged,F310,pyelonephritis,Urinary,absorbed: pyelonefritis
+1_merged,F312,rat,Species,absorbed: rats
+1_merged,F323,rheumatoid arthritis,Ungrouped,absorbed: rheumathoid arthritits
+1_merged,F325,rigor,General,absorbed: Rigors; rigors
+1_merged,F328,rodent,Species,absorbed: rodents
+1_merged,F343,sinuse,Appearance,absorbed: sinuses
+1_merged,F344,sinusitis,ENT,absorbed: Sinusitus
+1_merged,F359,spore,exposure,absorbed: spores
+1_merged,F365,surface,exposure,absorbed: surfaces
+1_merged,F368,sweat,General,absorbed: Sweats; sweats
+1_merged,F369,swollen gland,Immunological,absorbed: swollen glands
+1_merged,F370,swollen joint,Musculo Skeletal,absorbed: swollen joints
+1_merged,F390,ug kidneys adrenals ureters bladder urethra genital,System,absorbed: UG Kidneys Adrenals Ureters Bladder Urethra Genitals
+1_merged,F402,vesicle,Skin,absorbed: vesicles
+1_merged,F408,weight loss,General,absorbed: weightloss
+1_merged,F413,wild animal,Species,absorbed: wild animals
+1_merged,F414,wild bird,Species,absorbed: wild birds
+2_kept_separate,F001,abdominal,GIT,kept separate from: abdominal pain (F002)
+2_kept_separate,F003,abscess,General,kept separate from: brain abscess (F039)
+2_kept_separate,F003,abscess,General,kept separate from: dental abscess (F099)
+2_kept_separate,F003,abscess,General,kept separate from: perinephric abscess (F284)
+2_kept_separate,F003,abscess,General,kept separate from: peritonsillar abscess (F288)
+2_kept_separate,F004,acute,Stage,kept separate from: acute sinusitus (F005)
+2_kept_separate,F007,africa,regions,kept separate from: southern africa (F358)
+2_kept_separate,F008,allergic asthma,Ungrouped,kept separate from: asthma (F026)
+2_kept_separate,F012,america,regions,kept separate from: latin america (F216)
+2_kept_separate,F012,america,regions,kept separate from: north america (F268)
+2_kept_separate,F012,america,regions,kept separate from: south america (F356)
+2_kept_separate,F015,animal,Species,kept separate from: animal bite or scratch (F016)
+2_kept_separate,F015,animal,Species,kept separate from: animal contact (F017)
+2_kept_separate,F015,animal,Species,kept separate from: food animal (F156)
+2_kept_separate,F015,animal,Species,kept separate from: wild animal (F413)
+2_kept_separate,F016,animal bite or scratch,Ungrouped,kept separate from: bite (F032)
+2_kept_separate,F016,animal bite or scratch,Ungrouped,kept separate from: scratch (F333)
+2_kept_separate,F023,arthritis,Musculo Skeletal,kept separate from: rheumatoid arthritis (F323)
+2_kept_separate,F023,arthritis,Musculo Skeletal,kept separate from: septic arthritis (F335)
+2_kept_separate,F025,asia,regions,kept separate from: south east asia (F357)
+2_kept_separate,F031,bird,Species,kept separate from: wild bird (F414)
+2_kept_separate,F035,blood,tissue,kept separate from: bloody (F036)
+2_kept_separate,F035,blood,tissue,kept separate from: hematological blood cells red white plattelets plasma chemistry protein (F178)
+2_kept_separate,F043,bronchiolitis,RESP,kept separate from: bronchitis (F044)
+2_kept_separate,F056,cellulitis,Skin,kept separate from: periorbital cellulitis (F286)
+2_kept_separate,F057,cervical gland,ENT,kept separate from: gland (F167)
+2_kept_separate,F066,chronic,Stage,kept separate from: chronic fatigue (F067)
+2_kept_separate,F066,chronic,Stage,kept separate from: chronic sinusitus (F068)
+2_kept_separate,F067,chronic fatigue,General,kept separate from: fatigue (F144)
+2_kept_separate,F073,colitis,GIT,kept separate from: ulcerative colitis (F392)
+2_kept_separate,F081,corneal ulcer,EYE,kept separate from: ulcer (F391)
+2_kept_separate,F084,cough,RESP,kept separate from: whooping cough (F412)
+2_kept_separate,F091,cvas heart muscle valves bloodvessel,System,kept separate from: muscle (F246)
+2_kept_separate,F098,dental,Oral,kept separate from: dental abscess (F099)
+2_kept_separate,F098,dental,Oral,kept separate from: dental work (F100)
+2_kept_separate,F110,duodenal ulcer,GIT,kept separate from: ulcer (F391)
+2_kept_separate,F123,endocrine,System,kept separate from: endocrine glands hormone (F124)
+2_kept_separate,F129,enlarged gland,Immunological,kept separate from: gland (F167)
+2_kept_separate,F134,epididymo orchitis,Urinary,kept separate from: epididymo-orchitis (F135)
+2_kept_separate,F134,epididymo orchitis,Urinary,kept separate from: orchitis (F273)
+2_kept_separate,F148,fever,General,kept separate from: glandular fever (F168)
+2_kept_separate,F148,fever,General,kept separate from: hemorrhagic fever (F182)
+2_kept_separate,F148,fever,General,kept separate from: high fever (F186)
+2_kept_separate,F148,fever,General,kept separate from: low grade fever (F228)
+2_kept_separate,F155,food,Route,kept separate from: food animal (F156)
+2_kept_separate,F158,fresh water,exposure,kept separate from: water (F405)
+2_kept_separate,F159,gastric ulcer,GIT,kept separate from: ulcer (F391)
+2_kept_separate,F163,genital ulcer,Reproductive,kept separate from: ulcer (F391)
+2_kept_separate,F166,git liver gallbladder stomach intestines small intestines large pancreas spleen,System,kept separate from: liver (F224)
+2_kept_separate,F167,gland,Immunological,kept separate from: inguinal gland (F203)
+2_kept_separate,F167,gland,Immunological,kept separate from: painful gland (F277)
+2_kept_separate,F167,gland,Immunological,kept separate from: swollen gland (F369)
+2_kept_separate,F181,hemorrhagic,Skin,kept separate from: hemorrhagic fever (F182)
+2_kept_separate,F181,hemorrhagic,Skin,kept separate from: hemorrhaging (F183)
+2_kept_separate,F188,hospital,exposure,kept separate from: hospital equipment (F189)
+2_kept_separate,F190,human,Species,kept separate from: human to human (F191)
+2_kept_separate,F192,hypertension,CVS,kept separate from: hypotension (F193)
+2_kept_separate,F211,joint,Musculo Skeletal,kept separate from: ms muscles skeleton bones joint (F245)
+2_kept_separate,F211,joint,Musculo Skeletal,kept separate from: painful joint (F278)
+2_kept_separate,F211,joint,Musculo Skeletal,kept separate from: swollen joint (F370)
+2_kept_separate,F224,liver,GIT,kept separate from: liver abcess (F225)
+2_kept_separate,F224,liver,GIT,kept separate from: liver failure (F226)
+2_kept_separate,F244,mouth ulcer,Oral,kept separate from: ulcer (F391)
+2_kept_separate,F245,ms muscles skeleton bones joint,System,kept separate from: skeleton (F345)
+2_kept_separate,F246,muscle,System,kept separate from: muscle ache (F247)
+2_kept_separate,F246,muscle,System,kept separate from: muscle or body ache (F248)
+2_kept_separate,F246,muscle,System,kept separate from: muscle pain (F249)
+2_kept_separate,F265,night sweat,General,kept separate from: sweat (F368)
+2_kept_separate,F311,rash,Skin,kept separate from: skin rash (F348)
+2_kept_separate,F316,renal,Urinary,kept separate from: renal failure (F317)
+2_kept_separate,F319,resp,System,kept separate from: resp ent bronchi lung pleura diaphragm (F320)
+2_kept_separate,F322,rheumatoid,Musculo Skeletal,kept separate from: rheumatoid arthritis (F323)
+2_kept_separate,F346,skin,Skin,kept separate from: skin infection (F347)
+2_kept_separate,F346,skin,Skin,kept separate from: skin rash (F348)
+2_kept_separate,F346,skin,Skin,kept separate from: skin soft tissues nails hair (F349)
+2_kept_separate,F346,skin,Skin,kept separate from: skin ulcer (F350)
+2_kept_separate,F350,skin ulcer,Skin,kept separate from: ulcer (F391)
+2_kept_separate,F353,soil,Route,kept separate from: soil to lung (F354)
+2_kept_separate,F355,sore throat,ENT,kept separate from: strep throat (F362)
+2_kept_separate,F377,thrombosis,Hematological,kept separate from: thrombosus (F378)
+2_kept_separate,F378,thrombosus,CVS,kept separate from: thrombus (F379)
+2_kept_separate,F394,urinary,Urinary,kept separate from: urinary tract infection (F395)
+2_kept_separate,F405,water,Route,kept separate from: water bourne (F406)

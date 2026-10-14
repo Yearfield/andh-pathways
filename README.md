@@ -57,6 +57,21 @@ If you change app files (app.js, style.css, index.html, sw.js), also change
 `t` text · `s` source as `sourceid:printedpage` (ids in `data/sources.json`) ·
 `d` † flag · `b` bold · `k` kind (`check`, `value`, `yn`, `info`, `sub`) · `h` heading.
 
+## Alternative Medicine (pathogen reference + feature search)
+
+Home tile **Alternative Medicine** → `#/altmed`. **Find**: tap features (once = *has*, twice = *must NOT have*, third tap clears) and
+pathogens are ranked by how many "has" features they match; **Browse** is an A–Z list; **About** explains the data. Spring-green theme, scoped
+to this section only. Reference data only — imported from the owner's master sheets, not SA STG, not clinically verified.
+
+- Source of truth: `altmed-src/*.csv` (pathogens, features, facts, prose, strains). Edit these, e.g. set `review_status` to `verified`
+  or `disputed` on a fact or prose row. Near-duplicate features that were deliberately kept separate are listed in
+  `altmed-src/review/features_final_review.csv`.
+- Build the app files: `python3 -I tools/build_altmed.py` → `data/altmed/index.json` + `prose.json` (commit both).
+- Only positive facts are stored; a feature that is not listed for a pathogen counts as **no**.
+- `tools/xlsx_to_altmed_csv.py` was the one-off import from the workbook. Do not re-run it over reviewed CSVs (ids are regenerated).
+- Tests: `node tests/altmed.test.mjs`.
+- Data is loaded on first use (about 0.6 MB over the wire) and cached by the service worker; it is not part of the app's first install.
+
 ## Licences
 
 PDF.js (Apache 2.0) in `vendor/pdfjs/`; IBM Plex Sans/Serif fonts (SIL OFL) in `fonts/`.
