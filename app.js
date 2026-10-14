@@ -375,18 +375,19 @@ function applyFilter() {
   $$(".fchip[data-catfilter]").forEach(b => b.setAttribute("aria-pressed", b.dataset.catfilter === S.cat));
 }
 
-const secLabel = (s) => s.n === 0 ? "Not this" : s.n === 1 ? "Diagnose" : s.n === 2 ? "Refer if" : /red flag/i.test(s.title) ? "Red flags"
+const secLabel = (s) => s.n === 0 ? "Not this" : s.n === 1 ? "Diagnose" : s.n === 2 ? "Consult if" : s.n === 9 ? "Other flags" : /red flag/i.test(s.title) ? "Red flags"
   : s.title.split(/ — | = | \(|:|,| · /)[0].split(" ").slice(0, 2).join(" ");
-const isRed = s => s.n === 0 || s.n === 2 || /red flag/i.test(s.title);
+const isRed = s => s.n === 2 || s.n === 9 || /red flag/i.test(s.title);
+const secTone = s => s.n === 0 ? "blue" : isRed(s) ? "red" : ""; // 0 = "Not this pathway" (light blue), red-flag sections = red
 
 function arrival(d) {
   const open = S.open[d.id] ||= new Set([0, 1, 2]); // 0 = exclusion box, open by default
   const secs = d.admission.map(s => { const [c, n] = doneCount(d, s.items); return { s, c, n }; });
   const last = Math.max(...d.admission.map(s => s.n));
   const jump = `<nav class="jump" aria-label="Sections">${secs.map(({ s, c, n }) =>
-    `<button data-jump="s${s.n}" class="${isRed(s) ? "red" : ""} ${n && c === n ? "done" : ""}"><b>${s.n}</b>${esc(secLabel(s))}</button>`).join("")}
+    `<button data-jump="s${s.n}" class="${secTone(s)} ${n && c === n ? "done" : ""}"><b>${s.n}</b>${esc(secLabel(s))}</button>`).join("")}
     <button data-jump="dec"><b>${last + 1}–${last + d.decision.length}</b>Decide</button></nav>`;
-  const body = secs.map(({ s, c, n }) => `<section class="card ${isRed(s) ? "red" : ""} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
+  const body = secs.map(({ s, c, n }) => `<section class="card ${secTone(s)} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
       <h2><button class="shead" data-sec="${s.n}" aria-expanded="${open.has(s.n)}"><span class="n">${s.n}</span><span class="st">${esc(s.title)}</span>
         <span class="cnt ${n && c === n ? "all" : ""}">${c}/${n}</span>${ico("down")}</button></h2>
       ${s.note ? `<div class="note">${esc(s.note)}</div>` : ""}${list(d, s.items)}</section>`).join("") +

@@ -27,6 +27,10 @@
   --lead-border: #b7d3cd;
   --r: 12px;
   --tabh: 60px;
+  --blue: #3a79ad;          /* "Not this pathway" (section 0) */
+  --blue-ink: #1d4a70;
+  --blue-bg: #eef5fb;
+  --blue-line: #b5d2ea;
   --fs: 0.7;               /* text scale: every rem size in this file is multiplied by this (1 = original size, 0.7 = 30% smaller) */
   --font-body: "Plex Sans", system-ui, sans-serif;
   --font-head: "Plex Serif", Georgia, serif;
@@ -808,3 +812,14 @@ ul.items li.info .txt::before, .note::before { content: "– "; color: var(--mu
 .akv > div:first-child { border-top: 0; }
 .akv b { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .akv b.inl { display: inline; text-transform: none; letter-spacing: 0; font-size: inherit; color: var(--ink); }
+
+/* section 0, "Not this pathway": light blue (a pointer to another pathway, not a warning) */
+.jump button.blue { color: var(--blue-ink); border-color: #9fc3e2; background: var(--blue-bg); }
+.jump button.blue.done { color: var(--ok); border-color: var(--ok); }
+section.card.blue { border-color: var(--blue-line); background: var(--blue-bg); }
+section.card.blue .shead { color: var(--blue-ink); }
+section.card.blue .shead .n { background: var(--blue); }
+section.card.blue > h2 { border-color: #cfe1f1; }
+section.card.blue ul.items li + li { border-color: #d6e6f4; }
+section.card.blue li.handoff .ho { background: #fff; border-color: var(--blue); }
+section.card.blue li.handoff .ho .arr { color: var(--blue); }
