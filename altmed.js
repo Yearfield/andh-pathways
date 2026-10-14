@@ -5,7 +5,7 @@
 
 const A = {
   d: null, pf: null, prose: null, names: null,   // index, pathogen -> feature indices, prose blocks, A-Z order
-  sel: {}, king: "All", strict: false, q: "", open: {}, shown: 80,   // Find: sel[featureIndex] = 1 (has) | -1 (must NOT have)
+  sel: {}, king: "All", strict: true, q: "", open: {}, shown: 80,   // Find: sel[featureIndex] = 1 (has) | -1 (must NOT have)
   bq: "", bk: "All", bshown: 120, last: "find", wired: false,
 };
 let X = null; // { app, esc, ico, loadJSON, $, $$ } supplied by app.js
@@ -106,7 +106,7 @@ function resHTML() {
   ${r.rows.length ? `<div class="list">${shown.map(({ pi, c }) => rowHTML(pi, r.has.length ? `<span class="asc ${c === r.has.length ? "all" : ""}">${c}/${r.has.length}</span>` : "",
     r.has.length ? `<br><span class="am">${r.has.map(f => (A.d.has[f] || []).includes(pi) ? `<b>${esc(feat(f)[1])}</b>` : `<s>${esc(feat(f)[1])}</s>`).join(" · ")}</span>` : "")).join("")}</div>
   ${r.rows.length > shown.length ? `<button class="btn" data-al-more>Show ${Math.min(80, r.rows.length - shown.length)} more</button>` : ""}`
-    : `<p class="empty">No pathogen matches. Remove a feature, or untick “strict”.</p>`}`;
+    : `<p class="empty">No pathogen matches. Remove a feature, or tick “Also show partial matches”.</p>`}`;
 }
 function paintFind() {
   $("#al-sel").innerHTML = selHTML(); $("#al-pick").innerHTML = pickHTML(); $("#al-res").innerHTML = resHTML();
@@ -120,7 +120,7 @@ function viewFind() {
     <section><h2 class="glabel">Selected</h2><div id="al-sel"></div></section>
     <section><h2 class="glabel">Add features</h2><div id="al-pick"></div></section>
     <section><h2 class="glabel">Kingdom</h2><div class="achips" id="al-kings"></div>
-      <label class="astrict"><input type="checkbox" id="alstrict" ${A.strict ? "checked" : ""}> Strict — must have every “has” feature</label></section>
+      <label class="astrict"><input type="checkbox" id="alpartial" ${A.strict ? "" : "checked"}> Also show partial matches (ranked)</label></section>
     <section id="al-res"></section>`,
   { search: `<label class="search">${X.ico("search")}<span class="sr">Search features</span><input id="alq" type="search" placeholder="Search features — fever, rash, Brazil" autocomplete="off" value="${esc(A.q)}"></label>`, tabs: tabsHTML("find") });
   paintFind();
@@ -200,7 +200,7 @@ function wire() {
     if (e.target.id === "alq") { A.q = e.target.value; A.shown = 80; $("#al-pick").innerHTML = pickHTML(); }
     if (e.target.id === "albq") { A.bq = e.target.value; A.bshown = 120; paintBrowse(); }
   });
-  X.app.addEventListener("change", e => { if (e.target.id === "alstrict") { A.strict = e.target.checked; A.shown = 80; $("#al-res").innerHTML = resHTML(); } });
+  X.app.addEventListener("change", e => { if (e.target.id === "alpartial") { A.strict = !e.target.checked; A.shown = 80; $("#al-res").innerHTML = resHTML(); } });
 }
 
 /* ---------- entry point (called from app.js route()) ---------- */
