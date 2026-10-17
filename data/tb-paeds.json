@@ -12,7 +12,9 @@
   "phcstg2026",
   "hiv2026",
   "paedstg2026",
-  "imci2022"
+  "imci2022",
+  "rrtb2023",
+  "adultstg2026"
  ],
  "dagger_note": "† = clinical or local addition, not in the SA guideline",
  "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
@@ -1083,6 +1085,752 @@
    "Doses vomited",
    "Weight change (kg)",
    "ADR noted (Y/N)"
+  ]
+ },
+ "appendix": {
+  "id": "dr-tb",
+  "title": "Drug-resistant TB (RR / MDR / pre-XDR / XDR) — admission, tests and management",
+  "sources": [
+   "rrtb2023",
+   "adultstg2026",
+   "hiv2026"
+  ],
+  "sections": [
+   {
+    "n": 1,
+    "title": "When this appendix applies",
+    "items": [
+     {
+      "t": "Xpert MTB/RIF Ultra, TB-NAAT or culture reports rifampicin resistance",
+      "s": "rrtb2023:11",
+      "b": 1
+     },
+     {
+      "t": "Child with TB disease and an RR-TB source case, or failing first-line treatment despite good adherence",
+      "s": "rrtb2023:16",
+      "b": 1
+     },
+     {
+      "t": "Adults: never treat DR-TB without laboratory confirmation (molecular or phenotypic)",
+      "s": "adultstg2026:16.22",
+      "b": 1
+     },
+     {
+      "t": "Children may be clinically diagnosed and still registered for RR-TB treatment",
+      "s": "rrtb2023:9"
+     },
+     {
+      "h": "Categories"
+     },
+     {
+      "t": "RR-TB: rifampicin resistant ± other drugs (includes MDR, pre-XDR, XDR)",
+      "s": "rrtb2023:7",
+      "k": "sub"
+     },
+     {
+      "t": "MDR-TB: isoniazid + rifampicin resistant",
+      "s": "rrtb2023:7",
+      "k": "sub"
+     },
+     {
+      "t": "Pre-XDR: RR + fluoroquinolone resistant",
+      "s": "rrtb2023:7",
+      "k": "sub"
+     },
+     {
+      "t": "XDR: RR + fluoroquinolone + bedaquiline or linezolid resistant",
+      "s": "rrtb2023:7",
+      "k": "sub"
+     },
+     {
+      "t": "Isoniazid mono-resistant (Hr-TB): RHZE + levofloxacin ≥ 6 months — not this appendix",
+      "s": "adultstg2026:16.22",
+      "k": "sub"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Tests — send 'DR-TB reflex DST' on the RR result",
+    "items": [
+     {
+      "t": "Recall the patient; send a 2nd specimen for DR-TB reflex testing",
+      "s": "rrtb2023:9",
+      "b": 1
+     },
+     {
+      "t": "Reflex = smear, culture, Xpert MTB/XDR (INH, ETO, injectables, FLQ) + phenotypic BDQ and LZD; genotypic ~48 h",
+      "s": "rrtb2023:12",
+      "b": 1
+     },
+     {
+      "t": "FLQ, BDQ or LZD resistant: lab sends for pretomanid DST (NTBRL)",
+      "s": "rrtb2023:12"
+     },
+     {
+      "t": "Extended DST (NICD) only on request: failing, BDQ / LZD resistance, prior 2nd-line exposure",
+      "s": "rrtb2023:12"
+     },
+     {
+      "t": "No XDR result in 30 days: repeat sample, continue short regimen",
+      "s": "rrtb2023:15"
+     },
+     {
+      "t": "Discordant results: phone the lab; treat the 'most resistant' scenario; PCAC / NCAC",
+      "s": "rrtb2023:15",
+      "b": 1
+     },
+     {
+      "h": "Child"
+     },
+     {
+      "t": "≥ 2 good specimens for Xpert Ultra AND culture / DST; < 5 y gastric aspirate or induced sputum; stool Xpert (no culture); FNA of nodes",
+      "s": "rrtb2023:16"
+     },
+     {
+      "t": "No own isolate: treat according to the source case's DST",
+      "s": "rrtb2023:18",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Ambulatory or ADMIT",
+    "items": [
+     {
+      "h": "Ambulatory start if"
+     },
+     {
+      "t": "Ambulant, fair–good condition (BMI ≥ 18.5)",
+      "s": "rrtb2023:9"
+     },
+     {
+      "t": "Can attend clinic for review and DOT",
+      "s": "rrtb2023:9"
+     },
+     {
+      "h": "ADMIT if any"
+     },
+     {
+      "t": "Respiratory insufficiency",
+      "s": "rrtb2023:9",
+      "b": 1
+     },
+     {
+      "t": "Hb < 8 g/dL",
+      "s": "rrtb2023:9",
+      "b": 1
+     },
+     {
+      "t": "BMI < 18",
+      "s": "rrtb2023:9",
+      "b": 1
+     },
+     {
+      "t": "CNS RR-TB",
+      "s": "rrtb2023:9",
+      "b": 1
+     },
+     {
+      "t": "Clinically unstable",
+      "s": "rrtb2023:9",
+      "b": 1
+     },
+     {
+      "t": "Needs IV therapy",
+      "s": "rrtb2023:9"
+     },
+     {
+      "t": "Too weak to attend clinic",
+      "s": "rrtb2023:9"
+     },
+     {
+      "t": "Infection-control problem at home",
+      "s": "rrtb2023:9"
+     },
+     {
+      "t": "Unstable social situation",
+      "s": "rrtb2023:9"
+     },
+     {
+      "t": "Recurrent interruption of outpatient treatment",
+      "s": "rrtb2023:9"
+     },
+     {
+      "t": "Clinician judgement / patient preference",
+      "s": "rrtb2023:9"
+     },
+     {
+      "h": "At ANDH"
+     },
+     {
+      "t": "Do not wait for smear / culture conversion to discharge",
+      "s": "rrtb2023:8"
+     },
+     {
+      "t": "Airborne infection control; manage in a DR-TB unit / hospital",
+      "s": "adultstg2026:16.23",
+      "b": 1
+     },
+     {
+      "t": "Not a registered DR-TB initiation site → link / REFER to the DR-TB unit for registration and start",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Before start: register, counsel family, consent, psychosocial + substance-use + mental-health screen, contact tracing",
+      "s": "rrtb2023:9"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Baseline before starting",
+    "items": [
+     {
+      "t": "Sputum smear, culture, DST",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "CXR",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "ECG (QTc)",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "FBC + differential",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "AST, ALT, bilirubin",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "Electrolytes, urea, creatinine",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "HIV, HBV, HCV",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "Glucose / HbA1c",
+      "s": "rrtb2023:36",
+      "b": 1
+     },
+     {
+      "t": "Weight / BMI",
+      "s": "rrtb2023:36"
+     },
+     {
+      "t": "Visual acuity + colour",
+      "s": "rrtb2023:36"
+     },
+     {
+      "t": "Neuropathy screen",
+      "s": "rrtb2023:36"
+     },
+     {
+      "t": "Point-of-care Hb acceptable",
+      "s": "rrtb2023:37"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Regimen decision — age ≥ 15 years",
+    "items": [
+     {
+      "t": "Screen: severe EPTB (meningitis, pericarditis, osteoarticular, abdominal, disseminated / miliary)? documented BDQ / LZD / Pa / DLM resistance? pregnant?",
+      "s": "rrtb2023:24",
+      "b": 1
+     },
+     {
+      "t": "None → BPaL-L for 6 months; start while awaiting DST and bloods",
+      "s": "rrtb2023:24",
+      "b": 1
+     },
+     {
+      "t": "Any → long individualised regimen (WHO groups, page 2)",
+      "s": "rrtb2023:24",
+      "b": 1
+     },
+     {
+      "t": "Hb < 8 g/dL: hospitalise; correct (transfusion) before BPaL-L",
+      "s": "rrtb2023:37",
+      "b": 1
+     },
+     {
+      "t": "ANDH has no blood bank → REFER if transfusion needed",
+      "d": 1
+     },
+     {
+      "t": "FLQ resistant → BPaL (stop levofloxacin) · INH / ETO / injectable resistance → continue BPaL-L",
+      "s": "rrtb2023:14"
+     },
+     {
+      "t": "Extensive disease (bilateral cavitary, ≥ 3 lung zones) → extend to 9 months",
+      "s": "rrtb2023:25"
+     },
+     {
+      "t": "> 1 month prior 2nd-line exposure is not a contraindication — exclude BDQ / LZD resistance",
+      "s": "rrtb2023:23"
+     },
+     {
+      "h": "Switch to long regimen if"
+     },
+     {
+      "t": "Resistance to BDQ, Pa, CFZ, DLM or LZD · culture positive at month 4 · BDQ / LZD / Pa stopped permanently for toxicity · clinical deterioration",
+      "s": "rrtb2023:26",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "BPaL-L doses — ≥ 15 y, ≥ 30 kg",
+    "items": [
+     {
+      "t": "Bedaquiline 200 mg daily × 8 weeks, then 100 mg daily",
+      "s": "rrtb2023:48",
+      "b": 1
+     },
+     {
+      "t": "Pretomanid 200 mg daily",
+      "s": "rrtb2023:51",
+      "b": 1
+     },
+     {
+      "t": "Linezolid 600 mg daily — at least 8 weeks; interruptions max 8 weeks in total",
+      "s": "rrtb2023:23",
+      "b": 1
+     },
+     {
+      "t": "Levofloxacin 30–< 46 kg 750 mg · ≥ 46 kg 1000 mg daily (moxifloxacin 400 mg if unavailable)",
+      "s": "rrtb2023:47",
+      "b": 1
+     },
+     {
+      "t": "6 months (extend to 9 at clinician's discretion); no pyridoxine needed",
+      "s": "rrtb2023:23"
+     }
+    ]
+   }
+  ],
+  "groups": [
+   {
+    "group": "A",
+    "step": "Include all three where possible",
+    "s": "rrtb2023:27",
+    "meds": [
+     {
+      "drug": "Levofloxacin / moxifloxacin",
+      "adult": [
+       {
+        "t": "LFX 30–< 46 kg 750 mg · ≥ 46 kg 1000 mg; MFX 400 mg (high dose up to 800 mg)",
+        "s": "rrtb2023:47"
+       }
+      ],
+      "use": [
+       {
+        "t": "Include for CNS; omit if FLQ resistant",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Bedaquiline",
+      "adult": [
+       {
+        "t": "Long regimen ≥ 30 kg: 400 mg daily × 2 weeks, then 200 mg Mon / Wed / Fri",
+        "s": "rrtb2023:48"
+       }
+      ],
+      "use": [
+       {
+        "t": "Include if no resistance; reload after interruption (box)",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Linezolid",
+      "adult": [
+       {
+        "t": "30–< 36 kg 300 mg · 36–< 46 kg 450 mg · ≥ 46 kg 600 mg daily",
+        "s": "rrtb2023:49"
+       }
+      ],
+      "use": [
+       {
+        "t": "All incl. CNS; Hb < 8, neutrophils < 0.75 or platelets < 50 → start / restart only in hospital",
+        "s": "rrtb2023:27"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "group": "B",
+    "step": "Add one or both if possible",
+    "s": "rrtb2023:27",
+    "meds": [
+     {
+      "drug": "Clofazimine",
+      "adult": [
+       {
+        "t": "100 mg daily",
+        "s": "rrtb2023:49"
+       }
+      ],
+      "use": [
+       {
+        "t": "Possible cross-resistance with bedaquiline",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Terizidone",
+      "adult": [
+       {
+        "t": "30–< 46 kg 500 mg · 46–< 70 kg 750 mg daily",
+        "s": "rrtb2023:49"
+       }
+      ],
+      "use": [
+       {
+        "t": "Include for CNS; + pyridoxine 50 mg",
+        "s": "rrtb2023:26"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "group": "C",
+    "step": "Add to complete the regimen when A / B cannot be used",
+    "s": "rrtb2023:27",
+    "meds": [
+     {
+      "drug": "Ethambutol",
+      "adult": [
+       {
+        "t": "30–< 46 kg 800 mg · 46–< 70 kg 1200 mg · ≥ 70 kg 1600 mg",
+        "s": "rrtb2023:49"
+       }
+      ],
+      "use": [
+       {
+        "t": "Count as effective only if DST susceptible",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Delamanid",
+      "adult": [
+       {
+        "t": "30–< 46 kg 50 mg bd · ≥ 46 kg 100 mg bd",
+        "s": "rrtb2023:49"
+       }
+      ],
+      "use": [
+       {
+        "t": "Include for CNS",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Pyrazinamide",
+      "adult": [
+       {
+        "t": "30–< 36 kg 1250 mg · 36–< 70 kg 1500 mg · ≥ 70 kg 2000 mg",
+        "s": "rrtb2023:50"
+       }
+      ],
+      "use": [
+       {
+        "t": "CNS; effective only if DST susceptible",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Imipenem-cilastatin / meropenem",
+      "adult": [
+       {
+        "t": "Imipenem 1 g bd (≥ 15 y) · meropenem 1 g tid or 2 g bd; amox/clav (125 mg clav) 30 min before each dose",
+        "s": "rrtb2023:50"
+       }
+      ],
+      "use": [
+       {
+        "t": "CNS penetration; needs IV access → REFER",
+        "s": "rrtb2023:28"
+       }
+      ]
+     },
+     {
+      "drug": "Amikacin",
+      "adult": [
+       {
+        "t": "> 18 y only: 46–< 56 kg 750–1000 mg · ≥ 56 kg 1000 mg",
+        "s": "rrtb2023:50"
+       }
+      ],
+      "use": [
+       {
+        "t": "Only with documented susceptibility, audiometry, consent and TDM; never in pregnancy",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "Ethionamide",
+      "adult": [
+       {
+        "t": "30–< 46 kg 500 mg · 46–< 70 kg 750 mg · ≥ 70 kg 1000 mg",
+        "s": "rrtb2023:50"
+       }
+      ],
+      "use": [
+       {
+        "t": "CNS; only if no inhA mutation",
+        "s": "rrtb2023:27"
+       }
+      ]
+     },
+     {
+      "drug": "PAS",
+      "adult": [
+       {
+        "t": "4 g bd (≥ 70 kg 4–6 g bd)",
+        "s": "rrtb2023:50"
+       }
+      ],
+      "use": [
+       {
+        "t": "Rescue regimens",
+        "s": "rrtb2023:27"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "long_regimen": [
+   {
+    "t": "≥ 15 y not eligible for BPaL-L: individualised 18-month regimen (commonest reason: BDQ resistance)",
+    "s": "rrtb2023:26",
+    "b": 1
+   },
+   {
+    "t": "As many group A drugs still susceptible + terizidone + clofazimine; add group C by likely efficacy, prior exposure, toxicity",
+    "s": "rrtb2023:26",
+    "b": 1
+   },
+   {
+    "t": "CNS disease: drugs with CNS penetration; RR-TB meningitis include DLM, PZA and hdINH or ETO",
+    "s": "rrtb2023:11"
+   },
+   {
+    "t": "Composition: contact NCAC",
+    "s": "rrtb2023:6",
+    "b": 1
+   },
+   {
+    "t": "Rescue (XDR): DLM (if unexposed), carbapenem + amox/clav, ETO (katG only), PAS, amikacin, MFX 800 mg; send EDST; NCAC",
+    "s": "rrtb2023:28"
+   }
+  ],
+  "children": {
+   "principles": [
+    {
+     "t": "≥ 4 effective drugs; 5th if severe disease, CNS or ≤ 1 group A drug; all-oral",
+     "s": "rrtb2023:18",
+     "b": 1
+    },
+    {
+     "t": "No pretomanid < 15 y (BPaL-L not for children)",
+     "s": "rrtb2023:17",
+     "b": 1
+    },
+    {
+     "t": "Dose by weight band (Annexure 1, pp. 47–51); re-dose as weight changes",
+     "s": "rrtb2023:18"
+    },
+    {
+     "t": "< 5 y, XDR, or BDQ / LZD / CFZ resistance → paediatric DR-TB expert / PCAC / NCAC",
+     "s": "rrtb2023:19",
+     "b": 1
+    },
+    {
+     "t": "BDQ and DLM usually 6 months; LZD often tolerated only ~2 months — FBC 2-weekly first month then monthly",
+     "s": "rrtb2023:20"
+    },
+    {
+     "t": "Follow ≥ 12 months after treatment",
+     "s": "rrtb2023:17"
+    }
+   ],
+   "severe_def": {
+    "t": "Severe: bilateral CXR disease or cavities, airway-compressing nodes, EPTB other than peripheral nodes / simple effusion",
+    "s": "rrtb2023:20"
+   },
+   "rows": [
+    {
+     "pattern": "FLQ susceptible, non-CNS",
+     "severity": "Non-severe",
+     "regimen": "BDQ–LFX–CFZ–(TRD or DLM) 6 months ± LZD first 2 months",
+     "s": "rrtb2023:21"
+    },
+    {
+     "pattern": "FLQ susceptible, non-CNS",
+     "severity": "Severe",
+     "regimen": "BDQ–LFX–LZD–CFZ–(TRD or DLM) 9 months",
+     "s": "rrtb2023:21"
+    },
+    {
+     "pattern": "FLQ resistant",
+     "severity": "Non-severe",
+     "regimen": "BDQ–LZD–CFZ–TRD–DLM 6 months",
+     "s": "rrtb2023:21"
+    },
+    {
+     "pattern": "FLQ resistant",
+     "severity": "Severe",
+     "regimen": "BDQ–LZD–CFZ–TRD–DLM 9 months",
+     "s": "rrtb2023:21"
+    },
+    {
+     "pattern": "CNS / spinal / miliary / bone / pericardial",
+     "severity": "Severe",
+     "regimen": "BDQ–[LFX]–LZD–CFZ–TRD–DLM 12–18 months",
+     "s": "rrtb2023:21"
+    },
+    {
+     "pattern": "BDQ / CFZ / LZD resistant",
+     "severity": "Any",
+     "regimen": "Individualised rescue — REFER / expert",
+     "s": "rrtb2023:21"
+    }
+   ]
+  },
+  "monitoring": [
+   {
+    "t": "Every visit: clinical review + adverse-event questionnaire; weight monthly",
+    "s": "rrtb2023:40"
+   },
+   {
+    "t": "Smear + culture: baseline, 2 weeks, 4 weeks, then monthly",
+    "s": "rrtb2023:43",
+    "b": 1
+   },
+   {
+    "t": "ECG (QTc): 2 weeks, then monthly",
+    "s": "rrtb2023:37",
+    "b": 1
+   },
+   {
+    "t": "FBC / Hb 2-weekly to week 8, then 4-weekly (POC Hb acceptable)",
+    "s": "rrtb2023:38",
+    "b": 1
+   },
+   {
+    "t": "Hb < 8 g/dL in weeks 2–8: admit; interrupt if symptomatic. Later: stop LZD if responding (after ≥ 2 months LZD)",
+    "s": "rrtb2023:38",
+    "b": 1
+   },
+   {
+    "t": "Visual acuity (Snellen / tumbling E) every visit on LZD; > 2-line drop → ophthalmology, else stop LZD",
+    "s": "rrtb2023:39",
+    "b": 1
+   },
+   {
+    "t": "Neuropathy: weeks 1–8 reduce dose / long regimen; weeks 8–16 reduce; ≥ 16 weeks stop LZD if culture converted",
+    "s": "rrtb2023:39"
+   },
+   {
+    "t": "BDQ reload after interruption: < 2 wk none · 2–4 wk 400 mg × 3 d · 1–12 months 400 mg × 7 d · > 12 months 400 mg × 14 d (16–30 kg: 200 mg)",
+    "s": "rrtb2023:28"
+   },
+   {
+    "t": "Grade ≥ 3 / serious AE: record and report on EDRWeb",
+    "s": "rrtb2023:41"
+   },
+   {
+    "t": "After treatment: review + sputum smear / culture at 6 and 12 months",
+    "s": "rrtb2023:44"
+   }
+  ],
+  "special": [
+   {
+    "h": "Pregnancy"
+   },
+   {
+    "t": "No BPaL-L: bedaquiline + delamanid + linezolid + levofloxacin for 6 months; no amikacin; ETO only if no alternative; notify NCAC; breastfeeding OK",
+    "s": "rrtb2023:31",
+    "b": 1
+   },
+   {
+    "h": "HIV"
+   },
+   {
+    "t": "TLD (ALD if < 30 kg or < 10 y); DTG is compatible with all RR-TB drugs; cotrimoxazole regardless of CD4",
+    "s": "hiv2026:91",
+    "b": 1
+   },
+   {
+    "t": "ART timing: after 2 weeks of DR-TB treatment once improving and tolerating; CNS TB: 4–8 weeks",
+    "s": "hiv2026:92",
+    "b": 1
+   },
+   {
+    "t": "Efavirenz contraindicated with bedaquiline; no zidovudine with linezolid",
+    "s": "rrtb2023:34"
+   },
+   {
+    "h": "Renal (CrCl < 30)"
+   },
+   {
+    "t": "LFX 750–1000 mg 3 × / week · TRD 250 mg daily or 500 mg 3 × / week · EMB 15–25 mg/kg and PZA 25–35 mg/kg 3 × / week · stop amikacin · LZD, MFX, CFZ, Pa unchanged",
+    "s": "rrtb2023:30"
+   },
+   {
+    "h": "Other"
+   },
+   {
+    "t": "Diabetes: tight glucose control; metformin ≤ 500 mg bd with DTG",
+    "s": "rrtb2023:35"
+   }
+  ],
+  "consult": [
+   {
+    "t": "PCAC: complicated regimen choice, stopping LZD / BDQ / FQ / CFZ / DLM for toxicity, CNS RR-TB, discordant DST, children's regimens, rescue, end-of-life",
+    "s": "rrtb2023:10"
+   },
+   {
+    "t": "NCAC (NCAC@witshealth.co.za): treatment failure, complicated children, FLQ-resistant CNS TB, XDR-TB (→ TB hospital), pregnancy notification",
+    "s": "adultstg2026:16.23",
+    "b": 1
+   }
   ]
  }
 }

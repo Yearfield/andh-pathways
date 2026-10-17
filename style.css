@@ -823,3 +823,22 @@ section.card.blue > h2 { border-color: #cfe1f1; }
 section.card.blue ul.items li + li { border-color: #d6e6f4; }
 section.card.blue li.handoff .ho { background: #fff; border-color: var(--blue); }
 section.card.blue li.handoff .ho .arr { color: var(--blue); }
+
+/* ---------- appendix screen (DR-TB) ---------- */
+.apb { scroll-margin-top: 88px; display: flex; flex-direction: column; gap: 8px; }
+.aptitle { display: flex; flex-direction: column; padding: 0 4px; }
+.aptitle b { font-family: var(--font-head); font-size: 1.15rem; }
+.aptitle span { color: var(--muted); font-size: .85rem; }
+.aptab { border-collapse: collapse; width: 100%; font-size: .85rem; }
+.aptab th, .aptab td { padding: 5px 6px; border-top: 1px solid var(--hair); text-align: left; vertical-align: top; font-weight: 400; }
+.aptab thead th { background: #eef2f1; border-top: 0; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; color: var(--muted); }
+.aptab tr.ghead th { background: var(--lead-bg); border-top: 1.5px solid var(--line); font-weight: 700; }
+.aptab tr.ghead th span { margin: 0 6px; }
+.aptab td.gc { width: 30px; padding-right: 0; }
+.aptab th.md { font-weight: 700; min-width: 78px; }
+.aptab td.sev { color: var(--warn-ink); font-weight: 700; }
+.aptab .gl { display: inline-flex; width: 20px; height: 20px; border-radius: 6px; background: var(--ink); color: #fff; align-items: center; justify-content: center; font-size: .8rem; font-weight: 700; }
+.ac { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2px 6px; }
+.ac + .ac { margin-top: 5px; }
+.ac > span { flex: 1 1 100%; }
+.ac.b > span { font-weight: 700; }

@@ -26,6 +26,7 @@ const P = {
   doses: '<path d="m10.5 20.5-7-7a4.95 4.95 0 0 1 7-7l7 7a4.95 4.95 0 0 1-7 7zM7 10l7 7"/>',
   differentials: '<circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h10"/>',
   nursing: '<path d="M3 12h4l3-7 4 14 3-7h4"/>',
+  appendix: '<path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/>',
   sources: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M19 19v2H6"/>',
   scale: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
   interp: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
@@ -107,13 +108,23 @@ async function getDx(id) {
 
 /* ---------- verification (key changes if the text or source changes -> item becomes unverified again) ---------- */
 const key = (dx, it) => { let h = 5381, s = dx + "|" + (it.t || it.h) + "|" + (it.s || ""); for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
+/* An appendix (d.appendix, e.g. DR-TB) holds list items plus two tables; table rows are verified through a stand-in item built from the row text. */
+const rowItem = r => ({ t: [r.pattern, r.severity, r.regimen].filter(Boolean).join(" · "), s: r.s });
+function apxItems(d) {
+  const a = d.appendix, out = []; if (!a) return out; const add = x => (x || []).forEach(i => i.t && out.push(i));
+  (a.sections || []).forEach(s => add(s.items));
+  (a.groups || []).forEach(g => (g.meds || []).forEach(m => { add(m.adult); add(m.use); }));
+  add(a.long_regimen);
+  if (a.children) { add(a.children.principles); if (a.children.severe_def) add([a.children.severe_def]); (a.children.rows || []).forEach(r => out.push(rowItem(r))); }
+  add(a.monitoring); add(a.special); add(a.consult); return out;
+}
 function allItems(d) {
   const out = []; const add = a => (a || []).forEach(i => i.t && out.push(i));
   d.admission.forEach(s => add(s.items)); add(d.decision); add(d.chart.standing);
   d.chart.rows.forEach(r => { add(r.feed); add(r.tests); add(r.treatment); if (r.lead) out.push({ t: r.lead }); });
   (d.differentials || []).forEach(x => { add(x.features); add(x.confirm); add(x.manage); add(x.refer); });
   d.boxes.forEach(b => add(b.items)); add(d.discharge.items); add(d.followup.items);
-  d.nursing.params.forEach(p => add(p.items)); add(d.nursing.call); return out;
+  d.nursing.params.forEach(p => add(p.items)); add(d.nursing.call); apxItems(d).forEach(i => out.push(i)); return out;
 }
 const progress = d => { const a = allItems(d); const v = a.filter(i => S.verified[key(d.id, i)]).length; return [v, a.length]; };
 const doneCount = (d, items) => { const r = (items || []).filter(i => i.t); return [r.filter(i => S.checked[key(d.id, i)]).length, r.length]; };
@@ -162,8 +173,8 @@ function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
     ${S.verify ? `<div class="meter" title="${v} of ${n} verified"><i style="width:${n ? (100 * v / n) : 0}%"></i></div>` : ""}
     ${head}</header>
   <main class="fade ${mainCls}">${body}</main>${after}
-  <nav class="tabs">${[["arrival", "Arrival"], ["days", "Timeline"], ["differentials", "Differentials"], ["doses", "Doses"], ["nursing", "Nursing"], ["sources", "Sources"]]
-      .filter(([t]) => t !== "differentials" || (d.differentials || []).length).map(([t, l]) => `<button data-go="#/dx/${d.id}/${t}" class="${tab === t ? "on" : ""}" ${tab === t ? 'aria-current="page"' : ""}>${ico(t)}${l}</button>`).join("")}</nav>`;
+  <nav class="tabs">${[["arrival", "Arrival"], ["days", "Timeline"], ["differentials", "Differentials"], ["doses", "Doses"], ["nursing", "Nursing"], ["sources", "Sources"], ["appendix", d.appendix ? apxLabel(d) : ""]]
+      .filter(([t]) => (t !== "differentials" || (d.differentials || []).length) && (t !== "appendix" || d.appendix)).map(([t, l]) => `<button data-go="#/dx/${d.id}/${t}" class="${tab === t ? "on" : ""}" ${tab === t ? 'aria-current="page"' : ""}>${ico(t)}${l}</button>`).join("")}</nav>`;
 }
 
 /* ---------- start page + procedures ---------- */
@@ -326,7 +337,7 @@ function home() {
   const rows = listRows();
   const groups = [...new Set(rows.map(r => popName(popOf(r.e))))];
   const rec = S.recent.map(r => ({ ...r, e: entry(r.id) })).filter(r => r.e).slice(0, 3);
-  const tabName = { arrival: "Arrival", days: "Timeline", differentials: "Differentials", doses: "Doses", nursing: "Nursing", sources: "Sources" };
+  const tabName = { arrival: "Arrival", days: "Timeline", differentials: "Differentials", doses: "Doses", nursing: "Nursing", sources: "Sources", appendix: "Appendix" };
   const recent = rec.length ? `<section id="recent"><h2 class="glabel">Recent</h2><div class="recent">${rec.map(r =>
     `<button class="rcard" data-go="#/dx/${r.id}/${r.tab}${r.tab === "days" && r.row ? "/" + r.row : ""}"><b>${esc(r.e.short)}</b><span>${esc(tabName[r.tab] || "")}</span></button>`).join("")}</div></section>` : "";
   const rowHtml = ({ e, hub }) => {
@@ -545,6 +556,31 @@ function doses(d) {
     `<div id="bdis" style="scroll-margin-top:84px">${card(d, d.discharge.title, d.discharge.items)}</div>` +
     `<div id="bfu" style="scroll-margin-top:84px">${card(d, d.followup.title, d.followup.items)}</div>`;
   shell({ d, tab: "doses", body, head: nav });
+}
+
+/* ---------- appendix screen (d.appendix): "Appendix: DR-TB" ---------- */
+const apxLabel = d => String(d.appendix.id || "appendix").toUpperCase(); // "dr-tb" -> "DR-TB" (tab label)
+const apxCell = (d, arr) => (arr || []).map(i => `<div class="ac ${i.b ? "b" : ""}"><span>${esc(i.t)}${dag(i)}</span>${chip(i.s)}${tick(key(d.id, i))}</div>`).join("");
+function appendix(d) {
+  const a = d.appendix, ch = a.children;
+  const blocks = []; // [jump id, chip number, chip label, html]
+  const wrap = (id, html) => `<div class="apb" id="${id}">${html}</div>`;
+  (a.sections || []).forEach(s => blocks.push([`ap${s.n}`, s.n, s.title.split(/ — | = | \(|:|,| · /)[0].split(" ").slice(0, 2).join(" "), wrap(`ap${s.n}`, card(d, `${s.n}. ${s.title}`, s.items))]));
+  if ((a.groups || []).length) blocks.push(["apgrp", "", "Medicines", wrap("apgrp", `<section class="card"><h2 class="ctitle">Medicines by group</h2><div class="tscroll"><table class="aptab">
+    <thead><tr><th>Group</th><th>Medicine</th><th>Adult dose</th><th>Use / caution</th></tr></thead><tbody>${a.groups.map(g => `<tr class="ghead"><th colspan="4"><b class="gl">${esc(g.group)}</b> <span>${esc(g.step || "")}</span>${chip(g.s)}</th></tr>` +
+      (g.meds || []).map(m => `<tr><td class="gc"><b class="gl">${esc(g.group)}</b></td><th scope="row" class="md">${esc(m.drug)}</th><td>${apxCell(d, m.adult)}</td><td>${apxCell(d, m.use)}</td></tr>`).join("")).join("")}</tbody></table></div></section>`)]);
+  if ((a.long_regimen || []).length) blocks.push(["aplong", "", "Long regimen", wrap("aplong", card(d, "Long individualised regimen", a.long_regimen))]);
+  if (ch) blocks.push(["apchild", "", "Children", wrap("apchild", card(d, "Children and adolescents", [...(ch.principles || []), ...(ch.severe_def ? [ch.severe_def] : [])]) +
+    ((ch.rows || []).length ? `<section class="card"><h2 class="ctitle">Children: regimen by pattern</h2><div class="tscroll"><table class="aptab">
+      <thead><tr><th>Pattern</th><th>Severity</th><th>Regimen</th></tr></thead><tbody>${ch.rows.map(r => { const it = rowItem(r);
+        return `<tr><th scope="row" class="md">${esc(r.pattern)}</th><td class="${/^severe/i.test(r.severity || "") ? "sev" : ""}">${esc(r.severity || "")}</td><td><div class="ac"><span>${esc(r.regimen)}</span>${chip(r.s)}${tick(key(d.id, it))}</div></td></tr>`; }).join("")}</tbody></table></div></section>` : ""))]);
+  if ((a.monitoring || []).length) blocks.push(["apmon", "", "Monitoring", wrap("apmon", card(d, "Monitoring", a.monitoring))]);
+  if ((a.special || []).length) blocks.push(["apspec", "", "Special", wrap("apspec", card(d, "Special situations", a.special))]);
+  if ((a.consult || []).length) blocks.push(["apcons", "", "Consult", wrap("apcons", card(d, "Consult", a.consult, "blue"))]);
+  const head = `<nav class="boxnav" aria-label="Appendix sections">${blocks.map(([id, n, l]) => `<button class="fchip" data-jump="${id}">${n ? `<b>${n}</b> ` : ""}${esc(l)}</button>`).join("")}</nav>`;
+  const body = `<div class="aptitle"><b>Appendix: ${esc(apxLabel(d))}</b><span>${esc(a.title)}</span></div>` + blocks.map(b => b[3]).join("") +
+    `<p class="hint">${esc(d.dagger_note || "")}</p>`;
+  shell({ d, tab: "appendix", body, head });
 }
 
 function nursing(d) {
@@ -1271,11 +1307,12 @@ async function route() {
     if (p[0] === "scores") return scoresHome();
     if (p[0] === "score") return scoreView(p[1], p[2], p[3]);
     if (p[0] !== "dx") return landing();
-    const d = await getDx(p[1]); const tab = ["days", "differentials", "doses", "nursing", "sources"].includes(p[2]) ? p[2] : "arrival";
+    const d = await getDx(p[1]); const tab = ["days", "differentials", "doses", "nursing", "sources", "appendix"].includes(p[2]) ? p[2] : "arrival";
     remember(d.id, tab, p[3]);
     const hb = entry(d.id)?.hub; if (hb) S.hub[hb] = ((S.index.hubs || []).find(h => h.id === hb)?.members || []).findIndex(m => m.id === d.id); // hub reopens on the population you were in
     if (tab === "days") return days(d, parseInt(p[3] || "0", 10));
     if (tab === "differentials" && (d.differentials || []).length) return differentials(d, p[3] === undefined ? undefined : parseInt(p[3], 10));
+    if (tab === "appendix" && d.appendix) return appendix(d);
     if (tab === "doses") return doses(d);
     if (tab === "nursing") return nursing(d);
     if (tab === "sources") return sources(d);
