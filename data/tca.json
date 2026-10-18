@@ -1,0 +1,1182 @@
+{
+ "id": "tca",
+ "short": "TCA overdose",
+ "title": "Tricyclic antidepressant (TCA) overdose",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines where doses differ)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-18",
+ "sources": [
+  "stgah",
+  "paedstg2024",
+  "phcstg"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA guideline",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — TCA ingestion + any feature below (clinical)",
+   "items": [
+    {
+     "t": "Known or suspected TCA ingestion (e.g. amitriptyline)",
+     "s": "stgah:19.21",
+     "b": 1
+    },
+    {
+     "t": "Anticholinergic: sedation, delirium, tachycardia, dilated pupils, urinary retention, dry mouth",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Cardiovascular: QRS widening, ventricular dysrhythmias, hypotension",
+     "s": "paedstg2024:18.7"
+    },
+    {
+     "t": "Neurological: altered mental status, coma, seizures",
+     "s": "paedstg2024:18.7"
+    },
+    {
+     "t": "May be well on arrival and deteriorate rapidly. Serious toxicity may occur with low doses in children.",
+     "s": "paedstg2024:18.7",
+     "k": "info"
+    },
+    {
+     "t": "Wt ____ kg · Taken at ____ h · Drug / amount ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe TCA poisoning = any one of",
+   "note": "Mild–moderate = sedation and anticholinergic effects only.",
+   "items": [
+    {
+     "t": "QRS > 100 ms or ventricular dysrhythmia",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Coma",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Hypotension",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Collateral record",
+   "items": [
+    {
+     "h": "Child — Road to Health Booklet"
+    },
+    {
+     "t": "Last recorded weight (dosing)"
+    },
+    {
+     "t": "Whose tablets (household)",
+     "d": 1
+    },
+    {
+     "t": "Previous poisoning or admissions"
+    },
+    {
+     "t": "Epilepsy / heart disease"
+    },
+    {
+     "t": "Adolescent: depression, self-harm",
+     "d": 1
+    },
+    {
+     "t": "Caregiver on the booklet"
+    },
+    {
+     "h": "Adult / adolescent — clinic card / previous records"
+    },
+    {
+     "t": "TCA prescribed — for what",
+     "d": 1
+    },
+    {
+     "t": "Previous overdose / self-harm"
+    },
+    {
+     "t": "Psychiatric history, treatment"
+    },
+    {
+     "t": "Heart disease / epilepsy"
+    },
+    {
+     "t": "Other medicines at home"
+    },
+    {
+     "t": "Pregnancy possible",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Ingestion"
+    },
+    {
+     "t": "Container / strips brought",
+     "s": "stgah:19.12"
+    },
+    {
+     "t": "Time of ingestion",
+     "s": "stgah:19.13"
+    },
+    {
+     "t": "Number of tablets × mg"
+    },
+    {
+     "t": "Modified-release product"
+    },
+    {
+     "t": "Intentional vs accidental",
+     "s": "stgah:19.11"
+    },
+    {
+     "t": "Co-ingestants (pills, alcohol)"
+    },
+    {
+     "h": "Pre-hospital treatment — do not duplicate"
+    },
+    {
+     "t": "Activated charcoal given"
+    },
+    {
+     "t": "Benzodiazepine / fluids given"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Drowsiness / confusion"
+    },
+    {
+     "t": "Seizure"
+    },
+    {
+     "t": "Palpitations / collapse"
+    },
+    {
+     "t": "Not passing urine"
+    },
+    {
+     "h": "Social / mental health"
+    },
+    {
+     "t": "Adult/teen: suicidal intent",
+     "s": "stgah:19.15"
+    },
+    {
+     "t": "Child: supervision, storage",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Hyperthermia / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Irregular pulse",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "GCS ____ /15 · Pupils ____ mm",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Anticholinergic"
+    },
+    {
+     "t": "Dry mouth, dry skin",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Dilated pupils",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Flushed / hot"
+    },
+    {
+     "t": "Palpable bladder (retention)",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Reduced bowel sounds",
+     "d": 1
+    },
+    {
+     "t": "Delirium / agitation",
+     "s": "stgah:19.22"
+    },
+    {
+     "h": "Chest / CVS"
+    },
+    {
+     "t": "Crepitations (pulmonary oedema)",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Signs of aspiration",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Drowsy / coma"
+    },
+    {
+     "t": "Myoclonus / twitching",
+     "d": 1
+    },
+    {
+     "t": "Seizure activity"
+    },
+    {
+     "t": "Injury from fall / seizure",
+     "d": 1
+    },
+    {
+     "h": "Baselines for monitoring"
+    },
+    {
+     "t": "Bladder size"
+    },
+    {
+     "t": "Lung bases (overload)"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "12-lead ECG — all patients",
+   "items": [
+    {
+     "t": "On arrival: rhythm ____ QRS ____ ms",
+     "s": "stgah:19.22",
+     "k": "value"
+    },
+    {
+     "t": "QRS > 100 ms or ventricular dysrhythmia: alkalinise (sodium bicarbonate)",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Child: any arrhythmia → REFER",
+     "s": "paedstg2024:18.8",
+     "b": 1
+    },
+    {
+     "t": "Repeat after every bicarbonate bolus, then 6-hourly · cardiac monitor 48 h (child)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG — ward blood gas (pH, K, Na)",
+   "items": [
+    {
+     "t": "On arrival: pH ____ K ____ Na ____",
+     "s": "stgah:19.22",
+     "k": "value"
+    },
+    {
+     "t": "On bicarbonate: target pH 7.45–7.55",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Repeat after every bicarbonate bolus and 4-hourly while alkalinising",
+     "d": 1
+    },
+    {
+     "t": "HGT on arrival: ____ mmol/L (< 3: correct — threshold †)",
+     "s": "stgah:19.13",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise / coma",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Broad QRS / VT",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "stgah:19.22",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Respiratory depression",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Aspiration",
+     "d": 1
+    },
+    {
+     "t": "Urinary retention",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Hyperthermia",
+     "d": 1
+    },
+    {
+     "t": "Co-ingestion (paracetamol)",
+     "d": 1
+    },
+    {
+     "t": "Benzodiazepine co-ingestion: no flumazenil",
+     "s": "stgah:19.23"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Intentional self-harm",
+     "s": "stgah:19.11"
+    },
+    {
+     "t": "Head or other injury",
+     "d": 1
+    },
+    {
+     "t": "Child: neglect concern",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE TCA poisoning → alkalinise, then REFER (ICU). Adult: ICU if ventilatory or circulatory support needed; child: any arrhythmia → refer",
+   "s": "stgah:19.22"
+  },
+  {
+   "t": "11. ADMIT — continuous ECG monitoring — stabilise, then continue on the 0 h – discharge inpatient chart and the 24-hour nursing record",
+   "s": "paedstg2024:18.8"
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Alkalinise whenever the criteria are met, not on the clock",
+  "columns": {
+   "feed": "Fluids & bicarbonate",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Cardiac monitor continuously; child: cardiac and ECG monitoring for 48 h",
+    "s": "paedstg2024:18.8",
+    "b": 1
+   },
+   {
+    "t": "12-lead ECG on arrival, after every bicarbonate bolus, then 6-hourly until normal for 24 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Hourly for the first 24 h and while QRS > 100 ms or on bicarbonate, then 4-hourly: HR, BP, RR, SpO₂, temperature, GCS, pupils, monitor rhythm, bladder / urine",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "VBG (pH, K, Na) after every bicarbonate bolus and 4-hourly while alkalinising",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HGT on arrival and with any seizure or drop in LOC",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fluid balance — avoid overload",
+    "s": "stgah:19.22"
+   },
+   {
+    "t": "Seizure precautions"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral note for charcoal, benzodiazepines and fluids already given. Call Poisons Helpline 0861 555 777 or UFS 082 491 0160 (24 h).",
+    "feed": [
+     {
+      "h": "Airway · decontamination · fluids"
+     },
+     {
+      "t": "Airway, O₂, IV access, cardiac monitor",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Symptomatic: be prepared to intubate early → REFER (ventilation)",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Activated charcoal once airway protected — works for longer than usual (TCAs delay gastric emptying); doses in Doses tab",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Gastric lavage seldom: experienced staff, airway protected; adult ≤ 60 min; child: large ingestion or within a few hours",
+      "s": "paedstg2024:18.7"
+     },
+     {
+      "t": "Hypotension — child: NaCl 0.9% or Ringer's lactate 20 mL/kg IV bolus",
+      "s": "paedstg2024:18.8",
+      "b": 1
+     },
+     {
+      "t": "Hypotension — adult: crystalloid in titrated boluses up to 1 L",
+      "d": 1
+     },
+     {
+      "t": "Avoid fluid overload (myocardial dysfunction)",
+      "s": "stgah:19.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG — all patients: QRS ____ ms, rhythm",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "VBG: pH, K, Na",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "stgah:19.13",
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If intentional or unknown: paracetamol level (≥ 4 h)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "If female of child-bearing age: urine βhCG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Record time of ingestion on request forms",
+      "s": "stgah:19.13"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Alkalinise if ventricular dysrhythmia · QRS > 100 ms · hypotension unresponsive to fluids · seizures",
+      "s": "stgah:19.22"
+     },
+     {
+      "t": "Sodium bicarbonate 8.4% IV, 1–2 mL/kg as bolus doses (child: 1–2 mEq/kg) — target pH 7.45–7.55",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Monitor acid-base, K and Na. Specialist / Poisons Centre consultation",
+      "s": "paedstg2024:18.8"
+     },
+     {
+      "t": "Bicarbonate unavailable or fluid-restricted: hyperventilate if intubated (adult)",
+      "s": "stgah:19.22"
+     },
+     {
+      "h": "Seizures / restlessness"
+     },
+     {
+      "t": "ADULT: lorazepam 4 mg IV, or midazolam 10 mg IV (IM/buccal if no IV), or diazepam 10 mg IV; repeat once at 5 min",
+      "s": "stgah:14.15"
+     },
+     {
+      "t": "ADULT: no phenytoin (toxin, cardiotoxic) — still seizing: REFER",
+      "s": "stgah:14.16",
+      "b": 1
+     },
+     {
+      "t": "CHILD: lorazepam 0.1 mg/kg IV (max 4 mg), or midazolam 0.25 mg/kg IV (max 10 mg) / 0.5 mg/kg buccal, or diazepam 0.25 mg/kg IV (max 10 mg); repeat once at 5 min",
+      "s": "paedstg2024:13.8"
+     },
+     {
+      "t": "CHILD: then phenobarbital 20 mg/kg IV over 5 min (max 600 mg). No phenytoin. REFER",
+      "s": "paedstg2024:13.9",
+      "b": 1
+     },
+     {
+      "h": "Also"
+     },
+     {
+      "t": "No flumazenil in mixed overdose (convulsions, dysrhythmias)",
+      "s": "stgah:19.23",
+      "b": 1
+     },
+     {
+      "t": "Severe: inotropes / anti-arrhythmics needed → REFER (ICU)",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Child: any arrhythmia → REFER",
+      "s": "paedstg2024:18.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Alk.",
+    "phase": "Any time criteria met",
+    "feed": [
+     {
+      "t": "Sodium bicarbonate 8.4% 1–2 mL/kg IV bolus",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Repeat bolus doses to pH 7.45–7.55",
+      "s": "stgah:19.22"
+     },
+     {
+      "t": "Total given ____ mL",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG (pH, K, Na) after every bolus",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "12-lead ECG after every bolus — QRS ____ ms",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Correct low K",
+      "d": 1
+     },
+     {
+      "t": "Discuss with specialist / Poisons Centre",
+      "s": "stgah:19.22"
+     },
+     {
+      "t": "QRS still > 100 ms or dysrhythmia despite bicarbonate: REFER (ICU)",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Charcoal given? ____ g at ____. Fluid balance.",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly obs + monitor rhythm (nursing record)"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bladder: catheter if retention",
+      "d": 1
+     },
+     {
+      "t": "Restless: benzodiazepine (Doses tab)",
+      "s": "stgah:19.23"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Maintenance fluids; nil by mouth while drowsy",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly obs + rhythm"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassess severity (Arrival §2): any criterion → alkalinise, consider REFER"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Fluid balance; watch for overload.",
+      "s": "stgah:19.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG 4-hourly while alkalinising",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Paracetamol level (if sent ≥ 4 h)",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lung bases — crepitations = overload / pulmonary oedema",
+      "s": "stgah:19.22"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Fluids as needed."
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG (6-hourly)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E if 0 h abnormal",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intentional: start mental health assessment when alert",
+      "s": "stgah:19.15"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids if alert, swallowing",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG (6-hourly)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still drowsy, broad QRS or hypotensive: REFER (ICU)",
+      "s": "stgah:19.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Monitor",
+    "feed": [
+     {
+      "t": "Bicarbonate stopped if QRS normal and stable. Oral diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG — normal for 24 h? Y / N",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "VBG if bicarbonate given in last 24 h",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adult: asymptomatic, or mild and ECG normal ≥ 24 h → medically fit",
+      "s": "stgah:19.22",
+      "b": 1
+     },
+     {
+      "t": "Intentional: mental health assessment; refer to social, psychological or psychiatric services",
+      "s": "stgah:19.15",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "36 h",
+    "phase": "Monitor",
+    "feed": [
+     {
+      "t": "Diet and fluids normal."
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG (6-hourly)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Child: social worker if supervision or neglect concern",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "48 h",
+    "phase": "Monitoring complete",
+    "feed": [],
+    "tests": [
+     {
+      "t": "12-lead ECG",
+      "s": "paedstg2024:18.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Child: 48 h cardiac and ECG monitoring complete → medically fit",
+      "s": "paedstg2024:18.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "Discharge",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Results reviewed (paracetamol, U&E)"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria"
+     },
+     {
+      "t": "Medicines reviewed: TCA stopped or small supply",
+      "d": 1
+     },
+     {
+      "t": "Safety counselling"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Alkalinisation · fluids",
+   "items": [
+    {
+     "h": "Alkalinise if (adult and child)"
+    },
+    {
+     "t": "Ventricular dysrhythmia · QRS > 100 ms · hypotension unresponsive to fluids · seizures",
+     "s": "stgah:19.22"
+    },
+    {
+     "h": "Sodium bicarbonate 8.4% IV"
+    },
+    {
+     "t": "1–2 mL/kg bolus doses (child: 1–2 mEq/kg) to pH 7.45–7.55",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Monitor acid-base, K, Na",
+     "s": "paedstg2024:18.8"
+    },
+    {
+     "t": "Specialist / Poisons Centre consultation",
+     "s": "paedstg2024:18.8"
+    },
+    {
+     "t": "Unavailable / fluid-restricted: hyperventilate if intubated (adult)",
+     "s": "stgah:19.22"
+    },
+    {
+     "h": "Hypotension"
+    },
+    {
+     "t": "Adult: crystalloid in titrated boluses up to 1 L; avoid overload",
+     "d": 1
+    },
+    {
+     "t": "Child: NaCl 0.9% or Ringer's lactate 20 mL/kg IV bolus",
+     "s": "paedstg2024:18.8"
+    }
+   ]
+  },
+  {
+   "title": "Charcoal · seizures · agitation",
+   "items": [
+    {
+     "h": "Activated charcoal — airway protected; effective for longer than usual in TCA overdose",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Adult: 50 g in 100 mL water",
+     "s": "stgah:19.14"
+    },
+    {
+     "t": "Child < 6 y: 1 g/kg in 50–100 mL water",
+     "s": "paedstg2024:18.4"
+    },
+    {
+     "t": "Child > 6 y: 20–50 g in 100–300 mL water",
+     "s": "paedstg2024:18.4"
+    },
+    {
+     "h": "Seizures / restlessness — benzodiazepine, repeat once at 5 min; never phenytoin",
+     "s": "stgah:19.23"
+    },
+    {
+     "t": "Adult: lorazepam 4 mg IV · or midazolam 10 mg IV (IM/buccal if no IV) · or diazepam 10 mg IV. Not controlled: REFER (refractory)",
+     "s": "stgah:14.15"
+    },
+    {
+     "t": "Child (< 13 y): lorazepam 0.1 mg/kg IV (max 4) · or midazolam 0.25 mg/kg IV (max 10) / 0.5 mg/kg buccal · or diazepam 0.25 mg/kg IV (max 10)",
+     "s": "paedstg2024:13.8"
+    },
+    {
+     "t": "Child: then phenobarbital 20 mg/kg IV (max 600 mg). REFER",
+     "s": "paedstg2024:13.9"
+    },
+    {
+     "t": "Avoid: flumazenil · phenytoin · fluid overload",
+     "s": "stgah:19.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate · refer",
+   "items": [
+    {
+     "h": "REFER (ICU)"
+    },
+    {
+     "t": "Ventilatory or circulatory support needed",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Inotropes or anti-arrhythmics needed",
+     "s": "stgah:19.22"
+    },
+    {
+     "t": "Child: any cardiac arrhythmia",
+     "s": "paedstg2024:18.8",
+     "b": 1
+    },
+    {
+     "t": "Seizures not controlled",
+     "s": "stgah:14.16"
+    },
+    {
+     "t": "QRS still > 100 ms or dysrhythmia despite bicarbonate",
+     "d": 1
+    },
+    {
+     "h": "Hold bicarbonate"
+    },
+    {
+     "t": "pH above 7.55",
+     "d": 1
+    },
+    {
+     "h": "Overload"
+    },
+    {
+     "t": "New crepitations, rising RR or SpO₂ falling from baseline: stop boluses",
+     "s": "stgah:19.22"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "12-lead ECG · VBG · HGT · U&E",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met (conditional items where they apply)",
+  "items": [
+   {
+    "t": "Adult: asymptomatic, or mild symptoms and ECG normal for ≥ 24 h",
+    "s": "stgah:19.22",
+    "b": 1
+   },
+   {
+    "t": "Child: 48 h cardiac and ECG monitoring completed",
+    "s": "paedstg2024:18.8",
+    "b": 1
+   },
+   {
+    "t": "Alert, eating, drinking, passing urine",
+    "d": 1
+   },
+   {
+    "t": "Intentional: mental health assessment and referral done",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "Child: safe storage counselling; social worker if concern",
+    "d": 1
+   },
+   {
+    "t": "Medicines reviewed (TCA supply)",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / OPD / mental health",
+  "items": [
+   {
+    "t": "Mental health follow-up as referred (social, psychological or psychiatric services)",
+    "s": "stgah:19.15"
+   },
+   {
+    "t": "PHC review at 1 week",
+    "d": 1
+   },
+   {
+    "t": "Return immediately if palpitations, fainting, seizure or confusion",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Poisons Helpline 0861 555 777",
+    "s": "paedstg2024:18.1"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — rhythm, vitals, neuro and bicarbonate",
+  "period": "One sheet per 24 hours; hourly rows for the first 24 h and while QRS > 100 ms or on bicarbonate (†), then 4-hourly (†)",
+  "params": [
+   {
+    "h": "Rhythm and vitals",
+    "items": [
+     {
+      "t": "Cardiac monitor continuously; child: cardiac and ECG monitoring for 48 h",
+      "s": "paedstg2024:18.8",
+      "b": 1
+     },
+     {
+      "t": "Hourly for the first 24 h and while QRS > 100 ms or on bicarbonate, then 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "HR, BP, RR, SpO₂, temperature; rhythm: R (regular) or I (irregular / broad)"
+     }
+    ]
+   },
+   {
+    "h": "Neuro, bladder, fluids",
+    "items": [
+     {
+      "t": "Same times: GCS, pupils in mm, agitation or seizure"
+     },
+     {
+      "t": "Bladder / urine passed (retention)",
+      "s": "stgah:19.22"
+     },
+     {
+      "t": "Record IV fluids and every bicarbonate bolus (mL) in Notes; ECG done ✓"
+     }
+    ]
+   },
+   {
+    "h": "ECG, VBG, HGT",
+    "items": [
+     {
+      "t": "12-lead ECG after every bicarbonate bolus, then 6-hourly",
+      "d": 1
+     },
+     {
+      "t": "VBG (pH, K, Na) after every bolus and 4-hourly while on bicarbonate",
+      "d": 1
+     },
+     {
+      "t": "HGT on arrival and with any seizure or drop in LOC",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "New irregular or broad-complex rhythm on the monitor"
+   },
+   {
+    "t": "HR or BP worse than the patient's baseline, or hypotension"
+   },
+   {
+    "t": "Seizure",
+    "b": 1
+   },
+   {
+    "t": "GCS falling"
+   },
+   {
+    "t": "RR, SpO₂ or breathing effort worse than baseline"
+   },
+   {
+    "t": "New crepitations / breathlessness after fluids",
+    "s": "stgah:19.22"
+   },
+   {
+    "t": "Urinary retention"
+   },
+   {
+    "t": "Agitation or delirium"
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Bicarbonate (mL)",
+   "ECGs done",
+   "Intake (mL)",
+   "Urine (mL)"
+  ]
+ }
+}
