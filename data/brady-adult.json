@@ -1,0 +1,1752 @@
+{
+ "id": "brady-adult",
+ "short": "Brady_Adult",
+ "title": "Bradycardia (adult)",
+ "population": "Adult",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-26",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pulseless / asystole → cardiac arrest (STG 20.1)",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    },
+    {
+     "t": "Organophosphate / carbamate → OP pathway",
+     "s": "adultstg2026:19.37",
+     "b": 1
+    },
+    {
+     "t": "Head injury with raised ICP → TBI pathway",
+     "s": "phcstg2026:21.12",
+     "b": 1
+    },
+    {
+     "t": "STEMI → ACS pathway alongside this one",
+     "s": "adultstg2026:3.27",
+     "b": 1
+    },
+    {
+     "t": "Asymptomatic sinus bradycardia → no treatment needed",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Child → paediatric STG",
+     "s": "phcstg2026:21.12"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Pulse rate < 50 beats/min",
+     "s": "phcstg2026:21.11",
+     "b": 1
+    },
+    {
+     "t": "Confirmed on rhythm strip / 12-lead ECG",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "h": "Rhythm"
+    },
+    {
+     "t": "Sinus bradycardia",
+     "s": "adultstg2026:3.27",
+     "k": "sub"
+    },
+    {
+     "t": "Sinus arrest / slow escape rhythm",
+     "s": "adultstg2026:3.27",
+     "k": "sub"
+    },
+    {
+     "t": "2nd-degree AV block",
+     "s": "adultstg2026:3.26",
+     "k": "sub"
+    },
+    {
+     "t": "3rd-degree (complete) AV block",
+     "s": "adultstg2026:3.26",
+     "k": "sub"
+    },
+    {
+     "t": "Slow AF / other",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "HR ____ · BP ____ · QRS narrow / wide · Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Unstable = any one of → treat now (chart 0 h)",
+   "items": [
+    {
+     "t": "Hypotension",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Altered mental status",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Chest pain",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Acute heart failure",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Shock: cold, clammy, weak pulses",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Syncope, dizziness (symptomatic)",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "HR < 40 after stabilisation → REFER",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "β-blocker (atenolol, carvedilol)",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Verapamil / other CCB",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Digoxin (dose, last level)",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Other rate-slowing Rx",
+     "d": 1
+    },
+    {
+     "t": "CKD / last K⁺, creatinine",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Hypothyroidism / levothyroxine",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "IHD / previous MI",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Pacemaker / previous ECG",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Syncope",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Dizziness",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Tiredness, poor effort tolerance",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Chest pain",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Breathlessness",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Confusion",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "h": "Toxins / medicines"
+    },
+    {
+     "t": "Overdose (tablets, count)",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "Pesticide exposure → OP",
+     "s": "adultstg2026:19.37"
+    },
+    {
+     "t": "Recent dose change",
+     "d": 1
+    },
+    {
+     "t": "Time of ingestion",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Cold exposure",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Head injury",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Little / no urine (K⁺)",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Cold intolerance, weight gain",
+     "d": 1
+    },
+    {
+     "h": "HIV / TB"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "t": "TB symptoms screen"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "s": "phcstg2026:21.12",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "s": "phcstg2026:21.12",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "s": "adultstg2026:3.27",
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "adultstg2026:3.27",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension with bradycardia (raised ICP)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Pulse < 50 bradycardia",
+     "s": "phcstg2026:21.11",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Pulse < 40 after stabilisation REFER",
+     "s": "adultstg2026:3.26",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ below 94% → oxygen",
+     "s": "phcstg2026:21.12",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Shock / heart failure"
+    },
+    {
+     "t": "Cold, clammy peripheries",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Weak pulses",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Crepitations",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Raised JVP / cannon waves",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS ____ (baseline)",
+     "k": "value"
+    },
+    {
+     "t": "Head injury signs → TBI",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "h": "Toxidrome"
+    },
+    {
+     "t": "Miosis, salivation, sweating → OP",
+     "s": "adultstg2026:19.37"
+    },
+    {
+     "t": "Bronchorrhoea / wheeze",
+     "s": "adultstg2026:19.37"
+    },
+    {
+     "h": "Metabolic"
+    },
+    {
+     "t": "Temperature low",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Macroglossia, myxoedema",
+     "s": "adultstg2026:23.30"
+    },
+    {
+     "t": "Muscle weakness (K⁺)",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Uraemic signs",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Rhythm strip + 12-lead ECG",
+   "items": [
+    {
+     "t": "Rhythm on arrival: ____",
+     "k": "value"
+    },
+    {
+     "t": "2nd / 3rd-degree AV block, sinus arrest → REFER (pacemaker)",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    },
+    {
+     "t": "Narrow QRS escape: atropine may work",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Wide QRS escape: go to pacing",
+     "d": 1
+    },
+    {
+     "t": "Inferior ST elevation → ACS pathway; atropine if hypotensive",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    },
+    {
+     "t": "Wide QRS / peaked T → treat as hyperkalaemia",
+     "s": "adultstg2026:3.27",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "K⁺ (VBG / U&E) + HGT",
+   "items": [
+    {
+     "t": "K⁺ ____ mmol/L · HGT ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ > 6.0: hyperkalaemia emergency (calcium, dextrose + insulin)",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "K⁺ > 7 refractory → REFER for dialysis",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Low K⁺ also slows the heart: replace",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "HGT hourly to 6 h after insulin",
+     "s": "adultstg2026:7.10"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "s": "phcstg2026:21.12",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "phcstg2026:21.12",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Pauses / near-asystole",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Ongoing chest pain",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Pulmonary oedema",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Hyperkalaemia ECG",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "CCB / β-blocker / digoxin overdose",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "Hypoxia",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Raised ICP",
+     "s": "phcstg2026:21.12"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = UNSTABLE / 2nd–3rd° block / HR < 40 → atropine ± pacing → REFER",
+   "s": "adultstg2026:3.26",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (stable bradycardia with a treatable cause) — stabilise, then continue on the 24-hour hourly chart and the 12-hour nursing cardiac record",
+   "s": "adultstg2026:3.27",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "2nd / 3rd-degree AV block, sinus arrest",
+   "branch": "If AV block / sinus arrest",
+   "features": [
+    {
+     "t": "Syncope, dizziness, > 60 y",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Dropped beats / AV dissociation"
+    },
+    {
+     "t": "Escape rhythm",
+     "s": "adultstg2026:3.26"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "12-lead ECG, rhythm strip",
+     "s": "phcstg2026:21.12",
+     "b": 1
+    },
+    {
+     "t": "K⁺, drug history",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Narrow QRS escape: atropine 0.5 mg IV q 3–5 min, max 3 mg",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "External pacing with analgesia",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Adrenaline 0.5 mg slow IV if others fail",
+     "s": "adultstg2026:3.26"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all (permanent pacemaker, tertiary); sinus arrest urgently",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hyperkalaemia",
+   "branch": "If hyperkalaemia",
+   "features": [
+    {
+     "t": "CKD / AKI, oliguria",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "ACE-I, spironolactone",
+     "s": "phcstg2026:4.23"
+    },
+    {
+     "t": "Wide QRS, peaked T",
+     "s": "adultstg2026:3.27"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "K⁺ (VBG / U&E)",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Creatinine, urea",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "ECG",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Calcium gluconate 10% 10 mL IV over 10 min",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Dextrose 50% 100 mL + soluble insulin 10 U",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Salbutamol neb 10–20 mg",
+     "s": "adultstg2026:7.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If K⁺ > 7 refractory, or AKI → dialysis",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "CCB / β-blocker poisoning",
+   "branch": "If drug (CCB / β-blocker / digoxin)",
+   "features": [
+    {
+     "t": "Overdose history",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "Profound hypotension, shock",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "Hyperglycaemia, low K⁺",
+     "s": "adultstg2026:19.28"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, HGT, K⁺",
+     "s": "adultstg2026:19.28",
+     "b": 1
+    },
+    {
+     "t": "Tablet count"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Atropine 0.5–1 mg IV q 2–3 min, max 3 mg",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "NaCl 0.9% IV; calcium gluconate 10% 30–60 mL over 15–30 min (max ×4)",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "Adrenaline / dobutamine infusion",
+     "s": "adultstg2026:19.29"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediately (HIET in high care / ICU)",
+     "s": "adultstg2026:19.29",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Inferior MI",
+   "branch": "If inferior MI",
+   "features": [
+    {
+     "t": "Chest pain"
+    },
+    {
+     "t": "Inferior ST elevation",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Hypotension, AV block",
+     "s": "adultstg2026:3.26"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial ECG",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Troponin if available",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "ACS pathway (reperfusion)",
+     "s": "adultstg2026:3.4",
+     "b": 1
+    },
+    {
+     "t": "Atropine if hypotension + 2nd-degree block",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "RV infarct: NaCl 0.9% 250–500 mL bolus",
+     "s": "adultstg2026:20.25"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y per ACS pathway; any AV block",
+     "s": "adultstg2026:3.26",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Digoxin toxicity",
+   "branch": "If drug (CCB / β-blocker / digoxin)",
+   "features": [
+    {
+     "t": "Elderly, renal dysfunction, low K⁺",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Nausea, visual change",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Digoxin level, K⁺, creatinine",
+     "s": "adultstg2026:3.18",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop digoxin",
+     "s": "adultstg2026:3.27"
+    },
+    {
+     "t": "Correct K⁺",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Atropine / pacing as for AV block",
+     "s": "adultstg2026:3.26"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If unstable or AV block (antidote not on EML)",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypoxia",
+   "branch": "If hypoxia",
+   "features": [
+    {
+     "t": "Respiratory distress, cyanosis"
+    },
+    {
+     "t": "Pre-arrest",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "SpO₂",
+     "s": "phcstg2026:21.12",
+     "b": 1
+    },
+    {
+     "t": "VBG",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Oxygen to SpO₂ 94–98%, or ventilate",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Treat the cause",
+     "s": "adultstg2026:3.27"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ventilation needed",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypothermia",
+   "branch": "If hypothermia / myxoedema",
+   "features": [
+    {
+     "t": "Exposure, alcohol, elderly",
+     "d": 1
+    },
+    {
+     "t": "Low temperature",
+     "s": "adultstg2026:3.27"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Core temperature"
+    },
+    {
+     "t": "HGT",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Warm the patient",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Look for myxoedema, sepsis",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not rewarming / arrest risk",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypothyroidism / myxoedema coma",
+   "branch": "If hypothermia / myxoedema",
+   "features": [
+    {
+     "t": "Lethargy, altered mental status",
+     "s": "adultstg2026:23.30"
+    },
+    {
+     "t": "Hypothermia, macroglossia",
+     "s": "adultstg2026:23.30"
+    },
+    {
+     "t": "Low Na⁺, low glucose",
+     "s": "adultstg2026:23.30"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "TSH, free T4",
+     "b": 1
+    },
+    {
+     "t": "Na⁺, HGT",
+     "s": "adultstg2026:23.30",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Passive rewarming",
+     "s": "adultstg2026:23.30"
+    },
+    {
+     "t": "Hydrocortisone 100 mg IV 8-hourly",
+     "s": "adultstg2026:23.31"
+    },
+    {
+     "t": "Levothyroxine 200 mcg oral / NGT load, then 100 mcg daily",
+     "s": "adultstg2026:23.31"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — myxoedema coma (ICU)",
+     "s": "adultstg2026:23.30",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Raised ICP / head injury",
+   "features": [
+    {
+     "t": "Head injury, falling GCS",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Hypertension + bradycardia",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "GCS, pupils",
+     "b": 1
+    },
+    {
+     "t": "REFER for CT",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Oxygen, head of bed elevated",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "TBI pathway — do not give atropine for Cushing reflex",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT / neurosurgery",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Unstable → atropine → pacing; always look for and treat the cause · branch rows by working diagnosis",
+  "columns": {
+   "feed": "Monitoring & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Continuous cardiac monitor",
+    "s": "phcstg2026:21.12",
+    "b": 1
+   },
+   {
+    "t": "HR, BP, SpO₂ every 15 min for the first hour and after every drug or pacing change",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Every 30 min to 4 h, then hourly to 24 h",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "GCS hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "If paced: capture + pain score with each set",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "HGT hourly to 6 h after insulin",
+    "s": "adultstg2026:7.10",
+    "b": 1
+   },
+   {
+    "t": "Record on the 12-hour nursing cardiac record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Pulseless → cardiac arrest protocol. Check the referral letter for atropine already given (dose, time) — it counts toward the 3 mg maximum. Hold β-blockers, verapamil and digoxin †.",
+    "feed": [
+     {
+      "t": "Airway open; oxygen to SpO₂ 94–98%",
+      "s": "phcstg2026:21.12",
+      "b": 1
+     },
+     {
+      "t": "ECG monitor, pulse oximeter, BP cuff",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "IV access",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Print rhythm strip; 12-lead ECG",
+      "s": "phcstg2026:21.12",
+      "b": 1
+     },
+     {
+      "t": "Hypotension, no heart failure: NaCl 0.9% 200 mL IV",
+      "s": "phcstg2026:21.12",
+      "b": 1
+     },
+     {
+      "t": "Unstable: pacing pads on early",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ (VBG / U&E) now",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     },
+     {
+      "t": "Creatinine, urea, Na⁺",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "HGT · temperature",
+      "s": "adultstg2026:19.28",
+      "b": 1
+     },
+     {
+      "t": "Digoxin level if on digoxin",
+      "s": "adultstg2026:3.18",
+      "b": 1
+     },
+     {
+      "t": "TSH, free T4 if hypothyroid suspected",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     },
+     {
+      "t": "Troponin if chest pain",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Mg²⁺, Ca²⁺",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Unstable (hypotension, altered mental status, chest pain, acute HF, shock)",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Atropine 0.5 mg IV bolus, repeat every 3–5 min if no response, max 3 mg",
+      "s": "phcstg2026:21.12",
+      "b": 1
+     },
+     {
+      "t": "Works for narrow-QRS escape",
+      "s": "adultstg2026:3.26"
+     },
+     {
+      "t": "Wide-QRS escape → pace",
+      "d": 1
+     },
+     {
+      "t": "No response → external pacing (pacing defib on site), after analgesia: morphine 10–15 mg IM 3–6-hourly",
+      "s": "adultstg2026:3.26",
+      "b": 1
+     },
+     {
+      "t": "Pacing fails / not possible: adrenaline 1:10 000, 0.5 mg (5 mL) slow IV",
+      "s": "adultstg2026:3.26",
+      "b": 1
+     },
+     {
+      "t": "Then adrenaline infusion 0.1 mcg/kg/min, titrate (side 2)",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "h": "Stable"
+     },
+     {
+      "t": "No atropine; look for and treat the cause",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Asymptomatic sinus bradycardia needs no treatment",
+      "s": "adultstg2026:3.27"
+     },
+     {
+      "h": "Treat the cause now",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Hypoxia → oxygen / ventilate",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Hypothermia → warm",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "K⁺ > 6.0 → hyperkalaemia branch",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "t": "Overdose → drug branch",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Head injury → TBI pathway",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "h": "No response to atropine"
+     },
+     {
+      "t": "Discuss with the referral centre now",
+      "s": "phcstg2026:21.12"
+     }
+    ]
+   },
+   {
+    "label": "15 min",
+    "phase": "Atropine response",
+    "feed": [
+     {
+      "t": "HR ____ · BP ____/____ · atropine total ____ mg",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review ECG, K⁺, HGT",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still unstable: repeat atropine every 3–5 min to max 3 mg",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Max reached / no response → pacing",
+      "s": "adultstg2026:3.26"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Paced: capture + pain score; analgesia given",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, urea, Na⁺ results",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "2nd / 3rd-degree AV block or sinus arrest: REFER — symptomatic or not",
+      "s": "adultstg2026:3.26",
+      "b": 1
+     },
+     {
+      "t": "Treat the identified cause (branch rows)",
+      "s": "adultstg2026:3.27"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Cause treated?",
+    "feed": [
+     {
+      "t": "HR trend ____ · BP ____/____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ after hyperkalaemia treatment",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HGT hourly to 6 h after insulin",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HR < 40 after stabilisation → REFER",
+      "s": "adultstg2026:3.26",
+      "b": 1
+     },
+     {
+      "t": "Infusion running: titrate to response, keep referral moving",
+      "s": "adultstg2026:20.6"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Off infusion? Pacing still needed?"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat 12-lead ECG",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "K⁺, creatinine if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Drug-induced: keep holding the drug; restart only after specialist review",
+      "d": 1
+     },
+     {
+      "t": "Symptomatic, significant bradyarrhythmia → REFER for evaluation",
+      "s": "adultstg2026:3.26",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Transfer / ward",
+    "feed": [
+     {
+      "t": "Stable rhythm without drugs or pacing?"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, K⁺, results on letter",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transferred: handover (rhythm strips, atropine total + times, pacing settings, K⁺)",
+      "s": "phcstg2026:21.11"
+     },
+     {
+      "t": "Stays: cause reversed, sinus rhythm → discharge criteria (side 2)"
+     }
+    ]
+   },
+   {
+    "label": "If AV block / sinus arrest",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Pads on; monitor continuously",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG, K⁺, drug history",
+      "s": "adultstg2026:3.26",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Narrow-QRS escape: atropine 0.5 mg IV q 3–5 min, max 3 mg",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "External pacing with analgesia; adrenaline 0.5 mg slow IV if others fail",
+      "s": "adultstg2026:3.26"
+     },
+     {
+      "t": "REFER all for permanent pacemaker (tertiary); sinus arrest urgently to cardiology",
+      "s": "adultstg2026:3.27",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If hyperkalaemia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Monitor; HGT hourly to 6 h",
+      "s": "adultstg2026:7.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, creatinine, urea, ECG",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "K⁺ > 6.0: calcium gluconate 10% 10 mL IV over 10 min (repeat if ECG changes persist after 5 min)",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "t": "AND dextrose 50% 100 mL + soluble insulin 10 U IV over 5 min · AND salbutamol neb 10–20 mg",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "t": "Then sodium polystyrene sulfonate 15 g oral 6-hourly · K⁺ > 7 refractory → REFER for dialysis",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If drug (CCB / β-blocker / digoxin)",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NaCl 0.9% IV for hypotension",
+      "s": "adultstg2026:19.28"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, K⁺, ECG",
+      "s": "adultstg2026:19.28",
+      "b": 1
+     },
+     {
+      "t": "Digoxin level",
+      "s": "adultstg2026:3.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "CCB / β-blocker: atropine 0.5–1 mg IV q 2–3 min, max 3 mg; calcium gluconate 10% 30–60 mL over 15–30 min (max ×4); adrenaline / dobutamine infusion",
+      "s": "adultstg2026:19.28"
+     },
+     {
+      "t": "Charcoal only before symptoms (decontamination raises vagal tone) · REFER immediately (HIET in high care / ICU)",
+      "s": "adultstg2026:19.29",
+      "b": 1
+     },
+     {
+      "t": "Digoxin: stop, correct K⁺, atropine / pacing; REFER if unstable",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If inferior MI",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "RV infarct: NaCl 0.9% 250–500 mL bolus",
+      "s": "adultstg2026:20.25"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Serial ECG",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Troponin",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Run the ACS pathway (reperfusion) alongside",
+      "s": "adultstg2026:3.4",
+      "b": 1
+     },
+     {
+      "t": "Atropine if hypotension + symptomatic 2nd-degree AV block",
+      "s": "adultstg2026:3.26"
+     },
+     {
+      "t": "Any AV block → REFER",
+      "s": "adultstg2026:3.26"
+     }
+    ]
+   },
+   {
+    "label": "If hypothermia / myxoedema",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Passive rewarming",
+      "s": "adultstg2026:23.30"
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSH, free T4, Na⁺, HGT",
+      "s": "adultstg2026:23.30",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Myxoedema coma: hydrocortisone 100 mg IV 8-hourly; levothyroxine 200 mcg oral / NGT once, then 100 mcg daily",
+      "s": "adultstg2026:23.31"
+     },
+     {
+      "t": "Watch airway (macroglossia) · REFER (ICU)",
+      "s": "adultstg2026:23.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If hypoxia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oxygen to SpO₂ 94–98% / ventilate",
+      "s": "phcstg2026:21.12"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂",
+      "s": "phcstg2026:21.12",
+      "b": 1
+     },
+     {
+      "t": "VBG",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat the cause; bradycardia from hypoxia is pre-arrest",
+      "d": 1
+     },
+     {
+      "t": "Needs ventilation → REFER"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · rate support",
+   "items": [
+    {
+     "h": "Atropine"
+    },
+    {
+     "t": "0.5 mg IV bolus q 3–5 min, max 3 mg",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "STG 3.3.3: 0.6–1.2 mg for AV nodal block",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "h": "Adrenaline"
+    },
+    {
+     "t": "Bolus: 1:10 000, 0.5 mg (5 mL) slow IV",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Infusion: 10 mg (10 amp 1:1 000) in 1 L NaCl 0.9%; start 0.1 mcg/kg/min, titrate",
+     "d": 1
+    },
+    {
+     "t": "Rate at 0.1 mcg/kg/min: 50 kg 30 · 60 kg 36 · 70 kg 42 · 80 kg 48 · 90 kg 54 mL/h (double for 0.2)",
+     "s": "adultstg2026:20.7"
+    },
+    {
+     "h": "Dobutamine — cardiogenic shock"
+    },
+    {
+     "t": "5–10 mcg/kg/min: 250 mg up to 50 mL (5 mg/mL); 70 kg: 5 = 4.2, 10 = 8.4 mL/h",
+     "s": "adultstg2026:20.25"
+    },
+    {
+     "h": "Pacing analgesia"
+    },
+    {
+     "t": "Morphine 10–15 mg IM 3–6-hourly (monitor per App II)",
+     "s": "adultstg2026:3.26"
+    }
+   ]
+  },
+  {
+   "title": "Hyperkalaemia · CCB / β-blocker",
+   "items": [
+    {
+     "h": "Hyperkalaemia (K⁺ > 6.0)",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Calcium gluconate 10% 10 mL slow IV over 10 min; repeat if ECG changes persist after 5 min or recur",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Dextrose 50% 100 mL IV + soluble insulin 10 U push over 5 min; HGT hourly to 6 h",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Salbutamol 10–20 mg nebulised",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Then sodium polystyrene sulfonate 15 g + lactulose 15 mL oral 6-hourly, or 30–60 g rectal",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "h": "CCB / β-blocker poisoning"
+    },
+    {
+     "t": "Atropine 0.5–1 mg IV q 2–3 min, max 3 mg",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "Calcium gluconate 10% 30–60 mL IV over 15–30 min, ECG monitored, max 4 doses",
+     "s": "adultstg2026:19.28"
+    },
+    {
+     "t": "HIET → high care / ICU only: REFER",
+     "s": "adultstg2026:19.29",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor / escalate"
+    },
+    {
+     "t": "HR falling, pauses, or new AV block on monitor",
+     "d": 1
+    },
+    {
+     "t": "BP falling, new confusion, chest pain, breathlessness",
+     "s": "phcstg2026:21.12"
+    },
+    {
+     "t": "Paced: loss of capture, or no pulse with pacing spikes",
+     "d": 1
+    },
+    {
+     "t": "HGT low after insulin",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "h": "REFER (tertiary)"
+    },
+    {
+     "t": "All 2nd / 3rd-degree AV block · sinus arrest",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "HR < 40 after stabilisation",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Symptomatic significant bradyarrhythmia (pacemaker evaluation)",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "CCB / β-blocker poisoning needing HIET · dialysis",
+     "s": "adultstg2026:19.29"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "Rhythm strip · 12-lead ECG · K⁺ · HGT",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (not referred) — all five must be met",
+  "items": [
+   {
+    "t": "Asymptomatic; no syncope, dizziness ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "No 2nd / 3rd-degree AV block or pauses on ECG",
+    "s": "adultstg2026:3.26"
+   },
+   {
+    "t": "Cause corrected (K⁺, temperature, oxygen, thyroid Rx)",
+    "s": "adultstg2026:3.27"
+   },
+   {
+    "t": "Offending drug stopped or dose changed, letter states it",
+    "s": "adultstg2026:3.27"
+   },
+   {
+    "t": "Off atropine / infusion / pacing ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "Otherwise: transfer with rhythm strips, doses + times, results",
+    "k": "info"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC / OPD within 1 week: pulse, ECG, medicine review",
+    "d": 1
+   },
+   {
+    "t": "K⁺ if on ACE-I / spironolactone or CKD",
+    "s": "phcstg2026:4.16"
+   },
+   {
+    "t": "Refer back if syncope, dizziness, poor effort tolerance or HR falls again",
+    "s": "adultstg2026:3.27",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing cardiac record — HR, rhythm, BP and pacing",
+  "period": "12 hours (15-min rows to 1 h, 30-min to 4 h, hourly to 12 h)",
+  "params": [
+   {
+    "h": "HR, rhythm, BP, SpO₂",
+    "items": [
+     {
+      "t": "Continuous cardiac monitor",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Every 15 min for the first hour and after every drug or pacing change",
+      "d": 1
+     },
+     {
+      "t": "Every 30 min to 4 h, then hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "GCS",
+    "items": [
+     {
+      "t": "Hourly; baseline on arrival",
+      "d": 1
+     },
+     {
+      "t": "Sooner if confused or drowsy",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Pacing",
+    "items": [
+     {
+      "t": "Capture: palpable pulse matches paced rate (Y/N)",
+      "d": 1
+     },
+     {
+      "t": "Pain score with each set; analgesia charted",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Atropine: dose + time each bolus",
+      "s": "phcstg2026:21.12"
+     },
+     {
+      "t": "Infusion rate (mL/h)",
+      "s": "adultstg2026:20.7"
+     },
+     {
+      "t": "HGT hourly to 6 h after insulin",
+      "s": "adultstg2026:7.10"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "HR falling, pauses or a new AV block on the monitor",
+    "d": 1
+   },
+   {
+    "t": "BP falling, new confusion, chest pain or breathlessness",
+    "s": "phcstg2026:21.12",
+    "b": 1
+   },
+   {
+    "t": "Paced: loss of capture, or no pulse with pacing spikes",
+    "d": 1
+   },
+   {
+    "t": "HGT low after insulin",
+    "s": "adultstg2026:7.10"
+   },
+   {
+    "t": "Pulseless → start CPR",
+    "s": "adultstg2026:3.26",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Atropine total mg",
+   "Lowest HR",
+   "Lowest BP",
+   "Hours paced",
+   "Infusion hours",
+   "Pauses / AV block seen (Y/N)"
+  ]
+ }
+}

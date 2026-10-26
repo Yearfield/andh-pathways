@@ -95,7 +95,8 @@
     {"id": "fungal-paeds", "file": "fungal-paeds.json", "title": "Fungal skin and scalp infection — child (outpatient-first)", "short": "Fungal skin (paeds)", "population": "Child 2 months to 12 years · clinic-visit pathway; refer if any §2 criterion", "tags": {"pop": "Paediatric", "system": ["Skin"], "cat": ["Derms", "Infections"]}},
     {"id": "eczema-adult", "file": "eczema-adult.json", "title": "Eczema and atopic dermatitis — adult (outpatient-first)", "short": "Eczema (adult)", "population": "Adult ≥ 13 years · clinic-visit pathway; admit or refer if any §2 criterion", "tags": {"pop": "Adult", "system": ["Skin"], "cat": ["Derms", "Allergy"]}},
     {"id": "eczema-paeds", "file": "eczema-paeds.json", "title": "Eczema and atopic dermatitis — child (outpatient-first)", "short": "Eczema (paeds)", "population": "Child 2 months to 12 years · clinic-visit pathway; admit or refer if any §2 criterion", "tags": {"pop": "Paediatric", "system": ["Skin"], "cat": ["Derms", "Allergy"]}},
-    {"id": "tca", "file": "tca.json", "title": "Tricyclic antidepressant (TCA) overdose", "short": "TCA overdose", "population": "Adult + Paediatric", "tags": {"pop": "Adult + paeds", "system": ["CNS", "CVS"], "cat": ["Toxins"]}}
+    {"id": "tca", "file": "tca.json", "title": "Tricyclic antidepressant (TCA) overdose", "short": "TCA overdose", "population": "Adult + Paediatric", "tags": {"pop": "Adult + paeds", "system": ["CNS", "CVS"], "cat": ["Toxins"]}},
+    {"id": "brady-adult", "file": "brady-adult.json", "title": "Bradycardia (adult)", "short": "Brady_Adult", "population": "Adult", "tags": {"pop": "Adult", "system": ["CVS"], "cat": []}}
   ],
   "hubs": [
     {"id": "fracture", "short": "Fracture", "title": "Fractures — all sites, adult and paediatric", "population": "Adult + Paediatric",
