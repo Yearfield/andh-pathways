@@ -1,0 +1,1574 @@
+{
+ "id": "hypo-adult",
+ "short": "Hypo_Adult",
+ "title": "Hypoglycaemia (adult)",
+ "population": "Adult, non-pregnant",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-29",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "NOT THIS PATHWAY — these have their own pathways",
+   "items": [
+    {
+     "t": "pregnant / postpartum → Hypo Pregnancy pathway",
+     "b": 1
+    },
+    {
+     "t": "child → Hypo Paeds",
+     "b": 1
+    },
+    {
+     "t": "neonate → Hypo Neonate",
+     "b": 1
+    },
+    {
+     "t": "DKA / HHS (high glucose) → Hyperglycaemia / DKA pathways"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms",
+   "items": [
+    {
+     "t": "Blood glucose < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1
+    },
+    {
+     "t": "Known diabetic on Rx: < 4 mmol/L with symptoms",
+     "s": "phcstg2026:9.14",
+     "b": 1
+    },
+    {
+     "t": "Critically ill: glucose < 4 mmol/L",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "Act on finger-prick glucose; confirm with lab if uncertain",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "HGT ____ mmol/L · time ____ · Wt ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "Diabetic with altered consciousness and no glucometer → treat as hypoglycaemia",
+     "s": "phcstg2026:9.14",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe / admit = any one of",
+   "items": [
+    {
+     "t": "Semi-conscious or unconscious",
+     "s": "phcstg2026:9.14"
+    },
+    {
+     "t": "Convulsions",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Not safe to swallow",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "Caused by a sulphonylurea → admit, prolonged IV glucose",
+     "s": "adultstg2026:8.13",
+     "b": 1
+    },
+    {
+     "t": "Not awake 30 min after normal glucose → look for other cause of coma",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Recurrent severe hypoglycaemia → REFER",
+     "s": "adultstg2026:8.7"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Insulin: type, dose, time of last dose",
+     "s": "adultstg2026:8.11"
+    },
+    {
+     "t": "Sulphonylurea (glibenclamide / glimepiride)",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "Rifampicin recently stopped",
+     "s": "adultstg2026:8.9"
+    },
+    {
+     "t": "CKD / last eGFR",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Liver disease",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Alcohol use",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Steroids stopped recently",
+     "d": 1
+    },
+    {
+     "t": "Previous hypos / unawareness",
+     "s": "adultstg2026:8.13"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Sweating, tremor, palpitations",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Hunger, anxiety",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Confusion, behaviour change",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Slurred speech, unsteady gait",
+     "s": "phcstg2026:9.14"
+    },
+    {
+     "h": "Precipitants",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Missed / delayed meal",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Exercise",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Alcohol binge",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Insulin error / IM injection",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Diarrhoea, intercurrent illness",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Possible overdose",
+     "d": 1
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Weight loss, salt craving (adrenal)",
+     "s": "adultstg2026:8.1"
+    },
+    {
+     "t": "Travel to a malaria area",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "h": "HIV / TB"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "t": "TB symptoms screen"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "s": "phcstg2026:9.14",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "adultstg2026:8.1",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:8.12",
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "phcstg2026:21.22",
+     "k": "yn"
+    },
+    {
+     "t": "Fever",
+     "s": "adultstg2026:8.1",
+     "k": "yn"
+    },
+    {
+     "t": "Seizure activity",
+     "s": "adultstg2026:8.12",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Glucose < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Diabetic: < 4 mmol/L + symptoms",
+     "s": "phcstg2026:9.14",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Critically ill: < 4 mmol/L",
+     "s": "adultstg2026:23.32",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS ____ (baseline)",
+     "k": "value"
+    },
+    {
+     "t": "Focal signs (may mimic stroke)",
+     "d": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "h": "Causes"
+    },
+    {
+     "t": "Jaundice, liver signs",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Hyperpigmentation, postural drop (adrenal)",
+     "s": "adultstg2026:8.1"
+    },
+    {
+     "t": "Alcohol smell, ataxia, eye signs (Wernicke)",
+     "d": 1
+    },
+    {
+     "t": "Sepsis source",
+     "s": "adultstg2026:8.1"
+    },
+    {
+     "t": "Uraemic signs",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT (finger prick)",
+   "items": [
+    {
+     "t": "Value on arrival: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Below threshold (§1): treat now (chart 0 h)",
+     "s": "adultstg2026:8.12",
+     "b": 1
+    },
+    {
+     "t": "Recheck 5–10 min after IV dextrose",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Still low: second dextrose 50% 50 mL IV",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Once awake: hourly for several hours",
+     "s": "adultstg2026:8.13"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "U&E (K⁺, Na⁺), creatinine",
+   "items": [
+    {
+     "t": "K⁺ ____ · Na⁺ ____ · creatinine ____",
+     "k": "value"
+    },
+    {
+     "t": "Check K⁺ once glucose normal (hypokalaemia)",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Rising creatinine: renal failure raises hypo risk",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Low Na⁺ + high K⁺: suspect adrenal insufficiency",
+     "s": "adultstg2026:8.2",
+     "b": 1
+    },
+    {
+     "t": "Adrenal suspected: cortisol sample before hydrocortisone",
+     "s": "adultstg2026:8.2"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "phcstg2026:9.14",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:8.12",
+     "b": 1
+    },
+    {
+     "t": "Sulphonylurea / deliberate overdose",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Adrenal crisis",
+     "s": "adultstg2026:8.1"
+    },
+    {
+     "t": "Sepsis",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Liver failure",
+     "s": "adultstg2026:1.10"
+    },
+    {
+     "t": "Alcohol / Wernicke risk",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "Renal failure",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "phcstg2026:21.22"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HYPOGLYCAEMIA → dextrose now; adrenal / liver failure / not recovering → REFER",
+   "s": "adultstg2026:8.13",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (observation + education) — Treat, then continue on the 24-hour hypoglycaemia chart and the 24-hour nursing glucose record.",
+   "s": "adultstg2026:8.13",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Insulin-treated diabetes",
+   "branch": "If insulin",
+   "features": [
+    {
+     "t": "Missed meal, exercise, alcohol",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Dose error / IM injection",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Declining renal function",
+     "s": "adultstg2026:8.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT",
+     "b": 1
+    },
+    {
+     "t": "Creatinine / eGFR",
+     "s": "adultstg2026:8.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dextrose (chart 0 h), then snack",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Review dose; needs fall in CKD",
+     "s": "adultstg2026:8.10"
+    },
+    {
+     "t": "Chart branch \"If insulin\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "If recurrent severe hypoglycaemia",
+     "s": "adultstg2026:8.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sulphonylurea",
+   "branch": "If sulphonylurea",
+   "features": [
+    {
+     "t": "Glibenclamide / glimepiride",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Elderly, renal impairment",
+     "s": "adultstg2026:8.9"
+    },
+    {
+     "t": "Rifampicin stopped",
+     "s": "adultstg2026:8.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT hourly; recurs after bolus",
+     "d": 1
+    },
+    {
+     "t": "Creatinine / eGFR",
+     "s": "adultstg2026:8.9",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Admit; prolonged dextrose 10% infusion",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Observe ≥ 12 h after infusion stops",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Chart branch \"If sulphonylurea\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not responding to IV glucose",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Alcohol / malnutrition",
+   "branch": "If alcohol / malnourished",
+   "features": [
+    {
+     "t": "Binge drinking",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Malnourished",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "Hypothermia, vomiting",
+     "s": "adultstg2026:19.33"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT",
+     "b": 1
+    },
+    {
+     "t": "K⁺",
+     "s": "adultstg2026:19.33",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Thiamine 200 mg IV/IM before dextrose — never delay dextrose",
+     "s": "phcstg2026:21.23",
+     "b": 1
+    },
+    {
+     "t": "Chart branch \"If alcohol / malnourished\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "N usually",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Adrenal insufficiency",
+   "branch": "If adrenal",
+   "features": [
+    {
+     "t": "Thin, hypotensive, hypoglycaemic",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "t": "Hyperpigmentation, weight loss",
+     "s": "adultstg2026:8.1"
+    },
+    {
+     "t": "Stress, e.g. sepsis",
+     "s": "adultstg2026:8.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Na⁺ low, K⁺ high",
+     "s": "adultstg2026:8.2",
+     "b": 1
+    },
+    {
+     "t": "Serum cortisol before Rx",
+     "s": "adultstg2026:8.2",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Hydrocortisone 100 mg IV 6-hourly",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "t": "NaCl 0.9% IV; dextrose 50% boluses if needed",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "t": "Chart branch \"If adrenal\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all suspected, for evaluation",
+     "s": "adultstg2026:8.2",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sepsis / severe illness",
+   "branch": "If liver / renal / sepsis",
+   "features": [
+    {
+     "t": "Fever, source of infection",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Shock",
+     "s": "phcstg2026:21.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC, CRP, cultures",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Lactate / VBG",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat sepsis; frequent HGT",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Chart branch \"If liver / renal / sepsis\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "If septic shock / ICU",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Liver failure",
+   "branch": "If liver / renal / sepsis",
+   "features": [
+    {
+     "t": "Jaundice, encephalopathy",
+     "s": "adultstg2026:1.10"
+    },
+    {
+     "t": "Paracetamol / alcohol / hepatitis",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LFT, INR",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Monitor glucose regularly — hypoglycaemia is common",
+     "s": "adultstg2026:1.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — severe acute liver failure",
+     "s": "adultstg2026:1.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Renal failure",
+   "branch": "If liver / renal / sepsis",
+   "features": [
+    {
+     "t": "CKD / AKI on insulin or sulphonylurea",
+     "s": "adultstg2026:8.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Creatinine, eGFR, K⁺",
+     "s": "adultstg2026:8.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reduce insulin; stop glibenclamide if eGFR < 60",
+     "s": "adultstg2026:8.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per AKI / CKD pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Severe malaria",
+   "features": [
+    {
+     "t": "Travel to a malaria area",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Fever, impaired consciousness",
+     "s": "adultstg2026:9.15"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Malaria RDT / smear",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Artesunate 2.4 mg/kg IV at 0, 12, 24 h",
+     "s": "adultstg2026:9.15"
+    },
+    {
+     "t": "Frequent HGT",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ventilation / dialysis needed",
+     "s": "adultstg2026:9.15",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Recurrent / unexplained (factitious insulin, hypopituitarism)",
+   "features": [
+    {
+     "t": "No diabetes or clear cause",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Repeated episodes",
+     "s": "adultstg2026:8.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Glucose + sample at time of hypo",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dextrose; consider Addison's, hypopituitarism",
+     "s": "adultstg2026:8.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — for investigation",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Treat first, then find the cause · branch rows (side 2) by working diagnosis",
+  "columns": {
+   "feed": "Oral / IV glucose",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HGT 5–10 min after each IV dextrose",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "Once awake: HGT hourly for several hours",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "Then 2-hourly while on dextrose infusion",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Sulphonylurea: continue HGT for 12 h after the infusion stops",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "GCS hourly until baseline",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Meals / snacks taken",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing glucose record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Treat first, investigate after — never delay dextrose. Check the referral letter for dextrose or glucagon already given.",
+    "feed": [
+     {
+      "h": "Conscious, able to eat"
+     },
+     {
+      "t": "Sweets, sugar, glucose or milk by mouth",
+      "s": "phcstg2026:21.22"
+     },
+     {
+      "t": "Or sugar solution: 3 teaspoons (15 g) in 200 mL water",
+      "s": "phcstg2026:21.22"
+     },
+     {
+      "h": "Conscious, not safe to swallow"
+     },
+     {
+      "t": "Via NGT: dextrose 10% 5 mL/kg, milk or sugar solution",
+      "s": "phcstg2026:21.23"
+     },
+     {
+      "h": "Once awake"
+     },
+     {
+      "t": "Give a snack",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT now; lab glucose if uncertain",
+      "s": "adultstg2026:8.12",
+      "b": 1
+     },
+     {
+      "t": "U&E (K⁺, Na⁺), creatinine",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "Cortisol (before hydrocortisone) if adrenal suspected",
+      "s": "adultstg2026:8.2",
+      "b": 1
+     },
+     {
+      "t": "LFT, INR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "FBC, CRP, cultures if septic",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Malaria RDT if travel",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Unconscious / cannot swallow"
+     },
+     {
+      "t": "Dextrose 50% 50 mL rapid IV",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "Large-bore IV; keep open with dextrose 10%",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "No IV access: glucagon 1 mg SC",
+      "s": "adultstg2026:23.32",
+      "b": 1
+     },
+     {
+      "t": "PHC alternative: dextrose 10% 5 mL/kg IV",
+      "s": "phcstg2026:21.23"
+     },
+     {
+      "h": "Alcohol / malnourished"
+     },
+     {
+      "t": "Thiamine 200 mg IV/IM, ideally before dextrose — do not delay dextrose",
+      "s": "phcstg2026:21.23",
+      "b": 1
+     },
+     {
+      "h": "Still seizing after glucose corrected"
+     },
+     {
+      "t": "Benzodiazepine per status epilepticus (STG 14.5)",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "h": "Hold next dose"
+     },
+     {
+      "t": "Hold the next insulin / sulphonylurea dose until reviewed",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "10 min",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "HGT ____ · awake?",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 5–10 min after dextrose",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No clinical response: second dextrose 50% 50 mL IV",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Recovery",
+    "feed": [
+     {
+      "t": "Awake: snack",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS vs baseline",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not awake 30 min after normal / high glucose → look for other causes of coma",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "Focal deficit persists → Stroke pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Prevent recurrence",
+    "feed": [
+     {
+      "t": "Dextrose 10% IV ± 1 L 6-hourly",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "K⁺ once glucose normal",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Identify the cause — tick working dx (side 2 branch)",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Hypokalaemia: replace (STG 7.2.2)",
+      "s": "adultstg2026:7.11"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Eating? ____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly for several hours, then 2-hourly",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Sulphonylurea: keep the infusion running",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Wean infusion only when eating and HGT stable",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Normal meals"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine / eGFR",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review insulin / sulphonylurea dose with the cause found",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Sulphonylurea: observe ≥ 12 h after the infusion stops",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Plan discharge",
+    "feed": [
+     {
+      "t": "Meal plan agreed",
+      "s": "adultstg2026:8.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HbA1c if diabetic",
+      "s": "adultstg2026:8.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrent: check meals, adherence, alcohol, exercise, renal failure, unawareness",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Education: recognise symptoms, carry sugar",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If insulin",
+    "feed": [
+     {
+      "t": "Snack after correction",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine / eGFR",
+      "s": "adultstg2026:8.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review dose, timing, injection technique (avoid IM)",
+      "s": "phcstg2026:9.13"
+     },
+     {
+      "t": "CKD: insulin needs fall — reduce, test at least daily",
+      "s": "adultstg2026:8.10"
+     },
+     {
+      "t": "Type 1 high risk: glucagon kit + family training",
+      "s": "adultstg2026:8.12"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If sulphonylurea",
+    "feed": [
+     {
+      "t": "Prolonged dextrose 10% infusion",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly then 2-hourly",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Admit; observe ≥ 12 h after the infusion stops",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "Glibenclamide: avoid in elderly and eGFR < 60 — change agent",
+      "s": "adultstg2026:8.9"
+     },
+     {
+      "t": "Rifampicin stopped: reduce the dose",
+      "s": "adultstg2026:8.9"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If alcohol / malnourished",
+    "feed": [
+     {
+      "t": "Dextrose 5% with thiamine 100 mg per litre",
+      "s": "adultstg2026:19.33"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺",
+      "s": "adultstg2026:19.33",
+      "b": 1
+     },
+     {
+      "t": "Temperature",
+      "s": "adultstg2026:19.33"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine before dextrose where possible",
+      "s": "phcstg2026:21.23"
+     },
+     {
+      "t": "Manage hypothermia, electrolytes",
+      "s": "adultstg2026:19.33"
+     },
+     {
+      "t": "Alcohol withdrawal → STG 15.8.1",
+      "s": "adultstg2026:15.31"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If adrenal",
+    "feed": [
+     {
+      "t": "NaCl 0.9% IV by BP; dextrose 50% boluses if needed",
+      "s": "adultstg2026:8.2"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cortisol (+ ACTH) before Rx",
+      "s": "adultstg2026:8.2",
+      "b": 1
+     },
+     {
+      "t": "Na⁺, K⁺",
+      "s": "adultstg2026:8.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hydrocortisone 100 mg IV 6-hourly → oral once stable",
+      "s": "adultstg2026:8.2",
+      "b": 1
+     },
+     {
+      "t": "Never delay Rx for results",
+      "s": "adultstg2026:8.2"
+     },
+     {
+      "t": "REFER all suspected for evaluation",
+      "s": "adultstg2026:8.2",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If liver / renal / sepsis",
+    "feed": [
+     {
+      "t": "Continuous dextrose as needed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LFT, INR · creatinine · cultures",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Liver failure: glucose regularly; severe ALF → specialist",
+      "s": "adultstg2026:1.10"
+     },
+     {
+      "t": "Sepsis: treat source; frequent HGT",
+      "s": "phcstg2026:21.22"
+     },
+     {
+      "t": "Renal failure: reduce insulin / stop glibenclamide",
+      "s": "adultstg2026:8.9"
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Glucose · glucagon",
+   "items": [
+    {
+     "h": "Oral (conscious, can swallow)"
+    },
+    {
+     "t": "Sugar solution 3 teaspoons (15 g) in 200 mL",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "h": "NGT (not safe to swallow)"
+    },
+    {
+     "t": "Dextrose 10% 5 mL/kg (1 part 50% + 4 parts water)",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "h": "IV"
+    },
+    {
+     "t": "Dextrose 50% 50 mL rapid IV; repeat once if no response",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Then dextrose 10% ± 1 L 6-hourly",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "PHC alternative: dextrose 10% 5 mL/kg IV, then dextrose 5% until stable",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "h": "No IV access"
+    },
+    {
+     "t": "Glucagon 1 mg SC",
+     "s": "adultstg2026:23.32"
+    }
+   ]
+  },
+  {
+   "title": "Cause-specific doses",
+   "items": [
+    {
+     "h": "Thiamine"
+    },
+    {
+     "t": "200 mg IV/IM before dextrose (alcohol / malnourished)",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "IV thiamine: infuse over 30 min; anaphylaxis cover",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "h": "Adrenal crisis"
+    },
+    {
+     "t": "Hydrocortisone 100 mg IV 6-hourly",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "h": "Sulphonylurea"
+    },
+    {
+     "t": "Prolonged IV glucose; observe 12 h after stopping",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "h": "Severe malaria"
+    },
+    {
+     "t": "Artesunate 2.4 mg/kg IV at 0, 12, 24 h, then daily",
+     "s": "adultstg2026:9.15"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "HGT below threshold (§1) again",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "No response 5–10 min after dextrose",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Not awake 30 min after normal glucose",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "HGT falls when the infusion is reduced",
+     "d": 1
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Suspected adrenal insufficiency (evaluation)",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "t": "Severe acute liver failure",
+     "s": "adultstg2026:1.10"
+    },
+    {
+     "t": "Recurrent severe hypoglycaemia",
+     "s": "adultstg2026:8.7"
+    },
+    {
+     "t": "Recurrent, unexplained",
+     "d": 1
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · U&E · creatinine · GCS",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Awake, eating normal meals",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "HGT stable off IV dextrose",
+    "d": 1
+   },
+   {
+    "t": "Sulphonylurea: ≥ 12 h after the infusion stopped",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "Cause identified and addressed",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "Insulin / oral agent dose changed, on the letter",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "Educated: meals, alcohol, exercise, symptoms",
+    "s": "adultstg2026:8.13"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / diabetes clinic",
+  "items": [
+   {
+    "t": "Review within 1 week, with HGT record",
+    "d": 1
+   },
+   {
+    "t": "Hypoglycaemia unawareness: avoid any hypoglycaemia for 2–4 weeks",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "Refer back: recurrent severe hypoglycaemia",
+    "s": "adultstg2026:8.7",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing glucose record — HGT, glucose given, GCS",
+  "period": "24 hours: 0–45 min close rows, then hourly",
+  "params": [
+   {
+    "h": "HGT",
+    "items": [
+     {
+      "t": "5–10 min after each IV dextrose",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Hourly for several hours once awake",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Then 2-hourly on the infusion",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Glucose given",
+    "items": [
+     {
+      "t": "Record oral / NGT / IV dextrose: type, mL, time",
+      "d": 1
+     },
+     {
+      "t": "Infusion rate (mL/h)",
+      "d": 1
+     },
+     {
+      "t": "Sulphonylurea: HGT for 12 h after stopping",
+      "s": "adultstg2026:8.13"
+     }
+    ]
+   },
+   {
+    "h": "GCS + meals",
+    "items": [
+     {
+      "t": "GCS hourly until baseline",
+      "d": 1
+     },
+     {
+      "t": "Snack once awake",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Meals taken (Y/N)",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "HGT below threshold again",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "no response 5–10 min after dextrose",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "not awake 30 min after a normal glucose",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "seizure",
+    "s": "adultstg2026:8.12"
+   },
+   {
+    "t": "HGT falling when the infusion is reduced",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Dextrose 50% given (mL)",
+   "Dextrose 10% given (mL)",
+   "Lowest HGT",
+   "Episodes < threshold",
+   "Hours on infusion",
+   "Infusion stopped at"
+  ]
+ }
+}

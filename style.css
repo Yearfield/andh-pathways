@@ -842,3 +842,6 @@ section.card.blue li.handoff .ho .arr { color: var(--blue); }
 .ac + .ac { margin-top: 5px; }
 .ac > span { flex: 1 1 100%; }
 .ac.b > span { font-weight: 700; }
+
+/* Recent cards: a long name wraps onto a second line instead of being cut off ("Hypoglycaemia Neonate" vs "Hypoglycaemia Pregnancy") */
+.rcard b { white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.15; overflow-wrap: anywhere; }

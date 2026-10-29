@@ -1,0 +1,1620 @@
+{
+ "id": "hyperglycaemia-adult",
+ "short": "Hyperglycaemia_Adult",
+ "title": "Hyperglycaemia (adult) — HHS and hyperglycaemia without ketoacidosis",
+ "population": "Adult, non-pregnant",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-29",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Ketones positive with acidosis → DKA pathway",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Pregnant → diabetes in pregnancy (STG 6.2) / maternity",
+     "s": "adultstg2026:8.5",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia → treat first (side 2 of chart)",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Child → DKA Paeds / paediatric STG",
+     "d": 1
+    },
+    {
+     "t": "This pathway covers HHS and hyperglycaemia without ketoacidosis",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Blood glucose > 11 mmol/L (HGT, lab-confirmed)",
+     "s": "adultstg2026:23.32",
+     "b": 1
+    },
+    {
+     "t": "Ketones checked (blood or urine)",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "VBG / U&E to classify (pH, HCO₃, Na⁺, K⁺, urea)",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "h": "Then classify (tick working dx)"
+    },
+    {
+     "t": "HHS: glucose usually > 40, osmolality > 320, pH usually > 7.2, impaired consciousness",
+     "s": "adultstg2026:8.14",
+     "b": 1,
+     "k": "sub"
+    },
+    {
+     "t": "No crisis: alert, ketones negative / low, not acidotic",
+     "s": "adultstg2026:8.14",
+     "k": "sub"
+    },
+    {
+     "t": "Ketones + acidosis → DKA pathway",
+     "s": "adultstg2026:8.14",
+     "k": "sub"
+    },
+    {
+     "t": "HGT ____ · Ketones ____ · Osm ____ · Corr. Na⁺ ____ · Wt ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "Osmolarity = 2 (Na⁺ + K⁺) + glucose + urea · corrected Na⁺ ≈ Na⁺ + glucose ÷ 3",
+     "s": "adultstg2026:8.15",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe / refer = any one of",
+   "items": [
+    {
+     "t": "HHS — stabilise, then REFER (high care)",
+     "s": "adultstg2026:8.15",
+     "b": 1
+    },
+    {
+     "t": "Impaired consciousness / seizures",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Renal or cardiac disease — fluids need CVP monitoring",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Shock not responding to fluids",
+     "d": 1
+    },
+    {
+     "t": "Precipitant beyond district (MI, severe sepsis)",
+     "d": 1
+    },
+    {
+     "t": "Recurrent severe hypoglycaemia on Rx",
+     "s": "adultstg2026:8.7"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known diabetes: type 1 / 2 / other",
+     "s": "adultstg2026:8.5"
+    },
+    {
+     "t": "Insulin type + doses",
+     "s": "adultstg2026:8.11"
+    },
+    {
+     "t": "Metformin / sulphonylurea doses",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "Last HbA1c",
+     "s": "adultstg2026:8.6"
+    },
+    {
+     "t": "Last creatinine / eGFR",
+     "s": "adultstg2026:8.6"
+    },
+    {
+     "t": "Adherence, test strips at home",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Steroids / rifampicin / ART",
+     "d": 1
+    },
+    {
+     "t": "Previous DKA / HHS / hypos"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms of hyperglycaemia",
+     "s": "phcstg2026:9.16"
+    },
+    {
+     "t": "Polyuria, thirst"
+    },
+    {
+     "t": "Weight loss",
+     "d": 1
+    },
+    {
+     "t": "Vomiting, abdominal pain",
+     "s": "phcstg2026:9.16"
+    },
+    {
+     "t": "Drowsiness, confusion",
+     "s": "phcstg2026:9.16"
+    },
+    {
+     "h": "Onset",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Over hours–days (DKA)",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Over days–weeks (HHS)",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "h": "Precipitants",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Infection (chest, urine, foot)",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Chest pain (MI)",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Missed insulin / Rx"
+    },
+    {
+     "t": "New steroids",
+     "d": 1
+    },
+    {
+     "t": "Alcohol / pancreatitis",
+     "s": "adultstg2026:8.5"
+    },
+    {
+     "t": "Stroke symptoms",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "h": "HIV / TB"
+    },
+    {
+     "t": "HIV status / ART"
+    },
+    {
+     "t": "TB symptoms screen"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension / shock",
+     "s": "phcstg2026:9.16",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Deep sighing (acidotic) breathing",
+     "s": "phcstg2026:9.16",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "s": "phcstg2026:9.16",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Glucose > 40 mmol/L (HHS likely)",
+     "s": "adultstg2026:8.14",
+     "k": "yn"
+    },
+    {
+     "t": "Osmolality > 320 HHS",
+     "s": "adultstg2026:8.14",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Random glucose ≥ 11.1 + symptoms = diabetes",
+     "s": "adultstg2026:8.5",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Dehydration",
+     "s": "phcstg2026:9.16"
+    },
+    {
+     "t": "Dry mucosa, poor turgor"
+    },
+    {
+     "t": "Cool peripheries"
+    },
+    {
+     "t": "Estimated deficit ____ L",
+     "s": "adultstg2026:8.14",
+     "k": "value"
+    },
+    {
+     "t": "Urine output: catheter",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS ____ (baseline)",
+     "k": "value"
+    },
+    {
+     "t": "Focal signs / seizures",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "h": "Source of precipitant"
+    },
+    {
+     "t": "Chest signs"
+    },
+    {
+     "t": "Foot ulcer / sepsis"
+    },
+    {
+     "t": "Abdominal tenderness"
+    },
+    {
+     "t": "Skin / abscess"
+    },
+    {
+     "t": "Fruity (acetone) breath → ketones",
+     "s": "phcstg2026:9.16"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT + ketones (blood or urine)",
+   "items": [
+    {
+     "t": "HGT ____ mmol/L · Ketones ____",
+     "k": "value"
+    },
+    {
+     "t": "Ketones positive + acidosis → DKA pathway",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "HGT reads \"HI\" → lab glucose now",
+     "d": 1
+    },
+    {
+     "t": "Then HGT hourly while on insulin infusion / IM",
+     "s": "adultstg2026:8.16"
+    },
+    {
+     "t": "HGT < 4 mmol/L on Rx → treat hypoglycaemia",
+     "s": "adultstg2026:23.32"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "VBG / U&E — Na⁺, K⁺, urea, pH, HCO₃",
+   "items": [
+    {
+     "t": "K⁺ ____ · Na⁺ ____ · pH ____",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ unknown → no insulin yet, fluids only",
+     "s": "phcstg2026:9.16",
+     "b": 1
+    },
+    {
+     "t": "K⁺ < 3.5: add 40 mmol KCl per litre",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "Corrected Na⁺ > 140 → NaCl 0.45%",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "Calculate osmolality (§1); recheck 2-hourly",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Ketoacidosis (→ DKA)",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Hypokalaemia",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "Myocardial infarction",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Sepsis",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Stroke",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "Acute pancreatitis",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia on Rx",
+     "s": "adultstg2026:8.13"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HHS → fluids, K⁺, insulin per chart, then REFER (high care)",
+   "s": "adultstg2026:8.15",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (hyperglycaemia without crisis: treat cause, set regimen) — stabilise, then continue on the 24-hour hourly chart and the 24-hour nursing glucose record",
+   "s": "adultstg2026:8.9",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Diabetic ketoacidosis",
+   "features": [
+    {
+     "t": "Younger, hours–days",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Vomiting, abdominal pain",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Acidotic breathing, acetone breath",
+     "s": "phcstg2026:9.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ketones positive",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "VBG: acidosis",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Glucose usually < 40",
+     "s": "adultstg2026:8.14"
+    }
+   ],
+   "manage": [
+    {
+     "t": "DKA pathway (not this chart)",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per DKA pathway"
+    }
+   ]
+  },
+  {
+   "dx": "Hyperosmolar hyperglycaemic state (HHS)",
+   "branch": "If HHS",
+   "features": [
+    {
+     "t": "Elderly, type 2, days–weeks",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Extreme dehydration",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Impaired consciousness, seizures",
+     "s": "adultstg2026:8.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Glucose usually > 40",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Osmolality > 320",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "pH usually > 7.2; ketones neg–moderate",
+     "s": "adultstg2026:8.14"
+    }
+   ],
+   "manage": [
+    {
+     "t": "NaCl 0.9% 15–20 mL/kg 1st h, then 5–15 mL/kg/h",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "KCl per litre by K⁺",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "Insulin 0.1 U/kg/h; osmolality fall ≤ 3 mOsm/kg/h",
+     "s": "adultstg2026:8.16"
+    },
+    {
+     "t": "Enoxaparin 40 mg SC daily",
+     "s": "adultstg2026:8.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — after stabilisation (high care)",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Stress hyperglycaemia (sepsis, MI, stroke)",
+   "branch": "If stress",
+   "features": [
+    {
+     "t": "Acute illness",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "t": "No previous diabetes",
+     "s": "adultstg2026:23.33"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HbA1c not raised (≤ 6.5%)",
+     "s": "adultstg2026:23.33",
+     "b": 1
+    },
+    {
+     "t": "Source work-up: FBC, CRP, cultures",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "ECG",
+     "s": "adultstg2026:8.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the precipitant",
+     "s": "adultstg2026:23.33"
+    },
+    {
+     "t": "Insulin for glucose control; avoid hypoglycaemia",
+     "s": "adultstg2026:23.33"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If precipitant needs ICU / PCI",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Uncontrolled known diabetes",
+   "branch": "If known DM",
+   "features": [
+    {
+     "t": "Missed / ran out of Rx"
+    },
+    {
+     "t": "Alert, ketones negative"
+    },
+    {
+     "t": "Rising HbA1c",
+     "s": "adultstg2026:8.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HbA1c, creatinine / eGFR",
+     "s": "adultstg2026:8.6",
+     "b": 1
+    },
+    {
+     "t": "Urine dipstick",
+     "s": "adultstg2026:8.6"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Rehydrate; adjust regimen (side 2)",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "Temporary insulin for major illness",
+     "s": "adultstg2026:8.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If optimal control not achievable",
+     "s": "adultstg2026:8.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "New diabetes",
+   "branch": "If new DM",
+   "features": [
+    {
+     "t": "Symptoms + random glucose ≥ 11.1",
+     "s": "adultstg2026:8.5"
+    },
+    {
+     "t": "Weight loss, young, ketones → type 1",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lab glucose, HbA1c",
+     "s": "adultstg2026:8.5",
+     "b": 1
+    },
+    {
+     "t": "Classify type 1 / 2 / other",
+     "s": "adultstg2026:8.5"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Type 2: metformin 500 mg BD (eGFR allowing)",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "Type 1: basal-bolus 0.6 U/kg/day",
+     "s": "adultstg2026:8.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If type uncertain / type 1 for specialist",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Drug-induced (steroids, thiazides)",
+   "branch": "If drug / pancreatic",
+   "features": [
+    {
+     "t": "New or high-dose steroids",
+     "d": 1
+    },
+    {
+     "t": "Rifampicin stopped while on sulphonylurea (hypo risk)",
+     "s": "adultstg2026:8.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Drug chart review"
+    },
+    {
+     "t": "HbA1c",
+     "s": "adultstg2026:8.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Insulin while on steroids",
+     "d": 1
+    },
+    {
+     "t": "Review drug need",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N usually",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Pancreatic diabetes",
+   "branch": "If drug / pancreatic",
+   "features": [
+    {
+     "t": "Alcohol, chronic pancreatitis",
+     "s": "adultstg2026:8.5"
+    },
+    {
+     "t": "Steatorrhoea, weight loss",
+     "s": "adultstg2026:1.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Lipase",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Abdominal ultrasound",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Insulin (oral agents caution in liver disease)",
+     "s": "adultstg2026:8.9"
+    },
+    {
+     "t": "Pancreatic enzyme replacement (STG 1.1.7)",
+     "s": "adultstg2026:1.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If unclear cause / mass",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Diabetes in pregnancy",
+   "features": [
+    {
+     "t": "Pregnant, any trimester",
+     "s": "adultstg2026:8.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine β-hCG",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "STG 6.2 / maternity guideline (insulin, not this chart)",
+     "s": "adultstg2026:6.2",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per maternity guidance"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Hourly rows apply to HHS / IV-IM insulin; no-crisis patients follow their branch after 0 h",
+  "columns": {
+   "feed": "Fluids & feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HGT hourly (bedside)",
+    "s": "adultstg2026:8.16",
+    "b": 1
+   },
+   {
+    "t": "Insulin rate (U/h and mL/h) hourly",
+    "s": "adultstg2026:8.16",
+    "b": 1
+   },
+   {
+    "t": "K⁺ hourly initially, then 2-hourly when stabilised",
+    "s": "adultstg2026:8.15",
+    "b": 1
+   },
+   {
+    "t": "IV fluid in + urine out hourly",
+    "s": "adultstg2026:8.14",
+    "b": 1
+   },
+   {
+    "t": "GCS, pulse, BP, RR hourly",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Osmolality 2-hourly (fall ≤ 3 mOsm/kg/h)",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "No crisis: HGT before meals and at bedtime",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing glucose record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for IM insulin and fluids already given (dose, time). Ketones + acidosis → DKA pathway instead. HGT < 4 mmol/L on Rx → treat hypoglycaemia (side 2).",
+    "feed": [
+     {
+      "t": "HHS / dehydrated, no renal or cardiac compromise: NaCl 0.9% 15–20 mL/kg in the first hour",
+      "s": "adultstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "Renal / cardiac disease: careful volumes, CVP → REFER",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "Max 50 mL/kg in the first 4 h",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "Catheter",
+      "d": 1
+     },
+     {
+      "t": "NGT if unconscious",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "No crisis, alert: oral fluids, normal diabetic diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT + lab glucose",
+      "s": "adultstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "Ketones (blood or urine)",
+      "s": "adultstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "VBG, U&E (Na⁺, K⁺), urea, creatinine",
+      "s": "adultstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "Calculate osmolality + corrected Na⁺",
+      "s": "adultstg2026:8.15",
+      "b": 1
+     },
+     {
+      "t": "HbA1c (stress vs diabetes)",
+      "s": "adultstg2026:23.33",
+      "b": 1
+     },
+     {
+      "t": "ECG (MI precipitant)",
+      "s": "adultstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "FBC, CRP · cultures · CXR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Urine dipstick",
+      "s": "adultstg2026:8.6",
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown · β-hCG women 15–49",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Potassium (KCl per 1 L of fluid)",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "t": "K⁺ < 3.5: add 40 mmol · 3.5–5.5: add 20 mmol · > 5.5: none",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "t": "Max 40 mmol/h",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "t": "K⁺ not available: 20 mmol/L once urine output established",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "h": "Insulin (HHS) — only once K⁺ is known",
+      "s": "phcstg2026:9.16"
+     },
+     {
+      "t": "Short-acting IV infusion 0.1 U/kg/h: 50 U in 200 mL NaCl 0.9% (4 mL = 1 U)",
+      "s": "adultstg2026:8.16",
+      "b": 1
+     },
+     {
+      "t": "No safe IV infusion: 0.5 U/kg load (½ IV, ½ IM), then 5–10 U IM hourly",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "h": "Every patient"
+     },
+     {
+      "t": "Look for the precipitant (infection, MI) and treat",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "Enoxaparin 40 mg SC daily (or UFH 5 000 U SC 12-hourly)",
+      "s": "adultstg2026:8.16",
+      "b": 1
+     },
+     {
+      "t": "No bicarbonate",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "h": "No crisis"
+     },
+     {
+      "t": "Continue / adjust usual Rx; stop metformin if eGFR < 30, uncontrolled CCF or significant respiratory compromise",
+      "s": "adultstg2026:8.8"
+     },
+     {
+      "t": "Temporary insulin for major illness (side 2)",
+      "s": "adultstg2026:8.9"
+     },
+     {
+      "h": "HHS"
+     },
+     {
+      "t": "Call the referral high-care unit now; stabilise while waiting",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Then 5–15 mL/kg/h by clinical state",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "Corrected Na⁺ > 140 → NaCl 0.45%; ≤ 140 → NaCl 0.9%",
+      "s": "adultstg2026:8.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, K⁺",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Glucose fell < 3 mmol/L in the first hour → double the insulin rate (hourly) until it falls 3–4 mmol/L/h",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "t": "Replace K⁺ per litre",
+      "s": "adultstg2026:8.15"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "In ____ mL · urine ____ mL",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, Na⁺, urea → recalc osmolality",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Osmolality falling > 3 mOsm/kg/h → slow fluids, call doctor",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "Headache, confusion, falling GCS → cerebral oedema (rapid Na⁺ / fluid change)",
+      "s": "adultstg2026:8.15"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "4-hour limit",
+    "feed": [
+     {
+      "t": "Total ≤ 50 mL/kg in the first 4 h · total ____ mL",
+      "s": "adultstg2026:8.14",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, HGT",
+      "b": 1
+     },
+     {
+      "t": "VBG",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Glucose < 14 mmol/L → reduce insulin to 1–2 U/h, adjust hourly",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "t": "Glucose < 15 with ketones → dextrose 5% or 10% in NaCl 0.9%",
+      "s": "adultstg2026:8.15"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Correcting",
+    "feed": [
+     {
+      "t": "Deficit (average 6 L, up to 12 L) corrected over 24 h",
+      "s": "adultstg2026:8.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ 2-hourly once stable",
+      "s": "adultstg2026:8.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HHS: transfer when the receiving unit accepts — fluids + insulin running, chart with patient",
+      "d": 1
+     },
+     {
+      "t": "Precipitant treated? ____",
+      "k": "value"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Then replace remaining deficit over 48 h, ± 5 mL/kg/h",
+      "s": "adultstg2026:8.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine",
+      "b": 1
+     },
+     {
+      "t": "Osmolality",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not improving / GCS not recovering → REFER now",
+      "d": 1
+     },
+     {
+      "t": "Start diet when alert and able to swallow",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "SC insulin",
+    "feed": [
+     {
+      "t": "Eating and drinking?"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, HGT before meals",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Able to eat: SC insulin at previous doses, or new DM 0.5–1 U/kg/day (biphasic ⅔ morning, ⅓ evening)",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "t": "Overlap infusion with SC insulin 1–2 h",
+      "s": "adultstg2026:8.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If HHS",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Side 1 fluid plan; NaCl 0.45% if corrected Na⁺ > 140",
+      "s": "adultstg2026:8.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Osmolality 2-hourly",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "K⁺, HGT hourly",
+      "s": "adultstg2026:8.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Insulin 0.1 U/kg/h; osmolality fall ≤ 3 mOsm/kg/h; enoxaparin 40 mg SC daily",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "t": "Seizures: benzodiazepine (STG 14.5)",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "t": "REFER to high care once stabilised",
+      "b": 1,
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If stress",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluids for the precipitant"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HbA1c not raised; source work-up",
+      "s": "adultstg2026:23.33",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat the precipitant (sepsis, MI, stroke pathways)",
+      "s": "adultstg2026:23.33"
+     },
+     {
+      "t": "Insulin to control glucose; avoid hypoglycaemia (critically ill target 6–10 mmol/L)",
+      "s": "adultstg2026:23.33"
+     },
+     {
+      "t": "Repeat glucose testing after recovery",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If known DM",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Oral fluids; diabetic diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HbA1c, creatinine / eGFR, urine dipstick",
+      "s": "adultstg2026:8.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check adherence, technique, test strips",
+      "s": "adultstg2026:8.12"
+     },
+     {
+      "t": "Type 2: step up metformin → + sulphonylurea → + basal insulin; temporary insulin for illness",
+      "s": "adultstg2026:8.8"
+     },
+     {
+      "t": "Type 1: basal-bolus; adjust on HGT record",
+      "s": "adultstg2026:8.11"
+     }
+    ]
+   },
+   {
+    "label": "If new DM",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Diet + education",
+      "s": "adultstg2026:8.5"
+     },
+     {
+      "t": "Dietician",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Lab glucose, HbA1c, creatinine, lipids, urine ACR",
+      "s": "adultstg2026:8.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Type 2: metformin 500 mg BD with meals (eGFR allowing)",
+      "s": "adultstg2026:8.8"
+     },
+     {
+      "t": "Type 1: basal-bolus 0.6 U/kg/day (40–50% basal at night, rest split before meals)",
+      "s": "adultstg2026:8.11"
+     },
+     {
+      "t": "Teach SBGM; give test strips if on insulin",
+      "s": "adultstg2026:8.12"
+     }
+    ]
+   },
+   {
+    "label": "If drug / pancreatic",
+    "phase": "Branch",
+    "feed": [],
+    "tests": [
+     {
+      "t": "Drug chart review"
+     },
+     {
+      "t": "Lipase",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Steroid-induced: insulin while on steroids, review need",
+      "d": 1
+     },
+     {
+      "t": "Sulphonylurea + rifampicin: dose-adjust; hypo risk when rifampicin stops",
+      "s": "adultstg2026:8.9"
+     },
+     {
+      "t": "Pancreatic: insulin; oral agents with caution in liver disease",
+      "s": "adultstg2026:8.9"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Insulin",
+   "items": [
+    {
+     "h": "IV infusion (HHS)"
+    },
+    {
+     "t": "Short-acting 50 U in 200 mL NaCl 0.9% (4 mL = 1 U); 0.1 U/kg/h, usually 5–7 U/h = 20–28 mL/h",
+     "s": "adultstg2026:8.16"
+    },
+    {
+     "t": "Glucose < 14: 1–2 U/h",
+     "s": "adultstg2026:8.16"
+    },
+    {
+     "h": "Hourly IM — no safe IV infusion"
+    },
+    {
+     "t": "100 U to 10 mL (10 U/mL); load 0.5 U/kg (½ IV, ½ IM), then 5–10 U IM hourly",
+     "s": "adultstg2026:8.16"
+    },
+    {
+     "h": "SC — type 2"
+    },
+    {
+     "t": "Add-on: intermediate-acting 10 U (or 0.3 U/kg/day) at bedtime, not after 22h00; +2–4 U every 3–7 days",
+     "s": "adultstg2026:8.9"
+    },
+    {
+     "t": "Biphasic 30/70: 0.3 U/kg/day, ⅔ before breakfast, ⅓ before supper; +4 U weekly",
+     "s": "adultstg2026:8.9"
+    },
+    {
+     "t": "Basal-bolus: 0.4–0.6 U/kg/day, 50% basal / 50% bolus",
+     "s": "adultstg2026:8.10"
+    },
+    {
+     "h": "SC — type 1"
+    },
+    {
+     "t": "0.6 U/kg/day; 40–50% basal at night, rest as pre-meal bolus",
+     "s": "adultstg2026:8.11"
+    }
+   ]
+  },
+  {
+   "title": "Oral agents · hypoglycaemia",
+   "items": [
+    {
+     "h": "Metformin"
+    },
+    {
+     "t": "500 mg BD with meals → max 850 mg 8-hourly",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "eGFR 30–45: max 1 g/day · < 30: stop",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "Avoid: uncontrolled CCF, severe liver disease, respiratory compromise, peri-operative",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "h": "Sulphonylurea"
+    },
+    {
+     "t": "Glimepiride 1 mg daily → usual 4 mg, max 8 mg",
+     "s": "adultstg2026:8.8"
+    },
+    {
+     "t": "Glibenclamide 2.5 mg before breakfast → max 15 mg; avoid elderly, eGFR < 60",
+     "s": "adultstg2026:8.9"
+    },
+    {
+     "h": "Hypoglycaemia on Rx"
+    },
+    {
+     "t": "Dextrose 50% 50 mL rapid IV; recheck in 5–10 min; repeat once if needed",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Then dextrose 10% ± 1 L 6-hourly; check K⁺",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Sulphonylurea cause: admit, prolonged dextrose, observe 12 h after stopping",
+     "s": "adultstg2026:8.13"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "HGT < 4 mmol/L · HGT fall < 3 mmol/L in the first hour",
+     "s": "adultstg2026:8.16"
+    },
+    {
+     "t": "HGT < 14 (reduce insulin) · < 15 with ketones (add dextrose)",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "K⁺ < 3.5 or > 5.5 · no urine output",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "Headache, confusion, falling GCS, seizure (cerebral oedema)",
+     "s": "adultstg2026:8.15"
+    },
+    {
+     "t": "Osmolality fall > 3 mOsm/kg/h",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "HHS (high care) once stabilised",
+     "d": 1
+    },
+    {
+     "t": "Renal / cardiac disease needing CVP",
+     "s": "adultstg2026:8.14"
+    },
+    {
+     "t": "Recurrent severe hypoglycaemia · control not achievable",
+     "s": "adultstg2026:8.7"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · ketones · VBG · U&E · ECG",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria (no crisis) — all six must be met",
+  "items": [
+   {
+    "t": "Eating and drinking; ketones negative",
+    "s": "adultstg2026:8.16"
+   },
+   {
+    "t": "HGT controlled on the discharge regimen ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "No hypoglycaemia",
+    "s": "adultstg2026:8.7"
+   },
+   {
+    "t": "Precipitant treated",
+    "s": "adultstg2026:8.14"
+   },
+   {
+    "t": "Taught SBGM, injection technique; test strips if on insulin",
+    "s": "adultstg2026:8.12"
+   },
+   {
+    "t": "Follow-up booked; letter with doses"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up · PHC / diabetes clinic",
+  "items": [
+   {
+    "t": "Review in 1–2 weeks",
+    "d": 1
+   },
+   {
+    "t": "HbA1c 3-monthly until stable, then 6-monthly; target < 7% (elderly / high risk < 7.5%)",
+    "s": "adultstg2026:8.6"
+   },
+   {
+    "t": "Creatinine, urine ACR, eyes, feet",
+    "s": "adultstg2026:8.6"
+   },
+   {
+    "t": "Refer back: recurrent severe hypoglycaemia, control not achievable, complications",
+    "s": "adultstg2026:8.7",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing glucose record — HGT, insulin, K⁺, fluids, GCS",
+  "period": "One sheet per 24 hours; hourly rows, heavier rule every 4 h",
+  "params": [
+   {
+    "h": "HGT and insulin",
+    "items": [
+     {
+      "t": "HGT hourly while on IV / IM insulin",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "t": "Record insulin rate (U/h and mL/h) every hour",
+      "s": "adultstg2026:8.16"
+     },
+     {
+      "t": "No crisis: HGT before meals and at bedtime",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "K⁺ and ketones",
+    "items": [
+     {
+      "t": "K⁺ hourly initially, then 2-hourly when stabilised",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "t": "KCl added per litre: write in notes",
+      "s": "adultstg2026:8.15"
+     },
+     {
+      "t": "Ketones with each K⁺ until negative",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids and GCS",
+    "items": [
+     {
+      "t": "IV fluid in and urine out, hourly",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "4-hour total ≤ 50 mL/kg — total at 4 h",
+      "s": "adultstg2026:8.14"
+     },
+     {
+      "t": "GCS, pulse, BP, RR hourly",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "HGT < 4 mmol/L · HGT fall < 3 mmol/L in the first hour · HGT < 14 (reduce insulin) · HGT < 15 with ketones (add dextrose) · K⁺ < 3.5 or > 5.5 · no urine output · headache, confusion, falling GCS or seizure",
+    "s": "adultstg2026:8.15",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "IV in (mL)",
+   "Oral in (mL)",
+   "Urine out (mL)",
+   "Balance",
+   "Insulin total (U)",
+   "KCl total (mmol)",
+   "IV total at 4 h (mL)"
+  ]
+ }
+}

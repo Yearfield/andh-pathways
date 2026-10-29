@@ -96,7 +96,12 @@
     {"id": "eczema-adult", "file": "eczema-adult.json", "title": "Eczema and atopic dermatitis — adult (outpatient-first)", "short": "Eczema (adult)", "population": "Adult ≥ 13 years · clinic-visit pathway; admit or refer if any §2 criterion", "tags": {"pop": "Adult", "system": ["Skin"], "cat": ["Derms", "Allergy"]}},
     {"id": "eczema-paeds", "file": "eczema-paeds.json", "title": "Eczema and atopic dermatitis — child (outpatient-first)", "short": "Eczema (paeds)", "population": "Child 2 months to 12 years · clinic-visit pathway; admit or refer if any §2 criterion", "tags": {"pop": "Paediatric", "system": ["Skin"], "cat": ["Derms", "Allergy"]}},
     {"id": "tca", "file": "tca.json", "title": "Tricyclic antidepressant (TCA) overdose", "short": "TCA overdose", "population": "Adult + Paediatric", "tags": {"pop": "Adult + paeds", "system": ["CNS", "CVS"], "cat": ["Toxins"]}},
-    {"id": "brady-adult", "file": "brady-adult.json", "title": "Bradycardia (adult)", "short": "Brady_Adult", "population": "Adult", "tags": {"pop": "Adult", "system": ["CVS"], "cat": []}}
+    {"id": "brady-adult", "file": "brady-adult.json", "title": "Bradycardia (adult)", "short": "Brady_Adult", "population": "Adult", "tags": {"pop": "Adult", "system": ["CVS"], "cat": []}},
+    {"id": "hyperglycaemia-adult", "file": "hyperglycaemia-adult.json", "title": "Hyperglycaemia (adult) — HHS and hyperglycaemia without ketoacidosis", "short": "Hyperglycaemia_Adult", "population": "Adult, non-pregnant", "tags": {"pop": "Adult", "system": [], "cat": ["Endo"]}},
+    {"id": "hypo-adult", "file": "hypo-adult.json", "title": "Hypoglycaemia (adult)", "short": "Hypoglycaemia_Adult", "population": "Adult, non-pregnant", "tags": {"pop": "Adult", "system": [], "cat": ["Endo"]}},
+    {"id": "hypo-paeds", "file": "hypo-paeds.json", "title": "Hypoglycaemia (paediatric, 1 month – 18 years)", "short": "Hypoglycaemia_Paeds", "population": "Paediatric", "tags": {"pop": "Paediatric", "system": [], "cat": ["Endo"]}},
+    {"id": "hypo-neonate", "file": "hypo-neonate.json", "title": "Hypoglycaemia (neonate) incl. infant of a diabetic mother", "short": "Hypoglycaemia_Neonate", "population": "Neonate", "tags": {"pop": "Paediatric", "system": [], "cat": ["Endo"]}},
+    {"id": "hypo-pregnancy", "file": "hypo-pregnancy.json", "title": "Hypoglycaemia in pregnancy, labour and postpartum", "short": "Hypoglycaemia_Pregnancy", "population": "Pregnant, intrapartum and postpartum", "tags": {"pop": "Obstetric", "system": ["Gynae"], "cat": ["Endo"]}}
   ],
   "hubs": [
     {"id": "fracture", "short": "Fracture", "title": "Fractures — all sites, adult and paediatric", "population": "Adult + Paediatric",

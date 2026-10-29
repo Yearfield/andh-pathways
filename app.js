@@ -339,11 +339,11 @@ function home() {
   const rec = S.recent.map(r => ({ ...r, e: entry(r.id) })).filter(r => r.e).slice(0, 3);
   const tabName = { arrival: "Arrival", days: "Timeline", differentials: "Differentials", doses: "Doses", nursing: "Nursing", sources: "Sources", appendix: "Appendix" };
   const recent = rec.length ? `<section id="recent"><h2 class="glabel">Recent</h2><div class="recent">${rec.map(r =>
-    `<button class="rcard" data-go="#/dx/${r.id}/${r.tab}${r.tab === "days" && r.row ? "/" + r.row : ""}"><b>${esc(r.e.short)}</b><span>${esc(tabName[r.tab] || "")}</span></button>`).join("")}</div></section>` : "";
+    `<button class="rcard" data-go="#/dx/${r.id}/${r.tab}${r.tab === "days" && r.row ? "/" + r.row : ""}"><b>${esc(r.e.short.replace(/_/g, " "))}</b><span>${esc(tabName[r.tab] || "")}</span></button>`).join("")}</div></section>` : "";
   const rowHtml = ({ e, hub }) => {
     // a hub row is listed once (under Adult + paeds) but must still show when the population filter is Adult or Paediatric
     const pops = hub ? [...hub.members.map(m => m.label), popName(popOf(e))] : [popName(popOf(e))];
-    const trim = !hub && /^(Adult|Paediatric)$/.test(pops[0]) ? unpop : t => t;
+    const trim0 = !hub && /^(Adult|Paediatric)$/.test(pops[0]) ? unpop : t => t, trim = t => trim0(t).replace(/_/g, " "); // "Hypo_Neonate" -> "Hypo Neonate"
     return `<button class="dx" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + popName(popOf(e)) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
         <span class="t">${esc(trim(e.short))}</span><span class="p">${trim(e.title).toLowerCase() === trim(e.short).toLowerCase() ? "" : esc(trim(e.title))}</span>${ico("next")}</button>`; // a description that only repeats the name is left blank
   };

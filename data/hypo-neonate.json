@@ -1,0 +1,993 @@
+{
+ "id": "hypo-neonate",
+ "short": "Hypo_Neonate",
+ "title": "Hypoglycaemia (neonate, < 28 days) incl. infant of a diabetic mother",
+ "population": "Neonate (< 28 days)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-29",
+ "sources": [
+  "paedstg2026",
+  "impcg2024",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "infant ≥ 28 days → Hypo Paeds",
+     "b": 1
+    },
+    {
+     "t": "mother's own hypoglycaemia → Hypo Pregnancy"
+    },
+    {
+     "t": "needs resuscitation → neonatal resuscitation first",
+     "s": "paedstg2026:19.2"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms",
+   "items": [
+    {
+     "t": "Heel-prick whole blood glucose < 2.6 mmol/L",
+     "s": "paedstg2026:19.53",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic: lethargy, poor feeding, jitteriness, apnoea, convulsions",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Asymptomatic: found on at-risk screening",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "HGT ____ mmol/L · age ____ h · Wt ____ g · GA ____ wk",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer = any one of",
+   "items": [
+    {
+     "t": "Not responding to adequate treatment",
+     "s": "paedstg2026:19.54",
+     "b": 1
+    },
+    {
+     "t": "Recurrent or persistent hypoglycaemia",
+     "s": "paedstg2026:19.54",
+     "b": 1
+    },
+    {
+     "t": "Needs > 12 mg/kg/min dextrose (metabolic cause)",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "t": "IDM needing > 12.5% IV dextrose",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Needs dextrose 15% (central line)",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "t": "Malformation / birth injury for specialist",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "ANY RED FLAG (§9) not settling",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternal / birth record",
+   "items": [
+    {
+     "t": "Maternal diabetes (GDM / pre-gestational, insulin)",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "t": "Gestation: preterm / post-term",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Birth weight: SGA / LGA",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Apgar / perinatal asphyxia",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Rhesus iso-immunisation",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "ROM > 18 h / maternal fever",
+     "d": 1
+    },
+    {
+     "t": "Maternal HIV / syphilis",
+     "d": 1
+    },
+    {
+     "t": "Time of first feed; feeding method",
+     "s": "impcg2024:126"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Feeding"
+    },
+    {
+     "t": "Breastfeeding well?",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "Time since last feed",
+     "d": 1
+    },
+    {
+     "t": "Vomiting / abdominal distension",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "h": "Symptoms",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "Jitteriness, exaggerated Moro",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "High-pitched cry",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "Lethargy, hypotonia",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "Apnoea, cyanosis",
+     "s": "impcg2024:126"
+    },
+    {
+     "h": "Risk factors",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Respiratory distress",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Cold / overheated",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Suspected sepsis",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Polycythaemia",
+     "s": "paedstg2026:19.53"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside norms for gestation and age",
+   "items": [
+    {
+     "t": "Hypothermia / Hyperthermia",
+     "s": "paedstg2026:19.53",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / Respiratory distress",
+     "s": "paedstg2026:19.53",
+     "k": "yn"
+    },
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:19.53",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotonia / reduced responsiveness",
+     "s": "paedstg2026:19.53",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Glucose < 2.6 mmol/L",
+     "s": "paedstg2026:19.53",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Birth weight > 1.2 kg (KMC possible)",
+     "d": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Jittery / convulsing",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Hypotonia",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Lethargy / coma",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "h": "IDM / other"
+    },
+    {
+     "t": "Macrosomia, birth injury",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Malformation (cardiac, sacral)",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Plethora (polycythaemia)",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Jaundice",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Respiratory distress",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Cardiac failure",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Sepsis signs",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Heel-prick HGT",
+   "items": [
+    {
+     "t": "Value: ____ mmol/L at ____ h of age",
+     "k": "value"
+    },
+    {
+     "t": "< 2.6 mmol/L: treat now (chart 0 h)",
+     "s": "paedstg2026:19.53",
+     "b": 1
+    },
+    {
+     "t": "At risk: check at least 2-hourly",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "IDM / LGA: at 30 min, 1 h, 2 h, then before each feed",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Stop: 3 normal pre-feed values, feeding well, asymptomatic",
+     "s": "impcg2024:126"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Temperature + sepsis screen",
+   "items": [
+    {
+     "t": "Temp ____ °C",
+     "k": "value"
+    },
+    {
+     "t": "Cold: warm; KMC if > 1.2 kg",
+     "d": 1
+    },
+    {
+     "t": "Sepsis suspected: blood culture, antibiotics (STG 19.5.2)",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Hb / haematocrit (polycythaemia)",
+     "d": 1
+    },
+    {
+     "t": "Bilirubin if jaundiced",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Not feeding well",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Fast breathing / chest indrawing",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Moves only when stimulated",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Fever or low temperature",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Apnoea / cyanosis",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "Cardiac failure",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Metabolic acidosis",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Persistent hypoglycaemia",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "t": "Major malformation",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Severe jaundice",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Birth injury",
+     "s": "paedstg2026:19.55"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = PERSISTENT / RECURRENT or > 12 mg/kg/min → glucagon, then REFER",
+   "s": "paedstg2026:19.54",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (neonatal unit / KMC) — Treat, then continue on the neonatal glucose chart and the 24-hour neonatal glucose record.",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Bolus once, then infusion; wean only once enteral feeds are established",
+  "columns": {
+   "feed": "Feeds",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Heel-prick HGT at least 2-hourly until stable at ≥ 2.6 mmol/L",
+    "s": "paedstg2026:19.54",
+    "b": 1
+   },
+   {
+    "t": "IDM / LGA: 30 min, 1 h, 2 h, then before each feed",
+    "s": "paedstg2026:19.55",
+    "b": 1
+   },
+   {
+    "t": "Temperature 3-hourly",
+    "d": 1
+   },
+   {
+    "t": "Feeds 2–3-hourly; record offered / taken",
+    "s": "impcg2024:126"
+   },
+   {
+    "t": "Apnoea / jitteriness watch",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour neonatal glucose record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was already given (dextrose bolus, feed) — the dextrose bolus is NOT repeated. Keep warm.",
+    "feed": [
+     {
+      "t": "Enteral feed: breast milk orally or by oro/nasogastric tube",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "Only after vomiting, ileus or obstruction are excluded",
+      "s": "paedstg2026:19.53"
+     },
+     {
+      "t": "IDM: feed within 30 min of birth, then 2–3-hourly",
+      "s": "impcg2024:126"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Heel-prick HGT",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "Lab glucose to confirm",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Temperature",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "Blood culture if sepsis suspected",
+      "s": "paedstg2026:19.35",
+      "b": 1
+     },
+     {
+      "t": "Hb / haematocrit",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Glucose < 2.6 mmol/L"
+     },
+     {
+      "t": "Dextrose 10% bolus 2.5 mL/kg IV (250 mg/kg)",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "Do not repeat the bolus",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "Then dextrose 10% infusion 6–12 mg/kg/min (side 2 table)",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     },
+     {
+      "h": "Treat the cause"
+     },
+     {
+      "t": "Warm if hypothermic; KMC if > 1.2 kg",
+      "d": 1
+     },
+     {
+      "t": "Sepsis: antibiotics per STG 19.5.2",
+      "s": "paedstg2026:19.35"
+     },
+     {
+      "h": "No IV access, pre-referral"
+     },
+     {
+      "t": "Glucagon 0.2 mg/kg IM/IV/SC once",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Feed if not yet fed",
+      "s": "impcg2024:126"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1
+     },
+     {
+      "t": "IDM: HGT at 30 min",
+      "s": "paedstg2026:19.55",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still < 2.6: increase infusion (not a second bolus)",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Continue 2–3-hourly feeds",
+      "s": "impcg2024:126"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.55",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate dextrose 10% up to 12 mg/kg/min",
+      "s": "paedstg2026:19.54"
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Titrate",
+    "feed": [
+     {
+      "t": "Offered ____ / taken ____ mL",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT at least 2-hourly",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "> 12 mg/kg/min needed: suspect metabolic cause → REFER",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     },
+     {
+      "t": "Pre-referral: glucagon 0.2 mg/kg",
+      "s": "paedstg2026:19.54"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Stable?",
+    "feed": [
+     {
+      "t": "Increase enteral feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT before each feed",
+      "s": "paedstg2026:19.55",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stable ≥ 2.6: continue infusion at maintenance rate",
+      "s": "paedstg2026:19.54"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Feeds tolerated?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT before feeds",
+      "s": "paedstg2026:19.55",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrent / persistent → REFER",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     },
+     {
+      "t": "Feeds not tolerated → TPN needed → REFER",
+      "s": "paedstg2026:19.54"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Wean",
+    "feed": [
+     {
+      "t": "All milk feeds orally / by tube",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT before each feed",
+      "s": "paedstg2026:19.55",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reduce IV dextrose gradually (rebound hypoglycaemia)",
+      "s": "paedstg2026:19.54",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Off IV",
+    "phase": "Confirm",
+    "feed": [
+     {
+      "t": "Full feeds, breastfeeding",
+      "s": "impcg2024:126"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT pre-feed ×3",
+      "s": "impcg2024:126",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop monitoring once 3 consecutive normal pre-feed values, feeding well, asymptomatic",
+      "s": "impcg2024:126"
+     }
+    ]
+   },
+   {
+    "label": "Pre-discharge",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Mother confident with feeding",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Bilirubin if jaundiced",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "IDM: check for malformations, polycythaemia, jaundice",
+      "s": "paedstg2026:19.55"
+     },
+     {
+      "t": "RtHB entry; mother taught warning signs",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Dextrose 10% · rate table",
+   "items": [
+    {
+     "h": "Bolus (once only)"
+    },
+    {
+     "t": "2.5 mL/kg IV (250 mg/kg)",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "h": "Infusion 6–12 mg/kg/min"
+    },
+    {
+     "t": "mL/kg/h = mg/kg/min × 6 ÷ % dextrose",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "t": "Dextrose 10%: 6 mg/kg/min = 3.6 · 8 = 4.8 · 10 = 6 · 12 = 7.2 mL/kg/h",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "h": "Higher need"
+    },
+    {
+     "t": "Dextrose 15% (15 mg/kg/min) needs a central line → REFER",
+     "s": "paedstg2026:19.54",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Pre-referral · cause",
+   "items": [
+    {
+     "h": "Glucagon"
+    },
+    {
+     "t": "0.2 mg/kg IM/IV/SC, single dose, if available",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "h": "IDM"
+    },
+    {
+     "t": "Feed within 30 min, 2–3-hourly",
+     "s": "impcg2024:126"
+    },
+    {
+     "t": "Keep glucose ≥ 2.6 mmol/L",
+     "s": "impcg2024:126"
+    },
+    {
+     "h": "Sepsis"
+    },
+    {
+     "t": "Antibiotics per STG 19.5.2",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "h": "Warmth"
+    },
+    {
+     "t": "KMC if > 1.2 kg",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "HGT < 2.6 mmol/L",
+     "s": "paedstg2026:19.53",
+     "b": 1
+    },
+    {
+     "t": "Jittery, convulsing, apnoea, lethargic",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Not feeding / vomiting / distension",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "HGT falls as IV is weaned",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Not responding / recurrent / persistent",
+     "s": "paedstg2026:19.54"
+    },
+    {
+     "t": "> 12 mg/kg/min or > 12.5% dextrose",
+     "s": "paedstg2026:19.55"
+    },
+    {
+     "t": "Malformation / birth injury",
+     "s": "paedstg2026:19.55"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all five must be met",
+  "items": [
+   {
+    "t": "Feeding well (breast / cup)",
+    "s": "impcg2024:126"
+   },
+   {
+    "t": "3 consecutive normal pre-feed HGTs off IV",
+    "s": "impcg2024:126"
+   },
+   {
+    "t": "Asymptomatic",
+    "s": "impcg2024:126"
+   },
+   {
+    "t": "Temperature stable",
+    "d": 1
+   },
+   {
+    "t": "Mother taught feeding cues + warning signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic review in 2–3 days (weight, feeding, jaundice)",
+    "d": 1
+   },
+   {
+    "t": "Return now: poor feeding, jitteriness, lethargy, convulsions",
+    "s": "imci2022:3",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neonatal glucose record — HGT, feeds, IV, temp",
+  "period": "24 hours: 0, 30 min, then hourly",
+  "params": [
+   {
+    "h": "Heel-prick HGT",
+    "items": [
+     {
+      "t": "At least 2-hourly until stable ≥ 2.6",
+      "s": "paedstg2026:19.54"
+     },
+     {
+      "t": "IDM / LGA: 30 min, 1 h, 2 h, then pre-feed",
+      "s": "paedstg2026:19.55"
+     },
+     {
+      "t": "Stop after 3 normal pre-feed values",
+      "s": "impcg2024:126"
+     }
+    ]
+   },
+   {
+    "h": "Feeds + IV",
+    "items": [
+     {
+      "t": "Feed 2–3-hourly: offered / taken mL",
+      "s": "impcg2024:126"
+     },
+     {
+      "t": "Vomit, distension, aspirates",
+      "d": 1
+     },
+     {
+      "t": "IV rate mL/h; never stop suddenly",
+      "s": "paedstg2026:19.54"
+     }
+    ]
+   },
+   {
+    "h": "Temp + signs",
+    "items": [
+     {
+      "t": "Temperature 3-hourly",
+      "d": 1
+     },
+     {
+      "t": "Jittery, lethargic, apnoea (Y/N)",
+      "s": "paedstg2026:19.53"
+     },
+     {
+      "t": "KMC hours",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:19.53",
+    "b": 1
+   },
+   {
+    "t": "jittery, convulsing, apnoea or lethargic",
+    "s": "paedstg2026:19.53"
+   },
+   {
+    "t": "not feeding, vomiting or distended",
+    "s": "paedstg2026:19.53"
+   },
+   {
+    "t": "cold",
+    "s": "paedstg2026:19.53"
+   },
+   {
+    "t": "HGT falling as IV is weaned",
+    "s": "paedstg2026:19.54"
+   }
+  ],
+  "totals": [
+   "Feeds taken (mL)",
+   "mL/kg/day",
+   "IV dextrose (mL)",
+   "Lowest HGT",
+   "Episodes < 2.6",
+   "IV stopped at"
+  ]
+ }
+}

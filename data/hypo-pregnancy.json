@@ -1,0 +1,1406 @@
+{
+ "id": "hypo-pregnancy",
+ "short": "Hypo_Pregnancy",
+ "title": "Hypoglycaemia in pregnancy, labour and postpartum",
+ "population": "Pregnant, intrapartum and postpartum women",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-29",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "impcg2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "NOT THIS PATHWAY — these have their own pathways",
+   "items": [
+    {
+     "t": "not pregnant / > 6 weeks postpartum → Hypo Adult",
+     "b": 1
+    },
+    {
+     "t": "seizure with hypertension / proteinuria → PET pathway (check HGT first)",
+     "s": "impcg2024:147",
+     "b": 1
+    },
+    {
+     "t": "the newborn → Hypo Neonate",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one confirms",
+   "items": [
+    {
+     "t": "Blood glucose < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1
+    },
+    {
+     "t": "Diabetic on insulin / metformin: < 4 mmol/L with symptoms",
+     "s": "phcstg2026:9.14",
+     "b": 1
+    },
+    {
+     "t": "In labour on insulin infusion: < 4 mmol/L → stop insulin",
+     "s": "adultstg2026:6.4",
+     "b": 1
+    },
+    {
+     "t": "HGT ____ mmol/L · GA ____ wk · Wt ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "Altered consciousness, no glucometer → treat as hypoglycaemia",
+     "s": "phcstg2026:9.14",
+     "k": "info"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe / refer = any one of",
+   "items": [
+    {
+     "t": "Semi-conscious / unconscious, or seizure",
+     "s": "phcstg2026:9.14",
+     "b": 1
+    },
+    {
+     "t": "Not safe to swallow",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "Severe malaria (glucose < 2.2 mmol/L is a severity sign) → REFER",
+     "s": "impcg2024:148",
+     "b": 1
+    },
+    {
+     "t": "Poor control despite adequate insulin → specialist",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Not recovering after correction",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "Fetal distress on CTG → obstetric decision",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternity case record (antenatal card)",
+   "items": [
+    {
+     "t": "Gestation + dating method",
+     "d": 1
+    },
+    {
+     "t": "Diabetes: pre-gestational / GDM",
+     "s": "adultstg2026:6.2"
+    },
+    {
+     "t": "Insulin regimen + doses",
+     "s": "adultstg2026:6.3"
+    },
+    {
+     "t": "Metformin dose",
+     "s": "adultstg2026:6.3"
+    },
+    {
+     "t": "Specialist shared-care plan",
+     "s": "impcg2024:125"
+    },
+    {
+     "t": "Booking BP + urine (PET baseline)",
+     "d": 1
+    },
+    {
+     "t": "HIV / ART, Hb",
+     "d": 1
+    },
+    {
+     "t": "Recent glucose profile",
+     "s": "adultstg2026:6.3"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Sweating, tremor, hunger",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "t": "Confusion, behaviour change",
+     "s": "adultstg2026:8.12"
+    },
+    {
+     "h": "Pregnancy events"
+    },
+    {
+     "t": "Vomiting / not eating (hyperemesis)",
+     "s": "adultstg2026:6.21"
+    },
+    {
+     "t": "In labour / nil by mouth",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Delivered < 48 h (insulin need falls)",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Fetal movements",
+     "d": 1
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Insulin dose / timing error",
+     "s": "phcstg2026:9.13"
+    },
+    {
+     "t": "Travel to malaria area, fever",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Alcohol use",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Quinine treatment",
+     "s": "impcg2024:148"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside pregnancy norms or the booking (baseline) values",
+   "items": [
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "s": "phcstg2026:9.14",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:8.12",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension (→ PET?)",
+     "s": "impcg2024:147",
+     "k": "yn"
+    },
+    {
+     "t": "Fever",
+     "s": "impcg2024:147",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydration / ketosis",
+     "s": "adultstg2026:6.21",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Glucose < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Diabetic: < 4 mmol/L + symptoms",
+     "s": "phcstg2026:9.14",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Malaria: glucose < 2.2 = severe",
+     "s": "impcg2024:148",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Mother"
+    },
+    {
+     "t": "GCS ____ (baseline)",
+     "k": "value"
+    },
+    {
+     "t": "Seizure: BP + urine protein (eclampsia?)",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Jaundice",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Sepsis source",
+     "d": 1
+    },
+    {
+     "h": "Obstetric"
+    },
+    {
+     "t": "Fundal height ____ cm",
+     "k": "value"
+    },
+    {
+     "t": "Fetal heart present ____ bpm",
+     "k": "value"
+    },
+    {
+     "t": "Contractions / in labour",
+     "d": 1
+    },
+    {
+     "t": "Vaginal bleeding",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT (finger prick)",
+   "items": [
+    {
+     "t": "Value: ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "Below threshold (§1): treat now (chart 0 h)",
+     "s": "adultstg2026:8.12",
+     "b": 1
+    },
+    {
+     "t": "Recheck 5–10 min after IV dextrose",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "In labour: HGT hourly",
+     "s": "adultstg2026:6.4",
+     "b": 1
+    },
+    {
+     "t": "Postpartum on insulin: 4-hourly for 48 h",
+     "s": "adultstg2026:6.4"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Fetal heart / CTG",
+   "items": [
+    {
+     "t": "FHR ____ bpm · CTG category ____",
+     "k": "value"
+    },
+    {
+     "t": "Auscultate FHR once the mother is stabilised",
+     "d": 1
+    },
+    {
+     "t": "CTG if viable gestation (CTG on site)",
+     "d": 1
+    },
+    {
+     "t": "Abnormal → obstetric review; delivery decision",
+     "d": 1
+    },
+    {
+     "t": "Diabetic: plan delivery per STG 6.2",
+     "s": "adultstg2026:6.4"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "s": "phcstg2026:9.14",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Eclampsia / severe PET",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "impcg2024:148"
+    },
+    {
+     "t": "Sepsis",
+     "d": 1
+    },
+    {
+     "t": "Hyperemesis + Wernicke risk",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "Fetal distress",
+     "d": 1
+    },
+    {
+     "t": "Labour",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Adrenal crisis",
+     "s": "adultstg2026:8.1"
+    },
+    {
+     "t": "Alcohol",
+     "s": "phcstg2026:21.22"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HYPOGLYCAEMIA → dextrose, then fetus; severe malaria → REFER",
+   "s": "adultstg2026:8.13",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (maternity) — Treat, then continue on the 24-hour maternal glucose chart and the 24-hour maternal glucose record.",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Eclampsia (mimic)",
+   "features": [
+    {
+     "t": "Seizure + hypertension + proteinuria",
+     "s": "impcg2024:147"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "BP, urine protein, HGT",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "PET pathway (MgSO₄)",
+     "s": "impcg2024:147",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per PET pathway"
+    }
+   ]
+  },
+  {
+   "dx": "Severe malaria (± quinine)",
+   "branch": "If malaria",
+   "features": [
+    {
+     "t": "Travel, fever, headache",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "May mimic eclamptic fit",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "Glucose < 2.2 mmol/L",
+     "s": "impcg2024:148"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Thick + thin smear / RDT",
+     "s": "impcg2024:147",
+     "b": 1
+    },
+    {
+     "t": "FBC, U&E, LFT",
+     "s": "impcg2024:148",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Artesunate 2.4 mg/kg IV at 0, 12, 24 h — start while awaiting transfer",
+     "s": "impcg2024:148",
+     "b": 1
+    },
+    {
+     "t": "Glucose 4-hourly (quinine)",
+     "s": "impcg2024:148"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all severe malaria",
+     "s": "impcg2024:148",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Intrapartum insulin infusion",
+   "branch": "If in labour",
+   "features": [
+    {
+     "t": "Diabetic in labour on IV insulin",
+     "s": "adultstg2026:6.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT hourly",
+     "s": "adultstg2026:6.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "< 4 mmol/L: stop insulin, treat",
+     "s": "adultstg2026:6.4",
+     "b": 1
+    },
+    {
+     "t": "Chart branch \"If in labour\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — manage with labour plan",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Insulin- or metformin-treated diabetes (antenatal)",
+   "branch": "If antenatal diabetic",
+   "features": [
+    {
+     "t": "Pre-gestational DM / GDM on Rx",
+     "s": "adultstg2026:6.2"
+    },
+    {
+     "t": "Missed meal, dose error",
+     "s": "phcstg2026:9.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT; glucose profile",
+     "s": "adultstg2026:6.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dextrose (chart 0 h), then snack",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Adjust insulin with the specialist (shared care)",
+     "s": "impcg2024:125"
+    },
+    {
+     "t": "Chart branch \"If antenatal diabetic\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "If poor control despite adequate insulin",
+     "s": "adultstg2026:6.4",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Postpartum (insulin need falls)",
+   "branch": "If postpartum",
+   "features": [
+    {
+     "t": "Delivered < 48 h, still on pregnancy doses",
+     "s": "adultstg2026:6.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT 4-hourly",
+     "s": "adultstg2026:6.4",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Insulin 4-hourly by glucose for 48 h",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Resume pre-pregnancy regimen once eating",
+     "s": "adultstg2026:6.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N usually",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hyperemesis gravidarum",
+   "branch": "If hyperemesis",
+   "features": [
+    {
+     "t": "Recurrent vomiting, ketosis, 1st trimester",
+     "s": "adultstg2026:6.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "U&E, urine ketones",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Exclude molar pregnancy, thyrotoxicosis",
+     "s": "adultstg2026:6.21"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Thiamine before dextrose (malnourished)",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "t": "IV fluids; vitamin B complex 10 mL IV; pyridoxine 25 mg 8-hourly",
+     "s": "adultstg2026:6.21"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If refractory",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sepsis / adrenal / alcohol",
+   "features": [
+    {
+     "t": "Fever, shock",
+     "d": 1
+    },
+    {
+     "t": "Hyperpigmentation, low Na⁺, high K⁺",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "t": "Alcohol use",
+     "s": "phcstg2026:21.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Cultures, U&E, cortisol",
+     "s": "adultstg2026:8.2",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "As adult: hydrocortisone 100 mg IV 6-hourly (adrenal); thiamine 200 mg (alcohol)",
+     "s": "adultstg2026:8.2"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — suspected adrenal insufficiency",
+     "s": "adultstg2026:8.2",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Treat the mother first, then check the fetus · branch rows (side 2) by working diagnosis",
+  "columns": {
+   "feed": "Oral / IV glucose",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "HGT 5–10 min after each IV dextrose",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "Once awake: hourly for several hours",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "In labour: HGT hourly",
+    "s": "adultstg2026:6.4",
+    "b": 1
+   },
+   {
+    "t": "Postpartum on insulin: 4-hourly for 48 h",
+    "s": "adultstg2026:6.4",
+    "b": 1
+   },
+   {
+    "t": "FHR after each maternal correction, then per labour / antenatal routine",
+    "d": 1
+   },
+   {
+    "t": "BP with each set (PET screen)",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour maternal glucose record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Treat the mother first — never delay dextrose. Seizing: check HGT and BP (eclampsia vs hypoglycaemia). Check the referral letter for dextrose already given.",
+    "feed": [
+     {
+      "h": "Conscious, able to eat"
+     },
+     {
+      "t": "Sweets, sugar, glucose or milk by mouth; or sugar solution 15 g in 200 mL",
+      "s": "phcstg2026:21.22"
+     },
+     {
+      "h": "Not safe to swallow"
+     },
+     {
+      "t": "Via NGT: dextrose 10% 5 mL/kg, milk or sugar solution",
+      "s": "phcstg2026:21.23"
+     },
+     {
+      "h": "Once awake"
+     },
+     {
+      "t": "Give a snack",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT now; lab glucose if uncertain",
+      "s": "adultstg2026:8.12",
+      "b": 1
+     },
+     {
+      "t": "U&E (K⁺, Na⁺), creatinine",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "BP + urine protein",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Malaria smear / RDT if travel or fever",
+      "s": "impcg2024:147",
+      "b": 1
+     },
+     {
+      "t": "FHR / CTG once stable",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Unconscious / cannot swallow"
+     },
+     {
+      "t": "Dextrose 50% 50 mL rapid IV",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "Large-bore IV; keep open with dextrose 10%",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "No IV access: glucagon 1 mg SC",
+      "s": "adultstg2026:23.32",
+      "b": 1
+     },
+     {
+      "h": "In labour on insulin"
+     },
+     {
+      "t": "Glucose < 4: stop the insulin infusion",
+      "s": "adultstg2026:6.4",
+      "b": 1
+     },
+     {
+      "h": "Vomiting / malnourished / alcohol"
+     },
+     {
+      "t": "Thiamine 200 mg IV/IM before dextrose — do not delay dextrose",
+      "s": "phcstg2026:21.23",
+      "b": 1
+     },
+     {
+      "h": "Seizure with hypertension"
+     },
+     {
+      "t": "→ PET pathway (MgSO₄) after glucose checked",
+      "s": "impcg2024:147"
+     },
+     {
+      "h": "Position"
+     },
+     {
+      "t": "Left lateral if pregnant > 20 wk",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "10 min",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "HGT ____ · awake?",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 5–10 min after dextrose",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No response: second dextrose 50% 50 mL IV",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "FHR check",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Recovery",
+    "feed": [
+     {
+      "t": "Awake: snack",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "GCS vs baseline",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "CTG if viable",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not awake 30 min after normal glucose → other causes of coma",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Prevent recurrence",
+    "feed": [
+     {
+      "t": "Dextrose 10% IV ± 1 L 6-hourly",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "K⁺ once glucose normal",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working dx → side 2 branch",
+      "d": 1
+     },
+     {
+      "t": "Inform the specialist (shared care)",
+      "s": "impcg2024:125"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Eating? ____",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly for several hours",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Wean IV once eating and HGT stable",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Diabetic diet in pregnancy",
+      "s": "impcg2024:125"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Glucose profile: pre-meal + 2 h post-meal",
+      "s": "adultstg2026:6.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adjust insulin with the specialist",
+      "s": "impcg2024:125"
+     },
+     {
+      "t": "Targets: pre-meal < 5.3; 2 h post-meal < 6.4 mmol/L",
+      "s": "adultstg2026:6.3"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Plan",
+    "feed": [
+     {
+      "t": "Meal plan + bedtime snack",
+      "s": "adultstg2026:6.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FHR / fetal movements",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Educate: meals, symptoms, carry sugar",
+      "d": 1
+     },
+     {
+      "t": "Delivery plan per STG 6.2",
+      "s": "adultstg2026:6.4"
+     }
+    ]
+   },
+   {
+    "label": "If antenatal diabetic",
+    "feed": [
+     {
+      "t": "Snack; bedtime snack with intermediate insulin",
+      "s": "adultstg2026:6.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Glucose profile",
+      "s": "adultstg2026:6.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Review doses (total 0.1 U/kg/day basal-bolus regimen in STG)",
+      "s": "adultstg2026:6.4"
+     },
+     {
+      "t": "Shared care with the specialist clinic",
+      "s": "impcg2024:125"
+     },
+     {
+      "t": "Poor control despite adequate insulin → REFER",
+      "s": "adultstg2026:6.4",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If in labour",
+    "feed": [
+     {
+      "t": "IV: 20 U insulin + 20 mmol KCl in 1 L dextrose 5% at 50 mL/h (1 U/h)",
+      "s": "adultstg2026:6.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly",
+      "s": "adultstg2026:6.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "< 4 mmol/L: stop insulin; > 7 mmol/L: 100 mL/h",
+      "s": "adultstg2026:6.4",
+      "b": 1
+     },
+     {
+      "t": "SC insulin stopped in labour",
+      "s": "adultstg2026:6.4"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If postpartum",
+    "feed": [
+     {
+      "t": "Normal diet when able",
+      "s": "adultstg2026:6.4"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 4-hourly for 48 h",
+      "s": "adultstg2026:6.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Insulin 4-hourly by glucose for 48 h; needs fall rapidly",
+      "s": "adultstg2026:6.4"
+     },
+     {
+      "t": "Resume pre-pregnancy regimen once eating",
+      "s": "adultstg2026:6.4"
+     },
+     {
+      "t": "Baby: feed within 30 min; HGT 30 min after 1st feed, then 2–3-hourly → Hypo Neonate",
+      "s": "impcg2024:126"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If hyperemesis",
+    "feed": [
+     {
+      "t": "Restrict oral 24–48 h with IV hydration",
+      "s": "adultstg2026:6.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E; exclude molar pregnancy, thyrotoxicosis",
+      "s": "adultstg2026:6.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine before dextrose",
+      "s": "phcstg2026:21.23"
+     },
+     {
+      "t": "Vitamin B complex 10 mL IV; pyridoxine 25 mg 8-hourly",
+      "s": "adultstg2026:6.21"
+     },
+     {
+      "t": "Promethazine 25 mg 8-hourly PRN",
+      "s": "adultstg2026:6.22"
+     },
+     {
+      "t": "Metoclopramide 10–20 mg 6-hourly if poor response",
+      "s": "adultstg2026:6.22"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If malaria",
+    "feed": [
+     {
+      "t": "Hydrate, do not overhydrate (ARDS)",
+      "s": "impcg2024:148"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Smear / RDT · FBC, U&E, LFT · glucose 4-hourly",
+      "s": "impcg2024:148",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Artesunate 2.4 mg/kg IV at 0, 12, 24 h — start while awaiting transfer",
+      "s": "impcg2024:148",
+      "b": 1
+     },
+     {
+      "t": "REFER severe malaria (multidisciplinary)",
+      "s": "impcg2024:148",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Glucose · glucagon",
+   "items": [
+    {
+     "h": "Oral / NGT"
+    },
+    {
+     "t": "Sugar solution 15 g in 200 mL; NGT dextrose 10% 5 mL/kg",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "h": "IV"
+    },
+    {
+     "t": "Dextrose 50% 50 mL rapid IV; repeat once if no response",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Then dextrose 10% ± 1 L 6-hourly",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "h": "No IV access"
+    },
+    {
+     "t": "Glucagon 1 mg SC",
+     "s": "adultstg2026:23.32"
+    },
+    {
+     "h": "Thiamine"
+    },
+    {
+     "t": "200 mg IV/IM before dextrose if malnourished / vomiting / alcohol",
+     "s": "phcstg2026:21.23"
+    }
+   ]
+  },
+  {
+   "title": "Insulin in pregnancy · labour",
+   "items": [
+    {
+     "h": "Antenatal (with metformin)"
+    },
+    {
+     "t": "Total 0.1 U/kg/day: ⅓ intermediate at bedtime, ⅔ short-acting split before 3 meals",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Or biphasic 0.5 U/kg/day: ⅔ before breakfast, ⅓ before supper",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "h": "Labour"
+    },
+    {
+     "t": "20 U short-acting + 20 mmol KCl in 1 L dextrose 5% at 50 mL/h; < 4 stop, > 7 → 100 mL/h",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "h": "Postpartum"
+    },
+    {
+     "t": "4-hourly by glucose for 48 h, then pre-pregnancy regimen",
+     "s": "adultstg2026:6.4"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "HGT below threshold (§1) again",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "No response 5–10 min after dextrose",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "Seizure, or BP rising (PET)",
+     "s": "impcg2024:147"
+    },
+    {
+     "t": "FHR abnormal / reduced movements",
+     "d": 1
+    },
+    {
+     "t": "Fever, jaundice (malaria)",
+     "s": "impcg2024:147"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Severe malaria",
+     "s": "impcg2024:148"
+    },
+    {
+     "t": "Poor control despite adequate insulin",
+     "s": "adultstg2026:6.4"
+    },
+    {
+     "t": "Suspected adrenal insufficiency",
+     "s": "adultstg2026:8.2"
+    },
+    {
+     "h": "On any deterioration"
+    },
+    {
+     "t": "HGT · BP · urine protein · FHR",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all six must be met",
+  "items": [
+   {
+    "t": "Awake, eating normal meals",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "HGT stable off IV ≥ 24 h",
+    "d": 1
+   },
+   {
+    "t": "Fetal wellbeing confirmed",
+    "d": 1
+   },
+   {
+    "t": "Cause identified; insulin / metformin adjusted",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "Specialist shared-care plan + next visit",
+    "s": "impcg2024:125"
+   },
+   {
+    "t": "Educated: meals, symptoms, carry sugar",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "High-risk antenatal clinic within 1 week, glucose profile",
+    "s": "impcg2024:125"
+   },
+   {
+    "t": "GDM: OGTT 6 weeks postpartum",
+    "s": "adultstg2026:6.4"
+   },
+   {
+    "t": "Refer back: recurrent hypoglycaemia or poor control",
+    "s": "adultstg2026:6.4",
+    "b": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour maternal glucose record — HGT, glucose / insulin, FHR, BP",
+  "period": "24 hours: 0–45 min close rows, then hourly",
+  "params": [
+   {
+    "h": "HGT",
+    "items": [
+     {
+      "t": "5–10 min after IV dextrose",
+      "s": "adultstg2026:8.13"
+     },
+     {
+      "t": "Hourly for several hours; hourly in labour",
+      "s": "adultstg2026:6.4"
+     },
+     {
+      "t": "Postpartum on insulin: 4-hourly for 48 h",
+      "s": "adultstg2026:6.4"
+     }
+    ]
+   },
+   {
+    "h": "Glucose / insulin",
+    "items": [
+     {
+      "t": "Record dextrose given (type, mL, time)",
+      "d": 1
+     },
+     {
+      "t": "Insulin infusion rate (labour)",
+      "s": "adultstg2026:6.4"
+     },
+     {
+      "t": "Meals / snacks taken",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fetus + BP",
+    "items": [
+     {
+      "t": "FHR after each correction",
+      "d": 1
+     },
+     {
+      "t": "BP with each set",
+      "d": 1
+     },
+     {
+      "t": "GCS until baseline",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "HGT below threshold again",
+    "s": "adultstg2026:8.13",
+    "b": 1
+   },
+   {
+    "t": "no response 5–10 min after dextrose",
+    "s": "adultstg2026:8.13"
+   },
+   {
+    "t": "in labour HGT < 4 (stop insulin) or > 7 (100 mL/h)",
+    "s": "adultstg2026:6.4"
+   },
+   {
+    "t": "seizure or rising BP",
+    "s": "impcg2024:147"
+   },
+   {
+    "t": "abnormal FHR or reduced movements",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Dextrose 50% given (mL)",
+   "Dextrose 10% given (mL)",
+   "Insulin total (U)",
+   "Lowest HGT",
+   "Episodes < threshold",
+   "FHR abnormal (Y/N)"
+  ]
+ }
+}
