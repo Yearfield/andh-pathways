@@ -1,0 +1,693 @@
+{
+ "id": "opioids-withdrawal",
+ "short": "Opioids_Withdrawal",
+ "type": "appendix",
+ "appendix_to": "opioids",
+ "title": "Opioid withdrawal (heroin, nyaope/whoonga, codeine, morphine) — appendix to the Opioids pathway",
+ "population": "Adults and adolescents (ADOL lines = Paed STG, < 18 y)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-30",
+ "sources": [
+  "adultstg2026",
+  "paedstg2026",
+  "oows1987"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this appendix",
+   "items": [
+    {
+     "t": "Intoxication: pinpoint pupils, drowsy, slow breathing → Opioids pathway (naloxone)",
+     "s": "adultstg2026:15.34",
+     "b": 1
+    },
+    {
+     "t": "Pregnancy → consult an expert",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Also withdrawing from alcohol / benzodiazepines → consult an expert",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Child weaning after > 14 days of hospital opioids → Paed STG weaning",
+     "s": "paedstg2026:14.37"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Signs of withdrawal",
+   "items": [
+    {
+     "t": "Nausea / vomiting",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Abdominal cramps",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Diarrhoea",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Myalgia",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Gooseflesh",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Rhinorrhoea, lacrimation",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Restlessness / agitation",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "h": "ADOL also"
+    },
+    {
+     "t": "Anxiety, insomnia, tremor",
+     "s": "paedstg2026:14.37"
+    },
+    {
+     "t": "Tachycardia, fever, sweating, hypertension",
+     "s": "paedstg2026:14.37"
+    },
+    {
+     "t": "Substance ____ route ____ amount/day ____ last use: date ____ time ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / consult = any one of",
+   "items": [
+    {
+     "t": "OOWS ≥ 4 → hospitalise (methadone, page 2)",
+     "s": "adultstg2026:15.35",
+     "b": 1
+    },
+    {
+     "t": "OOWS < 4 → outpatient, symptomatic only",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Needs > 30 mg methadone / 24 h → consult person experienced in opioid withdrawal",
+     "s": "adultstg2026:15.35",
+     "b": 1
+    },
+    {
+     "t": "Frail / debilitated patient",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Pregnancy (miscarriage, preterm risk)",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "ADOL moderate–severe: admit; substitution (methadone) only at a specialist rehab centre → consult psychiatrist / REFER",
+     "s": "paedstg2026:14.38",
+     "b": 1
+    },
+    {
+     "t": "Child < 6 y → REFER",
+     "s": "paedstg2026:14.32"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Checks on admission",
+   "cols": 2,
+   "items": [
+    {
+     "t": "Injecting drug use",
+     "s": "adultstg2026:15.30"
+    },
+    {
+     "t": "Already on methadone / OST",
+     "d": 1
+    },
+    {
+     "t": "Other substances (alcohol, benzos, mandrax)",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Pregnancy test (female)",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "HIV / hepatitis / TB status",
+     "s": "adultstg2026:15.30"
+    },
+    {
+     "t": "Injection-site infection",
+     "d": 1
+    },
+    {
+     "t": "Suicidal ideation",
+     "d": 1
+    },
+    {
+     "t": "Absconding risk discussed",
+     "s": "adultstg2026:15.34"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Red flags",
+   "cols": 2,
+   "items": [
+    {
+     "t": "Intoxication after a dose (pinpoint pupils, drowsy, slow RR)",
+     "s": "adultstg2026:15.34",
+     "b": 1
+    },
+    {
+     "t": "Seizure / delirium (other 'downer' withdrawal)",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Dehydration from vomiting / diarrhoea",
+     "d": 1
+    },
+    {
+     "t": "Fever, new murmur (injector)",
+     "d": 1
+    },
+    {
+     "t": "Pregnant",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Wants to leave against advice",
+     "s": "adultstg2026:15.34"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. OOWS ≥ 4 → ADMIT · methadone day chart (page 2)",
+   "s": "adultstg2026:15.35",
+   "b": 1
+  },
+  {
+   "t": "11. OOWS < 4 → symptomatic treatment · outpatient · refer to treatment programme — Goal: relieve withdrawal without intoxication or overdose. Refer every patient to Social Services / rehabilitation.",
+   "s": "adultstg2026:15.34",
+   "b": 1
+  }
+ ],
+ "score": {
+  "title": "Objective Opioid Withdrawal Scale (OOWS) — observe 5 min, tick if present (1 point each)",
+  "type": "repeat",
+  "note": {
+   "t": "Scale named in the STG; items from Handelsman et al. 1987. Score before each methadone dose and 2–4 h after.",
+   "s": "adultstg2026:15.34"
+  },
+  "items": [
+   {
+    "t": "1 Yawning (≥ 1 yawn)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "2 Rhinorrhoea (≥ 3 sniffs)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "3 Piloerection (gooseflesh on arm)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "4 Perspiration",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "5 Lacrimation",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "6 Mydriasis (dilated pupils)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "7 Tremor (hands)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "8 Hot and cold flushes (shivering)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "9 Restlessness (frequent shifts of position)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "10 Vomiting",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "11 Muscle twitches",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "12 Abdominal cramps (holding stomach)",
+    "s": "oows1987:1"
+   },
+   {
+    "t": "13 Anxiety (fidgeting, obvious distress)",
+    "s": "oows1987:1"
+   }
+  ],
+  "bands": [
+   {
+    "t": "< 4 mild: symptomatic, outpatient",
+    "s": "adultstg2026:15.34",
+    "b": 1
+   },
+   {
+    "t": "≥ 4 moderate–severe: hospitalise, methadone",
+    "s": "adultstg2026:15.35",
+    "b": 1
+   }
+  ],
+  "total_label": "TOTAL (0–13)",
+  "cols": [
+   "Time 1",
+   "Time 2",
+   "Time 3",
+   "Time 4",
+   "Time 5",
+   "Time 6"
+  ]
+ },
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Symptom-triggered on day 1, fixed on day 2–3, then taper 10–20% / day",
+  "columns": {
+   "feed": "Assess (OOWS)",
+   "tests": "Methadone, oral",
+   "treatment": "Symptomatic & actions"
+  },
+  "standing": [
+   {
+    "t": "Symptomatic medicines reduce methadone needs",
+    "s": "adultstg2026:15.35"
+   },
+   {
+    "t": "Hold dose if drowsy / pinpoint pupils",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "No methadone stocked: tramadol 200 mg oral 12-hourly × 14 days",
+    "s": "adultstg2026:15.36"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "titrate",
+    "feed": [
+     {
+      "t": "Wait for OOWS ≥ 4 before first dose",
+      "s": "adultstg2026:15.35",
+      "b": 1
+     },
+     {
+      "t": "Re-score 2–4 h after each dose",
+      "s": "adultstg2026:15.35"
+     }
+    ],
+    "tests": [
+     {
+      "t": "5–10 mg when OOWS ≥ 4",
+      "s": "adultstg2026:15.35",
+      "b": 1
+     },
+     {
+      "t": "Still withdrawing after 2–4 h: another 5–10 mg",
+      "s": "adultstg2026:15.35"
+     },
+     {
+      "t": "Repeat until OOWS < 4; max 30 mg / 24 h",
+      "s": "adultstg2026:15.35",
+      "b": 1
+     },
+     {
+      "t": "Day-1 total ____ mg",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam, hyoscine, paracetamol, ibuprofen, loperamide as needed (box)",
+      "s": "adultstg2026:15.35"
+     },
+     {
+      "t": "> 30 mg needed → consult experienced person",
+      "s": "adultstg2026:15.35"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "stabilise",
+    "feed": [
+     {
+      "t": "OOWS 2–4-hourly while symptomatic",
+      "s": "adultstg2026:15.35"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Day-1 total as 1 dose or 2 divided doses",
+      "s": "adultstg2026:15.35",
+      "b": 1
+     },
+     {
+      "t": "Still withdrawing: top-up 5 mg 2–4-hourly; total ≤ 30 mg",
+      "s": "adultstg2026:15.35"
+     },
+     {
+      "t": "Day-2 total ____ mg",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not controlled on 30 mg → consult experienced person",
+      "s": "adultstg2026:15.35"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "hold or start taper",
+    "feed": [
+     {
+      "t": "Top-ups needed on day 2?  Y / N",
+      "s": "adultstg2026:15.35"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Y: repeat day-2 total; start reducing on day 4",
+      "s": "adultstg2026:15.35"
+     },
+     {
+      "t": "N and controlled: start reducing now",
+      "s": "adultstg2026:15.36"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Counselling; Social Services referral",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "Day 4+",
+    "phase": "taper",
+    "feed": [
+     {
+      "t": "OOWS daily; top-up rules as day 2",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Reduce 10–20% per day over 3–10 days",
+      "s": "adultstg2026:15.36",
+      "b": 1
+     },
+     {
+      "t": "Shorten if symptoms allow",
+      "s": "adultstg2026:15.36"
+     },
+     {
+      "t": "Doses: ____ / ____ / ____ / ____ mg",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Plan discharge counselling (below)",
+      "s": "adultstg2026:15.34"
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "phase": "discharge",
+    "feed": [
+     {
+      "t": "Withdrawal controlled",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Methadone stopped (or OST referral arranged)",
+      "s": "adultstg2026:15.36"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Overdose warning: tolerance now reduced",
+      "s": "adultstg2026:15.34",
+      "b": 1
+     },
+     {
+      "t": "Injectors: 1 mL insulin needles + alcohol swabs; needle–syringe programme",
+      "s": "adultstg2026:15.36"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Symptomatic doses (oral)",
+   "items": [
+    {
+     "h": "Diazepam"
+    },
+    {
+     "t": "ADULT 5–20 mg/day in 2–3 doses; taper over 5–7 days",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "ADOL > 14 y up to 20 mg/day; 6–14 y 2–10 mg/day, 2–3 doses; wean 8- → 12-hourly → daily every 3–5 days",
+     "s": "paedstg2026:14.37"
+    },
+    {
+     "h": "Hyoscine butylbromide (cramps)"
+    },
+    {
+     "t": "ADULT 20 mg 8-hourly as needed",
+     "s": "adultstg2026:15.35"
+    },
+    {
+     "t": "ADOL 6–18 y 10–20 mg 8-hourly",
+     "s": "paedstg2026:14.37"
+    }
+   ]
+  },
+  {
+   "title": "Pain · diarrhoea",
+   "items": [
+    {
+     "h": "Paracetamol"
+    },
+    {
+     "t": "500 mg–1 g 4–6-hourly; max 4 g/24 h, 15 mg/kg/dose",
+     "s": "adultstg2026:15.35"
+    },
+    {
+     "h": "Ibuprofen (myalgia)"
+    },
+    {
+     "t": "400 mg 8-hourly with meals",
+     "s": "adultstg2026:15.35"
+    },
+    {
+     "h": "Loperamide"
+    },
+    {
+     "t": "ADULT 4 mg, then 2 mg per loose stool; max 16 mg/24 h",
+     "s": "adultstg2026:15.35",
+     "b": 1
+    },
+    {
+     "t": "ADOL 12–18 y 4 mg, then 2 mg; max 6 mg/24 h",
+     "s": "paedstg2026:14.37",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Hold methadone + call doctor"
+    },
+    {
+     "t": "Pinpoint pupils, drowsy, slow breathing",
+     "s": "adultstg2026:15.34",
+     "b": 1
+    },
+    {
+     "t": "→ Opioids pathway (naloxone)",
+     "s": "adultstg2026:15.36"
+    },
+    {
+     "h": "Consult / REFER"
+    },
+    {
+     "t": "> 30 mg/day needed",
+     "s": "adultstg2026:15.35"
+    },
+    {
+     "t": "Pregnancy; alcohol / benzo co-withdrawal",
+     "s": "adultstg2026:15.34"
+    },
+    {
+     "t": "Adolescent needing substitution",
+     "s": "paedstg2026:14.38"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge — all must be met",
+  "items": [
+   {
+    "t": "Withdrawal controlled (OOWS < 4) off methadone, or OST referral in place",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Counselled: reduced tolerance = overdose risk",
+    "s": "adultstg2026:15.34"
+   },
+   {
+    "t": "Referred: Social Services / rehabilitation; offered OST",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Injectors: sterile equipment given + needle–syringe programme",
+    "s": "adultstg2026:15.36"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Substance treatment programme / social worker",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Family: counsellors, support groups",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Clinic review 1 week",
+    "d": 1
+   },
+   {
+    "t": "Return now: overdose signs, injection-site infection, fever",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "OOWS + methadone log (nursing)",
+  "period": "before each dose and 2–4 h after",
+  "params": [
+   {
+    "h": "Score",
+    "items": [
+     {
+      "t": "OOWS before each dose, re-score 2–4 h later",
+      "s": "adultstg2026:15.35"
+     },
+     {
+      "t": "Copy each total into the page 1 OOWS form",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Intoxication",
+    "items": [
+     {
+      "t": "Pupils, drowsiness, RR before every dose",
+      "s": "adultstg2026:15.34"
+     },
+     {
+      "t": "Hold dose if intoxicated",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "24-h total",
+    "items": [
+     {
+      "t": "Running methadone total; max 30 mg / 24 h",
+      "s": "adultstg2026:15.35"
+     },
+     {
+      "t": "Stools / vomits",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "pinpoint pupils, drowsy or slow breathing",
+    "s": "adultstg2026:15.34",
+    "b": 1
+   },
+   {
+    "t": "OOWS ≥ 4 at 30 mg total",
+    "s": "adultstg2026:15.35"
+   },
+   {
+    "t": "vomiting, not drinking",
+    "d": 1
+   },
+   {
+    "t": "wants to leave",
+    "s": "adultstg2026:15.34"
+   }
+  ],
+  "columns": [
+   "Date / time",
+   "OOWS (0–13)",
+   "Pupils (pinpoint Y/N)",
+   "Drowsy (Y/N)",
+   "RR (/min)",
+   "Methadone (mg)",
+   "24-h total (mg)",
+   "Symptomatic given",
+   "Stool / vomit (n)",
+   "Init."
+  ]
+ }
+}

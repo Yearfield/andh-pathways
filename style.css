@@ -845,3 +845,47 @@ section.card.blue li.handoff .ho .arr { color: var(--blue); }
 
 /* Recent cards: a long name wraps onto a second line instead of being cut off ("Hypoglycaemia Neonate" vs "Hypoglycaemia Pregnancy") */
 .rcard b { white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.15; overflow-wrap: anywhere; }
+
+/* ---------- appendix pathways nested under their parent (home list) ---------- */
+.dx.kid { padding-left: 26px; background: #f7faf9; }
+.dx.kid .t { width: 98px; font-size: .95rem; }
+.dx.kid .t::before { content: "\21B3"; margin-right: 4px; color: var(--muted); font-weight: 400; }
+.relrow { display: flex; flex-wrap: wrap; gap: 6px; }
+.relrow .btn { background: var(--blue-bg); border-color: var(--blue-line); color: var(--blue-ink); }
+
+/* ---------- score tab ---------- */
+.scc { overflow: visible; }
+.sit { padding: 6px 10px 8px; border-top: 1px solid var(--hair); }
+.sit:first-of-type { border-top: 0; }
+.stext { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2px 6px; font-weight: 700; margin-bottom: 5px; }
+.sopts { display: flex; flex-wrap: wrap; gap: 5px; }
+.sopt { min-height: 30px; padding: 2px 10px; border: 1.5px solid var(--soft); border-radius: 8px; background: var(--panel); font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; }
+.sopt small { font-weight: 700; color: var(--muted); font-size: .75rem; }
+.sopt[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.sopt[aria-pressed="true"] small { color: #cfe0dc; }
+.scn { padding-bottom: 6px; }
+.stotal { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; background: var(--ink); color: #fff; border-radius: var(--r); padding: 8px 12px; }
+.stotal span { font-size: .75rem; letter-spacing: 1px; text-transform: uppercase; color: #cfe0dc; font-weight: 700; }
+.stotal b { font-family: var(--font-head); font-size: 1.8rem; line-height: 1; margin-left: auto; font-variant-numeric: tabular-nums; }
+.stotal small { flex: 1 0 100%; color: #b8c7c7; font-size: .75rem; }
+.sbands li { border-left: 5px solid transparent; }
+.sbands li.on { background: var(--ok-bg); border-left-color: var(--ok); }
+.sbands li.on .txt { font-weight: 700; }
+.rptab { border-collapse: collapse; width: 100%; font-size: .85rem; }
+.rptab th, .rptab td { border-top: 1px solid var(--hair); padding: 3px 4px; vertical-align: middle; text-align: center; font-weight: 400; }
+.rptab thead th { background: #eef2f1; border-top: 0; font-size: .7rem; font-weight: 700; color: var(--muted); line-height: 1.15; }
+.rptab th.stx { text-align: left; padding: 4px 6px; min-width: 120px; }
+.rptab tr.sh th { text-align: left; background: var(--lead-bg); font-weight: 700; padding: 4px 8px; }
+.rptab tr.tot th { text-align: left; font-weight: 700; padding: 4px 8px; }
+.rptab tr.tot td { font-weight: 700; font-variant-numeric: tabular-nums; }
+.tk { width: 26px; height: 26px; border: 1.5px solid var(--ink); border-radius: 6px; background: #fff; position: relative; padding: 0; }
+.tk::before { content: ""; position: absolute; inset: -5px; }
+.tk[aria-pressed="true"] { background: var(--ok); border-color: var(--ok); }
+.tk[aria-pressed="true"]::after { content: ""; position: absolute; left: 8px; top: 3px; width: 6px; height: 12px; border: solid #fff; border-width: 0 2.2px 2.2px 0; transform: rotate(40deg); }
+
+/* ---------- nursing: record sheet columns ---------- */
+.colsl { list-style: none; counter-reset: c; margin: 0; padding: 6px 10px 8px; display: flex; flex-wrap: wrap; gap: 5px; }
+.colsl li { counter-increment: c; border: 1px solid var(--hair); background: var(--bg); border-radius: 6px; padding: 3px 8px; font-size: .85rem; }
+.colsl li::before { content: counter(c); display: inline-block; min-width: 16px; margin-right: 5px; font-weight: 700; color: var(--muted); }
+
+.rptab th.stx .ac > span { flex: 1 1 0; min-width: 0; } /* source tag sits beside the item text, not under it */

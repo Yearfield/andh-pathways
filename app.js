@@ -12,7 +12,7 @@ const ls = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } 
 const S = {
   index: null, sources: {}, dx: {}, verified: ls(LS_VER, {}), offsets: ls(LS_OFF, {}),
   verify: localStorage.getItem(LS_MODE) === "1", checked: ls(LS_CHK, {}), recent: ls(LS_REC, []),
-  open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", dxo: {}, hub: {}, // dxo: open differential cards per pathway; hub: chosen member (0 = first) per hub id
+  open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", dxo: {}, hub: {}, ps: {}, // ps: live answers on a pathway's Score tab (never stored); dxo: open differential cards per pathway; hub: chosen member (0 = first) per hub id
   sd: {}, sc: null, spop: "All", stag: "All", // scales and calculations: loaded cards, live scorer state, list filters
 };
 
@@ -27,6 +27,7 @@ const P = {
   differentials: '<circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h10"/>',
   nursing: '<path d="M3 12h4l3-7 4 14 3-7h4"/>',
   appendix: '<path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/>',
+  score: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
   sources: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M19 19v2H6"/>',
   scale: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
   interp: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
@@ -118,13 +119,16 @@ function apxItems(d) {
   if (a.children) { add(a.children.principles); if (a.children.severe_def) add([a.children.severe_def]); (a.children.rows || []).forEach(r => out.push(rowItem(r))); }
   add(a.monitoring); add(a.special); add(a.consult); return out;
 }
+/* d.score (Fagerstrom, OOWS ...): the note, the items and the bands are verifiable like any other item */
+function scoreItems(d) { const sc = d.score, out = []; if (!sc) return out;
+  if (sc.note && sc.note.t) out.push(sc.note); (sc.items || []).forEach(i => i.t && out.push(i)); (sc.bands || []).forEach(i => i.t && out.push(i)); return out; }
 function allItems(d) {
   const out = []; const add = a => (a || []).forEach(i => i.t && out.push(i));
   d.admission.forEach(s => add(s.items)); add(d.decision); add(d.chart.standing);
   d.chart.rows.forEach(r => { add(r.feed); add(r.tests); add(r.treatment); if (r.lead) out.push({ t: r.lead }); });
   (d.differentials || []).forEach(x => { add(x.features); add(x.confirm); add(x.manage); add(x.refer); });
   d.boxes.forEach(b => add(b.items)); add(d.discharge.items); add(d.followup.items);
-  d.nursing.params.forEach(p => add(p.items)); add(d.nursing.call); apxItems(d).forEach(i => out.push(i)); return out;
+  d.nursing.params.forEach(p => add(p.items)); add(d.nursing.call); apxItems(d).forEach(i => out.push(i)); scoreItems(d).forEach(i => out.push(i)); return out;
 }
 const progress = d => { const a = allItems(d); const v = a.filter(i => S.verified[key(d.id, i)]).length; return [v, a.length]; };
 const doneCount = (d, items) => { const r = (items || []).filter(i => i.t); return [r.filter(i => S.checked[key(d.id, i)]).length, r.length]; };
@@ -173,8 +177,8 @@ function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
     ${S.verify ? `<div class="meter" title="${v} of ${n} verified"><i style="width:${n ? (100 * v / n) : 0}%"></i></div>` : ""}
     ${head}</header>
   <main class="fade ${mainCls}">${body}</main>${after}
-  <nav class="tabs">${[["arrival", "Arrival"], ["days", "Timeline"], ["differentials", "Differentials"], ["doses", "Doses"], ["nursing", "Nursing"], ["sources", "Sources"], ["appendix", d.appendix ? apxLabel(d) : ""]]
-      .filter(([t]) => (t !== "differentials" || (d.differentials || []).length) && (t !== "appendix" || d.appendix)).map(([t, l]) => `<button data-go="#/dx/${d.id}/${t}" class="${tab === t ? "on" : ""}" ${tab === t ? 'aria-current="page"' : ""}>${ico(t)}${l}</button>`).join("")}</nav>`;
+  <nav class="tabs">${[["arrival", "Arrival"], ["days", "Timeline"], ["score", d.score ? "Score" : ""], ["differentials", "Differentials"], ["doses", "Doses"], ["nursing", "Nursing"], ["sources", "Sources"], ["appendix", d.appendix ? apxLabel(d) : ""]]
+      .filter(([t]) => (t !== "differentials" || (d.differentials || []).length) && (t !== "appendix" || d.appendix) && (t !== "score" || d.score)).map(([t, l]) => `<button data-go="#/dx/${d.id}/${t}" class="${tab === t ? "on" : ""}" ${tab === t ? 'aria-current="page"' : ""}>${ico(t)}${l}</button>`).join("")}</nav>`;
 }
 
 /* ---------- start page + procedures ---------- */
@@ -330,26 +334,27 @@ const unpop = t => String(t)
 /* Diagnosis list rows. Members of a hub (index.json "hubs", e.g. Fracture adult + paeds) collapse into ONE row that opens the hub page. */
 function listRows() {
   const hubs = S.index.hubs || [];
-  return [...S.index.diagnoses.filter(e => !e.hub).map(e => ({ e })),
+  return [...S.index.diagnoses.filter(e => !e.hub && !e.appendix_to).map(e => ({ e })), // appendix pathways are listed under their parent, see home()
     ...hubs.map(h => ({ e: { ...h, population: h.population || "Adult + Paediatric" }, hub: h }))];
 }
 function home() {
   const rows = listRows();
   const groups = [...new Set(rows.map(r => popName(popOf(r.e))))];
   const rec = S.recent.map(r => ({ ...r, e: entry(r.id) })).filter(r => r.e).slice(0, 3);
-  const tabName = { arrival: "Arrival", days: "Timeline", differentials: "Differentials", doses: "Doses", nursing: "Nursing", sources: "Sources", appendix: "Appendix" };
+  const tabName = { arrival: "Arrival", days: "Timeline", differentials: "Differentials", doses: "Doses", nursing: "Nursing", sources: "Sources", appendix: "Appendix", score: "Score" };
   const recent = rec.length ? `<section id="recent"><h2 class="glabel">Recent</h2><div class="recent">${rec.map(r =>
     `<button class="rcard" data-go="#/dx/${r.id}/${r.tab}${r.tab === "days" && r.row ? "/" + r.row : ""}"><b>${esc(r.e.short.replace(/_/g, " "))}</b><span>${esc(tabName[r.tab] || "")}</span></button>`).join("")}</div></section>` : "";
-  const rowHtml = ({ e, hub }) => {
+  const kidsOf = id => S.index.diagnoses.filter(k => k.appendix_to === id);
+  const rowHtml = ({ e, hub, kid }) => {
     // a hub row is listed once (under Adult + paeds) but must still show when the population filter is Adult or Paediatric
-    const pops = hub ? [...hub.members.map(m => m.label), popName(popOf(e))] : [popName(popOf(e))];
-    const trim0 = !hub && /^(Adult|Paediatric)$/.test(pops[0]) ? unpop : t => t, trim = t => trim0(t).replace(/_/g, " "); // "Hypo_Neonate" -> "Hypo Neonate"
-    return `<button class="dx" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + popName(popOf(e)) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
+    const pops = hub ? [...hub.members.map(m => m.label), popName(popOf(e))] : kid ? [popName(popOf(kid))] : [popName(popOf(e))]; // an appendix row follows its parent's group
+    const trim0 = !hub && /^(Adult|Paediatric)$/.test(pops[0]) ? unpop : t => t, trim = t => trim0(t).replace(/_/g, " ").replace(/\s*[\u2014\u2013-]\s*appendix to .*$/i, ""); // "Hypo_Neonate" -> "Hypo Neonate"; "… — appendix to the X pathway" (it is listed under X)
+    return `<button class="dx ${kid ? "kid" : ""}" data-go="${hub ? "#/hub/" + e.id : `#/dx/${e.id}/arrival`}" ${hub ? `data-hub="${esc(e.id)}"` : ""} data-q="${esc((e.short + " " + e.title + " " + popPrefix(e.population) + " " + popName(popOf(e)) + " " + e.id).toLowerCase())}" data-pops="${esc(pops.join("|"))}" data-sys="${esc((e.tags?.system || []).join("|"))}" data-cat="${esc((e.tags?.cat || []).join("|"))}">
         <span class="t">${esc(trim(e.short))}</span><span class="p">${trim(e.title).toLowerCase() === trim(e.short).toLowerCase() ? "" : esc(trim(e.title))}</span>${ico("next")}</button>`; // a description that only repeats the name is left blank
   };
   const lists = groups.map(g => { const items = rows.filter(r => popName(popOf(r.e)) === g);
     return `<section class="grp" data-grp="${esc(g)}"><h2 class="glabel"><span class="dot ${popClass(popOf(items[0].e))}"></span>${esc(g)}<span class="c">· <span class="gc">${items.length}</span></span></h2>
-      <div class="list">${items.map(rowHtml).join("")}</div></section>`; }).join("");
+      <div class="list">${items.map(r => rowHtml(r) + kidsOf(r.e.id).map(k => rowHtml({ e: k, kid: r.e })).join("")).join("")}</div></section>`; }).join("");
   app.innerHTML = `
   <header class="top"><div class="hometop">
     <div class="brand"><button class="iconbtn" aria-label="Back to start" data-go="#/">${ico("back")}</button>
@@ -386,19 +391,26 @@ function applyFilter() {
   $$(".fchip[data-catfilter]").forEach(b => b.setAttribute("aria-pressed", b.dataset.catfilter === S.cat));
 }
 
-const secLabel = (s) => s.n === 0 ? "Not this" : s.n === 1 ? "Diagnose" : s.n === 2 ? "Consult if" : s.n === 9 ? "Other flags" : /red flag/i.test(s.title) ? "Red flags"
-  : s.title.split(/ — | = | \(|:|,| · /)[0].split(" ").slice(0, 2).join(" ");
-const isRed = s => s.n === 2 || s.n === 9 || /red flag/i.test(s.title);
-const secTone = s => s.n === 0 ? "blue" : isRed(s) ? "red" : ""; // 0 = "Not this pathway" (light blue), red-flag sections = red
+const apxSec2 = (s, d) => d && d.type === "appendix" && s.n === 2 && !/any one|admit|refer|consult/i.test(s.title); // an appendix's section 2 may be e.g. "On the ward"
+const shortTitle = t => { const all = t.split(/ — | = | \(|:|,| · | \/ /)[0].split(" "), w = all.slice(0, 2); while (w.length > 1 && /^(of|the|to|for|and|on|in)$/i.test(w[w.length - 1])) w.pop();
+  return w.length === 1 && /^(of|the|to|for|and|on|in)$/i.test(w[0]) ? all.slice(0, 3).join(" ") : w.join(" "); }; // "On the ward" stays whole; "Signs of withdrawal" -> "Signs"
+const secLabel = (s, d) => s.n === 0 ? "Not this" : apxSec2(s, d) ? shortTitle(s.title) : d && d.type === "appendix" && s.n === 1 ? shortTitle(s.title) : s.n === 1 ? "Diagnose" : s.n === 2 ? "Consult if" : s.n === 9 ? "Other flags" : /red flag/i.test(s.title) ? "Red flags"
+  : d && d.type === "appendix" ? shortTitle(s.title) : s.title.split(/ — | = | \(|:|,| · /)[0].split(" ").slice(0, 2).join(" ");
+const isRed = (s, d) => !apxSec2(s, d) && (s.n === 2 || s.n === 9 || /red flag/i.test(s.title));
+const secTone = (s, d) => s.n === 0 ? "blue" : isRed(s, d) ? "red" : ""; // 0 = "Not this pathway" (light blue), red-flag sections = red
 
 function arrival(d) {
   const open = S.open[d.id] ||= new Set([0, 1, 2]); // 0 = exclusion box, open by default
   const secs = d.admission.map(s => { const [c, n] = doneCount(d, s.items); return { s, c, n }; });
   const last = Math.max(...d.admission.map(s => s.n));
+  const dn = d.decision.map(x => (/^\s*(\d+)\./.exec(x.t) || [])[1]).filter(Boolean); // the decision lines carry their own numbers ("10.", "11.")
+  const decNum = dn.length ? (dn[0] === dn[dn.length - 1] ? dn[0] : dn[0] + "\u2013" + dn[dn.length - 1]) : `${last + 1}\u2013${last + d.decision.length}`;
   const jump = `<nav class="jump" aria-label="Sections">${secs.map(({ s, c, n }) =>
-    `<button data-jump="s${s.n}" class="${secTone(s)} ${n && c === n ? "done" : ""}"><b>${s.n}</b>${esc(secLabel(s))}</button>`).join("")}
-    <button data-jump="dec"><b>${last + 1}–${last + d.decision.length}</b>Decide</button></nav>`;
-  const body = secs.map(({ s, c, n }) => `<section class="card ${secTone(s)} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
+    `<button data-jump="s${s.n}" class="${secTone(s, d)} ${n && c === n ? "done" : ""}"><b>${s.n}</b>${esc(secLabel(s, d))}</button>`).join("")}
+    <button data-jump="dec"><b>${decNum}</b>Decide</button></nav>`;
+  const me = entry(d.id) || {}, par = me.appendix_to && entry(me.appendix_to), kids = S.index.diagnoses.filter(k => k.appendix_to === d.id);
+  const rel = par || kids.length ? `<div class="relrow">${par ? `<button class="btn" data-go="#/dx/${par.id}/arrival">Appendix to ${esc(par.short.replace(/_(adult|paeds|child)$/i, "").replace(/_/g, " "))}${ico("next")}</button>` : ""}${kids.map(k => `<button class="btn" data-go="#/dx/${k.id}/arrival">Appendix: ${esc(k.short.replace(/_(adult|paeds|child)$/i, "").replace(/_/g, " "))}${ico("next")}</button>`).join("")}</div>` : "";
+  const body = rel + secs.map(({ s, c, n }) => `<section class="card ${secTone(s, d)} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
       <h2><button class="shead" data-sec="${s.n}" aria-expanded="${open.has(s.n)}"><span class="n">${s.n}</span><span class="st">${esc(s.title)}</span>
         <span class="cnt ${n && c === n ? "all" : ""}">${c}/${n}</span>${ico("down")}</button></h2>
       ${s.note ? `<div class="note">${esc(s.note)}</div>` : ""}${list(d, s.items)}</section>`).join("") +
@@ -414,13 +426,13 @@ function days(d, i) {
   const steps = `<nav class="steps" aria-label="Time points">${rows.map((x, j) =>
     `<button class="step ${j === i ? "on" : j < i ? "past" : ""} ${x.label.length > 12 ? "wide" : ""}" data-go="#/dx/${d.id}/days/${j}" ${j === i ? 'aria-current="step"' : ""}>
       <span class="ln"><i class="${j === 0 ? "none" : j <= i ? "dark" : ""}"></i><span class="d"></span><i class="${j === rows.length - 1 ? "none" : j < i ? "dark" : ""}"></i></span>
-      <b>${esc(x.label)}</b><span>${esc(clip(x.phase, 15))}</span></button>`).join("")}</nav>`;
+      <b>${esc(x.label)}</b>${x.phase ? `<span>${esc(clip(x.phase, 15))}</span>` : ""}</button>`).join("")}</nav>`;
   const c = d.chart.columns; const cols = [["feed", c.feed], ["tests", c.tests], ["treatment", c.treatment]];
   const seg = Math.min(2, S.seg);
   const body =
-    `<div class="dayhead"><span class="big">${esc(r.label)}</span><span class="ph">${esc(r.phase)}</span></div>` +
+    `<div class="dayhead"><span class="big">${esc(r.label)}</span>${r.phase ? `<span class="ph">${esc(r.phase)}</span>` : ""}</div>` +
     (r.lead ? `<div class="lead">${esc(r.lead)}</div>` : "") +
-    (i === 0 && d.chart.standing ? card(d, /\/|^time$/i.test(d.chart.unit) ? "Throughout — every shift" : /^visit$/i.test(d.chart.unit) ? "At every visit" : `Every ${d.chart.unit.toLowerCase()}, every shift`, d.chart.standing) : "") +
+    (i === 0 && (d.chart.standing || []).length ? card(d, /\/|^time$/i.test(d.chart.unit) ? "Throughout — every shift" : /^visit$/i.test(d.chart.unit) ? "At every visit" : `Every ${d.chart.unit.toLowerCase()}, every shift`, d.chart.standing) : "") +
     `<div class="seg" role="tablist" aria-label="Chart columns">${cols.map(([k, t], j) =>
       `<button role="tab" data-seg="${j}" aria-selected="${j === seg}">${esc(shortCol(t))} <span>${(r[k] || []).filter(x => x.t).length}</span></button>`).join("")}</div>` +
     card(d, cols[seg][1], r[cols[seg][0]]) +
@@ -429,7 +441,7 @@ function days(d, i) {
   const pager = `<div class="pager"><div class="in">
     <button class="prev" data-go="#/dx/${d.id}/days/${i - 1}" ${i === 0 ? "disabled" : ""} aria-label="Previous: ${i ? esc(rows[i - 1].label) : ""}">${ico("back")}</button>
     <button class="next" data-go="#/dx/${d.id}/days/${i + 1}" ${nx ? "" : "disabled"}>
-      <span class="l"><small>${nx ? "Next · or swipe left" : "Last time point"}</small><b>${nx ? esc(nx.label + " — " + nx.phase) : esc(r.label)}</b></span>${nx ? ico("next") : ""}</button></div></div>`;
+      <span class="l"><small>${nx ? "Next · or swipe left" : "Last time point"}</small><b>${nx ? esc(nx.label + (nx.phase ? " — " + nx.phase : "")) : esc(r.label)}</b></span>${nx ? ico("next") : ""}</button></div></div>`;
   shell({ d, tab: "days", body, head: steps, after: pager, mainCls: "withpager" });
   const on = $(".steps .on"); on && on.scrollIntoView({ inline: "center", block: "nearest" });
   swipe(d, i, rows.length);
@@ -583,10 +595,53 @@ function appendix(d) {
   shell({ d, tab: "appendix", body, head });
 }
 
+/* ---------- score tab (d.score) ---------- */
+// "< 4 mild", "≥ 4 moderate", "0–3 mild", "7+": the leading numbers of a band line become a range, so the total can light up its band
+const bandRange = t => { const m = /^\s*(?:([<≤>≥])\s*(\d+)|(\d+)\s*[–-]\s*(\d+)|(\d+)\s*\+)/.exec(t || ""); if (!m) return null;
+  if (m[1]) { const n = +m[2]; return m[1] === "<" ? [-Infinity, n - 1] : m[1] === "≤" ? [-Infinity, n] : m[1] === ">" ? [n + 1, Infinity] : [n, Infinity]; }
+  return m[3] != null ? [+m[3], +m[4]] : [+m[5], Infinity]; };
+const inBand = (b, total) => { const r = bandRange(b.t); return !!r && total >= r[0] && total <= r[1]; };
+function scoreTab(d) {
+  const sc = d.score, st = S.ps[d.id] ||= { sel: {}, tk: {} }, items = sc.items || [], cols = sc.cols || [];
+  const isRepeat = sc.type === "repeat";
+  let total = null, shown = "", answered = 0;
+  const bar = (label, val, sub) => `<div class="stotal"><span>${esc(label)}</span><b>${val}</b><small>${sub}</small></div>`;
+  let main = "";
+  if (isRepeat) {
+    const real = items.map((it, i) => [it, i]).filter(([it]) => it.t);
+    const colTotal = j => real.filter(([, i]) => st.tk[i + "|" + j]).length;
+    const last = cols.map((_, j) => j).filter(j => colTotal(j) > 0).pop();
+    if (last != null) { total = colTotal(last); answered = real.filter(([, i]) => cols.some((_, j) => st.tk[i + "|" + j])).length; }
+    main = `<div class="tscroll"><table class="rptab"><thead><tr><th></th>${cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${items.map((it, i) => it.t
+      ? `<tr><th scope="row" class="stx"><div class="ac ${it.b ? "b" : ""}"><span>${esc(it.t)}${dag(it)}</span>${chip(it.s)}${tick(key(d.id, it))}</div></th>${cols.map((c, j) =>
+        `<td><button class="tk" data-stk="${i}|${j}" aria-pressed="${!!st.tk[i + "|" + j]}" aria-label="${esc(it.t)} — ${esc(c)}"></button></td>`).join("")}</tr>`
+      : `<tr class="sh"><th colspan="${cols.length + 1}">${esc(it.h || "")}${chip(it.s)}</th></tr>`).join("")}
+      ${sc.total_label ? `<tr class="tot"><th scope="row">${esc(sc.total_label)}</th>${cols.map((_, j) => `<td>${colTotal(j) || ""}</td>`).join("")}</tr>` : ""}</tbody></table></div>`;
+    shown = total == null ? "—" : String(total);
+  } else {
+    answered = items.filter((_, i) => st.sel[i] != null).length;
+    total = items.reduce((n, it, i) => n + (st.sel[i] != null ? it.opts[st.sel[i]][1] : 0), 0);
+    main = items.map((it, i) => it.t ? `<div class="sit"><div class="stext">${esc(it.t)}${dag(it)}${chip(it.s)}${tick(key(d.id, it))}</div>
+      <div class="sopts" role="group" aria-label="${esc(it.t)}">${(it.opts || []).map(([l, p], j) => `<button class="sopt" data-sopt="${i}|${j}" aria-pressed="${st.sel[i] === j}">${esc(l)}<small>${p}</small></button>`).join("")}</div></div>`
+      : `<h3 class="dsub">${esc(it.h || "")}${chip(it.s)}</h3>`).join("");
+    shown = answered ? String(total) : "—";
+  }
+  const complete = isRepeat ? total != null : answered === items.filter(i => i.t).length;
+  const bands = (sc.bands || []).length ? `<ul class="items sbands">${sc.bands.map(b => `<li class="${complete && total != null && inBand(b, total) ? "on" : ""} ${b.b ? "b" : ""}"><div class="body"><span class="txt">${esc(b.t)}${dag(b)}</span>${chip(b.s)}</div>${tick(key(d.id, b))}</li>`).join("")}</ul>` : "";
+  const cnt = isRepeat ? "" : `${answered}/${items.filter(i => i.t).length} answered`;
+  const body = `<section class="card scc"><h2 class="ctitle">${esc(sc.title)}</h2>${sc.note && sc.note.t ? `<div class="note scn">${esc(sc.note.t)}${dag(sc.note)}${chip(sc.note.s)}${tick(key(d.id, sc.note))}</div>` : ""}
+    ${main}</section>` +
+    (sc.total_label ? bar(sc.total_label, shown, isRepeat ? (total == null ? "tick to score" : "latest column") : cnt) : "") +
+    (bands ? `<section class="card"><h2 class="ctitle">Interpretation</h2>${bands}</section>` : "") +
+    `<div class="toolrow"><button class="btn" data-scoreclear="1">Clear ${isRepeat ? "ticks" : "answers"}</button></div><p class="hint">Nothing here is saved: it clears when you leave or close the app.</p>`;
+  shell({ d, tab: "score", body });
+}
+
 function nursing(d) {
   const n = d.nursing;
-  const body = `<p class="hint">${esc(n.title)}. ${esc(n.period)}.</p>` + card(d, "Call the doctor", n.call, "red") +
-    n.params.map(p => card(d, p.h, p.items)).join("") + card(d, "Totals each sheet", n.totals.map(t => ({ t })));
+  const colsCard = (n.columns || []).length ? `<section class="card"><h2 class="ctitle">Record sheet columns</h2><ol class="colsl">${n.columns.map(c => `<li>${esc(c)}</li>`).join("")}</ol></section>` : "";
+  const body = `<p class="hint">${esc(n.title)}. ${esc(n.period)}.</p>` + colsCard + card(d, "Call the doctor", n.call, "red") +
+    (n.params || []).map(p => card(d, p.h, p.items)).join("") + ((n.totals || []).length ? card(d, "Totals each sheet", n.totals.map(t => ({ t }))) : "");
   shell({ d, tab: "nursing", body });
 }
 
@@ -1212,6 +1267,13 @@ document.addEventListener("click", async e => {
   if (t.dataset.filter) { S.filter = t.dataset.filter; applyFilter(); return; }
   if (t.dataset.dxtoggle !== undefined) { const c = t.closest("section.dxc"); dxSet(c, c.classList.contains("closed")); dxAllLabel(); return; }
   if (t.dataset.dxall) { const v = $$("section.dxc").filter(c => !c.hidden), on = !v.every(c => !c.classList.contains("closed")); v.forEach(c => dxSet(c, on)); dxAllLabel(); return; }
+  if (t.dataset.sopt || t.dataset.stk || t.dataset.scoreclear) { // score tab: pick an option / tick a cell / clear
+    const pid = (location.hash || "").slice(2).split("/")[1], st = S.ps[pid] ||= { sel: {}, tk: {} };
+    if (t.dataset.sopt) { const [i, j] = t.dataset.sopt.split("|").map(Number); if (st.sel[i] === j) delete st.sel[i]; else st.sel[i] = j; }
+    else if (t.dataset.stk) { const k = t.dataset.stk; if (st.tk[k]) delete st.tk[k]; else st.tk[k] = 1; }
+    else S.ps[pid] = { sel: {}, tk: {} };
+    rerender(); return;
+  }
   if (t.dataset.hubpop) { const [hid, i] = t.dataset.hubpop.split("|"); S.hub[hid] = +i; route(); return; }
   if (t.dataset.sec) {
     const n = +t.dataset.sec; const id = (location.hash || "").slice(2).split("/")[1]; const set = S.open[id];
@@ -1307,12 +1369,13 @@ async function route() {
     if (p[0] === "scores") return scoresHome();
     if (p[0] === "score") return scoreView(p[1], p[2], p[3]);
     if (p[0] !== "dx") return landing();
-    const d = await getDx(p[1]); const tab = ["days", "differentials", "doses", "nursing", "sources", "appendix"].includes(p[2]) ? p[2] : "arrival";
+    const d = await getDx(p[1]); const tab = ["days", "differentials", "doses", "nursing", "sources", "appendix", "score"].includes(p[2]) ? p[2] : "arrival";
     remember(d.id, tab, p[3]);
     const hb = entry(d.id)?.hub; if (hb) S.hub[hb] = ((S.index.hubs || []).find(h => h.id === hb)?.members || []).findIndex(m => m.id === d.id); // hub reopens on the population you were in
     if (tab === "days") return days(d, parseInt(p[3] || "0", 10));
     if (tab === "differentials" && (d.differentials || []).length) return differentials(d, p[3] === undefined ? undefined : parseInt(p[3], 10));
     if (tab === "appendix" && d.appendix) return appendix(d);
+    if (tab === "score" && d.score) return scoreTab(d);
     if (tab === "doses") return doses(d);
     if (tab === "nursing") return nursing(d);
     if (tab === "sources") return sources(d);

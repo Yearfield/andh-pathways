@@ -1,0 +1,450 @@
+{
+ "id": "nicotine-withdrawal",
+ "short": "Nicotine_Withdrawal",
+ "type": "appendix",
+ "appendix_to": "alcohol-withdrawal-adult",
+ "title": "Nicotine withdrawal in admitted smokers — appendix to the Alcohol Withdrawal pathway",
+ "population": "Adults and adolescents (any admitted smoker)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-30",
+ "sources": [
+  "satobacco2013",
+  "ajtccm2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this appendix",
+   "items": [
+    {
+     "t": "Nicotine poisoning (swallowed e-liquid, patches, gum: vomiting, seizures) → poisons advice",
+     "d": 1
+    },
+    {
+     "t": "Alcohol withdrawal → main pathway in this folder",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Withdrawal features",
+   "items": [
+    {
+     "t": "Craving",
+     "s": "ajtccm2024:42",
+     "b": 1
+    },
+    {
+     "t": "Irritability",
+     "s": "ajtccm2024:42"
+    },
+    {
+     "t": "Anxiety",
+     "s": "ajtccm2024:42"
+    },
+    {
+     "t": "Depressed mood",
+     "s": "ajtccm2024:42"
+    },
+    {
+     "t": "Restlessness, poor concentration, insomnia, increased appetite",
+     "d": 1
+    },
+    {
+     "t": "Cigarettes/day ____ · years ____ · last cigarette ____ · other: snuff / e-cig / hubbly ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "On the ward",
+   "items": [
+    {
+     "t": "Ask every inpatient; give brief stop-smoking advice",
+     "s": "ajtccm2024:39",
+     "b": 1
+    },
+    {
+     "t": "5 As: Ask · Advise · Assess readiness · Assist · Arrange follow-up",
+     "s": "satobacco2013:870"
+    },
+    {
+     "t": "In-hospital counselling + follow-up after discharge works",
+     "s": "satobacco2013:875"
+    },
+    {
+     "t": "Significant withdrawal and cannot leave the ward → NRT or other medicine",
+     "s": "ajtccm2024:42",
+     "b": 1
+    },
+    {
+     "t": "NRT (if available): patch (controller) + gum / spray (reliever) is most effective",
+     "s": "satobacco2013:872",
+     "b": 1
+    },
+    {
+     "t": "Titrate patch strength to the Fagerström score",
+     "s": "satobacco2013:872"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Special groups",
+   "items": [
+    {
+     "t": "Pregnancy: evidence insufficient; NRT only under medical supervision, after behavioural support fails, if heavily dependent and motivated",
+     "s": "satobacco2013:874"
+    },
+    {
+     "t": "< 18 y: no medicine licensed; NRT + behavioural support may be used > 12 y",
+     "s": "satobacco2013:874"
+    },
+    {
+     "t": "Current depression: address it first; watch for mood / behaviour change",
+     "s": "satobacco2013:875"
+    },
+    {
+     "t": "Bupropion lowers the seizure threshold",
+     "s": "satobacco2013:872",
+     "b": 1
+    },
+    {
+     "t": "→ not during alcohol withdrawal",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Medicines (prescriber)",
+   "items": [
+    {
+     "t": "NRT patch: 21 mg/24 h if > 10 cigarettes/day, 14 mg if ≤ 10",
+     "d": 1
+    },
+    {
+     "t": "NRT gum / lozenge 2 mg (4 mg if heavy smoker), 1 piece 1–2-hourly as needed",
+     "d": 1
+    },
+    {
+     "t": "Outpatient: bupropion 150 mg twice daily for 7–12 weeks (adults)",
+     "s": "satobacco2013:872"
+    },
+    {
+     "t": "Outpatient: varenicline 2 mg/day (adults; schedule 5)",
+     "s": "satobacco2013:873"
+    },
+    {
+     "t": "Bupropion / varenicline in hospital: insufficient data",
+     "s": "satobacco2013:875"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Every smoker: brief advice + Fagerström on admission",
+   "s": "ajtccm2024:39",
+   "b": 1
+  },
+  {
+   "t": "11. Significant withdrawal → offer NRT if available · arrange follow-up at discharge — Write the plan into the main day chart; record the daily craving scores below.",
+   "s": "ajtccm2024:42",
+   "b": 1
+  }
+ ],
+ "score": {
+  "title": "Fagerström Test for Nicotine Dependence — tick one per row",
+  "type": "options",
+  "note": {
+   "t": "Score once on admission; use it to choose the patch strength.",
+   "s": "satobacco2013:872"
+  },
+  "items": [
+   {
+    "t": "1 First cigarette after waking",
+    "s": "satobacco2013:873",
+    "opts": [
+     [
+      "≤ 5 min",
+      3
+     ],
+     [
+      "6–30 min",
+      2
+     ],
+     [
+      "31–60 min",
+      1
+     ],
+     [
+      "> 60 min",
+      0
+     ]
+    ]
+   },
+   {
+    "t": "2 Hard not to smoke where it is forbidden?",
+    "s": "satobacco2013:873",
+    "opts": [
+     [
+      "Yes",
+      1
+     ],
+     [
+      "No",
+      0
+     ]
+    ]
+   },
+   {
+    "t": "3 Which cigarette would you hate most to give up?",
+    "s": "satobacco2013:873",
+    "opts": [
+     [
+      "First in the morning",
+      1
+     ],
+     [
+      "Any other",
+      0
+     ]
+    ]
+   },
+   {
+    "t": "4 Cigarettes per day",
+    "s": "satobacco2013:873",
+    "opts": [
+     [
+      "≤ 10",
+      0
+     ],
+     [
+      "11–20",
+      1
+     ],
+     [
+      "21–30",
+      2
+     ],
+     [
+      "≥ 31",
+      3
+     ]
+    ]
+   },
+   {
+    "t": "5 Smoke more in the first hours after waking?",
+    "s": "satobacco2013:873",
+    "opts": [
+     [
+      "Yes",
+      1
+     ],
+     [
+      "No",
+      0
+     ]
+    ]
+   },
+   {
+    "t": "6 Smoke when ill in bed most of the day?",
+    "s": "satobacco2013:873",
+    "opts": [
+     [
+      "Yes",
+      1
+     ],
+     [
+      "No",
+      0
+     ]
+    ]
+   }
+  ],
+  "bands": [
+   {
+    "t": "0–3 mild",
+    "s": "satobacco2013:873",
+    "b": 1
+   },
+   {
+    "t": "4–6 moderate",
+    "s": "satobacco2013:873",
+    "b": 1
+   },
+   {
+    "t": "7–10 severe dependence",
+    "s": "satobacco2013:873",
+    "b": 1
+   }
+  ],
+  "total_label": "TOTAL (0–10)"
+ },
+ "chart": {
+  "unit": "Stage",
+  "phase_note": "Admission, daily, discharge",
+  "columns": {
+   "feed": "Assess",
+   "tests": "Medicine",
+   "treatment": "Actions"
+  },
+  "standing": [],
+  "rows": [
+   {
+    "label": "Admit",
+    "feed": [
+     {
+      "t": "Smoker?  Y / N; Fagerström",
+      "s": "satobacco2013:873",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "NRT if significant withdrawal (patch ± reliever)",
+      "s": "ajtccm2024:42"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Brief advice; assess readiness to quit",
+      "s": "satobacco2013:870"
+     }
+    ]
+   },
+   {
+    "label": "Daily",
+    "feed": [
+     {
+      "t": "Withdrawal score (log below)",
+      "s": "ajtccm2024:42"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Reliever for breakthrough symptoms",
+      "s": "satobacco2013:872"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Counselling",
+      "s": "satobacco2013:875"
+     }
+    ]
+   },
+   {
+    "label": "D/C",
+    "feed": [
+     {
+      "t": "Still motivated?  Y / N",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Outpatient options (§5)",
+      "s": "satobacco2013:872"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Arrange follow-up contact + quitline referral",
+      "s": "satobacco2013:870",
+      "b": 1
+     },
+     {
+      "t": "Quitline number given: ____",
+      "d": 1,
+      "k": "value"
+     },
+     {
+      "t": "Clinic: assess withdrawal symptoms and side-effects",
+      "s": "satobacco2013:871"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [],
+ "discharge": {
+  "title": "Discharge (= ward plan D/C row)",
+  "items": [
+   {
+    "t": "Arrange follow-up contact + quitline referral",
+    "s": "satobacco2013:870",
+    "b": 1
+   },
+   {
+    "t": "Quitline number given: ____",
+    "d": 1,
+    "k": "value"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic: assess withdrawal symptoms and side-effects",
+    "s": "satobacco2013:871"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Daily withdrawal log (nursing)",
+  "period": "once daily",
+  "params": [
+   {
+    "h": "Score 0–4 each",
+    "items": [
+     {
+      "t": "Craving · irritability · anxiety · low mood",
+      "s": "ajtccm2024:42"
+     },
+     {
+      "t": "0 none – 4 severe",
+      "s": "ajtccm2024:42"
+     }
+    ]
+   },
+   {
+    "h": "Record",
+    "items": [
+     {
+      "t": "Cigarettes smoked; NRT given",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "severe craving or distress despite NRT",
+    "d": 1
+   },
+   {
+    "t": "low mood or talk of self-harm",
+    "d": 1
+   }
+  ],
+  "columns": [
+   "Day / date",
+   "Craving (0–4)",
+   "Irritability (0–4)",
+   "Anxiety (0–4)",
+   "Low mood (0–4)",
+   "Cigarettes (n)",
+   "NRT given (type / mg)",
+   "Init."
+  ]
+ }
+}

@@ -1,0 +1,688 @@
+{
+ "id": "amphetamines-withdrawal",
+ "short": "Amphetamines_Withdrawal",
+ "type": "appendix",
+ "appendix_to": "amphetamines",
+ "title": "Methamphetamine / stimulant withdrawal (tik, cat, cocaine) — appendix to the Amphetamines pathway",
+ "population": "Adults and adolescents (ADOL lines = Paed STG, < 18 y)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-30",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this appendix",
+   "items": [
+    {
+     "t": "Intoxication: agitation, hyperthermia, tachycardia, chest pain → Amphetamines / Cocaine pathway",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Mandrax (methaqualone) withdrawal: diazepam 5 mg 8-hourly, reduce over 3–5 days (seizure risk)",
+     "s": "adultstg2026:15.37"
+    },
+    {
+     "t": "Child < 6 y → REFER",
+     "s": "paedstg2026:14.32"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Features of withdrawal",
+   "items": [
+    {
+     "t": "Severe anxiety",
+     "s": "adultstg2026:15.36"
+    },
+    {
+     "t": "Irritability",
+     "s": "adultstg2026:15.36"
+    },
+    {
+     "t": "Insomnia",
+     "s": "adultstg2026:15.36"
+    },
+    {
+     "t": "Depression",
+     "s": "adultstg2026:15.36",
+     "b": 1
+    },
+    {
+     "t": "Psychosis (hallucinations, delusions)",
+     "s": "adultstg2026:15.36",
+     "b": 1
+    },
+    {
+     "t": "Craving, fatigue, hypersomnia, increased appetite",
+     "d": 1
+    },
+    {
+     "t": "No substitute medicine exists for detox",
+     "s": "adultstg2026:15.36"
+    },
+    {
+     "t": "Substance ____ route ____ amount/day ____ last use: date ____ time ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / refer = any one of",
+   "items": [
+    {
+     "t": "Seizures",
+     "s": "phcstg2026:16.27",
+     "b": 1
+    },
+    {
+     "t": "Severe irritability / agitation with aggressive behaviour",
+     "s": "phcstg2026:16.27",
+     "b": 1
+    },
+    {
+     "t": "Psychosis → inpatient care (Psychosis / Delirium pathway)",
+     "s": "phcstg2026:16.28",
+     "b": 1
+    },
+    {
+     "t": "Suicide risk (§3)",
+     "s": "adultstg2026:15.36",
+     "b": 1
+    },
+    {
+     "t": "Significant polydrug use",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Comorbid mental disorder → discuss with psychiatrist",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Otherwise: usually no admission needed",
+     "s": "adultstg2026:15.36"
+    },
+    {
+     "t": "ADOL: consult psychiatrist or specialised unit",
+     "s": "paedstg2026:14.32"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History and checks",
+   "cols": 2,
+   "items": [
+    {
+     "t": "Other substances (alcohol, mandrax, cannabis)",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Injecting drug use",
+     "s": "adultstg2026:15.30"
+    },
+    {
+     "t": "Previous psychosis / mood disorder",
+     "s": "phcstg2026:16.28"
+    },
+    {
+     "t": "Previous self-harm",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Pregnancy test (female)",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "HIV / TB status",
+     "s": "adultstg2026:15.30"
+    },
+    {
+     "t": "Home support",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Psychosocial stressors",
+     "s": "phcstg2026:16.24"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Red flags",
+   "cols": 2,
+   "items": [
+    {
+     "t": "Suicidal thoughts with a plan",
+     "s": "phcstg2026:16.24",
+     "b": 1
+    },
+    {
+     "t": "Hallucinations / delusions",
+     "s": "adultstg2026:15.36",
+     "b": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Aggression, violence",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Over-sedated on diazepam",
+     "d": 1
+    },
+    {
+     "t": "Low mood > 2 weeks after stopping",
+     "s": "phcstg2026:16.28"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. SEIZURES · AGGRESSION · PSYCHOSIS · SUICIDE RISK → ADMIT",
+   "s": "phcstg2026:16.27",
+   "b": 1
+  },
+  {
+   "t": "11. Otherwise → outpatient · short diazepam course · refer to treatment programme — Re-check suicide risk at every contact. Refer every patient to Social Services / rehabilitation.",
+   "s": "adultstg2026:15.36",
+   "b": 1
+  }
+ ],
+ "score": {
+  "title": "Suicide risk + daily withdrawal check — tick if present",
+  "type": "repeat",
+  "note": {
+   "t": "5 components: ideation, intent, plan, access to lethal means, past attempts. Tools never replace clinical judgement.",
+   "s": "phcstg2026:16.23"
+  },
+  "items": [
+   {
+    "h": "Suicide risk",
+    "s": "phcstg2026:16.23"
+   },
+   {
+    "t": "Thoughts of self-harm / suicide (ideation)",
+    "s": "phcstg2026:16.23",
+    "b": 1
+   },
+   {
+    "t": "Intent",
+    "s": "phcstg2026:16.23"
+   },
+   {
+    "t": "Plan",
+    "s": "phcstg2026:16.23",
+    "b": 1
+   },
+   {
+    "t": "Access to lethal means (pills, pesticides, firearm)",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Past attempt / self-harm in past month",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Extreme hopelessness / despair",
+    "s": "phcstg2026:16.23"
+   },
+   {
+    "h": "Withdrawal",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Severe anxiety",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Irritability / agitation",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Insomnia",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Low mood",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Hallucinations / delusions",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Craving",
+    "d": 1
+   }
+  ],
+  "bands": [
+   {
+    "t": "Imminent risk = extremely agitated, violent, distressed or hard to talk to AND current thoughts / plan, thoughts in past month, or an act of self-harm",
+    "s": "phcstg2026:16.24",
+    "b": 1
+   }
+  ],
+  "cols": [
+   "Adm",
+   "Day 2",
+   "Day 3",
+   "Day 4",
+   "Day 5",
+   "Day 6",
+   "Day 7"
+  ]
+ },
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Diazepam short course for severe anxiety, irritability or insomnia; branches for psychosis and suicide risk",
+  "columns": {
+   "feed": "Assess",
+   "tests": "Medicine (oral unless stated)",
+   "treatment": "Actions"
+  },
+  "standing": [
+   {
+    "t": "Suicide risk + withdrawal check daily (page 1 §3)",
+    "s": "adultstg2026:15.36",
+    "b": 1
+   },
+   {
+    "t": "Calm, low-stimulation room",
+    "s": "phcstg2026:16.28"
+   },
+   {
+    "t": "Do not argue with psychotic thinking",
+    "s": "phcstg2026:16.28"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 1",
+    "phase": "admit",
+    "feed": [
+     {
+      "t": "§3 check; vitals",
+      "d": 1
+     },
+     {
+      "t": "Assess for psychosis",
+      "s": "adultstg2026:15.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ADULT diazepam 5–10 mg 8-hourly × 5–7 days",
+      "s": "adultstg2026:15.36",
+      "b": 1
+     },
+     {
+      "t": "ADOL > 14 y up to 20 mg/day; 6–14 y 2–10 mg/day (2–3 doses)",
+      "s": "paedstg2026:14.38",
+      "b": 1
+     },
+     {
+      "t": "Seizure: diazepam 10 mg slow IV",
+      "s": "phcstg2026:16.27",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reassure and support patient and family",
+      "s": "phcstg2026:16.27"
+     },
+     {
+      "t": "Social worker referral",
+      "s": "phcstg2026:16.28"
+     }
+    ]
+   },
+   {
+    "label": "Day 2–4",
+    "phase": "continue",
+    "feed": [
+     {
+      "t": "§3 check daily",
+      "s": "adultstg2026:15.36"
+     },
+     {
+      "t": "Sleep, sedation",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Continue diazepam",
+      "s": "adultstg2026:15.36"
+     },
+     {
+      "t": "ADOL: wean 8- → 12-hourly → daily every 3–5 days",
+      "s": "paedstg2026:14.38"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Over-sedated → reduce dose",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5–7",
+    "phase": "stop",
+    "feed": [
+     {
+      "t": "§3 check daily",
+      "s": "adultstg2026:15.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Stop diazepam by day 7",
+      "s": "adultstg2026:15.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Plan discharge + follow-up",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If psychosis",
+    "phase": "branch",
+    "feed": [
+     {
+      "t": "Safety of patient and carers",
+      "s": "phcstg2026:16.28",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Most settle without medicine",
+      "s": "phcstg2026:16.28"
+     },
+     {
+      "t": "Aggressive: PHC STG 16.1.2 (Psychosis / Delirium pathway)",
+      "s": "phcstg2026:16.28"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Minimise stress and stimulation; avoid confrontation",
+      "s": "phcstg2026:16.28"
+     },
+     {
+      "t": "Discuss with psychiatrist",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "If suicidal",
+    "phase": "branch",
+    "feed": [
+     {
+      "t": "Imminent risk (page 1)?  Y / N",
+      "s": "phcstg2026:16.24",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Remove means; remove toxic medicines from reach (paracetamol, amitriptyline)",
+      "s": "phcstg2026:16.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Close observation",
+      "d": 1
+     },
+     {
+      "t": "Discuss with psychiatrist / REFER",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Suicide helpline 0800 567 567",
+      "s": "adultstg2026:lxxxi"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Diazepam (oral)",
+   "items": [
+    {
+     "h": "ADULT (Hospital STG)"
+    },
+    {
+     "t": "5–10 mg 8-hourly for 5–7 days",
+     "s": "adultstg2026:15.36",
+     "b": 1
+    },
+    {
+     "h": "ADULT (PHC STG, outpatient)"
+    },
+    {
+     "t": "5–10 mg once or 12-hourly for 3–5 days",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "h": "ADOL"
+    },
+    {
+     "t": "> 14 y: up to 20 mg/day in 2–3 doses",
+     "s": "paedstg2026:14.38"
+    },
+    {
+     "t": "6–14 y: 2–10 mg/day in 2–3 doses",
+     "s": "paedstg2026:14.38"
+    }
+   ]
+  },
+  {
+   "title": "Mood · psychosis",
+   "items": [
+    {
+     "h": "Mood"
+    },
+    {
+     "t": "Remove the substance first",
+     "s": "phcstg2026:16.28"
+    },
+    {
+     "t": "Low mood > 2 weeks → treat as mood disorder",
+     "s": "phcstg2026:16.28"
+    },
+    {
+     "h": "Psychosis"
+    },
+    {
+     "t": "All to hospital for inpatient care",
+     "s": "phcstg2026:16.28"
+    },
+    {
+     "t": "All to social worker → rehab",
+     "s": "phcstg2026:16.28"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call doctor"
+    },
+    {
+     "t": "Suicidal talk / plan",
+     "s": "phcstg2026:16.24",
+     "b": 1
+    },
+    {
+     "t": "Hallucinations, aggression, seizure",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Hard to rouse",
+     "d": 1
+    },
+    {
+     "h": "REFER / psychiatrist"
+    },
+    {
+     "t": "Imminent suicide risk",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Psychosis not settling",
+     "d": 1
+    },
+    {
+     "t": "Comorbid mental disorder",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge — all must be met",
+  "items": [
+   {
+    "t": "No imminent suicide risk; means removed at home",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "No psychosis or aggression",
+    "d": 1
+   },
+   {
+    "t": "Diazepam stopped or < 7-day supply",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "Referred: Social Services / rehabilitation",
+    "s": "adultstg2026:15.31"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Suicide risk: weekly contact for the first 2 months",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Re-assess thoughts / plans at every contact",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Family: counsellors, support groups",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Helpline 0800 567 567",
+    "s": "adultstg2026:lxxxi"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "Withdrawal + safety log (nursing)",
+  "period": "8-hourly and at any change",
+  "params": [
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Ask about thoughts of self-harm each shift",
+      "s": "phcstg2026:16.24"
+     },
+     {
+      "t": "Sharps, belts, medicines out of reach",
+      "s": "phcstg2026:16.24"
+     }
+    ]
+   },
+   {
+    "h": "Mental state",
+    "items": [
+     {
+      "t": "Anxiety, irritability, hallucinations, aggression",
+      "s": "adultstg2026:15.36"
+     },
+     {
+      "t": "Sleep hours",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Medicine",
+    "items": [
+     {
+      "t": "Diazepam dose given",
+      "s": "adultstg2026:15.36"
+     },
+     {
+      "t": "Sedation: alert / drowsy / hard to rouse",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "suicidal talk or plan",
+    "s": "phcstg2026:16.24",
+    "b": 1
+   },
+   {
+    "t": "hallucinations or aggression",
+    "s": "adultstg2026:15.36"
+   },
+   {
+    "t": "seizure",
+    "s": "phcstg2026:16.27"
+   },
+   {
+    "t": "hard to rouse",
+    "d": 1
+   }
+  ],
+  "columns": [
+   "Date / time",
+   "Self-harm thoughts (Y/N)",
+   "Anxious / irritable (Y/N)",
+   "Halluc. (Y/N)",
+   "Aggressive (Y/N)",
+   "Sleep (h)",
+   "Diazepam (mg)",
+   "Sedation (A/D/H)",
+   "Notes",
+   "Init."
+  ]
+ }
+}

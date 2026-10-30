@@ -1,0 +1,1149 @@
+{
+ "id": "alcohol-withdrawal-adult",
+ "short": "Alcohol_Withdrawal_Adult",
+ "title": "Alcohol withdrawal incl. delirium tremens (adults; ADOL lines for adolescents)",
+ "population": "Adults and adolescents (ADOL lines = Paed STG, < 18 y)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-10-30",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Toxic alcohol (methanol, ethylene glycol) or intoxication → Toxic Alcohols pathway",
+     "b": 1
+    },
+    {
+     "t": "Opioid / stimulant withdrawal → appendices in the Opioids / Amphetamines folders"
+    },
+    {
+     "t": "Benzodiazepine or mandrax withdrawal → STG 15.8.4 / 15.8.6",
+     "s": "adultstg2026:15.37"
+    },
+    {
+     "t": "Child < 6 y → REFER",
+     "s": "paedstg2026:14.32"
+    },
+    {
+     "t": "Nicotine → appendix in this folder"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Alcohol-dependent person stops or sharply reduces drinking",
+     "s": "phcstg2026:16.28",
+     "b": 1
+    },
+    {
+     "t": "Autonomic: sweating, tachycardia, hypertension, tremor, low-grade fever",
+     "s": "phcstg2026:16.28"
+    },
+    {
+     "t": "GI: anorexia, nausea, vomiting, dyspepsia, diarrhoea",
+     "s": "phcstg2026:16.29"
+    },
+    {
+     "t": "Anxiety, agitation, poor sleep, vivid dreams",
+     "s": "phcstg2026:16.29"
+    },
+    {
+     "t": "Delirium tremens: visual hallucinations, disorientation, fluctuating consciousness",
+     "s": "adultstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Last drink: date ____ time ____ · drinks/day ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit for detox = any one of",
+   "items": [
+    {
+     "t": "Past convulsions or past withdrawal delirium",
+     "s": "adultstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Past psychosis; suicidal ideation",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Heart failure, liver disease or other major comorbidity",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "> 60 years; pregnancy; cognitive impairment",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Inadequate home support; failed community detox",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "ADOL: also any psychiatric illness → consult psychiatrist",
+     "s": "paedstg2026:14.33"
+    },
+    {
+     "t": "None: outpatient detox (same oral regimen)",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Withdrawal seizures / delirium before",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Previous detox attempts",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Epilepsy",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Liver disease",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Psychiatric history",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Current medicines (benzodiazepines)",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "HIV / TB status",
+     "s": "adultstg2026:15.30"
+    },
+    {
+     "t": "Pregnancy status",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Alcohol + other substances"
+    },
+    {
+     "t": "Amount, duration, last drink",
+     "d": 1
+    },
+    {
+     "t": "Polydrug use",
+     "s": "phcstg2026:16.27"
+    },
+    {
+     "t": "Sedative-hypnotic use (similar picture)",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "h": "Since stopping"
+    },
+    {
+     "t": "Tremor (from 12 h)",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Hallucinations",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Vomiting / not eating",
+     "s": "phcstg2026:16.29"
+    },
+    {
+     "h": "Risk"
+    },
+    {
+     "t": "Suicidal ideation",
+     "s": "adultstg2026:15.31",
+     "b": 1
+    },
+    {
+     "t": "Fall / head injury",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Fever, cough, other infection",
+     "s": "phcstg2026:16.29"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = against age norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Tachycardia",
+     "s": "adultstg2026:15.32",
+     "k": "yn"
+    },
+    {
+     "t": "Hypertension",
+     "s": "adultstg2026:15.32",
+     "k": "yn"
+    },
+    {
+     "t": "Fever (often low-grade)",
+     "s": "paedstg2026:14.34",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ low",
+     "s": "adultstg2026:15.32",
+     "k": "yn"
+    },
+    {
+     "t": "Reduced / fluctuating consciousness",
+     "s": "adultstg2026:15.32",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Age > 60 years",
+     "s": "adultstg2026:15.31",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Neuro / mental state"
+    },
+    {
+     "t": "Tremor",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Disorientation",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Agitation",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Visual hallucinations",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Delusions",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Confusion + ataxia / eye signs (Wernicke)",
+     "d": 1
+    },
+    {
+     "t": "Head injury",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "h": "Body"
+    },
+    {
+     "t": "Dehydration",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Infection focus",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Malnutrition",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Jaundice, ascites (liver)",
+     "d": 1
+    },
+    {
+     "t": "Meningism",
+     "s": "paedstg2026:14.34"
+    },
+    {
+     "t": "GI bleeding",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT + thiamine — on arrival",
+   "items": [
+    {
+     "t": "HGT ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 3 mmol/L: treat now — Hypoglycemia Adult pathway",
+     "s": "phcstg2026:21.22",
+     "b": 1
+    },
+    {
+     "t": "Thiamine before IV glucose; never delay dextrose",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "t": "Glucose-containing fluids: thiamine 300 mg oral/IM daily",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "t": "Wernicke suspected: thiamine 500 mg IM now and daily 3–5 days",
+     "s": "adultstg2026:14.7"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Withdrawal stage — bedside",
+   "items": [
+    {
+     "t": "Uncomplicated: tremor, sweating, anxiety, GI only",
+     "s": "phcstg2026:16.28"
+    },
+    {
+     "t": "Complicated: seizure, hallucinations, disorientation → DT branch",
+     "s": "phcstg2026:16.28",
+     "b": 1
+    },
+    {
+     "t": "Timing: tremor from 12 h; seizures 24–48 h; delirium day 2–3, peak ~day 5",
+     "s": "paedstg2026:14.34"
+    },
+    {
+     "t": "Sedation target in DT: light somnolence",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "t": "Hours since last drink ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Delirium tremens",
+     "s": "adultstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "phcstg2026:21.22",
+     "b": 1
+    },
+    {
+     "t": "Wernicke's encephalopathy",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "t": "Head injury / subdural",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Sepsis, pneumonia, meningitis",
+     "s": "paedstg2026:14.34"
+    },
+    {
+     "t": "Suicidal ideation",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Hyperthermia",
+     "s": "paedstg2026:14.34"
+    },
+    {
+     "t": "Electrolyte disturbance",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Liver failure, GI bleed",
+     "d": 1
+    },
+    {
+     "t": "Sedative-hypnotic withdrawal",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "Respiratory depression after IV diazepam",
+     "s": "adultstg2026:15.33"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = DELIRIUM TREMENS / seizure → IV diazepam (DT branch) · REFER if not controlled",
+   "s": "adultstg2026:15.32",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — uncomplicated: thiamine + oral diazepam 7-day taper — Continue on the withdrawal day chart and the 24-hour nursing record. Refer every patient to Social Services / rehabilitation.",
+   "s": "adultstg2026:15.31",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "Fixed oral taper days 1–7; symptom-triggered IV diazepam for delirium tremens (branch)",
+  "columns": {
+   "feed": "Fluids & nutrition",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals + withdrawal signs 4-hourly; hourly during IV diazepam",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "Cardiac monitor + oximetry with large benzodiazepine doses",
+    "s": "adultstg2026:15.32",
+    "b": 1
+   },
+   {
+    "t": "Hydrate, but avoid overhydration",
+    "s": "adultstg2026:15.32"
+   },
+   {
+    "t": "Calm, lit, predictable room; re-orientate",
+    "s": "adultstg2026:20.14"
+   },
+   {
+    "t": "Thiamine daily",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was given in casualty (thiamine, diazepam, dextrose). HGT first.",
+    "feed": [
+     {
+      "t": "Oral fluids and diet if alert",
+      "d": 1
+     },
+     {
+      "t": "IV fluid only if dehydrated / vomiting; avoid overhydration",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Nutritional support",
+      "s": "adultstg2026:15.32"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "phcstg2026:21.22",
+      "b": 1
+     },
+     {
+      "t": "U&E (Na, K)",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "s": "paedstg2026:14.32",
+      "b": 1
+     },
+     {
+      "t": "LFT",
+      "s": "paedstg2026:14.32",
+      "b": 1
+     },
+     {
+      "t": "Mg, PO₄",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "β-hCG (female)",
+      "s": "paedstg2026:14.32",
+      "b": 1
+     },
+     {
+      "t": "Septic screen if febrile",
+      "s": "adultstg2026:15.32"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Uncomplicated"
+     },
+     {
+      "t": "Thiamine 300 mg oral daily × 14 days",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Diazepam 10 mg oral now",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Then 5 mg 6-hourly (days 1–3)",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Higher doses may be needed",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "h": "DT / seizure (branch, side 2)"
+     },
+     {
+      "t": "Diazepam 10 mg slow IV (< 5 mg/min, not IM)",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "No IV: clonazepam 2 mg IM or lorazepam 1–4 mg IM",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "h": "Wernicke suspected"
+     },
+     {
+      "t": "Thiamine 500 mg IM now",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Intake / output",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT if not eating",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 5 mg oral",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Still tremulous, sweating, agitated: extra dose",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "t": "Drowsy: hold dose",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Eating?  Y / N",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E result reviewed; correct",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 5 mg 6-hourly",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Hallucinations / disorientation → DT branch",
+      "s": "adultstg2026:15.32"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Seizure window",
+    "feed": [
+     {
+      "t": "Hydration; avoid overhydration",
+      "s": "adultstg2026:15.32"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if abnormal day 1",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 5 mg 6-hourly",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Seizures most likely 24–48 h",
+      "s": "paedstg2026:14.34"
+     },
+     {
+      "t": "Thiamine 300 mg",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Last 6-hourly",
+    "feed": [
+     {
+      "t": "Normal diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat electrolytes if corrected",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 5 mg 6-hourly (last day)",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Delirium typically day 2–3",
+      "s": "adultstg2026:15.32"
+     },
+     {
+      "t": "Social worker referral",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–5",
+    "phase": "12-hourly",
+    "feed": [
+     {
+      "t": "Mobilise",
+      "s": "adultstg2026:20.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 5 mg 12-hourly",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "DT peak around day 5",
+      "s": "adultstg2026:15.32"
+     }
+    ]
+   },
+   {
+    "label": "Day 6–7",
+    "phase": "Daily",
+    "feed": [
+     {
+      "t": "Diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LFT if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 5 mg daily",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Then stop (day 8)",
+      "s": "adultstg2026:15.31",
+      "b": 1
+     },
+     {
+      "t": "Brief intervention counselling",
+      "s": "adultstg2026:15.30"
+     }
+    ]
+   },
+   {
+    "label": "If DT",
+    "feed": [
+     {
+      "t": "IV fluids for losses / hyperthermia; correct electrolytes",
+      "s": "paedstg2026:14.34"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cardiac monitor + SpO₂",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Look for infection, other causes",
+      "s": "adultstg2026:15.32"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 10 mg slow IV; repeat after 5–10 min; then 10 mg every 5–10 min for 1–3 doses, max 50 mg",
+      "s": "adultstg2026:15.32",
+      "b": 1
+     },
+     {
+      "t": "Sedated (light somnolence): diazepam 5–20 mg oral, repeat to keep mild sedation",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "Hallucinations: haloperidol 0.75–2.5 mg oral 12-hourly, max 5 mg/24 h (prefer more benzodiazepine)",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "No olanzapine IM",
+      "s": "adultstg2026:15.33",
+      "b": 1
+     },
+     {
+      "t": "Not controlled at 50 mg / airway at risk → REFER (ICU)",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If seizure",
+    "feed": [
+     {
+      "t": "Recovery position",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "phcstg2026:21.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam 10 mg slow IV",
+      "s": "phcstg2026:16.27",
+      "b": 1
+     },
+     {
+      "t": "No long-term anticonvulsant needed",
+      "s": "adultstg2026:15.32"
+     },
+     {
+      "t": "Persistent seizures → status epilepticus protocol / REFER",
+      "s": "phcstg2026:16.29"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If Wernicke",
+    "feed": [
+     {
+      "t": "Thiamine before glucose",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "phcstg2026:21.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 500 mg IM daily × 3–5 days, then 100 mg oral 8-hourly",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If ADOL",
+    "feed": [
+     {
+      "t": "Hydrate; avoid overhydration",
+      "s": "paedstg2026:14.33"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, U&E, LFT, β-hCG, urine toxicology",
+      "s": "paedstg2026:14.32",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam > 14 y up to 20 mg/day; 6–14 y 2–10 mg/day (2–3 doses); wean 8- → 12-hourly → daily every 3–5 days",
+      "s": "paedstg2026:14.33",
+      "b": 1
+     },
+     {
+      "t": "Thiamine oral 0.5–1 mg/kg daily × 14 days",
+      "s": "paedstg2026:14.33"
+     },
+     {
+      "t": "DT: adult regimen; REFER once stabilised",
+      "s": "paedstg2026:14.36",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Oral diazepam taper (uncomplicated)",
+   "items": [
+    {
+     "h": "ADULT"
+    },
+    {
+     "t": "10 mg stat",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Days 1–3: 5 mg 6-hourly",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Days 4–5: 5 mg 12-hourly",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Days 6–7: 5 mg daily, then stop",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "h": "Thiamine"
+    },
+    {
+     "t": "300 mg oral daily × 14 days",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  },
+  {
+   "title": "IV / IM rescue (DT)",
+   "items": [
+    {
+     "h": "Diazepam IV"
+    },
+    {
+     "t": "10 mg slow (< 5 mg/min); max 50 mg",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "h": "No IV access"
+    },
+    {
+     "t": "Clonazepam 2 mg IM; repeat after 60 min until sedated",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "t": "Lorazepam 1–4 mg IM every 30–60 min until sedated",
+     "s": "adultstg2026:15.33"
+    },
+    {
+     "h": "Maintain"
+    },
+    {
+     "t": "Diazepam 5–20 mg oral, repeat to keep mild sedation",
+     "s": "adultstg2026:15.33"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Slow breathing, falling SpO₂, hard to rouse",
+     "s": "adultstg2026:15.33",
+     "b": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "New hallucinations, disorientation",
+     "s": "adultstg2026:15.32"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "DT not controlled at 50 mg IV diazepam",
+     "d": 1
+    },
+    {
+     "t": "Adolescent with DT, once stabilised",
+     "s": "paedstg2026:14.36"
+    },
+    {
+     "t": "Comorbid mental disorder → psychiatrist",
+     "s": "adultstg2026:15.31"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No withdrawal signs; oriented, no hallucinations",
+    "d": 1
+   },
+   {
+    "t": "Diazepam taper complete or < 2 days left with support",
+    "d": 1
+   },
+   {
+    "t": "Eating and drinking",
+    "d": 1
+   },
+   {
+    "t": "Thiamine supplied to complete 14 days",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Brief intervention done",
+    "s": "adultstg2026:15.30"
+   },
+   {
+    "t": "Referred: Social Services / rehabilitation",
+    "s": "adultstg2026:15.31"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Social worker / SANCA / rehabilitation programme",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Family / partner: Al-Anon, counsellors",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Clinic review in 1 week",
+    "d": 1
+   },
+   {
+    "t": "Return now: seizure, confusion, hallucinations",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour withdrawal record — vitals, signs, sedation",
+  "period": "24 hours: hourly rows",
+  "params": [
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "HR, BP, temp, RR, SpO₂ 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Hourly during IV diazepam + cardiac monitor",
+      "s": "adultstg2026:15.32"
+     },
+     {
+      "t": "HGT 6-hourly if not eating",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Withdrawal signs",
+    "items": [
+     {
+      "t": "Tremor, sweating, hallucinations, orientation (Y/N)",
+      "s": "phcstg2026:16.28"
+     },
+     {
+      "t": "Seizure: time + duration",
+      "s": "adultstg2026:15.32"
+     },
+     {
+      "t": "Fluids in / out; avoid overload",
+      "s": "adultstg2026:15.32"
+     }
+    ]
+   },
+   {
+    "h": "Sedation",
+    "items": [
+     {
+      "t": "A = alert · L = light somnolence (target in DT) · D = hard to rouse",
+      "s": "adultstg2026:15.33"
+     },
+     {
+      "t": "D → hold diazepam, call doctor",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "slow breathing, SpO₂ falling or hard to rouse",
+    "s": "adultstg2026:15.33",
+    "b": 1
+   },
+   {
+    "t": "seizure",
+    "s": "adultstg2026:15.32",
+    "b": 1
+   },
+   {
+    "t": "new hallucinations, disorientation or agitation",
+    "s": "adultstg2026:15.32"
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "s": "phcstg2026:21.22"
+   },
+   {
+    "t": "fever",
+    "s": "paedstg2026:14.34"
+   },
+   {
+    "t": "vomiting, not drinking",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Diazepam total (mg)",
+   "IV diazepam (mg)",
+   "Fluid in (mL)",
+   "Fluid out (mL)",
+   "Seizures (n)",
+   "Lowest SpO₂"
+  ]
+ }
+}
