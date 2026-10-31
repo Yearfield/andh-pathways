@@ -1,0 +1,367 @@
+{
+  "id": "vitals-paeds",
+  "type": "range",
+  "short": "Vitals",
+  "title": "Vital signs ruler — children (acceptable ranges by age)",
+  "population": "paediatric",
+  "age_range": "term neonate – 17 years",
+  "setting": "casualty / ward",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-31",
+  "tags": [
+    "vital signs",
+    "paediatric",
+    "neonate",
+    "normal ranges",
+    "tachycardia",
+    "tachypnoea",
+    "hypotension",
+    "range"
+  ],
+  "age_split": "rows by age",
+  "formulas": [
+    {
+      "id": "wt_apls",
+      "name": "Weight estimate (1–10 y)",
+      "expr": "(age + 4) × 2",
+      "units": "kg",
+      "s": "APLS",
+      "vars": {
+        "age": "years (1–10)"
+      },
+      "d": true
+    },
+    {
+      "id": "sbp_min",
+      "name": "Hypotension (1–10 y)",
+      "expr": "SBP < 70 + 2 × age",
+      "units": "mmHg",
+      "s": "APLS",
+      "vars": {
+        "age": "years (1–10)"
+      },
+      "d": true
+    },
+    {
+      "id": "sbp_min_inf",
+      "name": "Hypotension (< 1 y)",
+      "expr": "SBP < 70 (term neonate < 60)",
+      "units": "mmHg",
+      "s": "APLS",
+      "d": true
+    }
+  ],
+  "related": [
+    {
+      "t": "Tachypnoea: < 60 d > 60 · 2–12 mo > 50 · 1–5 y > 40 · 5–12 y > 25 /min",
+      "s": "PAED:15.2",
+      "d": false
+    },
+    {
+      "t": "Oxygen if SpO₂ < 92 %",
+      "s": "PAED:15.5",
+      "d": false
+    },
+    {
+      "t": "Compensated shock: cold peripheries, weak pulses, CRT ≥ 3 s, ↑ HR, altered LOC — hypotension is late and ominous",
+      "s": "PAED:1.15",
+      "d": false
+    },
+    {
+      "t": "SATS triage: younger child < 3 y or < 95 cm; older child 3–12 y or 95–150 cm",
+      "s": "SATS",
+      "d": true
+    }
+  ],
+  "pearls": [
+    {
+      "t": "Ranges are 'acceptable' for a calm child; crying/fever raise HR & RR",
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "t": "Use the right cuff: bladder ≈ 40 % of arm circumference",
+      "s": "CLASSIC",
+      "d": true
+    }
+  ],
+  "discrepancies": [
+    {
+      "t": "Fast breathing: PAED STG 15.2 uses '>' (> 50, > 40); IMCI 2022 p.25 uses '≥' (≥ 50, ≥ 40). Card prints PAED STG; IMCI young infant > 60.",
+      "s": "PAED:15.2",
+      "d": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "RCH",
+      "title": "Royal Children's Hospital Melbourne CPG — Acceptable ranges for physiological variables, updated Jul 2023",
+      "type": "online",
+      "country": "intl",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Acceptable_ranges_for_physiological_variables/"
+    },
+    {
+      "id": "SATS",
+      "title": "Twomey M et al. Vital signs for children at triage: revised South African Triage Scale (SATS) for children. S Afr Med J 2013;103(5):304-8",
+      "type": "paper",
+      "country": "ZA",
+      "url": "https://core.ac.uk/download/37434632.pdf"
+    },
+    {
+      "id": "APLS",
+      "title": "APLS / PALS bedside formulae (weight estimate, minimum SBP) — classic teaching",
+      "type": "teaching",
+      "country": "intl"
+    },
+    {
+      "id": "CLASSIC",
+      "title": "classic teaching",
+      "type": "teaching",
+      "country": "intl"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level 5th ed. (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages in footer). Unmarked lines: the other sources listed. Checked against PocketDoc\\Guidelines 2026-10-31.",
+  "ranges": [
+    {
+      "age": "Term",
+      "weight_kg": 3.5,
+      "sbp": {
+        "min": 60,
+        "max": 95
+      },
+      "hr": {
+        "min": 120,
+        "max": 170
+      },
+      "rr": {
+        "min": 25,
+        "max": 60
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "3 mo",
+      "weight_kg": 6,
+      "sbp": {
+        "min": 60,
+        "max": 105
+      },
+      "hr": {
+        "min": 115,
+        "max": 170
+      },
+      "rr": {
+        "min": 25,
+        "max": 60
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "6 mo",
+      "weight_kg": 8,
+      "sbp": {
+        "min": 75,
+        "max": 105
+      },
+      "hr": {
+        "min": 110,
+        "max": 170
+      },
+      "rr": {
+        "min": 20,
+        "max": 55
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "1 y",
+      "weight_kg": 10,
+      "sbp": {
+        "min": 70,
+        "max": 105
+      },
+      "hr": {
+        "min": 105,
+        "max": 150
+      },
+      "rr": {
+        "min": 20,
+        "max": 45
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "2 y",
+      "weight_kg": 12,
+      "sbp": {
+        "min": 70,
+        "max": 105
+      },
+      "hr": {
+        "min": 95,
+        "max": 150
+      },
+      "rr": {
+        "min": 20,
+        "max": 40
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "4 y",
+      "weight_kg": 15,
+      "sbp": {
+        "min": 75,
+        "max": 110
+      },
+      "hr": {
+        "min": 80,
+        "max": 150
+      },
+      "rr": {
+        "min": 17,
+        "max": 30
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "6 y",
+      "weight_kg": 20,
+      "sbp": {
+        "min": 80,
+        "max": 115
+      },
+      "hr": {
+        "min": 75,
+        "max": 140
+      },
+      "rr": {
+        "min": 16,
+        "max": 30
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "8 y",
+      "weight_kg": 25,
+      "sbp": {
+        "min": 80,
+        "max": 115
+      },
+      "hr": {
+        "min": 70,
+        "max": 130
+      },
+      "rr": {
+        "min": 16,
+        "max": 30
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "10 y",
+      "weight_kg": 30,
+      "sbp": {
+        "min": 85,
+        "max": 120
+      },
+      "hr": {
+        "min": 60,
+        "max": 130
+      },
+      "rr": {
+        "min": 15,
+        "max": 25
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "12 y",
+      "weight_kg": 40,
+      "sbp": {
+        "min": 90,
+        "max": 120
+      },
+      "hr": {
+        "min": 65,
+        "max": 120
+      },
+      "rr": {
+        "min": 15,
+        "max": 25
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "14 y",
+      "weight_kg": 50,
+      "sbp": {
+        "min": 90,
+        "max": 125
+      },
+      "hr": {
+        "min": 60,
+        "max": 115
+      },
+      "rr": {
+        "min": 14,
+        "max": 25
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "16 y",
+      "weight_kg": 60,
+      "sbp": {
+        "min": 90,
+        "max": 130
+      },
+      "hr": {
+        "min": 60,
+        "max": 115
+      },
+      "rr": {
+        "min": 14,
+        "max": 25
+      },
+      "s": "RCH",
+      "d": true
+    },
+    {
+      "age": "17 y +",
+      "weight_kg": 65,
+      "sbp": {
+        "min": 90,
+        "max": 135
+      },
+      "hr": {
+        "min": 60,
+        "max": 115
+      },
+      "rr": {
+        "min": 14,
+        "max": 25
+      },
+      "s": "RCH",
+      "d": true
+    }
+  ]
+}

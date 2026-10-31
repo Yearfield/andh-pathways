@@ -1,6 +1,7 @@
 // JAD Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
 import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
 import { createScoreCards } from "./scores.js"; // interface for the block-schema score cards (Alvarado … COPD-GOLD)
+import { createVitalCards } from "./vitals.js"; // urine dipstick strip, adult NEWS2, paediatric vitals by age
 import { altmed } from "./altmed.js"; // Alternative Medicine: pathogen reference + feature filter (own data in data/altmed/, loaded on demand)
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -777,7 +778,8 @@ function scValidate(d) { // console warnings only: bad data should never stop th
   if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
 }
 
-let SC22 = null; // scores.js instance, created on first use
+let SC22 = null, VIT = null; // scores.js / vitals.js instances, created on first use
+const VIT_IDS = ["urine-dipstick", "vitals-adult", "vitals-paeds"];
 function scoresHome() {
   const ss = (S.index.scores || []).filter(e => !e.hidden), pops = [...new Set(ss.map(e => popName(e.population)))];
   const fl = S.index.fluids || [], fh = S.index.fluids_hub || { short: "Fluids Rx", title: "IV fluids" }; // Fluids Rx: procedure-style cards (data/fluids-*.json) behind one hub row
@@ -901,6 +903,7 @@ function scUpdate() {
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
   const d = S.sd[id] ||= await loadJSON("data/" + e.file);
+  if (VIT_IDS.includes(d.id)) return (VIT ||= createVitalCards({ S, esc, $, $$, ico, plus, cardHeader, scPdfRows, srcCheck, app })).render(id, e, d); // dipstick + vitals (vitals.js); their JSON says type "range", so route by id before the range view
   if (d.left || d.right) return (SC22 ||= createScoreCards({ S, esc, $, $$, ico, plus, cardHeader, TYPE_LABEL, scSrcList, scPdfRows, srcCheck, app })).render(id, e, d); // block-schema score cards (scores.js)
   if (d.id === "rass") return rassView(id, e, d); // RASS wheel
   if (d.versions) return checkView(id, e, d); // checklist score cards (Wells PE / DVT)

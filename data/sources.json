@@ -83,6 +83,12 @@
     {"id": "PHQ9", "short": "PHQ9", "title": "Kroenke K et al. PHQ-9. J Gen Intern Med 2001;16:606-13 (Pfizer, free to use)", "type": "paper", "country": "intl"},
     {"id": "SEPSIS3", "short": "SEPSIS3", "title": "Singer M et al. Sepsis-3. JAMA 2016;315:801-10; Seymour CW et al. JAMA 2016;315:762-74", "type": "paper", "country": "intl"},
     {"id": "GOLD", "short": "GOLD", "title": "GOLD 2025 Report, Global Initiative for Chronic Obstructive Lung Disease", "type": "guideline", "country": "intl"},
+    {"id": "MSDLIV", "short": "MSDLIV", "title": "MSD Manual Prof., Laboratory Tests of the Liver and Gallbladder, Nov 2025", "type": "online", "country": "intl", "url": "https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/testing-for-hepatic-and-biliary-disorders/laboratory-tests-of-the-liver-and-gallbladder"},
+    {"id": "CLASSIC", "short": "CLASSIC", "title": "classic teaching", "type": "teaching", "country": "intl"},
+    {"id": "NEWS2", "short": "NEWS2", "title": "Royal College of Physicians. National Early Warning Score (NEWS) 2, 2017", "type": "guideline", "country": "UK", "url": "https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/"},
+    {"id": "RCH", "short": "RCH", "title": "Royal Children's Hospital Melbourne CPG — Acceptable ranges for physiological variables, updated Jul 2023", "type": "online", "country": "intl", "url": "https://www.rch.org.au/clinicalguide/guideline_index/Acceptable_ranges_for_physiological_variables/"},
+    {"id": "SATS", "short": "SATS", "title": "Twomey M et al. Vital signs for children at triage: revised South African Triage Scale (SATS) for children. S Afr Med J 2013;103(5):304-8", "type": "paper", "country": "ZA", "url": "https://core.ac.uk/download/37434632.pdf"},
+    {"id": "APLS", "short": "APLS", "title": "APLS / PALS bedside formulae (weight estimate, minimum SBP) — classic teaching", "type": "teaching", "country": "intl"},
     {"id": "stg-adult","short": "STG Adult", "title": "Adult Hospital-level Standard Treatment Guidelines and Essential Medicines List (one PDF per chapter)", "edition": "", "offset": 0, "chapters": {
     "1": {"title": "Chapter 1", "offset": 0},
     "6": {"title": "Chapter 6", "offset": 0},

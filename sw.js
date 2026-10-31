@@ -1,16 +1,18 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v102";
+const VERSION = "andh-v103";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
   "fonts/plex-serif-400.woff2", "fonts/plex-serif-700.woff2",
-  "calc.js", "scores.js", "altmed.js", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json",
+  "calc.js", "scores.js", "vitals.js", "altmed.js", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json",
   "wheel/gcs-wheel-adult.svg", "wheel/gcs-wheel-child.svg", "wheel/gcs-wheel-infant.svg", "wheel/rass-wheel.svg", "cards/rass.pdf", "cards/wells-pe.pdf", "cards/wells-dvt.pdf", // printable Wells cards (the JSON is precached via index.json "scores")
   // the 22 block-schema score cards: printable cards (their JSON is precached via index.json "scores")
   "cards/alvarado.pdf", "cards/apgar.pdf", "cards/ipss.pdf", "cards/curb65.pdf", "cards/duke-ie.pdf", "cards/ottawa-ankle.pdf", "cards/pecarn.pdf", "cards/ugib.pdf",
   "cards/chest-pain.pdf", "cards/grace.pdf", "cards/csrs.pdf", "cards/caprini.pdf", "cards/framingham.pdf", "cards/renal.pdf", "cards/liver.pdf", "cards/lights.pdf",
   "cards/ganzoni.pdf", "cards/burns-adult.pdf", "cards/burns-paeds.pdf", "cards/phq9.pdf", "cards/sofa.pdf", "cards/copd-gold.pdf",
+  // urine dipstick + adult / paediatric vitals: printable cards (their JSON is precached via index.json "scores")
+  "cards/urine-dipstick.pdf", "cards/vitals-adult.pdf", "cards/vitals-paeds.pdf",
   "data/tonsillitis-paeds.json", "data/croup-paeds.json", "data/om-paeds.json", "data/om-adult.json", "data/sinusitis-paeds.json", "data/sinusitis-adult.json",
   "data/uti-adult.json", "data/uti-paeds.json", "data/vds.json", "data/uds.json", "data/pid.json"];
 

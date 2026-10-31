@@ -1,0 +1,644 @@
+{
+  "id": "urine-dipstick",
+  "type": "range",
+  "short": "Dipstick",
+  "title": "Urine dipstick — pads, grades & differentials",
+  "population": "all ages",
+  "age_range": "adults, pregnancy and children",
+  "setting": "casualty / ward / clinic",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-31",
+  "tags": [
+    "urinalysis",
+    "renal",
+    "urology",
+    "UTI",
+    "diabetes",
+    "DKA",
+    "pre-eclampsia",
+    "liver",
+    "haematuria",
+    "proteinuria",
+    "range",
+    "bedside test"
+  ],
+  "colour_note": "Pad colours are illustrative — read against the bottle chart at the stated time.",
+  "patterns": [
+    {
+      "t": "No LEU / NIT → UTI unlikely",
+      "s": "PHC:8.10",
+      "d": false
+    },
+    {
+      "t": "LEU or NIT + UTI symptoms → treat; MC&S if possible",
+      "s": "PHC:8.10",
+      "d": false
+    },
+    {
+      "t": "LEU + NIT → MC&S and treat empirically",
+      "s": "PHC:8.10",
+      "d": false
+    },
+    {
+      "t": "Blood + protein, oedema, BP ↑, brown urine → nephritic: refer",
+      "s": "PHC:8.8",
+      "d": false
+    },
+    {
+      "t": "Glucose + ketones → DKA until proven otherwise: HGT, blood ketones, VBG",
+      "s": "HOSP:8.14",
+      "d": false
+    },
+    {
+      "t": "Bilirubin + with urobilinogen absent → obstructive jaundice",
+      "s": "CLASSIC",
+      "d": true
+    }
+  ],
+  "pearls": [
+    {
+      "t": "Child with fever of unknown origin: always test urine (fresh bag specimen)",
+      "s": "PHC:8.10",
+      "d": false
+    },
+    {
+      "t": "Bag urine = screening only; positive → aseptic sample (in-out catheter/SPA if ill < 2 y) for MCS",
+      "s": "PAED:6.5",
+      "d": false
+    },
+    {
+      "t": "Haematuria > 1+ in hypertension → investigate",
+      "s": "HOSP:3.38",
+      "d": false
+    },
+    {
+      "t": "Fresh midstream sample; read each pad at its stated time",
+      "s": "CLASSIC",
+      "d": true
+    }
+  ],
+  "discrepancies": [
+    {
+      "t": "Significant proteinuria in pregnancy: MAT24 p.103 = ≥ 2+ on 2 occasions ≥ 4 h apart; PHC STG 6.14 = ≥ 1+. Card prints MAT24 (current maternity guideline).",
+      "s": "MAT24:103",
+      "d": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "MSD",
+      "title": "MSD Manual Prof., Evaluation of the Patient With Renal Issues (urinalysis), updated Feb 2026",
+      "type": "online",
+      "country": "intl",
+      "url": "https://www.msdmanuals.com/professional/genitourinary-disorders/approach-to-the-patient-with-genitourinary-issues/evaluation-of-the-patient-with-renal-issues"
+    },
+    {
+      "id": "MSDLIV",
+      "title": "MSD Manual Prof., Laboratory Tests of the Liver and Gallbladder, Nov 2025",
+      "type": "online",
+      "country": "intl",
+      "url": "https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/testing-for-hepatic-and-biliary-disorders/laboratory-tests-of-the-liver-and-gallbladder"
+    },
+    {
+      "id": "CLASSIC",
+      "title": "classic teaching",
+      "type": "teaching",
+      "country": "intl"
+    },
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "PAED",
+      "title": "STG & EML Paediatric Hospital Level 5th ed. (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "MAT24",
+      "title": "National Integrated Maternal & Perinatal Care Guidelines for SA, 5th ed. 2024",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages in footer). Unmarked lines: the other sources listed. Checked against PocketDoc\\Guidelines 2026-10-31.",
+  "components": [
+    {
+      "key": "LEU",
+      "name": "Leucocytes",
+      "read": "2 min",
+      "normal": "Negative",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#f3ead6"
+        },
+        {
+          "grade": "Tr",
+          "colour": "#e6d3d6"
+        },
+        {
+          "grade": "+",
+          "colour": "#c9a3c4"
+        },
+        {
+          "grade": "++",
+          "colour": "#a575ad"
+        },
+        {
+          "grade": "+++",
+          "colour": "#7d4a92"
+        }
+      ],
+      "means": [
+        {
+          "t": "UTI; leucocytes only → repeat on a 2nd specimen",
+          "s": "PHC:8.10",
+          "d": false
+        },
+        {
+          "t": "Sterile pyuria: renal TB, interstitial nephritis, calculi, urethritis",
+          "s": "MSD",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "FP: vaginal contamination · FN: dilute urine, glycosuria, vit C, nitrofurantoin, rifampicin",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "NIT",
+      "name": "Nitrite",
+      "read": "60 s",
+      "normal": "Negative",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#fbf7f2"
+        },
+        {
+          "grade": "Pos",
+          "colour": "#f2a7bd"
+        },
+        {
+          "grade": "Pos",
+          "colour": "#e77fa1"
+        }
+      ],
+      "means": [
+        {
+          "t": "Bacteriuria — usually Gram-negatives (E. coli, Klebsiella, Proteus)",
+          "s": "MSD",
+          "d": true
+        },
+        {
+          "t": "Pregnancy: nitrites AND leucocytes → treat empirically",
+          "s": "HOSP:6.32",
+          "d": false
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "FN: Enterococcus, GC, TB; urine < 4 h in bladder; vit C; pH < 6",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "URO",
+      "name": "Urobilinogen",
+      "read": "60 s",
+      "normal": "Normal trace",
+      "items": [
+        {
+          "grade": "Norm",
+          "colour": "#f6d3b8"
+        },
+        {
+          "grade": "↑",
+          "colour": "#f1aa9b"
+        },
+        {
+          "grade": "↑↑",
+          "colour": "#e98a8f"
+        },
+        {
+          "grade": "↑↑↑",
+          "colour": "#de6b86"
+        }
+      ],
+      "means": [
+        {
+          "t": "↑ in haemolysis (with unconjugated hyperbilirubinaemia, ↑ LDH)",
+          "s": "PAED:3.4",
+          "d": false
+        },
+        {
+          "t": "↑ hepatocellular disease; absent in complete biliary obstruction",
+          "s": "CLASSIC",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Neither sensitive nor specific — use LFTs",
+          "s": "MSDLIV",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "PRO",
+      "name": "Protein",
+      "read": "60 s",
+      "normal": "Negative (Tr 0.15–0.3 · + 0.3–1 · ++++ > 5 g/L)",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#e9ea8f"
+        },
+        {
+          "grade": "Tr",
+          "colour": "#cfe08e"
+        },
+        {
+          "grade": "+",
+          "colour": "#a7d39c"
+        },
+        {
+          "grade": "++",
+          "colour": "#7fc2a6"
+        },
+        {
+          "grade": "+++",
+          "colour": "#56aeae"
+        },
+        {
+          "grade": "++++",
+          "colour": "#2f8f9e"
+        }
+      ],
+      "means": [
+        {
+          "t": "≥ 1+ → repeat on MSU; if persistent → spot PCR (significant > 0.015 g/mmol)",
+          "s": "PHC:8.3",
+          "d": false
+        },
+        {
+          "t": "Pregnancy ≥ 20 wk + BP ≥ 140/90: significant = ≥ 2+ on 2 samples ≥ 4 h apart → pre-eclampsia",
+          "s": "MAT24:103",
+          "d": false
+        },
+        {
+          "t": "Nephrotic: child ≥ 3+ (PCR ≥ 0.2 g/mmol); adult PCR > 0.25 g/mmol",
+          "s": "PHC:8.8",
+          "d": false
+        },
+        {
+          "t": "With blood: glomerulonephritis",
+          "s": "HOSP:7.7",
+          "d": false
+        },
+        {
+          "t": "Transient: fever, exercise, UTI, orthostatic",
+          "s": "CLASSIC",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Albumin only — misses light chains (myeloma) · FP: pH > 9, contrast · FN: dilute urine",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "PH",
+      "name": "pH",
+      "read": "60 s",
+      "normal": "5.0–6.0 (range 4.5–8.0)",
+      "items": [
+        {
+          "grade": "5",
+          "colour": "#f19a5a"
+        },
+        {
+          "grade": "6",
+          "colour": "#f2c45c"
+        },
+        {
+          "grade": "6.5",
+          "colour": "#cfd16a"
+        },
+        {
+          "grade": "7",
+          "colour": "#9cc36e"
+        },
+        {
+          "grade": "8",
+          "colour": "#5fae8f"
+        },
+        {
+          "grade": "8.5",
+          "colour": "#3c8fa8"
+        }
+      ],
+      "means": [
+        {
+          "t": "Alkaline: urease organisms (Proteus), stale sample",
+          "s": "MSD",
+          "d": true
+        },
+        {
+          "t": "Alkaline: struvite stones, RTA, vomiting · Acid: acidosis/DKA, starvation",
+          "s": "CLASSIC",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Delayed processing ↑ pH (bacteria make ammonia)",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "BLD",
+      "name": "Blood",
+      "read": "60 s",
+      "normal": "Negative (exclude menses)",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#f2d36b"
+        },
+        {
+          "grade": "Tr",
+          "colour": "#cfd26d"
+        },
+        {
+          "grade": "+",
+          "colour": "#9fc36c"
+        },
+        {
+          "grade": "++",
+          "colour": "#6aa961"
+        },
+        {
+          "grade": "+++",
+          "colour": "#3f8a4f"
+        }
+      ],
+      "means": [
+        {
+          "t": "Schistosomiasis (common), UTI, kidney stone (colic), anticoagulants",
+          "s": "PHC:8.13",
+          "d": false
+        },
+        {
+          "t": "Painless isolated: bleeding disorder, malignancy, structural, TB (urine cytology, TB culture)",
+          "s": "HOSP:7.17",
+          "d": false
+        },
+        {
+          "t": "Uniform colour, no RBCs on microscopy → haemolysis or rhabdomyolysis (CK)",
+          "s": "MSD",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Blood on the strip ≠ infection",
+          "s": "PHC:8.13",
+          "d": false
+        },
+        {
+          "t": "FP: povidone-iodine · FN: vit C · red urine also: beetroot, rifampicin",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "SG",
+      "name": "Specific gravity",
+      "read": "45 s",
+      "normal": "1.001–1.035",
+      "items": [
+        {
+          "grade": "1.000",
+          "colour": "#1f6f78"
+        },
+        {
+          "grade": "1.005",
+          "colour": "#3d8a6d"
+        },
+        {
+          "grade": "1.010",
+          "colour": "#6aa25e"
+        },
+        {
+          "grade": "1.020",
+          "colour": "#9cb854"
+        },
+        {
+          "grade": "1.030",
+          "colour": "#c9c64e"
+        }
+      ],
+      "means": [
+        {
+          "t": "High: dehydration, glucose/protein, contrast · Low: CKD, elderly",
+          "s": "MSD",
+          "d": true
+        },
+        {
+          "t": "Low/fixed ~1.010: DI, water load, isosthenuria",
+          "s": "CLASSIC",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Dipstick ↑ if pH < 6, ↓ if pH > 7 — accuracy limited",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "KET",
+      "name": "Ketones",
+      "read": "40 s",
+      "normal": "Negative",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#f2d9c8"
+        },
+        {
+          "grade": "Tr",
+          "colour": "#e9b8b3"
+        },
+        {
+          "grade": "+",
+          "colour": "#d68e9c"
+        },
+        {
+          "grade": "++",
+          "colour": "#b56482"
+        },
+        {
+          "grade": "+++",
+          "colour": "#8a3d68"
+        }
+      ],
+      "means": [
+        {
+          "t": "Adult DM with ketonuria > 1+ → urgent same-day referral",
+          "s": "PHC:9.12",
+          "d": false
+        },
+        {
+          "t": "Child DKA: ketonuria 2+ with glucose > 11 mmol/L",
+          "s": "PAED:7.19",
+          "d": false
+        },
+        {
+          "t": "Labour dehydration/ketosis; hyperemesis",
+          "s": "HOSP:6.28",
+          "d": false
+        },
+        {
+          "t": "Starvation, alcoholic ketoacidosis, SGLT2i (euglycaemic DKA)",
+          "s": "MSD",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Misses β-hydroxybutyrate — use blood ketones · FN: vit C, NAC",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "BIL",
+      "name": "Bilirubin",
+      "read": "30 s",
+      "normal": "Negative",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#f4ecd2"
+        },
+        {
+          "grade": "+",
+          "colour": "#e2cfa4"
+        },
+        {
+          "grade": "++",
+          "colour": "#c9ad80"
+        },
+        {
+          "grade": "+++",
+          "colour": "#a98864"
+        }
+      ],
+      "means": [
+        {
+          "t": "Conjugated bilirubin: hepatitis (before jaundice), cholestasis/obstruction",
+          "s": "MSDLIV",
+          "d": true
+        },
+        {
+          "t": "Pure haemolysis → negative (unconjugated is not excreted)",
+          "s": "MSDLIV",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "FN: old sample, vit C — accuracy limited",
+          "s": "MSDLIV",
+          "d": true
+        }
+      ]
+    },
+    {
+      "key": "GLU",
+      "name": "Glucose",
+      "read": "30 s",
+      "normal": "Negative — any glucose is abnormal",
+      "items": [
+        {
+          "grade": "Neg",
+          "colour": "#7cc6d6"
+        },
+        {
+          "grade": "Tr",
+          "colour": "#8fc38a"
+        },
+        {
+          "grade": "+",
+          "colour": "#a9b65d"
+        },
+        {
+          "grade": "++",
+          "colour": "#b18f4a"
+        },
+        {
+          "grade": "+++",
+          "colour": "#8a5a35"
+        }
+      ],
+      "means": [
+        {
+          "t": "Glycosuria → exclude diabetes mellitus",
+          "s": "HOSP:3.38",
+          "d": false
+        },
+        {
+          "t": "Pregnancy ≥ 1+ on ≥ 2 occasions → GDM risk factor",
+          "s": "HOSP:6.3",
+          "d": false
+        },
+        {
+          "t": "Child DKA: heavy glycosuria ≥ 3+",
+          "s": "PAED:7.19",
+          "d": false
+        },
+        {
+          "t": "Normal plasma glucose: SGLT2 inhibitor, renal glycosuria, Fanconi",
+          "s": "MSD",
+          "d": true
+        }
+      ],
+      "pitfalls": [
+        {
+          "t": "Appears when plasma glucose > ~10 mmol/L · FN: vit C, ketones, aspirin",
+          "s": "MSD",
+          "d": true
+        }
+      ]
+    }
+  ]
+}

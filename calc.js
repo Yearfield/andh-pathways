@@ -296,3 +296,93 @@ export function framinghamCalc(t, { female, age, tc, hdl, sbp, treated, smoker, 
   }
   return out;
 }
+
+/* =====================================================================================================
+   Vitals cards: urine dipstick, adult NEWS2, paediatric ranges by age (interface: vitals.js).
+   Bands, ranges, labels and clinical text come from each card's JSON; these are the explicit rules.
+   ===================================================================================================== */
+// band lookup with min/max INCLUSIVE and null = open-ended (NEWS2 components)
+export const bandOf = (items, v) => Number.isFinite(v) ? items.findIndex(b => (b.min == null || v >= b.min) && (b.max == null || v <= b.max)) : -1;
+
+/* --- urine dipstick --- */
+export const GRADE_RANK = ["Neg", "Tr", "+", "++", "+++", "++++"];
+const grank = g => GRADE_RANK.indexOf(g);
+// g: the grade read on each pad ({LEU: "++", NIT: "Pos", …}; undefined = not read). Index = patterns[] index in the card.
+export function dipPatterns(g) {
+  const r = k => grank(g[k]);
+  return [
+    g.LEU === "Neg" && g.NIT === "Neg",             // 0  no LEU / NIT
+    r("LEU") >= 1 || g.NIT === "Pos",                // 1  LEU ≥ Tr or NIT Pos (if UTI symptoms)
+    r("LEU") >= 2 && g.NIT === "Pos",                // 2  LEU ≥ + and NIT Pos
+    r("BLD") >= 1 && r("PRO") >= 2,                  // 3  BLD ≥ Tr and PRO ≥ +
+    r("GLU") >= 1 && r("KET") >= 1,                  // 4  GLU ≥ Tr and KET ≥ Tr
+    r("BIL") >= 2 && g.URO === "Norm",               // 5  BIL ≥ + and urobilinogen normal / absent
+  ];
+}
+// PH and SG are never abnormal; every other pad is abnormal when the chip is not the first (normal) one
+export const padAbnormal = (key, chipIdx) => !["PH", "SG"].includes(key) && chipIdx != null && chipIdx > 0;
+export const isPregnancyLine = s => /^MAT24(:|$)/.test(s || "") || /^HOSP:6\./.test(s || "");
+
+/* --- adult vitals: NEWS2 --- */
+// i: {rr, spo2, scale2, spo2Points (scale 2, picked by hand), o2 (true = oxygen), sbp, hr, cns (true = new confusion / V / P / U), temp}
+// Readings are rounded to the precision the chart prints (whole numbers; temperature to 0.1) so a value never falls between two bands.
+export function news2(d, i) {
+  const comp = k => d.components.find(c => c.key === k);
+  const num = (k, v, dp) => { const c = comp(k), x = Number.isFinite(v) ? (dp ? Math.round(v * 10) / 10 : Math.round(v)) : NaN, idx = bandOf(c.items, x); return { idx, score: idx >= 0 ? c.items[idx].score : null }; };
+  const two = (k, on) => on == null ? { idx: -1, score: null } : { idx: on ? 1 : 0, score: comp(k).items[on ? 1 : 0].score };
+  const parts = { RR: num("RR", i.rr), SPO2: i.scale2 ? { idx: -1, score: Number.isInteger(i.spo2Points) ? i.spo2Points : null, manual: true } : num("SPO2", i.spo2),
+    O2: two("O2", i.o2), SBP: num("SBP", i.sbp), HR: num("HR", i.hr), CNS: two("CNS", i.cns), T: num("T", i.temp, true) };
+  const scores = Object.values(parts).map(p => p.score), total = sum(scores), entered = scores.filter(s => s != null).length, complete = entered === scores.length;
+  const band = complete ? d.interpretation_classic.findIndex(b => !b.single3 && total >= b.min && total <= b.max) : -1;
+  return { parts, total, entered, of: scores.length, complete, single3: scores.some(s => s === 3), band };
+}
+export const shockIndex = (hr, sbp) => hr / sbp;
+export const pulsePressure = (sbp, dbp) => sbp - dbp;
+export const narrowPulsePressure = (sbp, dbp) => (sbp - dbp) < 0.25 * sbp;        // "narrow < 25 % of SBP"
+// which related[] lines apply (indexes into the card's related[]): 0 oxygen, 1 hypertension, 2 pregnancy severe hypertension, 3 pregnancy EWC, 4 sedation
+export function adultFlags({ spo2, sbp, dbp, rr, pregnant, scale2 }) {
+  const f = {};
+  f.oxygen = !scale2 && spo2 < 94;                                   // scale 2 targets 88–92 %: the < 94 % line does not apply
+  f.hypertension = !pregnant && (sbp >= 140 || dbp >= 90);
+  f.severePreg = !!pregnant && (sbp >= 160 || dbp >= 110);
+  f.ewc = !!pregnant;
+  f.sedation = rr < 12;
+  return f;
+}
+
+/* --- paediatric vitals --- */
+export const ageMonths = (value, unit) => unit === "d" ? value / 30.4375 : unit === "m" ? value : value * 12;
+export function parseAgeLabel(label) { // "Term" 0 · "3 mo" · "1 y" · "17 y +"
+  const t = String(label).trim();
+  if (/^term/i.test(t)) return 0;
+  let m; if ((m = /^(\d+(?:\.\d+)?)\s*mo/i.exec(t))) return +m[1];
+  if ((m = /^(\d+(?:\.\d+)?)\s*y/i.exec(t))) return +m[1] * 12;
+  return NaN;
+}
+export function paedsRowIdx(rows, months) { // the highest age row ≤ the child's age
+  if (!Number.isFinite(months)) return -1;
+  let best = -1; rows.forEach((r, i) => { if (parseAgeLabel(r.age) <= months) best = i; }); return best;
+}
+export const rangeStatus = (v, r) => !Number.isFinite(v) ? null : v < r.min ? "below" : v > r.max ? "above" : "within";
+export const weightEstimate = months => (months >= 12 && months < 132) ? (Math.floor(months / 12) + 4) * 2 : null;  // (age + 4) × 2, 1–10 y
+// minimum acceptable SBP: 1–10 y 70 + 2 × age; < 1 y 70; term neonate (the "Term" row, < 3 months) 60; none printed from 11 y
+export function paedsHypotension(months) {
+  if (!Number.isFinite(months)) return null;
+  if (months < 3) return { threshold: 60, id: "sbp_min_inf" };
+  if (months < 12) return { threshold: 70, id: "sbp_min_inf" };
+  if (months < 132) return { threshold: 70 + 2 * Math.floor(months / 12), id: "sbp_min" };
+  return null;
+}
+// tachypnoea limits are printed as one sentence in related[0] ("< 60 d > 60 · 2–12 mo > 50 · 1–5 y > 40 · 5–12 y > 25 /min"): parse it instead of retyping it
+export function parseTachypnoea(text) {
+  const toMo = (n, u) => u === "d" ? n / 30.4375 : u === "mo" ? n : n * 12, seg = String(text).replace(/^[^:]*:/, "").split("·"), out = [];
+  seg.forEach(s => { let m;
+    if ((m = /^\s*<\s*(\d+)\s*(d|mo|y)\s*>\s*(\d+)/.exec(s))) out.push({ lo: 0, hi: toMo(+m[1], m[2]), limit: +m[3] });
+    else if ((m = /^\s*(\d+)\s*[–-]\s*(\d+)\s*(d|mo|y)\s*>\s*(\d+)/.exec(s))) out.push({ lo: toMo(+m[1], m[3]), hi: toMo(+m[2], m[3]), limit: +m[4] }); });
+  return out;
+}
+export function tachypnoeaLimit(text, months) {
+  const segs = parseTachypnoea(text); if (!segs.length || !Number.isFinite(months)) return null;
+  const cand = segs.filter(s => s.lo <= months), s = cand[cand.length - 1];
+  return s && months < segs[segs.length - 1].hi ? s.limit : null;
+}

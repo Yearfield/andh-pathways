@@ -1,0 +1,454 @@
+{
+  "id": "vitals-adult",
+  "type": "range",
+  "short": "Vitals",
+  "title": "Vital signs ruler — adult (NEWS2 bands)",
+  "population": "adult",
+  "age_range": "≥ 16 years, not pregnant",
+  "setting": "casualty / ward",
+  "hospital": "ANDH",
+  "level": "district",
+  "updated": "2026-10-31",
+  "tags": [
+    "vital signs",
+    "early warning",
+    "NEWS2",
+    "sepsis",
+    "deterioration",
+    "adult",
+    "range",
+    "score"
+  ],
+  "formulas": [
+    {
+      "id": "news2",
+      "name": "NEWS2",
+      "expr": "RR + SpO2 + O2 + SBP + HR + CNS + T (points)",
+      "range": [
+        0,
+        20
+      ],
+      "s": "NEWS2",
+      "vars": {
+        "RR": "points for Resp rate",
+        "SPO2": "points for SpO₂ scale 1",
+        "O2": "points for Air or O₂",
+        "SBP": "points for Systolic BP",
+        "HR": "points for Pulse",
+        "CNS": "points for Consciousness",
+        "T": "points for Temperature"
+      },
+      "d": true
+    },
+    {
+      "id": "map",
+      "name": "MAP",
+      "expr": "(SBP + 2 × DBP) / 3",
+      "units": "mmHg",
+      "target": "aim > 65 in shock",
+      "s": "HOSP:23.4",
+      "vars": {
+        "SBP": "systolic mmHg",
+        "DBP": "diastolic mmHg"
+      },
+      "d": false
+    },
+    {
+      "id": "shock_index",
+      "name": "Shock index",
+      "expr": "HR / SBP",
+      "target": "> 1 = shocked (pulse > SBP)",
+      "s": "MAT24:52",
+      "vars": {
+        "HR": "/min",
+        "SBP": "mmHg"
+      },
+      "d": false
+    },
+    {
+      "id": "pulse_pressure",
+      "name": "Pulse pressure",
+      "expr": "SBP − DBP",
+      "units": "mmHg",
+      "target": "narrow < 25 % of SBP",
+      "s": "CLASSIC",
+      "vars": {
+        "SBP": "mmHg",
+        "DBP": "mmHg"
+      },
+      "d": true
+    }
+  ],
+  "related": [
+    {
+      "t": "SpO₂: give oxygen if < 94 %",
+      "s": "HOSP:20.12",
+      "d": false
+    },
+    {
+      "t": "Hypertension: SBP ≥ 140 and/or DBP ≥ 90 on 2 occasions ≥ 2 days apart",
+      "s": "PHC:4.15",
+      "d": false
+    },
+    {
+      "t": "Pregnancy: single SBP ≥ 160 and/or DBP ≥ 110 = acute severe hypertension → urgent management and referral",
+      "s": "MAT24:103",
+      "d": false
+    },
+    {
+      "t": "Pregnancy: use the maternity early warning chart (EWC), not NEWS2",
+      "s": "MAT24:62",
+      "d": false
+    },
+    {
+      "t": "RR < 12 after sedation = respiratory depression → oxygen, prepare to ventilate",
+      "s": "HOSP:15.8",
+      "d": false
+    }
+  ],
+  "pearls": [
+    {
+      "t": "Score the trend, not one reading; recheck after each intervention",
+      "s": "CLASSIC",
+      "d": true
+    },
+    {
+      "t": "Beta-blockers mask tachycardia; elderly may not mount a fever",
+      "s": "CLASSIC",
+      "d": true
+    },
+    {
+      "t": "Count RR for a full 30–60 s — the most often missed sign",
+      "s": "CLASSIC",
+      "d": true
+    }
+  ],
+  "discrepancies": [
+    {
+      "t": "No early-warning score (NEWS2/SATS TEWS) in the adult STG; NEWS2 bands are non-STG.",
+      "s": "NEWS2",
+      "d": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "NEWS2",
+      "title": "Royal College of Physicians. National Early Warning Score (NEWS) 2, 2017",
+      "type": "guideline",
+      "country": "UK",
+      "url": "https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/"
+    },
+    {
+      "id": "CLASSIC",
+      "title": "classic teaching",
+      "type": "teaching",
+      "country": "intl"
+    },
+    {
+      "id": "PHC",
+      "title": "STG & EML Primary Healthcare 8th ed. 2024 (updated Sept 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "HOSP",
+      "title": "STG & EML Hospital Level Adults 6th ed. 2024 (updated Mar 2026)",
+      "type": "guideline",
+      "country": "ZA"
+    },
+    {
+      "id": "MAT24",
+      "title": "National Integrated Maternal & Perinatal Care Guidelines for SA, 5th ed. 2024",
+      "type": "guideline",
+      "country": "ZA"
+    }
+  ],
+  "card_note": "✚ = SA STG / national guideline (pages in footer). Unmarked lines: the other sources listed. Checked against PocketDoc\\Guidelines 2026-10-31.",
+  "components": [
+    {
+      "key": "RR",
+      "name": "Resp rate",
+      "unit": "/min",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "min": null,
+          "max": 8,
+          "t": "≤ 8",
+          "score": 3
+        },
+        {
+          "min": 9,
+          "max": 11,
+          "t": "9–11",
+          "score": 1
+        },
+        {
+          "min": 12,
+          "max": 20,
+          "t": "12–20",
+          "score": 0
+        },
+        {
+          "min": 21,
+          "max": 24,
+          "t": "21–24",
+          "score": 2
+        },
+        {
+          "min": 25,
+          "max": null,
+          "t": "≥ 25",
+          "score": 3
+        }
+      ],
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "key": "SPO2",
+      "name": "SpO₂ scale 1",
+      "unit": "%",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "min": null,
+          "max": 91,
+          "t": "≤ 91",
+          "score": 3
+        },
+        {
+          "min": 92,
+          "max": 93,
+          "t": "92–93",
+          "score": 2
+        },
+        {
+          "min": 94,
+          "max": 95,
+          "t": "94–95",
+          "score": 1
+        },
+        {
+          "min": 96,
+          "max": null,
+          "t": "≥ 96",
+          "score": 0
+        }
+      ],
+      "s": "NEWS2",
+      "note": "Scale 2 (target 88–92 %, e.g. COPD): 88–92 on air = 0; on O₂ ≥ 93 scores 1–3",
+      "d": true
+    },
+    {
+      "key": "O2",
+      "name": "Air or O₂",
+      "unit": "",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "t": "Air",
+          "score": 0
+        },
+        {
+          "t": "Oxygen",
+          "score": 2
+        }
+      ],
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "key": "SBP",
+      "name": "Systolic BP",
+      "unit": "mmHg",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "min": null,
+          "max": 90,
+          "t": "≤ 90",
+          "score": 3
+        },
+        {
+          "min": 91,
+          "max": 100,
+          "t": "91–100",
+          "score": 2
+        },
+        {
+          "min": 101,
+          "max": 110,
+          "t": "101–110",
+          "score": 1
+        },
+        {
+          "min": 111,
+          "max": 219,
+          "t": "111–219",
+          "score": 0
+        },
+        {
+          "min": 220,
+          "max": null,
+          "t": "≥ 220",
+          "score": 3
+        }
+      ],
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "key": "HR",
+      "name": "Pulse",
+      "unit": "/min",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "min": null,
+          "max": 40,
+          "t": "≤ 40",
+          "score": 3
+        },
+        {
+          "min": 41,
+          "max": 50,
+          "t": "41–50",
+          "score": 1
+        },
+        {
+          "min": 51,
+          "max": 90,
+          "t": "51–90",
+          "score": 0
+        },
+        {
+          "min": 91,
+          "max": 110,
+          "t": "91–110",
+          "score": 1
+        },
+        {
+          "min": 111,
+          "max": 130,
+          "t": "111–130",
+          "score": 2
+        },
+        {
+          "min": 131,
+          "max": null,
+          "t": "≥ 131",
+          "score": 3
+        }
+      ],
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "key": "CNS",
+      "name": "Consciousness",
+      "unit": "",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "t": "Alert",
+          "score": 0
+        },
+        {
+          "t": "New confusion / V / P / U",
+          "score": 3
+        }
+      ],
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "key": "T",
+      "name": "Temperature",
+      "unit": "°C",
+      "min": 0,
+      "max": 3,
+      "items": [
+        {
+          "min": null,
+          "max": 35.0,
+          "t": "≤ 35.0",
+          "score": 3
+        },
+        {
+          "min": 35.1,
+          "max": 36.0,
+          "t": "35.1–36.0",
+          "score": 1
+        },
+        {
+          "min": 36.1,
+          "max": 38.0,
+          "t": "36.1–38.0",
+          "score": 0
+        },
+        {
+          "min": 38.1,
+          "max": 39.0,
+          "t": "38.1–39.0",
+          "score": 1
+        },
+        {
+          "min": 39.1,
+          "max": null,
+          "t": "≥ 39.1",
+          "score": 2
+        }
+      ],
+      "s": "NEWS2",
+      "d": true
+    }
+  ],
+  "interpretation_classic": [
+    {
+      "min": 0,
+      "max": 0,
+      "t": "Low — min 12-hourly obs",
+      "level": "green",
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "min": 1,
+      "max": 4,
+      "t": "Low — min 4–6-hourly; nurse assesses",
+      "level": "green",
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "single3": true,
+      "t": "Any single 3 — hourly obs; urgent doctor review",
+      "level": "amber",
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "min": 5,
+      "max": 6,
+      "t": "Medium — hourly obs; urgent review, consider sepsis",
+      "level": "amber",
+      "s": "NEWS2",
+      "d": true
+    },
+    {
+      "min": 7,
+      "max": 20,
+      "t": "High — continuous monitoring; emergency team, consider HC/ICU referral",
+      "level": "red",
+      "s": "NEWS2",
+      "d": true
+    }
+  ]
+}
