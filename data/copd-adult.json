@@ -1,0 +1,1071 @@
+{
+ "id": "copd-adult",
+ "short": "COPD_Adult",
+ "title": "Acute exacerbation of COPD (adults)",
+ "population": "Adults",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Pneumonia → LRTI Adult pathway",
+     "b": 1
+    },
+    {
+     "t": "Acute asthma → asthma protocol (PHC 17.1.1)",
+     "s": "phcstg2026:17.3"
+    },
+    {
+     "t": "Pulmonary oedema / heart failure (consider if > 50 y with first 'asthma')",
+     "s": "phcstg2026:17.3"
+    },
+    {
+     "t": "Pulmonary embolus",
+     "s": "adultstg2026:16.11"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — exacerbation",
+   "items": [
+    {
+     "t": "Known COPD (or clinical COPD, spirometry later) with any of:",
+     "s": "adultstg2026:16.9",
+     "b": 1
+    },
+    {
+     "t": "Worsening dyspnoea",
+     "s": "adultstg2026:16.10",
+     "b": 1
+    },
+    {
+     "t": "Increased cough",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "More sputum, or purulent sputum",
+     "s": "adultstg2026:16.10",
+     "b": 1
+    },
+    {
+     "t": "Greater than usual day-to-day variation of symptoms",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Severe = needs oral steroid and/or antibiotic",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Usual exercise tolerance ____ · home O₂ Y / N · exacerbations past year ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit = any one of",
+   "items": [
+    {
+     "t": "Marked increase in dyspnoea",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Symptoms disturb eating or sleeping",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Change in mental status",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Poor social circumstances",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Severe attack: talks in words; agitated, drowsy or confused",
+     "s": "phcstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Severe: RR often > 30, HR > 120, wheeze loud or absent",
+     "s": "phcstg2026:17.4"
+    },
+    {
+     "t": "PEFR < 50% after first nebulisation (or too breathless to blow)",
+     "s": "phcstg2026:17.4"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Spirometry result (FEV₁/FVC < 0.7)",
+     "s": "adultstg2026:16.9"
+    },
+    {
+     "t": "GOLD group A / B / E",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Exacerbations / admissions past year",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Inhalers + technique",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "Smoking / biomass smoke",
+     "s": "adultstg2026:16.10"
+    },
+    {
+     "t": "TB history",
+     "d": 1
+    },
+    {
+     "t": "HIV status; on protease inhibitor",
+     "s": "adultstg2026:16.13"
+    },
+    {
+     "t": "Heart failure / cor pulmonale",
+     "s": "adultstg2026:16.14"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "This episode"
+    },
+    {
+     "t": "Days of worse breathlessness",
+     "d": 1
+    },
+    {
+     "t": "Sputum colour / volume",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "t": "Fever",
+     "d": 1
+    },
+    {
+     "t": "Chest pain",
+     "d": 1
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Orthopnoea, leg swelling (cardiac)",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Calf pain, sudden onset (PE)",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Weight loss, night sweats (TB)",
+     "d": 1
+    },
+    {
+     "h": "CO₂ retention"
+    },
+    {
+     "t": "Headache, drowsiness, confusion",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Sedatives taken",
+     "s": "phcstg2026:17.5"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = against the patient's baseline",
+   "items": [
+    {
+     "t": "Tachypnoea",
+     "s": "phcstg2026:17.4",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "s": "phcstg2026:17.4",
+     "k": "yn"
+    },
+    {
+     "t": "Fever",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Drowsy / confused",
+     "s": "adultstg2026:16.11",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "SpO₂ < 90% on room air / current O₂",
+     "s": "adultstg2026:16.11",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "PEFR < 50% after nebulisation",
+     "s": "phcstg2026:17.4",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Chest"
+    },
+    {
+     "t": "Talks in words only",
+     "s": "phcstg2026:17.4",
+     "b": 1
+    },
+    {
+     "t": "Accessory muscles / indrawing",
+     "s": "phcstg2026:17.3"
+    },
+    {
+     "t": "Wheeze loud / silent chest",
+     "s": "phcstg2026:17.4"
+    },
+    {
+     "t": "Focal crackles (pneumonia)",
+     "d": 1
+    },
+    {
+     "t": "Cyanosis",
+     "d": 1
+    },
+    {
+     "t": "Hyperinflation",
+     "d": 1
+    },
+    {
+     "h": "Heart / other"
+    },
+    {
+     "t": "Raised JVP, leg oedema (cor pulmonale)",
+     "s": "adultstg2026:16.14"
+    },
+    {
+     "t": "Flapping tremor (CO₂)",
+     "d": 1
+    },
+    {
+     "t": "Calf swelling (DVT/PE)",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Wasting",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ — controlled oxygen",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on ____ L/min",
+     "k": "value"
+    },
+    {
+     "t": "Start nasal cannula 1–2 L/min",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Target SpO₂ 90% (PaO₂ 8 kPa)",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "24% or 28% Venturi mask if available",
+     "s": "phcstg2026:17.5"
+    },
+    {
+     "t": "Never high-flow O₂ without blood gas",
+     "s": "adultstg2026:16.11"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas — on arrival",
+   "items": [
+    {
+     "t": "pH ____ · PaCO₂ ____ kPa · PaO₂ ____ kPa · HCO₃ ____",
+     "k": "value"
+    },
+    {
+     "t": "PaCO₂ rising on O₂ → reduce FiO₂ / remove O₂",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Respiratory acidosis = severe exacerbation (antibiotic)",
+     "s": "adultstg2026:16.12",
+     "b": 1
+    },
+    {
+     "t": "Worsening hypercapnia → NIV / ventilation → REFER",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "No gas: watch drowsiness, headache, confusion",
+     "s": "adultstg2026:16.11"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Hypercapnic respiratory failure",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Pneumonia",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Cardiac failure",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Pulmonary embolus",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "Pneumothorax",
+     "d": 1
+    },
+    {
+     "t": "No response to nebs within 1 h",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Silent chest / exhaustion",
+     "s": "phcstg2026:17.4"
+    },
+    {
+     "t": "Confusion / drowsiness",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "New cor pulmonale",
+     "s": "adultstg2026:16.14"
+    },
+    {
+     "t": "Pulmonary TB",
+     "d": 1
+    },
+    {
+     "t": "Sepsis / shock",
+     "d": 1
+    },
+    {
+     "t": "Sedative use",
+     "s": "phcstg2026:17.5"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. No response within 1 h · rising PaCO₂ · needs NIV / ventilation → discuss with specialist · REFER",
+   "s": "adultstg2026:16.11",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — nebulisers, controlled O₂, prednisone, antibiotic if indicated — Continue on the COPD inpatient chart and the 24-hour respiratory record. Avoid sedation of any kind.",
+   "s": "adultstg2026:16.11",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time → day",
+  "phase_note": "Continuous nebs until stable, then 4–6-hourly; prednisone 5 days; antibiotic 5 days if indicated",
+  "columns": {
+   "feed": "O₂ & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Controlled O₂ to SpO₂ 90%",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "Watch for drowsiness, headache, confusion (CO₂)",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "RR, HR, SpO₂ hourly until stable, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Avoid sedation",
+    "s": "phcstg2026:17.5",
+    "b": 1
+   },
+   {
+    "t": "Check inhaler technique before discharge",
+    "s": "adultstg2026:16.10"
+   },
+   {
+    "t": "Record on the 24-hour respiratory record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was given in casualty (nebs, steroid, O₂ flow). Controlled O₂ first.",
+    "feed": [
+     {
+      "t": "O₂ nasal cannula 1–2 L/min; titrate to SpO₂ 90%",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Oral fluids; IV only if not drinking",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "U&E",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "CXR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "ECG",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Sputum GeneXpert if TB possible",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV test",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Nebulise"
+     },
+     {
+      "t": "Salbutamol 5 mg (1 mL 0.5% + NaCl 0.9% to 4 mL) at 6–8 L/min",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Continuous: refill reservoir every 20 min",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Poor response: add ipratropium 0.5 mg with the first refill",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "No response within 1 h → discuss with specialist",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "h": "Steroid"
+     },
+     {
+      "t": "Prednisone 40 mg oral now",
+      "s": "adultstg2026:16.12",
+      "b": 1
+     },
+     {
+      "t": "Cannot take oral: hydrocortisone 100 mg IV 6-hourly",
+      "s": "adultstg2026:16.12"
+     },
+     {
+      "h": "Antibiotic — if indicated (§ box)"
+     },
+     {
+      "t": "Amoxicillin/clavulanate 875/125 mg oral 12-hourly × 5 days",
+      "s": "adultstg2026:16.12",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: azithromycin 500 mg daily × 3 days",
+      "s": "adultstg2026:16.12"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Response?",
+    "feed": [
+     {
+      "t": "SpO₂ on ____ L/min",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas if drowsier or on more O₂",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Responding: nebs 4–6-hourly",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Not responding → specialist; REFER if NIV needed",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Wean O₂ if SpO₂ above 90%",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Salbutamol 5 mg neb 4–6-hourly",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Hydrocortisone due if not on oral",
+      "s": "adultstg2026:16.12"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Eating and drinking?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR / ECG reviewed",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pneumonia on CXR → LRTI Adult pathway",
+      "d": 1
+     },
+     {
+      "t": "Switch IV hydrocortisone to oral prednisone when able",
+      "s": "adultstg2026:16.12"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Mobilise",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prednisone 40 mg daily",
+      "s": "adultstg2026:16.12",
+      "b": 1
+     },
+     {
+      "t": "Nebs 4–6-hourly",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Antibiotic if indicated",
+      "s": "adultstg2026:16.12"
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Ward",
+    "feed": [
+     {
+      "t": "Off O₂ or at home-O₂ level?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prednisone 40 mg daily",
+      "s": "adultstg2026:16.12",
+      "b": 1
+     },
+     {
+      "t": "Step from nebs to salbutamol MDI 200 mcg + spacer",
+      "s": "adultstg2026:16.12"
+     },
+     {
+      "t": "Teach inhaler technique",
+      "s": "adultstg2026:16.10"
+     }
+    ]
+   },
+   {
+    "label": "Day 4–5",
+    "phase": "Complete",
+    "feed": [
+     {
+      "t": "Walks on ward without distress",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prednisone to complete 5 days in total",
+      "s": "adultstg2026:16.12",
+      "b": 1
+     },
+     {
+      "t": "Antibiotic to complete 5 days",
+      "s": "adultstg2026:16.12"
+     },
+     {
+      "t": "Plan chronic therapy (box)",
+      "s": "adultstg2026:16.12"
+     }
+    ]
+   },
+   {
+    "label": "If CO₂ retainer",
+    "feed": [
+     {
+      "t": "Reduce FiO₂ or remove O₂ if PaCO₂ rises",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat blood gas",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Target SpO₂ may be relaxed if improving (no ventilation)",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Worsening hypercapnia → NIV / intubation → REFER",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If heart failure",
+    "feed": [
+     {
+      "t": "Fluid balance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, CXR",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat cardiac failure; consider as cause of worsening",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "New cor pulmonale → REFER (outpatient)",
+      "s": "adultstg2026:16.14"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If PI-based ART",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No salmeterol/fluticasone: beclomethasone 400 mcg + formoterol 12 mcg 12-hourly",
+      "s": "adultstg2026:16.13",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antibiotic — give if",
+   "items": [
+    {
+     "h": "Indication"
+    },
+    {
+     "t": "Purulent sputum AND more sputum or more dyspnoea",
+     "s": "adultstg2026:16.12",
+     "b": 1
+    },
+    {
+     "t": "OR severe: respiratory acidosis, severe dyspnoea, hypoxaemia despite O₂",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "h": "Regimen"
+    },
+    {
+     "t": "Amoxicillin/clavulanate 875/125 mg 12-hourly × 5 days",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "t": "Pen allergy: azithromycin 500 mg daily × 3 days",
+     "s": "adultstg2026:16.12"
+    }
+   ]
+  },
+  {
+   "title": "Chronic therapy (by group)",
+   "items": [
+    {
+     "h": "All"
+    },
+    {
+     "t": "Salbutamol MDI 200 mcg 6-hourly as needed + spacer",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "h": "Group B"
+    },
+    {
+     "t": "Add formoterol 12 mcg 12-hourly",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "h": "Group E (≥ 2 / year)"
+    },
+    {
+     "t": "Eos < 0.1: formoterol 12 mcg 12-hourly",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "t": "Eos ≥ 0.1: salmeterol/fluticasone 50/250 mcg 12-hourly",
+     "s": "adultstg2026:16.12"
+    },
+    {
+     "t": "Do not measure eosinophils on oral steroids",
+     "s": "adultstg2026:16.13"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Drowsy, confused, new headache",
+     "s": "adultstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ below 90% on prescribed O₂",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Silent chest / exhausted",
+     "s": "phcstg2026:17.4"
+    },
+    {
+     "t": "Talks in words only",
+     "s": "phcstg2026:17.4"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Needs NIV / ventilation",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "No response within 1 h (discuss)",
+     "s": "adultstg2026:16.11"
+    },
+    {
+     "t": "Failure to respond",
+     "s": "adultstg2026:16.14"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Off O₂ (or at home-O₂ level)",
+    "d": 1
+   },
+   {
+    "t": "Nebs ≥ 4-hourly not needed",
+    "d": 1
+   },
+   {
+    "t": "Eating, walking on ward",
+    "d": 1
+   },
+   {
+    "t": "Inhaler technique checked",
+    "s": "adultstg2026:16.10"
+   },
+   {
+    "t": "Prednisone / antibiotic course to complete",
+    "s": "adultstg2026:16.12"
+   },
+   {
+    "t": "Smoking cessation advice given",
+    "s": "adultstg2026:16.10"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Spirometry to confirm and grade",
+    "s": "adultstg2026:16.10"
+   },
+   {
+    "t": "Annual influenza vaccine",
+    "s": "adultstg2026:16.13"
+   },
+   {
+    "t": "REFER (outpatient): onset < 40 y, little smoking, ≥ 2 exacerbations / year, cor pulmonale, LTOT assessment (PaO₂ < 7.3 kPa, non-smoker ≥ 3 months)",
+    "s": "adultstg2026:16.14"
+   },
+   {
+    "t": "Clinic review in 1–2 weeks",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour respiratory record — SpO₂, O₂, nebs, CO₂ signs",
+  "period": "24 hours: hourly × 6, then 2-hourly",
+  "params": [
+   {
+    "h": "Breathing",
+    "items": [
+     {
+      "t": "RR, SpO₂, O₂ flow + device",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "Hourly until stable, then 2–4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Talks in sentences / phrases / words",
+      "s": "phcstg2026:17.4"
+     }
+    ]
+   },
+   {
+    "h": "CO₂ signs",
+    "items": [
+     {
+      "t": "Drowsiness, headache, confusion (Y/N)",
+      "s": "adultstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Never turn O₂ up without the doctor",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Treatment",
+    "items": [
+     {
+      "t": "Neb / MDI given (time)",
+      "s": "adultstg2026:16.11"
+     },
+     {
+      "t": "HR, BP, temp 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "No sedatives",
+      "s": "phcstg2026:17.5"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "drowsy, confused or new headache",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "SpO₂ below 90% on prescribed O₂",
+    "s": "adultstg2026:16.11",
+    "b": 1
+   },
+   {
+    "t": "talks in words only or exhausted",
+    "s": "phcstg2026:17.4"
+   },
+   {
+    "t": "no relief after nebulisation",
+    "s": "adultstg2026:16.11"
+   },
+   {
+    "t": "chest pain",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Nebs given (n)",
+   "Lowest SpO₂",
+   "Highest O₂ (L/min)",
+   "Drowsy episodes",
+   "Fluid in (mL)",
+   "Fluid out (mL)"
+  ]
+ }
+}

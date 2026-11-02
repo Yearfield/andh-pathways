@@ -1,0 +1,1081 @@
+{
+ "id": "wernicke-adult",
+ "short": "Wernicke_Adult",
+ "title": "Wernicke's encephalopathy / thiamine deficiency (adults; ADOL lines for adolescents)",
+ "population": "Adults and adolescents (ADOL lines = Paed STG, < 18 y)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "HGT < 3 mmol/L → Hypoglycemia Adult pathway first (thiamine before dextrose, never delay dextrose)",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "t": "Alcohol withdrawal / DT → Alcohol Withdrawal pathway (thiamine already built in)"
+    },
+    {
+     "t": "Methanol / ethylene glycol → Toxic Alcohols pathway"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — clinical",
+   "items": [
+    {
+     "t": "At-risk patient (alcohol, malnutrition, vomiting) with any of:",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "t": "Confusion",
+     "s": "phcstg2026:3.17",
+     "b": 1
+    },
+    {
+     "t": "Short-term memory loss",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Ophthalmoplegia (paralysis of one or more eye muscles)",
+     "s": "phcstg2026:3.17",
+     "b": 1
+    },
+    {
+     "t": "Nystagmus",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Ataxia",
+     "s": "phcstg2026:3.17",
+     "b": 1
+    },
+    {
+     "t": "All three (confusion, eye signs, ataxia) need not be present",
+     "d": 1
+    },
+    {
+     "t": "Last drink / last meal ____ · vomiting for ____ days",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "At-risk groups",
+   "items": [
+    {
+     "t": "Alcohol dependence",
+     "s": "phcstg2026:3.17",
+     "b": 1
+    },
+    {
+     "t": "Malnutrition, starvation",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "Hyperemesis gravidarum",
+     "s": "adultstg2026:6.21"
+    },
+    {
+     "t": "IV glucose given before thiamine",
+     "s": "phcstg2026:3.18",
+     "b": 1
+    },
+    {
+     "t": "Prolonged vomiting / poor intake",
+     "d": 1
+    },
+    {
+     "t": "HIV / TB wasting, cancer, bariatric surgery",
+     "d": 1
+    },
+    {
+     "t": "Unexplained heart failure (wet beriberi)",
+     "s": "adultstg2026:3.30"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Alcohol use disorder / past detox",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Previous Wernicke / Korsakoff",
+     "d": 1
+    },
+    {
+     "t": "Liver disease",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "HIV / TB",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy / hyperemesis",
+     "s": "adultstg2026:6.21"
+    },
+    {
+     "t": "Epilepsy",
+     "d": 1
+    },
+    {
+     "t": "Diabetes (insulin / sulphonylurea)",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Current medicines",
+     "s": "adultstg2026:20.14"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Intake"
+    },
+    {
+     "t": "Alcohol: amount, last drink",
+     "s": "adultstg2026:15.31"
+    },
+    {
+     "t": "Diet, weight loss",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Vomiting, diarrhoea",
+     "d": 1
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Onset of confusion",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Unsteady walking",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Double vision",
+     "d": 1
+    },
+    {
+     "t": "Numb / weak legs (neuropathy)",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Breathless, swollen legs",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Head injury / fall",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Seizure",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = against age norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Tachycardia",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Reduced GCS / fluctuating",
+     "s": "adultstg2026:20.13",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Confusion / disorientation",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Eye movement palsy",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Nystagmus",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Wide-based gait / ataxia",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Peripheral neuropathy",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Focal signs (→ other cause)",
+     "d": 1
+    },
+    {
+     "t": "Meningism (→ meningitis)",
+     "d": 1
+    },
+    {
+     "h": "Body"
+    },
+    {
+     "t": "Cardiac failure (oedema, raised JVP)",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "t": "Wasting / malnutrition",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "Liver signs (jaundice, flap)",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "t": "Head injury",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Infection focus",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT — on arrival",
+   "items": [
+    {
+     "t": "HGT ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 3 mmol/L: thiamine 200 mg IV/IM, then dextrose — never delay dextrose",
+     "s": "phcstg2026:21.23",
+     "b": 1
+    },
+    {
+     "t": "Every at-risk patient on IV glucose: thiamine first",
+     "s": "phcstg2026:3.18",
+     "b": 1
+    },
+    {
+     "t": "Glucose-containing fluids: thiamine 300 mg oral/IM daily",
+     "s": "adultstg2026:15.33"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Thiamine — give now (chart 0 h)",
+   "items": [
+    {
+     "t": "Suspected Wernicke: thiamine 500 mg IM now",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "t": "Delirium with alcohol / Wernicke suspected: at least 200 mg IM now",
+     "s": "adultstg2026:20.15"
+    },
+    {
+     "t": "Treat first, confirm later — no bedside test",
+     "d": 1
+    },
+    {
+     "t": "Given: ____ mg IM at ____ (time)",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Hypoglycaemia",
+     "s": "phcstg2026:21.22",
+     "b": 1
+    },
+    {
+     "t": "Head injury / subdural",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    },
+    {
+     "t": "Alcohol withdrawal / DT",
+     "s": "adultstg2026:15.32",
+     "b": 1
+    },
+    {
+     "t": "Sepsis, meningitis",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    },
+    {
+     "t": "Hepatic encephalopathy",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Hypoxia / CO poisoning",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Hyponatraemia",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Intoxication / overdose",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Wet beriberi: cardiac failure",
+     "s": "adultstg2026:3.30"
+    },
+    {
+     "t": "Stroke (focal signs)",
+     "d": 1
+    },
+    {
+     "t": "Reduced GCS, airway risk",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy (hyperemesis)",
+     "s": "adultstg2026:6.21"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = WERNICKE'S ENCEPHALOPATHY (clinical) → thiamine 500 mg IM daily · REFER if no response / other cause",
+   "s": "adultstg2026:14.7",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (medical ward) — all encephalopathy, eye palsy or cardiac failure — Continue on the thiamine day chart and the 24-hour neuro record. Look for and treat the cause.",
+   "s": "phcstg2026:3.18",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Day",
+  "phase_note": "IM thiamine days 1–5, then oral; neuro checks each shift; branches for cause",
+  "columns": {
+   "feed": "Fluids & nutrition",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Thiamine before any IV glucose",
+    "s": "adultstg2026:14.7",
+    "b": 1
+   },
+   {
+    "t": "Confusion, eye movements, gait: record each shift",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "HGT 6-hourly while not eating",
+    "d": 1
+   },
+   {
+    "t": "Calm room; re-orientate; prevent falls",
+    "s": "adultstg2026:20.14"
+   },
+   {
+    "t": "Record on the 24-hour neuro record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was given in casualty (dextrose? thiamine?). HGT first; thiamine before glucose.",
+    "feed": [
+     {
+      "t": "Oral diet if swallow safe",
+      "d": 1
+     },
+     {
+      "t": "IV fluid if dehydrated; thiamine first",
+      "s": "phcstg2026:3.18",
+      "b": 1
+     },
+     {
+      "t": "Nutritional support",
+      "s": "adultstg2026:15.32"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "phcstg2026:21.22",
+      "b": 1
+     },
+     {
+      "t": "U&E (Na, K)",
+      "s": "adultstg2026:20.13",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "LFT, INR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Mg, PO₄",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV test",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "β-hCG (female)",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Wernicke"
+     },
+     {
+      "t": "Thiamine 500 mg IM now",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     },
+     {
+      "t": "Then 500 mg IM daily for 3–5 days",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     },
+     {
+      "t": "Then 100 mg oral 8-hourly",
+      "s": "adultstg2026:14.7"
+     },
+     {
+      "h": "Cause"
+     },
+     {
+      "t": "Alcohol: Alcohol Withdrawal pathway alongside",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "t": "Hyperemesis: vitamin B complex 10 mL IV",
+      "s": "adultstg2026:6.21"
+     },
+     {
+      "t": "Delirium: haloperidol / benzodiazepine per STG 20.8",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "h": "ADOL (alcohol-related)"
+     },
+     {
+      "t": "Thiamine 500 mg IV 8-hourly in 100 mL NaCl 0.9% over 30 min (branch)",
+      "s": "paedstg2026:14.34",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Intake / output",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Confusion, eye signs, gait vs 0 h",
+      "d": 1
+     },
+     {
+      "t": "Eye signs usually improve first",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "IM daily",
+    "feed": [
+     {
+      "t": "Eating?  Y / N",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Mg reviewed; correct",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 500 mg IM",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     },
+     {
+      "t": "No improvement in eye signs → look for other cause",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "IM daily",
+    "feed": [
+     {
+      "t": "Diet, thiamine-rich foods",
+      "s": "phcstg2026:3.17"
+     }
+    ],
+    "tests": [
+     {
+      "t": "LFT if abnormal",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 500 mg IM",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     },
+     {
+      "t": "Mobilise with help; falls risk",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 4–5",
+    "phase": "Last IM",
+    "feed": [
+     {
+      "t": "Diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 500 mg IM (stop after day 3–5)",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     },
+     {
+      "t": "Social worker / alcohol referral",
+      "s": "adultstg2026:15.31"
+     }
+    ]
+   },
+   {
+    "label": "Day 6+",
+    "phase": "Oral",
+    "feed": [
+     {
+      "t": "Thiamine-rich diet: wholewheat bread, oats, pulses, nuts, marmite",
+      "s": "phcstg2026:3.17"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 100 mg oral 8-hourly",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     },
+     {
+      "t": "Memory / gait at discharge: ____",
+      "k": "value"
+     }
+    ]
+   },
+   {
+    "label": "If hypoglycaemic",
+    "feed": [
+     {
+      "t": "Thiamine before dextrose",
+      "s": "adultstg2026:14.7",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT 15 min after dextrose",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 200 mg IV/IM, then dextrose — never delay dextrose (Hypoglycemia pathway)",
+      "s": "phcstg2026:21.23",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If heart failure",
+    "feed": [
+     {
+      "t": "Fluid balance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, CXR",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 100 mg oral/IM daily for 4 weeks (trial in unexplained heart failure)",
+      "s": "adultstg2026:3.30",
+      "b": 1
+     },
+     {
+      "t": "Treat heart failure per STG 3.4",
+      "s": "adultstg2026:3.30"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If hyperemesis",
+    "feed": [
+     {
+      "t": "IV fluids, correct electrolytes",
+      "s": "adultstg2026:6.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, K",
+      "s": "adultstg2026:6.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Vitamin B complex 10 mL IV + thiamine before glucose",
+      "s": "adultstg2026:6.21"
+     },
+     {
+      "t": "Pyridoxine 25 mg oral 8-hourly; promethazine 25 mg 8-hourly as needed",
+      "s": "adultstg2026:6.21"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If ADOL",
+    "feed": [
+     {
+      "t": "Thiamine before glucose",
+      "s": "paedstg2026:14.34",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Mg",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thiamine 500 mg IV 8-hourly (in 100 mL NaCl 0.9% over 30 min) × 3 days, then 250 mg 8-hourly",
+      "s": "paedstg2026:14.34",
+      "b": 1
+     },
+     {
+      "t": "Then thiamine 100 mg oral daily once stable",
+      "s": "paedstg2026:14.34"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If no response",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat glucose, Na",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reconsider DIMTOP causes",
+      "s": "adultstg2026:20.13"
+     },
+     {
+      "t": "Focal signs, falling GCS or no response by day 3 → REFER for CT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Thiamine doses (adult)",
+   "items": [
+    {
+     "h": "Wernicke"
+    },
+    {
+     "t": "500 mg IM now and daily for 3–5 days",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "Then 100 mg oral 8-hourly",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "h": "Prophylaxis (at risk)"
+    },
+    {
+     "t": "200 mg IM daily, or 100 mg oral 8-hourly × 14 days",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "h": "Neuropathy / heart failure"
+    },
+    {
+     "t": "100 mg daily",
+     "s": "phcstg2026:3.18"
+    }
+   ]
+  },
+  {
+   "title": "Before glucose",
+   "items": [
+    {
+     "h": "Rule"
+    },
+    {
+     "t": "Thiamine first in all at-risk patients on IV glucose",
+     "s": "phcstg2026:3.18",
+     "b": 1
+    },
+    {
+     "t": "Never delay dextrose for hypoglycaemia",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "h": "Hypoglycaemia"
+    },
+    {
+     "t": "Thiamine 200 mg IV/IM immediately",
+     "s": "phcstg2026:21.23"
+    },
+    {
+     "h": "Glucose-containing fluids"
+    },
+    {
+     "t": "Thiamine 300 mg oral/IM daily",
+     "s": "adultstg2026:15.33"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "GCS falling / new drowsiness",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Seizure, new focal weakness",
+     "d": 1
+    },
+    {
+     "t": "Breathless / oedema",
+     "s": "phcstg2026:3.17"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Focal signs, falling GCS or no response → CT",
+     "d": 1
+    },
+    {
+     "t": "Failure to respond",
+     "s": "phcstg2026:3.18"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "IM course done; on oral thiamine",
+    "s": "adultstg2026:14.7"
+   },
+   {
+    "t": "Eating; thiamine supply given",
+    "d": 1
+   },
+   {
+    "t": "Safe gait or walking aid",
+    "d": 1
+   },
+   {
+    "t": "Carer told about memory problems",
+    "d": 1
+   },
+   {
+    "t": "Cause addressed (alcohol / vomiting / diet)",
+    "s": "phcstg2026:3.17"
+   },
+   {
+    "t": "Referred: Social Services if alcohol",
+    "s": "adultstg2026:15.31"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic in 2 weeks: memory, gait, eyes",
+    "d": 1
+   },
+   {
+    "t": "Dietary advice: thiamine-rich foods",
+    "s": "phcstg2026:3.17"
+   },
+   {
+    "t": "Alcohol: rehabilitation programme",
+    "s": "adultstg2026:15.31"
+   },
+   {
+    "t": "Return now: confusion, falls, double vision",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro record — confusion, eyes, gait, HGT",
+  "period": "24 hours: 2-hourly rows",
+  "params": [
+   {
+    "h": "Neuro (2-hourly)",
+    "items": [
+     {
+      "t": "GCS; oriented Y/N",
+      "d": 1
+     },
+     {
+      "t": "Eye movements: full / not full; nystagmus Y/N",
+      "s": "phcstg2026:3.17"
+     },
+     {
+      "t": "Gait when mobilising",
+      "s": "phcstg2026:3.17"
+     }
+    ]
+   },
+   {
+    "h": "Vitals + HGT",
+    "items": [
+     {
+      "t": "HR, BP, temp, RR 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "HGT 6-hourly if not eating",
+      "d": 1
+     },
+     {
+      "t": "Intake / output",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Falls risk: bed low, assist walking",
+      "d": 1
+     },
+     {
+      "t": "Calm room; re-orientate",
+      "s": "adultstg2026:20.14"
+     },
+     {
+      "t": "No IV glucose before thiamine",
+      "s": "phcstg2026:3.18",
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "GCS falling or new drowsiness",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "s": "phcstg2026:21.22",
+    "b": 1
+   },
+   {
+    "t": "seizure or new weakness",
+    "d": 1
+   },
+   {
+    "t": "breathless or oedema",
+    "s": "phcstg2026:3.17"
+   },
+   {
+    "t": "thiamine not given",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Thiamine given (mg)",
+   "Intake (mL)",
+   "Output (mL)",
+   "Lowest GCS",
+   "Lowest HGT",
+   "Falls (n)"
+  ]
+ }
+}

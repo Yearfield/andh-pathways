@@ -1,0 +1,1385 @@
+{
+ "id": "meningitis-adult",
+ "short": "Meningitis_Adult",
+ "title": "Meningitis / meningo-encephalitis (adults): bacterial, TB, cryptococcal, HSV",
+ "population": "Adults (≥ 13 y; ≥ 18 y for adult doses)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-02",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Children → Meningitis Paeds; neonates → Meningitis Neonate",
+     "b": 1
+    },
+    {
+     "t": "Head injury → TBI pathway"
+    },
+    {
+     "t": "Stroke / SAH → Stroke pathway"
+    },
+    {
+     "t": "Alcohol-related confusion → Wernicke / Alcohol Withdrawal"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — suspect if",
+   "items": [
+    {
+     "t": "Headache",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Neck stiffness (may be absent in elderly / debilitated)",
+     "s": "phcstg2026:15.50",
+     "b": 1
+    },
+    {
+     "t": "Fever",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Vomiting, photophobia",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Impaired level of consciousness",
+     "s": "phcstg2026:15.50",
+     "b": 1
+    },
+    {
+     "t": "TBM early: malaise, low-grade fever, headache, personality change",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Encephalitis: behaviour change, hallucinations, seizures",
+     "s": "adultstg2026:14.40"
+    },
+    {
+     "t": "Onset ____ days · HIV status ____ · CD4 ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "CT before LP = any one of (→ REFER for CT)",
+   "items": [
+    {
+     "t": "Focal neurological signs",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "New seizures",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "Papilloedema",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "Reduced level of consciousness",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "LP delayed / not possible: blood culture, then antibiotics now",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "Bleeding tendency → defer LP",
+     "s": "adultstg2026:14.36"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "HIV status, CD4, ART start date",
+     "s": "adultstg2026:10.1"
+    },
+    {
+     "t": "Serum CrAg result",
+     "s": "adultstg2026:10.23"
+    },
+    {
+     "t": "TB treatment / contact",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Previous cryptococcal meningitis",
+     "s": "adultstg2026:10.25"
+    },
+    {
+     "t": "Skull fracture / neurosurgery / CSF leak",
+     "s": "adultstg2026:14.37"
+    },
+    {
+     "t": "Shunt",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Pregnancy (fluconazole caution)",
+     "s": "adultstg2026:10.23"
+    },
+    {
+     "t": "Penicillin allergy",
+     "s": "adultstg2026:14.37"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Time course"
+    },
+    {
+     "t": "Hours–1 day (bacterial)",
+     "d": 1
+    },
+    {
+     "t": "> 5 days, gradual (TB / crypto)",
+     "d": 1
+    },
+    {
+     "t": "Severe headache (raised ICP)",
+     "s": "adultstg2026:10.24"
+    },
+    {
+     "h": "Clues"
+    },
+    {
+     "t": "Rash / petechiae (meningococcal)",
+     "d": 1
+    },
+    {
+     "t": "Seizures, behaviour change (HSV)",
+     "s": "adultstg2026:14.40"
+    },
+    {
+     "t": "Weight loss, night sweats, cough (TB)",
+     "d": 1
+    },
+    {
+     "h": "Risk"
+    },
+    {
+     "t": "HIV, recent ART start (IRIS)",
+     "d": 1
+    },
+    {
+     "t": "Close contacts / household",
+     "s": "adultstg2026:14.37"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = against the patient's baseline",
+   "items": [
+    {
+     "t": "Fever",
+     "s": "phcstg2026:15.50",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "phcstg2026:15.50",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / SpO₂ low",
+     "s": "phcstg2026:15.50",
+     "k": "yn"
+    },
+    {
+     "t": "GCS reduced",
+     "s": "phcstg2026:15.50",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "GCS ≤ 14 (TBM grade II–III)",
+     "s": "adultstg2026:14.39",
+     "k": "yn"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Meninges / neuro"
+    },
+    {
+     "t": "Neck stiffness / Kernig",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Focal signs",
+     "s": "adultstg2026:14.36"
+    },
+    {
+     "t": "Cranial nerve palsy",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Papilloedema",
+     "s": "adultstg2026:14.36"
+    },
+    {
+     "t": "Seizures",
+     "s": "adultstg2026:14.36"
+    },
+    {
+     "t": "Behaviour change",
+     "s": "adultstg2026:14.40"
+    },
+    {
+     "t": "Hemiparesis",
+     "d": 1
+    },
+    {
+     "h": "Body"
+    },
+    {
+     "t": "Petechiae / purpura",
+     "d": 1
+    },
+    {
+     "t": "Oral thrush, wasting (HIV)",
+     "d": 1
+    },
+    {
+     "t": "Lymph nodes, chest (TB)",
+     "d": 1
+    },
+    {
+     "t": "Herpes lesions (usually absent)",
+     "s": "adultstg2026:14.41"
+    },
+    {
+     "t": "Dehydration",
+     "s": "adultstg2026:14.36"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "LP — CSF (if no CT criteria)",
+   "items": [
+    {
+     "t": "Opening pressure ____ cm H₂O · appearance ____",
+     "k": "value"
+    },
+    {
+     "t": "Send: cells, protein, glucose, Gram stain, culture",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "HIV-positive: CSF CrAg",
+     "s": "adultstg2026:10.24",
+     "b": 1
+    },
+    {
+     "t": "TB suspected: CSF GeneXpert + culture",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Paired blood glucose",
+     "b": 1,
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Antibiotics now — do not wait for LP",
+   "items": [
+    {
+     "t": "Blood cultures first, then ceftriaxone 2 g IV",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly",
+     "s": "adultstg2026:14.37",
+     "b": 1
+    },
+    {
+     "t": "Listeria possible (outbreak, elderly, immunosuppressed): add ampicillin 3 g IV",
+     "s": "phcstg2026:15.52"
+    },
+    {
+     "t": "Encephalitis features: add aciclovir 10 mg/kg IV 8-hourly",
+     "s": "adultstg2026:14.41",
+     "b": 1
+    },
+    {
+     "t": "First dose: ____ at ____ (time)",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Shock",
+     "s": "phcstg2026:15.50",
+     "b": 1
+    },
+    {
+     "t": "Reduced GCS / airway",
+     "s": "phcstg2026:15.50",
+     "b": 1
+    },
+    {
+     "t": "Seizures / status",
+     "s": "phcstg2026:15.50",
+     "b": 1
+    },
+    {
+     "t": "Raised ICP (CT criteria)",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    },
+    {
+     "t": "Meningococcaemia (purpura)",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Cranial nerve palsy (TBM / crypto)",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Hydrocephalus (TBM)",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Advanced HIV (CD4 < 100)",
+     "s": "adultstg2026:10.23"
+    },
+    {
+     "t": "Severe malaria (travel)",
+     "d": 1
+    },
+    {
+     "t": "Subarachnoid haemorrhage",
+     "d": 1
+    },
+    {
+     "t": "Hyponatraemia",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. CT criteria · shunt · not responding / falling GCS / cranial nerve palsy → antibiotics, then REFER",
+   "s": "adultstg2026:14.38",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — ceftriaxone now; tick working diagnosis on page 2 — Continue on the meningitis inpatient chart and the 24-hour neuro observation record. Notify N. meningitidis, H. influenzae and Listeria.",
+   "s": "adultstg2026:14.37",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Bacterial meningitis",
+   "branch": "If bacterial",
+   "features": [
+    {
+     "t": "Acute: hours–1 day",
+     "d": 1
+    },
+    {
+     "t": "Fever, neck stiffness, reduced GCS",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Purpura: meningococcal",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LP: Gram stain, culture",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Blood culture",
+     "s": "adultstg2026:14.36",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly × 10 days",
+     "s": "adultstg2026:14.37",
+     "b": 1
+    },
+    {
+     "t": "No adjunctive steroids",
+     "s": "adultstg2026:14.37"
+    },
+    {
+     "t": "Chart branch \"If bacterial\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not responding, shunt",
+     "s": "adultstg2026:14.38",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "HSV encephalitis",
+   "branch": "If HSV",
+   "features": [
+    {
+     "t": "Fever, behaviour change, seizures (focal or general)",
+     "s": "adultstg2026:14.41"
+    },
+    {
+     "t": "Skin lesions usually absent",
+     "s": "adultstg2026:14.41"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LP: mild lymphocytes, normal glucose",
+     "s": "adultstg2026:14.40"
+    },
+    {
+     "t": "CSF HSV PCR",
+     "s": "adultstg2026:14.41",
+     "b": 1
+    },
+    {
+     "t": "REFER for CT / MRI if focal",
+     "s": "adultstg2026:14.41"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aciclovir 10 mg/kg IV 8-hourly × 14 days (21 if immunocompromised)",
+     "s": "adultstg2026:14.41",
+     "b": 1
+    },
+    {
+     "t": "Start before results",
+     "s": "adultstg2026:14.41"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Discuss all with specialist",
+     "s": "adultstg2026:14.41",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Cryptococcal meningitis",
+   "branch": "If cryptococcal",
+   "features": [
+    {
+     "t": "Advanced HIV",
+     "s": "adultstg2026:10.24"
+    },
+    {
+     "t": "Severe headache (raised ICP)",
+     "s": "adultstg2026:10.24"
+    },
+    {
+     "t": "Meningism may be absent",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serum / CSF CrAg",
+     "s": "adultstg2026:10.24",
+     "b": 1
+    },
+    {
+     "t": "CSF opening pressure",
+     "s": "adultstg2026:10.24",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amphotericin B + flucytosine + fluconazole (branch)",
+     "s": "adultstg2026:10.24",
+     "b": 1
+    },
+    {
+     "t": "Daily therapeutic LP",
+     "s": "adultstg2026:10.24"
+    },
+    {
+     "t": "Defer ART 4–6 weeks",
+     "s": "adultstg2026:10.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If focal signs (CT), persistent raised ICP, or amphotericin not stocked",
+     "s": "adultstg2026:10.25",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "TB meningitis",
+   "branch": "If TBM",
+   "features": [
+    {
+     "t": "Gradual onset, personality change",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Cranial nerve palsy",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "TB elsewhere / contact",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF: lymphocytes, protein > 1 g/L, low glucose",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "CSF GeneXpert",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Repeat LP day 2–3 if unsure",
+     "s": "adultstg2026:14.38"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Standard TB regimen × 9 months (2 + 7)",
+     "s": "adultstg2026:14.39",
+     "b": 1
+    },
+    {
+     "t": "HIV-neg grade II–III: dexamethasone / prednisone",
+     "s": "adultstg2026:14.39"
+    },
+    {
+     "t": "Defer ART 8 weeks",
+     "s": "adultstg2026:10.1"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If falling GCS (hydrocephalus → shunt)",
+     "s": "adultstg2026:14.38",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Listeria meningitis",
+   "branch": "If bacterial",
+   "features": [
+    {
+     "t": "Outbreak, elderly, immunosuppressed, pregnancy",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF / blood culture",
+     "b": 1,
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ampicillin 3 g IV 6-hourly × 21 days + gentamicin 5 mg/kg daily × 7 days",
+     "s": "adultstg2026:14.38",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If severe penicillin allergy (specialist)",
+     "s": "adultstg2026:14.38"
+    }
+   ]
+  },
+  {
+   "dx": "Neurosyphilis",
+   "features": [
+    {
+     "t": "Stroke-like / psychiatric picture",
+     "d": 1
+    },
+    {
+     "t": "Positive RPR / TPHA",
+     "s": "adultstg2026:14.42"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF lymphocytes, VDRL",
+     "s": "adultstg2026:14.42",
+     "b": 1
+    },
+    {
+     "t": "Negative TPHA excludes",
+     "s": "adultstg2026:14.42"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzylpenicillin 20 MU IV daily in 4–6 doses × 10 days",
+     "s": "adultstg2026:14.42",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Brain abscess / toxoplasmosis / mass",
+   "features": [
+    {
+     "t": "Focal signs, seizures",
+     "s": "adultstg2026:10.25"
+    },
+    {
+     "t": "Advanced HIV",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CT",
+     "s": "adultstg2026:10.25",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not LP; antibiotics; REFER",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT",
+     "s": "adultstg2026:10.25",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time → day",
+  "phase_note": "Antibiotic within the first hour; LP when safe; working diagnosis by 24–72 h → branch",
+  "columns": {
+   "feed": "Fluids & nursing",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Vital signs and neuro state — close monitoring",
+    "s": "adultstg2026:14.36",
+    "b": 1
+   },
+   {
+    "t": "GCS + pupils 1-hourly × 6 h, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Watch hydration status",
+    "s": "adultstg2026:14.36"
+   },
+   {
+    "t": "Quiet, semi-dark room",
+    "s": "adultstg2026:14.36"
+   },
+   {
+    "t": "Analgesia for all",
+    "s": "adultstg2026:14.37"
+   },
+   {
+    "t": "Record on the 24-hour neuro observation record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was given before arrival (ceftriaxone dose / time). Blood culture, then antibiotic — do not delay for LP.",
+    "feed": [
+     {
+      "t": "Shock: treat now (fluid bolus per STG)",
+      "s": "phcstg2026:15.50",
+      "b": 1
+     },
+     {
+      "t": "Low GCS: airway, oxygen",
+      "s": "phcstg2026:15.50"
+     },
+     {
+      "t": "Ensure hydration; avoid overload",
+      "s": "adultstg2026:14.36"
+     },
+     {
+      "t": "Seizure: status epilepticus protocol",
+      "s": "phcstg2026:15.50"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture",
+      "s": "adultstg2026:14.36",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "phcstg2026:21.22",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E (Na)",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "HIV test; CD4",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Serum CrAg (HIV +)",
+      "s": "adultstg2026:10.23",
+      "b": 1
+     },
+     {
+      "t": "RPR",
+      "s": "adultstg2026:14.42",
+      "b": 1
+     },
+     {
+      "t": "LP if no CT criteria (§7)",
+      "s": "adultstg2026:14.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Empiric"
+     },
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     },
+     {
+      "t": "+ Ampicillin 3 g IV 6-hourly if Listeria possible",
+      "s": "adultstg2026:14.38"
+     },
+     {
+      "t": "+ Aciclovir 10 mg/kg IV 8-hourly if encephalitis",
+      "s": "adultstg2026:14.41",
+      "b": 1
+     },
+     {
+      "t": "Severe penicillin allergy: meropenem 2 g IV 8-hourly",
+      "s": "adultstg2026:14.37"
+     },
+     {
+      "h": "Analgesia"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g/24 h)",
+      "s": "adultstg2026:14.37"
+     },
+     {
+      "t": "± Ibuprofen 400 mg 8-hourly with meals",
+      "s": "adultstg2026:14.37"
+     },
+     {
+      "t": "Severe: tramadol 50–100 mg 4–6-hourly (max 400 mg/day)",
+      "s": "adultstg2026:14.37"
+     },
+     {
+      "h": "Steroid"
+     },
+     {
+      "t": "No adjunctive steroids in bacterial meningitis",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "GCS, pupils",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CT criteria present → REFER for CT (antibiotics given)",
+      "s": "adultstg2026:14.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotic given?  time ____",
+      "k": "value"
+     },
+     {
+      "t": "Notify (meningococcus, Hib, Listeria)",
+      "s": "adultstg2026:14.36"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "LP / results",
+    "feed": [
+     {
+      "t": "Fluid balance",
+      "s": "adultstg2026:14.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF: cells, protein, glucose, Gram, CrAg",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis (page 2 of admission)",
+      "d": 1
+     },
+     {
+      "t": "CrAg positive → If cryptococcal",
+      "s": "adultstg2026:10.24"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Eating? NG if needed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture / Gram reviewed",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Na",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     },
+     {
+      "t": "Close-contact prophylaxis: ciprofloxacin 500 mg once",
+      "s": "adultstg2026:14.37"
+     }
+    ]
+   },
+   {
+    "label": "48–72 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat LP day 2–3 if bacterial vs TB unclear",
+      "s": "adultstg2026:14.38",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not responding / worse / cranial nerve palsy → REFER for neuro-imaging",
+      "s": "adultstg2026:14.38",
+      "b": 1
+     },
+     {
+      "t": "Adjust to culture (branch)",
+      "s": "adultstg2026:14.37"
+     }
+    ]
+   },
+   {
+    "label": "If bacterial",
+    "feed": [
+     {
+      "t": "Repeat LPs no benefit if uncomplicated",
+      "s": "adultstg2026:14.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture + sensitivity",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly × 10 days (Hib, resistant pneumococcus ≥ 10 days)",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     },
+     {
+      "t": "Meningococcal: benzylpenicillin 20–24 MU/day in 4–6 doses × 1 week, then ciprofloxacin 500 mg once (not if ceftriaxone given)",
+      "s": "adultstg2026:14.37"
+     },
+     {
+      "t": "Pneumococcal, penicillin-sensitive: benzylpenicillin 20–24 MU/day × 10 days",
+      "s": "adultstg2026:14.38"
+     },
+     {
+      "t": "Listeria: ampicillin 3 g IV 6-hourly × 21 days + gentamicin 5 mg/kg daily × 7 days",
+      "s": "adultstg2026:14.38"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If HSV",
+    "feed": [
+     {
+      "t": "Seizure precautions",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF HSV PCR (may be false-negative < 72 h)",
+      "s": "adultstg2026:14.41",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aciclovir 10 mg/kg IV 8-hourly × 14 days (21 days if immunocompromised)",
+      "s": "adultstg2026:14.41",
+      "b": 1
+     },
+     {
+      "t": "Discuss with specialist; morphine IV max 10 mg for pain",
+      "s": "adultstg2026:14.41"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If cryptococcal",
+    "feed": [
+     {
+      "t": "Prehydrate for amphotericin",
+      "s": "adultstg2026:10.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Daily therapeutic LP: remove ≤ 30 mL to 50% of opening pressure, not below 20 cm H₂O",
+      "s": "adultstg2026:10.24",
+      "b": 1
+     },
+     {
+      "t": "U&E, K, Mg",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Amphotericin B 1 mg/kg IV daily × 7 days + flucytosine 25 mg/kg 6-hourly × 7 days, then fluconazole 1200 mg × 7 days",
+      "s": "adultstg2026:10.24",
+      "b": 1
+     },
+     {
+      "t": "No flucytosine: amphotericin B + fluconazole 1200 mg daily × 14 days",
+      "s": "adultstg2026:10.25"
+     },
+     {
+      "t": "Then fluconazole 800 mg × 8 weeks, then 200 mg daily",
+      "s": "adultstg2026:10.25"
+     },
+     {
+      "t": "ART at 4–6 weeks; no steroids",
+      "s": "adultstg2026:10.25"
+     },
+     {
+      "t": "Amphotericin not stocked at ANDH → fluconazole 1200 mg + REFER",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If TBM",
+    "feed": [
+     {
+      "t": "Nutrition; NG if needed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF GeneXpert, culture",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Standard TB treatment × 9 months (2 intensive + 7 continuation) — doses per STG 16.9",
+      "s": "adultstg2026:14.39",
+      "b": 1
+     },
+     {
+      "t": "HIV-neg, GCS ≤ 14 / focal: dexamethasone 0.3–0.4 mg/kg/day × 2 weeks (taper wk 3–8) or prednisone 60 mg × 2 weeks then taper",
+      "s": "adultstg2026:14.39"
+     },
+     {
+      "t": "Defer ART until 8 weeks after TB start",
+      "s": "adultstg2026:10.1"
+     },
+     {
+      "t": "Falling GCS → REFER (hydrocephalus)",
+      "s": "adultstg2026:14.38",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Empiric doses (adult)",
+   "items": [
+    {
+     "h": "Bacterial"
+    },
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly × 10 days",
+     "s": "adultstg2026:14.37"
+    },
+    {
+     "t": "Pen allergy: meropenem 2 g IV 8-hourly",
+     "s": "adultstg2026:14.37"
+    },
+    {
+     "h": "Listeria"
+    },
+    {
+     "t": "Ampicillin 3 g IV 6-hourly",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "h": "HSV"
+    },
+    {
+     "t": "Aciclovir 10 mg/kg IV 8-hourly",
+     "s": "adultstg2026:14.41"
+    }
+   ]
+  },
+  {
+   "title": "Contacts · notify",
+   "items": [
+    {
+     "h": "Meningococcal prophylaxis"
+    },
+    {
+     "t": "Household / resuscitating HCW: ciprofloxacin 500 mg once",
+     "s": "adultstg2026:14.37"
+    },
+    {
+     "t": "Pregnant contact: ceftriaxone 250 mg IM once",
+     "s": "phcstg2026:15.53"
+    },
+    {
+     "h": "Notifiable"
+    },
+    {
+     "t": "N. meningitidis, H. influenzae type B, Listeria",
+     "s": "adultstg2026:14.36"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "GCS drops ≥ 2 or new confusion",
+     "b": 1,
+     "d": 1
+    },
+    {
+     "t": "Seizure",
+     "s": "adultstg2026:14.36"
+    },
+    {
+     "t": "New focal sign / unequal pupils",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Shock",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "CT criteria, not responding, cranial nerve palsy",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Shunt",
+     "s": "adultstg2026:14.38"
+    },
+    {
+     "t": "Persistent raised ICP (crypto)",
+     "s": "adultstg2026:10.25"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "IV course complete or step-down agreed",
+    "d": 1
+   },
+   {
+    "t": "Afebrile, GCS 15 / baseline",
+    "d": 1
+   },
+   {
+    "t": "Eating, mobile",
+    "d": 1
+   },
+   {
+    "t": "HIV: ART plan dated (TBM 8 wk, crypto 4–6 wk)",
+    "s": "adultstg2026:10.1"
+   },
+   {
+    "t": "TB / fluconazole supply + clinic linked",
+    "d": 1
+   },
+   {
+    "t": "Contacts given prophylaxis",
+    "s": "adultstg2026:14.37"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic in 2 weeks: neuro deficit, hearing",
+    "d": 1
+   },
+   {
+    "t": "Fluconazole 200 mg daily ≥ 1 year (CD4 > 200)",
+    "s": "adultstg2026:10.25"
+   },
+   {
+    "t": "TBM: 9-month TB treatment",
+    "s": "adultstg2026:14.39"
+   },
+   {
+    "t": "Return now: headache, fever, confusion",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro observation record — GCS, pupils, vitals",
+  "period": "24 hours: hourly × 6, then 2-hourly",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "GCS, pupils, limb power",
+      "s": "adultstg2026:14.36"
+     },
+     {
+      "t": "Hourly × 6 h, then 2–4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Seizure: time + duration",
+      "s": "adultstg2026:14.36"
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "HR, BP, temp, RR, SpO₂",
+      "s": "adultstg2026:14.36"
+     },
+     {
+      "t": "HGT 6-hourly if not eating",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids + comfort",
+    "items": [
+     {
+      "t": "Intake / output; avoid overload",
+      "s": "adultstg2026:14.36"
+     },
+     {
+      "t": "Pain score; analgesia given",
+      "s": "adultstg2026:14.37"
+     },
+     {
+      "t": "Quiet, semi-dark room",
+      "s": "adultstg2026:14.36"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "GCS drops ≥ 2 or new confusion",
+    "b": 1,
+    "d": 1
+   },
+   {
+    "t": "seizure",
+    "s": "adultstg2026:14.36",
+    "b": 1
+   },
+   {
+    "t": "unequal or non-reacting pupils",
+    "d": 1
+   },
+   {
+    "t": "new weakness",
+    "d": 1
+   },
+   {
+    "t": "shock or low SpO₂",
+    "s": "phcstg2026:15.50"
+   },
+   {
+    "t": "antibiotic dose missed",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Fluid in (mL)",
+   "Fluid out (mL)",
+   "Lowest GCS",
+   "Seizures (n)",
+   "Highest temp",
+   "Antibiotic doses (n)"
+  ]
+ }
+}

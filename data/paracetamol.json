@@ -1,0 +1,1037 @@
+{
+ "id": "paracetamol",
+ "short": "Paracetamol",
+ "title": "Paracetamol poisoning (adults and children; ADULT / CHILD lines where the STGs differ)",
+ "population": "Adults and children (one pathway; ADULT / CHILD lines)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-02",
+ "sources": [
+  "adultstg2026",
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Mixed overdose with opioids / TCA / salicylate → also that pathway",
+     "b": 1
+    },
+    {
+     "t": "Toddler sip of elixir: rarely toxic — calculate mg/kg first",
+     "s": "paedstg2026:18.18"
+    },
+    {
+     "t": "Poisons Information Helpline 0861 555 777 · UFS (Free State) 082 491 0160",
+     "s": "adultstg2026:19.1",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — potentially toxic",
+   "items": [
+    {
+     "t": "Acute single ingestion > 200 mg/kg or 10 g (whichever is less)",
+     "s": "adultstg2026:19.17",
+     "b": 1
+    },
+    {
+     "t": "CHILD: acute > 200 mg/kg in 24 h",
+     "s": "paedstg2026:18.18"
+    },
+    {
+     "t": "Repeated supratherapeutic ingestion (RSTI) — box",
+     "s": "adultstg2026:19.17"
+    },
+    {
+     "t": "Any clinical sign of liver toxicity",
+     "s": "adultstg2026:19.17",
+     "b": 1
+    },
+    {
+     "t": "Time of ingestion ____ · amount ____ g · weight ____ kg → ____ mg/kg",
+     "k": "value"
+    },
+    {
+     "t": "Hours since ingestion now: ____ · unknown time  Y / N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "High-risk patient = any one (toxic at lower dose)",
+   "items": [
+    {
+     "t": "Chronic alcohol use",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Chronic liver disease",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Enzyme inducers: carbamazepine, phenytoin, efavirenz, phenobarbitone, rifampicin",
+     "s": "adultstg2026:19.16",
+     "b": 1
+    },
+    {
+     "t": "Malnutrition, starvation, AIDS, chronic illness, eating disorder",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Recent illness, dehydration",
+     "s": "adultstg2026:19.16"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / Road to Health / previous records",
+   "items": [
+    {
+     "t": "ART regimen (efavirenz)",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "TB treatment (rifampicin)",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Epilepsy medicines",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Liver disease",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Previous overdose / self-harm",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Mental illness",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Weight (child)",
+     "s": "paedstg2026:18.18"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Ingestion"
+    },
+    {
+     "t": "Product(s): paracetamol-containing combinations",
+     "s": "adultstg2026:19.17"
+    },
+    {
+     "t": "Single / staggered / repeated",
+     "s": "adultstg2026:19.17"
+    },
+    {
+     "t": "Other tablets or alcohol",
+     "d": 1
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Nausea, vomiting, anorexia, malaise",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "RUQ pain (from 20–24 h)",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "h": "Intent"
+    },
+    {
+     "t": "Intentional: thoughts, plan, access to means",
+     "s": "phcstg2026:16.23",
+     "b": 1
+    },
+    {
+     "t": "Accidental (child): supervision",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = against age norms or the patient's baseline",
+   "items": [
+    {
+     "t": "Tachycardia",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "paedstg2026:18.20",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea (acidosis)",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Drowsy / confused (encephalopathy)",
+     "s": "adultstg2026:19.16",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "> 8 h since ingestion",
+     "s": "adultstg2026:19.17",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Liver"
+    },
+    {
+     "t": "RUQ tenderness",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Jaundice",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Bruising / bleeding",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Flap / encephalopathy",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "GCS (co-ingestion)",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Self-harm injuries",
+     "d": 1
+    },
+    {
+     "t": "Pupils (opioid?)",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bloods — timing (NHLS)",
+   "items": [
+    {
+     "t": "Serum paracetamol level + ALT at ≥ 4 h after ingestion",
+     "s": "adultstg2026:19.17",
+     "b": 1
+    },
+    {
+     "t": "> 8 h or unknown time: level, ALT and INR",
+     "s": "adultstg2026:19.17",
+     "b": 1
+    },
+    {
+     "t": "Result not back by 8 h + toxic dose: start NAC — do not wait",
+     "s": "adultstg2026:19.17",
+     "b": 1
+    },
+    {
+     "t": "Plot level on the STG nomogram (single acute ingestion only)",
+     "s": "adultstg2026:19.18"
+    },
+    {
+     "t": "Sent at ____ (time) · result ____ at ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Decontamination — first 1–2 h",
+   "items": [
+    {
+     "t": "Activated charcoal if within 1–2 h (awake, airway protected)",
+     "s": "adultstg2026:19.17",
+     "b": 1
+    },
+    {
+     "t": "ADULT 50 g in 100 mL water",
+     "s": "adultstg2026:19.14"
+    },
+    {
+     "t": "CHILD < 6 y 1 g/kg; > 6 y 20–50 g",
+     "s": "paedstg2026:18.4"
+    },
+    {
+     "t": "Not with oral NAC (reduces NAC absorption)",
+     "s": "adultstg2026:19.18",
+     "b": 1
+    },
+    {
+     "t": "Gastric lavage unlikely to be needed",
+     "s": "paedstg2026:18.19"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Encephalopathy",
+     "s": "paedstg2026:18.20",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:19.16",
+     "b": 1
+    },
+    {
+     "t": "Hypotension despite fluids",
+     "s": "paedstg2026:18.20",
+     "b": 1
+    },
+    {
+     "t": "Metabolic acidosis",
+     "s": "adultstg2026:19.16",
+     "b": 1
+    },
+    {
+     "t": "Coagulopathy (INR)",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Renal failure",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Co-ingestion / alcohol",
+     "d": 1
+    },
+    {
+     "t": "Late presentation > 24 h",
+     "s": "paedstg2026:18.19"
+    },
+    {
+     "t": "Imminent suicide risk",
+     "s": "phcstg2026:16.24",
+     "b": 1
+    },
+    {
+     "t": "High-risk patient (§2)",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    },
+    {
+     "t": "Child: non-accidental",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Liver failure / encephalopathy / INR > 3 / pH < 7.3 / creatinine > 200 → start NAC, REFER",
+   "s": "paedstg2026:18.20",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — NAC IV (20-hour regimen) if toxic dose, signs, or level above the line — Continue on the NAC infusion chart and the 24-hour NAC nursing record. Psychiatric / suicide risk review for every intentional overdose.",
+   "s": "adultstg2026:19.18",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Hours from ingestion / NAC start",
+  "phase_note": "NAC bag 1 (4 h) → bag 2 (16 h) → continue or stop by level / ALT / INR",
+  "columns": {
+   "feed": "Fluids & NAC bags",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Give the loading bag in a monitored area",
+    "s": "adultstg2026:19.18",
+    "b": 1
+   },
+   {
+    "t": "Watch for flushing, rash, wheeze (histamine release)",
+    "s": "adultstg2026:19.18",
+    "b": 1
+   },
+   {
+    "t": "HGT 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Suicide precautions if intentional",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Record on the 24-hour NAC nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Write the ingestion time and mg/kg. Toxic dose + level not back before 8 h → start NAC now.",
+    "feed": [
+     {
+      "t": "IV access; rehydrate if vomiting",
+      "s": "adultstg2026:19.16"
+     },
+     {
+      "t": "Charcoal if ≤ 1–2 h and airway safe (§8)",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Paracetamol level at ≥ 4 h",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "ALT",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "INR (> 8 h / signs)",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "s": "paedstg2026:18.19",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "adultstg2026:19.16",
+      "b": 1
+     },
+     {
+      "t": "Blood gas if unwell",
+      "s": "adultstg2026:19.19",
+      "b": 1
+     },
+     {
+      "t": "β-hCG (female)",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "NAC IV — bag 1 (4 h)"
+     },
+     {
+      "t": "ADULT 200 mg/kg in 500 mL dextrose 5% over 4 h",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     },
+     {
+      "t": "CHILD 200 mg/kg in 7 mL/kg dextrose 5% over 4 h",
+      "s": "paedstg2026:18.19",
+      "b": 1
+     },
+     {
+      "h": "No IV NAC"
+     },
+     {
+      "t": "NAC oral 140 mg/kg now, then 70 mg/kg 4-hourly, up to 17 doses",
+      "s": "adultstg2026:19.18"
+     },
+     {
+      "h": "Start NAC now if"
+     },
+     {
+      "t": "Toxic dose and level not available before 8 h",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "> 8 h and toxic dose or signs",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "Time unknown: treat as > 8 h",
+      "s": "adultstg2026:19.17"
+     },
+     {
+      "t": "CHILD time unknown: any detectable level or raised ALT/AST",
+      "s": "paedstg2026:18.19"
+     },
+     {
+      "h": "Mind"
+     },
+     {
+      "t": "Intentional: suicide risk assessment",
+      "s": "phcstg2026:16.23"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Level + bag 2",
+    "feed": [
+     {
+      "t": "Bag 2 starts when bag 1 ends",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Level + ALT drawn (≥ 4 h after ingestion)",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "ADULT bag 2: 100 mg/kg in 1000 mL dextrose 5% over 16 h",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     },
+     {
+      "t": "CHILD bag 2: 100 mg/kg in 14 mL/kg dextrose 5% over 16 h",
+      "s": "paedstg2026:18.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Deadline",
+    "feed": [
+     {
+      "t": "NAC running?  Y / N",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Level result plotted on nomogram",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Above the line → continue NAC",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     },
+     {
+      "t": "Below line + normal ALT (acute, known time) → may stop",
+      "s": "adultstg2026:19.17"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Oral intake?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reaction? Slow infusion + antihistamine; stop if bronchospasm",
+      "s": "adultstg2026:19.18"
+     }
+    ]
+   },
+   {
+    "label": "20 h",
+    "phase": "End bag 2",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ALT, INR, paracetamol level",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "s": "paedstg2026:18.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue NAC (bag-2 regimen) if: level above line, ALT abnormal, or measurable level / abnormal ALT > 24 h",
+      "s": "adultstg2026:19.17",
+      "b": 1
+     },
+     {
+      "t": "Further NAC = repeat bag 2",
+      "s": "adultstg2026:19.18"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Liver check",
+    "feed": [
+     {
+      "t": "Oral fluids, diet",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ALT, INR",
+      "b": 1,
+      "d": 1
+     },
+     {
+      "t": "Glucose, acid–base, creatinine if indicated",
+      "s": "adultstg2026:19.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "INR > 2 at 24 h → REFER",
+      "s": "paedstg2026:18.20",
+      "b": 1
+     },
+     {
+      "t": "Toxicity peaks 72–96 h",
+      "s": "adultstg2026:19.16"
+     }
+    ]
+   },
+   {
+    "label": "If RSTI",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Level + ALT now (nomogram not valid)",
+      "s": "paedstg2026:18.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Start NAC if RSTI toxic dose (box) or signs; contact Poisons Helpline",
+      "s": "paedstg2026:18.19",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If reaction",
+    "feed": [
+     {
+      "t": "Pause / slow infusion",
+      "s": "adultstg2026:19.18"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HR, BP, wheeze",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stable: continue slower under antihistamine cover",
+      "s": "adultstg2026:19.18"
+     },
+     {
+      "t": "Bronchospasm: stop infusion",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If liver failure",
+    "feed": [
+     {
+      "t": "Treat hypoglycaemia; fluids",
+      "s": "adultstg2026:19.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "INR, pH, HCO₃, lactate, creatinine",
+      "s": "paedstg2026:18.20",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue NAC (benefit even if liver failure)",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     },
+     {
+      "t": "REFER (transplant centre)",
+      "s": "adultstg2026:19.19",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If intentional",
+    "feed": [
+     {
+      "t": "Remove means; supervise",
+      "s": "phcstg2026:16.24"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Suicide risk: ideation, intent, plan, means, past attempts",
+      "s": "phcstg2026:16.23",
+      "b": 1
+     },
+     {
+      "t": "Imminent risk → psychiatry; SADAG / helpline",
+      "s": "phcstg2026:16.24"
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "RSTI = toxic if",
+   "items": [
+    {
+     "h": "ADULT"
+    },
+    {
+     "t": "> 200 mg/kg or 10 g in 24 h",
+     "s": "adultstg2026:19.17"
+    },
+    {
+     "t": "> 300 mg/kg or 12 g in 48 h",
+     "s": "adultstg2026:19.17"
+    },
+    {
+     "t": "> 60 mg/kg/day for > 48 h with liver symptoms",
+     "s": "adultstg2026:19.17"
+    },
+    {
+     "h": "CHILD"
+    },
+    {
+     "t": "> 200 mg/kg or 10 g in 24 h",
+     "s": "paedstg2026:18.19"
+    },
+    {
+     "t": "> 150 mg/kg or 6 g per 24 h for 48 h",
+     "s": "paedstg2026:18.19"
+    },
+    {
+     "t": "> 100 mg/kg or 4 g/day > 48 h with liver symptoms",
+     "s": "paedstg2026:18.19"
+    }
+   ]
+  },
+  {
+   "title": "REFER = any one",
+   "items": [
+    {
+     "h": "Severe hepatotoxicity"
+    },
+    {
+     "t": "INR > 2 at 24 h or > 3 at any time",
+     "s": "paedstg2026:18.20",
+     "b": 1
+    },
+    {
+     "t": "pH < 7.3, HCO₃ < 18 or lactate > 3 mmol/L",
+     "s": "paedstg2026:18.20"
+    },
+    {
+     "t": "Hypotension despite fluids",
+     "s": "paedstg2026:18.20"
+    },
+    {
+     "t": "Encephalopathy",
+     "s": "paedstg2026:18.20"
+    },
+    {
+     "t": "Creatinine > 200 µmol/L",
+     "s": "paedstg2026:18.20"
+    },
+    {
+     "h": "ADULT"
+    },
+    {
+     "t": "Liver failure → referral / transplant",
+     "s": "adultstg2026:19.19"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Rash, flushing, wheeze on NAC",
+     "s": "adultstg2026:19.18",
+     "b": 1
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Drowsy / confused",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "t": "Bleeding, jaundice",
+     "s": "adultstg2026:19.16"
+    },
+    {
+     "h": "Advice 24/7"
+    },
+    {
+     "t": "Poisons Helpline 0861 555 777",
+     "s": "adultstg2026:19.1"
+    },
+    {
+     "t": "UFS 082 491 0160",
+     "s": "adultstg2026:19.1"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "NAC course complete (or not indicated by level)",
+    "s": "adultstg2026:19.17"
+   },
+   {
+    "t": "ALT normal or falling; INR normal",
+    "d": 1
+   },
+   {
+    "t": "Eating, no vomiting",
+    "d": 1
+   },
+   {
+    "t": "Suicide risk assessed; no imminent risk",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Means removed at home",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Child: safe-storage advice",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Mental health follow-up; weekly contact first 2 months if self-harm",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Recheck ALT in 1 week if raised",
+    "d": 1
+   },
+   {
+    "t": "Return now: vomiting, RUQ pain, jaundice, drowsiness",
+    "s": "adultstg2026:19.16"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour NAC nursing record — infusion, reactions, vitals, HGT",
+  "period": "24 hours: every 30 min × 2 h, hourly to 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Infusion",
+    "items": [
+     {
+      "t": "Bag number, rate, volume left",
+      "d": 1
+     },
+     {
+      "t": "Loading bag in monitored area",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "h": "Reaction watch",
+    "items": [
+     {
+      "t": "Flushing, rash, itch, wheeze (Y/N)",
+      "s": "adultstg2026:19.18",
+      "b": 1
+     },
+     {
+      "t": "Slow if stable; stop if wheeze — call doctor",
+      "s": "adultstg2026:19.18"
+     }
+    ]
+   },
+   {
+    "h": "Vitals + safety",
+    "items": [
+     {
+      "t": "HR, BP, RR, SpO₂, alertness",
+      "d": 1
+     },
+     {
+      "t": "HGT 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Vomiting; urine output",
+      "d": 1
+     },
+     {
+      "t": "1:1 watch if suicidal",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "rash, flushing or wheeze on NAC",
+    "s": "adultstg2026:19.18",
+    "b": 1
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "s": "phcstg2026:21.22",
+    "b": 1
+   },
+   {
+    "t": "drowsy or confused",
+    "s": "adultstg2026:19.16"
+   },
+   {
+    "t": "bleeding or jaundice",
+    "s": "adultstg2026:19.16"
+   },
+   {
+    "t": "NAC bag finished / line tissued",
+    "d": 1
+   },
+   {
+    "t": "talk of self-harm or trying to leave",
+    "s": "phcstg2026:16.24"
+   }
+  ],
+  "totals": [
+   "NAC given (mg)",
+   "IV fluid (mL)",
+   "Urine (mL)",
+   "Reactions (n)",
+   "Lowest HGT",
+   "Bags completed"
+  ]
+ }
+}

@@ -1,0 +1,985 @@
+{
+ "id": "meningitis-neonate",
+ "short": "Meningitis_Neonate",
+ "title": "Bacterial meningitis, neonatal (≤ 28 days)",
+ "population": "Neonate (≤ 28 days)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-02",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "> 28 days → Meningitis Paeds",
+     "b": 1
+    },
+    {
+     "t": "Needs resuscitation → Neopuff / neonatal resuscitation first",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia only → Hypoglycemia Neonate"
+    },
+    {
+     "t": "Seizures from asphyxia (HIE) → HIE pathway"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — consider in every neonate with sepsis",
+   "items": [
+    {
+     "t": "Any neonate evaluated for sepsis: consider meningitis",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Temperature disturbance",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Lethargy, irritability",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Vomiting, feeding problems",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Altered consciousness, convulsions, apnoea",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Bulging / full fontanelle",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Blood glucose disturbance; vasomotor changes",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Age ____ days · GA ____ wk · weight ____ g",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Refer = any one of",
+   "items": [
+    {
+     "t": "Not responding to adequate treatment",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Complications: hydrocephalus, abscess, ventriculitis, subdural",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Seizures refractory to phenobarbitone (high care / ICU)",
+     "s": "paedstg2026:19.49",
+     "b": 1
+    },
+    {
+     "t": "Needs ventilation / cardiorespiratory support",
+     "s": "paedstg2026:19.49"
+    },
+    {
+     "t": "Shunt / open neural tube defect (staphylococcal)",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Parenteral nutrition needed",
+     "s": "paedstg2026:19.34"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternal / birth record",
+   "items": [
+    {
+     "t": "Maternal GBS / fever / ROM > 18 h",
+     "d": 1
+    },
+    {
+     "t": "Maternal HIV (consider HIV in baby)",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Maternal syphilis",
+     "d": 1
+    },
+    {
+     "t": "Gestation, birth weight",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "t": "Apgar / asphyxia",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Postnatal age (dose table)",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "t": "Feeding method",
+     "d": 1
+    },
+    {
+     "t": "Antibiotics already given (dose, time)",
+     "s": "phcstg2026:15.51"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Feeding"
+    },
+    {
+     "t": "Poor suck / not feeding",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Vomiting",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Fits (subtle: eye deviation, cycling, lip smacking)",
+     "s": "paedstg2026:19.48",
+     "b": 1
+    },
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Lethargy / floppy",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Jaundice",
+     "d": 1
+    },
+    {
+     "t": "Cold or hot",
+     "s": "paedstg2026:19.33"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside norms for gestation and age",
+   "items": [
+    {
+     "t": "Hypothermia / fever",
+     "s": "paedstg2026:19.33",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / apnoea",
+     "s": "paedstg2026:19.33",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / bradycardia",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (vasomotor)",
+     "s": "paedstg2026:19.33",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ low",
+     "s": "paedstg2026:19.49",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Glucose < 2.6 mmol/L",
+     "s": "paedstg2026:19.53",
+     "b": 1,
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Bulging fontanelle",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Altered consciousness",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Hypotonia",
+     "d": 1
+    },
+    {
+     "t": "Subtle seizures",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Head circumference ____ cm",
+     "k": "value"
+    },
+    {
+     "h": "Body"
+    },
+    {
+     "t": "Open defect / VP shunt",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Mottling, poor perfusion",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Jaundice",
+     "d": 1
+    },
+    {
+     "t": "Abdominal distension",
+     "d": 1
+    },
+    {
+     "t": "Skin pustules / umbilical sepsis",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT — on arrival",
+   "items": [
+    {
+     "t": "HGT ____ mmol/L",
+     "k": "value"
+    },
+    {
+     "t": "< 2.6 mmol/L → Hypoglycemia Neonate pathway",
+     "s": "paedstg2026:19.53",
+     "b": 1
+    },
+    {
+     "t": "Repeat HGT 3-hourly while unwell",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Antibiotics + LP",
+   "items": [
+    {
+     "t": "Blood culture, then cefotaxime + ampicillin IV (dose by age, chart box)",
+     "s": "paedstg2026:19.34",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone given pre-referral: no calcium-containing IV fluid for 48 h (≤ 28 days)",
+     "s": "phcstg2026:15.51",
+     "b": 1
+    },
+    {
+     "t": "LP: cells, protein, glucose, Gram, culture (defer if unstable)",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "First dose: ____ at ____ (time)",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Shock / poor perfusion",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:19.53",
+     "b": 1
+    },
+    {
+     "t": "Hypothermia",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "t": "Raised ICP / cerebral oedema",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Hypocalcaemia, hypomagnesaemia",
+     "s": "paedstg2026:19.48"
+    },
+    {
+     "t": "Hyponatraemia (SIADH)",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "HIV exposure",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Severe jaundice",
+     "d": 1
+    },
+    {
+     "t": "Fluid overload",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "t": "Birth injury / haemorrhage",
+     "s": "paedstg2026:19.48"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Not responding · complications · refractory seizures · needs ventilation → REFER",
+   "s": "paedstg2026:19.35",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (neonatal unit) — cefotaxime + ampicillin IV, limit fluids — Continue on the neonatal meningitis chart and the 24-hour neonatal neuro record. Neurodevelopment, hearing and vision follow-up for every baby.",
+   "s": "paedstg2026:19.34",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time → day",
+  "phase_note": "Cefotaxime 21 days + ampicillin 14 days; reassess at 72–96 h; limit fluids throughout",
+  "columns": {
+   "feed": "Feeds & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Neutral thermal environment",
+    "s": "paedstg2026:19.34",
+    "b": 1
+   },
+   {
+    "t": "Neuro status, vitals, glucose, fluid balance",
+    "s": "paedstg2026:19.34",
+    "b": 1
+   },
+   {
+    "t": "Do not exceed daily fluid requirement for age",
+    "s": "paedstg2026:19.34",
+    "b": 1
+   },
+   {
+    "t": "Obs 3-hourly with feeds; hourly if fitting / apnoeic",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour neonatal neuro record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was given before arrival (ceftriaxone? time? calcium fluids?). Warm, airway, glucose.",
+    "feed": [
+     {
+      "t": "Enteral feeds where possible (oro/nasogastric)",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "Not possible: neonatal maintenance IV",
+      "s": "paedstg2026:19.34"
+     },
+     {
+      "t": "Limit total IV + oral to daily requirement",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture",
+      "s": "paedstg2026:19.33",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "LP (CSF Gram, culture)",
+      "s": "paedstg2026:19.33",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E, Ca, Mg",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "Blood gas",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "HIV PCR if exposed",
+      "s": "paedstg2026:19.33",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antibiotics"
+     },
+     {
+      "t": "Cefotaxime 50 mg/kg IV over 30 min (interval: box)",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "PLUS ampicillin IV (dose / interval: box)",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "Ceftriaxone already given: no calcium IV fluid for 48 h",
+      "s": "phcstg2026:15.51"
+     },
+     {
+      "h": "Fits"
+     },
+     {
+      "t": "Phenobarbitone 20 mg/kg IV over 10 min",
+      "s": "paedstg2026:19.49",
+      "b": 1
+     },
+     {
+      "t": "Refractory: further 10 mg/kg up to 40 mg/kg",
+      "s": "paedstg2026:19.49"
+     },
+     {
+      "t": "Still fitting → midazolam (high care) → REFER",
+      "s": "paedstg2026:19.49",
+      "b": 1
+     },
+     {
+      "h": "Airway"
+     },
+     {
+      "t": "Oxygen if needed; apnoea → Neopuff",
+      "s": "paedstg2026:19.49"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Warm; feed or IV started",
+      "s": "paedstg2026:19.34"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics given at ____",
+      "k": "value"
+     },
+     {
+      "t": "Fits controlled?  Y / N",
+      "s": "paedstg2026:19.49"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Fluid balance; no overload",
+      "s": "paedstg2026:19.34"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF / culture results",
+      "s": "paedstg2026:19.33",
+      "b": 1
+     },
+     {
+      "t": "Na",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phenobarbitone maintenance 4 mg/kg/day from 12–24 h after load",
+      "s": "paedstg2026:19.49"
+     },
+     {
+      "t": "Cefotaxime + ampicillin by schedule",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Feeds tolerated?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, Na",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue antibiotics",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "Cranial ultrasound during course (ANDH ultrasound or REFER)",
+      "s": "paedstg2026:19.34"
+     }
+    ]
+   },
+   {
+    "label": "72–96 h",
+    "phase": "Response?",
+    "feed": [
+     {
+      "t": "Weigh",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cultures + sensitivity",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reconsider antibiotics with culture results / no improvement",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "No organism, no response → consider viruses, fungi",
+      "s": "paedstg2026:19.34"
+     },
+     {
+      "t": "Not responding → REFER",
+      "s": "paedstg2026:19.35",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5–14",
+    "phase": "Course",
+    "feed": [
+     {
+      "t": "Full enteral feeds",
+      "s": "paedstg2026:19.34"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weekly FBC",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cefotaxime + ampicillin IV",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "Ampicillin stops at day 14",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 15–21",
+    "phase": "Complete",
+    "feed": [
+     {
+      "t": "Breastfeeding / KMC",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Cefotaxime to complete 21 days",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     },
+     {
+      "t": "Hearing screen booked",
+      "s": "paedstg2026:19.35"
+     }
+    ]
+   },
+   {
+    "label": "If fitting",
+    "feed": [
+     {
+      "t": "Airway, oxygen, neutral thermal environment",
+      "s": "paedstg2026:19.49"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, Ca, Mg, Na",
+      "s": "paedstg2026:19.48",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phenobarbitone load 20 mg/kg IV; +10 mg/kg to 40 mg/kg; maintenance 4 mg/kg/day",
+      "s": "paedstg2026:19.49",
+      "b": 1
+     },
+     {
+      "t": "Refractory → high care / REFER",
+      "s": "paedstg2026:19.49",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If raised ICP",
+    "feed": [
+     {
+      "t": "Limit total intake; avoid overload",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Head circumference daily",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Do not exceed maintenance requirement for age",
+      "s": "paedstg2026:19.35"
+     },
+     {
+      "t": "Bulging fontanelle / enlarging head → REFER (hydrocephalus)",
+      "s": "paedstg2026:19.35",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Cefotaxime 50 mg/kg IV × 21 days",
+   "items": [
+    {
+     "h": "GA < 32 weeks"
+    },
+    {
+     "t": "< 14 days: every 12 h · 14–28 days: every 8 h",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "h": "GA ≥ 32 weeks"
+    },
+    {
+     "t": "≤ 7 days: every 12 h · 8–28 days: every 8 h",
+     "s": "paedstg2026:19.34"
+    }
+   ]
+  },
+  {
+   "title": "Ampicillin IV × 14 days",
+   "items": [
+    {
+     "h": "GA ≤ 34 weeks"
+    },
+    {
+     "t": "≤ 7 days: 50 mg/kg every 12 h",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "t": "8–28 days: 75 mg/kg every 12 h",
+     "s": "paedstg2026:19.34"
+    },
+    {
+     "h": "GA > 34 weeks"
+    },
+    {
+     "t": "≤ 28 days: 50 mg/kg every 8 h",
+     "s": "paedstg2026:19.34"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Fit (incl. subtle) / apnoea",
+     "s": "paedstg2026:19.48",
+     "b": 1
+    },
+    {
+     "t": "Bulging fontanelle",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Glucose < 2.6 mmol/L",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Cold / poor perfusion",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "Not responding / complications",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Refractory seizures, ventilation",
+     "s": "paedstg2026:19.49"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Antibiotic course complete",
+    "s": "paedstg2026:19.34"
+   },
+   {
+    "t": "Feeding well, gaining weight",
+    "d": 1
+   },
+   {
+    "t": "No fits off IV anticonvulsant",
+    "d": 1
+   },
+   {
+    "t": "Stable temperature",
+    "d": 1
+   },
+   {
+    "t": "Follow-up booked: neurodevelopment, hearing, vision",
+    "s": "paedstg2026:19.35"
+   },
+   {
+    "t": "Mother taught danger signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Neurodevelopment, hearing, vision — essential",
+    "s": "paedstg2026:19.35"
+   },
+   {
+    "t": "Head circumference at every visit",
+    "d": 1
+   },
+   {
+    "t": "HIV PCR result if exposed",
+    "s": "paedstg2026:19.33"
+   },
+   {
+    "t": "Return now: fits, not feeding, fever / cold, apnoea",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neonatal neuro record — fits, fontanelle, feeds, temp",
+  "period": "24 hours: 3-hourly with feeds (extra rows if fitting)",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "Fits incl. subtle (eyes, cycling, apnoea)",
+      "s": "paedstg2026:19.48",
+      "b": 1
+     },
+     {
+      "t": "Fontanelle, tone, alertness",
+      "s": "paedstg2026:19.33"
+     }
+    ]
+   },
+   {
+    "h": "Vitals + glucose",
+    "items": [
+     {
+      "t": "Temp, HR, RR, SpO₂, apnoea",
+      "s": "paedstg2026:19.34"
+     },
+     {
+      "t": "HGT 3-hourly while unwell",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Feeds + IV in; urine out",
+      "s": "paedstg2026:19.34"
+     },
+     {
+      "t": "Running total ≤ daily limit",
+      "s": "paedstg2026:19.34",
+      "b": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "any fit or apnoea",
+    "s": "paedstg2026:19.48",
+    "b": 1
+   },
+   {
+    "t": "bulging fontanelle",
+    "s": "paedstg2026:19.33"
+   },
+   {
+    "t": "glucose < 2.6 mmol/L",
+    "s": "paedstg2026:19.53",
+    "b": 1
+   },
+   {
+    "t": "cold or poor perfusion",
+    "s": "paedstg2026:19.33"
+   },
+   {
+    "t": "not feeding / vomiting",
+    "s": "paedstg2026:19.33"
+   },
+   {
+    "t": "fluid limit reached",
+    "s": "paedstg2026:19.34"
+   }
+  ],
+  "totals": [
+   "Feeds (mL)",
+   "IV (mL)",
+   "Total (mL) vs limit",
+   "Urine (n)",
+   "Fits (n)",
+   "Apnoeas (n)"
+  ]
+ }
+}

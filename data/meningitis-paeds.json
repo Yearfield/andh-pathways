@@ -1,0 +1,1298 @@
+{
+ "id": "meningitis-paeds",
+ "short": "Meningitis_Paeds",
+ "title": "Meningitis / meningo-encephalitis (children > 28 days – 12 y): bacterial, TB, cryptococcal, HSV",
+ "population": "Children > 28 days to 12 years",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-02",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "≤ 28 days → Meningitis Neonate",
+     "b": 1
+    },
+    {
+     "t": "> 12 y → Meningitis Adult (adult doses)"
+    },
+    {
+     "t": "Simple febrile seizure, fully recovered → febrile seizure care",
+     "d": 1
+    },
+    {
+     "t": "Head injury → TBI pathway"
+    },
+    {
+     "t": "29–60 days: Paed STG 8.11 is written for > 60 days — discuss with paediatrician",
+     "s": "paedstg2026:8.19"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — suspect if",
+   "items": [
+    {
+     "t": "Fever",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Headache, vomiting, photophobia",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Convulsions",
+     "s": "paedstg2026:8.20",
+     "b": 1
+    },
+    {
+     "t": "Irritability, lethargy, feeding problems",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Bulging fontanelle (raised ICP)",
+     "s": "paedstg2026:8.20",
+     "b": 1
+    },
+    {
+     "t": "Fever + vomiting + convulsions or reduced consciousness = assume meningitis",
+     "s": "phcstg2026:15.50",
+     "b": 1
+    },
+    {
+     "t": "Neck stiffness often absent in young children",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Onset ____ days · weight ____ kg · HIV status ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Defer LP = any one of (treat now)",
+   "items": [
+    {
+     "t": "Focal signs + depressed consciousness",
+     "s": "paedstg2026:13.46",
+     "b": 1
+    },
+    {
+     "t": "Raised ICP: GCS < 9, posturing, unequal pupils, papilloedema",
+     "s": "paedstg2026:13.46",
+     "b": 1
+    },
+    {
+     "t": "Haemodynamically / respiratory unstable",
+     "s": "paedstg2026:13.46",
+     "b": 1
+    },
+    {
+     "t": "Purpura (meningococcaemia)",
+     "s": "paedstg2026:13.46"
+    },
+    {
+     "t": "Status epilepticus",
+     "s": "paedstg2026:13.47"
+    },
+    {
+     "t": "Coagulopathy; skin sepsis at site",
+     "s": "paedstg2026:13.46"
+    },
+    {
+     "t": "LP deferred: start bacterial AND TB meningitis treatment → REFER",
+     "s": "paedstg2026:8.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet",
+   "items": [
+    {
+     "t": "Hib / PCV immunisation status",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "HIV-exposed / HIV status",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "TB contact",
+     "s": "paedstg2026:10.14",
+     "b": 1
+    },
+    {
+     "t": "Weight-for-age / malnutrition",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Previous meningitis",
+     "d": 1
+    },
+    {
+     "t": "Shunt / neurosurgery",
+     "s": "paedstg2026:8.21"
+    },
+    {
+     "t": "Development milestones",
+     "d": 1
+    },
+    {
+     "t": "Penicillin allergy",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Time course"
+    },
+    {
+     "t": "Acute < 2 days (bacterial)",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Slow > 2 days (TB / crypto / partially treated)",
+     "s": "paedstg2026:8.20",
+     "b": 1
+    },
+    {
+     "h": "Clues"
+    },
+    {
+     "t": "Antibiotics already given",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Weight loss, drowsiness, behaviour change (TB)",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "Headache in older HIV+ child (crypto)",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Abnormal behaviour, focal fits (HSV)",
+     "s": "paedstg2026:8.26"
+    },
+    {
+     "h": "Contacts"
+    },
+    {
+     "t": "Household / crèche contacts",
+     "s": "paedstg2026:8.22"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside norms for age",
+   "items": [
+    {
+     "t": "Fever",
+     "s": "paedstg2026:8.20",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / shock",
+     "s": "paedstg2026:8.20",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / low SpO₂",
+     "d": 1,
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension",
+     "s": "paedstg2026:8.21",
+     "k": "yn"
+    },
+    {
+     "t": "Reduced consciousness",
+     "s": "phcstg2026:15.50",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "GCS < 9 (do not LP)",
+     "s": "paedstg2026:13.46",
+     "b": 1,
+     "k": "yn"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "cols": 4,
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Bulging fontanelle",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Neck stiffness / Kernig",
+     "s": "phcstg2026:15.50"
+    },
+    {
+     "t": "Focal signs, hemiparesis",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "Cranial nerve palsy",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "Unequal / poorly reactive pupils",
+     "s": "paedstg2026:13.46"
+    },
+    {
+     "t": "Posturing",
+     "s": "paedstg2026:13.46"
+    },
+    {
+     "t": "Behaviour change",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "h": "Body"
+    },
+    {
+     "t": "Petechiae / purpura",
+     "s": "paedstg2026:8.21"
+    },
+    {
+     "t": "Shock, poor perfusion",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Malnutrition / wasting",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "TB signs (nodes, chest)",
+     "d": 1
+    },
+    {
+     "t": "Arthritis, pneumonia (metastatic)",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Extra findings: ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "LP — CSF (if no §2 criteria)",
+   "items": [
+    {
+     "t": "Opening pressure ____ cm H₂O · appearance ____",
+     "k": "value"
+    },
+    {
+     "t": "Biochemistry, microscopy, culture",
+     "s": "paedstg2026:8.20",
+     "b": 1
+    },
+    {
+     "t": "HIV-positive: CSF CrAg / India ink",
+     "s": "paedstg2026:8.23",
+     "b": 1
+    },
+    {
+     "t": "TB suspected: CSF GeneXpert + culture",
+     "s": "paedstg2026:10.14",
+     "b": 1
+    },
+    {
+     "t": "Labstick: glucose + white cells",
+     "s": "paedstg2026:13.47"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Antibiotic now — do not wait for LP",
+   "items": [
+    {
+     "t": "Blood culture, then ceftriaxone 100 mg/kg IV",
+     "s": "paedstg2026:13.47",
+     "b": 1
+    },
+    {
+     "t": "Ceftriaxone 100 mg/kg IV once daily",
+     "s": "paedstg2026:8.21",
+     "b": 1
+    },
+    {
+     "t": "Listeria outbreak: add ampicillin 75 mg/kg IV",
+     "s": "phcstg2026:15.52"
+    },
+    {
+     "t": "HSV suspected: add aciclovir 20 mg/kg IV 8-hourly",
+     "s": "paedstg2026:8.27",
+     "b": 1
+    },
+    {
+     "t": "No calcium-containing IV fluid with ceftriaxone unless line flushed",
+     "s": "phcstg2026:15.51"
+    },
+    {
+     "t": "First dose: ____ mg at ____ (time)",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Shock",
+     "s": "paedstg2026:8.20",
+     "b": 1
+    },
+    {
+     "t": "Raised ICP (§2)",
+     "s": "paedstg2026:13.46",
+     "b": 1
+    },
+    {
+     "t": "Status epilepticus",
+     "s": "paedstg2026:13.47",
+     "b": 1
+    },
+    {
+     "t": "Purpura fulminans",
+     "s": "paedstg2026:13.46",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "t": "Hyponatraemia (SIADH / salt wasting)",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "Hydrocephalus (TBM)",
+     "s": "paedstg2026:10.15"
+    },
+    {
+     "t": "Shunt infection",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Severe malnutrition",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Advanced HIV",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Cerebral malaria (travel)",
+     "d": 1
+    },
+    {
+     "t": "Subdural effusion",
+     "s": "paedstg2026:8.20"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. LP deferred · complications · shunt · not responding at 72–96 h → treat, then REFER",
+   "s": "paedstg2026:8.23",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (paediatric ward) — ceftriaxone now; tick working diagnosis on page 2 — Continue on the meningitis inpatient chart and the 24-hour neuro observation record. Notify N. meningitidis and H. influenzae.",
+   "s": "paedstg2026:8.21",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Bacterial meningitis",
+   "branch": "If bacterial",
+   "features": [
+    {
+     "t": "Acute onset",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Fever, fits, bulging fontanelle",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Purpura: meningococcal",
+     "s": "paedstg2026:8.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF: low glucose, high protein, neutrophils, Gram",
+     "s": "paedstg2026:8.20",
+     "b": 1
+    },
+    {
+     "t": "Blood culture",
+     "s": "paedstg2026:8.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 100 mg/kg IV daily (duration by organism)",
+     "s": "paedstg2026:8.21",
+     "b": 1
+    },
+    {
+     "t": "Chart branch \"If bacterial\""
+    }
+   ],
+   "refer": [
+    {
+     "t": "If complications or shunt",
+     "s": "paedstg2026:8.23",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "HSV encephalitis",
+   "branch": "If HSV",
+   "features": [
+    {
+     "t": "Fever, abnormal behaviour, focal fits",
+     "s": "paedstg2026:8.26"
+    },
+    {
+     "t": "Skin lesions usually absent",
+     "s": "paedstg2026:8.26"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF: mild lymphocytes, red cells",
+     "s": "paedstg2026:8.26"
+    },
+    {
+     "t": "CSF + blood HSV PCR",
+     "s": "paedstg2026:8.26",
+     "b": 1
+    },
+    {
+     "t": "REFER for CT if focal",
+     "s": "paedstg2026:8.26"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aciclovir 20 mg/kg IV 8-hourly × 14 days (> 12 y 10 mg/kg)",
+     "s": "paedstg2026:8.27",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If deteriorating or loss of consciousness",
+     "s": "paedstg2026:8.27",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "TB meningitis",
+   "branch": "If TBM",
+   "features": [
+    {
+     "t": "TB contact",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "Gradual: drowsy, vomiting, weight loss",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "Cranial nerve palsy, hemiparesis",
+     "s": "paedstg2026:10.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF: lymphocytes, raised protein, low glucose",
+     "s": "paedstg2026:10.14"
+    },
+    {
+     "t": "CSF GeneXpert + culture",
+     "s": "paedstg2026:10.14",
+     "b": 1
+    },
+    {
+     "t": "TST, CXR",
+     "s": "paedstg2026:10.14"
+    }
+   ],
+   "manage": [
+    {
+     "t": "RHZ + ethionamide × 6 months; prednisone 2 mg/kg",
+     "s": "paedstg2026:10.15",
+     "b": 1
+    },
+    {
+     "t": "If unsure, treat for both TBM and bacterial",
+     "s": "paedstg2026:10.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not responding, non-communicating hydrocephalus, DR-TB contact",
+     "s": "paedstg2026:10.17",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Cryptococcal meningitis",
+   "branch": "If cryptococcal",
+   "features": [
+    {
+     "t": "Older HIV+ child, low CD4",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Headache; meningism may be absent",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Cranial nerve palsy; IRIS after ART",
+     "s": "paedstg2026:8.23"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF CrAg / India ink",
+     "s": "paedstg2026:8.23",
+     "b": 1
+    },
+    {
+     "t": "Opening pressure",
+     "s": "paedstg2026:8.23"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amphotericin B + flucytosine, then fluconazole (branch)",
+     "s": "paedstg2026:8.24",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not responding, IRIS, or amphotericin not stocked",
+     "s": "paedstg2026:8.25",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Partially treated bacterial",
+   "features": [
+    {
+     "t": "Antibiotics before LP",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "Atypical CSF",
+     "s": "paedstg2026:8.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CSF culture often negative",
+     "d": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat as bacterial; consider TB",
+     "s": "paedstg2026:8.20"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not improving at 72–96 h",
+     "s": "paedstg2026:8.21"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time → day",
+  "phase_note": "Antibiotic within the first hour; LP when safe; reassess at 72–96 h → branch",
+  "columns": {
+   "feed": "Feeds & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Neuro status, HR, RR, BP, temp, glucose, fluid balance",
+    "s": "paedstg2026:8.21",
+    "b": 1
+   },
+   {
+    "t": "Neuro obs hourly × 6 h, then 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Enteral feeds where possible (NG if needed)",
+    "s": "paedstg2026:8.21"
+   },
+   {
+    "t": "Avoid fluid overload",
+    "s": "paedstg2026:8.22"
+   },
+   {
+    "t": "Record on the 24-hour neuro record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "on arrival",
+    "lead": "Check what was given before arrival (ceftriaxone dose / time on the referral letter).",
+    "feed": [
+     {
+      "t": "Shock: treat first (fluid bolus per STG)",
+      "s": "phcstg2026:15.50",
+      "b": 1
+     },
+     {
+      "t": "Low GCS: airway, oxygen",
+      "s": "phcstg2026:15.50"
+     },
+     {
+      "t": "NG feeds; if not possible, maintenance IV with dextrose",
+      "s": "paedstg2026:8.21"
+     },
+     {
+      "t": "Convulsing: status epilepticus (Paed STG 13.2)",
+      "s": "paedstg2026:8.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture",
+      "s": "paedstg2026:13.47",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "phcstg2026:21.22",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E (Na)",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "Blood gas",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "paedstg2026:8.23",
+      "b": 1
+     },
+     {
+      "t": "Skin scrape + Gram if purpura",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "LP if no §2 criteria",
+      "s": "paedstg2026:13.46",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Empiric"
+     },
+     {
+      "t": "Ceftriaxone 100 mg/kg IV once daily",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "+ Aciclovir 20 mg/kg IV 8-hourly if HSV suspected",
+      "s": "paedstg2026:8.27"
+     },
+     {
+      "t": "+ Ampicillin 75 mg/kg IV in a Listeria outbreak",
+      "s": "phcstg2026:15.52"
+     },
+     {
+      "t": "LP deferred: add TB meningitis treatment",
+      "s": "paedstg2026:8.23",
+      "b": 1
+     },
+     {
+      "h": "Raised ICP"
+     },
+     {
+      "t": "Head up ~30°; avoid fluid overload",
+      "s": "paedstg2026:8.22"
+     },
+     {
+      "t": "Mannitol 250 mg/kg IV over 30–60 min",
+      "s": "paedstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "Dexamethasone 0.5 mg/kg IV 12-hourly",
+      "s": "paedstg2026:8.22"
+     },
+     {
+      "t": "Needs ventilation → REFER",
+      "s": "paedstg2026:8.22",
+      "b": 1
+     },
+     {
+      "h": "Comfort"
+     },
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly as needed",
+      "s": "paedstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Feeds tolerated?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "§2 criteria → REFER for CT (antibiotic given)",
+      "s": "paedstg2026:8.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone given at ____",
+      "k": "value"
+     },
+     {
+      "t": "Notify (meningococcus, Hib)",
+      "s": "paedstg2026:8.19"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "LP / results",
+    "feed": [
+     {
+      "t": "Fluid balance",
+      "s": "paedstg2026:8.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF results; CrAg if HIV+",
+      "s": "paedstg2026:8.23",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Tick working diagnosis (admission page 2)",
+      "d": 1
+     },
+     {
+      "t": "Contacts: prophylaxis (box)",
+      "s": "paedstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "NG / oral feeds",
+      "s": "paedstg2026:8.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na, glucose",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "Cultures",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 100 mg/kg daily",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "Seizure: Paed STG 13.2",
+      "s": "paedstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "72–96 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture + sensitivity reviewed",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not improving → reassess antibiotics; consider TB / crypto",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "Complications → REFER",
+      "s": "paedstg2026:8.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If bacterial",
+    "feed": [
+     {
+      "t": "Enteral feeds",
+      "s": "paedstg2026:8.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture + sensitivity",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 100 mg/kg IV daily: N. meningitidis 5 d · S. pneumoniae 10 d · H. influenzae 10 d · Gram-negative 21 d",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     },
+     {
+      "t": "Culture-negative, stable, uncomplicated: 5 days",
+      "s": "paedstg2026:8.21"
+     },
+     {
+      "t": "Shunt: + vancomycin 15 mg/kg 6-hourly + rifampicin 10 mg/kg 12-hourly → REFER all",
+      "s": "paedstg2026:8.21",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If HSV",
+    "feed": [
+     {
+      "t": "NG feeds",
+      "s": "paedstg2026:8.26"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF PCR (may be negative first 3 days)",
+      "s": "paedstg2026:8.27",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aciclovir IV 8-hourly over 1 h: 0–12 y 20 mg/kg/dose; > 12 y 10 mg/kg/dose · HSV 14 days, varicella 7 days",
+      "s": "paedstg2026:8.27",
+      "b": 1
+     },
+     {
+      "t": "Mannitol: do not repeat without paediatrician",
+      "s": "paedstg2026:8.27"
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If cryptococcal",
+    "feed": [
+     {
+      "t": "Prehydrate: NaCl 0.9% 15 mL/kg + KCl 20 mmol/L over 2–4 h",
+      "s": "paedstg2026:8.24",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K, Mg 3 × / week",
+      "s": "paedstg2026:8.24",
+      "b": 1
+     },
+     {
+      "t": "Daily LP if pressure > 25 cm H₂O",
+      "s": "paedstg2026:8.25",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Week 1: amphotericin B 1 mg/kg/day IV over 4 h + flucytosine 100 mg/kg/day in 4 doses",
+      "s": "paedstg2026:8.24",
+      "b": 1
+     },
+     {
+      "t": "Week 2: fluconazole 12 mg/kg/day (max 800 mg); then 12 mg/kg/day × 8 weeks",
+      "s": "paedstg2026:8.25"
+     },
+     {
+      "t": "Then fluconazole 6 mg/kg/day (max 400 mg)",
+      "s": "paedstg2026:8.25"
+     },
+     {
+      "t": "Amphotericin not stocked → REFER",
+      "b": 1,
+      "d": 1
+     }
+    ],
+    "phase": "Branch"
+   },
+   {
+    "label": "If TBM",
+    "feed": [
+     {
+      "t": "NG feeds; nutrition support",
+      "s": "paedstg2026:10.15"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na (SIADH vs salt wasting)",
+      "s": "paedstg2026:10.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "6 months daily: rifampicin 20 mg/kg (max 600) + isoniazid 20 mg/kg (max 400) + pyrazinamide 40 mg/kg (max 2 g) + ethionamide 20 mg/kg (max 1 g)",
+      "s": "paedstg2026:10.15",
+      "b": 1
+     },
+     {
+      "t": "Prednisone 2 mg/kg daily (max 60 mg) × 4 weeks, taper over 2 weeks",
+      "s": "paedstg2026:10.17"
+     },
+     {
+      "t": "Sudden drop in GCS: mannitol 250 mg/kg → REFER (shunt)",
+      "s": "paedstg2026:10.17",
+      "b": 1
+     }
+    ],
+    "phase": "Branch"
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Contact prophylaxis",
+   "items": [
+    {
+     "h": "N. meningitidis (single dose)"
+    },
+    {
+     "t": "Ciprofloxacin < 12 y 10 mg/kg (or 250 mg tab); > 12 y 500 mg",
+     "s": "paedstg2026:8.22"
+    },
+    {
+     "t": "Or ceftriaxone IM < 12 y 125 mg; > 12 y 250 mg",
+     "s": "paedstg2026:8.22"
+    },
+    {
+     "t": "Pregnant contact: ceftriaxone 250 mg IM",
+     "s": "paedstg2026:8.22"
+    },
+    {
+     "h": "H. influenzae (contacts < 5 y)"
+    },
+    {
+     "t": "Rifampicin 20 mg/kg daily × 4 days (max 600 mg)",
+     "s": "paedstg2026:8.22"
+    }
+   ]
+  },
+  {
+   "title": "Ceftriaxone cautions",
+   "items": [
+    {
+     "h": "Calcium"
+    },
+    {
+     "t": "> 28 days: calcium IV fluids only if line flushed before and after",
+     "s": "phcstg2026:15.51"
+    },
+    {
+     "h": "Referral letter"
+    },
+    {
+     "t": "Always write dose and route given",
+     "s": "phcstg2026:15.51"
+    },
+    {
+     "h": "Immunisation"
+    },
+    {
+     "t": "Check and update index case and contacts",
+     "s": "paedstg2026:8.23"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "h": "Call the doctor"
+    },
+    {
+     "t": "Drop in consciousness / new fits",
+     "s": "paedstg2026:8.21",
+     "b": 1
+    },
+    {
+     "t": "Unequal pupils, posturing",
+     "s": "paedstg2026:13.46"
+    },
+    {
+     "t": "Shock, poor perfusion",
+     "s": "paedstg2026:8.20"
+    },
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22"
+    },
+    {
+     "h": "REFER"
+    },
+    {
+     "t": "LP deferred (raised ICP / focal)",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Complications; shunt",
+     "s": "paedstg2026:8.23"
+    },
+    {
+     "t": "Ventilation needed",
+     "s": "paedstg2026:8.22"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Antibiotic course complete",
+    "s": "paedstg2026:8.21"
+   },
+   {
+    "t": "Afebrile, alert, feeding",
+    "d": 1
+   },
+   {
+    "t": "Hearing test booked",
+    "s": "paedstg2026:8.20"
+   },
+   {
+    "t": "TB / fluconazole supply + clinic linked",
+    "d": 1
+   },
+   {
+    "t": "Contacts treated; immunisation updated",
+    "s": "paedstg2026:8.23"
+   },
+   {
+    "t": "Caregiver taught danger signs",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Neurodevelopment, hearing, vision (deafness, blindness, motor deficits)",
+    "s": "paedstg2026:8.20"
+   },
+   {
+    "t": "TBM: physiotherapy / OT",
+    "s": "paedstg2026:10.15"
+   },
+   {
+    "t": "Clinic in 2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Return now: fits, drowsy, not feeding, fever",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neuro observation record — child",
+  "period": "24 hours: hourly × 6, then 2-hourly",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "AVPU / GCS, pupils, fontanelle",
+      "s": "paedstg2026:8.21"
+     },
+     {
+      "t": "Hourly × 6 h, then 2–4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Fits: time, duration, type",
+      "s": "paedstg2026:8.21"
+     }
+    ]
+   },
+   {
+    "h": "Vitals + glucose",
+    "items": [
+     {
+      "t": "HR, RR, BP, temp",
+      "s": "paedstg2026:8.21"
+     },
+     {
+      "t": "HGT 6-hourly or if fitting / not feeding",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Feeds / IV in, urine out",
+      "s": "paedstg2026:8.21"
+     },
+     {
+      "t": "Avoid fluid overload",
+      "s": "paedstg2026:8.22"
+     },
+     {
+      "t": "Weight daily",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "drop in consciousness or new fits",
+    "s": "paedstg2026:8.21",
+    "b": 1
+   },
+   {
+    "t": "unequal pupils or bulging fontanelle",
+    "s": "paedstg2026:8.20",
+    "b": 1
+   },
+   {
+    "t": "shock or poor perfusion",
+    "s": "paedstg2026:8.20"
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "s": "phcstg2026:21.22"
+   },
+   {
+    "t": "not feeding / vomiting",
+    "d": 1
+   },
+   {
+    "t": "antibiotic dose missed",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Feeds / IV in (mL)",
+   "Urine out",
+   "Fits (n)",
+   "Lowest GCS",
+   "Highest temp",
+   "Antibiotic doses (n)"
+  ]
+ }
+}
