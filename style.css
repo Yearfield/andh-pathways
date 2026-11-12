@@ -916,3 +916,81 @@ section.card.blue li.handoff .ho .arr { color: var(--blue); }
 .colsl li::before { content: counter(c); display: inline-block; min-width: 16px; margin-right: 5px; font-weight: 700; color: var(--muted); }
 
 .rptab th.stx .ac > span { flex: 1 1 0; min-width: 0; } /* source tag sits beside the item text, not under it */
+
+/* ============================================================================
+   polish + cross-links (appended last: overrides the layers above)
+   Softer frames with a light shadow instead of dark outlines, a frosted sticky
+   header, clearer pressed / hover states, labelled filter rows, and the new
+   parts: search-everything, pinned / recent cards, the Related strip and card,
+   the pin star. Density and text sizes are unchanged.
+   ========================================================================== */
+:root { --frame: #c5d0ce; --shadow: 0 1px 2px rgba(20,40,45,.05), 0 3px 10px rgba(20,40,45,.05); }
+html { scroll-padding-top: 110px; }
+header.top { background: rgba(245,247,246,.9); -webkit-backdrop-filter: saturate(1.5) blur(12px); backdrop-filter: saturate(1.5) blur(12px);
+  border-bottom-color: #dbe3e1; box-shadow: 0 1px 6px rgba(20,40,45,.05); }
+:root.alt-on header.top { background: rgba(238,249,224,.9); }
+.list, section.card, .rcard, .tile, .seg2, .pcard { border-width: 1px; border-color: var(--frame); box-shadow: var(--shadow); }
+section.card.red { border-color: #d9a8a3; } section.card.blue { border-color: var(--blue-line); }
+.search { border-width: 1px; border-color: var(--frame); box-shadow: var(--shadow); transition: border-color .15s, box-shadow .15s; }
+.search:focus-within { border-color: var(--tab); box-shadow: 0 0 0 3px rgba(44,74,82,.14); }
+.seg2 button + button { border-left-width: 1px; border-left-color: var(--frame); }
+.btn { border-width: 1px; border-color: #9fb0ad; }
+.btn.primary, .tile:first-child, .rcard:first-child { border-color: var(--tab); }
+.fchip, .jump button, .ptabs button { border-width: 1px; transition: background .12s, color .12s, border-color .12s; }
+.fchip[aria-pressed="true"], .ptabs button.on, .seg2 button[aria-pressed="true"] { background: var(--tab); border-color: var(--tab); }
+.dx, .tile, .rcard, .pcard, .xchip, .iconbtn, .btn, .shead { transition: background .12s, transform .12s; }
+.tile:active, .rcard:active, .pcard:active, .xchip:active { transform: scale(.98); }
+@media (hover: hover) {
+  .dx:hover, .shead:hover { background: #f3f6f5; } .iconbtn:hover { background: #e9eeed; }
+  .fchip:hover:not([aria-pressed="true"]), .xchip:hover, .jump button:hover, .ptabs button:hover:not(.on), .btn:hover:not(.primary) { border-color: var(--tab); }
+  .pcard:hover, .tile:hover { box-shadow: 0 2px 4px rgba(20,40,45,.08), 0 6px 16px rgba(20,40,45,.08); }
+}
+nav.tabs { box-shadow: 0 -2px 10px rgba(20,40,45,.14); }
+nav.tabs button { transition: color .12s; }
+nav.tabs button.on { background: rgba(255,255,255,.07); }
+.glabel svg.i { width: 13px; height: 13px; stroke-width: 2.4; }
+.stack { display: flex; flex-direction: column; gap: 12px; }
+.chl { flex: 0 0 auto; align-self: center; min-width: 44px; font-size: 9.5px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: var(--muted); }
+
+/* start page */
+main.land { gap: 12px; padding-top: 10px; }
+.land .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.land .tile { min-height: 96px; padding: 10px 12px; gap: 4px; }
+.land .tile b { font-size: 14.5px; line-height: 1.15; }
+.land .tile span { font-size: 10.5px; line-height: 1.3; }
+.land .tile svg.i { width: 22px; height: 22px; }
+.pgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+@media (max-width: 340px) { .pgrid, .land .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.pcard { min-height: 46px; min-width: 0; text-align: left; border-style: solid; background: var(--panel); border-radius: 10px; padding: 6px 9px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 3px; }
+.pcard b { font-family: var(--font-head); font-size: 12.5px; line-height: 1.15; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pcard span { display: flex; align-items: center; gap: 5px; font-size: 9.5px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.pcard .dot, .xchip .dot { flex: 0 0 auto; width: 7px; height: 7px; }
+.pinhint { padding: 8px 10px; border: 1px dashed var(--soft); border-radius: 10px; margin: 0; }
+
+/* catalogue rows: search results and Related */
+.dx.xr > .dot { flex: 0 0 auto; }
+.dx.xr .t { width: 104px; }
+.xwhy { padding: 5px 10px 3px; font-size: 9.5px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: var(--muted); background: #f3f6f5; border-top: 1px solid var(--hair); }
+.xwhy:first-child { border-top: 0; }
+.xwhy + .dx { border-top: 0; }
+.xcard { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.xcard .glabel { margin: 0; }
+.xmore { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+
+/* Related strip under the header: one scrolling row of links, plus "back to …" after following one */
+.xnav { display: flex; align-items: center; gap: 5px; overflow-x: auto; margin: 0 -8px; padding: 1px 8px 2px; scrollbar-width: none; }
+.xnav::-webkit-scrollbar { display: none; }
+.xnav .chl { min-width: 0; margin: 0 2px; }
+.xchip { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 5px; height: 26px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--blue-line);
+  background: var(--blue-bg); color: var(--blue-ink); font-size: 11px; font-weight: 700; white-space: nowrap; }
+.xchip small { font-size: 9px; font-weight: 500; opacity: .8; text-transform: uppercase; letter-spacing: .4px; }
+.xchip.xback { background: var(--tab); border-color: var(--tab); color: #fff; padding-left: 5px; gap: 2px; }
+.xchip.xback svg.i { width: 15px; height: 15px; }
+
+/* pin star in a card's header */
+.pin svg.i { width: 20px; height: 20px; color: var(--muted); }
+.pin[aria-pressed="true"] svg.i { fill: var(--amber); stroke: #a8731f; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.xchip.xall { background: var(--panel); border-color: var(--soft); color: var(--ink-2); }
+.xcard { scroll-margin-top: 120px; }

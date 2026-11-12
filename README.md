@@ -43,6 +43,18 @@ onto your phone from inside the app and never leave it.
   automatically so it has to be checked again.
 - **†** = clinical or local addition, not in the SA guideline.
 
+## Finding things and cross-links
+
+- **Start page**: one search box over every pathway, procedure, scale and fluid card (Enter opens the top result), then
+  **Pinned** (tap the star at the top of any card), **Recent**, and the four sections.
+- **Related**: every card shows a strip of related cards under its header and a full, grouped list at the foot of the page.
+  Following one adds a "back to …" chip, and the header back arrow returns to the card you came from.
+  The app works out on its own: the same condition in another population (`dka-adult` ↔ `dka-paeds`), appendix pathways,
+  hubs, procedure groups and the pathways named in hand-off lines. Everything else comes from the topic lists in
+  `data/related.json` (each topic is a list of ids; every card in a topic links to the others; adult cards never list
+  child-only cards and the reverse). Edit that file to add or remove links; `node tests/links.test.mjs` checks every id exists.
+- Lists reopen where you left them (scroll position, filters and typed search).
+
 ## Updating content
 
 Each diagnosis is one file in `data/` (e.g. `data/sam.json`), listed in `data/index.json`.

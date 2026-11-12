@@ -2,11 +2,13 @@
 import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
 import { createScoreCards } from "./scores.js"; // interface for the block-schema score cards (Alvarado … COPD-GOLD)
 import { createVitalCards } from "./vitals.js"; // urine dipstick strip, adult NEWS2, paediatric vitals by age
+import { catalog, keyOf, relatedFor, search } from "./links.js"; // one catalogue of every card: cross-links ("Related"), search-everything, pins
 import { altmed } from "./altmed.js"; // Alternative Medicine: pathogen reference + feature filter (own data in data/altmed/, loaded on demand)
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const app = $("#app");
+const LS_PIN = "andh.pins", LS_REC2 = "andh.recent2";
 const LS_VER = "andh.verified", LS_OFF = "andh.offsets", LS_MODE = "andh.verifyMode", LS_CHK = "andh.checked", LS_REC = "andh.recent";
 const ls = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
 
@@ -15,6 +17,7 @@ const S = {
   verify: localStorage.getItem(LS_MODE) === "1", checked: ls(LS_CHK, {}), recent: ls(LS_REC, []),
   open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", dxo: {}, hub: {}, ps: {}, // ps: live answers on a pathway's Score tab (never stored); dxo: open differential cards per pathway; hub: chosen member (0 = first) per hub id
   sd: {}, sc: null, spop: "All", stag: "All", // scales and calculations: loaded cards, live scorer state, list filters
+  cx: null, pins: ls(LS_PIN, []), recent2: ls(LS_REC2, []), trail: [], scroll: {}, qs: {}, from: "#/", lastHash: null, // catalogue (links.js), pinned + recently opened cards, cross-link back trail, list scroll positions, typed searches
 };
 
 /* ---------- icons (inline stroke SVG) ---------- */
@@ -37,6 +40,7 @@ const P = {
   ref: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M19 19v2H6"/>',
   scales: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
   leaf: '<path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14zM5 19l7-7"/>',
+  star: '<path d="m12 3.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/>',
 };
 const ico = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${P[n]}</svg>`;
 const MORE = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>';
@@ -76,6 +80,8 @@ async function init() {
   }
   (await loadJSON("data/sources.json")).sources.forEach(s => (S.sources[s.id] = s));
   try { S.pm = await loadJSON("data/page-map.json"); } catch (e) { S.pm = null; console.warn("page-map.json not loaded; STG cites use per-chapter offsets only"); }
+  let rel = null; try { rel = await loadJSON("data/related.json"); } catch (e) { console.warn("related.json not loaded; only automatic cross-links are shown"); }
+  S.cx = catalog(S.index, rel);
   window.addEventListener("hashchange", route); route();
 }
 /* A source cite is "id:page". Sources split into one PDF per chapter (s.chapters) cite "id:chapter.page";
@@ -183,18 +189,41 @@ function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
 }
 
 /* ---------- start page + procedures ---------- */
+const POPC = { ob: "pop-obstetric", both: "pop-tox", paeds: "pop-paediatric", adult: "pop-adult" };
+const POPW = { ob: "Obstetric", both: "Adult + paeds", paeds: "Paediatric", adult: "Adult" };
+// one row for any card in the catalogue (search results, Related); attr = data-go (plain link) or data-xl (cross-link: remembers where you came from)
+const catRow = (it, attr = "data-go") => `<button class="dx xr" ${attr}="${esc(it.href)}"><span class="dot ${POPC[it.pop]}" title="${POPW[it.pop]}"></span><span class="t">${esc(it.short)}</span>
+  <span class="p">${it.title.toLowerCase() === it.short.toLowerCase() ? "" : esc(it.title) + " "}<span class="tbadge">${esc(it.label)}</span></span>${ico("next")}</button>`;
 function landing() {
   const nd = listRows().length, np = (S.index.procedures || []).length, ns = (S.index.scores || []).filter(e => !e.hidden).length + (S.index.fluids || []).length;
+  const pcard = (it, hash) => `<button class="pcard" data-go="${esc(hash || it.href)}"><b>${esc(it.short)}</b><span><i class="dot ${POPC[it.pop]}"></i>${esc(it.label)} · ${POPW[it.pop]}</span></button>`;
+  const pins = S.pins.map(k => S.cx.byKey[k]).filter(Boolean);
+  const rec = S.recent2.map(r => ({ it: S.cx.byKey[r.key], hash: r.hash })).filter(r => r.it && !S.pins.includes(r.it.key)).slice(0, 6);
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><img class="logo" src="icons/jad-logo.webp" alt="JAD">
     <div class="ttl"><h1>Pathways</h1><div class="sub">ANDH · works offline</div></div>
-    ${navigator.serviceWorker?.controller ? `<span class="pill-ok">${ico("check")}Saved</span>` : ""}</div></div></header>
-  <main class="fade home"><div class="tiles">
+    ${navigator.serviceWorker?.controller ? `<span class="pill-ok">${ico("check")}Saved</span>` : ""}</div>
+    <label class="search">${ico("search")}<span class="sr">Search everything</span>
+      <input id="gq" type="search" placeholder="Search all — DKA, GCS, RSI, potassium" autocomplete="off" enterkeyhint="go"></label></div></header>
+  <main class="fade home land">
+    <div id="gres" class="stack" hidden><h2 class="glabel">Results<span class="c">· <span id="gcount">0</span></span></h2><div class="list" id="glist"></div>
+      <p class="empty" id="gnone" hidden>Nothing matches. Try a shorter word, or open a section below.</p></div>
+    <div id="ghome" class="stack">
+    <section><h2 class="glabel">${ico("star")}Pinned</h2>${pins.length ? `<div class="pgrid">${pins.map(it => pcard(it)).join("")}</div>`
+      : `<p class="hint pinhint">Nothing pinned yet. Tap the star at the top of any pathway, procedure or scale to keep it here.</p>`}</section>
+    ${rec.length ? `<section><h2 class="glabel">Recent</h2><div class="pgrid">${rec.map(r => pcard(r.it, r.hash)).join("")}</div></section>` : ""}
+    <section><h2 class="glabel">Browse</h2><div class="tiles">
     <button class="tile" data-go="#/diagnoses">${ico("arrival")}<b>Diagnoses Pathways</b><span>Admission, timeline, doses and nursing · ${nd} pathways</span></button>
     <button class="tile" data-go="#/procedures">${ico("doses")}<b>Procedures Pathways</b><span>Step-by-step emergency procedures · ${np} procedure${np === 1 ? "" : "s"}</span></button>
     <button class="tile" data-go="#/scores">${ico("scales")}<b>Scales and Calculations</b><span>Scores, grades and calculators · ${ns} card${ns === 1 ? "" : "s"}</span></button>
-    <button class="tile spring" data-go="#/altmed">${ico("leaf")}<b>Alternative Medicine</b><span>Pathogen reference and feature search · imported, unverified</span></button></div>
-    <p class="hint">Reference only — no patient details are stored.</p></main>`;
+    <button class="tile spring" data-go="#/altmed">${ico("leaf")}<b>Alternative Medicine</b><span>Pathogen reference and feature search · imported, unverified</span></button></div></section>
+    <p class="hint">Reference only — no patient details are stored.</p></div></main>`;
+}
+function globalSearch() { // start page: one box over every pathway, procedure, scale and fluid card
+  const q = ($("#gq")?.value || "").trim(), res = $("#gres"); if (!res) return;
+  res.hidden = !q; $("#ghome").hidden = !!q; if (!q) return;
+  const r = search(S.cx, q);
+  $("#glist").innerHTML = r.map(it => catRow(it)).join(""); $("#glist").hidden = !r.length; $("#gnone").hidden = !!r.length; $("#gcount").textContent = r.length;
 }
 /* Procedures can be grouped (index.json "proc_groups"; a procedure joins one with "group": id). A group is ONE row in the procedures list
    and opens #/procgroup/<id>, which lists its cards. */
@@ -363,9 +392,9 @@ function home() {
       ${navigator.serviceWorker?.controller ? `<span class="pill-ok">${ico("check")}Saved</span>` : ""}</div>
     <label class="search">${ico("search")}<span class="sr">Search pathways</span>
       <input id="q" type="search" placeholder="Search — e.g. PPH, DKA, rat poison" autocomplete="off"></label>
-    <div class="chips">${["All", ...groups].map(g => `<button class="fchip" data-filter="${esc(g)}" aria-pressed="${S.filter === g}">${esc(g)}</button>`).join("")}</div>
-    <div class="chips sys" aria-label="Body system">${SYSTEMS.map(g => `<button class="fchip sysc ${g !== "All" && !rows.some(r => (r.e.tags?.system || []).includes(g)) ? "none" : ""}" data-sysfilter="${g}" aria-pressed="${S.sys === g}">${g}</button>`).join("")}</div>
-    <div class="chips sys" aria-label="Category">${CATS.map(g => `<button class="fchip catc ${g !== "All" && !rows.some(r => (r.e.tags?.cat || []).includes(g)) ? "none" : ""}" data-catfilter="${g}" aria-pressed="${S.cat === g}">${g}</button>`).join("")}</div>
+    <div class="chips" aria-label="Patient"><span class="chl">Patient</span>${["All", ...groups].map(g => `<button class="fchip" data-filter="${esc(g)}" aria-pressed="${S.filter === g}">${esc(g)}</button>`).join("")}</div>
+    <div class="chips sys" aria-label="Body system"><span class="chl">System</span>${SYSTEMS.map(g => `<button class="fchip sysc ${g !== "All" && !rows.some(r => (r.e.tags?.system || []).includes(g)) ? "none" : ""}" data-sysfilter="${g}" aria-pressed="${S.sys === g}">${g}</button>`).join("")}</div>
+    <div class="chips sys" aria-label="Category"><span class="chl">Topic</span>${CATS.map(g => `<button class="fchip catc ${g !== "All" && !rows.some(r => (r.e.tags?.cat || []).includes(g)) ? "none" : ""}" data-catfilter="${g}" aria-pressed="${S.cat === g}">${g}</button>`).join("")}</div>
   </div></header>
   <main class="fade home">${recent}${lists}<p class="empty" id="none" hidden>No pathway matches.</p>
     <p class="hint">Reference only — no patient details are stored. Amber tags open the guideline page they come from. † = clinical or local addition, not in the SA guideline.</p></main>`;
@@ -409,9 +438,7 @@ function arrival(d) {
   const jump = `<nav class="jump" aria-label="Sections">${secs.map(({ s, c, n }) =>
     `<button data-jump="s${s.n}" class="${secTone(s, d)} ${n && c === n ? "done" : ""}"><b>${s.n}</b>${esc(secLabel(s, d))}</button>`).join("")}
     <button data-jump="dec"><b>${decNum}</b>Decide</button></nav>`;
-  const me = entry(d.id) || {}, par = me.appendix_to && entry(me.appendix_to), kids = S.index.diagnoses.filter(k => k.appendix_to === d.id);
-  const rel = par || kids.length ? `<div class="relrow">${par ? `<button class="btn" data-go="#/dx/${par.id}/arrival">Appendix to ${esc(par.short.replace(/_(adult|paeds|child)$/i, "").replace(/_/g, " "))}${ico("next")}</button>` : ""}${kids.map(k => `<button class="btn" data-go="#/dx/${k.id}/arrival">Appendix: ${esc(k.short.replace(/_(adult|paeds|child)$/i, "").replace(/_/g, " "))}${ico("next")}</button>`).join("")}</div>` : "";
-  const body = rel + secs.map(({ s, c, n }) => `<section class="card ${secTone(s, d)} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
+  const body = secs.map(({ s, c, n }) => `<section class="card ${secTone(s, d)} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
       <h2><button class="shead" data-sec="${s.n}" aria-expanded="${open.has(s.n)}"><span class="n">${s.n}</span><span class="st">${esc(s.title)}</span>
         <span class="cnt ${n && c === n ? "all" : ""}">${c}/${n}</span>${ico("down")}</button></h2>
       ${s.note ? `<div class="note">${esc(s.note)}</div>` : ""}${list(d, s.items)}</section>`).join("") +
@@ -799,8 +826,8 @@ function scoresHome() {
   <header class="top"><div class="hometop"><div class="brand"><button class="iconbtn" aria-label="Back to start" data-go="#/">${ico("back")}</button>
     <div class="ttl"><h1>Scales and Calculations</h1><div class="sub">ANDH · ${ss.length + fl.length} cards · works offline</div></div></div>
     <label class="search">${ico("search")}<span class="sr">Search scales</span><input id="sq" type="search" placeholder="Search — e.g. GCS, head injury, MAP" autocomplete="off"></label>
-    <div class="chips">${["All", ...pops].map(g => `<button class="fchip" data-spop="${g === "All" ? "All" : esc(g)}" aria-pressed="${S.spop === g}">${esc(g)}</button>`).join("")}</div>
-    <div class="chips sys" aria-label="Tags">${["All", ...tags].map(g => `<button class="fchip" data-stag="${esc(g)}" aria-pressed="${S.stag === g}">${esc(g)}</button>`).join("")}</div></div></header>
+    <div class="chips" aria-label="Patient"><span class="chl">Patient</span>${["All", ...pops].map(g => `<button class="fchip" data-spop="${g === "All" ? "All" : esc(g)}" aria-pressed="${S.spop === g}">${esc(g)}</button>`).join("")}</div>
+    <div class="chips sys" aria-label="Tags"><span class="chl">Tag</span>${["All", ...tags].map(g => `<button class="fchip" data-stag="${esc(g)}" aria-pressed="${S.stag === g}">${esc(g)}</button>`).join("")}</div></div></header>
   <main class="fade home scores">${lists}<p class="empty" id="none" hidden>No scale matches.</p>
     <p class="hint">† = clinical or local addition, not in the SA guideline. ‡ = STG misprint corrected.</p></main>`;
   applyScoreFilter();
@@ -1261,7 +1288,14 @@ document.addEventListener("click", async e => {
   const t = e.target.closest("button, label, [data-closemenu]"); if (!t) return;
   if (t.dataset.closemenu !== undefined) { $(".menu")?.remove(); t.remove(); return; }
   if (t.closest(".menu")) { $(".menu")?.remove(); $(".scrim")?.remove(); }
-  if (t.dataset.go !== undefined) { location.hash = t.dataset.go || "#/"; return; }
+  if (t.dataset.go !== undefined || t.dataset.xl) { // a jump from one card to another (Related, or a hand-off line) remembers this card, so the next one offers "back to …"
+    const to = t.dataset.xl || t.dataset.go || "#/", k = keyOf(S.cx, (location.hash || "#/").slice(2).split("/")), k2 = keyOf(S.cx, to.slice(2).split("/"));
+    if (k && k2 && k !== k2 && (t.dataset.xl || (!isList(k) && !t.closest("header")))) { S.trail.push({ key: k, hash: location.hash, label: S.cx.byKey[k].short }); S.via = true; }
+    location.hash = to; return; }
+  if (t.dataset.xlback !== undefined) { const b = S.trail.pop(); S.via = true; location.hash = b ? b.hash : "#/"; return; }
+  if (t.dataset.pin) { const k = t.dataset.pin, on = !S.pins.includes(k); S.pins = on ? [...S.pins, k] : S.pins.filter(x => x !== k); localStorage.setItem(LS_PIN, JSON.stringify(S.pins));
+    t.setAttribute("aria-pressed", on); t.setAttribute("aria-label", (on ? "Unpin from" : "Pin to") + " the start page"); return; }
+  if (t.dataset.listfilter) { const [k, v] = t.dataset.listfilter.split("|"); S.filter = "All"; S.sys = k === "sys" ? v : "All"; S.cat = k === "cat" ? v : "All"; S.qs.q = ""; S.scroll["#/diagnoses"] = 0; location.hash = "#/diagnoses"; return; }
   if (t.dataset.rf !== undefined) { const x = t.nextElementSibling, o = x.hidden; x.hidden = !o; t.setAttribute("aria-expanded", o); t.setAttribute("aria-label", o ? "Hide source" : "Show source"); return; }
   if (t.dataset.src) { openSource(t.dataset.src); return; }
   if (t.id === "more") { const p = (location.hash || "").slice(2).split("/"); toggleMenu(await getDx(p[1])); return; }
@@ -1330,6 +1364,8 @@ document.addEventListener("click", async e => {
   if (t.dataset.del) { await delPdf(t.dataset.del); route(); }
 });
 document.addEventListener("input", e => {
+  if (["q", "sq", "gq"].includes(e.target.id)) S.qs[e.target.id] = e.target.value;
+  if (e.target.id === "gq") { globalSearch(); window.scrollTo(0, 0); }
   if (e.target.id === "q") applyFilter();
   if (e.target.id === "wt" && S.procR) { S.procKg = e.target.value; $("#wout").innerHTML = weightCalc(S.procR, parseFloat(e.target.value)); }
   if (e.target.id === "hq") hubFilter();
@@ -1350,11 +1386,59 @@ document.addEventListener("change", async e => {
   if (t.dataset.off !== undefined) { S.offsets[t.dataset.off] = parseInt(t.value || "0", 10); localStorage.setItem(LS_OFF, JSON.stringify(S.offsets)); }
 });
 
+document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.id === "gq") { const f = $("#glist .dx"); if (f) { e.target.blur(); f.click(); } } }); // Enter opens the top result
+window.addEventListener("scroll", () => { S.scroll[location.hash || "#/"] = window.scrollY; }, { passive: true });
 function remember(id, tab, row) {
   S.recent = [{ id, tab, row }, ...S.recent.filter(r => r.id !== id)].slice(0, 3);
   localStorage.setItem(LS_REC, JSON.stringify(S.recent));
 }
+/* ---------- cross-links, pins, back trail, scroll memory: added to whatever screen route() has just drawn ---------- */
+const isList = key => !key || /^(hub|pgroup|fhub):/.test(key); // pages that are lists: reopen where you left them
+function relatedCard(me, rel) {
+  let why = "";
+  const rows = rel.map(it => { const h = it.why !== why ? `<div class="xwhy">${esc(why = it.why)}</div>` : ""; return h + catRow(it, "data-xl"); }).join("");
+  const more = me.kind === "dx" ? [...me.sys.map(x => ["sys", x]), ...me.cat.map(x => ["cat", x])] : [];
+  return `<section class="xcard" id="xrel" aria-label="Related">${rel.length ? `<h2 class="glabel">Related<span class="c">· ${rel.length}</span></h2><div class="list">${rows}</div>` : ""}
+    ${more.length ? `<div class="xmore"><span class="chl">More</span>${more.map(([k, v]) => `<button class="fchip" data-listfilter="${k}|${esc(v)}">All ${esc(v)} pathways</button>`).join("")}</div>` : ""}</section>`;
+}
+function decorate(p, key, moved) {
+  const main = $("main"), hash = location.hash || "#/"; if (!main) return;
+  for (const [id, fn] of [["q", applyFilter], ["sq", applyScoreFilter], ["gq", globalSearch]]) { const el = $("#" + id); if (el && S.qs[id] && !el.value) { el.value = S.qs[id]; fn(); } } // a typed search survives opening a card and coming back
+  if (!key) { S.trail = []; S.lastKey = null; S.from = hash; if (moved) window.scrollTo(0, S.scroll[hash] || 0); return; }
+  const me = S.cx.byKey[key], bar = $("header.top .bar") || $("header.top .brand");
+  let rel = relatedFor(S.cx, key);
+  if (me.kind === "dx" && S.dx[me.id]) { // pathways this one hands off to ("→ TIA pathway" lines) are related too: listed after its own twins / appendices, before the topic links
+    const ho = [...new Set(allItems(S.dx[me.id]).filter(i => i.k === "handoff" && i.to).map(i => i.to))].map(id => S.cx.byId[id]).filter(x => x && x.key !== key).map(x => ({ ...x, why: "Named in this pathway" }));
+    const own = rel.filter(r => !S.cx.topics.some(t => t.name === r.why) && !ho.some(h => h.key === r.key));
+    rel = [...own, ...ho, ...rel.filter(r => !own.includes(r) && !ho.some(h => h.key === r.key))];
+  }
+  S.recent2 = [{ key, hash }, ...S.recent2.filter(r => r.key !== key)].slice(0, 10); localStorage.setItem(LS_REC2, JSON.stringify(S.recent2));
+  if (key !== S.lastKey && !S.via) S.trail = []; // reached some other way (list, search, address bar): the old trail no longer applies
+  S.via = false; S.lastKey = key;
+  while (S.trail.length && S.trail[S.trail.length - 1].key === key) S.trail.pop(); // came back to where the trail started
+  const prev = S.trail[S.trail.length - 1], back = bar && $(".iconbtn[data-go]", bar);
+  if (back && prev) { back.removeAttribute("data-go"); back.dataset.xlback = ""; back.setAttribute("aria-label", "Back to " + prev.label); }
+  else if (back && S.from === "#/" && ["#/diagnoses", "#/scores", "#/procedures"].includes(back.dataset.go)) { back.dataset.go = "#/"; back.setAttribute("aria-label", "Back to start"); } // opened from the start page (search, pinned, recent)
+  if (bar && !$(".pin", bar)) { const on = S.pins.includes(key);
+    (($("#more", bar)) || bar).insertAdjacentHTML($("#more", bar) ? "beforebegin" : "beforeend", `<button class="iconbtn pin" data-pin="${esc(key)}" aria-pressed="${on}" aria-label="${on ? "Unpin from" : "Pin to"} the start page">${ico("star")}</button>`); }
+  const home = me.kind === "dx" ? !p[2] || p[2] === "arrival" : me.kind === "score" ? !p[2] : (me.kind === "proc" || me.kind === "fluid") && (!p[2] || p[2] === "procedure");
+  const strip = rel.filter(it => !prev || it.key !== prev.key); // the strip shows the closest eight; the Related card at the foot of the page lists all, grouped
+  if (prev || (home && rel.length)) main.insertAdjacentHTML("afterbegin", `<nav class="xnav" aria-label="Related">${prev ? `<button class="xchip xback" data-xlback>${ico("back")}${esc(prev.label)}</button>` : ""}
+    ${home && rel.length ? `<span class="chl">Related</span>${strip.slice(0, 8).map(it => `<button class="xchip" data-xl="${esc(it.href)}" title="${esc(it.title)}"><i class="dot ${POPC[it.pop]}"></i>${esc(it.short)}${it.label !== me.label ? `<small>${esc(it.label)}</small>` : ""}</button>`).join("")}${strip.length > 8 ? `<button class="xchip xall" data-jump="xrel">+${strip.length - 8} more</button>` : ""}` : ""}</nav>`);
+  const card = relatedCard(me, rel), foot = main.lastElementChild?.matches("p.hint") ? main.lastElementChild : null; // above the closing footnote, when the page ends in one
+  if (card.includes("<h2") || card.includes("xmore")) foot ? foot.insertAdjacentHTML("beforebegin", card) : main.insertAdjacentHTML("beforeend", card);
+  if (isList(key) && moved) window.scrollTo(0, S.scroll[hash] || 0);
+}
 async function route() {
+  if (!S.cx) return; // still starting up
+  const hash = location.hash || "#/", p = hash.slice(2).split("/"), moved = hash !== S.lastHash, key = keyOf(S.cx, p);
+  if (moved && p[0] !== "altmed" && !isList(key)) window.scrollTo(0, 0); // a new card or tab starts at its top (a tab that focuses one item scrolls to it afterwards)
+  await routeTo();
+  if ((location.hash || "#/") !== hash) return; // moved on while this page was loading
+  S.lastHash = hash;
+  if (p[0] !== "altmed") decorate(p, key, moved);
+}
+async function routeTo() {
   $(".menu")?.remove(); $(".scrim")?.remove();
   const p = (location.hash || "#/").slice(2).split("/");
   const alt = p[0] === "altmed"; // the Alternative Medicine section has its own spring-green palette (style.css :root.alt-on)

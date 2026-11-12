@@ -1,11 +1,11 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v104";
+const VERSION = "andh-v105";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
   "fonts/plex-serif-400.woff2", "fonts/plex-serif-700.woff2",
-  "calc.js", "scores.js", "vitals.js", "altmed.js", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json",
+  "calc.js", "links.js", "scores.js", "vitals.js", "altmed.js", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json", "data/related.json",
   "wheel/gcs-wheel-adult.svg", "wheel/gcs-wheel-child.svg", "wheel/gcs-wheel-infant.svg", "wheel/rass-wheel.svg", "cards/rass.pdf", "cards/wells-pe.pdf", "cards/wells-dvt.pdf", // printable Wells cards (the JSON is precached via index.json "scores")
   // the 22 block-schema score cards: printable cards (their JSON is precached via index.json "scores")
   "cards/alvarado.pdf", "cards/apgar.pdf", "cards/ipss.pdf", "cards/curb65.pdf", "cards/duke-ie.pdf", "cards/ottawa-ankle.pdf", "cards/pecarn.pdf", "cards/ugib.pdf",
