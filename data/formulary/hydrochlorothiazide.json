@@ -1,0 +1,196 @@
+{
+ "id": "hydrochlorothiazide",
+ "type": "drug",
+ "name": "Hydrochlorothiazide",
+ "aliases": [
+  "HCTZ"
+ ],
+ "class": "Thiazide diuretic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits the Na-Cl co-transporter in the distal convoluted tubule",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 25–50 mg daily. · Caution in patients with gout. · Less effective in impaired renal function.",
+     "s": "HOSP:3.28"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 12.5 mg daily. · Caution in patients with gout. · Less effective in impaired renal function.",
+     "s": "HOSP:3.40"
+    }
+   ]
+  },
+  {
+   "h": "Glomerular Disease and Nephritic Syndrome",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 25 mg (if eGFR ≥30 mL/min/1.73m2).",
+     "s": "HOSP:7.8"
+    }
+   ]
+  },
+  {
+   "h": "Stroke",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 12.5 mg daily.",
+     "s": "HOSP:14.3"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Failure, Congestive (Ccf), Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral 25 to 50 mg daily.",
+     "s": "PHC:4.11"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, reactions. 12.5 mg. daily.",
+     "s": "PHC:4.22"
+    },
+    {
+     "t": "Hydrochlorothiazide, oral, 12.5 mg medicine daily. reactions.",
+     "s": "PHC:4.22"
+    },
+    {
+     "t": "Hydrochlorothiazide, oral, with no adverse 12.5 mg daily medicine AND reactions.",
+     "s": "PHC:4.22"
+    }
+   ]
+  },
+  {
+   "h": "Ascites, due to Portal Hypertension",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 1 mg/kg/dose 12–24 hourly. · Maximum dose: 25 mg daily.",
+     "s": "PAED:2.30"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Acute with Pulmonary Oedema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 1 mg/kg/dose, 12 hourly in consultation with a paediatric cardiologist.",
+     "s": "PAED:4.22"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Chronic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 0.5–1 mg/kg/dose once daily. · May cause hypokalaemia.",
+     "s": "PAED:4.38"
+    }
+   ]
+  },
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hydrochlorothiazide, oral, 1 mg/kg, once daily. · Do not exceed 12.5 mg daily.",
+     "s": "PAED:6.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe hyponatraemia or hypokalaemia",
+   "d": 1
+  },
+  {
+   "t": "Gout (relative)",
+   "d": 1
+  },
+  {
+   "t": "EGFR < 30 (ineffective)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Hyponatraemia risk is highest in the elderly",
+   "d": 1
+  },
+  {
+   "t": "Increases lithium levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyponatraemia, hypokalaemia, hyperuricaemia, hyperglycaemia, hypercalcaemia, photosensitivity",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Sodium, potassium, creatinine",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "ccf-adult",
+  "hf-paeds",
+  "hte-adult",
+  "htu-adult",
+  "stroke"
+ ],
+ "link": [
+  "hydrochlorothiazide"
+ ],
+ "link_cs": [
+  "HCTZ"
+ ]
+}

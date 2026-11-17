@@ -1,0 +1,243 @@
+{
+ "id": "aspirin",
+ "type": "drug",
+ "name": "Aspirin",
+ "aliases": [
+  "acetylsalicylic"
+ ],
+ "class": "Antiplatelet / NSAID",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Irreversibly inhibits COX-1, blocking platelet thromboxane A2 for the platelet's lifespan",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Venous Thrombo-embolism – Prophylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg daily.",
+     "s": "HOSP:2.25"
+    },
+    {
+     "t": "Aspirin, oral, 150 mg daily for 28 days on discharge from hospital.",
+     "s": "HOSP:2.26"
+    },
+    {
+     "t": "Aspirin, oral 150 mg daily. · Treat with aspirin for remainder of VTE prophylaxis period, i.e. 14 days in total including days on rivaroxaban.",
+     "s": "HOSP:2.26"
+    }
+   ]
+  },
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg immediately as a single dose (chewed",
+     "s": "HOSP:3.4"
+    }
+   ]
+  },
+  {
+   "h": "Non-st Elevation Myocardial Infarction (NSTEMI) and Unstable Angina (Ua)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg immediately as a single dose (chewed or dissolved). · Followed with 150 mg daily (continued indefinitely in absence of",
+     "s": "HOSP:3.10"
+    }
+   ]
+  },
+  {
+   "h": "Preeclampsia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg daily until 36 weeks.",
+     "s": "HOSP:6.10"
+    }
+   ]
+  },
+  {
+   "h": "Dyslipidaemia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg daily. Dyslipidaemia in HIV-infected patients: See Section 10.1.2: Management of selected antiretroviral adverse drug reactions.",
+     "s": "HOSP:8.21"
+    }
+   ]
+  },
+  {
+   "h": "Systemic Lupus Erythematosus (SLE)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg daily. Patients with previous thrombo-embolic episodes should receive lifelong warfarin (target INR 3 to 4).",
+     "s": "HOSP:13.13"
+    }
+   ]
+  },
+  {
+   "h": "Stroke",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aspirin, oral, 300 mg, immediately.",
+     "s": "HOSP:14.2"
+    },
+    {
+     "t": "Aspirin, oral, 150 mg daily. · If patient is unable to swallow, administer through a naso-gastric tube. Do not administer aspirin if there are symptoms suggestive of a sub-",
+     "s": "HOSP:14.2"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Unstable / Non-st Elevation Myocardial Infarction (NSTEMI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg as a single dose (chewed or dissolved) as soon as possible.",
+     "s": "PHC:4.7"
+    },
+    {
+     "t": "Aspirin, oral, 150 mg daily (continued indefinitely in absence of contraindications).",
+     "s": "PHC:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Antenatal Supplements",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aspirin, oral, 150 mg, taken at bedtime, preferably not on an empty stomach, until 36 weeks. · Start at 6 weeks of gestation but preferably before 16 weeks.",
+     "s": "PHC:6.12"
+    }
+   ]
+  },
+  {
+   "h": "Stroke",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aspirin, oral, 300 mg, as a pre-referral dose.",
+     "s": "PHC:15.2"
+    }
+   ]
+  },
+  {
+   "h": "How to manage hypertensive disorders in pregnancy",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Aspirin 150mg taken at bedtime (at night – to prevent gastric irritation) from 6 weeks of gestation (but preferably before 16 weeks) until 36 weeks.",
+     "s": "impcg2024:105"
+    }
+   ]
+  },
+  {
+   "h": "Children with Prosthetic Heart Valves",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aspirin, oral, 1 mg/kg/day in patients at a low risk of bleeding.",
+     "s": "PAED:4.39"
+    }
+   ]
+  },
+  {
+   "h": "Cerebrovascular Disease/stroke",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aspirin soluble, oral, 1–5 mg/kg as a daily dose. · Contraindicated in haemorrhagic stroke or bleeding tendency.",
+     "s": "PAED:13.46"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Low dose used for pre-eclampsia prevention; avoid analgesic doses in the third trimester",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active peptic ulcer or bleeding",
+   "d": 1
+  },
+  {
+   "t": "Haemorrhagic stroke",
+   "d": 1
+  },
+  {
+   "t": "Children under 16 years (Reye syndrome)",
+   "d": 1
+  },
+  {
+   "t": "Aspirin-sensitive asthma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Chew or disperse the loading dose in acute coronary syndrome",
+   "d": 1
+  },
+  {
+   "t": "Bleeding risk adds to anticoagulants and NSAIDs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dyspepsia, GI bleeding, bronchospasm, tinnitus in overdose",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "cad-adult",
+  "caprini",
+  "fracture-adult",
+  "gerd-adult",
+  "hte-adult",
+  "hypoglycemia-paeds",
+  "pet",
+  "prb-adult",
+  "pud-adult",
+  "stroke",
+  "superwarfarin",
+  "tia",
+  "ugib-adult",
+  "ugib-paeds",
+  "urine_dipstick"
+ ],
+ "link": [
+  "acetylsalicylic",
+  "aspirin"
+ ],
+ "link_cs": []
+}

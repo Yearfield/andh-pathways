@@ -1,0 +1,135 @@
+{
+ "id": "ketamine",
+ "type": "drug",
+ "name": "Ketamine",
+ "aliases": [],
+ "class": "Dissociative anaesthetic / analgesic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "NMDA-receptor antagonist, preserves airway reflexes and blood pressure, bronchodilator",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Intravenous Induction (And/or Maintenance) Agents",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ketamine, IV, 1–2 mg/kg.",
+     "s": "HOSP:12.2"
+    }
+   ]
+  },
+  {
+   "h": "Intravenous Analgesics",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ketamine, IV, 0.1–0.3 mg/kg – a subanaesthetic dose given pre-incision may reduce persistent post-surgical pain.",
+     "s": "HOSP:12.6"
+    }
+   ]
+  },
+  {
+   "h": "Post-intubation Sedation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ketamine, IV infusion, 0.5–1 mg/kg/hour.",
+     "s": "HOSP:20.20"
+    }
+   ]
+  },
+  {
+   "h": "Cyanotic Congenital Heart Disease with Hypoxaemia Attacks/spells (Hypercyanotic Spells)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ketamine, IV, 0.5–1 mg/kg.",
+     "s": "PAED:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Acute Pain",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ketamine, oral: · 4–6 mg/kg 4–6 hourly. · Injectable formulation can be used, (concentration 100 mg/mL). It is",
+     "s": "PAED:20.12"
+    },
+    {
+     "t": "Ketamine, IV: · 0.2–0.3 mg/kg/hour, IV, (2–3 mL/hour). · Infusion: Mix 5 mg/kg of ketamine diluted to 50 mL with sodium",
+     "s": "PAED:20.13"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe uncontrolled hypertension",
+   "d": 1
+  },
+  {
+   "t": "Where a rise in BP is hazardous (e.g. severe pre-eclampsia, aortic dissection)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give IV slowly",
+   "d": 1
+  },
+  {
+   "t": "Check the ampoule concentration",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Emergence reactions, hypertension and tachycardia, hypersalivation, laryngospasm, vomiting, transient apnoea with rapid IV",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP, heart rate, saturation",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "ards-paeds",
+  "fracture-paeds",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "ketamine"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,74 @@
+{
+ "id": "clotrimazole",
+ "type": "drug",
+ "name": "Clotrimazole",
+ "aliases": [],
+ "class": "Topical / vaginal antifungal – imidazole",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits fungal ergosterol synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Vaginal discharge",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Candida · • Thick, white cheesy and itchy · • Clotrimazole pessary 500mg PV stat or vaginal cream 12 hourly for 7 days in the evening",
+     "s": "impcg2024:145"
+    },
+    {
+     "t": "Add Clotrimazole pessary 500mg PV stat or vaginal cream 12 hourly for 7 days in the evening if suspect candida infection. · Doxycycline is contraindicated during pregnancy",
+     "s": "impcg2024:145"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Damages latex condoms",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Local irritation",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fungal-adult",
+  "fungal-paeds",
+  "uds",
+  "vds"
+ ],
+ "link": [
+  "clotrimazole"
+ ],
+ "link_cs": []
+}

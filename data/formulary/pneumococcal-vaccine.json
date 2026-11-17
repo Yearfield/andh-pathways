@@ -1,0 +1,66 @@
+{
+ "id": "pneumococcal-vaccine",
+ "type": "drug",
+ "name": "Pneumococcal vaccine",
+ "aliases": [
+  "PCV"
+ ],
+ "class": "Vaccine",
+ "group": "Vaccines and immunoglobulins",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Induces antibodies to pneumococcal capsular polysaccharides",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Pneumococcal vaccine (polysaccharide), IM, 0.5 mL as a single dose.",
+     "s": "PAED:6.12"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [],
+ "contraindications": [
+  {
+   "t": "Previous anaphylaxis to the vaccine",
+   "d": 1
+  }
+ ],
+ "cautions": [],
+ "adverse_effects": [
+  {
+   "t": "Local reaction, fever",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-paeds",
+  "meningitis-paeds",
+  "om-paeds",
+  "sinusitis-paeds"
+ ],
+ "link": [
+  "pneumococcal vaccine"
+ ],
+ "link_cs": []
+}

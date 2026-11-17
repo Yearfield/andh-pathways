@@ -1,0 +1,98 @@
+{
+ "id": "ringers-lactate",
+ "type": "drug",
+ "name": "Ringer's lactate",
+ "aliases": [
+  "Ringer lactate",
+  "Ringer’s lactate",
+  "Ringers lactate",
+  "modified Ringer"
+ ],
+ "class": "Balanced isotonic crystalloid",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Expands extracellular volume, lactate is metabolised to bicarbonate, contains potassium 4–5 mmol/L and calcium",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Do not mix or co-infuse with ceftriaxone or citrated blood (calcium)",
+   "d": 1
+  },
+  {
+   "t": "Severe hyperkalaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Slightly hypotonic – avoid as sole fluid in raised intracranial pressure",
+   "d": 1
+  },
+  {
+   "t": "Lactate handling reduced in severe liver failure",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Fluid overload, pulmonary oedema",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Vital signs, urine output, electrolytes",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "burns_paeds",
+  "fluids-adult-dehydration",
+  "fluids-adult-maintenance",
+  "fluids-adult-shock",
+  "fluids-paeds-shock",
+  "fluids-reference",
+  "fracture-paeds",
+  "lrti-paeds",
+  "lytes-adult-hyperk",
+  "lytes-adult-hypona",
+  "pet",
+  "prb-paeds",
+  "tbi-paeds",
+  "tca",
+  "ugib-paeds",
+  "uti-pregnancy"
+ ],
+ "link": [
+  "Ringer's lactate",
+  "Ringer’s lactate",
+  "Ringers lactate",
+  "Ringer lactate"
+ ],
+ "link_cs": []
+}

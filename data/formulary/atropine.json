@@ -1,0 +1,190 @@
+{
+ "id": "atropine",
+ "type": "drug",
+ "name": "Atropine",
+ "aliases": [],
+ "class": "Antimuscarinic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Competitive antagonist at muscarinic receptors: increases heart rate and AV conduction, dries secretions, dilates pupils",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Heart Block (Second or Third Degree)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Atropine, IV bolus, 0.6–1.2 mg. · May be repeated as needed until a pacemaker is inserted. · Use in patients with inferior myocardial infarct and hypotension and",
+     "s": "HOSP:3.26"
+    }
+   ]
+  },
+  {
+   "h": "Medicines to Reverse Muscle Relaxation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Atropine, IV, 20 mcg/kg (maximum 1.2 mg).",
+     "s": "HOSP:12.4"
+    }
+   ]
+  },
+  {
+   "h": "Calcium Channel Blocker and Beta Blocker Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Atropine, IV 0.5 to 1 mg every 2 to 3 minutes to a maximum of",
+     "s": "HOSP:19.28"
+    }
+   ]
+  },
+  {
+   "h": "Organophosphate Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Atropine bolus, IV · Administer 2mg atropine as an IV bolus. · Reassess after 3–5 minutes for evidence of atropinisation as",
+     "s": "HOSP:19.38"
+    }
+   ]
+  },
+  {
+   "h": "Bradycardia",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Atropine, IV, 0.5 mg as a bolus. · Repeat every 3–5 minutes, if no response. · Maximum dose: 3 mg.",
+     "s": "PHC:21.12"
+    },
+    {
+     "t": "Atropine, IV, 0.02 mg/kg/dose as a single dose. (Doctor prescribed.) · Maximum single dose: 0.5 mg. · Repeat dose, if no response.",
+     "s": "PHC:21.13"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Atropine, IV, 0.05 mg/kg/dose. Weight Dose Use one of the following injections Age kg mg (intravenously) months/years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Exposure to Poisonous Substances",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Atropine bolus, IV,0.05 mg/kg/dose.",
+     "s": "PHC:21.51"
+    },
+    {
+     "t": "Atropine bolus, IV, 2 mg.",
+     "s": "PHC:21.51"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Arrhythmias",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Atropine, IV/IO, 0.02 mg/kg. Maximum single dose 0.5 mg. · If no response, repeat in 5 minutes.",
+     "s": "PAED:4.5"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Keratitis and Conjunctivitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Atropine, ophthalmic drops, instil 1 drop, 12 hourly.",
+     "s": "PAED:16.3"
+    }
+   ]
+  },
+  {
+   "h": "Organophosphate Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Atropine bolus, IV, 0.05 mg/kg over 1 minute. · Assess after 3 - 5 minutes for evidence of atropinisation as indicated by reduced bronchial secretions, dry skin, increasing heart rate and",
+     "s": "PAED:18.15"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "None in life-threatening bradycardia or organophosphate poisoning",
+   "d": 1
+  },
+  {
+   "t": "Otherwise glaucoma, obstructive uropathy",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Doses under 0.5 mg in adults may cause paradoxical bradycardia",
+   "d": 1
+  },
+  {
+   "t": "Organophosphate poisoning needs large repeated doses titrated to dry secretions",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tachycardia, dry mouth, urinary retention, blurred vision, confusion and hyperthermia (especially elderly and children)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Heart rate, secretions, pupils",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "ards-paeds",
+  "brady-adult",
+  "op",
+  "rf-paeds",
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "atropine"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,132 @@
+{
+ "id": "activated-charcoal",
+ "type": "drug",
+ "name": "Activated charcoal",
+ "aliases": [
+  "charcoal"
+ ],
+ "class": "Gastrointestinal adsorbent",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Adsorbs many drugs in the gut lumen, reducing absorption",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Spider Envenomation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Activated charcoal, oral, 50 g (equivalent to 36 level medicine measures) diluted in 100 mL water. · When mixing, add a small amount of water to charcoal in a",
+     "s": "HOSP:19.14"
+    }
+   ]
+  },
+  {
+   "h": "Theophylline Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Activated charcoal, oral, 50 g diluted in 100 mL water. · Multiple doses of activated charcoal enhance elimination.",
+     "s": "HOSP:19.25"
+    }
+   ]
+  },
+  {
+   "h": "Exposure to Poisonous Substances",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Activated charcoal, oral, 1 g/kg mixed as a slurry with water.",
+     "s": "PHC:21.50"
+    },
+    {
+     "t": "Activated charcoal, oral, 50 g (36 level medicine measures) diluted in 100 mL water. · When mixing, add a small amount of water to charcoal in a container. · Cap and shake container to make a slurry and then dilute furth",
+     "s": "PHC:21.50"
+    }
+   ]
+  },
+  {
+   "h": "Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Activated charcoal, oral, given as a slurry: · If < 6 years of age: 1 g/kg in 50–100 mL water. · If > 6 years of age: 20–50 g in 100–300 mL water.",
+     "s": "PAED:18.4"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Unprotected airway or reduced level of consciousness",
+   "d": 1
+  },
+  {
+   "t": "Ileus or obstruction",
+   "d": 1
+  },
+  {
+   "t": "Corrosives, hydrocarbons, alcohols, iron, lithium (not adsorbed)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Most useful within 1 hour of ingestion",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Vomiting, aspiration pneumonitis, constipation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Airway",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "amphetamines",
+  "brady-adult",
+  "cocaine",
+  "hypoglycemia-paeds",
+  "op",
+  "opioids",
+  "paracetamol",
+  "superwarfarin",
+  "tca",
+  "toxic-alcohols",
+  "ugib-adult",
+  "ugib-paeds"
+ ],
+ "link": [
+  "activated charcoal"
+ ],
+ "link_cs": []
+}

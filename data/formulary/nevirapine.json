@@ -1,0 +1,149 @@
+{
+ "id": "nevirapine",
+ "type": "drug",
+ "name": "Nevirapine",
+ "aliases": [
+  "NVP"
+ ],
+ "class": "Antiretroviral – non-nucleoside reverse transcriptase inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds reverse transcriptase directly and inhibits it, used mainly for infant prophylaxis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "HIV in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "NVP, oral, 200 mg as a single dose. WITH",
+     "s": "HOSP:6.17"
+    }
+   ]
+  },
+  {
+   "h": "Dosing charts for prophylaxis for the HIV-exposed infant",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Nevirapine, oral, once daily Weight · First 2 weeks after birth (mg of NVP) · After first 2 weeks after birth (mg of NVP) 500 to < 625 g · 0.1 mL (1 mg) · 0.2 mL (2 mg)",
+     "s": "hiv2026:150"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 5 TPT Dosing Tables",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "lowers nevirapine levels below efficacy All children and breastfeeding infants require pyridoxine (vitamin B6) for the duration of their TPT as follows: Children younger than five years 12.5 mg and children five years or older 25 mg, once d",
+     "s": "hiv2026:177"
+    }
+   ]
+  },
+  {
+   "h": "The Hiv-exposed Infant",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Nevirapine, oral, 4 mg/kg daily.",
+     "s": "PHC:11.34"
+    }
+   ]
+  },
+  {
+   "h": "The Hiv-exposed Infant",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Nevirapine, oral, daily (syrup 10 mg/mL) and zidovudine, oral, twice daily (syrup 10 mg/mL).",
+     "s": "PAED:9.7"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 3: TPT Dosing Chart",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "rifampicin lowers nevirapine levels below efficacy All children and breastfeeding infants require pyridoxine (vitamin B6) for the duration of their TPT as follows: Children younger than five years 12.5 mg and children five years or older",
+     "s": "tbpaeds2024:81"
+    }
+   ]
+  },
+  {
+   "h": "TPT FOR CHILDREN UNDER 25kg",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "nevirapine ± zidovudine (infant HIV-exposed · Give pyridoxine 12.5 mg daily for duration (if < 6kg: give 6.25 mg (¼ tablet) but HIV-negative) · Follow up monthly (p26).",
+     "s": "tbqrg2025:22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Infant prophylaxis per PMTCT guideline",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Enzyme inducer",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin lowers levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash including SJS/TEN, hepatitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function if symptomatic",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-new-child",
+  "hiv-new-neonate",
+  "liver",
+  "tb-hiv-paeds",
+  "term-labour"
+ ],
+ "link": [
+  "nevirapine"
+ ],
+ "link_cs": [
+  "NVP"
+ ]
+}

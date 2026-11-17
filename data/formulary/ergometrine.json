@@ -1,0 +1,137 @@
+{
+ "id": "ergometrine",
+ "type": "drug",
+ "name": "Ergometrine",
+ "aliases": [
+  "syntometrine"
+ ],
+ "class": "Uterotonic – ergot alkaloid",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Sustained tonic uterine contraction via α-adrenergic and serotonin receptors, vasoconstriction",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Postpartum Haemorrhage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ergometrine, IM, 0.5 mg. or a combination of oxytocin, IM, 5 units and ergometrine, IM, 0.5 mg.",
+     "s": "HOSP:6.30"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage (PPH)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ergometrine, IM, 0.5 mg.",
+     "s": "PHC:6.34"
+    }
+   ]
+  },
+  {
+   "h": "Acute inversion of the uterus",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Once reduction is achieved, give ergometrine 0.5 mg IM and oxytocin 20 units in one litre Sodium Chloride 0,9% at 240 mL/hour. · Do not remove the hand from the uterine cavity until a firm uterine contraction is felt.",
+     "s": "impcg2024:119"
+    }
+   ]
+  },
+  {
+   "h": "Secondary postpartum haemorrhage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Consider adding ergometrine 0.5 mg IM as a single dose unless the mother is hypertensive or has cardiac disease. · Admit the patient or transfer from CHC to hospital.",
+     "s": "impcg2024:120"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac disease",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Do not give ergometrine in the third stage; instead use oxytocin 10 units intramuscularly. • In women with NYHA grade II dyspnoea or more, consider the use of furosemide 40 mg intravenously after delivery of the baby.",
+     "s": "impcg2024:128"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Post-partum use only",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypertension, pre-eclampsia or eclampsia",
+   "d": 1
+  },
+  {
+   "t": "Cardiac disease",
+   "d": 1
+  },
+  {
+   "t": "Before delivery of the baby",
+   "d": 1
+  },
+  {
+   "t": "With protease inhibitors",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Store in the fridge, protected from light",
+   "d": 1
+  },
+  {
+   "t": "Severe ergotism with ritonavir-boosted regimens",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, vomiting, hypertension, headache, coronary and peripheral vasospasm",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "pet",
+  "pph"
+ ],
+ "link": [
+  "syntometrine",
+  "ergometrine"
+ ],
+ "link_cs": []
+}

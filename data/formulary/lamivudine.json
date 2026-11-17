@@ -1,0 +1,198 @@
+{
+ "id": "lamivudine",
+ "type": "drug",
+ "name": "Lamivudine",
+ "aliases": [
+  "3TC"
+ ],
+ "class": "Antiretroviral – nucleoside reverse transcriptase inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Cytidine analogue that terminates the viral DNA chain, also active against hepatitis B",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "General",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "DTG-containing fixed-dose combination: ALD FDC [Abacavir (ABC) + lamivudine (3TC) + DTG] New • ALD 600/300/50 mg - can be prescribed for clients ≥ 25 kg",
+     "s": "hiv2026:-2"
+    },
+    {
+     "t": "TLD · Tenofovir 300mg / Lamivudine 300mg / Dolutegravir 50mg TOP · Termination of pregnancy T&T · Test & treat",
+     "s": "contra2021:0"
+    }
+   ]
+  },
+  {
+   "h": "Dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fixed-dose combination: tenofovir (TDF) 300 mg + lamivudine (3TC) 300 mg + DTG 50 mg (TLD). TLD can be prescribed for clients ≥ 30 kg and ≥ 10 years of age • DTG-containing fixed-dose combination: ALD FDC [Abacavir (ABC) + lamivudine (3TC",
+     "s": "hiv2026:31"
+    }
+   ]
+  },
+  {
+   "h": "Table 33: ART dosing and important adverse effects",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lamivudine (3TC) · NRTI · • Anaemia due to pure red cell aplasia (rare). (or 150 mg 12 hourly) • Palmar hyperpigmentation.",
+     "s": "hiv2026:106"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 1 ART for the Term Neonate",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lamivudine (3TC) · 1.5 mL · 1.5 mL Solution (10 mg/mL) · Every 2nd day · Once a day Dolutegravir (DTG) · ½ tab once every 2nd day (alternate days) · ½ tab once daily",
+     "s": "hiv2026:172"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 4 Practical Advice on Administration of ARV Drugs",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lamivudine · - ABC/3TC 120/60 mg; KZN Paediatric Hotline: 0800 006 603 Well tolerated, adverse-effects uncommon.",
+     "s": "hiv2026:176"
+    }
+   ]
+  },
+  {
+   "h": "Fixed dose tenofovir/lamivudine/dolutegravir (TLD) and",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "2.12 Fixed-dose tenofovir / lamivudine / dolutegravir (TLD) and contraception for HIV-positive women TLD is a fixed-dose combination of tenofovir 300mg/lamivudine 300mg/dolutegravir 50mg (TLD),",
+     "s": "contra2021:13"
+    },
+    {
+     "t": "TLD is a fixed-dose combination of tenofovir 300mg/lamivudine 300mg/dolutegravir 50mg (TLD), that provides many benefits as a first-line antiretroviral treatment, including improved tolerability, high effectiveness, lower rates of treatment",
+     "s": "contra2021:13"
+    }
+   ]
+  },
+  {
+   "h": "HIV in Pregnancy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lamivudine, oral, 300 mg daily creatinine >85 μmol/L.",
+     "s": "PHC:6.38"
+    },
+    {
+     "t": "Lamivudine, oral, 300 mg, daily",
+     "s": "PHC:6.38"
+    },
+    {
+     "t": "Lamivudine, oral, 300 mg, daily investigation.",
+     "s": "PHC:6.39"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lamivudine, oral, 4 mg/kg 12 hourly or 8 mg/kg daily. (see Annexure A)",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Occupational",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lamivudine (3TC), oral, 300 mg daily for 4 weeks.",
+     "s": "PHC:21.54"
+    },
+    {
+     "t": "Lamivudine (3TC), oral, 150 mg 12 hourly for 4 weeks.",
+     "s": "PHC:21.55"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Rape and Sexual Assault",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lamivudine (3TC), oral, 4 mg/kg 12 hourly or 8 mg/kg daily for 28 days. · Maximum: 150 mg/dose if given 12 hourly or 300 mg/dose if given daily.",
+     "s": "PHC:21.59"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Hepatitis B may flare if stopped",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Well tolerated, headache, nausea, rarely pancreatitis in children",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Viral load per guideline",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "ckd-adult",
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "hiv-new-adult",
+  "hiv-new-child",
+  "hiv-new-neonate",
+  "tb-hiv-adult",
+  "tb-hiv-paeds"
+ ],
+ "link": [
+  "lamivudine"
+ ],
+ "link_cs": [
+  "3TC"
+ ]
+}

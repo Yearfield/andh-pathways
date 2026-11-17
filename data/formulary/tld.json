@@ -1,0 +1,79 @@
+{
+ "id": "tld",
+ "type": "drug",
+ "name": "TLD",
+ "aliases": [],
+ "class": "Antiretroviral fixed-dose combination: tenofovir 300 mg, lamivudine 300 mg, dolutegravir 50 mg",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Two NRTIs plus an integrase inhibitor",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Recommended in pregnancy per current guideline",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "EGFR < 50 mL/min (tenofovir component)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "With rifampicin add dolutegravir 50 mg 12 hours after the TLD dose",
+   "d": 1
+  },
+  {
+   "t": "Separate from polyvalent cations",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "See components: insomnia, weight gain, renal tubular toxicity",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Creatinine, viral load per guideline",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "hiv-new-adult",
+  "hiv-new-child",
+  "hiv-new-neonate",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "term-labour"
+ ],
+ "link": [],
+ "link_cs": [
+  "TLD"
+ ]
+}

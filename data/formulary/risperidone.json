@@ -1,0 +1,96 @@
+{
+ "id": "risperidone",
+ "type": "drug",
+ "name": "Risperidone",
+ "aliases": [],
+ "class": "Atypical antipsychotic",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "D2 and 5-HT2A receptor antagonist",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Schizophrenia Spectrum Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Risperidone, oral · Initial dose: 2–4 mg at night.",
+     "s": "HOSP:15.27"
+    }
+   ]
+  },
+  {
+   "h": "Schizophrenia Spectrum Disorders (Schizophrenia)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Risperidone, oral 2 mg daily. (Doctor prescribed.)",
+     "s": "PHC:16.21"
+    },
+    {
+     "t": "Risperidone, oral, 2 mg daily. (Doctor prescribed.) · Increase to 4 mg daily if there is a poor response after 4 weeks.",
+     "s": "PHC:16.21"
+    }
+   ]
+  },
+  {
+   "h": "Bipolar Disorder",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Risperidone, oral. 5–12 years (under 50 kg): · Starting dose: 0.01 mg/kg/day.",
+     "s": "PAED:14.16"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Lower dose in the elderly and in renal or hepatic impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Extrapyramidal effects, hyperprolactinaemia, weight gain, postural hypotension, sedation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Weight, glucose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "psychosis-adult"
+ ],
+ "link": [
+  "risperidone"
+ ],
+ "link_cs": []
+}

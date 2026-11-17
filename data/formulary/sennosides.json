@@ -1,0 +1,99 @@
+{
+ "id": "sennosides",
+ "type": "drug",
+ "name": "Sennosides",
+ "aliases": [
+  "senna"
+ ],
+ "class": "Stimulant laxative",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Stimulates colonic motility via the myenteric plexus",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Constipation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Sennosides A and B, oral, 13.5 mg, 1 tablet at night. · In resistant cases increase to 2 tablets.",
+     "s": "HOSP:24.3"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of Adverse Effects of Chronic Opioid Use",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Sennosides A and B, oral, 13.5 mg, 1–2 tablets at night. · Contraindicated in patients with potentially obstructive lesions.",
+     "s": "HOSP:25.6"
+    }
+   ]
+  },
+  {
+   "h": "Constipation",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Sennosides A and B, oral, 13.5 mg, 1 tablet at night. · Total daily dose may be increased up to 4 tablets if initial response is inadequate.",
+     "s": "PHC:2.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Short-term use",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Intestinal obstruction",
+   "d": 1
+  },
+  {
+   "t": "Undiagnosed abdominal pain",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Co-prescribe with opioids",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Abdominal cramps, diarrhoea, hypokalaemia with prolonged use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hcc-adult"
+ ],
+ "link": [
+  "sennosides",
+  "senna"
+ ],
+ "link_cs": []
+}

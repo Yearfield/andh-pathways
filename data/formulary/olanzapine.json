@@ -1,0 +1,134 @@
+{
+ "id": "olanzapine",
+ "type": "drug",
+ "name": "Olanzapine",
+ "aliases": [],
+ "class": "Atypical antipsychotic",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "D2 and 5-HT2A receptor antagonist",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Schizophrenia Spectrum Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Olanzapine, oral · Initial dose: 5 mg at night, increase to 10 mg at night. · Maximum dose: 20 mg at night.",
+     "s": "HOSP:15.27"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Olanzapine, oral dispersible tablet or IM, 2.5–5 mg. · This can be repeated in 30–60 minutes, if required and then 6 hourly, to a maximum dose of 20 mg within 24 hours.",
+     "s": "HOSP:20.15"
+    },
+    {
+     "t": "Olanzapine, oral dispersible tablet or IM, 2.5 to 5 mg. · This can be repeated in 30 to 60 minutes, if required and then 6 hourly to a maximum dose of 20 mg within 24 hours.",
+     "s": "HOSP:24.8"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Olanzapine orodispersible tablet, oral or IM injection · Initiate 5 mg at night (2.5 mg in frail and elderly patients). · Titrate in increments of 2.5 mg to a maximum dose of 10 mg daily.",
+     "s": "HOSP:24.5"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Olanzapine, oral dispersible tablet or IM, 2.5 to 5 mg. · Use lowest dose with caution in the elderly. · May be repeated in 30 to 60 minutes, if required.",
+     "s": "PHC:21.21"
+    }
+   ]
+  },
+  {
+   "h": "Treatment",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "lanzapine: Olanzapine 5–10 mg oro-dispersible tablet or IM • Repeat after 30–60 minutes if needed",
+     "s": "impcg2024:28"
+    }
+   ]
+  },
+  {
+   "h": "Bipolar Disorder",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Olanzapine, oral, for children 13 years and older. · Initially: 2.5–5 mg once daily. · Increase to 10 mg daily if necessary.",
+     "s": "PAED:14.17"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Narrow-angle glaucoma (IM)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Do not give IM olanzapine within 1 hour of parenteral benzodiazepine (cardiorespiratory depression)",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, weight gain, hyperglycaemia, dyslipidaemia, postural hypotension",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Glucose, weight, lipids",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "alcohol-withdrawal-adult",
+  "amphetamines",
+  "delirium-adult",
+  "psychosis-adult"
+ ],
+ "link": [
+  "olanzapine"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,100 @@
+{
+ "id": "albumin",
+ "type": "drug",
+ "name": "Albumin",
+ "aliases": [],
+ "class": "Colloid plasma expander",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Raises plasma oncotic pressure and expands intravascular volume",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Portal Hypertension and Cirrhosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Albumin, IV, 40 g (20%), as an infusion. · Refer to specialist unit to consider transjugular intrahepatic portosystemic (TIP) shunt or potential transplant.",
+     "s": "HOSP:1.12"
+    },
+    {
+     "t": "Albumin, IV, 40 g (20%), as an infusion.",
+     "s": "HOSP:1.12"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Cardiac failure, severe anaemia, fluid overload",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give slowly",
+   "d": 1
+  },
+  {
+   "t": "Indications are narrow (large-volume paracentesis, spontaneous bacterial peritonitis, hepatorenal syndrome)",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Fluid overload, pulmonary oedema, hypersensitivity",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Vital signs, signs of overload",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "aki-paeds",
+  "bloodgas-causes",
+  "bloodgas-interpretation",
+  "bloodgas_causes",
+  "bloodgas_interpretation",
+  "burns_paeds",
+  "chol-adult",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "gerd-adult",
+  "lights",
+  "lytes-adult-ca-mg",
+  "lytes-paeds-ca-mg",
+  "urine_dipstick"
+ ],
+ "link": [
+  "human albumin",
+  "albumin 20%"
+ ],
+ "link_cs": []
+}

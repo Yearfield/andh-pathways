@@ -1,0 +1,117 @@
+{
+ "id": "suxamethonium",
+ "type": "drug",
+ "name": "Suxamethonium",
+ "aliases": [
+  "succinylcholine"
+ ],
+ "class": "Depolarising neuromuscular blocker",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Persistently depolarises the motor end plate, fastest onset, shortest duration",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Depolarising Muscle Relaxants",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Suxamethonium, IV, 1–1.5 mg/kg. · Onset 30–60 seconds. · Duration 5 minutes.",
+     "s": "HOSP:12.3"
+    }
+   ]
+  },
+  {
+   "h": "Anaesthetic management of an unstable ruptured ectopic pregnancy",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Suxamethonium 100 mg intravenously can be given by practitioners confident of intubation (usual dose is 1-1.5mg/kg). · The trachea should be intubated.",
+     "s": "impcg2024:55"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  },
+  {
+   "t": "Burns, crush injury, spinal cord injury or denervation after 24–48 hours",
+   "d": 1
+  },
+  {
+   "t": "Myopathies",
+   "d": 1
+  },
+  {
+   "t": "History of malignant hyperthermia",
+   "d": 1
+  },
+  {
+   "t": "Pseudocholinesterase deficiency",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "For use only by clinicians able to manage the airway",
+   "d": 1
+  },
+  {
+   "t": "Store in the fridge",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperkalaemia, bradycardia (especially children and repeat doses), fasciculations and myalgia, malignant hyperthermia, prolonged apnoea, raised intra-ocular and intragastric pressure",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG, saturation, capnography",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "ards-paeds",
+  "lytes-adult-hyperk",
+  "op",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "succinylcholine",
+  "suxamethonium"
+ ],
+ "link_cs": []
+}

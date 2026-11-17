@@ -1,0 +1,147 @@
+{
+ "id": "cloxacillin",
+ "type": "drug",
+ "name": "Cloxacillin",
+ "aliases": [],
+ "class": "Antibiotic – penicillinase-resistant penicillin",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits cell-wall synthesis, stable to staphylococcal β-lactamase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 3 g, 6 hourly.",
+     "s": "HOSP:3.31"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 3 g, 6 hourly. 23.10.3 Sepsis In ICU: Antimicrobial therapy",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose 6 hourly for 4–6* weeks.",
+     "s": "PAED:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Pericardial Effusion",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose 6 hourly.",
+     "s": "PAED:4.19"
+    }
+   ]
+  },
+  {
+   "h": "Staphylococcal Scalded Skin Syndrome",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose 6 hourly for 5 days. · Neonates: Week 1–2 of age: administer 12 hourly.",
+     "s": "PAED:5.1"
+    }
+   ]
+  },
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose 6 hourly for 5 days.",
+     "s": "PAED:5.10"
+    }
+   ]
+  },
+  {
+   "h": "Staphylococcal Septicaemia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose 6 hourly for at least 14 days; longer courses often required.",
+     "s": "PAED:8.46"
+    },
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose 6 hourly. Can transition to oral therapy once there is sustained clinical improvement, resolution of fever and CRP < 30 mg/L.",
+     "s": "PAED:8.46"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Septic (Pyogenic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cloxacillin, IV, 50 mg/kg/dose. · If 1st week of life: 12 hourly. · If 2nd–4th week of life: 8 hourly.",
+     "s": "PAED:8.48"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "IV is irritant – dilute and give slowly",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Phlebitis, rash, hepatitis, interstitial nephritis",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-paeds",
+  "bsi-paeds"
+ ],
+ "link": [
+  "cloxacillin"
+ ],
+ "link_cs": []
+}

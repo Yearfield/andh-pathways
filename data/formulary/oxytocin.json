@@ -1,0 +1,254 @@
+{
+ "id": "oxytocin",
+ "type": "drug",
+ "name": "Oxytocin",
+ "aliases": [],
+ "class": "Uterotonic hormone",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Stimulates oxytocin receptors on the myometrium, causing rhythmic contractions, short half-life",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Midtrimester Miscarriage (from 13–22 Weeks Gestation)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Oxytocin, IV. · Dilute 20 units in 1 L sodium chloride 0.9%, i.e. 20 milliunits/mL solution, and infuse at 125 mL/hour.",
+     "s": "HOSP:5.10"
+    }
+   ]
+  },
+  {
+   "h": "Hypertensive Disorders in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Oxytocin, IM, 10 units as a single bolus after delivery of the baby.",
+     "s": "HOSP:6.9"
+    }
+   ]
+  },
+  {
+   "h": "Labour Induction",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Oxytocin, IV, 2 units in 200 mL sodium chloride 0.9%.",
+     "s": "HOSP:6.26"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Oxytocin, IM, 10 units.",
+     "s": "HOSP:6.30"
+    },
+    {
+     "t": "Oxytocin, IV, 20 units in 1 L sodium chloride 0.9% at 250 mL/hour.",
+     "s": "HOSP:6.30"
+    }
+   ]
+  },
+  {
+   "h": "Miscarriage",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Oxytocin, IV, 20 units, diluted in 1000 mL sodium chloride 0.9% and infused at 125 mL/hour (avoid where threatened miscarriage is suspected).",
+     "s": "PHC:6.5"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage (PPH)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Oxytocin, IV 20 units in 1 000 mL sodium chloride 0.9% infused at",
+     "s": "PHC:6.33"
+    },
+    {
+     "t": "Oxytocin/ergometrine, IM, 5 units/0.5 mg. · Avoid ergometrine in hypertensive women and those with heart disease, unless haemorrhage is life threatening (woman haemodynamically unstable).",
+     "s": "PHC:6.34"
+    }
+   ]
+  },
+  {
+   "h": "Inevitable miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "If bleeding, infuse oxytocin 20 units in one litre Sodium Chloride 0,9% at 125ml/hour; this will also help achieve expulsion of products of conception. · Wait for expulsion of the products of conception.",
+     "s": "impcg2024:51"
+    }
+   ]
+  },
+  {
+   "h": "Management of a septic miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Set up an intravenous line and infuse oxytocin 20 units in one litre Sodium Chloride 0,9% at 125ml/ hour  if the bleeding is heavy after removal of visible or palpable products of conception the uterus",
+     "s": "impcg2024:52"
+    },
+    {
+     "t": " Oxytocin 20 units can be added to this drip if needed.",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "h": "Management of the fourth stage of labour",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Oxytocin infusion (10-20 IU in 1000mL 0.9% saline) · Oxytocin/ergometrine or ergometrine (if the woman is not hypertensive and does not have a cardiac condition)",
+     "s": "impcg2024:62"
+    }
+   ]
+  },
+  {
+   "h": "Cervix clinically favourable:",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "If HIV positive and viral load unknown, or on ART for <4 weeks; start oxytocin with membranes intact, or use misoprostol. • Oxytocin, IV infusion, 2 units in 200 mL sodium chloride 0.9%.",
+     "s": "impcg2024:75"
+    },
+    {
+     "t": "Oxytocin, IV infusion, 2 units in 200 mL sodium chloride 0.9%. · Start at an infusion rate of 12 mL/hour (i.e. 2 milliunits/minute).",
+     "s": "impcg2024:75"
+    }
+   ]
+  },
+  {
+   "h": "Haemorrhage during caesarean delivery",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "it if uterus does not contract; followed by routine oxytocin infusion of the remaining 7.5 units; which should be maintained in the postnatal ward • delivery of the placenta by cord traction, not manual removal",
+     "s": "impcg2024:96"
+    },
+    {
+     "t": "routinely giving oxytocin 20 units in one litre Sodium Chloride 0,9% over the first eight hours postoperatively o routinely rubbing the uterus and expelling clots immediately after completing the CD",
+     "s": "impcg2024:97"
+    }
+   ]
+  },
+  {
+   "h": "Management of abruptio placentae",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "If there is no progress of labour within one to two hours after membrane rupture, augment with oxytocin if not contraindicated. • Give analgesia using morphine (0.1mg/kg to a maximum dose of 10mg) IM four hourly if necessary.",
+     "s": "impcg2024:113"
+    }
+   ]
+  },
+  {
+   "h": "Recommendations and pre-requisites for the use of uterine balloon tamponade",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "(if there is delay in securing an IV line, give 10iu Oxytocin IM) • Then infuse Tranexamic acid 1g (if available) in 200mls fluid over 10 minutes (do not mix in the same bag as the 10IU oxytocin)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "the 10IU oxytocin) • Then infuse 20 IU oxytocin in one litre Sodium Chloride 0,9% over 4-8 hours as a maintenance infusion (125- 250mls/hr)",
+     "s": "impcg2024:117"
+    },
+    {
+     "t": "Then infuse 20 IU oxytocin in one litre Sodium Chloride 0,9% over 4-8 hours as a maintenance infusion (125- 250mls/hr) • Insert a second IV line and run fast if the patient is shocked",
+     "s": "impcg2024:117"
+    }
+   ]
+  },
+  {
+   "h": "Acute inversion of the uterus",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Once reduction is achieved, give ergometrine 0.5 mg IM and oxytocin 20 units in one litre Sodium Chloride 0,9% at 240 mL/hour. · Do not remove the hand from the uterine cavity until a firm uterine contraction is felt.",
+     "s": "impcg2024:119"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used in labour and post-partum",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Fetal distress or obstructed labour (for augmentation)",
+   "d": 1
+  },
+  {
+   "t": "Hypertonic uterus",
+   "d": 1
+  },
+  {
+   "t": "Previous classical caesarean (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Never give an IV bolus for induction or augmentation – infusion only",
+   "d": 1
+  },
+  {
+   "t": "Give IM or slow IV for third-stage management",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Uterine hyperstimulation, fetal distress, uterine rupture, hypotension and tachycardia with rapid IV bolus, water intoxication and hyponatraemia with prolonged high-dose infusion",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Contractions, fetal heart rate, BP, fluid balance",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aph",
+  "chorioamnionitis",
+  "miscarriage",
+  "pet",
+  "pph",
+  "preterm-labour",
+  "prolonged-labour",
+  "term-labour"
+ ],
+ "link": [
+  "oxytocin"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,117 @@
+{
+ "id": "salmeterol",
+ "type": "drug",
+ "name": "Salmeterol",
+ "aliases": [],
+ "class": "Long-acting β2 agonist",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Sustained β2-mediated bronchodilation, slow onset – not a reliever",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Asthma, Chronic Persistent",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Salmeterol/fluticasone, inhalation, 50/250 mcg 12 hourly. · Maximum dose: 50/500 mcg 12 hourly. · Well and stable for 6 months: step down to budesonide, inhaled,",
+     "s": "HOSP:16.7"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Salmeterol/fluticasone, inhalation, 50/250 mcg 12 hourly.",
+     "s": "HOSP:16.12"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Asthma",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salmeterol/fluticasone, inhalation, 50/250 mcg (1 puff) 12 hourly. 25 (Doctor initiated.)",
+     "s": "PHC:17.15"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salmeterol/fluticasone, inhalation, 50/250 mcg (1 puff) 12 hourly. (Doctor initiated.)",
+     "s": "PHC:17.18"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Asthma",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fluticasone plus salmeterol, inhaled, 12 hourly. Specialist Initiated. Metered dose inhaler: · Salmeterol/fluticasone, 25/50 MDI, 2 puffs, 12 hourly.",
+     "s": "PAED:15.27"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Asthma without an inhaled corticosteroid",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Always combined with an inhaled corticosteroid in asthma",
+   "d": 1
+  },
+  {
+   "t": "Levels raised by ritonavir",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tremor, palpitations, headache",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "copd-adult",
+  "copd_gold"
+ ],
+ "link": [
+  "salmeterol"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,299 @@
+{
+ "id": "magnesium-sulfate",
+ "type": "drug",
+ "name": "Magnesium sulfate",
+ "aliases": [
+  "magnesium sulphate",
+  "MgSO₄",
+  "MgSO4",
+  "mag sulph"
+ ],
+ "class": "Electrolyte; anticonvulsant (eclampsia); bronchodilator; anti-arrhythmic",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "status": "PILOT – † lines checked against package insert 2026-11-15; awaiting review",
+ "sources": [
+  "HOSP",
+  "PAED",
+  "PHC",
+  "pi",
+  "general"
+ ],
+ "pi_source": {
+  "title": "Adco Magnesium Sulphate 50% injection – professional information (SAHPRA repository, 21 Nov 2025)",
+  "url": "https://pi-pil-repository.sahpra.org.za/wp-content/uploads/2025/12/PI.pdf"
+ },
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not stated in the package insert consulted",
+ "item_format": "t=text, s=source:printed page (s=pi: package insert), d=dagger, n=from own notes, b=bold, h=heading",
+ "summary": "First-line anticonvulsant in eclampsia and severe pre-eclampsia; also used in acute severe asthma, torsades de pointes and hypomagnesaemia.",
+ "forms": [
+  {
+   "t": "Injection 50%: 2 mL ampoule = 1 g = 4 mmol magnesium",
+   "s": "pi"
+  },
+  {
+   "t": "1 mL magnesium sulfate 50% = 2 mmol magnesium",
+   "s": "HOSP:1.5"
+  }
+ ],
+ "moa": [
+  {
+   "t": "Magnesium is a co-factor for many enzymes and is involved in neurochemical transmission and muscle excitability",
+   "s": "pi"
+  },
+  {
+   "t": "Physiological calcium antagonist: reduces acetylcholine release at the neuromuscular junction and relaxes smooth muscle (bronchodilation)",
+   "d": 1
+  },
+  {
+   "t": "NMDA-receptor antagonism and cerebral vasodilation are the proposed anticonvulsant mechanisms in eclampsia",
+   "d": 1
+  }
+ ],
+ "pk": [
+  {
+   "t": "IV onset immediate, effect about 30 min; IM onset about 1 h, effect 3–4 h",
+   "d": 1
+  },
+  {
+   "t": "Excreted by the kidney; impaired renal function can produce toxic blood levels",
+   "s": "pi"
+  }
+ ],
+ "dosing": [
+  {
+   "h": "Eclampsia / severe pre-eclampsia – no infusion pump",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Loading: 4 g IV in 200 mL sodium chloride 0.9% over 20 minutes",
+     "s": "HOSP:6.11",
+     "b": 1
+    },
+    {
+     "t": "Then 5 g IM every 4 hours at different sites, until 24 h after delivery or after the last convulsion",
+     "s": "HOSP:6.11"
+    },
+    {
+     "t": "PHC before referral: 4 g IV loading AND 10 g IM (5 g in each buttock), then 5 g IM every 4 hours in alternate buttocks",
+     "s": "PHC:6.15"
+    }
+   ]
+  },
+  {
+   "h": "Eclampsia / severe pre-eclampsia – high-care setting",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Loading: 4 g IV in 200 mL sodium chloride 0.9% over 20 minutes",
+     "s": "HOSP:6.11",
+     "b": 1
+    },
+    {
+     "t": "Maintenance: 1 g every hour IV infusion, until 24 h after delivery or after the last convulsion",
+     "s": "HOSP:6.11"
+    }
+   ]
+  },
+  {
+   "h": "Recurrent eclamptic seizure after loading dose",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "2 g IV over 10 minutes",
+     "s": "HOSP:6.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Acute severe asthma",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "50 mg/kg (max 2 g) IV in 100 mL sodium chloride 0.9% over 20 minutes, single dose",
+     "s": "HOSP:16.4"
+    }
+   ]
+  },
+  {
+   "h": "Acute severe asthma",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "25–75 mg/kg IV bolus over 20 minutes",
+     "s": "PAED:15.22"
+    }
+   ]
+  },
+  {
+   "h": "Torsades de pointes",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "2 g IV over 5–10 minutes; if episodes recur, 2 g IV over 24 hours",
+     "s": "HOSP:3.25"
+    }
+   ]
+  },
+  {
+   "h": "Torsades de pointes",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "25–50 mg/kg IV over a few minutes",
+     "s": "PAED:4.4"
+    }
+   ]
+  },
+  {
+   "h": "Hypomagnesaemia (acute pancreatitis)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "25–50 mmol IV infusion in 12–24 hours",
+     "s": "HOSP:1.5"
+    }
+   ]
+  }
+ ],
+ "administration": [
+  {
+   "t": "IV: give as a 10% or 20% solution at a rate not exceeding 150 mg per minute; monitor blood pressure during each injection",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "IM doses are given at different sites",
+   "s": "HOSP:6.11"
+  }
+ ],
+ "adjustments": [
+  {
+   "h": "Renal",
+   "t": "Stop if urine output < 100 mL / 4 hours",
+   "s": "HOSP:6.11"
+  },
+  {
+   "h": "Renal",
+   "t": "Urine output should not fall below 25 mL/hour; toxicity develops at lower doses in renal failure",
+   "s": "pi"
+  },
+  {
+   "h": "Pregnancy",
+   "t": "Crosses the placenta; monitor fetal heart rate; high doses can cause neonatal hypotonia and respiratory depression",
+   "s": "pi"
+  },
+  {
+   "h": "Pregnancy",
+   "t": "Continuous use for more than 5–7 days can cause fetal skeletal adverse effects",
+   "s": "pi"
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Heart block (class I–III), myocardial damage, myasthenia gravis",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Renal failure, anuria, severe renal impairment",
+   "s": "pi"
+  },
+  {
+   "t": "Hepatic encephalopathy or hepatic failure; intracranial pathology",
+   "s": "pi"
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Nifedipine: profound hypotension may occur",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Potentiates and prolongs non-depolarising neuromuscular blockers; additive neuromuscular block with aminoglycosides",
+   "s": "pi"
+  },
+  {
+   "t": "Additive depression with barbiturates, opioids, hypnotics and anaesthetics – adjust their dose",
+   "s": "pi"
+  },
+  {
+   "t": "Digitalis glycosides: use with caution",
+   "s": "pi"
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Flushing, nausea and vomiting, lethargy, drowsiness, thirst, muscle weakness",
+   "s": "pi"
+  },
+  {
+   "t": "Hypotension, bradycardia, arrhythmias, prolonged PR / QRS / QT",
+   "s": "pi"
+  },
+  {
+   "t": "Toxicity by serum level: reflexes diminished 2.1–2.9 mmol/L; reflexes lost, somnolence, hypotension 2.9–5 mmol/L; respiratory paralysis and cardiac arrest above 5 mmol/L",
+   "s": "pi",
+   "b": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "STOP if knee reflexes absent, urine output < 100 mL / 4 hours, or respiratory rate < 16 / minute",
+   "s": "HOSP:6.11",
+   "b": 1
+  },
+  {
+   "t": "Loss of the deep tendon reflex is the early clinical sign of intoxication",
+   "s": "pi"
+  }
+ ],
+ "toxicity": [
+  {
+   "t": "Respiratory depression: calcium gluconate 10%, 10 mL IV slowly, not faster than 5 mL/minute",
+   "s": "HOSP:6.11",
+   "b": 1
+  },
+  {
+   "t": "Keep injectable calcium gluconate immediately available; dialysis rapidly lowers magnesium in severe renal dysfunction",
+   "s": "pi"
+  }
+ ],
+ "conflicts": [
+  {
+   "t": "Package insert advises avoiding use within 2 hours of delivery; the STG continues magnesium until 24 hours after delivery in eclampsia. The pathway follows the STG.",
+   "s": "pi"
+  },
+  {
+   "t": "Package insert lists impaired renal function as a contraindication; the STG uses the urine-output stopping rule instead.",
+   "s": "pi"
+  }
+ ],
+ "see_also": [
+  "calcium-gluconate",
+  "nifedipine"
+ ],
+ "used_in": [
+  "hie-neonate",
+  "hte-adult",
+  "hypoglycemia-pregnancy",
+  "lytes-adult-ca-mg",
+  "lytes-paeds-ca-mg",
+  "panc-adult",
+  "pet",
+  "preterm-labour",
+  "rf-adult",
+  "rf-paeds"
+ ],
+ "verified": true,
+ "link": [
+  "magnesium sulphate",
+  "magnesium sulfate"
+ ],
+ "link_cs": [
+  "MgSO₄",
+  "MgSO4"
+ ]
+}

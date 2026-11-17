@@ -1,0 +1,90 @@
+{
+ "id": "flupenthixol",
+ "type": "drug",
+ "name": "Flupenthixol",
+ "aliases": [
+  "flupentixol"
+ ],
+ "class": "Typical antipsychotic – thioxanthene (depot)",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "D1 and D2 receptor antagonist",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Schizophrenia Spectrum Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Flupenthixol decanoate, IM, 10–40 mg every 4 weeks.",
+     "s": "HOSP:15.26"
+    }
+   ]
+  },
+  {
+   "h": "Schizophrenia Spectrum Disorders (Schizophrenia)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Flupenthixol decanoate, IM, 10 to 40 mg every 4 weeks. (Doctor prescribed.) · Initial dose: 10 mg.",
+     "s": "PHC:16.21"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "CNS depression or coma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Test dose before regular depot dosing",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Extrapyramidal effects, restlessness, insomnia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Extrapyramidal signs",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "psychosis-adult"
+ ],
+ "link": [
+  "flupenthixol",
+  "flupentixol"
+ ],
+ "link_cs": []
+}

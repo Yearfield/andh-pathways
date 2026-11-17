@@ -1,0 +1,97 @@
+{
+ "id": "calcium-gluconate",
+ "type": "drug",
+ "name": "Calcium gluconate",
+ "aliases": [],
+ "class": "Electrolyte – calcium salt",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Raises ionised calcium, stabilises the cardiac membrane in hyperkalaemia, antidote for magnesium toxicity",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Choice of drugs for post-partum hypertension",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "If respiratory depression occurs, give Calcium gluconate 10%, IV, 10 mL slowly at a rate not exceeding 5 mL/ minute. Postpartum and postnatal care",
+     "s": "impcg2024:110"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypercalcaemia",
+   "d": 1
+  },
+  {
+   "t": "Digoxin toxicity (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give slowly with ECG monitoring",
+   "d": 1
+  },
+  {
+   "t": "Never mix with bicarbonate, phosphate or ceftriaxone",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bradycardia and arrhythmias if given fast, hypotension, tissue necrosis on extravasation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG during injection, calcium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "aki-adult",
+  "aki-paeds",
+  "brady-adult",
+  "ckd-adult",
+  "ckd-paeds",
+  "hie-neonate",
+  "lytes-adult-hyperk",
+  "lytes-paeds-hyperk",
+  "panc-adult",
+  "pet",
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "calcium gluconate"
+ ],
+ "link_cs": []
+}

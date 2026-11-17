@@ -1,0 +1,173 @@
+{
+ "id": "sodium-chloride-0-9",
+ "type": "drug",
+ "name": "Sodium chloride 0.9%",
+ "aliases": [
+  "NaCl 0.9%",
+  "0.9% NaCl",
+  "normal saline"
+ ],
+ "class": "Isotonic crystalloid",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Expands extracellular volume, 154 mmol/L sodium and chloride",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Fluid overload",
+   "d": 1
+  },
+  {
+   "t": "Caution in heart failure and severe renal impairment",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reassess after each bolus",
+   "d": 1
+  },
+  {
+   "t": "Smaller boluses in malnutrition, heart failure and the elderly",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Fluid overload, pulmonary oedema, hyperchloraemic metabolic acidosis with large volumes, hypernatraemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Vital signs, urine output, lung bases, electrolytes",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "age-adult",
+  "age-paeds",
+  "aki-adult",
+  "aki-paeds",
+  "alvarado",
+  "aph",
+  "appy-adult",
+  "appy-paeds",
+  "ards-paeds",
+  "bo-adult",
+  "bo-paeds",
+  "brady-adult",
+  "bronchiolitis-paeds",
+  "burns_adult",
+  "burns_paeds",
+  "chol-adult",
+  "chorioamnionitis",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "ckd-paeds",
+  "copd-adult",
+  "croup-paeds",
+  "dka-adult",
+  "dka-paeds",
+  "ectopic",
+  "eczema-paeds",
+  "fluids-adult-burns",
+  "fluids-adult-dehydration",
+  "fluids-adult-dka",
+  "fluids-adult-maintenance",
+  "fluids-adult-shock",
+  "fluids-neonate",
+  "fluids-paeds-burns",
+  "fluids-paeds-dehydration",
+  "fluids-paeds-dka",
+  "fluids-paeds-maintenance",
+  "fluids-paeds-sam",
+  "fluids-paeds-shock",
+  "fluids-reference",
+  "fracture-adult",
+  "fracture-paeds",
+  "ganzoni",
+  "gerd-adult",
+  "gerd-paeds",
+  "hcc-adult",
+  "hernia-adult",
+  "hernia-paeds",
+  "hie-adult",
+  "hie-child",
+  "hie-neonate",
+  "hte-adult",
+  "hyperglycaemia-adult",
+  "hypoglycemia-adult",
+  "hypoglycemia-paeds",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "lytes-adult-ca-mg",
+  "lytes-adult-hyperk",
+  "lytes-adult-hyperna",
+  "lytes-adult-hypok",
+  "lytes-adult-hypona",
+  "lytes-adult-phos-refeed",
+  "lytes-paeds-hyperna",
+  "lytes-paeds-hypona",
+  "meningitis-paeds",
+  "miscarriage",
+  "op",
+  "panc-adult",
+  "pet",
+  "pph",
+  "prb-adult",
+  "prb-paeds",
+  "preterm-labour",
+  "prolonged-labour",
+  "pud-adult",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-paeds",
+  "sam",
+  "sinusitis-adult",
+  "sinusitis-paeds",
+  "stroke",
+  "tbi-adult",
+  "tbi-paeds",
+  "tca",
+  "term-labour",
+  "ugib-adult",
+  "ugib-paeds",
+  "uti-pregnancy",
+  "wernicke-adult"
+ ],
+ "link": [
+  "sodium chloride 0.9%",
+  "normal saline",
+  "0.9% NaCl",
+  "NaCl 0.9%"
+ ],
+ "link_cs": []
+}

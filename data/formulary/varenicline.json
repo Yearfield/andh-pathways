@@ -1,0 +1,61 @@
+{
+ "id": "varenicline",
+ "type": "drug",
+ "name": "Varenicline",
+ "aliases": [],
+ "class": "Smoking-cessation aid",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Partial agonist at α4β2 nicotinic receptors: reduces craving and reward",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Reduce dose in severe renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, insomnia, abnormal dreams, mood change",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Mood",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "nicotine-withdrawal"
+ ],
+ "link": [
+  "varenicline"
+ ],
+ "link_cs": []
+}

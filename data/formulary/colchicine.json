@@ -1,0 +1,84 @@
+{
+ "id": "colchicine",
+ "type": "drug",
+ "name": "Colchicine",
+ "aliases": [],
+ "class": "Anti-gout anti-inflammatory",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds tubulin and inhibits neutrophil migration and inflammasome activation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Gout",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Colchicine, oral, 0.5 mg 12 hourly for 6 months. o eGFR < 50 mL/minute: consult a specialist",
+     "s": "HOSP:13.9"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe renal or hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "Blood dyscrasias",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Narrow therapeutic index",
+   "d": 1
+  },
+  {
+   "t": "Macrolides, azoles, ritonavir and verapamil raise levels (fatal toxicity reported)",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, nausea, vomiting, abdominal pain, myopathy and bone-marrow suppression in toxicity",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tb-adult"
+ ],
+ "link": [
+  "colchicine"
+ ],
+ "link_cs": []
+}

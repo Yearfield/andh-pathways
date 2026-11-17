@@ -1,0 +1,111 @@
+{
+ "id": "levetiracetam",
+ "type": "drug",
+ "name": "Levetiracetam",
+ "aliases": [],
+ "class": "Anticonvulsant",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds synaptic vesicle protein SV2A",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Levetiracetam, oral · Initially 250 mg 12 hourly, increasing to a therapeutic dose of 500 mg 12 hourly.",
+     "s": "HOSP:14.31"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "DTG include valproate, lamotrigine, levetiracetam, and topiramate. Remember • Carbamazepine · Dolutegravir · that valproate is contra-indicated during pregnancy. • Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenyt",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Levetiracetam, oral, (Doctor initiated) · Infants 1 to < 6 months: − Initial dose: 7 mg/kg/dose twice daily.",
+     "s": "PHC:15.37"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Levetiracetam, oral: (Doctor initiated) · Initially, 250 mg 12 hourly, increasing to a therapeutic dose of 500 mg 12 hourly.",
+     "s": "PHC:15.49"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Levetiracetam, oral, · Infants 1 to < 6 months: - Initial dose: 7 mg/kg/dose twice daily.",
+     "s": "PAED:13.25"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Specialist decision; among the safer options",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Few interactions",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Somnolence, irritability, mood change, dizziness",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tbi-adult"
+ ],
+ "link": [
+  "levetiracetam"
+ ],
+ "link_cs": []
+}

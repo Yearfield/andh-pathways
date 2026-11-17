@@ -1,0 +1,129 @@
+{
+ "id": "lidocaine",
+ "type": "drug",
+ "name": "Lidocaine",
+ "aliases": [
+  "lignocaine"
+ ],
+ "class": "Local anaesthetic / class Ib anti-arrhythmic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks voltage-gated sodium channels",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Regular Wide Qrs Tachycardias",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lidocaine (lignocaine), IV, 50–100 mg (1–2 mg/kg) initially as a slow IV injection over 2 minutes. · Repeat at 5-minute intervals if required to a total of 200–300 mg.",
+     "s": "HOSP:3.25"
+    },
+    {
+     "t": "Lidocaine (lignocaine), IV infusion, 1–3 mg/minute for 24–30 hours.",
+     "s": "HOSP:3.25"
+    }
+   ]
+  },
+  {
+   "h": "Anaesthesia, Topical",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lidocaine jelly, topical, 2 g/100mL. · For urethral catheterisation: female 5–7 mL, male 10–15 mL.",
+     "s": "HOSP:12.16"
+    }
+   ]
+  },
+  {
+   "h": "Hypoxia-ischaemia of the Newborn (Perinatal Hypoxia/hypoxic-ischaemic Encephalopathy (HIE))",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lidocaine (lignocaine), IV. · Loading dose: 2 mg/kg over 10 minutes.",
+     "s": "PAED:19.46"
+    }
+   ]
+  },
+  {
+   "h": "Seizures, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lidocaine (lignocaine), IV. · Loading dose: 2 mg/kg administered over 10 minutes.",
+     "s": "PAED:19.49"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity to amide anaesthetics",
+   "d": 1
+  },
+  {
+   "t": "Heart block (IV use)",
+   "d": 1
+  },
+  {
+   "t": "Adrenaline-containing solution in end-artery areas",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Calculate the maximum dose by weight before infiltration (lower without adrenaline)",
+   "d": 1
+  },
+  {
+   "t": "Aspirate before injecting",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Toxicity: perioral tingling, tinnitus, seizures, arrhythmias, cardiac arrest",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fracture-adult",
+  "fracture-paeds",
+  "hie-neonate",
+  "miscarriage",
+  "pid",
+  "prb-adult",
+  "term-labour",
+  "uds",
+  "vds"
+ ],
+ "link": [
+  "lignocaine",
+  "lidocaine"
+ ],
+ "link_cs": []
+}

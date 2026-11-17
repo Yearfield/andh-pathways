@@ -1,0 +1,115 @@
+{
+ "id": "beclomethasone",
+ "type": "drug",
+ "name": "Beclomethasone",
+ "aliases": [
+  "beclometasone"
+ ],
+ "class": "Inhaled corticosteroid",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Local anti-inflammatory effect in the airways",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Asthma, Chronic Persistent",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Beclomethasone, inhalation, 200 mcg whenever salbutamol is taken.",
+     "s": "HOSP:16.6"
+    },
+    {
+     "t": "Beclomethasone, inhalation, 200 mcg 12 hourly for 6 months; reduced to 200 mcg daily once well and stable.",
+     "s": "HOSP:16.6"
+    },
+    {
+     "t": "Beclomethasone, inhalation, 400 mcg 12 hourly.",
+     "s": "HOSP:16.7"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Asthma",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Beclomethasone, inhalation, 200 mcg whenever salbutamol taken.",
+     "s": "PHC:17.13"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Asthma",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Beclomethasone or budesonide, inhalation, 50–100 mcg, 12 hourly using a metered-dose inhaler with a spacer device.",
+     "s": "PAED:15.26"
+    },
+    {
+     "t": "Beclomethasone or budesonide, inhalation, 100–200 mcg, 12 hourly using a metered-dose inhaler with a spacer device.",
+     "s": "PAED:15.26"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Rinse the mouth after use",
+   "d": 1
+  },
+  {
+   "t": "Use a spacer",
+   "d": 1
+  },
+  {
+   "t": "Inhaled steroid of choice with ritonavir",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Oral candidiasis, hoarseness, adrenal suppression at high doses",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Growth in children on long-term high doses",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "copd-adult"
+ ],
+ "link": [
+  "beclomethasone",
+  "beclometasone"
+ ],
+ "link_cs": []
+}

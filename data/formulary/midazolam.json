@@ -1,0 +1,302 @@
+{
+ "id": "midazolam",
+ "type": "drug",
+ "name": "Midazolam",
+ "aliases": [],
+ "class": "Benzodiazepine (short-acting)",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Enhances GABA-A receptor activity: sedative, amnestic, anticonvulsant, water-soluble, can be given IM, buccal or intranasal",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Regular Wide Qrs Tachycardias",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, IV, 1–2.5 mg, administered over 2-3 minutes. · Monitor and repeat dose after 2-3 minutes, as necessary.",
+     "s": "HOSP:3.22"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, IV, 10 mg. - Hypoglycaemia. - Electrolyte",
+     "s": "HOSP:14.15"
+    },
+    {
+     "t": "Midazolam, IV, 0.1 – 0.2 mg/kg bolus, followed by 0.05 – 0.5 mg/kg/hour ventilate, maintain infusion, titrated to effect. PaCO2 in the low-normal",
+     "s": "HOSP:14.17"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, oral or buccal, 7.5–15 mg immediately.",
+     "s": "HOSP:15.6"
+    },
+    {
+     "t": "Midazolam, IM, 7.5–15 mg immediately.",
+     "s": "HOSP:15.7"
+    }
+   ]
+  },
+  {
+   "h": "Isoniazid Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, IM/IV 10 mg, repeat once after 5 to 10 minutes if necessary.",
+     "s": "HOSP:19.27"
+    }
+   ]
+  },
+  {
+   "h": "Post-intubation Sedation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, IV infusion, 0.05–0.2 mg/kg/hour.",
+     "s": "HOSP:20.19"
+    },
+    {
+     "t": "Midazolam, IV, 0.2 mg/kg/hour.",
+     "s": "HOSP:20.20"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, SC/IV, 0.5 to 5 mg immediately. · Titrate up slowly. · Lower doses are indicated for patients with liver dysfunction.",
+     "s": "HOSP:24.8"
+    }
+   ]
+  },
+  {
+   "h": "Sedation in Palliative Care",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Midazolam, SC/IV: · Initial dose: 1 to 5 mg as needed. · Titrate to effect.",
+     "s": "HOSP:24.13"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Midazolam, IM 0.2 mg/kg, OR buccal* 0.5 mg/kg (Doctor 0.9%. Do not overhydrate. prescribed). » Blood gas analysis for electrolytes. OR Correct as required.",
+     "s": "PHC:15.14"
+    },
+    {
+     "t": "Midazolam, IV, 10mg (Doctor prescribed, administered by cause of seizures such as: a nurse with approval by a doctor). - Hypoglycaemia.",
+     "s": "PHC:15.20"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Midazolam, buccal, 7.5–15 mg immediately, using the parenteral formulation.",
+     "s": "PHC:16.7"
+    },
+    {
+     "t": "Midazolam, IM, 7.5 to 15 mg immediately. · Repeat after 30 to 60 minutes if needed.",
+     "s": "PHC:16.7"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Children and Adolescents",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Midazolam, IM, 0.1 to 0.15 mg/kg/dose immediately as a single dose. · Onset of action: within 5 minutes.",
+     "s": "PHC:16.9"
+    }
+   ]
+  },
+  {
+   "h": "Seizures and Status Epilepticus",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Midazolam, buccal, 0.5 mg/kg/dose. See dosing table: Appendix IV. · Use midazolam for injection 5 mg in 1 mL undiluted. · Draw up the required volume in a 5 mL syringe.",
+     "s": "PHC:21.31"
+    },
+    {
+     "t": "Midazolam, IM: · Child >13 kg: midazolam, IM, 5 mg, repeat once after 5 to 10 minutes if still fitting.",
+     "s": "PHC:21.31"
+    },
+    {
+     "t": "Midazolam, IM, 10 mg, immediately. · Repeat once after 5 to 10 minutes if still fitting.",
+     "s": "PHC:21.32"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Midazolam, IM, 1 to 5 mg immediately. · Repeat after 30 to 60 minutes if needed. · Lower doses are indicated for patients with liver failure.",
+     "s": "PHC:22.7"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Midazolam, buccal, 0.5 mg/kg/dose. Weight Dose Injection formulation (buccal Age kg mg administration) 5 mg/mL Months/years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Treatment",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "r psychological factors, it could be · • Midazolam, buccal, 7.5–15 mg, immediately, due to physical factors also. · using the parenteral formulation.",
+     "s": "impcg2024:28"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Midazolam, IV, 0.1 mg/kg. · Benzodiazepines are poorly metabolised in liver failure and may result in prolonged sedation.",
+     "s": "PAED:2.36"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Midazolam, IM, 0.1 mg/kg, or buccal*, 0.5 mg/kg. Other biochemical disorders: OR Correct abnormalities, if present, e.g. glucose, calcium and sodium.",
+     "s": "PAED:13.8"
+    }
+   ]
+  },
+  {
+   "h": "Hypoxia-ischaemia of the Newborn (Perinatal Hypoxia/hypoxic-ischaemic Encephalopathy (HIE))",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Midazolam, IV. · Loading dose: 0.05 mg/kg IV over 10 minutes. · Followed by a continuous infusion of 0.03-0.3 mg/kg/hour.",
+     "s": "PAED:19.46"
+    },
+    {
+     "t": "Midazolam, IV. · Loading dose: 0.05 mg/kg over 10 minutes. · Followed by a continuous infusion of 0.03–0.3 mg/kg/hour.",
+     "s": "PAED:19.46"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when needed; neonatal respiratory depression near delivery",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression without airway support",
+   "d": 1
+  },
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Titrate IV in small increments",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in the elderly and with opioids",
+   "d": 1
+  },
+  {
+   "t": "Protease inhibitors and azoles greatly prolong the effect",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Respiratory depression, apnoea, hypotension, paradoxical agitation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, saturation, BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "amphetamines",
+  "ards-adult",
+  "cocaine",
+  "hcc-adult",
+  "hie-adult",
+  "hie-child",
+  "hie-neonate",
+  "hte-adult",
+  "meningitis-neonate",
+  "op",
+  "psychosis-adult",
+  "rass",
+  "rf-adult",
+  "rsi-adult",
+  "rsi-paeds",
+  "tbi-adult",
+  "tbi-paeds",
+  "tca"
+ ],
+ "link": [
+  "midazolam"
+ ],
+ "link_cs": []
+}

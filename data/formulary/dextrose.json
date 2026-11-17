@@ -1,0 +1,161 @@
+{
+ "id": "dextrose",
+ "type": "drug",
+ "name": "Dextrose",
+ "aliases": [
+  "glucose 50%",
+  "glucose 10%",
+  "D50",
+  "D10",
+  "neonatalyte"
+ ],
+ "class": "Carbohydrate IV fluid / hypoglycaemia treatment",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Supplies glucose as substrate, 5% is hypotonic once glucose is metabolised (free water), 10–50% raise blood glucose",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Seizures, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dextrose, IV as bolus, 250–500 mg/kg. · Follow with 6–12 mg/kg/minute or more until blood glucose is within the physiological range. (10% Dextrose = 10 g dextrose/100 mL).",
+     "s": "PAED:19.51"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hyperglycaemia",
+   "d": 1
+  },
+  {
+   "t": "5% as resuscitation fluid",
+   "d": 1
+  },
+  {
+   "t": "Hypotonic solutions in raised intracranial pressure",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give 50% via a large vein",
+   "d": 1
+  },
+  {
+   "t": "Give thiamine before glucose in alcohol dependence or malnutrition",
+   "d": 1
+  },
+  {
+   "t": "Rebound hypoglycaemia after bolus",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperglycaemia, hyponatraemia with hypotonic solutions, hypokalaemia, phlebitis and tissue necrosis on extravasation of 50%",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood glucose, sodium, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "age-adult",
+  "age-paeds",
+  "aki-adult",
+  "aki-paeds",
+  "alcohol-withdrawal-adult",
+  "appy-paeds",
+  "ards-paeds",
+  "bo-paeds",
+  "brady-adult",
+  "burns_paeds",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "ckd-paeds",
+  "delirium-adult",
+  "dka-adult",
+  "dka-paeds",
+  "fluids-adult-dehydration",
+  "fluids-adult-dka",
+  "fluids-adult-maintenance",
+  "fluids-adult-shock",
+  "fluids-neonate",
+  "fluids-paeds-dehydration",
+  "fluids-paeds-dka",
+  "fluids-paeds-maintenance",
+  "fluids-paeds-sam",
+  "fluids-reference",
+  "hcc-adult",
+  "hernia-paeds",
+  "hf-paeds",
+  "hie-adult",
+  "hie-child",
+  "hie-neonate",
+  "hyperglycaemia-adult",
+  "hypoglycemia-adult",
+  "hypoglycemia-neonate",
+  "hypoglycemia-paeds",
+  "hypoglycemia-pregnancy",
+  "lytes-adult-hyperk",
+  "lytes-adult-hyperna",
+  "lytes-paeds-hyperk",
+  "lytes-paeds-hyperna",
+  "lytes-paeds-hypona",
+  "meningitis-paeds",
+  "paracetamol",
+  "rf-paeds",
+  "rsi-adult",
+  "rsi-paeds",
+  "sam",
+  "stroke",
+  "tbi-adult",
+  "tbi-paeds",
+  "toxic-alcohols",
+  "ugib-adult",
+  "ugib-paeds",
+  "wernicke-adult"
+ ],
+ "link": [
+  "dextrose 10%",
+  "dextrose 50%",
+  "glucose 50%",
+  "glucose 10%",
+  "dextrose 5%"
+ ],
+ "link_cs": [
+  "D10",
+  "D50"
+ ]
+}

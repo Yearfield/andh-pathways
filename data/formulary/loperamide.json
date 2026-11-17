@@ -1,0 +1,129 @@
+{
+ "id": "loperamide",
+ "type": "drug",
+ "name": "Loperamide",
+ "aliases": [],
+ "class": "Antidiarrhoeal – peripheral opioid agonist",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Slows intestinal transit via gut μ-receptors, minimal CNS penetration",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Diarrhoea, Acute Non-inflammatory",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Loperamide, oral, 4 mg immediately, followed by 2 mg after each loose stool. · Maximum dose: refer to dose table below",
+     "s": "HOSP:1.20"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Loperamide, oral, 4 mg immediately. · Then 2 mg after each loose stool. · Maximum dose: 16 mg in 24 hours.",
+     "s": "HOSP:15.35"
+    }
+   ]
+  },
+  {
+   "h": "Table 21: Distinguishing small bowel vs large bowel diarrhoea",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Overuse of loperamide with a protease inhibitor. This can result in severe ileus as the protease inhibitor inhibits loperamide metabolism. A suggested maximum dose is 1 tablet 12 hourly until symptom relief. • There is no place for antidi",
+     "s": "hiv2026:84"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute, without Blood, in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Loperamide, oral, 4 mg immediately and 2 mg as required after each loose stool.",
+     "s": "PHC:2.16"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Hiv-associated",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Loperamide, oral, 2 mg as required. · Maximum 8 mg daily.",
+     "s": "PHC:11.22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Dysentery (blood in stool or fever)",
+   "d": 1
+  },
+  {
+   "t": "Children (per guideline)",
+   "d": 1
+  },
+  {
+   "t": "Suspected C. difficile",
+   "d": 1
+  },
+  {
+   "t": "Ileus",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Not a substitute for rehydration",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Constipation, abdominal cramps, ileus",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "fluids-adult-dehydration",
+  "opioids",
+  "opioids-withdrawal",
+  "prb-adult",
+  "prb-paeds"
+ ],
+ "link": [
+  "loperamide"
+ ],
+ "link_cs": []
+}

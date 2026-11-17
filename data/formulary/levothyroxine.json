@@ -1,0 +1,122 @@
+{
+ "id": "levothyroxine",
+ "type": "drug",
+ "name": "Levothyroxine",
+ "aliases": [
+  "thyroxine"
+ ],
+ "class": "Thyroid hormone (T4)",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Converted to T3, which binds nuclear thyroid receptors and regulates metabolic rate",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hypothyroidism",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Levothyroxine, oral, 100 mcg daily. · If there is a risk of ischaemic heart disease, start at 25 mcg daily and increase by 25 mcg every 4 weeks.",
+     "s": "HOSP:8.24"
+    }
+   ]
+  },
+  {
+   "h": "Myxoedema Coma",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Levothyroxine (T4), oral. · Loading dose: 200 mcg as a single dose. · Maintenance dose: 100 mcg, daily.",
+     "s": "HOSP:23.31"
+    }
+   ]
+  },
+  {
+   "h": "Hypothyroidism in Children and Adolescents",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Levothyroxine, oral, 100 mcg/m2 once daily, preferably on an empty stomach (Doctor initiated).",
+     "s": "PHC:9.22"
+    }
+   ]
+  },
+  {
+   "h": "Hypothyroidism in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Levothyroxine, oral, 100 mcg daily, preferably on an empty stomach. · If there is a risk of ischaemic heart disease, start at 25 mcg daily and increase by 25 mcg every 4 weeks.",
+     "s": "PHC:9.22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – dose requirement rises in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Untreated adrenal insufficiency",
+   "d": 1
+  },
+  {
+   "t": "Thyrotoxicosis",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Start low in the elderly and in ischaemic heart disease",
+   "d": 1
+  },
+  {
+   "t": "Take on an empty stomach, separated from iron and calcium",
+   "d": 1
+  },
+  {
+   "t": "Increases warfarin effect",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Features of over-replacement: palpitations, tremor, weight loss, arrhythmia, angina, osteoporosis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "TSH 6–8 weeks after each dose change",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "brady-adult"
+ ],
+ "link": [
+  "levothyroxine",
+  "thyroxine"
+ ],
+ "link_cs": []
+}

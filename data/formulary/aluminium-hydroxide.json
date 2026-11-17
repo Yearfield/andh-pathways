@@ -1,0 +1,79 @@
+{
+ "id": "aluminium-hydroxide",
+ "type": "drug",
+ "name": "Aluminium hydroxide",
+ "aliases": [
+  "magnesium trisilicate"
+ ],
+ "class": "Antacid",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Neutralises gastric acid, binds phosphate",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aluminium hydroxide 300mg/5ml, oral, 10 mL 8 hourly with meals if calcium-phosphate product >4.4 mmol2/L2, for two weeks only, then switch to calcium carbonate.",
+     "s": "HOSP:7.6"
+    },
+    {
+     "t": "Aluminium hydroxide BP (300 mg/5 mL), oral, 10 mL 8 hourly. (Specialist initiated.) · To prevent dementia associated with chronic aluminium toxicity, do not",
+     "s": "HOSP:7.6"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe short term",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypophosphataemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduces absorption of many drugs (dolutegravir, quinolones, tetracyclines, iron) – separate doses",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Constipation, hypophosphataemia with long use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-adult"
+ ],
+ "link": [
+  "magnesium trisilicate",
+  "aluminium hydroxide"
+ ],
+ "link_cs": []
+}

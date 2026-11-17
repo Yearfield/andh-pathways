@@ -1,0 +1,85 @@
+{
+ "id": "chlorpromazine",
+ "type": "drug",
+ "name": "Chlorpromazine",
+ "aliases": [],
+ "class": "Typical antipsychotic – phenothiazine",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "D2 antagonist with α1, H1 and muscarinic blockade",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Schizophrenia Spectrum Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Chlorpromazine, oral, 75–300 mg at night, but may be increased to 800mg a day in 2–3 divided doses according to clinical response.",
+     "s": "HOSP:15.27"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "CNS depression or coma",
+   "d": 1
+  },
+  {
+   "t": "Bone-marrow depression",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "IM injection is painful and causes hypotension",
+   "d": 1
+  },
+  {
+   "t": "Lowers seizure threshold",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, postural hypotension, antimuscarinic effects, extrapyramidal effects, photosensitivity, QT prolongation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "psychosis-adult"
+ ],
+ "link": [
+  "chlorpromazine"
+ ],
+ "link_cs": []
+}

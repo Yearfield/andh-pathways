@@ -1,0 +1,207 @@
+{
+ "id": "lorazepam",
+ "type": "drug",
+ "name": "Lorazepam",
+ "aliases": [],
+ "class": "Benzodiazepine (intermediate-acting)",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Enhances GABA-A receptor activity, no active metabolites, so preferred in liver disease",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Eclampsia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, IV/IM, 4 mg. · May be repeated after 10-15 minutes.",
+     "s": "HOSP:6.11"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, IV, 4 mg, administered not faster than 2 » Identify and treat the mg/minute.",
+     "s": "HOSP:14.15"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, oral, 0.5–2 mg immediately.",
+     "s": "HOSP:15.6"
+    },
+    {
+     "t": "Lorazepam, IM, 0.5–2 mg immediately.",
+     "s": "HOSP:15.7"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, IM, 1–4 mg every 30–60 minutes until patient is sedated. · Repeat dose regularly to maintain mild sedation.",
+     "s": "HOSP:15.33"
+    }
+   ]
+  },
+  {
+   "h": "Isoniazid Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, IV/IM, 4 mg, repeat once after 5–10 minutes, if necessary.",
+     "s": "HOSP:19.27"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, IM, 0.25–1 mg, 2 to 4 hourly, maximum dose 3 mg in 24 hours",
+     "s": "HOSP:20.15"
+    },
+    {
+     "t": "Lorazepam, oral, 0.5 to 1 mg 2 to 4 hourly as required. · Tablets may be crushed and administered sublingually.",
+     "s": "HOSP:24.8"
+    }
+   ]
+  },
+  {
+   "h": "Post-intubation Sedation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, IV, 0.1 mg/kg/hour. Note: Lorazepam (0.1 mg/kg/hour) is as effective (and as easy to wean) as midazolam 0.2 mg/kg/hour) but is more difficult to titrate. Due to high fat solubility,",
+     "s": "HOSP:20.20"
+    }
+   ]
+  },
+  {
+   "h": "Anxiety",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lorazepam, oral, 0.5 to 1 mg, immediately. · Repeat as necessary to control symptoms. · Tablets may be crushed and administered sublingually.",
+     "s": "HOSP:24.7"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lorazepam, IV or IO, 0.1 mg/kg over 60 seconds (max 4 mg/dose). » Monitor cerebral perfusion pressure 5-10 minutes OR (CPP), heart rate, oxygen after seizure • Midazolam, IV or IO, 0.25 mg/kg over 60 seconds, (max 10 mg/",
+     "s": "PAED:13.8"
+    },
+    {
+     "t": "Lorazepam, IM or buccal, 0.1 mg/kg (max 4 mg/dose). Correct as required.",
+     "s": "PAED:13.8"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lorazepam, oral: · Child < 2 years: 25 mcg/kg 8–12 hourly. · Child 2–5 years: 500 mcg 8–12 hourly.",
+     "s": "PAED:21.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid regular use",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  },
+  {
+   "t": "Sleep apnoea",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Additive with opioids and alcohol",
+   "d": 1
+  },
+  {
+   "t": "Store injection in the fridge",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, respiratory depression, hypotension, paradoxical agitation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, saturation",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "alcohol-withdrawal-adult",
+  "amphetamines",
+  "cocaine",
+  "delirium-adult",
+  "hie-adult",
+  "hie-child",
+  "hte-adult",
+  "op",
+  "pet",
+  "psychosis-adult",
+  "rass",
+  "rsi-adult",
+  "rsi-paeds",
+  "stroke",
+  "tbi-adult",
+  "tbi-paeds",
+  "tca"
+ ],
+ "link": [
+  "lorazepam"
+ ],
+ "link_cs": []
+}

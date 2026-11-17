@@ -1,0 +1,107 @@
+{
+ "id": "multivitamin",
+ "type": "drug",
+ "name": "Multivitamin",
+ "aliases": [],
+ "class": "Vitamin supplement",
+ "group": "Vitamins and nutrition",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces multiple vitamin deficiencies",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cirrhosis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Multivitamin, oral, 5 mL as a single daily dose.",
+     "s": "PAED:2.27"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Iron Deficiency",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Multivitamin, drops, oral, 0.3 mL daily for formula fed babies.",
+     "s": "PAED:3.11"
+    },
+    {
+     "t": "Multivitamin, drops, oral, 0.6 mL daily for breastfed babies.",
+     "s": "PAED:3.11"
+    }
+   ]
+  },
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Multivitamin, oral, 5 mL daily. (Formulation to include pyridoxine, other B vitamins, vitamin C 30 mg and vitamin D 400 IU.)",
+     "s": "PAED:6.11"
+    }
+   ]
+  },
+  {
+   "h": "Prematurity/preterm Neonate",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Multivitamin, oral, providing at least vitamin D, 400–800 IU and vitamin A, 1250–5000 IU per 24 hours. Continue with iron and vitamin supplementation until the infant is on a balanced diet.",
+     "s": "PAED:19.20"
+    }
+   ]
+  },
+  {
+   "h": "Hyperbilirubinaemia, Conjugated",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Multivitamin drops, oral, 0.6 mL daily.",
+     "s": "PAED:19.11"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [],
+ "adverse_effects": [
+  {
+   "t": "GI upset",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-paeds",
+  "sam"
+ ],
+ "link": [
+  "multivitamin"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,308 @@
+{
+ "id": "paracetamol",
+ "type": "drug",
+ "name": "Paracetamol",
+ "aliases": [
+  "acetaminophen"
+ ],
+ "class": "Non-opioid analgesic and antipyretic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Central inhibition of prostaglandin synthesis, minimal peripheral anti-inflammatory effect",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 500 mg–1 g, 4–6 hourly as required (to a maximum of 4 g in 24 hours). · Maximum dose: 15 mg/kg/dose.",
+     "s": "HOSP:4.3"
+    }
+   ]
+  },
+  {
+   "h": "Dysmenorrhoea",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 500 mg to 1 g, 4 to 6 hourly as required (to a maximum of 4 g in 24 hours). · Maximum dose: 15 mg/kg/dose.",
+     "s": "HOSP:5.1"
+    }
+   ]
+  },
+  {
+   "h": "Insect Bites and Stings",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 500 mg to 1 g 4 to 6 hourly when required (to a maximum of 4 g in 24 hours). · Maximum dose: 15 mg/kg/dose.",
+     "s": "HOSP:19.2"
+    }
+   ]
+  },
+  {
+   "h": "Pain Management",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Paracetamol, IV, 1 g 6 hourly for 24 hours. (Specialist initiated.) · If required beyond 24 hours prescription would need to be authorised by a specialist.",
+     "s": "HOSP:23.17"
+    }
+   ]
+  },
+  {
+   "h": "Thyroid Crisis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 1 g, 4 to 6 hourly as required (to a maximum of 4 g in 24 hours). · Maximum single dose: 15 mg/kg/dose.",
+     "s": "HOSP:23.30"
+    }
+   ]
+  },
+  {
+   "h": "Dental Abscess",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 10–15 mg/kg/dose 6 hourly when required.",
+     "s": "PHC:1.3"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Simplex Ulcers, Chronic",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 500 mg to 1 g, 4 to 6 hourly as required (maximum of 4 g in 24 hours). · Maximum dose: 15 mg/kg/dose.",
+     "s": "PHC:11.23"
+    }
+   ]
+  },
+  {
+   "h": "Osteoarthrosis (Osteoarthritis)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 500 mg, 6–8 hourly when required.",
+     "s": "PHC:14.8"
+    }
+   ]
+  },
+  {
+   "h": "Acute Meningitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 500 mg–1 g, 4 to 6 hourly as required (to a maximum of 4 g in 24 hours). · Maximum dose: 15 mg/kg/dose.",
+     "s": "PHC:15.52"
+    }
+   ]
+  },
+  {
+   "h": "Croup (Laryngotracheo Bronchitis) in Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 10 to 15 mg/kg/dose 6 hourly when required.",
+     "s": "PHC:17.20"
+    }
+   ]
+  },
+  {
+   "h": "Gingivitis, Uncomplicated",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 15 mg/kg/dose 6 hourly when required to a maximum of 4 doses per 24 hours.",
+     "s": "PAED:2.1"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Gingivostomatitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 15 mg/kg/dose 6 hourly.",
+     "s": "PAED:2.4"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Sickle Cell",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 15 mg/kg 6 hourly.",
+     "s": "PAED:3.8"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 15 mg/kg/dose, 6 hourly as required.",
+     "s": "PAED:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Measles",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 10–15 mg/kg/dose, 6 hourly as required until fever subsides. Pneumonia",
+     "s": "PAED:8.18"
+    }
+   ]
+  },
+  {
+   "h": "Febrile Seizures",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral, 15 mg/kg/dose 6 hourly. · Note: Paracetamol has no effect on seizure prevention.",
+     "s": "PAED:13.14"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral/NGT, 15 mg/kg, 6 hourly as required.",
+     "s": "PAED:15.3"
+    }
+   ]
+  },
+  {
+   "h": "Patent Ductus Arteriosus (PDA) in the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Paracetamol, oral. · Can be used when there are contraindications to Ibuprofen. · Dosage: 15 mg/kg every 6 hours for 5 days.",
+     "s": "PAED:19.25"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Maximum 4 g/day in adults (lower in low body weight, chronic alcohol use, malnutrition, liver disease)",
+   "d": 1
+  },
+  {
+   "t": "Check for paracetamol in combination products",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rare at therapeutic doses, hepatotoxicity in overdose",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "amphetamines",
+  "amphetamines-withdrawal",
+  "appy-adult",
+  "appy-paeds",
+  "ards-paeds",
+  "bloodgas-causes",
+  "bloodgas_causes",
+  "bo-paeds",
+  "bronchiolitis-paeds",
+  "bsi-adult",
+  "bsi-paeds",
+  "burns_adult",
+  "cirrhosis-adult",
+  "cocaine",
+  "croup-paeds",
+  "ectopic",
+  "fluids-adult-burns",
+  "fracture-adult",
+  "fracture-paeds",
+  "gerd-adult",
+  "hcc-adult",
+  "hernia-paeds",
+  "hie-adult",
+  "hie-child",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "htu-adult",
+  "hypoglycemia-adult",
+  "liver",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "meningitis-adult",
+  "meningitis-paeds",
+  "miscarriage",
+  "om-adult",
+  "om-paeds",
+  "op",
+  "opioids",
+  "opioids-withdrawal",
+  "panc-adult",
+  "paracetamol",
+  "pph",
+  "prb-paeds",
+  "pud-adult",
+  "rf-adult",
+  "sinusitis-adult",
+  "sinusitis-paeds",
+  "stroke",
+  "superwarfarin",
+  "tb-hiv-adult",
+  "tbi-adult",
+  "tbi-paeds",
+  "tca",
+  "term-labour",
+  "tonsillitis-paeds",
+  "toxic-alcohols",
+  "uti-adult",
+  "uti-paeds",
+  "uti-pregnancy"
+ ],
+ "link": [
+  "acetaminophen",
+  "paracetamol"
+ ],
+ "link_cs": []
+}

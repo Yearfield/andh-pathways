@@ -1,0 +1,173 @@
+{
+ "id": "carbamazepine",
+ "type": "drug",
+ "name": "Carbamazepine",
+ "aliases": [],
+ "class": "Anticonvulsant",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks voltage-gated sodium channels",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Carbamazepine, oral · Start with 100 mg 12 hourly. · Increase by 100–200 mg/day at weekly intervals according to",
+     "s": "HOSP:14.31"
+    }
+   ]
+  },
+  {
+   "h": "Neuropathic Pain",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Carbamazepine, oral, 100mg 12 hourly for 2 weeks. · If response is inadequate, increase the dose every 2 weeks to a maximum dose of 600 mg 12 hourly.",
+     "s": "HOSP:25.8"
+    },
+    {
+     "t": "Carbamazepine, oral 100 mg 12 hourly, initial dose. · Increase dose slowly. Doses of up to 1 200 mg daily may be required. · After exacerbation, reduce to maintenance dose of 400 to 800 mg daily.",
+     "s": "HOSP:25.8"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Carbamazepine · Dolutegravir · that valproate is contra-indicated during pregnancy. • Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenytoin, or • Phenytoin · phenobarbital if an alternative anticonvulsant cannot",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenytoin, or • Phenytoin · phenobarbital if an alternative anticonvulsant cannot be used Metformin initiation:",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "h": "ART 2026 one-page summary: baseline labs, regimens, monitoring, VL algorithm, interactions",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rifampicin and DTG Rifampicin decreases DTG levels Increase DTG dose to 50 mg twice daily¤ · special · • Repeat VL at next scheduled routine VL, · rifampicin, carbamazepine, phenytoin, merular filtration. Early increases in serum · phenobar",
+     "s": "art2026:1"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Carbamazepine, oral, 5 mg/kg/day (starting dose), 8–12 hourly. (Doctor initiated) · Increase slowly by 2 mg/kg/day at 2 weekly intervals.",
+     "s": "PHC:15.37"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Carbamazepine, oral: (Doctor initiated) · Start with 100 mg 12 hourly. · Increase by 100–200 mg/day at weekly intervals according to",
+     "s": "PHC:15.49"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Carbamazepine, oral, 5 mg/kg/day (starting dose), 8–12 hourly. · Increase slowly by 2 mg/kg/day at 2 weekly intervals. · Usual maintenance total daily dose: 10–20 mg/kg/day.",
+     "s": "PAED:13.26"
+    }
+   ]
+  },
+  {
+   "h": "Inflammatory Polyneuropathy (Guillain- Barré Syndrome) *",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Carbamazepine, oral, 5 mg/kg/dose 12 hourly.",
+     "s": "PAED:13.40"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Teratogenic – specialist decision; folic acid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "AV block",
+   "d": 1
+  },
+  {
+   "t": "Bone-marrow depression",
+   "d": 1
+  },
+  {
+   "t": "Porphyria",
+   "d": 1
+  },
+  {
+   "t": "With MAOIs",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Enzyme inducer (lowers dolutegravir, contraceptives, warfarin)",
+   "d": 1
+  },
+  {
+   "t": "Many interactions",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dizziness, diplopia, ataxia, hyponatraemia, rash, SJS/TEN, leucopenia, hepatitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Sodium, FBC",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "paracetamol"
+ ],
+ "link": [
+  "carbamazepine"
+ ],
+ "link_cs": []
+}

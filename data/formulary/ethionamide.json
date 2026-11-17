@@ -1,0 +1,109 @@
+{
+ "id": "ethionamide",
+ "type": "drug",
+ "name": "Ethionamide",
+ "aliases": [],
+ "class": "Anti-TB agent",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits mycolic acid synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Miliary TB in Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ethionamide, oral, 20 mg/kg as a single daily dose. · Maximum daily dose: 1000 mg.",
+     "s": "PAED:10.12"
+    }
+   ]
+  },
+  {
+   "h": "Table 9 Drug dosing chart for treatment of DS-TBM, CNS TB and miliary TB",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid (H): 15-20 mg/kg, · Pyrazinamide (Z): · Ethionamide (Eto): Target dose range & · maximum dose 450 mg · Target dose range & 35-45 mg/kg, · 17.5-22.5 mg/kg,",
+     "s": "tbpaeds2024:45"
+    },
+    {
+     "t": "# To make an oral suspension, crush 1 x 250 mg Ethionamide tablet to a fine powder, disperse in 8 ml of water to prepare a concentration of 250 mg/8 ml (31.3 mg/ml), administer required dose as indicated in above chart, discard unused suspe",
+     "s": "tbpaeds2024:45"
+    }
+   ]
+  },
+  {
+   "h": "Ds-tb Treatment Dosing Chart for Children 2",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Target dose Isoniazid (H): 15-20 mg/kg, Pyrazinamide (Z): Ethionamide (Eto): Target dose range & · maximum dose 450 mg · 35-45 mg/kg, · 17.5-22.5 mg/kg, · range & maximum Rifampicin (R): 22.5-30 mg/kg, maximum dose 2 g maximum dose 1 g maxi",
+     "s": "tbqrg2025:33"
+    },
+    {
+     "t": "5 To make an oral suspension, crush 1 x 250 mg ethionamide tablet to a fine powder, disperse in 8 ml of water to prepare a concentration of 250 mg/8 ml (31.3 mg/ml), administer required dose as indicated in above chart, discard unused suspe",
+     "s": "tbqrg2025:33"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid (teratogenic in animals)",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give pyridoxine",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea and vomiting, hepatitis, hypothyroidism, peripheral neuropathy",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver and thyroid function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "meningitis-paeds",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "ethionamide"
+ ],
+ "link_cs": []
+}

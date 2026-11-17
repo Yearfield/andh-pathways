@@ -1,0 +1,214 @@
+{
+ "id": "haloperidol",
+ "type": "drug",
+ "name": "Haloperidol",
+ "aliases": [],
+ "class": "Typical antipsychotic – butyrophenone",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "D2 dopamine receptor antagonist",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Dementia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75–1.5 mg 8 hourly with a higher dose at night, if required. 14.6",
+     "s": "HOSP:14.6"
+    }
+   ]
+  },
+  {
+   "h": "Chorea",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75–5 mg 8–12 hourly. (Specialist consultation.)",
+     "s": "HOSP:14.46"
+    }
+   ]
+  },
+  {
+   "h": "Schizophrenia Spectrum Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75–1.5 mg daily. · Increase to 5 mg daily if initial treatment tolerated and according to clinical response.",
+     "s": "HOSP:15.26"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75–2.5 mg 12 hourly. · Maximum dose: 5mg per 24 hours.",
+     "s": "HOSP:15.33"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75–1.5 mg twice daily. · May be repeated 4 hourly if needed to a maximum dose of 10mg in 24 hours. · May be continued short-term (usually 7 days or less) at lowest dose at which",
+     "s": "HOSP:20.14"
+    },
+    {
+     "t": "Haloperidol, IM, 0.5–1mg.",
+     "s": "HOSP:20.14"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 1.5–5 mg daily.",
+     "s": "HOSP:24.5"
+    }
+   ]
+  },
+  {
+   "h": "Schizophrenia Spectrum Disorders (Schizophrenia)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Haloperidol, oral. (Doctor prescribed.) · Initial dose: 1.5 mg daily, increasing to 5 mg daily, if initial treatment tolerated and according to clinical response.",
+     "s": "PHC:16.20"
+    },
+    {
+     "t": "Haloperidol, oral. (Doctor prescribed.) · Initial dose: 0.75 mg twice daily.",
+     "s": "PHC:16.20"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75 to 1.5 mg, repeated in 30 to 60 minutes, if required.",
+     "s": "PHC:21.21"
+    },
+    {
+     "t": "Haloperidol, IM, 0.5 to 1mg.",
+     "s": "PHC:21.21"
+    }
+   ]
+  },
+  {
+   "h": "Sydenham Chorea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.025 mg/kg/day in 2–3 divided doses. · Increase dose slowly and incrementally to 0.05 mg/kg/day.",
+     "s": "PAED:13.44"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Haloperidol, oral, 0.75–5 mg 6–8 hourly.",
+     "s": "PAED:14.35"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Haloperidol, oral: · 1 month to 11 years: 0.01–0.1 mg/kg 12–24 hourly. · 12–17 years: 1.5 mg at night, increase to 1.5 mg 12 hourly.",
+     "s": "PAED:21.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Parkinson's disease",
+   "d": 1
+  },
+  {
+   "t": "Lewy body dementia",
+   "d": 1
+  },
+  {
+   "t": "QT prolongation",
+   "d": 1
+  },
+  {
+   "t": "CNS depression or coma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Lower doses in the elderly",
+   "d": 1
+  },
+  {
+   "t": "Keep biperiden available for dystonia",
+   "d": 1
+  },
+  {
+   "t": "Avoid other QT-prolonging drugs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Extrapyramidal effects (acute dystonia, akathisia, parkinsonism), QT prolongation, sedation, neuroleptic malignant syndrome",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG where possible, temperature and rigidity (NMS)",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "alcohol-withdrawal-adult",
+  "bo-adult",
+  "delirium-adult",
+  "hcc-adult",
+  "psychosis-adult",
+  "wernicke-adult"
+ ],
+ "link": [
+  "haloperidol"
+ ],
+ "link_cs": []
+}

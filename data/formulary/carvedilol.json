@@ -1,0 +1,116 @@
+{
+ "id": "carvedilol",
+ "type": "drug",
+ "name": "Carvedilol",
+ "aliases": [],
+ "class": "Non-selective β-blocker with α1-blockade",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Reduces heart rate, contractility and afterload, reduces mortality in heart failure with reduced ejection fraction",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Carvedilol, oral. · Initial dose: 3.125 mg 12 hourly. · Increase at 2-weekly intervals by doubling the daily dose until a maxi-",
+     "s": "HOSP:3.29"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Failure, Congestive (Ccf), Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Carvedilol, oral (doctor initiated). · Starting dose: 3.125 mg twice daily. · Increase dose at two-weekly intervals by doubling the daily dose until a maximum",
+     "s": "PHC:4.12"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Asthma",
+   "d": 1
+  },
+  {
+   "t": "Decompensated heart failure",
+   "d": 1
+  },
+  {
+   "t": "Heart block",
+   "d": 1
+  },
+  {
+   "t": "Severe bradycardia",
+   "d": 1
+  },
+  {
+   "t": "Cardiogenic shock",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Start low and double every 2 weeks",
+   "d": 1
+  },
+  {
+   "t": "Do not stop abruptly",
+   "d": 1
+  },
+  {
+   "t": "Masks hypoglycaemia",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bradycardia, hypotension, dizziness, fatigue, worsening heart failure on initiation, bronchospasm",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Heart rate, BP, weight",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "brady-adult",
+  "cad-adult",
+  "ccf-adult",
+  "htu-adult"
+ ],
+ "link": [
+  "carvedilol"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,99 @@
+{
+ "id": "aminophylline",
+ "type": "drug",
+ "name": "Aminophylline",
+ "aliases": [],
+ "class": "Methylxanthine bronchodilator",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Non-selective phosphodiesterase inhibition and adenosine antagonism",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Asthma Attack, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aminophylline, IV, 5 mg/kg, loading dose administered over 20–30 minutes. Omit loading dose in children receiving maintenance oral theophylline.",
+     "s": "PAED:15.22"
+    }
+   ]
+  },
+  {
+   "h": "Apnoea, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aminophylline, IV/oral: · Loading dose: 8 mg/kg. (If IV infusion, administer over 30 minutes.) · Maintenance dose: 1.5–3 mg/kg/dose 8 hourly. Start maintenance dose",
+     "s": "PAED:19.27"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Uncontrolled arrhythmia",
+   "d": 1
+  },
+  {
+   "t": "Seizures",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Narrow therapeutic index",
+   "d": 1
+  },
+  {
+   "t": "Omit the loading dose if already on theophylline",
+   "d": 1
+  },
+  {
+   "t": "Levels raised by ciprofloxacin and macrolides, lowered by rifampicin and smoking",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, vomiting, tachyarrhythmias, seizures, hypokalaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG, level where available",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "rf-adult"
+ ],
+ "link": [
+  "aminophylline"
+ ],
+ "link_cs": []
+}

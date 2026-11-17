@@ -1,0 +1,93 @@
+{
+ "id": "sodium-chloride-3",
+ "type": "drug",
+ "name": "Sodium chloride 3%",
+ "aliases": [
+  "hypertonic saline",
+  "NaCl 3%",
+  "3% NaCl",
+  "NaCl 5%",
+  "5% NaCl"
+ ],
+ "class": "Hypertonic saline",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Raises serum sodium and osmolality, draws water from brain tissue",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Chronic asymptomatic hyponatraemia (risk of osmotic demyelination)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Use only for severe symptomatic hyponatraemia or raised intracranial pressure",
+   "d": 1
+  },
+  {
+   "t": "Small measured boluses",
+   "d": 1
+  },
+  {
+   "t": "Limit the 24-hour rise in sodium",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Over-rapid sodium correction (osmotic demyelination), fluid overload, hyperchloraemic acidosis, phlebitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Sodium every 2–4 hours",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "dka-paeds",
+  "fluids-paeds-dka",
+  "hie-child",
+  "lytes-adult-hypona",
+  "lytes-paeds-hyperna",
+  "lytes-paeds-hypona",
+  "tb-adult",
+  "tbi-paeds"
+ ],
+ "link": [
+  "sodium chloride 3%",
+  "hypertonic saline",
+  "NaCl 5%",
+  "5% NaCl",
+  "3% NaCl",
+  "NaCl 3%"
+ ],
+ "link_cs": []
+}

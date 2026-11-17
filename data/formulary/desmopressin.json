@@ -1,0 +1,93 @@
+{
+ "id": "desmopressin",
+ "type": "drug",
+ "name": "Desmopressin",
+ "aliases": [],
+ "class": "Vasopressin (V2) analogue",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Increases water reabsorption in the collecting duct, releases factor VIII and von Willebrand factor",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Diabetes Insipidus (Posterior Hypopituita- Rism)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Desmopressin, IV/SC, 2–4 mcg daily, either as a single dose or in 2 divided doses.",
+     "s": "HOSP:8.29"
+    },
+    {
+     "t": "Desmopressin, nasal spray, 10–40 mcg daily, either as a single dose or in 2–3 divided doses.",
+     "s": "HOSP:8.29"
+    },
+    {
+     "t": "Desmopressin, oral, 0.05 mg, 8–12 hourly. · Optimal dose: 0.1–0.8 mg daily. · Adjust dose according to response to a maximum of 1.2 mg daily in",
+     "s": "HOSP:8.29"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use with caution",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hyponatraemia",
+   "d": 1
+  },
+  {
+   "t": "Habitual or psychogenic polydipsia",
+   "d": 1
+  },
+  {
+   "t": "Cardiac failure",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Restrict fluids around dosing",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyponatraemia, water intoxication, headache, nausea",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Serum sodium, fluid balance",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lytes-paeds-hyperna"
+ ],
+ "link": [
+  "desmopressin"
+ ],
+ "link_cs": []
+}

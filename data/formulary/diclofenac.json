@@ -1,0 +1,98 @@
+{
+ "id": "diclofenac",
+ "type": "drug",
+ "name": "Diclofenac",
+ "aliases": [],
+ "class": "NSAID",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Non-selective COX inhibition, reducing prostaglandin synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Renal Calculi",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diclofenac, IM, 75 mg as a single dose.",
+     "s": "HOSP:7.24"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid in the third trimester",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active peptic ulcer or GI bleeding",
+   "d": 1
+  },
+  {
+   "t": "Ischaemic heart disease, stroke or heart failure",
+   "d": 1
+  },
+  {
+   "t": "EGFR < 30",
+   "d": 1
+  },
+  {
+   "t": "Hypovolaemia",
+   "d": 1
+  },
+  {
+   "t": "Third trimester",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Deep IM into the gluteal muscle only",
+   "d": 1
+  },
+  {
+   "t": "Shortest duration, lowest dose",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "GI bleeding, acute kidney injury, fluid retention, raised cardiovascular risk, injection-site necrosis (IM)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function in at-risk patients",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "appy-adult",
+  "fracture-adult"
+ ],
+ "link": [
+  "diclofenac"
+ ],
+ "link_cs": []
+}

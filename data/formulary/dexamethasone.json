@@ -1,0 +1,223 @@
+{
+ "id": "dexamethasone",
+ "type": "drug",
+ "name": "Dexamethasone",
+ "aliases": [],
+ "class": "Corticosteroid (long-acting, potent glucocorticoid, no mineralocorticoid effect)",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the glucocorticoid receptor: anti-inflammatory, reduces vasogenic cerebral oedema and airway oedema",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Coronavirus Disease-19 (COVID-19) in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, 6 mg daily for up to 10 days, or until discharge.",
+     "s": "HOSP:6.14"
+    }
+   ]
+  },
+  {
+   "h": "Hyperemesis Gravidarum",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, IM/IV, 4–8 mg daily.",
+     "s": "HOSP:6.22"
+    }
+   ]
+  },
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, IM, 8 mg, 3 doses 8 hours apart.",
+     "s": "HOSP:6.23"
+    }
+   ]
+  },
+  {
+   "h": "Cushing Syndrome",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, oral, 1 mg. · Administer at 23:00. · Measure plasma cortisol at 8:00, the next morning after breakfast.",
+     "s": "HOSP:8.4"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculous Meningitis (Tbm)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, dosing as follows: Weeks Dosing regimen Initial dose 0.3-0.4 mg/kg/day for 2 weeks.",
+     "s": "HOSP:14.39"
+    }
+   ]
+  },
+  {
+   "h": "Brain Oedema due to Tumours and Inflammation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, 4 mg 6 hourly, initially.",
+     "s": "HOSP:14.48"
+    }
+   ]
+  },
+  {
+   "h": "Epidural Spinal Cord Compression",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, 16 mg immediately as a single dose. · Followed by 4 mg 6 hourly, until transfer.",
+     "s": "HOSP:21.3"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Acute Bacterial",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, 0.5 mg/kg 12 hourly.",
+     "s": "PAED:8.22"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Septic (Pyogenic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, 0.15 mg/kg 6 hourly for 4 days.",
+     "s": "PAED:8.49"
+    }
+   ]
+  },
+  {
+   "h": "Neurocysticercosis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, IM, 0.15 mg/kg/dose 6 hourly.",
+     "s": "PAED:13.37"
+    }
+   ]
+  },
+  {
+   "h": "Laryngotracheobronchitis, Acute Viral (Croup)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, IV/IM, 0.5 mg/kg as a single dose.",
+     "s": "PAED:15.32"
+    }
+   ]
+  },
+  {
+   "h": "Non-penetrating Eye Injury",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, ophthalmic drops, instil 1 drop 4 hourly for 5 days.",
+     "s": "PAED:16.7"
+    }
+   ]
+  },
+  {
+   "h": "Acute Bacterial Tracheitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, IV, 0.15 mg/kg/dose 8 hourly.",
+     "s": "PAED:17.4"
+    }
+   ]
+  },
+  {
+   "h": "Spinal Cord Compression",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dexamethasone, IV: · Loading dose of 1–2 mg/kg followed by 0.25–0.5 mg/kg every 6 hours has been suggested.",
+     "s": "PAED:21.19"
+    }
+   ]
+  },
+  {
+   "h": "Supportive care for children with TBM",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "requires corticosteroids because of the concern for severe raised intracranial pressure, dexamethasone 0.15 mg/kg/dose six hourly IVI can be used initially, followed by a switch to oral prednisone. • Routine use of proton-pump inhibitors",
+     "s": "tbpaeds2024:46"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for fetal lung maturity as an alternative",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Systemic infection without antimicrobial cover (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Rifampicin and phenytoin lower levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperglycaemia, mood change, insomnia, peptic ulcer, infection risk",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Glucose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aph",
+  "croup-paeds",
+  "meningitis-adult",
+  "meningitis-paeds",
+  "pet",
+  "preterm-labour",
+  "rf-paeds"
+ ],
+ "link": [
+  "dexamethasone"
+ ],
+ "link_cs": []
+}

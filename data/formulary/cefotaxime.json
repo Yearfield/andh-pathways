@@ -1,0 +1,115 @@
+{
+ "id": "cefotaxime",
+ "type": "drug",
+ "name": "Cefotaxime",
+ "aliases": [],
+ "class": "Antibiotic – third-generation cephalosporin",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis, preferred to ceftriaxone in neonates (no bilirubin displacement or calcium precipitation)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Persistent Diarrhoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefotaxime, IV, 50 mg/kg/dose 6 hourly.",
+     "s": "PAED:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefotaxime, IV, 50 mg/kg/dose 8 hourly.",
+     "s": "PAED:6.7"
+    }
+   ]
+  },
+  {
+   "h": "Osteitis/osteomyelitis, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefotaxime, IV, 50 mg/kg/dose. Gestational Postnatal age Dose age",
+     "s": "PAED:8.51"
+    }
+   ]
+  },
+  {
+   "h": "Preseptal and Orbital Cellulitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefotaxime, IV, 50 mg/kg/dose 6–8 hourly.",
+     "s": "PAED:16.11"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis Bacterial, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefotaxime, IV, 50 mg/kg over 30 minutes, for 21 days. Gestational age Postnatal age Dose < 14 days 50 mg/kg/dose every 12 hours",
+     "s": "PAED:19.34"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Cephalosporin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in severe renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, rash, phlebitis, C. difficile",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-paeds",
+  "meningitis-neonate",
+  "sinusitis-paeds",
+  "uti-paeds"
+ ],
+ "link": [
+  "cefotaxime"
+ ],
+ "link_cs": []
+}

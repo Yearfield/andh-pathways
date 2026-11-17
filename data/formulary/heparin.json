@@ -1,0 +1,162 @@
+{
+ "id": "heparin",
+ "type": "drug",
+ "name": "Heparin",
+ "aliases": [
+  "unfractionated heparin"
+ ],
+ "class": "Anticoagulant – unfractionated heparin",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Potentiates antithrombin, inactivating thrombin (IIa) and factor Xa, short half-life, fully reversible with protamine",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Anaemia, Sickle Cell",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Unfractionated heparin, SC, 5 000 units 12 hourly.",
+     "s": "HOSP:2.10"
+    }
+   ]
+  },
+  {
+   "h": "Venous Thrombo-embolism – Prophylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Unfractionated heparin, SC, 5 000 units 12 hourly. · Dose adjustment is generally not required for renal impairment. · Monitor for bleeding complications.",
+     "s": "HOSP:2.25"
+    },
+    {
+     "t": "Unfractionated heparin, SC, 5 000 units 12 hourly. · Dose adjustment generally not required for renal impairment.",
+     "s": "HOSP:2.26"
+    }
+   ]
+  },
+  {
+   "h": "Non-st Elevation Myocardial Infarction (NSTEMI) and Unstable Angina (Ua)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Unfractionated heparin, IV bolus, 5 000 units. · Follow with 1 000–1 200 units hourly monitored by aPTT.",
+     "s": "HOSP:3.10"
+    }
+   ]
+  },
+  {
+   "h": "Heart Disease in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Unfractionated heparin, IV, 5 000 units as a bolus. · Followed by 1 000–1 200 units/hour as an infusion.",
+     "s": "HOSP:6.6"
+    },
+    {
+     "t": "Unfractionated heparin, SC, 15 000 units 12 hourly. · Adjust the dose to achieve a mid-target PTT at 2–3 x control.",
+     "s": "HOSP:6.6"
+    },
+    {
+     "t": "Unfractionated heparin, SC, 15 000 units 12 hourly. · Adjust dose to keep aPTT 2–3 x control.",
+     "s": "HOSP:6.7"
+    }
+   ]
+  },
+  {
+   "h": "Thromboprophylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Unfractionated heparin, SC, 5000 IU 12 hourly.",
+     "s": "HOSP:23.8"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of Vte",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Heparin 100 units/kg, IV, baseline value (60–85 seconds). (UFH). followed by Check platelet count (heparin 20 units/kg/hour, IV, induced thrombocytopenia is an",
+     "s": "PAED:23.29"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – does not cross the placenta",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active bleeding",
+   "d": 1
+  },
+  {
+   "t": "Heparin-induced thrombocytopenia",
+   "d": 1
+  },
+  {
+   "t": "Severe uncontrolled hypertension",
+   "d": 1
+  },
+  {
+   "t": "Recent CNS surgery or haemorrhage",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Preferred to LMWH in severe renal impairment and when rapid reversal may be needed",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bleeding, heparin-induced thrombocytopenia, hyperkalaemia, osteoporosis with prolonged use",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "APTT on infusion, platelets, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "aki-adult",
+  "caprini",
+  "ckd-adult",
+  "dka-adult",
+  "fluids-paeds-sam",
+  "stroke",
+  "tbi-adult"
+ ],
+ "link": [
+  "unfractionated heparin",
+  "heparin"
+ ],
+ "link_cs": []
+}

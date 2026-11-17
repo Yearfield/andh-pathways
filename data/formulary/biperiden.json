@@ -1,0 +1,105 @@
+{
+ "id": "biperiden",
+ "type": "drug",
+ "name": "Biperiden",
+ "aliases": [],
+ "class": "Antimuscarinic antiparkinsonian",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Central muscarinic antagonist, reverses drug-induced acute dystonia",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Treatment of Ponv",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Biperiden, IM/IV, 2 mg. · Repeat as necessary.",
+     "s": "HOSP:12.13"
+    }
+   ]
+  },
+  {
+   "h": "Extra-pyramidal Side Effects",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Biperiden, IM/slow IV, 0.05–0.1 mg/kg to a maximum of: · 1 to 6 years: 1–2 mg immediately · 7 to 10 years: 3 mg immediately",
+     "s": "PHC:16.11"
+    },
+    {
+     "t": "Biperiden, IM, 2.5 mg immediately. · May be repeated every 30 minutes. · Maximum of 3 doses within 24 hours.",
+     "s": "PHC:16.11"
+    }
+   ]
+  },
+  {
+   "h": "Neuroleptic Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Biperidin, IV, slow injection. · If < 1 year of age: 1 mg. · If 1–6 years of age: 2 mg.",
+     "s": "PAED:18.14"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Narrow-angle glaucoma",
+   "d": 1
+  },
+  {
+   "t": "GI obstruction",
+   "d": 1
+  },
+  {
+   "t": "Urinary retention",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Not for tardive dyskinesia",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dry mouth, blurred vision, confusion, urinary retention, tachycardia, euphoria (abuse potential)",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "delirium-adult",
+  "psychosis-adult"
+ ],
+ "link": [
+  "biperiden"
+ ],
+ "link_cs": []
+}

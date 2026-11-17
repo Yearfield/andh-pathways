@@ -1,0 +1,206 @@
+{
+ "id": "amphotericin-b",
+ "type": "drug",
+ "name": "Amphotericin B",
+ "aliases": [
+  "amphotericin"
+ ],
+ "class": "Antifungal – polyene",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds ergosterol in the fungal membrane, forming pores",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amphotericin B, IV, 1 mg/kg daily in dextrose 5% over 4 hours. · Ensure adequate hydration to minimise nephrotoxicity (see Appendix II for preventing, monitoring and management of toxicity).",
+     "s": "HOSP:2.12"
+    }
+   ]
+  },
+  {
+   "h": "Intravascular Catheter Infections",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amphotericin B, IV, 0.7 mg/kg daily.",
+     "s": "HOSP:9.4"
+    }
+   ]
+  },
+  {
+   "h": "Cryptococcal Meningitis, Hiv-negative",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amphotericin B, IV, 1 mg/kg daily. · Ensure adequate hydration to minimise nephrotoxicity (See Appendix II for preventing, monitoring, and management of toxicity).",
+     "s": "HOSP:14.40"
+    }
+   ]
+  },
+  {
+   "h": "Sepsis in ICU: Antimicrobial Therapy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amphotericin B, IV, 1 mg/kg/day for 2 weeks or until diagnostic results confirm/exclude fungal infection.",
+     "s": "HOSP:23.40"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amphotericin B, IV, 0.7 mg/kg daily. 2.2: Febrile neutropenia,10.2.4.3: Cryptococcal meningitis, 14.8.1.2.2: Cryptococcal meningitis, HIV-uninfected, 23.10.3 Sepsis in ICU: Antimicrobial",
+     "s": "HOSP"
+    },
+    {
+     "t": "Amphotericin B, IV, 1 mg/kg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Amphotericin B deoxycholate, slow IV infusion, 1 mg/kg daily in dextrose 5% over 4 hours for 7 days 10.2.4.2: Cryptococcal meningitis - If flucytosine is not available:",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Table 16: Cryptococcosis treatment regimen options in adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "amphotericin B · deoxycholate · dexycholate 10 mg/kg in syndromes. 6th ed. 2024.",
+     "s": "hiv2026:77"
+    }
+   ]
+  },
+  {
+   "h": "Figure 11: Algorithm for the diagnosis and management of cryptococcal disease in adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Liposomal amphotericin B IV · Amphotericin B deoxycholate, IV infusion · Fluconazole, oral 1200 mg · INDUCTION PHASE infusion over 2 hrs, 10 mg/kg, · over 4 hrs, 1 mg/kg daily for 7 days. · daily for 14 days. as a single dose. · AND · AND |",
+     "s": "hiv2026:76"
+    },
+    {
+     "t": "Flucytosine, oral 25 mg/kg · Amphotericin B deoxycholate, Flucytosine, oral 25 mg/kg · every 6 hrs for 7 days. · IV infusion over 4 hrs, every 6 hrs for 14 days. · THEN · 1 mg/kg daily for 14 days.",
+     "s": "hiv2026:76"
+    }
+   ]
+  },
+  {
+   "h": "Candidiasis, Systemic and Other",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amphotericin B deoxycholate, IV infusion in 5% dextrose water only, 1 mg/kg/dose once daily over 4 hours for at least 2 weeks after first negative culture, or if no repeat culture available at least 3 weeks after",
+     "s": "PAED:8.7"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Cryptococcal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amphotericin B deoxycholate, IV, 1 mg/kg/day as a daily infusion in 5% dextrose water over 4 hours. · Adjust dosing interval in patients with renal impairment.",
+     "s": "PAED:8.24"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia in Hiv-exposed or Hiv-infected Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amphotericin B deoxycolate, IV, 0.6–1.0 mg/kg as a single daily dose infused over 4 hours for at least 14 days.",
+     "s": "PAED:15.9"
+    }
+   ]
+  },
+  {
+   "h": "Septicaemia of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amphotericin B deoxycolate, IV, 1–1.5 mg/kg/day infusion in 5% dextrose water over 4 hours for 14 days.",
+     "s": "PAED:19.37"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Pre-hydrate with sodium chloride 0.9% and supplement potassium and magnesium",
+   "d": 1
+  },
+  {
+   "t": "Dilute the deoxycholate form in dextrose 5% only (precipitates in saline)",
+   "d": 1
+  },
+  {
+   "t": "Avoid other nephrotoxins",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Infusion reactions (fever, rigors), nephrotoxicity, hypokalaemia, hypomagnesaemia, anaemia, phlebitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Creatinine, potassium, magnesium twice weekly, haemoglobin",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "ckd-paeds",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "lytes-paeds-hypok",
+  "meningitis-adult",
+  "meningitis-paeds"
+ ],
+ "link": [
+  "amphotericin B",
+  "amphotericin"
+ ],
+ "link_cs": []
+}

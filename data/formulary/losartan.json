@@ -1,0 +1,113 @@
+{
+ "id": "losartan",
+ "type": "drug",
+ "name": "Losartan",
+ "aliases": [],
+ "class": "Angiotensin II receptor blocker",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks the AT1 receptor: vasodilation and reduced aldosterone, without raising bradykinin",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Losartan, oral, 50–100 mg daily. Specialist initiated.",
+     "s": "HOSP:3.9"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Losartan, oral, 50 mg daily. Specialist initiated.",
+     "s": "HOSP:3.40"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Losartan, oral, · Start with 50 mg daily and titrate to 100 mg daily, if tolerated. · Replacing ACE-inhibitor with ARB does not preclude the risk of",
+     "s": "HOSP:7.4"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated – fetotoxic",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Pregnancy",
+   "d": 1
+  },
+  {
+   "t": "Bilateral renal artery stenosis",
+   "d": 1
+  },
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Used when ACE inhibitor causes cough",
+   "d": 1
+  },
+  {
+   "t": "Do not combine with an ACE inhibitor",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperkalaemia, hypotension, acute kidney injury, cough is uncommon",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium and creatinine",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "ccf-adult",
+  "ckd-adult",
+  "hte-adult",
+  "htu-adult"
+ ],
+ "link": [
+  "losartan"
+ ],
+ "link_cs": []
+}

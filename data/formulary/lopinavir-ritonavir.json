@@ -1,0 +1,124 @@
+{
+ "id": "lopinavir-ritonavir",
+ "type": "drug",
+ "name": "Lopinavir/ritonavir",
+ "aliases": [
+  "lopinavir",
+  "LPV/r",
+  "ritonavir"
+ ],
+ "class": "Antiretroviral – boosted protease inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Lopinavir inhibits HIV protease, ritonavir inhibits CYP3A4 to boost levels",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Table 33: ART dosing and important adverse effects",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Atazanavir / ritonavir · 300 mg with ritonavir · • Dyslipidaemia (low risk). Boosted PI (ATV/r) · 100 mg daily · • Hepatitis (rare - 1 to 6 weeks).",
+     "s": "hiv2026:106"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 4 Practical Advice on Administration of ARV Drugs",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "ritonavir · - 200/50 mg, · Tablets: NO · tolerance and palatability of oral solution: coat mouth with peanut butter, dull taste buds with ice, (LPV/r) · - 100/25 mg · Must be swallowed whole and not divided, crushed or · follow dose with sw",
+     "s": "hiv2026:176"
+    },
+    {
+     "t": "Ritonavir · Each 100 mg packet of RTV powder should be mixed with a small amount of water or soft food Oral powder: 100 mg/packet (RTV) · and immediately ingested. Many drug-drug interactions.#",
+     "s": "hiv2026:176"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Occupational",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lopinavir/ritonavir (LPV/r) 200/50 mg, oral, 2 tablets 12 hourly for 4 weeks.",
+     "s": "PHC:21.54"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lopinavir/ritonavir, oral 300/75mg/m2 – administered 12 hourly. (see Annexure A)",
+     "s": "PHC"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Co-administration with drugs highly dependent on CYP3A4 (e.g. simvastatin, ergometrine, midazolam oral)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Very many interactions – check each co-prescription",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin needs dose adjustment (double dose) per guideline",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, nausea, dyslipidaemia, insulin resistance, hepatitis, QT/PR prolongation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Lipids, glucose, viral load",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "tb-hiv-adult",
+  "tb-hiv-paeds"
+ ],
+ "link": [
+  "lopinavir/ritonavir"
+ ],
+ "link_cs": [
+  "LPV/r"
+ ]
+}

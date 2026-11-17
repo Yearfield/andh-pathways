@@ -1,0 +1,157 @@
+{
+ "id": "zidovudine",
+ "type": "drug",
+ "name": "Zidovudine",
+ "aliases": [
+  "AZT"
+ ],
+ "class": "Antiretroviral – nucleoside reverse transcriptase inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Thymidine analogue that terminates the viral DNA chain",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Table 33: ART dosing and important adverse effects",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Zidovudine · NRTI · 300 mg • Myopathy (rare). • Hyperlactataemia / steatohepatitis (medium risk - months).",
+     "s": "hiv2026:106"
+    }
+   ]
+  },
+  {
+   "h": "Dosing charts for prophylaxis for the HIV-exposed infant",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Zidovudine (AZT), oral, twice daily Gestational age at birth · First 2 weeks after birth · 2 – 4 weeks after birth · 4 – 6 weeks after birth · > 6 weeks after birth 30–35 weeks · 0.2 mL/kg (2 mg/kg) · 0.3 mL/kg (3 mg/kg) · 0.4 mL/kg (4 mg/k",
+     "s": "hiv2026:150"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 4 Practical Advice on Administration of ARV Drugs",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Zidovudine · Tablets: 100 mg, 300 mg · Capsules: Can be opened and added to a · Avoid or use with caution in neonates or children with anaemia (Hb <8 g/dl) due to potential to (AZT) · Capsules: 100 mg · small amount of soft food/liquid and",
+     "s": "hiv2026:176"
+    }
+   ]
+  },
+  {
+   "h": "The Hiv-exposed Infant",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Zidovudine, oral, 4mg/kg/dose 12 hourly.",
+     "s": "PHC:11.34"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Zidovudine, oral, 180-240 mg/m2 12 hourly. (see antiretroviral drug dosing chart for children below)",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Occupational",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Zidovudine (AZT), oral, 300 mg 12 hourly for 4 weeks.",
+     "s": "PHC:21.55"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Rape and Sexual Assault",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Zidovudine (AZT), oral, 12 hourly for 28 days. · Paediatric dose: 180 to 240 mg/m2.",
+     "s": "PHC:21.59"
+    }
+   ]
+  },
+  {
+   "h": "TPT FOR CHILDREN UNDER 25kg",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "nevirapine ± zidovudine (infant HIV-exposed · Give pyridoxine 12.5 mg daily for duration (if < 6kg: give 6.25 mg (¼ tablet) but HIV-negative) · Follow up monthly (p26).",
+     "s": "tbqrg2025:22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used in PMTCT regimens",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe anaemia or neutropenia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Avoid with other marrow-suppressing drugs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Anaemia, neutropenia, nausea, headache, myopathy, lipoatrophy, lactic acidosis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC at baseline and per guideline",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-new-child",
+  "hiv-new-neonate",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "term-labour"
+ ],
+ "link": [
+  "zidovudine"
+ ],
+ "link_cs": [
+  "AZT"
+ ]
+}

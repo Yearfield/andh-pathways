@@ -1,0 +1,173 @@
+{
+ "id": "doxycycline",
+ "type": "drug",
+ "name": "Doxycycline",
+ "aliases": [],
+ "class": "Antibiotic – tetracycline",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the 30S ribosomal subunit and inhibits protein synthesis, covers atypicals, rickettsiae, chlamydia",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Brucellosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Doxycycline, oral, 100 mg 12 hourly for 6 weeks.",
+     "s": "HOSP:9.9"
+    }
+   ]
+  },
+  {
+   "h": "Tick Bite Fever",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Doxycycline, oral, 100 mg 12 hourly.",
+     "s": "HOSP:9.20"
+    },
+    {
+     "t": "Doxycycline, oral, 100 mg 12 hourly for 2 days.",
+     "s": "HOSP:9.20"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Doxycycline 100 mg, oral 12 hourly for 21 days.",
+     "s": "HOSP:26.5"
+    },
+    {
+     "t": "Doxycycline 100 mg, oral 12 hourly for more than 21 days may be required for complete resolution of disease.",
+     "s": "HOSP:26.6"
+    }
+   ]
+  },
+  {
+   "h": "Laboratory-based testing when syphilis rapid tests are unavailable or inappropriate",
+   "pop": "adult",
+   "items": [
+    {
+     "t": " If penicillin stock levels are insufficient, give Doxycycline 100mg 12-hourly orally for 14 days • If the rapid test is positive and there are NO symptoms or signs of syphilis, send a confirmatory blood sample to the laboratory for a syph",
+     "s": "hiv2026:160"
+    }
+   ]
+  },
+  {
+   "h": "Acne Vulgaris",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Doxycycline, oral, 100 mg daily for 3 months. · Review patient after 3 months of treatment. · It should be taken with meals.",
+     "s": "PHC:5.5"
+    }
+   ]
+  },
+  {
+   "h": "Tick Bite Fever",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Doxycycline, oral, 100 mg 12 hourly, for at least 3 days after the fever subsides with clinical improvement. · Maximum duration of treatment is 7 days.",
+     "s": "PHC:10.20"
+    }
+   ]
+  },
+  {
+   "h": "Syphilis Serology and Treatment",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Doxycycline, oral, 100 mg 12 hourly for 14 days .",
+     "s": "PHC:12.14"
+    },
+    {
+     "t": "Doxycycline, oral, 100 mg 12 hourly for 30 days .",
+     "s": "PHC:12.14"
+    }
+   ]
+  },
+  {
+   "h": "Acne",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Doxycycline, oral, 100 mg once daily for a maximum of 3 months.",
+     "s": "PAED:5.8"
+    }
+   ]
+  },
+  {
+   "h": "Tick Bite Fever",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Doxycycline, oral. · If < 50 kg: 4 mg/kg/24 hours in 2 divided doses on the first day, then 2 mg/kg/24 hours in 2 divided doses for second day.",
+     "s": "PAED:8.37"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Pregnancy",
+   "d": 1
+  },
+  {
+   "t": "Children under 8 years (except short courses for rickettsial disease)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Swallow with plenty of water, upright",
+   "d": 1
+  },
+  {
+   "t": "Absorption reduced by iron, calcium and antacids",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, oesophagitis, photosensitivity, tooth discolouration in young children",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "gerd-adult",
+  "vds"
+ ],
+ "link": [
+  "doxycycline"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,246 @@
+{
+ "id": "cotrimoxazole",
+ "type": "drug",
+ "name": "Cotrimoxazole",
+ "aliases": [
+  "co-trimoxazole",
+  "trimethoprim"
+ ],
+ "class": "Antibiotic – sulfamethoxazole with trimethoprim (folate antagonists)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Sequential blockade of bacterial folate synthesis (dihydropteroate synthase and dihydrofolate reductase)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Recurrent UTI",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cotrimoxazole 80/400 mg, oral, 1 tablet at night.",
+     "s": "HOSP:7.20"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cotrimoxazole 80/400 mg, oral, 1 tablet at night. 10.2.2: Opportunistic infection prophylaxis, with cotrimoxazole, 10.2.7: Cystoisosporiasis, secondary prophylaxis, 10.2.9: Pneumocystis pneumonia,",
+     "s": "HOSP"
+    },
+    {
+     "t": "Cotrimoxazole 320/1600 mg, oral, 12 hourly for 10 days.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Cotrimoxazole, oral, 240/1200 mg, oral, 6 hourly for 21 days.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 3 Antiretroviral Drug Dosing Chart for Children (2025)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "FDC = fixed dose combination; · Cotrimoxazole Dose · 2.5 ml od · 5 ml or ½ tab od · 10 ml or 1 tab od · 2 tabs od TLD · = tenofovir/lamivudine/dolutegravir; · Multivitamin Dose · 2.5 ml od · 2.5 ml od · 5 ml od · 10 ml od ALD · = abacavir/l",
+     "s": "hiv2026:175"
+    }
+   ]
+  },
+  {
+   "h": "HIV in Pregnancy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cotrimoxazole, oral, 160/800 mg daily, until CD4 >200 cells/mm3.",
+     "s": "PHC:6.38"
+    }
+   ]
+  },
+  {
+   "h": "Cotrimoxazole Prophylaxis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cotrimoxazole, oral, 160/800 mg daily.",
+     "s": "PHC:11.18"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Hiv-associated",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cotrimoxazole, oral, 320/1600 mg (4 single strength (80/400 mg) tablets) 12 hourly for 10 days.",
+     "s": "PHC:11.22"
+    }
+   ]
+  },
+  {
+   "h": "Toxoplasmosis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cotrimoxazole, oral, 320/1600 mg 12 hourly for 4 weeks. · Then 160/800 mg 12 hourly for 12 weeks. Secondary prophylaxis",
+     "s": "PHC:11.25"
+    },
+    {
+     "t": "Cotrimoxazole, oral 160/800 mg daily. · Continue until the CD4 count has risen to >200 cells/mm3 on ART.",
+     "s": "PHC:11.25"
+    }
+   ]
+  },
+  {
+   "h": "Acute Meningitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cotrimoxazole, oral, 80/400 mg immediately before referral. · If referral delayed by 12 hours or more, administer second dose.",
+     "s": "PHC:15.53"
+    }
+   ]
+  },
+  {
+   "h": "Pneumocystis Pneumonia",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cotrimoxazole, oral, 6 hourly for 3 weeks. Approx. weight Use one of the following tablet formulations kg 80/400 mg 160/800 mg",
+     "s": "PHC:17.26"
+    },
+    {
+     "t": "Cotrimoxazole, oral, daily. Use one of the following tablet formulations 80/400 mg 160/800 mg",
+     "s": "PHC:17.27"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Diarrhoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Co-trimoxazole, oral, 5 mg/kg/dose of trimethoprim 12 hourly for 10 days.",
+     "s": "PAED:2.20"
+    },
+    {
+     "t": "Co-trimoxazole, oral, 5 mg/kg/dose of trimethoprim component 12 hourly for 10 days.",
+     "s": "PAED:2.21"
+    },
+    {
+     "t": "Co-trimoxazole, oral, 5 mg/kg/dose of the trimethoprim component 6 hourly for 5 days.",
+     "s": "PAED:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia in Hiv-exposed or Hiv-infected Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Co-trimoxazole, IV/oral, 5 mg trimethroprim/25 mg sulphamethoxazole /kg/dose, 6 hourly for 21 days. · Continue co-trimoxazole prophylaxis at the end of this treatment",
+     "s": "PAED:15.8"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for prophylaxis in HIV; folate supplementation; avoid near term if alternatives exist",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Sulfonamide hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "Severe renal or hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "G6PD deficiency (caution)",
+   "d": 1
+  },
+  {
+   "t": "Infants under 4–6 weeks unless for HIV-exposure prophylaxis per guideline",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Increases the effect of warfarin, phenytoin and methotrexate",
+   "d": 1
+  },
+  {
+   "t": "Ensure good fluid intake",
+   "d": 1
+  },
+  {
+   "t": "Folinic acid if marrow suppression on high dose",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash, nausea, hyperkalaemia, raised creatinine, bone-marrow suppression, hepatitis, SJS/TEN",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC, potassium and creatinine on high-dose or prolonged therapy",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-paeds",
+  "aki-adult",
+  "ards-adult",
+  "ards-paeds",
+  "chol-adult",
+  "ckd-adult",
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "hiv-new-adult",
+  "hiv-new-child",
+  "hiv-new-neonate",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "rf-adult",
+  "rf-paeds",
+  "sam",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "uti-adult"
+ ],
+ "link": [
+  "co-trimoxazole",
+  "cotrimoxazole"
+ ],
+ "link_cs": []
+}

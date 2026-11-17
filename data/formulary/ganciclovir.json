@@ -1,0 +1,105 @@
+{
+ "id": "ganciclovir",
+ "type": "drug",
+ "name": "Ganciclovir",
+ "aliases": [],
+ "class": "Antiviral – guanosine analogue",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits CMV DNA polymerase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ganciclovir, IV, 5 mg/kg 12 hourly.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Cytomegalovirus (CMV) Infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ganciclovir, IV, 5 mg/kg administered over 1 hour, 12 hourly until able to tolerate oral medication.",
+     "s": "PAED:8.8"
+    },
+    {
+     "t": "Ganciclovir, IV, 5 mg/kg administered over 1 hour, 12 hourly for 7 days. · Follow with: Valganciclovir, oral, 16 mg/kg 12 hourly for 5 weeks.",
+     "s": "PAED:8.9"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia in Hiv-exposed or Hiv-infected Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ganciclovir, IV, 5 mg/kg 12 hourly until oral is tolerated THEN",
+     "s": "PAED:15.9"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid (teratogenic)",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe neutropenia or thrombocytopenia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Additive marrow toxicity with zidovudine",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Neutropenia, thrombocytopenia, anaemia, nephrotoxicity",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC, renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lrti-paeds"
+ ],
+ "link": [
+  "ganciclovir"
+ ],
+ "link_cs": []
+}

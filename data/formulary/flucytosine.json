@@ -1,0 +1,113 @@
+{
+ "id": "flucytosine",
+ "type": "drug",
+ "name": "Flucytosine",
+ "aliases": [],
+ "class": "Antifungal – antimetabolite",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Converted to 5-fluorouracil inside fungal cells, inhibiting DNA and RNA synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Flucytosine, oral, 25 mg/kg 6 hourly for 14 days.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Flucytosine, oral, 25 mg/kg 6 hourly for 7 days.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Flucytosine, oral, 25 mg/kg 6 hourly for 14 days for cryptococcal meningitis.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Figure 11: Algorithm for the diagnosis and management of cryptococcal disease in adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Liposomal amphotericin B · Liposomal amphotericin B · Flucytosine is not available: and flucytosine available: · is not available: Liposomal amphotericin B IV · Amphotericin B deoxycholate, IV infusion · Fluconazole, oral 1200 mg · INDUCTIO",
+     "s": "hiv2026:76"
+    },
+    {
+     "t": "and flucytosine available: · is not available: Liposomal amphotericin B IV · Amphotericin B deoxycholate, IV infusion · Fluconazole, oral 1200 mg · INDUCTION PHASE infusion over 2 hrs, 10 mg/kg, · over 4 hrs, 1 mg/kg daily for 7 days. · dai",
+     "s": "hiv2026:76"
+    },
+    {
+     "t": "Flucytosine, oral 25 mg/kg · Amphotericin B deoxycholate, Flucytosine, oral 25 mg/kg · every 6 hrs for 7 days. · IV infusion over 4 hrs, every 6 hrs for 14 days. · THEN · 1 mg/kg daily for 14 days.",
+     "s": "hiv2026:76"
+    }
+   ]
+  },
+  {
+   "h": "Table 16: Cryptococcosis treatment regimen options in adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Medicine · Fluconazole · Flucytosine · Fluconazole · Flucytosine · Fluconazole · Fluconazole · Flucytosine · Fluconazole amphotericin B · deoxycholate · dexycholate 10 mg/kg in",
+     "s": "hiv2026:77"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid unless essential",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Always combined with amphotericin",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bone-marrow suppression, GI upset, hepatitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC, renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "meningitis-adult",
+  "meningitis-paeds"
+ ],
+ "link": [
+  "flucytosine"
+ ],
+ "link_cs": []
+}

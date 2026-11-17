@@ -1,0 +1,373 @@
+{
+ "id": "morphine",
+ "type": "drug",
+ "name": "Morphine",
+ "aliases": [
+  "mist morphine",
+  "morphine sulfate",
+  "morphine sulphate"
+ ],
+ "class": "Opioid analgesic – strong (full) μ-receptor agonist",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "status": "PILOT – † lines checked against a UK product summary (SA package insert could not be opened) 2026-11-15; awaiting review",
+ "sources": [
+  "HOSP",
+  "PAED",
+  "impcg2024",
+  "notes",
+  "pi",
+  "general"
+ ],
+ "pi_source": {
+  "title": "Morphine sulfate 10 / 15 / 30 mg/mL solution for injection – UK Summary of Product Characteristics (emc). NOT the South African package insert.",
+  "url": "https://www.medicines.org.uk/emc/files/pil.13179.pdf"
+ },
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not stated in the product summary consulted",
+ "item_format": "t=text, s=source:printed page (s=pi: product summary), d=dagger, n=from own notes, b=bold, h=heading",
+ "summary": "Reference strong opioid for severe acute pain, labour and procedural analgesia, post-intubation sedation and palliative pain or dyspnoea.",
+ "forms": [
+  {
+   "t": "Injection 10 mg/mL and 15 mg/mL ampoules",
+   "s": "pi"
+  },
+  {
+   "t": "Oral solution (mist morphine); slow-release tablets 10 mg, 30 mg, 60 mg",
+   "s": "HOSP:25.4"
+  }
+ ],
+ "moa": [
+  {
+   "t": "Full agonist at μ-opioid receptors: binds and imitates endogenous opioids",
+   "n": 1
+  },
+  {
+   "t": "Effects: analgesia, sedation, dysphoria or euphoria, miosis",
+   "n": 1
+  },
+  {
+   "t": "Acts mainly on the central nervous system and smooth muscle",
+   "s": "pi"
+  }
+ ],
+ "pk": [
+  {
+   "t": "IV onset 5–10 minutes; duration 4–5 hours",
+   "s": "HOSP:AII.8"
+  },
+  {
+   "t": "Children, IV: time to peak action 20–40 minutes; duration 4–6 hours",
+   "s": "PAED:20.9"
+  },
+  {
+   "t": "Metabolised mainly by glucuronidation to morphine-3- and morphine-6-glucuronide; about 90% excreted in urine within 24 hours; half-life 2–3 hours",
+   "s": "pi"
+  },
+  {
+   "t": "The active metabolite morphine-6-glucuronide accumulates in renal failure",
+   "d": 1
+  }
+ ],
+ "dosing": [
+  {
+   "h": "Severe acute pain – IV",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "3–5 mg IV as a single dose, then further boluses every 5–10 minutes, to a total maximum of 10 mg; repeat after 4 hours if necessary",
+     "s": "HOSP:AII.8",
+     "b": 1
+    },
+    {
+     "t": "Ward alternative: 1 mg IV boluses every 6–10 minutes, max 0.1–0.2 mg/kg 4 hourly",
+     "s": "HOSP:12.9"
+    }
+   ]
+  },
+  {
+   "h": "Severe acute pain – IM",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "0.1–0.2 mg/kg IM 4 hourly (PHC: 5–10 mg IM 4–6 hourly when required)",
+     "s": "HOSP:12.9"
+    }
+   ]
+  },
+  {
+   "h": "Labour, miscarriage and obstetric pain",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "0.1 mg/kg IM 4 hourly as needed, max 10 mg per dose",
+     "s": "HOSP:6.28",
+     "b": 1
+    },
+    {
+     "t": "Before manual vacuum aspiration: 0.1 mg/kg IM 30 minutes before the procedure, max 10 mg",
+     "s": "HOSP:5.9"
+    }
+   ]
+  },
+  {
+   "h": "Post-intubation sedation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "IV infusion 0.1–0.2 mg/kg/hour",
+     "s": "HOSP:20.20"
+    }
+   ]
+  },
+  {
+   "h": "Severe pain – IV",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "4-hourly IV bolus: neonate 0.025–0.05 mg/kg; 1–6 months 0.05 mg/kg; 6 months–1 year 0.05–0.2 mg/kg; 1–12 years 0.1–0.2 mg/kg",
+     "s": "PAED:20.10",
+     "b": 1
+    },
+    {
+     "t": "Infusion: neonate 5–10 mcg/kg/hour; 1–6 months 10–30 mcg/kg/hour; 6 months–12 years 20–30 mcg/kg/hour",
+     "s": "PAED:20.10"
+    },
+    {
+     "t": "Titrate in small doses at 5–10 minute intervals with frequent reassessment; give each bolus slowly over 3–5 minutes",
+     "s": "PAED:20.9"
+    }
+   ]
+  },
+  {
+   "h": "Pulmonary oedema (acute kidney injury / hypertension)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "IV: < 6 months 0.025–0.1 mg/kg/dose; ≥ 6 months 0.05–0.2 mg/kg/dose; repeat after 4 hours if required",
+     "s": "PAED:6.4"
+    }
+   ]
+  },
+  {
+   "h": "Pain – oral immediate-release solution",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "0–1 month: 0.05 mg/kg 6 hourly",
+     "s": "PAED:20.9"
+    },
+    {
+     "t": "> 1–12 months: 0.1 mg/kg/dose 4–6 hourly",
+     "s": "PAED:20.9"
+    },
+    {
+     "t": "> 12 months: 0.2–0.4 mg/kg/dose 4–6 hourly",
+     "s": "PAED:20.9"
+    },
+    {
+     "t": "Oral onset 20–40 minutes; peak 60–90 minutes; duration 3–6 hours",
+     "s": "PAED:20.9"
+    }
+   ]
+  },
+  {
+   "h": "Chronic / cancer pain – oral",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Solution: start 5–10 mg (max 0.2 mg/kg) 4 hourly; elderly or frail 2.5–5 mg (max 0.1 mg/kg) 4 hourly; titrate to effect",
+     "s": "HOSP:25.4"
+    },
+    {
+     "t": "Slow-release tablets 12 hourly once the daily requirement is known",
+     "s": "HOSP:25.4"
+    }
+   ]
+  },
+  {
+   "h": "Dyspnoea – palliative",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Oral 2.5–5 mg 4 hourly as required, titrate up slowly; renal failure: start 1–2 mg",
+     "s": "HOSP:24.11"
+    }
+   ]
+  }
+ ],
+ "administration": [
+  {
+   "t": "IV bolus: dilute 10 mg up to 10 mL with sodium chloride 0.9% (= 1 mg/mL)",
+   "s": "HOSP:AII.8",
+   "b": 1
+  },
+  {
+   "t": "Paediatric infusion: 0.5 mg/kg diluted up to 50 mL with dextrose 5% or sodium chloride 0.9%; 1 mL = 10 mcg/kg",
+   "s": "PAED:20.9"
+  }
+ ],
+ "adjustments": [
+  {
+   "h": "Renal",
+   "t": "Reduce the dose in moderate to severe impairment; severe and prolonged respiratory depression has occurred",
+   "s": "pi"
+  },
+  {
+   "h": "Renal",
+   "t": "Palliative oral dosing in renal failure: start 1–2 mg and observe closely",
+   "s": "HOSP:24.11"
+  },
+  {
+   "h": "Hepatic",
+   "t": "Use with caution; consider dose reduction",
+   "s": "pi"
+  },
+  {
+   "h": "Elderly / frail",
+   "t": "Reduce the dose",
+   "s": "HOSP:12.9"
+  },
+  {
+   "h": "Pregnancy / labour",
+   "t": "Crosses the placenta rapidly; may cause respiratory depression in the newborn and reduce uterine contractions",
+   "s": "pi"
+  },
+  {
+   "h": "Lactation",
+   "t": "A single dose appears compatible with breastfeeding; observe the infant with repeated doses",
+   "s": "pi"
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Acute respiratory depression; coma",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Head injury, raised intracranial pressure, cerebral oedema",
+   "s": "pi"
+  },
+  {
+   "t": "Obstructive airways disease; acute asthma attack",
+   "s": "pi"
+  },
+  {
+   "t": "Monoamine oxidase inhibitors, or within 2 weeks of stopping them",
+   "s": "pi"
+  },
+  {
+   "t": "Paralytic ileus, biliary colic, acute alcohol intoxication, phaeochromocytoma, convulsive disorders",
+   "s": "pi"
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Hypotension / hypovolaemia: in obstetric haemorrhage titrate only once systolic BP > 100 mmHg",
+   "s": "impcg2024:55"
+  },
+  {
+   "t": "Hypotension, reduced respiratory reserve, sleep apnoea, obesity: use reduced doses",
+   "s": "pi"
+  },
+  {
+   "t": "Benzodiazepines and other sedatives: risk of sedation, respiratory depression, coma and death; alcohol adds to sedation and hypotension",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Causes spasm of the sphincter of Oddi – avoid in biliary disorders",
+   "s": "pi"
+  },
+  {
+   "t": "Dependence and tolerance with repeated use",
+   "s": "pi"
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Very common: drowsiness, respiratory depression, constipation, nausea, vomiting, pruritus, sweating, confusion",
+   "s": "pi"
+  },
+  {
+   "t": "Common: hypotension, bradycardia, miosis, urinary retention, dry mouth, bronchospasm, rash",
+   "s": "pi"
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Monitor response to pain and effects on respiration and blood pressure",
+   "s": "HOSP:AII.8",
+   "b": 1
+  },
+  {
+   "t": "Recovery room / IV titration: conscious level and pulse oximetry continuously",
+   "s": "HOSP:12.7"
+  }
+ ],
+ "toxicity": [
+  {
+   "t": "Overdose: respiratory depression, pinpoint pupils, coma, hypotension, hypothermia",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Treatment: respiratory and cardiovascular support, and naloxone – see the Opioids pathway for the dose",
+   "s": "pi"
+  }
+ ],
+ "conflicts": [
+  {
+   "t": "Labour: the product summary advises against morphine in pregnancy and labour; the STG and maternity guideline use it for labour analgesia. The pathway follows the STG.",
+   "s": "HOSP:6.28"
+  },
+  {
+   "t": "Biliary colic and head injury are listed as contraindications in the product summary; check any pathway that gives morphine in these settings (e.g. cholecystitis).",
+   "s": "pi",
+   "b": 1
+  }
+ ],
+ "see_also": [
+  "naloxone",
+  "fentanyl",
+  "tramadol",
+  "promethazine"
+ ],
+ "used_in": [
+  "acs-adult",
+  "aki-paeds",
+  "aph",
+  "appy-adult",
+  "appy-paeds",
+  "bo-adult",
+  "bo-paeds",
+  "brady-adult",
+  "burns_adult",
+  "chol-adult",
+  "fluids-adult-burns",
+  "fracture-adult",
+  "fracture-paeds",
+  "hcc-adult",
+  "hernia-adult",
+  "hernia-paeds",
+  "hie-neonate",
+  "hte-adult",
+  "meningitis-adult",
+  "miscarriage",
+  "opioids",
+  "opioids-withdrawal",
+  "panc-adult",
+  "pph",
+  "prolonged-labour",
+  "pud-adult",
+  "rsi-adult",
+  "rsi-paeds",
+  "stroke",
+  "term-labour"
+ ],
+ "verified": true,
+ "link": [
+  "morphine"
+ ],
+ "link_cs": []
+}

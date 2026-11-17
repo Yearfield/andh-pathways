@@ -1,0 +1,185 @@
+{
+ "id": "folic-acid",
+ "type": "drug",
+ "name": "Folic acid",
+ "aliases": [
+  "folate"
+ ],
+ "class": "Vitamin B9",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Needed for DNA synthesis and red-cell maturation, prevents neural tube defects",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Anaemia, Megaloblastic",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Folic acid, oral, 5 mg daily until Hb returns to normal (see reference ranges in Section 2.1: Anaemia).",
+     "s": "HOSP:2.5"
+    },
+    {
+     "t": "Folic acid, oral, 5 mg daily.",
+     "s": "HOSP:2.6"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Rheumatoid (Ra)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Folic acid, oral, 5 mg per week at least 24 hours after the methotrexate dose.",
+     "s": "HOSP:13.2"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Provide supplemental folic acid, oral, 5 mg daily.",
+     "s": "HOSP:14.23"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Macrocytic or Megaloblastic",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Folic acid, oral, 5 mg daily until Hb is normal. · Check Hb monthly.",
+     "s": "PHC:3.6"
+    }
+   ]
+  },
+  {
+   "h": "Antenatal Supplements",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Folic acid, oral, 5 mg daily: · All women intending to become pregnant or pregnant women (first trimester of pregnancy).",
+     "s": "PHC:6.10"
+    }
+   ]
+  },
+  {
+   "h": "Psychiatric Patients - General Monitoring and Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Folic acid, oral, 5 mg daily; and ensure reliable contraception.",
+     "s": "PHC:16.23"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Start treatment for anaemia with ferrous sulphate 200 mg oral 3 times daily, and continue with folic acid 5mg orally daily · If the Hb is <6.0 g/dL or if the patient is symptomatic (dizziness, tachycardia, shortness of breath at",
+     "s": "impcg2024:122"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Folic acid, oral, 2.5 mg as a single dose.",
+     "s": "PAED:2.44"
+    },
+    {
+     "t": "Folic acid, oral, 2.5 mg as a single daily dose.",
+     "s": "PAED:2.44"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Haemolytic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Folic acid, oral, 2.5 mg daily between birth and 6 months and 5 mg daily for > 5 kg and/or 6 months to 5 years.",
+     "s": "PAED:3.5"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Megaloblastic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Folic acid, oral, 5 mg daily until haemoglobin returns to normal value for age. Prolonged treatment may be needed for malabsorption states and congenital deficiencies.",
+     "s": "PAED:3.9"
+    }
+   ]
+  },
+  {
+   "h": "Tetralogy of Fallot",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Folic acid, oral, 2.5–5 mg/day.",
+     "s": "PAED:4.8"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Recommended",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Untreated B12 deficiency (may precipitate neuropathy)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Higher dose with anticonvulsants or previous neural tube defect",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rare",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-adult",
+  "ckd-paeds",
+  "pph",
+  "sam"
+ ],
+ "link": [
+  "folic acid"
+ ],
+ "link_cs": []
+}

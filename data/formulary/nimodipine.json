@@ -1,0 +1,77 @@
+{
+ "id": "nimodipine",
+ "type": "drug",
+ "name": "Nimodipine",
+ "aliases": [],
+ "class": "Cerebroselective calcium-channel blocker",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks L-type calcium channels in cerebral vessels, reduces delayed ischaemia after subarachnoid haemorrhage",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Subarachnoid Haemorrhage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Nimodipine, oral, 60 mg 4 hourly for 21 days.",
+     "s": "HOSP:14.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypotension",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Rifampicin and anticonvulsants lower levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypotension, headache, flushing",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "stroke"
+ ],
+ "link": [
+  "nimodipine"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,141 @@
+{
+ "id": "dobutamine",
+ "type": "drug",
+ "name": "Dobutamine",
+ "aliases": [],
+ "class": "Inotrope – β1 agonist",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Stimulates β1 (increases contractility and heart rate) with mild β2 vasodilation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Pulmonary Oedema, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dobutamine, IV infusion, 5–20 mcg/kg/minute. · Dilute 1 vial (250 mg/20 mL) up to 50 mL with sodium chloride 0.9% or dextrose 5%. (Solution = 5 mg/mL or 5 000 mcg/mL)",
+     "s": "HOSP:20.18"
+    }
+   ]
+  },
+  {
+   "h": "Shock",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dobutamine, IV, 5 to 20 mcg/kg/min as a continuous infusion.",
+     "s": "HOSP:23.4"
+    }
+   ]
+  },
+  {
+   "h": "Sepsis in ICU: Haemodynamic Support",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dobutamine, IV, 500 mg in 200 ml 0.9% saline as a continuous infusion. 23.35",
+     "s": "HOSP:23.35"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Acute with Pulmonary Oedema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dobutamine, IV infusion, 2–15 μg/kg/minute. · Continue until myocardial function and blood pressure improve.",
+     "s": "PAED:4.22"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure in Neonates",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dobutamine, IV infusion, 2.5–15 mcg/kg/minute. · Continue until myocardial function and blood pressure improve. · Ensure normovolaemia.",
+     "s": "PAED:19.30"
+    }
+   ]
+  },
+  {
+   "h": "Hypoxia-ischaemia of the Newborn (Perinatal Hypoxia/hypoxic-ischaemic Encephalopathy (HIE))",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dobutamine, IV, 5–15 μg/kg/minute if cardiac dysfunction or failure is present. · Continue with blood pressure support until blood pressure is stabilised. Seizure Control",
+     "s": "PAED:19.46"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypovolaemia not yet corrected",
+   "d": 1
+  },
+  {
+   "t": "Outflow obstruction",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Correct hypovolaemia first",
+   "d": 1
+  },
+  {
+   "t": "Give by infusion pump via a large vein",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tachycardia, arrhythmias, hypotension, myocardial ischaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Continuous ECG and BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "brady-adult",
+  "fluids-adult-shock",
+  "fluids-paeds-shock",
+  "hf-paeds",
+  "hie-neonate",
+  "sofa"
+ ],
+ "link": [
+  "dobutamine"
+ ],
+ "link_cs": []
+}

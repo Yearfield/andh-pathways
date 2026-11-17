@@ -1,0 +1,296 @@
+{
+ "id": "salbutamol",
+ "type": "drug",
+ "name": "Salbutamol",
+ "aliases": [],
+ "class": "Short-acting β2 agonist bronchodilator",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Stimulates β2 receptors in airway smooth muscle (bronchodilation), shifts potassium into cells, relaxes the uterus",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Asthma, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation using a MDI, · Salbutamol 400–1000 mcg (4–10 puffs), up to 20 puffs, using a spacer. · Inhale 1 puff at a time. Allow for 6 breaths through the spacer between",
+     "s": "HOSP:16.2"
+    }
+   ]
+  },
+  {
+   "h": "Asthma, Chronic Persistent",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Salbutamol, MDI, 200 mcg, as needed.",
+     "s": "HOSP:16.6"
+    },
+    {
+     "t": "Salbutamol, MDI, 200 mcg, 6 hourly as necessary.",
+     "s": "HOSP:16.6"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Salbutamol, MDI, 200 mcg 6 hourly as needed (educate on correct inhaler use - use a large volume spacer if inhaler technique remains poor).",
+     "s": "HOSP:16.12"
+    }
+   ]
+  },
+  {
+   "h": "Anaphylaxis/anaphylactic Shock",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Salbutamol, nebulisation, 5 mg. · Nebulise continuously (refill the nebuliser reservoir every 20 minutes) at a flow rate of 6–8 L/minute.",
+     "s": "HOSP:20.12"
+    }
+   ]
+  },
+  {
+   "h": "Intrapartum Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salbutamol, IV, 0.5 mg/mL, 250 mcg administered slowly over 2 minutes. · Reconstitute as follows: · Salbutamol 1 mL (0.5 mg/mL) added to 9 mL of water for injection, to make a",
+     "s": "PHC:6.24"
+    }
+   ]
+  },
+  {
+   "h": "Acute Asthma & Acute Exacerbation of COPD, Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation using a MDI, 7 · Salbutamol 400–1000 mcg (4 to 10 puffs), up to 20 puffs, using a spacer. · Inhale 1 puff at a time. Allow for 6 breaths through the spacer between puffs.",
+     "s": "PHC:17.5"
+    }
+   ]
+  },
+  {
+   "h": "Acute Asthma, Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation using an MDI, · Salbutamol, 400 to 1000 mcg (4 to 10 puffs), using a spacer. · For children ≥3 years, use a spacer with a mouthpiece.",
+     "s": "PHC:17.8"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Asthma",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salbutamol, MDI, 200 mcg, 6 hourly as necessary. Note: Fluticasone interacts with protease inhibitors. Refer all patients on protease inhibitors requiring inhaled fluticasone for further management.",
+     "s": "PHC:17.15"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation, 100 to 200 mcg (1 to 2 puffs), 3 to 4 times daily via a spacer as needed for relief of wheeze.",
+     "s": "PHC:17.18"
+    }
+   ]
+  },
+  {
+   "h": "Cervix clinically unfavourable",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "0.5 mg/mL) salbutamol to 9 mL sodium chloride 0.9% to make a solution of 50 mcg/mL. Administer 5 mL (250 mcg) of this solution. ACTIONS WHEN Cervix clinically unfavourable",
+     "s": "impcg2024:76"
+    }
+   ]
+  },
+  {
+   "h": "Emergencies during labour",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": " give a slow Salbutamol bolus, 250 mcg IV, slowly over 2 minutes. • Reconstitute the solution as follows: Add 1 mL (i.e., 0.5 mg/mL) salbutamol to 9 mL sodium chloride 0.9% to make a solution of 50 mcg/mL.",
+     "s": "impcg2024:93"
+    },
+    {
+     "t": "Reconstitute the solution as follows: Add 1 mL (i.e., 0.5 mg/mL) salbutamol to 9 mL sodium chloride 0.9% to make a solution of 50 mcg/mL. • Administer 5 mL (250 mcg) of this solution slowly.",
+     "s": "impcg2024:93"
+    }
+   ]
+  },
+  {
+   "h": "Acute Kidney Injury (Renal Failure, Acute)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol, IV, 4 mcg/kg in 5 mL water administered over 30 minutes.",
+     "s": "PAED:6.18"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation, 100–200 mcg, as required using a metered-dose inhaler with a spacer device or a nebulizer until symptoms are relieved.",
+     "s": "PAED:15.3"
+    }
+   ]
+  },
+  {
+   "h": "Asthma Attack, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation, using a metered-dose inhaler with a spacer device. · 200–400 mcg (2–4 puffs of 100 mcg/puff) repeated every",
+     "s": "PAED:15.20"
+    },
+    {
+     "t": "Salbutamol, inhalation, 200 mcg (2 puffs of 100 mcg/puff) as required using a metered-dose inhaler with a spacer device. Review maintenance asthma therapy at follow-up.",
+     "s": "PAED:15.21"
+    },
+    {
+     "t": "Salbutamol, IV, 15 mcg/kg as a single dose administered over 10 minutes.",
+     "s": "PAED:15.22"
+    }
+   ]
+  },
+  {
+   "h": "Infrequent Asthma",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol, inhalation, 100–200 mcg, as required 3–4 times daily using a metered-dose inhaler with a spacer device until symptoms are relieved.",
+     "s": "PAED:15.26"
+    }
+   ]
+  },
+  {
+   "h": "Management of Anaesthetic and Post- Anaesthetic Complications",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol, IV, 15 mcg/kg over 10 minutes.  Magnesium sulphate, IV, 30–50 mg/kg (maximum 2 g) slowly over 20 minutes.",
+     "s": "PAED:22.15"
+    }
+   ]
+  },
+  {
+   "h": "Potassium Abnormalities in ICU",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol nebulisation or salbutamol 4 mcg/kg, IV, over 20 minutes. (Note – ineffective in severe metabolic acidosis.)",
+     "s": "PAED:23.16"
+    }
+   ]
+  },
+  {
+   "h": "How to Induce Sputum in a Child",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Salbutamol · 2 x syringes · Sputum specimen · Sterile mucus Nebulizer with tubing · 3–5% hypertonic nebules and · (5mL) · container · extractor",
+     "s": "tbqrg2025:58"
+    },
+    {
+     "t": "3 · PREMEDICATE WITH SALBUTAMOL · 4 · THEN NEBULISE WITH HYPERTONIC SALINE • Assemble nebuliser and face mask. · • Add 2-4mLs hypertonic saline (3% or 5% • Give neb: use 1mL normal saline: 1mL · NaCl) into the chamber.",
+     "s": "tbqrg2025:58"
+    },
+    {
+     "t": "salbutamol. · • If < 2 years old: use 2mL hypertonic saline • Nebulise with mixed O2 flow at 5 - 8L/min, or jet · • If ≥ 2 years old: use 4mL hypertonic saline nebuliser until chamber empty. · • Nebulise with mixed O2 flow at 5-8L/min.",
+     "s": "tbqrg2025:58"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "None in acute severe asthma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Use a spacer with the inhaler",
+   "d": 1
+  },
+  {
+   "t": "Drive nebulisers with oxygen in asthma",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tremor, tachycardia, palpitations, hypokalaemia, raised lactate, hyperglycaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Heart rate, potassium with repeated high doses",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "age-adult",
+  "aki-adult",
+  "aki-paeds",
+  "ards-paeds",
+  "brady-adult",
+  "bronchiolitis-paeds",
+  "ckd-adult",
+  "ckd-paeds",
+  "copd-adult",
+  "copd_gold",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "lytes-adult-hyperk",
+  "lytes-paeds-hyperk",
+  "pph",
+  "prolonged-labour",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-paeds",
+  "term-labour"
+ ],
+ "link": [
+  "salbutamol"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,77 @@
+{
+ "id": "zinc",
+ "type": "drug",
+ "name": "Zinc",
+ "aliases": [],
+ "class": "Mineral supplement",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Shortens the duration and severity of diarrhoea in children, co-factor for many enzymes",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cholera",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Zinc (elemental), oral, 10 mg/day for 14 days:",
+     "s": "PAED:2.5"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Diarrhoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Zinc (elemental), oral, 10 mg/day.",
+     "s": "PAED:2.21"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [],
+ "adverse_effects": [
+  {
+   "t": "Nausea, vomiting, metallic taste",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-paeds",
+  "fluids-paeds-dehydration",
+  "fungal-paeds",
+  "sam"
+ ],
+ "link": [
+  "elemental zinc",
+  "zinc sulphate",
+  "zinc sulfate"
+ ],
+ "link_cs": []
+}

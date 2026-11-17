@@ -1,0 +1,243 @@
+{
+ "id": "dolutegravir",
+ "type": "drug",
+ "name": "Dolutegravir",
+ "aliases": [
+  "DTG"
+ ],
+ "class": "Antiretroviral – integrase strand transfer inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks HIV integrase, preventing insertion of viral DNA into the host genome",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Post-exposure Prophylaxis, Occupational",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dolutegravir, oral 50 mg daily for 4 weeks.",
+     "s": "HOSP:10.34"
+    }
+   ]
+  },
+  {
+   "h": "HIV in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "DTG, oral, 50 mg daily. Provided as a fixed dose combination (FDC).",
+     "s": "HOSP:6.16"
+    },
+    {
+     "t": "DTG, oral 50 mg 12 hours later. Pregnant woman on TDF + FTC + EFV. Switch to TDF+3TC+DTG. Pregnant woman already on ART with a VL See Section 10.1: Antiretroviral",
+     "s": "HOSP:6.16"
+    },
+    {
+     "t": "DTG, oral, 50 mg daily.",
+     "s": "HOSP:6.16"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dolutegravir · If on TLD FDC, add DTG 50 mg 12 hours after TLD dose. Rifampicin For interactions with paediatric regimens see Drug Interactions with DTG and",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Carbamazepine · Dolutegravir · that valproate is contra-indicated during pregnancy. • Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenytoin, or • Phenytoin · phenobarbital if an alternative anticonvulsant cannot",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Rifampicin · Dolutegravir · Increase DTG dose to 50 mg 12-hourly. · diabetes and epilepsy also have If on TLD FDC, add DTG 50 mg 12 hours after · important drug",
+     "s": "hiv2026:140"
+    }
+   ]
+  },
+  {
+   "h": "Table 33: ART dosing and important adverse effects",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dolutegravir (DTG) · InSTIs · 50 mg once daily • Hepatitis (uncommon) • Increase in serum creatinine due to inhibition of creatinine secretion",
+     "s": "hiv2026:106"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 1 ART for the Term Neonate",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dolutegravir (DTG) · ½ tab once every 2nd day (alternate days) · ½ tab once daily # If ABC/3TC Double scored dispersible tablet (120/60 mg) is not available, use ABC and 3TC solution with the DTG dispersible tablet. Abacavir (ABC) · 1.5 mL",
+     "s": "hiv2026:172"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 3 Antiretroviral Drug Dosing Chart for Children (2025)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "(ABC + 3TC) · Dolutegravir (ALD) 8 mg/kg/dose · 4 mg/kg/dose · By weight band · By weight band TWICE daily · TWICE daily · ONCE daily · TWICE daily",
+     "s": "hiv2026:174"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 4 Practical Advice on Administration of ARV Drugs",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Dolutegravir · Film coated (FC) tablets: 50 mg · pALD DT (60/30/5 mg) can only be dispersed in · with evening dosing. May raise creatinine levels by up to 15% without affecting renal function. FDC tablets: · water, not milk or solid foods.",
+     "s": "hiv2026:176"
+    }
+   ]
+  },
+  {
+   "h": "General",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "TLD · Tenofovir 300mg / Lamivudine 300mg / Dolutegravir 50mg TOP · Termination of pregnancy T&T · Test & treat",
+     "s": "contra2021:0"
+    }
+   ]
+  },
+  {
+   "h": "HIV in Pregnancy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Dolutegravir, oral, 50 mg daily Note: Provide as a fixed dose combination (FDC).",
+     "s": "PHC:6.38"
+    },
+    {
+     "t": "Dolutegravir, oral, 50 mg daily",
+     "s": "PHC:6.38"
+    },
+    {
+     "t": "Dolutegravir, oral, 50 mg daily VL ≥ 50 c/mL (pregnant Continue current regimen whilst » Doctor/ expert consult or women currently on investigating and managing cause of refer for expert advice.",
+     "s": "PHC:6.39"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Occupational",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Dolutegravir (DTG), oral 50 mg once daily for 4 weeks.",
+     "s": "PHC:21.54"
+    }
+   ]
+  },
+  {
+   "h": "Gestational diabetes mellitus",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Note that metformin interacts with dolutegravir, and the maximum dose of metformin for women on dolutegravir is 500mg twice a day. • If a woman presents before 16 weeks gestation start on Aspirin 150 mg orally at bedtime as well.",
+     "s": "impcg2024:124"
+    }
+   ]
+  },
+  {
+   "h": "Adolescents receiving rifampicin for TB treatment",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dolutegravir · X · increased to 50 mg 12-hourly. If on TLD FDC, add 50 mg of DTG 12 hours after the TLD dose. INSTI",
+     "s": "tbpaeds2024:60"
+    }
+   ]
+  },
+  {
+   "h": "Medication Interactions with Rifampicin",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dolutegravir · X If on TLD FDC, add 50 mg of DTG 12 hours after the TLD dose. • For DTG-boosting in children, please refer to the “Drug Dosing Chart” on page 34 of the",
+     "s": "tbqrg2025:43"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Recommended in pregnancy per current guideline",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Co-administration with dofetilide",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Rifampicin lowers levels – give 50 mg 12 hourly during TB treatment",
+   "d": 1
+  },
+  {
+   "t": "Take 2 hours before or 6 hours after calcium, iron, magnesium or aluminium products",
+   "d": 1
+  },
+  {
+   "t": "Raises metformin levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Insomnia, headache, weight gain, raised creatinine without true GFR change, hypersensitivity (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Viral load per guideline",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "ckd-adult",
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "hiv-new-adult",
+  "hiv-new-child",
+  "hiv-new-neonate",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "dolutegravir"
+ ],
+ "link_cs": [
+  "DTG"
+ ]
+}

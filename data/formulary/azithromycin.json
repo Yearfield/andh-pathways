@@ -1,0 +1,291 @@
+{
+ "id": "azithromycin",
+ "type": "drug",
+ "name": "Azithromycin",
+ "aliases": [],
+ "class": "Antibiotic – macrolide",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the 50S ribosomal subunit and inhibits protein synthesis, long tissue half-life",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Peptic Ulcer",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 500 mg daily for 3 days.",
+     "s": "HOSP:1.7"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Heart Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 250 mg daily.",
+     "s": "HOSP:3.45"
+    }
+   ]
+  },
+  {
+   "h": "Pelvic Inflammatory Disease (PID)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 1 g as a single dose.",
+     "s": "HOSP:5.4"
+    },
+    {
+     "t": "Azithromycin, oral, 2 g as a single dose.",
+     "s": "HOSP:5.5"
+    },
+    {
+     "t": "Azithromycin, oral, 1 g, as a single dose. Continue intravenous therapy until there is definite clinical improvement (within 24-48 hours).",
+     "s": "HOSP:5.5"
+    }
+   ]
+  },
+  {
+   "h": "Tick Bite Fever",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 500 mg once daily for 3 days.",
+     "s": "HOSP:9.20"
+    }
+   ]
+  },
+  {
+   "h": "Non-occupational Post Exposure Prophylaxis, Inadvertent Non-",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, IV, 500 mg .",
+     "s": "HOSP:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Bronchiectasis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 500 mg daily for 10 days.",
+     "s": "HOSP:16.8"
+    }
+   ]
+  },
+  {
+   "h": "Male Urethritis Syndrome (Mus)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 2 g as a single dose. Ask patient to return in two weeks for follow-up of laboratory results and further clinical evaluation. Treat accordingly.",
+     "s": "HOSP:26.2"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 500 mg daily for 3 days. 10.2.8: Mycobacteriosis - disseminated non-tuberculous",
+     "s": "HOSP"
+    },
+    {
+     "t": "Azithromycin, oral, 500 mg daily. 5.3: Pelvic Inflammatory Disease (PID) - stage I, 5.3: Pelvic Inflammatory Disease (PID), stage II-IV: (for severe penicillin allergy), 5.10: Sexual Assault",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Dental Abscess",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg/dose, daily for 3 days.",
+     "s": "PHC:1.2"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg daily for 3 days.",
+     "s": "PHC:4.28"
+    },
+    {
+     "t": "Azithromycin, oral, 10mg/kg/day, 3 times weekly.",
+     "s": "PHC:4.29"
+    }
+   ]
+  },
+  {
+   "h": "Cholera",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 20 mg/kg as a single dose.",
+     "s": "PAED:2.5"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Diarrhoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg/day for 3 days.",
+     "s": "PAED:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Peptic Ulcer Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg daily for 5 days.",
+     "s": "PAED:2.26"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg, ½ to 1 hour before procedure.",
+     "s": "PAED:4.13"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg/day for 5 days.",
+     "s": "PAED:4.14"
+    }
+   ]
+  },
+  {
+   "h": "Diphtheria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, IV, 10 mg/kg daily.",
+     "s": "PAED:8.11"
+    },
+    {
+     "t": "Azithromycin, oral, 10 mg/kg daily.",
+     "s": "PAED:8.11"
+    }
+   ]
+  },
+  {
+   "h": "Mycobacterium Avium Complex (Mac) Infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, oral, 10 mg/kg/day , if currently on efavirenz.",
+     "s": "PAED:8.28"
+    }
+   ]
+  },
+  {
+   "h": "Tick Bite Fever",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Azithromycin, IV/oral, 10 mg/kg daily for 3 days.",
+     "s": "PAED:8.37"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Macrolide hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Additive QT prolongation with other QT-prolonging drugs",
+   "d": 1
+  },
+  {
+   "t": "Fewer CYP interactions than erythromycin or clarithromycin",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, diarrhoea, abdominal pain, QT prolongation, hepatitis (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "appy-adult",
+  "ards-adult",
+  "bsi-adult",
+  "bsi-paeds",
+  "copd-adult",
+  "copd_gold",
+  "eczema-adult",
+  "eczema-paeds",
+  "fungal-paeds",
+  "gerd-paeds",
+  "hernia-adult",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "om-adult",
+  "om-paeds",
+  "pid",
+  "preterm-labour",
+  "pud-adult",
+  "rf-adult",
+  "sinusitis-adult",
+  "sinusitis-paeds",
+  "tonsillitis-paeds",
+  "uds",
+  "uti-adult",
+  "vds"
+ ],
+ "link": [
+  "azithromycin"
+ ],
+ "link_cs": []
+}

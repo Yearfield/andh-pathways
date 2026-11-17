@@ -1,0 +1,274 @@
+{
+ "id": "fresh-frozen-plasma",
+ "type": "drug",
+ "name": "Fresh frozen plasma",
+ "aliases": [
+  "FFP",
+  "FDP",
+  "freeze-dried plasma",
+  "lyophilised plasma"
+ ],
+ "class": "Blood product – plasma (includes freeze-dried plasma)",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces all clotting factors",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hepatitis, Non-viral",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV, 15mL/kg over 20-30 minutes.",
+     "s": "HOSP:1.9"
+    },
+    {
+     "t": "Fresh Frozen Plasma, IV, 15mL/kg over 20-30 minutes. AND Discuss further management with a specialist.",
+     "s": "HOSP:1.9"
+    }
+   ]
+  },
+  {
+   "h": "Thrombotic Thrombocytopenic Purpura- Haemolytic Uraemic Syndrome (Ttp-hus)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV infusion, 30 mL/kg/day in 3–4 divided doses.",
+     "s": "HOSP:2.22"
+    },
+    {
+     "t": "Fresh frozen plasma, IV infusion, 30 mL/kg/day in 3–4 divided doses.",
+     "s": "HOSP:2.22"
+    }
+   ]
+  },
+  {
+   "h": "Disseminated Intravascular Coagulation (Dic)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV, 15 mL/kg as initial dose. · Volume: ±200 mL/unit.",
+     "s": "HOSP:2.23"
+    },
+    {
+     "t": "Fresh frozen plasma, IV, 15 mL/kg as initial dose. · Volume: ±280 mL/unit.",
+     "s": "HOSP:2.23"
+    }
+   ]
+  },
+  {
+   "h": "Anticoagulant (Warfarin and Rodenticide Superwarfarin) Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV, 15 mL/kg.",
+     "s": "HOSP:19.42"
+    },
+    {
+     "t": "Fresh Frozen Plasma, IV, 15 mL/kg.",
+     "s": "HOSP:19.42"
+    }
+   ]
+  },
+  {
+   "h": "Angioedema",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV, 2 units.",
+     "s": "HOSP:20.10"
+    }
+   ]
+  },
+  {
+   "h": "Massive Transfusion",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV. · 1 unit for each unit of emergency blood transfused. Arrange urgent transfer to a centre with blood bank and specialist services.",
+     "s": "HOSP:20.22"
+    }
+   ]
+  },
+  {
+   "h": "Haemophilia a and B",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lyophilised plasma (FDP), IV, 15 mL/kg over 20-30 minutes. Lyophilised plasma contains a minimum of 0.4 units/mL of each coagulation factor.",
+     "s": "HOSP:2.16"
+    },
+    {
+     "t": "Fresh Frozen Plasma (FFP), IV, 15 mL/kg over 20-30 minutes.",
+     "s": "HOSP:2.16"
+    }
+   ]
+  },
+  {
+   "h": "Plasma Transfusion",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Freeze-dried plasma, IV, 15 mL/kg immediately. · Repeat dose if the patient’s clinical response and/or the coagulation function testing results indicate continued need.",
+     "s": "HOSP:23.13"
+    },
+    {
+     "t": "Freeze-dried plasma, IV, 1 unit immediately. · Should be given for every unit of red blood cells when it is anticipated that >4 units of red blood cells will be required.",
+     "s": "HOSP:23.13"
+    }
+   ]
+  },
+  {
+   "h": "Anticoagulant Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lyophilised plasma, IV, 20 mL/kg.",
+     "s": "PAED:18.7"
+    },
+    {
+     "t": "Fresh frozen plasma, IV, 20 mL/kg.",
+     "s": "PAED:18.7"
+    }
+   ]
+  },
+  {
+   "h": "Haemophilia a and B",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lyophilised plasma (FDP), IV, 20 mL/kg over 20-30 minutes. Lyophilised plasma contains a minimum of 0.4 units/mL of each coagulation factor.",
+     "s": "PAED:3.15"
+    },
+    {
+     "t": "Fresh frozen plasma (FFP), IV, 10 - 15 mL/kg over 20-30 minutes.",
+     "s": "PAED:3.15"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lyophilised plasma (fresh dried plasma), IV, 20 mL/kg administered over 2 hours.",
+     "s": "PAED:2.36"
+    },
+    {
+     "t": "Fresh frozen plasma, IV, 20 mL/kg administered over 2 hours.",
+     "s": "PAED:2.36"
+    }
+   ]
+  },
+  {
+   "h": "Thrombotic Thrombocytopenic Purpura/ Haemolytic Uraemic Syndrome",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Freeze dried plasma (FDP), IV, 30 mL/kg/day over 20-30 minutes in 3–4 doses.",
+     "s": "PAED:3.23"
+    },
+    {
+     "t": "Fresh frozen plasma (FFP), IV, 30 mL/kg/day over 20-30 minutes in 3– 4 doses.",
+     "s": "PAED:3.23"
+    }
+   ]
+  },
+  {
+   "h": "Haemorrhagic Disease of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fresh frozen plasma or lyophilised plasma, IV, 20 mL/kg over 1 hour.",
+     "s": "PAED:19.56"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "IgA deficiency with antibodies (relative)",
+   "d": 1
+  },
+  {
+   "t": "Volume overload",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "ABO-compatible",
+   "d": 1
+  },
+  {
+   "t": "Freeze-dried plasma is reconstituted with the supplied water and needs no thawing",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Transfusion reactions, TRALI, circulatory overload, infection risk (very low)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Vital signs during transfusion, INR",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-paeds",
+  "aph",
+  "chol-adult",
+  "cirrhosis-adult",
+  "ectopic",
+  "fluids-adult-shock",
+  "fluids-neonate",
+  "fluids-paeds-shock",
+  "fracture-adult",
+  "fracture-paeds",
+  "hcc-adult",
+  "miscarriage",
+  "pph",
+  "prb-adult",
+  "prb-paeds",
+  "prolonged-labour",
+  "superwarfarin",
+  "tbi-adult",
+  "ugib-adult",
+  "ugib-paeds"
+ ],
+ "link": [
+  "freeze-dried plasma",
+  "fresh frozen plasma",
+  "lyophilised plasma"
+ ],
+ "link_cs": [
+  "FFP",
+  "FDP"
+ ]
+}

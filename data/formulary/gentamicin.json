@@ -1,0 +1,290 @@
+{
+ "id": "gentamicin",
+ "type": "drug",
+ "name": "Gentamicin",
+ "aliases": [],
+ "class": "Antibiotic – aminoglycoside",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the 30S ribosomal subunit causing misreading of mRNA, concentration-dependent bactericidal, no anaerobic cover",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg daily. (See Appendix II for guidance on prescribing.)",
+     "s": "HOSP:2.11"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 1.5 mg/kg 12 hourly for 2 weeks. (See Appen- dix II, for guidance on prescribing).",
+     "s": "HOSP:3.31"
+    },
+    {
+     "t": "Gentamicin, IV, 3 mg/kg daily for 2 weeks (see Ap- pendix II for guidance on prescribing).",
+     "s": "HOSP:3.32"
+    },
+    {
+     "t": "Gentamicin, IV, 3 mg/kg daily for 6 weeks (see Appen- dix II for guidance on prescribing).",
+     "s": "HOSP:3.32"
+    }
+   ]
+  },
+  {
+   "h": "Septic Miscarriage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg daily.",
+     "s": "HOSP:5.11"
+    }
+   ]
+  },
+  {
+   "h": "Pyelonephritis, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg, daily (ensure normal renal function).",
+     "s": "HOSP:6.32"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IM, 5 mg/kg as a single dose.",
+     "s": "HOSP:7.18"
+    }
+   ]
+  },
+  {
+   "h": "Brucellosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg daily for 3 weeks. (See Appendix II for guidance on prescribing). · Preferred regimen for osteo-articular or cardiac involvement.",
+     "s": "HOSP:9.9"
+    }
+   ]
+  },
+  {
+   "h": "Non-occupational Post Exposure Prophylaxis, Inadvertent Non-",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg (See Appendix II, for guidance on prescribing).",
+     "s": "HOSP:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 5 mg/kg daily for 7 days (may be prolonged if response is poor).",
+     "s": "HOSP:14.38"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Gentamicin, IM, 160 mg, as a single dose. · Note: Gentamicin should not be used in patients with known chronic kidney disease or pregnancy.",
+     "s": "PHC:8.10"
+    }
+   ]
+  },
+  {
+   "h": "Management of a septic miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": " If Severe penicillin allergy: Clindamycin, IV, 600 mg 8 hourly AND Gentamicin, IV, 6 mg/kg daily. • Change to oral treatment after improvement: Clindamycin, oral, 450 mg 8 hourly for",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg as a single daily dose for 5 days. · Confirm normal renal function before second dose.",
+     "s": "PAED:2.18"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, oral, 12.5 mg/kg/dose 6 hourly for 5 days. · The intravenous formulation can be given orally.",
+     "s": "PAED:2.36"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg once daily for 7 days.",
+     "s": "PAED:2.43"
+    },
+    {
+     "t": "Gentamicin, IV/IM, 6 mg/kg once daily for 7 days.",
+     "s": "PAED:2.43"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 3 mg/kg/day for 2 weeks.",
+     "s": "PAED:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Osteitis/osteomyelitis, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg once daily.",
+     "s": "PAED:8.51"
+    }
+   ]
+  },
+  {
+   "h": "Drug Resistant TB (DR-TB)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 6 mg/kg for the following procedures:",
+     "s": "PAED:11.3"
+    }
+   ]
+  },
+  {
+   "h": "Respiratory Distress in the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, for 5–7 days in the first week of life. · If < 32 weeks gestation of age: 5 mg/kg/36 hours. · ≥ 32 weeks gestation of age: 5 mg/kg/24 hours.",
+     "s": "PAED:19.17"
+    }
+   ]
+  },
+  {
+   "h": "Enterocolitis, Necrotising (NEC)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Gentamicin, IV, 5 mg/kg once daily for 7 days.",
+     "s": "PAED:19.23"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid if alternatives exist (fetal ototoxicity)",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  },
+  {
+   "t": "Previous aminoglycoside ototoxicity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Dose on ideal body weight",
+   "d": 1
+  },
+  {
+   "t": "Extend the interval in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Avoid with other nephrotoxic or ototoxic drugs (furosemide, vancomycin, amphotericin)",
+   "d": 1
+  },
+  {
+   "t": "Short courses",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nephrotoxicity, ototoxicity (cochlear and vestibular), neuromuscular blockade",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function, trough level where available",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-paeds",
+  "aki-paeds",
+  "appy-adult",
+  "chol-adult",
+  "fluids-paeds-sam",
+  "fracture-adult",
+  "fracture-paeds",
+  "hie-neonate",
+  "meningitis-adult",
+  "miscarriage",
+  "pid",
+  "sam",
+  "uds",
+  "uti-adult",
+  "uti-pregnancy",
+  "vds"
+ ],
+ "link": [
+  "gentamicin"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,138 @@
+{
+ "id": "hyoscine-butylbromide",
+ "type": "drug",
+ "name": "Hyoscine butylbromide",
+ "aliases": [
+  "hyoscine"
+ ],
+ "class": "Antispasmodic – antimuscarinic",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Relaxes GI and genitourinary smooth muscle, does not cross the blood–brain barrier",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hyoscine butylbromide, oral, 20 mg 8 hourly as required.",
+     "s": "HOSP:15.35"
+    }
+   ]
+  },
+  {
+   "h": "Respiratory Secretions",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hyoscine butylbromide, SC/IM, 20 mg. · Increase dose to effect to maximum of 120 mg.",
+     "s": "HOSP:24.12"
+    }
+   ]
+  },
+  {
+   "h": "Acute Pain due to Gastrointestinal Colic",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hyoscine butylbromide, IV/oral, 10 mg 8 hourly.",
+     "s": "HOSP:25.9"
+    }
+   ]
+  },
+  {
+   "h": "Abdominal Pain",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Hyoscine butylbromide, oral, 10 mg 6 hourly for a maximum of 3 days.",
+     "s": "PHC:2.3"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hyoscine butylbromide, oral, IM or IV: · 1 month to 4 years: 300–500 mcg/kg 6–8 hourly. Maximum: 5000 mcg/dose (5 mg/dose).",
+     "s": "PAED:21.5"
+    }
+   ]
+  },
+  {
+   "h": "Dyspnoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hyoscine butylbromide, SC/IV: · 1 month to 4 years: 300–500 mcg/kg (maximum: 5 mg/dose) 6– 8 hourly.",
+     "s": "PAED:21.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Glaucoma",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  },
+  {
+   "t": "Paralytic ileus",
+   "d": 1
+  },
+  {
+   "t": "Tachycardia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "IV use can cause tachycardia and hypotension – caution in cardiac disease",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dry mouth, tachycardia, blurred vision, urinary retention",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hcc-adult",
+  "opioids",
+  "opioids-withdrawal"
+ ],
+ "link": [
+  "hyoscine butylbromide"
+ ],
+ "link_cs": []
+}

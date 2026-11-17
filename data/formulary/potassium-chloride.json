@@ -1,0 +1,197 @@
+{
+ "id": "potassium-chloride",
+ "type": "drug",
+ "name": "Potassium chloride",
+ "aliases": [
+  "KCl"
+ ],
+ "class": "Electrolyte replacement",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces potassium, needed for membrane potential and cardiac conduction",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hypokalaemia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Potassium chloride, oral, 600 mg, 1–2 tablets 8 hourly. · Each 600 mg potassium chloride tablet contains 8 mmol of potassium chloride.",
+     "s": "HOSP:7.11"
+    },
+    {
+     "t": "Potassium chloride, oral, 1 200 mg (2 tablets) 8 hourly. · Each 600 mg potassium chloride tablet contains 8 mmol of potassium chloride.",
+     "s": "HOSP:7.12"
+    },
+    {
+     "t": "Potassium chloride, IV by peripheral line, 40 mmol in 1 L of 0.9% or 0.45% sodium chloride, mixed thoroughly. · Administer over 3 hours, or up to a maximum rate of 20 mmol per",
+     "s": "HOSP:7.12"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Ketoacidosis (DKA) and Hyperosmolar Hyperglycaemic State (HHS)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Potassium chloride, IV, added to 1 L of fluid. o potassium <3.5 mmol/L: add 40 mmol (2 ampoules). o potassium 3.5–5.5 mmol/L: add 20 mmol (1 ampoule).",
+     "s": "HOSP:8.15"
+    },
+    {
+     "t": "Potassium chloride, IV, 20 mmol (1 ampoule) added to 1 L of fluid as soon as the patient has established adequate urinary output.",
+     "s": "HOSP:8.15"
+    }
+   ]
+  },
+  {
+   "h": "Theophylline Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Potassium chloride, IV, 20 to 40 mmol/L in sodium chloride, 0.9%. · Maximum rate of infusion: 20 mmol/hour.",
+     "s": "HOSP:19.25"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Potassium chloride, IV, diluted in 1 L sodium chloride 0.9%. · Rapid infusion of potassium chloride can cause fatal dysrhythmias. · Infusion rates > 20 mmol/hour are very irritating to peripheral veins.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Potassium chloride, oral, 25–50 mg/kg/dose 8 hourly.",
+     "s": "PAED:2.15"
+    },
+    {
+     "t": "Potassium chloride, oral, 8 hourly. · If < 6 months: 125 mg. · If > 6 months: 250 mg.",
+     "s": "PAED:2.19"
+    }
+   ]
+  },
+  {
+   "h": "Congenital Heart Disease with Left to Right Shunt",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Supplement with potassium chloride, oral, 25–50 mg/kg/dose 8–12 hourly.",
+     "s": "PAED:4.9"
+    }
+   ]
+  },
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Potassium chloride (100 mg/ml), oral, 75–225 mg/kg/day (1–3 mmol/kg/day or 0.75–2.25 ml/kg/day) in divided doses. · Monitor serum potassium.",
+     "s": "PAED:6.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  },
+  {
+   "t": "Anuria (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Never give undiluted or as a bolus",
+   "d": 1
+  },
+  {
+   "t": "Maximum rate and concentration per protocol",
+   "d": 1
+  },
+  {
+   "t": "Correct magnesium if hypokalaemia is refractory",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperkalaemia, arrhythmias, cardiac arrest with rapid IV, phlebitis, GI ulceration with oral",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium, ECG at higher rates, urine output",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "age-adult",
+  "age-paeds",
+  "aki-adult",
+  "bo-adult",
+  "bo-paeds",
+  "ccf-adult",
+  "dka-adult",
+  "dka-paeds",
+  "fluids-adult-dehydration",
+  "fluids-adult-dka",
+  "fluids-adult-maintenance",
+  "fluids-paeds-dehydration",
+  "fluids-paeds-dka",
+  "fluids-paeds-maintenance",
+  "fluids-paeds-sam",
+  "fluids-reference",
+  "gerd-adult",
+  "hf-paeds",
+  "hyperglycaemia-adult",
+  "hypoglycemia-pregnancy",
+  "lytes-adult-hyperk",
+  "lytes-adult-hypok",
+  "lytes-paeds-hyperna",
+  "lytes-paeds-hypok",
+  "lytes-paeds-hypona",
+  "meningitis-paeds",
+  "pud-adult",
+  "sam"
+ ],
+ "link": [
+  "potassium chloride"
+ ],
+ "link_cs": [
+  "KCl"
+ ]
+}

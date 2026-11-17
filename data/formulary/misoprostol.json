@@ -1,0 +1,154 @@
+{
+ "id": "misoprostol",
+ "type": "drug",
+ "name": "Misoprostol",
+ "aliases": [],
+ "class": "Prostaglandin E1 analogue",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Causes uterine contraction and cervical ripening, gastric cytoprotection",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Silent Miscarriage or Early Fetal Death",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Misoprostol, oral/PV, 600 mcg as a single dose. · Repeat after 24 hours if necessary.",
+     "s": "HOSP:5.9"
+    }
+   ]
+  },
+  {
+   "h": "Incomplete Miscarriage in the First Trimester",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Misoprostol, oral/PV, 400 mcg as a single dose.",
+     "s": "HOSP:5.9"
+    }
+   ]
+  },
+  {
+   "h": "Labour Induction",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Misoprostol, oral, 20 mcg 2 hourly until in labour, or up to 24 hours. · Oral misoprostol may be given as freshly made-up solution of one 200 mcg tablet in 200 mL water, i.e., 1 mcg/mL solution. Give 20 mL of this",
+     "s": "HOSP:6.26"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Misoprostol, sublingual, or rectal, 600 mcg as a single dose.",
+     "s": "HOSP:6.30"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage (PPH)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Misoprostol, sublingual/rectal, 600mcg as a single dose.",
+     "s": "PHC:6.34"
+    }
+   ]
+  },
+  {
+   "h": "Management of a septic miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "400mcg S/L misoprostol are options that can be offered to the client. • Ask her to return for a check-up if bleeding has not settled completely by 2 weeks or if she develops increasing pelvic pain or fever.",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "h": "Cervix clinically favourable:",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "misoprostol. • Oxytocin, IV infusion, 2 units in 200 mL sodium chloride 0.9%. · Start at an infusion rate of 12 mL/hour (i.e. 2 milliunits/minute).",
+     "s": "impcg2024:75"
+    }
+   ]
+  },
+  {
+   "h": "Cervix clinically unfavourable",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Oral misoprostol may be given as freshly made-up solution of one 200 mcg tablet in 200 mL water, i.e. 1 mcg/mL solution.  Label clearly with date and time, and discard solution after 24 hours.",
+     "s": "impcg2024:77"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Abortifacient – use only for the stated obstetric indications",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Previous caesarean or uterine surgery for induction at term doses",
+   "d": 1
+  },
+  {
+   "t": "Suspected ectopic",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Dose differs greatly by gestation and indication – follow the pathway exactly",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Shivering, fever, diarrhoea, abdominal cramps, uterine hyperstimulation, uterine rupture",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Contractions, fetal heart rate, bleeding, temperature",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aph",
+  "chorioamnionitis",
+  "miscarriage",
+  "pph"
+ ],
+ "link": [
+  "misoprostol"
+ ],
+ "link_cs": []
+}

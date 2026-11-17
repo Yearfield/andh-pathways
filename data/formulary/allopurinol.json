@@ -1,0 +1,109 @@
+{
+ "id": "allopurinol",
+ "type": "drug",
+ "name": "Allopurinol",
+ "aliases": [],
+ "class": "Xanthine oxidase inhibitor",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks conversion of hypoxanthine and xanthine to uric acid",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Gout",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Allopurinol, oral, 100 mg daily. · Increase monthly by 100 mg according to serum urate levels. · Titrate dose to reduce serum urate to <0.35 mmol/L.",
+     "s": "HOSP:13.9"
+    }
+   ]
+  },
+  {
+   "h": "Tumour Lysis Syndrome",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Allopurinol, oral, 100 mg 8 hourly. · Maximum dose: 300 mg 8 hourly. · Adjust dose to 50 mg 8 hourly, if eGFR <20 mL/minute.",
+     "s": "HOSP:21.2"
+    }
+   ]
+  },
+  {
+   "h": "Gout, Chronic",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Allopurinol, oral, 100 mg daily (Doctor initiated). · Increase monthly by 100 mg according to serum urate levels. · Titrate dose to reduce serum urate to <0.35 mmol/L.",
+     "s": "PHC:14.7"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Do not start during an acute gout attack",
+   "d": 1
+  },
+  {
+   "t": "Previous severe hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Stop at the first sign of rash",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Greatly increases azathioprine and mercaptopurine toxicity",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash, severe cutaneous reactions (SJS/TEN, DRESS), GI upset, hepatitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Urate, renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lytes-adult-phos-refeed"
+ ],
+ "link": [
+  "allopurinol"
+ ],
+ "link_cs": []
+}

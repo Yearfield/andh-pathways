@@ -1,0 +1,108 @@
+{
+ "id": "vitamin-a",
+ "type": "drug",
+ "name": "Vitamin A",
+ "aliases": [
+  "retinol"
+ ],
+ "class": "Fat-soluble vitamin (retinol)",
+ "group": "Vitamins and nutrition",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Needed for epithelial integrity, vision and immune function, reduces measles and diarrhoea mortality in deficiency",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Diarrhoea, Persistent in Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Vitamin A (retinol), oral. Age range Dose Capsule Capsule IU 100 000 IU 200 000 IU",
+     "s": "PHC:2.15"
+    }
+   ]
+  },
+  {
+   "h": "Measles",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Vitamin A (retinol), oral, as a single dose. Age range Dose Capsule Capsule units 100 000 IU 200 000 IU",
+     "s": "PHC:10.14"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin A, oral, as a single dose: Age Dose No. of capsules Infants < 6 months: 50 000 IU 1 capsule",
+     "s": "PAED:2.44"
+    }
+   ]
+  },
+  {
+   "h": "Measles",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin A, oral, as a single daily dose for 2 days. · If < 6 months of age: 50 000 units. · If 6–12 months of age: 100 000 units.",
+     "s": "PAED:8.18"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid high doses",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "High doses in pregnancy (teratogenic)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Do not repeat if a dose was given in the previous month",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Raised intracranial pressure (bulging fontanelle), vomiting with high doses",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-new-child",
+  "lrti-paeds",
+  "sam",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "vitamin A"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,207 @@
+{
+ "id": "tranexamic-acid",
+ "type": "drug",
+ "name": "Tranexamic acid",
+ "aliases": [
+  "tranexamic",
+  "TXA"
+ ],
+ "class": "Antifibrinolytic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Lysine analogue that blocks plasminogen binding to fibrin",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Haemophilia a and B",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid, oral, 1 - 1.5 g (15 - 25 mg/kg) 6-8 hourly.",
+     "s": "HOSP:2.16"
+    },
+    {
+     "t": "Tranexamic acid, oral, 25 mg/kg/dose 6–8 hourly, starting 2 hours before the procedure and continued for 5 days post-procedure.",
+     "s": "HOSP:2.17"
+    }
+   ]
+  },
+  {
+   "h": "Von Willebrand Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid, oral, 1 g 6-8 hourly. Recurrent menorrhagia can also be treated effectively with oral contraceptives.",
+     "s": "HOSP:2.20"
+    }
+   ]
+  },
+  {
+   "h": "Uterine Bleeding, Abnormal (AUB)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid, oral, 1 g 6 hourly on days 1–4 of the cycle.",
+     "s": "HOSP:5.2"
+    }
+   ]
+  },
+  {
+   "h": "Injectable Contraception",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid, oral, 500 mg 8 hourly for 4 days.",
+     "s": "HOSP:5.22"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid 1 g, IV, slowly over 10 minutes. · Repeat after 30 minutes if there is ongoing vaginal bleeding.",
+     "s": "HOSP:6.30"
+    }
+   ]
+  },
+  {
+   "h": "Massive Transfusion",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid, IV, 1 g, infused over 10 minutes. · Followed with IV infusion, 1 g, over 8 hours.",
+     "s": "HOSP:20.22"
+    }
+   ]
+  },
+  {
+   "h": "Antifibrinolytic Medication",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tranexamic acid, IV: · Loading dose: 1 g over 10 minutes as a bolus infusion. · Maintenance dose: 1 g added to 100 ml 0.9% saline over 8 hours as",
+     "s": "HOSP:23.14"
+    },
+    {
+     "t": "Tranexamic acid, IV, 1 g over 10 minutes as a bolus infusion.",
+     "s": "HOSP:23.14"
+    },
+    {
+     "t": "Tranexamic acid, IV, 1 g added to 100 mL 0.9% saline over 8 hours as an infusion.",
+     "s": "HOSP:23.14"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Haemorrhage (PPH)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Tranexamic acid, IV, 1g in 200 mL sodium chloride 0.9% over 10 minutes, or 1 g by slow IV injection, PHC Ch6_Last updated 30 July 2026",
+     "s": "PHC:6.33"
+    }
+   ]
+  },
+  {
+   "h": "Recommendations and pre-requisites for the use of uterine balloon tamponade",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "and Tranexamic acid (if available) 1g in 200ml 0.9% sodium chloride by slow (over 10 minutes) intravenous injection. · Continuously massage the uterus and manually remove newly formed clots.",
+     "s": "impcg2024:117"
+    }
+   ]
+  },
+  {
+   "h": "Haemophilia a and B",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Tranexamic acid, oral, 15 - 25 mg/kg/dose 6-8 hourly. · Contraindicated in haematuria.",
+     "s": "PAED:3.15"
+    }
+   ]
+  },
+  {
+   "h": "Von Willebrand Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Tranexamic acid, oral, 25 mg/kg/dose 6–8 hourly.",
+     "s": "PAED:3.19"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used in post-partum haemorrhage",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active thromboembolic disease",
+   "d": 1
+  },
+  {
+   "t": "History of seizures (relative)",
+   "d": 1
+  },
+  {
+   "t": "Severe renal impairment (reduce dose)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give IV slowly (about 10 minutes)",
+   "d": 1
+  },
+  {
+   "t": "Most benefit within 3 hours of trauma or delivery",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, diarrhoea, hypotension with rapid IV, seizures at high doses",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fluids-adult-shock",
+  "fracture-adult",
+  "miscarriage",
+  "pph",
+  "tbi-adult",
+  "ugib-adult"
+ ],
+ "link": [
+  "tranexamic acid",
+  "tranexamic"
+ ],
+ "link_cs": [
+  "TXA"
+ ]
+}

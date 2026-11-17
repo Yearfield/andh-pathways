@@ -1,0 +1,85 @@
+{
+ "id": "isosorbide-mononitrate",
+ "type": "drug",
+ "name": "Isosorbide mononitrate",
+ "aliases": [
+  "ISMN"
+ ],
+ "class": "Nitrate vasodilator",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Releases nitric oxide: venodilation and coronary dilation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Angina Pectoris, Stable",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Isosorbide mononitrate, oral 10–20 mg twice daily.",
+     "s": "HOSP:3.13"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypotension",
+   "d": 1
+  },
+  {
+   "t": "Phosphodiesterase-5 inhibitor use",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Asymmetric dosing to keep a nitrate-free interval",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Headache, hypotension, flushing",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "cad-adult"
+ ],
+ "link": [
+  "isosorbide mononitrate"
+ ],
+ "link_cs": [
+  "ISMN"
+ ]
+}

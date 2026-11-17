@@ -1,0 +1,79 @@
+{
+ "id": "pethidine",
+ "type": "drug",
+ "name": "Pethidine",
+ "aliases": [],
+ "class": "Synthetic opioid analgesic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Μ-opioid agonist, metabolite norpethidine is neurotoxic",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Neonatal respiratory depression if given in labour",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Concurrent or recent MAOIs",
+   "d": 1
+  },
+  {
+   "t": "Renal failure",
+   "d": 1
+  },
+  {
+   "t": "Seizure disorders",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Avoid repeated dosing and use in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Serotonin syndrome with serotonergic drugs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, sedation, respiratory depression, seizures from norpethidine accumulation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, sedation",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hie-neonate",
+  "opioids"
+ ],
+ "link": [
+  "pethidine"
+ ],
+ "link_cs": []
+}

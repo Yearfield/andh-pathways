@@ -1,0 +1,272 @@
+{
+ "id": "isoniazid",
+ "type": "drug",
+ "name": "Isoniazid",
+ "aliases": [
+  "INH"
+ ],
+ "class": "Anti-TB antibiotic",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits mycolic acid synthesis in the mycobacterial cell wall",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Isoniazid, oral 300 mg daily.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Adult or adolescent · Any CD4 count. Exclude active liver disease, alcohol · Isoniazid, oral, 300 mg daily for 12 months (12H) ≥ 15 years · abuse, or known hypersensitivity to isoniazid · and pyridoxine 25 mg daily (non-pregnant)",
+     "s": "hiv2026:31"
+    },
+    {
+     "t": "≥ 15 years · abuse, or known hypersensitivity to isoniazid · and pyridoxine 25 mg daily (non-pregnant) Rifapentine and isoniazid weekly (3HP) may be",
+     "s": "hiv2026:31"
+    },
+    {
+     "t": "Rifapentine and isoniazid weekly (3HP) may be available in selected locations* Children living with HIV who · • Children undergoing their first evaluation for HIV · Isoniazid, oral, 10 mg/kg/day for 6 months",
+     "s": "hiv2026:31"
+    }
+   ]
+  },
+  {
+   "h": "Table 26: TPT dosing chart",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "including children ≥ 25kg · • Isoniazid, oral, 300 mg daily for 12 months · initiating a DTG-containing ART regimen initiating DTG-containing ART · • Add Pyridoxine, oral, 25 mg once daily for 12 months Adults and adolescents LHIV · • 3HP |",
+     "s": "hiv2026:89"
+    },
+    {
+     "t": "who are: · • A weekly combination of isoniazid (900mg · DTG-based regimen • ≥ 25 kg · if weight >25 kg) plus rifapentine (900mg if · • 3HP should NOT be used in new patients initiating a • virally suppressed on · weight >25 kg) for three mo",
+     "s": "hiv2026:89"
+    },
+    {
+     "t": "LHIV < 25kg · • Isoniazid, oral, daily for 6 months · • < 5 years: 12.5 mg daily • See dosing chart in Table 27: · • ≥ 5 years: 25 mg daily Recommended daily dosages for 6H",
+     "s": "hiv2026:89"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis Preventive Therapy (Tpt)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 300 mg daily for 12 months.",
+     "s": "PHC:11.19"
+    }
+   ]
+  },
+  {
+   "h": "TB Chemoprophylaxis/isoniazid Preventive Therapy (Ipt) in Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 10 mg/kg daily for 6 months. · Maximum dose: 300 mg daily. Weight Daily isoniazid (INH)",
+     "s": "PHC:17.31"
+    },
+    {
+     "t": "Isoniazid, oral, 10 mg/kg daily for 6 months (see table above).",
+     "s": "PHC:17.32"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis (TB) in pregnancy and breastfeeding",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Isoniazid 300mg daily · Pyridoxine 25mg daily • Duration of treatment:",
+     "s": "impcg2024:141"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis and HIV",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 10 mg/kg/dose once daily for 6 months. · Maximum dose: 300 mg daily.",
+     "s": "PAED:9.36"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis, Perinatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 10 mg/kg/dose once daily for 6 months (IPT) – HIV- infected or HIV-exposed, on NVP. Weight band Daily Isoniazid (H)",
+     "s": "PAED:10.3"
+    }
+   ]
+  },
+  {
+   "h": "Miliary TB in Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 20 mg/kg as a single daily dose. · Maximum dose: 400 mg daily.",
+     "s": "PAED:10.12"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Tuberculous (Tbm) in Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 20 mg/kg as a single daily dose. · Maximum daily dose: 400 mg.",
+     "s": "PAED:10.15"
+    }
+   ]
+  },
+  {
+   "h": "TB Preventive Therapy (Tpt) for TB Exposure/infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid, oral, 10 mg/kg daily for 6 months.",
+     "s": "PAED:10.18"
+    },
+    {
+     "t": "Isoniazid, oral, 15–20 mg/kg daily for 6 months (maximum dose: 600mg)",
+     "s": "PAED:10.18"
+    }
+   ]
+  },
+  {
+   "h": "Table 9 Drug dosing chart for treatment of DS-TBM, CNS TB and miliary TB",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Isoniazid (H): 15-20 mg/kg, · Pyrazinamide (Z): · Ethionamide (Eto): Target dose range & · maximum dose 450 mg · Target dose range & 35-45 mg/kg, · 17.5-22.5 mg/kg,",
+     "s": "tbpaeds2024:45"
+    }
+   ]
+  },
+  {
+   "h": "TPT FOR CHILDREN UNDER 25kg",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "HIV negative · Give 3RH (daily rifampicin and isoniazid for 3 months). If 3RH not available, give 6H. AND · Give pyridoxine for duration: If < 5 years old: give 12.5 mg daily (if < 6kg: 6.25 mg(¼ tab) If TB exposure: index patient has DS-TB",
+     "s": "tbqrg2025:22"
+    },
+    {
+     "t": "Child living with HIV · Give 6H (daily isoniazid for 6 months). AND · Give pyridoxine for duration: If < 5 years old: give 12.5 mg daily (if < 6kg: 6.25mg (¼ tab) If TB exposure: index patient has DS-TB · If ≥ 5 years old, give 25 mg daily",
+     "s": "tbqrg2025:22"
+    },
+    {
+     "t": "Infant born to HIV-positive woman and on · Give 6H (daily isoniazid for 6 months). nevirapine ± zidovudine (infant HIV-exposed · Give pyridoxine 12.5 mg daily for duration (if < 6kg: give 6.25 mg (¼ tablet) but HIV-negative) · Follow up mon",
+     "s": "tbqrg2025:22"
+    }
+   ]
+  },
+  {
+   "h": "TPT FOR THE CHILD 25 kg AND OVER",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "ART with an unsuppressed viral load (≥ 50) in last 6 · Give 12H (daily isoniazid for 12 months). months · Give pyridoxine 25 mg daily for 12 months. AND · Follow up monthly (p26).",
+     "s": "tbqrg2025:23"
+    },
+    {
+     "t": "If giving isoniazid, give pyridoxine 25 mg daily for 6 months. 3HP FOR TB INFECTION · 3RH FOR TB INFECTION CHILD ≥ 25 kg (HIV NEG/ CLHIV ON ART AND RECENT VL< 50) · IN THE HIV NEGATIVE CHILD ≥ 25 kg",
+     "s": "tbqrg2025:23"
+    },
+    {
+     "t": "Weight · Rifapentine · Isoniazid · Duration · Weight band · RH · RH band · Duration 150 mg tablets · 300 mg tablets · (kg) · (150/75) · (300/150)",
+     "s": "tbqrg2025:23"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – with pyridoxine",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Drug-induced liver disease",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give pyridoxine in HIV, pregnancy, diabetes, alcohol use, malnutrition",
+   "d": 1
+  },
+  {
+   "t": "Raises phenytoin and carbamazepine levels",
+   "d": 1
+  },
+  {
+   "t": "Overdose causes refractory seizures (pyridoxine is the antidote)",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hepatitis, peripheral neuropathy, rash, psychosis and seizures (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function if symptomatic",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bloodgas-causes",
+  "bloodgas_causes",
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "hiv-new-adult",
+  "hiv-new-child",
+  "liver",
+  "meningitis-paeds",
+  "psychosis-adult",
+  "sam",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "isoniazid"
+ ],
+ "link_cs": [
+  "INH"
+ ]
+}

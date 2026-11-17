@@ -1,0 +1,110 @@
+{
+ "id": "orphenadrine",
+ "type": "drug",
+ "name": "Orphenadrine",
+ "aliases": [],
+ "class": "Antimuscarinic antiparkinsonian",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Central muscarinic antagonist, treats drug-induced extrapyramidal effects",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Parkinsonism, Secondary",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Orphenadrine, oral, 50 mg 8 hourly, increase gradually according to clinical response. · Usual dose: 150–250 mg daily.",
+     "s": "HOSP:14.45"
+    }
+   ]
+  },
+  {
+   "h": "Schizophrenia Spectrum Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Orphenadrine, oral, 50–150 mg daily according to individual response. · Usual dose: 50 mg 8 hourly. · Maximum dose: 150 mg daily.",
+     "s": "HOSP:15.28"
+    }
+   ]
+  },
+  {
+   "h": "Extra-pyramidal Side Effects",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Orphenadrine, oral, 50 mg 8 hourly, whilst awaiting review.",
+     "s": "PHC:16.11"
+    }
+   ]
+  },
+  {
+   "h": "Schizophrenia Spectrum Disorders (Schizophrenia)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Orphenadrine, oral, 50 mg 8 hourly, and refer for review of medication.",
+     "s": "PHC:16.21"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Narrow-angle glaucoma",
+   "d": 1
+  },
+  {
+   "t": "Urinary retention",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Toxic in overdose",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dry mouth, blurred vision, confusion, tachycardia, urinary retention",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "psychosis-adult"
+ ],
+ "link": [
+  "orphenadrine"
+ ],
+ "link_cs": []
+}

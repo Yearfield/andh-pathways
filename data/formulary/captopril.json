@@ -1,0 +1,119 @@
+{
+ "id": "captopril",
+ "type": "drug",
+ "name": "Captopril",
+ "aliases": [],
+ "class": "ACE inhibitor (short-acting)",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks conversion of angiotensin I to II",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Congenital Heart Disease with Left to Right Shunt",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Captopril, oral: · Infants: 0.15–0.3 mg/kg/dose, 8–12 hourly (maximum 2 mg/kg/day). · Children: 0.3–0.5 mg/kg/dose 8–12 hourly (maximum 6 mg/kg/day).",
+     "s": "PAED:4.9"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Acute with Pulmonary Oedema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Captopril, oral: · Initial dose: 0.5–1 mg/kg/24 hours in 3 divided doses (8 hourly) for 24– 48 hours.",
+     "s": "PAED:4.22"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Chronic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Captopril, oral: · Initial dose: 0.1 mg/kg/dose 8 hourly. · Maximum dose: 2 mg/kg/dose.",
+     "s": "PAED:4.37"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure in Neonates",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Captopril, oral, 0.2 mg/kg/dose, 8–12 hourly, initially. · Adjust dose and interval based on response to a maximum of 1 mg/kg/dose. · Administer 1 hour before feeding.",
+     "s": "PAED:19.29"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated – fetotoxic",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Pregnancy",
+   "d": 1
+  },
+  {
+   "t": "Previous angioedema",
+   "d": 1
+  },
+  {
+   "t": "Bilateral renal artery stenosis",
+   "d": 1
+  },
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Short half-life – useful for test dosing",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Cough, hyperkalaemia, first-dose hypotension, acute kidney injury, angioedema, taste disturbance",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium and creatinine, BP after the first dose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hf-paeds"
+ ],
+ "link": [
+  "captopril"
+ ],
+ "link_cs": []
+}

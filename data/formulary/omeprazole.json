@@ -1,0 +1,87 @@
+{
+ "id": "omeprazole",
+ "type": "drug",
+ "name": "Omeprazole",
+ "aliases": [],
+ "class": "Proton pump inhibitor",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Irreversibly inhibits gastric H+/K+-ATPase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Gastro-oesophageal Reflux Disease (GORD)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Omeprazole, oral, 0.7–1.4 mg/kg/day once daily, on an empty stomach for 4 weeks, then stop therapy.",
+     "s": "PAED:2.25"
+    }
+   ]
+  },
+  {
+   "h": "Peptic Ulcer Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Omeprazole, oral, 0.7–1.4 mg/kg/day once daily. Specialist initiated. · Maximum dose: 20–40 mg/dose. If 1 month–2 years: 5 mg once daily.",
+     "s": "PAED:2.26"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "May reduce clopidogrel activation",
+   "d": 1
+  },
+  {
+   "t": "Reduces absorption of atazanavir",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Headache, diarrhoea, hypomagnesaemia, C. difficile and fracture risk with long-term use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "gerd-paeds",
+  "ugib-paeds"
+ ],
+ "link": [
+  "omeprazole"
+ ],
+ "link_cs": []
+}

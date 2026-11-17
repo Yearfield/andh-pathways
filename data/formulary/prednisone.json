@@ -1,0 +1,288 @@
+{
+ "id": "prednisone",
+ "type": "drug",
+ "name": "Prednisone",
+ "aliases": [
+  "prednisolone"
+ ],
+ "class": "Corticosteroid (oral glucocorticoid)",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the glucocorticoid receptor and alters gene transcription: anti-inflammatory and immunosuppressive",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hepatitis, Non-viral",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral, 0.5 mg/kg daily. · Taper dose to a suitable maintenance dose. (Refer to Appendix II for an example of a dose reduction regimen.)",
+     "s": "HOSP:1.9"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Haemolytic",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral. · Initial dose: 1 mg/kg daily, until Hb is stable and >10 g/dL. · Taper slowly and monitor Hb at least once weekly. (Refer to Appendix",
+     "s": "HOSP:2.8"
+    }
+   ]
+  },
+  {
+   "h": "Immune Thrombocytopenia (Itp)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral, 1 mg/kg daily until platelet count has normalised. · Taper slowly and monitor platelet count. (Refer to Appendix II for an example of a dose reduction regimen.)",
+     "s": "HOSP:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Atopic Eczema/ Dermatitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral, 0.5 mg/kg daily, for ≤ 2 weeks. (Specialist initiated.)",
+     "s": "HOSP:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Coronavirus Disease-19 (COVID-19) in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral 40 mg daily, for up to 10 days, or until discharge.",
+     "s": "HOSP:6.14"
+    }
+   ]
+  },
+  {
+   "h": "Adrenal Insufficiency (Addison Disease)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral. · Start with 5 mg daily. · Increase to maximum of 7.5 mg daily, if necessary.",
+     "s": "HOSP:8.3"
+    }
+   ]
+  },
+  {
+   "h": "Hypercalcaemia, Including Primary Hyperparathyroidism",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral, 40 mg depending on response, daily.",
+     "s": "HOSP:8.22"
+    }
+   ]
+  },
+  {
+   "h": "Thyroiditis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Prednisone, oral, 40 mg daily (Specialist consultation).",
+     "s": "HOSP:8.34"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Rheumatoid",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Prednisone, oral, 7.5 mg daily for a maximum of 2 weeks.",
+     "s": "PHC:14.4"
+    }
+   ]
+  },
+  {
+   "h": "Gout, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Prednisone, oral, 40 mg daily for 5 days (Doctor prescribed).",
+     "s": "PHC:14.6"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Haemolytic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 2 mg/kg/day until a satisfactory response is obtained. · Continue treatment for a minimum of 4 weeks. · Taper dose slowly over several weeks while monitoring for relapse.",
+     "s": "PAED:3.4"
+    }
+   ]
+  },
+  {
+   "h": "Immune Thrombocytopenic Purpura (Itp)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 4 mg/kg/dose as a single daily dose for 4 days. · Stop after 4 days without tapering dose.",
+     "s": "PAED:3.21"
+    }
+   ]
+  },
+  {
+   "h": "Thrombocytopenia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 4 mg/kg/24 hours as a single daily dose for 4 days.",
+     "s": "PAED:3.27"
+    }
+   ]
+  },
+  {
+   "h": "Pericardial Effusion",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, for 6 weeks: · Week 1: 2 mg/kg/day, · Week 2: 1.5 mg/kg/day,",
+     "s": "PAED:4.19"
+    }
+   ]
+  },
+  {
+   "h": "Psoriasis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 1–2 mg/kg as a single daily dose for 7 days.",
+     "s": "PAED:5.13"
+    }
+   ]
+  },
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 2 mg/kg/dose as a single dose in the morning for 4 weeks. · Maximum dose: 60 mg daily.",
+     "s": "PAED:6.13"
+    },
+    {
+     "t": "Prednisone, oral, 2 mg/kg/dose as a single daily dose for minimum of one week. Urine test strips should be negative for minimum of 3 consecutive mornings before the dose is decreased.",
+     "s": "PAED:6.14"
+    }
+   ]
+  },
+  {
+   "h": "Schistosomiasis (Bilharzia)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 0.5–1 mg/kg daily for 5 days.",
+     "s": "PAED:8.5"
+    }
+   ]
+  },
+  {
+   "h": "Immune Reconstitution Inflammatory Syndrome (Iris)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Prednisone, oral, 1.5 mg/kg daily for 2 weeks, followed by 0.75 mg/kg daily for 2 weeks.",
+     "s": "PAED:9.37"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Systemic infection without antimicrobial cover",
+   "d": 1
+  },
+  {
+   "t": "Live vaccines at immunosuppressive doses",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Taper after more than 3 weeks of treatment",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin lowers levels",
+   "d": 1
+  },
+  {
+   "t": "Exclude TB and strongyloides before prolonged courses",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperglycaemia, hypertension, fluid retention, mood change, insomnia, peptic ulcer, infection risk, adrenal suppression, osteoporosis, Cushingoid features with long-term use",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Glucose, BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "ards-paeds",
+  "bronchiolitis-paeds",
+  "copd-adult",
+  "copd_gold",
+  "croup-paeds",
+  "eczema-adult",
+  "hcc-adult",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "lytes-adult-ca-mg",
+  "meningitis-adult",
+  "meningitis-paeds",
+  "prb-paeds",
+  "rf-adult",
+  "rf-paeds",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "ugib-paeds"
+ ],
+ "link": [
+  "prednisolone",
+  "prednisone"
+ ],
+ "link_cs": []
+}

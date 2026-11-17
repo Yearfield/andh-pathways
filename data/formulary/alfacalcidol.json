@@ -1,0 +1,115 @@
+{
+ "id": "alfacalcidol",
+ "type": "drug",
+ "name": "Alfacalcidol",
+ "aliases": [
+  "calcitriol"
+ ],
+ "class": "Vitamin D analogue (1α-hydroxycholecalciferol)",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Converted in the liver to calcitriol without needing renal hydroxylation, increases intestinal calcium and phosphate absorption",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hypocalcaemia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Alfacalcidol, oral, 1–3 mcg daily.",
+     "s": "HOSP:8.23"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Calcitriol, oral, 0.25–4 mcg daily.",
+     "s": "HOSP:7.6"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (Renal Failure, Chronic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Alfacalcidol, oral, 0.25 mcg daily. Specialist initiated.",
+     "s": "PAED:6.24"
+    },
+    {
+     "t": "Alfacalcidol, oral, 0.25 mcg, initially twice weekly. Specialist initiated. · Increase dose as necessary to maintain serum calcium in upper- normal range.",
+     "s": "PAED:6.24"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypercalcaemia",
+   "d": 1
+  },
+  {
+   "t": "Metastatic calcification",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Thiazides increase hypercalcaemia risk",
+   "d": 1
+  },
+  {
+   "t": "Hypercalcaemia potentiates digoxin toxicity",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypercalcaemia, hypercalciuria, hyperphosphataemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Serum calcium and phosphate",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-adult",
+  "ckd-paeds",
+  "lytes-adult-ca-mg",
+  "lytes-paeds-ca-mg"
+ ],
+ "link": [
+  "alfacalcidol",
+  "calcitriol"
+ ],
+ "link_cs": []
+}

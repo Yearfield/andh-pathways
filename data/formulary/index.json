@@ -1,0 +1,2964 @@
+{
+"type": "formulary-index",
+"updated": "2026-11-15",
+"drugs": [
+{
+"id": "acetazolamide",
+"name": "Acetazolamide",
+"class": "Carbonic anhydrase inhibitor",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"acetazolamide"
+],
+"link_cs": []
+},
+{
+"id": "aciclovir",
+"name": "Aciclovir",
+"class": "Antiviral – guanosine analogue",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"acyclovir"
+],
+"link": [
+"acyclovir",
+"aciclovir"
+],
+"link_cs": []
+},
+{
+"id": "activated-charcoal",
+"name": "Activated charcoal",
+"class": "Gastrointestinal adsorbent",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [
+"charcoal"
+],
+"link": [
+"activated charcoal"
+],
+"link_cs": []
+},
+{
+"id": "adrenaline",
+"name": "Adrenaline (epinephrine)",
+"class": "Sympathomimetic – α and β agonist; vasopressor / inotrope",
+"group": "Cardiovascular and blood",
+"verified": true,
+"aliases": [
+"epinephrine",
+"adrenalin"
+],
+"link": [
+"epinephrine",
+"adrenaline"
+],
+"link_cs": []
+},
+{
+"id": "albendazole",
+"name": "Albendazole",
+"class": "Anthelmintic – benzimidazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"albendazole"
+],
+"link_cs": []
+},
+{
+"id": "albumin",
+"name": "Albumin",
+"class": "Colloid plasma expander",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [],
+"link": [
+"human albumin",
+"albumin 20%"
+],
+"link_cs": []
+},
+{
+"id": "alfacalcidol",
+"name": "Alfacalcidol",
+"class": "Vitamin D analogue (1α-hydroxycholecalciferol)",
+"group": "Endocrine",
+"verified": false,
+"aliases": [
+"calcitriol"
+],
+"link": [
+"alfacalcidol",
+"calcitriol"
+],
+"link_cs": []
+},
+{
+"id": "allopurinol",
+"name": "Allopurinol",
+"class": "Xanthine oxidase inhibitor",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"allopurinol"
+],
+"link_cs": []
+},
+{
+"id": "alteplase",
+"name": "Alteplase",
+"class": "Fibrinolytic – tissue plasminogen activator",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"alteplase"
+],
+"link_cs": []
+},
+{
+"id": "aluminium-hydroxide",
+"name": "Aluminium hydroxide",
+"class": "Antacid",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [
+"magnesium trisilicate"
+],
+"link": [
+"magnesium trisilicate",
+"aluminium hydroxide"
+],
+"link_cs": []
+},
+{
+"id": "amikacin",
+"name": "Amikacin",
+"class": "Antibiotic – aminoglycoside",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"amikacin"
+],
+"link_cs": []
+},
+{
+"id": "aminophylline",
+"name": "Aminophylline",
+"class": "Methylxanthine bronchodilator",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"aminophylline"
+],
+"link_cs": []
+},
+{
+"id": "amiodarone",
+"name": "Amiodarone",
+"class": "Class III anti-arrhythmic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"amiodarone"
+],
+"link_cs": []
+},
+{
+"id": "amitriptyline",
+"name": "Amitriptyline",
+"class": "Tricyclic antidepressant",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"amitriptyline"
+],
+"link_cs": []
+},
+{
+"id": "amlodipine",
+"name": "Amlodipine",
+"class": "Dihydropyridine calcium-channel blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"amlodipine"
+],
+"link_cs": []
+},
+{
+"id": "amoxicillin",
+"name": "Amoxicillin",
+"class": "Antibiotic – aminopenicillin (β-lactam)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"amoxycillin"
+],
+"link": [
+"amoxycillin",
+"amoxicillin"
+],
+"link_cs": []
+},
+{
+"id": "amoxicillin-clavulanic-acid",
+"name": "Amoxicillin/clavulanic acid",
+"class": "Antibiotic – aminopenicillin with β-lactamase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"amoxicillin-clavulanic",
+"amoxicillin/clavulan",
+"amox-clav",
+"amox/clav",
+"co-amoxiclav",
+"clavulanic",
+"clavulanate"
+],
+"link": [
+"amoxicillin/clavulanic acid",
+"amoxicillin-clavulanic",
+"amoxicillin/clavulan",
+"co-amoxiclav",
+"amox/clav",
+"amox-clav"
+],
+"link_cs": []
+},
+{
+"id": "amphotericin-b",
+"name": "Amphotericin B",
+"class": "Antifungal – polyene",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"amphotericin"
+],
+"link": [
+"amphotericin B",
+"amphotericin"
+],
+"link_cs": []
+},
+{
+"id": "ampicillin",
+"name": "Ampicillin",
+"class": "Antibiotic – aminopenicillin (β-lactam)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"ampicillin"
+],
+"link_cs": []
+},
+{
+"id": "anti-d-immunoglobulin",
+"name": "Anti-D immunoglobulin",
+"class": "Immunoglobulin (anti-RhD)",
+"group": "Obstetrics",
+"verified": false,
+"aliases": [
+"anti-D"
+],
+"link": [
+"anti-D immunoglobulin",
+"anti-D"
+],
+"link_cs": []
+},
+{
+"id": "artesunate",
+"name": "Artesunate",
+"class": "Antimalarial – artemisinin derivative",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"artesunate"
+],
+"link_cs": []
+},
+{
+"id": "aspirin",
+"name": "Aspirin",
+"class": "Antiplatelet / NSAID",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"acetylsalicylic"
+],
+"link": [
+"acetylsalicylic",
+"aspirin"
+],
+"link_cs": []
+},
+{
+"id": "atenolol",
+"name": "Atenolol",
+"class": "Cardioselective β1-blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"atenolol"
+],
+"link_cs": []
+},
+{
+"id": "atorvastatin",
+"name": "Atorvastatin",
+"class": "HMG-CoA reductase inhibitor (statin)",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"atorvastatin"
+],
+"link_cs": []
+},
+{
+"id": "atropine",
+"name": "Atropine",
+"class": "Antimuscarinic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"atropine"
+],
+"link_cs": []
+},
+{
+"id": "azathioprine",
+"name": "Azathioprine",
+"class": "Immunosuppressant – purine antimetabolite",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"azathioprine"
+],
+"link_cs": []
+},
+{
+"id": "azithromycin",
+"name": "Azithromycin",
+"class": "Antibiotic – macrolide",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"azithromycin"
+],
+"link_cs": []
+},
+{
+"id": "bcg",
+"name": "BCG",
+"class": "Live attenuated vaccine",
+"group": "Vaccines and immunoglobulins",
+"verified": false,
+"aliases": [],
+"link": [],
+"link_cs": [
+"BCG"
+]
+},
+{
+"id": "beclomethasone",
+"name": "Beclomethasone",
+"class": "Inhaled corticosteroid",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [
+"beclometasone"
+],
+"link": [
+"beclomethasone",
+"beclometasone"
+],
+"link_cs": []
+},
+{
+"id": "bedaquiline",
+"name": "Bedaquiline",
+"class": "Anti-TB – diarylquinoline",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"bedaquiline"
+],
+"link_cs": []
+},
+{
+"id": "benzathine-benzylpenicillin",
+"name": "Benzathine benzylpenicillin",
+"class": "Antibiotic – long-acting depot penicillin",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"benzathine"
+],
+"link": [
+"benzathine benzylpenicillin"
+],
+"link_cs": []
+},
+{
+"id": "benzylpenicillin",
+"name": "Benzylpenicillin",
+"class": "Antibiotic – natural penicillin (penicillin G)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"penicillin G",
+"benzyl penicillin"
+],
+"link": [
+"benzyl penicillin",
+"benzylpenicillin",
+"penicillin G"
+],
+"link_cs": []
+},
+{
+"id": "betamethasone",
+"name": "Betamethasone",
+"class": "Corticosteroid (long-acting, potent glucocorticoid)",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"betamethasone"
+],
+"link_cs": []
+},
+{
+"id": "bezafibrate",
+"name": "Bezafibrate",
+"class": "Fibrate lipid-lowering agent",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"bezafibrate"
+],
+"link_cs": []
+},
+{
+"id": "biperiden",
+"name": "Biperiden",
+"class": "Antimuscarinic antiparkinsonian",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"biperiden"
+],
+"link_cs": []
+},
+{
+"id": "calcium-carbonate",
+"name": "Calcium carbonate",
+"class": "Calcium supplement / phosphate binder / antacid",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [],
+"link": [
+"calcium carbonate"
+],
+"link_cs": []
+},
+{
+"id": "calcium-gluconate",
+"name": "Calcium gluconate",
+"class": "Electrolyte – calcium salt",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [],
+"link": [
+"calcium gluconate"
+],
+"link_cs": []
+},
+{
+"id": "captopril",
+"name": "Captopril",
+"class": "ACE inhibitor (short-acting)",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"captopril"
+],
+"link_cs": []
+},
+{
+"id": "carbamazepine",
+"name": "Carbamazepine",
+"class": "Anticonvulsant",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"carbamazepine"
+],
+"link_cs": []
+},
+{
+"id": "carvedilol",
+"name": "Carvedilol",
+"class": "Non-selective β-blocker with α1-blockade",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"carvedilol"
+],
+"link_cs": []
+},
+{
+"id": "cefalexin",
+"name": "Cefalexin",
+"class": "Antibiotic – first-generation cephalosporin (oral)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"cephalexin"
+],
+"link": [
+"cephalexin",
+"cefalexin"
+],
+"link_cs": []
+},
+{
+"id": "cefazolin",
+"name": "Cefazolin",
+"class": "Antibiotic – first-generation cephalosporin (parenteral)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"cefazolin"
+],
+"link_cs": []
+},
+{
+"id": "cefotaxime",
+"name": "Cefotaxime",
+"class": "Antibiotic – third-generation cephalosporin",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"cefotaxime"
+],
+"link_cs": []
+},
+{
+"id": "ceftriaxone",
+"name": "Ceftriaxone",
+"class": "Antibiotic – third-generation cephalosporin (β-lactam)",
+"group": "Antimicrobials",
+"verified": true,
+"aliases": [],
+"link": [
+"ceftriaxone"
+],
+"link_cs": []
+},
+{
+"id": "cetirizine",
+"name": "Cetirizine",
+"class": "Non-sedating antihistamine",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"cetirizine"
+],
+"link_cs": []
+},
+{
+"id": "chlorphenamine",
+"name": "Chlorphenamine",
+"class": "Sedating antihistamine",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [
+"chlorpheniramine"
+],
+"link": [
+"chlorpheniramine",
+"chlorphenamine"
+],
+"link_cs": []
+},
+{
+"id": "chlorpromazine",
+"name": "Chlorpromazine",
+"class": "Typical antipsychotic – phenothiazine",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"chlorpromazine"
+],
+"link_cs": []
+},
+{
+"id": "ciprofloxacin",
+"name": "Ciprofloxacin",
+"class": "Antibiotic – fluoroquinolone",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"ciprofloxacin"
+],
+"link_cs": []
+},
+{
+"id": "clindamycin",
+"name": "Clindamycin",
+"class": "Antibiotic – lincosamide",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"clindamycin"
+],
+"link_cs": []
+},
+{
+"id": "clofazimine",
+"name": "Clofazimine",
+"class": "Anti-TB / antileprosy agent",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"clofazimine"
+],
+"link_cs": []
+},
+{
+"id": "clonazepam",
+"name": "Clonazepam",
+"class": "Benzodiazepine (long-acting)",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"clonazepam"
+],
+"link_cs": []
+},
+{
+"id": "clopidogrel",
+"name": "Clopidogrel",
+"class": "Antiplatelet – P2Y12 inhibitor",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"clopidogrel"
+],
+"link_cs": []
+},
+{
+"id": "clotrimazole",
+"name": "Clotrimazole",
+"class": "Topical / vaginal antifungal – imidazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"clotrimazole"
+],
+"link_cs": []
+},
+{
+"id": "cloxacillin",
+"name": "Cloxacillin",
+"class": "Antibiotic – penicillinase-resistant penicillin",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"cloxacillin"
+],
+"link_cs": []
+},
+{
+"id": "codeine",
+"name": "Codeine",
+"class": "Weak opioid analgesic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"codeine"
+],
+"link_cs": []
+},
+{
+"id": "colchicine",
+"name": "Colchicine",
+"class": "Anti-gout anti-inflammatory",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"colchicine"
+],
+"link_cs": []
+},
+{
+"id": "cotrimoxazole",
+"name": "Cotrimoxazole",
+"class": "Antibiotic – sulfamethoxazole with trimethoprim (folate antagonists)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"co-trimoxazole",
+"trimethoprim"
+],
+"link": [
+"co-trimoxazole",
+"cotrimoxazole"
+],
+"link_cs": []
+},
+{
+"id": "dantrolene",
+"name": "Dantrolene",
+"class": "Skeletal muscle relaxant",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"dantrolene"
+],
+"link_cs": []
+},
+{
+"id": "delamanid",
+"name": "Delamanid",
+"class": "Anti-TB – nitroimidazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"delamanid"
+],
+"link_cs": []
+},
+{
+"id": "desmopressin",
+"name": "Desmopressin",
+"class": "Vasopressin (V2) analogue",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"desmopressin"
+],
+"link_cs": []
+},
+{
+"id": "dexamethasone",
+"name": "Dexamethasone",
+"class": "Corticosteroid (long-acting, potent glucocorticoid, no mineralocorticoid effect)",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"dexamethasone"
+],
+"link_cs": []
+},
+{
+"id": "dextrose",
+"name": "Dextrose",
+"class": "Carbohydrate IV fluid / hypoglycaemia treatment",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"glucose 50%",
+"glucose 10%",
+"D50",
+"D10",
+"neonatalyte"
+],
+"link": [
+"dextrose 10%",
+"dextrose 50%",
+"glucose 50%",
+"glucose 10%",
+"dextrose 5%"
+],
+"link_cs": [
+"D10",
+"D50"
+]
+},
+{
+"id": "diazepam",
+"name": "Diazepam",
+"class": "Benzodiazepine",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"diazepam"
+],
+"link_cs": []
+},
+{
+"id": "diazoxide",
+"name": "Diazoxide",
+"class": "Potassium-channel opener – hyperglycaemic agent",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"diazoxide"
+],
+"link_cs": []
+},
+{
+"id": "diclofenac",
+"name": "Diclofenac",
+"class": "NSAID",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"diclofenac"
+],
+"link_cs": []
+},
+{
+"id": "digoxin",
+"name": "Digoxin",
+"class": "Cardiac glycoside",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"digoxin"
+],
+"link_cs": []
+},
+{
+"id": "dobutamine",
+"name": "Dobutamine",
+"class": "Inotrope – β1 agonist",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"dobutamine"
+],
+"link_cs": []
+},
+{
+"id": "dolutegravir",
+"name": "Dolutegravir",
+"class": "Antiretroviral – integrase strand transfer inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"DTG"
+],
+"link": [
+"dolutegravir"
+],
+"link_cs": [
+"DTG"
+]
+},
+{
+"id": "dopamine",
+"name": "Dopamine",
+"class": "Inotrope / vasopressor",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"dopamine"
+],
+"link_cs": []
+},
+{
+"id": "doxycycline",
+"name": "Doxycycline",
+"class": "Antibiotic – tetracycline",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"doxycycline"
+],
+"link_cs": []
+},
+{
+"id": "efavirenz",
+"name": "Efavirenz",
+"class": "Antiretroviral – non-nucleoside reverse transcriptase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"EFV"
+],
+"link": [
+"efavirenz"
+],
+"link_cs": [
+"EFV"
+]
+},
+{
+"id": "emtricitabine",
+"name": "Emtricitabine",
+"class": "Antiretroviral – nucleoside reverse transcriptase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"FTC"
+],
+"link": [
+"emtricitabine"
+],
+"link_cs": [
+"FTC"
+]
+},
+{
+"id": "emulsifying-ointment",
+"name": "Emulsifying ointment",
+"class": "Emollient",
+"group": "Skin",
+"verified": false,
+"aliases": [
+"aqueous cream"
+],
+"link": [
+"emulsifying ointment",
+"aqueous cream"
+],
+"link_cs": []
+},
+{
+"id": "enalapril",
+"name": "Enalapril",
+"class": "ACE inhibitor",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"enalapril"
+],
+"link_cs": []
+},
+{
+"id": "enoxaparin",
+"name": "Enoxaparin",
+"class": "Anticoagulant – low molecular weight heparin",
+"group": "Cardiovascular and blood",
+"verified": true,
+"aliases": [
+"LMWH",
+"low molecular weight heparin",
+"Clexane"
+],
+"link": [
+"low molecular weight heparin",
+"enoxaparin",
+"Clexane"
+],
+"link_cs": [
+"LMWH"
+]
+},
+{
+"id": "ergometrine",
+"name": "Ergometrine",
+"class": "Uterotonic – ergot alkaloid",
+"group": "Obstetrics",
+"verified": false,
+"aliases": [
+"syntometrine"
+],
+"link": [
+"syntometrine",
+"ergometrine"
+],
+"link_cs": []
+},
+{
+"id": "ethambutol",
+"name": "Ethambutol",
+"class": "Anti-TB antibiotic",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"ethambutol"
+],
+"link_cs": []
+},
+{
+"id": "ethanol",
+"name": "Ethanol",
+"class": "Antidote for toxic alcohol poisoning",
+"group": "Antidotes",
+"verified": false,
+"aliases": [],
+"link": [],
+"link_cs": []
+},
+{
+"id": "ethionamide",
+"name": "Ethionamide",
+"class": "Anti-TB agent",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"ethionamide"
+],
+"link_cs": []
+},
+{
+"id": "etomidate",
+"name": "Etomidate",
+"class": "IV anaesthetic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"etomidate"
+],
+"link_cs": []
+},
+{
+"id": "fentanyl",
+"name": "Fentanyl",
+"class": "Potent short-acting synthetic opioid",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"fentanyl"
+],
+"link_cs": []
+},
+{
+"id": "ferrous-sulfate",
+"name": "Ferrous sulfate",
+"class": "Oral iron",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"ferrous sulphate",
+"ferrous fumarate",
+"ferrous gluconate",
+"ferrous",
+"iron sucrose"
+],
+"link": [
+"ferrous gluconate",
+"ferrous fumarate",
+"ferrous sulphate",
+"ferrous sulfate"
+],
+"link_cs": []
+},
+{
+"id": "flucloxacillin",
+"name": "Flucloxacillin",
+"class": "Antibiotic – penicillinase-resistant penicillin",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"flucloxacillin"
+],
+"link_cs": []
+},
+{
+"id": "fluconazole",
+"name": "Fluconazole",
+"class": "Antifungal – triazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"fluconazole"
+],
+"link_cs": []
+},
+{
+"id": "flucytosine",
+"name": "Flucytosine",
+"class": "Antifungal – antimetabolite",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"flucytosine"
+],
+"link_cs": []
+},
+{
+"id": "flumazenil",
+"name": "Flumazenil",
+"class": "Benzodiazepine antagonist",
+"group": "Antidotes",
+"verified": false,
+"aliases": [],
+"link": [
+"flumazenil"
+],
+"link_cs": []
+},
+{
+"id": "flupenthixol",
+"name": "Flupenthixol",
+"class": "Typical antipsychotic – thioxanthene (depot)",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [
+"flupentixol"
+],
+"link": [
+"flupenthixol",
+"flupentixol"
+],
+"link_cs": []
+},
+{
+"id": "fluticasone",
+"name": "Fluticasone",
+"class": "Inhaled corticosteroid",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"fluticasone"
+],
+"link_cs": []
+},
+{
+"id": "folic-acid",
+"name": "Folic acid",
+"class": "Vitamin B9",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"folate"
+],
+"link": [
+"folic acid"
+],
+"link_cs": []
+},
+{
+"id": "formoterol",
+"name": "Formoterol",
+"class": "Long-acting β2 agonist",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"formoterol"
+],
+"link_cs": []
+},
+{
+"id": "fosfomycin",
+"name": "Fosfomycin",
+"class": "Antibiotic – phosphonic acid derivative",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"fosfomycin"
+],
+"link_cs": []
+},
+{
+"id": "fresh-frozen-plasma",
+"name": "Fresh frozen plasma",
+"class": "Blood product – plasma (includes freeze-dried plasma)",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"FFP",
+"FDP",
+"freeze-dried plasma",
+"lyophilised plasma"
+],
+"link": [
+"freeze-dried plasma",
+"fresh frozen plasma",
+"lyophilised plasma"
+],
+"link_cs": [
+"FFP",
+"FDP"
+]
+},
+{
+"id": "furosemide",
+"name": "Furosemide",
+"class": "Loop diuretic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"frusemide"
+],
+"link": [
+"furosemide",
+"frusemide"
+],
+"link_cs": []
+},
+{
+"id": "ganciclovir",
+"name": "Ganciclovir",
+"class": "Antiviral – guanosine analogue",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"ganciclovir"
+],
+"link_cs": []
+},
+{
+"id": "gentamicin",
+"name": "Gentamicin",
+"class": "Antibiotic – aminoglycoside",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"gentamicin"
+],
+"link_cs": []
+},
+{
+"id": "glibenclamide",
+"name": "Glibenclamide",
+"class": "Sulfonylurea oral hypoglycaemic",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"glibenclamide"
+],
+"link_cs": []
+},
+{
+"id": "glimepiride",
+"name": "Glimepiride",
+"class": "Sulfonylurea oral hypoglycaemic",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"glimepiride"
+],
+"link_cs": []
+},
+{
+"id": "glucagon",
+"name": "Glucagon",
+"class": "Hyperglycaemic hormone",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"glucagon"
+],
+"link_cs": []
+},
+{
+"id": "glyceryl-trinitrate",
+"name": "Glyceryl trinitrate",
+"class": "Nitrate vasodilator",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"GTN",
+"nitroglycerin"
+],
+"link": [
+"glyceryl trinitrate",
+"nitroglycerin"
+],
+"link_cs": [
+"GTN"
+]
+},
+{
+"id": "glycopyrrolate",
+"name": "Glycopyrrolate",
+"class": "Antimuscarinic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [
+"glycopyrronium"
+],
+"link": [
+"glycopyrrolate",
+"glycopyrronium"
+],
+"link_cs": []
+},
+{
+"id": "half-strength-darrows",
+"name": "Half-strength Darrows",
+"class": "Hypotonic maintenance / rehydration fluid with potassium and dextrose",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"Darrows",
+"Darrow's"
+],
+"link": [
+"half-strength Darrows",
+"Darrow's",
+"Darrows"
+],
+"link_cs": []
+},
+{
+"id": "haloperidol",
+"name": "Haloperidol",
+"class": "Typical antipsychotic – butyrophenone",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"haloperidol"
+],
+"link_cs": []
+},
+{
+"id": "heparin",
+"name": "Heparin",
+"class": "Anticoagulant – unfractionated heparin",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"unfractionated heparin"
+],
+"link": [
+"unfractionated heparin",
+"heparin"
+],
+"link_cs": []
+},
+{
+"id": "hydrochlorothiazide",
+"name": "Hydrochlorothiazide",
+"class": "Thiazide diuretic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"HCTZ"
+],
+"link": [
+"hydrochlorothiazide"
+],
+"link_cs": [
+"HCTZ"
+]
+},
+{
+"id": "hydrocortisone",
+"name": "Hydrocortisone",
+"class": "Corticosteroid (glucocorticoid with mineralocorticoid activity)",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"hydrocortisone"
+],
+"link_cs": []
+},
+{
+"id": "hyoscine-butylbromide",
+"name": "Hyoscine butylbromide",
+"class": "Antispasmodic – antimuscarinic",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [
+"hyoscine"
+],
+"link": [
+"hyoscine butylbromide"
+],
+"link_cs": []
+},
+{
+"id": "ibuprofen",
+"name": "Ibuprofen",
+"class": "NSAID",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"ibuprofen"
+],
+"link_cs": []
+},
+{
+"id": "imipenem",
+"name": "Imipenem",
+"class": "Antibiotic – carbapenem (with cilastatin)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"cilastatin"
+],
+"link": [
+"imipenem"
+],
+"link_cs": []
+},
+{
+"id": "indomethacin",
+"name": "Indomethacin",
+"class": "NSAID",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [
+"indometacin"
+],
+"link": [
+"indomethacin",
+"indometacin"
+],
+"link_cs": []
+},
+{
+"id": "insulin",
+"name": "Insulin",
+"class": "Hormone – hypoglycaemic",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"insulin"
+],
+"link_cs": []
+},
+{
+"id": "ipratropium",
+"name": "Ipratropium",
+"class": "Short-acting antimuscarinic bronchodilator",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [
+"ipratroprium"
+],
+"link": [
+"ipratroprium",
+"ipratropium"
+],
+"link_cs": []
+},
+{
+"id": "isoniazid",
+"name": "Isoniazid",
+"class": "Anti-TB antibiotic",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"INH"
+],
+"link": [
+"isoniazid"
+],
+"link_cs": [
+"INH"
+]
+},
+{
+"id": "isosorbide-dinitrate",
+"name": "Isosorbide dinitrate",
+"class": "Nitrate vasodilator",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"ISDN"
+],
+"link": [
+"isosorbide dinitrate"
+],
+"link_cs": [
+"ISDN"
+]
+},
+{
+"id": "isosorbide-mononitrate",
+"name": "Isosorbide mononitrate",
+"class": "Nitrate vasodilator",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"ISMN"
+],
+"link": [
+"isosorbide mononitrate"
+],
+"link_cs": [
+"ISMN"
+]
+},
+{
+"id": "ketamine",
+"name": "Ketamine",
+"class": "Dissociative anaesthetic / analgesic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"ketamine"
+],
+"link_cs": []
+},
+{
+"id": "labetalol",
+"name": "Labetalol",
+"class": "Combined α- and β-blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"labetalol"
+],
+"link_cs": []
+},
+{
+"id": "lactulose",
+"name": "Lactulose",
+"class": "Osmotic laxative",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"lactulose"
+],
+"link_cs": []
+},
+{
+"id": "lamivudine",
+"name": "Lamivudine",
+"class": "Antiretroviral – nucleoside reverse transcriptase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"3TC"
+],
+"link": [
+"lamivudine"
+],
+"link_cs": [
+"3TC"
+]
+},
+{
+"id": "levetiracetam",
+"name": "Levetiracetam",
+"class": "Anticonvulsant",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"levetiracetam"
+],
+"link_cs": []
+},
+{
+"id": "levofloxacin",
+"name": "Levofloxacin",
+"class": "Antibiotic – fluoroquinolone (respiratory)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"levofloxacin"
+],
+"link_cs": []
+},
+{
+"id": "levothyroxine",
+"name": "Levothyroxine",
+"class": "Thyroid hormone (T4)",
+"group": "Endocrine",
+"verified": false,
+"aliases": [
+"thyroxine"
+],
+"link": [
+"levothyroxine",
+"thyroxine"
+],
+"link_cs": []
+},
+{
+"id": "lidocaine",
+"name": "Lidocaine",
+"class": "Local anaesthetic / class Ib anti-arrhythmic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [
+"lignocaine"
+],
+"link": [
+"lignocaine",
+"lidocaine"
+],
+"link_cs": []
+},
+{
+"id": "linezolid",
+"name": "Linezolid",
+"class": "Antibiotic – oxazolidinone",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"linezolid"
+],
+"link_cs": []
+},
+{
+"id": "lithium",
+"name": "Lithium",
+"class": "Mood stabiliser",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"lithium"
+],
+"link_cs": []
+},
+{
+"id": "loperamide",
+"name": "Loperamide",
+"class": "Antidiarrhoeal – peripheral opioid agonist",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"loperamide"
+],
+"link_cs": []
+},
+{
+"id": "lopinavir-ritonavir",
+"name": "Lopinavir/ritonavir",
+"class": "Antiretroviral – boosted protease inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"lopinavir",
+"LPV/r",
+"ritonavir"
+],
+"link": [
+"lopinavir/ritonavir"
+],
+"link_cs": [
+"LPV/r"
+]
+},
+{
+"id": "lorazepam",
+"name": "Lorazepam",
+"class": "Benzodiazepine (intermediate-acting)",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"lorazepam"
+],
+"link_cs": []
+},
+{
+"id": "losartan",
+"name": "Losartan",
+"class": "Angiotensin II receptor blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"losartan"
+],
+"link_cs": []
+},
+{
+"id": "magnesium-sulfate",
+"name": "Magnesium sulfate",
+"class": "Electrolyte; anticonvulsant (eclampsia); bronchodilator; anti-arrhythmic",
+"group": "Obstetrics",
+"verified": true,
+"aliases": [
+"magnesium sulphate",
+"MgSO₄",
+"MgSO4",
+"mag sulph"
+],
+"link": [
+"magnesium sulphate",
+"magnesium sulfate"
+],
+"link_cs": [
+"MgSO₄",
+"MgSO4"
+]
+},
+{
+"id": "mannitol",
+"name": "Mannitol",
+"class": "Osmotic diuretic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"mannitol"
+],
+"link_cs": []
+},
+{
+"id": "mebendazole",
+"name": "Mebendazole",
+"class": "Anthelmintic – benzimidazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"mebendazole"
+],
+"link_cs": []
+},
+{
+"id": "meropenem",
+"name": "Meropenem",
+"class": "Antibiotic – carbapenem",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"meropenem"
+],
+"link_cs": []
+},
+{
+"id": "metformin",
+"name": "Metformin",
+"class": "Biguanide oral hypoglycaemic",
+"group": "Endocrine",
+"verified": false,
+"aliases": [],
+"link": [
+"metformin"
+],
+"link_cs": []
+},
+{
+"id": "methadone",
+"name": "Methadone",
+"class": "Long-acting opioid agonist",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"methadone"
+],
+"link_cs": []
+},
+{
+"id": "methotrexate",
+"name": "Methotrexate",
+"class": "Antimetabolite – folate antagonist",
+"group": "Obstetrics",
+"verified": false,
+"aliases": [],
+"link": [
+"methotrexate"
+],
+"link_cs": []
+},
+{
+"id": "methyldopa",
+"name": "Methyldopa",
+"class": "Centrally acting antihypertensive",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"methyldopa"
+],
+"link_cs": []
+},
+{
+"id": "metoclopramide",
+"name": "Metoclopramide",
+"class": "Antiemetic – dopamine antagonist prokinetic",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"metoclopramide"
+],
+"link_cs": []
+},
+{
+"id": "metronidazole",
+"name": "Metronidazole",
+"class": "Antibiotic / antiprotozoal – nitroimidazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"metronidazole"
+],
+"link_cs": []
+},
+{
+"id": "midazolam",
+"name": "Midazolam",
+"class": "Benzodiazepine (short-acting)",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"midazolam"
+],
+"link_cs": []
+},
+{
+"id": "misoprostol",
+"name": "Misoprostol",
+"class": "Prostaglandin E1 analogue",
+"group": "Obstetrics",
+"verified": false,
+"aliases": [],
+"link": [
+"misoprostol"
+],
+"link_cs": []
+},
+{
+"id": "morphine",
+"name": "Morphine",
+"class": "Opioid analgesic – strong (full) μ-receptor agonist",
+"group": "Analgesia and anaesthesia",
+"verified": true,
+"aliases": [
+"mist morphine",
+"morphine sulfate",
+"morphine sulphate"
+],
+"link": [
+"morphine"
+],
+"link_cs": []
+},
+{
+"id": "moxifloxacin",
+"name": "Moxifloxacin",
+"class": "Antibiotic – fluoroquinolone",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"moxifloxacin"
+],
+"link_cs": []
+},
+{
+"id": "multivitamin",
+"name": "Multivitamin",
+"class": "Vitamin supplement",
+"group": "Vitamins and nutrition",
+"verified": false,
+"aliases": [],
+"link": [
+"multivitamin"
+],
+"link_cs": []
+},
+{
+"id": "n-acetylcysteine",
+"name": "N-acetylcysteine",
+"class": "Antidote for paracetamol poisoning",
+"group": "Antidotes",
+"verified": false,
+"aliases": [
+"acetylcysteine",
+"NAC"
+],
+"link": [
+"N-acetylcysteine",
+"acetylcysteine"
+],
+"link_cs": [
+"NAC"
+]
+},
+{
+"id": "naloxone",
+"name": "Naloxone",
+"class": "Opioid antagonist",
+"group": "Antidotes",
+"verified": false,
+"aliases": [],
+"link": [
+"naloxone"
+],
+"link_cs": []
+},
+{
+"id": "nevirapine",
+"name": "Nevirapine",
+"class": "Antiretroviral – non-nucleoside reverse transcriptase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"NVP"
+],
+"link": [
+"nevirapine"
+],
+"link_cs": [
+"NVP"
+]
+},
+{
+"id": "nifedipine",
+"name": "Nifedipine",
+"class": "Dihydropyridine calcium-channel blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"nifedipine"
+],
+"link_cs": []
+},
+{
+"id": "nimodipine",
+"name": "Nimodipine",
+"class": "Cerebroselective calcium-channel blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"nimodipine"
+],
+"link_cs": []
+},
+{
+"id": "nitrofurantoin",
+"name": "Nitrofurantoin",
+"class": "Antibiotic – urinary antiseptic",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"nitrofurantoin"
+],
+"link_cs": []
+},
+{
+"id": "octreotide",
+"name": "Octreotide",
+"class": "Somatostatin analogue",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"octreotide"
+],
+"link_cs": []
+},
+{
+"id": "olanzapine",
+"name": "Olanzapine",
+"class": "Atypical antipsychotic",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"olanzapine"
+],
+"link_cs": []
+},
+{
+"id": "omeprazole",
+"name": "Omeprazole",
+"class": "Proton pump inhibitor",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"omeprazole"
+],
+"link_cs": []
+},
+{
+"id": "oral-rehydration-solution",
+"name": "Oral rehydration solution",
+"class": "Oral glucose-electrolyte solution",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [
+"ORS",
+"rehydration solution"
+],
+"link": [
+"oral rehydration solution"
+],
+"link_cs": [
+"ORS"
+]
+},
+{
+"id": "orphenadrine",
+"name": "Orphenadrine",
+"class": "Antimuscarinic antiparkinsonian",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"orphenadrine"
+],
+"link_cs": []
+},
+{
+"id": "oxygen",
+"name": "Oxygen",
+"class": "Medical gas",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [],
+"link": [],
+"link_cs": []
+},
+{
+"id": "oxymetazoline",
+"name": "Oxymetazoline",
+"class": "Topical nasal decongestant (α agonist)",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"oxymetazoline"
+],
+"link_cs": []
+},
+{
+"id": "oxytocin",
+"name": "Oxytocin",
+"class": "Uterotonic hormone",
+"group": "Obstetrics",
+"verified": false,
+"aliases": [],
+"link": [
+"oxytocin"
+],
+"link_cs": []
+},
+{
+"id": "packed-red-cells",
+"name": "Packed red cells",
+"class": "Blood product – red cell concentrate",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"packed cells",
+"red cell concentrate"
+],
+"link": [
+"red cell concentrate",
+"packed red cells",
+"packed cells"
+],
+"link_cs": []
+},
+{
+"id": "pantoprazole",
+"name": "Pantoprazole",
+"class": "Proton pump inhibitor",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"pantoprazole"
+],
+"link_cs": []
+},
+{
+"id": "paracetamol",
+"name": "Paracetamol",
+"class": "Non-opioid analgesic and antipyretic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [
+"acetaminophen"
+],
+"link": [
+"acetaminophen",
+"paracetamol"
+],
+"link_cs": []
+},
+{
+"id": "pethidine",
+"name": "Pethidine",
+"class": "Synthetic opioid analgesic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"pethidine"
+],
+"link_cs": []
+},
+{
+"id": "phenobarbital",
+"name": "Phenobarbital",
+"class": "Anticonvulsant – barbiturate",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [
+"phenobarbitone"
+],
+"link": [
+"phenobarbitone",
+"phenobarbital"
+],
+"link_cs": []
+},
+{
+"id": "phenoxymethylpenicillin",
+"name": "Phenoxymethylpenicillin",
+"class": "Antibiotic – oral natural penicillin (penicillin V)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"penicillin V"
+],
+"link": [
+"phenoxymethylpenicillin",
+"penicillin V"
+],
+"link_cs": []
+},
+{
+"id": "phenytoin",
+"name": "Phenytoin",
+"class": "Anticonvulsant – hydantoin",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"phenytoin"
+],
+"link_cs": []
+},
+{
+"id": "piperacillin-tazobactam",
+"name": "Piperacillin/tazobactam",
+"class": "Antibiotic – antipseudomonal penicillin with β-lactamase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"piperacillin",
+"pip-tazo",
+"pip/tazo",
+"tazobactam"
+],
+"link": [
+"piperacillin-tazobactam",
+"piperacillin/tazobactam",
+"pip/tazo",
+"pip-tazo"
+],
+"link_cs": []
+},
+{
+"id": "platelets",
+"name": "Platelets",
+"class": "Blood product – platelet concentrate",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"platelet concentrate"
+],
+"link": [
+"platelet concentrate"
+],
+"link_cs": []
+},
+{
+"id": "pneumococcal-vaccine",
+"name": "Pneumococcal vaccine",
+"class": "Vaccine",
+"group": "Vaccines and immunoglobulins",
+"verified": false,
+"aliases": [
+"PCV"
+],
+"link": [
+"pneumococcal vaccine"
+],
+"link_cs": []
+},
+{
+"id": "potassium-chloride",
+"name": "Potassium chloride",
+"class": "Electrolyte replacement",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [
+"KCl"
+],
+"link": [
+"potassium chloride"
+],
+"link_cs": [
+"KCl"
+]
+},
+{
+"id": "potassium-phosphate",
+"name": "Potassium phosphate",
+"class": "Electrolyte replacement",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [
+"KPO₄"
+],
+"link": [
+"potassium phosphate"
+],
+"link_cs": [
+"KPO₄"
+]
+},
+{
+"id": "prednisone",
+"name": "Prednisone",
+"class": "Corticosteroid (oral glucocorticoid)",
+"group": "Endocrine",
+"verified": false,
+"aliases": [
+"prednisolone"
+],
+"link": [
+"prednisolone",
+"prednisone"
+],
+"link_cs": []
+},
+{
+"id": "pretomanid",
+"name": "Pretomanid",
+"class": "Anti-TB – nitroimidazole",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"pretomanid"
+],
+"link_cs": []
+},
+{
+"id": "primaquine",
+"name": "Primaquine",
+"class": "Antimalarial – 8-aminoquinoline",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"primaquine"
+],
+"link_cs": []
+},
+{
+"id": "progesterone",
+"name": "Progesterone",
+"class": "Progestogen",
+"group": "Obstetrics",
+"verified": false,
+"aliases": [],
+"link": [
+"progesterone"
+],
+"link_cs": []
+},
+{
+"id": "promethazine",
+"name": "Promethazine",
+"class": "Sedating antihistamine – phenothiazine",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"promethazine"
+],
+"link_cs": []
+},
+{
+"id": "propofol",
+"name": "Propofol",
+"class": "IV anaesthetic",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"propofol"
+],
+"link_cs": []
+},
+{
+"id": "propranolol",
+"name": "Propranolol",
+"class": "Non-selective β-blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"propranolol"
+],
+"link_cs": []
+},
+{
+"id": "pyrazinamide",
+"name": "Pyrazinamide",
+"class": "Anti-TB antibiotic",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"pyrazinamide"
+],
+"link_cs": []
+},
+{
+"id": "pyridostigmine",
+"name": "Pyridostigmine",
+"class": "Anticholinesterase",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"pyridostigmine"
+],
+"link_cs": []
+},
+{
+"id": "pyridoxine",
+"name": "Pyridoxine",
+"class": "Vitamin B6",
+"group": "Vitamins and nutrition",
+"verified": false,
+"aliases": [
+"vitamin B6"
+],
+"link": [
+"pyridoxine",
+"vitamin B6"
+],
+"link_cs": []
+},
+{
+"id": "quinine",
+"name": "Quinine",
+"class": "Antimalarial",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"quinine"
+],
+"link_cs": []
+},
+{
+"id": "resomal",
+"name": "ReSoMal",
+"class": "Rehydration solution for severe acute malnutrition",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [],
+"link_cs": [
+"ReSoMal"
+]
+},
+{
+"id": "rhze",
+"name": "RHZE",
+"class": "Anti-TB fixed-dose combination: rifampicin, isoniazid, pyrazinamide, ethambutol",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"RH",
+"HRZE"
+],
+"link": [],
+"link_cs": [
+"RHZE",
+"HRZE"
+]
+},
+{
+"id": "rifampicin",
+"name": "Rifampicin",
+"class": "Anti-TB antibiotic – rifamycin",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"rifampicin"
+],
+"link_cs": []
+},
+{
+"id": "ringers-lactate",
+"name": "Ringer's lactate",
+"class": "Balanced isotonic crystalloid",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"Ringer lactate",
+"Ringer’s lactate",
+"Ringers lactate",
+"modified Ringer"
+],
+"link": [
+"Ringer's lactate",
+"Ringer’s lactate",
+"Ringers lactate",
+"Ringer lactate"
+],
+"link_cs": []
+},
+{
+"id": "risperidone",
+"name": "Risperidone",
+"class": "Atypical antipsychotic",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"risperidone"
+],
+"link_cs": []
+},
+{
+"id": "rivaroxaban",
+"name": "Rivaroxaban",
+"class": "Direct oral anticoagulant – factor Xa inhibitor",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"rivaroxaban"
+],
+"link_cs": []
+},
+{
+"id": "rocuronium",
+"name": "Rocuronium",
+"class": "Non-depolarising neuromuscular blocker",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"rocuronium"
+],
+"link_cs": []
+},
+{
+"id": "rosuvastatin",
+"name": "Rosuvastatin",
+"class": "HMG-CoA reductase inhibitor (statin)",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"rosuvastain"
+],
+"link": [
+"rosuvastatin",
+"rosuvastain"
+],
+"link_cs": []
+},
+{
+"id": "salbutamol",
+"name": "Salbutamol",
+"class": "Short-acting β2 agonist bronchodilator",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"salbutamol"
+],
+"link_cs": []
+},
+{
+"id": "salmeterol",
+"name": "Salmeterol",
+"class": "Long-acting β2 agonist",
+"group": "Respiratory and allergy",
+"verified": false,
+"aliases": [],
+"link": [
+"salmeterol"
+],
+"link_cs": []
+},
+{
+"id": "sennosides",
+"name": "Sennosides",
+"class": "Stimulant laxative",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [
+"senna"
+],
+"link": [
+"sennosides",
+"senna"
+],
+"link_cs": []
+},
+{
+"id": "simvastatin",
+"name": "Simvastatin",
+"class": "HMG-CoA reductase inhibitor (statin)",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"simvastatin"
+],
+"link_cs": []
+},
+{
+"id": "sodium-bicarbonate",
+"name": "Sodium bicarbonate",
+"class": "Alkalinising agent",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [
+"NaHCO₃",
+"NaHCO3",
+"bicarbonate"
+],
+"link": [
+"sodium bicarbonate"
+],
+"link_cs": [
+"NaHCO₃",
+"NaHCO3"
+]
+},
+{
+"id": "sodium-chloride-0-9",
+"name": "Sodium chloride 0.9%",
+"class": "Isotonic crystalloid",
+"group": "Fluids and blood products",
+"verified": false,
+"aliases": [
+"NaCl 0.9%",
+"0.9% NaCl",
+"normal saline"
+],
+"link": [
+"sodium chloride 0.9%",
+"normal saline",
+"0.9% NaCl",
+"NaCl 0.9%"
+],
+"link_cs": []
+},
+{
+"id": "sodium-chloride-3",
+"name": "Sodium chloride 3%",
+"class": "Hypertonic saline",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [
+"hypertonic saline",
+"NaCl 3%",
+"3% NaCl",
+"NaCl 5%",
+"5% NaCl"
+],
+"link": [
+"sodium chloride 3%",
+"hypertonic saline",
+"NaCl 5%",
+"5% NaCl",
+"3% NaCl",
+"NaCl 3%"
+],
+"link_cs": []
+},
+{
+"id": "sodium-polystyrene-sulfonate",
+"name": "Sodium polystyrene sulfonate",
+"class": "Cation-exchange resin",
+"group": "Electrolytes",
+"verified": false,
+"aliases": [
+"polystyrene sulphonate",
+"polystyrene",
+"kayexalate"
+],
+"link": [
+"sodium polystyrene sulfonate",
+"polystyrene sulphonate",
+"kayexalate"
+],
+"link_cs": []
+},
+{
+"id": "sodium-valproate",
+"name": "Sodium valproate",
+"class": "Anticonvulsant / mood stabiliser",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [
+"valproate",
+"valproic acid"
+],
+"link": [
+"sodium valproate",
+"valproic acid",
+"valproate"
+],
+"link_cs": []
+},
+{
+"id": "spironolactone",
+"name": "Spironolactone",
+"class": "Potassium-sparing diuretic – aldosterone antagonist",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"spironolactone"
+],
+"link_cs": []
+},
+{
+"id": "streptokinase",
+"name": "Streptokinase",
+"class": "Fibrinolytic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"streptokinase"
+],
+"link_cs": []
+},
+{
+"id": "suxamethonium",
+"name": "Suxamethonium",
+"class": "Depolarising neuromuscular blocker",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [
+"succinylcholine"
+],
+"link": [
+"succinylcholine",
+"suxamethonium"
+],
+"link_cs": []
+},
+{
+"id": "tenofovir",
+"name": "Tenofovir",
+"class": "Antiretroviral – nucleotide reverse transcriptase inhibitor (TDF)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"TDF"
+],
+"link": [
+"tenofovir"
+],
+"link_cs": [
+"TDF"
+]
+},
+{
+"id": "terizidone",
+"name": "Terizidone",
+"class": "Anti-TB agent (cycloserine analogue)",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"terizidone"
+],
+"link_cs": []
+},
+{
+"id": "tetanus-toxoid",
+"name": "Tetanus toxoid",
+"class": "Vaccine / immunoglobulin for tetanus prophylaxis",
+"group": "Vaccines and immunoglobulins",
+"verified": false,
+"aliases": [
+"tetanus immunoglobulin",
+"tetanus vaccine"
+],
+"link": [
+"tetanus immunoglobulin",
+"tetanus vaccine",
+"tetanus toxoid"
+],
+"link_cs": []
+},
+{
+"id": "thiamine",
+"name": "Thiamine",
+"class": "Vitamin B1",
+"group": "Vitamins and nutrition",
+"verified": false,
+"aliases": [
+"vitamin B1"
+],
+"link": [
+"vitamin B1",
+"thiamine"
+],
+"link_cs": []
+},
+{
+"id": "tld",
+"name": "TLD",
+"class": "Antiretroviral fixed-dose combination: tenofovir 300 mg, lamivudine 300 mg, dolutegravir 50 mg",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [],
+"link_cs": [
+"TLD"
+]
+},
+{
+"id": "tramadol",
+"name": "Tramadol",
+"class": "Weak opioid analgesic with monoamine reuptake inhibition",
+"group": "Analgesia and anaesthesia",
+"verified": false,
+"aliases": [],
+"link": [
+"tramadol"
+],
+"link_cs": []
+},
+{
+"id": "tranexamic-acid",
+"name": "Tranexamic acid",
+"class": "Antifibrinolytic",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"tranexamic",
+"TXA"
+],
+"link": [
+"tranexamic acid",
+"tranexamic"
+],
+"link_cs": [
+"TXA"
+]
+},
+{
+"id": "valganciclovir",
+"name": "Valganciclovir",
+"class": "Antiviral – oral prodrug of ganciclovir",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"valganciclovir"
+],
+"link_cs": []
+},
+{
+"id": "vancomycin",
+"name": "Vancomycin",
+"class": "Antibiotic – glycopeptide",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [],
+"link": [
+"vancomycin"
+],
+"link_cs": []
+},
+{
+"id": "varenicline",
+"name": "Varenicline",
+"class": "Smoking-cessation aid",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"varenicline"
+],
+"link_cs": []
+},
+{
+"id": "verapamil",
+"name": "Verapamil",
+"class": "Non-dihydropyridine calcium-channel blocker",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"verapamil"
+],
+"link_cs": []
+},
+{
+"id": "vitamin-a",
+"name": "Vitamin A",
+"class": "Fat-soluble vitamin (retinol)",
+"group": "Vitamins and nutrition",
+"verified": false,
+"aliases": [
+"retinol"
+],
+"link": [
+"vitamin A"
+],
+"link_cs": []
+},
+{
+"id": "vitamin-d",
+"name": "Vitamin D",
+"class": "Fat-soluble vitamin (calciferol)",
+"group": "Vitamins and nutrition",
+"verified": false,
+"aliases": [
+"calciferol"
+],
+"link": [
+"vitamin D"
+],
+"link_cs": []
+},
+{
+"id": "vitamin-k",
+"name": "Vitamin K",
+"class": "Vitamin (phytomenadione)",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [
+"phytomenadione",
+"phytonadione",
+"phytomenodione"
+],
+"link": [
+"phytomenodione",
+"phytomenadione",
+"phytonadione",
+"vitamin K"
+],
+"link_cs": []
+},
+{
+"id": "warfarin",
+"name": "Warfarin",
+"class": "Vitamin K antagonist anticoagulant",
+"group": "Cardiovascular and blood",
+"verified": false,
+"aliases": [],
+"link": [
+"warfarin"
+],
+"link_cs": []
+},
+{
+"id": "zidovudine",
+"name": "Zidovudine",
+"class": "Antiretroviral – nucleoside reverse transcriptase inhibitor",
+"group": "Antimicrobials",
+"verified": false,
+"aliases": [
+"AZT"
+],
+"link": [
+"zidovudine"
+],
+"link_cs": [
+"AZT"
+]
+},
+{
+"id": "zinc",
+"name": "Zinc",
+"class": "Mineral supplement",
+"group": "Gastrointestinal",
+"verified": false,
+"aliases": [],
+"link": [
+"elemental zinc",
+"zinc sulphate",
+"zinc sulfate"
+],
+"link_cs": []
+},
+{
+"id": "zuclopenthixol",
+"name": "Zuclopenthixol",
+"class": "Typical antipsychotic – thioxanthene",
+"group": "CNS and psychiatry",
+"verified": false,
+"aliases": [],
+"link": [
+"zuclopenthixol"
+],
+"link_cs": []
+}
+]
+}

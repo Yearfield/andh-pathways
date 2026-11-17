@@ -1,0 +1,113 @@
+{
+ "id": "vitamin-d",
+ "type": "drug",
+ "name": "Vitamin D",
+ "aliases": [
+  "calciferol"
+ ],
+ "class": "Fat-soluble vitamin (calciferol)",
+ "group": "Vitamins and nutrition",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Increases intestinal calcium and phosphate absorption after hepatic and renal hydroxylation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Calciferol, oral, 50 000 IU once weekly.",
+     "s": "HOSP:7.6"
+    }
+   ]
+  },
+  {
+   "h": "Osteoporosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vitamin D (Calciferol), oral, 800 units daily or 50 000 of Calciferol every 4 weeks.",
+     "s": "HOSP:8.25"
+    },
+    {
+     "t": "Vitamin D (Calciferol), oral, 800 units daily.",
+     "s": "HOSP:8.25"
+    }
+   ]
+  },
+  {
+   "h": "Rickets",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin D, oral, 800 IU, once daily.",
+     "s": "PAED:2.49"
+    },
+    {
+     "t": "Vitamin D, oral, 400 IU, once daily.",
+     "s": "PAED:2.49"
+    },
+    {
+     "t": "Vitamin D, oral, 5000 IU, once daily, in addition to milk in the diet. · Repeat X-ray after 6–8 weeks. · If no radiological improvement, further investigation is required.",
+     "s": "PAED:2.49"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe at replacement doses",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypercalcaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Needs adequate calcium intake",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypercalcaemia with excess",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Calcium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-adult",
+  "fracture-paeds",
+  "lytes-adult-ca-mg"
+ ],
+ "link": [
+  "vitamin D"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,112 @@
+{
+ "id": "propofol",
+ "type": "drug",
+ "name": "Propofol",
+ "aliases": [],
+ "class": "IV anaesthetic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Potentiates GABA-A receptors, rapid onset and offset",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Intravenous Induction (And/or Maintenance) Agents",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Propofol, IV, 1.5–2.5 mg/kg. · 6–12 mg/kg/hour IV infusion for maintenance, if volatile agent use contraindicated.",
+     "s": "HOSP:12.2"
+    }
+   ]
+  },
+  {
+   "h": "Induction Agents",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Propofol, IV, 1.5–2.5 mg/kg.",
+     "s": "HOSP:20.19"
+    }
+   ]
+  },
+  {
+   "h": "Post-intubation Sedation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Propofol, IV infusion, 0.5 mg/kg/hour.",
+     "s": "HOSP:20.20"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Egg or soya allergy (per product)",
+   "d": 1
+  },
+  {
+   "t": "Haemodynamic instability",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce the dose in shocked, elderly or frail patients",
+   "d": 1
+  },
+  {
+   "t": "No analgesic effect",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypotension, apnoea, pain on injection, bradycardia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP, saturation, capnography",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "hie-adult",
+  "rass",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-adult",
+  "rsi-paeds",
+  "tbi-adult"
+ ],
+ "link": [
+  "propofol"
+ ],
+ "link_cs": []
+}

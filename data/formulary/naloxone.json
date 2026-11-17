@@ -1,0 +1,110 @@
+{
+ "id": "naloxone",
+ "type": "drug",
+ "name": "Naloxone",
+ "aliases": [],
+ "class": "Opioid antagonist",
+ "group": "Antidotes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Competitive antagonist at μ, κ and δ opioid receptors, short half-life (shorter than most opioids)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Salicylate Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Naloxone, IV, 0.4 mg immediately, in patients with significant respiratory depression. · Effectiveness is limited by a half-life (± 1 hour) that is shorter than",
+     "s": "HOSP:19.21"
+    }
+   ]
+  },
+  {
+   "h": "Neonatal Resuscitation",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Naloxone, IV, 0.1 mg/kg. Naloxone is not routinely indicated for neonatal resuscitation.",
+     "s": "PHC:6.28"
+    },
+    {
+     "t": "Naloxone, IV/IM, 0.1 mg/kg. » Maternal » Corrects apnoea · May need repeating after 2 hours. administration of and/or opiates with hypoventilation.",
+     "s": "PHC:6.28"
+    }
+   ]
+  },
+  {
+   "h": "Opioid Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Naloxone, IV, 0.1 mg/kg: · If no response after 5 minutes, repeat dose and titrate according to response.",
+     "s": "PAED:18.17"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated; may precipitate withdrawal in an opioid-dependent mother or neonate",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "None in opioid overdose",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Re-sedation is likely – observe and repeat or infuse",
+   "d": 1
+  },
+  {
+   "t": "Titrate small doses in dependent patients to restore breathing, not full wakefulness",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Acute withdrawal in dependent patients (agitation, vomiting), hypertension, pulmonary oedema (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, saturation, level of consciousness for hours after the last dose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fracture-adult",
+  "fracture-paeds",
+  "opioids",
+  "opioids-withdrawal",
+  "rf-adult",
+  "rf-paeds"
+ ],
+ "link": [
+  "naloxone"
+ ],
+ "link_cs": []
+}

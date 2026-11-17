@@ -1,0 +1,126 @@
+{
+ "id": "sodium-bicarbonate",
+ "type": "drug",
+ "name": "Sodium bicarbonate",
+ "aliases": [
+  "NaHCO₃",
+  "NaHCO3",
+  "bicarbonate"
+ ],
+ "class": "Alkalinising agent",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Buffers hydrogen ions, alkalinises serum (sodium-channel blocker toxicity) and urine, shifts potassium into cells",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Chronic Kidney Disease (Renal Failure, Chronic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Sodium bicarbonate, oral, 1 mmol/kg/dose, 2–3 doses per day after meals. · Adjust according to response.",
+     "s": "PAED:6.24"
+    }
+   ]
+  },
+  {
+   "h": "How to Perform a Nasogastric Aspirate",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "(6-10 Fr) · (ideally a falcon tube) · (20mL, 10mL, and 5mL) · Sodium Bicarbonate Laboratory request Oxymetazoline · Local anaesthetic · At least 1 sheet or drape · Alcohol",
+     "s": "tbqrg2025:62"
+    },
+    {
+     "t": "If the pH < 6.5, add 0.3mL of 4% sodium bicarbonate using a pipette or syringe. • Mix well and recheck pH. • If pH still < 6.5, repeat until pH reaches 6-7.",
+     "s": "tbqrg2025:63"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Metabolic or respiratory alkalosis",
+   "d": 1
+  },
+  {
+   "t": "Hypocalcaemia",
+   "d": 1
+  },
+  {
+   "t": "Hypernatraemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Do not mix with calcium or catecholamines in the same line",
+   "d": 1
+  },
+  {
+   "t": "Paradoxical intracellular acidosis if ventilation is inadequate",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypernatraemia, fluid overload, alkalosis, hypokalaemia, hypocalcaemia, tissue necrosis on extravasation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood gas, sodium, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-paeds",
+  "aki-paeds",
+  "bloodgas-causes",
+  "bloodgas_causes",
+  "ckd-paeds",
+  "dka-adult",
+  "dka-paeds",
+  "fluids-adult-dka",
+  "fluids-paeds-dka",
+  "hyperglycaemia-adult",
+  "lytes-adult-ca-mg",
+  "lytes-paeds-ca-mg",
+  "lytes-paeds-hyperk",
+  "lytes-paeds-hyperna",
+  "lytes-paeds-hypona",
+  "tca",
+  "toxic-alcohols"
+ ],
+ "link": [
+  "sodium bicarbonate"
+ ],
+ "link_cs": [
+  "NaHCO₃",
+  "NaHCO3"
+ ]
+}

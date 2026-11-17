@@ -1,0 +1,110 @@
+{
+ "id": "nitrofurantoin",
+ "type": "drug",
+ "name": "Nitrofurantoin",
+ "aliases": [],
+ "class": "Antibiotic – urinary antiseptic",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Reduced by bacterial enzymes to reactive intermediates that damage DNA and ribosomes, concentrates in urine only",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cystitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Nitrofurantoin, oral, 100 mg, 6 hourly for 5 days. REFFERAL/CONSULTATION No response to treatment, or resistant organism on culture.",
+     "s": "HOSP:6.32"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Nitrofurantoin, oral, 100 mg 6 hourly for 5 days.",
+     "s": "HOSP:7.19"
+    }
+   ]
+  },
+  {
+   "h": "Malaria",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Nitrofurantoin 100mg 6 hourly for 5 days Acute pyelonephritis • Presentation: Dysuria, frequency, fever, rigors, abdominal pain, loin pain",
+     "s": "impcg2024:147"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid at term (38 weeks onward)",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "EGFR < 45 mL/min",
+   "d": 1
+  },
+  {
+   "t": "G6PD deficiency",
+   "d": 1
+  },
+  {
+   "t": "Infants under 3 months",
+   "d": 1
+  },
+  {
+   "t": "At term (neonatal haemolysis)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take with food",
+   "d": 1
+  },
+  {
+   "t": "Ineffective for pyelonephritis",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, vomiting, dark urine, acute and chronic pulmonary reactions, peripheral neuropathy, hepatitis with long-term use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "urine_dipstick",
+  "uti-adult",
+  "uti-pregnancy"
+ ],
+ "link": [
+  "nitrofurantoin"
+ ],
+ "link_cs": []
+}

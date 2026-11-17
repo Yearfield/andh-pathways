@@ -1,0 +1,218 @@
+{
+ "id": "promethazine",
+ "type": "drug",
+ "name": "Promethazine",
+ "aliases": [],
+ "class": "Sedating antihistamine – phenothiazine",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "H1 antagonist with antimuscarinic and antidopaminergic effects",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hyperemesis Gravidarum",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Promethazine, oral/IM/IV 25 mg 8 hourly as needed.",
+     "s": "HOSP:6.22"
+    }
+   ]
+  },
+  {
+   "h": "Vertigo, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Promethazine, oral, 10 mg 8 hourly. · May be increased to 20 mg 8 hourly if necessary.",
+     "s": "HOSP:17.8"
+    }
+   ]
+  },
+  {
+   "h": "Angioedema",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Promethazine, IM/IV, 25–50 mg as a single dose.",
+     "s": "HOSP:20.9"
+    }
+   ]
+  },
+  {
+   "h": "Anaphylaxis/anaphylactic Shock",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Promethazine, IV 25–50 mg as a single dose.",
+     "s": "HOSP:20.13"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Promethazine, IM/IV, 12.5 to 25 mg, 4–6 hourly.",
+     "s": "HOSP:24.5"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of Adverse Effects of Chronic Opioid Use",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Promethazine, oral, 25 mg 8 hourly.",
+     "s": "HOSP:25.6"
+    }
+   ]
+  },
+  {
+   "h": "Angioedema",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Promethazine, IM, 25 to 50 mg immediately.",
+     "s": "PHC:5.25"
+    }
+   ]
+  },
+  {
+   "h": "Intrapartum Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Promethazine, IM, 25 mg 4 hourly.",
+     "s": "PHC:6.24"
+    }
+   ]
+  },
+  {
+   "h": "Extra-pyramidal Side Effects",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Promethazine, IM, 0.125–0.5 mg/kg to a maximum of: · 5 to 10 years: 12.5 mg immediately · 10 to 16 years: 25 mg immediately",
+     "s": "PHC:16.11"
+    },
+    {
+     "t": "Promethazine, IM, 50 mg immediately.",
+     "s": "PHC:16.11"
+    }
+   ]
+  },
+  {
+   "h": "Active phase of labour (cervix ≥5 cm dilated)",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Morphine, IM, 0.1 mg/kg 4 hourly as needed, to a maximum of 10 mg with promethazine 25 mg intra- muscularly 4 hourly is acceptable in both the latent and active phases, even up to full dilatation of the cervix.",
+     "s": "impcg2024:59"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac disease",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Promethazine 25 mg IM. · In late labour, nitrous oxide 50 per cent and oxygen 50 per cent as required. • Give Ampicillin 1 g IV six hourly and Gentamicin 240 mg IV as a single dose; or Vancomycin 1 g IV as a single",
+     "s": "impcg2024:128"
+    }
+   ]
+  },
+  {
+   "h": "Drug Reactions",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Promethazine, IV, 0.1 mg/kg/dose 8–12 hourly. (Maximum 25 mg).",
+     "s": "PAED:5.8"
+    }
+   ]
+  },
+  {
+   "h": "Drug Related Angioedema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Promethazine, IM, 0.5 mg/kg immediately, followed by above oral therapy.",
+     "s": "PAED:25.3"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for nausea and with opioid analgesia in labour",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Children under 2 years (fatal respiratory depression)",
+   "d": 1
+  },
+  {
+   "t": "Coma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Deep IM preferred",
+   "d": 1
+  },
+  {
+   "t": "IV must be diluted and given slowly",
+   "d": 1
+  },
+  {
+   "t": "Additive sedation with opioids",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, dry mouth, hypotension, extrapyramidal effects, tissue necrosis with extravasation or intra-arterial injection",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Level of sedation",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bo-adult",
+  "hypoglycemia-pregnancy",
+  "prolonged-labour",
+  "psychosis-adult",
+  "term-labour",
+  "wernicke-adult"
+ ],
+ "link": [
+  "promethazine"
+ ],
+ "link_cs": []
+}

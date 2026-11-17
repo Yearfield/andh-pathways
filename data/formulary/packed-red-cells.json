@@ -1,0 +1,86 @@
+{
+ "id": "packed-red-cells",
+ "type": "drug",
+ "name": "Packed red cells",
+ "aliases": [
+  "packed cells",
+  "red cell concentrate"
+ ],
+ "class": "Blood product – red cell concentrate",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Raises oxygen-carrying capacity",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Check identity and compatibility at the bedside",
+   "d": 1
+  },
+  {
+   "t": "Use only sodium chloride 0.9% in the line",
+   "d": 1
+  },
+  {
+   "t": "Emergency group O negative where uncross-matched",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Transfusion reactions (febrile, allergic, haemolytic), circulatory overload, TRALI, hyperkalaemia and hypocalcaemia with massive transfusion",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Observations before, at 15 minutes and regularly during transfusion",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-paeds",
+  "burns_paeds",
+  "ckd-paeds",
+  "fluids-paeds-burns",
+  "fluids-paeds-sam",
+  "fluids-paeds-shock",
+  "fracture-paeds",
+  "hie-neonate",
+  "prb-paeds",
+  "sam",
+  "superwarfarin",
+  "term-labour",
+  "ugib-paeds"
+ ],
+ "link": [
+  "red cell concentrate",
+  "packed red cells",
+  "packed cells"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,100 @@
+{
+ "id": "imipenem",
+ "type": "drug",
+ "name": "Imipenem",
+ "aliases": [
+  "cilastatin"
+ ],
+ "class": "Antibiotic – carbapenem (with cilastatin)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits cell-wall synthesis, very broad spectrum including anaerobes and Pseudomonas, cilastatin blocks renal degradation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Imipenem/cilastatin, IV, 1000/1000 mg 8 hourly.",
+     "s": "HOSP:2.12"
+    }
+   ]
+  },
+  {
+   "h": "Hospital-acquired Pneumonia (Hap) and Ventilator-associated Pneumonia (Vap)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Imipenem/cilastatin, IV, 1000/1000 mg 8 hourly as monotherapy.",
+     "s": "HOSP:9.6"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Carbapenem hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "CNS infection (seizure risk)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Markedly lowers valproate levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, seizures (dose- and renal-related), rash, C. difficile",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "imipenem"
+ ],
+ "link_cs": []
+}

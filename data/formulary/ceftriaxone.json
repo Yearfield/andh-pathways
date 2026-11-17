@@ -1,0 +1,323 @@
+{
+ "id": "ceftriaxone",
+ "type": "drug",
+ "name": "Ceftriaxone",
+ "aliases": [],
+ "class": "Antibiotic – third-generation cephalosporin (β-lactam)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "status": "PILOT – † lines checked against package insert 2026-11-15; awaiting review",
+ "sources": [
+  "HOSP",
+  "PAED",
+  "PHC",
+  "impcg2024",
+  "hiv2026",
+  "imci2022",
+  "notes",
+  "pi",
+  "general"
+ ],
+ "pi_source": {
+  "title": "Ceftriaxone 500 mg / 1 g FKSA (Fresenius Kabi) – professional information (SAHPRA repository, Aug 2024)",
+  "url": "https://pi-pil-repository.sahpra.org.za/wp-content/uploads/2024/08/Ceftriaxone-Fresenius-pi_August-2024.pdf"
+ },
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not stated in the package insert consulted",
+ "item_format": "t=text, s=source:printed page (s=pi: package insert), d=dagger, n=from own notes, b=bold, h=heading",
+ "summary": "Broad-spectrum parenteral cephalosporin with once-daily dosing and good CSF penetration; used for meningitis, sepsis, severe pneumonia, pyelonephritis and gonococcal infection.",
+ "forms": [
+  {
+   "t": "Powder for injection: 500 mg, 1 g and 2 g vials (250 mg vials from other suppliers)",
+   "s": "pi"
+  }
+ ],
+ "moa": [
+  {
+   "t": "β-lactam: binds transpeptidase and blocks the last step of bacterial cell-wall (peptidoglycan) synthesis → cell lysis",
+   "n": 1
+  },
+  {
+   "t": "Bactericidal; stable to most penicillinases and cephalosporinases",
+   "s": "pi"
+  },
+  {
+   "t": "Inherently resistant: Pseudomonas aeruginosa, enterococci, Listeria, MRSA, and atypicals (Chlamydia, Mycoplasma, Legionella)",
+   "s": "pi",
+   "b": 1
+  }
+ ],
+ "pk": [
+  {
+   "t": "Half-life about 8 hours in adults; 2–3 times longer in infants under 8 days",
+   "s": "pi"
+  },
+  {
+   "t": "CSF concentration averages 17% of plasma in bacterial meningitis",
+   "s": "pi"
+  },
+  {
+   "t": "Excreted unchanged: 50–60% in urine, 40–50% in bile",
+   "s": "pi"
+  }
+ ],
+ "dosing": [
+  {
+   "h": "Meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "2 g IV 12 hourly for 10 days",
+     "s": "HOSP:14.37",
+     "b": 1
+    },
+    {
+     "t": "PHC before referral: 2 g IM immediately (max 1 g per injection site); repeat after 12 hours if referral is delayed",
+     "s": "PHC:15.52"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis / sepsis / severe infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "100 mg/kg IV once daily",
+     "s": "PAED:8.21",
+     "b": 1
+    },
+    {
+     "t": "Maximum 4 g/day",
+     "s": "PAED:8.15"
+    },
+    {
+     "t": "Severe acute malnutrition: 100 mg/kg/dose once daily; 80 mg/kg/dose if meningitis suspected",
+     "s": "PAED:2.43"
+    },
+    {
+     "t": "Other indications use 50–80 mg/kg once daily (e.g. epiglottitis 50 mg/kg, bacterial tracheitis 80 mg/kg) – see the pathway",
+     "s": "PAED:15.30"
+    }
+   ]
+  },
+  {
+   "h": "Young infant – first dose before referral",
+   "pop": "neonate",
+   "items": [
+    {
+     "t": "50 mg/kg IM; dilute a 250 mg vial with 1 mL sterile water",
+     "s": "imci2022:12"
+    },
+    {
+     "t": "Neonates: daily dose should not exceed 50 mg/kg",
+     "s": "pi"
+    }
+   ]
+  },
+  {
+   "h": "Pyelonephritis / complicated UTI",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "1 g IV daily for 48 hours or until fever subsides, then oral step-down",
+     "s": "HOSP:6.32"
+    }
+   ]
+  },
+  {
+   "h": "Severe pneumonia, surgical / intra-abdominal sepsis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "1–2 g IV daily depending on indication (wound sepsis 2 g daily; typhoid 2 g 12 hourly) – see the pathway",
+     "s": "HOSP:9.5"
+    }
+   ]
+  },
+  {
+   "h": "Gonococcal infection (urethritis, vaginal discharge, PID)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hospital STG syndromic: 1 g IM single dose; dissolve 1 g in 3.6 mL lidocaine 1% without adrenaline",
+     "s": "HOSP:26.2"
+    },
+    {
+     "t": "PID and PHC STG: 250 mg IM single dose",
+     "s": "HOSP:5.4"
+    }
+   ]
+  },
+  {
+   "h": "Meningococcal contact prophylaxis",
+   "pop": "all",
+   "items": [
+    {
+     "t": "< 12 years: 125 mg IM single dose; > 12 years: 250 mg IM single dose",
+     "s": "PAED:8.22"
+    }
+   ]
+  }
+ ],
+ "administration": [
+  {
+   "t": "Do not inject more than 1 g IM at one site",
+   "s": "PHC:2.14",
+   "b": 1
+  },
+  {
+   "t": "IV injection over 2–4 minutes; IV infusion over at least 30 minutes (60 minutes in neonates)",
+   "s": "pi"
+  },
+  {
+   "t": "IM: reconstitute 1 g in 3.5 mL water for injection or lidocaine 1%; the lidocaine solution must never be given IV",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Never mix or give simultaneously with calcium-containing IV solutions (e.g. Ringer's lactate), at any age",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "≤ 28 days old: no calcium-containing IV fluids for 48 hours after ceftriaxone",
+   "s": "PHC:2.14"
+  },
+  {
+   "t": "> 28 days old: may give sequentially if the giving set is flushed with sodium chloride 0.9% before and after",
+   "s": "PHC:2.14"
+  },
+  {
+   "t": "Incompatible in the same line with aminoglycosides, vancomycin and fluconazole",
+   "s": "pi"
+  }
+ ],
+ "adjustments": [
+  {
+   "h": "Renal",
+   "t": "No reduction if hepatic function is intact; creatinine clearance < 10 mL/minute: max 2 g daily",
+   "s": "pi"
+  },
+  {
+   "h": "Hepatic",
+   "t": "No reduction if renal function is intact",
+   "s": "pi"
+  },
+  {
+   "h": "Lactation",
+   "t": "Excreted in breast milk in low concentration; use with caution",
+   "s": "pi"
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity to ceftriaxone or any cephalosporin",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Previous severe hypersensitivity (e.g. anaphylaxis) to any other β-lactam, including penicillins",
+   "s": "pi"
+  },
+  {
+   "t": "Penicillin allergy that is not severe is not a contraindication; avoid only if documented cephalosporin anaphylaxis",
+   "s": "hiv2026:82"
+  },
+  {
+   "t": "Premature neonates up to 41 weeks postmenstrual age",
+   "s": "pi"
+  },
+  {
+   "t": "Term neonates (≤ 28 days) with jaundice, hypoalbuminaemia or acidosis, or who need IV calcium",
+   "s": "pi"
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Own notes record about 20% cross-reactivity with penicillin allergy; guideline position above",
+   "n": 1
+  },
+  {
+   "t": "Displaces bilirubin from albumin – risk of bilirubin encephalopathy in neonates",
+   "s": "pi"
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, rash, injection-site pain, phlebitis",
+   "s": "pi"
+  },
+  {
+   "t": "Gallbladder precipitation (appears as gallstones on ultrasound); pseudomembranous colitis (C. difficile)",
+   "s": "pi"
+  },
+  {
+   "t": "Haemolytic anaemia, including fatal cases",
+   "s": "pi"
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Review at 48–72 hours with cultures; step down to oral when clinically appropriate",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [
+  {
+   "t": "Neonatal jaundice: the package insert contraindicates ceftriaxone in jaundiced neonates; the PHC STG says give it even if jaundiced when serious bacterial infection is suspected. The pathway follows the STG.",
+   "s": "PHC:2.14",
+   "b": 1
+  },
+  {
+   "t": "Pregnancy: the package insert says it should not be used in pregnancy (safety not established); the STG and maternity guideline use it for pyelonephritis and wound sepsis.",
+   "s": "impcg2024:147"
+  }
+ ],
+ "see_also": [
+  "cefotaxime",
+  "ampicillin",
+  "gentamicin",
+  "lidocaine"
+ ],
+ "used_in": [
+  "age-paeds",
+  "aki-paeds",
+  "appy-adult",
+  "appy-paeds",
+  "ards-adult",
+  "cirrhosis-adult",
+  "croup-paeds",
+  "curb65",
+  "fluids-adult-dehydration",
+  "fluids-adult-shock",
+  "gerd-paeds",
+  "hernia-adult",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "meningitis-adult",
+  "meningitis-neonate",
+  "meningitis-paeds",
+  "om-adult",
+  "om-paeds",
+  "pid",
+  "prb-adult",
+  "prb-paeds",
+  "rf-adult",
+  "rf-paeds",
+  "sam",
+  "sinusitis-adult",
+  "sinusitis-paeds",
+  "tbi-adult",
+  "tonsillitis-paeds",
+  "uds",
+  "uti-adult",
+  "uti-pregnancy",
+  "vds"
+ ],
+ "verified": true,
+ "link": [
+  "ceftriaxone"
+ ],
+ "link_cs": []
+}

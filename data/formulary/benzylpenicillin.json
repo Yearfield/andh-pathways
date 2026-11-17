@@ -1,0 +1,114 @@
+{
+ "id": "benzylpenicillin",
+ "type": "drug",
+ "name": "Benzylpenicillin",
+ "aliases": [
+  "penicillin G",
+  "benzyl penicillin"
+ ],
+ "class": "Antibiotic – natural penicillin (penicillin G)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis, narrow spectrum (streptococci, meningococci, treponemes)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Syphilis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Benzylpenicillin (Penicillin G), IV, 50 000 units/kg, 12 hourly for 10 days.",
+     "s": "HOSP:6.19"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Benzylpenicillin (Penicillin G), IV, 50 000 units/kg/dose, 6 hourly for 4–6* weeks.",
+     "s": "PAED:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Sepsis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Benzylpenicillin (Penicillin G), IV, 100 000 units/kg/dose immediately, then 4 hourly for 7 days.",
+     "s": "PAED:8.45"
+    }
+   ]
+  },
+  {
+   "h": "Diphtheria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Benzylpenicillin, IV, 50 000 units/kg/dose 6 hourly.",
+     "s": "PAED:8.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Contains sodium or potassium load",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypersensitivity, anaphylaxis, seizures with very high doses in renal failure, Jarisch–Herxheimer reaction",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "croup-paeds",
+  "meningitis-adult",
+  "tonsillitis-paeds",
+  "vds"
+ ],
+ "link": [
+  "benzyl penicillin",
+  "benzylpenicillin",
+  "penicillin G"
+ ],
+ "link_cs": []
+}

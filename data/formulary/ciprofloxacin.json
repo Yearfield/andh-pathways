@@ -1,0 +1,285 @@
+{
+ "id": "ciprofloxacin",
+ "type": "drug",
+ "name": "Ciprofloxacin",
+ "aliases": [],
+ "class": "Antibiotic – fluoroquinolone",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial DNA gyrase and topoisomerase IV",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cholera",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 1 g as a single dose. · Adjust antibiotic choice, according to the sensitivity of the isolate responsible for the local epidemic.",
+     "s": "HOSP:1.19"
+    }
+   ]
+  },
+  {
+   "h": "Dysentery (Acute Inflammatory Diarrhoea)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly, ideally based on culture and sensitivity if available.",
+     "s": "HOSP:1.20"
+    },
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 3 days. · Extend treatment duration to 7 days in patients with significant co-morbidity, e.g. immunocompromised patients.",
+     "s": "HOSP:1.20"
+    }
+   ]
+  },
+  {
+   "h": "Bacterial Peritonitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly. · Total duration of therapy: 14 days.",
+     "s": "HOSP:1.24"
+    }
+   ]
+  },
+  {
+   "h": "Pelvic Inflammatory Disease (PID)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly to complete 10 days of antibiotic therapy.",
+     "s": "HOSP:5.5"
+    }
+   ]
+  },
+  {
+   "h": "Septic Miscarriage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 5 days.",
+     "s": "HOSP:5.11"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 7 days.",
+     "s": "HOSP:7.19"
+    },
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 7–10 days. 7.19",
+     "s": "HOSP:7.19"
+    },
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 7 days. · If severe renal impairment (eGFR <10 mL/min/1.73m2): 50% of normal dose.",
+     "s": "HOSP:7.20"
+    }
+   ]
+  },
+  {
+   "h": "Prostatitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 14 days.",
+     "s": "HOSP:7.21"
+    },
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 28 days.",
+     "s": "HOSP:7.21"
+    }
+   ]
+  },
+  {
+   "h": "Tick Bite Fever",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ciprofloxacin, IV, 400 mg 8 hourly. Note: Ciprofloxacin has inferior efficacy compared to doxycycline. Oral doxycycline should be commenced as soon as possible.",
+     "s": "HOSP:9.20"
+    }
+   ]
+  },
+  {
+   "h": "Cholera",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 20 mg/kg as a single dose (see dosing table: Appendix IV).",
+     "s": "PHC:2.9"
+    }
+   ]
+  },
+  {
+   "h": "Dysentery, Bacillary",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 3 days.",
+     "s": "PHC:2.19"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 500 mg 12 hourly for 7–10 days. · It is essential to give at least a 7-day course of therapy.",
+     "s": "PHC:8.11"
+    }
+   ]
+  },
+  {
+   "h": "Meningococcal Meningitis, Prophylaxis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 250 mg, as a single dose.",
+     "s": "PHC:15.54"
+    },
+    {
+     "t": "Ciprofloxacin, oral, 500 mg, as a single dose.",
+     "s": "PHC:15.54"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral , 20mg/kg as a single dose Weight Dose Use one of the following: Age kg mg Susp Tablet Months/years",
+     "s": "PHC"
+    },
+    {
+     "t": "Ciprofloxacin, oral, 15 mg/kg/dose 12 hourly for 3 days. Weight Dose Use one of the following: Age kg mg Susp Tablet Months/years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Management of a septic miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "days AND Ciprofloxacin, oral, 500 mg 12 hourly for 5 days.",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "h": "Cholera",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 20 mg/kg as a single dose (maximum 750 mg).",
+     "s": "PAED:2.5"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, 15 mg/kg/dose 12 hourly for 3 days.",
+     "s": "PAED:2.18"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Acute Bacterial",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ciprofloxacin, oral, as a single dose. · If < 12 years of age: 10 mg/kg. · If > 12 years of age: 500 mg.",
+     "s": "PAED:8.22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid unless no alternative; used in children only for specific indications",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Quinolone hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "History of tendon disorders with quinolones",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Absorption reduced by antacids, iron, calcium and zinc",
+   "d": 1
+  },
+  {
+   "t": "Lowers seizure threshold",
+   "d": 1
+  },
+  {
+   "t": "Raises theophylline and warfarin effect",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, diarrhoea, tendinitis and tendon rupture, QT prolongation, seizures, peripheral neuropathy, dysglycaemia, C. difficile",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "cirrhosis-adult",
+  "fluids-adult-dehydration",
+  "meningitis-adult",
+  "meningitis-paeds",
+  "miscarriage",
+  "om-adult",
+  "om-paeds",
+  "pid",
+  "prb-adult",
+  "prb-paeds",
+  "uds",
+  "uti-adult",
+  "uti-paeds"
+ ],
+ "link": [
+  "ciprofloxacin"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,210 @@
+{
+ "id": "chlorphenamine",
+ "type": "drug",
+ "name": "Chlorphenamine",
+ "aliases": [
+  "chlorpheniramine"
+ ],
+ "class": "Sedating antihistamine",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "H1 antagonist with antimuscarinic effects",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Atopic Eczema/ Dermatitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 4 mg at night as needed.",
+     "s": "HOSP:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Papular Urticaria",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 4 mg at night as needed in severe cases.",
+     "s": "HOSP:4.13"
+    }
+   ]
+  },
+  {
+   "h": "Itching (Pruritus)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose 6 to 8 hourly.",
+     "s": "PHC:5.4"
+    },
+    {
+     "t": "Chlorphenamine, oral, 4 mg, 6 to 8 hourly.",
+     "s": "PHC:5.4"
+    }
+   ]
+  },
+  {
+   "h": "Eczema, Atopic",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose at night for a maximum of 2 weeks.",
+     "s": "PHC:5.21"
+    },
+    {
+     "t": "Chlorphenamine, oral, 4 mg, at night for a maximum of 2 weeks. − Note: Chlorphenamine is sedating.",
+     "s": "PHC:5.21"
+    }
+   ]
+  },
+  {
+   "h": "Eczema, Acute, Moist or Weeping",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose at night.",
+     "s": "PHC:5.22"
+    },
+    {
+     "t": "Chlorphenamine, oral, 4 mg, at night. 22 Note: Chlorphenamine is sedating.",
+     "s": "PHC:5.22"
+    }
+   ]
+  },
+  {
+   "h": "Papular Urticaria",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose 6–8 hourly.",
+     "s": "PHC:5.27"
+    },
+    {
+     "t": "Chlorphenamine, oral, 4 mg, 6–8 hourly.",
+     "s": "PHC:5.27"
+    }
+   ]
+  },
+  {
+   "h": "Pityriasis Rosea",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 4 mg at night.",
+     "s": "PHC:5.29"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose 6–8 hourly. Weight Dose Use one of the following: Age Kg mg Syrup Tablet years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Cholestasis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose up to 6 hourly.",
+     "s": "PAED:2.28"
+    }
+   ]
+  },
+  {
+   "h": "Drug Reactions",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose as a single dose at night. (Maximum 4 mg).",
+     "s": "PAED:5.8"
+    }
+   ]
+  },
+  {
+   "h": "Urticaria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose as a single dose at night.",
+     "s": "PAED:5.14"
+    }
+   ]
+  },
+  {
+   "h": "HIV Papular Pruritic Eruption",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Chlorphenamine, oral, 0.1 mg/kg/dose 6 hourly.",
+     "s": "PAED:5.16"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Neonates",
+   "d": 1
+  },
+  {
+   "t": "Narrow-angle glaucoma",
+   "d": 1
+  },
+  {
+   "t": "Prostatic hypertrophy",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Additive sedation with alcohol and CNS depressants",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, dry mouth, urinary retention, paradoxical excitation in children",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "eczema-adult",
+  "eczema-paeds"
+ ],
+ "link": [
+  "chlorpheniramine",
+  "chlorphenamine"
+ ],
+ "link_cs": []
+}

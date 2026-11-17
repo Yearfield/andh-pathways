@@ -1,0 +1,313 @@
+{
+ "id": "amoxicillin",
+ "type": "drug",
+ "name": "Amoxicillin",
+ "aliases": [
+  "amoxycillin"
+ ],
+ "class": "Antibiotic – aminopenicillin (β-lactam)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis by binding penicillin-binding proteins, inactivated by β-lactamases",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Peptic Ulcer",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 1 g 12 hourly for 14 days.",
+     "s": "HOSP:1.7"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 2 g one hour before the procedure.",
+     "s": "HOSP:3.34"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Heart Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 1 000 mg (1 gram) 12 hourly for 10 days.",
+     "s": "HOSP:3.44"
+    },
+    {
+     "t": "Amoxicillin, oral, 250 mg daily.",
+     "s": "HOSP:3.45"
+    }
+   ]
+  },
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 500 mg 8 hourly for a further 5 days.",
+     "s": "HOSP:6.23"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia, Community Acquired",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 1 g 8 hourly for 5 days i.e. total duration of",
+     "s": "HOSP:16.16"
+    }
+   ]
+  },
+  {
+   "h": "Otitis Media, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 1000 mg 8 hourly for 5 days.",
+     "s": "HOSP:17.3"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 500 mg 8 hourly for 5 days. 1.1.8: Peptic ulcer, H.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Amoxicillin, oral, 1 g 8 hourly.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid 875/125 mg, oral, 12 hourly. 1.1.2: Diverticulosis - uncomplicated, unable to tolerate oral therapy, 1.2.5: Liver abscess, pyogenic, 1.2.7: Cholecystitis, acute and cholangitis, acute - If una",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Diverticulosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly.",
+     "s": "HOSP:1.2"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 1.2 g 8 hourly. · Switch to oral therapy once able to tolerate.",
+     "s": "HOSP:1.2"
+    }
+   ]
+  },
+  {
+   "h": "Dental Abscess",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 10–20 mg/kg 8 hourly for 5 days. Weight Dose Use one of the following: Age kg mg Susp Capsule Months/years",
+     "s": "PHC:1.2"
+    },
+    {
+     "t": "Amoxicillin, oral, 500 mg 8 hourly for 5 days.",
+     "s": "PHC:1.2"
+    }
+   ]
+  },
+  {
+   "h": "Complicated SAM",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 45 mg/kg as a single dose.",
+     "s": "PHC:3.8"
+    }
+   ]
+  },
+  {
+   "h": "Peptic Ulcer Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 25–30 mg/kg/dose 12 hourly for 14 days.",
+     "s": "PAED:2.26"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 45 mg/kg/dose 12 hourly for 5 days.",
+     "s": "PAED:2.42"
+    },
+    {
+     "t": "Amoxicillin, oral, 30 mg/kg/dose 8 hourly for a further 5 days.",
+     "s": "PAED:2.43"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 50 mg/kg (maximum 2 g) 1 hour before the procedure.",
+     "s": "PAED:4.13"
+    }
+   ]
+  },
+  {
+   "h": "Sydenham Chorea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 45 mg/kg/dose 12 hourly for 10 days.",
+     "s": "PAED:13.45"
+    }
+   ]
+  },
+  {
+   "h": "Otitis Media, Acute (Aom)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin, oral, 45 mg/kg/dose 12 hourly for 10 days. · Maximum dose: 1.5 g 12 hourly.",
+     "s": "PAED:17.8"
+    }
+   ]
+  },
+  {
+   "h": "Necrotising Periodontitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 45 mg/kg/dose of the amoxicillin component 12 hourly for 5 days. (See annexure 1: Amoxicillin/Clavulanic weight band dosing table).",
+     "s": "PAED:2.2"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 45 mg/kg/dose of amoxicillin component, 12 hourly (amoxicillin/clavulanic acid in a ratio of 14:1). · Maximum dose of amoxicillin component: 1.5 g 12 hourly.",
+     "s": "PAED:6.7"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 25 mg/kg/dose 8 hourly (be cautious of going above 15mg/kg/day of clavulanic component – where higher doses are used be aware of GIT effects)",
+     "s": "PAED:6.7"
+    }
+   ]
+  },
+  {
+   "h": "Measles",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 30 mg/kg/dose 12 hourly.",
+     "s": "PAED:8.18"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Maculopapular rash is common in glandular fever",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in severe renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash, diarrhoea, nausea, anaphylaxis",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "appy-adult",
+  "appy-paeds",
+  "ards-adult",
+  "ards-paeds",
+  "bo-adult",
+  "bo-paeds",
+  "bronchiolitis-paeds",
+  "bsi-adult",
+  "chol-adult",
+  "chorioamnionitis",
+  "copd-adult",
+  "copd_gold",
+  "croup-paeds",
+  "hcc-adult",
+  "hernia-adult",
+  "hernia-paeds",
+  "liver",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "miscarriage",
+  "om-adult",
+  "om-paeds",
+  "pph",
+  "preterm-labour",
+  "prolonged-labour",
+  "pud-adult",
+  "rf-adult",
+  "rf-paeds",
+  "sam",
+  "sinusitis-adult",
+  "sinusitis-paeds",
+  "tonsillitis-paeds",
+  "ugib-adult",
+  "ugib-paeds",
+  "uti-paeds",
+  "uti-pregnancy"
+ ],
+ "link": [
+  "amoxycillin",
+  "amoxicillin"
+ ],
+ "link_cs": []
+}

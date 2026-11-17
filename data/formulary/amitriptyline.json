@@ -1,0 +1,233 @@
+{
+ "id": "amitriptyline",
+ "type": "drug",
+ "name": "Amitriptyline",
+ "aliases": [],
+ "class": "Tricyclic antidepressant",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits serotonin and noradrenaline reuptake, antimuscarinic, antihistamine and α-blocking effects",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Zoster (Shingles)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10 mg at night.",
+     "s": "HOSP:9.23"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Rheumatoid (Ra)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10–25 mg at night.",
+     "s": "HOSP:13.3"
+    }
+   ]
+  },
+  {
+   "h": "Osteoarthritis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10–25 mg at night. · Titrate dose according to response. · Initial dose in the elderly: 10 mg at night.",
+     "s": "HOSP:13.7"
+    }
+   ]
+  },
+  {
+   "h": "Migraine",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10–25 mg at bedtime. · Up-titrate dose to adequate clinical response. · Doses greater than 75 mg are seldom required.",
+     "s": "HOSP:14.33"
+    }
+   ]
+  },
+  {
+   "h": "Tension Headache",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10–75 mg at night.",
+     "s": "HOSP:14.34"
+    }
+   ]
+  },
+  {
+   "h": "Medication Overuse Headache",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10 mg at night. · Increase to a maximum of 75 mg at night. · May be used during withdrawal of acute or symptomatic headache",
+     "s": "HOSP:14.35"
+    }
+   ]
+  },
+  {
+   "h": "Depressive Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, at bedtime. · Initial dose: 25 mg per day.",
+     "s": "HOSP:15.15"
+    }
+   ]
+  },
+  {
+   "h": "Depression",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, at bedtime. · Start with 25 mg, increase by 25 mg/day at 3-to 4-day intervals. · Dose range: 75 to 150 mg daily.",
+     "s": "HOSP:24.9"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Neuropathy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10–25 mg at night increasing to 100 mg, if necessary.",
+     "s": "PHC:9.18"
+    }
+   ]
+  },
+  {
+   "h": "Shingles (Herpes Zoster)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 25 mg at night. (Doctor prescribed.) · Titrate as necessary to a maximum of 75 mg.",
+     "s": "PHC:10.18"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Zoster (Shingles)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 25 mg at night. · Increase dose to 50 mg after two weeks if needed. · Increase to 75 mg after a further two weeks if needed.",
+     "s": "PHC:11.24"
+    }
+   ]
+  },
+  {
+   "h": "Peripheral Neuropathy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 25 mg at night (Doctor prescribed). · Titrate at two weekly intervals to a maximum of 75 mg at night.",
+     "s": "PHC:15.57"
+    }
+   ]
+  },
+  {
+   "h": "Depressive Disorders",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, at bedtime. · Initial dose: 25 mg per day. · Increase by 25 mg per day at 3- to 5-day intervals.",
+     "s": "PHC:16.17"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Non-cancer Pain",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 10 mg at night. (Doctor initiated.). · Titrate up to a maximum of 75 mg at night.",
+     "s": "PHC:20.9"
+    }
+   ]
+  },
+  {
+   "h": "Acute Pain",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amitriptyline, oral, 0.5–1 mg/kg 8 hourly. · Maximum: 25 mg/dose.",
+     "s": "PAED:20.14"
+    },
+    {
+     "t": "Amitriptyline, oral, 0.1–1 mg/kg 8 hourly. · Start on a low dose and titrate up according to symptoms. · Maximum: 25 mg/dose.",
+     "s": "PAED:20.14"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Recent myocardial infarction",
+   "d": 1
+  },
+  {
+   "t": "Arrhythmias or heart block",
+   "d": 1
+  },
+  {
+   "t": "With MAOIs",
+   "d": 1
+  },
+  {
+   "t": "Mania",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Dangerous in overdose (arrhythmias, seizures)",
+   "d": 1
+  },
+  {
+   "t": "Low doses at night for neuropathic pain",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, dry mouth, constipation, urinary retention, postural hypotension, weight gain, QT prolongation",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "amphetamines-withdrawal",
+  "tca"
+ ],
+ "link": [
+  "amitriptyline"
+ ],
+ "link_cs": []
+}

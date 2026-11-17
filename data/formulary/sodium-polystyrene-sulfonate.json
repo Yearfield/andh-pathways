@@ -1,0 +1,112 @@
+{
+ "id": "sodium-polystyrene-sulfonate",
+ "type": "drug",
+ "name": "Sodium polystyrene sulfonate",
+ "aliases": [
+  "polystyrene sulphonate",
+  "polystyrene",
+  "kayexalate"
+ ],
+ "class": "Cation-exchange resin",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Exchanges sodium for potassium in the gut, slow onset (hours)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Acute Kidney Injury",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Sodium polystyrene sulfonate, oral, 15 g with 15 mL lactulose, 6 hourly.",
+     "s": "HOSP:7.10"
+    },
+    {
+     "t": "Sodium polystyrene sulfonate, rectal, 30–60 g as an enema. · After 8 hours, wash out with phosphate enema.",
+     "s": "HOSP:7.10"
+    }
+   ]
+  },
+  {
+   "h": "Acute Kidney Injury (Renal Failure, Acute)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Sodium polystyrene sulphonate, oral/rectal, 1 g/kg in dextrose water.",
+     "s": "PAED:6.18"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (Renal Failure, Chronic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Sodium polystyrene sulphonate, oral/rectal, 1 g/kg/dose in dextrose water, once or twice daily. · Treat accompanying metabolic acidosis.",
+     "s": "PAED:6.24"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [],
+ "contraindications": [
+  {
+   "t": "Obstructive bowel disease",
+   "d": 1
+  },
+  {
+   "t": "Neonates with reduced gut motility",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Not for emergency potassium lowering on its own",
+   "d": 1
+  },
+  {
+   "t": "Separate from other oral drugs by 3 hours",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Constipation, hypokalaemia, sodium overload, intestinal necrosis (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "brady-adult",
+  "lytes-adult-hyperk",
+  "lytes-paeds-hyperk"
+ ],
+ "link": [
+  "sodium polystyrene sulfonate",
+  "polystyrene sulphonate",
+  "kayexalate"
+ ],
+ "link_cs": []
+}

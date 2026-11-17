@@ -1,0 +1,87 @@
+{
+ "id": "oral-rehydration-solution",
+ "type": "drug",
+ "name": "Oral rehydration solution",
+ "aliases": [
+  "ORS",
+  "rehydration solution"
+ ],
+ "class": "Oral glucose-electrolyte solution",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Glucose-coupled sodium transport drives water absorption in the small bowel",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Shock, ileus or inability to drink (use IV fluid)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give small frequent sips",
+   "d": 1
+  },
+  {
+   "t": "Make up exactly as directed",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Vomiting if taken too fast, hypernatraemia if mixed too concentrated",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Hydration status",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "age-paeds",
+  "aki-paeds",
+  "burns_adult",
+  "fluids-adult-burns",
+  "fluids-adult-dehydration",
+  "fluids-paeds-dehydration",
+  "fluids-paeds-sam",
+  "fluids-reference",
+  "lytes-paeds-hyperna",
+  "prb-adult",
+  "prb-paeds",
+  "sam"
+ ],
+ "link": [
+  "oral rehydration solution"
+ ],
+ "link_cs": [
+  "ORS"
+ ]
+}

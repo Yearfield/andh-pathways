@@ -1,0 +1,155 @@
+{
+ "id": "cefalexin",
+ "type": "drug",
+ "name": "Cefalexin",
+ "aliases": [
+  "cephalexin"
+ ],
+ "class": "Antibiotic – first-generation cephalosporin (oral)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis, Gram-positive cocci and some Gram-negative cover",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cefalexin, oral, 500 mg 6 hourly for 5 days.",
+     "s": "HOSP:4.2"
+    }
+   ]
+  },
+  {
+   "h": "Boil, Abscess",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cefalexin, oral, 25 mg/kg/dose 12 hourly for 5 days.",
+     "s": "PHC:5.6"
+    }
+   ]
+  },
+  {
+   "h": "Impetigo",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cefalexin, oral, 25 mg/kg/dose 12 hourly for 5 days. See dosing table: Appendix IV. PHC Chp 5_Last updated 9 July 2026 5.7",
+     "s": "PHC:5.7"
+    }
+   ]
+  },
+  {
+   "h": "Staphylococcal Scalded Skin Syndrome",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cephalexin, oral, 25 mg/kg/dose 6 hourly for 7 days. Where weight is unknown: · Child < 2 years: 125 mg.",
+     "s": "PAED:5.2"
+    }
+   ]
+  },
+  {
+   "h": "Erythema Multiforme",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cephalexin, oral, 25 mg/kg/dose 6 hourly. Where weight is unknown: · Child < 2 years: 125 mg.",
+     "s": "PAED:5.4"
+    }
+   ]
+  },
+  {
+   "h": "Eczema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cephalexin, oral, 25 mg/kg/dose, 6 hourly.",
+     "s": "PAED:5.11"
+    }
+   ]
+  },
+  {
+   "h": "Varicella (Chicken Pox)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cephalexin, oral, 12.5 mg/kg/dose, 6 hourly for 5 days.",
+     "s": "PAED:8.42"
+    }
+   ]
+  },
+  {
+   "h": "Effusion and Empyema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cephalexin, oral, 6.25–12.5 mg/kg/dose 6 hourly.",
+     "s": "PAED:15.14"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Cephalosporin hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "Severe immediate penicillin allergy",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, nausea, rash",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bsi-adult",
+  "bsi-paeds",
+  "eczema-adult",
+  "eczema-paeds",
+  "fungal-adult",
+  "fungal-paeds",
+  "lrti-paeds"
+ ],
+ "link": [
+  "cephalexin",
+  "cefalexin"
+ ],
+ "link_cs": []
+}

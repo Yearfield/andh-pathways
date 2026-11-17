@@ -1,0 +1,83 @@
+{
+ "id": "formoterol",
+ "type": "drug",
+ "name": "Formoterol",
+ "aliases": [],
+ "class": "Long-acting β2 agonist",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Sustained β2-mediated bronchodilation with rapid onset",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Asthma, Chronic Persistent",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Formoterol, inhalation, 12 mcg 12 hourly.",
+     "s": "HOSP:16.7"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Formoterol, inhaled 12 mcg (1 puff) 12 hourly. (Doctor initiated.)",
+     "s": "PHC:17.18"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Asthma without an inhaled corticosteroid",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Always combined with an inhaled corticosteroid in asthma",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tremor, palpitations, headache, hypokalaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "copd-adult",
+  "copd_gold"
+ ],
+ "link": [
+  "formoterol"
+ ],
+ "link_cs": []
+}

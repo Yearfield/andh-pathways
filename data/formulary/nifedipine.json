@@ -1,0 +1,135 @@
+{
+ "id": "nifedipine",
+ "type": "drug",
+ "name": "Nifedipine",
+ "aliases": [],
+ "class": "Dihydropyridine calcium-channel blocker",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks L-type calcium channels in vascular smooth muscle: arterial vasodilation, relaxes myometrium (tocolysis)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hypertensive Disorders in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Nifedipine, oral, 10 mg. · Repeat after 30 minutes if needed, until systolic blood pressure <160 mmHg and diastolic blood pressure <110 mmHg.",
+     "s": "HOSP:6.9"
+    }
+   ]
+  },
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Nifedipine, oral, 20 mg. · If contractions persist, follow with 10 mg after 30 minutes then 10 mg 4 hourly for up to 48 hours.",
+     "s": "HOSP:6.22"
+    }
+   ]
+  },
+  {
+   "h": "Pre-eclampsia",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Nifedipine, oral, 10 mg (not sublingual) as a single dose. · May be repeated after 30 minutes if diastolic BP remains ≥110 mmHg or if systolic BP remains ≥160 mmHg.",
+     "s": "PHC:6.15"
+    }
+   ]
+  },
+  {
+   "h": "Preterm Labour (PTL)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Nifedipine, oral, 20 mg as a single dose. · Follow with 10 mg after 30 minutes, if contractions persist. PHC Ch6_Last updated 30 July 2026",
+     "s": "PHC:6.21"
+    }
+   ]
+  },
+  {
+   "h": "Acute Kidney Injury",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Nifedipine, oral, 0.25–0.5 mg/kg squirted into mouth. · Withdraw contents of 5 mg capsule with a 1 mL syringe: 10–25 kg: 2.5 mg",
+     "s": "PHC:8.7"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for hypertension in pregnancy and tocolysis",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Cardiogenic shock",
+   "d": 1
+  },
+  {
+   "t": "Severe aortic stenosis",
+   "d": 1
+  },
+  {
+   "t": "Within 1 month of myocardial infarction",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Do not give sublingually (precipitous hypotension)",
+   "d": 1
+  },
+  {
+   "t": "Profound hypotension reported with magnesium sulfate – monitor",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin lowers levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Headache, flushing, reflex tachycardia, ankle oedema, hypotension",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hte-adult",
+  "pet",
+  "preterm-labour"
+ ],
+ "link": [
+  "nifedipine"
+ ],
+ "link_cs": []
+}

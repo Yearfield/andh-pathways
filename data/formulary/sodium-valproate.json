@@ -1,0 +1,138 @@
+{
+ "id": "sodium-valproate",
+ "type": "drug",
+ "name": "Sodium valproate",
+ "aliases": [
+  "valproate",
+  "valproic acid"
+ ],
+ "class": "Anticonvulsant / mood stabiliser",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Increases GABA activity and blocks sodium channels",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Valproate, oral · Usual starting dose: 200–300 mg 12 hourly. · Increase, as required, every 3 days to 2 weeks (depending on the",
+     "s": "HOSP:14.31"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "DTG include valproate, lamotrigine, levetiracetam, and topiramate. Remember • Carbamazepine · Dolutegravir · that valproate is contra-indicated during pregnancy. • Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenyt",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Carbamazepine · Dolutegravir · that valproate is contra-indicated during pregnancy. • Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenytoin, or • Phenytoin · phenobarbital if an alternative anticonvulsant cannot",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Valproate, oral, 5 mg/kg/dose (starting dose), 8–12 hourly. (Doctor prescribed if used in girls and women of childbearing potential; doctor initiated for other patients)",
+     "s": "PHC:15.37"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Valproate, oral, 5 mg/kg/dose (starting dose), 8–12 hourly. · Increase by 5 mg/kg weekly to 15–20 mg/kg/day, given 8–12 hourly over 4 weeks.",
+     "s": "PAED:13.26"
+    }
+   ]
+  },
+  {
+   "h": "Bipolar Disorder",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Sodium valproate, oral (teratogenic and to be avoided in females). · 20 mg/kg/day divided 12 hourly. · Usual range: 20–30 mg/kg/day.",
+     "s": "PAED:14.16"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated – highly teratogenic",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Pregnancy and women of child-bearing potential without effective contraception",
+   "d": 1
+  },
+  {
+   "t": "Liver disease",
+   "d": 1
+  },
+  {
+   "t": "Mitochondrial disorders",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Carbapenems markedly lower levels",
+   "d": 1
+  },
+  {
+   "t": "Inhibits lamotrigine metabolism",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, weight gain, tremor, hair loss, thrombocytopenia, hepatotoxicity, pancreatitis, hyperammonaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function, FBC",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "panc-adult"
+ ],
+ "link": [
+  "sodium valproate",
+  "valproic acid",
+  "valproate"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,75 @@
+{
+ "id": "rocuronium",
+ "type": "drug",
+ "name": "Rocuronium",
+ "aliases": [],
+ "class": "Non-depolarising neuromuscular blocker",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Competitive antagonist at nicotinic receptors of the motor end plate, long duration at RSI doses",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Inability to ventilate or secure the airway",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Potentiated by magnesium and aminoglycosides",
+   "d": 1
+  },
+  {
+   "t": "Ensure sedation continues while paralysed",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Prolonged paralysis, anaphylaxis (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Saturation, capnography",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "ards-paeds",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "rocuronium"
+ ],
+ "link_cs": []
+}

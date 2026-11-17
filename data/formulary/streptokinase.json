@@ -1,0 +1,90 @@
+{
+ "id": "streptokinase",
+ "type": "drug",
+ "name": "Streptokinase",
+ "aliases": [],
+ "class": "Fibrinolytic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Forms a complex with plasminogen that converts further plasminogen to plasmin (not fibrin-specific)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Streptokinase, IV 1.5 million units diluted in 100 mL sodium chloride 0.9%, infused over 30–60 minutes. Do not use heparin if streptokinase is given.",
+     "s": "HOSP:3.4"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Relative contraindication",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "As for alteplase",
+   "d": 1
+  },
+  {
+   "t": "Previous streptokinase exposure (antibodies)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Slow or pause the infusion for hypotension",
+   "d": 1
+  },
+  {
+   "t": "Do not give heparin afterwards per STG",
+   "d": 1
+  },
+  {
+   "t": "Do not repeat",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bleeding, hypotension during infusion, allergic reactions including anaphylaxis, reperfusion arrhythmias",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP every few minutes during infusion, ECG",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult"
+ ],
+ "link": [
+  "streptokinase"
+ ],
+ "link_cs": []
+}

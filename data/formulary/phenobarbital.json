@@ -1,0 +1,190 @@
+{
+ "id": "phenobarbital",
+ "type": "drug",
+ "name": "Phenobarbital",
+ "aliases": [
+  "phenobarbitone"
+ ],
+ "class": "Anticonvulsant – barbiturate",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Enhances GABA-A receptor activity",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenytoin, or • Phenytoin · phenobarbital if an alternative anticonvulsant cannot be used Metformin initiation:",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Phenytoin · phenobarbital if an alternative anticonvulsant cannot be used Metformin initiation: • Initiate metformin at a low dose (500 mg or 1000 mg total daily dose), titrating",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Phenobarbital, IM 20mg/kg (Doctor prescribed) » Prepare for intubation and ventilation. 10-30 minutes · Slow IM Injection. after seizure",
+     "s": "PHC:15.14"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Phenobarbital, oral, 3–5 mg/kg/dose as single dose at night. (Doctor prescribed if phenobarbital dose is 90 mg or more, e.g. 18 kg / 5 year old child; doctor initiated for other patients)",
+     "s": "PHC:15.38"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenobarbital, IM 20 mg/kg. » Prepare for intubation and 10-30 minutes · Slow IM injection ventilation. after seizure » Ensure that phenytoin is",
+     "s": "PAED:13.9"
+    },
+    {
+     "t": "Phenobarbital, oral, crushed and given by nasogastric tube, 20 mg/kg as a commence the phenytoin infusion. single dose. » Seizures due to poisoning should NOT be treated with phenytoin.",
+     "s": "PAED:13.9"
+    },
+    {
+     "t": "Phenobarbital, IV or IO, 20 mg/kg over 5 mins (max 600 mg/dose).",
+     "s": "PAED:13.9"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenobarbital, oral, 3–5 mg/kg/dose as single dose at night. · May be used in children under six months of age. · Not recommended as maintenance therapy for children older than",
+     "s": "PAED:13.26"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenobarbitone, IV, 20 mg/kg as a single dose.",
+     "s": "PAED:2.17"
+    },
+    {
+     "t": "Phenobarbitone, oral, 20–30 mg/kg as a single dose.",
+     "s": "PAED:2.17"
+    }
+   ]
+  },
+  {
+   "h": "Hypoxia-ischaemia of the Newborn (Perinatal Hypoxia/hypoxic-ischaemic Encephalopathy (HIE))",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenobarbitone, IV: · Loading dose: 20 mg/kg over 10 minutes. · Refractory seizures: Additional 10 mg/kg up to 40 mg/kg.",
+     "s": "PAED:19.46"
+    },
+    {
+     "t": "Phenobarbitone, IV or oral: · 4 mg/kg/day beginning 12–24 hours after the loading dose.",
+     "s": "PAED:19.46"
+    }
+   ]
+  },
+  {
+   "h": "Seizures, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenobarbitone, IV. · Loading dose: 20 mg/kg administered over 10 minutes. · Refractory seizures: Additional 10 mg/kg/dose up to 40 mg/kg.",
+     "s": "PAED:19.49"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used when benefit outweighs risk; neonatal sedation and withdrawal",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression",
+   "d": 1
+  },
+  {
+   "t": "Porphyria",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Enzyme inducer",
+   "d": 1
+  },
+  {
+   "t": "Additive respiratory depression with benzodiazepines",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, respiratory depression, hypotension with IV, behavioural change in children, rash",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, BP, level of consciousness",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-paeds",
+  "amphetamines",
+  "cocaine",
+  "hie-child",
+  "hie-neonate",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "lytes-paeds-hyperna",
+  "meningitis-neonate",
+  "op",
+  "paracetamol",
+  "tbi-paeds",
+  "tca"
+ ],
+ "link": [
+  "phenobarbitone",
+  "phenobarbital"
+ ],
+ "link_cs": []
+}

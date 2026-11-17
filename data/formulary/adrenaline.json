@@ -1,0 +1,311 @@
+{
+ "id": "adrenaline",
+ "type": "drug",
+ "name": "Adrenaline (epinephrine)",
+ "aliases": [
+  "epinephrine",
+  "adrenalin"
+ ],
+ "class": "Sympathomimetic – α and β agonist; vasopressor / inotrope",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "status": "PILOT – † lines checked against package insert 2026-11-15; awaiting review",
+ "sources": [
+  "HOSP",
+  "PAED",
+  "notes",
+  "pi",
+  "general"
+ ],
+ "pi_source": {
+  "title": "Adrenaline (Epinephrine) 1 mg/1 ml (1:1 000) Fresenius – professional information (SAHPRA repository, Oct 2022)",
+  "url": "https://pi-pil-repository.sahpra.org.za/wp-content/uploads/2022/10/1.3.1.1-Approved-PI-Adrenaline-Fresenius_10.2022.pdf"
+ },
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not stated in the package insert consulted",
+ "item_format": "t=text, s=source:printed page (s=pi: package insert), d=dagger, n=from own notes, b=bold, h=heading",
+ "summary": "First-line in anaphylaxis and cardiac arrest; infusion for shock not responding to fluids; nebulised for stridor.",
+ "forms": [
+  {
+   "t": "Injection 1:1000 = 1 mg/mL, 1 mL ampoule (contains sodium metabisulphite)",
+   "s": "pi"
+  },
+  {
+   "t": "1:10 000 (0.1 mg/mL): dilute 1 mL of 1:1000 in 9 mL sodium chloride 0.9% or sterile water",
+   "s": "PAED:1.9",
+   "b": 1
+  }
+ ],
+ "moa": [
+  {
+   "t": "α and β agonist",
+   "n": 1
+  },
+  {
+   "t": "α: vasoconstriction and rise in blood pressure",
+   "s": "pi"
+  },
+  {
+   "t": "β₁: cardiac stimulation; β effect on airways gives bronchodilation",
+   "s": "pi"
+  },
+  {
+   "t": "Reduces mucosal oedema and stabilises mast cells in anaphylaxis",
+   "d": 1
+  }
+ ],
+ "pk": [
+  {
+   "t": "Effects are short-lived because of rapid inactivation in the body",
+   "s": "pi"
+  },
+  {
+   "t": "IV onset immediate; IM onset about 5 minutes; inactive orally; metabolised by COMT and MAO",
+   "d": 1
+  }
+ ],
+ "dosing": [
+  {
+   "h": "Anaphylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "0.5 mL of 1:1000 IM immediately into the anterolateral thigh; repeat every 5 minutes as required",
+     "s": "HOSP:20.12",
+     "b": 1
+    },
+    {
+     "t": "Persistent hypotension or multiple repeat doses: IV infusion, start 0.05 mcg/kg/minute, titrate to response",
+     "s": "HOSP:20.12"
+    }
+   ]
+  },
+  {
+   "h": "Anaphylaxis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "0.01 mL/kg of 1:1000 (undiluted) IM (= 10 mcg/kg); max 0.5 mL per dose; repeat every 5 minutes if necessary",
+     "s": "PAED:1.5",
+     "b": 1
+    },
+    {
+     "t": "IV infusion 0.02 mcg/kg/minute: mix 0.06 mg/kg in 50 mL dextrose 5%; 1 mL/hour = 0.02 mcg/kg/minute",
+     "s": "PAED:1.6"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac arrest",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "1 mL of 1:1000 (1 mg) IV or IO immediately; flush with 5–10 mL sterile water or sodium chloride 0.9%; repeat every 3–5 minutes",
+     "s": "HOSP:20.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Cardiac arrest",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "0.1 mL/kg of 1:10 000 IV/IO (= 10 mcg/kg); follow each dose with a small bolus of sodium chloride 0.9%",
+     "s": "PAED:1.9",
+     "b": 1
+    },
+    {
+     "t": "Shockable rhythm: repeat after every 2nd shock, i.e. every 4 minutes",
+     "s": "PAED:1.11"
+    },
+    {
+     "t": "ETT adrenaline is no longer recommended",
+     "s": "PAED:1.9"
+    }
+   ]
+  },
+  {
+   "h": "Shock (septic, neurogenic, post-arrest)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "IV infusion, start 0.05 mcg/kg/minute (post-cardiac arrest: 0.1 mcg/kg/minute), titrate to response",
+     "s": "HOSP:20.24"
+    },
+    {
+     "t": "Range 0.01–1.0 mcg/kg/minute; aim for MAP > 65 mmHg within 30 minutes",
+     "s": "HOSP:23.4"
+    }
+   ]
+  },
+  {
+   "h": "Shock / bradyarrhythmia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "IV infusion 0.05–2 mcg/kg/minute",
+     "s": "PAED:4.5"
+    }
+   ]
+  },
+  {
+   "h": "Stridor (croup, anaphylaxis)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Nebulise 1 mL of 1:1000 diluted in 1 mL sodium chloride 0.9%, with oxygen, every 15–30 minutes until expiratory obstruction is abolished",
+     "s": "PAED:15.32"
+    }
+   ]
+  },
+  {
+   "h": "Stridor",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "1 mL of 1:1000 nebulised",
+     "s": "HOSP:17.2"
+    }
+   ]
+  }
+ ],
+ "administration": [
+  {
+   "t": "Adult infusion: 10 mg (10 ampoules of 1:1000) in 1 L sodium chloride 0.9% = 10 mcg/mL",
+   "s": "HOSP:20.12",
+   "b": 1
+  },
+  {
+   "t": "Rate at 0.05 mcg/kg/minute: 50 kg = 15 mL/h; 60 kg = 18; 70 kg = 21; 80 kg = 24; 90 kg = 27; 100 kg = 30 mL/h. Multiply for higher doses (0.1 mcg/kg/minute = double)",
+   "s": "HOSP:20.12"
+  },
+  {
+   "t": "IM into the anterolateral thigh; avoid the buttock (risk of tissue necrosis)",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Extravasation may cause tissue necrosis and sloughing",
+   "s": "pi"
+  },
+  {
+   "t": "Give infusions through a large vein where possible",
+   "d": 1
+  }
+ ],
+ "adjustments": [
+  {
+   "h": "Pregnancy",
+   "t": "Crosses the placenta; use only if the benefit justifies the risk. Parenteral use is not recommended during the second stage of labour (may delay it and cause uterine atony)",
+   "s": "pi"
+  },
+  {
+   "h": "Lactation",
+   "t": "Distributed into breast milk; avoid breastfeeding during treatment",
+   "s": "pi"
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Contraindications are relative, because adrenaline is used in life-threatening emergencies",
+   "s": "pi"
+  },
+  {
+   "t": "Do not inject into fingers, toes, ears, nose or genitalia (ischaemic necrosis)",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Monoamine oxidase inhibitors, or within 14 days of stopping them",
+   "s": "pi"
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Heart disease, cerebrovascular disease, hyperthyroidism, diabetes, phaeochromocytoma, narrow-angle glaucoma, severe renal impairment, the elderly",
+   "s": "pi"
+  },
+  {
+   "t": "Non-selective β-blockers: severe hypertension and reflex bradycardia; anaphylaxis may respond poorly",
+   "s": "pi"
+  },
+  {
+   "t": "Tricyclic antidepressants potentiate the effect; halogenated anaesthetics may induce ventricular fibrillation",
+   "s": "pi"
+  },
+  {
+   "t": "Check the concentration (1:1000 vs 1:10 000) before every IV dose",
+   "d": 1,
+   "b": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Palpitations, tachycardia, hypertension, potentially fatal ventricular arrhythmias, myocardial ischaemia / infarction",
+   "s": "pi"
+  },
+  {
+   "t": "Hyperglycaemia, hypokalaemia, metabolic (lactic) acidosis",
+   "s": "pi"
+  },
+  {
+   "t": "Tremor, anxiety",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Observe for 24 hours after anaphylaxis for a biphasic reaction",
+   "s": "PAED:1.6"
+  },
+  {
+   "t": "Continuous ECG, BP and pulse during IV use",
+   "d": 1
+  }
+ ],
+ "toxicity": [
+  {
+   "t": "Overdose: symptomatic and supportive; a rapidly acting α-blocker (phentolamine) followed by a β-blocker has been used",
+   "s": "pi"
+  }
+ ],
+ "conflicts": [
+  {
+   "t": "Package insert: the 1:1000 solution is not suitable for IV use and must be diluted to 1:10 000 before IV use. The Adult STG gives 1 mL of 1:1000 IV followed by a flush in cardiac arrest. The pathway follows the STG.",
+   "s": "pi",
+   "b": 1
+  }
+ ],
+ "see_also": [
+  "hydrocortisone",
+  "salbutamol",
+  "sodium-chloride-0.9"
+ ],
+ "used_in": [
+  "appy-adult",
+  "ards-adult",
+  "brady-adult",
+  "chol-adult",
+  "croup-paeds",
+  "fluids-adult-shock",
+  "fluids-paeds-shock",
+  "hf-paeds",
+  "hie-adult",
+  "hie-child",
+  "hie-neonate",
+  "lrti-adult",
+  "miscarriage",
+  "panc-adult",
+  "rf-paeds",
+  "rsi-adult",
+  "sofa",
+  "uds",
+  "vds"
+ ],
+ "verified": true,
+ "link": [
+  "epinephrine",
+  "adrenaline"
+ ],
+ "link_cs": []
+}

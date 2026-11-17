@@ -1,0 +1,89 @@
+{
+ "id": "calcium-carbonate",
+ "type": "drug",
+ "name": "Calcium carbonate",
+ "aliases": [],
+ "class": "Calcium supplement / phosphate binder / antacid",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Provides calcium, binds dietary phosphate, neutralises gastric acid",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "How to manage hypertensive disorders in pregnancy",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "1 gram elemental calcium in divided doses (e.g. calcium carbonate, oral, 500 mg 12 hourly or 1 g in the morning). • For women at high risk of pre-eclampsia, e.g. pre-eclampsia in a previous pregnancy, chronic hypertension or",
+     "s": "impcg2024:105"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (Renal Failure, Chronic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Calcium carbonate, oral, 1–4 tablets chewed 8 hourly with meals. · 1 tablet is equivalent to 0.168 g elemental calcium.",
+     "s": "PAED:6.24"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for pre-eclampsia prevention",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypercalcaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduces absorption of iron, levothyroxine, quinolones, tetracyclines and dolutegravir – separate doses",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Constipation, hypercalcaemia, milk-alkali syndrome",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Calcium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-adult",
+  "ckd-paeds",
+  "lytes-paeds-phos-refeed"
+ ],
+ "link": [
+  "calcium carbonate"
+ ],
+ "link_cs": []
+}

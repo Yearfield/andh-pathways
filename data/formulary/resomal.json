@@ -1,0 +1,68 @@
+{
+ "id": "resomal",
+ "type": "drug",
+ "name": "ReSoMal",
+ "aliases": [],
+ "class": "Rehydration solution for severe acute malnutrition",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Lower sodium and higher potassium than standard ORS, with added magnesium and zinc",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [],
+ "contraindications": [
+  {
+   "t": "Shock",
+   "d": 1
+  },
+  {
+   "t": "Cholera or profuse watery diarrhoea (use standard ORS)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give slowly with frequent reassessment",
+   "d": 1
+  },
+  {
+   "t": "Stop if respiratory or pulse rate rises",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Fluid overload and heart failure if given too fast",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, pulse, liver edge, weight",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fluids-paeds-sam"
+ ],
+ "link": [],
+ "link_cs": [
+  "ReSoMal"
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "id": "albendazole",
+ "type": "drug",
+ "name": "Albendazole",
+ "aliases": [],
+ "class": "Anthelmintic – benzimidazole",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits microtubule formation in the worm",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hydatid Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Albendazole, oral, 15 mg/kg/day up to maximum of 400 mg 12 hourly",
+     "s": "HOSP:9.15"
+    }
+   ]
+  },
+  {
+   "h": "Neurocysticercosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Albendazole, oral, 12 hourly for 8 days. · ≥ 60 kg: 400 mg. · < 60 kg: 7.5 mg/kg to a maximum of 800 mg daily.",
+     "s": "HOSP:14.43"
+    }
+   ]
+  },
+  {
+   "h": "Helminthic Infestation, Tapeworm",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Albendazole, oral, daily for 3 days. · Children 1–2 years: 200 mg · Children ≥ 2 years and adults: 400 mg",
+     "s": "PHC:2.20"
+    }
+   ]
+  },
+  {
+   "h": "Helminthic Infestation, Excluding Tapeworm",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Albendazole, oral Children 1-2 years of age: · 200mg as a single dose.",
+     "s": "PHC:2.22"
+    },
+    {
+     "t": "Albendazole, oral, Children 1–2 years: 15 · 200 mg as a single dose.",
+     "s": "PHC:2.22"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Iron Deficiency",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Albendazole, oral, single dose. · Children 1–2 years: 200 mg as a single dose. · Children ≥ 2 years and adults: 400 mg as a single dose.",
+     "s": "PHC:3.3"
+    }
+   ]
+  },
+  {
+   "h": "Sandworm",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Albendazole, oral: · Children <2 years of age: 200 mg daily for 3 days · Children ≥ 2 years of age and adults: 400 mg daily for 3 days",
+     "s": "PHC:5.19"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Diarrhoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Albendazole, oral, 7.5 mg/kg/dose 12 hourly. (Specialist supervision.)",
+     "s": "PAED:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Helminthiasis, Intestinal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Albendazole, oral, daily for three days. · If 1–2 years of age: 200 mg. · If > 2 years of age: 400 mg.",
+     "s": "PAED:8.2"
+    }
+   ]
+  },
+  {
+   "h": "Cutaneous Larva Migrans/ancylostoma Braziliense (Dog Hookworm)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Albendazole, oral, daily for 3 days. · If 1–2 years of age: 200 mg. · If > 2 years of age: 400 mg.",
+     "s": "PAED:8.3"
+    }
+   ]
+  },
+  {
+   "h": "Hydatid Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Albendazole, oral, 15 mg/kg/day up to a maximum of 400 mg 12 hourly with a fatty meal (e.g. a glass of full cream milk). · Duration is 3–6 months according to response on imaging for",
+     "s": "PAED:8.4"
+    }
+   ]
+  },
+  {
+   "h": "Neurocysticercosis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Albendazole, oral, 7.5 mg/kg/dose 12 hourly for 7 days. · Maximum dose: 400 mg/dose.",
+     "s": "PAED:13.36"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid in the first trimester",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "First trimester",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take with fatty food for tissue infections",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Abdominal pain, headache, raised liver enzymes and marrow suppression on prolonged courses",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function and FBC on prolonged courses",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "sam"
+ ],
+ "link": [
+  "albendazole"
+ ],
+ "link_cs": []
+}

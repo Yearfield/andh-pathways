@@ -1,0 +1,183 @@
+{
+ "id": "tetanus-toxoid",
+ "type": "drug",
+ "name": "Tetanus toxoid",
+ "aliases": [
+  "tetanus immunoglobulin",
+  "tetanus vaccine"
+ ],
+ "class": "Vaccine / immunoglobulin for tetanus prophylaxis",
+ "group": "Vaccines and immunoglobulins",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Toxoid induces active immunity, tetanus immunoglobulin gives immediate passive protection",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Tetanus",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tetanus immunoglobulin, IM, 3 000 units as a single dose.",
+     "s": "HOSP:9.19"
+    },
+    {
+     "t": "Tetanus toxoid vaccine, IM, 0.5 mL, total of 3 doses: o on admission, o at 4 weeks, and",
+     "s": "HOSP:9.19"
+    }
+   ]
+  },
+  {
+   "h": "Snake Bites",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tetanus immunoglobulin, human, IM, 250 units immediately.",
+     "s": "HOSP:19.3"
+    },
+    {
+     "t": "Tetanus toxoid vaccine, IM, 0.5 mL immediately, if not previously immunised within the last 5 years.",
+     "s": "HOSP:19.3"
+    }
+   ]
+  },
+  {
+   "h": "Other Vaccines",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "TT, IM, 0.5 mL into arm. · Storage: - Fridge: middle shelf at 2–8°C.",
+     "s": "PHC:13.12"
+    }
+   ]
+  },
+  {
+   "h": "Animal Bites",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Tetanus toxoid vaccine (TT), IM, 0.5 mL. Note: In a fully immunised person, tetanus toxoid vaccine or tetanus immunoglobulin may produce an unpleasant reaction, e.g. redness, itching, swelling or fever, but in the case o",
+     "s": "PHC:21.36"
+    }
+   ]
+  },
+  {
+   "h": "Insect Stings, Scorpion Stings and Spider Bites",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Tetanus toxoid vaccine (TT), IM, 0.5 mL.",
+     "s": "PHC:21.39"
+    }
+   ]
+  },
+  {
+   "h": "Tetanus",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Tetanus immunoglobulin, IM, 3000 IU as a single dose.",
+     "s": "PAED:8.35"
+    },
+    {
+     "t": "Tetanus immunoglobulin (TIG), IM. · If < 5 years of age: 75 IU. · If 5–10 years of age: 125 IU.",
+     "s": "PAED:8.36"
+    },
+    {
+     "t": "Tetanus toxoid (TT), IM, 0.5 mL. · Not required in immunised patients who have received a booster within the past 5 years.",
+     "s": "PAED:8.36"
+    }
+   ]
+  },
+  {
+   "h": "Snakebite",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Tetanus immunoglobulin, IM. · If < 5 years of age: 75 IU. · If 5–10 years of age: 125 IU.",
+     "s": "PAED:18.33"
+    },
+    {
+     "t": "Tetanus toxoid, IM, 0.5 mL.",
+     "s": "PAED:18.33"
+    }
+   ]
+  },
+  {
+   "h": "Rabies",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Tetanus toxoid (TT), IM, 0.5 mL.",
+     "s": "PAED:8.33"
+    }
+   ]
+  },
+  {
+   "h": "Scorpion Stings",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Tetanus toxoid, IM, 0.5 mL. Complete course in previously unvaccinated patients.",
+     "s": "PAED:18.31"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – part of antenatal care",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Previous anaphylaxis to the vaccine",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give toxoid and immunoglobulin at separate sites",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Local pain and swelling, fever",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bsi-adult",
+  "burns_adult",
+  "fluids-adult-burns",
+  "fracture-adult",
+  "fracture-paeds",
+  "tbi-adult",
+  "tbi-paeds"
+ ],
+ "link": [
+  "tetanus immunoglobulin",
+  "tetanus vaccine",
+  "tetanus toxoid"
+ ],
+ "link_cs": []
+}

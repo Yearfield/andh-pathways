@@ -1,0 +1,139 @@
+{
+ "id": "mannitol",
+ "type": "drug",
+ "name": "Mannitol",
+ "aliases": [],
+ "class": "Osmotic diuretic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Raises plasma osmolality, drawing water out of brain tissue, osmotic diuresis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Acute Angle-closure Glaucoma",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Mannitol, IV, 1.5–2 g/kg as a 20% solution over 30–60 minutes.",
+     "s": "HOSP:18.6"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Acute Bacterial",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Mannitol, IV, 250 mg/kg administered over 30–60 minutes.",
+     "s": "PAED:8.22"
+    }
+   ]
+  },
+  {
+   "h": "Meningo-encephalitis/encephalitis, Acute Viral",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Mannitol, IV, 250 mg/kg administered over 30–60 minutes. · Do not repeat without consulting a paediatrician.",
+     "s": "PAED:8.27"
+    }
+   ]
+  },
+  {
+   "h": "Raised Intracranial Pressure",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Mannitol, IV, 250 mg/kg administered over 30–60 minutes. · Do not exceed two doses without consulting with a specialist.",
+     "s": "PAED:13.50"
+    }
+   ]
+  },
+  {
+   "h": "Traumatic Brain Injury (TBI) and Neuro- Protection in the ICU",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Mannitol, IV, 0.5–1 g/kg over 10 minutes, may be repeated 6 hourly.",
+     "s": "PAED:23.25"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Anuria",
+   "d": 1
+  },
+  {
+   "t": "Severe heart failure or pulmonary oedema",
+   "d": 1
+  },
+  {
+   "t": "Severe dehydration",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Use a filter (crystals)",
+   "d": 1
+  },
+  {
+   "t": "Needs a urinary catheter",
+   "d": 1
+  },
+  {
+   "t": "Extravasation causes necrosis",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Fluid overload initially then hypovolaemia, electrolyte disturbance, acute kidney injury, rebound rise in intracranial pressure",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Urine output, electrolytes, serum osmolality where available",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bloodgas-causes",
+  "bloodgas_causes",
+  "dka-paeds",
+  "hie-child",
+  "meningitis-paeds",
+  "tbi-adult",
+  "tbi-paeds"
+ ],
+ "link": [
+  "mannitol"
+ ],
+ "link_cs": []
+}

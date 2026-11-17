@@ -1,0 +1,182 @@
+{
+ "id": "lactulose",
+ "type": "drug",
+ "name": "Lactulose",
+ "aliases": [],
+ "class": "Osmotic laxative",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Non-absorbed disaccharide: draws water into the bowel, acidifies the colon, trapping ammonia",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lactulose, oral, 10–30 mL 8 hourly, titrated to attain 2–3 soft stools per day.",
+     "s": "HOSP:1.10"
+    }
+   ]
+  },
+  {
+   "h": "Portal Hypertension and Cirrhosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lactulose, oral, 10–30 mL 8 hourly, depending on stool number and consistency (aim for 2 soft stools/day).",
+     "s": "HOSP:1.12"
+    }
+   ]
+  },
+  {
+   "h": "Constipation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lactulose, oral, 15–30 mL 12–24 hourly.",
+     "s": "HOSP:24.3"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of Adverse Effects of Chronic Opioid Use",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lactulose, oral, 10–20 mL 12–24 hourly.",
+     "s": "HOSP:25.6"
+    }
+   ]
+  },
+  {
+   "h": "Anal Fissures",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lactulose, oral, 0.5 mL/kg/dose once daily. See dosing tables: Appendix IV. · If poor response, increase frequency to 12 hourly.",
+     "s": "PHC:2.6"
+    },
+    {
+     "t": "Lactulose, oral, 10–20 mL once daily. · If poor response, increase frequency to 12 hourly.",
+     "s": "PHC:2.6"
+    }
+   ]
+  },
+  {
+   "h": "Constipation",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lactulose, oral, 0.5 mL/kg/dose once daily. See dosing table: Appendix IV. · If poor response, increase frequency to 12 hourly.",
+     "s": "PHC:2.10"
+    },
+    {
+     "t": "Lactulose, oral 10–20 mL once or twice daily.",
+     "s": "PHC:2.10"
+    },
+    {
+     "t": "Lactulose, oral, 10 to 30 mL 12 to 24 hourly. 3 Children",
+     "s": "PHC:22.3"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Lactulose, oral, 0.5 mL/kg/dose once daily. · If poor response, increase frequency to 12 hourly. Weight Syrup Age",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lactulose, oral, 1 g/kg/dose (1.5 mL/kg/dose) 4–8 hourly via nasogastric tube, then adjust dose to produce 2–3 soft stools daily.",
+     "s": "PAED:2.35"
+    }
+   ]
+  },
+  {
+   "h": "Acute Pain",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lactulose, oral: · 1-11 months: 5 mL daily, adjusted according to response",
+     "s": "PAED:20.11"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Intestinal obstruction",
+   "d": 1
+  },
+  {
+   "t": "Galactosaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "In hepatic encephalopathy titrate to 2–3 soft stools daily",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Flatulence, cramps, diarrhoea, electrolyte loss if excessive",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Stool frequency, electrolytes if diarrhoea",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "brady-adult",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "fracture-paeds",
+  "hcc-adult",
+  "lytes-adult-hyperk",
+  "prb-adult",
+  "prb-paeds",
+  "ugib-adult"
+ ],
+ "link": [
+  "lactulose"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,97 @@
+{
+ "id": "fosfomycin",
+ "type": "drug",
+ "name": "Fosfomycin",
+ "aliases": [],
+ "class": "Antibiotic – phosphonic acid derivative",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits MurA, the first step of peptidoglycan synthesis, concentrates in urine",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cystitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fosfomycin, oral, 3 g as a single dose",
+     "s": "HOSP:6.32"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fosfomycin 3 g, oral, as a single dose.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Malaria",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Fosfomycin, oral, 3 g as a single dose OR · Nitrofurantoin 100mg 6 hourly for 5 days",
+     "s": "impcg2024:147"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe renal impairment (eGFR < 10)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Single oral dose for uncomplicated cystitis",
+   "d": 1
+  },
+  {
+   "t": "Take on an empty stomach",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, nausea, headache",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "uti-adult",
+  "uti-pregnancy"
+ ],
+ "link": [
+  "fosfomycin"
+ ],
+ "link_cs": []
+}

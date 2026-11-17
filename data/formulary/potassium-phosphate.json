@@ -1,0 +1,82 @@
+{
+ "id": "potassium-phosphate",
+ "type": "drug",
+ "name": "Potassium phosphate",
+ "aliases": [
+  "KPO₄"
+ ],
+ "class": "Electrolyte replacement",
+ "group": "Electrolytes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces phosphate (and potassium)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [],
+ "contraindications": [
+  {
+   "t": "Hyperphosphataemia",
+   "d": 1
+  },
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  },
+  {
+   "t": "Hypocalcaemia",
+   "d": 1
+  },
+  {
+   "t": "Severe renal impairment",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Infuse slowly",
+   "d": 1
+  },
+  {
+   "t": "Do not mix with calcium",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypocalcaemia, hyperkalaemia, metastatic calcification, hypotension if rapid",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Phosphate, calcium, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lytes-adult-phos-refeed",
+  "lytes-paeds-hypok",
+  "lytes-paeds-phos-refeed"
+ ],
+ "link": [
+  "potassium phosphate"
+ ],
+ "link_cs": [
+  "KPO₄"
+ ]
+}

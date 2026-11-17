@@ -1,0 +1,186 @@
+{
+ "id": "vitamin-k",
+ "type": "drug",
+ "name": "Vitamin K",
+ "aliases": [
+  "phytomenadione",
+  "phytonadione",
+  "phytomenodione"
+ ],
+ "class": "Vitamin (phytomenadione)",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Co-factor for carboxylation of clotting factors II, VII, IX and X",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hepatitis, Non-viral",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vitamin K1, IV, 10 mg · Administer as a slow IV injection. · Do not dilute or mix with other injectables.",
+     "s": "HOSP:1.9"
+    }
+   ]
+  },
+  {
+   "h": "Anticoagulant (Warfarin and Rodenticide Superwarfarin) Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vitamin K1, oral, 10 to 20 mg. · Check INR at least 12 hours after vitamin K1 has been administered. Repeated doses should be guided by further INR (or",
+     "s": "HOSP:19.42"
+    },
+    {
+     "t": "Vitamin K1, oral, 0.5 to 1.0 mg (one tenth of the normal dose). · A repeat dose may be given 12 to 24 hrs later if the INR remains ≥8.",
+     "s": "HOSP:19.43"
+    }
+   ]
+  },
+  {
+   "h": "Routine Care of the Neonate",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Vitamin K, IM, 1 mg immediately after birth routinely. · Administer in the antero lateral aspect of the mid-thigh. PHC Ch6_Last updated 30 July 2026",
+     "s": "PHC:6.26"
+    }
+   ]
+  },
+  {
+   "h": "Prematurity/preterm Neonate",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin K, IM, 0.5–1 mg.",
+     "s": "PAED:19.20"
+    }
+   ]
+  },
+  {
+   "h": "Anticoagulant Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin K1, IV/oral, 1–5 mg/dose administered slowly.",
+     "s": "PAED:18.7"
+    }
+   ]
+  },
+  {
+   "h": "Salicylate Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin K1, IV/oral, 1–5 mg/dose administered slowly 6 hourly.",
+     "s": "PAED:18.22"
+    }
+   ]
+  },
+  {
+   "h": "Haemorrhagic Disease of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin K1, IM, 1 mg as a single dose.",
+     "s": "PAED:19.56"
+    },
+    {
+     "t": "Vitamin K1, IM, single dose at birth. Full term newborns: 1 mg. Preterm newborns: 0.5 mg.",
+     "s": "PAED:19.56"
+    }
+   ]
+  },
+  {
+   "h": "Cirrhosis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin K1 (phytomenadione), oral, 2–5 mg three times weekly. · Monitor INR and titrate dose accordingly. · In the presence of cholestatic jaundice vitamin K should be given",
+     "s": "PAED:2.27"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin K1 (phytomenodione), IV, 2.5–10 mg daily. · Monitor response to vitamin K1 with INR and PTT.",
+     "s": "PAED:2.36"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give IV slowly",
+   "d": 1
+  },
+  {
+   "t": "Onset takes hours – give plasma as well for major bleeding",
+   "d": 1
+  },
+  {
+   "t": "Large doses make re-warfarinisation difficult",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Anaphylactoid reaction with rapid IV injection",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "INR",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "chol-adult",
+  "cirrhosis-adult",
+  "prb-adult",
+  "prb-paeds",
+  "superwarfarin",
+  "ugib-adult",
+  "ugib-paeds"
+ ],
+ "link": [
+  "phytomenodione",
+  "phytomenadione",
+  "phytonadione",
+  "vitamin K"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,66 @@
+{
+ "id": "oxymetazoline",
+ "type": "drug",
+ "name": "Oxymetazoline",
+ "aliases": [],
+ "class": "Topical nasal decongestant (α agonist)",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Constricts nasal mucosal vessels",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Short-term use only",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Infants (per product age limits)",
+   "d": 1
+  },
+  {
+   "t": "With MAOIs",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Limit to 5 days",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rebound congestion (rhinitis medicamentosa), local irritation",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "sinusitis-adult",
+  "sinusitis-paeds"
+ ],
+ "link": [
+  "oxymetazoline"
+ ],
+ "link_cs": []
+}

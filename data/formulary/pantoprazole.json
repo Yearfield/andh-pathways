@@ -1,0 +1,133 @@
+{
+ "id": "pantoprazole",
+ "type": "drug",
+ "name": "Pantoprazole",
+ "aliases": [],
+ "class": "Proton pump inhibitor",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Irreversibly inhibits gastric H+/K+-ATPase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Gastro-oesophageal Reflux Disease (GORD) and Dyspepsia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pantoprazole, oral, 40 mg daily for 4 weeks. · Ensure adherence to promote healing.",
+     "s": "HOSP:1.3"
+    },
+    {
+     "t": "Pantoprazole, oral, 40 mg daily. · Decrease dose of PPI after 4 weeks, e.g.: pantoprazole, oral, 20 mg daily except for severe endoscopic GORD (Grade C or D LA",
+     "s": "HOSP:1.3"
+    },
+    {
+     "t": "Pantoprazole, oral, 40 mg daily.",
+     "s": "HOSP:1.3"
+    }
+   ]
+  },
+  {
+   "h": "Peptic Ulcer",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pantoprazole, oral, 40 mg 12 hourly for 14 days.",
+     "s": "HOSP:1.7"
+    },
+    {
+     "t": "Pantoprazole, oral, 40 mg daily. · Duodenal ulcer: for up to 4 weeks. · Gastric ulcer: for up to 8 weeks.",
+     "s": "HOSP:1.8"
+    },
+    {
+     "t": "Pantoprazole, oral, 40 mg daily. Specialist initiated.",
+     "s": "HOSP:1.8"
+    }
+   ]
+  },
+  {
+   "h": "Stress Ulcer Prophylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pantoprazole, IV, 40 mg daily. · Stop stress ulcer prophylaxis once the patient is tolerating enteral feeds as prolonged PPI use increases the risk of hospital acquired",
+     "s": "HOSP:23.25"
+    }
+   ]
+  },
+  {
+   "h": "Dyspepsia, Heartburn and Indigestion, in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Pantoprazole, oral, 40 mg daily for a maximum of 14 days. · Also indicated for short-term use in pregnancy. · Refer if symptoms recur after 14-day course of therapy.",
+     "s": "PHC:2.4"
+    }
+   ]
+  },
+  {
+   "h": "Burns",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Pantoprazole, IV, 0.5 mg/kg/dose 12 hourly. OR  Ranitidine, IV, 1 mg/kg 6 hourly.",
+     "s": "PAED:1.28"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduces absorption of atazanavir and rilpivirine",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Headache, diarrhoea, hypomagnesaemia, C. difficile and fracture risk with long-term use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "burns_adult",
+  "fluids-adult-burns",
+  "gerd-adult",
+  "pud-adult",
+  "ugib-adult",
+  "ugib-paeds"
+ ],
+ "link": [
+  "pantoprazole"
+ ],
+ "link_cs": []
+}

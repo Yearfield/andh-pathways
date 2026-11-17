@@ -1,0 +1,101 @@
+{
+ "id": "emtricitabine",
+ "type": "drug",
+ "name": "Emtricitabine",
+ "aliases": [
+  "FTC"
+ ],
+ "class": "Antiretroviral – nucleoside reverse transcriptase inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Cytidine analogue (interchangeable with lamivudine), active against hepatitis B",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Table 33: ART dosing and important adverse effects",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Emtricitabine (FTC) · NRTI · 200 mg daily • Anaemia due to pure red cell aplasia (rare). • Hypersensitivity reaction (1 to 6 weeks): fever, rash, constitutional",
+     "s": "hiv2026:106"
+    }
+   ]
+  },
+  {
+   "h": "Pre-exposure Prophylaxis (Prep)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Emtricitabine, oral, 200 mg daily. · Note: To reach adequate protective levels in tissues, 7 days of daily dosing are required. Individuals should be counselled that additional barrier protection should",
+     "s": "PHC:11.57"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Occupational",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Emtricitabine (FTC), oral, 200 mg daily for 4 weeks.",
+     "s": "PHC:21.54"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Hepatitis B may flare if stopped",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Well tolerated, headache, skin hyperpigmentation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Viral load per guideline",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-defaulter-adult",
+  "hiv-new-adult"
+ ],
+ "link": [
+  "emtricitabine"
+ ],
+ "link_cs": [
+  "FTC"
+ ]
+}

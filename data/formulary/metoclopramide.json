@@ -1,0 +1,246 @@
+{
+ "id": "metoclopramide",
+ "type": "drug",
+ "name": "Metoclopramide",
+ "aliases": [],
+ "class": "Antiemetic – dopamine antagonist prokinetic",
+ "group": "Gastrointestinal",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks D2 receptors in the chemoreceptor trigger zone and increases upper GI motility",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hepatitis B, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, IV/oral, 10 mg 8 hourly as required. Hepatitis B virus: prophylaxis following exposure e.g. needle stick injury S61.0 +",
+     "s": "HOSP:1.13"
+    }
+   ]
+  },
+  {
+   "h": "Hyperemesis Gravidarum",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, oral/IV, 10–20 mg 6 hourly as needed.",
+     "s": "HOSP:6.22"
+    }
+   ]
+  },
+  {
+   "h": "Renal Calculi",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, IM, 10 mg 8 hourly.",
+     "s": "HOSP:7.25"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Neuropathies",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, oral, 10 mg 8 hourly, 30 minutes before meals.",
+     "s": "HOSP:8.17"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of Ponv",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, IM/IV · If <60 kg: 5 mg IM or IV (over 2 minutes). · If ≥60 kg: 10 mg IM or IV (over 2 minutes).",
+     "s": "HOSP:12.13"
+    }
+   ]
+  },
+  {
+   "h": "Migraine",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, oral/IM, 10 mg 8 hourly, as required.",
+     "s": "HOSP:14.33"
+    }
+   ]
+  },
+  {
+   "h": "Theophylline Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, IV/oral, 10 mg 8 hourly as required.",
+     "s": "HOSP:19.25"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metoclopramide, oral/IM/IV, 10 mg 8 hourly, 30 minutes before a meal.",
+     "s": "HOSP:24.4"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting, Non-specific",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Metoclopramide, IM/IV, 10 mg 8 hourly.",
+     "s": "PHC:2.5"
+    },
+    {
+     "t": "Metoclopramide, oral, 10 mg 8 hourly.",
+     "s": "PHC:2.5"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Neuropathy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Metoclopramide, oral, 10 mg 8 hourly before meals.",
+     "s": "PHC:9.18"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Metoclopramide, oral, 10 mg, 8 hourly as needed. · In renal impairment start with a dose of 5 mg, 8 hourly. 5 · Increase according to clinical response using alternate 5 mg and",
+     "s": "PHC:22.4"
+    },
+    {
+     "t": "Metoclopramide, oral, 0.1 mg/kg/dose, 8 to 12 hourly. Weight Dose Syrup Age kg mg 5 mg/5 mL months/years",
+     "s": "PHC:22.4"
+    }
+   ]
+  },
+  {
+   "h": "Key recommendations:",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Metoclopramide 10 mg 8 hourly orally if severe • Consider mental-health related reasons for vomiting Key recommendations:",
+     "s": "impcg2024:47"
+    }
+   ]
+  },
+  {
+   "h": "Headaches",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metoclopramide, oral, 0.15–0.3 mg/kg as a single dose.",
+     "s": "PAED:13.35"
+    },
+    {
+     "t": "Metoclopramide, IM/IV, 0.1 mg/kg as a single dose.",
+     "s": "PAED:13.35"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metoclopramide, oral or IV: · Neonates: 100 mcg/kg 6–8 hourly. · 1–11 months (up to 10 kg): 100 mcg/kg 12 hourly.",
+     "s": "PAED:21.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for nausea in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "GI obstruction or perforation",
+   "d": 1
+  },
+  {
+   "t": "Phaeochromocytoma",
+   "d": 1
+  },
+  {
+   "t": "Parkinson's disease",
+   "d": 1
+  },
+  {
+   "t": "Epilepsy (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give IV slowly",
+   "d": 1
+  },
+  {
+   "t": "Limit to 5 days",
+   "d": 1
+  },
+  {
+   "t": "Avoid in children under 1 year and use with caution under 20 years",
+   "d": 1
+  },
+  {
+   "t": "Treat dystonia with biperiden or promethazine",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Acute dystonia and oculogyric crisis (especially young adults and children), drowsiness, restlessness, tardive dyskinesia with long use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "appy-adult",
+  "bo-adult",
+  "chol-adult",
+  "gerd-adult",
+  "hcc-adult",
+  "hypoglycemia-pregnancy",
+  "panc-adult",
+  "pud-adult"
+ ],
+ "link": [
+  "metoclopramide"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,156 @@
+{
+ "id": "simvastatin",
+ "type": "drug",
+ "name": "Simvastatin",
+ "aliases": [],
+ "class": "HMG-CoA reductase inhibitor (statin)",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits hepatic cholesterol synthesis and upregulates LDL receptors",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Ischaemic Heart Disease and Atherosclerosis, Prevention",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Simvastatin, oral, 10 mg at night. OR Consult specialist for further management.",
+     "s": "HOSP:3.3"
+    }
+   ]
+  },
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Simvastatin, oral, 10–20 mg at night.",
+     "s": "HOSP:3.8"
+    }
+   ]
+  },
+  {
+   "h": "Non-st Elevation Myocardial Infarction (NSTEMI) and Unstable Angina (Ua)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Simvastatin, oral, 10 mg at night.",
+     "s": "HOSP:3.11"
+    }
+   ]
+  },
+  {
+   "h": "Transient Ischaemic Attack (Tia)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Simvastatin, oral, 40 mg at night.",
+     "s": "HOSP:14.4"
+    }
+   ]
+  },
+  {
+   "h": "Spinal Cord Injury, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Simvastatin 40 mg, oral (secondary prevention of ischaemic events): Cholesterol Treatment Trialists' (CTT) Collaboration. Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from",
+     "s": "HOSP:14.51"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Stable",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Simvastatin, oral, 10mg at night. OR Refer for further management.",
+     "s": "PHC:4.6"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (Renal Failure, Chronic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Simvastatin, oral, 10 mg at night. · Maximum dose: 20 mg at night. Refer for advice on management.",
+     "s": "PAED:6.25"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active liver disease",
+   "d": 1
+  },
+  {
+   "t": "Pregnancy and breastfeeding",
+   "d": 1
+  },
+  {
+   "t": "With protease inhibitors or strong CYP3A4 inhibitors",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Maximum 20 mg with amlodipine",
+   "d": 1
+  },
+  {
+   "t": "Contraindicated with protease inhibitors, clarithromycin, itraconazole – use atorvastatin or rosuvastatin instead",
+   "d": 1
+  },
+  {
+   "t": "Take at night",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Myalgia, myopathy, rhabdomyolysis, raised transaminases",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ALT if symptomatic, CK if muscle symptoms",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "cad-adult",
+  "stroke",
+  "tia"
+ ],
+ "link": [
+  "simvastatin"
+ ],
+ "link_cs": []
+}

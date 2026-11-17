@@ -1,0 +1,282 @@
+{
+ "id": "metronidazole",
+ "type": "drug",
+ "name": "Metronidazole",
+ "aliases": [],
+ "class": "Antibiotic / antiprotozoal – nitroimidazole",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Reduced inside anaerobes and protozoa to products that damage DNA",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Peptic Ulcer",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 400 mg 12 hourly for 14 days.",
+     "s": "HOSP:1.7"
+    }
+   ]
+  },
+  {
+   "h": "Liver Abscess, Amoebic",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 800 mg 8 hourly for 10 days.",
+     "s": "HOSP:1.18"
+    }
+   ]
+  },
+  {
+   "h": "Clostridum Difficile (Clostridioides Difficile) Diarrhoea",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 400 mg 8 hourly for 10 days.",
+     "s": "HOSP:1.21"
+    },
+    {
+     "t": "Metronidazole, IV, 500 mg 8 hourly for 10 days. Switch to oral metronidazole, if/when possible, to complete 10-day course. Recurrence",
+     "s": "HOSP:1.22"
+    }
+   ]
+  },
+  {
+   "h": "Giardiasis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 2 g daily for 3 days.",
+     "s": "HOSP:1.23"
+    }
+   ]
+  },
+  {
+   "h": "Pelvic Inflammatory Disease (PID)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 400 mg 12 hourly for 7 days.",
+     "s": "HOSP:5.5"
+    },
+    {
+     "t": "Metronidazole, IV, 500 mg 8 hourly.",
+     "s": "HOSP:5.5"
+    }
+   ]
+  },
+  {
+   "h": "Sexual Assault",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 2 g immediately as a single dose.",
+     "s": "HOSP:5.17"
+    }
+   ]
+  },
+  {
+   "h": "Tetanus",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, IV, 500 mg 8 hourly for 10 days.",
+     "s": "HOSP:9.19"
+    }
+   ]
+  },
+  {
+   "h": "Non-occupational Post Exposure Prophylaxis, Inadvertent Non-",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metronidazole, IV, 500 mg .",
+     "s": "HOSP:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Dental Abscess",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 400 mg, 8 hourly for 5 days.",
+     "s": "PHC:1.2"
+    }
+   ]
+  },
+  {
+   "h": "Necrotising Periodontitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 400 mg, 8 hourly for 5 days. Pain: Children",
+     "s": "PHC:1.6"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 15 mg/kg/dose 8 hourly for 7 days. · Severe disease: treat for 10 days.",
+     "s": "PAED:2.18"
+    }
+   ]
+  },
+  {
+   "h": "Persistent Diarrhoea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 7.5 mg/kg/dose 8 hourly for 5 days.",
+     "s": "PAED:2.20"
+    },
+    {
+     "t": "Metronidazole, oral, 7.5 mg/kg/dose 8 hourly for 5–7 days.",
+     "s": "PAED:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Dysentery",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 15 mg/kg/dose 8 hourly for 7 days.",
+     "s": "PAED:2.24"
+    }
+   ]
+  },
+  {
+   "h": "Peptic Ulcer Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 7.5 mg/kg/dose 12 hourly for 14 days.",
+     "s": "PAED:2.26"
+    }
+   ]
+  },
+  {
+   "h": "Amoebiasis (Entamoeba Histolytica)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, oral, 15 mg/kg/dose 8 hourly for 7 days. · 10 days in severe disease.",
+     "s": "PAED:8.3"
+    }
+   ]
+  },
+  {
+   "h": "Tetanus",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, IV, 7.5 mg/kg/dose 8 hourly for 10 days duration.",
+     "s": "PAED:8.36"
+    }
+   ]
+  },
+  {
+   "h": "Drug Resistant TB (DR-TB)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, IV, 7.5 mg/kg (maximum dose 500 mg).",
+     "s": "PAED:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Enterocolitis, Necrotising (NEC)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Metronidazole, IV, for 7 days. · Loading dose: 15 mg/kg over 60 minutes. · Postnatal age < 4 weeks: 7.5 mg/kg/dose 12 hourly.",
+     "s": "PAED:19.23"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used when indicated; avoid high-dose single regimens in pregnancy and breastfeeding",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "First trimester for high single doses (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Disulfiram-like reaction with alcohol",
+   "d": 1
+  },
+  {
+   "t": "Potentiates warfarin",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in severe hepatic impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Metallic taste, nausea, headache, peripheral neuropathy and seizures with prolonged use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "age-paeds",
+  "appy-adult",
+  "chol-adult",
+  "chorioamnionitis",
+  "hcc-adult",
+  "pid",
+  "pph",
+  "prb-adult",
+  "prb-paeds",
+  "preterm-labour",
+  "prolonged-labour",
+  "pud-adult",
+  "uds",
+  "ugib-adult",
+  "ugib-paeds",
+  "vds"
+ ],
+ "link": [
+  "metronidazole"
+ ],
+ "link_cs": []
+}

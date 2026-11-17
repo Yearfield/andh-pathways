@@ -1,0 +1,89 @@
+{
+ "id": "primaquine",
+ "type": "drug",
+ "name": "Primaquine",
+ "aliases": [],
+ "class": "Antimalarial – 8-aminoquinoline",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Kills liver hypnozoites and gametocytes",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Malaria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Primaquine, oral, 0.25 mg base/kg/day for 14 days (obtained using section 21 approval). · Continue chloroquine once weekly until primaquine is obtained.",
+     "s": "PAED:8.16"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "G6PD deficiency (for radical cure doses)",
+   "d": 1
+  },
+  {
+   "t": "Pregnancy",
+   "d": 1
+  },
+  {
+   "t": "Breastfeeding of an untested infant",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Test for G6PD before radical-cure courses",
+   "d": 1
+  },
+  {
+   "t": "Take with food",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Haemolysis in G6PD deficiency, methaemoglobinaemia, abdominal cramps",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Haemoglobin, urine colour",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lrti-adult"
+ ],
+ "link": [
+  "primaquine"
+ ],
+ "link_cs": []
+}

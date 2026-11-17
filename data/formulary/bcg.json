@@ -1,0 +1,66 @@
+{
+ "id": "bcg",
+ "type": "drug",
+ "name": "BCG",
+ "aliases": [],
+ "class": "Live attenuated vaccine",
+ "group": "Vaccines and immunoglobulins",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Induces cell-mediated immunity against severe childhood TB",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Not given in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Symptomatic HIV infection or other immunodeficiency",
+   "d": 1
+  },
+  {
+   "t": "Infant of a mother with infectious TB until preventive therapy is complete",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Intradermal injection only",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Local ulcer, regional adenitis, disseminated BCG disease in immunodeficiency",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [],
+ "link_cs": [
+  "BCG"
+ ]
+}

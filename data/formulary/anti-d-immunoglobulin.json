@@ -1,0 +1,142 @@
+{
+ "id": "anti-d-immunoglobulin",
+ "type": "drug",
+ "name": "Anti-D immunoglobulin",
+ "aliases": [
+  "anti-D"
+ ],
+ "class": "Immunoglobulin (anti-RhD)",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Clears fetal RhD-positive red cells from the maternal circulation before sensitisation occurs",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Midtrimester Miscarriage (from 13–22 Weeks Gestation)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Anti-D immunoglobulin, IM, 100 mcg as a single dose.",
+     "s": "HOSP:5.10"
+    }
+   ]
+  },
+  {
+   "h": "The Rhesus Negative Woman",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Anti-D immunoglobulin, IM, 50 mcg.",
+     "s": "HOSP:6.31"
+    },
+    {
+     "t": "Anti-D immunoglobulin, IM, 100 mcg.",
+     "s": "HOSP:6.31"
+    },
+    {
+     "t": "Anti-D immunoglobulin, IM, 300 mcg for every 30 mL haemorrhage. · Maximum dose: 1 200 mcg.",
+     "s": "HOSP:6.31"
+    }
+   ]
+  },
+  {
+   "h": "Miscarriage",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Anti-D immunoglobulin, IM, 50 mcg, preferably within 72 hours but may be given up to 7 days following management of miscarriage.",
+     "s": "PHC:6.5"
+    }
+   ]
+  },
+  {
+   "h": "Intrapartum Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Anti-D immunoglobulin, IM, 100 mcg, preferably within 72 hours but can be given up to 7 days after delivery. Care of the newborn baby",
+     "s": "PHC:6.25"
+    }
+   ]
+  },
+  {
+   "h": "Post-miscarriage follow-up",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Rh factor (if unknown) and give Rh prophylaxis if Rh negative (Anti-D immunoglobulin, IM, 100 mcg as a single dose) · Sexually transmitted infections (including HIV and syphilis).",
+     "s": "impcg2024:53"
+    }
+   ]
+  },
+  {
+   "h": "Hyperbilirubinaemia, Unconjugated",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Anti-D immunoglobulin, IM, 100 mcg as soon as possible after birth but within 72 hours of birth.",
+     "s": "PAED:19.7"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Indicated in RhD-negative pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "RhD-positive women",
+   "d": 1
+  },
+  {
+   "t": "Women already sensitised",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give within 72 hours of the sensitising event",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Injection-site pain, hypersensitivity (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aph",
+  "ectopic",
+  "miscarriage",
+  "pph",
+  "preterm-labour",
+  "term-labour"
+ ],
+ "link": [
+  "anti-D immunoglobulin",
+  "anti-D"
+ ],
+ "link_cs": []
+}

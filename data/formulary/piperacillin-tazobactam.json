@@ -1,0 +1,133 @@
+{
+ "id": "piperacillin-tazobactam",
+ "type": "drug",
+ "name": "Piperacillin/tazobactam",
+ "aliases": [
+  "piperacillin",
+  "pip-tazo",
+  "pip/tazo",
+  "tazobactam"
+ ],
+ "class": "Antibiotic – antipseudomonal penicillin with β-lactamase inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits cell-wall synthesis, broad Gram-negative (including Pseudomonas), Gram-positive and anaerobic cover",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Piperacillin/tazobactam, IV, 4.5 g 6 hourly.",
+     "s": "HOSP:2.12"
+    }
+   ]
+  },
+  {
+   "h": "Surgical Wound Infections",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Piperacillin/tazobactam, IV, 4.5 g 8 hourly.",
+     "s": "HOSP:9.5"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Piperacillin/tazobactam, IV, 100 mg/kg/dose 8 hourly.",
+     "s": "PAED:15.4"
+    }
+   ]
+  },
+  {
+   "h": "Septicaemia of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Piperacillin/tazobactam, IV, for 7 days. · If < 7 days of age: 50–100 mg/kg 12 hourly (1st week of life). · If > 7 days of age: 50–100 mg/kg 6–8 hourly.",
+     "s": "PAED:19.37"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Aplastic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Piperacillin-tazobactam, IV, 100 mg/kg 8 hourly. Antibiotic adjustment based on microbiology results.",
+     "s": "PAED:3.3"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "High sodium load",
+   "d": 1
+  },
+  {
+   "t": "Do not mix with aminoglycosides",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, rash, hypokalaemia, thrombocytopenia, C. difficile",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function, FBC on long courses",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lrti-paeds"
+ ],
+ "link": [
+  "piperacillin-tazobactam",
+  "piperacillin/tazobactam",
+  "pip/tazo",
+  "pip-tazo"
+ ],
+ "link_cs": []
+}

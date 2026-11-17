@@ -1,0 +1,120 @@
+{
+ "id": "rivaroxaban",
+ "type": "drug",
+ "name": "Rivaroxaban",
+ "aliases": [],
+ "class": "Direct oral anticoagulant – factor Xa inhibitor",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Directly and reversibly inhibits factor Xa",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Venous Thrombo-embolism – Prophylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rivaroxaban, oral, 10 mg daily while hospitalised.",
+     "s": "HOSP:2.25"
+    },
+    {
+     "t": "Rivaroxaban, oral, 10 mg daily. · Initated 6–10 hours post-surgery for duration of admission or a maximum of 10 days.",
+     "s": "HOSP:2.26"
+    },
+    {
+     "t": "Rivaroxaban, oral, 10 mg daily. · Initiate anticoagulation 6–10 hours post-surgery for the duration of hospital admission for a minimum of 2 days and a maximum of 7 days.",
+     "s": "HOSP:2.26"
+    }
+   ]
+  },
+  {
+   "h": "Venous Thrombo-embolism – Acute Treatment",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rivaroxaban, oral, 15 mg twice daily for 3 weeks, followed by 20 mg once daily for 3 months.",
+     "s": "HOSP:2.28"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active bleeding",
+   "d": 1
+  },
+  {
+   "t": "EGFR < 15 (avoid < 30 per STG)",
+   "d": 1
+  },
+  {
+   "t": "Mechanical heart valves",
+   "d": 1
+  },
+  {
+   "t": "Antiphospholipid syndrome",
+   "d": 1
+  },
+  {
+   "t": "Pregnancy and breastfeeding",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take 15–20 mg doses with food",
+   "d": 1
+  },
+  {
+   "t": "Levels lowered by rifampicin, carbamazepine and phenytoin, and raised by azoles and protease inhibitors",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bleeding, anaemia, nausea",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function, no routine coagulation monitoring",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "caprini",
+  "ccf-adult",
+  "stroke",
+  "wells_dvt",
+  "wells_pe"
+ ],
+ "link": [
+  "rivaroxaban"
+ ],
+ "link_cs": []
+}

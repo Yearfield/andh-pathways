@@ -1,0 +1,65 @@
+{
+ "id": "diazoxide",
+ "type": "drug",
+ "name": "Diazoxide",
+ "aliases": [],
+ "class": "Potassium-channel opener – hyperglycaemic agent",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Opens ATP-sensitive potassium channels on β-cells, inhibiting insulin release",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Specialist use for persistent hyperinsulinaemic hypoglycaemia",
+   "d": 1
+  },
+  {
+   "t": "Usually given with a thiazide",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sodium and water retention, hypotension, tachycardia, hyperglycaemia, hypertrichosis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood glucose, fluid balance",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hypoglycemia-paeds"
+ ],
+ "link": [
+  "diazoxide"
+ ],
+ "link_cs": []
+}

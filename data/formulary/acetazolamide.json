@@ -1,0 +1,140 @@
+{
+ "id": "acetazolamide",
+ "type": "drug",
+ "name": "Acetazolamide",
+ "aliases": [],
+ "class": "Carbonic anhydrase inhibitor",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks carbonic anhydrase in the proximal tubule and choroid plexus: bicarbonate diuresis, reduced CSF and aqueous production",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Idiopathic Intracranial Hypertension (Pseudotumour Cerebri)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Acetazolamide, oral, 250 mg 12 hourly · Increase, as required, by 250 mg daily every week to the maximum tolerated dose (not exceeding 4 g daily).",
+     "s": "HOSP:14.36"
+    }
+   ]
+  },
+  {
+   "h": "Open-angle Glaucoma",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Acetazolamide, oral, 250 mg 6 hourly.",
+     "s": "HOSP:18.6"
+    }
+   ]
+  },
+  {
+   "h": "Acute Angle-closure Glaucoma",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Acetazolamide, oral, 500 mg immediately as a single dose. · Followed by 250 mg 6 hourly.",
+     "s": "HOSP:18.6"
+    }
+   ]
+  },
+  {
+   "h": "Glaucoma, Acute and Closed Angle",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Acetazolamide, oral, 500 mg, immediately, followed by 250 mg 6 hourly until referred.",
+     "s": "PHC:18.11"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Tuberculous (Tbm) in Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Acetazolamide, oral, 20 mg/kg/dose 8 hourly. · Maximum daily dose: 1000 mg. · Monitor for metabolic acidosis and serum potassium derangements.",
+     "s": "PAED:10.17"
+    }
+   ]
+  },
+  {
+   "h": "Supportive care for children with TBM",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Acetazolamide (50 mg/kg/day) 6-hourly per os (maximum 2 grams per day). • This has been shown to normalise the intracranial pressure within seven days in most children, but not all. The duration of diuretic therapy is one month.",
+     "s": "tbpaeds2024:46"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Sulfonamide hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "Hypokalaemia",
+   "d": 1
+  },
+  {
+   "t": "Hyponatraemia",
+   "d": 1
+  },
+  {
+   "t": "Severe renal or hepatic impairment",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Monitor electrolytes with prolonged use",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Paraesthesiae, metabolic acidosis, hypokalaemia, renal stones, fatigue, taste disturbance",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium, bicarbonate",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bloodgas-causes",
+  "bloodgas_causes"
+ ],
+ "link": [
+  "acetazolamide"
+ ],
+ "link_cs": []
+}

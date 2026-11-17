@@ -1,0 +1,88 @@
+{
+ "id": "clopidogrel",
+ "type": "drug",
+ "name": "Clopidogrel",
+ "aliases": [],
+ "class": "Antiplatelet – P2Y12 inhibitor",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Prodrug whose active metabolite irreversibly blocks the platelet ADP (P2Y12) receptor",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clopidogrel, oral, 75 mg daily for one month.",
+     "s": "HOSP:3.4"
+    }
+   ]
+  },
+  {
+   "h": "Non-st Elevation Myocardial Infarction (NSTEMI) and Unstable Angina (Ua)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clopidogrel, oral, 300 mg. Followed by 75 mg daily for 3 months.",
+     "s": "HOSP:3.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active bleeding",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Omeprazole may reduce activation",
+   "d": 1
+  },
+  {
+   "t": "Stop 5–7 days before elective surgery where safe",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bleeding, bruising, GI upset, TTP (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "hte-adult"
+ ],
+ "link": [
+  "clopidogrel"
+ ],
+ "link_cs": []
+}

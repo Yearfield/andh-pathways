@@ -1,0 +1,157 @@
+{
+ "id": "ethambutol",
+ "type": "drug",
+ "name": "Ethambutol",
+ "aliases": [],
+ "class": "Anti-TB antibiotic",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits arabinosyl transferase, blocking cell-wall synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Isoniazid Monoresistant TB",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ethambutol, oral, 15 mg/kg daily.",
+     "s": "HOSP:16.22"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ethambutol, oral, 15 mg/kg daily. Treatment should be given for at least 6 months.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Ethambutol, oral, 15–20 mg/kg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Ethambutol, oral, 800 - 1200 mg daily.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Mycobacterium Avium Complex (Mac) Infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ethambutol, oral, 20–25 mg/kg once daily.",
+     "s": "PAED:8.28"
+    }
+   ]
+  },
+  {
+   "h": "Table 8 Drug dosing chart for children and adolescents with drug-susceptible TB",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "If oral suspension required, for each dose, crush 1 x Ethambutol 400 mg tablet to a fine powder, disperse in 8 ml of water to prepare a concentration of 400 mg/8 ml (50 mg/ml), administer required dose as indicated in above chart, discard u",
+     "s": "tbpaeds2024:42"
+    }
+   ]
+  },
+  {
+   "h": "Management of drug-induced liver injury",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Optic neuritis due to ethambutol (EMB) is rare if the dose remains below 25mg/kg/day. However, any complaint of visual disturbance should be taken seriously: • EMB should be stopped, and the child should be referred for ophthalmologic",
+     "s": "tbpaeds2024:67"
+    }
+   ]
+  },
+  {
+   "h": "Ds-tb Treatment Dosing Chart for Children 1",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "2 If oral suspension required, for each dose, crush 1 x ethambutol 400 mg tablet to a fine powder, disperse in 8 ml of water to prepare a · continuation phase (or 10 months for bone & joint TB) # Refer to Table on next page concentration of",
+     "s": "tbqrg2025:32"
+    }
+   ]
+  },
+  {
+   "h": "Patient Education Leaflet: Caring for a Child with TB",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "RHZ (75/50/150) · ETHAMBUTOL (400MG) MILESTONE TRACKER · Swallow whole OR dissolve · Swallow 1 tablet whole OR the tablet in water. · crush and mix the tablet in",
+     "s": "tbqrg2025:74"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Optic neuritis",
+   "d": 1
+  },
+  {
+   "t": "Inability to report visual change (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Stop at once if vision changes",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Optic neuritis (reduced acuity, red-green colour blindness), peripheral neuropathy",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Visual acuity and colour vision",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "ethambutol"
+ ],
+ "link_cs": []
+}

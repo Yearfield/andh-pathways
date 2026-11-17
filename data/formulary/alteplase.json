@@ -1,0 +1,112 @@
+{
+ "id": "alteplase",
+ "type": "drug",
+ "name": "Alteplase",
+ "aliases": [],
+ "class": "Fibrinolytic – tissue plasminogen activator",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Converts fibrin-bound plasminogen to plasmin, lysing clot",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Alteplase, IV infusion: · Do not exceed 100 mg. · If history of onset is less than 6 hours (beyond 6 hours consult a",
+     "s": "HOSP:3.5"
+    }
+   ]
+  },
+  {
+   "h": "Stroke",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Alteplase, IV, 0.9 mg/kg. Total dose should not exceed 90 mg.",
+     "s": "HOSP:14.1"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Relative contraindication",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active bleeding",
+   "d": 1
+  },
+  {
+   "t": "Any previous intracranial haemorrhage",
+   "d": 1
+  },
+  {
+   "t": "Ischaemic stroke within 3 months (unless treating acute stroke in window)",
+   "d": 1
+  },
+  {
+   "t": "Recent major surgery or trauma",
+   "d": 1
+  },
+  {
+   "t": "Severe uncontrolled hypertension",
+   "d": 1
+  },
+  {
+   "t": "Aortic dissection",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Check the full contraindication list before giving",
+   "d": 1
+  },
+  {
+   "t": "Avoid IM injections and invasive procedures afterwards",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bleeding including intracranial haemorrhage, reperfusion arrhythmias, angioedema, hypotension",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Neurological observations, BP, bleeding",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "stroke"
+ ],
+ "link": [
+  "alteplase"
+ ],
+ "link_cs": []
+}

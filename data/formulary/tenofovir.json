@@ -1,0 +1,185 @@
+{
+ "id": "tenofovir",
+ "type": "drug",
+ "name": "Tenofovir",
+ "aliases": [
+  "TDF"
+ ],
+ "class": "Antiretroviral – nucleotide reverse transcriptase inhibitor (TDF)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Adenosine analogue that terminates the viral DNA chain, active against hepatitis B",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tenofovir, oral, 25 mg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Tenofovir, oral, 300 mg daily.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Hepatitis B, Chronic (Non-hiv Coinfection)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tenofovir alafenamide (TAF), oral, 25 mg daily.",
+     "s": "HOSP:1.15"
+    },
+    {
+     "t": "Tenofovir disoproxil fumarate (TDF), oral, 300 mg daily.",
+     "s": "HOSP:1.15"
+    }
+   ]
+  },
+  {
+   "h": "HIV in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "TDF, oral, 300 mg as a single dose.",
+     "s": "HOSP:6.17"
+    }
+   ]
+  },
+  {
+   "h": "Hepatitis B in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "TDF, oral, 300 mg daily (from 28 weeks of pregnancy until birth).",
+     "s": "HOSP:6.20"
+    }
+   ]
+  },
+  {
+   "h": "Dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fixed-dose combination: tenofovir (TDF) 300 mg + lamivudine (3TC) 300 mg + DTG 50 mg (TLD). TLD can be prescribed for clients ≥ 30 kg and ≥ 10 years of age • DTG-containing fixed-dose combination: ALD FDC [Abacavir (ABC) + lamivudine (3TC",
+     "s": "hiv2026:31"
+    }
+   ]
+  },
+  {
+   "h": "Figure 16: Assessment and management of a rise in creatinine in patients on DTG",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tenofovir alafenamide (TAF) is also active against HBV. If TDF has to be discontinued and eGFR is 15-50 ml/min, the alternative regimen is TAF + FTC + DTG. Discuss these patients with a specialist. Bone density reduction due to TDF",
+     "s": "hiv2026:104"
+    }
+   ]
+  },
+  {
+   "h": "Table 33: ART dosing and important adverse effects",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tenofovir disoproxil · • Decline in eGFR (months to years) NRTI · 300 mg daily fumarate (TDF) · • Fanconi syndrome (rare – months to years)",
+     "s": "hiv2026:106"
+    },
+    {
+     "t": "Tenofovir · • Decline in eGFR (months to years) NRTI · 25 mg daily alafenamide (TAF) · • Fanconi syndrome (rare – months to years)",
+     "s": "hiv2026:106"
+    }
+   ]
+  },
+  {
+   "h": "Key adherence messages and summary of 1st line ART regimens",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tenofovir (TDF) is · Replace TDF with Abacavir 300mg bd (or • Who could support you in taking your treatment? · Abnormal renal function contraindicated · 600mg once daily)",
+     "s": "hiv2026:142"
+    }
+   ]
+  },
+  {
+   "h": "Post Exposure Prophylaxis, Occupational",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Tenofovir (TDF), oral, 300 mg daily for 4 weeks (provided baseline eGFR is >50 mL/minute).",
+     "s": "PHC:21.54"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "EGFR < 50 mL/min (adults, per guideline)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Avoid with other nephrotoxic drugs (aminoglycosides, NSAIDs)",
+   "d": 1
+  },
+  {
+   "t": "Hepatitis B may flare if stopped",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Renal tubular toxicity (Fanconi syndrome), reduced bone mineral density, GI upset",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Creatinine/eGFR at baseline and per guideline",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "hcc-adult",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "sam",
+  "tb-hiv-adult",
+  "tb-hiv-paeds"
+ ],
+ "link": [
+  "tenofovir"
+ ],
+ "link_cs": [
+  "TDF"
+ ]
+}

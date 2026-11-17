@@ -1,0 +1,278 @@
+{
+ "id": "ampicillin",
+ "type": "drug",
+ "name": "Ampicillin",
+ "aliases": [],
+ "class": "Antibiotic – aminopenicillin (β-lactam)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis, covers Listeria, enterococci and group B streptococcus",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 2 g 6 hourly for 4 weeks. lin",
+     "s": "HOSP:3.32"
+    },
+    {
+     "t": "Ampicillin, IV, 2 g 6 hourly for 4 weeks. MIC: >0.12–2 mg/L",
+     "s": "HOSP:3.32"
+    },
+    {
+     "t": "Ampicillin, IV, 2 g 6 hourly for 4-6 weeks. cillin",
+     "s": "HOSP:3.33"
+    }
+   ]
+  },
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 1 g 6 hourly for 48 hours.",
+     "s": "HOSP:6.23"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 3 g 6 hourly for 21 days.",
+     "s": "HOSP:14.38"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia, Community Acquired",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 1 g 6 hourly.",
+     "s": "HOSP:16.16"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ampicillin, IV/IM, 2 g one hour before the procedure. 3.5: Endocarditis, infective - empiric therapy - native valve, 3.5: Endocarditis, infective - directed therapy (native valve) - streptococcal - fully susceptible to",
+     "s": "HOSP"
+    },
+    {
+     "t": "Ampicillin, IV, 2 g 6 hourly.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Figure 12: Investigation of a patient with acute meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 3 g 6 hourly for 21 days. AND • Gentamicin, IV, 5 mg/kg daily for 7 days (may be prolonged if response is poor).",
+     "s": "hiv2026:82"
+    }
+   ]
+  },
+  {
+   "h": "Congenital syphilis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "ther(e.g., ampicillin). IgM). Abs IgM). · cause) · cause) · Note: If mother was fully treated & baby symptomatic – re-test mother & 504.000 units/kg · IM. CSF · VDRLfollow-up",
+     "s": "hiv2026:161"
+    }
+   ]
+  },
+  {
+   "h": "Prelabour Rupture of Membranes at Term (Prom)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 1 g as a single dose.",
+     "s": "PHC:6.23"
+    }
+   ]
+  },
+  {
+   "h": "Acute Meningitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ampicillin, IM/IV 75 mg/kg/dose immediately before referral. · If referral is delayed by 6 hours or more, administer second dose. Injection",
+     "s": "PHC:15.53"
+    },
+    {
+     "t": "Ampicillin, IM/IV, 3 g immediately before referral. · If referral is delayed by 6 hours or more, administer second dose.",
+     "s": "PHC:15.53"
+    }
+   ]
+  },
+  {
+   "h": "Acute inversion of the uterus",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Give ampicillin one gram IV followed by amoxicillin 500 mg three times daily orally and metronidazole 400 mg three times daily orally for five days after a manual removal. Acute inversion of the uterus",
+     "s": "impcg2024:119"
+    }
+   ]
+  },
+  {
+   "h": "Diarrhoea, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 50 mg/kg/dose 6 hourly for 5 days.",
+     "s": "PAED:2.18"
+    },
+    {
+     "t": "Ampicillin, IV, 25–50 mg/kg/dose 6 hourly for 5 days.",
+     "s": "PAED:2.18"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 50 mg/kg/dose, 6 hourly.",
+     "s": "PAED:2.37"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV/IM, 50 mg/kg/dose 6 hourly for 7 days. · Avoid IV infusions, if possible. Use a ‘heparin lock’ to avoid fluid overload because of poor cardiac reserves.",
+     "s": "PAED:2.42"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 50 mg/kg (maximum 2 g) ½ hour before the procedure.",
+     "s": "PAED:4.13"
+    }
+   ]
+  },
+  {
+   "h": "Respiratory Distress in the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, for 5–7 days. Gestational Age Postnatal Age Dose ≤ 7 days 50 mg/kg/dose every 12 hours",
+     "s": "PAED:19.17"
+    }
+   ]
+  },
+  {
+   "h": "Enterocolitis, Necrotising (NEC)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 50 mg/kg/dose for 7 days. Gestational Age Postnatal Age Dose ≤ 7 days 50 mg/kg/dose every 12 hours",
+     "s": "PAED:19.22"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis Bacterial, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, for 14 days. Gestational Age Postnatal Age Dose ≤ 7 days 50 mg/kg/dose every 12 hours",
+     "s": "PAED:19.34"
+    }
+   ]
+  },
+  {
+   "h": "Septicaemia of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ampicillin, IV, 50 mg/kg/dose for 5–7 days. Gestational Age Postnatal Age Dose ≤ 7 days 50 mg/kg/dose every 12 hours",
+     "s": "PAED:19.36"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose frequency in severe renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Do not mix with aminoglycosides in the same syringe",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash, diarrhoea, anaphylaxis",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-paeds",
+  "chorioamnionitis",
+  "fluids-paeds-sam",
+  "hie-neonate",
+  "lrti-adult",
+  "lrti-pregnancy",
+  "meningitis-adult",
+  "meningitis-neonate",
+  "meningitis-paeds",
+  "pph",
+  "preterm-labour",
+  "prolonged-labour",
+  "sam"
+ ],
+ "link": [
+  "ampicillin"
+ ],
+ "link_cs": []
+}

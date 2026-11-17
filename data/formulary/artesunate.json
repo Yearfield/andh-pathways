@@ -1,0 +1,110 @@
+{
+ "id": "artesunate",
+ "type": "drug",
+ "name": "Artesunate",
+ "aliases": [],
+ "class": "Antimalarial – artemisinin derivative",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Generates free radicals in the parasite, rapidly clears all blood stages",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Malaria, Severe",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Artesunate, IV, 2.4 mg/kg at 0, 12 and 24 hours; then daily until patient is able to tolerate oral therapy. · Administer at least 3 IV doses before switching to oral",
+     "s": "HOSP:9.16"
+    }
+   ]
+  },
+  {
+   "h": "Malaria",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": " If parenteral artesunate is not available: • Quinine, IV (1 mL = 300 mg quinine salt). • Loading dose: 20 mg/kg in dextrose 5% administered over 4 hours.",
+     "s": "impcg2024:148"
+    }
+   ]
+  },
+  {
+   "h": "Malaria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Artesunate, IM or IV, 2.4 mg/kg at hours 0, 12 and 24, then daily until patient is able to tolerate oral treatment.",
+     "s": "PAED:8.13"
+    },
+    {
+     "t": "Artesunate, IM or IV, 3 mg/kg at hours 0, 12 and 24, then daily until patient is able to tolerate oral treatment.",
+     "s": "PAED:8.13"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Treatment of choice for severe malaria in all trimesters",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reconstitute and give at once",
+   "d": 1
+  },
+  {
+   "t": "Follow with a full oral artemisinin combination course",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Delayed haemolysis 1–3 weeks after treatment, dizziness, GI upset",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Haemoglobin at 14 days, glucose, parasite count",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "ards-paeds",
+  "chol-adult",
+  "hypoglycemia-adult",
+  "hypoglycemia-paeds",
+  "hypoglycemia-pregnancy"
+ ],
+ "link": [
+  "artesunate"
+ ],
+ "link_cs": []
+}

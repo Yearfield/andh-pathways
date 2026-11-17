@@ -1,0 +1,157 @@
+{
+ "id": "labetalol",
+ "type": "drug",
+ "name": "Labetalol",
+ "aliases": [],
+ "class": "Combined α- and β-blocker",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks β1, β2 and α1 receptors: lowers BP without reflex tachycardia",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hypertensive Crisis, Hypertensive Emergency",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Labetalol, IV, 2 mg/minute to a total dose of 1–2 mg/kg, while trying to achieve control with other agents. · Caution in acute pulmonary oedema.",
+     "s": "HOSP:3.43"
+    }
+   ]
+  },
+  {
+   "h": "Hypertensive Disorders in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Labetalol, IV infusion, 2 mg/minute to a total of 1–2 mg/kg. · Reconstitute solution as follows: - Discard 40 mL of sodium chloride 0.9% from a 200 mL container.",
+     "s": "HOSP:6.9"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Labetalol, IV infusion, 2 mg/minute to a total of 1–2 mg/kg. · Initial dose: 2 mg/minute · Titrate to response up to 300 mg total cumulative dose (e.g. discontinue",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Pre-eclampsia with severe features",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "care, as labetalol is not available at primary care. • This should preferably take place within a high care setting with invasive blood pressure monitoring: · Labetalol, IV infusion, 2 mg/minute to a total of 1–2 mg/kg.",
+     "s": "impcg2024:108"
+    },
+    {
+     "t": " Add 2 vials (2 x 100 mg) of labetalol (5 mg/mL) to the remaining 160 mL of sodium chloride 0.9% to create a solution of 1 mg/mL.  Start at 40mL/hour to a maximum of 160 mL/hour.",
+     "s": "impcg2024:108"
+    },
+    {
+     "t": "Give labetalol 20 mg IV o if there is still acute severe hypertension after 20 minutes give a further 40 mg labetalol IV • be aware of fluid balance and check the pulse rate, respiratory rate and chest examination for signs of",
+     "s": "impcg2024:108"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Acute Severe",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Labetalol, IV, 0.5–3 mg/kg/hour. · 100 mg labetalol in 80 mL sodium chloride 0.45% = 1 mg/mL. · Infuse with an infusion pump.",
+     "s": "PAED:4.36"
+    }
+   ]
+  },
+  {
+   "h": "Cutaneous Haemangiomas",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Labetalol, IV, 0.2–1.0 mg/kg/dose as a bolus. · Maximum bolus dose: 40 mg. · Continue infusion: 0.25–3.0 mg/kg/hour.",
+     "s": "PAED:6.3"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for hypertension in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Asthma",
+   "d": 1
+  },
+  {
+   "t": "Heart block",
+   "d": 1
+  },
+  {
+   "t": "Decompensated heart failure",
+   "d": 1
+  },
+  {
+   "t": "Bradycardia",
+   "d": 1
+  },
+  {
+   "t": "Cardiogenic shock",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Keep supine during and after IV dosing",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bradycardia, hypotension (postural), bronchospasm, fatigue, neonatal hypoglycaemia and bradycardia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP, heart rate",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "aki-paeds",
+  "amphetamines",
+  "ckd-paeds",
+  "cocaine",
+  "hte-adult",
+  "pet"
+ ],
+ "link": [
+  "labetalol"
+ ],
+ "link_cs": []
+}

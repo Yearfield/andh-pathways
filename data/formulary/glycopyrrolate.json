@@ -1,0 +1,93 @@
+{
+ "id": "glycopyrrolate",
+ "type": "drug",
+ "name": "Glycopyrrolate",
+ "aliases": [
+  "glycopyrronium"
+ ],
+ "class": "Antimuscarinic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks muscarinic receptors, does not cross the blood–brain barrier",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Medicines to Reverse Muscle Relaxation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Glycopyrrolate, IV, 10 mcg/kg.",
+     "s": "HOSP:12.4"
+    }
+   ]
+  },
+  {
+   "h": "Anaesthetic management of an unstable ruptured ectopic pregnancy",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Reverse the muscle relaxation with 2.5 mg of Neostigmine and 0.4 mg glycopyrrolate once spontaneous movement has been observed to occur. • Discontinue the isoflurane and allow the patient to extubate herself.",
+     "s": "impcg2024:55"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Glaucoma",
+   "d": 1
+  },
+  {
+   "t": "Obstructive uropathy",
+   "d": 1
+  },
+  {
+   "t": "Tachyarrhythmia",
+   "d": 1
+  }
+ ],
+ "cautions": [],
+ "adverse_effects": [
+  {
+   "t": "Tachycardia, dry mouth, urinary retention",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Heart rate",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "op"
+ ],
+ "link": [
+  "glycopyrrolate",
+  "glycopyrronium"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,194 @@
+{
+ "id": "vancomycin",
+ "type": "drug",
+ "name": "Vancomycin",
+ "aliases": [],
+ "class": "Antibiotic – glycopeptide",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds D-ala-D-ala and blocks cell-wall synthesis, Gram-positive only, including MRSA, oral form is not absorbed (C. difficile)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Clostridum Difficile (Clostridioides Difficile) Diarrhoea",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vancomycin, oral, 125 mg 6 hourly (give parenteral formulation orally) for 10 days. Fulminant infection",
+     "s": "HOSP:1.21"
+    },
+    {
+     "t": "Vancomycin, oral, 125 mg (give parenteral formulation orally) as follows:",
+     "s": "HOSP:1.22"
+    }
+   ]
+  },
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 25–30 mg/kg as a loading dose. Follow with 15–20 mg/kg/dose 12 hourly. (See Appendix II: Guidance on prescribing and monitoring.)",
+     "s": "HOSP:2.11"
+    }
+   ]
+  },
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 15–20 mg/kg 12 hourly, is the antibiotic of choice. It is essential to monitor trough concentrations of van- comycin regularly and adjust doses, accordingly, starting after the",
+     "s": "HOSP:3.31"
+    },
+    {
+     "t": "Vancomycin, IV, 15–20 mg/kg 12 hourly for 6 weeks. (See Ap- Prosthetic pendix II for guidance on prescribing and therapeutic drug valve*",
+     "s": "HOSP:3.31"
+    },
+    {
+     "t": "Vancomycin, IV, 15–20 mg/kg 12 hourly for 4 weeks. (methicillin resistant) or methicillin sensitive",
+     "s": "HOSP:3.33"
+    }
+   ]
+  },
+  {
+   "h": "Intravascular Catheter Infections",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 25–30 mg/kg, empirically as a loading dose. · Follow with 15–20 mg/kg/dose 12 hourly. (See Appendix II for guidance on prescribing and therapeutic drug monitoring.)",
+     "s": "HOSP:9.3"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Vancomycin, oral, 125 mg. (Give the parenteral formulation orally).",
+     "s": "HOSP"
+    },
+    {
+     "t": "Vancomycin, IV, 15-20 mg/kg 12 hourly. 2.2: Febrile neutropenia, IV, skin infection, 9.1.1: Intravascular catheter infections, S. aureus infection, 9.1.2: Surgical wound infections, Methicillin",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Acute Bacterial",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 15 mg/kg/dose 6 hourly infused over 1 hour.",
+     "s": "PAED:8.21"
+    }
+   ]
+  },
+  {
+   "h": "Staphylococcal Septicaemia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 15 mg/kg/dose, 6 hourly infused over 1 hour. · Where available, therapeutic drug level monitoring recommended: · Check vancomycin trough level within 1 hour before 4th or 5th",
+     "s": "PAED:8.46"
+    }
+   ]
+  },
+  {
+   "h": "Osteitis/osteomyelitis, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 15 mg/kg/dose administered over 1 hour, 6 hourly. · Where available, vancomycin doses should be adjusted on the basis of therapeutic drug levels.",
+     "s": "PAED:8.51"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 15 mg/kg/dose 6 hourly infused over 1 hour for 14 days.",
+     "s": "PAED:15.4"
+    }
+   ]
+  },
+  {
+   "h": "Allergies to Penicillins",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vancomycin, IV, 15 mg/kg 8 hourly.",
+     "s": "PAED:25.4"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Infuse over at least 60 minutes (no faster than 10 mg/minute)",
+   "d": 1
+  },
+  {
+   "t": "Adjust to renal function",
+   "d": 1
+  },
+  {
+   "t": "Avoid other nephrotoxic drugs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Infusion reaction (flushing, hypotension – \"red man\") if given fast, nephrotoxicity, ototoxicity, phlebitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Trough level and renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "aki-paeds",
+  "ckd-paeds",
+  "meningitis-paeds"
+ ],
+ "link": [
+  "vancomycin"
+ ],
+ "link_cs": []
+}

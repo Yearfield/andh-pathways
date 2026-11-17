@@ -1,0 +1,105 @@
+{
+ "id": "ipratropium",
+ "type": "drug",
+ "name": "Ipratropium",
+ "aliases": [
+  "ipratroprium"
+ ],
+ "class": "Short-acting antimuscarinic bronchodilator",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks muscarinic receptors in the airways, reducing vagal bronchoconstriction",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Asthma, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ipratropium bromide, MDI, 80–160 mcg (2–4 puffs), using a spacer every 20– 30 minutes as needed for up to 3 hours.",
+     "s": "HOSP:16.3"
+    }
+   ]
+  },
+  {
+   "h": "Anaphylaxis/anaphylactic Shock",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ipratropium bromide, nebulisation 0.5 mg, added to salbutamol solution.",
+     "s": "HOSP:20.12"
+    }
+   ]
+  },
+  {
+   "h": "Acute Asthma & Acute Exacerbation of COPD, Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ipratroprium bromide, MDI, 80 to 160 mcg (2 to 4 puffs), using a spacer every 20 to 30 minutes as needed for up to 3 hours.",
+     "s": "PHC:17.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity to atropine derivatives",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Add to salbutamol in severe attacks",
+   "d": 1
+  },
+  {
+   "t": "Protect the eyes during nebulisation",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dry mouth, urinary retention, blurred vision or raised intra-ocular pressure if mist reaches the eyes",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "copd-adult",
+  "copd_gold",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "rf-adult",
+  "rf-paeds"
+ ],
+ "link": [
+  "ipratroprium",
+  "ipratropium"
+ ],
+ "link_cs": []
+}

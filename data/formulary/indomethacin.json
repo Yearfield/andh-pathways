@@ -1,0 +1,83 @@
+{
+ "id": "indomethacin",
+ "type": "drug",
+ "name": "Indomethacin",
+ "aliases": [
+  "indometacin"
+ ],
+ "class": "NSAID",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Potent non-selective COX inhibition, used as a tocolytic and for gout",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Indomethacin, oral, 50 mg immediately then 25 mg 4 hourly for up to 48 hours.",
+     "s": "HOSP:6.22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Tocolysis only before 32 weeks and for no more than 48 hours",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Peptic ulcer",
+   "d": 1
+  },
+  {
+   "t": "Renal impairment",
+   "d": 1
+  },
+  {
+   "t": "After 32 weeks' gestation (ductus closure, oligohydramnios)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Short courses only",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Headache, dizziness, GI bleeding, acute kidney injury, fluid retention",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "preterm-labour"
+ ],
+ "link": [
+  "indomethacin",
+  "indometacin"
+ ],
+ "link_cs": []
+}

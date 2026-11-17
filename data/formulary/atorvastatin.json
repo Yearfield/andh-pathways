@@ -1,0 +1,88 @@
+{
+ "id": "atorvastatin",
+ "type": "drug",
+ "name": "Atorvastatin",
+ "aliases": [],
+ "class": "HMG-CoA reductase inhibitor (statin)",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits hepatic cholesterol synthesis and upregulates LDL receptors",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Ischaemic Heart Disease and Atherosclerosis, Prevention",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Atorvastatin, oral, 10 mg at night.",
+     "s": "HOSP:3.3"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active liver disease",
+   "d": 1
+  },
+  {
+   "t": "Pregnancy and breastfeeding",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Statin of choice with protease inhibitors (at reduced dose)",
+   "d": 1
+  },
+  {
+   "t": "Any time of day",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Myalgia, myopathy, raised transaminases",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ALT if symptomatic, CK if muscle symptoms",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "cad-adult",
+  "stroke",
+  "tia"
+ ],
+ "link": [
+  "atorvastatin"
+ ],
+ "link_cs": []
+}

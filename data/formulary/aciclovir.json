@@ -1,0 +1,300 @@
+{
+ "id": "aciclovir",
+ "type": "drug",
+ "name": "Aciclovir",
+ "aliases": [
+  "acyclovir"
+ ],
+ "class": "Antiviral – guanosine analogue",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Phosphorylated by viral thymidine kinase, then inhibits viral DNA polymerase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Atopic Eczema/ Dermatitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 400 mg 8 hourly for 7 days.",
+     "s": "HOSP:4.7"
+    },
+    {
+     "t": "Aciclovir, IV, 5 mg/kg/dose, 8 hourly for 7 days. · Infuse over 1 hour.",
+     "s": "HOSP:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Varicella (Chickenpox), Complicated",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, IV, 10 mg/kg 8 hourly for 7 days. · Infuse aciclovir over one hour.",
+     "s": "HOSP:9.22"
+    },
+    {
+     "t": "Aciclovir, oral, 800 mg five times daily. · Doses are given 4 hourly, except for dose scheduled for the middle of the night.",
+     "s": "HOSP:9.22"
+    }
+   ]
+  },
+  {
+   "h": "Zoster (Shingles)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 800 mg five times daily for 7 days (given 4 hourly except for the dose scheduled for the middle of the night).",
+     "s": "HOSP:9.23"
+    }
+   ]
+  },
+  {
+   "h": "Viral Meningoencephalitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, IV, 10 mg/kg 8 hourly for 14 days (21 days in immunocompromised patients). · Start therapy as early as possible, i.e. before results are available.",
+     "s": "HOSP:14.41"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Zoster Ophthalmicus",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 800 mg 5 doses per day (4 hourly while awake) for 7–10 days. · Treatment should be initiated within the first three days of onset of",
+     "s": "HOSP:18.7"
+    },
+    {
+     "t": "Aciclovir, IV infusion over one hour, 10 mg/kg 8 hourly for 7-14 days. · Seek specialist advice for duration of treatment and for switching to oral aciclovir therapy.",
+     "s": "HOSP:18.7"
+    }
+   ]
+  },
+  {
+   "h": "Keratitis, Herpes Simplex",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 400 mg five times daily for 10–14 days.",
+     "s": "HOSP:18.8"
+    }
+   ]
+  },
+  {
+   "h": "Genital Ulcer Syndrome (GUS)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 400 mg 12 hourly. · Review annually for ongoing suppressive therapy.",
+     "s": "HOSP:26.4"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Aciclovir, IV, 5 mg/kg/dose 8 hourly for 7 days. 9.12: Varicella (chickenpox), complicated, 9.13: Zoster (Shingles) (For zoster with secondary dissemination or neurological involvement/complicated eye",
+     "s": "HOSP"
+    },
+    {
+     "t": "Aciclovir, IV, 10 mg/kg 8 hourly.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Aciclovir, oral, 800 mg five times a day or 4 hourly while awake. 4.5: Atopic eczema/dermatitis, eczema herpeticum; 18.5.1: Keratitis, herpes simplex;",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Chickenpox",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 20 mg/kg/dose 6 hourly for 7 days (Doctor prescribed). Use one of the following: Weight Dose Susp Tablet Age",
+     "s": "PHC:10.4"
+    },
+    {
+     "t": "Aciclovir, oral, 800 mg 6 hourly for 7 days. Doctor prescribed.",
+     "s": "PHC:10.4"
+    }
+   ]
+  },
+  {
+   "h": "Shingles (Herpes Zoster)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 800 mg five times daily for 7 days (4 hourly missing the 8 middle of the night dose).",
+     "s": "PHC:10.18"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of More Than One STI Syndrome STI Syndromes        Treatment (New Episode)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 400 mg 8 hourly for 7 days*. VDS + LAP Treat according to LAP flow chart.",
+     "s": "PHC:12.15"
+    },
+    {
+     "t": "Aciclovir, oral, 400 mg 8 hourly for 7 days*. AND Treat for candidiasis, if required (see VDS flow chart).",
+     "s": "PHC:12.15"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 250 mg/m2/dose, 8 hourly for 7 days. Weight Dose Use one of the following: Age kg mg Susp Tablet Months/years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Gingivostomatitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 250 mg/m2/dose 6 hourly for 7 days (or per kg dose equivalent below): · If > 1 month to 1 year old: 12.5 mg/kg/dose.",
+     "s": "PAED:2.4"
+    },
+    {
+     "t": "Aciclovir, IV, 250 mg/m2/dose 8 hourly for 7 days (per kg dose equivalent below): · If > 1 month to 1 year old: 12.5 mg/kg/dose.",
+     "s": "PAED:2.4"
+    }
+   ]
+  },
+  {
+   "h": "Erythema Multiforme",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 250 mg/m2/dose 8 hourly for 7 days.",
+     "s": "PAED:5.5"
+    }
+   ]
+  },
+  {
+   "h": "Meningo-encephalitis/encephalitis, Acute Viral",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aciclovir, IV, 8 hourly administered over 1 hour. If 0–12 years of age: 20 mg/kg/dose. If > 12 years of age: 10 mg/kg/dose.",
+     "s": "PAED:8.27"
+    }
+   ]
+  },
+  {
+   "h": "Varicella (Chicken Pox)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aciclovir, oral, 20 mg/kg/dose 6 hourly for 7 days. · Maximum dose: 800 mg/dose.",
+     "s": "PAED:8.42"
+    },
+    {
+     "t": "Aciclovir, IV, 8 hourly administered over 1 hour for 7 days. · If < 12 years: 20 mg/kg/dose 8 hourly. · If > 12 years: 10 mg/kg/dose 8 hourly.",
+     "s": "PAED:8.42"
+    },
+    {
+     "t": "Aciclovir, oral, 20 mg/kg/dose 6 hourly for 10 days.",
+     "s": "PAED:8.42"
+    }
+   ]
+  },
+  {
+   "h": "Zoster",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aciclovir, IV, 8 hourly administered over 1 hour for 7 days. · < 12 years: 20 mg/kg/dose. · > 12 years: 10 mg/kg/dose.",
+     "s": "PAED:8.43"
+    }
+   ]
+  },
+  {
+   "h": "Laryngotracheobronchitis, Acute Viral (Croup)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Aciclovir, IV, 10–15 mg/kg/dose 8 hourly for 5–7 days.",
+     "s": "PAED:15.32"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Keep well hydrated and infuse IV over 1 hour",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, headache, crystal nephropathy and neurotoxicity with IV or in renal impairment, phlebitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function on IV therapy",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "croup-paeds",
+  "eczema-adult",
+  "eczema-paeds",
+  "meningitis-adult",
+  "meningitis-paeds",
+  "uds",
+  "vds"
+ ],
+ "link": [
+  "acyclovir",
+  "aciclovir"
+ ],
+ "link_cs": []
+}

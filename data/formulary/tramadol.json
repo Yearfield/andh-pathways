@@ -1,0 +1,151 @@
+{
+ "id": "tramadol",
+ "type": "drug",
+ "name": "Tramadol",
+ "aliases": [],
+ "class": "Weak opioid analgesic with monoamine reuptake inhibition",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Weak μ-agonist (active metabolite via CYP2D6) plus serotonin and noradrenaline reuptake inhibition",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Renal Calculi",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tramadol, oral, 50 to 100 mg, 6 hourly as a starting dose. (Doctor prescribed.) · May be increased to a maximum daily dose of 400 mg.",
+     "s": "HOSP:7.24"
+    }
+   ]
+  },
+  {
+   "h": "Zoster (Shingles)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tramadol, oral, 50–100 mg 6 hourly.",
+     "s": "HOSP:9.23"
+    }
+   ]
+  },
+  {
+   "h": "Postoperative Pain in the Recovery Room",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tramadol, IV, 50–100 mg over 3 minutes to reduce side-effects of nausea and vomiting (Specialist prescribed). · Ceiling effect i.e. higher doses do not improve pain",
+     "s": "HOSP:12.7"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tramadol, oral, 50–100 mg 4–6 hourly. · May be increased to a maximum daily dose of 400 mg.",
+     "s": "HOSP:14.37"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tramadol, oral, 200 mg 12 hourly for 14 days may attenuate withdrawal symptoms.",
+     "s": "HOSP:15.36"
+    }
+   ]
+  },
+  {
+   "h": "Analgesia for Chronic Non-cancer Pain",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Tramadol, oral, 50–100 mg, 6 hourly; may be increased to a maximum of 400 mg daily. · Warn patient of adverse effects and risk of addiction. Advise not to",
+     "s": "HOSP:25.3"
+    }
+   ]
+  },
+  {
+   "h": "Acute Meningitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Tramadol, oral, 50–100 mg 4–6 hourly. (Doctor prescribed) · May be increased to a maximum daily dose of 400 mg.",
+     "s": "PHC:15.52"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Epilepsy",
+   "d": 1
+  },
+  {
+   "t": "Concurrent MAOIs",
+   "d": 1
+  },
+  {
+   "t": "Children under 12 years",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Lowers seizure threshold",
+   "d": 1
+  },
+  {
+   "t": "Avoid with SSRIs, TCAs and linezolid",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal and hepatic impairment and in the elderly",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, dizziness, constipation, seizures, serotonin syndrome",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fracture-adult",
+  "meningitis-adult",
+  "opioids",
+  "opioids-withdrawal"
+ ],
+ "link": [
+  "tramadol"
+ ],
+ "link_cs": []
+}

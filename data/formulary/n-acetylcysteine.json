@@ -1,0 +1,99 @@
+{
+ "id": "n-acetylcysteine",
+ "type": "drug",
+ "name": "N-acetylcysteine",
+ "aliases": [
+  "acetylcysteine",
+  "NAC"
+ ],
+ "class": "Antidote for paracetamol poisoning",
+ "group": "Antidotes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replenishes hepatic glutathione, detoxifying NAPQI",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Paracetamol Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "N-acetylcysteine, IV: · Initial infusion: 200 mg/kg in 500 mL dextrose, 5% over 4 hours. · Second infusion: 100 mg/kg in 1000 mL dextrose, 5% over",
+     "s": "HOSP:19.18"
+    }
+   ]
+  },
+  {
+   "h": "Paracetamol Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "N-Acetylcysteine, IV: 20-hour regimen: · 200 mg/kg in 7 mL/kg of 5% dextrose over 4 hours.",
+     "s": "PAED:18.19"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "None when indicated",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Anaphylactoid reactions are rate-related: stop, treat, then restart at a slower rate",
+   "d": 1
+  },
+  {
+   "t": "Caution in asthma",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Anaphylactoid reaction (flushing, rash, bronchospasm, hypotension), nausea and vomiting",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Observe during the first bag, INR, ALT, creatinine",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "liver",
+  "paracetamol",
+  "urine_dipstick"
+ ],
+ "link": [
+  "N-acetylcysteine",
+  "acetylcysteine"
+ ],
+ "link_cs": [
+  "NAC"
+ ]
+}

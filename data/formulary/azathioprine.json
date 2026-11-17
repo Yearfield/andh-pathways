@@ -1,0 +1,95 @@
+{
+ "id": "azathioprine",
+ "type": "drug",
+ "name": "Azathioprine",
+ "aliases": [],
+ "class": "Immunosuppressant – purine antimetabolite",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Converted to 6-mercaptopurine, inhibiting purine synthesis and lymphocyte proliferation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hepatitis, Non-viral",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azathioprine, oral, 0.5 mg/kg daily, titrated up to 1 mg/kg daily depending on response and WCC.",
+     "s": "HOSP:1.10"
+    }
+   ]
+  },
+  {
+   "h": "Systemic Lupus Erythematosus (SLE)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Azathioprine, oral, 1 mg/kg daily, titrated to a maximum of 3 mg/kg daily.",
+     "s": "HOSP:13.12"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Specialist decision",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "With allopurinol unless the dose is greatly reduced",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Allopurinol blocks its metabolism – severe toxicity",
+   "d": 1
+  },
+  {
+   "t": "Avoid live vaccines",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bone-marrow suppression, hepatotoxicity, nausea, infection risk, pancreatitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC and liver function regularly",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "panc-adult"
+ ],
+ "link": [
+  "azathioprine"
+ ],
+ "link_cs": []
+}

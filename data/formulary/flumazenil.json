@@ -1,0 +1,78 @@
+{
+ "id": "flumazenil",
+ "type": "drug",
+ "name": "Flumazenil",
+ "aliases": [],
+ "class": "Benzodiazepine antagonist",
+ "group": "Antidotes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Competitive antagonist at the benzodiazepine site of the GABA-A receptor",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Mixed overdose with pro-convulsant drugs (e.g. tricyclics)",
+   "d": 1
+  },
+  {
+   "t": "Benzodiazepine dependence",
+   "d": 1
+  },
+  {
+   "t": "Epilepsy treated with benzodiazepines",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Short half-life – re-sedation",
+   "d": 1
+  },
+  {
+   "t": "Rarely indicated in overdose",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Seizures, agitation, arrhythmias",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Level of consciousness",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tca"
+ ],
+ "link": [
+  "flumazenil"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,178 @@
+{
+ "id": "hydrocortisone",
+ "type": "drug",
+ "name": "Hydrocortisone",
+ "aliases": [],
+ "class": "Corticosteroid (glucocorticoid with mineralocorticoid activity)",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the glucocorticoid receptor: anti-inflammatory, replaces cortisol in adrenal insufficiency",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Coronavirus Disease-19 (COVID-19) in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 80 mg 12 hourly for up to 10 days, or until discharge.",
+     "s": "HOSP:6.14"
+    }
+   ]
+  },
+  {
+   "h": "Adrenal Insufficiency (Addison Disease)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 100 mg 6 hourly. · Change to oral maintenance therapy once stable.",
+     "s": "HOSP:8.2"
+    },
+    {
+     "t": "Hydrocortisone, oral. · Start with 10 mg in the morning and 5 mg at night.",
+     "s": "HOSP:8.2"
+    },
+    {
+     "t": "Hydrocortisone, IV, 100 mg 6 hourly. Minor stressors e.g.: Influenza, diarrhoeal illness, chest infections and dental procedures warrant doubling of the doses of hydrocortisone for the duration of",
+     "s": "HOSP:8.3"
+    }
+   ]
+  },
+  {
+   "h": "Thyroid Crisis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 100 mg 8 hourly.",
+     "s": "HOSP:8.34"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 100 mg 6 hourly until patient can take oral medication.",
+     "s": "HOSP:16.12"
+    }
+   ]
+  },
+  {
+   "h": "Epiglottitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 100 mg immediately as a single dose.",
+     "s": "HOSP:17.1"
+    }
+   ]
+  },
+  {
+   "h": "Angioedema",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 100 mg as a single dose.",
+     "s": "HOSP:20.9"
+    }
+   ]
+  },
+  {
+   "h": "Anaphylaxis/anaphylactic Shock",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV/IM, 200 mg, immediately as a single dose.",
+     "s": "HOSP:20.12"
+    }
+   ]
+  },
+  {
+   "h": "Addisonian Crisis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 100 mg 6 hourly.",
+     "s": "HOSP:23.32"
+    }
+   ]
+  },
+  {
+   "h": "Asthma Attack, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Hydrocortisone, IV, 2 mg/kg/dose 6 hourly.",
+     "s": "PAED:15.22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Systemic infection without antimicrobial cover (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Onset takes hours – not a substitute for adrenaline in anaphylaxis",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperglycaemia, hypertension, fluid retention, hypokalaemia, mood change",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Glucose, BP, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "brady-adult",
+  "copd-adult",
+  "copd_gold",
+  "eczema-adult",
+  "eczema-paeds",
+  "fluids-paeds-shock",
+  "hypoglycemia-adult",
+  "hypoglycemia-paeds",
+  "hypoglycemia-pregnancy",
+  "lrti-adult",
+  "lrti-pregnancy",
+  "lytes-adult-hyperk",
+  "rf-adult",
+  "rf-paeds"
+ ],
+ "link": [
+  "hydrocortisone"
+ ],
+ "link_cs": []
+}

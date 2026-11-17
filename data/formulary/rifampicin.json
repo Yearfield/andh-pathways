@@ -1,0 +1,254 @@
+{
+ "id": "rifampicin",
+ "type": "drug",
+ "name": "Rifampicin",
+ "aliases": [],
+ "class": "Anti-TB antibiotic – rifamycin",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial DNA-dependent RNA polymerase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rifampicin, oral, 7.5 mg/kg 12 hourly for 6 weeks.",
+     "s": "HOSP:3.31"
+    }
+   ]
+  },
+  {
+   "h": "Isoniazid Monoresistant TB",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rifampicin, oral, 10 mg/kg daily.",
+     "s": "HOSP:16.22"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rifampicin, oral 450 mg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Rifampicin, oral 600 mg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Rifampicin/isoniazid, oral, 300/150 mg, daily for 4 months.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "DTG dose with concomitant rifampicin-containing TB treatment: Increase DTG dose to 50 mg 12-hourly. If on TLD or ALD FDC, add DTG 50 mg 12 hours after TLD or ALD dose.",
+     "s": "hiv2026:31"
+    }
+   ]
+  },
+  {
+   "h": "Co-treatment of HIV and active TB in neonates, infants, children, adolescents and adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "! Rifampicin + NVP · ! Rifampicin + DTG Seek expert · Boosting of DTG required Measures to · In adults and adolescents, the dosing frequency of DTG should be increased to 50 mg",
+     "s": "hiv2026:35"
+    }
+   ]
+  },
+  {
+   "h": "Visit schedule for integrated care for clients already on ART when diagnosed with drug-sensitive TB",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "**** DTG boosting is required when the client is on rifampicin containing TB treatment. In adults and adolescents, the dosing frequency of DTG should be increased to 50 mg 12-hourly. If on TLD FDC, then add DTG 50 mg 12 hours after TLD dose",
+     "s": "hiv2026:49"
+    }
+   ]
+  },
+  {
+   "h": "Figure 17: An approach to an AHD patient with renal impairment",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "nce · 1. Treatment for opportunistic infections e.g., TB · Day 4: · Add Rifampicin 600mg/day. Pt is on RIF/INH/EMB/LFX Expect a · Day 7: · Check ALT (if raised stop RIF) ALT < 100 IU/ml · treatment",
+     "s": "hiv2026:109"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rifampicin · Dolutegravir · Increase DTG dose to 50 mg 12-hourly. · diabetes and epilepsy also have If on TLD FDC, add DTG 50 mg 12 hours after · important drug",
+     "s": "hiv2026:140"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Acute Bacterial",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Rifampicin, IV, 10 mg/kg 12 hourly. · Do not exceed 600 mg/dose (in patients where TB has been excluded).",
+     "s": "PAED:8.22"
+    },
+    {
+     "t": "Rifampicin, oral, 20 mg/kg/dose once daily for 4 days. · Maximum dose: 600 mg. · Neonatal dose: 10 mg/kg/dose once daily for 4 days.",
+     "s": "PAED:8.22"
+    }
+   ]
+  },
+  {
+   "h": "Mycobacterium Avium Complex (Mac) Infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Rifampicin, oral, 10–20 mg/kg once daily. · Max dose: 600 mg.",
+     "s": "PAED:8.28"
+    }
+   ]
+  },
+  {
+   "h": "Miliary TB in Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Rifampicin, oral, 20 mg/kg as a single daily dose. · Maximum dose: 600 mg daily.",
+     "s": "PAED:10.12"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Tuberculous (Tbm) in Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Rifampicin, oral, 20 mg/kg as a single daily dose. · Maximum daily dose: 600 mg.",
+     "s": "PAED:10.15"
+    }
+   ]
+  },
+  {
+   "h": "TB Preventive Therapy (Tpt) for TB Exposure/infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Rifampicin, oral, 15 mg/kg daily for 4 months.",
+     "s": "PAED:10.18"
+    }
+   ]
+  },
+  {
+   "h": "Table 9 Drug dosing chart for treatment of DS-TBM, CNS TB and miliary TB",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "maximum doses · Rifampicin (R): 22.5-30 mg/kg, · maximum doses maximum dose 2 g · maximum dose 1 g maximum dose 900 mg",
+     "s": "tbpaeds2024:45"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 3: TPT Dosing Chart",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "rifampicin lowers nevirapine levels below efficacy All children and breastfeeding infants require pyridoxine (vitamin B6) for the duration of their TPT as follows: Children younger than five years 12.5 mg and children five years or older",
+     "s": "tbpaeds2024:81"
+    }
+   ]
+  },
+  {
+   "h": "TPT FOR CHILDREN UNDER 25kg",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "HIV negative · Give 3RH (daily rifampicin and isoniazid for 3 months). If 3RH not available, give 6H. AND · Give pyridoxine for duration: If < 5 years old: give 12.5 mg daily (if < 6kg: 6.25 mg(¼ tab) If TB exposure: index patient has DS-TB",
+     "s": "tbqrg2025:22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe; vitamin K for the neonate",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Jaundice",
+   "d": 1
+  },
+  {
+   "t": "Previous severe hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Potent enzyme inducer: lowers dolutegravir (double the dose), protease inhibitors, hormonal contraceptives, warfarin, anticonvulsants, methadone, azoles, steroids",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hepatitis, orange discolouration of urine and tears, GI upset, rash, thrombocytopenia, flu-like syndrome",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function if symptomatic",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-adult",
+  "hiv-defaulter-adult",
+  "hyperglycaemia-adult",
+  "hypoglycemia-adult",
+  "liver",
+  "meningitis-paeds",
+  "paracetamol",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "urine_dipstick"
+ ],
+ "link": [
+  "rifampicin"
+ ],
+ "link_cs": []
+}

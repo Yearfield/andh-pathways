@@ -1,0 +1,91 @@
+{
+ "id": "methadone",
+ "type": "drug",
+ "name": "Methadone",
+ "aliases": [],
+ "class": "Long-acting opioid agonist",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Full μ-opioid agonist with NMDA antagonism, long, variable half-life",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Methadone, oral, 5–10 mg. · If symptoms are still present after 2–-4 hours, give another 5–10 mg. · Repeat until objective withdrawal symptoms are adequately managed",
+     "s": "HOSP:15.35"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used in opioid dependence in pregnancy under specialist care; neonatal abstinence",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression",
+   "d": 1
+  },
+  {
+   "t": "Acute alcohol intoxication",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Accumulates over days – titrate slowly",
+   "d": 1
+  },
+  {
+   "t": "Additive with benzodiazepines and alcohol",
+   "d": 1
+  },
+  {
+   "t": "Enzyme inducers (rifampicin, efavirenz) lower levels and may precipitate withdrawal",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, respiratory depression, constipation, QT prolongation, sweating",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG at higher doses, sedation score",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "opioids",
+  "opioids-withdrawal",
+  "rf-adult"
+ ],
+ "link": [
+  "methadone"
+ ],
+ "link_cs": []
+}

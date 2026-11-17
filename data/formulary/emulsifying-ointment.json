@@ -1,0 +1,60 @@
+{
+ "id": "emulsifying-ointment",
+ "type": "drug",
+ "name": "Emulsifying ointment",
+ "aliases": [
+  "aqueous cream"
+ ],
+ "class": "Emollient",
+ "group": "Skin",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Occlusive layer that reduces transepidermal water loss, soap substitute",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Apply in the direction of hair growth",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Folliculitis, fire hazard with paraffin-based products on dressings and clothing",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "eczema-adult",
+  "eczema-paeds"
+ ],
+ "link": [
+  "emulsifying ointment",
+  "aqueous cream"
+ ],
+ "link_cs": []
+}

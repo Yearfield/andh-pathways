@@ -1,0 +1,108 @@
+{
+ "id": "quinine",
+ "type": "drug",
+ "name": "Quinine",
+ "aliases": [],
+ "class": "Antimalarial",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blood schizonticide",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Malaria",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Quinine, IV (1 mL = 300 mg quinine salt). • Loading dose: 20 mg/kg in dextrose 5% administered over 4 hours. • Maintenance dose: 8 hours after start of the loading dose, give 10 mg/kg in dextrose",
+     "s": "impcg2024:148"
+    }
+   ]
+  },
+  {
+   "h": "Malaria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Quinine, oral, 10 mg/kg/dose 8 hourly for 7–10 days.",
+     "s": "PAED:8.13"
+    },
+    {
+     "t": "Quinine, oral, 10 mg/kg/dose 8 hourly to complete 7–10 day course.",
+     "s": "PAED:8.15"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Can be used; watch for hypoglycaemia",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Tinnitus or optic neuritis",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  },
+  {
+   "t": "Previous blackwater fever",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Infuse slowly in dextrose",
+   "d": 1
+  },
+  {
+   "t": "Never give as an IV bolus",
+   "d": 1
+  },
+  {
+   "t": "Reduce maintenance dose after 48 hours in renal failure",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Cinchonism (tinnitus, deafness, nausea, visual disturbance), hypoglycaemia, QT prolongation, hypotension if infused fast",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood glucose, ECG",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hypoglycemia-paeds",
+  "hypoglycemia-pregnancy"
+ ],
+ "link": [
+  "quinine"
+ ],
+ "link_cs": []
+}

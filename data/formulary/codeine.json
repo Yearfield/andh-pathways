@@ -1,0 +1,79 @@
+{
+ "id": "codeine",
+ "type": "drug",
+ "name": "Codeine",
+ "aliases": [],
+ "class": "Weak opioid analgesic",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Prodrug converted to morphine by CYP2D6 (variable – poor and ultra-rapid metabolisers)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid in breastfeeding",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Children under 12 years",
+   "d": 1
+  },
+  {
+   "t": "After tonsillectomy in under 18s",
+   "d": 1
+  },
+  {
+   "t": "Breastfeeding",
+   "d": 1
+  },
+  {
+   "t": "Respiratory depression",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Unpredictable effect",
+   "d": 1
+  },
+  {
+   "t": "Dependence",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Constipation, nausea, drowsiness, respiratory depression",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "opioids",
+  "opioids-withdrawal",
+  "rf-paeds"
+ ],
+ "link": [
+  "codeine"
+ ],
+ "link_cs": []
+}

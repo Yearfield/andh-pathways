@@ -1,0 +1,293 @@
+{
+ "id": "furosemide",
+ "type": "drug",
+ "name": "Furosemide",
+ "aliases": [
+  "frusemide"
+ ],
+ "class": "Loop diuretic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits the Na-K-2Cl co-transporter in the thick ascending limb, IV venodilation precedes diuresis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Portal Hypertension and Cirrhosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, oral, 40 mg daily.",
+     "s": "HOSP:1.11"
+    }
+   ]
+  },
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, oral, daily. · Initial dose: 40 mg/day. · Higher dosages may be needed, especially if comorbid renal failure.",
+     "s": "HOSP:3.28"
+    }
+   ]
+  },
+  {
+   "h": "Hypertensive Crisis, Hypertensive Emergency",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, IV, 40–80 mg. · Duration of action: 6 hours. · Potentiates all of the above medicines.",
+     "s": "HOSP:3.44"
+    }
+   ]
+  },
+  {
+   "h": "Heart Disease in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, IV, 40 mg with delivery of the baby. · Monitor for 48 hours thereafter for pulmonary oedema.",
+     "s": "HOSP:6.7"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, oral or IV, 20 to 80 mg daily, as a single or divided doses, initiating at the lowest effective dose and titrating upwards. Dose may be increased to 160 mg daily (IV or oral) in divided doses.",
+     "s": "HOSP:7.5"
+    },
+    {
+     "t": "Furosemide, oral or IV, 40 mg in divided doses (e.g., 8 AM and 2 PM). · Titrate to a maximum of 500 mg in divided doses (e.g., 8 AM and 2 PM).",
+     "s": "HOSP:7.5"
+    }
+   ]
+  },
+  {
+   "h": "Glomerular Disease and Nephritic Syndrome",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, oral, 40–80 mg (if eGFR <30 mL/min/1.73m2).",
+     "s": "HOSP:7.8"
+    }
+   ]
+  },
+  {
+   "h": "Hyponatraemia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, oral, 40 mg twice a day in divided doses.",
+     "s": "HOSP:7.15"
+    }
+   ]
+  },
+  {
+   "h": "Pulmonary Oedema, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Furosemide, slow IV, 40 mg. · If response is adequate, follow with 40 mg in 2–4 hours. · If no response within 20–30 minutes: furosemide, IV, 80 mg.",
+     "s": "HOSP:20.16"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Failure, Congestive (Ccf), Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Furosemide, oral, daily (doctor initiated). · Initial dose: 40 mg daily. · If dose >80 mg/day is required, change dose interval to 12 hourly.",
+     "s": "PHC:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Failure, Congestive (Ccf), Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Furosemide, IV, 1 mg/kg, over 5 minutes. See dosing table: Appendix IV. · Do not put up a drip or run in any IV fluids.",
+     "s": "PHC:4.15"
+    }
+   ]
+  },
+  {
+   "h": "Ascites, due to Portal Hypertension",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, oral, 1–3 mg/kg as a single daily dose.",
+     "s": "PAED:2.30"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, IV, 1 mg/kg at the start of the transfusion.",
+     "s": "PAED:2.44"
+    }
+   ]
+  },
+  {
+   "h": "Congenital Heart Disease with Left to Right Shunt",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, oral, 1 mg/kg/dose 8–12 hourly.",
+     "s": "PAED:4.9"
+    }
+   ]
+  },
+  {
+   "h": "Myocarditis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, IV, 1 mg/kg, 8 hourly. Monitor urinary output.",
+     "s": "PAED:4.16"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Acute with Pulmonary Oedema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, IV, 1 mg/kg, 8 hourly.",
+     "s": "PAED:4.21"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Maintenance Therapy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, oral, 1–2 mg/kg/dose 12 hourly. Titrate dose against clinical response. Potassium supplements are necessary if furosemide is used without an aldosterone antagonist, i.e. spironolactone.",
+     "s": "PAED:4.23"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Acute Severe",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, IV, 1–2 mg/kg as a bolus slowly over 5 minutes. · If oliguric, maximum dose: 5 mg/kg/dose. 4.35",
+     "s": "PAED:4.35"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Chronic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Furosemide, oral, 0.5–1.5 mg/kg/dose 12–24 hourly. · Maximum dose: 6 mg/kg/day. · May cause hypokalaemia.",
+     "s": "PAED:4.38"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid unless pulmonary oedema or heart failure",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Anuria",
+   "d": 1
+  },
+  {
+   "t": "Severe hypovolaemia",
+   "d": 1
+  },
+  {
+   "t": "Severe hypokalaemia or hyponatraemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give IV slowly (no faster than 4 mg/minute)",
+   "d": 1
+  },
+  {
+   "t": "Ototoxicity adds to aminoglycosides",
+   "d": 1
+  },
+  {
+   "t": "Hypokalaemia potentiates digoxin toxicity",
+   "d": 1
+  },
+  {
+   "t": "NSAIDs blunt the effect",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypokalaemia, hyponatraemia, hypomagnesaemia, hypovolaemia, hypotension, acute kidney injury, ototoxicity with rapid high-dose IV, hyperuricaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium, sodium, creatinine, urine output, weight",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "aki-adult",
+  "aki-paeds",
+  "ards-adult",
+  "ccf-adult",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "ckd-paeds",
+  "fluids-paeds-sam",
+  "hf-paeds",
+  "hie-neonate",
+  "hte-adult",
+  "htu-adult",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "lytes-adult-ca-mg",
+  "lytes-adult-hypona",
+  "lytes-paeds-ca-mg",
+  "sam"
+ ],
+ "link": [
+  "furosemide",
+  "frusemide"
+ ],
+ "link_cs": []
+}

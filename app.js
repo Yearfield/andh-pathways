@@ -1,5 +1,6 @@
 // JAD Pathways — offline reference app. Data lives in data/*.json (one file per diagnosis).
 import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
+import { fxInit, fxHome, fxView, fxCount } from "./formulary.js"; // formulary pages + automatic medicine links
 import { createScoreCards } from "./scores.js"; // interface for the block-schema score cards (Alvarado … COPD-GOLD)
 import { createVitalCards } from "./vitals.js"; // urine dipstick strip, adult NEWS2, paediatric vitals by age
 import { catalog, keyOf, relatedFor, search } from "./links.js"; // one catalogue of every card: cross-links ("Related"), search-everything, pins
@@ -82,6 +83,7 @@ async function init() {
   try { S.pm = await loadJSON("data/page-map.json"); } catch (e) { S.pm = null; console.warn("page-map.json not loaded; STG cites use per-chapter offsets only"); }
   let rel = null; try { rel = await loadJSON("data/related.json"); } catch (e) { console.warn("related.json not loaded; only automatic cross-links are shown"); }
   S.cx = catalog(S.index, rel);
+  await fxInit({ esc, ico, chip, app, S }); // loads data/formulary/index.json and starts linking medicine names
   window.addEventListener("hashchange", route); route();
 }
 /* A source cite is "id:page". Sources split into one PDF per chapter (s.chapters) cite "id:chapter.page";
@@ -216,6 +218,7 @@ function landing() {
     <button class="tile" data-go="#/diagnoses">${ico("arrival")}<b>Diagnoses Pathways</b><span>Admission, timeline, doses and nursing · ${nd} pathways</span></button>
     <button class="tile" data-go="#/procedures">${ico("doses")}<b>Procedures Pathways</b><span>Step-by-step emergency procedures · ${np} procedure${np === 1 ? "" : "s"}</span></button>
     <button class="tile" data-go="#/scores">${ico("scales")}<b>Scales and Calculations</b><span>Scores, grades and calculators · ${ns} card${ns === 1 ? "" : "s"}</span></button>
+    <button class="tile" data-go="#/formulary">${ico("doses")}<b>Formulary</b><span>Medicines: doses, mechanism, cautions · ${fxCount()} medicines</span></button>
     <button class="tile spring" data-go="#/altmed">${ico("leaf")}<b>Alternative Medicine</b><span>Pathogen reference and feature search · imported, unverified</span></button></div></section>
     <p class="hint">Reference only — no patient details are stored.</p></div></main>`;
 }
@@ -1455,6 +1458,8 @@ async function routeTo() {
     if (p[0] === "proc") return procView(p[1], p[2]);
     if (p[0] === "scores") return scoresHome();
     if (p[0] === "score") return scoreView(p[1], p[2], p[3]);
+    if (p[0] === "formulary") return fxHome();
+    if (p[0] === "drug") return await fxView(p[1]);
     if (p[0] !== "dx") return landing();
     const d = await getDx(p[1]); const tab = ["days", "differentials", "doses", "nursing", "sources", "appendix", "score"].includes(p[2]) ? p[2] : "arrival";
     remember(d.id, tab, p[3]);

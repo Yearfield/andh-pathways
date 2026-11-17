@@ -1,0 +1,107 @@
+{
+ "id": "dopamine",
+ "type": "drug",
+ "name": "Dopamine",
+ "aliases": [],
+ "class": "Inotrope / vasopressor",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Dose-dependent dopaminergic, β1 and α1 agonism",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Respiratory Distress in the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dopamine, IV, 5–15 μg/kg/minute, continued until blood pressure has stabilised. · Response to inotropic support will be unsatisfactory if the circulating blood volume is not corrected.",
+     "s": "PAED:19.15"
+    }
+   ]
+  },
+  {
+   "h": "Enterocolitis, Necrotising (NEC)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dopamine, IV, 5–15 μg/kg/minute.",
+     "s": "PAED:19.22"
+    }
+   ]
+  },
+  {
+   "h": "Septicaemia of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Dopamine, IV, 5–15 mcg/kg/minute as a continuous infusion. · Continue with dopamine as long as it is necessary to maintain the blood pressure.",
+     "s": "PAED:19.37"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Tachyarrhythmias",
+   "d": 1
+  },
+  {
+   "t": "Phaeochromocytoma",
+   "d": 1
+  },
+  {
+   "t": "Uncorrected hypovolaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give by infusion pump via a large or central vein",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tachycardia, arrhythmias, peripheral ischaemia, extravasation necrosis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Continuous ECG and BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fluids-neonate",
+  "hie-neonate",
+  "sofa"
+ ],
+ "link": [
+  "dopamine"
+ ],
+ "link_cs": []
+}

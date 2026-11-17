@@ -1,0 +1,194 @@
+{
+ "id": "spironolactone",
+ "type": "drug",
+ "name": "Spironolactone",
+ "aliases": [],
+ "class": "Potassium-sparing diuretic – aldosterone antagonist",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks mineralocorticoid receptors in the distal nephron: sodium loss, potassium retention, reduces mortality in heart failure",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Portal Hypertension and Cirrhosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 100 mg daily.",
+     "s": "HOSP:1.11"
+    }
+   ]
+  },
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 25–50 mg once daily.",
+     "s": "HOSP:3.29"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Spironolactone, oral 25–50 mg daily.",
+     "s": "HOSP:3.41"
+    }
+   ]
+  },
+  {
+   "h": "Primary Aldosteronism",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 100–200 mg daily.",
+     "s": "HOSP:8.31"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Failure, Congestive (Ccf), Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 25 mg daily (doctor initiated).",
+     "s": "PHC:4.13"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 25 mg daily (doctor initiated). Table 4.4: Stepwise approach of treating hypertension without compelling indications",
+     "s": "PHC:4.23"
+    }
+   ]
+  },
+  {
+   "h": "Ascites, due to Portal Hypertension",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 1–3 mg/kg as a single daily dose. Can increase dosage slowly to 4–6 mg/kg/day. · Continue for as long as needed to control ascites.",
+     "s": "PAED:2.30"
+    }
+   ]
+  },
+  {
+   "h": "Myocarditis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 1–3 mg/kg/dose once daily in consultation with a paediatric cardiologist. May be divided 12 hourly.",
+     "s": "PAED:4.16"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Maintenance Therapy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 1–3 mg/kg/dose once daily. May be divided 12 hourly.",
+     "s": "PAED:4.23"
+    }
+   ]
+  },
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Spironolactone, oral 1.5–2.5 mg/kg/dose, 12 hourly.",
+     "s": "PAED:6.10"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure in Neonates",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Spironolactone, oral, 1–3 mg/kg/dose, once daily.",
+     "s": "PAED:19.30"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  },
+  {
+   "t": "EGFR < 30",
+   "d": 1
+  },
+  {
+   "t": "Addison's disease",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Hyperkalaemia risk with ACE inhibitors, ARBs, potassium supplements, NSAIDs and cotrimoxazole",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyperkalaemia, gynaecomastia, menstrual disturbance, acute kidney injury",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium and creatinine at baseline, 1 week, then regularly",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "brady-adult",
+  "ccf-adult",
+  "cirrhosis-adult",
+  "ckd-adult",
+  "ckd-paeds",
+  "hf-paeds",
+  "htu-adult",
+  "lytes-adult-hyperk",
+  "lytes-adult-hypok"
+ ],
+ "link": [
+  "spironolactone"
+ ],
+ "link_cs": []
+}

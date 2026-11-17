@@ -1,0 +1,295 @@
+{
+ "id": "ibuprofen",
+ "type": "drug",
+ "name": "Ibuprofen",
+ "aliases": [],
+ "class": "NSAID",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Reversible non-selective COX inhibition, reducing prostaglandin synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Rheumatic Heart Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with meals.",
+     "s": "HOSP:3.45"
+    }
+   ]
+  },
+  {
+   "h": "Dysmenorrhoea",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly, with or after a meal.",
+     "s": "HOSP:5.1"
+    }
+   ]
+  },
+  {
+   "h": "Uterine Bleeding, Abnormal (AUB)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with or after a meal for 2 to 3 weeks. · Begin trial of NSAID starting on 1st day of menses until menses cease.",
+     "s": "HOSP:5.3"
+    },
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly for 2–3 days with or after a meal, depending on severity of pain.",
+     "s": "HOSP:5.3"
+    }
+   ]
+  },
+  {
+   "h": "Incomplete Miscarriage in the First Trimester",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with or after a meal, if needed.",
+     "s": "HOSP:5.9"
+    }
+   ]
+  },
+  {
+   "h": "Intra-uterine Contraceptive Copper or Levonorgestrel Device",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with or after a meal for 5 days. Use for every cycle for 1–3 months. · Follow up after three months and if bleeding/cramping is unacceptable, offer",
+     "s": "HOSP:5.21"
+    }
+   ]
+  },
+  {
+   "h": "Injectable Contraception",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with or after a meal for 5 days.",
+     "s": "HOSP:5.22"
+    }
+   ]
+  },
+  {
+   "h": "Oral Analgesics",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with meals. Note: Do not administer NSAIDs to patients at risk of hypovolaemia, renal impairment or gastrointestinal bleeding. Avoid in patients with asthma who",
+     "s": "HOSP:12.5"
+    }
+   ]
+  },
+  {
+   "h": "Examples of Ward Prescriptions for Postoperative Analgesia According to",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly after meals.",
+     "s": "HOSP:12.8"
+    }
+   ]
+  },
+  {
+   "h": "Management of Incomplete Miscarriage in the",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with or after a meal, for 2 to 3 days. Follow up after one week to ensure that bleeding has stopped, or sooner if worsening symptoms.",
+     "s": "PHC:6.6"
+    }
+   ]
+  },
+  {
+   "h": "Management of Termination of Pregnancy at",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 400 mg 8 hourly with or after a meal, as needed for 2 to 3 days.",
+     "s": "PHC:6.9"
+    }
+   ]
+  },
+  {
+   "h": "Herpes Gingivostomatitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 5–10 mg/kg/dose 6 hourly after meals.",
+     "s": "PAED:2.4"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Sickle Cell",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 10 mg/kg 8 hourly.",
+     "s": "PAED:3.8"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 10 mg/kg/dose, 8 hourly, oral, (non-steroidal anti-inflammatory agents are preferred to aspirin as a result of the side effect profile) until the arthritis resolves.",
+     "s": "PAED:4.14"
+    }
+   ]
+  },
+  {
+   "h": "Pericarditis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 5 mg/kg/dose 6 hourly.",
+     "s": "PAED:4.20"
+    }
+   ]
+  },
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 5–10 mg/kg/dose, 6–8 hourly for 72 hours. · Child < 30 kg, maximum dose: 500 mg/day.",
+     "s": "PAED:5.10"
+    }
+   ]
+  },
+  {
+   "h": "Juvenile Idiopathic Arthritis (Jia)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 10 mg/kg/dose 6–8 hourly.",
+     "s": "PAED:12.5"
+    }
+   ]
+  },
+  {
+   "h": "Headaches",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral, 10 mg/kg/dose, 6 hourly.",
+     "s": "PAED:13.35"
+    }
+   ]
+  },
+  {
+   "h": "Patent Ductus Arteriosus (PDA) in the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Ibuprofen, oral. First dose: 10 mg/kg. After 24 hours, follow with 2 doses of 5 mg/kg 24 hours apart.",
+     "s": "PAED:19.25"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid in the third trimester",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active peptic ulcer or GI bleeding",
+   "d": 1
+  },
+  {
+   "t": "Severe heart failure",
+   "d": 1
+  },
+  {
+   "t": "EGFR < 30",
+   "d": 1
+  },
+  {
+   "t": "Dehydration or hypovolaemia",
+   "d": 1
+  },
+  {
+   "t": "Third trimester",
+   "d": 1
+  },
+  {
+   "t": "Aspirin-sensitive asthma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take with food",
+   "d": 1
+  },
+  {
+   "t": "Avoid with ACE inhibitors plus diuretics, anticoagulants, and in the elderly",
+   "d": 1
+  },
+  {
+   "t": "Avoid in suspected dengue or varicella",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dyspepsia, GI bleeding, acute kidney injury, fluid retention, bronchospasm, raised BP",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function in at-risk patients",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "appy-adult",
+  "appy-paeds",
+  "bsi-adult",
+  "bsi-paeds",
+  "fracture-adult",
+  "fracture-paeds",
+  "hernia-paeds",
+  "hf-paeds",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "meningitis-adult",
+  "miscarriage",
+  "opioids",
+  "opioids-withdrawal",
+  "pid",
+  "tb-hiv-adult",
+  "uds"
+ ],
+ "link": [
+  "ibuprofen"
+ ],
+ "link_cs": []
+}

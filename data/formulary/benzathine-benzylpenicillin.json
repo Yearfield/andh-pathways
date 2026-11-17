@@ -1,0 +1,139 @@
+{
+ "id": "benzathine-benzylpenicillin",
+ "type": "drug",
+ "name": "Benzathine benzylpenicillin",
+ "aliases": [
+  "benzathine"
+ ],
+ "class": "Antibiotic – long-acting depot penicillin",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Slow release of benzylpenicillin from the IM depot gives low sustained levels for weeks",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Syphilis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Benzathine benzylpenicillin (depot formulation), IM, 2.4 million units diluted in 6 mL 1% lidocaine without adrenaline (epinephrine), weekly for 3 doses.",
+     "s": "HOSP:6.18"
+    },
+    {
+     "t": "Benzathine benzylpenicillin (depot formulation), IM, 50 000 units/kg as a single dose into the antero-lateral thigh. Symptomatic baby",
+     "s": "HOSP:6.19"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Benzathine benzylpenicillin, IM, single dose. · Children <30 kg: 600 000 IU. · Children ≥ 30 kg and adults: 1.2 MU.",
+     "s": "PHC:4.28"
+    },
+    {
+     "t": "Benzathine benzylpenicillin, IM, every 21 to 28 days (i.e., 3 to 4 weeks). · Children <30 kg: 600 000 IU · Children ≥ 30 kg and adults: 1.2 MU",
+     "s": "PHC:4.28"
+    }
+   ]
+  },
+  {
+   "h": "Syphilis in Pregnancy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Benzathine benzylpenicillin, IM, 2.4 MU weekly for 3 weeks. · Reconstitute with 6 mL of lidocaine 1% without adrenaline (epinephrine). · Follow up at 3 months after the last injection to confirm a fourfold (i.e. 2 diluti",
+     "s": "PHC:6.18"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Benzathine benzylpenicillin (depot formulation), IM, as a single dose. · If < 30 kg: 600 000 IU. · If ≥ 30 kg: 1.2 MU.",
+     "s": "PAED:4.14"
+    },
+    {
+     "t": "Benzathine benzylpenicillin (depot formulation), IM, every 3–4 weeks. · If < 30 kg: 600 000 IU. · If > 30 kg: 1.2 MU.",
+     "s": "PAED:4.15"
+    }
+   ]
+  },
+  {
+   "h": "Cutaneous Haemangiomas",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Benzathine benzylpenicillin (depot formulation), IM, 30 000 units/kg/dose, 2 doses given 5 days apart. · Maximum dose: 1.2 million units.",
+     "s": "PAED:6.3"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – treatment of choice for syphilis in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "Never give IV",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Deep IM only",
+   "d": 1
+  },
+  {
+   "t": "May be reconstituted with lidocaine 1% without adrenaline to reduce pain",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Injection-site pain, hypersensitivity, Jarisch–Herxheimer reaction in syphilis",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "ccf-adult",
+  "hf-paeds",
+  "term-labour",
+  "tonsillitis-paeds",
+  "vds"
+ ],
+ "link": [
+  "benzathine benzylpenicillin"
+ ],
+ "link_cs": []
+}

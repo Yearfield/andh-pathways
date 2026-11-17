@@ -1,0 +1,151 @@
+{
+ "id": "meropenem",
+ "type": "drug",
+ "name": "Meropenem",
+ "aliases": [],
+ "class": "Antibiotic – carbapenem",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits cell-wall synthesis, very broad spectrum including ESBL producers, anaerobes and Pseudomonas, lower seizure risk than imipenem",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Meropenem, IV, 1 g 8 hourly.",
+     "s": "HOSP:2.12"
+    }
+   ]
+  },
+  {
+   "h": "Hospital-acquired Pneumonia (Hap) and Ventilator-associated Pneumonia (Vap)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Meropenem, IV, 2 g 8 hourly as monotherapy.",
+     "s": "HOSP:9.6"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Meropenem, IV, 2 g 8 hourly for 7 days.",
+     "s": "HOSP:14.37"
+    },
+    {
+     "t": "Meropenem, IV, 2 g 8 hourly for 10 days.",
+     "s": "HOSP:14.38"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Meropenem, IV, 1 g infusion given over 4 hours, 6 hourly dosing interval. 14.8.1: Meningitis - pneumococcal meningitis and haemophilus influenzae severe penicillin allergy, 9.1.3: Hospital-acquired pneumonia (HAP) and",
+     "s": "HOSP"
+    },
+    {
+     "t": "Meropenem, IV, 2 g 8 hourly.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Figure 12: Investigation of a patient with acute meningitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Avoid ceftriaxone only if there has been documented cephalosporin anaphylaxis. Instead, give meropenem, IV, 2 g 8 hourly for 7 days. • If Listeria monocytogenes meningitis is suspected add",
+     "s": "hiv2026:82"
+    }
+   ]
+  },
+  {
+   "h": "RR-TB Dosing Chart for Children 2",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Meropenem† · + Amoxicillin/clavulanate (Dlm) · (Eto) · acid (PAS)## · (hdINH)# Formula- · 50 mg tablet OR · 250 mg tablet OR · 4 g sachet with powder for · 500 mg per vial (10 mL) · 250 mg / 62.5 mg in 5 mL suspension · 100 mg tablet OR · F",
+     "s": "tbqrg2025:41"
+    },
+    {
+     "t": "Target dose · 3 - 4 mg/kg/day · 15 - 20 mg/kg/day · 200 - 300 mg/kg/day · 20 - 40 mg/kg IV every 8h · To be used with meropenem · 15 - 20 mg/kg/day · Target dose MDD · 100 mg twice daily · 1g · 8g · 2 g twice daily · 250 / 125 mg three time",
+     "s": "tbqrg2025:41"
+    },
+    {
+     "t": "2 x 25 mg DT twice daily 1 x 50 mg tab twice daily · 4000 mg (100 mL) twice daily IV OR 2 g (2 vials) twice a · twice a day according to meropenem · daily 36 - 45.9 · day IV · dosingφ · 4.5 x 100 mg tabs daily · 36 - 45.9 ## · φ",
+     "s": "tbqrg2025:41"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Carbapenem hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Markedly lowers valproate levels – avoid the combination",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, rash, raised liver enzymes, seizures (rare), C. difficile",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "meningitis-adult",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "meropenem"
+ ],
+ "link_cs": []
+}

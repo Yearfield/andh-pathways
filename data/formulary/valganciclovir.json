@@ -1,0 +1,133 @@
+{
+ "id": "valganciclovir",
+ "type": "drug",
+ "name": "Valganciclovir",
+ "aliases": [],
+ "class": "Antiviral – oral prodrug of ganciclovir",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits CMV DNA polymerase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cytomegalovirus (CMV)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Valganciclovir, oral, 900 mg daily until CD4 count rises to >100 cells/mm3 on ART, if available. Specialist initiated.",
+     "s": "HOSP:10.28"
+    }
+   ]
+  },
+  {
+   "h": "Retinitis, HIV CMV",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Valganciclovir, oral, 900 mg 12 hourly for the first 3 weeks, then 900 mg daily until immune recovery (CD4 >100) and a minimum of 3 months of therapy with valganciclovir (if available).",
+     "s": "HOSP:18.9"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Valganciclovir, oral, 900 mg 12 hourly for 3 weeks, then 900 mg daily until immune recovery (CD4 >100 cells/mm3 on ART).",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Cytomegalovirus (CMV) Infection",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Valganciclovir, oral, 16 mg/kg, 12 hourly for 6 months. · Monitor FBC & differential white cell count, AST/ALT weekly initially, then monthly.",
+     "s": "PAED:8.8"
+    },
+    {
+     "t": "Valganciclovir, oral, 16 mg/kg daily until CD4 count rises for > 6 months to > 15% (< 6 years) or > 100 cells/mm3 (> 6 years) on ART.",
+     "s": "PAED:8.9"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia in Hiv-exposed or Hiv-infected Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Valganciclovir, oral, 16 mg/kg 12 hourly to complete the first 21 days of therapy THEN",
+     "s": "PAED:15.9"
+    },
+    {
+     "t": "Valganciclovir, oral, 16 mg/kg daily to complete 42 days of therapy.",
+     "s": "PAED:15.9"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid (teratogenic)",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe neutropenia or thrombocytopenia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take with food",
+   "d": 1
+  },
+  {
+   "t": "Additive marrow toxicity with zidovudine",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Neutropenia, thrombocytopenia, anaemia, diarrhoea",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC, renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "prb-adult"
+ ],
+ "link": [
+  "valganciclovir"
+ ],
+ "link_cs": []
+}

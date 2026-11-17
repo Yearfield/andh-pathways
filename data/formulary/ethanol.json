@@ -1,0 +1,67 @@
+{
+ "id": "ethanol",
+ "type": "drug",
+ "name": "Ethanol",
+ "aliases": [],
+ "class": "Antidote for toxic alcohol poisoning",
+ "group": "Antidotes",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Competes for alcohol dehydrogenase, blocking formation of toxic metabolites of methanol and ethylene glycol",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Maintain a target blood ethanol level",
+   "d": 1
+  },
+  {
+   "t": "Dose increases during dialysis and in chronic drinkers",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Intoxication, hypoglycaemia (especially children), CNS depression",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood glucose, level of consciousness, ethanol level where available",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bloodgas-causes",
+  "bloodgas-interpretation",
+  "bloodgas_causes",
+  "bloodgas_interpretation",
+  "toxic-alcohols"
+ ],
+ "link": [],
+ "link_cs": []
+}

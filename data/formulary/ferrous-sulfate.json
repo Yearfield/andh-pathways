@@ -1,0 +1,195 @@
+{
+ "id": "ferrous-sulfate",
+ "type": "drug",
+ "name": "Ferrous sulfate",
+ "aliases": [
+  "ferrous sulphate",
+  "ferrous fumarate",
+  "ferrous gluconate",
+  "ferrous",
+  "iron sucrose"
+ ],
+ "class": "Oral iron",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces iron for haemoglobin synthesis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Anaemia, Iron Deficiency",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ferrous fumarate, oral, 200 mg (± 65 mg elemental iron) 12 hourly.",
+     "s": "HOSP:2.1"
+    },
+    {
+     "t": "Ferrous fumarate, oral, 200 mg (± 65 mg elemental iron) daily.",
+     "s": "HOSP:2.3"
+    },
+    {
+     "t": "Ferrous sulfate compound BPC (dried), oral, 170 mg (± 55 mg elemental iron) 12 hourly.",
+     "s": "HOSP:2.1"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Ferrous fumarate, oral, 400 mg per week (± 130 mg elemental iron). (For folic acid supplementation guidance to prevent neural tube defects, Primary Health Care STGs and EML, Section 6.4.1: Antenatal supplements.)",
+     "s": "HOSP:6.1"
+    },
+    {
+     "t": "Ferrous fumarate, oral, 200 mg (± 65 mg elemental iron) 12 hourly. · Continue for 3-6 months after Hb reaches normal to replenish iron stores. · Hb is expected to rise by at least 1.5 g/dL in two weeks.",
+     "s": "HOSP:6.2"
+    },
+    {
+     "t": "Ferrous sulfate compound BPC (dried), oral, 340 mg per week, (± 110 mg elemental iron), with meals.",
+     "s": "HOSP:6.1"
+    }
+   ]
+  },
+  {
+   "h": "Baseline laboratory evaluation for adults and adolescents, pregnant women, and children",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Haemoglobin (Hb) · To identify and · If Hb is low, do a full blood count · Treat with ferrous sulphate · Children < 5 years: manage anaemia; · (FBC). Characterise according to · tds if Hb < 10 g/dL. · Treat with iron to determine · mean cor",
+     "s": "hiv2026:29"
+    }
+   ]
+  },
+  {
+   "h": "ART 2026 one-page summary: baseline labs, regimens, monitoring, VL algorithm, interactions",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "To detect and manage anaemia, to deter- · If Hb is low, do FBC and follow · If Hb < 10 g/dL: treat with ferrous sulphate tds mine eligibility for AZT where necessary · OR TLD2/TLD3 · intensify efforts to resolve adherence issues and continu",
+     "s": "art2026:1"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Iron Deficiency",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ferrous fumarate, oral, 200 mg (± 65 mg elemental iron) 12 hourly. · Do not ingest with tea, antacids or calcium supplements/milk. · Doses should be taken on an empty stomach, but if gastrointestinal side effects",
+     "s": "PHC:3.4"
+    },
+    {
+     "t": "Ferrous fumarate, oral, 400 mg per week (± 130 mg elemental iron).",
+     "s": "PHC:3.4"
+    },
+    {
+     "t": "Ferrous gluconate syrup, oral, 2.5 mL daily (provides ± 15 mg elemental iron) until 6 months of age.",
+     "s": "PHC:3.4"
+    }
+   ]
+  },
+  {
+   "h": "Antenatal Supplements",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ferrous fumarate, oral, 200 mg once daily (± 65 mg elemental iron). · Taking iron tablets with meals decreases iron absorption, but improves tolerability. (Note: Do not take iron tablets with milk).",
+     "s": "PHC:6.11"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia in Pregnancy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Ferrous fumarate, oral, 200 mg (± 65 mg elemental iron) 12 hourly. · Taking iron tablets with meals decreases iron absorption, but improves tolerability. (Note: Do not take iron tablets with milk).",
+     "s": "PHC:6.17"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Start treatment for anaemia with ferrous sulphate 200 mg oral 3 times daily, and continue with folic acid 5mg orally daily · If the Hb is <6.0 g/dL or if the patient is symptomatic (dizziness, tachycardia, shortness of breath at",
+     "s": "impcg2024:122"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Haemochromatosis",
+   "d": 1
+  },
+  {
+   "t": "Repeated transfusions",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Absorption reduced by antacids, calcium and tea",
+   "d": 1
+  },
+  {
+   "t": "Iron reduces dolutegravir absorption – separate doses",
+   "d": 1
+  },
+  {
+   "t": "Dangerous in overdose in children",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, constipation or diarrhoea, black stools, epigastric pain",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Haemoglobin at 4 weeks",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ganzoni",
+  "pph",
+  "prb-adult",
+  "ugib-adult"
+ ],
+ "link": [
+  "ferrous gluconate",
+  "ferrous fumarate",
+  "ferrous sulphate",
+  "ferrous sulfate"
+ ],
+ "link_cs": []
+}

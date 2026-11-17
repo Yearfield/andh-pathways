@@ -1,0 +1,301 @@
+{
+ "id": "fluconazole",
+ "type": "drug",
+ "name": "Fluconazole",
+ "aliases": [],
+ "class": "Antifungal – triazole",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits fungal ergosterol synthesis (14-α-demethylase)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Fungal Infections",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 200 mg once weekly for 6 weeks. · For onychomycosis, 200 mg weekly for 6 months.",
+     "s": "HOSP:4.14"
+    }
+   ]
+  },
+  {
+   "h": "Intravascular Catheter Infections",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 400 mg daily.",
+     "s": "HOSP:9.4"
+    }
+   ]
+  },
+  {
+   "h": "Cryptococcal Meningitis, Hiv-negative",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 800 mg daily for 2 weeks, followed by 400 mg daily for 2 months.",
+     "s": "HOSP:14.40"
+    },
+    {
+     "t": "Fluconazole, oral, 200 mg daily for a minimum of 1 year. Follow all patients closely for relapses.",
+     "s": "HOSP:14.40"
+    }
+   ]
+  },
+  {
+   "h": "Sepsis in ICU: Antimicrobial Therapy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fluconazole, IV: · Loading dose: 800 mg daily. · Maintenance dose: 400 mg daily.",
+     "s": "HOSP:23.40"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 200 mg weekly. 10.2.3: Candidiasis of oesophagus/trachea/bronchi, 10.2.4.1: Cryptococcosis, CSF Crag Negative - maintenance phase, 10.2.4.2: Cryptococcal meningitis,",
+     "s": "HOSP"
+    },
+    {
+     "t": "Fluconazole, oral, 200 mg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Fluconazole, IV/oral, 200 mg daily. 9.1.1: Intravascular catheter infections, short-term central venous catheter infection candidaemia - follow up susceptibility, 14.8.1.2.2: Cryptococcal",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Figure 11: Algorithm for the diagnosis and management of cryptococcal disease in adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "A consolidation phase of fluconazole 800 mg daily for eight weeks • A maintenance phase of fluconazole 200 mg daily. Continue for at least one year, provided the CD4 count increases to >200 cells/ µL on ART and virally suppressed.",
+     "s": "hiv2026:76"
+    },
+    {
+     "t": "A maintenance phase of fluconazole 200 mg daily. Continue for at least one year, provided the CD4 count increases to >200 cells/ µL on ART and virally suppressed.",
+     "s": "hiv2026:76"
+    },
+    {
+     "t": "Liposomal amphotericin B IV · Amphotericin B deoxycholate, IV infusion · Fluconazole, oral 1200 mg · INDUCTION PHASE infusion over 2 hrs, 10 mg/kg, · over 4 hrs, 1 mg/kg daily for 7 days. · daily for 14 days. as a single dose. · AND · AND |",
+     "s": "hiv2026:76"
+    }
+   ]
+  },
+  {
+   "h": "Table 16: Cryptococcosis treatment regimen options in adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Medicine · Fluconazole · Flucytosine · Fluconazole · Flucytosine · Fluconazole · Fluconazole · Flucytosine · Fluconazole amphotericin B · deoxycholate · dexycholate 10 mg/kg in",
+     "s": "hiv2026:77"
+    },
+    {
+     "t": "Fluconazole, oral, 800 mg daily for 8 weeks Consolidation Phase Fluconazole, oral, 200 mg daily for at least 1 year",
+     "s": "hiv2026:77"
+    },
+    {
+     "t": "Fluconazole, oral, 200 mg daily for at least 1 year Source: Hospital level (Adults) Standard Treatment Guidelines and Essential Medicines List to treat specific pathogens and months · Continue for at least 1 year provided that the CD4 count",
+     "s": "hiv2026:77"
+    }
+   ]
+  },
+  {
+   "h": "Table 17: Cryptococcosis treatment regimen options in children",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 12 mg/kg/day for 8 weeks (max daily dose 800mg) Week 10 Consolidation Phase",
+     "s": "hiv2026:78"
+    },
+    {
+     "t": "Fluconazole, oral, 6mg/kg/day (max daily dose 400mg) 12 · Discontinue fluconazole: Children < 6 years of age, on ART: CD4 count > 25% for at least 6 months. months · Children > 6 years of age, on ART: CD4 count > 200 for at least 6 months.",
+     "s": "hiv2026:78"
+    }
+   ]
+  },
+  {
+   "h": "Scalp Infections – Tinea Capitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 6 mg/kg once daily, for 28 days.",
+     "s": "PHC:5.13"
+    },
+    {
+     "t": "Fluconazole, oral, 200 mg weekly, for 6 weeks. 11 Note: Do not give to women of child-bearing age unless they are on effective contraceptive.",
+     "s": "PHC:5.13"
+    }
+   ]
+  },
+  {
+   "h": "Candidiasis, Oesophageal",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 200 mg daily for 14 days.",
+     "s": "PHC:11.20"
+    },
+    {
+     "t": "Fluconazole, oral, 6 mg/kg once daily for 21 days.",
+     "s": "PHC:11.51"
+    }
+   ]
+  },
+  {
+   "h": "Cryptococcosis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Fluconazole, oral 1200 mg daily for 14 days.",
+     "s": "PHC:11.21"
+    },
+    {
+     "t": "Fluconazole, oral, 800 mg daily for 8 weeks.",
+     "s": "PHC:11.21"
+    },
+    {
+     "t": "Fluconazole, oral, 200 mg daily. · Continue for at least 1 year provided that the CD4 count increases to >200 cells/mm3 on ART.",
+     "s": "PHC:11.21"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 6 mg/kg once daily. Weight Dose Use one of the following: Age Kg mg Susp Capsule Capsule Months/years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Candidiasis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fluconazole, oral, 3–6 mg/kg/day for 14 days.",
+     "s": "PAED:5.12"
+    }
+   ]
+  },
+  {
+   "h": "Candidiasis, Systemic and Other",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fluconazole, IV/oral, 6 mg/kg immediately as a single dose. · Follow with 3 mg/kg/day for 3 weeks.",
+     "s": "PAED:8.7"
+    },
+    {
+     "t": "Fluconazole, oral, 12 mg/kg as a single dose. · Maximum dose: 150 mg.",
+     "s": "PAED:8.7"
+    }
+   ]
+  },
+  {
+   "h": "Meningitis, Cryptococcal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fluconazole, IV/oral, 12 mg/kg/day. · Maximum dose: 800 mg.",
+     "s": "PAED:8.24"
+    },
+    {
+     "t": "Fluconazole, oral, 12 mg/kg/day for 8 weeks. · Maximum dose: 800 mg.",
+     "s": "PAED:8.25"
+    },
+    {
+     "t": "Fluconazole, oral, 6 mg/kg/day. · Maximum dose: 400 mg.",
+     "s": "PAED:8.25"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia in Hiv-exposed or Hiv-infected Children",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fluconazole, IV/oral, 10 mg/kg as a single daily dose for at least 14 days.",
+     "s": "PAED:15.9"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid high doses in the first trimester",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Co-administration with drugs that prolong QT and are CYP3A4 substrates",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Inhibits CYP2C9 and 3A4: raises warfarin, phenytoin, sulfonylureas",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin lowers fluconazole levels",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, abdominal pain, raised liver enzymes, QT prolongation, rash",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function on prolonged high doses",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fungal-adult",
+  "fungal-paeds",
+  "gerd-adult",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "meningitis-adult",
+  "meningitis-paeds"
+ ],
+ "link": [
+  "fluconazole"
+ ],
+ "link_cs": []
+}

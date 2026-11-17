@@ -1,0 +1,162 @@
+{
+ "id": "cetirizine",
+ "type": "drug",
+ "name": "Cetirizine",
+ "aliases": [],
+ "class": "Non-sedating antihistamine",
+ "group": "Respiratory and allergy",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Selective peripheral H1 antagonist",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Urticaria",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 10 mg daily.",
+     "s": "HOSP:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Otitis Media, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 10 mg daily for 10 days.",
+     "s": "HOSP:17.4"
+    }
+   ]
+  },
+  {
+   "h": "Anaphylaxis/anaphylactic Shock",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 10 mg as a single dose.",
+     "s": "HOSP:20.13"
+    }
+   ]
+  },
+  {
+   "h": "Itching (Pruritus)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 5 mg once daily.",
+     "s": "PHC:5.4"
+    },
+    {
+     "t": "Cetirizine, oral, 10 mg once daily.",
+     "s": "PHC:5.4"
+    }
+   ]
+  },
+  {
+   "h": "Eczema, Acute, Moist or Weeping",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 10 mg once daily. PHC Chp 5_Last updated 9 July 2026 5.22",
+     "s": "PHC:5.22"
+    }
+   ]
+  },
+  {
+   "h": "Conjunctivitis, Allergic",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 10 mg once daily. · Use may be seasonal (1 to 3 months) or long-term.",
+     "s": "PHC:18.3"
+    },
+    {
+     "t": "Cetirizine, oral, 5 mg once daily. See dosing table:Appendix IV. · Use may be seasonal (1 to 3 months) or long-term.",
+     "s": "PHC:18.3"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Cetirizine, oral, 5 mg once daily Age Dose Use one of the following: Years (Dose according to mg Syrup Tablet",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Drug Reactions",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cetirizine, oral, as a single dose. · Children 2–6 years: 5 mg. · Children 6–12 years: 10 mg.",
+     "s": "PAED:5.7"
+    }
+   ]
+  },
+  {
+   "h": "Rhinitis, Allergic/allergic Rhinosinusitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cetirizine, oral, as a single dose at night if the predominant symptoms are sneezing, nasal itching and rhinorrhoea: · Children 3–12 years: 5 mg.",
+     "s": "PAED:17.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe renal impairment (reduce dose)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Mild drowsiness, dry mouth, headache",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "eczema-adult",
+  "eczema-paeds",
+  "om-adult"
+ ],
+ "link": [
+  "cetirizine"
+ ],
+ "link_cs": []
+}

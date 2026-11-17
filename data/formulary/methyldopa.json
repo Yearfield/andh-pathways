@@ -1,0 +1,95 @@
+{
+ "id": "methyldopa",
+ "type": "drug",
+ "name": "Methyldopa",
+ "aliases": [],
+ "class": "Centrally acting antihypertensive",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Converted to α-methylnoradrenaline, which stimulates central α2 receptors and lowers sympathetic outflow",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hypertensive Disorders in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Methyldopa, oral, 250 mg 8 hourly as a starting dose. · Increase to a maximum of 750 mg 8 hourly, according to response.",
+     "s": "HOSP:6.8"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Hypertension",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Methyldopa, oral, 250 mg 8 hourly. · Titrate to a maximum dose: 750 mg 8 hourly. · When using iron together with methyldopa, ensure that iron and methyldopa are",
+     "s": "PHC:6.13"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "First-line antihypertensive in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active liver disease",
+   "d": 1
+  },
+  {
+   "t": "Depression",
+   "d": 1
+  },
+  {
+   "t": "Phaeochromocytoma",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Maximum effect takes days",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, dry mouth, postural hypotension, depression, positive Coombs test and haemolytic anaemia, hepatitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP, FBC and liver function if prolonged",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "pet"
+ ],
+ "link": [
+  "methyldopa"
+ ],
+ "link_cs": []
+}

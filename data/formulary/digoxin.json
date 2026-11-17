@@ -1,0 +1,125 @@
+{
+ "id": "digoxin",
+ "type": "drug",
+ "name": "Digoxin",
+ "aliases": [],
+ "class": "Cardiac glycoside",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits Na/K-ATPase: raises intracellular calcium (positive inotrope) and increases vagal tone (slows AV conduction)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Atrial Fibrillation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Digoxin, oral, 0.125 mg daily, adjust according to rate response and trough plasma level · Digoxin trough plasma levels (before the morning dose) should be",
+     "s": "HOSP:3.18"
+    },
+    {
+     "t": "Digoxin, oral, start at 0.125 mg daily and adjust according to rate re- sponse and trough plasma level. · In patients with impaired renal function (eGFR <60 mL/minute),",
+     "s": "HOSP:3.19"
+    }
+   ]
+  },
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Digoxin, oral, 0.125 mg daily, adjust according to response and trough plasma level. · Digoxin trough plasma levels (before the morning dose) should be",
+     "s": "HOSP:3.29"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Digoxin, oral, 0.125 mg daily, adjust according to rate response, if in atrial fibrillation, and trough plasma level. · Digoxin trough plasma levels (before the morning dose) should be",
+     "s": "HOSP"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Ventricular arrhythmias",
+   "d": 1
+  },
+  {
+   "t": "Heart block",
+   "d": 1
+  },
+  {
+   "t": "WPW with atrial fibrillation",
+   "d": 1
+  },
+  {
+   "t": "Hypertrophic obstructive cardiomyopathy",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Narrow therapeutic index",
+   "d": 1
+  },
+  {
+   "t": "Toxicity increased by hypokalaemia, hypomagnesaemia, hypercalcaemia and renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Amiodarone and verapamil raise levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, vomiting, anorexia, visual disturbance (yellow vision), bradycardia, almost any arrhythmia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium, renal function, heart rate, digoxin level if toxicity suspected",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "brady-adult",
+  "ccf-adult",
+  "chest_pain",
+  "hf-paeds"
+ ],
+ "link": [
+  "digoxin"
+ ],
+ "link_cs": []
+}

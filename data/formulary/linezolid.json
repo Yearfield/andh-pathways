@@ -1,0 +1,114 @@
+{
+ "id": "linezolid",
+ "type": "drug",
+ "name": "Linezolid",
+ "aliases": [],
+ "class": "Antibiotic – oxazolidinone",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the 50S subunit and blocks formation of the initiation complex",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Linezolid, oral, 600mg daily",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "ART 2026 one-page summary: baseline labs, regimens, monitoring, VL algorithm, interactions",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Primary Care Standard Treatment · Refer if Hb < 8 g/dL and symptoms of anaemia, or if anaemia · Linezolid and AZT · Additive mitochondrial and · Linezolid and AZT should not be used together. Phone the hotline for · ≥ 9 months guidelines |",
+     "s": "art2026:1"
+    }
+   ]
+  },
+  {
+   "h": "Principles of Individualised RR-TB Regimens",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Linezolid* · Lzd · Include for all including CNS disease, unless contraindication or resistance. If Hb ˂8 g/dL, neutrophils ˂0.75 x 109/L and/or platelets ˂50 x 109/L, only consider reintroducing or",
+     "s": "tbqrg2025:39"
+    }
+   ]
+  },
+  {
+   "h": "RR-TB Dosing Chart for Children 1",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Levofloxacin (LFX) Moxifloxacin · Bedaquiline · Linezolid · Terizidone · Clofazimine (preferred quinolone) (MFX) · (BDQ) · (LZD) · (TRD)# · (CFZ) 250 mg tablet",
+     "s": "tbqrg2025:40"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Specialist decision",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Concurrent MAOIs or uncontrolled hypertension",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Serotonin syndrome with SSRIs, tramadol and pethidine",
+   "d": 1
+  },
+  {
+   "t": "Toxicity is duration-related",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Myelosuppression (anaemia, thrombocytopenia), peripheral and optic neuropathy, lactic acidosis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC weekly, visual symptoms, neuropathy screen",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "linezolid"
+ ],
+ "link_cs": []
+}

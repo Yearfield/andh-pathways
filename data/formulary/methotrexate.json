@@ -1,0 +1,125 @@
+{
+ "id": "methotrexate",
+ "type": "drug",
+ "name": "Methotrexate",
+ "aliases": [],
+ "class": "Antimetabolite – folate antagonist",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits dihydrofolate reductase, blocking DNA synthesis in rapidly dividing trophoblast and other cells",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Medical Management of Ectopic Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Methotrexate, IM, 50 mg/m2 of body surface area (BSA).",
+     "s": "HOSP:5.20"
+    },
+    {
+     "t": "Methotrexate, IM, 50 mg/m2 BSA.",
+     "s": "HOSP:5.20"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Rheumatoid (Ra)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Methotrexate, oral, 7.5 mg once per week. Specialist consultation. · Increase dose gradually to a maximum of 25 mg per week. · Monitor: ALT and FBC before and 12 weekly during treatment.",
+     "s": "HOSP:13.2"
+    }
+   ]
+  },
+  {
+   "h": "Non-infectious Posterior Uveitis and Panuveitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Methotrexate, oral, 7.5 mg once weekly. · Dose titration should be based on individual patient response using increments of 2.5 mg weekly to a maximum dose of 25 mg weekly.",
+     "s": "HOSP:18.12"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated in wanted pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Intrauterine pregnancy",
+   "d": 1
+  },
+  {
+   "t": "Breastfeeding",
+   "d": 1
+  },
+  {
+   "t": "Renal or hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "Blood dyscrasia",
+   "d": 1
+  },
+  {
+   "t": "Immunodeficiency",
+   "d": 1
+  },
+  {
+   "t": "Active peptic ulcer or pulmonary disease",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Avoid folic acid, NSAIDs, cotrimoxazole and alcohol during ectopic treatment",
+   "d": 1
+  },
+  {
+   "t": "Reliable contraception for at least 3 months afterwards",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Stomatitis, nausea, bone-marrow suppression, hepatotoxicity, pneumonitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "FBC, renal and liver function before dosing, β-hCG follow-up",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ectopic"
+ ],
+ "link": [
+  "methotrexate"
+ ],
+ "link_cs": []
+}

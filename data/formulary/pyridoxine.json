@@ -1,0 +1,286 @@
+{
+ "id": "pyridoxine",
+ "type": "drug",
+ "name": "Pyridoxine",
+ "aliases": [
+  "vitamin B6"
+ ],
+ "class": "Vitamin B6",
+ "group": "Vitamins and nutrition",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Co-factor in amino-acid and neurotransmitter metabolism, prevents and treats isoniazid neuropathy, antidote in isoniazid overdose",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hyperemesis Gravidarum",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, 25 mg 8 hourly.",
+     "s": "HOSP:6.21"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis, Pulmonary",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pyridoxine 25 mg, oral, daily for duration of INH-containing TB therapy. Close contacts of TB patients (particularly children <5 years of age) should be screened and managed as per National TB Guidelines.",
+     "s": "HOSP:16.21"
+    }
+   ]
+  },
+  {
+   "h": "Ethylene Glycol Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, 100 mg daily.",
+     "s": "HOSP:19.35"
+    }
+   ]
+  },
+  {
+   "h": "Neuropathic Pain",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Pyridoxine, oral 75 mg daily for 3 weeks. · Follow with 25 to 50 mg daily.",
+     "s": "HOSP:25.8"
+    }
+   ]
+  },
+  {
+   "h": "Dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "≥ 15 years · abuse, or known hypersensitivity to isoniazid · and pyridoxine 25 mg daily (non-pregnant) Rifapentine and isoniazid weekly (3HP) may be",
+     "s": "hiv2026:31"
+    },
+    {
+     "t": "are < 15 years of age · and ART, from 14 weeks of age · (maximum dose 300 mg daily) and pyridoxine daily • All children (including neonates) with significant exposure to TB",
+     "s": "hiv2026:31"
+    },
+    {
+     "t": "pyridoxine 25 mg daily (CD4 ≤ 200, or WHO stage 3 or 4)) Exclude active liver disease, alcohol abuse, or known",
+     "s": "hiv2026:31"
+    }
+   ]
+  },
+  {
+   "h": "Table 26: TPT dosing chart",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "initiating DTG-containing ART · • Add Pyridoxine, oral, 25 mg once daily for 12 months Adults and adolescents LHIV · • 3HP · • For patients who are already virally suppressed on a who are: · • A weekly combination of isoniazid (900mg · DTG-",
+     "s": "hiv2026:89"
+    },
+    {
+     "t": "Infants and children · • 6H · • Add pyridoxine orally, once daily for 6 months LHIV < 25kg · • Isoniazid, oral, daily for 6 months · • < 5 years: 12.5 mg daily • See dosing chart in Table 27: · • ≥ 5 years: 25 mg daily",
+     "s": "hiv2026:89"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 5 TPT Dosing Tables",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "All children and breastfeeding infants require pyridoxine (vitamin B6) for the duration of their TPT as follows: Children younger than five years 12.5 mg and children five years or older 25 mg, once daily. Lack of pyridoxine access should n",
+     "s": "hiv2026:177"
+    },
+    {
+     "t": "years 12.5 mg and children five years or older 25 mg, once daily. Lack of pyridoxine access should not be a barrier to receiving TPT.",
+     "s": "hiv2026:177"
+    }
+   ]
+  },
+  {
+   "h": "Vitamin B6/pyridoxine Deficiency",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, 12.5 mg daily for 3 weeks.",
+     "s": "PHC:3.16"
+    },
+    {
+     "t": "Pyridoxine, oral, 25 mg daily for 3 weeks.",
+     "s": "PHC:3.17"
+    },
+    {
+     "t": "Pyridoxine, oral, daily for 6 months. · < 5 years of age: 12.5 mg daily. · ≥ 5 years of age: 25 mg daily.",
+     "s": "PHC:3.17"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis Preventive Therapy (Tpt)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, 25 mg once daily for the full duration of the TPT regimen. · Instruct patient to present early if any of these symptoms arise. · Follow patients up monthly for the first 3 months.",
+     "s": "PHC:11.19"
+    }
+   ]
+  },
+  {
+   "h": "TB Chemoprophylaxis/isoniazid Preventive Therapy (Ipt) in Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, daily for duration of prophylaxis: · Child <5 years old: 12.5 mg. · Child ≥ 5 years old: 25 mg.",
+     "s": "PHC:17.32"
+    }
+   ]
+  },
+  {
+   "h": "TB Control Programme: Medicine Regimens in Children",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, daily for 6 months. · Child ≥ 5 years old: 25 mg.",
+     "s": "PHC:17.34"
+    },
+    {
+     "t": "Pyridoxine, oral, daily for 6–9 months. 45 · Child <5 years old: 12.5 mg. · Child ≥5 years old: 25 mg.",
+     "s": "PHC:17.35"
+    },
+    {
+     "t": "Pyridoxine, oral, daily for 6 to 9 months. 46 · Child ≥5 years old: 25 mg.",
+     "s": "PHC:17.35"
+    }
+   ]
+  },
+  {
+   "h": "Key recommendations:",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, 25 mg 8 hourly • Metoclopramide 10 mg 8 hourly orally if severe • Consider mental-health related reasons for vomiting",
+     "s": "impcg2024:47"
+    }
+   ]
+  },
+  {
+   "h": "Tuberculosis (TB) in pregnancy and breastfeeding",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Pyridoxine 25mg daily • Duration of treatment: · TPT should be given for 12 months",
+     "s": "impcg2024:141"
+    }
+   ]
+  },
+  {
+   "h": "Non-severe Tuberculosis Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Pyridoxine, oral, daily for 6 months if HIV-infected, malnourished, or with existing neuropathy: · Child < 5 years: 12.5 mg.",
+     "s": "PAED:10.7"
+    }
+   ]
+  },
+  {
+   "h": "Seizures, Neonatal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Pyridoxine, IV/IM, 20 mg/kg.",
+     "s": "PAED:19.50"
+    }
+   ]
+  },
+  {
+   "h": "The use of corticosteroids in children with TB",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "The recommended oral dosage for supplemental pyridoxine is: • < 5 years: 12.5 mg/day (½ tablet) • ≥ 5 years: 25 mg (1 tablet)",
+     "s": "tbpaeds2024:43"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 3: TPT Dosing Chart",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Children younger than five years 12.5 mg and children five years or older 25 mg, once daily. Lack of pyridoxine access should not be a barrier to receiving TPT.",
+     "s": "tbpaeds2024:81"
+    }
+   ]
+  },
+  {
+   "h": "TPT FOR CHILDREN UNDER 25kg",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "AND · Give pyridoxine for duration: If < 5 years old: give 12.5 mg daily (if < 6kg: 6.25 mg(¼ tab) If TB exposure: index patient has DS-TB · If ≥ 5 years old, give 25 mg daily Follow up monthly (p26).",
+     "s": "tbqrg2025:22"
+    },
+    {
+     "t": "nevirapine ± zidovudine (infant HIV-exposed · Give pyridoxine 12.5 mg daily for duration (if < 6kg: give 6.25 mg (¼ tablet) but HIV-negative) · Follow up monthly (p26).",
+     "s": "tbqrg2025:22"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [],
+ "cautions": [
+  {
+   "t": "Reduces the effect of levodopa given without a decarboxylase inhibitor",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sensory neuropathy with prolonged high doses",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "hiv-defaulter-adult",
+  "hiv-defaulter-child",
+  "hiv-new-adult",
+  "hiv-new-child",
+  "hypoglycemia-pregnancy",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "toxic-alcohols",
+  "wernicke-adult"
+ ],
+ "link": [
+  "pyridoxine",
+  "vitamin B6"
+ ],
+ "link_cs": []
+}

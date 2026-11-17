@@ -1,0 +1,135 @@
+{
+ "id": "isosorbide-dinitrate",
+ "type": "drug",
+ "name": "Isosorbide dinitrate",
+ "aliases": [
+  "ISDN"
+ ],
+ "class": "Nitrate vasodilator",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Releases nitric oxide: venodilation reduces preload, coronary dilation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Angina Pectoris, Stable",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Isosorbide dinitrate, oral 20–30 mg twice daily. · Take either medicine at 8:00 and 14:00 in order to provide a nitrate- free period to prevent tolerance.",
+     "s": "HOSP:3.13"
+    }
+   ]
+  },
+  {
+   "h": "Heart Disease in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Isosorbide dinitrate, oral, 20 mg 12 hourly. · Maximum dose: 160 mg daily.",
+     "s": "HOSP:6.7"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Stable",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Isosorbide dinitrate, sublingual, 5 mg. · May be repeated if required at 5‐minute intervals for 3 or 4 doses. · Instruct patients to keep the tablets in the airtight and lightproof container in which",
+     "s": "PHC:4.5"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Unstable / Non-st Elevation Myocardial Infarction (NSTEMI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Isosorbide dinitrate, sublingual, 5 mg immediately as a single dose. · May be repeated at 5-minute intervals for 3 or 4 doses. 17 ADD",
+     "s": "PHC:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Pulmonary Oedema, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Isosorbide dinitrate, sublingual, 5 mg immediately. · If needed, repeat every 5 to 10 minutes. · Do not administer if hypotensive. Monitor BP.",
+     "s": "PHC:21.25"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypotension",
+   "d": 1
+  },
+  {
+   "t": "Phosphodiesterase-5 inhibitor use",
+   "d": 1
+  },
+  {
+   "t": "Severe aortic stenosis",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Needs a nitrate-free interval to prevent tolerance",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Headache, hypotension, flushing",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "aki-adult",
+  "cad-adult",
+  "ckd-adult",
+  "hte-adult",
+  "lrti-adult"
+ ],
+ "link": [
+  "isosorbide dinitrate"
+ ],
+ "link_cs": [
+  "ISDN"
+ ]
+}

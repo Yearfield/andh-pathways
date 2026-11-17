@@ -1,0 +1,199 @@
+{
+ "id": "amlodipine",
+ "type": "drug",
+ "name": "Amlodipine",
+ "aliases": [],
+ "class": "Dihydropyridine calcium-channel blocker",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks L-type calcium channels in vascular smooth muscle: arterial vasodilation, long half-life",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Angina Pectoris, Stable",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5mg daily. · Increase to 10 mg daily if required. Step",
+     "s": "HOSP:3.13"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5 mg daily.",
+     "s": "HOSP:3.40"
+    }
+   ]
+  },
+  {
+   "h": "Hypertensive Disorders in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5 mg daily. · Increase to 10 mg daily.",
+     "s": "HOSP:6.8"
+    }
+   ]
+  },
+  {
+   "h": "Glomerular Disease and Nephritic Syndrome",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5 mg as a single dose.",
+     "s": "HOSP:7.8"
+    }
+   ]
+  },
+  {
+   "h": "Phaeochromocytoma",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5–10 mg daily.",
+     "s": "HOSP:8.31"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5 mg once daily.",
+     "s": "PHC:4.21"
+    },
+    {
+     "t": "Amlodipine, oral, increase to 10 mg once daily.",
+     "s": "PHC:4.22"
+    },
+    {
+     "t": "Amlodipine, oral: continue Step 4 dose, or if not started previously start at 5 mg once daily.",
+     "s": "PHC:4.22"
+    }
+   ]
+  },
+  {
+   "h": "Hypertensive Emergency",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 10 mg immediately as a single dose.",
+     "s": "PHC:4.25"
+    }
+   ]
+  },
+  {
+   "h": "Acute Kidney Injury",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 5 mg as a pre-referral dose.",
+     "s": "PHC:8.7"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Acute Severe",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 0.2 mg/kg/dose. · May be repeated after 12 hours. · Thereafter, every 24 hours.",
+     "s": "PAED:4.36"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Chronic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 0.1–0.2 mg/kg/dose once daily. · Maiximum daily dose: 10 mg/day",
+     "s": "PAED:4.38"
+    }
+   ]
+  },
+  {
+   "h": "Cutaneous Haemangiomas",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amlodipine, oral, 0.2 mg/kg/dose. · May be repeated 6 hours later, thereafter, once every 24 hours. · Maximum dose: 5 mg.",
+     "s": "PAED:6.3"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Limited data – nifedipine preferred",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Cardiogenic shock",
+   "d": 1
+  },
+  {
+   "t": "Severe aortic stenosis",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Simvastatin dose should not exceed 20 mg with amlodipine",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Ankle oedema, flushing, headache, palpitations, gum hyperplasia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "aki-adult",
+  "aki-paeds",
+  "cad-adult",
+  "ckd-paeds",
+  "hf-paeds",
+  "hte-adult",
+  "htu-adult",
+  "pet",
+  "stroke",
+  "tia"
+ ],
+ "link": [
+  "amlodipine"
+ ],
+ "link_cs": []
+}

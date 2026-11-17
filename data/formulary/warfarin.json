@@ -1,0 +1,163 @@
+{
+ "id": "warfarin",
+ "type": "drug",
+ "name": "Warfarin",
+ "aliases": [],
+ "class": "Vitamin K antagonist anticoagulant",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits vitamin K epoxide reductase, reducing synthesis of factors II, VII, IX, X and proteins C and S",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Venous Thrombo-embolism – Acute Treatment",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Warfarin, oral, 5 mg daily. · Measure INR after 48 hours, then every 1 to 2 days until the INR is within the therapeutic range of 2–3 (refer to initiation dosing tables in",
+     "s": "HOSP:2.29"
+    }
+   ]
+  },
+  {
+   "h": "Vte during Pregnancy and the Puerperium",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Warfarin, oral, 5 mg daily. - INR should be done after 48 hours, then every 1 to 2 days until the INR is within the therapeutic range of 2-3 (refer to initiation dosing",
+     "s": "HOSP:2.32"
+    }
+   ]
+  },
+  {
+   "h": "Atrial Fibrillation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Warfarin, oral, 5 mg daily.",
+     "s": "HOSP:3.18"
+    }
+   ]
+  },
+  {
+   "h": "Heart Disease in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Warfarin, oral, 5 mg daily. · Adjust dose to keep INR within the therapeutic range of 2–3.",
+     "s": "HOSP:6.6"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Warfarin, oral, 5 mg daily adjusted to maintain INR between 2 and 3. · Warfarin interactions: A large number of medicines interact with warfarin leading to under- or",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Venous Thrombo-embolic Disease",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Warfarin, oral, 0.1 mg/kg daily from day 1. · Target INR: 2–3. · Continue warfarin therapy for 3–6 months if no underlying severe",
+     "s": "PAED:3.26"
+    }
+   ]
+  },
+  {
+   "h": "Children with Prosthetic Heart Valves",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Warfarin, oral, 0.1 mg/kg/day. · Adjust the dose depending on INR. · Beware of haemorrhage.",
+     "s": "PAED:4.39"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Teratogenic – avoid; safe in breastfeeding",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Pregnancy (first trimester and near term)",
+   "d": 1
+  },
+  {
+   "t": "Active bleeding",
+   "d": 1
+  },
+  {
+   "t": "Uncontrolled hypertension",
+   "d": 1
+  },
+  {
+   "t": "Inability to monitor INR",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Many interactions (antibiotics, azoles, amiodarone, NSAIDs, rifampicin, anticonvulsants, cotrimoxazole) – recheck INR with any change",
+   "d": 1
+  },
+  {
+   "t": "Onset takes 3–5 days, so bridge with heparin",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Bleeding, skin necrosis, purple toes",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "INR",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "ccf-adult",
+  "fracture-adult",
+  "op",
+  "prb-adult",
+  "stroke",
+  "superwarfarin",
+  "tbi-adult",
+  "tia",
+  "ugib-adult"
+ ],
+ "link": [
+  "warfarin"
+ ],
+ "link_cs": []
+}

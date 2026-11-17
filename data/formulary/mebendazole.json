@@ -1,0 +1,112 @@
+{
+ "id": "mebendazole",
+ "type": "drug",
+ "name": "Mebendazole",
+ "aliases": [],
+ "class": "Anthelmintic – benzimidazole",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits microtubule formation in the worm",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Helminthic Infestation, Excluding Tapeworm",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Mebendazole, oral, Children >1 year and adults: · 100 mg as a single dose and repeated after 2 weeks.",
+     "s": "PHC:2.21"
+    },
+    {
+     "t": "Mebendazole, oral, Children 1–2 years: · 100 mg 12 hourly for 3 days.",
+     "s": "PHC:2.22"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Iron Deficiency",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Mebendazole, oral. · Children 1–2 years: 100 mg 12 hourly for 3 days. · Children > 2–5 years: 500 mg as a single dose.",
+     "s": "PHC:3.3"
+    }
+   ]
+  },
+  {
+   "h": "Malnutrition, Severe Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Mebendazole, oral, 100 mg 12 hourly for 3 days.",
+     "s": "PAED:2.43"
+    },
+    {
+     "t": "Mebendazole, oral, 500 mg as a single dose immediately.",
+     "s": "PAED:2.43"
+    }
+   ]
+  },
+  {
+   "h": "Helminthiasis, Intestinal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Mebendazole, oral, 100 mg immediately as a single dose. · Repeat after 2 weeks.",
+     "s": "PAED:8.2"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid in the first trimester",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "First trimester",
+   "d": 1
+  },
+  {
+   "t": "Children under 1 year (per guideline)",
+   "d": 1
+  }
+ ],
+ "cautions": [],
+ "adverse_effects": [
+  {
+   "t": "Abdominal pain, diarrhoea",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "appy-paeds",
+  "bo-adult",
+  "bo-paeds",
+  "sam"
+ ],
+ "link": [
+  "mebendazole"
+ ],
+ "link_cs": []
+}

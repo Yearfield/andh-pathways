@@ -1,0 +1,102 @@
+{
+ "id": "levofloxacin",
+ "type": "drug",
+ "name": "Levofloxacin",
+ "aliases": [],
+ "class": "Antibiotic – fluoroquinolone (respiratory)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial DNA gyrase and topoisomerase IV",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Isoniazid Monoresistant TB",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Levofloxacin, oral, daily: · 30–45 kg: 750 mg · ≥46 kg: 1000 mg",
+     "s": "HOSP:16.22"
+    }
+   ]
+  },
+  {
+   "h": "RR-TB Dosing Chart for Children 1",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Levofloxacin (LFX) Moxifloxacin · Bedaquiline · Linezolid · Terizidone · Clofazimine (preferred quinolone) (MFX) · (BDQ) · (LZD) · (TRD)# · (CFZ) 250 mg tablet",
+     "s": "tbqrg2025:40"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid unless part of a TB regimen",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Quinolone hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "History of tendon disorders with quinolones",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Exclude TB before empiric use (masks and delays diagnosis)",
+   "d": 1
+  },
+  {
+   "t": "Separate from antacids, iron and calcium",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, tendinitis, QT prolongation, seizures, dysglycaemia, peripheral neuropathy",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG if other QT-prolonging drugs",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "levofloxacin"
+ ],
+ "link_cs": []
+}

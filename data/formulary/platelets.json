@@ -1,0 +1,137 @@
+{
+ "id": "platelets",
+ "type": "drug",
+ "name": "Platelets",
+ "aliases": [
+  "platelet concentrate"
+ ],
+ "class": "Blood product – platelet concentrate",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces platelets",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Immune Thrombocytopenia (Itp)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Platelet transfusion, intravenous, 1 unit immediately. · Platelet transfusions are only indicated in acute active bleeding uncontrolled by other means or before procedures.",
+     "s": "HOSP:2.21"
+    }
+   ]
+  },
+  {
+   "h": "Annexure 17 WHO Clinical Staging of HIV/Aids for Children, Adolescents and Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "(platelets <50,000 cells/µL) · • Unexplained anaemia (<8 g/dL), neutropenia (< 0.5 × 109 per litre) • And/or chronic thrombocytopenia",
+     "s": "hiv2026:210"
+    }
+   ]
+  },
+  {
+   "h": "Women at risk for the development of pre-eclampsia",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Thrombocytopenia (platelet count <100 000/μL). • Impaired liver function (ALT or AST >40 IU/L). • Severe persistent right upper quadrant or epigastric pain.",
+     "s": "impcg2024:104"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Aplastic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Platelets, IV, 20 mL/kg, administered immediately and rapidly over 15– 30 minutes through a platelet giving set. 3.2",
+     "s": "PAED:3.2"
+    }
+   ]
+  },
+  {
+   "h": "Thrombotic Thrombocytopenic Purpura/ Haemolytic Uraemic Syndrome",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Apheresis platelet transfusion, IV, 5–10 mL/kg over 20 minutes.",
+     "s": "PAED:3.24"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "TTP and heparin-induced thrombocytopenia unless life-threatening bleeding",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Do not refrigerate",
+   "d": 1
+  },
+  {
+   "t": "Transfuse through a fresh giving set",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Transfusion reactions, bacterial contamination, alloimmunisation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Platelet count",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aki-paeds",
+  "aph",
+  "chol-adult",
+  "fluids-adult-shock",
+  "hie-neonate",
+  "pet",
+  "pph",
+  "prb-paeds",
+  "sofa",
+  "superwarfarin",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "ugib-paeds"
+ ],
+ "link": [
+  "platelet concentrate"
+ ],
+ "link_cs": []
+}

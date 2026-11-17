@@ -1,0 +1,93 @@
+{
+ "id": "glibenclamide",
+ "type": "drug",
+ "name": "Glibenclamide",
+ "aliases": [],
+ "class": "Sulfonylurea oral hypoglycaemic",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Closes ATP-sensitive potassium channels on β-cells, stimulating insulin release",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Type 2 Diabetes Mellitus",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Glibenclamide, oral, 2.5 mg daily 30 minutes before breakfast.",
+     "s": "HOSP:8.8"
+    }
+   ]
+  },
+  {
+   "h": "Type 2 Diabetes Mellitus, Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Glibenclamide, oral, 2.5 mg daily 30 minutes with breakfast. · Titrate dose slowly depending on HbA1c and/or fasting blood glucose levels to a maximum of 15 mg daily.",
+     "s": "PHC:9.11"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid – use insulin",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Type 1 diabetes, ketoacidosis, severe renal or hepatic impairment, elderly (long-acting), porphyria",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Hypoglycaemia may recur for 24–72 h after overdose – admit",
+   "d": 1
+  },
+  {
+   "t": "Avoid in the elderly and in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Prolonged hypoglycaemia, weight gain, rash",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood glucose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ckd-adult",
+  "hyperglycaemia-adult",
+  "hypoglycemia-adult"
+ ],
+ "link": [
+  "glibenclamide"
+ ],
+ "link_cs": []
+}

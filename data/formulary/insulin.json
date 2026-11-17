@@ -1,0 +1,123 @@
+{
+ "id": "insulin",
+ "type": "drug",
+ "name": "Insulin",
+ "aliases": [],
+ "class": "Hormone – hypoglycaemic",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the insulin receptor: increases glucose uptake in muscle and fat, suppresses hepatic glucose output and ketogenesis, shifts potassium into cells",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Diabetic Ketoacidosis (DKA) and Hyperosmolar Hyperglycaemic State (HHS)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Insulin, short-acting, IV infusion, 50 units in 200 mL sodium chloride 0.9%. · 4 mL solution = 1 unit insulin. · Initial infusion: 0.1 unit/kg/hour.",
+     "s": "HOSP:8.16"
+    }
+   ]
+  },
+  {
+   "h": "Severe Hyperglycaemia (Diabetic Ketoacidosis (DKA) & Hyperosmolar Hyperglycaemic State",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Insulin, short acting, IM, 0.1 unit/kg. · When giving insulin IM, do not use insulin needle.",
+     "s": "PHC:9.16"
+    },
+    {
+     "t": "Insulin, short acting, IM, 0.1 units/kg after 1st hour of infusion of saline · When giving insulin IM, do not use insulin needle.",
+     "s": "PHC:9.17"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – treatment of choice in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypoglycaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Soluble (short-acting) insulin is the only type given IV",
+   "d": 1
+  },
+  {
+   "t": "Correct potassium before and during infusion in DKA",
+   "d": 1
+  },
+  {
+   "t": "Requirements fall in renal failure",
+   "d": 1
+  },
+  {
+   "t": "Β-blockers mask hypoglycaemia",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypoglycaemia, hypokalaemia, lipohypertrophy, weight gain",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Blood glucose hourly on infusion, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "age-adult",
+  "aki-adult",
+  "aki-paeds",
+  "brady-adult",
+  "ckd-adult",
+  "dka-adult",
+  "dka-paeds",
+  "fluids-adult-dka",
+  "fluids-paeds-dka",
+  "hyperglycaemia-adult",
+  "hypoglycemia-adult",
+  "hypoglycemia-neonate",
+  "hypoglycemia-paeds",
+  "hypoglycemia-pregnancy",
+  "lytes-adult-hyperk",
+  "lytes-paeds-hyperk",
+  "opioids-withdrawal",
+  "rsi-adult",
+  "rsi-paeds",
+  "wernicke-adult"
+ ],
+ "link": [
+  "insulin"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,314 @@
+{
+ "id": "enoxaparin",
+ "type": "drug",
+ "name": "Enoxaparin",
+ "aliases": [
+  "LMWH",
+  "low molecular weight heparin",
+  "Clexane"
+ ],
+ "class": "Anticoagulant – low molecular weight heparin",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "status": "PILOT – † lines checked against package insert 2026-11-15; awaiting review",
+ "sources": [
+  "HOSP",
+  "PAED",
+  "notes",
+  "pi",
+  "general"
+ ],
+ "pi_source": {
+  "title": "Clexane 20 / 40 / 60 / 80 / 100 / 300 – South African professional information (Sanofi)",
+  "url": "https://www.campus.sanofi/dam/jcr:618cc3b5-069d-4a3f-8144-af0cd4ada5bf/ZA-Clexane%20Range-PI.2025-11-03-15-07-58.pdf"
+ },
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not stated in the package insert consulted",
+ "item_format": "t=text, s=source:printed page (s=pi: package insert), d=dagger, n=from own notes, b=bold, h=heading",
+ "summary": "Subcutaneous anticoagulant for prevention and treatment of venous thrombo-embolism and for acute coronary syndromes.",
+ "forms": [
+  {
+   "t": "Pre-filled syringes 20 mg, 40 mg, 60 mg, 80 mg, 100 mg (100 mg/mL); 300 mg multidose vial (contains benzyl alcohol – not for neonates)",
+   "s": "pi"
+  }
+ ],
+ "moa": [
+  {
+   "t": "Low molecular weight heparin with more anti-factor Xa than anti-factor IIa (thrombin) activity",
+   "s": "pi"
+  },
+  {
+   "t": "Acts by potentiating antithrombin",
+   "d": 1
+  },
+  {
+   "t": "Longer duration of action than unfractionated heparin; weight-adjusted dosing",
+   "n": 1
+  }
+ ],
+ "pk": [
+  {
+   "t": "Anti-Xa half-life 4.5 hours (6.7 hours in the elderly); activity gone within 24 hours of a dose",
+   "s": "pi"
+  },
+  {
+   "t": "Clearance falls with creatinine clearance; exposure about 65% higher when creatinine clearance < 30 mL/minute",
+   "s": "pi"
+  },
+  {
+   "t": "Peak anti-Xa effect 3–5 hours after SC injection",
+   "d": 1
+  }
+ ],
+ "dosing": [
+  {
+   "h": "VTE prophylaxis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "40 mg SC daily",
+     "s": "HOSP:2.25",
+     "b": 1
+    },
+    {
+     "t": "eGFR < 30 mL/minute: 20 mg SC daily",
+     "s": "HOSP:2.25"
+    }
+   ]
+  },
+  {
+   "h": "VTE prophylaxis in pregnancy and puerperium",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "< 100 kg: 40 mg SC daily; ≥ 100 kg: 60 mg SC daily",
+     "s": "HOSP:2.31",
+     "b": 1
+    },
+    {
+     "t": "Post-partum prophylaxis: start 6–12 hours after delivery",
+     "s": "HOSP:2.31"
+    }
+   ]
+  },
+  {
+   "h": "VTE treatment (DVT / PE)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "1 mg/kg SC 12 hourly OR 1.5 mg/kg SC daily",
+     "s": "HOSP:2.29",
+     "b": 1
+    },
+    {
+     "t": "eGFR < 30 mL/minute: 1 mg/kg SC daily",
+     "s": "HOSP:2.29"
+    },
+    {
+     "t": "Overlap heparin with warfarin for at least 5 days",
+     "s": "HOSP:2.29"
+    }
+   ]
+  },
+  {
+   "h": "NSTEMI / unstable angina",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "1 mg/kg SC 12 hourly for a minimum of 2 days",
+     "s": "HOSP:3.10"
+    }
+   ]
+  },
+  {
+   "h": "STEMI – adjunct after alteplase (not after streptokinase)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Loading: 30 mg IV bolus, then 1 mg/kg SC as a single dose (total cumulative dose not above 100 mg)",
+     "s": "HOSP:3.6"
+    },
+    {
+     "t": "Maintenance: 1.5 mg/kg SC daily or 1 mg/kg SC 12 hourly, until angiography or for the hospital stay, max 8 days",
+     "s": "HOSP:3.6"
+    },
+    {
+     "t": "> 75 years: omit the IV loading dose; loading 0.75 mg/kg SC as a single dose",
+     "s": "HOSP:3.6"
+    }
+   ]
+  },
+  {
+   "h": "VTE treatment",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "1 mg/kg SC 12 hourly",
+     "s": "PAED:3.25"
+    }
+   ]
+  }
+ ],
+ "administration": [
+  {
+   "t": "Deep SC injection into the abdominal wall with the patient lying down, alternating left and right; do not rub the site",
+   "s": "pi"
+  },
+  {
+   "t": "Must never be injected intramuscularly",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Do not expel the air bubble from the 20 mg and 40 mg pre-filled syringes",
+   "s": "pi"
+  }
+ ],
+ "adjustments": [
+  {
+   "h": "Renal",
+   "t": "eGFR < 30 mL/minute: prophylaxis 20 mg daily; treatment 1 mg/kg daily",
+   "s": "HOSP:2.29"
+  },
+  {
+   "h": "Obesity",
+   "t": "Morbid obesity: individualise dosing in discussion with a specialist",
+   "s": "HOSP:2.25"
+  },
+  {
+   "h": "Low body weight",
+   "t": "Women < 45 kg and men < 57 kg: higher exposure and bleeding risk at fixed prophylactic doses – monitor closely",
+   "s": "pi"
+  },
+  {
+   "h": "Pregnancy",
+   "t": "Used for VTE prophylaxis and treatment in pregnancy; skin reactions are more common in pregnant women – check the injection site",
+   "s": "HOSP:2.31"
+  },
+  {
+   "h": "Pregnancy",
+   "t": "Not recommended in pregnant women with mechanical prosthetic heart valves",
+   "s": "pi"
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active major bleeding or high risk of uncontrolled haemorrhage, including recent haemorrhagic stroke",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Heparin-induced thrombocytopenia within the past 100 days, or circulating antibodies",
+   "s": "pi"
+  },
+  {
+   "t": "Hypersensitivity to enoxaparin, heparin or other low molecular weight heparins",
+   "s": "pi"
+  },
+  {
+   "t": "Use prophylaxis only exceptionally with: severe liver disease, peptic ulcer disease, intraocular / intracranial / spinal surgery, coagulopathy, uncontrolled hypertension",
+   "s": "HOSP:2.28"
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Lumbar puncture or spinal / epidural: not within 12 hours of a prophylactic dose or 24 hours of a therapeutic dose",
+   "s": "HOSP:2.28",
+   "b": 1
+  },
+  {
+   "t": "Creatinine clearance < 30 mL/minute: consider doubling these intervals; delay the next dose at least 4 hours after catheter removal",
+   "s": "pi"
+  },
+  {
+   "t": "Do not use heparins after streptokinase",
+   "s": "HOSP:3.5"
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Haemorrhage is the most common reaction, including major and fatal bleeding",
+   "s": "pi",
+   "b": 1
+  },
+  {
+   "t": "Thrombocytopenia (common); heparin-induced thrombocytopenia usually appears between days 5 and 21",
+   "s": "pi"
+  },
+  {
+   "t": "Raised transaminases (very common); hyperkalaemia, skin necrosis at the injection site, osteoporosis after more than 3 months (all rare)",
+   "s": "pi"
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Platelet count before starting and regularly during treatment; stop if platelets fall 30–50% from baseline",
+   "s": "pi"
+  },
+  {
+   "t": "Anti-Xa monitoring is not routinely required; standard clotting tests are not suitable",
+   "s": "pi"
+  },
+  {
+   "t": "Renal function",
+   "d": 1
+  }
+ ],
+ "toxicity": [
+  {
+   "t": "Bleeding: slow IV protamine partly neutralises the effect (anti-Xa activity at most about 60%); do not exceed 50 mg protamine per dose",
+   "s": "pi"
+  }
+ ],
+ "conflicts": [
+  {
+   "t": "Children: the package insert states safety and efficacy are not established; the Paediatric STG gives a treatment dose.",
+   "s": "PAED:3.25"
+  },
+  {
+   "t": "Breastfeeding: the SA package insert says mothers receiving enoxaparin should not breastfeed; the STG gives post-partum prophylaxis without this restriction.",
+   "s": "pi"
+  },
+  {
+   "t": "Own notes record that enoxaparin does not cross the placenta; the package insert says safety in pregnancy is not established and to use only when clearly needed.",
+   "n": 1
+  }
+ ],
+ "see_also": [
+  "heparin",
+  "warfarin",
+  "rivaroxaban",
+  "alteplase",
+  "protamine"
+ ],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "aki-adult",
+  "ards-adult",
+  "cad-adult",
+  "caprini",
+  "ccf-adult",
+  "ckd-adult",
+  "dka-adult",
+  "fluids-adult-dka",
+  "fracture-adult",
+  "hie-adult",
+  "hyperglycaemia-adult",
+  "lrti-pregnancy",
+  "panc-adult",
+  "rf-adult",
+  "stroke",
+  "uti-pregnancy",
+  "wells_dvt",
+  "wells_pe"
+ ],
+ "verified": true,
+ "link": [
+  "low molecular weight heparin",
+  "enoxaparin",
+  "Clexane"
+ ],
+ "link_cs": [
+  "LMWH"
+ ]
+}

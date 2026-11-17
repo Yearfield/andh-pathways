@@ -1,0 +1,94 @@
+{
+ "id": "rhze",
+ "type": "drug",
+ "name": "RHZE",
+ "aliases": [
+  "RH",
+  "HRZE"
+ ],
+ "class": "Anti-TB fixed-dose combination: rifampicin, isoniazid, pyrazinamide, ethambutol",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Four-drug intensive-phase regimen",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe – treat TB in pregnancy",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "See components",
+   "d": 1
+  },
+  {
+   "t": "Severe hepatic disease",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Weight-band dosing",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin interactions (dolutegravir, contraceptives, warfarin)",
+   "d": 1
+  },
+  {
+   "t": "Give pyridoxine with isoniazid in at-risk patients",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hepatotoxicity, rash, GI upset, orange body fluids, peripheral neuropathy, visual disturbance",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Liver function if symptomatic, vision",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "ccf-adult",
+  "fluids-paeds-maintenance",
+  "fluids-reference",
+  "hf-paeds",
+  "lrti-pregnancy",
+  "meningitis-paeds",
+  "stroke",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "tia"
+ ],
+ "link": [],
+ "link_cs": [
+  "RHZE",
+  "HRZE"
+ ]
+}

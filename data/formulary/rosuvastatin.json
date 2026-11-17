@@ -1,0 +1,152 @@
+{
+ "id": "rosuvastatin",
+ "type": "drug",
+ "name": "Rosuvastatin",
+ "aliases": [
+  "rosuvastain"
+ ],
+ "class": "HMG-CoA reductase inhibitor (statin)",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits hepatic cholesterol synthesis and upregulates LDL receptors, not metabolised by CYP3A4",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rosuvastatin, oral, 10 mg at night.",
+     "s": "HOSP:3.8"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Heart Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rosuvastatin 10 mg, oral (secondary prevention of ischaemic events): Cholesterol Treatment Trialists' (CTT) Collaboration. Efficacy and safety of more intensive lowering of LDL cholesterol: a meta-analysis of data from",
+     "s": "HOSP:3.47"
+    }
+   ]
+  },
+  {
+   "h": "Prevention of Ischaemic Heart Disease and Atherosclerosis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Rosuvastatin, oral, 5 mg once daily. If not tolerated switch to low intensity statin e.g.: Simvastatin 10mg at night.",
+     "s": "PHC:4.4"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Stable",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Rosuvastatin, oral, 10 mg once daily.",
+     "s": "PHC:4.6"
+    },
+    {
+     "t": "Rosuvastatin, oral, 5mg once daily. OR Low intensity statin e.g.",
+     "s": "PHC:4.6"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Unstable / Non-st Elevation Myocardial Infarction (NSTEMI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Rosuvastatin, oral, 10 mg, oral, once daily.",
+     "s": "PHC:4.7"
+    },
+    {
+     "t": "Rosuvastatin, oral, 5mg once daily. OR Low intensity statin",
+     "s": "PHC:4.7"
+    },
+    {
+     "t": "Rosuvastain, oral, 10 mg once daily.",
+     "s": "PHC:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Myocardial Infarction, Acute (Ami)/ St Elevation Myocardial Infarction (STEMI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Rosuvastatin, oral, 5 mg once daily.",
+     "s": "PHC:4.10"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Active liver disease",
+   "d": 1
+  },
+  {
+   "t": "Pregnancy and breastfeeding",
+   "d": 1
+  },
+  {
+   "t": "Severe renal impairment for high doses",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Limit the dose with protease inhibitors",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Myalgia, myopathy, raised transaminases, proteinuria at high dose",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ALT if symptomatic, CK if muscle symptoms",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "cad-adult",
+  "stroke"
+ ],
+ "link": [
+  "rosuvastatin",
+  "rosuvastain"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,317 @@
+{
+ "id": "amoxicillin-clavulanic-acid",
+ "type": "drug",
+ "name": "Amoxicillin/clavulanic acid",
+ "aliases": [
+  "amoxicillin-clavulanic",
+  "amoxicillin/clavulan",
+  "amox-clav",
+  "amox/clav",
+  "co-amoxiclav",
+  "clavulanic",
+  "clavulanate"
+ ],
+ "class": "Antibiotic – aminopenicillin with β-lactamase inhibitor",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Amoxicillin inhibits cell-wall synthesis, clavulanic acid inactivates β-lactamases, extending cover to β-lactamase-producing Staph. aureus, H. influenzae, E. coli and anaerobes",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Diverticulosis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly.",
+     "s": "HOSP:1.2"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 1.2 g 8 hourly. · Switch to oral therapy once able to tolerate.",
+     "s": "HOSP:1.2"
+    }
+   ]
+  },
+  {
+   "h": "Pancreatitis, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 1.2 g 8 hourly for 10 days,",
+     "s": "HOSP:1.5"
+    }
+   ]
+  },
+  {
+   "h": "Liver Abscess, Pyogenic",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 1.2 g 8 hourly. Duration of antibiotic therapy is ill defined but may need to be for as long as 12 weeks in cases of multiple abscesses. Continue until drainage is complete",
+     "s": "HOSP:1.17"
+    }
+   ]
+  },
+  {
+   "h": "Cholecystitis, Acute and Cholangitis, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 1.2 g 8 hourly.",
+     "s": "HOSP:1.18"
+    }
+   ]
+  },
+  {
+   "h": "Leg Ulcers, Complicated",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly for 7 days. Local wound care Topical cleansing",
+     "s": "HOSP:4.11"
+    }
+   ]
+  },
+  {
+   "h": "Pelvic Inflammatory Disease (PID)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly to complete 10 days of antibiotic therapy.",
+     "s": "HOSP:5.5"
+    }
+   ]
+  },
+  {
+   "h": "Septic Miscarriage",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly for 7–10 days.",
+     "s": "HOSP:5.11"
+    }
+   ]
+  },
+  {
+   "h": "Postpartum Fever",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 1.2 g 8 hourly, until patient apyrexial for 24 hours.",
+     "s": "HOSP:6.29"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Foot Ulcers",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly for 10 days.",
+     "s": "PHC:9.18"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia in Adults with Underlying",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid 875/125 mg, oral, 12 hourly for 5 days.",
+     "s": "PHC:17.25"
+    }
+   ]
+  },
+  {
+   "h": "Otitis Media, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly for 5 to 10 days .",
+     "s": "PHC:19.6"
+    }
+   ]
+  },
+  {
+   "h": "Management of a septic miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": " Amoxicillin/clavulanic acid, IV, 1.2 g, 8 hourly. • Change to oral treatment after clinical improvement: · Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly for 7–10 days.",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "h": "Puerperal sepsis",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Follow with: Amoxicillin/clavulanic acid, oral, 875/125 mg 12 hourly. • Encourage adequate intake of oral fluids. • Follow up for reassessment in 36-48 hours at local facility.",
+     "s": "impcg2024:135"
+    }
+   ]
+  },
+  {
+   "h": "Necrotising Periodontitis",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 45 mg/kg/dose of the amoxicillin component 12 hourly for 5 days. (See annexure 1: Amoxicillin/Clavulanic weight band dosing table).",
+     "s": "PAED:2.2"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infection (UTI)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 45 mg/kg/dose of amoxicillin component, 12 hourly (amoxicillin/clavulanic acid in a ratio of 14:1). · Maximum dose of amoxicillin component: 1.5 g 12 hourly.",
+     "s": "PAED:6.7"
+    },
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 25 mg/kg/dose 8 hourly (be cautious of going above 15mg/kg/day of clavulanic component – where higher doses are used be aware of GIT effects)",
+     "s": "PAED:6.7"
+    }
+   ]
+  },
+  {
+   "h": "Measles",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, oral, 30 mg/kg/dose 12 hourly.",
+     "s": "PAED:8.18"
+    }
+   ]
+  },
+  {
+   "h": "Abscess, Retropharyngeal",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanic acid, IV, 25 mg/kg/dose (be cautious of going above 15mg/kg/day of clavulanic component – where higher doses are used be aware of GIT effects).",
+     "s": "PAED:17.1"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amoxicillin/clavulanate, IV, 25 mg/kg/dose (be cautious of going above 15mg/kg/day of clavulanic component – where higher doses are used be aware of GIT effects).",
+     "s": "PAED:15.3"
+    },
+    {
+     "t": "Amoxicillin/clavulanate, oral, 45 mg/kg/dose of amoxicillin component 12 hourly to complete 10 days total. (See annexure 1: Amoxicillin/Clavulanic weight band dosing table)",
+     "s": "PAED:15.4"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "Previous cholestatic jaundice with co-amoxiclav",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take with food",
+   "d": 1
+  },
+  {
+   "t": "Rash is common in glandular fever",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in severe renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, nausea, rash, candidiasis, cholestatic hepatitis, C. difficile colitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "appy-adult",
+  "appy-paeds",
+  "ards-adult",
+  "ards-paeds",
+  "bo-adult",
+  "bo-paeds",
+  "bronchiolitis-paeds",
+  "bsi-adult",
+  "chol-adult",
+  "chorioamnionitis",
+  "copd-adult",
+  "copd_gold",
+  "croup-paeds",
+  "gerd-adult",
+  "hcc-adult",
+  "hernia-adult",
+  "hernia-paeds",
+  "liver",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "miscarriage",
+  "om-adult",
+  "om-paeds",
+  "panc-adult",
+  "pid",
+  "pph",
+  "prolonged-labour",
+  "pud-adult",
+  "rf-adult",
+  "rf-paeds",
+  "sinusitis-paeds",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds",
+  "tonsillitis-paeds",
+  "uti-paeds",
+  "uti-pregnancy"
+ ],
+ "link": [
+  "amoxicillin/clavulanic acid",
+  "amoxicillin-clavulanic",
+  "amoxicillin/clavulan",
+  "co-amoxiclav",
+  "amox/clav",
+  "amox-clav"
+ ],
+ "link_cs": []
+}

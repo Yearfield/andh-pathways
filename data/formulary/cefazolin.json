@@ -1,0 +1,147 @@
+{
+ "id": "cefazolin",
+ "type": "drug",
+ "name": "Cefazolin",
+ "aliases": [],
+ "class": "Antibiotic – first-generation cephalosporin (parenteral)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis, good Staph. and Strep. cover, standard surgical prophylaxis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cefazolin, IV, 2 g, 8 hourly.",
+     "s": "HOSP:3.31"
+    },
+    {
+     "t": "Cefazolin, IV, 2 g, 8 hourly for 4 weeks. Cloxacillin-resistant",
+     "s": "HOSP:3.33"
+    }
+   ]
+  },
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cefazolin, IV, 1 g 8 hourly.",
+     "s": "HOSP:4.2"
+    }
+   ]
+  },
+  {
+   "h": "Non-occupational Post Exposure Prophylaxis, Inadvertent Non-",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cefazolin, IV . · <60 kg: 1g · 60–120 kg and BMI ≤35: 2g",
+     "s": "HOSP:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Septic and Osteomyelitis, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cefazolin, IV, 2 g 8 hourly for 4 weeks.",
+     "s": "HOSP:13.5"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Cefazolin, IV, 1-3 g as a single dose.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Cefazolin, IV, 1 g 8 hourly. 3.5: Endocarditis, infective - Directed therapy (native valve) staphylococcal - cloxacillin-susceptible (methicillin-susceptible)",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Drug Resistant TB (DR-TB)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefazolin, IV, 30 mg/kg (maximum dose 2000 mg).",
+     "s": "PAED:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Effusion and Empyema",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Cefazolin, IV, 25 mg/kg 8 hourly.",
+     "s": "PAED:15.14"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Cephalosporin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give within 60 minutes before incision",
+   "d": 1
+  },
+  {
+   "t": "Reduce dose in renal impairment",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash, diarrhoea, phlebitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bsi-adult",
+  "fracture-adult",
+  "fracture-paeds",
+  "lrti-paeds"
+ ],
+ "link": [
+  "cefazolin"
+ ],
+ "link_cs": []
+}

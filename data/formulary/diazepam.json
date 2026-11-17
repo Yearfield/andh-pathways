@@ -1,0 +1,300 @@
+{
+ "id": "diazepam",
+ "type": "drug",
+ "name": "Diazepam",
+ "aliases": [],
+ "class": "Benzodiazepine",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Enhances GABA-A receptor activity: anticonvulsant, sedative, anxiolytic, muscle relaxant, long-acting with active metabolites",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Eclampsia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, IV, 10–20 mg, not faster than 2 mg/minute.",
+     "s": "HOSP:6.12"
+    }
+   ]
+  },
+  {
+   "h": "Tetanus",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, IV, 10 mg 4 hourly for 24 hours. · Consider switch to oral therapy after 24 hours as prolonged parenteral diazepam administration can cause acidosis.",
+     "s": "HOSP:9.18"
+    }
+   ]
+  },
+  {
+   "h": "Local Anaesthetic Toxicity",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, IV, 10 mg.",
+     "s": "HOSP:12.10"
+    }
+   ]
+  },
+  {
+   "h": "Treatment of Ponv",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, IV, 5–10 mg for symptom relief.",
+     "s": "HOSP:12.13"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, IV, 10 mg administered over at least 5 minutes (not faster than calcium, sodium, 2mg/min). potassium, magnesium xxx",
+     "s": "HOSP:14.15"
+    },
+    {
+     "t": "Diazepam, rectal, 0.2 – 0.5 mg/kg as a single dose (maximum 20 mg/dose).",
+     "s": "HOSP:14.15"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, oral, 5–10 mg immediately.",
+     "s": "HOSP:15.6"
+    }
+   ]
+  },
+  {
+   "h": "Anxiety and Obsessive-compulsive Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, oral, 2.5–5 mg as a single dose. · Repeat 8 hourly, if required to a maximum of 30 mg daily (in divided doses). · Half the dose in the elderly or debilitated.",
+     "s": "HOSP:15.10"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Diazepam, oral, 10 mg immediately. · Then 5 mg 6 hourly for 3 days. · Then 5 mg 12 hourly for 2 days.",
+     "s": "HOSP:15.31"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Diazepam, IV, 0.25mg/kg IV over 60 secs (max 10mg/dose) » Monitor cerebral perfusion pressure 5-10 minutes (Doctor prescribed). (CPP), heart rate, oxygen saturation. after seizure » Check glucose.",
+     "s": "PHC:15.14"
+    },
+    {
+     "t": "Diazepam, rectal**, 0.5 mg/kg (max 10mg/dose) (Doctor prescribed). Other biochemical disorders: Correct abnormalities, if present, e.g.",
+     "s": "PHC:15.14"
+    },
+    {
+     "t": "Diazepam, IV, 10mg administered over at least 5 minutes urea). (not faster than 2mg/min) (Doctor prescribed, administered",
+     "s": "PHC:15.20"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Diazepam, oral, 5 mg immediately.",
+     "s": "PHC:16.6"
+    }
+   ]
+  },
+  {
+   "h": "Liver Failure, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, IV, 0.2 mg/kg. · Repeat dose if not controlled in 5 minutes. · Benzodiazepines are poorly metabolised in liver failure and may",
+     "s": "PAED:2.37"
+    }
+   ]
+  },
+  {
+   "h": "Tetanus",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, IV, 0.1–0.2 mg/kg/dose 4–6 hourly, titrated according to response. · Do not exceed 10 mg/dose.",
+     "s": "PAED:8.36"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, IV or IO, 0.25 mg/kg IV over 60 seconds (max 10 mg/dose). start maintenance IV fluid with",
+     "s": "PAED:13.8"
+    },
+    {
+     "t": "Diazepam, rectal**, 0.5 mg/kg (max 10 mg/dose).",
+     "s": "PAED:13.8"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, oral, 5–20 mg 2–6 hourly.",
+     "s": "PAED:14.35"
+    }
+   ]
+  },
+  {
+   "h": "Anticholinergic Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, IV/oral, 0.1–0.2 mg/kg. · Maximum dose: 10 mg.",
+     "s": "PAED:18.6"
+    }
+   ]
+  },
+  {
+   "h": "Sympathomimetic Agent Poisoning",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, IV/oral, 0.1–0.2 mg/kg. · Maximum dose of 10 mg.",
+     "s": "PAED:18.24"
+    }
+   ]
+  },
+  {
+   "h": "Anxiety",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, oral, 8 hourly. · If > 2–12 years: 2–3 mg. · If > 12–18 years: 2–10 mg.",
+     "s": "PAED:21.12"
+    }
+   ]
+  },
+  {
+   "h": "Dystonia/muscle Spasms/spasticity",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Diazepam, oral, 12 hourly. · Child 1–11 months: Initial dose of 250 mcg/kg twice a day. · Child 1–4 years: Initial dose of 2.5 mg twice a day.",
+     "s": "PAED:21.14"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid regular use; neonatal withdrawal and floppy infant near term",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression",
+   "d": 1
+  },
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  },
+  {
+   "t": "Sleep apnoea",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Do not give IM (erratic absorption) – use IV or rectal",
+   "d": 1
+  },
+  {
+   "t": "Additive respiratory depression with opioids and alcohol",
+   "d": 1
+  },
+  {
+   "t": "Accumulates in the elderly and in liver disease",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, respiratory depression, hypotension, paradoxical agitation, thrombophlebitis with IV",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, saturation, level of consciousness",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "alcohol-withdrawal-adult",
+  "amphetamines",
+  "amphetamines-withdrawal",
+  "cocaine",
+  "delirium-adult",
+  "hie-adult",
+  "hie-child",
+  "hte-adult",
+  "hypoglycemia-paeds",
+  "op",
+  "opioids",
+  "opioids-withdrawal",
+  "panc-adult",
+  "pet",
+  "psychosis-adult",
+  "tbi-adult",
+  "tbi-paeds",
+  "tca"
+ ],
+ "link": [
+  "diazepam"
+ ],
+ "link_cs": []
+}

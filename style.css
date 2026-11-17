@@ -994,3 +994,24 @@ main.land { gap: 12px; padding-top: 10px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 .xchip.xall { background: var(--panel); border-color: var(--soft); color: var(--ink-2); }
 .xcard { scroll-margin-top: 120px; }
+
+/* ---------- formulary ---------- */
+a.dlink { color: inherit; text-decoration: underline dotted var(--ok); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+a.dlink:active { background: var(--ok-bg); }
+.fxtag { display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 6px; font-size: .7rem; font-weight: 700; background: var(--src-bg); color: var(--src); }
+.fxtag.ok { background: var(--ok-bg); color: var(--ok); }
+.fxpage { display: flex; flex-direction: column; gap: 12px; }
+.fxbanner { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1.5px solid var(--warn); border-radius: var(--r); background: var(--warn-bg); color: var(--warn-ink); font-size: .88rem; line-height: 1.4; }
+.fxbanner svg.i { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 1px; }
+.fxsum { margin: 0 4px; font-size: 1rem; line-height: 1.45; }
+.fxpad { padding: 8px 14px 0; margin: 0; }
+.fxblock h3 { margin: 0; padding: 12px 14px 2px; font-size: .92rem; line-height: 1.3; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; border-top: 1px solid var(--hair); }
+.fxblock:first-of-type h3 { border-top: 0; }
+.fxpop { flex: 0 0 auto; font-size: .7rem; font-weight: 700; padding: 1px 6px; border-radius: 6px; background: #e6ecf0; color: var(--ink-2); }
+.fxpop.paed, .fxpop.neonate { background: #e3eefb; } .fxpop.obstetric { background: #f6e6f0; } .fxpop.phc { background: #eef0e2; }
+ul.items.fx li { min-height: 0; padding: 8px 14px; }
+ul.items.fx li .body { flex: 1; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+ul.items.fx li .txt { flex: 1 1 220px; }
+.chip.pi { background: #e6ecf0; color: var(--ink-2); border-radius: 6px; padding: 2px 7px; }
+.fxnote { margin-left: 4px; font-size: .68rem; font-weight: 700; color: var(--muted); border: 1px solid var(--soft); border-radius: 5px; padding: 0 4px; }
+.fxused { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 14px 12px; }

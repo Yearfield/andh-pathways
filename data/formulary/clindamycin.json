@@ -1,0 +1,233 @@
+{
+ "id": "clindamycin",
+ "type": "drug",
+ "name": "Clindamycin",
+ "aliases": [],
+ "class": "Antibiotic – lincosamide",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the 50S ribosomal subunit and inhibits protein synthesis, covers Gram-positive cocci and anaerobes, suppresses toxin production",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Endocarditis, Infective",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 600 mg one hour before the procedure.",
+     "s": "HOSP:3.34"
+    }
+   ]
+  },
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, IV, 600 mg 8 hourly.",
+     "s": "HOSP:4.2"
+    },
+    {
+     "t": "Clindamycin, oral, 450 mg 8 hourly.",
+     "s": "HOSP:4.3"
+    }
+   ]
+  },
+  {
+   "h": "Atopic Eczema/ Dermatitis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 450 mg 8 hourly for 5 days.",
+     "s": "HOSP:4.7"
+    }
+   ]
+  },
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, IV, 600 mg 8 hourly for 48 hours.",
+     "s": "HOSP:6.23"
+    },
+    {
+     "t": "Clindamycin, oral, 450 mg 8 hourly for a further 5 days.",
+     "s": "HOSP:6.23"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Foot Ulcers",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 150–450 mg 8 hourly.",
+     "s": "HOSP:8.18"
+    }
+   ]
+  },
+  {
+   "h": "Non-occupational Post Exposure Prophylaxis, Inadvertent Non-",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, IV, 600 mg .",
+     "s": "HOSP:11.2"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Septic and Osteomyelitis, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 450mg 8 hourly to complete the 4 weeks’ treatment.",
+     "s": "HOSP:13.5"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clindamycin, IV, 600 mg as a single dose.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Clindamycin, oral, 150-450 mg 8 hourly. 4.2: Cellulitis and erysipelas: severe infection - severe penicillin allergy, 4.4: Furuncles and abscesses: severe penicillin allergy, 4.5: Atopic",
+     "s": "HOSP"
+    },
+    {
+     "t": "Clindamycin, oral, 600 mg 8 hourly for 21 days. 23.10.3 Sepsis In ICU: Antimicrobial therapy",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Management of a septic miscarriage",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": " If Severe penicillin allergy: Clindamycin, IV, 600 mg 8 hourly AND Gentamicin, IV, 6 mg/kg daily. • Change to oral treatment after improvement: Clindamycin, oral, 450 mg 8 hourly for",
+     "s": "impcg2024:52"
+    }
+   ]
+  },
+  {
+   "h": "Staphylococcal Scalded Skin Syndrome",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 6 mg/kg/dose, 6 hourly for 10 days.",
+     "s": "PAED:5.2"
+    }
+   ]
+  },
+  {
+   "h": "Erythema Multiforme",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 6 mg/kg/dose, 6 hourly.",
+     "s": "PAED:5.4"
+    }
+   ]
+  },
+  {
+   "h": "Malaria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 10 mg/kg/dose 12 hourly for 7 days.",
+     "s": "PAED:8.13"
+    }
+   ]
+  },
+  {
+   "h": "Drug Resistant TB (DR-TB)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Clindamycin, IV, 6 mg/kg (Single dose unless procedure is > 4 hours) ADD",
+     "s": "PAED:11.3"
+    }
+   ]
+  },
+  {
+   "h": "Allergies to Penicillins",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Clindamycin, oral, 6 mg/kg/dose 6 hourly for 3 days.",
+     "s": "PAED:25.4"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Previous C. difficile colitis with clindamycin",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Stop if significant diarrhoea develops",
+   "d": 1
+  },
+  {
+   "t": "Take capsules with a full glass of water",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Diarrhoea, C. difficile colitis, rash, oesophagitis with capsules",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bsi-adult",
+  "bsi-paeds",
+  "chorioamnionitis",
+  "eczema-adult",
+  "fracture-adult",
+  "fracture-paeds",
+  "lrti-adult",
+  "miscarriage",
+  "pid",
+  "preterm-labour",
+  "prolonged-labour",
+  "tonsillitis-paeds"
+ ],
+ "link": [
+  "clindamycin"
+ ],
+ "link_cs": []
+}

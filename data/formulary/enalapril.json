@@ -1,0 +1,264 @@
+{
+ "id": "enalapril",
+ "type": "drug",
+ "name": "Enalapril",
+ "aliases": [],
+ "class": "ACE inhibitor",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks conversion of angiotensin I to II: vasodilation, reduced aldosterone, raises bradykinin",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "St Elevation Myocardial Infarction (STEMI)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Enalapril, oral, target dose, 10 mg 12 hourly.",
+     "s": "HOSP:3.8"
+    }
+   ]
+  },
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Enalapril, oral, 2.5 mg 12 hourly, titrated to 10 mg 12 hourly. · In the absence of significant side-effects always try to increase the",
+     "s": "HOSP:3.29"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Enalapril, oral, 10 mg daily.",
+     "s": "HOSP:3.40"
+    }
+   ]
+  },
+  {
+   "h": "Hypertensive Crisis, Hypertensive Emergency",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Enalapril, oral, 2.5 mg as a test dose. · Increase according to response, to a maximum of 20 mg daily. · Monitor renal function.",
+     "s": "HOSP:3.44"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Enalapril, oral. · Start with 5 mg 12 hourly and titrate to 20 mg 12 hourly, if tolerated.",
+     "s": "HOSP:7.4"
+    }
+   ]
+  },
+  {
+   "h": "Angina Pectoris, Unstable / Non-st Elevation Myocardial Infarction (NSTEMI)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Enalapril, oral, target dose 10 mg 12 hourly (usually titrated from 2.5 mg 12 hourly).",
+     "s": "PHC:4.8"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Failure, Congestive (Ccf), Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Enalapril, oral, 2.5 mg 12 hourly, up to maximum of 10 mg twice daily. · Titrate dosages gradually upwards until an optimal dose is achieved. · Absolute contraindications include: (refer to package insert for a complete",
+     "s": "PHC:4.12"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension in Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Enalapril, oral, 10 mg once daily.",
+     "s": "PHC:4.21"
+    },
+    {
+     "t": "Enalapril, oral, increase to 20 mg once daily.",
+     "s": "PHC:4.22"
+    },
+    {
+     "t": "Enalapril, oral: continue Step 4 dose, or if not started previously start at 10 mg once daily.",
+     "s": "PHC:4.22"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (CKD)",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Enalapril, oral, start with 5 mg 12 hourly. · Titrate up to 10 mg 12 hourly, if tolerated. · Start with low dose of ACE-inhibitor and titrate up to the maximum dose, or until",
+     "s": "PHC:8.4"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Nephropathy",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Enalapril, oral, initiate with 5 mg 12 hourly. · Increase to maximum daily dose of 20 mg. · Monitor potassium, at baseline, within 1 month, and annually.",
+     "s": "PHC:9.19"
+    }
+   ]
+  },
+  {
+   "h": "Pulmonary Oedema, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Enalapril 10 mg, oral, as a single dose and refer.",
+     "s": "PHC:21.25"
+    }
+   ]
+  },
+  {
+   "h": "Heart Failure, Maintenance Therapy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Enalapril, oral, 0.2–1 mg/kg/day as a single dose or 2 divided doses. Start at the low dose and increase by 0.2 mg/kg/day at 1–2 day intervals.",
+     "s": "PAED:4.23"
+    }
+   ]
+  },
+  {
+   "h": "Hypertension, Chronic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Enalapril, oral, 0.04 mg/kg/dose 12 hourly. · Maximum dose: 0.3 mg/kg/dose up to 40 mg/day.",
+     "s": "PAED:4.37"
+    }
+   ]
+  },
+  {
+   "h": "Nephrotic Syndrome (Ns)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Enalapril, oral, 0.1 mg/kg once daily. · Increase dose to 0.5 mg/kg/day, as a single dose or two divided doses.",
+     "s": "PAED:6.11"
+    }
+   ]
+  },
+  {
+   "h": "Chronic Kidney Disease (Renal Failure, Chronic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Enalapril, oral, 0.1 mg/kg/dose, once daily. · Increase dose to 0.5 mg/kg/day, as a single dose or two divided doses.",
+     "s": "PAED:6.25"
+    }
+   ]
+  },
+  {
+   "h": "Diabetic Nephropathy",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Enalapril, oral, 0.1 mg/kg/dose as a single dose or two divided doses. · Maximum dose: 0.5 mg/kg or 40 mg/day.",
+     "s": "PAED:7.26"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Contraindicated – fetotoxic",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Pregnancy",
+   "d": 1
+  },
+  {
+   "t": "Previous angioedema",
+   "d": 1
+  },
+  {
+   "t": "Bilateral renal artery stenosis",
+   "d": 1
+  },
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Start low in heart failure or volume depletion",
+   "d": 1
+  },
+  {
+   "t": "Hyperkalaemia with spironolactone and potassium",
+   "d": 1
+  },
+  {
+   "t": "NSAIDs increase renal risk",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Dry cough, hyperkalaemia, first-dose hypotension, acute kidney injury, angioedema",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Potassium and creatinine at baseline and 1–2 weeks after starting or changing dose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "cad-adult",
+  "ccf-adult",
+  "ckd-adult",
+  "ckd-paeds",
+  "hf-paeds",
+  "hte-adult",
+  "htu-adult",
+  "pet"
+ ],
+ "link": [
+  "enalapril"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,127 @@
+{
+ "id": "verapamil",
+ "type": "drug",
+ "name": "Verapamil",
+ "aliases": [],
+ "class": "Non-dihydropyridine calcium-channel blocker",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks L-type calcium channels in the heart and vessels: slows AV conduction, negative inotrope",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Atrial Fibrillation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Verapamil, oral, 40–120 mg 8 hourly.",
+     "s": "HOSP:3.18"
+    },
+    {
+     "t": "Verapamil, oral, 40–120 mg 8 hourly. · Titrate against ventricular rate (verapamil is negatively inotropic,",
+     "s": "HOSP:3.19"
+    }
+   ]
+  },
+  {
+   "h": "Av Junctional Re-entry Tachycardias",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Verapamil, oral, 40–120 mg 8 hourly. Verapamil and digoxin are contraindicated in WPW syndrome",
+     "s": "HOSP:3.22"
+    }
+   ]
+  },
+  {
+   "h": "Cluster Headache",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Verapamil, oral, 40–80 mg 12 hourly.",
+     "s": "HOSP:14.34"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use only if needed",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Heart failure with reduced ejection fraction",
+   "d": 1
+  },
+  {
+   "t": "Heart block",
+   "d": 1
+  },
+  {
+   "t": "Hypotension",
+   "d": 1
+  },
+  {
+   "t": "Wide-complex tachycardia",
+   "d": 1
+  },
+  {
+   "t": "WPW with atrial fibrillation",
+   "d": 1
+  },
+  {
+   "t": "With IV β-blocker",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Never combine IV verapamil with β-blockers",
+   "d": 1
+  },
+  {
+   "t": "Raises digoxin levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Constipation, bradycardia, heart block, hypotension",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG, BP",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "brady-adult",
+  "ccf-adult"
+ ],
+ "link": [
+  "verapamil"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,77 @@
+{
+ "id": "half-strength-darrows",
+ "type": "drug",
+ "name": "Half-strength Darrows",
+ "aliases": [
+  "Darrows",
+  "Darrow's"
+ ],
+ "class": "Hypotonic maintenance / rehydration fluid with potassium and dextrose",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Replaces water, sodium and potassium losses in diarrhoeal dehydration",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [],
+ "contraindications": [
+  {
+   "t": "Shock (use an isotonic fluid first)",
+   "d": 1
+  },
+  {
+   "t": "Hyperkalaemia",
+   "d": 1
+  },
+  {
+   "t": "Anuria",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Not for boluses",
+   "d": 1
+  },
+  {
+   "t": "Check renal function and urine output before potassium-containing fluids",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hyponatraemia, hyperkalaemia, fluid overload",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Hydration, sodium, potassium",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "sam"
+ ],
+ "link": [
+  "half-strength Darrows",
+  "Darrow's",
+  "Darrows"
+ ],
+ "link_cs": []
+}

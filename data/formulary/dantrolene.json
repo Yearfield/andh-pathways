@@ -1,0 +1,71 @@
+{
+ "id": "dantrolene",
+ "type": "drug",
+ "name": "Dantrolene",
+ "aliases": [],
+ "class": "Skeletal muscle relaxant",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks calcium release from the sarcoplasmic reticulum (ryanodine receptor)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when indicated",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "None in malignant hyperthermia",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reconstitute with sterile water only",
+   "d": 1
+  },
+  {
+   "t": "Needs many vials",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Muscle weakness, hepatotoxicity, phlebitis",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Temperature, potassium, CK",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "dantrolene"
+ ],
+ "link_cs": []
+}

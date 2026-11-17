@@ -1,0 +1,216 @@
+{
+ "id": "thiamine",
+ "type": "drug",
+ "name": "Thiamine",
+ "aliases": [
+  "vitamin B1"
+ ],
+ "class": "Vitamin B1",
+ "group": "Vitamins and nutrition",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Co-factor for carbohydrate metabolism (pyruvate dehydrogenase, transketolase), deficiency causes Wernicke encephalopathy and beriberi",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Hepatitis, Non-viral",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, oral, 300 mg daily. Other vitamins if indicated.",
+     "s": "HOSP:1.9"
+    }
+   ]
+  },
+  {
+   "h": "Congestive Cardiac Failure (Ccf)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, oral/IM, 100 mg daily for 4 weeks.",
+     "s": "HOSP:3.30"
+    }
+   ]
+  },
+  {
+   "h": "Dementia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, IM, 500 mg immediately and daily for 3 to 5 days.",
+     "s": "HOSP:14.7"
+    },
+    {
+     "t": "Thiamine, IM, 200 mg daily or oral, 100 mg 8 hourly for 14 days.",
+     "s": "HOSP:14.7"
+    },
+    {
+     "t": "Follow with thiamine, oral, 100 mg 8 hourly.",
+     "s": "HOSP:14.7"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, oral, 300 mg immediately and daily for 14 days.",
+     "s": "HOSP:15.7"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, oral, 300 mg daily for 14 days.",
+     "s": "HOSP:15.31"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, oral/IM, 300 mg daily.",
+     "s": "HOSP:15.33"
+    }
+   ]
+  },
+  {
+   "h": "Ethanol Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, IV, 100 mg in 1 L dextrose, 5%.",
+     "s": "HOSP:19.33"
+    }
+   ]
+  },
+  {
+   "h": "Ethylene Glycol Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Thiamine, oral, 100 mg daily.",
+     "s": "HOSP:19.35"
+    }
+   ]
+  },
+  {
+   "h": "Hypoglycaemia in Diabetics",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Thiamine, IV/IM, 100 mg immediately.",
+     "s": "PHC:9.15"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Thiamine, IM, 200 mg immediately. 10 See Section 16.9.4: Alcohol withdrawal (uncomplicated).",
+     "s": "PHC:21.21"
+    }
+   ]
+  },
+  {
+   "h": "Hypoglycaemia and Hypoglycaemic Coma",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Thiamine, IV/IM, 200 mg immediately.",
+     "s": "PHC:21.23"
+    }
+   ]
+  },
+  {
+   "h": "Treatment",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Thiamine, oral 300 mg immediately and daily for 14 days. • If oral treatment fails after 30–60 minutes,",
+     "s": "impcg2024:28"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Megaloblastic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Vitamin B12, IM, 100 mcg monthly. Should be given together with folate to prevent developmental of subacute combined degeneration of the spinal cord. Prolonged treatment may be needed.",
+     "s": "PAED:3.9"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give before or with glucose in at-risk patients (alcohol dependence, malnutrition, hyperemesis)",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rare anaphylaxis with IV use",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult",
+  "alcohol-withdrawal-adult",
+  "ccf-adult",
+  "cirrhosis-adult",
+  "delirium-adult",
+  "hypoglycemia-adult",
+  "hypoglycemia-pregnancy",
+  "lytes-adult-phos-refeed",
+  "panc-adult",
+  "psychosis-adult",
+  "tbi-adult",
+  "toxic-alcohols",
+  "ugib-adult",
+  "wernicke-adult"
+ ],
+ "link": [
+  "vitamin B1",
+  "thiamine"
+ ],
+ "link_cs": []
+}

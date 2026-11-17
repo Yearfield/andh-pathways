@@ -1,0 +1,108 @@
+{
+ "id": "fentanyl",
+ "type": "drug",
+ "name": "Fentanyl",
+ "aliases": [],
+ "class": "Potent short-acting synthetic opioid",
+ "group": "Analgesia and anaesthesia",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Full μ-opioid agonist, about 100 times more potent than morphine, rapid onset, short duration after a single dose",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Intravenous Analgesics",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fentanyl, IV, 1–2 mcg/kg",
+     "s": "HOSP:12.5"
+    }
+   ]
+  },
+  {
+   "h": "Post-intubation Sedation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Fentanyl, IV infusion, 1 mcg/kg/hour (also becomes long acting after prolonged infusion due to fat solubility).",
+     "s": "HOSP:20.20"
+    }
+   ]
+  },
+  {
+   "h": "Analgosedation",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Fentanyl 0.25 mcg/kg, IV For painful procedures. Administer slowly to reduce risk 1–2 mcg/kg, IN of chest wall rigidity.",
+     "s": "PAED:23.6"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Use when needed; neonatal respiratory depression near delivery",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression without airway support",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give slowly",
+   "d": 1
+  },
+  {
+   "t": "Accumulates with repeated doses or infusion",
+   "d": 1
+  },
+  {
+   "t": "Preferred opioid in renal failure",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Respiratory depression, bradycardia, chest-wall rigidity with rapid high doses, nausea, hypotension",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, saturation, sedation",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "fracture-paeds",
+  "opioids",
+  "rsi-adult",
+  "rsi-paeds"
+ ],
+ "link": [
+  "fentanyl"
+ ],
+ "link_cs": []
+}

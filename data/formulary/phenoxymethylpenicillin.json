@@ -1,0 +1,174 @@
+{
+ "id": "phenoxymethylpenicillin",
+ "type": "drug",
+ "name": "Phenoxymethylpenicillin",
+ "aliases": [
+  "penicillin V"
+ ],
+ "class": "Antibiotic – oral natural penicillin (penicillin V)",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial cell-wall synthesis, streptococcal cover",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Rheumatic Heart Disease",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 250 mg 12 hourly.",
+     "s": "HOSP:3.45"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 250 mg 12 hourly for 10 days.",
+     "s": "PHC:4.27"
+    },
+    {
+     "t": "Phenoxymethylpenicillin, oral, 500 mg 12 hourly for 10 days. OR Children",
+     "s": "PHC:4.27"
+    },
+    {
+     "t": "Phenoxymethylpenicillin, oral, 12 hourly. · Children: 125 mg · Adults: 250 mg",
+     "s": "PHC:4.28"
+    }
+   ]
+  },
+  {
+   "h": "Tonsillitis and Pharyngitis",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 500 mg 12 hourly for 10 days . PHC Ch19_Last updated 18 August 2026 19.10",
+     "s": "PHC:19.10"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Haemolytic",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 12 hourly. · If < 5 years: 125 mg. · If > 5 years: 250 mg.",
+     "s": "PAED:3.5"
+    }
+   ]
+  },
+  {
+   "h": "Anaemia, Sickle Cell",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 12 hourly. · < 5 years: 125 mg · > 5 years: 250 mg",
+     "s": "PAED:3.7"
+    }
+   ]
+  },
+  {
+   "h": "Immune Thrombocytopenic Purpura (Itp)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 12 hourly. · If < 5 years of age: 125 mg. · If > 5 years of age: 250 mg.",
+     "s": "PAED:3.22"
+    }
+   ]
+  },
+  {
+   "h": "Rheumatic Fever, Acute",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 15 mg/kg (up to a maximum of 500 mg) 12 hourly for 10 days.",
+     "s": "PAED:4.14"
+    }
+   ]
+  },
+  {
+   "h": "Cutaneous Haemangiomas",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 50 mg/kg/24 hours in 4 divided doses (6 hourly) for 10 days.",
+     "s": "PAED:6.2"
+    }
+   ]
+  },
+  {
+   "h": "Diphtheria",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 15 mg/kg/dose 6 hourly.",
+     "s": "PAED:8.10"
+    }
+   ]
+  },
+  {
+   "h": "Sydenham Chorea",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenoxymethylpenicillin, oral, 500 mg 12 hourly for 10 days.",
+     "s": "PAED:13.45"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take on an empty stomach",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Rash, GI upset, hypersensitivity",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "croup-paeds",
+  "tonsillitis-paeds"
+ ],
+ "link": [
+  "phenoxymethylpenicillin",
+  "penicillin V"
+ ],
+ "link_cs": []
+}

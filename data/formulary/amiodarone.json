@@ -1,0 +1,145 @@
+{
+ "id": "amiodarone",
+ "type": "drug",
+ "name": "Amiodarone",
+ "aliases": [],
+ "class": "Class III anti-arrhythmic",
+ "group": "Cardiovascular and blood",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Prolongs repolarisation (potassium-channel block) with sodium-channel, calcium-channel and β-blocking effects, very long half-life",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Atrial Fibrillation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amiodarone, oral, 200 mg 8 hourly for 1 week. Specialist initiated. · Followed by 200 mg 12 hourly for one week. · Thereafter, 200 mg daily.",
+     "s": "HOSP:3.19"
+    }
+   ]
+  },
+  {
+   "h": "Regular Wide Qrs Tachycardias",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amiodarone, IV, 5 mg/kg infused over 30 minutes.",
+     "s": "HOSP:3.23"
+    },
+    {
+     "t": "Amiodarone, oral, 200 mg 8 hourly for 7 days. · Then, 200 mg 12 hourly for 7 days. · Maintenance dose: 200 mg daily for the minimum time required to",
+     "s": "HOSP:3.23"
+    },
+    {
+     "t": "Amiodarone, oral, 200 mg three times a day for 7 days. · Then 200 mg 12 hourly for 7 days. · Follow with a maintenance dose of 200–400 mg daily, depending",
+     "s": "HOSP:3.24"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Arrest in Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amiodarone, IV bolus, 300 mg, 2 minutes after adrenaline (epinephrine) dose. · Follow by a bolus of 10 mL sterile water or sodium chloride 0.9%.",
+     "s": "HOSP:20.4"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amiodarone, oral, 800 mg daily for 7 days. · Then 600 mg daily for 3 days. · Hypotension may occur, especially during the loading dose phase",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Cardiac Arrhythmias",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amiodarone, IV, 5 mg/kg over 20 minutes.",
+     "s": "PAED:4.4"
+    },
+    {
+     "t": "Amiodarone, IV, 5 mg/kg slowly over 20 minutes. AND Continue with DC cardioversion.",
+     "s": "PAED:4.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Sinus bradycardia or heart block without pacing",
+   "d": 1
+  },
+  {
+   "t": "Thyroid dysfunction",
+   "d": 1
+  },
+  {
+   "t": "Iodine sensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Give via a large or central vein in dextrose 5%",
+   "d": 1
+  },
+  {
+   "t": "Raises digoxin and warfarin effect",
+   "d": 1
+  },
+  {
+   "t": "Avoid other QT-prolonging drugs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypotension and bradycardia with IV, phlebitis, thyroid dysfunction, pulmonary fibrosis, hepatitis, corneal deposits, photosensitivity with long-term use, QT prolongation",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG, BP, thyroid and liver function long term",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "adhf-adult"
+ ],
+ "link": [
+  "amiodarone"
+ ],
+ "link_cs": []
+}

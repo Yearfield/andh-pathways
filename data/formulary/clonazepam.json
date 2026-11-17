@@ -1,0 +1,159 @@
+{
+ "id": "clonazepam",
+ "type": "drug",
+ "name": "Clonazepam",
+ "aliases": [],
+ "class": "Benzodiazepine (long-acting)",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Enhances GABA-A receptor activity: anticonvulsant and sedative",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Eclampsia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, IV, 2 mg. · May be repeated after 5 minutes. · Maximum dose: 4 mg.",
+     "s": "HOSP:6.12"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, IV, 1 mg. - Poisoning.",
+     "s": "HOSP:14.15"
+    },
+    {
+     "t": "Clonazepam, IM, 1 mg. (e.g. alcohol,",
+     "s": "HOSP:14.15"
+    }
+   ]
+  },
+  {
+   "h": "Aggressive Disruptive Behaviour in Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, oral, 0.5–2 mg immediately.",
+     "s": "HOSP:15.6"
+    },
+    {
+     "t": "Clonazepam, IM, 0.5–2 mg immediately.",
+     "s": "HOSP:15.7"
+    }
+   ]
+  },
+  {
+   "h": "Trauma and Stress-related Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, oral, 0.5–2 mg per day in 3 divided doses.",
+     "s": "HOSP:15.22"
+    }
+   ]
+  },
+  {
+   "h": "Alcohol Withdrawal Delirium (Delirium Tremens)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, IM, 2 mg as a single dose. · If no response, repeat dose after 60 minutes until patient is sedated. · Repeat dose regularly to maintain mild sedation.",
+     "s": "HOSP:15.33"
+    }
+   ]
+  },
+  {
+   "h": "Isoniazid Poisoning",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, IV, 2 mg, repeat once after 5 to 10 minutes if necessary.",
+     "s": "HOSP:19.27"
+    }
+   ]
+  },
+  {
+   "h": "Delirium",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Clonazepam, IM, 0.5–2 mg.",
+     "s": "HOSP:20.15"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid regular use",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Respiratory depression",
+   "d": 1
+  },
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Additive with opioids and alcohol",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Sedation, respiratory depression, hypersalivation and bronchial hypersecretion in children",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Respiratory rate, saturation",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "alcohol-withdrawal-adult",
+  "amphetamines",
+  "cocaine",
+  "delirium-adult",
+  "pet",
+  "psychosis-adult",
+  "tbi-adult"
+ ],
+ "link": [
+  "clonazepam"
+ ],
+ "link_cs": []
+}

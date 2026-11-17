@@ -1,0 +1,153 @@
+{
+ "id": "amikacin",
+ "type": "drug",
+ "name": "Amikacin",
+ "aliases": [],
+ "class": "Antibiotic – aminoglycoside",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the 30S ribosomal subunit, retains activity against many gentamicin-resistant Gram-negatives",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Febrile Neutropenia",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amikacin, IV, 15 mg/kg daily. (See Appendix II, for individual dosing and monitoring for response and toxicity.)",
+     "s": "HOSP:2.12"
+    }
+   ]
+  },
+  {
+   "h": "Hospital-acquired Pneumonia (Hap) and Ventilator-associated Pneumonia (Vap)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amikacin, IV, 15 mg/kg daily.",
+     "s": "HOSP:9.6"
+    }
+   ]
+  },
+  {
+   "h": "Urinary Tract Infections, Catheter Associated",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amikacin, IV, 15 mg/kg daily for 7 days. OR If local resistance patterns show low level resistance to ciprofloxacin or culture",
+     "s": "HOSP:9.7"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Amikacin, IV/IM, 15 mg/kg daily.",
+     "s": "HOSP"
+    },
+    {
+     "t": "Amikacin, IV, 15 mg/kg daily given slowly over 30 minutes. · If BMI is >40 kg/m2 use ideal body weight* + 40% of the difference between ideal and actual body weight.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amikacin, IV, 15 mg/kg/dose, daily.",
+     "s": "PAED:15.4"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia, Nosocomial",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amikacin, IV, 15 mg/kg/dose, daily. Adjust therapy according to sensitivities. Reconsider empirical antibiotic therapy and duration of therapy daily.",
+     "s": "PAED:15.10"
+    }
+   ]
+  },
+  {
+   "h": "Septicaemia of the Newborn",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Amikacin, IV, for 7 days. · 15 mg/kg/dose 24 hourly. · Therapeutic drug monitoring to be done where available.",
+     "s": "PAED:19.37"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid if alternatives exist",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Myasthenia gravis",
+   "d": 1
+  },
+  {
+   "t": "Previous aminoglycoside ototoxicity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Extend the interval in renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Avoid other nephrotoxic or ototoxic drugs",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nephrotoxicity, irreversible ototoxicity, neuromuscular blockade",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function, audiometry on longer courses, levels where available",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "lrti-paeds",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "amikacin"
+ ],
+ "link_cs": []
+}

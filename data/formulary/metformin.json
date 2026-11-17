@@ -1,0 +1,166 @@
+{
+ "id": "metformin",
+ "type": "drug",
+ "name": "Metformin",
+ "aliases": [],
+ "class": "Biguanide oral hypoglycaemic",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Reduces hepatic gluconeogenesis and increases peripheral insulin sensitivity, does not cause hypoglycaemia alone",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Diabetes Mellitus in Pregnancy",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metformin, oral, 500 mg daily. · Increase dose to 500 mg 12 hourly after 7 days. · Titrate dose to a maximum of 850 mg 8 hourly according to glucose",
+     "s": "HOSP:6.3"
+    }
+   ]
+  },
+  {
+   "h": "Type 2 Diabetes Mellitus",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metformin, oral, 500 mg twice daily with meals. · Adjust dose based on fasting blood glucose levels and/or HbA1c to a maximum dose of 850 mg 8 hourly.",
+     "s": "HOSP:8.8"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metformin, oral, 500 mg twice daily with meals. · Titrate dose slowly depending on HbA1c and/or fasting blood glucose levels to a maximum dose of 850 mg 8 hourly.",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Metformin initiation: • Initiate metformin at a low dose (500 mg or 1000 mg total daily dose), titrating up as needed. Do not exceed 2 g daily.",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Initiate metformin at a low dose (500 mg or 1000 mg total daily dose), titrating up as needed. Do not exceed 2 g daily.",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "If patient stabilised on metformin dose ≤ 2 g daily, retain metformin dose and Metformin/DTG · Metformin · monitor for side effects. • If patient stabilised on > 2 g daily, reduce dose of metformin to ≤ 2 g daily and",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "h": "Type 2 Diabetes Mellitus, Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Metformin, oral, 500 mg daily with meals. · Titrate dose slowly depending on HbA1c and/or fasting blood glucose concentrations to a maximum dose of 850 mg 8 hourly.",
+     "s": "PHC:9.10"
+    }
+   ]
+  },
+  {
+   "h": "Gestational diabetes mellitus",
+   "pop": "obstetric",
+   "items": [
+    {
+     "t": "Metformin is safe in pregnancy and should not be stopped. · Note that metformin interacts with dolutegravir, and the maximum dose of metformin for women on dolutegravir is 500mg twice a day.",
+     "s": "impcg2024:124"
+    },
+    {
+     "t": "Note that metformin interacts with dolutegravir, and the maximum dose of metformin for women on dolutegravir is 500mg twice a day. • If a woman presents before 16 weeks gestation start on Aspirin 150 mg orally at bedtime as well.",
+     "s": "impcg2024:124"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used in pregnancy per guideline",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "EGFR < 30 mL/min",
+   "d": 1
+  },
+  {
+   "t": "Acute illness with hypoxia, sepsis, dehydration or shock",
+   "d": 1
+  },
+  {
+   "t": "Severe hepatic impairment",
+   "d": 1
+  },
+  {
+   "t": "Alcohol excess",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Reduce dose at eGFR 30–45",
+   "d": 1
+  },
+  {
+   "t": "Withhold around iodinated contrast and during acute illness",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Nausea, diarrhoea, abdominal discomfort, metallic taste, vitamin B12 deficiency, lactic acidosis (rare)",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Renal function, HbA1c, B12 long term",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "age-adult",
+  "aki-adult",
+  "bloodgas-causes",
+  "bloodgas_causes",
+  "ckd-adult",
+  "hiv-new-adult",
+  "hyperglycaemia-adult",
+  "hypoglycemia-pregnancy",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "metformin"
+ ],
+ "link_cs": []
+}

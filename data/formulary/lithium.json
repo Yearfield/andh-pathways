@@ -1,0 +1,114 @@
+{
+ "id": "lithium",
+ "type": "drug",
+ "name": "Lithium",
+ "aliases": [],
+ "class": "Mood stabiliser",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Modulates intracellular signalling (inositol monophosphatase, GSK-3)",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bipolar and Related Disorders",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lithium, oral, usual dose range 200–600 mg at night, depending on desired blood levels. · Pre-treatment: check eGFR, TFTs, calcium, and ECG in patients with",
+     "s": "HOSP:15.18"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Lithium, oral, 400mg at night. · Check eGFR and thyroid function before starting lithium. Lithium may be used once hypothyroidism is treated. Adjust doses if renal function is",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Bipolar Disorder",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Lithium carbonate, oral (for patients aged 12–17 years). · Initial dose: 20 mg/kg/day in 2–3 divided dosages. Lithium level after 5 days. Increase accordingly. Therapeutic range: 0.6–0.8 mmol/l. Be",
+     "s": "PAED:14.16"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Teratogenic risk – specialist decision",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Severe renal impairment",
+   "d": 1
+  },
+  {
+   "t": "Cardiac disease with rhythm disorder",
+   "d": 1
+  },
+  {
+   "t": "Sodium depletion",
+   "d": 1
+  },
+  {
+   "t": "Untreated hypothyroidism",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Narrow therapeutic index",
+   "d": 1
+  },
+  {
+   "t": "Levels raised by NSAIDs, ACE inhibitors, thiazides and dehydration",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Tremor, polyuria, thirst, hypothyroidism, renal impairment, weight gain, toxicity: coarse tremor, ataxia, confusion, seizures",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Lithium level, renal and thyroid function",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bloodgas-causes",
+  "bloodgas_causes"
+ ],
+ "link": [
+  "lithium"
+ ],
+ "link_cs": []
+}

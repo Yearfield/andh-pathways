@@ -1,0 +1,173 @@
+{
+ "id": "phenytoin",
+ "type": "drug",
+ "name": "Phenytoin",
+ "aliases": [],
+ "class": "Anticonvulsant – hydantoin",
+ "group": "CNS and psychiatry",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Blocks voltage-gated sodium channels, limiting repetitive firing",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Phenytoin, oral, 4.5–5 mg/kg (lean body mass) daily, at night. Only consider continuing phenytoin in patients already well controlled on phenytoin, and in whom phenytoin is well tolerated.",
+     "s": "HOSP:14.31"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Phenytoin, IV, 20 mg/kg diluted in sodium chloride 0.9% (not dextrose) administered not faster than 50 mg/minute, with cardiac monitoring. Elderly patients and patients with impaired liver function, require lower doses",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Drug interactions with dolutegravir",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Phenobarbital · Double DTG dose to 50 mg 12-hourly for carbamazepine, phenytoin, or • Phenytoin · phenobarbital if an alternative anticonvulsant cannot be used Metformin initiation:",
+     "s": "hiv2026:32"
+    },
+    {
+     "t": "Phenytoin · phenobarbital if an alternative anticonvulsant cannot be used Metformin initiation: • Initiate metformin at a low dose (500 mg or 1000 mg total daily dose), titrating",
+     "s": "hiv2026:32"
+    }
+   ]
+  },
+  {
+   "h": "ART 2026 one-page summary: baseline labs, regimens, monitoring, VL algorithm, interactions",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Rifampicin and DTG Rifampicin decreases DTG levels Increase DTG dose to 50 mg twice daily¤ · special · • Repeat VL at next scheduled routine VL, · rifampicin, carbamazepine, phenytoin, merular filtration. Early increases in serum · phenobar",
+     "s": "art2026:1"
+    }
+   ]
+  },
+  {
+   "h": "Epilepsy in Adolescents and Adults",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Phenytoin, oral, 4.5–5 mg/kg (lean body mass) daily, at night. (Doctor initiated). · Only consider continuing phenytoin in patients already well",
+     "s": "PHC:15.49"
+    }
+   ]
+  },
+  {
+   "h": "Epileptic Seizures and Status Epilepticus in",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenytoin, IV or IO, 20 mg/kg (diluted in sodium chloride 0.9% and infused over 20 minutes, not exceeding 3 mg/kg/min with cardiac monitoring).",
+     "s": "PAED:13.9"
+    }
+   ]
+  },
+  {
+   "h": "Traumatic Brain Injury (TBI) and Neuro- Protection in the ICU",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Phenytoin, IV, 20 mg/kg over 20 minutes (loading dose) followed by 5–10 mg/kg/day in 3 divided doses (maintenance).",
+     "s": "PAED:23.23"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Teratogenic – specialist decision",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Sinus bradycardia",
+   "d": 1
+  },
+  {
+   "t": "Heart block",
+   "d": 1
+  },
+  {
+   "t": "Previous hypersensitivity syndrome",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Dilute in sodium chloride 0.9% only",
+   "d": 1
+  },
+  {
+   "t": "Give no faster than 50 mg/minute with cardiac monitoring",
+   "d": 1
+  },
+  {
+   "t": "Enzyme inducer",
+   "d": 1
+  },
+  {
+   "t": "Saturable kinetics – small dose changes cause large level changes",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "IV: hypotension, arrhythmias, tissue necrosis on extravasation. Dose-related: nystagmus, ataxia, drowsiness. Chronic: gum hypertrophy, hirsutism, rash, SJS/TEN",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG and BP during loading, level where available",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "amphetamines",
+  "cocaine",
+  "hie-adult",
+  "hie-child",
+  "hie-neonate",
+  "hiv-defaulter-adult",
+  "hiv-new-adult",
+  "op",
+  "paracetamol",
+  "stroke",
+  "tbi-adult",
+  "tbi-paeds",
+  "tca"
+ ],
+ "link": [
+  "phenytoin"
+ ],
+ "link_cs": []
+}

@@ -1,0 +1,66 @@
+{
+ "id": "progesterone",
+ "type": "drug",
+ "name": "Progesterone",
+ "aliases": [],
+ "class": "Progestogen",
+ "group": "Obstetrics",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Maintains uterine quiescence",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for preterm birth prevention in selected women",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Undiagnosed vaginal bleeding",
+   "d": 1
+  },
+  {
+   "t": "Severe hepatic disease",
+   "d": 1
+  },
+  {
+   "t": "Breast cancer",
+   "d": 1
+  }
+ ],
+ "cautions": [],
+ "adverse_effects": [
+  {
+   "t": "Drowsiness, breast tenderness, vaginal irritation",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bloodgas-causes",
+  "bloodgas_causes",
+  "preterm-labour"
+ ],
+ "link": [
+  "progesterone"
+ ],
+ "link_cs": []
+}

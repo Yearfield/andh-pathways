@@ -1,0 +1,102 @@
+{
+ "id": "betamethasone",
+ "type": "drug",
+ "name": "Betamethasone",
+ "aliases": [],
+ "class": "Corticosteroid (long-acting, potent glucocorticoid)",
+ "group": "Endocrine",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Binds the glucocorticoid receptor, crosses the placenta and accelerates fetal lung maturation",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Preterm Labour (PTL) and Preterm Prelabour Rupture of Membranes (PPROM)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Betamethasone, IM, 12 mg, 2 doses 24 hours apart.",
+     "s": "HOSP:6.23"
+    }
+   ]
+  },
+  {
+   "h": "Brain Oedema due to Tumours and Inflammation",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Betamethasone, oral/IV, 4 mg 6 hourly. · Discontinue if no response has occurred after 48 hours. · Taper dose according to response and duration of therapy.",
+     "s": "HOSP:14.48"
+    }
+   ]
+  },
+  {
+   "h": "Nausea and Vomiting",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Betamethasone, oral: · Child < 1 year: 250 mcg 8 hourly. Maximum: 1000 mcg (1 mg) 8 hourly.",
+     "s": "PAED:21.5"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Used for fetal lung maturity",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Systemic infection without antimicrobial cover (relative)",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Monitor glucose closely in diabetic mothers",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Maternal hyperglycaemia, transient reduction in fetal movements",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Glucose",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "aph",
+  "eczema-adult",
+  "eczema-paeds",
+  "fungal-adult",
+  "pet",
+  "preterm-labour"
+ ],
+ "link": [
+  "betamethasone"
+ ],
+ "link_cs": []
+}

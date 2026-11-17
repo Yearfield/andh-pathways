@@ -1,0 +1,181 @@
+{
+ "id": "moxifloxacin",
+ "type": "drug",
+ "name": "Moxifloxacin",
+ "aliases": [],
+ "class": "Antibiotic – fluoroquinolone",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits bacterial DNA gyrase and topoisomerase IV, active against M. tuberculosis",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Bronchiectasis",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Moxifloxacin, IV, 400 mg daily infused over 60 minutes.",
+     "s": "HOSP:16.8"
+    },
+    {
+     "t": "Moxifloxacin, oral, 400 mg daily to complete a total of 7 days of treatment with moxifloxacin i.e. total duration of 7 days for IV and oral combined.",
+     "s": "HOSP:16.9"
+    }
+   ]
+  },
+  {
+   "h": "Lung Abscess",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Moxifloxacin, IV, 400 mg daily, until patient apyrexial for 24 hours.",
+     "s": "HOSP:16.14"
+    },
+    {
+     "t": "Moxifloxacin, oral, 400 mg daily. Duration of therapy Usually 4-6 weeks – monitor with repeat CXR every 1-2 weeks, which should",
+     "s": "HOSP:16.14"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia, Community Acquired",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Moxifloxacin, oral, 400 mg daily for 5 days.",
+     "s": "HOSP:16.16"
+    },
+    {
+     "t": "Moxifloxacin, IV, 400 mg daily.",
+     "s": "HOSP:16.17"
+    }
+   ]
+  },
+  {
+   "h": "Pneumonia, Aspiration",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Moxifloxacin, IV, 400 mg daily, until patient is apyrexial for 24 hours.",
+     "s": "HOSP:16.18"
+    },
+    {
+     "t": "Moxifloxacin, oral, 400 mg daily.",
+     "s": "HOSP:16.18"
+    }
+   ]
+  },
+  {
+   "h": "Empyema",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Moxifloxacin, oral, 400 mg daily. Continue treatment until drainage is complete.",
+     "s": "HOSP:16.19"
+    }
+   ]
+  },
+  {
+   "h": "Bubo",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Moxifloxacin, IV, 400 mg daily 10.2.2: Management of selected antiretroviral adverse drug reactions, Hepatitis in patients on ART and anti-tuberculosis therapy, 16.3 Bronchiectasis if",
+     "s": "HOSP"
+    }
+   ]
+  },
+  {
+   "h": "Uncomplicated Pneumonia",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Moxifloxacin, oral, 400 mg daily for 5 days. A follow-up chest X-ray should ideally be taken to ensure resolution of the pneumonia in patients >50 years of age.",
+     "s": "PHC:17.25"
+    }
+   ]
+  },
+  {
+   "h": "RR-TB Dosing Chart for Children 1",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Levofloxacin (LFX) Moxifloxacin · Bedaquiline · Linezolid · Terizidone · Clofazimine (preferred quinolone) (MFX) · (BDQ) · (LZD) · (TRD)# · (CFZ) 250 mg tablet",
+     "s": "tbqrg2025:40"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Avoid unless part of a TB regimen",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "QT prolongation",
+   "d": 1
+  },
+  {
+   "t": "Quinolone hypersensitivity",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Avoid with other QT-prolonging drugs",
+   "d": 1
+  },
+  {
+   "t": "Masks TB if used empirically",
+   "d": 1
+  },
+  {
+   "t": "Rifampicin lowers levels",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "QT prolongation, nausea, tendinitis, hepatitis, dysglycaemia",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "ECG",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "ards-adult",
+  "lrti-adult",
+  "lrti-pregnancy",
+  "tb-adult",
+  "tb-hiv-adult",
+  "tb-hiv-paeds",
+  "tb-paeds"
+ ],
+ "link": [
+  "moxifloxacin"
+ ],
+ "link_cs": []
+}

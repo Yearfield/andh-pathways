@@ -1,0 +1,124 @@
+{
+ "id": "oxygen",
+ "type": "drug",
+ "name": "Oxygen",
+ "aliases": [],
+ "class": "Medical gas",
+ "group": "Fluids and blood products",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Raises alveolar and arterial oxygen tension",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "No dose statement was found in the guideline catalogue for this medicine – use the dose in the linked pathway.",
+ "dosing": [],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "None absolute",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Titrate to a saturation target (lower target in COPD and in preterm neonates)",
+   "d": 1
+  },
+  {
+   "t": "Fire risk",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "Hypercapnia in chronic CO2 retainers, absorption atelectasis, oxygen toxicity, retinopathy of prematurity in preterm infants",
+   "d": 1
+  }
+ ],
+ "monitoring": [
+  {
+   "t": "Pulse oximetry, blood gas where indicated",
+   "d": 1
+  }
+ ],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "acs-adult",
+  "adhf-adult",
+  "age-adult",
+  "age-paeds",
+  "aph",
+  "appy-adult",
+  "appy-paeds",
+  "ards-adult",
+  "ards-paeds",
+  "brady-adult",
+  "bronchiolitis-paeds",
+  "burns_paeds",
+  "chol-adult",
+  "copd-adult",
+  "croup-paeds",
+  "curb65",
+  "delirium-adult",
+  "dka-paeds",
+  "fluids-adult-shock",
+  "fluids-paeds-burns",
+  "fluids-paeds-dehydration",
+  "fluids-paeds-shock",
+  "fracture-adult",
+  "fracture-paeds",
+  "gerd-adult",
+  "gerd-paeds",
+  "hf-paeds",
+  "hie-child",
+  "hie-neonate",
+  "hte-adult",
+  "lrti-adult",
+  "lrti-paeds",
+  "lrti-pregnancy",
+  "meningitis-adult",
+  "meningitis-neonate",
+  "meningitis-paeds",
+  "miscarriage",
+  "opioids",
+  "panc-adult",
+  "pet",
+  "pph",
+  "prb-adult",
+  "prb-paeds",
+  "psychosis-adult",
+  "pud-adult",
+  "rf-adult",
+  "rf-paeds",
+  "rsi-paeds",
+  "sam",
+  "stroke",
+  "tb-adult",
+  "tbi-adult",
+  "tbi-paeds",
+  "ugib-adult",
+  "ugib-paeds",
+  "vitals_adult",
+  "vitals_paeds"
+ ],
+ "link": [],
+ "link_cs": []
+}

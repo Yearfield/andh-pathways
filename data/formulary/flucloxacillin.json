@@ -1,0 +1,155 @@
+{
+ "id": "flucloxacillin",
+ "type": "drug",
+ "name": "Flucloxacillin",
+ "aliases": [],
+ "class": "Antibiotic – penicillinase-resistant penicillin",
+ "group": "Antimicrobials",
+ "updated": "2026-11-15",
+ "verified": false,
+ "status": "DRAFT – pharmacology (†) is not yet checked against the package insert; doses are extracted automatically from the guideline text",
+ "dagger_note": "† = general pharmacology; not in the SA guideline and not yet checked against the package insert",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, h=heading",
+ "summary": "",
+ "forms": [],
+ "moa": [
+  {
+   "t": "Inhibits cell-wall synthesis, stable to staphylococcal β-lactamase",
+   "d": 1
+  }
+ ],
+ "pk": [],
+ "dosing_note": "Doses are extracted automatically from the guideline text. Each heading is the nearest section title in the guideline and can be off by one section – confirm on the cited page. The pathway dose stays authoritative for its indication.",
+ "dosing": [
+  {
+   "h": "Cellulitis and Erysipelas",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 500 mg 6 hourly for 5 days.",
+     "s": "HOSP:4.2"
+    },
+    {
+     "t": "Flucloxacillin, oral, 500 mg 6 hourly.",
+     "s": "HOSP:4.2"
+    }
+   ]
+  },
+  {
+   "h": "Zoster (Shingles)",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 500 mg 6 hourly for 5 days. For pain: Pain is often very severe and requires active control. Combination of different",
+     "s": "HOSP:9.23"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Septic and Osteomyelitis, Acute",
+   "pop": "adult",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 1 g 6 hourly to complete the 4 weeks’ treatment.",
+     "s": "HOSP:13.5"
+    }
+   ]
+  },
+  {
+   "h": "Boil, Abscess",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 12–25 mg/kg/dose 6 hourly for 5 days.",
+     "s": "PHC:5.6"
+    }
+   ]
+  },
+  {
+   "h": "End of Life Care",
+   "pop": "phc",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 12–25mg/kg/dose 6 hourly for 5 days. Weight Dose Syrup Capsule Age Kg mg 125 mg/ 5mL 250 mg Months/years",
+     "s": "PHC"
+    }
+   ]
+  },
+  {
+   "h": "Staphylococcal Scalded Skin Syndrome",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 25 mg/kg/dose 6 hourly for 7 days.",
+     "s": "PAED:5.2"
+    }
+   ]
+  },
+  {
+   "h": "Erythema Multiforme",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 25 mg/kg/dose 6 hourly.",
+     "s": "PAED:5.4"
+    }
+   ]
+  },
+  {
+   "h": "Arthritis, Septic (Pyogenic)",
+   "pop": "paed",
+   "items": [
+    {
+     "t": "Flucloxacillin, oral, 12.5–25 mg/kg/dose, 6 hourly. PLUS Corticosteroids",
+     "s": "PAED:8.49"
+    }
+   ]
+  }
+ ],
+ "administration": [],
+ "adjustments": [
+  {
+   "h": "Pregnancy / lactation",
+   "t": "Safe",
+   "d": 1
+  }
+ ],
+ "contraindications": [
+  {
+   "t": "Penicillin hypersensitivity",
+   "d": 1
+  },
+  {
+   "t": "Previous flucloxacillin-associated cholestatic jaundice",
+   "d": 1
+  }
+ ],
+ "cautions": [
+  {
+   "t": "Take oral doses on an empty stomach",
+   "d": 1
+  }
+ ],
+ "adverse_effects": [
+  {
+   "t": "GI upset, rash, cholestatic hepatitis (may be delayed)",
+   "d": 1
+  }
+ ],
+ "monitoring": [],
+ "toxicity": [],
+ "conflicts": [],
+ "see_also": [],
+ "used_in": [
+  "bsi-adult",
+  "bsi-paeds",
+  "eczema-adult",
+  "eczema-paeds",
+  "fungal-adult",
+  "fungal-paeds"
+ ],
+ "link": [
+  "flucloxacillin"
+ ],
+ "link_cs": []
+}
