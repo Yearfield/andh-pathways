@@ -9,7 +9,7 @@ const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const app = $("#app");
-const LS_PIN = "andh.pins", LS_REC2 = "andh.recent2";
+const LS_PIN = "andh.pins", LS_REC2 = "andh.recent2", LS_RQ = "andh.searches", LS_THEME = "andh.theme", LS_FS = "andh.fs";
 const LS_VER = "andh.verified", LS_OFF = "andh.offsets", LS_MODE = "andh.verifyMode", LS_CHK = "andh.checked", LS_REC = "andh.recent";
 const ls = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
 
@@ -18,13 +18,14 @@ const S = {
   verify: localStorage.getItem(LS_MODE) === "1", checked: ls(LS_CHK, {}), recent: ls(LS_REC, []),
   open: {}, chain: {}, seg: 0, filter: "All", sys: "All", cat: "All", dxo: {}, hub: {}, ps: {}, // ps: live answers on a pathway's Score tab (never stored); dxo: open differential cards per pathway; hub: chosen member (0 = first) per hub id
   sd: {}, sc: null, spop: "All", stag: "All", // scales and calculations: loaded cards, live scorer state, list filters
+  rq: ls(LS_RQ, { g: [], f: [] }), bxc: {}, // recent searches (g = start page, f = find in pathway); bxc: dose boxes shown as a summary, per pathway
   cx: null, pins: ls(LS_PIN, []), recent2: ls(LS_REC2, []), trail: [], scroll: {}, qs: {}, from: "#/", lastHash: null, // catalogue (links.js), pinned + recently opened cards, cross-link back trail, list scroll positions, typed searches
 };
 
 /* ---------- icons (inline stroke SVG) ---------- */
 const P = {
-  back: '<path d="m15 6-6 6 6 6"/>', next: '<path d="m9 6 6 6-6 6"/>', down: '<path d="m6 9 6 6 6-6"/>',
-  search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', check: '<path d="M20 6 9 17l-5-5"/>',
+  back: '<path d="m15 6-6 6 6 6"/>', next: '<path d="m9 6 6 6-6 6"/>', down: '<path d="m6 9 6 6 6-6"/>', up: '<path d="m6 15 6-6 6 6"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>', search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', check: '<path d="M20 6 9 17l-5-5"/>',
   warn: '<path d="M12 3 2 20h20zM12 10v4M12 17h.01"/>',
   arrival: '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 13l2 2 4-4"/>',
   days: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
@@ -41,6 +42,7 @@ const P = {
   ref: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M19 19v2H6"/>',
   scales: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>',
   leaf: '<path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14zM5 19l7-7"/>',
+  medicine: '<path d="M8 3h8v3H8zM6.5 6h11v13.5a1.5 1.5 0 0 1-1.5 1.5H8a1.5 1.5 0 0 1-1.5-1.5zM12 10.5v6M9 13.5h6"/>',
   star: '<path d="m12 3.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/>',
 };
 const ico = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${P[n]}</svg>`;
@@ -69,6 +71,31 @@ const idb = async (mode, fn) => { const d = await db; return new Promise((res, r
 const getPdf = id => idb("readonly", s => s.get(id));
 const putPdf = (id, blob) => idb("readwrite", s => s.put(blob, id));
 const delPdf = id => idb("readwrite", s => s.delete(id));
+
+/* ---------- display settings: theme (auto follows the phone) and text size; stored on this phone only ---------- */
+const FS_STEPS = [[0.7, "Compact"], [0.8, "Standard"], [0.9, "Large"], [1, "Extra large"]];
+const darkMQ = matchMedia("(prefers-color-scheme: dark)");
+const themePref = () => localStorage.getItem(LS_THEME) || "auto";
+const fsPref = () => { const f = parseFloat(localStorage.getItem(LS_FS)); return FS_STEPS.some(s => s[0] === f) ? f : 0.7; };
+function applyDisplay() {
+  const t = themePref(), dark = t === "dark" || (t === "auto" && darkMQ.matches), root = document.documentElement;
+  root.dataset.theme = dark ? "dark" : "light"; root.style.setProperty("--fs", fsPref());
+  const alt = root.classList.contains("alt-on");
+  $('meta[name="theme-color"]')?.setAttribute("content", dark ? (alt ? "#0d160b" : "#0e1517") : alt ? "#eef9e0" : "#f5f7f6");
+}
+darkMQ.addEventListener?.("change", () => { if (themePref() === "auto") applyDisplay(); });
+function displaySheet() {
+  $(".sheet")?.remove(); $(".scrim")?.remove();
+  const t = themePref(), f = fsPref();
+  document.body.insertAdjacentHTML("beforeend", `<div class="scrim" data-closemenu></div><div class="sheet" role="dialog" aria-modal="true" aria-label="Display settings">
+    <span class="grab" aria-hidden="true"></span><div class="shd"><h2>Display</h2></div>
+    <div><p class="slabel">Theme</p><div class="seg2" role="group" aria-label="Theme">${[["auto", "Auto", "follows phone"], ["light", "Light", ""], ["dark", "Dark", ""]].map(([k, l, n]) =>
+      `<button data-theme-set="${k}" aria-pressed="${t === k}">${l}${n ? `<small>${n}</small>` : ""}</button>`).join("")}</div></div>
+    <div><p class="slabel">Text size</p><div class="seg2 fsrow" role="group" aria-label="Text size">${FS_STEPS.map(([v, l], i) =>
+      `<button data-fs-set="${v}" aria-pressed="${f === v}" aria-label="${l}"><b style="font-size:${13 + i * 3}px">A</b><small>${l}</small></button>`).join("")}</div></div>
+    <p class="preview">Give ceftriaxone 2 g IV 12-hourly. Check HGT hourly.</p>
+    <button class="btn primary done" data-closemenu>Done</button></div>`);
+}
 
 /* ---------- data ---------- */
 async function loadJSON(p) { const r = await fetch(p); if (!r.ok) throw new Error(p + " " + r.status); return r.json(); }
@@ -182,6 +209,7 @@ function shell({ d, tab, body, head = "", after = "", mainCls = "" }) {
     <button class="iconbtn" aria-label="${hub ? "Back to " + esc(hub.short) : "Back to all pathways"}" data-go="${hub ? "#/hub/" + hub.id : "#/diagnoses"}">${ico("back")}</button>
     <div class="ttl"><div class="row1"><h1>${esc(e.short || d.title)}</h1><span class="badge ${popClass(popOf(e) || d.population)}">${esc(popName(popOf(e) || d.population))}</span></div>
       <div class="sub">${esc(d.title)}</div></div>
+    <button class="iconbtn" data-find aria-label="Find in this pathway">${ico("search")}</button>
     <button class="iconbtn" id="more" aria-label="More: verify mode, reset checklist" aria-haspopup="true">${MORE}</button></div>
     ${S.verify ? `<div class="meter" title="${v} of ${n} verified"><i style="width:${n ? (100 * v / n) : 0}%"></i></div>` : ""}
     ${head}</header>
@@ -204,13 +232,14 @@ function landing() {
   app.innerHTML = `
   <header class="top"><div class="hometop"><div class="brand"><img class="logo" src="icons/jad-logo.webp" alt="JAD">
     <div class="ttl"><h1>Pathways</h1><div class="sub">ANDH · works offline</div></div>
-    ${navigator.serviceWorker?.controller ? `<span class="pill-ok">${ico("check")}Saved</span>` : ""}</div>
+    ${navigator.serviceWorker?.controller ? `<span class="pill-ok">${ico("check")}Saved</span>` : ""}
+    <button class="iconbtn aa" data-display aria-label="Display: theme and text size">Aa</button></div>
     <label class="search">${ico("search")}<span class="sr">Search everything</span>
       <input id="gq" type="search" placeholder="Search all — DKA, GCS, RSI, potassium" autocomplete="off" enterkeyhint="go"></label></div></header>
   <main class="fade home land">
     <div id="gres" class="stack" hidden><h2 class="glabel">Results<span class="c">· <span id="gcount">0</span></span></h2><div class="list" id="glist"></div>
       <p class="empty" id="gnone" hidden>Nothing matches. Try a shorter word, or open a section below.</p></div>
-    <div id="ghome" class="stack">
+    <div id="ghome" class="stack">${rqChips("g", "gq")}
     <section><h2 class="glabel">${ico("star")}Pinned</h2>${pins.length ? `<div class="pgrid">${pins.map(it => pcard(it)).join("")}</div>`
       : `<p class="hint pinhint">Nothing pinned yet. Tap the star at the top of any pathway, procedure or scale to keep it here.</p>`}</section>
     ${rec.length ? `<section><h2 class="glabel">Recent</h2><div class="pgrid">${rec.map(r => pcard(r.it, r.hash)).join("")}</div></section>` : ""}
@@ -218,10 +247,15 @@ function landing() {
     <button class="tile" data-go="#/diagnoses">${ico("arrival")}<b>Diagnoses Pathways</b><span>Admission, timeline, doses and nursing · ${nd} pathways</span></button>
     <button class="tile" data-go="#/procedures">${ico("doses")}<b>Procedures Pathways</b><span>Step-by-step emergency procedures · ${np} procedure${np === 1 ? "" : "s"}</span></button>
     <button class="tile" data-go="#/scores">${ico("scales")}<b>Scales and Calculations</b><span>Scores, grades and calculators · ${ns} card${ns === 1 ? "" : "s"}</span></button>
-    <button class="tile" data-go="#/formulary">${ico("doses")}<b>Formulary</b><span>Medicines: doses, mechanism, cautions · ${fxCount()} medicines</span></button>
+    <button class="tile sky" data-go="#/formulary">${ico("medicine")}<b>Formulary</b><span>Medicines: doses, mechanism, cautions · ${fxCount()} medicines</span></button>
     <button class="tile spring" data-go="#/altmed">${ico("leaf")}<b>Alternative Medicine</b><span>Pathogen reference and feature search · imported, unverified</span></button></div></section>
     <p class="hint">Reference only — no patient details are stored.</p></div></main>`;
 }
+/* ---------- recent searches: the last six words that led somewhere (a result was opened), per box; stored on this phone only ---------- */
+function rqSave(k, q) { q = (q || "").trim(); if (q.length < 2) return; const l = S.rq[k] ||= [];
+  S.rq[k] = [q, ...l.filter(x => x.toLowerCase() !== q.toLowerCase())].slice(0, 6); localStorage.setItem(LS_RQ, JSON.stringify(S.rq)); }
+const rqChips = (k, box) => (S.rq[k] || []).length ? `<section class="rqs"><h2 class="glabel">${ico("clock")}Recent searches<button class="rqclear" data-rqclear="${k}">Clear</button></h2>
+  <div class="rqrow">${S.rq[k].map(q => `<button class="fchip" data-rq="${esc(q)}" data-rqbox="${box}">${esc(q)}</button>`).join("")}</div></section>` : "";
 function globalSearch() { // start page: one box over every pathway, procedure, scale and fluid card
   const q = ($("#gq")?.value || "").trim(), res = $("#gres"); if (!res) return;
   res.hidden = !q; $("#ghome").hidden = !!q; if (!q) return;
@@ -438,7 +472,8 @@ function arrival(d) {
   const last = Math.max(...d.admission.map(s => s.n));
   const dn = d.decision.map(x => (/^\s*(\d+)\./.exec(x.t) || [])[1]).filter(Boolean); // the decision lines carry their own numbers ("10.", "11.")
   const decNum = dn.length ? (dn[0] === dn[dn.length - 1] ? dn[0] : dn[0] + "\u2013" + dn[dn.length - 1]) : `${last + 1}\u2013${last + d.decision.length}`;
-  const jump = `<nav class="jump" aria-label="Sections">${secs.map(({ s, c, n }) =>
+  const allOpen = secs.every(({ s }) => open.has(s.n));
+  const jump = `<nav class="jump" aria-label="Sections"><button class="secall" data-secall aria-pressed="${allOpen}">${ico(allOpen ? "up" : "down")}${allOpen ? "Hide all" : "Show all"}</button>${secs.map(({ s, c, n }) =>
     `<button data-jump="s${s.n}" class="${secTone(s, d)} ${n && c === n ? "done" : ""}"><b>${s.n}</b>${esc(secLabel(s, d))}</button>`).join("")}
     <button data-jump="dec"><b>${decNum}</b>Decide</button></nav>`;
   const body = secs.map(({ s, c, n }) => `<section class="card ${secTone(s, d)} ${open.has(s.n) ? "" : "closed"}" id="s${s.n}">
@@ -475,7 +510,7 @@ function days(d, i) {
       <span class="l"><small>${nx ? "Next · or swipe left" : "Last time point"}</small><b>${nx ? esc(nx.label + (nx.phase ? " — " + nx.phase : "")) : esc(r.label)}</b></span>${nx ? ico("next") : ""}</button></div></div>`;
   shell({ d, tab: "days", body, head: steps, after: pager, mainCls: "withpager" });
   const on = $(".steps .on"); on && on.scrollIntoView({ inline: "center", block: "nearest" });
-  swipe(d, i, rows.length);
+  Object.assign($("main").dataset, { row: i, rows: rows.length }); // the page-wide swipe steps through these blocks first
 }
 
 const DOSE = /^((?:max\.?\s)?[\d.,]+(?:\s?[–-]\s?[\d.,]+)?\s?(?:U|IU|units?|mg|g|µg|mcg|mL|ml|mmol|L|drops?|tabs?|ampoules?)(?:\/(?:kg|h|min|day|dose))*(?:\s(?:IV|IM|SC|PO|SL|PR|IO|NGT|stat))?)(?=[\s,;·(]|$)/;
@@ -587,12 +622,17 @@ function hubFilter() {
 }
 
 function doses(d) {
-  const nav = `<nav class="boxnav" aria-label="Dose boxes">${d.boxes.map((b, i) => `<button class="fchip" data-jump="b${i}">${esc(b.title)}</button>`).join("")}
+  const allSum = d.boxes.length && d.boxes.every((b, i) => (S.bxc[d.id] || new Set()).has(i));
+  const nav = `<nav class="boxnav" aria-label="Dose boxes"><button class="fchip secall" data-boxall aria-pressed="${allSum}">${ico(allSum ? "down" : "up")}${allSum ? "Full doses" : "Summary"}</button>${d.boxes.map((b, i) => `<button class="fchip" data-jump="b${i}">${esc(b.title)}</button>`).join("")}
     <button class="fchip" data-jump="bdis">${esc(d.discharge.title)}</button><button class="fchip" data-jump="bfu">${esc(d.followup.title)}</button></nav>`;
   const box = (b, i) => {
     const groups = []; let g = null;
     (b.items || []).forEach(it => { if (it.h && !it.t) { g = { h: it, lines: [] }; groups.push(g); } else { if (!g) { g = { h: null, lines: [] }; groups.push(g); } g.lines.push(it); } });
-    return `<article class="box" id="b${i}"><h2>${esc(b.title)}</h2>${groups.map(g => `<div class="drug">
+    const sum = groups.map(g => { const l = g.lines.find(x => x.t && !WARN.test(x.t)) || g.lines.find(x => x.t); const f = l ? l.t.split(/\s·\s/)[0] : "";
+      return g.h ? (f ? `<b>${esc(g.h.h)}</b> ${esc(f)}` : `<b>${esc(g.h.h)}</b>`) : esc(f); }).filter(Boolean);
+    const shut = (S.bxc[d.id] ||= new Set()).has(i);
+    return `<article class="box ${shut ? "closed" : ""}" id="b${i}"><h2><button class="bhead" data-box="${i}" aria-expanded="${!shut}"><span>${esc(b.title)}</span>${ico("down")}</button></h2>
+      <ul class="bsum" data-box-sum="${i}">${sum.map(x => `<li>${x}</li>`).join("")}</ul>${groups.map(g => `<div class="drug">
       ${g.h ? `<div class="dh"><h3>${esc(g.h.h)}${dag(g.h)}</h3>${chip(g.h.s)}</div>` : ""}${g.lines.map(it => doseLine(d, it, g.h && g.h.s)).join("")}</div>`).join("")}</article>`;
   };
   const body = d.boxes.map(box).join("") +
@@ -712,19 +752,108 @@ function toggleMenu(d) {
   document.body.insertAdjacentHTML("beforeend", `<div class="scrim" data-closemenu></div><div class="menu" role="menu">
     <button role="menuitem" id="vm">Verify mode<span class="state">${S.verify ? "On" : "Off"}</span></button>
     <button role="menuitem" data-resetchk="${d.id}">Reset checklist</button>
+    <button role="menuitem" data-display>Display: theme, text size</button>
     <button role="menuitem" data-go="#/diagnoses">All pathways</button></div>`);
 }
 
 /* ---------- swipe between chart rows ---------- */
-function swipe(d, i, n) {
-  let x0 = null, y0 = null; const m = $("main");
-  m.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
-  m.addEventListener("touchend", e => {
-    if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
-    const j = i + (dx < 0 ? 1 : -1);
-    if (Math.abs(dx) > 70 && Math.abs(dy) < 50 && j >= 0 && j < n) location.hash = `#/dx/${d.id}/days/${j}`;
-  }, { passive: true });
+/* ---------- find in this pathway: one box over every tab (Arrival, Timeline, Differentials, Doses, Nursing, Score, Appendix).
+   Each hit knows its tab (and Timeline column); picking one opens that tab, opens the closed section it sits in, scrolls to it and marks the word. ---------- */
+function findIndex(d) {
+  const out = [], base = `#/dx/${d.id}/`, txt = i => [i.h, i.t].filter(Boolean).join(": ");
+  const add = (tab, where, go, items, extra = {}) => (items || []).forEach(i => { const t = typeof i === "string" ? i : txt(i); if (t) out.push({ tab, where, go, t, ...extra }); });
+  d.admission.forEach(s => { const w = `${s.n}. ${secLabel(s, d)}`; add("Arrival", w, base + "arrival", [s.title, s.note].filter(Boolean)); add("Arrival", w, base + "arrival", s.items); });
+  add("Arrival", "Decide", base + "arrival", d.decision);
+  add("Timeline", "Every shift", base + "days/0", d.chart.standing);
+  const c = d.chart.columns;
+  d.chart.rows.forEach((r, j) => { const w = r.label + (r.phase ? " — " + r.phase : ""), go = base + "days/" + j;
+    if (r.lead) add("Timeline", w, go, [r.lead]);
+    ["feed", "tests", "treatment"].forEach((k, seg) => add("Timeline", w + " · " + shortCol(c[k]), go, r[k], { seg })); });
+  (d.differentials || []).forEach((x, i) => { const go = base + "differentials/" + i;
+    add("Differentials", x.dx, go, [x.dx]); ["features", "confirm", "manage", "refer"].forEach(k => add("Differentials", x.dx, go, x[k])); });
+  d.boxes.forEach(b => { add("Doses", b.title, base + "doses", [b.title]); add("Doses", b.title, base + "doses", b.items); });
+  add("Doses", d.discharge.title, base + "doses", d.discharge.items); add("Doses", d.followup.title, base + "doses", d.followup.items);
+  const n = d.nursing; add("Nursing", "Call the doctor", base + "nursing", n.call);
+  (n.params || []).forEach(p => add("Nursing", p.h, base + "nursing", p.items)); add("Nursing", "Totals", base + "nursing", n.totals); add("Nursing", "Record sheet", base + "nursing", n.columns);
+  if (d.score) add("Score", d.score.title || "Score", base + "score", scoreItems(d));
+  if (d.appendix) add(apxLabel(d), "Appendix", base + "appendix", apxItems(d));
+  return out;
 }
+function findSheet() {
+  const id = (location.hash || "").slice(2).split("/")[1], d = S.dx[id]; if (!d) return;
+  $(".menu")?.remove(); $(".sheet")?.remove(); $(".scrim")?.remove();
+  S.findIdx = findIndex(d);
+  document.body.insertAdjacentHTML("beforeend", `<div class="scrim dim" data-closemenu></div><div class="sheet findsheet" role="dialog" aria-modal="true" aria-label="Find in this pathway">
+    <div class="shd"><label class="search">${ico("search")}<span class="sr">Find in this pathway</span><input id="pfq" type="search" placeholder="Find in ${esc(entry(id)?.short || d.title)} — e.g. potassium, HGT" autocomplete="off" enterkeyhint="search"></label>
+      <button class="btn" data-closemenu>Close</button></div><div class="fres" id="pfr"></div></div>`);
+  const q = $("#pfq"); q.value = S.findQ || ""; findList(); q.focus(); if (q.value) q.select();
+}
+const markIn = (t, q) => { const i = t.toLowerCase().indexOf(q); if (i < 0) return esc(t);
+  const a = Math.max(0, i - 40), b = Math.min(t.length, i + q.length + 70); // a short window around the word
+  return (a ? "…" : "") + esc(t.slice(a, i)) + "<mark>" + esc(t.slice(i, i + q.length)) + "</mark>" + esc(t.slice(i + q.length, b)) + (b < t.length ? "…" : ""); };
+function findList() {
+  const box = $("#pfr"); if (!box) return; const q = (S.findQ = $("#pfq").value).trim().toLowerCase();
+  if (q.length < 2) { box.innerHTML = rqChips("f", "pfq") + `<p class="hint">Type a word to search every tab of this pathway: arrival, timeline, differentials, doses, nursing.</p>`; return; }
+  const hits = S.findIdx.map((h, i) => [h, i]).filter(([h]) => h.t.toLowerCase().includes(q));
+  if (!hits.length) { box.innerHTML = `<p class="empty">Nothing in this pathway matches “${esc(q)}”.</p>`; return; }
+  const tabs = [...new Set(hits.map(([h]) => h.tab))], MAX = 40;
+  box.innerHTML = `<p class="fcount">${hits.length} match${hits.length === 1 ? "" : "es"}${tabs.length > 1 ? " in " + tabs.length + " tabs" : ""}</p>` + tabs.map(tab => { const mine = hits.filter(([h]) => h.tab === tab);
+    return `<section><h3 class="glabel">${esc(tab)}<span class="c">· ${mine.length}</span></h3>${mine.slice(0, MAX).map(([h, i]) =>
+      `<button class="fhit" data-findgo="${i}"><small>${esc(h.where)}</small><span>${markIn(h.t, q)}</span></button>`).join("")}${mine.length > MAX ? `<p class="hint">… and ${mine.length - MAX} more: type more of the word.</p>` : ""}</section>`; }).join("");
+}
+function findGo(i) {
+  const h = S.findIdx[i], q = S.findQ.trim(); if (!h) return; rqSave("f", q);
+  $(".sheet")?.remove(); $(".scrim")?.remove();
+  if (h.seg !== undefined) S.seg = h.seg;
+  S.findHit = { q, t: h.t };
+  if (location.hash === h.go) { // same tab: the Timeline column may have changed, so draw it again
+    if (h.seg !== undefined) route().then(findShow); else findShow();
+  } else location.hash = h.go; // route() calls findShow once the tab is drawn
+}
+function findShow() {
+  const f = S.findHit, main = $("main"); if (!f || !main) return; S.findHit = null;
+  const q = f.q.toLowerCase(), probe = f.t.toLowerCase().slice(0, 40);
+  const leaves = $$("li, .ln, .decision, .lead, .note, h2, h3, .ac, .dh, .band, p, ol > li", main).filter(el => !el.closest(".rf, .xcard, .xnav, .bsum") && el.textContent.toLowerCase().includes(q));
+  const el = leaves.find(el => el.textContent.toLowerCase().replace(/\s+/g, " ").includes(probe.replace(/\s+/g, " ").slice(0, 25))) || leaves[0]; if (!el) return;
+  const shut = el.closest(".closed"); if (shut) openCard(shut);
+  $$("mark.fm", main).forEach(m => m.replaceWith(...m.childNodes));
+  setTimeout(() => { // after the medicine-name links are drawn: mark the word itself
+    const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
+    for (const n of nodes) { const k = n.nodeValue.toLowerCase().indexOf(q); if (k < 0) continue;
+      const r = document.createRange(); r.setStart(n, k); r.setEnd(n, k + q.length); const m = document.createElement("mark"); m.className = "fm"; r.surroundContents(m); break; }
+  }, 60);
+  el.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  el.classList.remove("fhl"); void el.offsetWidth; el.classList.add("fhl");
+}
+function boxSet(c, on) { // on = full box; off = summary only (remembered for this pathway while the app is open)
+  const id = (location.hash || "").slice(2).split("/")[1], n = +c.id.slice(1), set = S.bxc[id] ||= new Set();
+  c.classList.toggle("closed", !on); on ? set.delete(n) : set.add(n); $(".bhead", c)?.setAttribute("aria-expanded", on);
+}
+function boxAllLabel() { const b = $("[data-boxall]"); if (!b) return; const sum = $$("main article.box").every(x => x.classList.contains("closed"));
+  b.setAttribute("aria-pressed", sum); b.innerHTML = ico(sum ? "down" : "up") + (sum ? "Full doses" : "Summary"); }
+function openCard(c) {
+  if (c.matches(".dxc")) return dxSet(c, true);
+  if (c.matches("article.box")) { boxSet(c, true); return boxAllLabel(); }
+  const id = (location.hash || "").slice(2).split("/")[1]; c.classList.remove("closed"); S.open[id]?.add(+c.id.slice(1)); $(".shead", c)?.setAttribute("aria-expanded", true); secAllLabel();
+}
+function secAllLabel() { const b = $("[data-secall]"); if (!b) return; const on = $$("main section.card[id^='s']").every(c => !c.classList.contains("closed"));
+  b.setAttribute("aria-pressed", on); b.innerHTML = ico(on ? "up" : "down") + (on ? "Hide all" : "Show all"); }
+/* ---------- swipe left / right: next / previous tab on any page with tabs (pathway bottom bar, score card bottom bar, procedure tab row).
+   On the Timeline a swipe first steps through the time blocks; past the first or last block it moves to the neighbouring tab.
+   Swipes that start on something that scrolls sideways (section strips, tables, chips) or on an input, wheel or map are left alone. ---------- */
+const swipeTarget = dir => { // dir: +1 = next, -1 = previous
+  const m = $("main"); if (!m) return null;
+  if (m.dataset.rows) { const j = +m.dataset.row + dir, id = (location.hash || "").slice(2).split("/")[1]; if (j >= 0 && j < +m.dataset.rows) return `#/dx/${id}/days/${j}`; }
+  const tabs = $$("nav.tabs button[data-go], nav.ptabs button[data-go]"), k = tabs.findIndex(b => b.classList.contains("on"));
+  return k < 0 ? null : tabs[k + dir]?.dataset.go || null;
+};
+const scrollsX = el => { for (; el && el !== document.body; el = el.parentElement) { if (el.scrollWidth > el.clientWidth + 2 && /auto|scroll/.test(getComputedStyle(el).overflowX)) return true; } return false; };
+let sw0 = null;
+document.addEventListener("touchstart", e => { const t = e.target;
+  sw0 = e.touches.length === 1 && t.closest("main") && !t.closest("input, textarea, select, svg, canvas, .viewer, .sheet") && !scrollsX(t) ? { x: e.touches[0].clientX, y: e.touches[0].clientY, t: Date.now() } : null; }, { passive: true });
+document.addEventListener("touchend", e => { if (!sw0) return; const dx = e.changedTouches[0].clientX - sw0.x, dy = e.changedTouches[0].clientY - sw0.y, quick = Date.now() - sw0.t < 600; sw0 = null;
+  if (!quick || Math.abs(dx) < 70 || Math.abs(dy) > Math.abs(dx) * 0.6 || getSelection()?.toString()) return;
+  const to = swipeTarget(dx < 0 ? 1 : -1); if (to) { S.slide = dx < 0 ? "l" : "r"; location.hash = to; } }, { passive: true });
 
 /* ---------- PDF viewer ---------- */
 let pdfjs = null;
@@ -1289,7 +1418,18 @@ async function rassView(id, e, d) {
 const rerender = async () => { const y = window.scrollY; await route(); window.scrollTo(0, y); };
 document.addEventListener("click", async e => {
   const t = e.target.closest("button, label, [data-closemenu]"); if (!t) return;
-  if (t.dataset.closemenu !== undefined) { $(".menu")?.remove(); t.remove(); return; }
+  if (t.dataset.closemenu !== undefined) { $(".menu")?.remove(); $(".sheet")?.remove(); $(".scrim")?.remove(); return; }
+  if (t.dataset.rq) { const i = $("#" + t.dataset.rqbox); if (i) { i.value = t.dataset.rq; i.dispatchEvent(new Event("input", { bubbles: true })); i.focus(); } return; }
+  if (t.dataset.rqclear) { S.rq[t.dataset.rqclear] = []; localStorage.setItem(LS_RQ, JSON.stringify(S.rq)); t.closest(".rqs")?.remove(); if ($("#pfr")) findList(); return; }
+  if (t.closest("#glist")) rqSave("g", $("#gq")?.value); // a start-page result is being opened: keep the word
+  if (t.dataset.box) { boxSet(t.closest("article.box"), t.closest("article.box").classList.contains("closed")); boxAllLabel(); return; }
+  if (t.dataset.boxall !== undefined) { const bs = $$("main article.box"), sum = !bs.every(b => b.classList.contains("closed")); bs.forEach(b => boxSet(b, !sum)); boxAllLabel(); return; }
+  if (t.dataset.display !== undefined) { $(".menu")?.remove(); displaySheet(); return; }
+  if (t.dataset.find !== undefined) { findSheet(); return; }
+  if (t.dataset.findgo) { findGo(+t.dataset.findgo); return; }
+  if (t.dataset.totop !== undefined) { window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); return; }
+  if (t.dataset.themeSet) { localStorage.setItem(LS_THEME, t.dataset.themeSet); applyDisplay(); $$("[data-theme-set]").forEach(b => b.setAttribute("aria-pressed", b === t)); return; }
+  if (t.dataset.fsSet) { localStorage.setItem(LS_FS, t.dataset.fsSet); applyDisplay(); $$("[data-fs-set]").forEach(b => b.setAttribute("aria-pressed", b === t)); return; }
   if (t.closest(".menu")) { $(".menu")?.remove(); $(".scrim")?.remove(); }
   if (t.dataset.go !== undefined || t.dataset.xl) { // a jump from one card to another (Related, or a hand-off line) remembers this card, so the next one offers "back to …"
     const to = t.dataset.xl || t.dataset.go || "#/", k = keyOf(S.cx, (location.hash || "#/").slice(2).split("/")), k2 = keyOf(S.cx, to.slice(2).split("/"));
@@ -1315,15 +1455,19 @@ document.addEventListener("click", async e => {
     rerender(); return;
   }
   if (t.dataset.hubpop) { const [hid, i] = t.dataset.hubpop.split("|"); S.hub[hid] = +i; route(); return; }
+  if (t.dataset.secall !== undefined) { // Arrival: open or close every section at once (remembered for this pathway, like single sections)
+    const id = (location.hash || "").slice(2).split("/")[1], set = S.open[id], cards = $$("main section.card[id^='s']"), on = cards.every(c => !c.classList.contains("closed")); // on = all open now, so close them
+    cards.forEach(c => { const n = +c.id.slice(1); c.classList.toggle("closed", on); on ? set.delete(n) : set.add(n); $(".shead", c)?.setAttribute("aria-expanded", !on); });
+    t.setAttribute("aria-pressed", !on); t.innerHTML = ico(on ? "down" : "up") + (on ? "Show all" : "Hide all"); return;
+  }
   if (t.dataset.sec) {
     const n = +t.dataset.sec; const id = (location.hash || "").slice(2).split("/")[1]; const set = S.open[id];
     const sec = t.closest("section"); const closed = sec.classList.toggle("closed");
-    closed ? set.delete(n) : set.add(n); t.setAttribute("aria-expanded", !closed); return;
+    closed ? set.delete(n) : set.add(n); t.setAttribute("aria-expanded", !closed); secAllLabel(); return;
   }
   if (t.dataset.jump) {
     const el = document.getElementById(t.dataset.jump); if (!el) return;
-    if (el.classList.contains("closed")) { el.classList.remove("closed"); $(".shead", el)?.setAttribute("aria-expanded", "true");
-      const id = (location.hash || "").slice(2).split("/")[1]; S.open[id]?.add(+t.dataset.jump.slice(1)); }
+    if (el.classList.contains("closed")) openCard(el);
     el.scrollIntoView({ block: "start" }); return;
   }
   if (t.dataset.chain !== undefined) {
@@ -1366,9 +1510,14 @@ document.addEventListener("click", async e => {
   }
   if (t.dataset.del) { await delPdf(t.dataset.del); route(); }
 });
+document.addEventListener("keydown", e => {
+  if (e.target.id === "pfq" && e.key === "Enter") { e.preventDefault(); const b = $("[data-findgo]"); if (b) findGo(+b.dataset.findgo); }
+  if (e.key === "Escape" && $(".sheet")) { $(".sheet")?.remove(); $(".scrim")?.remove(); }
+});
 document.addEventListener("input", e => {
   if (["q", "sq", "gq"].includes(e.target.id)) S.qs[e.target.id] = e.target.value;
   if (e.target.id === "gq") { globalSearch(); window.scrollTo(0, 0); }
+  if (e.target.id === "pfq") findList();
   if (e.target.id === "q") applyFilter();
   if (e.target.id === "wt" && S.procR) { S.procKg = e.target.value; $("#wout").innerHTML = weightCalc(S.procR, parseFloat(e.target.value)); }
   if (e.target.id === "hq") hubFilter();
@@ -1390,7 +1539,19 @@ document.addEventListener("change", async e => {
 });
 
 document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.id === "gq") { const f = $("#glist .dx"); if (f) { e.target.blur(); f.click(); } } }); // Enter opens the top result
-window.addEventListener("scroll", () => { S.scroll[location.hash || "#/"] = window.scrollY; }, { passive: true });
+window.addEventListener("scroll", () => { S.scroll[location.hash || "#/"] = window.scrollY; toTop(); }, { passive: true });
+/* back to top: shown once you are more than about a screen and a half down; it sits just above the bottom bar (tabs, Timeline pager, score total) */
+const hdh = () => { const h = $("header.top"); if (h) document.documentElement.style.setProperty("--hdh", h.getBoundingClientRect().height + "px"); };
+window.addEventListener("resize", hdh);
+function toTop() {
+  let b = $(".totop");
+  if (!b) { document.body.insertAdjacentHTML("beforeend", `<button class="totop" data-totop aria-label="Back to the top" hidden>${ico("up")}</button>`); b = $(".totop"); }
+  const show = window.scrollY > innerHeight * 1.5 && !$(".viewer, .sheet");
+  if (show) { const bars = $$("nav.tabs, .pager, .totalbox").map(x => x.getBoundingClientRect()).filter(r => r.height && r.top < innerHeight && r.bottom > innerHeight - 200);
+    const top = Math.min(innerHeight, ...bars.map(r => r.top)); b.style.bottom = (innerHeight - top + 12) + "px"; }
+  if (b.hidden === show) b.hidden = !show;
+}
+document.addEventListener("click", e => { if (e.target.closest("header.top .ttl h1, header.top .ttl .sub") && window.scrollY > 0) window.scrollTo({ top: 0, behavior: "smooth" }); });
 function remember(id, tab, row) {
   S.recent = [{ id, tab, row }, ...S.recent.filter(r => r.id !== id)].slice(0, 3);
   localStorage.setItem(LS_REC, JSON.stringify(S.recent));
@@ -1440,13 +1601,16 @@ async function route() {
   if ((location.hash || "#/") !== hash) return; // moved on while this page was loading
   S.lastHash = hash;
   if (p[0] !== "altmed") decorate(p, key, moved);
+  if (S.slide) { $("main")?.classList.add("slide-" + S.slide); S.slide = null; }
+  if (S.findHit) findShow();
+  toTop(); hdh();
 }
 async function routeTo() {
-  $(".menu")?.remove(); $(".scrim")?.remove();
+  $(".menu")?.remove(); $(".sheet")?.remove(); $(".scrim")?.remove();
   const p = (location.hash || "#/").slice(2).split("/");
   const alt = p[0] === "altmed"; // the Alternative Medicine section has its own spring-green palette (style.css :root.alt-on)
   document.documentElement.classList.toggle("alt-on", alt);
-  $('meta[name="theme-color"]')?.setAttribute("content", alt ? "#eef9e0" : "#f5f7f6");
+  applyDisplay(); // the phone's status-bar colour follows the section and the theme
   try {
     if (alt) return await altmed(p.slice(1), { app, esc, ico, loadJSON, $, $$ });
     if (p[0] === "") return landing();

@@ -6,6 +6,10 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
+<script>/* Display settings before first paint (no white flash in dark mode): andh.theme = auto | light | dark, andh.fs = text scale */
+try { var t = localStorage.getItem("andh.theme") || "auto", f = parseFloat(localStorage.getItem("andh.fs"));
+  document.documentElement.dataset.theme = t === "auto" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : t;
+  if (f >= 0.6 && f <= 1.2) document.documentElement.style.setProperty("--fs", f); } catch (e) {}</script>
 <link rel="stylesheet" href="style.css">
 <title>JAD pathways</title>
 </head><body>
