@@ -126,6 +126,8 @@
     {"id": "msd", "short": "MSD Manual", "title": "MSD Manual Professional: Hip / Shoulder / Knee dislocations & reduction", "edition": "rev. Aug 2025", "offset": 0},
     {"id": "clinorthop2000", "short": "Clin Orthop 2000", "title": "Cornwall R, Radomisli TE. Nerve injury in traumatic dislocation of the hip. Clin Orthop 2000;377:84–91", "edition": "", "offset": 0},
     {"id": "MULLER", "alias": "muller2012", "short": "Müller 2012", "title": "Müller GJ, et al. CME 2012;30(10):356–361 (same source as muller2012)", "edition": "", "offset": 0},
-    {"id": "CUTIS", "alias": "tomlinson2019", "short": "Tomlinson 2019", "title": "Tomlinson H, Elston DM. Cutis 2019;104(4):217–219 (same source as tomlinson2019)", "edition": "", "offset": 0}
+    {"id": "CUTIS", "alias": "tomlinson2019", "short": "Tomlinson 2019", "title": "Tomlinson H, Elston DM. Cutis 2019;104(4):217–219 (same source as tomlinson2019)", "edition": "", "offset": 0},
+    {"id": "fazel2019", "short": "Fazel 2019", "title": "Fazel F, Bassa F. SAMJ 2019;109(10):723–727", "edition": "2019", "type": "online", "url": "https://scielo.org.za/pdf/samj/v109n10/09.pdf", "url_template": "https://scielo.org.za/pdf/samj/v109n10/09.pdf", "cite_prefix": "p"},
+    {"id": "john2024", "short": "John 2024", "title": "John J, et al. SA Prostate Cancer Screening Guidelines. SAMJ 2024;114(5):15–18", "edition": "2024", "type": "online", "url": "https://scielo.org.za/pdf/samj/v114n5/07.pdf", "url_template": "https://scielo.org.za/pdf/samj/v114n5/07.pdf", "cite_prefix": "p"}
   ]
 }

@@ -1,0 +1,1164 @@
+{
+ "id": "bph-adult",
+ "short": "BPH_Adult",
+ "title": "Benign prostatic hyperplasia — retention (adult)",
+ "population": "Men, usually > 50 y, admitted with urinary retention or BPH complication",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "john2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Hard / nodular prostate, bone pain → Prostate cancer pathway",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Retention from cord compression (back pain, leg weakness) → emergency, REFER",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Urethral stricture / trauma (blood at meatus) → do not force catheter; suprapubic / REFER",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Man > 50 y with obstructive (weak, intermittent stream, hesitancy) ± irritative (frequency, nocturia, urgency) symptoms",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "DRE: uniform enlargement",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "Palpable distended bladder (retention may be painless)",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "Residual on catheter: ______ mL",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated = any one of",
+   "items": [
+    {
+     "t": "Acute or chronic retention",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "AKI / raised creatinine",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "UTI, fever, sepsis",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "Haematuria / clot retention",
+     "s": "adultstg2026:7.17"
+    },
+    {
+     "t": "Hydronephrosis on ultrasound",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous retention / catheter",
+     "d": 1
+    },
+    {
+     "t": "Doxazosin / alpha-blocker",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Last PSA (date)",
+     "s": "john2024:16",
+     "d": 1
+    },
+    {
+     "t": "Anticholinergics, TCAs, neuroleptics",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Antihistamines, opioids",
+     "d": 1
+    },
+    {
+     "t": "Diabetes, CKD",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulants",
+     "d": 1
+    },
+    {
+     "t": "Urology follow-up",
+     "s": "adultstg2026:7.22"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Voiding"
+    },
+    {
+     "t": "Weak / intermittent stream, hesitancy",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Frequency, nocturia, urgency",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Unable to void ___ h; overflow dribbling",
+     "d": 1
+    },
+    {
+     "h": "Complications"
+    },
+    {
+     "t": "Dysuria, fever, rigors",
+     "s": "adultstg2026:7.18"
+    },
+    {
+     "t": "Blood / clots in urine",
+     "s": "adultstg2026:7.17"
+    },
+    {
+     "t": "Confusion, oedema, little urine (AKI)",
+     "d": 1
+    },
+    {
+     "h": "Cancer / neuro"
+    },
+    {
+     "t": "Weight loss, bone / back pain",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Leg weakness, saddle numbness",
+     "s": "adultstg2026:21.3"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Bladder palpable / ultrasound volume ____ mL",
+     "s": "adultstg2026:7.22",
+     "k": "sub"
+    },
+    {
+     "t": "Urine dipstick: leucocytes, nitrites, blood",
+     "s": "adultstg2026:7.18",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distended, dull bladder",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Renal angle tenderness",
+     "s": "adultstg2026:7.18"
+    },
+    {
+     "t": "Fluid overload / dehydration",
+     "d": 1
+    },
+    {
+     "h": "DRE"
+    },
+    {
+     "t": "Smooth, uniform enlargement",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Hard / nodular → cancer",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Tender, boggy → prostatitis",
+     "s": "adultstg2026:7.21"
+    },
+    {
+     "h": "Genitalia / neuro"
+    },
+    {
+     "t": "Meatal stenosis, phimosis",
+     "d": 1
+    },
+    {
+     "t": "Perianal sensation, anal tone, leg power",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Catheter + residual",
+   "items": [
+    {
+     "t": "Urethral catheter inserted at ____ · residual ____ mL",
+     "s": "adultstg2026:7.22",
+     "k": "value"
+    },
+    {
+     "t": "Catheterise all with retention",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "Large residual (chronic retention): hourly urine — watch post-obstructive diuresis",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Cannot pass catheter → do not force; REFER (suprapubic)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Stop retaining drugs (anticholinergics, TCAs, neuroleptics)",
+     "s": "adultstg2026:7.22"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "U&E + urine",
+   "items": [
+    {
+     "t": "Creatinine ____ · K⁺ ____ · urea ____",
+     "k": "value"
+    },
+    {
+     "t": "AKI: creatinine ↑ ≥ 26.5 µmol/L in 48 h or ≥ 1.5 × baseline",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "Urine MC&S from catheter (complicated UTI)",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    },
+    {
+     "t": "PSA: defer 6 weeks after retention / catheterisation",
+     "s": "john2024:16",
+     "d": 1
+    },
+    {
+     "t": "Ultrasound kidneys: hydronephrosis",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Urosepsis",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "AKI / hyperkalaemia",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Clot retention",
+     "d": 1
+    },
+    {
+     "t": "Cord compression",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "False passage / urethral trauma",
+     "d": 1
+    },
+    {
+     "t": "Post-obstructive diuresis",
+     "d": 1
+    },
+    {
+     "t": "Prostate cancer",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Acute prostatitis",
+     "s": "adultstg2026:7.21"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = UROSEPSIS, AKI not improving after catheter, clot retention or failed catheter → stabilise → REFER",
+   "s": "adultstg2026:7.22",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (retention with complication) — catheter, treat cause, continue on the inpatient chart; all BPH → urology",
+   "s": "phcstg2026:8.14",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "BPH with acute retention",
+   "branch": "4 h",
+   "features": [
+    {
+     "t": "Painful distended bladder, smooth enlarged prostate",
+     "s": "adultstg2026:7.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Catheter residual; U&E",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Catheter; stop retaining drugs; doxazosin 1 mg daily",
+     "s": "adultstg2026:7.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urology (all)",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Chronic retention with AKI",
+   "branch": "If AKI / post-obstructive diuresis",
+   "features": [
+    {
+     "t": "Painless large bladder, overflow, raised creatinine",
+     "s": "adultstg2026:7.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Creatinine, K⁺; US hydronephrosis",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Catheter; hourly urine; replace losses",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If creatinine not falling / dialysis criteria",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "UTI / acute prostatitis",
+   "branch": "If UTI / urosepsis",
+   "features": [
+    {
+     "t": "Fever, dysuria, tender prostate",
+     "s": "adultstg2026:7.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Urine MC&S, blood culture",
+     "s": "adultstg2026:7.18",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ciprofloxacin 500 mg 12-hourly 14 d; sepsis: gentamicin 6 mg/kg IV",
+     "s": "adultstg2026:7.21",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Retention with prostatitis → urology",
+     "s": "adultstg2026:7.21"
+    }
+   ]
+  },
+  {
+   "dx": "Prostate cancer",
+   "branch": "",
+   "features": [
+    {
+     "t": "Hard, nodular prostate; bone pain, weight loss",
+     "s": "phcstg2026:8.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PSA (after 6 weeks), X-ray painful bones",
+     "s": "john2024:16",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Prostate cancer pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all suspected",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Clot retention / haematuria",
+   "branch": "If haematuria / clot retention",
+   "features": [
+    {
+     "t": "Clots, painful retention, anticoagulant",
+     "s": "adultstg2026:7.17"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb, INR, urine dipstick",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Large-bore (3-way) catheter, bladder washout",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — persistent bleeding / cystoscopy",
+     "s": "adultstg2026:7.17"
+    }
+   ]
+  },
+  {
+   "dx": "Neurogenic / drug-induced retention",
+   "branch": "",
+   "features": [
+    {
+     "t": "Back pain, leg weakness; new anticholinergic / opioid",
+     "s": "adultstg2026:21.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Neuro exam, spine X-ray",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cord compression: dexamethasone 16 mg IV",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Stop drug",
+     "s": "adultstg2026:7.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if cord compression — urgent",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Urethral stricture",
+   "branch": "",
+   "features": [
+    {
+     "t": "Previous STI / instrumentation; catheter will not pass",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Failed gentle catheterisation",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not force; suprapubic aspiration if trained",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent urology",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Catheter first · watch urine output after decompression · refer all BPH to urology",
+  "columns": {
+   "feed": "Catheter & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Urine output hourly × 12 h after catheter (large residual)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR, BP, T 4-hourly; fever → doctor",
+    "s": "adultstg2026:7.18",
+    "b": 1
+   },
+   {
+    "t": "Catheter care; urine colour / clots",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Stop drugs that cause retention",
+    "s": "adultstg2026:7.22",
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing urine output record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for catheter size / time and drugs given. Gentle catheterisation — never force.",
+    "feed": [
+     {
+      "t": "Urethral catheter; record residual",
+      "s": "adultstg2026:7.22",
+      "b": 1
+     },
+     {
+      "t": "IV access if septic / AKI",
+      "d": 1
+     },
+     {
+      "t": "Oral fluids if well",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine, K⁺",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick + MC&S (catheter sample)",
+      "s": "adultstg2026:7.18",
+      "b": 1
+     },
+     {
+      "t": "FBC; blood culture if febrile",
+      "s": "adultstg2026:7.18",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ultrasound bladder / kidneys",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Everyone"
+     },
+     {
+      "t": "Stop anticholinergics, TCAs, neuroleptics",
+      "s": "phcstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "Analgesia: paracetamol 1 g 6-hourly (no NSAIDs if AKI)",
+      "s": "phcstg2026:20.5"
+     },
+     {
+      "h": "If septic"
+     },
+     {
+      "t": "Gentamicin 6 mg/kg IV daily (normal renal function)",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     },
+     {
+      "h": "If cord signs"
+     },
+     {
+      "t": "Dexamethasone 16 mg IV; urgent REFER",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Post-decompression",
+    "feed": [
+     {
+      "t": "Urine ___ mL/h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP (lying)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Haematuria after decompression is common; watch for clots",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Diuresis?",
+    "feed": [
+     {
+      "t": "Urine > 200 mL/h × 2 h → replace part with NaCl 0.9%",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat U&E if AKI",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Start doxazosin 1 mg daily (titrate 1 mg every 2 weeks to 4 mg)",
+      "s": "adultstg2026:7.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Balance ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine trend",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotic per culture",
+      "s": "adultstg2026:7.19"
+     },
+     {
+      "t": "Urology consult",
+      "s": "adultstg2026:7.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Catheter stays until urology plan / trial without catheter after 2–3 days on doxazosin",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E daily while AKI",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Teach catheter care",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Trial without catheter (TWOC) if retention was first and acute",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Post-void residual (US) after TWOC",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Failed TWOC → discharge with catheter, urology appointment",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If AKI / post-obstructive diuresis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Hourly urine; replace losses, avoid over-replacement",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Na⁺, K⁺ 12-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop nephrotoxins, adjust doses",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Dialysis indications → REFER",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If UTI / urosepsis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "IV fluids if septic",
+      "s": "adultstg2026:7.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture before antibiotics",
+      "s": "adultstg2026:7.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Gentamicin 6 mg/kg IV daily → ciprofloxacin 500 mg 12-hourly 7–10 d (pyelonephritis)",
+      "s": "adultstg2026:7.19",
+      "b": 1
+     },
+     {
+      "t": "Prostatitis: ciprofloxacin 500 mg 12-hourly 14 d",
+      "s": "adultstg2026:7.21",
+      "b": 1
+     },
+     {
+      "t": "Ultrasound if poor response",
+      "s": "adultstg2026:7.19"
+     }
+    ]
+   },
+   {
+    "label": "If haematuria / clot retention",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "3-way catheter, irrigation; manual washout",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, INR",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop / reverse anticoagulant per indication",
+      "d": 1
+     },
+     {
+      "t": "Persistent → REFER (cystoscopy)",
+      "s": "adultstg2026:7.17",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Doxazosin 1 mg daily, + 1 mg every 2 weeks, usual 4 mg",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Gentamicin 6 mg/kg IV daily (not in renal impairment)",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Ciprofloxacin 500 mg 12-hourly",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g)",
+     "s": "phcstg2026:20.5"
+    }
+   ]
+  },
+  {
+   "title": "Drugs that cause retention",
+   "items": [
+    {
+     "t": "Anticholinergics",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Tricyclic antidepressants, neuroleptics",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Antihistamines, opioids, decongestants",
+     "d": 1
+    },
+    {
+     "t": "Avoid fluoroquinolone + ACE-I / ARB in elderly / eGFR ≤ 30",
+     "s": "adultstg2026:7.19"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Catheter will not pass → stop, REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Fever, rigors, hypotension → sepsis",
+     "s": "adultstg2026:7.19",
+     "b": 1
+    },
+    {
+     "t": "Creatinine rising / K⁺ > 6.0",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Clots blocking catheter",
+     "d": 1
+    },
+    {
+     "t": "Leg weakness → cord compression",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Voiding after TWOC, or catheter care taught",
+    "d": 1
+   },
+   {
+    "t": "Creatinine at / towards baseline",
+    "d": 1
+   },
+   {
+    "t": "Afebrile, antibiotics oral",
+    "d": 1
+   },
+   {
+    "t": "Doxazosin started; retaining drugs stopped",
+    "s": "adultstg2026:7.22"
+   },
+   {
+    "t": "Urology referral letter",
+    "s": "adultstg2026:7.22"
+   },
+   {
+    "t": "PSA plan ≥ 6 weeks",
+    "s": "john2024:16",
+    "d": 1
+   },
+   {
+    "t": "Told: postural dizziness on doxazosin",
+    "d": 1
+   },
+   {
+    "t": "Return: unable to void, fever, blood clots",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Urology (all suspected BPH)",
+    "s": "phcstg2026:8.14"
+   },
+   {
+    "t": "Annual follow-up with DRE",
+    "s": "phcstg2026:8.13"
+   },
+   {
+    "t": "Catheter change per clinic",
+    "d": 1
+   },
+   {
+    "t": "U&E 1 week if AKI",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing urine output record — catheter, fluids, fever",
+  "period": "24 hours: hourly × 12 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Urine",
+    "items": [
+     {
+      "t": "Hourly volume, colour, clots",
+      "d": 1
+     },
+     {
+      "t": "> 200 mL/h × 2 h → doctor",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "IV + oral in",
+      "d": 1
+     },
+     {
+      "t": "Running balance",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "T, HR, BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Lying / standing BP on doxazosin",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Catheter",
+    "items": [
+     {
+      "t": "Draining? bypassing?",
+      "d": 1
+     },
+     {
+      "t": "Meatal care",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "No urine for 1 h (blocked catheter?)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Urine > 200 mL/h for 2 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fever, rigors, low BP",
+    "s": "adultstg2026:7.19",
+    "b": 1
+   },
+   {
+    "t": "Clots / heavy blood",
+    "d": 1
+   },
+   {
+    "t": "Dizzy, falls",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Total in (mL)",
+   "Total urine (mL)",
+   "Balance",
+   "Max T"
+  ]
+ }
+}

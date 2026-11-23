@@ -44,6 +44,9 @@
     {"name": "Suicide attempt and self-harm", "ids": ["suicide-attempt-near-hanging", "psychosis-adult", "phq9", "paracetamol", "tca", "hie-adult"]},
     {"name": "Cyanotic heart disease", "ids": ["tet-spell-paeds", "hf-paeds", "rsi-paeds", "vitals-paeds"]},
     {"name": "Envenomation", "ids": ["envenomation-adult", "scorpion-grade", "anaphylaxis-angioedema-adult", "rsi-adult"]},
-    {"name": "Joint dislocation and reduction", "ids": ["dislocation-knee-adult", "dislocation-hip-adult", "dislocation-shoulder-adult", "procedural-sedation-adult", "fracture-adult"]}
+    {"name": "Joint dislocation and reduction", "ids": ["dislocation-knee-adult", "dislocation-hip-adult", "dislocation-shoulder-adult", "procedural-sedation-adult", "fracture-adult"]},
+    {"name": "Multiple myeloma", "ids": ["multiple-myeloma-adult", "aki-adult", "lytes-adult-ca-mg", "ckd-adult"]},
+    {"name": "Prostate and urinary retention", "ids": ["bph-adult", "prostate-cancer-adult", "ipss", "uti-adult", "aki-adult", "urine-dipstick"]},
+    {"name": "Anorectal conditions", "ids": ["haemorrhoids-adult", "prb-adult"]}
   ]
 }

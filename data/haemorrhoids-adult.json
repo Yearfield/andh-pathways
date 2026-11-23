@@ -1,0 +1,1125 @@
+{
+ "id": "haemorrhoids-adult",
+ "short": "Haemorrhoids_Adult",
+ "title": "Haemorrhoids and painful anorectal conditions (adult)",
+ "population": "Adult admitted with painful, prolapsed, thrombosed or bleeding haemorrhoids, or another anorectal cause",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Heavy PR bleeding, shock, Hb drop, melaena → PR bleeding pathway (PRB_Adult)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Bloody diarrhoea / dysentery → PR bleeding / AGE pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Children → REFER (all)",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Anorectal varicose veins, usually with history of constipation",
+     "s": "phcstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "Bright red blood on the stool / paper, painless (internal) or painful lump (thrombosed / prolapsed)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Older patient or change in bowel habit → consider carcinoma",
+     "s": "phcstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "DRE in every adult (± proctoscopy if available)",
+     "s": "phcstg2026:2.10"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / refer = any one of",
+   "items": [
+    {
+     "t": "Cannot be reduced (prolapsed, strangulated)",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Thrombosed haemorrhoid",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Persistent anal bleeding",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Poor response to conservative treatment",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Perianal abscess (needs drainage)",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous episodes, banding / surgery",
+     "d": 1
+    },
+    {
+     "t": "Chronic laxative / enema use",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Anticoagulant / antiplatelet",
+     "d": 1
+    },
+    {
+     "t": "Opioids, anticholinergics",
+     "s": "phcstg2026:2.9"
+    },
+    {
+     "t": "Last Hb",
+     "d": 1
+    },
+    {
+     "t": "HIV status (perianal disease)",
+     "d": 1
+    },
+    {
+     "t": "Diabetes (abscess)",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "s": "phcstg2026:2.9"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Bleeding: on paper / dripping / clots",
+     "d": 1
+    },
+    {
+     "t": "Lump that prolapses; reduces?",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Pain: sharp on defaecation (fissure) vs constant (thrombosis / abscess)",
+     "d": 1
+    },
+    {
+     "t": "Constipation, straining",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "h": "Red flags"
+    },
+    {
+     "t": "Weight loss, change in bowel habit",
+     "s": "phcstg2026:2.9"
+    },
+    {
+     "t": "Fever, perianal swelling",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Dizziness, syncope (blood loss)",
+     "d": 1
+    },
+    {
+     "t": "Urinary retention from pain",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Pale / Hb low",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Pain score ____ / 10",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Inspection"
+    },
+    {
+     "t": "Prolapsed haemorrhoid: reducible?",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Blue tender lump (thrombosed)",
+     "d": 1
+    },
+    {
+     "t": "Fissure (posterior midline), sentinel pile",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "h": "Palpation"
+    },
+    {
+     "t": "Fluctuant, indurated, tender area (abscess)",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Rectal mass",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Faecal impaction",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Necrosis / gangrene of prolapse",
+     "d": 1
+    },
+    {
+     "t": "Abdomen, nodes",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bleeding check",
+   "items": [
+    {
+     "t": "Hb ____ · HR ____ · BP ____",
+     "k": "value"
+    },
+    {
+     "t": "Heavy bleed / unstable → PRB_Adult pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "On anticoagulant: INR / review indication",
+     "d": 1
+    },
+    {
+     "t": "Persistent bleeding → REFER",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Reducible? / abscess?",
+   "items": [
+    {
+     "t": "Prolapse reduced at ____ ☐ not reducible",
+     "d": 1,
+     "k": "value"
+    },
+    {
+     "t": "Irreducible or thrombosed → REFER surgery",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Abscess → REFER for surgical drainage (no theatre at ANDH)",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "HGT if abscess (diabetes)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Haemorrhagic shock",
+     "d": 1
+    },
+    {
+     "t": "Strangulated / gangrenous prolapse",
+     "d": 1
+    },
+    {
+     "t": "Perianal sepsis / Fournier's",
+     "d": 1
+    },
+    {
+     "t": "Rectal carcinoma",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Faecal impaction",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Urinary retention",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulant over-dose",
+     "d": 1
+    },
+    {
+     "t": "Rectal prolapse (full thickness)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = IRREDUCIBLE / THROMBOSED HAEMORRHOID, ABSCESS, PERSISTENT BLEEDING or suspected CANCER → analgesia → REFER surgery",
+   "s": "phcstg2026:2.7",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (pain control, short stay) — topical treatment, stool softener, continue on the inpatient chart",
+   "s": "phcstg2026:2.7",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Perianal abscess / sepsis",
+   "branch": "If abscess",
+   "features": [
+    {
+     "t": "Indurated, tender area next to anus; fever",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; HGT, FBC",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; surgical drainage",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — drainage (no theatre)",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Thrombosed / irreducible haemorrhoid",
+   "branch": "If thrombosed / irreducible",
+   "features": [
+    {
+     "t": "Acute painful blue lump; prolapse will not reduce",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Inspection, gentle attempt at reduction",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Paracetamol ± ibuprofen; bismuth + lidocaine 2%; lactulose",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — surgery",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bleeding internal haemorrhoids",
+   "branch": "If bleeding",
+   "features": [
+    {
+     "t": "Painless bright red blood on paper / dripping after stool",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hb; DRE",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "High fibre, no straining; bismuth suppository 3 times daily",
+     "s": "phcstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If persistent bleeding",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Rectal / anal carcinoma",
+   "branch": "",
+   "features": [
+    {
+     "t": "Older; weight loss; change in bowel habit; mass on DRE",
+     "s": "phcstg2026:2.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "DRE; Hb; REFER for colonoscopy / biopsy",
+     "s": "phcstg2026:2.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat symptoms; do not label as haemorrhoids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Anal fissure",
+   "branch": "If fissure",
+   "features": [
+    {
+     "t": "Sharp pain on defaecation, small bleed; sentinel pile",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Gentle inspection (posterior midline)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose 10–20 mL daily + bismuth ointment + lidocaine 2%",
+     "s": "phcstg2026:2.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Severe pain, recurrent, poor response",
+     "s": "phcstg2026:2.6"
+    }
+   ]
+  },
+  {
+   "dx": "Constipation / faecal impaction",
+   "branch": "",
+   "features": [
+    {
+     "t": "Hard stools, straining; overflow 'diarrhoea'",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "DRE",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Sennosides 13.5 mg at night or lactulose 10–20 mL",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Impaction, recent change in habit",
+     "s": "phcstg2026:2.10"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Analgesia, soft stool, topical treatment · refer what needs surgery",
+  "columns": {
+   "feed": "Diet & obs",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Pain score 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Bleeding per stool (amount, clots)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR, BP 4-hourly; T if abscess",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Bowels opened? stool soft?",
+    "s": "phcstg2026:2.6",
+    "b": 1
+   },
+   {
+    "t": "Voided since admission?",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "DRE on every adult. Heavy bleed or shock → switch to PR bleeding pathway.",
+    "feed": [
+     {
+      "t": "High-fibre diet, oral fluids",
+      "s": "phcstg2026:2.6",
+      "b": 1
+     },
+     {
+      "t": "IV access if bleeding / abscess",
+      "d": 1
+     },
+     {
+      "t": "NPO if going for drainage",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC (Hb)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "INR if anticoagulated",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test offer",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Analgesia"
+     },
+     {
+      "t": "Paracetamol 1 g 4–6-hourly (max 4 g)",
+      "s": "phcstg2026:20.5",
+      "b": 1
+     },
+     {
+      "t": "+ ibuprofen 400 mg 8-hourly with food (not if bleeding / AKI)",
+      "s": "phcstg2026:20.5"
+     },
+     {
+      "h": "Topical"
+     },
+     {
+      "t": "Bismuth subgallate ointment 2–4 times daily or suppository 3 times daily",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Lidocaine 2% cream (or amethocaine 1%) before and after each bowel action",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "h": "Stool"
+     },
+     {
+      "t": "Lactulose 10–20 mL once or twice daily",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     },
+     {
+      "h": "Bedside"
+     },
+     {
+      "t": "Gently reduce prolapse; ice pack, warm sitz bath",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat Hb if still bleeding",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pain not controlled → REFER (thrombosed / abscess?)",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Avoid codeine (constipates)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Bowels opened ☐",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb next morning if bled",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prolapse re-check: reduced and comfortable?",
+      "d": 1
+     },
+     {
+      "t": "No response → REFER surgery",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "Soft stool, no straining",
+      "s": "phcstg2026:2.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Teach diet; stop chronic laxatives",
+      "s": "phcstg2026:2.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Letter",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Older / change in habit → REFER colonoscopy",
+      "s": "phcstg2026:2.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If abscess",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NPO; IV fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, FBC, blood culture if septic",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER for surgical drainage",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Analgesia",
+      "s": "phcstg2026:2.7"
+     },
+     {
+      "t": "Spreading cellulitis / sepsis → antibiotics per sepsis protocol, urgent transfer",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If thrombosed / irreducible",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Bed rest, sitz bath",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "REFER surgery",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Necrotic / gangrenous → urgent",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If bleeding",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "IV fluids if HR / BP abnormal",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb, INR",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bismuth suppository 3 times daily",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Persistent bleeding → REFER",
+      "s": "phcstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Shock → PRB_Adult pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If fissure",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Soft stool",
+      "s": "phcstg2026:2.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lactulose 10–20 mL daily (12-hourly if poor response)",
+      "s": "phcstg2026:2.6",
+      "b": 1
+     },
+     {
+      "t": "Bismuth ointment + lidocaine 2%",
+      "s": "phcstg2026:2.6"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Bismuth subgallate ointment 2–4 times daily / suppository 3 times daily",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Lidocaine 2% or amethocaine 1% before + after each bowel action",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Lactulose 10–20 mL once or twice daily",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Sennosides 13.5 mg 1 at night (up to 4)",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly; ibuprofen 400 mg 8-hourly",
+     "s": "phcstg2026:20.5"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Chronic laxative / enema use",
+     "s": "phcstg2026:2.6"
+    },
+    {
+     "t": "Straining",
+     "s": "phcstg2026:2.7"
+    },
+    {
+     "t": "Codeine (constipation)",
+     "d": 1
+    },
+    {
+     "t": "NSAIDs if bleeding or on anticoagulant",
+     "d": 1
+    },
+    {
+     "t": "Labelling bleeding in older patients as haemorrhoids without DRE",
+     "s": "phcstg2026:2.6"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Shock / heavy bleed → PRB_Adult",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Fever + perianal swelling → abscess",
+     "s": "phcstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Black / dusky prolapse",
+     "d": 1
+    },
+    {
+     "t": "Unable to void",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Pain controlled on oral / topical treatment",
+    "d": 1
+   },
+   {
+    "t": "Bowels opened, stool soft",
+    "d": 1
+   },
+   {
+    "t": "No active bleeding; Hb stable",
+    "d": 1
+   },
+   {
+    "t": "Prolapse reduced",
+    "d": 1
+   },
+   {
+    "t": "Diet advice: fibre, fluids, no straining",
+    "s": "phcstg2026:2.6"
+   },
+   {
+    "t": "Referral made if criteria met",
+    "s": "phcstg2026:2.7"
+   },
+   {
+    "t": "Return: bleeding, fever, severe pain",
+    "d": 1
+   },
+   {
+    "t": "Colonoscopy referral if older / change in habit",
+    "s": "phcstg2026:2.6"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC clinic 2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Surgery OPD if referred",
+    "s": "phcstg2026:2.7"
+   },
+   {
+    "t": "Hb recheck if anaemic",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — pain, bleeding, bowels",
+  "period": "24 hours, 4-hourly rows",
+  "params": [
+   {
+    "h": "Pain",
+    "items": [
+     {
+      "t": "Score 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Topical before / after stool",
+      "s": "phcstg2026:2.7"
+     }
+    ]
+   },
+   {
+    "h": "Bleeding",
+    "items": [
+     {
+      "t": "Per stool: amount, clots",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bowels",
+    "items": [
+     {
+      "t": "Opened, consistency",
+      "s": "phcstg2026:2.6"
+     },
+     {
+      "t": "Lactulose given",
+      "s": "phcstg2026:2.10"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "T if abscess",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Heavy bleeding / clots, dizziness",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR rising / BP falling",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fever, spreading redness",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Pain not controlled",
+    "d": 1
+   },
+   {
+    "t": "Unable to void",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Stools",
+   "Bleeding episodes",
+   "Max pain",
+   "Voided Y/N"
+  ]
+ }
+}

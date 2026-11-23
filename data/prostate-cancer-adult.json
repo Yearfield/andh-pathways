@@ -1,0 +1,1006 @@
+{
+ "id": "prostate-cancer-adult",
+ "short": "Prostate_Cancer_Adult",
+ "title": "Prostate cancer — suspected or known, with complication (adult)",
+ "population": "Men, usually > 50 y, admitted with suspected or known prostate cancer and a complication",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "john2024"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — suspect if",
+   "items": [
+    {
+     "t": "Man > 50 y; hard ± nodular prostate on DRE",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "Back / bone pain, pathological fracture, weight loss, leg lymphoedema",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "PSA raised for age (repeat if < 10 ng/mL and DRE normal)",
+     "s": "john2024:16",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "PSA ≥ 100 ng/mL = clinical diagnosis of advanced cancer (specialist may start ADT without biopsy)",
+     "s": "john2024:17",
+     "d": 1
+    },
+    {
+     "t": "PSA ____ ng/mL (date ____) · on finasteride / dutasteride → PSA × 2",
+     "s": "john2024:17",
+     "d": 1,
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated = any one of",
+   "items": [
+    {
+     "t": "Back pain + leg weakness / sensory level / incontinence (cord compression)",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Urinary retention (uncommon in cancer — still catheterise)",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "AKI (obstruction)",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic hypercalcaemia",
+     "s": "adultstg2026:8.22",
+     "b": 1
+    },
+    {
+     "t": "Uncontrolled bone pain / pathological fracture",
+     "s": "phcstg2026:8.14",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous PSA values + dates",
+     "s": "john2024:16",
+     "d": 1
+    },
+    {
+     "t": "Biopsy / urology letter",
+     "d": 1
+    },
+    {
+     "t": "Hormone treatment (injection, orchidectomy)",
+     "d": 1
+    },
+    {
+     "t": "Radiotherapy",
+     "d": 1
+    },
+    {
+     "t": "5-ARI (finasteride / dutasteride)",
+     "s": "john2024:17",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulant",
+     "d": 1
+    },
+    {
+     "t": "Baseline creatinine",
+     "d": 1
+    },
+    {
+     "t": "HIV status",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Local"
+    },
+    {
+     "t": "Voiding symptoms, retention",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Haematuria",
+     "d": 1
+    },
+    {
+     "h": "Metastatic"
+    },
+    {
+     "t": "Bone pain: back, hips, ribs",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Weight loss, fatigue",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Leg swelling",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "h": "Red flags"
+    },
+    {
+     "t": "Back pain worse lying down / at night",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Leg weakness, numbness, bladder / bowel change",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Thirst, vomiting, confusion (Ca²⁺)",
+     "s": "adultstg2026:8.21"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Bladder palpable / ultrasound volume ____ mL",
+     "s": "adultstg2026:7.22",
+     "k": "sub"
+    },
+    {
+     "t": "Pain score ____ / 10",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "DRE"
+    },
+    {
+     "t": "Hard, nodular, irregular",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Fixed / extends beyond gland",
+     "d": 1
+    },
+    {
+     "t": "Anal tone",
+     "d": 1
+    },
+    {
+     "h": "Spine / neuro"
+    },
+    {
+     "t": "Spinal tenderness level ___",
+     "d": 1
+    },
+    {
+     "t": "Leg power, sensory level",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Saddle sensation",
+     "d": 1
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Palpable bladder",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Lymphoedema, nodes",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Pallor, cachexia",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Neuro + spine (cord compression?)",
+   "items": [
+    {
+     "t": "Power ____ · sensory level ____ · bladder / bowel ____",
+     "k": "value"
+    },
+    {
+     "t": "ANY new deficit → dexamethasone 16 mg IV NOW",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Then 4 mg 6-hourly until transfer; urgent REFER (MRI, radiotherapy)",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Spine X-ray on site",
+     "s": "adultstg2026:21.3"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "U&E + Ca²⁺ + FBC",
+   "items": [
+    {
+     "t": "Creatinine ____ · K⁺ ____ · corrected Ca²⁺ ____ · Hb ____",
+     "k": "value"
+    },
+    {
+     "t": "AKI with full bladder → catheter first",
+     "s": "adultstg2026:7.22",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic Ca²⁺ → NaCl 0.9% 4–6 L / 24 h",
+     "s": "adultstg2026:8.22",
+     "b": 1
+    },
+    {
+     "t": "PSA (if not recently retained / catheterised — else defer 6 weeks)",
+     "s": "john2024:16",
+     "d": 1
+    },
+    {
+     "t": "ALP, LFT; urine dipstick",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Cord compression",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Retention / obstructive AKI",
+     "s": "adultstg2026:7.22"
+    },
+    {
+     "t": "Hypercalcaemia",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Pathological fracture (hip / spine)",
+     "s": "phcstg2026:8.14"
+    },
+    {
+     "t": "Urosepsis",
+     "s": "adultstg2026:7.19"
+    },
+    {
+     "t": "Severe anaemia",
+     "d": 1
+    },
+    {
+     "t": "DVT (lymphoedema vs clot)",
+     "d": 1
+    },
+    {
+     "t": "Hyperkalaemia",
+     "s": "adultstg2026:7.10"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = CORD COMPRESSION, pathological fracture or AKI not resolving → dexamethasone / stabilise → REFER urgently; all suspected cancer → REFER urology",
+   "s": "phcstg2026:8.14",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (retention, pain, hypercalcaemia, AKI) — continue on the inpatient chart and the 24-hour nursing record",
+   "d": 1,
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Protect the cord and the kidneys, control pain, refer every suspected cancer",
+  "columns": {
+   "feed": "Catheter, fluids & obs",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Leg power, sensation, bladder / bowel every shift",
+    "s": "adultstg2026:21.3",
+    "b": 1
+   },
+   {
+    "t": "Fluid in / urine out; catheter draining",
+    "s": "adultstg2026:7.22",
+    "b": 1
+   },
+   {
+    "t": "Pain score 4-hourly; laxative with every opioid",
+    "s": "adultstg2026:25.6",
+    "b": 1
+   },
+   {
+    "t": "HR, BP, T 4-hourly; fever → doctor",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Pressure care, mobilise if spine stable",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check referral letter, previous PSA and hormone treatment. Neuro exam on every patient with back pain.",
+    "feed": [
+     {
+      "t": "Catheter if retention / palpable bladder",
+      "s": "adultstg2026:7.22",
+      "b": 1
+     },
+     {
+      "t": "IV NaCl 0.9% if dehydrated / hypercalcaemic",
+      "s": "adultstg2026:8.22"
+     },
+     {
+      "t": "Strict fluid balance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine, K⁺, Ca²⁺, albumin",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "PSA (defer 6 weeks if retained / catheterised)",
+      "s": "john2024:16",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ALP, LFT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick ± MC&S",
+      "s": "adultstg2026:7.18",
+      "b": 1
+     },
+     {
+      "t": "X-ray spine / painful bones; CXR",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "HIV test offer",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "By complication (side 2)"
+     },
+     {
+      "t": "New neuro deficit: dexamethasone 16 mg IV now",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "Symptomatic Ca²⁺: NaCl 0.9% 4–6 L / 24 h",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 1 g 6-hourly",
+      "s": "phcstg2026:20.5",
+      "b": 1
+     },
+     {
+      "t": "Morphine oral solution 4-hourly, titrate (no maximum in cancer pain)",
+      "s": "adultstg2026:25.5",
+      "b": 1
+     },
+     {
+      "t": "Laxative with opioid: sennosides 13.5 mg 1–2 at night",
+      "s": "adultstg2026:25.6"
+     },
+     {
+      "h": "Refer"
+     },
+     {
+      "t": "Phone urology / oncology",
+      "s": "phcstg2026:8.14",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Urine ___ mL in 4 h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro re-check",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pain not controlled → breakthrough morphine = ⅙ daily dose",
+      "s": "adultstg2026:25.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Balance ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ if AKI",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Deficit progressing → transfer now",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Oral fluids if able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca²⁺ daily while abnormal",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Add breakthrough total ÷ 6 to the 4-hourly dose",
+      "s": "adultstg2026:25.5",
+      "b": 1
+     },
+     {
+      "t": "Ca²⁺ > 3 or still symptomatic → zoledronic acid (specialist)",
+      "s": "adultstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Stabilised?",
+    "feed": [
+     {
+      "t": "Catheter plan (TWOC or keep)",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PSA result followed up",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thromboprophylaxis if immobile, no bleeding",
+      "d": 1
+     },
+     {
+      "t": "Physio; fracture → immobilise and REFER",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Transfer / discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Letter: PSA, X-rays, U&E",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "All suspected cancer → REFER urology (biopsy / hormone therapy)",
+      "s": "phcstg2026:8.14",
+      "b": 1
+     },
+     {
+      "t": "Palliative care referral if advanced / frail",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If cord compression",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Log-roll; catheter if retention",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Spine X-ray; MRI at referral",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dexamethasone 16 mg IV once, then 4 mg 6-hourly until transfer",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "Urgent REFER (radiotherapy / neurosurgery)",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If retention / AKI",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Catheter; hourly urine after large residual",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E 12-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop nephrotoxins, adjust doses",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Not improving after catheter → US for hydronephrosis, REFER",
+      "d": 1
+     },
+     {
+      "t": "Dialysis indications → REFER",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If hypercalcaemia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 4–6 L / 24 h",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ca²⁺ 12–24-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No thiazides; furosemide not of benefit",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "Zoledronic acid 4 mg IV / 15 min (specialist; not if eGFR < 35)",
+      "s": "adultstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "If bone pain / fracture",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Mobility plan",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "X-ray affected bone",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Morphine titrated + laxative",
+      "s": "adultstg2026:25.5",
+      "b": 1
+     },
+     {
+      "t": "Bisphosphonate / radiotherapy → specialist",
+      "s": "adultstg2026:25.6"
+     },
+     {
+      "t": "Long-bone / hip fracture → REFER orthopaedics",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Dexamethasone 16 mg IV, then 4 mg 6-hourly",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "NaCl 0.9% 4–6 L / 24 h (Ca²⁺)",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g)",
+     "s": "phcstg2026:20.5"
+    },
+    {
+     "t": "Morphine: breakthrough = ⅙ daily dose",
+     "s": "adultstg2026:25.5"
+    },
+    {
+     "t": "Sennosides 13.5 mg 1–2 at night",
+     "s": "adultstg2026:25.6"
+    }
+   ]
+  },
+  {
+   "title": "Note",
+   "items": [
+    {
+     "t": "PSA: defer 6 weeks after retention, catheter, TURP",
+     "s": "john2024:16",
+     "d": 1
+    },
+    {
+     "t": "PSA × 2 if on finasteride / dutasteride",
+     "s": "john2024:17",
+     "d": 1
+    },
+    {
+     "t": "Hormone therapy / biopsy = specialist",
+     "d": 1
+    },
+    {
+     "t": "No NSAIDs if AKI",
+     "s": "adultstg2026:7.9"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "New leg weakness / incontinence → dexamethasone, REFER now",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "No urine / creatinine rising",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "Confusion, vomiting → Ca²⁺",
+     "s": "adultstg2026:8.21"
+    },
+    {
+     "t": "K⁺ > 6.0",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Fever, rigors → sepsis",
+     "s": "adultstg2026:7.19"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "No new neuro deficit",
+    "s": "adultstg2026:21.3"
+   },
+   {
+    "t": "Pain controlled on oral morphine + laxative",
+    "s": "adultstg2026:25.5"
+   },
+   {
+    "t": "Voiding or catheter care taught",
+    "d": 1
+   },
+   {
+    "t": "Creatinine, Ca²⁺ improving",
+    "d": 1
+   },
+   {
+    "t": "Urology / oncology referral letter",
+    "s": "phcstg2026:8.14"
+   },
+   {
+    "t": "PSA result or date to repeat",
+    "s": "john2024:16",
+    "d": 1
+   },
+   {
+    "t": "Told: return for leg weakness, retention, fever",
+    "d": 1
+   },
+   {
+    "t": "Palliative care / home-based care linked if advanced",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Urology / oncology (all)",
+    "s": "phcstg2026:8.14"
+   },
+   {
+    "t": "Clinic 1 week: pain, bowels, U&E",
+    "d": 1
+   },
+   {
+    "t": "Hormone injection dates kept",
+    "d": 1
+   },
+   {
+    "t": "Return now: weakness, numbness, unable to void",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — neuro, urine, pain",
+  "period": "24 hours, 2-hourly rows",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "Leg power / sensation every shift",
+      "s": "adultstg2026:21.3"
+     },
+     {
+      "t": "Bladder / bowel control",
+      "s": "adultstg2026:21.3"
+     }
+    ]
+   },
+   {
+    "h": "Urine",
+    "items": [
+     {
+      "t": "Output; catheter draining",
+      "s": "adultstg2026:7.22"
+     },
+     {
+      "t": "Fluid in",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Pain",
+    "items": [
+     {
+      "t": "Score 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Breakthrough doses",
+      "s": "adultstg2026:25.5"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "T, HR, BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Bowels opened",
+      "s": "adultstg2026:25.6"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "New leg weakness / numbness / incontinence",
+    "s": "adultstg2026:21.3",
+    "b": 1
+   },
+   {
+    "t": "No urine for 2 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Pain not controlled after breakthrough dose",
+    "s": "adultstg2026:25.5",
+    "b": 1
+   },
+   {
+    "t": "Confusion, vomiting",
+    "s": "adultstg2026:8.21"
+   },
+   {
+    "t": "Fever, rigors",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Total in (mL)",
+   "Total out (mL)",
+   "Balance",
+   "Breakthrough doses",
+   "Morphine total mg"
+  ]
+ }
+}

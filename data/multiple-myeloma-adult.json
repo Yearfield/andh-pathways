@@ -1,0 +1,1071 @@
+{
+ "id": "multiple-myeloma-adult",
+ "short": "Multiple_Myeloma_Adult",
+ "title": "Multiple myeloma (adult)",
+ "population": "Adult with suspected or known myeloma admitted with a complication",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "fazel2019"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — suspect if any (CRAB)",
+   "items": [
+    {
+     "t": "Calcium > 2.75 mmol/L (corrected)",
+     "s": "fazel2019:725",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Renal: creatinine > 177 µmol/L or CrCl < 40 mL/min",
+     "s": "fazel2019:725",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Anaemia: Hb < 10 g/dL",
+     "s": "fazel2019:725",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Bone: ≥ 1 lytic lesion; back pain, pathological fracture",
+     "s": "fazel2019:725",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Confirm (REFER): SPEP + immunofixation, FLC / UPEP, bone marrow ≥ 10% clonal plasma cells",
+     "s": "fazel2019:724",
+     "d": 1
+    },
+    {
+     "t": "Known myeloma: treating centre ______  Last treatment ______",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Emergency complication = any one of",
+   "items": [
+    {
+     "t": "New back pain worse lying down, leg weakness, incontinence (cord compression)",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic hypercalcaemia (confusion, vomiting, polyuria)",
+     "s": "adultstg2026:8.22",
+     "b": 1
+    },
+    {
+     "t": "AKI / oliguria",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "Spontaneous bleeding, visual or neuro signs (hyperviscosity)",
+     "s": "adultstg2026:21.2",
+     "b": 1
+    },
+    {
+     "t": "Fever on chemotherapy (neutropenia)",
+     "s": "adultstg2026:2.11",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Haematology letter, chemo regimen",
+     "d": 1
+    },
+    {
+     "t": "Bisphosphonate (zoledronic acid) dates",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Baseline creatinine, Ca²⁺, Hb",
+     "d": 1
+    },
+    {
+     "t": "HIV, hepatitis B / C status",
+     "s": "fazel2019:724",
+     "d": 1
+    },
+    {
+     "t": "NSAID / aminoglycoside / contrast exposure",
+     "s": "fazel2019:726",
+     "d": 1
+    },
+    {
+     "t": "Pneumococcal / influenza vaccines",
+     "s": "fazel2019:726",
+     "d": 1
+    },
+    {
+     "t": "Previous fractures, radiotherapy",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulant / thromboprophylaxis",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Bone pain (back, ribs)",
+     "s": "fazel2019:723",
+     "d": 1
+    },
+    {
+     "t": "Fatigue, weight loss",
+     "d": 1
+    },
+    {
+     "t": "Thirst, polyuria, constipation, confusion",
+     "s": "adultstg2026:8.21"
+    },
+    {
+     "t": "Recurrent infections (pneumonia)",
+     "s": "fazel2019:723",
+     "d": 1
+    },
+    {
+     "h": "Red flags"
+    },
+    {
+     "t": "Back pain worse lying down, at night",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Leg weakness, numbness, urinary / bowel change",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Nose / gum bleeding, blurred vision, headache",
+     "s": "adultstg2026:21.2"
+    },
+    {
+     "h": "Drugs"
+    },
+    {
+     "t": "NSAIDs, diuretics, thiazides",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Chemotherapy / steroids",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated / dry mucosa",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Urine output < 0.5 mL/kg/h × 6 h → AKI",
+     "s": "adultstg2026:7.9",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Spine / neuro"
+    },
+    {
+     "t": "Spinal tenderness (level ___)",
+     "d": 1
+    },
+    {
+     "t": "Leg power, sensory level",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Anal tone / bladder palpable",
+     "d": 1
+    },
+    {
+     "t": "Confusion (Ca²⁺, viscosity)",
+     "s": "adultstg2026:21.2"
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Pallor",
+     "s": "fazel2019:725",
+     "d": 1
+    },
+    {
+     "t": "Bruising, mucosal bleeding",
+     "s": "adultstg2026:21.2"
+    },
+    {
+     "t": "Fundi: haemorrhages",
+     "d": 1
+    },
+    {
+     "t": "Volume status",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "h": "Infection"
+    },
+    {
+     "t": "Chest signs",
+     "d": 1
+    },
+    {
+     "t": "Line / skin source",
+     "s": "adultstg2026:2.11"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Calcium + renal (U&E)",
+   "items": [
+    {
+     "t": "Corrected Ca²⁺ ____ · creatinine ____ · K⁺ ____",
+     "k": "value"
+    },
+    {
+     "t": "Symptomatic hypercalcaemia → NaCl 0.9% 4–6 L / 24 h",
+     "s": "adultstg2026:8.22",
+     "b": 1
+    },
+    {
+     "t": "Ca²⁺ > 3 mmol/L or still symptomatic at 24 h → zoledronic acid (specialist)",
+     "s": "adultstg2026:8.22",
+     "b": 1
+    },
+    {
+     "t": "AKI: stop NSAIDs / aminoglycosides; hydrate",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "K⁺ > 6.0 → hyperkalaemia emergency",
+     "s": "adultstg2026:7.10"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "FBC + neuro check",
+   "items": [
+    {
+     "t": "Hb ____ · WCC ____ · neutrophils ____ · platelets ____",
+     "k": "value"
+    },
+    {
+     "t": "Neutrophils < 0.5 + T > 38 °C → febrile neutropenia",
+     "s": "adultstg2026:2.11",
+     "b": 1
+    },
+    {
+     "t": "New leg weakness → dexamethasone now + urgent REFER",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Spine X-ray on site; MRI → REFER",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "ESR, total protein / albumin gap",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Spinal cord compression",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Hypercalcaemic crisis",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "AKI / hyperkalaemia",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Febrile neutropenia / sepsis",
+     "s": "adultstg2026:2.11"
+    },
+    {
+     "t": "Hyperviscosity",
+     "s": "adultstg2026:21.2"
+    },
+    {
+     "t": "Pathological fracture",
+     "s": "fazel2019:726",
+     "d": 1
+    },
+    {
+     "t": "Severe anaemia",
+     "s": "fazel2019:726",
+     "d": 1
+    },
+    {
+     "t": "Tumour lysis after treatment",
+     "s": "adultstg2026:21.1"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = CORD COMPRESSION, HYPERVISCOSITY or AKI needing dialysis → stabilise → REFER urgently; all suspected myeloma → REFER haematology",
+   "s": "adultstg2026:21.3",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (hypercalcaemia, AKI, infection, pain, anaemia) — continue on the inpatient chart and the 24-hour nursing record",
+   "s": "adultstg2026:8.22",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Treat the complication, protect the kidneys, refer for diagnosis and chemotherapy",
+  "columns": {
+   "feed": "Fluids & obs",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Fluid in / urine out every 4 h; daily weight",
+    "s": "adultstg2026:8.22",
+    "b": 1
+   },
+   {
+    "t": "Leg power, sensation, bladder / bowel every shift",
+    "s": "adultstg2026:21.3",
+    "b": 1
+   },
+   {
+    "t": "Temperature 4-hourly; fever → doctor now",
+    "s": "adultstg2026:2.11",
+    "b": 1
+   },
+   {
+    "t": "Pain score 4-hourly; laxative with every opioid",
+    "s": "adultstg2026:25.6",
+    "b": 1
+   },
+   {
+    "t": "No NSAIDs, no aminoglycosides unless no alternative, no IV contrast",
+    "s": "fazel2019:726",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral / haematology letter for regimen, last chemo date and bisphosphonate. Stop nephrotoxins.",
+    "feed": [
+     {
+      "t": "IV NaCl 0.9% if dehydrated / hypercalcaemic",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "Strict fluid balance",
+      "s": "adultstg2026:8.22"
+     },
+     {
+      "t": "Catheter if retention / strict output needed",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, creatinine, Ca²⁺, albumin, PO₄, Mg²⁺",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "FBC + smear, ESR",
+      "s": "adultstg2026:21.2",
+      "b": 1
+     },
+     {
+      "t": "SPEP (+ immunofixation), urine protein electrophoresis via NHLS",
+      "s": "fazel2019:724",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "LDH, uric acid, LFT",
+      "s": "fazel2019:724",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV, HBsAg, HCV",
+      "s": "fazel2019:724",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Spine / skull / painful-site X-ray",
+      "s": "fazel2019:725",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Blood + urine cultures if febrile",
+      "s": "adultstg2026:2.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "By complication (side 2)"
+     },
+     {
+      "t": "Cord compression signs: dexamethasone 16 mg IV now",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "Symptomatic Ca²⁺: NaCl 0.9% 4–6 L / 24 h",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "Fever + neutropenia: ceftriaxone 1 g IV + gentamicin 6 mg/kg (renal-adjust) within 1 h",
+      "s": "adultstg2026:2.11",
+      "b": 1
+     },
+     {
+      "h": "Pain"
+     },
+     {
+      "t": "Paracetamol 1 g 6-hourly + morphine oral solution, titrate (no maximum in cancer pain)",
+      "s": "adultstg2026:25.5",
+      "b": 1
+     },
+     {
+      "t": "Laxative with opioid: lactulose 10–20 mL 12–24-hourly",
+      "s": "adultstg2026:25.6"
+     },
+     {
+      "h": "Refer"
+     },
+     {
+      "t": "Phone haematology referral centre",
+      "s": "fazel2019:724",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Urine ___ mL in 4 h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ if AKI",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oliguric despite fluids → AKI branch",
+      "s": "adultstg2026:7.9"
+     },
+     {
+      "t": "Confusion worse → recheck Ca²⁺, Na⁺, glucose",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Overload signs? slow fluids",
+      "s": "adultstg2026:8.22"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ca²⁺, creatinine",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Leg weakness progressing → transfer now",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Balance ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca²⁺, FBC daily",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ca²⁺ still symptomatic or > 3 → zoledronic acid 4 mg IV over 15 min (specialist; not if eGFR < 35)",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "Haematological malignancy: prednisone 40 mg daily",
+      "s": "adultstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Stabilised?",
+    "feed": [
+     {
+      "t": "Oral fluids ≥ 3 L if able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SPEP / results followed up",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Thromboprophylaxis if immobile and no bleeding",
+      "d": 1
+     },
+     {
+      "t": "Physio / brace for fractures",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Transfer / discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Letter: results, X-rays",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Confirmed or suspected myeloma → REFER haematology (bone marrow, chemotherapy)",
+      "s": "fazel2019:724",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If hypercalcaemia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 4–6 L / 24 h; urine output",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Ca²⁺ 12–24-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No thiazides; furosemide not of benefit",
+      "s": "adultstg2026:8.22",
+      "b": 1
+     },
+     {
+      "t": "Zoledronic acid 4 mg / 15 min (specialist; eGFR 35–60 adjust; < 35 do not use)",
+      "s": "adultstg2026:8.22"
+     },
+     {
+      "t": "Prednisone 40 mg daily",
+      "s": "adultstg2026:8.22"
+     }
+    ]
+   },
+   {
+    "label": "If AKI",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Volume correct; avoid overload",
+      "s": "adultstg2026:7.9"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺, VBG 12-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop NSAIDs, aminoglycosides; adjust doses",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Dialysis indications: refractory oedema, pH < 7.15, K⁺ > 7, uraemia → REFER",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If cord compression",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Log-roll; catheter if retention",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Spine X-ray; MRI at referral",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dexamethasone 16 mg IV once, then 4 mg 6-hourly until transfer",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "Urgent REFER (oncology / neurosurgery; radiotherapy)",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If infection / neutropenia",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Sepsis fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Cultures before antibiotics",
+      "s": "adultstg2026:2.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "< 48 h: ceftriaxone 1 g IV daily + gentamicin 6 mg/kg daily",
+      "s": "adultstg2026:2.11",
+      "b": 1
+     },
+     {
+      "t": "> 48 h in hospital: meropenem 1 g 8-hourly or other regimen",
+      "s": "adultstg2026:2.12"
+     }
+    ]
+   },
+   {
+    "label": "If hyperviscosity / anaemia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Hydrate",
+      "s": "adultstg2026:21.2",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, smear, SPEP, ESR",
+      "s": "adultstg2026:21.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hyperviscosity → hydrate and REFER (plasmapheresis)",
+      "s": "adultstg2026:21.2",
+      "b": 1
+     },
+     {
+      "t": "Symptomatic anaemia → transfuse (no blood bank: REFER / O-neg only if life-threatening)",
+      "s": "fazel2019:726",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "NaCl 0.9% 4–6 L / 24 h (hypercalcaemia)",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Zoledronic acid 4 mg IV over 15 min — specialist",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Prednisone 40 mg daily",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "Dexamethasone 16 mg IV, then 4 mg 6-hourly",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Ceftriaxone 1 g IV daily + gentamicin 6 mg/kg daily",
+     "s": "adultstg2026:2.11"
+    },
+    {
+     "t": "Morphine: breakthrough = ⅙ of daily dose; laxative always",
+     "s": "adultstg2026:25.5"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "NSAIDs, aminoglycosides (unless sepsis needs them)",
+     "s": "fazel2019:726",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Thiazides in hypercalcaemia",
+     "s": "adultstg2026:8.22"
+    },
+    {
+     "t": "IV contrast",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "s": "fazel2019:726",
+     "d": 1
+    },
+    {
+     "t": "Erythropoietin without specialist (thrombosis)",
+     "s": "fazel2019:726",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Leg weakness / incontinence → dexamethasone, REFER now",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Fever ≥ 38 °C on chemo → antibiotics within 1 h",
+     "s": "adultstg2026:2.11",
+     "b": 1
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h × 6 h → AKI branch",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Confusion, bleeding, visual loss → hyperviscosity",
+     "s": "adultstg2026:21.2"
+    },
+    {
+     "t": "K⁺ > 6.0 → hyperkalaemia emergency",
+     "s": "adultstg2026:7.10"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "Ca²⁺ and creatinine improving, drinking well",
+    "d": 1
+   },
+   {
+    "t": "No new neuro deficit",
+    "s": "adultstg2026:21.3"
+   },
+   {
+    "t": "Pain controlled on oral opioid + laxative",
+    "s": "adultstg2026:25.5"
+   },
+   {
+    "t": "Haematology referral made / appointment",
+    "s": "fazel2019:724",
+    "d": 1
+   },
+   {
+    "t": "Pneumococcal + influenza vaccine plan",
+    "s": "fazel2019:726",
+    "d": 1
+   },
+   {
+    "t": "Told: avoid NSAIDs, drink 3 L/day",
+    "d": 1
+   },
+   {
+    "t": "Return: fever, back pain, weakness, confusion",
+    "d": 1
+   },
+   {
+    "t": "HIV result acted on",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Haematology (treatment, bisphosphonate)",
+    "s": "fazel2019:726",
+    "d": 1
+   },
+   {
+    "t": "U&E, Ca²⁺, FBC in 1 week",
+    "d": 1
+   },
+   {
+    "t": "Palliative care if not for chemotherapy",
+    "d": 1
+   },
+   {
+    "t": "Return now: leg weakness, fever, confusion",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — fluids, neuro, fever, pain",
+  "period": "24 hours, 2-hourly rows",
+  "params": [
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "IV + oral in; urine out",
+      "s": "adultstg2026:8.22"
+     },
+     {
+      "t": "Daily weight",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "Leg power / sensation every shift",
+      "s": "adultstg2026:21.3"
+     },
+     {
+      "t": "Confusion",
+      "s": "adultstg2026:21.2"
+     }
+    ]
+   },
+   {
+    "h": "Temp / obs",
+    "items": [
+     {
+      "t": "T, HR, BP 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Fever → doctor now",
+      "s": "adultstg2026:2.11"
+     }
+    ]
+   },
+   {
+    "h": "Pain",
+    "items": [
+     {
+      "t": "Score 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Laxative given",
+      "s": "adultstg2026:25.6"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Leg weakness, numbness, incontinence",
+    "s": "adultstg2026:21.3",
+    "b": 1
+   },
+   {
+    "t": "Fever ≥ 38 °C",
+    "s": "adultstg2026:2.11",
+    "b": 1
+   },
+   {
+    "t": "Urine < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Confusion, bleeding, visual change",
+    "s": "adultstg2026:21.2"
+   },
+   {
+    "t": "Breathless / crackles on fluids",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Total in (mL)",
+   "Total out (mL)",
+   "Balance",
+   "Max T",
+   "Morphine total mg"
+  ]
+ }
+}
