@@ -1,0 +1,1329 @@
+{
+ "id": "envenomation-adult",
+ "short": "Envenomation_Adult",
+ "title": "Envenomation — snake, scorpion, spider (adult)",
+ "population": "Adult (paediatric differences in a note box)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "paedstg2026",
+  "muller2012",
+  "tomlinson2019"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Anaphylaxis (bee / wasp / antivenom reaction) → anaphylaxis pathway",
+     "s": "adultstg2026:19.1",
+     "b": 1
+    },
+    {
+     "t": "Venom in the eye → irrigate 15–20 min, chloramphenicol, refer ophthalmology",
+     "s": "adultstg2026:19.7"
+    },
+    {
+     "t": "Child → Paed STG 18.2 (note box)",
+     "s": "paedstg2026:18.30"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — exposure + any",
+   "items": [
+    {
+     "t": "Bite / sting seen or fang / sting marks",
+     "d": 1
+    },
+    {
+     "t": "Animal seen: kind ____ photo / brought in",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Local pain, swelling, blistering, bruising",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Paraesthesia, ptosis, weakness, drooling",
+     "s": "adultstg2026:19.2",
+     "b": 1
+    },
+    {
+     "t": "Bleeding, headache, dizziness (haemotoxic)",
+     "s": "adultstg2026:19.2",
+     "b": 1
+    },
+    {
+     "t": "Time of bite ____  Wt ____ kg  Limb marked ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of → antivenom decision (0 h)",
+   "items": [
+    {
+     "t": "Any neurotoxicity (ptosis, dysphagia, weakness)",
+     "s": "adultstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Swelling of whole hand / foot < 1 h; to knee / elbow < 6 h; whole limb < 12 h; > 5 cm/h",
+     "s": "adultstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Necrosis / discolouration; threatened airway",
+     "s": "adultstg2026:19.5"
+    },
+    {
+     "t": "Hb < 8, platelets < 100, raised INR, shock",
+     "s": "adultstg2026:19.5"
+    },
+    {
+     "t": "Coagulopathy (boomslang, 20WBCT)",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Thick-tailed scorpion with systemic signs",
+     "s": "adultstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Button spider with systemic signs",
+     "s": "adultstg2026:19.10",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous antivenom / allergy",
+     "s": "adultstg2026:19.4"
+    },
+    {
+     "t": "IHD, stroke, uncontrolled HT, tachyarrhythmia (no SC adrenaline)",
+     "s": "adultstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Anticoagulants / bleeding disorder",
+     "d": 1
+    },
+    {
+     "t": "Tetanus status (last 5 y)",
+     "s": "adultstg2026:19.3"
+    },
+    {
+     "t": "Asthma / atopy",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Event"
+    },
+    {
+     "t": "Time, place (veld, house, night)",
+     "d": 1
+    },
+    {
+     "t": "Description / photo of animal",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "First aid: tourniquet? cut? suction?",
+     "s": "paedstg2026:18.33"
+    },
+    {
+     "h": "Snake symptoms"
+    },
+    {
+     "t": "Pins and needles, metallic taste",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Visual disturbance, drowsiness",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Spontaneous bleeding, headache",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "h": "Scorpion / spider"
+    },
+    {
+     "t": "Thick tail, small pincers (Parabuthus)",
+     "s": "adultstg2026:19.7",
+     "b": 1
+    },
+    {
+     "t": "Excruciating pain, generalised paraesthesia",
+     "s": "adultstg2026:19.8"
+    },
+    {
+     "t": "Black / brown button spider; cramps, rigid abdomen",
+     "s": "adultstg2026:19.10"
+    },
+    {
+     "t": "Sweating, drooling, priapism",
+     "s": "adultstg2026:19.8"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension / Hypertension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Swelling: mark edge + time every hour",
+     "s": "adultstg2026:19.5",
+     "k": "sub"
+    },
+    {
+     "t": "Single-breath count / peak flow falling (neuro)",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "20WBCT: not clotted at 20 min",
+     "s": "adultstg2026:19.6",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Local"
+    },
+    {
+     "t": "Fang marks, blisters, necrosis",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Swelling extent (joints crossed)",
+     "s": "adultstg2026:19.5"
+    },
+    {
+     "t": "Tense compartment (rare)",
+     "s": "adultstg2026:19.3"
+    },
+    {
+     "t": "Regional nodes",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Ptosis, ophthalmoplegia",
+     "s": "adultstg2026:19.2",
+     "b": 1
+    },
+    {
+     "t": "Dysphagia, drooling, dysarthria",
+     "s": "adultstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Weakness, fasciculations, tremor",
+     "s": "adultstg2026:19.8"
+    },
+    {
+     "t": "Hyperaesthesia",
+     "s": "adultstg2026:19.8"
+    },
+    {
+     "h": "Haem / autonomic"
+    },
+    {
+     "t": "Bleeding gums, sites, bruising",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Sweating, salivation",
+     "s": "adultstg2026:19.8"
+    },
+    {
+     "t": "Rigid abdomen (button spider)",
+     "s": "adultstg2026:19.10"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Swelling / neuro chart (repeat)",
+   "items": [
+    {
+     "t": "Time ____ swelling edge ____ cm above bite",
+     "k": "value"
+    },
+    {
+     "t": "> 5 cm/h, or crossing joints fast → severe cytotoxic",
+     "s": "adultstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Ptosis / swallowing / breathing hourly",
+     "d": 1
+    },
+    {
+     "t": "Neuro worsening → antivenom + prepare to ventilate",
+     "s": "adultstg2026:19.4",
+     "b": 1
+    },
+    {
+     "t": "Scorpion: grade I–IV (score card)",
+     "s": "tomlinson2019:217-219",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods + 20WBCT",
+   "items": [
+    {
+     "t": "FBC (Hb, platelets, WCC), INR, aPTT, fibrinogen",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "20WBCT: 5 mL in dry glass tube, 20 min; unclotted = coagulopathy",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "U&E, CK if severe cytotoxic",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "ECG (scorpion, severe)",
+     "s": "muller2012:361",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Repeat clotting tests over a few days (boomslang)",
+     "s": "adultstg2026:19.6"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Respiratory muscle weakness",
+     "s": "adultstg2026:19.2"
+    },
+    {
+     "t": "Bulbar palsy",
+     "s": "adultstg2026:19.8"
+    },
+    {
+     "t": "Spontaneous bleeding",
+     "s": "adultstg2026:19.6"
+    },
+    {
+     "t": "Airway swelling (head / neck bite)",
+     "s": "adultstg2026:19.5"
+    },
+    {
+     "t": "Anaphylaxis to sting / antivenom",
+     "s": "adultstg2026:19.4"
+    },
+    {
+     "t": "Compartment syndrome (rare)",
+     "s": "adultstg2026:19.3"
+    },
+    {
+     "t": "Tourniquet left on",
+     "s": "paedstg2026:18.33"
+    },
+    {
+     "t": "Arrhythmia / pulmonary oedema",
+     "s": "paedstg2026:18.31"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = NEUROTOXIC, SEVERE CYTOTOXIC, HAEMOTOXIC or SYSTEMIC SCORPION / SPIDER → antivenom (with anaphylaxis ready) → REFER if ventilation needed",
+   "s": "adultstg2026:19.4",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT ALL — observe snake 24 h, scorpion ≥ 12 h, spider ≥ 24 h on the 24-hour envenomation chart and nursing record",
+   "s": "adultstg2026:19.3",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Cytotoxic snake (puff adder, Gaboon, spitting cobra)",
+   "branch": "If cytotoxic snake",
+   "features": [
+    {
+     "t": "Pain, swelling, blisters, necrosis",
+     "s": "adultstg2026:19.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hourly swelling edge; FBC, INR",
+     "s": "adultstg2026:19.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Severe criteria → polyvalent 50 mL (puff adder 80, Mozambique spitting cobra 100)",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "No NSAIDs",
+     "s": "adultstg2026:19.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If shock, necrosis, compartment",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Neurotoxic snake (mamba, Cape / forest / snouted cobra)",
+   "branch": "If neurotoxic snake",
+   "features": [
+    {
+     "t": "Paraesthesia, ptosis, drooling, weakness within 15–30 min",
+     "s": "paedstg2026:18.32",
+     "b": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ptosis, swallow, breath count",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Polyvalent 80–100 mL (black mamba up to 200 mL)",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Bag-mask / intubate; ventilate",
+     "s": "adultstg2026:19.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ventilation (ICU)",
+     "s": "adultstg2026:19.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Haemotoxic (boomslang, vine snake)",
+   "branch": "If boomslang / haemotoxic",
+   "features": [
+    {
+     "t": "Little local swelling; bleeding 6–36 h later",
+     "s": "adultstg2026:19.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "20WBCT, INR, fibrinogen, FBC",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Monovalent boomslang 20 mL (polyvalent does NOT work)",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If bleeding despite antivenom; antivenom not stocked",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Thick-tailed scorpion (Parabuthus)",
+   "branch": "If scorpion",
+   "features": [
+    {
+     "t": "Excruciating pain, paraesthesia, tremor, drooling, dysphagia",
+     "s": "adultstg2026:19.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Grade I–IV; neuro + respiratory monitoring",
+     "s": "tomlinson2019:217-219",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Systemic neurotoxicity → scorpion antivenom 10 mL",
+     "s": "adultstg2026:19.8",
+     "b": 1
+    },
+    {
+     "t": "Lidocaine, ice, Ca gluconate for cramps",
+     "s": "adultstg2026:19.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Respiratory failure (ICU)",
+     "s": "adultstg2026:19.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Thin-tailed scorpion",
+   "branch": "",
+   "features": [
+    {
+     "t": "Large pincers, thin tail; local pain only",
+     "s": "adultstg2026:19.8"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Identification",
+     "s": "adultstg2026:19.7"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; observe until sure",
+     "s": "adultstg2026:19.8"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Button (widow) spider",
+   "branch": "If button spider",
+   "features": [
+    {
+     "t": "Cramps, rigid non-tender abdomen, sweating",
+     "s": "adultstg2026:19.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Spider seen / target lesion",
+     "s": "paedstg2026:18.36"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Systemic → spider antivenom 5–10 mL",
+     "s": "adultstg2026:19.10",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Rarely",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Cytotoxic spider (sac, violin, crab)",
+   "branch": "",
+   "features": [
+    {
+     "t": "Necrotic lesion, slow healing",
+     "s": "adultstg2026:19.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "s": "adultstg2026:19.9"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Wound care; antibiotics only for infection",
+     "s": "adultstg2026:19.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If debridement needed (no theatre)",
+     "s": "adultstg2026:19.9"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Observe everyone: snake 24 h, scorpion ≥ 12 h, spider ≥ 24 h · antivenom only with adrenaline drawn up and anaphylaxis kit open",
+  "columns": {
+   "feed": "First aid & obs",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Swelling edge marked + timed hourly",
+    "s": "adultstg2026:19.5",
+    "b": 1
+   },
+   {
+    "t": "Ptosis, swallowing, breathing (single-breath count) hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR, BP, RR, SpO₂ hourly; every 15 min during and 1 h after antivenom",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "20WBCT 6-hourly if boomslang / haemotoxic suspected",
+    "s": "adultstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Limb at heart level, at rest",
+    "s": "paedstg2026:18.33"
+   },
+   {
+    "t": "Record on the 24-hour nursing envenomation record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for antivenom, adrenaline or analgesia given. Remove any tourniquet slowly with resus ready. Do not cut or suck. Call Poisons line 0861 555 777 if unsure.",
+    "feed": [
+     {
+      "t": "ABC; oxygen if SpO₂ low",
+      "d": 1
+     },
+     {
+      "t": "Rest, limb at heart level",
+      "s": "paedstg2026:18.33"
+     },
+     {
+      "t": "Remove rings / tight items",
+      "d": 1
+     },
+     {
+      "t": "IV access (not in the bitten limb)",
+      "d": 1
+     },
+     {
+      "t": "Mark swelling edge + time",
+      "s": "adultstg2026:19.5",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, INR, aPTT, fibrinogen",
+      "s": "adultstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "20WBCT",
+      "s": "adultstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "U&E",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG if scorpion / severe",
+      "s": "muller2012:361",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Antivenom indicated? (§2)",
+      "s": "adultstg2026:19.5"
+     },
+     {
+      "t": "Draw up adrenaline; anaphylaxis kit open BEFORE any antivenom",
+      "s": "adultstg2026:19.5",
+      "b": 1
+     },
+     {
+      "t": "Snake polyvalent: pre-treat adrenaline 1:1 000, 0.25 mL SC (not in IHD, stroke, uncontrolled HT, tachyarrhythmia)",
+      "s": "adultstg2026:19.5",
+      "b": 1
+     },
+     {
+      "t": "Doses → side 2; order from SAVP 071 680 9897 if not stocked",
+      "s": "adultstg2026:19.1"
+     },
+     {
+      "h": "Everyone"
+     },
+     {
+      "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g/24 h); NO NSAIDs",
+      "s": "adultstg2026:19.4",
+      "b": 1
+     },
+     {
+      "t": "Severe pain: morphine IV, total max 10 mg — caution in neurotoxic",
+      "s": "adultstg2026:19.4"
+     },
+     {
+      "t": "Tetanus toxoid 0.5 mL IM if > 5 y; TIG 250 U if unimmunised",
+      "s": "adultstg2026:19.3"
+     },
+     {
+      "t": "Wound: chlorhexidine 0.05%; antibiotics only if infected",
+      "s": "adultstg2026:19.3"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Progression?",
+    "feed": [
+     {
+      "t": "Swelling edge ___ cm (rate ___ cm/h)",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro check: ptosis, swallow, breath count",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Meets severe criteria → antivenom now",
+      "s": "adultstg2026:19.5",
+      "b": 1
+     },
+     {
+      "t": "Scorpion: grade ___ (severe usually evident in 15–60 min)",
+      "s": "muller2012:360",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Antivenom response",
+    "feed": [
+     {
+      "t": "Obs every 15 min during + 1 h after antivenom",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Reaction? urticaria, wheeze, hypotension",
+      "s": "adultstg2026:19.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reaction: stop infusion, adrenaline 0.5 mg IM (anaphylaxis pathway)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Reassess after infusion; repeat dose if ongoing neuro / cytotoxicity",
+      "s": "adultstg2026:19.6"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Swelling trend; pain controlled?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat FBC, INR, 20WBCT",
+      "s": "adultstg2026:19.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Boomslang: coagulopathy at 6 h after antivenom → repeat 10 mL",
+      "s": "adultstg2026:19.7",
+      "b": 1
+     },
+     {
+      "t": "Scorpion: no response → repeat dose",
+      "s": "adultstg2026:19.8"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Scorpion end-point",
+    "feed": [
+     {
+      "t": "Scorpion: well for ≥ 12 h → discharge possible",
+      "s": "adultstg2026:19.8",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Bloods if abnormal earlier",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antivenom late: consider up to 48–72 h if still deteriorating",
+      "s": "adultstg2026:19.4"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Snake / spider end-point",
+    "feed": [
+     {
+      "t": "No progression for 24 h",
+      "s": "adultstg2026:19.3",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, INR before discharge",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria (side 2)",
+      "d": 1
+     },
+     {
+      "t": "Boomslang: repeat clotting over a few days",
+      "s": "adultstg2026:19.6"
+     }
+    ]
+   },
+   {
+    "label": "If cytotoxic snake",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Limb elevated to heart level",
+      "s": "paedstg2026:18.33"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Swelling hourly; Hb, platelets, INR",
+      "s": "adultstg2026:19.5",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Polyvalent: unidentified 50 mL · puff adder 80 mL · Mozambique spitting cobra 100 mL in 200 mL NaCl over 30 min",
+      "s": "adultstg2026:19.5",
+      "b": 1
+     },
+     {
+      "t": "Fasciotomy seldom indicated; pseudo- vs true compartment → REFER if true",
+      "s": "adultstg2026:19.3"
+     }
+    ]
+   },
+   {
+    "label": "If neurotoxic snake",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Bag-mask ready; SpO₂ continuous",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Breath count / ptosis every 15 min",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Polyvalent 80–100 mL (black mamba up to 200 mL) over 30 min",
+      "s": "adultstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "Intubate + ventilate if failing; REFER (ICU)",
+      "s": "adultstg2026:19.3",
+      "b": 1
+     },
+     {
+      "t": "Continue CPR longer in neurotoxic arrest",
+      "s": "adultstg2026:20.5"
+     }
+    ]
+   },
+   {
+    "label": "If boomslang / haemotoxic",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "No IM injections; pressure on bleeding sites",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "20WBCT 6-hourly; INR, fibrinogen, D-dimer",
+      "s": "adultstg2026:19.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Monovalent boomslang 20 mL in 50–100 mL NaCl / D5W over 5–10 min",
+      "s": "adultstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "Repeat 10 mL if coagulopathy persists after 6 h",
+      "s": "adultstg2026:19.7"
+     },
+     {
+      "t": "Blood products if bleeding (2 units O-neg, FDP on site)",
+      "s": "adultstg2026:19.3"
+     }
+    ]
+   },
+   {
+    "label": "If scorpion",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Neuro + respiratory monitoring continuous",
+      "s": "adultstg2026:19.8",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, electrolytes, gas if severe",
+      "s": "muller2012:361",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Grade I–II: lidocaine 1–2% 2 mL local, ice, paracetamol",
+      "s": "adultstg2026:19.9"
+     },
+     {
+      "t": "Systemic neurotoxic (grade III–IV): scorpion antivenom 10 mL in 100 mL over 10 min; may repeat",
+      "s": "adultstg2026:19.8",
+      "b": 1
+     },
+     {
+      "t": "Cramps: calcium gluconate 10% 10 mL over 10 min, repeat once (max 2 g)",
+      "s": "adultstg2026:19.9"
+     },
+     {
+      "t": "Opiates only with caution",
+      "s": "adultstg2026:19.9"
+     }
+    ]
+   },
+   {
+    "label": "If button spider",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Observe ≥ 24 h",
+      "s": "adultstg2026:19.10",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Systemic: spider antivenom 5–10 mL in 50–100 mL over 5–10 min",
+      "s": "adultstg2026:19.10",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Antivenom doses (same adult + child)",
+   "items": [
+    {
+     "h": "Snake polyvalent (SAVP) — 1 amp = 10 mL"
+    },
+    {
+     "t": "Pre-treat adrenaline 0.25 mL 1:1 000 SC (child 0.01 mL/kg, max 0.25)",
+     "s": "adultstg2026:19.5"
+    },
+    {
+     "t": "Cytotoxic unidentified 50 · puff adder 80 · Moz. spitting cobra 100 · neurotoxic 80–100 (mamba ≤ 200) mL",
+     "s": "adultstg2026:19.5"
+    },
+    {
+     "t": "Dilute in NaCl 0.9% 200 mL, over 30 min",
+     "s": "adultstg2026:19.6"
+    },
+    {
+     "h": "Boomslang monovalent"
+    },
+    {
+     "t": "20 mL over 5–10 min; repeat 10 mL after 6 h",
+     "s": "adultstg2026:19.6"
+    },
+    {
+     "h": "Scorpion"
+    },
+    {
+     "t": "10 mL in 100 mL over 10 min; repeat if needed",
+     "s": "adultstg2026:19.8"
+    },
+    {
+     "h": "Spider (button)"
+    },
+    {
+     "t": "5–10 mL in 50–100 mL over 5–10 min",
+     "s": "adultstg2026:19.10"
+    }
+   ]
+  },
+  {
+   "title": "Supportive · paeds note",
+   "items": [
+    {
+     "t": "No NSAIDs (bleeding, renal failure)",
+     "s": "adultstg2026:19.4",
+     "b": 1
+    },
+    {
+     "t": "Amoxicillin/clavulanate 875/125 mg 12-hourly × 5 d only if infected",
+     "s": "adultstg2026:19.3"
+    },
+    {
+     "t": "Child: paracetamol 15 mg/kg; Ca gluconate 0.5 mL/kg slow IV (scorpion cramps); TIG 75 / 125 / 250 IU by age",
+     "s": "paedstg2026:18.33"
+    },
+    {
+     "t": "Child: cytotoxic swelling threshold > 2.5 cm/h; INR > 1.5",
+     "s": "paedstg2026:18.34"
+    },
+    {
+     "t": "Scorpion: children vulnerable — respiratory failure within 1–2 h",
+     "s": "muller2012:360",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Ptosis, dysphagia, falling breath count → antivenom + bag-mask / intubate → REFER",
+     "s": "adultstg2026:19.3",
+     "b": 1
+    },
+    {
+     "t": "Antivenom reaction → stop, adrenaline IM, restart slowly when settled",
+     "d": 1
+    },
+    {
+     "t": "Bleeding / unclotted 20WBCT → boomslang antivenom",
+     "s": "adultstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Antivenom not stocked → SAVP / refer early",
+     "s": "adultstg2026:19.1"
+    },
+    {
+     "t": "Poisons Information Helpline 0861 555 777",
+     "s": "adultstg2026:19.1"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Observed snake 24 h / scorpion ≥ 12 h / spider ≥ 24 h",
+    "s": "adultstg2026:19.3"
+   },
+   {
+    "t": "No swelling progression; neuro normal",
+    "d": 1
+   },
+   {
+    "t": "Bloods / 20WBCT normal (boomslang repeated)",
+    "s": "adultstg2026:19.6"
+   },
+   {
+    "t": "Pain controlled on paracetamol",
+    "s": "adultstg2026:19.4"
+   },
+   {
+    "t": "Tetanus up to date",
+    "s": "adultstg2026:19.3"
+   },
+   {
+    "t": "Wound plan; antibiotics only if infected",
+    "s": "adultstg2026:19.3"
+   },
+   {
+    "t": "Told: serum sickness (fever, rash, joint pain) 1–2 weeks after antivenom → return",
+    "d": 1
+   },
+   {
+    "t": "Prevention advice (shoes, torch)",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic 2–3 days: wound / necrosis check",
+    "d": 1
+   },
+   {
+    "t": "Necrosis → debridement REFER (no theatre)",
+    "s": "adultstg2026:19.9"
+   },
+   {
+    "t": "Boomslang: clotting checks over a few days",
+    "s": "adultstg2026:19.6"
+   },
+   {
+    "t": "Return: bleeding, weakness, spreading swelling",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing envenomation record — swelling, neuro, clotting",
+  "period": "24 hours, hourly rows (15-min during antivenom on the free-text line)",
+  "params": [
+   {
+    "h": "Swelling",
+    "items": [
+     {
+      "t": "Mark edge + time hourly; cm above bite",
+      "s": "adultstg2026:19.5"
+     },
+     {
+      "t": "> 5 cm/h → call",
+      "s": "adultstg2026:19.5"
+     }
+    ]
+   },
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "Ptosis, swallow, single-breath count hourly",
+      "d": 1
+     },
+     {
+      "t": "Drooling / weakness → call",
+      "s": "adultstg2026:19.2"
+     }
+    ]
+   },
+   {
+    "h": "Clotting",
+    "items": [
+     {
+      "t": "20WBCT 6-hourly if haemotoxic",
+      "s": "adultstg2026:19.6"
+     },
+     {
+      "t": "Bleeding sites",
+      "s": "adultstg2026:19.2"
+     }
+    ]
+   },
+   {
+    "h": "Antivenom",
+    "items": [
+     {
+      "t": "Obs every 15 min during + 1 h after",
+      "d": 1
+     },
+     {
+      "t": "Rash, wheeze, BP drop → stop, call",
+      "s": "adultstg2026:19.4"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Ptosis, difficulty swallowing or breathing, breath count falling",
+    "s": "adultstg2026:19.2",
+    "b": 1
+   },
+   {
+    "t": "Swelling > 5 cm/h or reaching the trunk",
+    "s": "adultstg2026:19.5",
+    "b": 1
+   },
+   {
+    "t": "Bleeding, unclotted 20WBCT",
+    "s": "adultstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Reaction during antivenom",
+    "s": "adultstg2026:19.4",
+    "b": 1
+   },
+   {
+    "t": "Scorpion: restless, jerking, drooling",
+    "s": "paedstg2026:18.30"
+   }
+  ],
+  "totals": [
+   "Antivenom (type, mL, time)",
+   "Max swelling (cm)",
+   "20WBCT results",
+   "Analgesia given"
+  ]
+ }
+}

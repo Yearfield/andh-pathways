@@ -1,0 +1,324 @@
+{
+ "id": "dislocation-shoulder-adult",
+ "short": "Shoulder dislocation",
+ "title": "Shoulder dislocation (anterior) — reduce",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "regimen": "Axillary nerve before/after · X-ray first · external rotation ± sedation",
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the STG.",
+ "sources": [
+  "stg-phc",
+  "stg-adult",
+  "msd"
+ ],
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered cells (m=a/b/c). steps[].decisions[]: if/then. reference{}: blocks (items or table).",
+ "indications": [
+  {
+   "h": "Anterior dislocation (95%)",
+   "col": 1,
+   "items": [
+    {
+     "t": "Abduction + external rotation injury; squared shoulder, prominent acromion",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Arm held slightly abducted; will not move it",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Look for",
+   "col": 2,
+   "items": [
+    {
+     "t": "Axillary nerve: numb patch over deltoid",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Radial / median / ulnar function, radial pulse",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Greater tuberosity fracture, rotator cuff tear (older)",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Consult ortho before reducing",
+   "col": 1,
+   "items": [
+    {
+     "t": "Humeral neck fracture with dislocation",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Dislocated > 7–10 days (axillary artery risk)",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Posterior or inferior (luxatio erecta)",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Child (physeal fracture)",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "ANDH capacity",
+   "col": 2,
+   "items": [
+    {
+     "t": "Failed reduction → REFER (GA)",
+     "d": 1
+    },
+    {
+     "t": "Vascular deficit → REFER urgently",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": "1",
+   "title": "Assess & image",
+   "time": "T − 20 min",
+   "subtitle": "",
+   "actions": [
+    {
+     "t": "Analgesia early",
+     "n": "1.1",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Document axillary nerve (deltoid sensation), distal nerves, radial pulse",
+     "n": "1.2",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "X-ray: true AP + scapular Y / axillary — exclude fracture",
+     "n": "1.3",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "title": "Choose the method",
+   "time": "T − 10 min",
+   "subtitle": "gentle first; sedation only if needed",
+   "actions": [
+    {
+     "t": "One gentle attempt without sedation (external rotation, FARES, scapular manipulation)",
+     "n": "2.1",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Spasm / anxious / forceful method → procedural sedation card",
+     "n": "2.2",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Intra-articular lidocaine is an alternative to sedation",
+     "n": "2.3",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "title": "Reduce — external rotation",
+   "time": "T 0",
+   "subtitle": "slow, 5–10 min, talk to the patient",
+   "actions": [
+    {
+     "t": "Patient supine; adduct the arm, elbow flexed 90°",
+     "n": "3.1",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Slowly externally rotate over 5–10 min, pausing with spasm",
+     "n": "3.2",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Reduces usually at 70–110° external rotation",
+     "n": "3.3",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Not reduced: then forward-flex / scapular manipulation",
+     "n": "3.4",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Fails under sedation × 2 methods",
+     "then": "stop, sling, REFER for reduction under GA",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "4",
+   "title": "Confirm & immobilise",
+   "time": "T + 5 min",
+   "subtitle": "",
+   "actions": [
+    {
+     "t": "Sling (± swathe) immediately",
+     "n": "4.1",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Repeat axillary nerve + distal neurovascular exam",
+     "n": "4.2",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Post-reduction X-ray (AP + Y)",
+     "n": "4.3",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "title": "Discharge & follow-up",
+   "time": "awake",
+   "subtitle": "",
+   "actions": [
+    {
+     "t": "Analgesia; sling ~1–3 weeks then physiotherapy",
+     "n": "5.1",
+     "d": 1
+    },
+    {
+     "t": "Ortho clinic 1–2 weeks: ≤ 40 y recurrence risk, > 40 y rotator cuff",
+     "n": "5.2",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Return: numbness, weakness, cold hand",
+     "n": "5.3",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "blocks": [
+   {
+    "title": "METHODS",
+    "table": {
+     "cols": [
+      "Method",
+      "Sedation",
+      "Note"
+     ],
+     "rows": [
+      {
+       "v": [
+        "External rotation",
+        "often none",
+        "slow 5–10 min"
+       ],
+       "s": "msd:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "FARES / scapular manipulation",
+        "often none",
+        "gentle"
+       ],
+       "s": "msd:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "Davos (self-reduction)",
+        "none",
+        "patient-controlled"
+       ],
+       "s": "msd:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "Traction–countertraction",
+        "PSA",
+        "more force; sheet round chest"
+       ],
+       "s": "msd:web",
+       "d": 1
+      }
+     ]
+    }
+   },
+   {
+    "title": "PITFALLS",
+    "items": [
+     {
+      "t": "Avoid Hippocratic foot-in-axilla / forceful levering",
+      "s": "msd:web",
+      "d": 1
+     },
+     {
+      "t": "Posterior dislocation (epileptic seizure, electrocution) is missed on AP — get Y / axillary view",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Document nerves BEFORE any attempt",
+      "s": "msd:web",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Elderly: reduce sedative doses substantially",
+      "s": "stg-adult:20.18",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ }
+}

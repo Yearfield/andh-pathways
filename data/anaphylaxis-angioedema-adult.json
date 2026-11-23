@@ -1,0 +1,1350 @@
+{
+ "id": "anaphylaxis-angioedema-adult",
+ "short": "Anaphylaxis_Angioedema_Adult",
+ "title": "Anaphylaxis & angioedema (adult)",
+ "population": "Adult (paediatric doses in a note box)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Child → paediatric STG 1.1.3",
+     "s": "paedstg2026:1.5"
+    },
+    {
+     "t": "Isolated urticaria, well → PHC 5.10.1",
+     "s": "phcstg2026:5.25"
+    },
+    {
+     "t": "Cardiac arrest → CPR + adrenaline (Fig 20.1)",
+     "s": "adultstg2026:20.10",
+     "b": 1
+    },
+    {
+     "t": "Infective neck swelling (Ludwig, quinsy, epiglottitis) → ENT pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — acute onset + any",
+   "items": [
+    {
+     "t": "Urticaria / flushing / angioedema",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "Bronchospasm, wheeze, chest tightness",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "Laryngeal oedema, stridor, hoarse voice",
+     "s": "phcstg2026:21.28",
+     "b": 1
+    },
+    {
+     "t": "Hypotension / shock",
+     "s": "phcstg2026:21.28",
+     "b": 1
+    },
+    {
+     "t": "Vomiting, diarrhoea, abdominal cramps",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "> 2 body systems, or 1 serious system → treat as anaphylaxis",
+     "s": "adultstg2026:20.10",
+     "b": 1
+    },
+    {
+     "t": "Swelling WITHOUT urticaria / itch / systemic features → think bradykinin",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Exposure ______  Time ______  BP ____/____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of → adrenaline now (0 h)",
+   "items": [
+    {
+     "t": "Stridor, voice change, tongue / floor-of-mouth swelling",
+     "s": "phcstg2026:5.25",
+     "b": 1
+    },
+    {
+     "t": "Drooling, cannot swallow saliva",
+     "d": 1
+    },
+    {
+     "t": "Hypotension / shock / collapse",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "Bronchospasm with SpO₂ falling",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Progressive swelling over minutes",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "ACE-inhibitor (enalapril) — even if taken for years",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Previous angioedema episodes",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "Family history of swelling (HAE)",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "Known allergies / alert bracelet",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "β-blocker (poor adrenaline response)",
+     "d": 1
+    },
+    {
+     "t": "Asthma",
+     "d": 1
+    },
+    {
+     "t": "HIV / ART (new drugs: cotrimoxazole, nevirapine)",
+     "d": 1
+    },
+    {
+     "t": "Recent new medicine, contrast, vaccine",
+     "s": "adultstg2026:20.10"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Trigger"
+    },
+    {
+     "t": "Drug / injection / infusion",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "Food, sting, latex",
+     "d": 1
+    },
+    {
+     "t": "Vaccination (5–60 min)",
+     "s": "adultstg2026:20.11"
+    },
+    {
+     "t": "No trigger: ACE-I, HAE, trauma / dental work",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "h": "Time course"
+    },
+    {
+     "t": "Seconds–minutes (allergic)",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "Hours, slow build, no itch (bradykinin)",
+     "d": 1
+    },
+    {
+     "t": "Recurrence after hours (biphasic)",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "h": "Airway symptoms"
+    },
+    {
+     "t": "Voice change, throat tightness, dysphagia",
+     "d": 1
+    },
+    {
+     "t": "Breathlessness, wheeze",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Abdominal pain attacks (HAE)",
+     "d": 1
+    },
+    {
+     "t": "Faint after needle, quick recovery (vasovagal)",
+     "s": "adultstg2026:20.11"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "SpO₂ < 94% → oxygen",
+     "s": "adultstg2026:20.12",
+     "k": "sub"
+    },
+    {
+     "t": "Brief LOC, low HR, recovers lying flat → vasovagal",
+     "s": "adultstg2026:20.11",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Airway — look every 15 min"
+    },
+    {
+     "t": "Lips / tongue / uvula swelling",
+     "s": "phcstg2026:5.25"
+    },
+    {
+     "t": "Floor of mouth, drooling",
+     "d": 1
+    },
+    {
+     "t": "Stridor / hoarse voice",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "Tripod, cannot lie flat",
+     "d": 1
+    },
+    {
+     "h": "Breathing / circulation"
+    },
+    {
+     "t": "Wheeze",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Cold, weak pulses",
+     "s": "phcstg2026:21.30"
+    },
+    {
+     "t": "Urticaria / flushing",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "Abdominal tenderness",
+     "d": 1
+    },
+    {
+     "h": "Neck — for FONA"
+    },
+    {
+     "t": "Cricothyroid membrane palpable / marked",
+     "d": 1
+    },
+    {
+     "t": "Short / obese neck",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Airway assessment (repeat)",
+   "items": [
+    {
+     "t": "Time ____ voice: normal / hoarse / none",
+     "k": "value"
+    },
+    {
+     "t": "Swelling of lips / face only → watch, treat cause",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "Tongue, floor of mouth, stridor, voice change → definitive airway early",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Call most skilled person; double set-up (side 2)",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Repeat every 15 min until stable",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Histamine or bradykinin?",
+   "items": [
+    {
+     "t": "Urticaria, itch, wheeze, hypotension → ALLERGIC: adrenaline",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "No urticaria, ACE-I / family Hx → BRADYKININ",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Bradykinin: plasma 2 units; antihistamine / steroid usually do not work",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "Unsure + airway threatened → give adrenaline anyway",
+     "s": "phcstg2026:5.25"
+    },
+    {
+     "t": "SA Angioedema Hotline 082 091 5684",
+     "s": "adultstg2026:20.9"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Stridor / voice change",
+     "s": "phcstg2026:21.28"
+    },
+    {
+     "t": "Refractory hypotension",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Severe bronchospasm",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Biphasic recurrence",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "ACE-I angioedema",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "Deep neck infection",
+     "d": 1
+    },
+    {
+     "t": "Vasovagal / stress response (not anaphylaxis)",
+     "s": "adultstg2026:20.11"
+    },
+    {
+     "t": "Myocardial ischaemia after adrenaline",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = ANAPHYLAXIS or THREATENED AIRWAY → adrenaline IM / definitive airway → REFER if intubated or refractory",
+   "s": "adultstg2026:20.9",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (all anaphylaxis, all airway angioedema) — observe for biphasic reaction on the 24-hour hourly chart and the 12-hour nursing record",
+   "s": "adultstg2026:20.10",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Anaphylaxis (allergic, histamine)",
+   "branch": "0 h",
+   "features": [
+    {
+     "t": "Minutes after trigger",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "Urticaria, wheeze, hypotension, GI",
+     "s": "phcstg2026:21.28"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical",
+     "b": 1
+    },
+    {
+     "t": "Mast-cell tryptase within 1–3 h if NHLS available",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Adrenaline 0.5 mg IM thigh, repeat q 5 min",
+     "s": "adultstg2026:20.12",
+     "b": 1
+    },
+    {
+     "t": "NaCl 0.9% 1–2 L, hydrocortisone 200 mg",
+     "s": "phcstg2026:21.30"
+    },
+    {
+     "t": "Refractory: adrenaline infusion 0.05 mcg/kg/min",
+     "s": "adultstg2026:20.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If intubated / refractory; else observe 24 h",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Allergic angioedema (no shock)",
+   "branch": "0 h",
+   "features": [
+    {
+     "t": "Lips/eyes swelling + urticaria/itch",
+     "s": "adultstg2026:20.9"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Airway check q 15 min",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Promethazine 25–50 mg IM/IV + hydrocortisone 100 mg IV",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "Airway threatened: adrenaline 0.5 mg IM",
+     "s": "phcstg2026:5.25",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If airway intervention needed",
+     "s": "adultstg2026:20.9"
+    }
+   ]
+  },
+  {
+   "dx": "ACE-inhibitor angioedema (bradykinin)",
+   "branch": "If bradykinin angioedema",
+   "features": [
+    {
+     "t": "On ACE-I, no urticaria / itch",
+     "s": "adultstg2026:20.9"
+    },
+    {
+     "t": "Tongue / lips, slow onset",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Drug history",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "STOP ACE-I",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Threatened airway: lyophilised plasma 2 units (FFP 2 units)",
+     "s": "adultstg2026:20.10",
+     "b": 1
+    },
+    {
+     "t": "Early definitive airway",
+     "s": "adultstg2026:20.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if airway intervention; hotline",
+     "s": "adultstg2026:20.9"
+    }
+   ]
+  },
+  {
+   "dx": "Hereditary / acquired C1-INH angioedema",
+   "branch": "If bradykinin angioedema",
+   "features": [
+    {
+     "t": "Recurrent, family history, abdominal attacks",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "C4 (± C1-INH level) via NHLS",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Plasma 2 units as for ACE-I",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "Specific therapy via Angioedema Hotline",
+     "s": "adultstg2026:20.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immunology",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Vasovagal / acute stress response",
+   "branch": "",
+   "features": [
+    {
+     "t": "LOC < 1 min, low HR, low BP, pale, recovers lying",
+     "s": "adultstg2026:20.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "STG Table 20.1",
+     "s": "adultstg2026:20.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lie flat, raise legs; treat as anaphylaxis if not brief",
+     "s": "adultstg2026:20.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute asthma / deep neck infection",
+   "branch": "",
+   "features": [
+    {
+     "t": "Wheeze without skin signs; fever, trismus, neck swelling",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PEFR; neck exam; FBC",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Asthma pathway / ENT pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per pathway",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Biphasic reactions recur hours later — observe 24 h · airway reassessed every 15 min until stable",
+  "columns": {
+   "feed": "Airway, fluids & obs",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Airway check (voice, stridor, tongue) every 15 min until stable",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR, BP, RR, SpO₂ every 15 min for 1 h, every 30 min to 4 h, then hourly to 24 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Monitor all vital parameters closely",
+    "s": "adultstg2026:20.10",
+    "b": 1
+   },
+   {
+    "t": "Lie flat if hypotensive; do not sit up a shocked patient",
+    "s": "phcstg2026:21.29",
+    "b": 1
+   },
+   {
+    "t": "Record on the 12-hour nursing airway & circulation record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for adrenaline already given (dose, time). Remove the trigger (stop infusion). Call the most skilled airway person now if voice change or stridor.",
+    "feed": [
+     {
+      "t": "Lie flat, legs up if hypotensive",
+      "s": "phcstg2026:21.29",
+      "b": 1
+     },
+     {
+      "t": "Oxygen 15 L/min face mask if severe",
+      "s": "phcstg2026:21.29",
+      "b": 1
+     },
+     {
+      "t": "IV access; NaCl 0.9% 1–2 L as fast as possible if hypotensive, repeat",
+      "s": "phcstg2026:21.30",
+      "b": 1
+     },
+     {
+      "t": "Monitor ECG, SpO₂, BP",
+      "s": "adultstg2026:20.10"
+     },
+     {
+      "t": "Open airway kit: RSI drugs, bougie, smaller ETT, scalpel #10",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Tryptase (if NHLS available) 1–3 h after onset",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E if admitted",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG if chest pain / > 50 y / repeated adrenaline",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "C4 if bradykinin suspected",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Anaphylaxis / threatened airway — FIRST",
+      "s": "adultstg2026:20.12"
+     },
+     {
+      "t": "Adrenaline 1:1 000, 0.5 mL (0.5 mg) IM anterolateral thigh NOW",
+      "s": "adultstg2026:20.12",
+      "b": 1
+     },
+     {
+      "t": "Repeat every 5 min as needed",
+      "s": "adultstg2026:20.12",
+      "b": 1
+     },
+     {
+      "t": "2 IM doses + still shocked → adrenaline infusion (side 2)",
+      "s": "adultstg2026:20.12",
+      "b": 1
+     },
+     {
+      "t": "Hydrocortisone 200 mg IV/IM once",
+      "s": "adultstg2026:20.12"
+     },
+     {
+      "h": "If wheeze"
+     },
+     {
+      "t": "Salbutamol 5 mg + ipratropium 0.5 mg neb, continuous, refill every 20 min",
+      "s": "adultstg2026:20.12"
+     },
+     {
+      "h": "If urticaria / itch"
+     },
+     {
+      "t": "Promethazine 25–50 mg IV or cetirizine 10 mg PO",
+      "s": "adultstg2026:20.13"
+     },
+     {
+      "h": "If stridor (adjunct)"
+     },
+     {
+      "t": "Nebulised adrenaline 1 mL 1:1 000 + 1 mL NaCl every 15–30 min (Paed STG dose; adult use extrapolated)",
+      "s": "paedstg2026:1.6",
+      "d": 1
+     },
+     {
+      "h": "No urticaria + ACE-I"
+     },
+     {
+      "t": "→ bradykinin row, side 2",
+      "s": "adultstg2026:20.9"
+     }
+    ]
+   },
+   {
+    "label": "5 min",
+    "phase": "Re-dose?",
+    "feed": [
+     {
+      "t": "HR ___ BP ___/___ SpO₂ ___ voice ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat airway look",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No improvement: adrenaline IM again",
+      "s": "adultstg2026:20.12",
+      "b": 1
+     },
+     {
+      "t": "Voice change / stridor progressing → airway row now",
+      "s": "adultstg2026:20.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "15 min",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Second fluid bolus if still hypotensive",
+      "s": "phcstg2026:21.30"
+     },
+     {
+      "t": "Watch for fluid overload",
+      "s": "phcstg2026:21.30"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG if tachycardic after adrenaline",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Persistent hypotension / multiple doses → adrenaline infusion 0.05 mcg/kg/min",
+      "s": "adultstg2026:20.12",
+      "b": 1
+     },
+     {
+      "t": "On β-blocker, poor response → discuss glucagon",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Settled?",
+    "feed": [
+     {
+      "t": "Off oxygen? Swelling regressing?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Tryptase if not yet sent",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Intubated or on infusion → REFER (ICU)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Settled → admit, observe",
+      "s": "adultstg2026:20.10"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Biphasic watch",
+    "feed": [
+     {
+      "t": "Obs every 30 min → hourly",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrence → restart at 0 h (adrenaline IM)",
+      "s": "adultstg2026:20.10",
+      "b": 1
+     },
+     {
+      "t": "Cetirizine 10 mg PO if itch",
+      "s": "adultstg2026:20.13"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Eating, swallowing, voice normal?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Review tryptase / C4 if sent",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Identify trigger; document allergy in folder",
+      "s": "adultstg2026:20.10",
+      "b": 1
+     },
+     {
+      "t": "ACE-I: stop permanently; change antihypertensive class",
+      "s": "adultstg2026:20.9"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "No recurrence for 24 h",
+      "s": "paedstg2026:1.6",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria (box below)",
+      "d": 1
+     },
+     {
+      "t": "Alert bracelet; avoid re-exposure",
+      "s": "adultstg2026:20.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Airway threatened",
+    "phase": "Double set-up",
+    "feed": [
+     {
+      "t": "Most skilled person; second doctor scrubbed at the neck",
+      "s": "adultstg2026:20.9",
+      "b": 1
+     },
+     {
+      "t": "Sit up if not hypotensive; pre-oxygenate",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Mark cricothyroid membrane (laryngeal handshake)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Establish definitive airway EARLY if swelling extensive or progressing",
+      "s": "adultstg2026:20.9",
+      "b": 1
+     },
+     {
+      "t": "Plan A: awake look / RSI with ketamine; smaller ETT, bougie, video laryngoscope if any",
+      "d": 1
+     },
+     {
+      "t": "Plan B: one SGA attempt if oxygenating",
+      "d": 1
+     },
+     {
+      "t": "CICO → FONA: scalpel–bougie–tube (#10 blade, bougie, 6.0 ETT)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Low threshold for surgical airway",
+      "s": "adultstg2026:20.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "FONA steps",
+    "phase": "Can't intubate, can't oxygenate",
+    "feed": [
+     {
+      "t": "Neck extended; stand on the patient's left (right-handed)",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "1 Stab horizontally through cricothyroid membrane, blade turned 90° (sharp edge caudal)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "2 Slide bougie along the blade into trachea",
+      "d": 1
+     },
+     {
+      "t": "3 Railroad lubricated 6.0 cuffed ETT, inflate, ventilate, confirm EtCO₂",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Membrane impalpable: 8–10 cm vertical skin incision, then as above",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If bradykinin angioedema",
+    "phase": "ACE-I / HAE",
+    "feed": [
+     {
+      "t": "Airway check every 15 min; may progress for hours",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "C4 · drug history",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "STOP the ACE-inhibitor",
+      "s": "adultstg2026:20.9",
+      "b": 1
+     },
+     {
+      "t": "Threatened airway: lyophilised plasma 2 units IV (FFP 2 units if unavailable)",
+      "s": "adultstg2026:20.10",
+      "b": 1
+     },
+     {
+      "t": "Adrenaline / antihistamine / steroid often ineffective — do not delay airway",
+      "d": 1
+     },
+     {
+      "t": "Call SA Angioedema Hotline 082 091 5684",
+      "s": "adultstg2026:20.9"
+     },
+     {
+      "t": "Observe until resolution",
+      "s": "adultstg2026:20.10",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Adrenaline",
+   "items": [
+    {
+     "h": "IM (first line)"
+    },
+    {
+     "t": "1:1 000, 0.5 mL = 0.5 mg, anterolateral thigh, repeat q 5 min",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "h": "Infusion (refractory)"
+    },
+    {
+     "t": "10 mg (10 amp 1:1 000) in 1 L NaCl 0.9% = 10 mcg/mL",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Start 0.05 mcg/kg/min: 50 kg 15 · 60 kg 18 · 70 kg 21 · 80 kg 24 · 90 kg 27 mL/h",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "0.1 mcg/kg/min: 70 kg 42 mL/h; titrate to BP",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "h": "Avoid"
+    },
+    {
+     "t": "IV bolus 1:1 000 in a patient with a pulse",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "title": "Other drugs · paeds note",
+   "items": [
+    {
+     "t": "Hydrocortisone 200 mg IV/IM once (100 mg for angioedema)",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Promethazine 25–50 mg IV/IM · cetirizine 10 mg PO",
+     "s": "adultstg2026:20.13"
+    },
+    {
+     "t": "Salbutamol 5 mg + ipratropium 0.5 mg neb, continuous",
+     "s": "adultstg2026:20.12"
+    },
+    {
+     "t": "Plasma (lyophilised) 2 units / FFP 2 units — bradykinin",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "h": "Child (Paed STG)"
+    },
+    {
+     "t": "Adrenaline 0.01 mL/kg 1:1 000 IM (max 0.5 mL) q 5 min; NaCl 20 mL/kg (to 60); hydrocortisone 5 mg/kg; promethazine 0.25–0.5 mg/kg (not < 2 y)",
+     "s": "paedstg2026:1.5"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Voice change, stridor, drooling, tongue swelling → airway row now",
+     "s": "adultstg2026:20.9",
+     "b": 1
+    },
+    {
+     "t": "Hypotension after 2 IM doses → infusion, REFER",
+     "s": "adultstg2026:20.12",
+     "b": 1
+    },
+    {
+     "t": "Recurrence within 24 h → adrenaline IM again",
+     "s": "adultstg2026:20.10"
+    },
+    {
+     "t": "Chest pain / arrhythmia after adrenaline → ECG",
+     "d": 1
+    },
+    {
+     "t": "Intubated → REFER (ICU)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Do not transfer during the acute phase; only once stable",
+     "s": "paedstg2026:1.7"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No symptoms or recurrence for 24 h",
+    "s": "paedstg2026:1.6"
+   },
+   {
+    "t": "Airway and voice normal, swallowing",
+    "d": 1
+   },
+   {
+    "t": "Trigger identified and written in folder + letter",
+    "s": "adultstg2026:20.10"
+   },
+   {
+    "t": "Alert bracelet advised",
+    "s": "adultstg2026:20.10"
+   },
+   {
+    "t": "ACE-I stopped and alternative prescribed",
+    "s": "adultstg2026:20.9"
+   },
+   {
+    "t": "Taught: return immediately if swelling / wheeze",
+    "d": 1
+   },
+   {
+    "t": "Self-injectable adrenaline: specialist decision (not on EML)",
+    "s": "paedstg2026:1.7"
+   },
+   {
+    "t": "Cetirizine 10 mg daily × 3 days if urticaria",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "OPD 2 weeks: trigger, alternative drugs",
+    "d": 1
+   },
+   {
+    "t": "Refer allergy / immunology: unknown trigger, food, sting (desensitisation), recurrent angioedema",
+    "s": "paedstg2026:1.7"
+   },
+   {
+    "t": "HAE suspected: hotline / immunology",
+    "s": "adultstg2026:20.9"
+   },
+   {
+    "t": "Refer back: any new swelling of tongue or throat",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing airway & circulation record — anaphylaxis / angioedema",
+  "period": "12 hours (15-min rows to 1 h, 30-min to 4 h, hourly to 12 h); continue hourly to 24 h on a 2nd sheet",
+  "params": [
+   {
+    "h": "Airway",
+    "items": [
+     {
+      "t": "Voice, stridor, tongue / lip swelling every 15 min until stable",
+      "d": 1
+     },
+     {
+      "t": "Drooling or cannot swallow → call",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "HR, BP, RR, SpO₂",
+    "items": [
+     {
+      "t": "Every 15 min for 1 h, 30 min to 4 h, then hourly",
+      "d": 1
+     },
+     {
+      "t": "Lie flat if BP low",
+      "s": "phcstg2026:21.29"
+     }
+    ]
+   },
+   {
+    "h": "Skin / chest",
+    "items": [
+     {
+      "t": "Urticaria spreading / fading",
+      "d": 1
+     },
+     {
+      "t": "Wheeze present?",
+      "s": "adultstg2026:20.12"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Adrenaline: dose, route, time each",
+      "s": "adultstg2026:20.12"
+     },
+     {
+      "t": "Infusion mL/h",
+      "s": "adultstg2026:20.12"
+     },
+     {
+      "t": "Fluids given (mL)",
+      "s": "phcstg2026:21.30"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Voice change, stridor, drooling, tongue swelling",
+    "s": "adultstg2026:20.9",
+    "b": 1
+   },
+   {
+    "t": "BP falling, new wheeze or SpO₂ falling",
+    "s": "adultstg2026:20.12",
+    "b": 1
+   },
+   {
+    "t": "Symptoms returning (biphasic)",
+    "s": "adultstg2026:20.10",
+    "b": 1
+   },
+   {
+    "t": "Chest pain or irregular pulse after adrenaline",
+    "d": 1
+   },
+   {
+    "t": "Collapse / no pulse → CPR",
+    "s": "adultstg2026:20.10",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Adrenaline IM doses (n, mg)",
+   "Infusion hours",
+   "IV fluid total mL",
+   "Time last symptom"
+  ]
+ }
+}

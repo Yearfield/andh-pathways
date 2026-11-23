@@ -1,0 +1,312 @@
+{
+ "id": "dislocation-hip-adult",
+ "short": "Hip dislocation",
+ "title": "Hip dislocation (native, posterior) — reduce within 6 h",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "regimen": "Sciatic check before/after · X-ray first · Allis under deep sedation",
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the STG.",
+ "sources": [
+  "stg-phc",
+  "stg-adult",
+  "msd",
+  "clinorthop2000"
+ ],
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered cells (m=a/b/c). steps[].decisions[]: if/then. reference{}: blocks (items or table).",
+ "indications": [
+  {
+   "h": "Posterior dislocation (most)",
+   "col": 1,
+   "items": [
+    {
+     "t": "Dashboard injury: hip flexed, adducted, internally rotated, short leg",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Associated injuries common — full primary survey",
+     "s": "stg-phc:21.63"
+    },
+    {
+     "t": "Acetabular fracture in ~70% of posterior dislocations",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Time matters",
+   "col": 2,
+   "items": [
+    {
+     "t": "Reduce as soon as possible, preferably within 6 h: delay ↑ femoral head AVN",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Sciatic nerve injury ~10%, usually peroneal division",
+     "s": "clinorthop2000:84-91",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Do NOT closed-reduce",
+   "col": 1,
+   "items": [
+    {
+     "t": "Femoral neck fracture on X-ray → REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Displaced acetabular / head fracture → consult ortho first",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "ANDH capacity",
+   "col": 2,
+   "items": [
+    {
+     "t": "Failed reduction × 2 → REFER (GA / open, no theatre)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Prosthetic hip: X-ray, discuss with arthroplasty team",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": "1",
+   "title": "Assess & image",
+   "time": "T − 30 min",
+   "subtitle": "start the 6-hour clock from injury",
+   "actions": [
+    {
+     "t": "Primary survey, analgesia, record time of injury",
+     "n": "1.1",
+     "s": "stg-phc:21.64",
+     "b": 1
+    },
+    {
+     "t": "Sciatic nerve: dorsiflexion / plantarflexion, foot sensation",
+     "n": "1.2",
+     "s": "clinorthop2000:84-91",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Distal pulses; knee (effusion, instability)",
+     "n": "1.3",
+     "d": 1
+    },
+    {
+     "t": "AP pelvis + lateral hip X-ray: exclude neck fracture",
+     "n": "1.4",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "title": "Deep sedation",
+   "time": "T − 5 min",
+   "subtitle": "needs full muscle relaxation",
+   "actions": [
+    {
+     "t": "Ketofol or propofol (procedural sedation card)",
+     "n": "2.1",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Patient supine on a low trolley / mattress on floor",
+     "n": "2.2",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "title": "Reduce — Allis",
+   "time": "T 0",
+   "subtitle": "slow steady force, no jerks",
+   "actions": [
+    {
+     "t": "Assistant presses both ASIS down firmly",
+     "n": "3.1",
+     "d": 1
+    },
+    {
+     "t": "Flex hip and knee to 90°",
+     "n": "3.2",
+     "s": "msd:web",
+     "d": 1
+    },
+    {
+     "t": "Steady upward traction in line with femur; gentle internal → external rotation",
+     "n": "3.3",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Feel the clunk; extend gently",
+     "n": "3.4",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Not reduced after 2 attempts",
+     "then": "stop (AVN / fracture risk), splint, REFER urgently for GA reduction",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "4",
+   "title": "Confirm",
+   "time": "T + 5 min",
+   "subtitle": "",
+   "actions": [
+    {
+     "t": "Check stability through gentle range; leg length equal",
+     "n": "4.1",
+     "d": 1
+    },
+    {
+     "t": "Repeat sciatic nerve + pulses; document",
+     "n": "4.2",
+     "s": "clinorthop2000:84-91",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Post-reduction AP pelvis",
+     "n": "4.3",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "New nerve deficit after reduction",
+     "then": "REFER urgently (entrapment)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "title": "Admit & refer",
+   "time": "T + 1 h",
+   "subtitle": "",
+   "actions": [
+    {
+     "t": "Knee immobiliser / pillow between knees (no adduction or flexion > 90°)",
+     "n": "5.1",
+     "d": 1
+    },
+    {
+     "t": "CT pelvis needed (fragments, acetabulum) → REFER",
+     "n": "5.2",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Orthopaedic follow-up: AVN surveillance",
+     "n": "5.3",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "blocks": [
+   {
+    "title": "TIME & NERVE",
+    "table": {
+     "cols": [
+      "Item",
+      "Target / action"
+     ],
+     "rows": [
+      {
+       "v": [
+        "Time injury → reduction",
+        "< 6 h (AVN risk rises after)"
+       ],
+       "s": "msd:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "Sciatic deficit before",
+        "Reduce promptly; document"
+       ],
+       "s": "clinorthop2000:84-91",
+       "d": 1
+      },
+      {
+       "v": [
+        "Deficit after reduction",
+        "REFER urgently"
+       ],
+       "d": 1
+      },
+      {
+       "v": [
+        "Femoral neck fracture",
+        "No closed reduction — REFER"
+       ],
+       "d": 1
+      }
+     ]
+    }
+   },
+   {
+    "title": "PITFALLS",
+    "items": [
+     {
+      "t": "Anterior dislocation: leg abducted + externally rotated — consult ortho",
+      "d": 1
+     },
+     {
+      "t": "Missed ipsilateral knee / femur injury",
+      "s": "msd:web",
+      "d": 1
+     },
+     {
+      "t": "Sedation too light → spasm and failure",
+      "s": "msd:web",
+      "d": 1
+     },
+     {
+      "t": "Elderly: reduce sedative doses substantially",
+      "s": "stg-adult:20.18",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ }
+}

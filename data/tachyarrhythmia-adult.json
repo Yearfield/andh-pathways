@@ -1,0 +1,1767 @@
+{
+ "id": "tachyarrhythmia-adult",
+ "short": "Tachyarrhythmia_Adult",
+ "title": "Tachyarrhythmia (adult)",
+ "population": "Adult",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway — these have their own pathways",
+   "items": [
+    {
+     "t": "Pulseless VT / VF → cardiac arrest (Fig 20.1): UNSYNCHRONISED shock",
+     "s": "adultstg2026:20.1",
+     "b": 1
+    },
+    {
+     "t": "STEMI → ACS pathway alongside this one",
+     "s": "adultstg2026:3.24"
+    },
+    {
+     "t": "Bradycardia → Brady pathway",
+     "s": "adultstg2026:3.26"
+    },
+    {
+     "t": "Sinus tachycardia from sepsis, bleeding, PE, pain → treat the cause, do not shock",
+     "d": 1
+    },
+    {
+     "t": "Child → paediatric STG",
+     "s": "phcstg2026:21.14"
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — all required",
+   "items": [
+    {
+     "t": "Pulse rate > 150 beats/min",
+     "s": "phcstg2026:21.13",
+     "b": 1
+    },
+    {
+     "t": "Confirmed on rhythm strip / 12-lead ECG",
+     "s": "phcstg2026:21.14",
+     "b": 1
+    },
+    {
+     "h": "QRS width"
+    },
+    {
+     "t": "Narrow ≤ 0.12 s → supraventricular",
+     "s": "adultstg2026:3.15",
+     "k": "sub"
+    },
+    {
+     "t": "Wide > 0.12 s → ventricular until proved otherwise",
+     "s": "adultstg2026:3.22",
+     "k": "sub"
+    },
+    {
+     "h": "Rhythm"
+    },
+    {
+     "t": "Regular",
+     "k": "sub"
+    },
+    {
+     "t": "Irregular",
+     "k": "sub"
+    },
+    {
+     "t": "Sustained > 30 s / non-sustained",
+     "s": "adultstg2026:3.22",
+     "k": "sub"
+    },
+    {
+     "t": "HR ____  BP ____/____  Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Unstable = any one of → shock now (chart 0 h)",
+   "items": [
+    {
+     "t": "Hypotension",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Altered mental status",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Chest pain",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Acute heart failure",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Shock: cold clammy peripheries, weak pulses",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Pulse present → SYNCHRONISED cardioversion",
+     "s": "phcstg2026:21.14",
+     "b": 1
+    },
+    {
+     "t": "No pulse → UNSYNCHRONISED (defibrillate)",
+     "s": "adultstg2026:3.22",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous palpitations / SVT / AF",
+     "d": 1
+    },
+    {
+     "t": "WPW on previous ECG (delta waves)",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "IHD / previous MI / heart failure",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Rheumatic / mitral valve disease",
+     "s": "adultstg2026:3.17"
+    },
+    {
+     "t": "Thyroid disease",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "CKD / last K⁺, creatinine",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Warfarin (last INR) / anticoagulant",
+     "s": "adultstg2026:3.17"
+    },
+    {
+     "t": "Digoxin, β-blocker, verapamil, amiodarone",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "QT-prolonging drugs",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "Hypertension, diabetes, previous stroke/TIA",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Alcohol use / malnutrition",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "Previous ECG for comparison",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Palpitations: onset time"
+    },
+    {
+     "t": "Onset < 48 h / > 48 h / unknown",
+     "s": "adultstg2026:3.16",
+     "b": 1
+    },
+    {
+     "t": "Syncope / near-syncope"
+    },
+    {
+     "t": "Chest pain",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Breathlessness / orthopnoea"
+    },
+    {
+     "t": "Sudden start and stop (re-entry)",
+     "s": "adultstg2026:3.21"
+    },
+    {
+     "h": "Triggers / toxins"
+    },
+    {
+     "t": "Overdose, recreational stimulants",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "New QT-prolonging drug",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "Vomiting, diarrhoea, diuretics (K⁺)",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Alcohol binge / withdrawal",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "Fever, bleeding, pain (sinus tachy)",
+     "d": 1
+    },
+    {
+     "t": "Heat intolerance, weight loss",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "h": "HIV / TB"
+    },
+    {
+     "t": "HIV status / ART",
+     "d": 1
+    },
+    {
+     "t": "TB symptoms screen",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "Pulse > 150 → tachydysrhythmia",
+     "s": "phcstg2026:21.13",
+     "k": "sub"
+    },
+    {
+     "t": "Irregular wide QRS > 170 → WPW + AF: shock",
+     "s": "adultstg2026:3.24",
+     "k": "sub"
+    },
+    {
+     "t": "SpO₂ below 94% → oxygen 94–98%",
+     "s": "phcstg2026:21.13",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Shock / heart failure"
+    },
+    {
+     "t": "Cold, clammy peripheries",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Weak pulses",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Crepitations",
+     "d": 1
+    },
+    {
+     "t": "Raised JVP",
+     "d": 1
+    },
+    {
+     "h": "Cardiac"
+    },
+    {
+     "t": "Pulse deficit (apex > radial)",
+     "d": 1
+    },
+    {
+     "t": "Murmur (mitral stenosis)",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Cannon a-waves (AV dissociation → VT)",
+     "d": 1
+    },
+    {
+     "t": "Signs of PE / DVT",
+     "d": 1
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Goitre, tremor, eye signs",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Dehydration / bleeding",
+     "d": 1
+    },
+    {
+     "t": "Sepsis source",
+     "d": 1
+    },
+    {
+     "t": "Toxidrome (sympathomimetic, anticholinergic)",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS ___ (baseline)",
+     "k": "value"
+    },
+    {
+     "t": "Focal deficit (embolic stroke)",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Rhythm strip + 12-lead ECG",
+   "items": [
+    {
+     "t": "Narrow regular, no P waves → SVT branch",
+     "s": "adultstg2026:3.21"
+    },
+    {
+     "t": "Narrow irregular → AF branch",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Narrow ~150 regular, sawtooth → flutter: no adenosine",
+     "s": "adultstg2026:3.20"
+    },
+    {
+     "t": "Wide regular → VT branch (never adenosine / verapamil)",
+     "s": "adultstg2026:3.22",
+     "b": 1
+    },
+    {
+     "t": "Wide irregular, BBB, < 170 → treat as AF",
+     "s": "adultstg2026:3.24"
+    },
+    {
+     "t": "Wide irregular, > 170 / bizarre → WPW-AF: shock, no drugs",
+     "s": "adultstg2026:3.24",
+     "b": 1
+    },
+    {
+     "t": "Twisting QRS, long QT → torsades",
+     "s": "adultstg2026:3.25",
+     "b": 1
+    },
+    {
+     "t": "ST elevation → ACS pathway",
+     "s": "adultstg2026:3.24"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "K⁺ (VBG / U&E) + Mg²⁺",
+   "items": [
+    {
+     "t": "K⁺ ______ mmol/L   Mg²⁺ ______",
+     "k": "value"
+    },
+    {
+     "t": "K⁺ > 6.0: hyperkalaemia emergency (calcium, dextrose + insulin)",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "K⁺ < 3.5: hypokalaemia; severe/symptomatic → IV KCl",
+     "s": "adultstg2026:7.11"
+    },
+    {
+     "t": "Wide-QRS non-sustained: check K⁺ and correct if low",
+     "s": "adultstg2026:3.24"
+    },
+    {
+     "t": "Torsades: MgSO₄ 2 g IV regardless of level",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "HGT on arrival",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Pulseless → arrest algorithm",
+     "s": "adultstg2026:20.1"
+    },
+    {
+     "t": "Wide QRS (VT until proved otherwise)",
+     "s": "adultstg2026:3.22"
+    },
+    {
+     "t": "WPW with AF",
+     "s": "adultstg2026:3.24"
+    },
+    {
+     "t": "Torsades / long QT",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "Acute MI / ischaemia",
+     "s": "adultstg2026:3.24"
+    },
+    {
+     "t": "Hyper- / hypokalaemia",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Toxin / overdose",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Thyrotoxicosis",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Acute pulmonary oedema",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Embolic stroke (AF)",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Sepsis / bleeding (sinus tachy)",
+     "d": 1
+    },
+    {
+     "t": "Pulmonary embolism",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = UNSTABLE or ANY WIDE-QRS → shock / stabilise → REFER",
+   "s": "adultstg2026:3.25",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (stable narrow-QRS: SVT reverted, AF / flutter rate-controlled) — stabilise, then continue on the 24-hour hourly chart and the 12-hour nursing cardiac record",
+   "s": "adultstg2026:3.15",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Pulseless VT / VF",
+   "branch": "",
+   "features": [
+    {
+     "t": "No pulse, unresponsive",
+     "s": "adultstg2026:20.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Monitor / AED rhythm",
+     "s": "adultstg2026:20.1",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "CPR + UNSYNCHRONISED shock: biphasic 120–360 J / monophasic 360 J",
+     "s": "adultstg2026:20.1",
+     "b": 1
+    },
+    {
+     "t": "Adrenaline 1 mg IV q 3–5 min",
+     "s": "adultstg2026:20.5"
+    },
+    {
+     "t": "Amiodarone 300 mg IV 2 min after adrenaline (shock-refractory), then 150 mg",
+     "s": "adultstg2026:20.4"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — after ROSC, ICU",
+     "s": "adultstg2026:20.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Ventricular tachycardia (regular wide QRS)",
+   "branch": "If VT (regular wide)",
+   "features": [
+    {
+     "t": "Wide > 0.12 s, regular",
+     "s": "adultstg2026:3.22"
+    },
+    {
+     "t": "IHD, previous MI",
+     "d": 1
+    },
+    {
+     "t": "AV dissociation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "12-lead ECG",
+     "s": "phcstg2026:21.14",
+     "b": 1
+    },
+    {
+     "t": "K⁺, Mg²⁺",
+     "s": "adultstg2026:3.24",
+     "b": 1
+    },
+    {
+     "t": "Troponin",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Sync DC 200 J → 360 J after midazolam 1–2.5 mg IV, even if stable",
+     "s": "adultstg2026:3.22",
+     "b": 1
+    },
+    {
+     "t": "Recurs: amiodarone 5 mg/kg IV over 30 min",
+     "s": "adultstg2026:3.23"
+    },
+    {
+     "t": "Never adenosine / verapamil",
+     "s": "adultstg2026:3.22",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all, after stabilisation",
+     "s": "adultstg2026:3.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Torsades de pointes",
+   "branch": "If torsades",
+   "features": [
+    {
+     "t": "Twisting QRS, long QT in sinus",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "QT drugs, low K⁺, alcohol",
+     "s": "adultstg2026:3.25"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG: QT",
+     "b": 1
+    },
+    {
+     "t": "K⁺, Mg²⁺",
+     "s": "adultstg2026:3.25",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "MgSO₄ 2 g IV over 5–10 min; recurrent: 2 g over 24 h",
+     "s": "adultstg2026:3.25",
+     "b": 1
+    },
+    {
+     "t": "Stop QT drugs, correct K⁺",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "t": "Pulseless / unstable: defibrillate (unsync)",
+     "s": "adultstg2026:3.25"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all wide QRS",
+     "s": "adultstg2026:3.25",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "WPW with AF (pre-excited AF)",
+   "branch": "If irregular wide / WPW-AF",
+   "features": [
+    {
+     "t": "Irregular, wide, > 170, bizarre/variable",
+     "s": "adultstg2026:3.24"
+    },
+    {
+     "t": "Young, known WPW",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "12-lead ECG; delta waves when in sinus",
+     "s": "adultstg2026:3.16",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "SYNC DC cardioversion; no drugs",
+     "s": "adultstg2026:3.24",
+     "b": 1
+    },
+    {
+     "t": "No verapamil, digoxin, adenosine",
+     "s": "adultstg2026:3.24",
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ablation",
+     "s": "adultstg2026:3.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "AV re-entry tachycardia (SVT: AVNRT / AVRT)",
+   "branch": "If SVT (narrow regular)",
+   "features": [
+    {
+     "t": "Narrow, regular, no visible P",
+     "s": "adultstg2026:3.21"
+    },
+    {
+     "t": "Young, sudden on/off",
+     "s": "adultstg2026:3.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Rhythm strip during adenosine",
+     "s": "adultstg2026:3.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Modified Valsalva",
+     "s": "adultstg2026:3.21"
+    },
+    {
+     "t": "Adenosine 6 → 12 → 12 mg rapid IV + 10 mL flush",
+     "s": "adultstg2026:3.21",
+     "b": 1
+    },
+    {
+     "t": "Fails / hypotensive: sync cardioversion 100 J",
+     "s": "phcstg2026:21.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If debilitating / WPW → ablation",
+     "s": "adultstg2026:3.22"
+    }
+   ]
+  },
+  {
+   "dx": "Atrial fibrillation (rapid ventricular response)",
+   "branch": "If AF / flutter",
+   "features": [
+    {
+     "t": "Irregularly irregular",
+     "d": 1
+    },
+    {
+     "t": "Mitral stenosis, HT, thyroid, alcohol",
+     "s": "adultstg2026:3.16"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG; TSH, K⁺, creatinine",
+     "s": "adultstg2026:3.16",
+     "b": 1
+    },
+    {
+     "t": "CHA₂DS₂-VASc",
+     "s": "adultstg2026:3.16"
+    }
+   ],
+   "manage": [
+    {
+     "t": "Unstable: sync DC; stable < 48 h: rate control",
+     "s": "adultstg2026:3.16"
+    },
+    {
+     "t": "Atenolol 50–100 mg; CCF carvedilol; + digoxin 0.125 mg",
+     "s": "adultstg2026:3.18"
+    },
+    {
+     "t": "Score ≥ 2: warfarin 5 mg, INR at 48 h",
+     "s": "adultstg2026:3.17"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If poor rate control",
+     "s": "adultstg2026:3.15"
+    }
+   ]
+  },
+  {
+   "dx": "Atrial flutter",
+   "branch": "If AF / flutter",
+   "features": [
+    {
+     "t": "Ventricular rate ~150, sawtooth, 2:1",
+     "s": "adultstg2026:3.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Vagal manoeuvre unmasks flutter waves",
+     "s": "adultstg2026:3.20",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Sync DC + midazolam 1–2.5 mg IV",
+     "s": "adultstg2026:3.20",
+     "b": 1
+    },
+    {
+     "t": "No adenosine, no verapamil",
+     "s": "adultstg2026:3.21",
+     "b": 1
+    },
+    {
+     "t": "> 48 h: defer DC 4 wk warfarin unless severe",
+     "s": "adultstg2026:3.20"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Recurrent → ablation",
+     "s": "adultstg2026:3.20"
+    }
+   ]
+  },
+  {
+   "dx": "Sinus tachycardia (secondary)",
+   "branch": "If sinus tachy / secondary",
+   "features": [
+    {
+     "t": "P before each QRS, gradual onset",
+     "d": 1
+    },
+    {
+     "t": "Fever, bleeding, PE, pain, withdrawal",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "FBC, cultures, VBG/lactate as indicated",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat the cause; no shock, no rate-control drugs",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per cause",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Hour",
+  "phase_note": "Unstable → shock now; stable → QRS width and regularity decide the branch · branch rows on side 2",
+  "columns": {
+   "feed": "Monitoring & fluids",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Continuous cardiac monitor, pads on if wide QRS or unstable",
+    "s": "phcstg2026:21.14",
+    "b": 1
+   },
+   {
+    "t": "HR, rhythm, BP, SpO₂ every 15 min for the first hour and after every shock or antiarrhythmic",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Every 30 min to 4 h, then hourly to 24 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "GCS hourly; after every sedation dose: RR, SpO₂, GCS every 5 min until awake",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Oxygen to SpO₂ 94–98%",
+    "s": "phcstg2026:21.13",
+    "b": 1
+   },
+   {
+    "t": "HGT hourly to 6 h after insulin",
+    "s": "adultstg2026:7.10",
+    "b": 1
+   },
+   {
+    "t": "Record on the 12-hour nursing cardiac record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Pulseless → cardiac arrest algorithm (unsynchronised shock). Check the referral letter for adenosine / amiodarone already given (dose, time).",
+    "feed": [
+     {
+      "t": "Airway open; oxygen to SpO₂ 94–98%",
+      "s": "phcstg2026:21.13",
+      "b": 1
+     },
+     {
+      "t": "ECG monitor, pulse oximeter, BP cuff",
+      "s": "phcstg2026:21.14"
+     },
+     {
+      "t": "IV access",
+      "s": "phcstg2026:21.14"
+     },
+     {
+      "t": "Print rhythm strip; 12-lead ECG",
+      "s": "phcstg2026:21.14",
+      "b": 1
+     },
+     {
+      "t": "Defibrillator pads on now if unstable or wide QRS",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ (VBG / U&E) now",
+      "s": "adultstg2026:3.24",
+      "b": 1
+     },
+     {
+      "t": "Mg²⁺, Ca²⁺",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Creatinine, urea, Na⁺",
+      "s": "adultstg2026:3.18",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Troponin if chest pain or VT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "TSH, free T4 if AF / flutter",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     },
+     {
+      "t": "Digoxin level if on digoxin",
+      "s": "adultstg2026:3.18",
+      "b": 1
+     },
+     {
+      "t": "INR if on warfarin",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Unstable, pulse present (§2)",
+      "s": "phcstg2026:21.14"
+     },
+     {
+      "t": "SYNCHRONISED cardioversion: sync button ON, check markers on each R wave",
+      "s": "phcstg2026:21.14",
+      "b": 1
+     },
+     {
+      "t": "Sedate if time permits: midazolam 1–2.5 mg IV over 2–3 min, repeat after 2–3 min as needed",
+      "s": "adultstg2026:3.22",
+      "b": 1
+     },
+     {
+      "t": "Narrow QRS: 100 J",
+      "s": "phcstg2026:21.14",
+      "b": 1
+     },
+     {
+      "t": "Wide regular: 200 J → 360 J if fails",
+      "s": "adultstg2026:3.22",
+      "b": 1
+     },
+     {
+      "t": "Re-press sync before every repeat shock",
+      "d": 1
+     },
+     {
+      "h": "Pulseless / polymorphic VT / VF"
+     },
+     {
+      "t": "UNSYNCHRONISED: biphasic 120–360 J, monophasic 360 J + CPR",
+      "s": "adultstg2026:20.1",
+      "b": 1
+     },
+     {
+      "t": "Amiodarone 300 mg IV bolus after adrenaline, then 150 mg",
+      "s": "adultstg2026:20.4",
+      "b": 1
+     },
+     {
+      "h": "Stable"
+     },
+     {
+      "t": "Narrow: modified Valsalva → SVT / AF branch",
+      "s": "adultstg2026:3.21"
+     },
+     {
+      "t": "Wide: DC cardioversion is first line even if stable",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     },
+     {
+      "t": "Never adenosine or verapamil in wide QRS",
+      "s": "adultstg2026:3.22",
+      "b": 1
+     },
+     {
+      "t": "Correct K⁺ / Mg²⁺; consider toxins",
+      "s": "phcstg2026:21.14"
+     },
+     {
+      "h": "Refer"
+     },
+     {
+      "t": "Discuss every wide-QRS / unstable patient now",
+      "s": "adultstg2026:3.25"
+     }
+    ]
+   },
+   {
+    "label": "15 min",
+    "phase": "Shock / drug response",
+    "feed": [
+     {
+      "t": "HR ___ · BP ___/___ · rhythm ___ · J ___ sync Y/N",
+      "k": "value"
+     },
+     {
+      "t": "Sedated: RR, SpO₂, GCS q 5 min",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Post-shock / post-adenosine rhythm strip",
+      "s": "adultstg2026:3.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still unstable: repeat shock at next energy",
+      "s": "adultstg2026:3.22"
+     },
+     {
+      "t": "VT recurs after shock: amiodarone 5 mg/kg IV over 30 min",
+      "s": "adultstg2026:3.23",
+      "b": 1
+     },
+     {
+      "t": "No response to DC cardioversion → consult specialist",
+      "s": "adultstg2026:3.23",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Rhythm now: sinus / same / other ___",
+      "k": "value"
+     },
+     {
+      "t": "Amiodarone infusion running? rate ___",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat 12-lead ECG in sinus: delta wave, QT, ischaemia",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     },
+     {
+      "t": "K⁺, Mg²⁺ results",
+      "s": "adultstg2026:3.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat the identified cause (branch rows, side 2)",
+      "d": 1
+     },
+     {
+      "t": "Wide QRS: REFER after stabilisation",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Cause treated?",
+    "feed": [
+     {
+      "t": "HR trend ___ · BP ___/___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ after replacement / hyperkalaemia treatment",
+      "s": "adultstg2026:7.12",
+      "b": 1
+     },
+     {
+      "t": "HGT hourly to 6 h after insulin",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "AF: rate controlled? anticoagulation decision (CHA₂DS₂-VASc)",
+      "s": "adultstg2026:3.16"
+     },
+     {
+      "t": "Keep referral moving",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Recurrences overnight? Y/N, how many",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG · K⁺, creatinine if abnormal",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "INR 48 h after warfarin start",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral amiodarone after IV (VT): 200 mg 8-hourly",
+      "s": "adultstg2026:3.23"
+     },
+     {
+      "t": "Poor rate control → REFER",
+      "s": "adultstg2026:3.15"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Transfer / ward",
+    "feed": [
+     {
+      "t": "Stable rhythm without IV drugs?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG, K⁺, results on letter",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transferred: handover rhythm strips, shocks (J, sync), drug totals",
+      "d": 1
+     },
+     {
+      "t": "Stays: SVT reverted / AF rate-controlled → transfer criteria (side 2)",
+      "s": "adultstg2026:3.15"
+     }
+    ]
+   },
+   {
+    "label": "If VT (regular wide)",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Pads on throughout",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, Mg²⁺, troponin, ECG",
+      "s": "adultstg2026:3.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "DC 200 J → 360 J (sync) after midazolam, even if stable",
+      "s": "adultstg2026:3.22",
+      "b": 1
+     },
+     {
+      "t": "Recurs: amiodarone 5 mg/kg IV over 30 min, then 200 mg PO 8-hourly ×7 d, 12-hourly ×7 d",
+      "s": "adultstg2026:3.23",
+      "b": 1
+     },
+     {
+      "t": "Non-sustained, stable: lidocaine 1–2 mg/kg (50–100 mg) slow IV over 2 min, repeat q 5 min to 200–300 mg",
+      "s": "adultstg2026:3.25"
+     },
+     {
+      "t": "REFER all",
+      "s": "adultstg2026:3.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If torsades",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Stop all QT-prolonging drugs",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, Mg²⁺, QT on ECG",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MgSO₄ 2 g IV over 5–10 min",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     },
+     {
+      "t": "Recurrent: MgSO₄ 2 g IV over 24 h",
+      "s": "adultstg2026:3.25"
+     },
+     {
+      "t": "Correct K⁺",
+      "s": "adultstg2026:3.25"
+     },
+     {
+      "t": "Pulseless / unstable: defibrillate (unsynchronised)",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     },
+     {
+      "t": "With bradycardia: pace (on site) or adrenaline infusion to HR > 100",
+      "s": "adultstg2026:3.25"
+     },
+     {
+      "t": "REFER",
+      "s": "adultstg2026:3.25",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If irregular wide / WPW-AF",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Pads on",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG: BBB pattern? rate?",
+      "s": "adultstg2026:3.24",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Typical BBB and rate < 170 → treat as AF",
+      "s": "adultstg2026:3.24"
+     },
+     {
+      "t": "Rate > 170 / atypical → sync DC cardioversion, no drugs",
+      "s": "adultstg2026:3.24",
+      "b": 1
+     },
+     {
+      "t": "No verapamil, digoxin, adenosine (→ VF)",
+      "s": "adultstg2026:3.24",
+      "b": 1
+     },
+     {
+      "t": "REFER (ablation)",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If SVT (narrow regular)",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Semi-recumbent; run rhythm strip during each step",
+      "s": "adultstg2026:3.21"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG in sinus: delta waves (WPW)",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Modified Valsalva: 15 s strain semi-recumbent, then supine + legs raised",
+      "s": "adultstg2026:3.21",
+      "b": 1
+     },
+     {
+      "t": "Adenosine 6 mg rapid IV + 10 mL NaCl 0.9% flush; then 12 mg; then 12 mg",
+      "s": "adultstg2026:3.21",
+      "b": 1
+     },
+     {
+      "t": "Fails or hypotensive → sync cardioversion 100 J",
+      "s": "phcstg2026:21.14",
+      "b": 1
+     },
+     {
+      "t": "Discharge: teach Valsalva; atenolol 50–100 mg daily if frequent",
+      "s": "adultstg2026:3.21"
+     }
+    ]
+   },
+   {
+    "label": "If AF / flutter",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Onset < 48 h / > 48 h recorded",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSH, K⁺, creatinine · CHA₂DS₂-VASc · HAS-BLED",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Unstable: sync DC; > 48 h: DC only if unstable",
+      "s": "adultstg2026:3.16",
+      "b": 1
+     },
+     {
+      "t": "Rate: atenolol 50–100 mg daily (not asthma / HF); CCF: carvedilol; + digoxin 0.125 mg daily",
+      "s": "adultstg2026:3.18"
+     },
+     {
+      "t": "β-blocker CI: verapamil 40–120 mg 8-hourly (not in HF, not flutter)",
+      "s": "adultstg2026:3.18"
+     },
+     {
+      "t": "Score ≥ 2: warfarin 5 mg daily, INR at 48 h, target 2–3",
+      "s": "adultstg2026:3.17",
+      "b": 1
+     },
+     {
+      "t": "Flutter: no adenosine, no verapamil; DC + midazolam",
+      "s": "adultstg2026:3.20"
+     }
+    ]
+   },
+   {
+    "label": "If sinus tachy / secondary",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluids / blood / oxygen per cause",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, cultures, VBG + lactate, CXR as indicated",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Treat the cause (sepsis, bleeding, PE, thyrotoxicosis, withdrawal, pain)",
+      "d": 1
+     },
+     {
+      "t": "Do not cardiovert or rate-control a compensatory tachycardia",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Hyper-/hypokalaemia → box on this side",
+      "s": "adultstg2026:7.10"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Shock · energy and sync",
+   "items": [
+    {
+     "h": "SYNCHRONISED (pulse present)"
+    },
+    {
+     "t": "Unstable tachycardia, any: 100 J",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Regular wide QRS: 200 J → 360 J",
+     "s": "adultstg2026:3.22"
+    },
+    {
+     "t": "Flutter / AF / WPW-AF / SVT failing adenosine",
+     "s": "adultstg2026:3.20"
+    },
+    {
+     "t": "Press sync each time; markers on R waves; hold buttons until shock delivered",
+     "d": 1
+    },
+    {
+     "h": "UNSYNCHRONISED (defibrillation)"
+    },
+    {
+     "t": "Pulseless VT / VF: biphasic 120–360 J, monophasic 360 J",
+     "s": "adultstg2026:20.1"
+    },
+    {
+     "t": "Torsades / polymorphic VT: defibrillate",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "h": "Sedation before elective/urgent shock"
+    },
+    {
+     "t": "Midazolam 1–2.5 mg IV over 2–3 min; repeat after 2–3 min",
+     "s": "adultstg2026:3.22"
+    }
+   ]
+  },
+  {
+   "title": "Antiarrhythmics",
+   "items": [
+    {
+     "h": "Amiodarone"
+    },
+    {
+     "t": "Arrest (VF/pVT): 300 mg IV bolus, then 150 mg",
+     "s": "adultstg2026:20.4"
+    },
+    {
+     "t": "VT recurring after DC: 5 mg/kg IV over 30 min (70 kg = 350 mg)",
+     "s": "adultstg2026:3.23"
+    },
+    {
+     "t": "Then 200 mg PO 8-hourly ×7 d, 12-hourly ×7 d, then daily; specialist if > 1 wk",
+     "s": "adultstg2026:3.23"
+    },
+    {
+     "t": "On warfarin: halve warfarin dose, close INR",
+     "s": "adultstg2026:3.23"
+    },
+    {
+     "h": "Adenosine (narrow regular only)"
+    },
+    {
+     "t": "6 mg → 12 mg → 12 mg rapid IV + 10 mL flush",
+     "s": "adultstg2026:3.21"
+    },
+    {
+     "h": "Magnesium sulphate"
+    },
+    {
+     "t": "2 g IV over 5–10 min; recurrent 2 g over 24 h",
+     "s": "adultstg2026:3.25"
+    },
+    {
+     "h": "Lidocaine (stable only)"
+    },
+    {
+     "t": "1–2 mg/kg slow IV; infusion 1–3 mg/min for recurrent VT",
+     "s": "adultstg2026:3.25"
+    }
+   ]
+  },
+  {
+   "title": "K⁺ · escalate",
+   "items": [
+    {
+     "h": "Hyperkalaemia (K⁺ > 6.0)",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Calcium gluconate 10% 10 mL over 10 min; dextrose 50% 100 mL + soluble insulin 10 U; salbutamol 10–20 mg neb",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "h": "Hypokalaemia severe / symptomatic"
+    },
+    {
+     "t": "KCl 40 mmol in 1 L NaCl 0.9% over 3 h, max 20 mmol/h; never undiluted",
+     "s": "adultstg2026:7.12"
+    },
+    {
+     "h": "Escalate / call"
+    },
+    {
+     "t": "Pulseless → CPR, unsynchronised shock",
+     "s": "adultstg2026:20.1",
+     "b": 1
+    },
+    {
+     "t": "Recurrent VT, no response to DC → specialist",
+     "s": "adultstg2026:3.23"
+    },
+    {
+     "t": "New hypotension, confusion, chest pain or breathlessness",
+     "s": "phcstg2026:21.14"
+    },
+    {
+     "t": "Post-ROSC: MAP > 65; adrenaline infusion 0.1 mcg/kg/min if hypotensive after fluids",
+     "s": "adultstg2026:20.7"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Transfer / discharge criteria — all must be met (stays at ANDH)",
+  "items": [
+   {
+    "t": "Narrow-QRS only (all wide QRS → REFER)",
+    "s": "adultstg2026:3.25"
+   },
+   {
+    "t": "Sinus rhythm or AF rate-controlled on oral drugs",
+    "s": "adultstg2026:3.18"
+   },
+   {
+    "t": "No recurrence for 24 h",
+    "d": 1
+   },
+   {
+    "t": "Cause treated, K⁺ corrected",
+    "s": "adultstg2026:3.24"
+   },
+   {
+    "t": "Anticoagulation decided (CHA₂DS₂-VASc) and INR plan",
+    "s": "adultstg2026:3.17"
+   },
+   {
+    "t": "SVT: taught modified Valsalva",
+    "s": "adultstg2026:3.21"
+   },
+   {
+    "t": "WPW on ECG: referral letter for ablation",
+    "s": "adultstg2026:3.16"
+   },
+   {
+    "t": "Asymptomatic, mobilising",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Medical OPD 1–2 weeks: ECG, rate, symptoms",
+    "d": 1
+   },
+   {
+    "t": "Warfarin: INR every 1–2 days until 2–3, then every 2 months when stable",
+    "s": "adultstg2026:3.17"
+   },
+   {
+    "t": "Digoxin: trough level; amiodarone: TFT + eye exam every 6 months",
+    "s": "adultstg2026:3.19"
+   },
+   {
+    "t": "Refer back: syncope, recurrent palpitations with dizziness, chest pain",
+    "d": 1
+   },
+   {
+    "t": "Echo where available (structural heart disease)",
+    "s": "adultstg2026:3.15"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing cardiac record — HR, rhythm, BP and shocks",
+  "period": "12 hours (15-min rows to 1 h, 30-min to 4 h, hourly to 12 h)",
+  "params": [
+   {
+    "h": "HR, rhythm, BP, SpO₂",
+    "items": [
+     {
+      "t": "Continuous cardiac monitor",
+      "s": "phcstg2026:21.14"
+     },
+     {
+      "t": "Every 15 min for the first hour and after every shock or antiarrhythmic",
+      "d": 1
+     },
+     {
+      "t": "Every 30 min to 4 h, then hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "GCS / sedation",
+    "items": [
+     {
+      "t": "Hourly; baseline on arrival",
+      "d": 1
+     },
+     {
+      "t": "After sedation: RR, SpO₂, GCS every 5 min until awake",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Shocks",
+    "items": [
+     {
+      "t": "Time, joules, SYNC or UNSYNC",
+      "d": 1
+     },
+     {
+      "t": "Rhythm before and after; print strip",
+      "s": "adultstg2026:3.21"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Adenosine / amiodarone / MgSO₄: dose + time",
+      "s": "adultstg2026:3.23"
+     },
+     {
+      "t": "Infusion rate (mL/h)",
+      "d": 1
+     },
+     {
+      "t": "HGT hourly to 6 h after insulin",
+      "s": "adultstg2026:7.10"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Pulse > 150 again, new wide QRS or irregular rhythm on the monitor",
+    "s": "phcstg2026:21.13",
+    "b": 1
+   },
+   {
+    "t": "BP falling, new confusion, chest pain or breathlessness",
+    "s": "phcstg2026:21.14",
+    "b": 1
+   },
+   {
+    "t": "Sedated: RR slowing, SpO₂ falling, not rousable",
+    "d": 1
+   },
+   {
+    "t": "HGT low after insulin",
+    "s": "adultstg2026:7.10"
+   },
+   {
+    "t": "No pulse → start CPR, defibrillate",
+    "s": "adultstg2026:20.1",
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Shocks (n, J)",
+   "Amiodarone total mg",
+   "Adenosine total mg",
+   "MgSO₄ g",
+   "Highest HR",
+   "Lowest BP"
+  ]
+ }
+}

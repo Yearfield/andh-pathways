@@ -1,0 +1,981 @@
+{
+ "id": "tet-spell-paeds",
+ "short": "Tet_Spell_Paeds",
+ "title": "Hypercyanotic (tet) spell (child)",
+ "population": "Infant / child with tetralogy of Fallot or other cyanotic CHD with PS + VSD",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Neonate, duct-dependent lesion → neonatal cyanotic heart disease (alprostadil)",
+     "s": "paedstg2026:19.32",
+     "b": 1
+    },
+    {
+     "t": "Respiratory cause of cyanosis (pneumonia, bronchiolitis) → LRTI / bronchiolitis pathway",
+     "s": "paedstg2026:19.31"
+    },
+    {
+     "t": "Cardiac arrest → paediatric resuscitation",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — known / suspected cyanotic CHD + any",
+   "items": [
+    {
+     "t": "Rapid worsening of central cyanosis",
+     "s": "paedstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Tachypnoea / dyspnoea, hyperpnoea",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Anxiety, restlessness, crying",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Altered consciousness / limp",
+     "s": "paedstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Murmur softer or gone during the spell",
+     "s": "paedstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Wt ____ kg  SpO₂ ____ %  Time started ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe spell = any one of → full sequence now",
+   "items": [
+    {
+     "t": "Altered consciousness / limp / seizure",
+     "s": "paedstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Not improving with knee-chest + oxygen",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Clinically acidotic or pH < 7.2",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Murmur absent",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health Booklet / cardiac records",
+   "items": [
+    {
+     "t": "Known TOF / cyanotic CHD; echo report",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Previous spells (frequency)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "On propranolol? dose, last given",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Iron / folic acid",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Last Hb (Hb < 10 = relatively anaemic)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Cardiology clinic / surgery date",
+     "d": 1
+    },
+    {
+     "t": "Immunisations up to date",
+     "d": 1
+    },
+    {
+     "t": "HIV exposure / PCR",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Spell"
+    },
+    {
+     "t": "Onset: on waking, feeding, crying, defecation",
+     "d": 1
+    },
+    {
+     "t": "Duration ___ min",
+     "d": 1
+    },
+    {
+     "t": "Previous spells; what helped",
+     "d": 1
+    },
+    {
+     "h": "Precipitants",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Fever",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Dehydration: diarrhoea, vomiting, poor feeds",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Anaemia / iron deficiency",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Procedure / blood taking / pain",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Seizure, focal weakness (stroke / abscess)",
+     "d": 1
+    },
+    {
+     "t": "New medicines (inotrope, diuretic)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline SpO₂",
+   "items": [
+    {
+     "t": "Tachypnoea / hyperpnoea",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / Hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Capillary refill prolonged",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ well below the child's usual",
+     "k": "yn"
+    },
+    {
+     "h": "Monitor (STG)"
+    },
+    {
+     "t": "SaO₂, HR, RR, acid–base",
+     "s": "paedstg2026:4.7",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "During the spell"
+    },
+    {
+     "t": "Deep cyanosis, hyperpnoea",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Murmur soft / absent",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Limp / unresponsive",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Seizure",
+     "d": 1
+    },
+    {
+     "h": "TOF signs"
+    },
+    {
+     "t": "Clubbing",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Single S2, ejection murmur",
+     "s": "paedstg2026:4.8"
+    },
+    {
+     "t": "Plethora (polycythaemia)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Squatting history",
+     "d": 1
+    },
+    {
+     "h": "Precipitant"
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Fever source",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Pallor",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ / response",
+   "items": [
+    {
+     "t": "SpO₂ on arrival ____ % (usual ____ %)",
+     "k": "value"
+    },
+    {
+     "t": "Knee-chest + calm on mother's lap first",
+     "s": "paedstg2026:4.6",
+     "b": 1
+    },
+    {
+     "t": "Oxygen 100%",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Recheck after each step (every 5 min)",
+     "d": 1
+    },
+    {
+     "t": "No improvement after steps → REFER urgently",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas + Hb",
+   "items": [
+    {
+     "t": "pH ____  HCO₃⁻ ____  Hb ____ g/dL  HGT ____",
+     "k": "value"
+    },
+    {
+     "t": "pH < 7.2 or clinically acidotic → NaHCO₃ 4.2% 2 mL/kg IV",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Hb < 10 g/dL after spell → packed cells 10 mL/kg over 3 h",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Do bloods after calming — needle stick can worsen spell",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Unable to drink / feed",
+     "b": 1
+    },
+    {
+     "t": "Vomits everything",
+     "b": 1
+    },
+    {
+     "t": "Convulsions",
+     "b": 1
+    },
+    {
+     "t": "Lethargic / unconscious",
+     "b": 1
+    },
+    {
+     "t": "Prolonged spell (> 15–30 min)",
+     "d": 1
+    },
+    {
+     "t": "Severe acidosis",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Anaemia",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Stroke / brain abscess",
+     "d": 1
+    },
+    {
+     "t": "Sepsis / endocarditis",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "d": 1
+    },
+    {
+     "t": "Duct-dependent neonate",
+     "s": "paedstg2026:19.32"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SPELL NOT RESOLVING after O₂, fluid, morphine (± bicarbonate, ketamine) → REFER urgently",
+   "s": "paedstg2026:4.7",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (spell resolved) — observe on the 6-hour spell chart and nursing record, start propranolol, REFER all for assessment",
+   "s": "paedstg2026:4.7",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Minutes",
+  "phase_note": "One step every ~5 min until pink · keep the child calm and on mother's lap · no needles until step 3 if possible",
+  "columns": {
+   "feed": "Position, O₂ & fluid",
+   "tests": "Monitor & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "SaO₂, heart rate, respiratory rate continuously",
+    "s": "paedstg2026:4.7",
+    "b": 1
+   },
+   {
+    "t": "Every 5 min during the spell; every 15 min for 2 h after; then hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Acid–base status (VBG) when acidotic",
+    "s": "paedstg2026:4.7",
+    "b": 1
+   },
+   {
+    "t": "Ensure adequate hydration",
+    "s": "paedstg2026:4.7",
+    "b": 1
+   },
+   {
+    "t": "Record on the 6-hour nursing spell record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "Calm + position",
+    "lead": "Check the referral note for morphine or fluid already given. Keep the child with the mother. Do not lay flat, do not restrain, delay needles.",
+    "feed": [
+     {
+      "t": "Mother's lap; calm the child",
+      "s": "paedstg2026:4.6",
+      "b": 1
+     },
+     {
+      "t": "Knee-chest position (knees to chest)",
+      "s": "paedstg2026:4.6",
+      "b": 1
+     },
+     {
+      "t": "Oxygen 100% by face mask or nasal cannula",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, HR, RR",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "HGT when IV in",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Step 1 — knee-chest + O₂",
+      "s": "paedstg2026:4.6"
+     },
+     {
+      "t": "Raises systemic BP and venous return",
+      "s": "paedstg2026:4.6"
+     },
+     {
+      "t": "Treat precipitants: fever (paracetamol), dehydration",
+      "s": "paedstg2026:4.6"
+     },
+     {
+      "h": "If no IV yet and very distressed"
+     },
+     {
+      "t": "Morphine 0.1–0.2 mg/kg IM / SC (IV dose in STG; IM route extrapolated)",
+      "s": "paedstg2026:4.7",
+      "d": 1
+     },
+     {
+      "h": "Avoid"
+     },
+     {
+      "t": "Adrenaline, dobutamine, digoxin, vasodilators, diuretics (side 2)",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "5 min",
+    "phase": "Volume",
+    "feed": [
+     {
+      "t": "NaCl 0.9% 20 mL/kg IV over 5 min",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ ___ HR ___",
+      "k": "value"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "IV / IO access by most skilled person",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "10 min",
+    "phase": "Morphine",
+    "feed": [
+     {
+      "t": "Watch airway / RR",
+      "s": "paedstg2026:4.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG: pH, HCO₃⁻; Hb",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Morphine 0.1–0.2 mg/kg IV once (airway reflexes, respiratory depression)",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "15 min",
+    "phase": "Acidosis?",
+    "feed": [
+     {
+      "t": "Second fluid bolus only if still dehydrated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "pH < 7.2?",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Clinically acidotic or pH < 7.2: NaHCO₃ 4.2% 2 mL/kg IV",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "20 min",
+    "phase": "Not improving",
+    "feed": [
+     {
+      "t": "Continue O₂ + knee-chest",
+      "s": "paedstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ trend",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ketamine 0.5–1 mg/kg IV",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "OR phenylephrine — only in consultation with a specialist",
+      "s": "paedstg2026:4.7"
+     },
+     {
+      "t": "Call the paediatric cardiology / referral centre now",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Resolved?",
+    "feed": [
+     {
+      "t": "Pink, settled, murmur back?",
+      "s": "paedstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb result",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not resolved → REFER urgently (ventilation / emergency surgery)",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Resolved → after-spell rows",
+      "s": "paedstg2026:4.7"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "After the spell",
+    "feed": [
+     {
+      "t": "Oral feeds / maintenance; avoid dehydration",
+      "s": "paedstg2026:4.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂ back to usual",
+      "d": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hb < 10 g/dL: packed red cells 10 mL/kg over 3 h",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Propranolol",
+    "feed": [
+     {
+      "t": "Feeding well",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HR before each dose",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Propranolol 0.5–1 mg/kg/dose PO 6-hourly; max 5 mg/kg/day",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Already on it: check adherence / dose for weight",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 1",
+    "phase": "Refer",
+    "feed": [
+     {
+      "t": "No recurrence?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, iron studies if Hb low",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Iron 1 mg/kg/dose 8-hourly; folic acid 2.5–5 mg daily",
+      "s": "paedstg2026:4.7"
+     },
+     {
+      "t": "Refer ALL for cardiology assessment (surgery timing)",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If recurrent / prolonged",
+    "phase": "Escalate",
+    "feed": [
+     {
+      "t": "Repeat steps 1–4",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG, HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Failed measures → refer urgently",
+      "s": "paedstg2026:4.7",
+      "b": 1
+     },
+     {
+      "t": "Seizure / unresponsive: airway, bag-mask with O₂; intubation and RSI by most skilled person",
+      "d": 1
+     },
+     {
+      "t": "Neuro deficit → stroke / abscess work-up REFER",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Weight-based doses (Paed STG 4.7)",
+   "items": [
+    {
+     "t": "4 kg: NaCl 80 mL · morphine 0.4–0.8 mg · NaHCO₃ 4.2% 8 mL · ketamine 2–4 mg · propranolol 2–4 mg (max 20 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "6 kg: NaCl 120 mL · morphine 0.6–1.2 mg · NaHCO₃ 4.2% 12 mL · ketamine 3–6 mg · propranolol 3–6 mg (max 30 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "8 kg: NaCl 160 mL · morphine 0.8–1.6 mg · NaHCO₃ 4.2% 16 mL · ketamine 4–8 mg · propranolol 4–8 mg (max 40 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "10 kg: NaCl 200 mL · morphine 1.0–2.0 mg · NaHCO₃ 4.2% 20 mL · ketamine 5–10 mg · propranolol 5–10 mg (max 50 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "12 kg: NaCl 240 mL · morphine 1.2–2.4 mg · NaHCO₃ 4.2% 24 mL · ketamine 6–12 mg · propranolol 6–12 mg (max 60 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "15 kg: NaCl 300 mL · morphine 1.5–3.0 mg · NaHCO₃ 4.2% 30 mL · ketamine 7.5–15 mg · propranolol 7.5–15 mg (max 75 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "20 kg: NaCl 400 mL · morphine 2.0–4.0 mg · NaHCO₃ 4.2% 40 mL · ketamine 10–20 mg · propranolol 10–20 mg (max 100 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "25 kg: NaCl 500 mL · morphine 2.5–5.0 mg · NaHCO₃ 4.2% 50 mL · ketamine 12.5–25 mg · propranolol 12.5–25 mg (max 125 mg/day)",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Packed cells 10 mL/kg over 3 h if Hb < 10 after the spell",
+     "s": "paedstg2026:4.7"
+    }
+   ]
+  },
+  {
+   "title": "Drugs & actions to AVOID",
+   "items": [
+    {
+     "t": "Inotropes / adrenaline, dobutamine — worsen infundibular spasm",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Digoxin",
+     "d": 1
+    },
+    {
+     "t": "Vasodilators (nitrates, hydralazine), ACE-I in obstructive lesions",
+     "s": "paedstg2026:4.5"
+    },
+    {
+     "t": "Diuretics / fluid restriction (dehydration precipitates spells)",
+     "s": "paedstg2026:4.6"
+    },
+    {
+     "t": "Laying flat, restraining, repeated needle attempts",
+     "d": 1
+    },
+    {
+     "t": "Isoprenaline / salbutamol (tachycardia)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "No improvement after O₂, fluid, morphine → bicarbonate, ketamine, specialist",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "If above measures do not work → refer urgently",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    },
+    {
+     "t": "Morphine: respiratory depression → bag-mask; naloxone",
+     "s": "paedstg2026:4.7"
+    },
+    {
+     "t": "Refer all cases for assessment",
+     "s": "paedstg2026:4.7",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "SpO₂ at usual baseline, no spell for 24 h",
+    "d": 1
+   },
+   {
+    "t": "Feeding / drinking well",
+    "s": "paedstg2026:4.6"
+   },
+   {
+    "t": "Propranolol dose prescribed and caregiver taught",
+    "s": "paedstg2026:4.7"
+   },
+   {
+    "t": "Hb corrected; iron + folic acid",
+    "s": "paedstg2026:4.7"
+   },
+   {
+    "t": "Cardiology referral letter + date",
+    "s": "paedstg2026:4.7"
+   },
+   {
+    "t": "Caregiver taught knee-chest + when to return",
+    "d": 1
+   },
+   {
+    "t": "Fever / diarrhoea plan: come early (dehydration)",
+    "s": "paedstg2026:4.6"
+   },
+   {
+    "t": "Endocarditis prophylaxis advice",
+    "s": "paedstg2026:4.7"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Paediatric OPD 1 week; cardiology as booked",
+    "d": 1
+   },
+   {
+    "t": "Good dental hygiene",
+    "s": "paedstg2026:4.7"
+   },
+   {
+    "t": "Return immediately: blue spell > 5 min, limp, seizure",
+    "d": 1
+   },
+   {
+    "t": "All cyanotic heart defects referred",
+    "s": "paedstg2026:4.8"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "6-hour nursing spell record — SpO₂, HR, RR, steps",
+  "period": "6 hours: 5-min rows to 1 h, 15-min to 2 h, then hourly",
+  "params": [
+   {
+    "h": "SpO₂, HR, RR",
+    "items": [
+     {
+      "t": "Continuous SaO₂, HR, RR",
+      "s": "paedstg2026:4.7"
+     },
+     {
+      "t": "Every 5 min during spell, then 15 min, then hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Position + calm",
+    "items": [
+     {
+      "t": "Knee-chest on mother's lap",
+      "s": "paedstg2026:4.6"
+     },
+     {
+      "t": "Avoid crying triggers",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Steps / drugs",
+    "items": [
+     {
+      "t": "O₂, bolus, morphine, bicarbonate, ketamine: time + dose",
+      "s": "paedstg2026:4.7"
+     }
+    ]
+   },
+   {
+    "h": "Intake",
+    "items": [
+     {
+      "t": "Feeds / fluids; keep hydrated",
+      "s": "paedstg2026:4.6"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Cyanosis worse or not better after a step",
+    "s": "paedstg2026:4.7",
+    "b": 1
+   },
+   {
+    "t": "Limp, drowsy, seizure",
+    "s": "paedstg2026:4.6",
+    "b": 1
+   },
+   {
+    "t": "RR slow after morphine",
+    "s": "paedstg2026:4.7"
+   },
+   {
+    "t": "New spell after recovery",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Spell duration (min)",
+   "Lowest SpO₂",
+   "Fluids given mL/kg",
+   "Morphine mg",
+   "Spells (n)"
+  ]
+ }
+}

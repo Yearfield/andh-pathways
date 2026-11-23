@@ -1,0 +1,350 @@
+{
+ "id": "dislocation-knee-adult",
+ "short": "Knee dislocation",
+ "title": "Knee dislocation — reduce & rule out popliteal injury",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "regimen": "Pulses + ABI before and after · reduce now · ABI < 0.9 → CTA (REFER)",
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the STG.",
+ "sources": [
+  "stg-phc",
+  "stg-adult",
+  "orthobullets",
+  "msd"
+ ],
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered cells (m=a/b/c). steps[].decisions[]: if/then. reference{}: blocks (items or table).",
+ "indications": [
+  {
+   "h": "Knee dislocation",
+   "col": 1,
+   "items": [
+    {
+     "t": "Gross deformity after high- or low-energy injury",
+     "s": "msd:web"
+    },
+    {
+     "t": "Grossly unstable knee (ACL + PCL) = may have self-reduced",
+     "s": "orthobullets:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Dislocations are moderate injuries: full primary survey",
+     "s": "stg-phc:21.63"
+    }
+   ]
+  },
+  {
+   "h": "Why it matters",
+   "col": 2,
+   "items": [
+    {
+     "t": "Vascular injury 5–15% overall; 40–50% anterior / posterior",
+     "s": "orthobullets:web",
+     "d": 1
+    },
+    {
+     "t": "Peroneal nerve injury ~25%",
+     "s": "orthobullets:web",
+     "d": 1
+    },
+    {
+     "t": "Normal pulses do NOT exclude intimal popliteal injury",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Do not delay / refer",
+   "col": 1,
+   "items": [
+    {
+     "t": "Absent pulses after reduction → REFER vascular NOW",
+     "s": "orthobullets:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Open dislocation: reduce, cover, antibiotics, REFER",
+     "d": 1
+    },
+    {
+     "t": "Irreducible (skin dimple, posterolateral) → REFER",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "ANDH capacity",
+   "col": 2,
+   "items": [
+    {
+     "t": "X-ray on site; CT angiography → REFER",
+     "d": 1
+    },
+    {
+     "t": "No theatre / vascular surgery → REFER all after reduction",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": "1",
+   "title": "Assess & document before",
+   "time": "T − 10 min",
+   "subtitle": "pulses, ABI, nerves",
+   "actions": [
+    {
+     "t": "Primary survey; analgesia",
+     "n": "1.1",
+     "s": "stg-phc:21.64"
+    },
+    {
+     "t": "DP + PT pulses, cap refill, popliteal fossa fullness",
+     "n": "1.2",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "ABI = ankle SBP ÷ arm SBP (Doppler or palpation)",
+     "n": "1.3",
+     "s": "msd:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Peroneal nerve: dorsiflexion, 1st web-space sensation",
+     "n": "1.4",
+     "s": "orthobullets:web",
+     "d": 1
+    },
+    {
+     "t": "X-ray AP + lateral if it does not delay a pulseless limb",
+     "n": "1.5",
+     "s": "orthobullets:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "title": "Sedate / analgesia",
+   "time": "T − 5 min",
+   "subtitle": "use the procedural sedation card",
+   "actions": [
+    {
+     "t": "Ketamine or ketofol (procedural sedation card)",
+     "n": "2.1",
+     "d": 1
+    },
+    {
+     "t": "Assistant holds the thigh (counter-traction)",
+     "n": "2.2",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "title": "Reduce now",
+   "time": "T 0",
+   "subtitle": "emergent closed reduction",
+   "actions": [
+    {
+     "t": "Anterior: traction + lift femur forward",
+     "n": "3.1",
+     "s": "orthobullets:web",
+     "d": 1
+    },
+    {
+     "t": "Posterior: traction, extension + lift tibia forward",
+     "n": "3.2",
+     "s": "orthobullets:web",
+     "d": 1
+    },
+    {
+     "t": "Medial / lateral: traction + translate opposite",
+     "n": "3.3",
+     "s": "orthobullets:web",
+     "d": 1
+    },
+    {
+     "t": "Rotatory: axial traction + rotate opposite",
+     "n": "3.4",
+     "s": "orthobullets:web",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Will not reduce / skin dimpling",
+     "then": "stop, splint as lies, REFER urgently",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "4",
+   "title": "Splint & image",
+   "time": "T + 5 min",
+   "subtitle": "",
+   "actions": [
+    {
+     "t": "Long-leg back-slab at 20–30° flexion",
+     "n": "4.1",
+     "s": "orthobullets:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Post-reduction X-ray AP + lateral",
+     "n": "4.2",
+     "s": "orthobullets:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "title": "Re-check pulses + ABI",
+   "time": "T + 10 min, then serial",
+   "subtitle": "decides vascular referral",
+   "actions": [
+    {
+     "t": "Repeat pulses and ABI after reduction",
+     "n": "5.1",
+     "s": "orthobullets:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "ABI ≥ 0.9 + normal pulses: serial pulses / ABI hourly × 24 h",
+     "n": "5.2",
+     "d": 1
+    },
+    {
+     "t": "Hard signs (no pulse, ischaemia, expanding haematoma) → vascular REFER emergently",
+     "n": "5.3",
+     "s": "orthobullets:web",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "ABI < 0.9 or pulses asymmetric",
+     "then": "CT angiography — not on site → REFER urgently",
+     "s": "msd:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "6",
+   "title": "Admit & refer",
+   "time": "T + 1 h",
+   "subtitle": "every knee dislocation needs orthopaedics",
+   "actions": [
+    {
+     "t": "Compartment checks hourly: pain on stretch, tense calf",
+     "n": "6.1",
+     "d": 1
+    },
+    {
+     "t": "Elevate; analgesia; DVT prophylaxis when bleeding risk allows",
+     "n": "6.2",
+     "d": 1
+    },
+    {
+     "t": "REFER orthopaedics (multiligament reconstruction, MRI)",
+     "n": "6.3",
+     "s": "orthobullets:web",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "blocks": [
+   {
+    "title": "ABI · CHECKLIST",
+    "table": {
+     "cols": [
+      "Finding",
+      "Action"
+     ],
+     "rows": [
+      {
+       "v": [
+        "Hard signs: pulseless, cold, expanding haematoma",
+        "Reduce + emergent vascular REFER"
+       ],
+       "s": "orthobullets:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "ABI < 0.9 / asymmetric pulses",
+        "CTA → REFER urgently"
+       ],
+       "s": "msd:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "ABI ≥ 0.9 + normal pulses",
+        "Serial exam / ABI × 24 h; ortho REFER"
+       ],
+       "s": "msd:web",
+       "d": 1
+      },
+      {
+       "v": [
+        "Foot drop / numb web space",
+        "Peroneal nerve — document, splint"
+       ],
+       "s": "orthobullets:web",
+       "d": 1
+      }
+     ]
+    }
+   },
+   {
+    "title": "PITFALLS",
+    "items": [
+     {
+      "t": "~50% self-reduce and are missed — treat bicruciate instability as a dislocation",
+      "s": "orthobullets:web",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Popliteal intimal tears occlude later — keep checking",
+      "s": "msd:web",
+      "d": 1
+     },
+     {
+      "t": "Obesity: low-energy dislocations still injure the artery",
+      "s": "msd:web",
+      "d": 1
+     },
+     {
+      "t": "Never send home the same day",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ }
+}

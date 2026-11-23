@@ -113,6 +113,19 @@
     "19": {"title": "Chapter 19", "offset": 0},
     "22": {"title": "Chapter 22", "offset": 0},
     "23": {"title": "Chapter 23", "offset": 0}
-    , "6": {"title": "Chapter 6", "offset": 0}, "15": {"title": "Chapter 15", "offset": 0}}}
+    , "6": {"title": "Chapter 6", "offset": 0}, "15": {"title": "Chapter 15", "offset": 0}}},
+    {"id": "skinner2017", "short": "Skinner 2017", "title": "Skinner DL, et al. Venous bicarbonate as predictor of AKI in sjambok crush syndrome. SAMJ 2017;107(5):446–450", "edition": "", "offset": 0},
+    {"id": "rosedale2012", "short": "Rosedale 2012", "title": "Rosedale KH, Wood D. Traumatic rhabdomyolysis (crush syndrome) in the rural setting. SAMJ 2012;102:37–39", "edition": "", "offset": 0},
+    {"id": "skinner2012", "short": "Skinner 2012", "title": "Skinner DL, correspondence. SAMJ 2012;102(5):271–272", "edition": "", "offset": 0},
+    {"id": "mhca-regs2026", "short": "MHCA Regs 2026", "title": "Mental Health Care Act General Regulations forms (GG 55097, 31 Jul 2026)", "edition": "2026", "offset": 0},
+    {"id": "muller2012", "short": "Müller 2012", "title": "Müller GJ, Modler H, Wium CA, Veale DJH. Scorpion sting in southern Africa: diagnosis and management. CME 2012;30(10):356–361", "edition": "", "offset": 0},
+    {"id": "tomlinson2019", "short": "Tomlinson 2019", "title": "Tomlinson H, Elston DM. What's eating you? The South African fattail scorpion revisited. Cutis 2019;104(4):217–219", "edition": "", "offset": 0},
+    {"id": "stg-phc", "alias": "PHC", "short": "STG PHC", "title": "STG & EML Primary Healthcare (same chapter PDFs as PHC)", "edition": "8th ed. 2024 (updated Sept 2026)", "offset": 0},
+    {"id": "rcem2020", "short": "RCEM 2020", "title": "RCEM Best Practice Guideline: Pharmacological agents for procedural sedation and analgesia in the ED", "edition": "Oct 2020, revised Apr 2021", "offset": 0},
+    {"id": "orthobullets", "short": "Orthobullets", "title": "Orthobullets: Knee dislocation", "edition": "accessed Nov 2026", "offset": 0},
+    {"id": "msd", "short": "MSD Manual", "title": "MSD Manual Professional: Hip / Shoulder / Knee dislocations & reduction", "edition": "rev. Aug 2025", "offset": 0},
+    {"id": "clinorthop2000", "short": "Clin Orthop 2000", "title": "Cornwall R, Radomisli TE. Nerve injury in traumatic dislocation of the hip. Clin Orthop 2000;377:84–91", "edition": "", "offset": 0},
+    {"id": "MULLER", "alias": "muller2012", "short": "Müller 2012", "title": "Müller GJ, et al. CME 2012;30(10):356–361 (same source as muller2012)", "edition": "", "offset": 0},
+    {"id": "CUTIS", "alias": "tomlinson2019", "short": "Tomlinson 2019", "title": "Tomlinson H, Elston DM. Cutis 2019;104(4):217–219 (same source as tomlinson2019)", "edition": "", "offset": 0}
   ]
 }

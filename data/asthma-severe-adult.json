@@ -1,0 +1,1175 @@
+{
+ "id": "asthma-severe-adult",
+ "short": "Asthma_Severe_Adult",
+ "title": "Acute severe asthma (adult)",
+ "population": "Adult (paediatric doses in a note box)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — wheeze + any of",
+   "items": [
+    {
+     "t": "Wheeze, chest tightness, breathlessness",
+     "s": "adultstg2026:16.1",
+     "b": 1
+    },
+    {
+     "t": "Respiratory distress, indrawing, cough",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Known asthma / reversible bronchospasm",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "> 50 y, first 'asthma' → think LV failure",
+     "s": "adultstg2026:16.1",
+     "b": 1
+    },
+    {
+     "t": "PEFR ____ % of predicted / personal best",
+     "s": "adultstg2026:16.1",
+     "k": "value"
+    },
+    {
+     "t": "SpO₂ ____ % on air   RR ____   HR ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — STG table (tick the worst)",
+   "items": [
+    {
+     "h": "SEVERE (any)"
+    },
+    {
+     "t": "SpO₂ < 90%",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "Talks in words, agitated",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "RR often > 30 · HR > 120",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "PEFR < 60% predicted",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "h": "LIFE-THREATENING (any)"
+    },
+    {
+     "t": "Unable to speak; drowsy / confused",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "Silent chest / feeble effort",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "Bradycardia",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "PEFR < 33% or unable to blow",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous ICU / intubation for asthma",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Admissions / steroid courses past 6 months",
+     "s": "phcstg2026:17.7"
+    },
+    {
+     "t": "Inhaled steroid prescribed (and used?)",
+     "s": "adultstg2026:16.6"
+    },
+    {
+     "t": "Reliever use frequency",
+     "d": 1
+    },
+    {
+     "t": "Personal best PEFR",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "COPD / smoking (pack-years)",
+     "s": "phcstg2026:17.7"
+    },
+    {
+     "t": "HIV / ART; TB history",
+     "d": 1
+    },
+    {
+     "t": "Cardiac failure, β-blocker use",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Attack"
+    },
+    {
+     "t": "Onset: rapid (hours) vs days",
+     "s": "phcstg2026:17.7"
+    },
+    {
+     "t": "Nocturnal symptoms / recent worsening",
+     "s": "phcstg2026:17.7"
+    },
+    {
+     "t": "Treatment taken before arrival (puffs, nebs, steroid)",
+     "d": 1
+    },
+    {
+     "t": "Previous severe / rapid-onset attacks",
+     "s": "phcstg2026:17.7"
+    },
+    {
+     "h": "Triggers"
+    },
+    {
+     "t": "URTI / fever, purulent sputum",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Allergen, smoke, exercise",
+     "d": 1
+    },
+    {
+     "t": "Poor adherence / inhaler technique",
+     "s": "phcstg2026:17.6"
+    },
+    {
+     "t": "NSAID / aspirin / β-blocker",
+     "d": 1
+    },
+    {
+     "h": "Other causes of wheeze"
+    },
+    {
+     "t": "Sudden onset after food / sting / drug → anaphylaxis",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Unilateral pain → pneumothorax",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Orthopnoea, cardiac history → LVF",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Stridor, foreign body",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "TB symptoms screen",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever",
+     "k": "yn"
+    },
+    {
+     "h": "STG thresholds"
+    },
+    {
+     "t": "SpO₂ < 90% → severe",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "PEFR < 60% → severe",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "PEFR < 33% / unable → life-threatening",
+     "s": "adultstg2026:16.1",
+     "k": "sub"
+    },
+    {
+     "t": "PEFR < 75% 15–30 min after neb → admit/refer",
+     "s": "phcstg2026:17.7",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Respiratory"
+    },
+    {
+     "t": "Accessory muscles / indrawing",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Wheeze present / ABSENT (silent)",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Unequal air entry, tracheal shift",
+     "d": 1
+    },
+    {
+     "t": "Subcutaneous emphysema",
+     "d": 1
+    },
+    {
+     "h": "Cardiovascular"
+    },
+    {
+     "t": "Pulsus paradoxus",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Raised JVP, crepitations, gallop",
+     "d": 1
+    },
+    {
+     "t": "Cold peripheries / hypotension",
+     "d": 1
+    },
+    {
+     "t": "Signs of DVT",
+     "d": 1
+    },
+    {
+     "h": "Neuro / other"
+    },
+    {
+     "t": "Exhaustion, drowsy, confused",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Urticaria, angioedema, stridor",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Consolidation signs",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "PEFR (+ SpO₂)",
+   "items": [
+    {
+     "t": "Value on arrival: ______ L/min = ____ % predicted / best",
+     "k": "value"
+    },
+    {
+     "t": "> 60%: mild–moderate",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "< 60%: severe",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "< 33% / unable: life-threatening",
+     "s": "adultstg2026:16.1",
+     "b": 1
+    },
+    {
+     "t": "Repeat 15–30 min after each neb; response = improvement > 20%",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "PEFR < 75% after neb → admit / REFER",
+     "s": "phcstg2026:17.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas (VBG / ABG) + K⁺",
+   "items": [
+    {
+     "t": "pH ____  PCO₂ ____ kPa  HCO₃⁻ ____  K⁺ ____",
+     "k": "value"
+    },
+    {
+     "t": "PCO₂ normal or rising in a distressed patient = tiring → ventilation",
+     "s": "adultstg2026:23.2",
+     "b": 1
+    },
+    {
+     "t": "pH < 7.20 on the ventilator: adjust settings",
+     "s": "adultstg2026:23.48"
+    },
+    {
+     "t": "K⁺ low on repeated salbutamol → replace",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Repeat after 1 h of treatment if severe",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Silent chest / exhaustion",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Tension pneumothorax",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Anaphylaxis",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Upper airway obstruction / stridor",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Pulmonary oedema (LVF)",
+     "s": "adultstg2026:16.1"
+    },
+    {
+     "t": "Pneumonia with consolidation",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "t": "Pulmonary embolism",
+     "d": 1
+    },
+    {
+     "t": "Hypokalaemia",
+     "s": "paedstg2026:15.19"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = LIFE-THREATENING or NO RESPONSE IN 1 h → MgSO₄, discuss, intubate if failing → REFER",
+   "s": "adultstg2026:16.4",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (severe, responding) — stabilise, then continue on the 24-hour asthma chart and the 12-hour nursing asthma record",
+   "s": "phcstg2026:17.7",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Response decides the next step, not the clock · no sedation unless intubated",
+  "columns": {
+   "feed": "Oxygen, fluids & obs",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "SpO₂ continuous; oxygen to 93–95%",
+    "s": "adultstg2026:16.2",
+    "b": 1
+   },
+   {
+    "t": "RR, HR, speech, wheeze every 20–30 min with each neb in the first 2 h, then hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "PEFR before and 15–30 min after each neb",
+    "s": "phcstg2026:17.7",
+    "b": 1
+   },
+   {
+    "t": "GCS hourly · K⁺ if repeated salbutamol",
+    "s": "paedstg2026:15.19",
+    "b": 1
+   },
+   {
+    "t": "No sedatives unless intubated",
+    "s": "adultstg2026:16.3",
+    "b": 1
+   },
+   {
+    "t": "Record on the 12-hour nursing asthma record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Check the referral letter for salbutamol, ipratropium, hydrocortisone / prednisone already given (dose, time). Sit up. Avoid sedation of any kind.",
+    "feed": [
+     {
+      "t": "Oxygen to SpO₂ 93–95%",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     },
+     {
+      "t": "Nebuliser driven by oxygen 8 L/min",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "Monitor, IV access",
+      "d": 1
+     },
+     {
+      "t": "Oral fluids; IV only if unable to drink — avoid overhydration",
+      "s": "paedstg2026:15.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR (if able) + SpO₂",
+      "s": "adultstg2026:16.1",
+      "b": 1
+     },
+     {
+      "t": "VBG / ABG: pH, PCO₂, K⁺",
+      "s": "adultstg2026:23.2",
+      "b": 1
+     },
+     {
+      "t": "CXR if pneumothorax, consolidation or no response",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     },
+     {
+      "t": "FBC, U&E",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ECG if > 50 y or cardiac history",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Severe",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "Salbutamol 5 mg (1 mL) + NaCl to 4 mL neb, repeat every 20–30 min until PEF > 60%",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     },
+     {
+      "t": "or MDI 4–10 puffs (up to 20) via spacer, 1 puff at a time, 6 breaths each",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "Poor response after first neb: add ipratropium 0.5 mg to each neb, every 20–30 min × 3",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "t": "Prednisone 40 mg PO now (hydrocortisone 100 mg IV/IM 6-hourly if vomiting)",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "h": "Life-threatening",
+      "s": "adultstg2026:16.3"
+     },
+     {
+      "t": "Salbutamol 10 mg (2 mL) + ipratropium 0.5 mg neb every 20–30 min, 4 doses over 2 h",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "t": "Hydrocortisone 100 mg IV/IM 6-hourly",
+      "s": "adultstg2026:16.3",
+      "b": 1
+     },
+     {
+      "t": "Call for help early; prepare RSI kit (ketamine)",
+      "d": 1
+     },
+     {
+      "h": "Exclude now"
+     },
+     {
+      "t": "Tension pneumothorax → decompress",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "t": "Anaphylaxis → adrenaline IM (anaphylaxis pathway)",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "t": "LVF in > 50 y with first attack",
+      "s": "adultstg2026:16.1"
+     }
+    ]
+   },
+   {
+    "label": "20–30 min",
+    "phase": "2nd neb",
+    "feed": [
+     {
+      "t": "SpO₂ ___ RR ___ HR ___ speech ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR after neb ___ % (response = rise > 20%)",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat salbutamol (+ ipratropium if started)",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "Worse / life-threatening → life-threatening regimen",
+      "s": "adultstg2026:16.3"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Decision point",
+    "feed": [
+     {
+      "t": "Responder? RR < 20, speech normal, PEFR > 60%",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat VBG if severe: PCO₂ rising?",
+      "s": "adultstg2026:23.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No response in 1 h: MgSO₄ 2 g (50 mg/kg max 2 g) in 100 mL NaCl 0.9% IV over 20 min, single dose",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     },
+     {
+      "t": "Discuss with specialist; exclude obstruction, pneumothorax, anaphylaxis",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     },
+     {
+      "t": "No aminophylline",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Escalate or settle",
+    "feed": [
+     {
+      "t": "Exhausted, drowsy, silent chest, PCO₂ rising?",
+      "s": "adultstg2026:16.1",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG · K⁺",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Failing: intubate (RSI card; ketamine 1–2 mg/kg preferred if unstable) → ventilated rows, side 2",
+      "s": "adultstg2026:20.19",
+      "b": 1
+     },
+     {
+      "t": "Stabilise before transfer; discuss transport level with referral centre",
+      "s": "adultstg2026:16.4"
+     },
+     {
+      "t": "Improving to severe: continue severe regimen",
+      "s": "adultstg2026:16.4"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Responding",
+    "feed": [
+     {
+      "t": "Nebs every 2–4 h once PEF > 60%",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "SpO₂ on room air?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR before / after neb",
+      "s": "phcstg2026:17.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ipratropium stops after 3 doses (or 3 h MDI)",
+      "s": "adultstg2026:16.3"
+     },
+     {
+      "t": "Switch IV steroid to prednisone 40 mg daily once oral",
+      "s": "adultstg2026:16.3"
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Night-time attacks? Neb need ___ / 12 h",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR trend · K⁺ if on frequent nebs",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     },
+     {
+      "t": "CXR result reviewed",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics only if consolidation on CXR",
+      "s": "adultstg2026:16.4",
+      "b": 1
+     },
+     {
+      "t": "Spacer technique check",
+      "s": "phcstg2026:17.6"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Ward",
+    "feed": [
+     {
+      "t": "MDI + spacer instead of nebs",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR morning and evening",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prednisone 40 mg daily, total 7 days",
+      "s": "adultstg2026:16.2",
+      "b": 1
+     },
+     {
+      "t": "Start / step up inhaled steroid",
+      "s": "adultstg2026:16.6"
+     }
+    ]
+   },
+   {
+    "label": "Day 2–3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "Off oxygen, nebs ≥ 4-hourly or less",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR ≥ 75% of best / predicted",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria (box below); education, written plan",
+      "s": "phcstg2026:17.6"
+     }
+    ]
+   },
+   {
+    "label": "Ventilated: set up",
+    "phase": "Bridge to transfer",
+    "feed": [
+     {
+      "t": "Ketamine induction 1–2 mg/kg; sux 1–1.5 mg/kg",
+      "s": "adultstg2026:20.19",
+      "b": 1
+     },
+     {
+      "t": "Largest ETT possible",
+      "d": 1
+     },
+     {
+      "t": "Fluid bolus ready before induction (preload-dependent)",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ABG/VBG 20–30 min after intubation",
+      "s": "adultstg2026:23.47",
+      "b": 1
+     },
+     {
+      "t": "CXR: tube, pneumothorax",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Volume control, Vt 5–8 mL/kg PBW (aim 6)",
+      "s": "adultstg2026:23.47",
+      "b": 1
+     },
+     {
+      "t": "Low RR 8–10/min, I:E 1:4–1:5, short Ti / high flow",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "PEEP 5 (STG default)",
+      "s": "adultstg2026:23.47"
+     },
+     {
+      "t": "Plateau pressure < 30 cmH₂O",
+      "d": 1
+     },
+     {
+      "t": "PERMISSIVE HYPERCAPNIA in asthma: accept high PCO₂",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Do not let pH fall < 7.20",
+      "s": "adultstg2026:23.48",
+      "b": 1
+     },
+     {
+      "t": "Continue nebs in-line, steroids, MgSO₄ if not given; sedation: midazolam 0.05–0.2 mg/kg/h + ketamine 0.5–1 mg/kg/h",
+      "s": "adultstg2026:20.20"
+     }
+    ]
+   },
+   {
+    "label": "Ventilated: crash",
+    "phase": "Sudden hypotension / desaturation",
+    "feed": [
+     {
+      "t": "Think AUTO-PEEP (breath stacking) first",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Expiratory flow not reaching zero on ventilator",
+      "d": 1
+     },
+     {
+      "t": "Unequal air entry → pneumothorax",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "1 DISCONNECT the ventilator; let the chest empty 30–60 s; gentle chest compression on expiration",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "2 Fluid bolus; push-dose adrenaline if still hypotensive",
+      "d": 1
+     },
+     {
+      "t": "3 DOPE: Displaced tube, Obstructed tube, Pneumothorax (decompress), Equipment",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "4 Reconnect with lower RR / longer expiration",
+      "d": 1
+     },
+     {
+      "t": "Cardiac arrest: CPR, adrenaline 1 mg; consider bilateral decompression",
+      "s": "adultstg2026:20.5"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Drugs · adult",
+   "items": [
+    {
+     "h": "Salbutamol"
+    },
+    {
+     "t": "5 mg neb (severe) · 10 mg + ipratropium (life-threatening), O₂ 8 L/min, every 20–30 min",
+     "s": "adultstg2026:16.3"
+    },
+    {
+     "t": "MDI 4–10 puffs (up to 20) via spacer",
+     "s": "adultstg2026:16.2"
+    },
+    {
+     "h": "Ipratropium"
+    },
+    {
+     "t": "0.5 mg with salbutamol every 20–30 min × 3 (× 4 over 2 h if life-threatening)",
+     "s": "adultstg2026:16.3"
+    },
+    {
+     "h": "Steroid"
+    },
+    {
+     "t": "Prednisone 40 mg PO daily × 7 d · hydrocortisone 100 mg IV/IM 6-hourly if NPO",
+     "s": "adultstg2026:16.3"
+    },
+    {
+     "h": "Magnesium sulphate"
+    },
+    {
+     "t": "50 mg/kg, max 2 g, in 100 mL NaCl 0.9% over 20 min, once",
+     "s": "adultstg2026:16.4"
+    },
+    {
+     "h": "Not used"
+    },
+    {
+     "t": "Aminophylline, sedatives (non-intubated), routine antibiotics",
+     "s": "adultstg2026:16.4"
+    }
+   ]
+  },
+  {
+   "title": "Paediatric doses (note)",
+   "items": [
+    {
+     "t": "Salbutamol neb 0.15–0.3 mg/kg (max 5 mg) every 20 min × 3; MDI 10 puffs = 1 mg (severe)",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Ipratropium 0.25 mg neb; severe: every 20–30 min × 4 over 2 h",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Prednisone 1–2 mg/kg (max 20 mg < 2 y · 30 mg 2–5 y · 40 mg 6–12 y) × 5 d; hydrocortisone 2 mg/kg 6-hourly",
+     "s": "paedstg2026:15.21"
+    },
+    {
+     "t": "MgSO₄ 25–75 mg/kg over 20 min / salbutamol IV 15 mcg/kg — consult paediatrician",
+     "s": "paedstg2026:15.22"
+    },
+    {
+     "t": "IV fluid max 50 mL/kg/24 h",
+     "s": "paedstg2026:15.19"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Silent chest, drowsy, bradycardia, feeble effort → life-threatening regimen, call for help",
+     "s": "adultstg2026:16.1",
+     "b": 1
+    },
+    {
+     "t": "No response in 1 h → MgSO₄, specialist, consider ventilation",
+     "s": "adultstg2026:16.4",
+     "b": 1
+    },
+    {
+     "t": "PCO₂ normal/rising in a distressed patient → ventilate → REFER",
+     "s": "adultstg2026:23.2"
+    },
+    {
+     "t": "Ventilated + sudden hypotension → disconnect first (auto-PEEP)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Tremor, tachycardia, low K⁺ on salbutamol → check K⁺",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Do not sedate the non-intubated patient",
+     "s": "adultstg2026:16.3",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "PEFR ≥ 75% of best / predicted",
+    "d": 1
+   },
+   {
+    "t": "Off oxygen, SpO₂ normal for patient",
+    "d": 1
+   },
+   {
+    "t": "Nebs / reliever needed ≤ 4-hourly",
+    "d": 1
+   },
+   {
+    "t": "Inhaler + spacer technique checked",
+    "s": "phcstg2026:17.6"
+   },
+   {
+    "t": "Prednisone to complete 7 days",
+    "s": "adultstg2026:16.2"
+   },
+   {
+    "t": "ICS started / adherence addressed",
+    "s": "adultstg2026:16.6"
+   },
+   {
+    "t": "Smoking: advised to stop",
+    "s": "phcstg2026:17.6"
+   },
+   {
+    "t": "Told: high chance of more wheeze this week; danger signs",
+    "s": "phcstg2026:17.6"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic within 1 week: PEFR, technique, maintenance therapy",
+    "d": 1
+   },
+   {
+    "t": "First attack: full assessment for maintenance treatment",
+    "s": "phcstg2026:17.6"
+   },
+   {
+    "t": "> 2 steroid courses in 6 months → doctor review of maintenance",
+    "s": "phcstg2026:17.7"
+   },
+   {
+    "t": "Return: unable to speak in sentences, reliever not lasting 4 h, drowsy",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "12-hour nursing asthma record — SpO₂, RR, PEFR and nebs",
+  "period": "12 hours (20–30-min rows to 2 h, hourly to 12 h)",
+  "params": [
+   {
+    "h": "SpO₂, RR, HR",
+    "items": [
+     {
+      "t": "SpO₂ continuous; O₂ to 93–95%",
+      "s": "adultstg2026:16.2"
+     },
+     {
+      "t": "With every neb (20–30 min) for 2 h, then hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "PEFR",
+    "items": [
+     {
+      "t": "Before and 15–30 min after each neb",
+      "s": "phcstg2026:17.7"
+     },
+     {
+      "t": "Write % of best / predicted",
+      "s": "adultstg2026:16.1"
+     }
+    ]
+   },
+   {
+    "h": "Speech / alertness",
+    "items": [
+     {
+      "t": "Sentences / phrases / words / none",
+      "s": "adultstg2026:16.1"
+     },
+     {
+      "t": "Drowsy or confused → call",
+      "s": "adultstg2026:16.1"
+     }
+    ]
+   },
+   {
+    "h": "Nebs + drugs",
+    "items": [
+     {
+      "t": "Time, salbutamol mg, ipratropium dose",
+      "s": "adultstg2026:16.3"
+     },
+     {
+      "t": "Steroid, MgSO₄ time",
+      "s": "adultstg2026:16.4"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ < 90%, speaking in words or unable to speak",
+    "s": "adultstg2026:16.1",
+    "b": 1
+   },
+   {
+    "t": "Silent chest, drowsy, confused, falling HR",
+    "s": "adultstg2026:16.1",
+    "b": 1
+   },
+   {
+    "t": "PEFR not improving > 20% after neb",
+    "s": "adultstg2026:16.4"
+   },
+   {
+    "t": "Sudden chest pain or one-sided breath sounds",
+    "d": 1
+   },
+   {
+    "t": "Ventilated: high pressure alarm, BP falling → disconnect, call",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Nebs given (n)",
+   "Salbutamol total mg",
+   "Best PEFR",
+   "Lowest SpO₂",
+   "MgSO₄ given (Y/N, time)"
+  ]
+ }
+}

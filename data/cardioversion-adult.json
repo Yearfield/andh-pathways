@@ -1,0 +1,440 @@
+{
+ "id": "cardioversion-adult",
+ "short": "Cardioversion",
+ "title": "Cardioversion & defibrillation",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "regimen": "Pulse → SYNC · no pulse → UNSYNC · midazolam sedation",
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the STG.",
+ "sources": [
+  "stg-adult",
+  "stg-phc"
+ ],
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered cells (m=a/b/c). steps[].decisions[]: if/then. reference{}: blocks (items or table).",
+ "indications": [
+  {
+   "h": "SYNCHRONISED — pulse present",
+   "col": 1,
+   "items": [
+    {
+     "t": "Unstable tachycardia: hypotension, altered mental status, chest pain, acute HF, shock",
+     "s": "stg-phc:21.14"
+    },
+    {
+     "t": "Regular wide-QRS (VT) — first line even if stable",
+     "s": "stg-adult:3.25"
+    },
+    {
+     "t": "Irregular wide > 170 / WPW-AF — no drugs",
+     "s": "stg-adult:3.24"
+    },
+    {
+     "t": "Flutter: most effective therapy",
+     "s": "stg-adult:3.20"
+    },
+    {
+     "t": "SVT failing adenosine or hypotensive",
+     "s": "stg-adult:3.21"
+    }
+   ]
+  },
+  {
+   "h": "UNSYNCHRONISED — defibrillation",
+   "col": 2,
+   "items": [
+    {
+     "t": "Pulseless VT / VF (cardiac arrest)",
+     "s": "stg-adult:3.22"
+    },
+    {
+     "t": "Torsades / polymorphic VT, unstable",
+     "s": "stg-adult:3.25"
+    },
+    {
+     "t": "Sync shock will not fire (no R wave detected)",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Do not shock",
+   "col": 1,
+   "items": [
+    {
+     "t": "Sinus tachycardia (compensatory)",
+     "d": 1
+    },
+    {
+     "t": "Stable AF / flutter > 48 h: defer until 4 weeks warfarin",
+     "s": "stg-adult:3.20"
+    },
+    {
+     "t": "Suspected digoxin toxicity: discuss first",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Correct / prepare first if time",
+   "col": 2,
+   "items": [
+    {
+     "t": "K⁺ low → correct (wide QRS)",
+     "s": "stg-adult:3.24"
+    },
+    {
+     "t": "Torsades → MgSO₄ 2 g IV",
+     "s": "stg-adult:3.25"
+    },
+    {
+     "t": "Pacemaker: pads ≥ 8 cm from box",
+     "d": 1
+    },
+    {
+     "t": "Wet chest / GTN patch / O₂ near pads",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": "1",
+   "title": "Prepare",
+   "time": "T − 5 min",
+   "subtitle": "monitor, access, airway kit, check sync capability",
+   "actions": [
+    {
+     "t": "Attach monitor",
+     "n": "1.1",
+     "x": "ECG, SpO₂, BP cuff; print rhythm strip + 12-lead if time",
+     "s": "stg-phc:21.14"
+    },
+    {
+     "t": "Give oxygen",
+     "n": "1.2",
+     "x": "target SpO₂ 94–98%",
+     "s": "stg-phc:21.13"
+    },
+    {
+     "t": "Secure IV access",
+     "n": "1.3",
+     "s": "stg-phc:21.14"
+    },
+    {
+     "t": "Airway kit at the bed",
+     "n": "1.4",
+     "x": "BVM, suction on, OPA, RSI drugs if GCS falls",
+     "d": 1
+    },
+    {
+     "t": "Tell the patient; consent if conscious",
+     "n": "1.5",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "title": "Pads on, choose mode",
+   "time": "T − 3 min",
+   "subtitle": "pulse present = SYNC · no pulse = UNSYNC",
+   "actions": [
+    {
+     "t": "Place pads",
+     "n": "2.1",
+     "x": "anterolateral: R infraclavicular + L mid-axillary V6; or antero-posterior",
+     "d": 1
+    },
+    {
+     "t": "Connect defib ECG leads",
+     "n": "2.2",
+     "x": "lead with tall R wave",
+     "d": 1
+    },
+    {
+     "t": "Press SYNC",
+     "n": "2.3",
+     "x": "check a marker sits on every R wave, not on T waves",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Select energy from the table below",
+     "n": "2.4",
+     "x": "narrow 100 J · wide 200 J",
+     "s": "stg-phc:21.14"
+    }
+   ],
+   "decisions": [
+    {
+     "if": "No pulse",
+     "then": "SYNC OFF → defibrillate now, start CPR (4.4)",
+     "s": "stg-adult:20.1"
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "title": "Sedate",
+   "time": "T − 3 → T 0",
+   "subtitle": "if time permits; unstable + falling GCS: shock first",
+   "actions": [
+    {
+     "t": "Give midazolam slowly",
+     "n": "3.1",
+     "x": "1–2.5 mg IV over 2–3 min",
+     "s": "stg-adult:3.22",
+     "b": 1
+    },
+    {
+     "t": "Repeat after 2–3 min if needed",
+     "n": "3.2",
+     "s": "stg-adult:3.22"
+    },
+    {
+     "t": "Wait for sedation",
+     "n": "3.3",
+     "x": "no response to voice; loss of eyelash reflex",
+     "d": 1
+    },
+    {
+     "t": "Support airway",
+     "n": "3.4",
+     "x": "jaw thrust / BVM if SpO₂ falls",
+     "d": 1
+    }
+   ],
+   "sequences": [
+    {
+     "id": "I",
+     "label": "a midazolam ▶ (repeat after 2–3 min) ▶ b shock",
+     "cells": [
+      {
+       "m": "a",
+       "drug": "MIDAZOLAM",
+       "when": "T − 3 min",
+       "dose": "1–2.5 mg IV over 2–3 min",
+       "adjusted": "elderly / hypotensive: start 1 mg †",
+       "s": "stg-adult:3.22"
+      },
+      {
+       "m": "b",
+       "drug": "SHOCK",
+       "when": "T 0",
+       "dose": "energy from table",
+       "adjusted": "re-press SYNC each time",
+       "d": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "4",
+   "title": "Shock",
+   "time": "T 0",
+   "subtitle": "charge · clear · shock",
+   "actions": [
+    {
+     "t": "Announce",
+     "n": "4.1",
+     "x": "“Charging — stand clear — oxygen away”",
+     "d": 1
+    },
+    {
+     "t": "Charge; check nobody touches patient or bed",
+     "n": "4.2",
+     "d": 1
+    },
+    {
+     "t": "Press and HOLD the shock button",
+     "n": "4.3",
+     "x": "SYNC delays the shock until the next R wave",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Pulseless: UNSYNC shock, resume CPR 2 min",
+     "n": "4.4",
+     "x": "biphasic 120–360 J, monophasic 360 J",
+     "s": "stg-adult:20.1",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "title": "Reassess & escalate",
+   "time": "T + 30 s",
+   "subtitle": "rhythm and pulse after every shock",
+   "actions": [
+    {
+     "t": "Check rhythm and pulse; print strip",
+     "n": "5.1",
+     "d": 1
+    },
+    {
+     "t": "Not converted: re-press SYNC, next energy",
+     "n": "5.2",
+     "x": "wide: 200 J → 360 J",
+     "s": "stg-adult:3.22",
+     "b": 1
+    },
+    {
+     "t": "VT recurs after shock: amiodarone",
+     "n": "5.3",
+     "x": "5 mg/kg IV over 30 min",
+     "s": "stg-adult:3.23",
+     "b": 1
+    },
+    {
+     "t": "No response to DC cardioversion: consult specialist",
+     "n": "5.4",
+     "s": "stg-adult:3.23"
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Rhythm becomes VF / pulseless",
+     "then": "SYNC OFF, defibrillate unsynchronised, CPR; amiodarone 300 mg IV after adrenaline, then 150 mg",
+     "s": "stg-adult:20.4"
+    }
+   ]
+  },
+  {
+   "n": "6",
+   "title": "Recover & document",
+   "time": "T + 5 min → awake",
+   "subtitle": "sedation watch, cause, referral",
+   "actions": [
+    {
+     "t": "Observe RR, SpO₂, GCS every 5 min until awake",
+     "n": "6.1",
+     "d": 1
+    },
+    {
+     "t": "12-lead ECG in sinus",
+     "n": "6.2",
+     "x": "delta waves, QT, ischaemia",
+     "s": "stg-adult:3.16"
+    },
+    {
+     "t": "Send K⁺, Mg²⁺; correct K⁺",
+     "n": "6.3",
+     "s": "stg-adult:3.24"
+    },
+    {
+     "t": "AF / flutter: anticoagulation decision (CHA₂DS₂-VASc)",
+     "n": "6.4",
+     "s": "stg-adult:3.20"
+    },
+    {
+     "t": "Document time, rhythm before / after, J, SYNC/UNSYNC, drugs; refer all wide QRS",
+     "n": "6.5",
+     "s": "stg-adult:3.25"
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "blocks": [
+   {
+    "title": "ENERGY · SYNC OR NOT",
+    "table": {
+     "cols": [
+      "Rhythm",
+      "Mode",
+      "Energy"
+     ],
+     "rows": [
+      {
+       "v": [
+        "Unstable narrow QRS (SVT, AF, flutter)",
+        "SYNC",
+        "100 J"
+       ],
+       "s": "stg-phc:21.14"
+      },
+      {
+       "v": [
+        "Regular wide QRS (VT with pulse)",
+        "SYNC",
+        "200 J → 360 J"
+       ],
+       "s": "stg-adult:3.22"
+      },
+      {
+       "v": [
+        "Irregular wide > 170 / WPW-AF",
+        "SYNC",
+        "200 J → 360 J"
+       ],
+       "s": "stg-adult:3.24"
+      },
+      {
+       "v": [
+        "Pulseless VT / VF",
+        "UNSYNC",
+        "biphasic 120–360 J · mono 360 J"
+       ],
+       "s": "stg-adult:20.1"
+      },
+      {
+       "v": [
+        "Torsades / polymorphic VT",
+        "UNSYNC",
+        "as VF"
+       ],
+       "s": "stg-adult:3.25"
+      },
+      {
+       "v": [
+        "Child (for reference)",
+        "SYNC / UNSYNC",
+        "0.5–1 J/kg (max 4) / 4 J/kg"
+       ],
+       "s": "stg-phc:21.14"
+      }
+     ]
+    }
+   },
+   {
+    "title": "DRUGS · PITFALLS",
+    "items": [
+     {
+      "t": "Midazolam 1–2.5 mg IV over 2–3 min, repeat after 2–3 min",
+      "s": "stg-adult:3.22"
+     },
+     {
+      "t": "Amiodarone: arrest 300 mg → 150 mg; VT recurring 5 mg/kg over 30 min",
+      "s": "stg-adult:3.23"
+     },
+     {
+      "t": "Never adenosine / verapamil in wide QRS",
+      "s": "stg-adult:3.22",
+      "b": 1
+     },
+     {
+      "t": "Sync resets to OFF after each shock on many defibs — re-press",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Use the defibrillator's own biphasic energy escalation if it differs",
+      "d": 1
+     },
+     {
+      "t": "No sync marker / chaotic rhythm → unsynchronised",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ }
+}

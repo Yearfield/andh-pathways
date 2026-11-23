@@ -1,0 +1,1272 @@
+{
+ "id": "suicide-attempt-near-hanging",
+ "short": "Suicide_Attempt_Near_Hanging",
+ "title": "Suicide attempt & near-hanging",
+ "population": "Adolescent (≥ 12 y) and adult — minors flagged throughout",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "paedstg2026",
+  "mhca-regs2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Medically serious overdose → poisoning pathway first (Paracetamol, TCA, OP…), this pathway alongside",
+     "s": "phcstg2026:16.24",
+     "b": 1
+    },
+    {
+     "t": "Delirium / reduced LOC → delirium pathway",
+     "s": "adultstg2026:15.5"
+    },
+    {
+     "t": "Child < 12 y → paediatric team",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — any one",
+   "items": [
+    {
+     "t": "Act of self-harm with intent to die",
+     "s": "paedstg2026:14.13",
+     "b": 1
+    },
+    {
+     "t": "Near-hanging / strangulation (any duration)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Current suicidal thoughts or plan",
+     "s": "phcstg2026:16.24",
+     "b": 1
+    },
+    {
+     "t": "Method ______ Time ______ Found by ______",
+     "k": "value"
+    },
+    {
+     "t": "Age ____  (< 18 → minor: parent / guardian, social worker)",
+     "s": "mhca-regs2026:forms",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "High / imminent risk = any one of",
+   "items": [
+    {
+     "t": "Extreme hopelessness and despair",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Current thoughts / plan / act",
+     "s": "phcstg2026:16.23",
+     "b": 1
+    },
+    {
+     "t": "Previous self-harm / attempt",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Agitated, violent, distressed or cannot communicate + thoughts/plan/act",
+     "s": "phcstg2026:16.24",
+     "b": 1
+    },
+    {
+     "t": "Lethal method; planned; hidden; note left",
+     "s": "paedstg2026:14.13",
+     "d": 1
+    },
+    {
+     "t": "Psychosis, depression, bipolar, substance use",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Previous attempts / admissions",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Psychiatric diagnosis + medication",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Chronic illness, pain, disability, HIV",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Pregnancy / postpartum",
+     "s": "adultstg2026:15.2"
+    },
+    {
+     "t": "Medicines at home toxic in overdose (amitriptyline, paracetamol)",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Previous MHCA forms / state patient",
+     "s": "adultstg2026:15.3"
+    },
+    {
+     "t": "Road-to-Health / school records (minor)",
+     "d": 1
+    },
+    {
+     "t": "Social worker involvement",
+     "s": "phcstg2026:16.25"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History — risk assessment (ask directly)",
+   "items": [
+    {
+     "h": "The five components",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Ideation: thoughts of death now?",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Intent: wanted to die?",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Plan: how detailed?",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Access to lethal means at home",
+     "s": "phcstg2026:16.23",
+     "b": 1
+    },
+    {
+     "t": "Past attempts",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "h": "Stressors",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Bereavement, separation, IPV",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Financial, bullying, school",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Abuse (child / partner / elder)",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Substance use (alcohol, tik)",
+     "s": "paedstg2026:14.13"
+    },
+    {
+     "h": "Protective"
+    },
+    {
+     "t": "Support person, reasons to live",
+     "d": 1
+    },
+    {
+     "t": "Collateral from family / SAPS",
+     "s": "adultstg2026:15.2"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypotension / Hypertension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia / Bradycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Hypothermia / Fever",
+     "k": "yn"
+    },
+    {
+     "h": "Near-hanging"
+    },
+    {
+     "t": "Voice change / stridor",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Seizure since event",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neck (near-hanging)"
+    },
+    {
+     "t": "Ligature mark: level, depth",
+     "d": 1
+    },
+    {
+     "t": "Hoarse voice, stridor, crepitus",
+     "d": 1
+    },
+    {
+     "t": "Midline C-spine tenderness / deficit",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "t": "Bruit, haematoma, Horner",
+     "d": 1
+    },
+    {
+     "h": "Chest / neuro"
+    },
+    {
+     "t": "Crackles (negative-pressure pulmonary oedema)",
+     "d": 1
+    },
+    {
+     "t": "GCS, pupils, focal signs",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "t": "Petechiae face / conjunctiva",
+     "d": 1
+    },
+    {
+     "t": "Other injuries (cuts, burns)",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "h": "Mental state"
+    },
+    {
+     "t": "Mood, hopelessness",
+     "s": "phcstg2026:16.23"
+    },
+    {
+     "t": "Psychosis, agitation",
+     "s": "adultstg2026:15.3"
+    },
+    {
+     "t": "Intoxication",
+     "s": "adultstg2026:15.3"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Medical clearance",
+   "items": [
+    {
+     "t": "HGT · VBG · ECG",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Paracetamol level if any tablets / unsure",
+     "s": "phcstg2026:16.24",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Pregnancy test (female 12–50 y)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Near-hanging + low GCS / neuro deficit / bruit → CT + CTA neck: REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "C-spine X-ray on site if drop / tenderness",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "MHCA status (decide now)",
+   "items": [
+    {
+     "t": "Consents, capacity → VOLUNTARY (no forms)",
+     "s": "adultstg2026:15.5",
+     "b": 1
+    },
+    {
+     "t": "Cannot consent, not refusing → ASSISTED: Form 04 + two 05s + 07",
+     "s": "adultstg2026:15.5",
+     "b": 1
+    },
+    {
+     "t": "Refuses + risk to self → INVOLUNTARY 72 h: Form 04 + two 05s + 07",
+     "s": "adultstg2026:15.5",
+     "b": 1
+    },
+    {
+     "t": "Treated without consent in emergency → Form 01",
+     "s": "mhca-regs2026:forms",
+     "b": 1
+    },
+    {
+     "t": "Brought by SAPS → collect Form 22",
+     "s": "adultstg2026:15.5"
+    },
+    {
+     "t": "< 18: Form 04 by parent / guardian",
+     "s": "mhca-regs2026:forms",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Laryngeal injury / stridor",
+     "d": 1
+    },
+    {
+     "t": "Carotid / vertebral dissection",
+     "d": 1
+    },
+    {
+     "t": "Hypoxic brain injury",
+     "d": 1
+    },
+    {
+     "t": "Pulmonary oedema / aspiration",
+     "d": 1
+    },
+    {
+     "t": "Co-ingested overdose",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "C-spine fracture",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "t": "Ongoing access to means on ward",
+     "s": "phcstg2026:16.24"
+    },
+    {
+     "t": "Child abuse / IPV behind the act",
+     "s": "phcstg2026:16.23"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = MEDICALLY SERIOUS ATTEMPT or IMMINENT RISK → treat medically, constant observation, MHCA forms → REFER to psychiatry",
+   "s": "phcstg2026:16.25",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (all near-hangings and all attempts) — continue on the 72-hour observation chart and the 24-hour nursing observation record",
+   "s": "phcstg2026:16.25",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Near-hanging / strangulation",
+   "branch": "If near-hanging",
+   "features": [
+    {
+     "t": "Ligature mark, petechiae, voice change",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "GCS, airway, neuro exam; C-spine X-ray if indicated",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Airway first; intubate early if stridor / GCS falling",
+     "d": 1
+    },
+    {
+     "t": "O₂; C-spine precautions if drop / tenderness",
+     "s": "phcstg2026:21.64"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If GCS low, deficit, bruit, stridor (CT/CTA)",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Overdose / ingestion",
+   "branch": "If overdose",
+   "features": [
+    {
+     "t": "Tablets, pesticide, paraffin, alcohol",
+     "s": "phcstg2026:16.24"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Paracetamol level, ECG (QRS), HGT",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Poisoning pathway (Paracetamol / TCA / OP)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per poisoning pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Cutting / burns / other trauma",
+   "branch": "",
+   "features": [
+    {
+     "t": "Wounds, depth, tendons",
+     "s": "phcstg2026:21.65"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Primary + secondary survey",
+     "s": "phcstg2026:21.64",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Wound care, tetanus",
+     "s": "phcstg2026:21.66"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If tendon / nerve / vascular",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Underlying psychosis / mania / delirium",
+   "branch": "If agitated / wants to leave",
+   "features": [
+    {
+     "t": "Hallucinations, confusion, fluctuating",
+     "s": "adultstg2026:15.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Exclude medical causes (DIMTOP)",
+     "s": "adultstg2026:20.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Rapid tranquillisation per STG 15.1",
+     "s": "adultstg2026:15.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Psychiatry (Form 11 if MHCA)",
+     "s": "adultstg2026:15.5"
+    }
+   ]
+  },
+  {
+   "dx": "Minor (< 18 y)",
+   "branch": "If minor",
+   "features": [
+    {
+     "t": "Adolescent; abuse, bullying, pregnancy",
+     "s": "paedstg2026:14.12"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Parent / guardian identified; social worker",
+     "s": "mhca-regs2026:forms",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Form 04 by parent / guardian; child protection referral",
+     "s": "mhca-regs2026:forms"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Child & adolescent psychiatry",
+     "s": "paedstg2026:14.13"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Medical first, then risk · constant observation until a doctor documents lower risk · MHCA 72-h clock starts at Form 07",
+  "columns": {
+   "feed": "Observation & safety",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment, assessment & forms"
+  },
+  "standing": [
+   {
+    "t": "Constant (1:1, within sight) observation until risk reviewed by a doctor",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Remove belts, cords, sharps, medicines from bed area; search on arrival",
+    "s": "phcstg2026:16.24",
+    "b": 1
+   },
+   {
+    "t": "Near-hanging: GCS, voice, SpO₂, RR every 15 min × 2 h, then hourly × 24 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Restrained / secluded: vitals + mental state every 15–30 min; Form 48",
+    "s": "adultstg2026:15.4",
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing observation record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Medical stability first (ABCDE). Check the referral note / SAPS for Form 22 or Form 01 and any doses given. Never leave the patient alone or near an open door.",
+    "feed": [
+     {
+      "t": "Resus bay, constant observation",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Search and remove means",
+      "s": "phcstg2026:16.24",
+      "b": 1
+     },
+     {
+      "t": "Oxygen; airway kit ready if near-hanging",
+      "d": 1
+     },
+     {
+      "t": "Contact relatives / caregiver",
+      "s": "adultstg2026:15.5"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, VBG, ECG",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Paracetamol level if any ingestion possible",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, FBC",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pregnancy test",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine drug screen if available",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Medical"
+     },
+     {
+      "t": "Primary survey; C-spine precautions if drop or tenderness",
+      "s": "phcstg2026:21.64",
+      "b": 1
+     },
+     {
+      "t": "Near-hanging: early airway if stridor / falling GCS (RSI card)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Ingestion → poisoning pathway alongside",
+      "s": "phcstg2026:16.24"
+     },
+     {
+      "h": "Risk"
+     },
+     {
+      "t": "Ask: ideation, intent, plan, means, past attempts",
+      "s": "phcstg2026:16.23",
+      "b": 1
+     },
+     {
+      "t": "Imminent risk? (agitated / violent / distressed + thoughts, plan or act)",
+      "s": "phcstg2026:16.24",
+      "b": 1
+     },
+     {
+      "h": "Agitated"
+     },
+     {
+      "t": "De-escalate; oral benzodiazepine or olanzapine (box)",
+      "s": "adultstg2026:15.6"
+     },
+     {
+      "h": "MHCA"
+     },
+     {
+      "t": "Decide voluntary / assisted / involuntary (admission §8)",
+      "s": "adultstg2026:15.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Medically clear?",
+    "feed": [
+     {
+      "t": "Observation level: ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results reviewed: HGT, VBG, ECG, paracetamol",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Involuntary / assisted: Form 04 (applicant) + Form 05 (1st practitioner)",
+      "s": "adultstg2026:15.5",
+      "b": 1
+     },
+     {
+      "t": "Emergency care without consent: Form 01 to Review Board",
+      "s": "mhca-regs2026:forms"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Forms",
+    "feed": [
+     {
+      "t": "Patient asking to leave? → do not let go if involuntary",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Near-hanging: repeat neuro / airway; CXR if crackles",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Second Form 05 (different practitioner)",
+      "s": "adultstg2026:15.5",
+      "b": 1
+     },
+     {
+      "t": "Head of establishment: Form 07 → 72-h assessment starts",
+      "s": "adultstg2026:15.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Sleep, food, visitors supervised",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat paracetamol / bloods per poisoning pathway",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Full mental-state and psychosocial assessment",
+      "s": "adultstg2026:15.2"
+     },
+     {
+      "t": "Social worker referral (all)",
+      "s": "phcstg2026:16.25",
+      "b": 1
+     },
+     {
+      "t": "Treat underlying condition (depression, psychosis, substances)",
+      "s": "phcstg2026:16.24"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Review risk",
+    "feed": [
+     {
+      "t": "Observation level stepped down only by doctor, documented",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Re-ask thoughts and plans",
+      "s": "phcstg2026:16.24",
+      "b": 1
+     },
+     {
+      "t": "Family meeting: means restriction at home",
+      "s": "phcstg2026:16.24"
+     },
+     {
+      "t": "Alcohol / substance withdrawal → detox",
+      "s": "adultstg2026:15.5"
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "MHCA end-point",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "72-h assessment: two Form 06s (medical practitioner + one other)",
+      "s": "adultstg2026:15.5",
+      "b": 1
+     },
+     {
+      "t": "Needs further inpatient care → Form 08 to Review Board; REFER with Form 11 + results",
+      "s": "adultstg2026:15.5",
+      "b": 1
+     },
+     {
+      "t": "Stable → change to voluntary / discharge with referral letter",
+      "s": "adultstg2026:15.5"
+     }
+    ]
+   },
+   {
+    "label": "If near-hanging",
+    "phase": "24 h minimum",
+    "feed": [
+     {
+      "t": "GCS, voice, SpO₂ every 15 min × 2 h, then hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CXR (aspiration / oedema); C-spine X-ray if drop / tenderness",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stridor, hoarse voice, crepitus → airway now (double set-up)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "GCS < 15 persisting, focal deficit, seizure, bruit → REFER for CT brain + CTA neck",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Seizure → status epilepticus pathway",
+      "d": 1
+     },
+     {
+      "t": "Delayed deterioration possible: observe ≥ 24 h",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If overdose",
+    "phase": "Alongside",
+    "feed": [
+     {
+      "t": "Poisoning chart for that toxin",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Per toxin (paracetamol 4-h level, ECG QRS)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Psychiatric assessment once medically clear; do not delay MHCA forms",
+      "d": 1
+     },
+     {
+      "t": "Discharge meds: small supplies; avoid TCAs",
+      "s": "phcstg2026:16.24"
+     }
+    ]
+   },
+   {
+    "label": "If minor (< 18)",
+    "phase": "Child protection",
+    "feed": [
+     {
+      "t": "Paediatric / adolescent bed; same-sex staff where possible",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pregnancy test; screen for abuse",
+      "s": "paedstg2026:14.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Parent / guardian informed; Form 04 by parent / guardian with parental rights",
+      "s": "mhca-regs2026:forms",
+      "b": 1
+     },
+     {
+      "t": "Suspected abuse / neglect → social worker + child protection report (Children's Act s110)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Abuse by caregiver: Form 02 (abuse report) and another applicant",
+      "s": "mhca-regs2026:forms"
+     },
+     {
+      "t": "Refer child & adolescent psychiatry",
+      "s": "paedstg2026:14.13"
+     }
+    ]
+   },
+   {
+    "label": "If agitated / wants to leave",
+    "phase": "Safety",
+    "feed": [
+     {
+      "t": "Security + SAPS backup; calm area; never unobserved",
+      "s": "adultstg2026:15.3"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Exclude delirium (DIMTOP)",
+      "s": "adultstg2026:20.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Oral first: lorazepam 0.5–2 mg / diazepam 5–10 mg / midazolam 7.5–15 mg buccal",
+      "s": "adultstg2026:15.6",
+      "b": 1
+     },
+     {
+      "t": "Psychosis / pregnant / frail: olanzapine 5–10 mg (2.5–5 frail)",
+      "s": "adultstg2026:15.6"
+     },
+     {
+      "t": "Refused / no response 30–60 min: olanzapine IM 5–10 mg, or lorazepam / midazolam IM",
+      "s": "adultstg2026:15.7"
+     },
+     {
+      "t": "Restraint: shortest time, 15-min checks, Form 48",
+      "s": "adultstg2026:15.4",
+      "b": 1
+     },
+     {
+      "t": "Absconds while involuntary → Form 25 to SAPS",
+      "s": "mhca-regs2026:forms"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "MHCA forms (GG 55097, 2026)",
+   "items": [
+    {
+     "t": "01 Emergency care / admission without consent → Review Board",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "02 Report of abuse / neglect of a user",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "04 Application (family / associate / health provider; < 18: parent or guardian)",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "05 Examination findings — two practitioners",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "06 72-h assessment findings — two practitioners",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "07 Head of establishment decision (starts 72 h)",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "08 Request to Review Board for further involuntary care",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "11 Transfer to another establishment · 22 SAPS handover · 25 abscondment · 48 restraint register",
+     "s": "adultstg2026:15.5"
+    }
+   ]
+  },
+  {
+   "title": "Drugs · sedation",
+   "items": [
+    {
+     "t": "Lorazepam 0.5–2 mg PO / IM",
+     "s": "adultstg2026:15.6"
+    },
+    {
+     "t": "Diazepam 5–10 mg PO",
+     "s": "adultstg2026:15.6"
+    },
+    {
+     "t": "Midazolam 7.5–15 mg buccal / IM",
+     "s": "adultstg2026:15.6"
+    },
+    {
+     "t": "Olanzapine 5–10 mg ODT / IM; frail 2.5–5 mg; repeat after 30–60 min",
+     "s": "adultstg2026:15.6"
+    },
+    {
+     "t": "Allow 30–60 min between doses; airway kit ready",
+     "s": "adultstg2026:15.6",
+     "b": 1
+    },
+    {
+     "t": "No depot antipsychotics for rapid tranquillisation",
+     "s": "adultstg2026:15.6"
+    },
+    {
+     "t": "Discharge: no TCAs; small supplies; safe storage",
+     "s": "phcstg2026:16.24"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Stridor, voice change, GCS falling (near-hanging) → airway, REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Any absconding attempt by involuntary user → SAPS (Form 25)",
+     "s": "mhca-regs2026:forms"
+    },
+    {
+     "t": "Medically serious attempt / imminent risk → REFER psychiatry",
+     "s": "phcstg2026:16.25",
+     "b": 1
+    },
+    {
+     "t": "Severe disturbance, uncontainable → consult specialist, transfer with Form 11",
+     "s": "adultstg2026:15.5"
+    },
+    {
+     "t": "Sedated: RR / SpO₂ falling → stop, support airway",
+     "s": "adultstg2026:15.6"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge / transfer criteria — all must be met",
+  "items": [
+   {
+    "t": "Medically stable (near-hanging ≥ 24 h obs)",
+    "d": 1
+   },
+   {
+    "t": "Doctor's documented risk review: no imminent risk",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Means removed at home (family told)",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Follow-up booked: weekly × 2 months",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Social worker seen; minor: guardian + child protection plan",
+    "s": "phcstg2026:16.25"
+   },
+   {
+    "t": "MHCA status closed / transferred (Form 03 / 11)",
+    "s": "mhca-regs2026:forms"
+   },
+   {
+    "t": "Crisis numbers given (SADAG)",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Referral letter + results",
+    "s": "adultstg2026:15.5"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Weekly contact for the first 2 months; re-assess thoughts and plans every contact",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Psychiatry / mental health services; counsellor / NGO",
+    "s": "phcstg2026:16.25"
+   },
+   {
+    "t": "Family: talking about suicide does not trigger it",
+    "s": "phcstg2026:16.24"
+   },
+   {
+    "t": "Return now: new thoughts, plans or access to means",
+    "s": "phcstg2026:16.24"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing observation record — safety, mental state, airway",
+  "period": "24 hours: 15-min rows to 2 h, then hourly",
+  "params": [
+   {
+    "h": "Observation",
+    "items": [
+     {
+      "t": "Constant 1:1 until doctor changes level",
+      "d": 1
+     },
+     {
+      "t": "Record where the patient is + behaviour",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Search on arrival; remove cords, sharps, meds",
+      "s": "phcstg2026:16.24"
+     },
+     {
+      "t": "Visitors' bags checked",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Near-hanging",
+    "items": [
+     {
+      "t": "GCS, voice, SpO₂, RR q 15 min × 2 h, then hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Restraint / sedation",
+    "items": [
+     {
+      "t": "Vitals + mental state q 15–30 min; Form 48",
+      "s": "adultstg2026:15.4"
+     },
+     {
+      "t": "Drug, dose, time",
+      "s": "adultstg2026:15.6"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Voice change, stridor, GCS falling, seizure",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Patient tries to leave, harm self, or found with means",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Sedated: RR slow, SpO₂ falling",
+    "s": "adultstg2026:15.6",
+    "b": 1
+   },
+   {
+    "t": "Restraint injury",
+    "s": "adultstg2026:15.4"
+   },
+   {
+    "t": "Collapse / no pulse → CPR",
+    "d": 1,
+    "b": 1
+   }
+  ],
+  "totals": [
+   "Observation level changes (time, by whom)",
+   "Sedation doses",
+   "Restraint minutes",
+   "Forms completed"
+  ]
+ }
+}

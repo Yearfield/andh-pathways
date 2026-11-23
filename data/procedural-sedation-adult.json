@@ -1,0 +1,439 @@
+{
+ "id": "procedural-sedation-adult",
+ "short": "Procedural sedation",
+ "title": "Procedural sedation & analgesia",
+ "population": "Adult",
+ "setting": "Casualty",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "regimen": "Ketamine · ketofol · propofol · midazolam + fentanyl",
+ "dagger_note": "† = clinical or local addition, not in the SA STG. Any item without a source page is †; items with a page are from the STG.",
+ "sources": [
+  "stg-adult",
+  "rcem2020"
+ ],
+ "item_format": "steps[].actions[]: n=number, t=action, x=detail, s=source:printed page, d=dagger, b=bold. steps[].sequence[]: ordered cells (m=a/b/c). steps[].decisions[]: if/then. reference{}: blocks (items or table).",
+ "indications": [
+  {
+   "h": "Painful short procedures",
+   "col": 1,
+   "items": [
+    {
+     "t": "Joint dislocation / fracture reduction",
+     "d": 1
+    },
+    {
+     "t": "Cardioversion (midazolam)",
+     "s": "stg-adult:3.22"
+    },
+    {
+     "t": "Chest drain, abscess drainage, burns dressing",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "h": "Choose the agent",
+   "col": 2,
+   "items": [
+    {
+     "t": "Unstable / hypotensive → ketamine",
+     "s": "stg-adult:12.2",
+     "b": 1
+    },
+    {
+     "t": "Needs relaxation (hip, shoulder) → ketofol or propofol",
+     "d": 1
+    },
+    {
+     "t": "Short, little pain → midazolam ± fentanyl",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "contraindications": [
+  {
+   "h": "Do not sedate here — refer / theatre / anaesthetist",
+   "col": 1,
+   "items": [
+    {
+     "t": "Predicted difficult airway (LEMON) or full stomach + high risk",
+     "d": 1
+    },
+    {
+     "t": "Severe systemic illness, depressed LOC, raised ICP",
+     "d": 1
+    },
+    {
+     "t": "No second clinician / no resus equipment",
+     "s": "stg-adult:12.1",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "h": "Agent-specific",
+   "col": 2,
+   "items": [
+    {
+     "t": "Ketamine: psychosis, uncontrolled HT, ACS",
+     "d": 1
+    },
+    {
+     "t": "Propofol: hypotension, shock",
+     "s": "stg-adult:12.2"
+    },
+    {
+     "t": "Fasting is not a reason to delay emergency PSA",
+     "s": "rcem2020:18",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "n": "1",
+   "title": "Prepare",
+   "time": "T − 15 min",
+   "subtitle": "two clinicians, kit, monitors, consent",
+   "actions": [
+    {
+     "t": "Two clinicians",
+     "n": "1.1",
+     "x": "sedationist watches only the airway; operator does the procedure",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Resus kit at the bed",
+     "n": "1.2",
+     "x": "suction on, BVM + PEEP, OPA/NPA, RSI drugs incl. suxamethonium",
+     "s": "stg-adult:12.1"
+    },
+    {
+     "t": "Attach monitors",
+     "n": "1.3",
+     "x": "SpO₂, ECG, NIBP every 3–5 min, EtCO₂ if available",
+     "d": 1
+    },
+    {
+     "t": "IV line; oxygen by nasal cannula 2–4 L/min",
+     "n": "1.4",
+     "d": 1
+    },
+    {
+     "t": "Weigh / estimate kg aloud; consent; time of last meal",
+     "n": "1.5",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "title": "Analgesia first",
+   "time": "T − 10 min",
+   "subtitle": "sedation is not analgesia",
+   "actions": [
+    {
+     "t": "Give simple analgesia + local / regional block where possible",
+     "n": "2.1",
+     "d": 1
+    },
+    {
+     "t": "Opioid if needed: fentanyl 0.5–1 mcg/kg IV (max 0.5 with other sedatives)",
+     "n": "2.2",
+     "s": "rcem2020:7",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "title": "Give the sedative in this order",
+   "time": "T − 3 → T 0",
+   "subtitle": "pick ONE regimen; titrate slowly",
+   "actions": [
+    {
+     "t": "Ketamine alone: 1 mg/kg IV over 30–60 s; top-up 0.25–0.5 mg/kg every 5–10 min",
+     "n": "3.1",
+     "s": "rcem2020:7",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Ketofol: ketamine 0.5 mg/kg THEN propofol 0.5 mg/kg; top-up propofol 0.25–0.5 mg/kg",
+     "n": "3.2",
+     "s": "rcem2020:7",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Propofol: 0.5–1 mg/kg slowly; top-up 0.5 mg/kg every 3–5 min (elderly 10–20 mg)",
+     "n": "3.3",
+     "s": "rcem2020:7",
+     "d": 1
+    },
+    {
+     "t": "Midazolam: 1–2.5 mg IV over 2–3 min; repeat after 2–3 min",
+     "n": "3.4",
+     "s": "stg-adult:3.22"
+    }
+   ],
+   "sequences": [
+    {
+     "id": "I",
+     "label": "a analgesia ▶ b ketamine (wait 1 min) ▶ c propofol only if more relaxation needed",
+     "cells": [
+      {
+       "m": "a",
+       "drug": "FENTANYL / BLOCK",
+       "when": "T − 10 min",
+       "dose": "0.5–1 mcg/kg IV",
+       "adjusted": "omit if ketamine alone",
+       "s": "rcem2020:7",
+       "d": 1
+      },
+      {
+       "m": "b",
+       "drug": "KETAMINE",
+       "when": "T − 2 min",
+       "dose": "0.5 mg/kg (ketofol) / 1 mg/kg (alone)",
+       "adjusted": "STG GA dose 1–2 mg/kg",
+       "s": "rcem2020:7",
+       "d": 1
+      },
+      {
+       "m": "c",
+       "drug": "PROPOFOL",
+       "when": "T − 1 min",
+       "dose": "0.5 mg/kg, top-ups 0.25–0.5",
+       "adjusted": "hypotension risk",
+       "s": "rcem2020:7",
+       "d": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "4",
+   "title": "Do the procedure, watch the airway",
+   "time": "T 0 → end",
+   "subtitle": "record every 3–5 min",
+   "actions": [
+    {
+     "t": "Watch chest movement and EtCO₂ trace / SpO₂",
+     "n": "4.1",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Record HR, BP, SpO₂, RR, sedation level every 3–5 min",
+     "n": "4.2",
+     "d": 1
+    },
+    {
+     "t": "Top up only if procedure not finished and airway safe",
+     "n": "4.3",
+     "d": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "SpO₂ falling, EtCO₂ flat or snoring / stridor",
+     "then": "STOP dosing → desaturation ladder (step 5)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "title": "Desaturation ladder",
+   "time": "Any time",
+   "subtitle": "move down one rung every 15–30 s if no improvement",
+   "actions": [
+    {
+     "t": "Stimulate; stop further doses; call for help",
+     "n": "5.1",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Jaw thrust + chin lift; O₂ 15 L/min NRB; suction",
+     "n": "5.2",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Airway adjunct (OPA / NPA); 2-person BVM with PEEP",
+     "n": "5.3",
+     "d": 1
+    },
+    {
+     "t": "Laryngospasm (ketamine): jaw thrust at Larson's point + CPAP via tight BVM",
+     "n": "5.4",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Still closed: propofol 0.5 mg/kg → suxamethonium (1–1.5 mg/kg), BVM, intubate",
+     "n": "5.5",
+     "s": "stg-adult:12.3",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "decisions": [
+    {
+     "if": "Opioid given and RR slow",
+     "then": "naloxone 0.4 mg IV, repeat 2–3-min increments (0.04–0.1 mg if opioid-dependent)",
+     "s": "stg-adult:19.21"
+    },
+    {
+     "if": "Hypotension (propofol)",
+     "then": "stop propofol, fluid bolus, raise legs",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": "6",
+   "title": "Recover & discharge",
+   "time": "T + 5 → 60 min",
+   "subtitle": "one-to-one until back to baseline",
+   "actions": [
+    {
+     "t": "Recovery position / head up; monitor every 15 min until awake",
+     "n": "6.1",
+     "d": 1
+    },
+    {
+     "t": "Emergence reaction: quiet room; midazolam 1–2 mg IV if distressing",
+     "n": "6.2",
+     "s": "rcem2020:14",
+     "d": 1
+    },
+    {
+     "t": "Post-reduction X-ray and neurovascular check",
+     "n": "6.3",
+     "d": 1
+    },
+    {
+     "t": "Discharge: alert, obs at baseline, drinking, pain controlled, adult escort; no driving 24 h",
+     "n": "6.4",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "reference": {
+  "blocks": [
+   {
+    "title": "WEIGHT-BASED DOSES (IV, adult, healthy) † — RCEM 2020 p 7",
+    "table": {
+     "cols": [
+      "Weight",
+      "Ketamine 1 mg/kg",
+      "Top-up 0.25–0.5",
+      "Ketofol 0.5 + 0.5",
+      "Propofol 0.5–1",
+      "Fentanyl 0.5–1"
+     ],
+     "rows": [
+      {
+       "v": [
+        "50 kg",
+        "50 mg",
+        "12.5–25 mg",
+        "25 + 25 mg",
+        "25–50 mg",
+        "25–50 mcg"
+       ]
+      },
+      {
+       "v": [
+        "60 kg",
+        "60 mg",
+        "15–30 mg",
+        "30 + 30 mg",
+        "30–60 mg",
+        "30–60 mcg"
+       ]
+      },
+      {
+       "v": [
+        "70 kg",
+        "70 mg",
+        "17.5–35 mg",
+        "35 + 35 mg",
+        "35–70 mg",
+        "35–70 mcg"
+       ]
+      },
+      {
+       "v": [
+        "80 kg",
+        "80 mg",
+        "20–40 mg",
+        "40 + 40 mg",
+        "40–80 mg",
+        "40–80 mcg"
+       ]
+      },
+      {
+       "v": [
+        "90 kg",
+        "90 mg",
+        "22.5–45 mg",
+        "45 + 45 mg",
+        "45–90 mg",
+        "45–90 mcg"
+       ]
+      },
+      {
+       "v": [
+        "100 kg",
+        "100 mg",
+        "25–50 mg",
+        "50 + 50 mg",
+        "50–100 mg",
+        "50–100 mcg"
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "title": "PITFALLS",
+    "items": [
+     {
+      "t": "Elderly / sick: lower doses — substantial reductions may be needed",
+      "s": "stg-adult:20.18",
+      "b": 1
+     },
+     {
+      "t": "Propofol can produce hypotension; ketamine / etomidate preferred if unstable",
+      "s": "stg-adult:12.2"
+     },
+     {
+      "t": "Midazolam has no analgesic effect",
+      "d": 1
+     },
+     {
+      "t": "Flumazenil not recommended for mixed overdoses",
+      "s": "stg-adult:19.23"
+     },
+     {
+      "t": "Only practitioners trained in airway rescue should sedate",
+      "s": "stg-adult:12.1",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ }
+}

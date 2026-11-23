@@ -347,12 +347,13 @@ async function procView(id, tab) {
   const seqRows = s => `${s.sequence_order ? `<div class="seqord">${esc(s.sequence_order)}</div>` : ""}<div class="srows">${s.sequence.map(r =>
     `<div class="srow2"><div class="srl"><b>${esc(r.label)}</b>${r.sub ? `<span>${esc(r.sub)}</span>` : ""}</div><ol class="seq">${(r.cells || []).map(fcell).join("")}</ol></div>`).join("")}</div>`;
   const seqAny = s => s.sequences?.length ? seqHtml(s) : s.sequence?.[0]?.cells ? seqRows(s) : (s.sequence || []).length ? seqHtml(s) : "";
-  const refBlock = b => `<section class="card"><h2 class="ctitle">${esc(b.h)}${chipx(b)}</h2>` + (b.cols
-    ? `<div class="tscroll"><table class="dtab"><thead><tr>${b.cols.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${b.rows.map(r => `<tr>${r.map((c, k) => k ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join("")}</tr>`).join("")}</tbody></table></div>`
+  const refCols = b => b.cols || b.table?.cols, refRows = b => b.rows || b.table?.rows || []; // a block is { h, cols, rows } or { title, table: { cols, rows: [{ v, s, d }] } }
+  const refBlock = b => `<section class="card"><h2 class="ctitle">${esc(b.h || b.title)}${chipx(b)}</h2>` + (refCols(b)
+    ? `<div class="tscroll"><table class="dtab"><thead><tr>${refCols(b).map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${refRows(b).map(r => { const v = r.v || r; return `<tr>${v.map((c, k) => k ? `<td>${esc(c)}${k === v.length - 1 && r.v ? dg(r) + chipx(r) : ""}</td>` : `<th>${esc(c)}</th>`).join("")}</tr>`; }).join("")}</tbody></table></div>`
     : `<ul class="items">${(b.items || []).map(it => `<li><div class="body"><span class="txt">${esc(it.t)}${dg(it)}</span>${chipx(it)}</div></li>`).join("")}</ul>`) +
     `${b.note ? `<p class="hint" style="padding:6px 14px 12px">${esc(b.note)}</p>` : ""}</section>`;
   const refLinks = s => { const bl = (s.reference_refs || []).map(i => (R.blocks || [])[i]).filter(Boolean);
-    return bl.length ? `<div class="toolrow">${bl.map(b => `<button class="btn" data-go="#/proc/${id}/reference">${esc(b.h)}${ico("next")}</button>`).join("")}</div>` : ""; };
+    return bl.length ? `<div class="toolrow">${bl.map(b => `<button class="btn" data-go="#/proc/${id}/reference">${esc(b.h || b.title)}${ico("next")}</button>`).join("")}</div>` : ""; };
   const steps = flowNav + d.steps.map((s, i) => `<section class="pstep" id="p${s.n}"><div class="rail"><span class="node">${s.n}</span></div>
     <div class="pbody"><div class="phead"><h2>${esc(s.title)}</h2><span class="tpill">${esc(tm(s))}</span></div><div class="psub">${esc(s.subtitle)}</div>
       ${(s.actions || []).length ? `<ul class="items acts">${s.actions.map(act).join("")}</ul>` : ""}${seqAny(s)}
@@ -1059,6 +1060,27 @@ function scUpdate() {
   calcRefresh();
 }
 
+async function gradeActionView(id, e, d, tab) { // every grade stays visible with its action, so nothing depends on a tap
+  const bad = srcCheck(d); if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
+  const tabs = [["scale", "Grades"], ["interp", "STG action"], ["sources", "Sources"]];
+  tab = tabs.some(x => x[0] === tab) ? tab : "scale";
+  const grades = d.components.flatMap(c => c.items).map(i => `<li class="band lvl-${esc(i.level)} on"><span class="rng">${esc(i.label)}</span><div class="body"><span class="txt">${esc(i.t)}${scDag(i.d)}</span>${scRef(i.s)}
+    ${i.action ? `<div class="ax" style="flex:1 0 100%"><b>Action:</b> ${esc(i.action.t)}${scDag(i.action.d)}${scRef(i.action.s)}</div>` : ""}</div></li>`).join("");
+  const rows = a => a.map(b => `<li class="band lvl-${esc(b.level || "green")} on"><div class="body"><span class="txt">${esc(b.t)}${scDag(b.d)}</span>${scRef(b.s)}</div></li>`).join("");
+  const notes = (d.notes || []).length ? `<section class="card"><h2 class="ctitle">Notes and pearls</h2><ul class="items">${d.notes.map(n => `<li><div class="body"><span class="txt">${esc(n.t)}${scDag(n.d)}</span>${scRef(n.s)}</div></li>`).join("")}</ul></section>` : "";
+  const srcList = (d.sources || []).map(s => `<li><div class="body"><span class="txt"><b>${esc(s.id)}</b> — ${esc(s.title)}</span></div></li>`).join("");
+  const body = { scale: `<section class="card"><h2 class="ctitle">Severity grade</h2><ul class="items bands">${grades}</ul></section>`,
+    interp: `<section class="card"><h2 class="ctitle">SA STG</h2><ul class="items bands">${rows(d.interpretation_stg || [])}</ul></section>${notes}`,
+    sources: `<section class="card"><h2 class="ctitle">Sources</h2><ul class="items">${srcList}</ul></section>${await scPdfRows(d)}` }[tab];
+  app.innerHTML = `
+  <header class="top"><div class="bar"><button class="iconbtn" aria-label="Back to scales and calculations" data-go="#/scores">${ico("back")}</button>
+    <div class="ttl"><div class="row1"><h1>${esc(d.short)}</h1><span class="badge ${popClass(d.population)}">${esc(popName(d.population))}</span><span class="badge rng">${esc(d.badge)}</span></div>
+      <div class="sub wrap">${esc(d.title)}</div></div></div></header>
+  <main class="fade scorepage"><p class="hint">${esc(d.setting)} · ${esc(d.hospital)} · updated ${esc(d.updated)}. ${esc(d.dagger_note)}</p>
+    ${e.pdf ? `<div class="toolrow"><a class="btn" href="${esc(e.pdf)}" target="_blank" rel="noopener">Printable card</a></div>` : ""}${body}</main>
+  <nav class="tabs">${tabs.map(([t, l]) => `<button data-go="#/score/${id}/${t}" class="${tab === t ? "on" : ""}" ${tab === t ? 'aria-current="page"' : ""}>${ico(t)}${l}</button>`).join("")}</nav>`;
+}
+
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
   const d = S.sd[id] ||= await loadJSON("data/" + e.file);
@@ -1068,6 +1090,7 @@ async function scoreView(id, tab, key) {
   if (d.versions) return checkView(id, e, d); // checklist score cards (Wells PE / DVT)
   if (d.type === "calculator") return calcView(id, d, tab, key);
   if (d.type === "range") return rangeView(id, d, tab);
+  if (d.type === "grade" && d.components?.[0]?.items?.some(i => i.action)) return gradeActionView(id, e, d, tab); // read-only grade card with an action per grade (scorpion)
   if (!S.sc || S.sc.id !== id) { // fresh card: nothing carries over between patients, nothing is stored
     S.sc = { id, d, sel: {}, tube: false, vent: false, age: id === "gcs-paeds" ? "infant" : "adult", vars: {}, cor: new Set() }; scValidate(d); }
   if (!tab || tab === "scale") await wheelLoad();

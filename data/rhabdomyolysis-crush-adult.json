@@ -1,0 +1,1147 @@
+{
+ "id": "rhabdomyolysis-crush-adult",
+ "short": "Rhabdomyolysis_Crush_Adult",
+ "title": "Rhabdomyolysis & crush injury (adult)",
+ "population": "Adult — community assault / sjambok, entrapment, stimulant toxicity",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-23",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "skinner2017",
+  "rosedale2012",
+  "skinner2012"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — mechanism + any",
+   "items": [
+    {
+     "t": "Community assault / sjambok beating, entrapment, prolonged lie",
+     "s": "rosedale2012:37-39",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Tramline bruising, ecchymosis over large muscle groups",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    },
+    {
+     "t": "Dark / cola urine; dipstick blood +",
+     "s": "rosedale2012:37-39",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CK > 1 000 U/L",
+     "s": "rosedale2012:37-39",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Stimulant toxicity with raised CK",
+     "s": "adultstg2026:19.31"
+    },
+    {
+     "t": "Time of injury ____  Time arrived ____  Wt ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe crush syndrome = any one of",
+   "items": [
+    {
+     "t": "Venous HCO₃⁻ < 17 mmol/L",
+     "s": "skinner2017:446-450",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Base excess < −7.25 (high risk of dialysis)",
+     "s": "skinner2017:446-450",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "K⁺ > 6.0 or ECG changes",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "AKI: creatinine ↑ ≥ 26.5 µmol/L in 48 h, or ≥ 1.5 × baseline",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h for 6 h",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Shock",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Baseline creatinine",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "CKD / diabetes / hypertension",
+     "d": 1
+    },
+    {
+     "t": "HIV / ART (TDF)",
+     "d": 1
+    },
+    {
+     "t": "ACE-I, diuretic, NSAID use",
+     "s": "adultstg2026:7.9"
+    },
+    {
+     "t": "Previous assault admissions",
+     "d": 1
+    },
+    {
+     "t": "Tetanus immunisation status",
+     "s": "phcstg2026:21.66"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Injury"
+    },
+    {
+     "t": "Hours since beating ___ (delay = worse AKI)",
+     "s": "rosedale2012:37-39",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Weapon: sjambok, sticks, stones, kicks",
+     "d": 1
+    },
+    {
+     "t": "Hid before coming (no fluids)",
+     "d": 1
+    },
+    {
+     "t": "Head injury / LOC",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Muscle pain, swelling, weakness",
+     "d": 1
+    },
+    {
+     "t": "Dark urine / little urine",
+     "d": 1
+    },
+    {
+     "t": "Breathless (overload / chest injury)",
+     "d": 1
+    },
+    {
+     "t": "Palpitations, weakness (K⁺)",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Stimulants / alcohol / seizures",
+     "s": "adultstg2026:19.30"
+    },
+    {
+     "t": "Heat, exertion",
+     "d": 1
+    },
+    {
+     "t": "AMPLE",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "h": "Forensic / social"
+    },
+    {
+     "t": "SAPS case number; J88 needed",
+     "d": 1
+    },
+    {
+     "t": "Safe to go home?",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension / SBP < 90",
+     "s": "phcstg2026:21.64",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Hypoxic on room air",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness (GCS ___)",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "h": "Thresholds"
+    },
+    {
+     "t": "Urine < 0.5 mL/kg/h × 6 h → AKI",
+     "s": "adultstg2026:7.9",
+     "k": "sub"
+    },
+    {
+     "t": "Urine target > 3 mL/kg/h (≈ 200–300 mL/h)",
+     "s": "rosedale2012:37-39",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Primary survey"
+    },
+    {
+     "t": "Airway, C-spine",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "t": "Chest: pneumothorax, flail",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "t": "Abdomen: tender, distended",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "t": "Pelvis / long-bone fractures",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "h": "Muscle"
+    },
+    {
+     "t": "Body areas bruised ___ % (map)",
+     "d": 1
+    },
+    {
+     "t": "Tense swollen compartment",
+     "d": 1
+    },
+    {
+     "t": "Pain on passive stretch / numbness",
+     "d": 1
+    },
+    {
+     "t": "Distal pulses (late sign)",
+     "d": 1
+    },
+    {
+     "h": "Fluid status"
+    },
+    {
+     "t": "JVP / crepitations (overload)",
+     "s": "skinner2012:271-272",
+     "d": 1
+    },
+    {
+     "t": "Bladder: palpable / catheter",
+     "d": 1
+    },
+    {
+     "t": "Head / face injuries",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Venous blood gas — HCO₃⁻ / BE / K⁺",
+   "items": [
+    {
+     "t": "pH ____  HCO₃⁻ ____  BE ____  K⁺ ____  lactate ____",
+     "k": "value"
+    },
+    {
+     "t": "HCO₃⁻ > 20: mild",
+     "s": "skinner2017:446-450",
+     "d": 1
+    },
+    {
+     "t": "HCO₃⁻ 17–20: moderate",
+     "s": "skinner2017:446-450",
+     "d": 1
+    },
+    {
+     "t": "HCO₃⁻ < 17 or BE < −7.25: severe → REFER (dialysis access)",
+     "s": "skinner2017:446-450",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "K⁺ > 6.0 → hyperkalaemia emergency now",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Repeat 4–6-hourly first 24 h",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "ECG + urine dipstick",
+   "items": [
+    {
+     "t": "ECG: peaked T, wide QRS, loss of P → calcium now",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Dipstick blood + with few RBC = myoglobin",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    },
+    {
+     "t": "Urine pH ____ (target > 6.5 if alkalinising)",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    },
+    {
+     "t": "Catheter; hourly urine volume",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Creatinine, U&E, CK, Ca²⁺, PO₄, FBC",
+     "s": "rosedale2012:37-39",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Hyperkalaemia (cardiac arrest risk)",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    },
+    {
+     "t": "Tension pneumothorax / haemothorax",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "t": "Intra-abdominal bleeding",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "t": "Head injury (TBI pathway)",
+     "s": "phcstg2026:21.63"
+    },
+    {
+     "t": "Compartment syndrome",
+     "d": 1
+    },
+    {
+     "t": "Anuria / fluid overload",
+     "s": "skinner2012:271-272",
+     "d": 1
+    },
+    {
+     "t": "Hypocalcaemia",
+     "d": 1
+    },
+    {
+     "t": "Hyperthermia (stimulants)",
+     "s": "adultstg2026:19.30"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE (HCO₃⁻ < 17 / BE < −7.25 / AKI / K⁺ > 6) → fluids + treat K⁺ → REFER early (dialysis)",
+   "s": "skinner2017:446-450",
+   "d": 1,
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (mild–moderate, passing urine) — continue on the 72-hour crush chart and the 24-hour nursing fluid balance record",
+   "s": "rosedale2012:37-39",
+   "d": 1,
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Urine output drives the fluid rate · rural SA data: delay to fluids worsens AKI · refer early when HCO₃⁻ < 17",
+  "columns": {
+   "feed": "Fluids & urine",
+   "tests": "Bloods & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Urine volume hourly via catheter; target > 3 mL/kg/h",
+    "s": "rosedale2012:37-39",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "HR, BP, RR, SpO₂ hourly; chest for crackles 4-hourly (overload)",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fluid in / out balance hourly",
+    "s": "skinner2012:271-272",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Compartment check (pain, tense, stretch) 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Urine dipstick + pH 4-hourly",
+    "s": "rosedale2012:37-39",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "No NSAIDs or other nephrotoxins",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing fluid balance record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "On arrival",
+    "lead": "Primary survey first (ABCDE). Check the referral letter for fluids already given (volume, time). Ask the time of the assault — the clock started then.",
+    "feed": [
+     {
+      "t": "2 large-bore IV lines",
+      "s": "phcstg2026:21.64",
+      "b": 1
+     },
+     {
+      "t": "SBP < 90: NaCl 0.9% 2 L until SBP ≥ 90",
+      "s": "phcstg2026:21.64",
+      "b": 1
+     },
+     {
+      "t": "Then NaCl 0.9% 1 L boluses, repeat until BP improves",
+      "s": "phcstg2026:21.65"
+     },
+     {
+      "t": "Start early aggressive fluids even if BP normal",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urinary catheter; hourly volumes",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG: pH, HCO₃⁻, BE, K⁺, lactate",
+      "s": "skinner2017:446-450",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, creatinine, CK, Ca²⁺, PO₄, Mg²⁺",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "FBC, clotting, cross-match",
+      "s": "phcstg2026:21.65",
+      "b": 1
+     },
+     {
+      "t": "ECG",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "Urine dipstick + pH",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "X-rays (on site) of injured limbs / chest",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Hyperkalaemia (K⁺ > 6.0 or ECG change)",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "t": "Calcium gluconate 10% 10 mL IV over 10 min; repeat if ECG still abnormal after 5 min",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "Dextrose 50% 100 mL + soluble insulin 10 U IV over 5 min; HGT hourly × 6 h",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "Salbutamol 10–20 mg nebulised",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "h": "Other"
+     },
+     {
+      "t": "Analgesia: paracetamol + opioid; NO NSAIDs",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Tetanus toxoid if not up to date; wound care",
+      "s": "phcstg2026:21.66"
+     },
+     {
+      "t": "Splint fractures",
+      "s": "phcstg2026:21.65"
+     },
+     {
+      "t": "Severe (HCO₃⁻ < 17 / BE < −7.25): discuss with referral centre NOW",
+      "s": "skinner2017:446-450",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Diuresis started?",
+    "feed": [
+     {
+      "t": "Urine ___ mL/h · target ___",
+      "k": "value"
+     },
+     {
+      "t": "Below target, not overloaded → more NaCl 0.9%",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat K⁺ if > 6 initially",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Anuric after 2–3 L and euvolaemic → stop pushing fluid; REFER (dialysis)",
+      "s": "skinner2012:271-272",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Balance ___ in / ___ out",
+      "k": "value"
+     },
+     {
+      "t": "Crackles, raised JVP, SpO₂ ↓ → slow fluids",
+      "s": "skinner2012:271-272",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG + K⁺ + Ca²⁺",
+      "s": "skinner2017:446-450",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Urine pH",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Urine pH < 6.5 and CK very high: consider IV NaHCO₃ (weak evidence)",
+      "s": "skinner2012:271-272",
+      "d": 1
+     },
+     {
+      "t": "Hypocalcaemia: treat only if symptomatic or K⁺ high",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "8 h",
+    "phase": "Trend",
+    "feed": [
+     {
+      "t": "Urine ≥ target for last 3 h?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺, creatinine",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rising creatinine / K⁺ despite fluids → REFER",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward round",
+    "feed": [
+     {
+      "t": "Continue fluids to urine target",
+      "s": "rosedale2012:37-39",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG, U&E, CK",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Compartment check; refer if tense / pain on stretch",
+      "d": 1
+     },
+     {
+      "t": "Forensic notes (J88) completed",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1 done",
+    "feed": [
+     {
+      "t": "24-h balance ___",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺, CK, PO₄, Ca²⁺",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Mild + urine clearing → reduce fluids",
+      "d": 1
+     },
+     {
+      "t": "AKI criteria met → AKI row (side 2)",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Wean",
+    "feed": [
+     {
+      "t": "Wean fluids as CK falls and urine clears",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺, CK daily",
+      "s": "rosedale2012:37-39",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Mobilise; physiotherapy",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge?",
+    "feed": [
+     {
+      "t": "Drinking well; IV stopped",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine at or falling to baseline",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge criteria (box below)",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If AKI / oliguric",
+    "phase": "Refer",
+    "feed": [
+     {
+      "t": "Fluid restrict once euvolaemic and anuric",
+      "s": "skinner2012:271-272",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Creatinine, K⁺, VBG 6-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Acute dialysis indications: refractory pulmonary oedema, pH < 7.15, K⁺ > 7 refractory, uraemic complications",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Discuss ALL with referral centre",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     },
+     {
+      "t": "Overload, no dialysis yet: short trial of high-dose furosemide with specialist",
+      "s": "adultstg2026:7.9"
+     },
+     {
+      "t": "Mannitol: avoid unless specialist advises",
+      "s": "skinner2012:271-272",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If hyperkalaemia",
+    "phase": "Repeat",
+    "feed": [
+     {
+      "t": "Cardiac monitor",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "K⁺ 2-hourly until < 6; HGT hourly × 6 h after insulin",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Calcium, dextrose + insulin, salbutamol as 0 h",
+      "s": "adultstg2026:7.10",
+      "b": 1
+     },
+     {
+      "t": "Sodium polystyrene sulfonate 15 g PO + lactulose 6-hourly if dialysis not possible",
+      "s": "adultstg2026:7.10"
+     },
+     {
+      "t": "K⁺ > 7 refractory → dialysis REFER",
+      "s": "adultstg2026:7.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If compartment syndrome",
+    "phase": "Refer",
+    "feed": [
+     {
+      "t": "Limb at heart level; remove tight dressings / casts",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly neurovascular checks",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Pain out of proportion, pain on passive stretch, tense → REFER for fasciotomy (no theatre)",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Pulses lost is late",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Fluids · targets",
+   "items": [
+    {
+     "t": "SBP < 90: NaCl 0.9% 2 L until SBP ≥ 90 (bleeding: ≥ 80)",
+     "s": "phcstg2026:21.64"
+    },
+    {
+     "t": "Then 1 L boluses until BP improves",
+     "s": "phcstg2026:21.65"
+    },
+    {
+     "t": "Diuresis target: urine > 3 mL/kg/h (≈ 200–300 mL/h)",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    },
+    {
+     "t": "Stop pushing fluid if anuric and euvolaemic — overload risk",
+     "s": "skinner2012:271-272",
+     "d": 1
+    },
+    {
+     "t": "NaHCO₃ to urine pH > 6.5: weak evidence; watch Ca²⁺, Na⁺",
+     "s": "skinner2012:271-272",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Hyperkalaemia · drugs",
+   "items": [
+    {
+     "t": "Calcium gluconate 10% 10 mL IV over 10 min",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Dextrose 50% 100 mL + soluble insulin 10 U; HGT hourly × 6 h",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Salbutamol 10–20 mg neb",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Sodium polystyrene sulfonate 15 g PO 6-hourly / 30–60 g PR",
+     "s": "adultstg2026:7.10"
+    },
+    {
+     "t": "Analgesia: paracetamol, morphine; no NSAIDs, no aminoglycosides",
+     "s": "adultstg2026:7.9"
+    }
+   ]
+  },
+  {
+   "title": "Risk · escalate",
+   "items": [
+    {
+     "t": "VBG HCO₃⁻ > 20 mild · 17–20 moderate · < 17 severe",
+     "s": "skinner2017:446-450",
+     "d": 1
+    },
+    {
+     "t": "BE < −7.25 → high risk of dialysis: manage where RRT available",
+     "s": "skinner2017:446-450",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "CK > 5 000 U/L: renal failure risk rises",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    },
+    {
+     "t": "Dialysis indications (STG): refractory oedema, pH < 7.15, K⁺ > 7, uraemia",
+     "s": "adultstg2026:7.9",
+     "b": 1
+    },
+    {
+     "t": "Rural SA: low threshold to transfer",
+     "s": "rosedale2012:37-39",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Urine clear, volume normal off IV fluids",
+    "d": 1
+   },
+   {
+    "t": "Creatinine at / near baseline and falling",
+    "d": 1
+   },
+   {
+    "t": "K⁺ normal",
+    "d": 1
+   },
+   {
+    "t": "No compartment signs; walking",
+    "d": 1
+   },
+   {
+    "t": "Fractures / wounds managed",
+    "s": "phcstg2026:21.65"
+   },
+   {
+    "t": "J88 and SAPS case number done",
+    "d": 1
+   },
+   {
+    "t": "Safe place to go",
+    "d": 1
+   },
+   {
+    "t": "Told to avoid NSAIDs; drink well",
+    "s": "adultstg2026:7.9"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Creatinine, K⁺ at clinic in 1 week",
+    "d": 1
+   },
+   {
+    "t": "AKI not recovered at 3 months → CKD pathway",
+    "d": 1
+   },
+   {
+    "t": "Victim support / counselling referral",
+    "d": 1
+   },
+   {
+    "t": "Return: dark urine, little urine, swelling, breathlessness",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing fluid balance record — urine, fluids, K⁺",
+  "period": "24 hours, hourly rows",
+  "params": [
+   {
+    "h": "Urine",
+    "items": [
+     {
+      "t": "Hourly volume via catheter",
+      "d": 1
+     },
+     {
+      "t": "Target > 3 mL/kg/h",
+      "s": "rosedale2012:37-39",
+      "d": 1
+     },
+     {
+      "t": "Colour; dipstick + pH 4-hourly",
+      "s": "rosedale2012:37-39",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Fluids in",
+    "items": [
+     {
+      "t": "Hourly IV + oral volume",
+      "d": 1
+     },
+     {
+      "t": "Running balance",
+      "s": "skinner2012:271-272",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, BP, SpO₂ hourly",
+      "d": 1
+     },
+     {
+      "t": "Crackles / breathless 4-hourly",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Limbs",
+    "items": [
+     {
+      "t": "Compartment check 4-hourly: pain, tense, numb",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Urine below target for 2 h, or < 0.5 mL/kg/h",
+    "s": "adultstg2026:7.9",
+    "b": 1
+   },
+   {
+    "t": "Breathless, SpO₂ falling, crackles",
+    "s": "skinner2012:271-272",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "K⁺ > 6.0, palpitations, weakness",
+    "s": "adultstg2026:7.10",
+    "b": 1
+   },
+   {
+    "t": "Tense limb, pain on stretch, numbness",
+    "d": 1
+   },
+   {
+    "t": "HGT low after insulin",
+    "s": "adultstg2026:7.10"
+   }
+  ],
+  "totals": [
+   "Total in (mL)",
+   "Total urine (mL)",
+   "Balance",
+   "Average mL/kg/h",
+   "Bicarbonate given (Y/N)"
+  ]
+ }
+}

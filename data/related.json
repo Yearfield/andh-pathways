@@ -36,6 +36,14 @@
     {"name": "Skin", "ids": ["bsi-adult", "bsi-paeds", "fungal-adult", "fungal-paeds", "eczema-adult", "eczema-paeds"]},
     {"name": "Fractures", "ids": ["fracture", "fracture-adult", "fracture-paeds", "ottawa-ankle", "caprini"]},
     {"name": "Bedside observations", "ids": ["vitals-adult", "vitals-paeds", "gcs-adult", "gcs-paeds", "urine-dipstick"]},
-    {"name": "Sepsis and shock", "ids": ["sofa", "fluids-adult-shock", "fluids-paeds-shock", "vitals-adult", "vitals-paeds", "bloodgas-interpretation"]}
+    {"name": "Sepsis and shock", "ids": ["sofa", "fluids-adult-shock", "fluids-paeds-shock", "vitals-adult", "vitals-paeds", "bloodgas-interpretation"]},
+    {"name": "Cardiac rhythm emergencies", "ids": ["tachyarrhythmia-adult", "cardioversion-adult", "brady-adult", "acs-adult", "lytes-adult-hyperk", "procedural-sedation-adult"]},
+    {"name": "Acute severe asthma", "ids": ["asthma-severe-adult", "rsi-adult", "copd-adult", "bloodgas-interpretation"]},
+    {"name": "Anaphylaxis and airway swelling", "ids": ["anaphylaxis-angioedema-adult", "rsi-adult", "fluids-adult-shock"]},
+    {"name": "Rhabdomyolysis and crush injury", "ids": ["rhabdomyolysis-crush-adult", "aki-adult", "lytes-adult-hyperk", "urine-dipstick", "bloodgas-interpretation", "fracture-adult"]},
+    {"name": "Suicide attempt and self-harm", "ids": ["suicide-attempt-near-hanging", "psychosis-adult", "phq9", "paracetamol", "tca", "hie-adult"]},
+    {"name": "Cyanotic heart disease", "ids": ["tet-spell-paeds", "hf-paeds", "rsi-paeds", "vitals-paeds"]},
+    {"name": "Envenomation", "ids": ["envenomation-adult", "scorpion-grade", "anaphylaxis-angioedema-adult", "rsi-adult"]},
+    {"name": "Joint dislocation and reduction", "ids": ["dislocation-knee-adult", "dislocation-hip-adult", "dislocation-shoulder-adult", "procedural-sedation-adult", "fracture-adult"]}
   ]
 }

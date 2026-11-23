@@ -1,0 +1,217 @@
+{
+ "id": "scorpion-grade",
+ "type": "grade",
+ "short": "Scorpion grade",
+ "folder": "Scorpion",
+ "title": "Scorpion sting — Parabuthus severity grade & SA STG action",
+ "population": "all ages",
+ "age_range": "all",
+ "setting": "casualty / ward",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-23",
+ "badge": "Grade I–IV",
+ "tags": [
+  "grade",
+  "toxicology",
+  "envenomation",
+  "scorpion",
+  "neurotoxic",
+  "antivenom",
+  "paediatric",
+  "adult"
+ ],
+ "sources": [
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 5th ed. 2023 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "MULLER",
+   "title": "Müller GJ, Modler H, Wium CA, Veale DJH. Scorpion sting in southern Africa: diagnosis and management. CME 2012;30(10):356–361",
+   "type": "review",
+   "country": "ZA"
+  },
+  {
+   "id": "CUTIS",
+   "title": "Tomlinson H, Elston DM. What's eating you? The South African fattail scorpion revisited. Cutis 2019;104(4):217–219 (4-grade scale)",
+   "type": "review",
+   "country": "intl"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (non-STG source named). Grades are not in the STG; the STG gives antivenom only for systemic neurotoxic effects.",
+ "components": [
+  {
+   "key": "G",
+   "name": "Severity grade",
+   "min": 1,
+   "max": 4,
+   "items": [
+    {
+     "score": 1,
+     "label": "I",
+     "t": "Pain and paraesthesia at the sting site; usually no local inflammation",
+     "s": "CUTIS:217",
+     "d": true,
+     "level": "green",
+     "action": {
+      "t": "Analgesia: lidocaine 1–2% 2 mL local, ice, paracetamol · observe ≥ 12 h",
+      "s": "HOSP:19.9"
+     }
+    },
+    {
+     "score": 2,
+     "label": "II",
+     "t": "Local symptoms + remote pain / paraesthesia radiating up the limb",
+     "s": "CUTIS:217",
+     "d": true,
+     "level": "amber",
+     "action": {
+      "t": "As grade I · observe ≥ 12 h · generalised paraesthesia + autonomic signs = systemic → treat as III",
+      "s": "HOSP:19.8"
+     }
+    },
+    {
+     "score": 3,
+     "label": "III",
+     "t": "Cranial nerve (ptosis, dysphagia, drooling) OR somatic neuromuscular dysfunction (tremor, jerking, weakness) ± autonomic",
+     "s": "CUTIS:217",
+     "d": true,
+     "level": "orange",
+     "action": {
+      "t": "Scorpion antivenom 10 mL · continuous respiratory monitoring",
+      "s": "HOSP:19.8"
+     }
+    },
+    {
+     "score": 4,
+     "label": "IV",
+     "t": "BOTH cranial nerve AND somatic neuromuscular dysfunction, with autonomic dysfunction",
+     "s": "CUTIS:217",
+     "d": true,
+     "level": "red",
+     "action": {
+      "t": "Antivenom + airway / ventilation → REFER (ICU)",
+      "s": "HOSP:19.8"
+     }
+    }
+   ]
+  }
+ ],
+ "formulas": [],
+ "interpretation_stg": [
+  {
+   "t": "Observe all thick-tailed (or unidentified) stings ≥ 12 h; monitor respiratory function",
+   "s": "HOSP:19.8",
+   "level": "amber"
+  },
+  {
+   "t": "Antivenom ONLY for systemic neurotoxic effects",
+   "s": "HOSP:19.8",
+   "level": "red"
+  },
+  {
+   "t": "Adult: 10 mL in 100 mL NaCl 0.9% / D5W over 10 min; response slow, may repeat",
+   "s": "HOSP:19.8",
+   "level": "red"
+  },
+  {
+   "t": "Child: 10 mL slow IV over 3–5 min (same dose)",
+   "s": "PAED:18.31",
+   "level": "red"
+  },
+  {
+   "t": "Never give antivenom unless ready for anaphylaxis",
+   "s": "HOSP:19.8",
+   "level": "red"
+  },
+  {
+   "t": "Cramps: Ca gluconate 10% 10 mL over 10 min, repeat once (max 2 g) · child 0.5 mL/kg slow, ECG",
+   "s": "HOSP:19.9",
+   "level": "amber"
+  },
+  {
+   "t": "Opiates only with caution (respiratory depression)",
+   "s": "HOSP:19.9",
+   "level": "amber"
+  },
+  {
+   "t": "Tetanus toxoid 0.5 mL IM if > 5 y",
+   "s": "HOSP:19.8",
+   "level": "green"
+  }
+ ],
+ "interpretation_classic": [
+  {
+   "min": 1,
+   "max": 1,
+   "label": "Grade I",
+   "level": "green",
+   "d": true,
+   "s": "CUTIS:217"
+  },
+  {
+   "min": 2,
+   "max": 2,
+   "label": "Grade II",
+   "level": "amber",
+   "d": true,
+   "s": "CUTIS:217"
+  },
+  {
+   "min": 3,
+   "max": 3,
+   "label": "Grade III",
+   "level": "orange",
+   "d": true,
+   "s": "CUTIS:217"
+  },
+  {
+   "min": 4,
+   "max": 4,
+   "label": "Grade IV",
+   "level": "red",
+   "d": true,
+   "s": "CUTIS:217"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Thick tail + small pincers = Parabuthus (dangerous); thin tail + large pincers = local pain only",
+   "s": "HOSP:19.7"
+  },
+  {
+   "t": "Severity usually evident within 15–60 min; adults may be delayed up to 8 h",
+   "s": "MULLER:358",
+   "d": true
+  },
+  {
+   "t": "Children: respiratory failure within 1–2 h; extreme restlessness = severe",
+   "s": "MULLER:360",
+   "d": true
+  },
+  {
+   "t": "Antivenom peaks at 2–6 h — support breathing meanwhile; observe 6–12 h after",
+   "s": "MULLER:361",
+   "d": true
+  },
+  {
+   "t": "Müller 2012: antivenom for ALL systemic envenoming (STG: neurotoxic only)",
+   "s": "MULLER:361",
+   "d": true
+  },
+  {
+   "t": "Hypertension, sweating, visual disturbance = P. granulatus sympathetic storm",
+   "s": "MULLER:358",
+   "d": true
+  }
+ ]
+}

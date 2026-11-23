@@ -5,7 +5,7 @@
  "population": "Adult with suspected ischaemic chest pain; guidance is for thrombolysis, not primary PCI",
  "hospital": "Albert Nzula District Hospital",
  "level": "District",
- "updated": "2026-10-01",
+ "updated": "2026-11-23",
  "sources": [
   "adultstg2026"
  ],
@@ -328,6 +328,21 @@
      "s": "adultstg2026:3.9"
     },
     {
+     "t": "Hyperacute T: broad, bulky, symmetric, in one coronary territory → repeat ECG every 15–30 min; evolving ST ↑ → reperfuse",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "de Winter: upsloping ST ↓ 1–3 mm at J point V1–V6 + tall symmetric T (± ST ↑ aVR) = LAD occlusion → STEMI equivalent",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Peaked T of hyperkalaemia: narrow, tented, diffuse ± wide QRS, flat P → VBG K⁺ now",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    },
+    {
      "t": "Not diagnostic: repeat every 20–30 min",
      "s": "adultstg2026:3.4"
     },
@@ -538,6 +553,77 @@
     {
      "t": "If high risk, post-infarct angina, ongoing pain",
      "s": "adultstg2026:3.12"
+    }
+   ]
+  },
+  {
+   "dx": "STEMI equivalent: de Winter / hyperacute T",
+   "branch": "If STEMI",
+   "features": [
+    {
+     "t": "Ischaemic pain + tall broad symmetric precordial T; J-point ST ↓ V1–V6 (de Winter)",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Serial ECG every 15–30 min; troponin; compare old ECG",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Aspirin + clopidogrel as STEMI",
+     "s": "adultstg2026:3.4"
+    },
+    {
+     "t": "Not an STG lysis criterion: thrombolyse only if ST ↑ evolves or specialist advises",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — discuss PCI now (proximal LAD)",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hyperkalaemia (peaked T mimic)",
+   "branch": "If not ACS",
+   "features": [
+    {
+     "t": "Narrow tented T in many leads; wide QRS, flat P; CKD / AKI, ACE-I, spironolactone",
+     "s": "adultstg2026:3.27",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "VBG K⁺ in minutes; U&E",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "K⁺ > 6.0: calcium gluconate 10% 10 mL over 10 min, dextrose 50% 100 mL + insulin 10 U, salbutamol neb",
+     "s": "adultstg2026:7.10",
+     "b": 1
+    },
+    {
+     "t": "Do NOT thrombolyse T-wave changes alone",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If K⁺ > 7 refractory → dialysis",
+     "s": "adultstg2026:7.9"
     }
    ]
   },
@@ -756,6 +842,11 @@
       "b": 1
      },
      {
+      "t": "Tall T waves: VBG K⁺ now (hyperkalaemia vs hyperacute T)",
+      "d": 1,
+      "b": 1
+     },
+     {
       "t": "Troponin",
       "s": "adultstg2026:3.4",
       "b": 1
@@ -903,6 +994,10 @@
      {
       "t": "> 6 h, pain-free: no lysis → NSTEMI branch",
       "s": "adultstg2026:3.5"
+     },
+     {
+      "t": "de Winter / hyperacute T: STEMI equivalent — repeat ECG 15–30 min, discuss PCI; lyse only if ST ↑ evolves or specialist advises",
+      "d": 1
      }
     ]
    },
@@ -956,6 +1051,10 @@
      }
     ],
     "treatment": [
+     {
+      "t": "Peaked T + K⁺ > 6.0 → hyperkalaemia treatment (STG 7.1.4), not lysis",
+      "s": "adultstg2026:7.10"
+     },
      {
       "t": "Dissection: stop antithrombotics → REFER urgently",
       "s": "adultstg2026:3.5",
