@@ -1,6 +1,7 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
-// they are fetched fresh when there is signal and fall back to the saved copy offline.
-const VERSION = "andh-v114";
+// the saved copy is shown at once and refreshed quietly in the background, so an edit pushed to GitHub shows on the next open.
+// Weak or "connected but no internet" signal never holds a page up: with no saved copy the network gets 3 seconds.
+const VERSION = "andh-v115";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
@@ -23,6 +24,8 @@ self.addEventListener("install", e => e.waitUntil((async () => {
   await c.addAll(idx.diagnoses.map(d => "data/" + d.file));
   await c.addAll((idx.scores || []).map(d => "data/" + d.file)); // Scales and Calculations cards
   await c.addAll((idx.fluids || []).map(d => d.path)); // Fluids Rx cards (index "fluids", path = data/<id>.json)
+  await c.addAll((idx.procedures || []).map(d => d.path)); // procedures: RSI, cardioversion, sedation, dislocations, electrolyte cards
+  // Alternative Medicine (data/altmed/) is not installed for offline use: it is saved only once opened
   try { // formulary: one file per medicine
     const fx = await (await fetch("data/formulary/index.json", { cache: "no-store" })).json();
     await c.addAll(fx.drugs.map(d => "data/formulary/" + d.id + ".json"));
@@ -35,17 +38,30 @@ self.addEventListener("activate", e => e.waitUntil((async () => {
   await self.clients.claim();
 })()));
 
+// Only real, successful answers are saved: an error page, a "log in to Wi-Fi" or "out of data" page never replaces good data
+const good = r => !!r && r.ok && r.type === "basic" && !/text\/html/i.test(r.headers.get("content-type") || "");
+const save = async (req, r) => { if (good(r)) await (await caches.open(VERSION)).put(req, r.clone()); return r; };
+const sleep = ms => new Promise(ok => setTimeout(() => ok(null), ms));
+const offline = () => new Response(JSON.stringify({ error: "offline" }), { status: 504, headers: { "Content-Type": "application/json" } });
+
+async function data(e) { // data/*.json: saved copy first, refreshed in the background
+  const req = e.request, hit = await caches.match(req);
+  const net = fetch(req, { cache: "no-store" }).then(r => save(req, r));
+  e.waitUntil(net.catch(() => {})); // keep refreshing after the page already has its answer
+  if (hit) return hit;
+  const r = await Promise.race([net.catch(() => null), sleep(3000)]); // no saved copy: give the network 3 seconds
+  if (good(r)) return r;
+  // no answer in time, or a bad one: the app shows "Could not load"; if the fetch still finishes, the next open has it
+  return (await caches.match(req)) || (r && !r.ok ? r : offline());
+}
+async function shell(e) { // app files: saved copy (installed with this version), network only for anything not saved
+  const req = e.request, hit = await caches.match(req, { ignoreSearch: true }); if (hit) return hit;
+  try { return await save(req, await fetch(req)); }
+  catch { return (req.mode === "navigate" && (await caches.match("index.html"))) || Response.error(); } // opening the app offline always gets the start page
+}
+
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
-  if (url.pathname.includes("/data/")) {
-    // network first, so edits pushed to GitHub show up; offline -> saved copy
-    e.respondWith(fetch(e.request, { cache: "no-store" }).then(r => {
-      const copy = r.clone(); caches.open(VERSION).then(c => c.put(e.request, copy)); return r;
-    }).catch(() => caches.match(e.request)));
-    return;
-  }
-  e.respondWith(caches.match(e.request, { ignoreSearch: true }).then(hit => hit || fetch(e.request).then(r => {
-    const copy = r.clone(); caches.open(VERSION).then(c => c.put(e.request, copy)); return r;
-  })));
+  e.respondWith(url.pathname.includes("/data/") ? data(e) : shell(e));
 });
