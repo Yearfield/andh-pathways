@@ -4,6 +4,7 @@
 // What differs from the website:
 //   - Alternative Medicine is left out: no altmed data, a stub altmed.js, no home tile.
 //   - No service worker: every file is already inside the app, so there is nothing to save for offline use.
+//   - PDF.js is the legacy build (works in older phone webviews).
 //   - store/store.js opens the printable card PDFs in the app's own PDF viewer.
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -20,6 +21,10 @@ for (const f of FILES) cpSync(join(root, f), join(out, f));
 for (const d of DIRS) cpSync(join(root, d), join(out, d), { recursive: true, filter: src => !SKIP.some(s => src.startsWith(join(root, s))) });
 cpSync(join(root, "store", "altmed.js"), join(out, "altmed.js"));
 cpSync(join(root, "store", "store.js"), join(out, "store.js"));
+// PDF.js: the website's copy needs a recent browser (Chrome 119+, Safari 17.4+). Phone webviews can be older (an Android phone whose
+// WebView is not updated, iOS 15-17), so the store apps use the "legacy" build of the same PDF.js version, made for older browsers.
+const LEGACY = join(root, "node_modules", "pdfjs-dist", "legacy", "build");
+for (const f of ["pdf.min.mjs", "pdf.worker.min.mjs"]) cpSync(join(LEGACY, f), join(out, "vendor", "pdfjs", f));
 const SELFTEST = process.env.SELFTEST === "1"; // CI only: adds store/selftest.js, which checks PDF loading inside the real app
 if (SELFTEST) cpSync(join(root, "store", "selftest.js"), join(out, "selftest.js"));
 
