@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">JAD Pathways</string>
-    <string name="title_activity_main">JAD Pathways</string>
+    <string name="app_name">JAD Pocket Doc</string>
+    <string name="title_activity_main">JAD Pocket Doc</string>
     <string name="package_name">com.yearfield.jadpocketdoc</string>
     <string name="custom_url_scheme">com.yearfield.jadpocketdoc</string>
 </resources>
