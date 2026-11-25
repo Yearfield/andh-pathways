@@ -1,0 +1,24 @@
+{
+  "name": "jad-pathways-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Android and iOS store apps for JAD clinical pathways (Capacitor). The website itself has no build step.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-store.mjs",
+    "sync": "node tools/build-store.mjs && cap sync",
+    "assets": "capacitor-assets generate --android --ios --iconBackgroundColor '#92c0be' --iconBackgroundColorDark '#92c0be' --splashBackgroundColor '#92c0be' --splashBackgroundColorDark '#92c0be'",
+    "android": "node tools/build-store.mjs && cap sync android && cap open android",
+    "ios": "node tools/build-store.mjs && cap sync ios && cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.2",
+    "@capacitor/core": "8.6.2",
+    "@capacitor/ios": "8.6.2",
+    "@capacitor/splash-screen": "8.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "4.0.0",
+    "@capacitor/cli": "8.6.2"
+  }
+}

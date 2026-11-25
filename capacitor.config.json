@@ -1,0 +1,11 @@
+{
+  "appId": "com.yearfield.jadpathways",
+  "appName": "JAD Pathways",
+  "webDir": "www",
+  "backgroundColor": "#f5f7f6",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "never" },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 800, "launchAutoHide": true, "backgroundColor": "#92c0be", "showSpinner": false }
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">JAD Pathways</string>
+    <string name="title_activity_main">JAD Pathways</string>
+    <string name="package_name">com.yearfield.jadpathways</string>
+    <string name="custom_url_scheme">com.yearfield.jadpathways</string>
+</resources>
