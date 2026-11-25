@@ -1,4 +1,4 @@
-package com.yearfield.jadpathways;
+package com.yearfield.jadpocketdoc;
 
 import com.getcapacitor.BridgeActivity;
 

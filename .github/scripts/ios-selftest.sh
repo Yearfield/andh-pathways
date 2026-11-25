@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eu
-APP=com.yearfield.jadpathways
+APP=com.yearfield.jadpocketdoc
 UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; print(next(x['udid'] for k in sorted(d, reverse=True) if 'iOS' in k for x in d[k] if x['name'].startswith('iPhone')))")
 xcrun simctl boot "$UDID" || true
 xcrun simctl bootstatus "$UDID" -b
