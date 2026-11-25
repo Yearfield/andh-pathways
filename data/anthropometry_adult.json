@@ -1,0 +1,287 @@
+{
+ "id": "anthropometry-adult",
+ "type": "calculator",
+ "short": "Anthro adult",
+ "folder": "Anthropometry",
+ "title": "Adult anthropometry — BMI, waist, IBW, BSA, weight loss",
+ "population": "adults > 19 y",
+ "age_range": "> 19 years",
+ "setting": "casualty / ward / clinic",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-25",
+ "badge": "BMI kg/m²",
+ "tags": [
+  "anthropometry",
+  "growth",
+  "nutrition",
+  "calculation",
+  "adult",
+  "adult",
+  "obesity"
+ ],
+ "sources": [
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "MDCALC",
+   "title": "MDCalc ideal / adjusted body weight (Devine) — linked from HOSP Appendix II",
+   "type": "calculator",
+   "country": "intl",
+   "url": "https://www.mdcalc.com/ideal-body-weight-adjusted-body-weight"
+  },
+  {
+   "id": "PHC",
+   "title": "STG & EML Primary Health Care, 2024 ed. (ch 3 updated 9 Jul 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). z-scores are calculated in the app from WHO LMS tables (who_lms.json).",
+ "inputs": [
+  {
+   "key": "sex",
+   "label": "Sex",
+   "type": "choice",
+   "options": [
+    "male",
+    "female"
+   ]
+  },
+  {
+   "key": "weight",
+   "label": "Weight",
+   "type": "number",
+   "unit": "kg"
+  },
+  {
+   "key": "height",
+   "label": "Height",
+   "type": "number",
+   "unit": "cm"
+  },
+  {
+   "key": "waist",
+   "label": "Waist circumference",
+   "type": "number",
+   "unit": "cm",
+   "optional": true
+  },
+  {
+   "key": "usual_weight",
+   "label": "Usual / previous weight",
+   "type": "number",
+   "unit": "kg",
+   "optional": true
+  }
+ ],
+ "top_question": {
+  "t": "Pregnancy: use pre-pregnancy / booking weight for BMI · oedema / ascites inflate weight",
+  "d": true
+ },
+ "engine": null,
+ "components": [
+  {
+   "key": "BMI",
+   "name": "Body mass index (kg/m²)",
+   "range": "adult",
+   "s": "PHC:3.13",
+   "items": [
+    {
+     "band": "< 16",
+     "label": "Severe thinness (WHO)",
+     "level": "red",
+     "d": true
+    },
+    {
+     "band": "16 – < 18.5",
+     "label": "Underweight (WHO)",
+     "level": "amber",
+     "d": true
+    },
+    {
+     "band": "18.5 – 25",
+     "label": "Ideal weight",
+     "level": "green",
+     "s": "HOSP:3.38"
+    },
+    {
+     "band": "≥ 25",
+     "label": "Overweight",
+     "level": "amber",
+     "s": "PHC:3.13"
+    },
+    {
+     "band": "≥ 30",
+     "label": "Obese (≥ 35 class II, ≥ 40 class III †)",
+     "level": "red",
+     "s": "PHC:3.13"
+    }
+   ]
+  },
+  {
+   "key": "WC",
+   "name": "Waist circumference",
+   "range": "adult",
+   "s": "PHC:4.2",
+   "items": [
+    {
+     "band": "≥ 94 cm men",
+     "label": "Central obesity — CVD risk factor",
+     "level": "red",
+     "s": "PHC:4.2"
+    },
+    {
+     "band": "≥ 80 cm women",
+     "label": "Central obesity — CVD risk factor",
+     "level": "red",
+     "s": "PHC:4.2"
+    }
+   ]
+  },
+  {
+   "key": "WL",
+   "name": "Unintentional weight loss",
+   "range": "adult",
+   "s": "PHC:11.4",
+   "items": [
+    {
+     "band": "< 10%",
+     "label": "Moderate (HIV WHO stage 2 if unexplained)",
+     "level": "amber",
+     "s": "PHC:11.4"
+    },
+    {
+     "band": "> 10%",
+     "label": "Severe (HIV WHO stage 3 if unexplained)",
+     "level": "red",
+     "s": "PHC:11.4"
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "id": "bmi",
+   "name": "BMI",
+   "expr": "weight_kg / (height_cm / 100)^2",
+   "units": "kg/m²",
+   "s": "PHC:3.13"
+  },
+  {
+   "id": "ibw_m",
+   "name": "Ideal / predicted body weight ♂",
+   "expr": "50 + 0.91 × (height_cm − 152.4)",
+   "units": "kg",
+   "s": "MDCALC",
+   "d": true
+  },
+  {
+   "id": "ibw_f",
+   "name": "Ideal / predicted body weight ♀",
+   "expr": "45.5 + 0.91 × (height_cm − 152.4)",
+   "units": "kg",
+   "s": "MDCALC",
+   "d": true
+  },
+  {
+   "id": "abw",
+   "name": "Adjusted body weight (BMI > 40, aminoglycosides)",
+   "expr": "IBW + 0.4 × (weight_kg − IBW)",
+   "units": "kg",
+   "s": "HOSP:AII.1"
+  },
+  {
+   "id": "bsa",
+   "name": "BSA (Mosteller)",
+   "expr": "sqrt(height_cm × weight_kg / 3600)",
+   "units": "m²",
+   "s": "HOSP:5.20"
+  },
+  {
+   "id": "wt_loss",
+   "name": "% weight loss",
+   "expr": "(usual_weight − weight_kg) / usual_weight × 100",
+   "units": "%",
+   "s": "PHC:11.4"
+  },
+  {
+   "id": "vt",
+   "name": "Tidal volume",
+   "expr": "5–8 mL × IBW (kg)",
+   "s": "HOSP:23.47"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Ideal BMI 18.5–25 kg/m² (hypertension lifestyle target)",
+   "s": "HOSP:3.38",
+   "level": "green"
+  },
+  {
+   "t": "Overweight ≥ 25, obese ≥ 30 kg/m²",
+   "s": "PHC:3.13",
+   "level": "amber"
+  },
+  {
+   "t": "Diabetes: weight loss advised if BMI > 25",
+   "s": "PHC:9.2",
+   "level": "amber"
+  },
+  {
+   "t": "Central obesity (≥ 94 ♂ / ≥ 80 ♀ cm) = CVD risk → 10-year risk score",
+   "s": "PHC:4.2",
+   "level": "red"
+  },
+  {
+   "t": "Amikacin / gentamicin: BMI > 40 → dose on IBW + 40% of excess",
+   "s": "HOSP:AII.1",
+   "level": "amber"
+  },
+  {
+   "t": "Ventilation: Vt 5–8 mL/kg predicted body weight",
+   "s": "HOSP:23.47",
+   "level": "blue"
+  },
+  {
+   "t": "Methotrexate (ectopic): 50 mg/m² BSA",
+   "s": "HOSP:5.20",
+   "level": "blue"
+  },
+  {
+   "t": "Heart failure diuresis: lose ≤ 0.5 kg/day (no oedema) or ≤ 1 kg/day (oedema)",
+   "s": "HOSP:1.11",
+   "level": "blue"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Measure height standing, no shoes; bedbound: ulna / knee height",
+   "d": true
+  },
+  {
+   "t": "IBW / PBW for ventilation, not actual weight",
+   "s": "HOSP:23.47"
+  },
+  {
+   "t": "BMI misleads in oedema, ascites, muscular build, elderly",
+   "d": true
+  },
+  {
+   "t": "Waist: midway rib margin – iliac crest, end of expiration",
+   "d": true
+  },
+  {
+   "t": "Unexplained weight loss: screen TB, HIV, cancer, diabetes",
+   "s": "PHC:11.4"
+  },
+  {
+   "t": "Under 19 y → paediatric BMI-for-age z (5–19 y card)",
+   "s": "PHC:3.13"
+  }
+ ]
+}

@@ -2,6 +2,7 @@
 import { REG, analyse, KPA_TO_MMHG, scoreCard, interpretCard, validateScoreCard } from "./calc.js"; // pure calculation registry
 import { fxInit, fxHome, fxView, fxCount } from "./formulary.js"; // formulary pages + automatic medicine links
 import { createScoreCards } from "./scores.js"; // interface for the block-schema score cards (Alvarado … COPD-GOLD)
+import { createAnthroCards } from "./anthro.js"; // WHO z-score calculators (paeds 0–5, 5–19) + adult anthropometry
 import { createVitalCards } from "./vitals.js"; // urine dipstick strip, adult NEWS2, paediatric vitals by age
 import { catalog, keyOf, relatedFor, search } from "./links.js"; // one catalogue of every card: cross-links ("Related"), search-everything, pins
 import { altmed } from "./altmed.js"; // Alternative Medicine: pathogen reference + feature filter (own data in data/altmed/, loaded on demand)
@@ -938,8 +939,8 @@ function scValidate(d) { // console warnings only: bad data should never stop th
   if (bad.length) console.warn(`Score card ${d.id}:\n - ` + bad.join("\n - "));
 }
 
-let SC22 = null, VIT = null; // scores.js / vitals.js instances, created on first use
-const VIT_IDS = ["urine-dipstick", "vitals-adult", "vitals-paeds"];
+let SC22 = null, VIT = null, ANT = null; // scores.js / vitals.js instances, created on first use
+const VIT_IDS = ["urine-dipstick", "vitals-adult", "vitals-paeds"], ANT_IDS = ["anthropometry-paeds-0-5", "anthropometry-paeds-5-19", "anthropometry-adult"];
 function scoresHome() {
   const ss = (S.index.scores || []).filter(e => !e.hidden), pops = [...new Set(ss.map(e => popName(e.population)))];
   const fl = S.index.fluids || [], fh = S.index.fluids_hub || { short: "Fluids Rx", title: "IV fluids" }; // Fluids Rx: procedure-style cards (data/fluids-*.json) behind one hub row
@@ -1084,6 +1085,7 @@ async function gradeActionView(id, e, d, tab) { // every grade stays visible wit
 async function scoreView(id, tab, key) {
   const e = (S.index.scores || []).find(x => x.id === id); if (!e) throw new Error("unknown scale " + id);
   const d = S.sd[id] ||= await loadJSON("data/" + e.file);
+  if (ANT_IDS.includes(d.id)) return (ANT ||= createAnthroCards({ S, esc, $, $$, ico, plus, cardHeader, scPdfRows, srcCheck, app })).render(id, e, d); // anthropometry (anthro.js); JSON type "calculator" would otherwise reach the blood-gas view
   if (VIT_IDS.includes(d.id)) return (VIT ||= createVitalCards({ S, esc, $, $$, ico, plus, cardHeader, scPdfRows, srcCheck, app })).render(id, e, d); // dipstick + vitals (vitals.js); their JSON says type "range", so route by id before the range view
   if (d.left || d.right) return (SC22 ||= createScoreCards({ S, esc, $, $$, ico, plus, cardHeader, TYPE_LABEL, scSrcList, scPdfRows, srcCheck, app })).render(id, e, d); // block-schema score cards (scores.js)
   if (d.id === "rass") return rassView(id, e, d); // RASS wheel

@@ -1,12 +1,12 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // the saved copy is shown at once and refreshed quietly in the background, so an edit pushed to GitHub shows on the next open.
 // Weak or "connected but no internet" signal never holds a page up: with no saved copy the network gets 3 seconds.
-const VERSION = "andh-v116";
+const VERSION = "andh-v117";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",
   "fonts/plex-serif-400.woff2", "fonts/plex-serif-700.woff2",
-  "calc.js", "links.js", "scores.js", "vitals.js", "altmed.js", "formulary.js", "data/formulary/index.json", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json", "data/related.json",
+  "calc.js", "links.js", "scores.js", "vitals.js", "anthro.js", "anthro_z.js", "data/who_lms.json", "altmed.js", "formulary.js", "data/formulary/index.json", "vendor/pdfjs/pdf.min.mjs", "vendor/pdfjs/pdf.worker.min.mjs", "data/index.json", "data/sources.json", "data/page-map.json", "data/related.json",
   "wheel/gcs-wheel-adult.svg", "wheel/gcs-wheel-child.svg", "wheel/gcs-wheel-infant.svg", "wheel/rass-wheel.svg", "cards/rass.pdf", "cards/wells-pe.pdf", "cards/wells-dvt.pdf", // printable Wells cards (the JSON is precached via index.json "scores")
   // the 22 block-schema score cards: printable cards (their JSON is precached via index.json "scores")
   "cards/alvarado.pdf", "cards/apgar.pdf", "cards/ipss.pdf", "cards/curb65.pdf", "cards/duke-ie.pdf", "cards/ottawa-ankle.pdf", "cards/pecarn.pdf", "cards/ugib.pdf",
@@ -14,6 +14,8 @@ const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest"
   "cards/ganzoni.pdf", "cards/burns-adult.pdf", "cards/burns-paeds.pdf", "cards/phq9.pdf", "cards/sofa.pdf", "cards/copd-gold.pdf",
   // urine dipstick + adult / paediatric vitals: printable cards (their JSON is precached via index.json "scores")
   "cards/scorpion-grade.pdf", "cards/urine-dipstick.pdf", "cards/vitals-adult.pdf", "cards/vitals-paeds.pdf",
+  // anthropometry cards (JSON precached via index.json "scores"; who_lms.json = WHO LMS tables, 436 KB, listed above)
+  "cards/anthropometry-paeds-0-5.pdf", "cards/anthropometry-paeds-5-19.pdf", "cards/anthropometry-adult.pdf",
   "data/tonsillitis-paeds.json", "data/croup-paeds.json", "data/om-paeds.json", "data/om-adult.json", "data/sinusitis-paeds.json", "data/sinusitis-adult.json",
   "data/uti-adult.json", "data/uti-paeds.json", "data/vds.json", "data/uds.json", "data/pid.json"];
 

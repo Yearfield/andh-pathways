@@ -1,0 +1,417 @@
+{
+ "id": "anthropometry-paeds-0-5",
+ "type": "calculator",
+ "short": "Anthro 0–5 y",
+ "folder": "Anthropometry",
+ "title": "Paediatric anthropometry 0–5 y — WHO z-scores",
+ "population": "children 0–60 months",
+ "age_range": "0–60 months",
+ "setting": "casualty / ward / clinic",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-25",
+ "badge": "z −3 … +3",
+ "tags": [
+  "anthropometry",
+  "growth",
+  "nutrition",
+  "calculation",
+  "z-score",
+  "paediatric",
+  "SAM"
+ ],
+ "sources": [
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 2025–2029 cycle (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PHC",
+   "title": "STG & EML Primary Health Care, 2024 ed. (ch 3 updated 9 Jul 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "RCPCH",
+   "title": "RCPCH UK-WHO growth charts Fact Sheet 7 — preterm: corrected age to 2 y",
+   "type": "reference",
+   "country": "UK",
+   "url": "https://www.rcpch.ac.uk/sites/default/files/Plotting_neonatal_and_infant_close_monitoring.pdf"
+  },
+  {
+   "id": "RTHB",
+   "title": "NDoH Road to Health Book User Guide, 2020 (pp 14, 17–18, 20, 22)",
+   "type": "guideline",
+   "country": "ZA",
+   "url": "https://www.health.gov.za/wp-content/uploads/2023/04/RTHB-USER-GUIDE-layout_PRINT-READY_12Aug2020.pdf"
+  },
+  {
+   "id": "WHO2006",
+   "title": "WHO Child Growth Standards 2006/2007 (0–5 y) — LMS tables from WHO 'anthro' package",
+   "type": "reference",
+   "country": "intl",
+   "url": "https://github.com/WorldHealthOrganization/anthro"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). z-scores are calculated in the app from WHO LMS tables (who_lms.json).",
+ "inputs": [
+  {
+   "key": "dob",
+   "label": "Date of birth",
+   "type": "date"
+  },
+  {
+   "key": "date",
+   "label": "Date measured",
+   "type": "date",
+   "default": "today"
+  },
+  {
+   "key": "sex",
+   "label": "Sex",
+   "type": "choice",
+   "options": [
+    "male",
+    "female"
+   ]
+  },
+  {
+   "key": "preterm",
+   "label": "Born premature (< 37 wk)?",
+   "type": "yesno",
+   "top": true
+  },
+  {
+   "key": "ga_weeks",
+   "label": "Gestational age at birth",
+   "type": "number",
+   "unit": "weeks",
+   "show_if": "preterm"
+  },
+  {
+   "key": "weight",
+   "label": "Weight",
+   "type": "number",
+   "unit": "kg"
+  },
+  {
+   "key": "lenhei",
+   "label": "Length (< 2 y, lying) / height (≥ 2 y, standing)",
+   "type": "number",
+   "unit": "cm"
+  },
+  {
+   "key": "measure",
+   "label": "Measured",
+   "type": "choice",
+   "options": [
+    "lying (length)",
+    "standing (height)"
+   ]
+  },
+  {
+   "key": "muac",
+   "label": "MUAC (non-dominant arm)",
+   "type": "number",
+   "unit": "cm"
+  },
+  {
+   "key": "oedema",
+   "label": "Bilateral pitting oedema",
+   "type": "yesno"
+  }
+ ],
+ "top_question": {
+  "t": "Born premature (< 37 wk)? ☐ No ☐ Yes → GA ___ wk → use CORRECTED age until 2 y: age − (40 − GA) weeks",
+  "s": "RCPCH",
+  "d": true
+ },
+ "engine": {
+  "file": "who_lms.json",
+  "script": "anthro_z.js",
+  "call": "AnthroZ.compute(lms, {sex, dob, date, gaWeeks, weightKg, lenheiCm, measure, muacCm, oedema})",
+  "returns": "z.wfa, z.lhfa | z.hfa, z.wflh, z.bfa, z.acfa, bmi, ageDaysUsed, corrected, flags, notes",
+  "map_components": {
+   "WFA": "wfa",
+   "L/HFA": "lhfa",
+   "HFA": "hfa",
+   "WFL/H": "wflh",
+   "BMI/A": "bfa",
+   "MUAC": "acfa (z) + muac (cm cut-offs)"
+  }
+ },
+ "components": [
+  {
+   "key": "WFA",
+   "name": "Weight-for-age",
+   "range": "0–60 m",
+   "s": "WHO2006",
+   "items": [
+    {
+     "band": "Below −3",
+     "label": "Severely underweight",
+     "level": "red",
+     "s": "PHC:charts"
+    },
+    {
+     "band": "−3 to < −2",
+     "label": "Underweight",
+     "level": "amber",
+     "s": "PHC:charts"
+    },
+    {
+     "band": "−2 to +2",
+     "label": "Normal (watch the curve direction)",
+     "level": "green",
+     "s": "PHC:charts"
+    }
+   ]
+  },
+  {
+   "key": "L/HFA",
+   "name": "Length / height-for-age",
+   "range": "0–60 m",
+   "s": "WHO2006",
+   "items": [
+    {
+     "band": "Below −3",
+     "label": "Severely stunted → REFER",
+     "level": "red",
+     "s": "PAED:7.33"
+    },
+    {
+     "band": "−3 to < −2",
+     "label": "Stunted (short)",
+     "level": "amber",
+     "s": "PAED:7.33"
+    },
+    {
+     "band": "≥ −2",
+     "label": "Normal",
+     "level": "green",
+     "s": "RTHB:14",
+     "d": true
+    }
+   ]
+  },
+  {
+   "key": "WFL/H",
+   "name": "Weight-for-length / height",
+   "range": "45–110 cm L · 65–120 cm H",
+   "s": "WHO2006",
+   "items": [
+    {
+     "band": "Below −3",
+     "label": "SAM — severe wasting",
+     "level": "red",
+     "s": "PHC:3.7"
+    },
+    {
+     "band": "−3 to < −2",
+     "label": "MAM — wasting",
+     "level": "amber",
+     "s": "PHC:3.10"
+    },
+    {
+     "band": "−2 to +1",
+     "label": "Normal",
+     "level": "green",
+     "s": "PHC:charts"
+    },
+    {
+     "band": "> +1",
+     "label": "Risk of overweight",
+     "level": "blue",
+     "s": "PHC:charts"
+    },
+    {
+     "band": "> +2 / > +3",
+     "label": "Overweight / obese",
+     "level": "amber",
+     "s": "PHC:3.13"
+    }
+   ]
+  },
+  {
+   "key": "BMI/A",
+   "name": "BMI-for-age",
+   "range": "0–60 m",
+   "s": "WHO2006",
+   "items": [
+    {
+     "band": "> +2",
+     "label": "Overweight (WHO; STG uses WFH < 5 y)",
+     "level": "amber",
+     "s": "PHC:3.13",
+     "d": true
+    },
+    {
+     "band": "> +3",
+     "label": "Obese",
+     "level": "red",
+     "s": "PHC:3.13",
+     "d": true
+    }
+   ]
+  },
+  {
+   "key": "MUAC",
+   "name": "Mid-upper arm circumference",
+   "range": "6–59 m (z 3–60 m)",
+   "s": "PHC:3.7",
+   "items": [
+    {
+     "band": "< 11.5 cm",
+     "label": "SAM",
+     "level": "red",
+     "s": "PHC:3.7"
+    },
+    {
+     "band": "11.5 – 12.5 cm",
+     "label": "MAM",
+     "level": "amber",
+     "s": "PHC:3.10"
+    },
+    {
+     "band": "≥ 12.5 cm",
+     "label": "Not acutely malnourished",
+     "level": "green",
+     "s": "RTHB:20",
+     "d": true
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "id": "age_days",
+   "name": "Age",
+   "expr": "date − dob (days)",
+   "vars": {
+    "dob": "date of birth",
+    "date": "measurement date"
+   },
+   "units": "days",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "id": "corrected_age",
+   "name": "Corrected age (preterm)",
+   "expr": "IF ga_weeks < 37 AND age_days < 730.5 THEN age_days − (40 − ga_weeks) × 7",
+   "vars": {
+    "ga_weeks": "gestational age at birth"
+   },
+   "units": "days",
+   "s": "RCPCH",
+   "d": true
+  },
+  {
+   "id": "z_lms",
+   "name": "z-score (LMS)",
+   "expr": "((X / M)^L − 1) / (L × S)",
+   "vars": {
+    "X": "measurement",
+    "L": "Box-Cox power",
+    "M": "median",
+    "S": "coefficient of variation"
+   },
+   "notation": "L, M, S by sex + age (or length/height) from who_lms.json",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "id": "z_restricted",
+   "name": "z beyond ±3 (weight, BMI, MUAC)",
+   "expr": "z > 3: 3 + (X − SD3) / (SD3 − SD2) · z < −3: −3 + (X − SD−3) / (SD−2 − SD−3) · SDk = M(1 + L·S·k)^(1/L)",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "id": "bmi",
+   "name": "BMI",
+   "expr": "weight_kg / (lenhei_cm / 100)^2",
+   "units": "kg/m²",
+   "s": "PHC:3.13"
+  },
+  {
+   "id": "lenhei_adj",
+   "name": "Length ↔ height",
+   "expr": "age < 731 d AND standing → +0.7 cm; age ≥ 731 d AND lying → −0.7 cm",
+   "s": "WHO2006",
+   "d": true
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "SAM (6–60 m): WHZ < −3 OR MUAC < 11.5 cm OR bilateral oedema",
+   "s": "PHC:3.7",
+   "level": "red"
+  },
+  {
+   "t": "No device: WAZ < −3 (no other cause) / clinical wasting = treat as SAM",
+   "s": "PHC:3.7",
+   "level": "red"
+  },
+  {
+   "t": "Complicated SAM: < 6 m, < 4 kg, oedema, not feeding, danger sign → refer",
+   "s": "PHC:3.7",
+   "level": "red"
+  },
+  {
+   "t": "MAM (> 6 m): WHZ −2 to −3 OR MUAC 11.5–12.5 cm, no oedema",
+   "s": "PHC:3.10",
+   "level": "amber"
+  },
+  {
+   "t": "Not growing well: flattening curve or low WAZ with WHZ > −2",
+   "s": "PHC:3.11",
+   "level": "amber"
+  },
+  {
+   "t": "Recovered: WHZ > −2 on 2 visits ≥ 1 month apart and/or MUAC > 11.5 (pref. 12) cm",
+   "s": "PHC:3.9",
+   "level": "green"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Preterm growing parallel to the z-lines = not failure to thrive",
+   "s": "PHC:3.7"
+  },
+  {
+   "t": "±2 z ≈ 3rd / 97th centile; ±3 z = severe deviation",
+   "s": "PAED:2.37"
+  },
+  {
+   "t": "MUAC on the non-dominant arm, mid acromion–olecranon",
+   "s": "PAED:4.25"
+  },
+  {
+   "t": "MUAC not used < 6 months",
+   "s": "RTHB:20",
+   "d": true
+  },
+  {
+   "t": "Oedema: no weight-based z (WFA, WFH, BMI) — oedema = SAM",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "t": "|z| > 5 (WFH/BMI) or WAZ < −6 = implausible → re-measure",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "t": "Lie < 2 y, stand ≥ 2 y",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "t": "Curve crossing lines away from median = problem",
+   "s": "PHC:charts"
+  }
+ ]
+}

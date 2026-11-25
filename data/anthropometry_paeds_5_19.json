@@ -1,0 +1,361 @@
+{
+ "id": "anthropometry-paeds-5-19",
+ "type": "calculator",
+ "short": "Anthro 5–19 y",
+ "folder": "Anthropometry",
+ "title": "Paediatric anthropometry 5–19 y — WHO z-scores",
+ "population": "children and adolescents 61–228 months",
+ "age_range": "5–19 years",
+ "setting": "casualty / ward / clinic",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-25",
+ "badge": "z −3 … +3",
+ "tags": [
+  "anthropometry",
+  "growth",
+  "nutrition",
+  "calculation",
+  "z-score",
+  "paediatric",
+  "obesity"
+ ],
+ "sources": [
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 2025–2029 cycle (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PHC",
+   "title": "STG & EML Primary Health Care, 2024 ed. (ch 3 updated 9 Jul 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "RCPCH",
+   "title": "RCPCH UK-WHO growth charts Fact Sheet 7 — preterm: corrected age to 2 y",
+   "type": "reference",
+   "country": "UK",
+   "url": "https://www.rcpch.ac.uk/sites/default/files/Plotting_neonatal_and_infant_close_monitoring.pdf"
+  },
+  {
+   "id": "WHO2006",
+   "title": "WHO Child Growth Standards 2006/2007 (0–5 y) — LMS tables from WHO 'anthro' package",
+   "type": "reference",
+   "country": "intl",
+   "url": "https://github.com/WorldHealthOrganization/anthro"
+  },
+  {
+   "id": "WHO2007",
+   "title": "WHO Growth Reference 2007 (5–19 y) — LMS tables from WHO 'anthroplus' package",
+   "type": "reference",
+   "country": "intl",
+   "url": "https://github.com/WorldHealthOrganization/anthroplus"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). z-scores are calculated in the app from WHO LMS tables (who_lms.json).",
+ "inputs": [
+  {
+   "key": "dob",
+   "label": "Date of birth",
+   "type": "date"
+  },
+  {
+   "key": "date",
+   "label": "Date measured",
+   "type": "date",
+   "default": "today"
+  },
+  {
+   "key": "sex",
+   "label": "Sex",
+   "type": "choice",
+   "options": [
+    "male",
+    "female"
+   ]
+  },
+  {
+   "key": "weight",
+   "label": "Weight",
+   "type": "number",
+   "unit": "kg"
+  },
+  {
+   "key": "height",
+   "label": "Height (standing)",
+   "type": "number",
+   "unit": "cm"
+  },
+  {
+   "key": "father_height",
+   "label": "Father's height",
+   "type": "number",
+   "unit": "cm",
+   "optional": true
+  },
+  {
+   "key": "mother_height",
+   "label": "Mother's height",
+   "type": "number",
+   "unit": "cm",
+   "optional": true
+  },
+  {
+   "key": "oedema",
+   "label": "Oedema",
+   "type": "yesno"
+  }
+ ],
+ "top_question": {
+  "t": "Preterm correction not needed > 2 y · age = date − DOB in months (÷ 30.4375 days)",
+  "s": "RCPCH",
+  "d": true
+ },
+ "engine": {
+  "file": "who_lms.json",
+  "script": "anthro_z.js",
+  "call": "AnthroZ.compute(lms, {sex, dob, date, gaWeeks, weightKg, lenheiCm, measure, muacCm, oedema})",
+  "returns": "z.wfa, z.lhfa | z.hfa, z.wflh, z.bfa, z.acfa, bmi, ageDaysUsed, corrected, flags, notes",
+  "map_components": {
+   "WFA": "wfa",
+   "L/HFA": "lhfa",
+   "HFA": "hfa",
+   "WFL/H": "wflh",
+   "BMI/A": "bfa",
+   "MUAC": "acfa (z) + muac (cm cut-offs)"
+  }
+ },
+ "components": [
+  {
+   "key": "BMI/A",
+   "name": "BMI-for-age",
+   "range": "5–19 y",
+   "s": "WHO2007",
+   "items": [
+    {
+     "band": "Below −3",
+     "label": "Severe thinness",
+     "level": "red",
+     "s": "WHO2007",
+     "d": true
+    },
+    {
+     "band": "−3 to < −2",
+     "label": "Thinness",
+     "level": "amber",
+     "s": "WHO2007",
+     "d": true
+    },
+    {
+     "band": "−2 to +1",
+     "label": "Normal",
+     "level": "green",
+     "s": "PHC:3.13"
+    },
+    {
+     "band": "> +1",
+     "label": "Overweight",
+     "level": "amber",
+     "s": "PHC:3.13"
+    },
+    {
+     "band": "> +2",
+     "label": "Obese",
+     "level": "red",
+     "s": "PHC:3.13"
+    }
+   ]
+  },
+  {
+   "key": "HFA",
+   "name": "Height-for-age",
+   "range": "5–19 y",
+   "s": "WHO2007",
+   "items": [
+    {
+     "band": "Below −3",
+     "label": "Refer immediately",
+     "level": "red",
+     "s": "PAED:7.33"
+    },
+    {
+     "band": "−3 to < −2",
+     "label": "Short stature — check target height, velocity",
+     "level": "amber",
+     "s": "PAED:7.33"
+    },
+    {
+     "band": "≥ −2",
+     "label": "Normal",
+     "level": "green",
+     "s": "PAED:7.33"
+    }
+   ]
+  },
+  {
+   "key": "WFA",
+   "name": "Weight-for-age",
+   "range": "5–10 y only",
+   "s": "WHO2007",
+   "items": [
+    {
+     "band": "Below −3",
+     "label": "Severely underweight",
+     "level": "red",
+     "s": "WHO2007",
+     "d": true
+    },
+    {
+     "band": "−3 to < −2",
+     "label": "Underweight",
+     "level": "amber",
+     "s": "WHO2007",
+     "d": true
+    },
+    {
+     "band": "> 10 y",
+     "label": "Not defined — use BMI-for-age",
+     "level": "blue",
+     "s": "WHO2007",
+     "d": true
+    }
+   ]
+  }
+ ],
+ "formulas": [
+  {
+   "id": "age_days",
+   "name": "Age",
+   "expr": "date − dob (days)",
+   "vars": {
+    "dob": "date of birth",
+    "date": "measurement date"
+   },
+   "units": "days",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "id": "z_lms",
+   "name": "z-score (LMS)",
+   "expr": "((X / M)^L − 1) / (L × S)",
+   "vars": {
+    "X": "measurement",
+    "L": "Box-Cox power",
+    "M": "median",
+    "S": "coefficient of variation"
+   },
+   "notation": "L, M, S by sex + age (or length/height) from who_lms.json",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "id": "z_restricted",
+   "name": "z beyond ±3 (weight, BMI, MUAC)",
+   "expr": "z > 3: 3 + (X − SD3) / (SD3 − SD2) · z < −3: −3 + (X − SD−3) / (SD−2 − SD−3) · SDk = M(1 + L·S·k)^(1/L)",
+   "s": "WHO2006",
+   "d": true
+  },
+  {
+   "id": "bmi",
+   "name": "BMI",
+   "expr": "weight_kg / (lenhei_cm / 100)^2",
+   "units": "kg/m²",
+   "s": "PHC:3.13"
+  },
+  {
+   "id": "target_height_boy",
+   "name": "Target height (boy)",
+   "expr": "(father_height + (mother_height + 13)) / 2",
+   "range": "± 10 cm",
+   "s": "PAED:7.33"
+  },
+  {
+   "id": "target_height_girl",
+   "name": "Target height (girl)",
+   "expr": "((father_height − 13) + mother_height) / 2",
+   "range": "± 9 cm",
+   "s": "PAED:7.33"
+  },
+  {
+   "id": "age_months",
+   "name": "Age in months",
+   "expr": "age_days / 30.4375",
+   "s": "WHO2007",
+   "d": true
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Overweight: BMI-for-age > +1 SD; obese: > +2 SD (5–19 y)",
+   "s": "PHC:3.13",
+   "level": "amber"
+  },
+  {
+   "t": "Short: HFA < −2 → parental heights, velocity over 6–12 months",
+   "s": "PAED:7.33",
+   "level": "amber"
+  },
+  {
+   "t": "Refer: HFA < −3, ≥ 10 cm below target, or growth failure",
+   "s": "PAED:7.33",
+   "level": "red"
+  },
+  {
+   "t": "Growth failure: moving further below −2 over 1 year / velocity < 25th centile",
+   "s": "PAED:7.33",
+   "level": "red"
+  },
+  {
+   "t": "Lipid risk factor: BMI ≥ 95th centile (z ≥ +1.96)",
+   "s": "PAED:7.28",
+   "level": "amber"
+  },
+  {
+   "t": "Adults (> 19 y): BMI ≥ 25 overweight, ≥ 30 obese → adult card",
+   "s": "PHC:3.13",
+   "level": "blue"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Measure standing height, no shoes, heels to wall",
+   "d": true
+  },
+  {
+   "t": "WHO weight-for-age stops at 10 y (puberty) — use BMI",
+   "s": "WHO2007",
+   "d": true
+  },
+  {
+   "t": "No WHO MUAC-for-age reference > 5 y",
+   "s": "WHO2007",
+   "d": true
+  },
+  {
+   "t": "Constitutional delay: short trunk, delayed bone age, normal velocity",
+   "s": "PAED:7.32"
+  },
+  {
+   "t": "Familial short stature: bone age = chronological age",
+   "s": "PAED:7.32"
+  },
+  {
+   "t": "Oedema: no weight-based z",
+   "s": "WHO2007",
+   "d": true
+  },
+  {
+   "t": "|z| > 5 BMI/A, HFA |z| > 6 = implausible → re-measure",
+   "s": "WHO2007",
+   "d": true
+  },
+  {
+   "t": "Exclude IUGR, chronic disease, psychosocial deprivation",
+   "s": "PAED:7.33"
+  }
+ ]
+}
