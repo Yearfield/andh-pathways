@@ -81,6 +81,22 @@ to this section only. Reference data only — imported from the owner's master s
 - Only positive facts are stored; a feature that is not listed for a pathogen counts as **no**.
 - Data is loaded on first use (about 0.6 MB over the wire) and cached by the service worker; it is not part of the app's first install.
 
+## Store apps (Android and iOS)
+
+The same app ships inside Android and iOS apps built with [Capacitor](https://capacitorjs.com). The website is not changed by any of this:
+GitHub Pages keeps serving the repository root as before.
+
+- `npm run build` copies the app into `www/` for the store apps (`tools/build-store.mjs`). That copy leaves out **Alternative Medicine**
+  (no data, no home tile, `#/altmed` goes to the start page), has no service worker (every file is already inside the app), and adds
+  `store/store.js`, which opens the printable card PDFs in the app's own PDF viewer (phone webviews cannot open a PDF link like a browser).
+- `npm run sync` builds `www/` and copies it into `android/` and `ios/`. Run it after any change to app files or `data/`.
+- Content changes reach the store apps only with a new app release: they carry their own copy of the cards.
+- Icons and splash screens come from `assets/` (made from `icons/jad-logo.webp`); `npm run assets` regenerates them.
+- `.github/workflows/store-apps.yml` builds both apps on every pull request and runs `store/selftest.js` inside the real app on an
+  Android emulator and an iOS simulator: Alternative Medicine is gone, a printable card PDF renders, and a guideline PDF loaded
+  through **Load PDF** renders. Screenshots and an installable Android debug APK are attached to each run.
+- iOS needs a Mac with Xcode to sign and upload; Android needs Android Studio (or the APK from the workflow run for testing).
+
 ## Licences
 
 PDF.js (Apache 2.0) in `vendor/pdfjs/`; IBM Plex Sans/Serif fonts (SIL OFL) in `fonts/`.
