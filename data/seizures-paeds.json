@@ -1,0 +1,1347 @@
+{
+ "id": "seizures-paeds",
+ "short": "Seizures_Paeds",
+ "title": "Seizures, febrile seizures and status epilepticus (child 1 month – 12 years)",
+ "population": "Children 1 month to < 13 years presenting with a seizure or status epilepticus",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-25",
+ "sources": [
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Neonates (< 28 days) → neonatal seizures (Paed STG 19.6.2)",
+     "s": "paedstg2026:13.5",
+     "b": 1
+    },
+    {
+     "t": "Adolescents ≥ 13 y → Seizures_Adult",
+     "s": "paedstg2026:13.12",
+     "b": 1
+    },
+    {
+     "t": "Head injury → TBI_Paeds; known epilepsy stable after seizure → Epilepsy_Paeds",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Status epilepticus: ≥ 5 min continuous seizure, or ≥ 2 seizures without full recovery between",
+     "s": "paedstg2026:13.3",
+     "b": 1
+    },
+    {
+     "t": "Febrile seizure: 6 months – 6 years, fever > 38.5 °C, no intracranial infection",
+     "s": "paedstg2026:13.13",
+     "b": 1
+    },
+    {
+     "t": "Simple febrile: generalised, < 15 min, once per illness, no deficit",
+     "s": "paedstg2026:13.13"
+    },
+    {
+     "t": "Complex febrile: ≥ 15 min, OR recurrent in same illness, OR focal, OR post-ictal focal signs",
+     "s": "paedstg2026:13.13",
+     "b": 1
+    },
+    {
+     "t": "Onset ____ (time) · duration ____ min · weight ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Seizure ≥ 5 min — treat NOW",
+     "s": "paedstg2026:13.3",
+     "b": 1
+    },
+    {
+     "t": "Seizing ≥ 30 min → brain damage likely",
+     "s": "paedstg2026:13.3",
+     "b": 1
+    },
+    {
+     "t": "Meningitis cannot be excluded",
+     "s": "paedstg2026:13.14",
+     "b": 1
+    },
+    {
+     "t": "Complex febrile seizure / persistent lethargy",
+     "s": "paedstg2026:13.14",
+     "b": 1
+    },
+    {
+     "t": "Infantile spasms (clusters, 3–12 months)",
+     "s": "paedstg2026:13.18",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet / previous records",
+   "items": [
+    {
+     "t": "Known epilepsy; ASM and dose",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Previous febrile seizures",
+     "s": "paedstg2026:13.13"
+    },
+    {
+     "t": "Family history of seizures",
+     "s": "paedstg2026:13.13"
+    },
+    {
+     "t": "Development / regression",
+     "s": "paedstg2026:13.15"
+    },
+    {
+     "t": "HIV exposure / ART",
+     "s": "paedstg2026:13.19"
+    },
+    {
+     "t": "Immunisations (Hib, PCV)",
+     "d": 1
+    },
+    {
+     "t": "Antibiotics before arrival",
+     "s": "paedstg2026:13.14"
+    },
+    {
+     "t": "Medicines / poisons at home",
+     "s": "paedstg2026:13.5"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (caregiver)",
+   "items": [
+    {
+     "h": "The event"
+    },
+    {
+     "t": "Duration; recovery between seizures",
+     "s": "paedstg2026:13.3"
+    },
+    {
+     "t": "Focal start / one side",
+     "s": "paedstg2026:13.6"
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Fever, irritability, vomiting, bulging fontanelle",
+     "d": 1
+    },
+    {
+     "t": "Diarrhoea / dehydration",
+     "s": "paedstg2026:13.6"
+    },
+    {
+     "t": "Trauma",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Ingestion: INH, antihistamines, paraffin, pesticides, essential oils",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "h": "Background"
+    },
+    {
+     "t": "Perinatal HIE, cerebral palsy",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "TB contact",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 95%",
+     "s": "paedstg2026:13.7",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "HGT ____ mmol/L (< 2.6 → treat)",
+     "s": "paedstg2026:7.31",
+     "k": "sub"
+    },
+    {
+     "t": "Temperature ____ °C",
+     "s": "paedstg2026:13.13",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "AVPU / GCS",
+     "d": 1
+    },
+    {
+     "t": "Fontanelle",
+     "d": 1
+    },
+    {
+     "t": "Focal signs",
+     "s": "paedstg2026:13.7"
+    },
+    {
+     "h": "Infection"
+    },
+    {
+     "t": "Neck stiffness (unreliable < 18 m)",
+     "s": "paedstg2026:13.14"
+    },
+    {
+     "t": "Rash, focus of fever",
+     "s": "paedstg2026:13.14"
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:13.7"
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Trauma / NAI signs",
+     "s": "paedstg2026:13.7"
+    },
+    {
+     "t": "Toxidrome",
+     "s": "paedstg2026:13.7"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT + airway",
+   "items": [
+    {
+     "t": "HGT ____ · SpO₂ ____ · weight ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "HGT low → dextrose 10% 2–5 mL/kg IV",
+     "s": "paedstg2026:7.25",
+     "b": 1
+    },
+    {
+     "t": "O₂ to SaO₂ ≥ 95%; recovery position; nothing in the mouth",
+     "s": "paedstg2026:13.7",
+     "b": 1
+    },
+    {
+     "t": "Resp depression → BVM 1 breath every 3–5 s, REFER",
+     "s": "paedstg2026:13.8",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods + meningitis decision",
+   "items": [
+    {
+     "t": "Na⁺ ____ · Ca²⁺ ____ · glucose ____",
+     "k": "value"
+    },
+    {
+     "t": "Blood gas / electrolytes, LFT, FBC; ASM level if known epilepsy",
+     "s": "paedstg2026:13.8",
+     "b": 1
+    },
+    {
+     "t": "Meningitis not excluded → ceftriaxone 100 mg/kg within 1 h",
+     "s": "paedstg2026:13.12",
+     "b": 1
+    },
+    {
+     "t": "LP: features of meningitis; consider < 18 months or pre-treated with antibiotics",
+     "s": "paedstg2026:13.14",
+     "b": 1
+    },
+    {
+     "t": "Focal onset / focal neurology → neuroimaging (REFER)",
+     "s": "paedstg2026:13.12"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Meningitis / encephalitis",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Raised ICP",
+     "s": "paedstg2026:13.14"
+    },
+    {
+     "t": "Poisoning",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Head injury / NAI",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Hyponatraemia / hypocalcaemia",
+     "s": "paedstg2026:13.5"
+    },
+    {
+     "t": "Infantile spasms",
+     "s": "paedstg2026:13.18"
+    },
+    {
+     "t": "Dehydration / shock",
+     "s": "paedstg2026:13.6"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = REFRACTORY STATUS (seizing after level 1 + 2), airway not maintained or infantile spasms → stabilise → REFER (ICU / specialist)",
+   "s": "paedstg2026:13.10",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — weight-based doses by the minute on the seizure chart; find the cause; 24-hour nursing seizure record",
+   "s": "paedstg2026:13.7",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Bacterial meningitis / encephalitis",
+   "branch": "If meningitis not excluded",
+   "features": [
+    {
+     "t": "Fever, lethargy, bulging fontanelle, neck stiffness (unreliable < 18 m)",
+     "s": "paedstg2026:13.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LP if no raised ICP; FBC, culture",
+     "s": "paedstg2026:13.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 100 mg/kg IV/IM within 1 h",
+     "s": "paedstg2026:13.8"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If raised ICP / deteriorating",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypoglycaemia",
+   "branch": "If hypoglycaemia",
+   "features": [
+    {
+     "t": "Not fed, vomiting, diarrhoea, sepsis, SAM",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT < 2.6 mmol/L",
+     "s": "paedstg2026:7.31",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dextrose 10% 2–5 mL/kg IV, then maintenance",
+     "s": "paedstg2026:7.25"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — Hypoglycemia_Paeds pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Complex febrile seizure",
+   "branch": "If febrile seizure",
+   "features": [
+    {
+     "t": "≥ 15 min, recurrent, focal, or post-ictal deficit",
+     "s": "paedstg2026:13.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Exclude meningitis; neuroimaging if lethargic (REFER)",
+     "s": "paedstg2026:13.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Status protocol; paracetamol 15 mg/kg for fever",
+     "s": "paedstg2026:13.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Recurrent complex without cause → specialist",
+     "s": "paedstg2026:13.15",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Simple febrile seizure",
+   "branch": "If febrile seizure",
+   "features": [
+    {
+     "t": "6 m – 6 y, generalised, < 15 min, once, URTI",
+     "s": "paedstg2026:13.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Focus of fever; ≥ 18 m with focus → no LP",
+     "s": "paedstg2026:13.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Reassure, first-aid teaching, no tepid sponging; no ASM prophylaxis",
+     "s": "paedstg2026:13.15"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "s": "paedstg2026:13.15"
+    }
+   ]
+  },
+  {
+   "dx": "Poisoning",
+   "branch": "If poisoning / trauma",
+   "features": [
+    {
+     "t": "INH, antihistamines, organophosphates, essential oils",
+     "s": "paedstg2026:13.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "History, toxidrome",
+     "s": "paedstg2026:13.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzodiazepine; NO phenytoin",
+     "s": "paedstg2026:13.9"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if refractory",
+     "s": "paedstg2026:13.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Head injury / non-accidental injury",
+   "branch": "If poisoning / trauma",
+   "features": [
+    {
+     "t": "Trauma history, bruising, focal signs",
+     "s": "paedstg2026:13.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for neuroimaging",
+     "s": "paedstg2026:13.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "TBI_Paeds pathway; social worker",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — imaging",
+     "s": "paedstg2026:13.12",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Breakthrough seizure in known epilepsy",
+   "branch": "If known epilepsy",
+   "features": [
+    {
+     "t": "Missed doses, outgrown dose, intercurrent illness",
+     "s": "paedstg2026:13.20"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ASM level if toxicity / adherence doubt",
+     "s": "paedstg2026:13.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Restart ASM; Epilepsy_Paeds pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If 2 ASMs failed",
+     "s": "paedstg2026:13.26"
+    }
+   ]
+  },
+  {
+   "dx": "Metabolic: Na⁺, Ca²⁺, Mg²⁺, uraemia",
+   "branch": "",
+   "features": [
+    {
+     "t": "Dehydration, diarrhoea, rickets, renal disease",
+     "s": "paedstg2026:13.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood gas / electrolytes",
+     "s": "paedstg2026:13.8",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Correct abnormality; do not overhydrate",
+     "s": "paedstg2026:13.8"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If ICU / dialysis",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Infantile epileptic spasms",
+   "branch": "",
+   "features": [
+    {
+     "t": "3–12 m, clusters of 1–2 s stiffening on waking, regression",
+     "s": "paedstg2026:13.18"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; EEG at referral",
+     "s": "paedstg2026:13.18",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Medical emergency — discuss with specialist",
+     "s": "paedstg2026:13.18"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — immediately",
+     "s": "paedstg2026:13.18",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time from seizure onset",
+  "phase_note": "Weigh first · clock starts at onset · control within 30 min · antibiotics within 1 h if meningitis not excluded",
+  "columns": {
+   "feed": "Airway, O₂ & fluids",
+   "tests": "Bedside & bloods",
+   "treatment": "Drugs & actions (per kg)"
+  },
+  "standing": [
+   {
+    "t": "Vitals every 15 min (HR, RR, SpO₂, AVPU)",
+    "s": "paedstg2026:13.7",
+    "b": 1
+   },
+   {
+    "t": "Recovery position; nothing in the mouth; nil per mouth",
+    "s": "paedstg2026:13.7",
+    "b": 1
+   },
+   {
+    "t": "O₂ to SaO₂ ≥ 95%",
+    "s": "paedstg2026:13.7",
+    "b": 1
+   },
+   {
+    "t": "Time every seizure (start, stop)",
+    "s": "paedstg2026:13.3",
+    "b": 1
+   },
+   {
+    "t": "Watch SpO₂ and RR after benzodiazepine",
+    "s": "paedstg2026:13.8",
+    "b": 1
+   },
+   {
+    "t": "Cot sides up once safe",
+    "s": "paedstg2026:13.7"
+   },
+   {
+    "t": "Record on the 24-hour nursing seizure record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "Onset / arrival",
+    "lead": "Weigh or estimate weight. Safe space, recovery position, nothing in the mouth. Time of onset from caregiver.",
+    "feed": [
+     {
+      "t": "Airway clear; O₂ to SaO₂ ≥ 95%",
+      "s": "paedstg2026:13.7",
+      "b": 1
+     },
+     {
+      "t": "IV or IO access",
+      "s": "paedstg2026:13.7",
+      "b": 1
+     },
+     {
+      "t": "Nil per mouth",
+      "s": "paedstg2026:13.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT now",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     },
+     {
+      "t": "Temperature",
+      "s": "paedstg2026:13.7",
+      "b": 1
+     },
+     {
+      "t": "Blood gas / electrolytes, FBC, LFT with the line",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HGT low → dextrose 10% 2–5 mL/kg IV",
+      "s": "paedstg2026:7.25",
+      "b": 1
+     },
+     {
+      "t": "Meningitis not excluded → ceftriaxone 100 mg/kg IV/IM",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "5 min",
+    "phase": "Early status · level 1",
+    "feed": [
+     {
+      "t": "BVM ready",
+      "s": "paedstg2026:13.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "RR, SpO₂ after dose",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "IV / IO access (over 60 s)"
+     },
+     {
+      "t": "Lorazepam 0.1 mg/kg (max 4 mg) OR midazolam 0.25 mg/kg (max 10 mg) OR diazepam 0.25 mg/kg (max 10 mg)",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     },
+     {
+      "h": "No access"
+     },
+     {
+      "t": "Midazolam buccal 0.5 mg/kg (not < 6 months) or IM 0.1 mg/kg OR lorazepam IM / buccal 0.1 mg/kg (max 4 mg) OR diazepam PR 0.5 mg/kg (max 10 mg)",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "10 min",
+    "phase": "Still seizing",
+    "feed": [
+     {
+      "t": "Resp depression → BVM 1 breath every 3–5 s, REFER",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Recheck HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat the benzodiazepine ONCE (max 2 doses)",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "10–30 min",
+    "phase": "Established · level 2",
+    "feed": [
+     {
+      "t": "Cardiac monitor; phenytoin on a separate line",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     },
+     {
+      "t": "Phone referral centre; prepare intubation",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG rhythm during phenytoin",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "IV / IO access"
+     },
+     {
+      "t": "Phenytoin 20 mg/kg in NaCl 0.9% over 20 min (≤ 3 mg/kg/min) OR phenobarbital 20 mg/kg over 5 min (max 600 mg)",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     },
+     {
+      "t": "No response: give the other drug, or phenobarbital 10 mg/kg × 2 (5 min apart)",
+      "s": "paedstg2026:13.10",
+      "b": 1
+     },
+     {
+      "h": "No access"
+     },
+     {
+      "t": "Phenobarbital 20 mg/kg IM OR levetiracetam 60 mg/kg via NGT (max 4 500 mg)",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     },
+     {
+      "t": "NO phenytoin in poisoning",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Refractory",
+    "feed": [
+     {
+      "t": "Intubation / ventilation → REFER ICU",
+      "s": "paedstg2026:13.10",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas, glucose, electrolytes",
+      "s": "paedstg2026:13.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Midazolam infusion = ICU → transfer now",
+      "s": "paedstg2026:13.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Post-ictal",
+    "feed": [
+     {
+      "t": "Nil per mouth until conscious",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     },
+     {
+      "t": "Maintenance NaCl 0.9% — do not overhydrate",
+      "s": "paedstg2026:13.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "AVPU hourly; T; HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Antibiotics given within 1 h if meningitis not excluded",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     },
+     {
+      "t": "Fever > 38.5 °C: paracetamol 15 mg/kg 6-hourly",
+      "s": "paedstg2026:13.14"
+     }
+    ]
+   },
+   {
+    "label": "4–24 h",
+    "phase": "Cause and plan",
+    "feed": [
+     {
+      "t": "Feeds when awake",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LP / imaging per signs (REFER imaging)",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Epilepsy criteria met → start ASM, emergency care plan (Epilepsy_Paeds)",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     },
+     {
+      "t": "Not epilepsy → wean any ASM",
+      "s": "paedstg2026:13.12"
+     },
+     {
+      "t": "Counsel caregiver",
+      "s": "paedstg2026:13.12"
+     }
+    ]
+   },
+   {
+    "label": "If febrile seizure",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "No tepid sponging or fans",
+      "s": "paedstg2026:13.14",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Find focus of fever",
+      "s": "paedstg2026:13.14",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol 15 mg/kg 6-hourly (does not prevent seizures)",
+      "s": "paedstg2026:13.14",
+      "b": 1
+     },
+     {
+      "t": "No daily ASM prophylaxis for simple febrile seizures",
+      "s": "paedstg2026:13.15"
+     },
+     {
+      "t": "Teach first aid; 30–40% recur",
+      "s": "paedstg2026:13.14"
+     }
+    ]
+   },
+   {
+    "label": "If meningitis not excluded",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Do not overhydrate",
+      "s": "paedstg2026:13.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "LP when safe; culture",
+      "s": "paedstg2026:13.14",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 100 mg/kg within 1 h",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     },
+     {
+      "t": "Meningitis_Paeds pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If hypoglycaemia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Maintenance dextrose-containing fluid",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT every 15 min until stable",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat dextrose 10% 2 mL/kg if still low",
+      "d": 1
+     },
+     {
+      "t": "Hypoglycemia_Paeds pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If poisoning / trauma",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Monitor RR closely",
+      "s": "paedstg2026:13.8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuroimaging (REFER)",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Benzodiazepine / phenobarbital; NO phenytoin",
+      "s": "paedstg2026:13.9",
+      "b": 1
+     },
+     {
+      "t": "NAI suspected → social worker",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If known epilepsy",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Restart ASM when awake",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ASM level",
+      "s": "paedstg2026:13.8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Check dose for current weight, adherence",
+      "s": "paedstg2026:13.20",
+      "b": 1
+     },
+     {
+      "t": "Epilepsy_Paeds pathway",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses (per kg)",
+   "items": [
+    {
+     "t": "Lorazepam 0.1 mg/kg IV/IO/IM/buccal (max 4 mg)",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Midazolam 0.25 mg/kg IV · 0.1 mg/kg IM · 0.5 mg/kg buccal",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Diazepam 0.25 mg/kg IV · 0.5 mg/kg PR (max 10 mg)",
+     "s": "paedstg2026:13.8"
+    },
+    {
+     "t": "Phenytoin 20 mg/kg / 20 min · phenobarbital 20 mg/kg (max 600 mg)",
+     "s": "paedstg2026:13.9"
+    },
+    {
+     "t": "Levetiracetam 60 mg/kg NGT (max 4 500 mg)",
+     "s": "paedstg2026:13.9"
+    },
+    {
+     "t": "Ceftriaxone 100 mg/kg · dextrose 10% 2–5 mL/kg",
+     "s": "paedstg2026:13.8"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Anything in the mouth",
+     "s": "paedstg2026:13.6",
+     "b": 1
+    },
+    {
+     "t": "Phenytoin in poisoning",
+     "s": "paedstg2026:13.9",
+     "b": 1
+    },
+    {
+     "t": "Buccal midazolam < 6 months",
+     "s": "paedstg2026:13.11"
+    },
+    {
+     "t": "Repeat oral phenobarbital",
+     "s": "paedstg2026:13.9"
+    },
+    {
+     "t": "Tepid sponging, fans",
+     "s": "paedstg2026:13.14"
+    },
+    {
+     "t": "Overhydration",
+     "s": "paedstg2026:13.8"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Still seizing after level 2 → REFER ICU",
+     "s": "paedstg2026:13.10",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ / RR falling → BVM, REFER",
+     "s": "paedstg2026:13.8",
+     "b": 1
+    },
+    {
+     "t": "Infantile spasms → REFER immediately",
+     "s": "paedstg2026:13.18",
+     "b": 1
+    },
+    {
+     "t": "Developmental regression",
+     "s": "paedstg2026:13.15"
+    },
+    {
+     "t": "Not waking up",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Fully awake, feeding, no further seizures",
+    "d": 1
+   },
+   {
+    "t": "Meningitis excluded or treated",
+    "s": "paedstg2026:13.14"
+   },
+   {
+    "t": "Cause of fever / seizure treated",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Caregiver taught first aid",
+    "s": "paedstg2026:13.14"
+   },
+   {
+    "t": "Emergency care plan if epilepsy",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Follow-up date",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Return: seizure ≥ 5 min, not waking, fever with lethargy",
+    "d": 1
+   },
+   {
+    "t": "Road to Health booklet updated",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Re-evaluate diagnosis, development, school needs",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Wean residual ASM if not epilepsy",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Recurrent complex febrile → specialist",
+    "s": "paedstg2026:13.15"
+   },
+   {
+    "t": "No EEG for simple febrile seizures",
+    "s": "paedstg2026:13.14"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing seizure record — vitals, seizures, consciousness (child)",
+  "period": "24 hours: 15-min × 1 h, hourly × 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Seizures",
+    "items": [
+     {
+      "t": "Time start / stop, type",
+      "s": "paedstg2026:13.3"
+     },
+     {
+      "t": "Drug, dose, time",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "HR, RR, SpO₂ every 15 min",
+      "s": "paedstg2026:13.7"
+     },
+     {
+      "t": "Temperature",
+      "s": "paedstg2026:13.13"
+     }
+    ]
+   },
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "AVPU",
+      "d": 1
+     },
+     {
+      "t": "Fontanelle, new weakness",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Recovery position, cot sides",
+      "s": "paedstg2026:13.7"
+     },
+     {
+      "t": "Nil per mouth until awake",
+      "s": "paedstg2026:13.12"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Seizure ≥ 5 min or repeat seizure",
+    "s": "paedstg2026:13.3",
+    "b": 1
+   },
+   {
+    "t": "RR low / SpO₂ falling",
+    "s": "paedstg2026:13.8",
+    "b": 1
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:7.31",
+    "b": 1
+   },
+   {
+    "t": "Not waking / bulging fontanelle",
+    "d": 1
+   },
+   {
+    "t": "Irregular pulse on phenytoin",
+    "s": "paedstg2026:13.9"
+   }
+  ],
+  "totals": [
+   "Seizures (n)",
+   "Benzodiazepine doses",
+   "Loading dose given",
+   "Antibiotic time"
+  ]
+ }
+}

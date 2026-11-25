@@ -1,0 +1,1055 @@
+{
+ "id": "constipation-paeds",
+ "short": "Constipation_Paeds",
+ "title": "Constipation and faecal loading (child)",
+ "population": "Children (1 month – 15 years) admitted with constipation, faecal loading or impaction",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-25",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Bilious vomiting, distension, no stool or flatus → bowel obstruction (BO_Paeds), REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Neonates / delayed meconium → REFER (? Hirschsprung)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Bloody stools → PRB_Paeds",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria (Rome IV) — ≥ 2 for 1 month (< 4 y) or 2 months (≥ 4 y)",
+   "items": [
+    {
+     "t": "≤ 2 stools per week",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "≥ 1 episode of faecal incontinence per week",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "Retentive posturing / stool withholding",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Painful or hard stools",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Large faecal mass in the rectum",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Large-diameter stools that block the toilet",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Last stool ____ days ago · weight ____ kg · age ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / refer = any one of",
+   "items": [
+    {
+     "t": "Faecal loading needing disimpaction (enema / PEG)",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "Suspected organic cause",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Constipation from birth in a breastfed baby",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Inadequate response to treatment",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Vomiting, distension, dehydration",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet / previous records",
+   "items": [
+    {
+     "t": "Meconium passed in first 48 h?",
+     "d": 1
+    },
+    {
+     "t": "Growth / weight curve",
+     "d": 1
+    },
+    {
+     "t": "Development, cerebral palsy",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Previous laxatives / enemas",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Medicines (iron, opioids, anticholinergics)",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Thyroid screen / hypothyroid signs",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Feeding: milk, fibre, fluids",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "HIV status",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (caregiver)",
+   "items": [
+    {
+     "h": "Bowel"
+    },
+    {
+     "t": "Stool frequency, size, pain",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Withholding, hiding to pass stool",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Soiling / leakage",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "h": "Red flags"
+    },
+    {
+     "t": "From birth / delayed meconium",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Vomiting, distension, poor growth",
+     "d": 1
+    },
+    {
+     "t": "Leg weakness, back abnormality",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "h": "Behaviour"
+    },
+    {
+     "t": "Toilet training, school toilets, stress",
+     "s": "paedstg2026:2.6"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Weight ____ kg",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Palpable faecal mass",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Distension",
+     "d": 1
+    },
+    {
+     "t": "Tenderness",
+     "d": 1
+    },
+    {
+     "h": "Perianal (inspect)"
+    },
+    {
+     "t": "Fissure, soiling",
+     "d": 1
+    },
+    {
+     "t": "Anus position",
+     "d": 1
+    },
+    {
+     "h": "Spine / neuro"
+    },
+    {
+     "t": "Sacral dimple, hair tuft",
+     "d": 1
+    },
+    {
+     "t": "Leg reflexes, tone",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Loading? → disimpact",
+   "items": [
+    {
+     "t": "Faecal mass palpable ☐ Y ☐ N · soiling ☐",
+     "s": "paedstg2026:2.6",
+     "k": "value"
+    },
+    {
+     "t": "Phosphate enema: 2–5 y 32 mL · 5–11 y 64 mL (repeat once)",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    },
+    {
+     "t": "OR PEG 59 g/L 10–25 mL/kg/h oral / NGT until clear fluid passed",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Nothing added to PEG (no flavouring, no cold drinks)",
+     "s": "paedstg2026:2.7"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Organic cause screen",
+   "items": [
+    {
+     "t": "U&E, Ca²⁺ ____ · TSH ____",
+     "k": "value"
+    },
+    {
+     "t": "U&E, K⁺, Ca²⁺ if loaded / dehydrated",
+     "s": "paedstg2026:2.6",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "TSH if growth / developmental concern",
+     "s": "paedstg2026:2.6",
+     "d": 1
+    },
+    {
+     "t": "Abdominal X-ray if distended / vomiting",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Bowel obstruction",
+     "d": 1
+    },
+    {
+     "t": "Hirschsprung disease",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Hypothyroidism",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Spinal cord lesion",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Dehydration",
+     "d": 1
+    },
+    {
+     "t": "Sexual abuse (soiling, fissure)",
+     "d": 1
+    },
+    {
+     "t": "Lead / drug toxicity",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "Anorectal malformation",
+     "s": "paedstg2026:2.6"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = OBSTRUCTION, suspected ORGANIC CAUSE (from birth, neuro, growth failure) or no response → REFER",
+   "s": "paedstg2026:2.7",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (faecal loading) — clear, then maintenance laxative + toilet retraining; continue on the bowel chart",
+   "s": "paedstg2026:2.6",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Bowel obstruction",
+   "branch": "",
+   "features": [
+    {
+     "t": "Bilious vomiting, distension, no flatus",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Abdominal X-ray",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, NGT, IV fluids; NO laxatives (BO_Paeds)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — surgery",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hirschsprung disease",
+   "branch": "",
+   "features": [
+    {
+     "t": "Constipation from birth in breastfed baby; delayed meconium",
+     "s": "paedstg2026:2.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for rectal biopsy",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not treat as functional",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Functional constipation with faecal loading",
+   "branch": "If faecal loading",
+   "features": [
+    {
+     "t": "Withholding after painful stools; soiling; rectal mass",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Rome IV criteria; abdominal mass",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Enema or PEG, then lactulose + behaviour",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Inadequate response",
+     "s": "paedstg2026:2.7"
+    }
+   ]
+  },
+  {
+   "dx": "Functional constipation, no loading",
+   "branch": "If no loading",
+   "features": [
+    {
+     "t": "Hard / painful stools, no mass",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Rome IV criteria",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose by age + fibre + toilet routine",
+     "s": "paedstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypothyroidism / metabolic",
+   "branch": "",
+   "features": [
+    {
+     "t": "Poor growth, delay, hypotonia",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "TSH, Ca²⁺, K⁺",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat cause",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If confirmed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Neurogenic (spina bifida, cerebral palsy, cord lesion)",
+   "branch": "",
+   "features": [
+    {
+     "t": "Abnormal leg neurology, sacral marks, CP",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Neuro exam",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No liquid paraffin (aspiration risk)",
+     "s": "paedstg2026:2.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if new lesion suspected",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Medication side effect",
+   "branch": "",
+   "features": [
+    {
+     "t": "Iron, opioids, anticholinergics",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Medicine review",
+     "s": "paedstg2026:2.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop / reduce; laxative",
+     "s": "paedstg2026:2.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Step 1 clear · step 2 prevent re-accumulation · step 3 retrain — caregiver involved throughout",
+  "columns": {
+   "feed": "Diet & fluids",
+   "tests": "Checks",
+   "treatment": "Treatment (per age / kg)"
+  },
+  "standing": [
+   {
+    "t": "Stool chart: passed, consistency, soiling",
+    "s": "paedstg2026:2.7",
+    "b": 1
+   },
+   {
+    "t": "Vomiting / distension → doctor",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Fluids and fibre (fruit, vegetables, bran)",
+    "s": "paedstg2026:2.7",
+    "b": 1
+   },
+   {
+    "t": "Toilet sitting after meals",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing bowel record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Admission",
+    "lead": "Weigh. Abdominal exam for faecal mass; inspect anus and spine. Exclude obstruction before any laxative.",
+    "feed": [
+     {
+      "t": "Oral fluids, fibre",
+      "s": "paedstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "IV fluids if dehydrated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca²⁺ if loaded / dehydrated",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Abdominal X-ray if distended",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Step 1 — clear (if loaded)"
+     },
+     {
+      "t": "Phosphate enema: 2–5 y 32 mL, 5–11 y 64 mL — repeat once if needed",
+      "s": "paedstg2026:2.6",
+      "b": 1
+     },
+     {
+      "t": "OR PEG 59 g/L 10–25 mL/kg/h oral / NGT until clear fluid passed",
+      "s": "paedstg2026:2.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Stool passed ☐ clear fluid ☐",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Abdomen soft?",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Enema result poor → repeat once",
+      "s": "paedstg2026:2.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1 · maintain",
+    "feed": [
+     {
+      "t": "Fibre-rich diet",
+      "s": "paedstg2026:2.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Mass gone?",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Step 2 — maintenance"
+     },
+     {
+      "t": "Lactulose: 1–11 m 5 mL · 1–4 y 10 mL · 5–14 y 15 mL daily",
+      "s": "paedstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Adjust to 2–3 soft stools/day: 12-hourly or +2.5–5 mL",
+      "s": "paedstg2026:2.7"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Retrain",
+    "feed": [
+     {
+      "t": "Fluids, fruit, vegetables, bran",
+      "s": "paedstg2026:2.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Step 3"
+     },
+     {
+      "t": "Behaviour modification: toilet routine after meals, praise, no punishment",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Maintenance for months to years if loaded",
+      "s": "paedstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Caregiver taught dose in mL",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If faecal loading",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "PEG: nothing added",
+      "s": "paedstg2026:2.7",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat abdominal exam after clearance",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phosphate enema or PEG (above)",
+      "s": "paedstg2026:2.6",
+      "b": 1
+     },
+     {
+      "t": "Then lactulose ± liquid paraffin 1–3 mL/kg/day (not < 1 y or neuro / swallowing problems)",
+      "s": "paedstg2026:2.7",
+      "b": 1
+     },
+     {
+      "t": "Continue maintenance months to years",
+      "s": "paedstg2026:2.7"
+     }
+    ]
+   },
+   {
+    "label": "If no loading",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fibre, fluids",
+      "s": "paedstg2026:2.7"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lactulose by age (or 0.5 mL/kg daily > 12 m)",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     },
+     {
+      "t": "± ispaghula 1.75–3.5 g in water with breakfast",
+      "s": "paedstg2026:2.7"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Phosphate enema 2–5 y 32 mL · 5–11 y 64 mL",
+     "s": "paedstg2026:2.6"
+    },
+    {
+     "t": "PEG 59 g/L 10–25 mL/kg/h until clear",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Lactulose 1–11 m 5 mL · 1–4 y 10 mL · 5–14 y 15 mL daily",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Liquid paraffin 1–3 mL/kg/day",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Ispaghula husk 1.75–3.5 g",
+     "s": "paedstg2026:2.7"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Liquid paraffin < 1 y, neuro or swallowing disorders",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "Laxatives if obstructed",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Additives in PEG",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Punishing soiling",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Bilious vomiting / distension → REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "From birth in breastfed baby → REFER",
+     "s": "paedstg2026:2.7",
+     "b": 1
+    },
+    {
+     "t": "No response → REFER",
+     "s": "paedstg2026:2.7"
+    },
+    {
+     "t": "Abnormal neurology",
+     "s": "paedstg2026:2.6"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Faecal mass cleared",
+    "s": "paedstg2026:2.6"
+   },
+   {
+    "t": "Passing soft stools",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Organic red flags excluded / referred",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Caregiver knows lactulose dose and adjustment",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Diet + toilet routine taught",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Clinic follow-up booked",
+    "d": 1
+   },
+   {
+    "t": "Told: long-term treatment",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Return: vomiting, distension, bleeding",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic 2–4 weeks: adjust dose",
+    "d": 1
+   },
+   {
+    "t": "Continue months to years",
+    "s": "paedstg2026:2.7"
+   },
+   {
+    "t": "Refer if inadequate response",
+    "s": "paedstg2026:2.7"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing bowel record (child)",
+  "period": "24 hours, 4-hourly rows",
+  "params": [
+   {
+    "h": "Stool",
+    "items": [
+     {
+      "t": "Passed, consistency, soiling",
+      "s": "paedstg2026:2.7"
+     }
+    ]
+   },
+   {
+    "h": "Abdomen",
+    "items": [
+     {
+      "t": "Distension, vomiting",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Treatment",
+    "items": [
+     {
+      "t": "Enema / PEG / lactulose given",
+      "s": "paedstg2026:2.6"
+     },
+     {
+      "t": "PEG volume running",
+      "s": "paedstg2026:2.7"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, T 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Oral intake, urine",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Vomiting (bilious) / distension",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Coughing / choking on PEG via NGT",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Lethargic, dehydrated",
+    "d": 1
+   },
+   {
+    "t": "No stool after 2 enemas",
+    "s": "paedstg2026:2.6"
+   },
+   {
+    "t": "Blood in stool",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Stools",
+   "PEG volume (mL)",
+   "Enemas",
+   "Lactulose doses"
+  ]
+ }
+}

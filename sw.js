@@ -1,7 +1,7 @@
 // Bump VERSION whenever app files change. Data files (data/*.json) update automatically:
 // the saved copy is shown at once and refreshed quietly in the background, so an edit pushed to GitHub shows on the next open.
 // Weak or "connected but no internet" signal never holds a page up: with no saved copy the network gets 3 seconds.
-const VERSION = "andh-v115";
+const VERSION = "andh-v116";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/jad-logo.webp",
   "fonts/plex-sans-400.woff2", "fonts/plex-sans-700.woff2",

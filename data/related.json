@@ -47,6 +47,9 @@
     {"name": "Joint dislocation and reduction", "ids": ["dislocation-knee-adult", "dislocation-hip-adult", "dislocation-shoulder-adult", "procedural-sedation-adult", "fracture-adult"]},
     {"name": "Multiple myeloma", "ids": ["multiple-myeloma-adult", "aki-adult", "lytes-adult-ca-mg", "ckd-adult"]},
     {"name": "Prostate and urinary retention", "ids": ["bph-adult", "prostate-cancer-adult", "ipss", "uti-adult", "aki-adult", "urine-dipstick"]},
-    {"name": "Anorectal conditions", "ids": ["haemorrhoids-adult", "prb-adult"]}
+    {"name": "Anorectal conditions", "ids": ["haemorrhoids-adult", "prb-adult"]},
+    {"name": "Seizures and epilepsy (adult)", "ids": ["seizures-adult", "epilepsy-adult", "meningitis-adult", "hypo-adult", "alcohol-withdrawal-adult", "tbi-adult", "stroke", "gcs-adult"]},
+    {"name": "Seizures and epilepsy (child)", "ids": ["seizures-paeds", "epilepsy-paeds", "meningitis-paeds", "hypo-paeds", "tbi-paeds", "gcs-paeds"]},
+    {"name": "Constipation", "ids": ["constipation-adult", "constipation-paeds", "bo-adult", "bo-paeds", "haemorrhoids-adult", "prb-adult", "prb-paeds"]}
   ]
 }

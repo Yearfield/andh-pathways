@@ -1,0 +1,940 @@
+{
+ "id": "epilepsy-paeds",
+ "short": "Epilepsy_Paeds",
+ "title": "Epilepsy — admission for poor control or new diagnosis (child 1 month – 12 years)",
+ "population": "Children 1 month to < 13 years with epilepsy admitted after seizures or to start / change antiseizure medicine (adolescents 13–18 y → Epilepsy_Adult)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-25",
+ "sources": [
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — epilepsy",
+   "items": [
+    {
+     "t": "≥ 2 unprovoked (or reflex) seizures > 24 h apart, OR 1 with high recurrence risk, OR an epilepsy syndrome",
+     "s": "paedstg2026:13.15",
+     "b": 1
+    },
+    {
+     "t": "Febrile seizures and neonatal seizures are usually NOT epilepsy",
+     "s": "paedstg2026:13.18",
+     "b": 1
+    },
+    {
+     "t": "Type: ☐ focal ☐ generalised TC ☐ absence ☐ myoclonic ☐ spasms ☐ unknown",
+     "s": "paedstg2026:13.22",
+     "k": "value"
+    },
+    {
+     "t": "Weight ____ kg · age ____ · girl ≥ 10 y / likely to need treatment after 10 y ☐",
+     "s": "paedstg2026:13.19",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / refer = any one of",
+   "items": [
+    {
+     "t": "Status epilepticus / after loading dose",
+     "s": "paedstg2026:13.8",
+     "b": 1
+    },
+    {
+     "t": "Infantile epileptic spasms (3–12 months) → REFER now",
+     "s": "paedstg2026:13.18",
+     "b": 1
+    },
+    {
+     "t": "Neuroregression (loss of milestones)",
+     "s": "paedstg2026:13.26",
+     "b": 1
+    },
+    {
+     "t": "Frequent seizures despite ASM",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Suspected ASM toxicity",
+     "s": "paedstg2026:13.21",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet / clinic records",
+   "items": [
+    {
+     "t": "Current ASM, mg/kg, start date",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Previous ASMs + why stopped",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Seizure frequency per month",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "HIV / ART regimen",
+     "s": "paedstg2026:13.19"
+    },
+    {
+     "t": "Development milestones",
+     "s": "paedstg2026:13.18"
+    },
+    {
+     "t": "TB meningitis / cysticercosis history",
+     "s": "paedstg2026:13.18"
+    },
+    {
+     "t": "School, behaviour, ADHD, autism",
+     "s": "paedstg2026:13.18"
+    },
+    {
+     "t": "Last ASM level",
+     "s": "paedstg2026:13.21"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (caregiver)",
+   "items": [
+    {
+     "h": "Seizures"
+    },
+    {
+     "t": "Aura, what happens, conscious?, duration, after-effects",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Clusters on waking (spasms)",
+     "s": "paedstg2026:13.18"
+    },
+    {
+     "h": "Poor control?"
+    },
+    {
+     "t": "Doses given as prescribed?",
+     "s": "paedstg2026:13.20",
+     "b": 1
+    },
+    {
+     "t": "Dose not increased with weight gain",
+     "d": 1
+    },
+    {
+     "t": "Vomiting, intercurrent illness",
+     "d": 1
+    },
+    {
+     "h": "Toxicity"
+    },
+    {
+     "t": "Drowsy, unsteady, behaviour change",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Vomiting, jaundice on valproate",
+     "s": "paedstg2026:13.26"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Weight ____ kg, head circumference ____",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "HGT ____",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Focal signs",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Development / regression",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Ataxia, nystagmus",
+     "d": 1
+    },
+    {
+     "h": "Skin"
+    },
+    {
+     "t": "Rash (lamotrigine SJS)",
+     "s": "paedstg2026:13.25"
+    },
+    {
+     "t": "Neurocutaneous marks",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Jaundice / hepatomegaly (valproate)",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Injury",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Dose check + ASM level",
+   "items": [
+    {
+     "t": "Current dose ____ mg = ____ mg/kg/day",
+     "k": "value"
+    },
+    {
+     "t": "ASM level only for toxicity or adherence doubt (not for titration)",
+     "s": "paedstg2026:13.21",
+     "b": 1
+    },
+    {
+     "t": "Valproate in child < 2 y or liver signs → ALT before starting",
+     "s": "paedstg2026:13.26",
+     "b": 1
+    },
+    {
+     "t": "Drug-resistant? revisit diagnosis, adherence, drug and dose first",
+     "s": "paedstg2026:13.20"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Choose ASM — who is this child?",
+   "items": [
+    {
+     "t": "Girl likely to need ASM after 10 y → lamotrigine or levetiracetam; avoid valproate, carbamazepine, topiramate",
+     "s": "paedstg2026:13.21",
+     "b": 1
+    },
+    {
+     "t": "On ART → lamotrigine / levetiracetam / valproate; avoid carbamazepine, phenytoin, phenobarbital",
+     "s": "paedstg2026:13.19",
+     "b": 1
+    },
+    {
+     "t": "< 6 months or severe ID → phenobarbital may be used",
+     "s": "paedstg2026:13.21"
+    },
+    {
+     "t": "Myoclonic, spasms, mixed, unknown → specialist",
+     "s": "paedstg2026:13.24",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Status epilepticus",
+     "s": "paedstg2026:13.3"
+    },
+    {
+     "t": "Meningitis (fever + seizure)",
+     "s": "paedstg2026:13.6"
+    },
+    {
+     "t": "Infantile spasms",
+     "s": "paedstg2026:13.18"
+    },
+    {
+     "t": "Neuroregression",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "ASM toxicity",
+     "s": "paedstg2026:13.21"
+    },
+    {
+     "t": "Valproate hepatotoxicity",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "SJS on lamotrigine",
+     "s": "paedstg2026:13.25"
+    },
+    {
+     "t": "Abuse / neglect (girls: social worker)",
+     "s": "paedstg2026:13.19"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SPASMS, REGRESSION, MYOCLONIC / MIXED seizures, focal seizures needing imaging, or failed 2 ASMs → REFER",
+   "s": "paedstg2026:13.26",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — correct dose for weight, fix adherence, choose ASM, emergency care plan; continue on the inpatient chart",
+   "s": "paedstg2026:13.12",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Monotherapy · start low, titrate 2-weekly · dose per kg · emergency care plan before discharge",
+  "columns": {
+   "feed": "Observations & feeds",
+   "tests": "Tests",
+   "treatment": "ASM & actions (per kg)"
+  },
+  "standing": [
+   {
+    "t": "Seizure chart: time, type, duration",
+    "s": "paedstg2026:13.26",
+    "b": 1
+   },
+   {
+    "t": "Vitals and AVPU 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Seizure ≥ 5 min → status protocol (Seizures_Paeds)",
+    "s": "paedstg2026:13.3",
+    "b": 1
+   },
+   {
+    "t": "ASM on time; caregiver gives doses under supervision",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Cot sides / fall precautions",
+    "s": "paedstg2026:13.7"
+   },
+   {
+    "t": "Record on the 24-hour nursing seizure record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Admission",
+    "lead": "Weigh the child. Recalculate every ASM dose in mg/kg. Witness description from caregiver.",
+    "feed": [
+     {
+      "t": "Vitals, AVPU",
+      "d": 1
+     },
+     {
+      "t": "Normal feeds when awake",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, Ca²⁺, FBC; LFT / ALT if on valproate",
+      "s": "paedstg2026:13.26",
+      "b": 1
+     },
+     {
+      "t": "ASM level if toxicity / adherence doubt",
+      "s": "paedstg2026:13.21",
+      "b": 1
+     },
+     {
+      "t": "HIV status",
+      "s": "paedstg2026:13.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue usual ASM; adjust to current weight",
+      "s": "paedstg2026:13.21",
+      "b": 1
+     },
+     {
+      "t": "If loaded for status: start maintenance ASM",
+      "s": "paedstg2026:13.12"
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Cause found?",
+    "feed": [
+     {
+      "t": "Seizures ___ since admission",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results reviewed",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adherence / dosing error → correct, teach caregiver",
+      "s": "paedstg2026:13.20",
+      "b": 1
+     },
+     {
+      "t": "Toxicity → reduce / hold, recheck",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1 · plan",
+    "feed": [
+     {
+      "t": "Seizure-free?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Focal seizures → neuroimaging (REFER; MRI preferred)",
+      "s": "paedstg2026:13.26",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Choose ASM by type + population (side 2)",
+      "s": "paedstg2026:13.22",
+      "b": 1
+     },
+     {
+      "t": "Change only one ASM; cross-titrate",
+      "s": "paedstg2026:13.21"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Counsel",
+    "feed": [
+     {
+      "t": "Activity, school as normal",
+      "s": "paedstg2026:13.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Development screen",
+      "s": "paedstg2026:13.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Teach seizure first aid + emergency care plan",
+      "s": "paedstg2026:13.12",
+      "b": 1
+     },
+     {
+      "t": "Counsel: comorbidities, learning, behaviour",
+      "s": "paedstg2026:13.20"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Referral letter with seizure details if criteria met",
+      "s": "paedstg2026:13.26",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Written dose (mg and mL) for caregiver",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Clinic 2 weeks for titration",
+      "s": "paedstg2026:13.21"
+     }
+    ]
+   },
+   {
+    "label": "2 weeks",
+    "phase": "Clinic",
+    "feed": [
+     {
+      "t": "Seizure frequency",
+      "s": "paedstg2026:13.26"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate by the next step (2-weekly)",
+      "s": "paedstg2026:13.21",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If girl ≥ 10 y / child-bearing potential",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Counsel: sexual activity, contraception",
+      "s": "paedstg2026:13.19",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lamotrigine (low risk) or levetiracetam (high risk)",
+      "s": "paedstg2026:13.22",
+      "b": 1
+     },
+     {
+      "t": "On valproate → cross-titrate off at about 10 y",
+      "s": "paedstg2026:13.21",
+      "b": 1
+     },
+     {
+      "t": "Valproate unavoidable → annual risk form",
+      "s": "paedstg2026:13.19"
+     },
+     {
+      "t": "Vulnerable to abuse → social worker",
+      "s": "paedstg2026:13.19"
+     }
+    ]
+   },
+   {
+    "label": "If on ART",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ASM level if clinically indicated",
+      "s": "paedstg2026:13.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Use lamotrigine, levetiracetam or valproate",
+      "s": "paedstg2026:13.19",
+      "b": 1
+     },
+     {
+      "t": "Avoid carbamazepine, phenytoin, phenobarbital (sub-therapeutic ARVs)",
+      "s": "paedstg2026:13.19",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If infant / spasms / syndrome",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "EEG at referral",
+      "s": "paedstg2026:13.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Infantile spasms = emergency → discuss + REFER immediately",
+      "s": "paedstg2026:13.18",
+      "b": 1
+     },
+     {
+      "t": "Phenobarbital acceptable < 6 months; switch by 2 y",
+      "s": "paedstg2026:13.21"
+     }
+    ]
+   },
+   {
+    "label": "If not controlled / toxic",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ASM level",
+      "s": "paedstg2026:13.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "2 appropriate ASMs failed → REFER (drug-resistant)",
+      "s": "paedstg2026:13.26",
+      "b": 1
+     },
+     {
+      "t": "Combination therapy = specialist initiated",
+      "s": "paedstg2026:13.21"
+     },
+     {
+      "t": "Valproate: nausea, vomiting, jaundice, abdominal pain → hepatotoxicity",
+      "s": "paedstg2026:13.26",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "ASM doses (per kg)",
+   "items": [
+    {
+     "t": "Lamotrigine 0.2 mg/kg/dose daily → 1–5 mg/kg/dose 12–24-hourly (2-weekly steps)",
+     "s": "paedstg2026:13.25"
+    },
+    {
+     "t": "Levetiracetam 1–< 6 m: 7 → 21 mg/kg/dose 12-hourly · 6 m–< 4 y: 10 → 25 · 4–12 y: 10 → 30 (steps every 2 wk)",
+     "s": "paedstg2026:13.25"
+    },
+    {
+     "t": "Carbamazepine 5 mg/kg/day → +2 mg/kg/day 2-weekly; usual 10–20 (max 20) mg/kg/day",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Valproate 5 mg/kg/dose 8–12-hourly → 20–30 mg/kg/day (max 40)",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Phenobarbital 3–5 mg/kg at night (< 6 m / severe ID)",
+     "s": "paedstg2026:13.26"
+    }
+   ]
+  },
+  {
+   "title": "First line by type",
+   "items": [
+    {
+     "t": "Focal: lamotrigine or levetiracetam",
+     "s": "paedstg2026:13.22"
+    },
+    {
+     "t": "Generalised TC: lamotrigine (low risk) / levetiracetam (high risk); boys also valproate",
+     "s": "paedstg2026:13.22"
+    },
+    {
+     "t": "Absence: boys valproate; girls ≥ 10 y lamotrigine",
+     "s": "paedstg2026:13.23"
+    },
+    {
+     "t": "Myoclonic: boys valproate; girls levetiracetam — specialist",
+     "s": "paedstg2026:13.23"
+    },
+    {
+     "t": "Combined / unknown: specialist",
+     "s": "paedstg2026:13.24"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Seizure ≥ 5 min → status protocol",
+     "s": "paedstg2026:13.3",
+     "b": 1
+    },
+    {
+     "t": "Spasms / regression → REFER now",
+     "s": "paedstg2026:13.26",
+     "b": 1
+    },
+    {
+     "t": "Rash on lamotrigine (SJS)",
+     "s": "paedstg2026:13.25",
+     "b": 1
+    },
+    {
+     "t": "Jaundice / vomiting on valproate",
+     "s": "paedstg2026:13.26"
+    },
+    {
+     "t": "Carbamazepine worsens absence / myoclonic",
+     "s": "paedstg2026:13.26"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No seizures ≥ 24 h, back to baseline",
+    "d": 1
+   },
+   {
+    "t": "Dose correct for weight, written in mg and mL",
+    "d": 1
+   },
+   {
+    "t": "Caregiver can give the dose and first aid",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Emergency care plan given",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "School / activity advice",
+    "s": "paedstg2026:13.20"
+   },
+   {
+    "t": "Girls ≥ 10 y counselled",
+    "s": "paedstg2026:13.19"
+   },
+   {
+    "t": "Clinic in 2 weeks",
+    "s": "paedstg2026:13.21"
+   },
+   {
+    "t": "Return: seizure ≥ 5 min, rash, regression",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "2-weekly titration to effect",
+    "s": "paedstg2026:13.21"
+   },
+   {
+    "t": "Development, education, social needs",
+    "s": "paedstg2026:13.12"
+   },
+   {
+    "t": "Refer: 2 ASMs failed, mixed / myoclonic, regression",
+    "s": "paedstg2026:13.26"
+   },
+   {
+    "t": "Phenobarbital → switch by 2 y",
+    "s": "paedstg2026:13.21"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing seizure observation record (child)",
+  "period": "24 hours, 2-hourly rows + every seizure",
+  "params": [
+   {
+    "h": "Seizures",
+    "items": [
+     {
+      "t": "Time, type, duration",
+      "s": "paedstg2026:13.26"
+     },
+     {
+      "t": "What happened (step by step)",
+      "s": "paedstg2026:13.26"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, RR, SpO₂, T 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "AVPU",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "ASM",
+    "items": [
+     {
+      "t": "Each dose on time (mL)",
+      "d": 1
+     },
+     {
+      "t": "Vomited within 30 min?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Cot sides up",
+      "s": "paedstg2026:13.7"
+     },
+     {
+      "t": "Feeds / play supervised",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Seizure ≥ 5 min or 2 without recovery",
+    "s": "paedstg2026:13.3",
+    "b": 1
+   },
+   {
+    "t": "New rash / mouth ulcers",
+    "s": "paedstg2026:13.25",
+    "b": 1
+   },
+   {
+    "t": "Drowsy, unsteady",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Vomiting, yellow eyes (valproate)",
+    "s": "paedstg2026:13.26"
+   },
+   {
+    "t": "Clusters of spasms",
+    "s": "paedstg2026:13.18"
+   }
+  ],
+  "totals": [
+   "Seizures (n)",
+   "Longest (min)",
+   "ASM doses missed",
+   "Rescue doses"
+  ]
+ }
+}

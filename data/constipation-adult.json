@@ -1,0 +1,1103 @@
+{
+ "id": "constipation-adult",
+ "short": "Constipation_Adult",
+ "title": "Constipation and faecal impaction (adult)",
+ "population": "Adults (> 15 y) admitted with severe constipation, faecal impaction or opioid-induced constipation",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-25",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Vomiting, distension, no flatus, colicky pain → bowel obstruction (BO_Adult), REFER",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    },
+    {
+     "t": "PR bleeding → PRB_Adult · painful anal conditions → Haemorrhoids_Adult",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Change in usual bowel habit with dry, hard stools, less often",
+     "s": "phcstg2026:2.9",
+     "b": 1
+    },
+    {
+     "t": "Small hard stools passed infrequently and with difficulty",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Faecal impaction: hard mass on DRE; overflow 'diarrhoea'",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Last bowel action ____ days ago · usual pattern ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated = any one of",
+   "items": [
+    {
+     "t": "Recent change in bowel habit (? cancer)",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Faecal impaction",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Suspected obstruction",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    },
+    {
+     "t": "Weight loss, PR blood, anaemia",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Urinary retention / delirium from impaction",
+     "d": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Opioids (morphine, codeine)",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Anticholinergics, TCAs",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Iron, antacids, ondansetron",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Chronic laxative / enema use",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Thyroid disease",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Cancer / palliative care",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Spinal injury, stroke, Parkinson's",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "phcstg2026:2.10"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Bowel"
+    },
+    {
+     "t": "Frequency, straining, pain on defaecation",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Bloating, incomplete emptying",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Leakage / overflow diarrhoea",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "h": "Red flags"
+    },
+    {
+     "t": "New change in habit (older adult)",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Vomiting, no flatus",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "Weight loss, blood",
+     "d": 1
+    },
+    {
+     "h": "Lifestyle"
+    },
+    {
+     "t": "Fibre, fluids, activity, ignoring the urge",
+     "s": "phcstg2026:2.10"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Dehydrated",
+     "s": "adultstg2026:24.2",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Bladder palpable (retention)",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Distension, tympany",
+     "d": 1
+    },
+    {
+     "t": "Palpable faeces / mass",
+     "d": 1
+    },
+    {
+     "t": "Bowel sounds",
+     "d": 1
+    },
+    {
+     "h": "DRE (all adults)"
+    },
+    {
+     "t": "Hard faeces / empty rectum",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Rectal mass",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Anal tone, fissure",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Hypothyroid signs",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Neuro: spinal / perianal sensation",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "DRE + abdominal X-ray decision",
+   "items": [
+    {
+     "t": "DRE: ☐ hard stool ☐ soft stool ☐ empty ☐ mass",
+     "s": "phcstg2026:2.10",
+     "k": "value"
+    },
+    {
+     "t": "Distension / vomiting → abdominal X-ray (erect + supine) → obstruction? REFER",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    },
+    {
+     "t": "Mass or change in habit → REFER for colonoscopy",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods (secondary causes)",
+   "items": [
+    {
+     "t": "Ca²⁺ ____ · K⁺ ____ · TSH ____",
+     "k": "value"
+    },
+    {
+     "t": "Corrected Ca²⁺ (hypercalcaemia)",
+     "s": "adultstg2026:24.2",
+     "b": 1
+    },
+    {
+     "t": "U&E, K⁺ (dehydration, hypokalaemia)",
+     "s": "adultstg2026:24.2",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "TSH if hypothyroid features",
+     "s": "phcstg2026:2.10",
+     "d": 1
+    },
+    {
+     "t": "FBC (anaemia → cancer?)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Bowel obstruction",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "Colorectal cancer",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Hypercalcaemia",
+     "s": "adultstg2026:24.2"
+    },
+    {
+     "t": "Cord compression (new constipation + retention + weakness)",
+     "d": 1
+    },
+    {
+     "t": "Sigmoid volvulus",
+     "d": 1
+    },
+    {
+     "t": "Perforation / peritonitis",
+     "d": 1
+    },
+    {
+     "t": "Delirium in elderly",
+     "d": 1
+    },
+    {
+     "t": "Hypothyroidism",
+     "s": "phcstg2026:2.10"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = OBSTRUCTION, suspected CANCER, impaction not cleared or uncertain cause → REFER",
+   "s": "phcstg2026:2.10",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (impaction, severe, opioid-induced) — clear the rectum, then softener + stimulant; continue on the bowel chart",
+   "s": "adultstg2026:24.3",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Bowel obstruction / volvulus",
+   "branch": "",
+   "features": [
+    {
+     "t": "Colicky pain, vomiting, distension, no flatus",
+     "s": "adultstg2026:24.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Abdominal X-ray",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NPO, drip and suck; NO laxatives / sennosides (BO_Adult)",
+     "s": "adultstg2026:25.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — surgery",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Colorectal cancer",
+   "branch": "",
+   "features": [
+    {
+     "t": "Older adult, change in habit, weight loss, anaemia",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "DRE, FBC; REFER for colonoscopy",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Lactulose (sennosides contra-indicated if obstructive lesion)",
+     "s": "adultstg2026:25.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Faecal impaction with overflow",
+   "branch": "If impaction",
+   "features": [
+    {
+     "t": "Hard faeces on DRE, leakage of liquid stool",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "DRE",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Bisacodyl 10 mg PR / glycerine suppository; manual removal with analgesia ± sedation",
+     "s": "adultstg2026:24.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If not cleared",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Drug-induced (opioids, anticholinergics, iron)",
+   "branch": "If opioid / drug-induced",
+   "features": [
+    {
+     "t": "Recent opioid, TCA, iron, antacid, ondansetron",
+     "s": "adultstg2026:24.2"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Medicine review",
+     "s": "adultstg2026:24.2",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Sennosides 13.5 mg 1–2 at night with every opioid",
+     "s": "adultstg2026:25.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypercalcaemia",
+   "branch": "",
+   "features": [
+    {
+     "t": "Thirst, polyuria, confusion, cancer / myeloma",
+     "s": "adultstg2026:8.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Corrected Ca²⁺",
+     "s": "adultstg2026:24.2",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NaCl 0.9% hydration (Myeloma / hypercalcaemia pathway)",
+     "s": "adultstg2026:8.22"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If cause unknown / severe",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypothyroidism",
+   "branch": "",
+   "features": [
+    {
+     "t": "Cold intolerance, weight gain, slow, dry skin",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "TSH, T4",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat thyroid (STG ch 8)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Neurogenic bowel",
+   "branch": "",
+   "features": [
+    {
+     "t": "Spinal injury, stroke, severe cognitive impairment, frail elderly",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Neuro exam, anal tone",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Regular bowel programme",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Rehabilitation (multidisciplinary bowel care)",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Functional / dietary constipation",
+   "branch": "If simple",
+   "features": [
+    {
+     "t": "Low fibre, low fluids, inactivity, ignoring the urge",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Normal DRE, no red flags",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fibre, fluids, exercise; sennosides or lactulose",
+     "s": "phcstg2026:2.10"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Poor response",
+     "s": "phcstg2026:2.10"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Exclude obstruction first · clear the rectum · softener + stimulant · stop constipating drugs",
+  "columns": {
+   "feed": "Diet, fluids & obs",
+   "tests": "Tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Bowel chart: stool passed, type, volume",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Abdomen: distension, vomiting → doctor",
+    "s": "adultstg2026:24.3",
+    "b": 1
+   },
+   {
+    "t": "Fluid intake within patient's limits",
+    "s": "adultstg2026:24.2",
+    "b": 1
+   },
+   {
+    "t": "Mobilise; privacy and comfort for defaecation",
+    "s": "adultstg2026:24.2",
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing bowel record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Admission",
+    "lead": "DRE on every adult. Vomiting + distension + no flatus = obstruction → NO laxatives, BO_Adult pathway.",
+    "feed": [
+     {
+      "t": "Oral fluids, fibre-rich diet if not obstructed",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     },
+     {
+      "t": "IV fluids if dehydrated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "U&E, Ca²⁺",
+      "s": "adultstg2026:24.2",
+      "b": 1
+     },
+     {
+      "t": "FBC",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Abdominal X-ray if distended",
+      "s": "adultstg2026:24.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "Stop / review"
+     },
+     {
+      "t": "Opioids, anticholinergics, TCAs, iron, antacids",
+      "s": "adultstg2026:24.2",
+      "b": 1
+     },
+     {
+      "h": "Hard stool in rectum"
+     },
+     {
+      "t": "Bisacodyl 10 mg PR or glycerine suppository",
+      "s": "adultstg2026:24.3",
+      "b": 1
+     },
+     {
+      "h": "Oral"
+     },
+     {
+      "t": "Sennosides 13.5 mg 1–2 at night + lactulose 15–30 mL 12–24-hourly",
+      "s": "adultstg2026:24.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Stool passed? ☐",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No result → repeat suppository",
+      "s": "adultstg2026:24.3"
+     },
+     {
+      "t": "Impaction persists → manual removal with analgesia ± sedation",
+      "s": "adultstg2026:24.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Fluids, fibre, mobilise",
+      "s": "phcstg2026:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat DRE",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate sennosides (up to 4 at night) / lactulose",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Maintain",
+    "feed": [
+     {
+      "t": "Regular toilet time",
+      "s": "phcstg2026:2.10"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Laxative with every regular opioid",
+      "s": "adultstg2026:25.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Colonoscopy referral if red flags",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Teach: fibre, fluids, exercise; avoid continuous laxatives",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If impaction",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "DRE after each treatment",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Bisacodyl 10 mg PR daily / glycerine suppository",
+      "s": "adultstg2026:24.3",
+      "b": 1
+     },
+     {
+      "t": "Manual removal only with adequate analgesia ± sedation",
+      "s": "adultstg2026:24.3",
+      "b": 1
+     },
+     {
+      "t": "Not cleared → REFER",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If opioid / drug-induced",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Sennosides 13.5 mg 1–2 at night",
+      "s": "adultstg2026:25.6",
+      "b": 1
+     },
+     {
+      "t": "Possible obstructive lesion → lactulose 10–20 mL 12–24-hourly instead",
+      "s": "adultstg2026:25.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If simple",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fibre (vegetables, coarse maize meal, bran, prunes), fluids",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Sennosides 13.5 mg 1 at night (up to 4) OR lactulose 10–20 mL once or twice daily",
+      "s": "phcstg2026:2.10",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Sennosides 13.5 mg 1 at night (up to 4)",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Lactulose 10–20 mL once or twice daily (PHC) / 15–30 mL 12–24-hourly (hospital)",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "Bisacodyl 10 mg PR daily",
+     "s": "adultstg2026:24.3"
+    },
+    {
+     "t": "Glycerine 2.4 g suppository when necessary",
+     "s": "adultstg2026:24.3"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Sennosides with possible obstruction",
+     "s": "adultstg2026:25.6",
+     "b": 1
+    },
+    {
+     "t": "Any laxative if obstructed",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    },
+    {
+     "t": "Continuous / chronic laxative use",
+     "s": "phcstg2026:2.10"
+    },
+    {
+     "t": "Manual removal without analgesia",
+     "s": "adultstg2026:24.3"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Vomiting, distension, no flatus → X-ray, REFER",
+     "s": "adultstg2026:24.3",
+     "b": 1
+    },
+    {
+     "t": "Change in habit, mass, blood → REFER",
+     "s": "phcstg2026:2.10",
+     "b": 1
+    },
+    {
+     "t": "Severe pain / peritonism",
+     "d": 1
+    },
+    {
+     "t": "Confusion (Ca²⁺?)",
+     "s": "adultstg2026:24.2"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Bowels opened, rectum cleared on DRE",
+    "d": 1
+   },
+   {
+    "t": "Obstruction excluded",
+    "s": "adultstg2026:24.3"
+   },
+   {
+    "t": "Constipating drugs reviewed",
+    "s": "adultstg2026:24.2"
+   },
+   {
+    "t": "Laxative plan with opioids",
+    "s": "adultstg2026:25.6"
+   },
+   {
+    "t": "Diet / fluid / exercise advice",
+    "s": "phcstg2026:2.10"
+   },
+   {
+    "t": "Referral if change in habit / impaction",
+    "s": "phcstg2026:2.10"
+   },
+   {
+    "t": "Neurogenic → rehabilitation referral",
+    "s": "phcstg2026:2.10"
+   },
+   {
+    "t": "Return: vomiting, distension, blood",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "PHC clinic 2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Colonoscopy / surgery OPD if referred",
+    "s": "phcstg2026:2.10"
+   },
+   {
+    "t": "Wean laxatives once regular",
+    "s": "phcstg2026:2.10"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing bowel record",
+  "period": "24 hours, 4-hourly rows",
+  "params": [
+   {
+    "h": "Stool",
+    "items": [
+     {
+      "t": "Passed Y/N, type, amount",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Abdomen",
+    "items": [
+     {
+      "t": "Distension, pain, vomiting",
+      "s": "adultstg2026:24.3"
+     }
+    ]
+   },
+   {
+    "h": "Treatment",
+    "items": [
+     {
+      "t": "Laxative / suppository given",
+      "s": "adultstg2026:24.3"
+     },
+     {
+      "t": "Fluid intake",
+      "s": "adultstg2026:24.2"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, BP, T 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "Voided?",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Vomiting / distension / no flatus",
+    "s": "adultstg2026:24.3",
+    "b": 1
+   },
+   {
+    "t": "Severe pain",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Blood in stool",
+    "d": 1
+   },
+   {
+    "t": "No urine / confused",
+    "d": 1
+   },
+   {
+    "t": "No stool 24 h after suppository",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Stools",
+   "Fluid in (mL)",
+   "Laxative doses",
+   "Suppositories"
+  ]
+ }
+}

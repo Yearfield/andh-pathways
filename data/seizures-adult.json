@@ -1,0 +1,1321 @@
+{
+ "id": "seizures-adult",
+ "short": "Seizures_Adult",
+ "title": "Seizures and status epilepticus (adolescent ≥ 13 y and adult)",
+ "population": "Adolescents ≥ 13 y and adults presenting with an epileptic seizure or status epilepticus",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-25",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Pregnant > 20 weeks or ≤ 7 days postpartum → eclampsia: MgSO₄, PET pathway",
+     "s": "adultstg2026:6.11",
+     "b": 1
+    },
+    {
+     "t": "Children < 13 y → Seizures_Paeds; neonates → neonatal seizures",
+     "s": "adultstg2026:14.12",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Head injury → TBI pathway; alcohol withdrawal → Alcohol_Withdrawal_Adult",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Epileptic seizure: change in movement, attention or awareness from abnormal neuronal discharge — eye-witness account",
+     "s": "adultstg2026:14.7",
+     "b": 1
+    },
+    {
+     "t": "Status epilepticus: ≥ 5 min continuous seizure, or ≥ 2 seizures without full recovery between",
+     "s": "adultstg2026:14.11",
+     "b": 1
+    },
+    {
+     "t": "Exclude imitators: syncope, arrhythmia, TIA, functional/dissociative seizures, migraine",
+     "s": "adultstg2026:14.7"
+    },
+    {
+     "t": "Seizure onset ____ (time) · duration ____ min · focal start?  ☐ Y ☐ N",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Seizure ≥ 5 min (status) — treat NOW",
+     "s": "adultstg2026:14.11",
+     "b": 1
+    },
+    {
+     "t": "Seizing ≥ 30 min → brain damage likely",
+     "s": "adultstg2026:14.11",
+     "b": 1
+    },
+    {
+     "t": "Airway / ventilation not maintained",
+     "s": "adultstg2026:14.14",
+     "b": 1
+    },
+    {
+     "t": "Not regaining consciousness between seizures",
+     "s": "adultstg2026:14.11",
+     "b": 1
+    },
+    {
+     "t": "Fever, meningism, focal signs",
+     "s": "adultstg2026:14.14",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known epilepsy; ASM and dose",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Last dose taken / missed",
+     "s": "adultstg2026:14.31"
+    },
+    {
+     "t": "Seizure diary",
+     "s": "adultstg2026:14.25"
+    },
+    {
+     "t": "HIV / ART regimen",
+     "s": "adultstg2026:14.24"
+    },
+    {
+     "t": "Diabetes / insulin",
+     "d": 1
+    },
+    {
+     "t": "Alcohol / substance use",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Pregnancy / LMP",
+     "s": "adultstg2026:14.13"
+    },
+    {
+     "t": "TB, INH, other medicines",
+     "s": "adultstg2026:14.12"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (witness)",
+   "items": [
+    {
+     "h": "The event"
+    },
+    {
+     "t": "Aura / focal start",
+     "s": "adultstg2026:14.9"
+    },
+    {
+     "t": "Duration, recovery between seizures",
+     "s": "adultstg2026:14.11"
+    },
+    {
+     "t": "Tongue bite, incontinence, post-ictal confusion",
+     "d": 1
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Fever, headache, neck stiffness",
+     "s": "adultstg2026:14.14"
+    },
+    {
+     "t": "Head trauma",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Alcohol / benzodiazepine stopped",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Cocaine, amphetamines, INH, TCA overdose",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "h": "Background"
+    },
+    {
+     "t": "Previous seizures, stroke, TB meningitis",
+     "s": "adultstg2026:14.18"
+    },
+    {
+     "t": "Pregnancy",
+     "s": "adultstg2026:14.12"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 95% on air",
+     "s": "adultstg2026:14.14",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "HGT ____ mmol/L (< 3 → treat)",
+     "s": "phcstg2026:21.22",
+     "k": "sub"
+    },
+    {
+     "t": "BP (hypertensive encephalopathy / eclampsia)",
+     "s": "adultstg2026:14.12",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS / AVPU",
+     "d": 1
+    },
+    {
+     "t": "Focal deficit, pupils",
+     "s": "adultstg2026:14.14"
+    },
+    {
+     "t": "Meningism",
+     "s": "adultstg2026:14.14"
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Fever, rash",
+     "s": "adultstg2026:14.14"
+    },
+    {
+     "t": "Head / neck trauma",
+     "s": "adultstg2026:14.14"
+    },
+    {
+     "t": "Toxidrome, alcohol smell",
+     "s": "adultstg2026:14.14"
+    },
+    {
+     "h": "Injury"
+    },
+    {
+     "t": "Tongue / mouth injury",
+     "d": 1
+    },
+    {
+     "t": "Shoulder dislocation, fractures",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT + airway",
+   "items": [
+    {
+     "t": "HGT ____ · SpO₂ ____ · time ____",
+     "k": "value"
+    },
+    {
+     "t": "HGT < 3 mmol/L → thiamine 200 mg IV, then dextrose 50% 50 mL IV",
+     "s": "phcstg2026:21.23",
+     "b": 1
+    },
+    {
+     "t": "O₂ to SaO₂ ≥ 95%; recovery position; nothing in the mouth",
+     "s": "adultstg2026:14.14",
+     "b": 1
+    },
+    {
+     "t": "Airway / ventilation not maintained → BVM, prepare intubation, REFER",
+     "s": "adultstg2026:14.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods + ASM levels",
+   "items": [
+    {
+     "t": "Na⁺ ____ · Ca²⁺ ____ · Mg²⁺ ____ · urea ____",
+     "k": "value"
+    },
+    {
+     "t": "U&E, Ca²⁺, Mg²⁺, glucose, FBC",
+     "s": "adultstg2026:14.15",
+     "b": 1
+    },
+    {
+     "t": "Known epilepsy: ASM levels before loading",
+     "s": "adultstg2026:14.15",
+     "b": 1
+    },
+    {
+     "t": "Toxicology / alcohol history; β-hCG in women",
+     "s": "adultstg2026:14.13",
+     "d": 1
+    },
+    {
+     "t": "New focal seizure → CT brain (REFER)",
+     "s": "adultstg2026:14.21"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Meningitis / encephalitis",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Eclampsia",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Head injury / bleed",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Poisoning (INH, TCA, cocaine)",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Alcohol withdrawal",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Hyponatraemia / hypocalcaemia",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "Aspiration",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = REFRACTORY STATUS (seizing ≥ 30 min despite level 1 + 2) or airway not maintained → stabilise → REFER (ICU)",
+   "s": "adultstg2026:14.17",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — treat by the minute on the seizure chart; find and treat the cause; 24-hour nursing seizure record",
+   "s": "adultstg2026:14.14",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Hypoglycaemia",
+   "branch": "If hypoglycaemia",
+   "features": [
+    {
+     "t": "Diabetic on insulin / SU, alcohol, sepsis",
+     "s": "phcstg2026:21.22"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "HGT < 3 mmol/L",
+     "s": "phcstg2026:21.22",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Thiamine 200 mg IV, dextrose 50% 50 mL IV, then dextrose 10%",
+     "s": "adultstg2026:8.13"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N — Hypoglycemia_Adult pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Meningitis / encephalitis",
+   "branch": "If meningitis / infection",
+   "features": [
+    {
+     "t": "Fever, headache, meningism, rash, HIV",
+     "s": "adultstg2026:14.14"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LP if no raised ICP signs; FBC, culture",
+     "s": "adultstg2026:14.18",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly — do not wait for LP",
+     "s": "adultstg2026:14.37"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If deteriorating / CT needed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Eclampsia",
+   "branch": "",
+   "features": [
+    {
+     "t": "Pregnant > 20 wk or ≤ 7 d postpartum, BP ↑, proteinuria",
+     "s": "adultstg2026:6.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "BP, urine dipstick, β-hCG",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "MgSO₄ 4 g IV over 20 min + 5 g IM 4-hourly (PET pathway)",
+     "s": "adultstg2026:6.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all eclampsia",
+     "s": "adultstg2026:6.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Breakthrough seizure in known epilepsy",
+   "branch": "If known epilepsy",
+   "features": [
+    {
+     "t": "Missed doses, alcohol, new drugs, intercurrent illness",
+     "s": "adultstg2026:14.31"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ASM level; adherence history",
+     "s": "adultstg2026:14.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Restart / continue ASM; Epilepsy_Adult pathway",
+     "s": "adultstg2026:14.31"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If 2 ASMs failed",
+     "s": "adultstg2026:14.32"
+    }
+   ]
+  },
+  {
+   "dx": "Alcohol / benzodiazepine withdrawal",
+   "branch": "If toxin / withdrawal",
+   "features": [
+    {
+     "t": "Heavy use stopped 6–48 h, tremor, sweating",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "History, HGT",
+     "s": "adultstg2026:14.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzodiazepine, thiamine (Alcohol_Withdrawal_Adult)",
+     "s": "adultstg2026:15.31"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If delirium tremens unresponsive",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Poisoning / intoxication",
+   "branch": "If toxin / withdrawal",
+   "features": [
+    {
+     "t": "INH, TCA, cocaine, amphetamines, organophosphate",
+     "s": "adultstg2026:14.12"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "History, ECG (QRS)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzodiazepine; NO phenytoin",
+     "s": "adultstg2026:14.16"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if refractory",
+     "s": "adultstg2026:14.16",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Structural: stroke, tumour, trauma, TB / cysticercosis",
+   "branch": "",
+   "features": [
+    {
+     "t": "Focal onset, focal deficit, head injury, immunocompromised",
+     "s": "adultstg2026:14.21"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CT brain",
+     "s": "adultstg2026:14.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop seizure; TBI / Stroke pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — CT",
+     "s": "adultstg2026:14.21",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Metabolic: Na⁺, Ca²⁺, Mg²⁺, uraemia, liver failure",
+   "branch": "",
+   "features": [
+    {
+     "t": "Vomiting, renal / liver disease, diuretics",
+     "s": "adultstg2026:14.12"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "U&E, Ca²⁺, Mg²⁺, LFT",
+     "s": "adultstg2026:14.15",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Correct the abnormality",
+     "s": "adultstg2026:14.15"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If dialysis / ICU needed",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Imitator: syncope, arrhythmia, functional seizure",
+   "branch": "",
+   "features": [
+    {
+     "t": "Brief, pale, rapid recovery; eyes closed, waxing–waning",
+     "s": "adultstg2026:14.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "12-lead ECG (long QT)",
+     "s": "adultstg2026:14.21",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Do not escalate ASMs; treat cause",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If arrhythmia / unclear",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time from seizure onset",
+  "phase_note": "Clock starts at seizure onset · control within 30 min · find and treat the cause",
+  "columns": {
+   "feed": "Airway, O₂ & obs",
+   "tests": "Bedside & bloods",
+   "treatment": "Drugs & actions"
+  },
+  "standing": [
+   {
+    "t": "Vitals every 15 min (HR, BP, RR, SpO₂, AVPU)",
+    "s": "adultstg2026:14.14",
+    "b": 1
+   },
+   {
+    "t": "Recovery position; nothing in the mouth; nil per mouth",
+    "s": "adultstg2026:14.14",
+    "b": 1
+   },
+   {
+    "t": "O₂ to SaO₂ ≥ 95%",
+    "s": "adultstg2026:14.14",
+    "b": 1
+   },
+   {
+    "t": "Time every seizure (start, stop)",
+    "s": "adultstg2026:14.11",
+    "b": 1
+   },
+   {
+    "t": "Watch respiratory depression after benzodiazepine",
+    "s": "adultstg2026:14.16",
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing seizure record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "Onset / arrival",
+    "lead": "Safe space, lateral position, nothing in the mouth. Eye-witness: time of onset.",
+    "feed": [
+     {
+      "t": "Airway clear; O₂ to SaO₂ ≥ 95%",
+      "s": "adultstg2026:14.14",
+      "b": 1
+     },
+     {
+      "t": "IV access",
+      "s": "adultstg2026:14.14",
+      "b": 1
+     },
+     {
+      "t": "Nil per mouth",
+      "s": "adultstg2026:14.14"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT now",
+      "s": "adultstg2026:14.14",
+      "b": 1
+     },
+     {
+      "t": "BP, T, SpO₂",
+      "s": "adultstg2026:14.14",
+      "b": 1
+     },
+     {
+      "t": "Bloods with the IV: U&E, Ca²⁺, Mg²⁺, FBC; ASM level if known epilepsy",
+      "s": "adultstg2026:14.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HGT < 3 → thiamine 200 mg IV, then dextrose 50% 50 mL IV",
+      "s": "phcstg2026:21.23",
+      "b": 1
+     },
+     {
+      "t": "Pregnant > 20 wk / postpartum → MgSO₄ (eclampsia)",
+      "s": "adultstg2026:6.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "5 min",
+    "phase": "Early status · level 1",
+    "feed": [
+     {
+      "t": "Prepare BVM",
+      "s": "adultstg2026:14.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "RR, SpO₂ after dose",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "h": "IV access"
+     },
+     {
+      "t": "Lorazepam 4 mg IV (≤ 2 mg/min) OR midazolam 10 mg IV OR diazepam 10 mg IV over ≥ 5 min OR clonazepam 1 mg IV",
+      "s": "adultstg2026:14.15",
+      "b": 1
+     },
+     {
+      "h": "No IV access"
+     },
+     {
+      "t": "Midazolam 10 mg IM or buccal (injection)",
+      "s": "adultstg2026:14.15",
+      "b": 1
+     },
+     {
+      "t": "No midazolam: clonazepam 1 mg IM OR diazepam PR 0.2–0.5 mg/kg (max 20 mg)",
+      "s": "adultstg2026:14.15"
+     }
+    ]
+   },
+   {
+    "label": "10 min",
+    "phase": "Still seizing",
+    "feed": [
+     {
+      "t": "Resp depression → BVM 1 breath every 3–5 s, REFER",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat HGT if not done",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat the benzodiazepine dose ONCE",
+      "s": "adultstg2026:14.15",
+      "b": 1
+     },
+     {
+      "t": "Stopped after 1–2 doses but high risk (epilepsy, defaulted) → load ASM",
+      "s": "adultstg2026:14.15"
+     }
+    ]
+   },
+   {
+    "label": "10–30 min",
+    "phase": "Established · level 2",
+    "feed": [
+     {
+      "t": "Cardiac monitor",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     },
+     {
+      "t": "Phone referral centre; prepare intubation",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG rhythm, BP during infusion",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phenytoin 20 mg/kg IV in 200 mL NaCl 0.9% (no dextrose), ≤ 50 mg/min (20–30 min)",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     },
+     {
+      "t": "Arrhythmia / hypotension → pause, restart slower",
+      "s": "adultstg2026:14.16"
+     },
+     {
+      "t": "NOT if drug / toxin seizure or phenytoin toxicity → REFER (level 3)",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     },
+     {
+      "t": "No IV: levetiracetam 60 mg/kg crushed via NGT (max 4 500 mg)",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Refractory",
+    "feed": [
+     {
+      "t": "Intubation / ventilation → REFER ICU",
+      "s": "adultstg2026:14.17",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "VBG, glucose, electrolytes",
+      "s": "adultstg2026:14.17",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Propofol / midazolam infusion = ICU → transfer now",
+      "s": "adultstg2026:14.17",
+      "b": 1
+     },
+     {
+      "t": "Continue ASM during transfer",
+      "s": "adultstg2026:14.17"
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Post-ictal",
+    "feed": [
+     {
+      "t": "Nil per mouth until fully awake",
+      "s": "adultstg2026:14.18",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "AVPU / GCS hourly",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "T, HGT",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Agitation → manage as delirium",
+      "s": "adultstg2026:14.18"
+     },
+     {
+      "t": "Meningitis suspected → antibiotics now",
+      "s": "adultstg2026:14.18",
+      "b": 1
+     },
+     {
+      "t": "LP / CT by clinical signs and seizure onset",
+      "s": "adultstg2026:14.18"
+     }
+    ]
+   },
+   {
+    "label": "4–24 h",
+    "phase": "Cause and plan",
+    "feed": [
+     {
+      "t": "Oral intake when awake",
+      "s": "adultstg2026:14.18"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results reviewed; ECG if atypical",
+      "s": "adultstg2026:14.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Reversible cause treated → wean ASM",
+      "s": "adultstg2026:14.18",
+      "b": 1
+     },
+     {
+      "t": "Meets epilepsy criteria → Epilepsy_Adult pathway",
+      "s": "adultstg2026:14.18",
+      "b": 1
+     },
+     {
+      "t": "Counsel patient and family",
+      "s": "adultstg2026:14.18"
+     }
+    ]
+   },
+   {
+    "label": "If hypoglycaemia",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Dextrose 10% IV to prevent recurrence",
+      "s": "adultstg2026:8.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT hourly",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat dextrose 50% 50 mL if no response",
+      "s": "adultstg2026:8.13",
+      "b": 1
+     },
+     {
+      "t": "Not awake 30 min after normal glucose → other cause",
+      "s": "adultstg2026:8.13"
+     }
+    ]
+   },
+   {
+    "label": "If meningitis / infection",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluids, sepsis care",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LP if safe; blood culture",
+      "s": "adultstg2026:14.18",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     },
+     {
+      "t": "Meningitis_Adult pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If toxin / withdrawal",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Monitor RR closely",
+      "s": "adultstg2026:14.16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG (QRS, QT)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Benzodiazepines; NO phenytoin",
+      "s": "adultstg2026:14.16",
+      "b": 1
+     },
+     {
+      "t": "Alcohol: thiamine + withdrawal pathway",
+      "s": "adultstg2026:15.31"
+     },
+     {
+      "t": "Poisoning pathway / Poisons Centre",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If known epilepsy",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Restart usual ASM when awake",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ASM level (taken before loading)",
+      "s": "adultstg2026:14.15",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ask: adherence, alcohol, new drugs, herbal",
+      "s": "adultstg2026:14.31",
+      "b": 1
+     },
+     {
+      "t": "Epilepsy_Adult pathway",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Lorazepam 4 mg IV ≤ 2 mg/min · midazolam 10 mg IV / IM / buccal",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Diazepam 10 mg IV over ≥ 5 min; PR 0.2–0.5 mg/kg (max 20 mg)",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Phenytoin 20 mg/kg IV ≤ 50 mg/min, cardiac monitor",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "Levetiracetam 60 mg/kg via NGT (max 4 500 mg)",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "Dextrose 50% 50 mL IV · thiamine 200 mg IV",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "MgSO₄ 4 g IV / 20 min + 5 g IM 4-hourly",
+     "s": "adultstg2026:6.11"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Anything in the mouth",
+     "s": "adultstg2026:14.13",
+     "b": 1
+    },
+    {
+     "t": "Phenytoin in drug / toxin seizures",
+     "s": "adultstg2026:14.16",
+     "b": 1
+    },
+    {
+     "t": "Phenytoin in dextrose fluids",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "> 2 benzodiazepine doses before level 2",
+     "s": "adultstg2026:14.15"
+    },
+    {
+     "t": "Valproate in women of child-bearing potential",
+     "s": "adultstg2026:14.13"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Still seizing at 30 min → REFER ICU",
+     "s": "adultstg2026:14.17",
+     "b": 1
+    },
+    {
+     "t": "RR ↓ / SpO₂ ↓ after benzodiazepine → BVM, REFER",
+     "s": "adultstg2026:14.16",
+     "b": 1
+    },
+    {
+     "t": "Arrhythmia on phenytoin → pause",
+     "s": "adultstg2026:14.16"
+    },
+    {
+     "t": "Not waking up → other cause",
+     "s": "adultstg2026:8.13"
+    },
+    {
+     "t": "New focal deficit → CT (REFER)",
+     "s": "adultstg2026:14.21"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Fully awake, no further seizures",
+    "s": "adultstg2026:14.18"
+   },
+   {
+    "t": "Cause found and treated",
+    "s": "adultstg2026:14.18"
+   },
+   {
+    "t": "Epilepsy criteria considered; ASM plan",
+    "s": "adultstg2026:14.18"
+   },
+   {
+    "t": "Counselled: first aid, no driving / swimming / heights",
+    "s": "adultstg2026:14.25"
+   },
+   {
+    "t": "Contraception counselling if on ASM",
+    "s": "adultstg2026:14.22"
+   },
+   {
+    "t": "Follow-up date given",
+    "s": "adultstg2026:14.18"
+   },
+   {
+    "t": "CT / EEG referral if indicated",
+    "s": "adultstg2026:14.21"
+   },
+   {
+    "t": "Return: seizure ≥ 5 min, injury, fever",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic to reinforce counselling",
+    "s": "adultstg2026:14.18"
+   },
+   {
+    "t": "Wean residual ASM unless epilepsy",
+    "s": "adultstg2026:14.18"
+   },
+   {
+    "t": "EEG ≥ 1 week after seizure if indicated",
+    "s": "adultstg2026:14.21"
+   },
+   {
+    "t": "Seizure diary",
+    "s": "adultstg2026:14.25"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing seizure record — vitals, seizures, consciousness",
+  "period": "24 hours: 15-min × 1 h, hourly × 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Seizures",
+    "items": [
+     {
+      "t": "Time start / stop, type",
+      "s": "adultstg2026:14.11"
+     },
+     {
+      "t": "Drug given and time",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Vitals",
+    "items": [
+     {
+      "t": "HR, BP, RR, SpO₂ every 15 min",
+      "s": "adultstg2026:14.14"
+     },
+     {
+      "t": "Temperature",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "AVPU / GCS",
+      "d": 1
+     },
+     {
+      "t": "Pupils, new weakness",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Lateral position, cot sides",
+      "s": "adultstg2026:14.13"
+     },
+     {
+      "t": "Nil per mouth until awake",
+      "s": "adultstg2026:14.18"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Seizure ≥ 5 min or repeat seizure",
+    "s": "adultstg2026:14.11",
+    "b": 1
+   },
+   {
+    "t": "RR low / SpO₂ falling",
+    "s": "adultstg2026:14.16",
+    "b": 1
+   },
+   {
+    "t": "HGT < 3 mmol/L",
+    "s": "phcstg2026:21.22",
+    "b": 1
+   },
+   {
+    "t": "Not waking / new weakness",
+    "d": 1
+   },
+   {
+    "t": "Pulse irregular on phenytoin",
+    "s": "adultstg2026:14.16"
+   }
+  ],
+  "totals": [
+   "Seizures (n)",
+   "Benzodiazepine doses",
+   "Loading dose given",
+   "Awake at (time)"
+  ]
+ }
+}

@@ -1,0 +1,966 @@
+{
+ "id": "epilepsy-adult",
+ "short": "Epilepsy_Adult",
+ "title": "Epilepsy — admission for poor control or new diagnosis (adolescent ≥ 13 y and adult)",
+ "population": "Adolescents ≥ 13 y and adults with epilepsy admitted after seizures (breakthrough, cluster, post-status) or to start / change antiseizure medicine",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-25",
+ "sources": [
+  "adultstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — epilepsy",
+   "items": [
+    {
+     "t": "≥ 2 unprovoked (or reflex) seizures > 24 h apart",
+     "s": "adultstg2026:14.18",
+     "b": 1
+    },
+    {
+     "t": "OR 1 unprovoked seizure with high recurrence risk (old stroke, TB meningitis, cysticercosis, tumour, TBI)",
+     "s": "adultstg2026:14.19",
+     "b": 1
+    },
+    {
+     "t": "OR an epilepsy syndrome",
+     "s": "adultstg2026:14.18",
+     "b": 1
+    },
+    {
+     "t": "Type: ☐ focal ☐ generalised TC ☐ myoclonic ☐ absence ☐ unknown — from witness description",
+     "s": "adultstg2026:14.21",
+     "k": "value"
+    },
+    {
+     "t": "Provoked seizure (hypoglycaemia, alcohol withdrawal, concussion) ≠ epilepsy → Seizures_Adult",
+     "s": "adultstg2026:14.19"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit = any one of",
+   "items": [
+    {
+     "t": "Status epilepticus / after loading dose",
+     "s": "adultstg2026:14.15",
+     "b": 1
+    },
+    {
+     "t": "Cluster / frequent seizures despite ASM",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Injury, aspiration, not back to baseline",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Suspected ASM toxicity",
+     "s": "adultstg2026:14.26",
+     "b": 1
+    },
+    {
+     "t": "New focal seizure / new neuro signs (needs CT)",
+     "s": "adultstg2026:14.21",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Current ASM, dose, start date",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "t": "Previous ASMs tried + why stopped",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "t": "Seizure diary / frequency",
+     "s": "adultstg2026:14.25"
+    },
+    {
+     "t": "HIV, ART regimen",
+     "s": "adultstg2026:14.24"
+    },
+    {
+     "t": "Contraception / pregnancy",
+     "s": "adultstg2026:14.22"
+    },
+    {
+     "t": "Valproate risk form (annual)",
+     "s": "adultstg2026:14.23"
+    },
+    {
+     "t": "CT / EEG results",
+     "s": "adultstg2026:14.21"
+    },
+    {
+     "t": "Last ASM level",
+     "s": "adultstg2026:14.26"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Seizures"
+    },
+    {
+     "t": "Aura, what happens, conscious?, duration, after-effects",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "t": "Frequency per month",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "h": "Poor control?"
+    },
+    {
+     "t": "Adherence ≥ 2 weeks before seizure",
+     "s": "adultstg2026:14.31",
+     "b": 1
+    },
+    {
+     "t": "New medicines / herbal / traditional",
+     "s": "adultstg2026:14.31"
+    },
+    {
+     "t": "Alcohol",
+     "s": "adultstg2026:14.31"
+    },
+    {
+     "t": "Sleep deprivation, stress",
+     "s": "adultstg2026:14.23"
+    },
+    {
+     "h": "Toxicity"
+    },
+    {
+     "t": "Ataxia, diplopia, drowsiness, rash",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "HGT ____ mmol/L",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Pregnancy test (women)",
+     "s": "adultstg2026:14.22",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "New focal deficit",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "t": "Nystagmus, ataxia (toxicity)",
+     "d": 1
+    },
+    {
+     "t": "Cognition",
+     "d": 1
+    },
+    {
+     "h": "Injury"
+    },
+    {
+     "t": "Tongue, head, shoulder, burns",
+     "d": 1
+    },
+    {
+     "t": "Aspiration signs",
+     "d": 1
+    },
+    {
+     "h": "Other"
+    },
+    {
+     "t": "Rash / mucosa (lamotrigine SJS)",
+     "s": "adultstg2026:14.30"
+    },
+    {
+     "t": "Gum hypertrophy (phenytoin)",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Adherence + ASM level",
+   "items": [
+    {
+     "t": "Doses missed in last 2 weeks ____ · reason ____",
+     "s": "adultstg2026:14.31",
+     "k": "value"
+    },
+    {
+     "t": "ASM level: toxicity, poor control, or doubtful adherence",
+     "s": "adultstg2026:14.26",
+     "b": 1
+    },
+    {
+     "t": "Non-adherence / alcohol / interaction found → fix it; ASM unchanged; reassess 2 weeks",
+     "s": "adultstg2026:14.32",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Choose ASM — who is this patient?",
+   "items": [
+    {
+     "t": "Woman of child-bearing potential / pregnant → lamotrigine or levetiracetam; NO valproate",
+     "s": "adultstg2026:14.22",
+     "b": 1
+    },
+    {
+     "t": "On ART → lamotrigine; switch carbamazepine / phenytoin / phenobarbital",
+     "s": "adultstg2026:14.24",
+     "b": 1
+    },
+    {
+     "t": "High risk (frequent, hospitalised, status) → levetiracetam (lamotrigine titration too slow)",
+     "s": "adultstg2026:14.29",
+     "b": 1
+    },
+    {
+     "t": "Myoclonic / absence / combined / unknown → discuss with specialist",
+     "s": "adultstg2026:14.28"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Status epilepticus",
+     "s": "adultstg2026:14.11"
+    },
+    {
+     "t": "Provoked cause (hypo, infection)",
+     "s": "adultstg2026:14.11"
+    },
+    {
+     "t": "ASM toxicity",
+     "s": "adultstg2026:14.26"
+    },
+    {
+     "t": "Pregnancy / eclampsia",
+     "s": "adultstg2026:14.12"
+    },
+    {
+     "t": "New structural lesion",
+     "s": "adultstg2026:14.21"
+    },
+    {
+     "t": "SJS on lamotrigine",
+     "s": "adultstg2026:14.30"
+    },
+    {
+     "t": "Aspiration pneumonia",
+     "d": 1
+    },
+    {
+     "t": "Imitator (syncope, functional)",
+     "s": "adultstg2026:14.7"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = STATUS not controlled, NEW FOCAL SIGNS needing CT, or failed 2 monotherapies → stabilise → REFER",
+   "s": "adultstg2026:14.32",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT — fix the cause of poor control, choose / titrate ASM, counsel; continue on the inpatient chart",
+   "s": "adultstg2026:14.25",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "One ASM at a time · change doses 2-weekly · adherence before escalation · counsel before discharge",
+  "columns": {
+   "feed": "Observations",
+   "tests": "Tests",
+   "treatment": "ASM & actions"
+  },
+  "standing": [
+   {
+    "t": "Seizure chart: time, type, duration (diary)",
+    "s": "adultstg2026:14.25",
+    "b": 1
+   },
+   {
+    "t": "Vitals and AVPU 4-hourly",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Seizure ≥ 5 min → status protocol (Seizures_Adult)",
+    "s": "adultstg2026:14.11",
+    "b": 1
+   },
+   {
+    "t": "ASM given on time — no missed doses",
+    "s": "adultstg2026:14.25",
+    "b": 1
+   },
+   {
+    "t": "Fall / injury precautions",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing seizure record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Admission",
+    "lead": "Get the full ASM history and a witness description. Every seizure needs a cause, even in epilepsy.",
+    "feed": [
+     {
+      "t": "Vitals, AVPU",
+      "d": 1
+     },
+     {
+      "t": "Lateral position if drowsy",
+      "s": "adultstg2026:14.13"
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, Ca²⁺, Mg²⁺, FBC, LFT",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "ASM level (if toxicity / poor control / adherence doubt)",
+      "s": "adultstg2026:14.26",
+      "b": 1
+     },
+     {
+      "t": "β-hCG in women",
+      "s": "adultstg2026:14.22",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HIV test if unknown",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue usual ASM (do not stop abruptly)",
+      "s": "adultstg2026:14.23",
+      "b": 1
+     },
+     {
+      "t": "If loaded for status: continue maintenance ASM",
+      "s": "adultstg2026:14.17"
+     },
+     {
+      "t": "Lamotrigine interrupted > 1 week → restart titration",
+      "s": "adultstg2026:14.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Cause found?",
+    "feed": [
+     {
+      "t": "Seizures ___ since admission",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results reviewed",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adherence / alcohol / interaction → address, ASM unchanged",
+      "s": "adultstg2026:14.32",
+      "b": 1
+     },
+     {
+      "t": "Toxicity → reduce dose / hold, recheck level",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1 · plan",
+    "feed": [
+     {
+      "t": "Seizure-free?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CT if new focal onset / new signs (REFER)",
+      "s": "adultstg2026:14.21",
+      "b": 1
+     },
+     {
+      "t": "12-lead ECG if atypical",
+      "s": "adultstg2026:14.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Choose ASM by type + population (side 2 doses)",
+      "s": "adultstg2026:14.27",
+      "b": 1
+     },
+     {
+      "t": "Failed 1st ASM at optimal dose → start 2nd, taper 1st over 6–8 weeks",
+      "s": "adultstg2026:14.26"
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Counsel",
+    "feed": [
+     {
+      "t": "Mobilising safely",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Seizure diary, ID bracelet / card",
+      "s": "adultstg2026:14.25",
+      "b": 1
+     },
+     {
+      "t": "No driving, swimming, heights, machinery until seizure-free 1 year",
+      "s": "adultstg2026:14.25",
+      "b": 1
+     },
+     {
+      "t": "Alcohol, sleep, missed doses, never stop without doctor",
+      "s": "adultstg2026:14.25"
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "EEG ≥ 1 week after seizure (REFER) if diagnosis unclear",
+      "s": "adultstg2026:14.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Patient signs lifestyle / workplace advice in notes",
+      "s": "adultstg2026:14.25",
+      "b": 1
+     },
+     {
+      "t": "Referral letter with seizure details if criteria met",
+      "s": "adultstg2026:14.32"
+     }
+    ]
+   },
+   {
+    "label": "2 weeks",
+    "phase": "Clinic",
+    "feed": [
+     {
+      "t": "Diary reviewed",
+      "s": "adultstg2026:14.25"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Titrate dose (2-weekly steps)",
+      "s": "adultstg2026:14.25",
+      "b": 1
+     },
+     {
+      "t": "Reassess after correcting adherence",
+      "s": "adultstg2026:14.32"
+     }
+    ]
+   },
+   {
+    "label": "If woman of child-bearing potential / pregnant",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Contraception: DMPA or IUCD",
+      "s": "adultstg2026:14.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Pregnancy test",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lamotrigine (low risk) or levetiracetam (high risk); NO valproate",
+      "s": "adultstg2026:14.22",
+      "b": 1
+     },
+     {
+      "t": "Pregnant on valproate → switch to levetiracetam early; do not stop abruptly",
+      "s": "adultstg2026:14.23",
+      "b": 1
+     },
+     {
+      "t": "Valproate unavoidable → annual risk form + folic acid 5 mg daily",
+      "s": "adultstg2026:14.23"
+     }
+    ]
+   },
+   {
+    "label": "If on ART",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Viral load per programme",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lamotrigine preferred; switch enzyme inducers to lamotrigine",
+      "s": "adultstg2026:14.24",
+      "b": 1
+     },
+     {
+      "t": "Dolutegravir + carbamazepine / phenytoin / phenobarbital unavoidable → DTG 50 mg 12-hourly",
+      "s": "adultstg2026:14.24",
+      "b": 1
+     },
+     {
+      "t": "LPV/r or ATV/r → lamotrigine dose may need increase",
+      "s": "adultstg2026:14.25"
+     }
+    ]
+   },
+   {
+    "label": "If ASM toxicity",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fall precautions",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ASM level",
+      "s": "adultstg2026:14.26",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Phenytoin > 300 mg/day potentially toxic (cerebellar damage)",
+      "s": "adultstg2026:14.31",
+      "b": 1
+     },
+     {
+      "t": "Rash on lamotrigine → consider SJS (stop the drug †)",
+      "s": "adultstg2026:14.30",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If not controlled",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Confirm diagnosis; exclude imitators",
+      "s": "adultstg2026:14.31",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "2 monotherapies failed (adherent, no alcohol) → add-on with specialist / REFER",
+      "s": "adultstg2026:14.26",
+      "b": 1
+     },
+     {
+      "t": "Unexplained neuro signs → REFER",
+      "s": "adultstg2026:14.32",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "ASM doses (adult)",
+   "items": [
+    {
+     "t": "Lamotrigine: 25 mg daily wk 1–2, 50 mg wk 3–4, then 100–200 mg/day (+50–100 mg every 1–2 wk)",
+     "s": "adultstg2026:14.30"
+    },
+    {
+     "t": "…with valproate: 25 mg alternate days wk 1–2, 25 mg daily wk 3–4, 100–200 mg/day",
+     "s": "adultstg2026:14.30"
+    },
+    {
+     "t": "…with enzyme inducers: 50 mg daily, 100 mg/day, then 200–400 mg/day",
+     "s": "adultstg2026:14.30"
+    },
+    {
+     "t": "Levetiracetam 250 mg 12-hourly → 500 mg 12-hourly; +500 mg 12-hourly every 2–4 wk (max 1 500 mg 12-hourly)",
+     "s": "adultstg2026:14.31"
+    },
+    {
+     "t": "Carbamazepine 100 mg 12-hourly; +100–200 mg/day weekly (max 600 mg 12-hourly)",
+     "s": "adultstg2026:14.31"
+    },
+    {
+     "t": "Valproate 200–300 mg 12-hourly (max 1 200 mg 12-hourly) — not in women",
+     "s": "adultstg2026:14.31"
+    },
+    {
+     "t": "Phenytoin 300 mg at night — only if already well controlled",
+     "s": "adultstg2026:14.31"
+    }
+   ]
+  },
+  {
+   "title": "First line by type",
+   "items": [
+    {
+     "t": "Focal: lamotrigine or levetiracetam; 2nd carbamazepine (not on ART)",
+     "s": "adultstg2026:14.27"
+    },
+    {
+     "t": "Generalised TC: lamotrigine (low risk) / levetiracetam (high risk); men 2nd valproate",
+     "s": "adultstg2026:14.27"
+    },
+    {
+     "t": "Myoclonic / absence: men valproate; women lamotrigine (myoclonic) — discuss",
+     "s": "adultstg2026:14.28"
+    },
+    {
+     "t": "Combined / unknown: specialist",
+     "s": "adultstg2026:14.28"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Seizure ≥ 5 min → status protocol",
+     "s": "adultstg2026:14.11",
+     "b": 1
+    },
+    {
+     "t": "Rash / mucosal ulcers on lamotrigine",
+     "s": "adultstg2026:14.30",
+     "b": 1
+    },
+    {
+     "t": "Ataxia, drowsiness → toxicity, level",
+     "s": "adultstg2026:14.26"
+    },
+    {
+     "t": "New focal signs → CT (REFER)",
+     "s": "adultstg2026:14.21"
+    },
+    {
+     "t": "Pregnant on valproate",
+     "s": "adultstg2026:14.23"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No seizures ≥ 24 h, back to baseline",
+    "d": 1
+   },
+   {
+    "t": "Cause of poor control addressed",
+    "s": "adultstg2026:14.32"
+   },
+   {
+    "t": "ASM, dose, titration plan written",
+    "s": "adultstg2026:14.30"
+   },
+   {
+    "t": "Seizure diary + ID card given",
+    "s": "adultstg2026:14.25"
+   },
+   {
+    "t": "Lifestyle / driving advice signed",
+    "s": "adultstg2026:14.25"
+   },
+   {
+    "t": "Contraception plan (women)",
+    "s": "adultstg2026:14.22"
+   },
+   {
+    "t": "Clinic in 2 weeks",
+    "s": "adultstg2026:14.32"
+   },
+   {
+    "t": "Return: seizure ≥ 5 min, rash, pregnancy",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "2 weeks: diary, titrate",
+    "s": "adultstg2026:14.32"
+   },
+   {
+    "t": "Refer: 2 ASMs failed, unexplained neuro signs",
+    "s": "adultstg2026:14.32"
+   },
+   {
+    "t": "Valproate risk form annually",
+    "s": "adultstg2026:14.29"
+   },
+   {
+    "t": "Resolved: seizure-free 10 y, off ASM 5 y",
+    "s": "adultstg2026:14.19"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing seizure observation record",
+  "period": "24 hours, 2-hourly rows + every seizure",
+  "params": [
+   {
+    "h": "Seizures",
+    "items": [
+     {
+      "t": "Time, type, duration",
+      "s": "adultstg2026:14.25"
+     },
+     {
+      "t": "Witness description",
+      "s": "adultstg2026:14.21"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, BP, RR, SpO₂ 4-hourly",
+      "d": 1
+     },
+     {
+      "t": "AVPU",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "ASM",
+    "items": [
+     {
+      "t": "Each dose given on time",
+      "s": "adultstg2026:14.25"
+     },
+     {
+      "t": "Vomited dose?",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "Bed low, padding",
+      "d": 1
+     },
+     {
+      "t": "Supervised bathing",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Seizure ≥ 5 min or 2 without recovery",
+    "s": "adultstg2026:14.11",
+    "b": 1
+   },
+   {
+    "t": "New rash / mouth ulcers",
+    "s": "adultstg2026:14.30",
+    "b": 1
+   },
+   {
+    "t": "Drowsy, unsteady, double vision",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Injury / fall",
+    "d": 1
+   },
+   {
+    "t": "ASM refused or vomited",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Seizures (n)",
+   "Longest (min)",
+   "ASM doses missed",
+   "Rescue doses"
+  ]
+ }
+}
