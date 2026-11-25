@@ -12,4 +12,4 @@ for i in $(seq 1 180); do
   sleep 1
 done
 cat "$OUT/selftest.txt"
-grep -q 'SELFTEST DONE pass=[1-9][0-9]* fail=0' "$OUT/selftest.txt"
+grep -q 'SELFTEST DONE pass=[1-9][0-9]* fail=0' "$OUT/selftest.txt" && ! grep -q ' FAIL\| fail=[1-9]' "$OUT/selftest.txt"
