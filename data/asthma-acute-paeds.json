@@ -1,0 +1,892 @@
+{
+ "id": "asthma-acute-paeds",
+ "short": "Asthma_Acute_Paeds",
+ "title": "Acute asthma attack (child 2–12 years)",
+ "population": "Children 2–12 years with known or suspected asthma and an acute attack (< 2 y wheeze → bronchiolitis; ≥ 13 y → adult asthma)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Known asthma: acute wheeze not responding to usual bronchodilator",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    },
+    {
+     "t": "Intense wheeze, decreased air entry, hyperinflation, dyspnoea, tachypnoea, difficulty talking / feeding",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Age ____ · weight ____ kg · PEFR ____ % predicted (≥ 5 y)",
+     "k": "value"
+    },
+    {
+     "t": "< 2 y first wheeze → bronchiolitis pathway (Bronchiolitis_Paeds)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity — tick the worst column",
+   "items": [
+    {
+     "t": "MILD: SpO₂ > 95%, PEFR 70–90%, speaks normally, RR < 40, expiratory wheeze",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    },
+    {
+     "t": "MODERATE: SpO₂ 92–95%, PEFR 50–70%, difficulty feeding, chest indrawing, RR > 40",
+     "s": "paedstg2026:15.19",
+     "b": 1
+    },
+    {
+     "t": "SEVERE: SpO₂ < 92%, PEFR < 50%, unable to speak, confusion, cyanosis, accessory muscles, soft breath sounds",
+     "s": "paedstg2026:15.19",
+     "b": 1
+    },
+    {
+     "t": "DANGER (REFER): restless, reduced LOC, SpO₂ < 85%, silent chest, PEFR < 60%, rising PaCO₂, chest pain",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet / clinic card",
+   "items": [
+    {
+     "t": "Controller: inhaled steroid / dose",
+     "s": "paedstg2026:15.23"
+    },
+    {
+     "t": "Reliever use last 24 h",
+     "d": 1
+    },
+    {
+     "t": "Previous ICU / ventilation",
+     "d": 1
+    },
+    {
+     "t": "Oral steroid courses this year",
+     "d": 1
+    },
+    {
+     "t": "Spacer at home / technique",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "HIV, TB contact",
+     "d": 1
+    },
+    {
+     "t": "Smoke / paraffin exposure",
+     "d": 1
+    },
+    {
+     "t": "Weight",
+     "s": "paedstg2026:15.20"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Attack"
+    },
+    {
+     "t": "Onset, trigger (URTI, smoke, allergen)",
+     "d": 1
+    },
+    {
+     "t": "Reliever doses before arrival",
+     "d": 1
+    },
+    {
+     "t": "Able to talk / feed?",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "h": "Risk"
+    },
+    {
+     "t": "Previous severe attack / ICU",
+     "d": 1
+    },
+    {
+     "t": "Poor adherence to controller",
+     "d": 1
+    },
+    {
+     "h": "Other causes"
+    },
+    {
+     "t": "Foreign body (sudden onset, unilateral)",
+     "d": 1
+    },
+    {
+     "t": "Fever, focal crackles (pneumonia)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ on air ____ %",
+     "s": "paedstg2026:15.18",
+     "k": "sub"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "PEFR ____ % predicted (≥ 5 y)",
+     "s": "paedstg2026:15.18",
+     "k": "sub"
+    },
+    {
+     "t": "Pulsus paradoxus palpable",
+     "s": "paedstg2026:15.18",
+     "k": "yn"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Work of breathing"
+    },
+    {
+     "t": "Chest indrawing",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Accessory muscles",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Speech / feeding",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "h": "Auscultation"
+    },
+    {
+     "t": "Wheeze in / expiration",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Silent chest",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Unequal air entry (pneumothorax / FB)",
+     "d": 1
+    },
+    {
+     "h": "Mental state"
+    },
+    {
+     "t": "Agitation = hypoxia",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Drowsy / confused",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "SpO₂ + PEFR now",
+   "items": [
+    {
+     "t": "SpO₂ ____ % on air · PEFR ____ %",
+     "k": "value"
+    },
+    {
+     "t": "O₂ to keep SpO₂ ≥ 95% (mask 4–6 L/min or nasal 1–2 L/min)",
+     "s": "paedstg2026:15.20",
+     "b": 1
+    },
+    {
+     "t": "SpO₂ < 85% or silent chest → treat as severe AND phone referral now",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Blood gas / K⁺ (moderate–severe)",
+   "items": [
+    {
+     "t": "pH ____ · pCO₂ ____ · K⁺ ____",
+     "k": "value"
+    },
+    {
+     "t": "Normal or rising pCO₂ in a distressed child = tiring → REFER",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    },
+    {
+     "t": "K⁺ on continuous β2-agonist",
+     "s": "paedstg2026:15.19",
+     "b": 1
+    },
+    {
+     "t": "CXR only if pneumothorax / pneumonia / FB suspected",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Silent chest",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "SpO₂ < 85%",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Exhaustion / rising pCO₂",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Pneumothorax (chest pain)",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "Foreign body",
+     "d": 1
+    },
+    {
+     "t": "Anaphylaxis",
+     "d": 1
+    },
+    {
+     "t": "Pneumonia",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:15.19"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Severity = SEVERE non-responder after step 3, ANY DANGER SIGN, or step 4 needed → stabilise → REFER (ICU)",
+   "s": "paedstg2026:15.22",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT moderate / severe (high care) — step 1 nebs now; continue on the asthma chart; mild responders may go home",
+   "s": "paedstg2026:15.19",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time from arrival",
+  "phase_note": "Step 1 → assess at 1 h (step 2) → responder: oral prednisone home plan · non-responder: step 3 / 4",
+  "columns": {
+   "feed": "O₂, fluids & obs",
+   "tests": "Monitoring",
+   "treatment": "Drugs (per kg)"
+  },
+  "standing": [
+   {
+    "t": "SpO₂, RR, HR, work of breathing after every neb",
+    "s": "paedstg2026:15.19",
+    "b": 1
+   },
+   {
+    "t": "Keep SpO₂ ≥ 95%",
+    "s": "paedstg2026:15.20",
+    "b": 1
+   },
+   {
+    "t": "PEFR before / after (≥ 5 y)",
+    "s": "paedstg2026:15.19",
+    "b": 1
+   },
+   {
+    "t": "Oral fluids; IV max 50 mL/kg/24 h",
+    "s": "paedstg2026:15.19",
+    "b": 1
+   },
+   {
+    "t": "No sedation, antihistamines, antibiotics, physio",
+    "s": "paedstg2026:15.19"
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "Step 1",
+    "lead": "Weigh. Sit upright, calm, with parent. Agitation = hypoxia, not naughtiness.",
+    "feed": [
+     {
+      "t": "O₂ mask 4–6 L/min or nasal 1–2 L/min to SpO₂ ≥ 95%",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, RR, HR, PEFR",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Salbutamol neb 0.15–0.3 mg/kg (max 5 mg) in NaCl 0.9% to 4 mL at 5 L/min O₂ — OR MDI + spacer: moderate 4–6 puffs, severe 10 puffs (1 mg)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "+ Ipratropium 0.25 mg neb (moderate / severe; can mix)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "+ Prednisone 1–2 mg/kg oral (max < 2 y 20 mg · 2–5 y 30 mg · 6–12 y 40 mg)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "20 min",
+    "phase": "Step 1",
+    "feed": [
+     {
+      "t": "O₂ continues",
+      "s": "paedstg2026:15.20"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, RR after dose",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat salbutamol (2nd of 3)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     },
+     {
+      "t": "Severe: repeat ipratropium every 20–30 min (4 doses over 2 h)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "40 min",
+    "phase": "Step 1",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "SpO₂, RR",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Repeat salbutamol (3rd of 3)",
+      "s": "paedstg2026:15.20",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Step 2 · assess",
+    "feed": [
+     {
+      "t": "Oral fluids if able",
+      "s": "paedstg2026:15.19"
+     }
+    ],
+    "tests": [
+     {
+      "t": "PEFR improved > 20% or > 80%? RR < 40? no retraction? speech / feeding normal?",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "ALL yes and sustained ≥ 1 h → RESPONDER branch",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     },
+     {
+      "t": "Any no → NON-RESPONDER branch (step 3)",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "2 h",
+    "phase": "Step 3",
+    "feed": [
+     {
+      "t": "IV access if non-responder; dextrose 5% / NaCl 0.45% if not drinking",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood gas, K⁺",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Non-responder: hydrocortisone 2 mg/kg IV 6-hourly (or continue prednisone)",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     },
+     {
+      "t": "Consult paediatrician: MgSO₄ 25–75 mg/kg IV over 20 min OR salbutamol IV 15 mcg/kg over 10 min",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Step 4?",
+    "feed": [
+     {
+      "t": "Phone ICU / referral",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat gas, K⁺",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still not responding → ICU: salbutamol IV 1 mcg/kg/min (+1 every 15 min, max 5)",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If responder",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Wean O₂",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Observe ≥ 1 h after last neb",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Prednisone 2 mg/kg daily × 5 days (max 20 / 30 / 40 mg)",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     },
+     {
+      "t": "Salbutamol MDI 200 mcg (2 puffs) via spacer as needed",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     },
+     {
+      "t": "Review controller therapy and triggers",
+      "s": "paedstg2026:15.21"
+     }
+    ]
+   },
+   {
+    "label": "If non-responder",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "High care; IV fluids max 50 mL/kg/24 h",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Continuous SpO₂; K⁺",
+      "s": "paedstg2026:15.19",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Salbutamol neb 0.15–0.3 mg/kg every 20 min + ipratropium 0.25 mg (then 6-hourly)",
+      "s": "paedstg2026:15.21",
+      "b": 1
+     },
+     {
+      "t": "Hydrocortisone 2 mg/kg IV 6-hourly",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     },
+     {
+      "t": "MgSO₄ 25–75 mg/kg / 20 min (paediatrician)",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If step 4 / life-threatening",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Prepare for transfer; BVM ready",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG if aminophylline",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Salbutamol IV: 15 mcg/kg load (if not given) then 1–5 mcg/kg/min",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     },
+     {
+      "t": "Aminophylline 5 mg/kg over 20–30 min then 1 mg/kg/h (ICU, ECG mandatory)",
+      "s": "paedstg2026:15.22",
+      "b": 1
+     },
+     {
+      "t": "REFER ICU",
+      "s": "paedstg2026:15.23",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses (per kg)",
+   "items": [
+    {
+     "t": "Salbutamol neb 0.15–0.3 mg/kg (max 5 mg) every 20 min × 3",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Salbutamol MDI: mild 2–4 · moderate 4–6 · severe 10 puffs",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Ipratropium 0.25 mg neb; severe every 20–30 min × 4; then 6-hourly",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Prednisone 1–2 mg/kg (max 20 / 30 / 40 mg) × 5 days",
+     "s": "paedstg2026:15.20"
+    },
+    {
+     "t": "Hydrocortisone 2 mg/kg IV 6-hourly",
+     "s": "paedstg2026:15.22"
+    },
+    {
+     "t": "MgSO₄ 25–75 mg/kg IV over 20 min",
+     "s": "paedstg2026:15.22"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Sedation",
+     "s": "paedstg2026:15.19",
+     "b": 1
+    },
+    {
+     "t": "Antihistamines, antibiotics (unless pneumonia), physiotherapy",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "IV fluids > 50 mL/kg/24 h",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Aminophylline outside ICU",
+     "s": "paedstg2026:15.22"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Silent chest / SpO₂ < 85% / drowsy → REFER now",
+     "s": "paedstg2026:15.18",
+     "b": 1
+    },
+    {
+     "t": "Non-responder after step 3 → ICU",
+     "s": "paedstg2026:15.22",
+     "b": 1
+    },
+    {
+     "t": "Chest pain → pneumothorax",
+     "s": "paedstg2026:15.18"
+    },
+    {
+     "t": "K⁺ low on continuous salbutamol",
+     "s": "paedstg2026:15.19"
+    },
+    {
+     "t": "Normal / rising pCO₂",
+     "s": "paedstg2026:15.18"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Responder sustained ≥ 1 h off frequent nebs",
+    "s": "paedstg2026:15.21"
+   },
+   {
+    "t": "SpO₂ normal on air",
+    "d": 1
+   },
+   {
+    "t": "Prednisone course to finish (5 days)",
+    "s": "paedstg2026:15.21"
+   },
+   {
+    "t": "Spacer technique checked",
+    "s": "paedstg2026:15.20"
+   },
+   {
+    "t": "Controller reviewed / started",
+    "s": "paedstg2026:15.21"
+   },
+   {
+    "t": "Written plan: when to use reliever, when to return",
+    "d": 1
+   },
+   {
+    "t": "Triggers / smoke exposure discussed",
+    "d": 1
+   },
+   {
+    "t": "Follow-up booked",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic 1 week: control, technique",
+    "d": 1
+   },
+   {
+    "t": "Step up controller if frequent attacks",
+    "s": "paedstg2026:15.23"
+   },
+   {
+    "t": "Return: can't talk / feed, blue, reliever every < 4 h",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing asthma record (child)",
+  "period": "24 hours: 20-min × 1 h, hourly × 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Breathing",
+    "items": [
+     {
+      "t": "RR, SpO₂, work of breathing",
+      "s": "paedstg2026:15.19"
+     },
+     {
+      "t": "Speech / feeding",
+      "s": "paedstg2026:15.21"
+     }
+    ]
+   },
+   {
+    "h": "Treatment",
+    "items": [
+     {
+      "t": "Neb time + drug",
+      "d": 1
+     },
+     {
+      "t": "O₂ flow",
+      "s": "paedstg2026:15.20"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, BP, T",
+      "s": "paedstg2026:15.19"
+     },
+     {
+      "t": "PEFR (≥ 5 y)",
+      "s": "paedstg2026:15.19"
+     }
+    ]
+   },
+   {
+    "h": "Fluids",
+    "items": [
+     {
+      "t": "Oral / IV in",
+      "s": "paedstg2026:15.19"
+     },
+     {
+      "t": "Urine",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "SpO₂ < 92% despite O₂",
+    "s": "paedstg2026:15.18",
+    "b": 1
+   },
+   {
+    "t": "Silent chest, drowsy, agitated",
+    "s": "paedstg2026:15.18",
+    "b": 1
+   },
+   {
+    "t": "Cannot talk / feed",
+    "s": "paedstg2026:15.19",
+    "b": 1
+   },
+   {
+    "t": "Chest pain",
+    "s": "paedstg2026:15.18"
+   },
+   {
+    "t": "Tremor / palpitations on salbutamol",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Nebs given",
+   "Max O₂ (L/min)",
+   "Fluids in (mL)",
+   "Lowest SpO₂"
+  ]
+ }
+}

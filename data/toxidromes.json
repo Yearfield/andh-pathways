@@ -1,0 +1,223 @@
+{
+ "id": "toxidromes",
+ "type": "range",
+ "short": "Toxidromes",
+ "folder": "Toxidromes",
+ "title": "Toxidromes — bedside pattern + first antidote",
+ "population": "Adults · children",
+ "age_range": "all",
+ "setting": "Casualty",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "6 patterns",
+ "tags": [
+  "toxicology",
+  "poisoning",
+  "antidote",
+  "emergency"
+ ],
+ "sources": [
+  {
+   "id": "ANDH",
+   "title": "ANDH clinician craft / local practice (not in STG)",
+   "type": "local",
+   "country": "ZA"
+  },
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 2025–2029 cycle (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [],
+ "top_question": {
+  "t": "Everyone: ABC, HGT, ECG, temperature, pupils, skin, bowel sounds, bladder · Poisons Helpline 0861 555 777",
+  "s": "HOSP:19.1"
+ },
+ "components": [],
+ "tables": [
+  {
+   "title": "Pattern",
+   "head": [
+    "Toxidrome",
+    "Mental",
+    "Pupils",
+    "HR / BP",
+    "Temp",
+    "Skin",
+    "Gut / bladder",
+    "Examples"
+   ],
+   "rows": [
+    [
+     "Anticholinergic",
+     "delirium, hallucination",
+     "dilated",
+     "↑ / ↑",
+     "↑",
+     "dry, hot, red",
+     "↓ sounds, retention",
+     "atropine, antihistamine, TCA"
+    ],
+    [
+     "Cholinergic (OP)",
+     "confused → coma, fits",
+     "pinpoint*",
+     "↓ (↑ nicotinic) / ↓",
+     "–",
+     "sweaty",
+     "SLUDGE, bronchorrhoea",
+     "organophosphate, carbamate"
+    ],
+    [
+     "Sympathomimetic",
+     "agitated, psychosis",
+     "dilated",
+     "↑ / ↑",
+     "↑",
+     "sweaty",
+     "–",
+     "cocaine, amphetamine, tik"
+    ],
+    [
+     "Opioid",
+     "↓ LOC",
+     "pinpoint",
+     "↓ / ↓",
+     "↓",
+     "–",
+     "↓ sounds, retention",
+     "morphine, tramadol, codeine"
+    ],
+    [
+     "Sedative-hypnotic",
+     "↓ LOC",
+     "normal / small",
+     "– / ↓",
+     "↓",
+     "–",
+     "–",
+     "benzodiazepine, alcohol"
+    ],
+    [
+     "Serotonin †",
+     "agitated",
+     "dilated",
+     "↑ / ↑",
+     "↑",
+     "sweaty",
+     "diarrhoea",
+     "SSRI, tramadol, MDMA"
+    ]
+   ],
+   "s": "PAED:18.5",
+   "note": "* OP nicotinic effects can give tachycardia, hypertension and dilated pupils. Features: HOSP 19.20, 19.30, 19.37 · PAED 18.5, 18.15, 18.17, 18.22, 18.24. Serotonin: clonus, hyperreflexia (Hunter card) †."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "op_adult",
+   "name": "OP adult",
+   "expr": "atropine 2 mg IV, double every 3–5 min until atropinised; then 10–20 % of total bolus per h",
+   "vars": {},
+   "s": "HOSP:19.38"
+  },
+  {
+   "id": "op_child",
+   "name": "OP child",
+   "expr": "atropine 0.05 mg/kg IV over 1 min, double every 3–5 min; then infusion",
+   "vars": {},
+   "s": "PAED:18.15"
+  },
+  {
+   "id": "nal_adult",
+   "name": "Naloxone adult",
+   "expr": "0.4 mg IV, ↑ 0.8 → 2 → 4 mg every 2–3 min (max 10 mg); infusion 0.4 mg/h",
+   "vars": {},
+   "s": "HOSP:19.21"
+  },
+  {
+   "id": "nal_child",
+   "name": "Naloxone child",
+   "expr": "0.1 mg/kg IV; infusion 0.01 mg/kg/h; observe ≥ 12 h",
+   "vars": {},
+   "s": "PAED:18.17"
+  },
+  {
+   "id": "benzo",
+   "name": "Agitation / seizures (anticholinergic, sympathomimetic)",
+   "expr": "diazepam 0.1–0.2 mg/kg IV/PO (child); adult per status protocol",
+   "vars": {},
+   "s": "PAED:18.5"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Atropinised = dry chest, HR ↑, BP ↑, dry skin (pupils late) — chest, not pupils, is the target",
+   "level": "red",
+   "s": "HOSP:19.38"
+  },
+  {
+   "t": "Opioid: ventilate first (bag-mask); naloxone lasts shorter than most opioids",
+   "level": "red",
+   "s": "HOSP:19.21"
+  },
+  {
+   "t": "Cocaine: benzodiazepines; no phenytoin; no β-blockers (except labetalol)",
+   "level": "amber",
+   "s": "HOSP:19.30"
+  },
+  {
+   "t": "Benzodiazepine OD: supportive; flumazenil not recommended",
+   "level": "amber",
+   "s": "HOSP:19.26"
+  },
+  {
+   "t": "Hyperthermia → active cooling",
+   "level": "amber",
+   "s": "PAED:18.24"
+  },
+  {
+   "t": "Ventilation / ICU needed → REFER",
+   "level": "blue",
+   "s": "PAED:18.22"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Mixed ingestions blur patterns",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "OP: PPE, strip and wash; notifiable",
+   "s": "HOSP:19.37"
+  },
+  {
+   "t": "OP intermediate syndrome day 1–4: watch neck flexors",
+   "s": "HOSP:19.37"
+  },
+  {
+   "t": "Dry skin separates anticholinergic from sympathomimetic",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Charcoal adult 50 g · child < 6 y 1 g/kg",
+   "s": "HOSP:19.14"
+  },
+  {
+   "t": "Superwarfarin / amitraz with 'rat poison'",
+   "s": "HOSP:19.37"
+  }
+ ]
+}

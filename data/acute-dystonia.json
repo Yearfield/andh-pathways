@@ -1,0 +1,985 @@
+{
+ "id": "acute-dystonia",
+ "short": "Acute_Dystonia",
+ "title": "Drug-induced acute dystonia (metoclopramide, antipsychotics) — all ages",
+ "population": "Children and adults with acute dystonic reaction or other early extrapyramidal side effects after metoclopramide, antipsychotics or phenothiazines",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "phcstg2026",
+  "adultstg2026",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Fever + rigidity + altered mental state + autonomic instability → NMS: REFER",
+     "s": "paedstg2026:18.13",
+     "b": 1
+    },
+    {
+     "t": "Clonus, hyperreflexia after serotonergic drugs → Serotonin_Toxicity",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Tetanus (trismus, spasms, wound), seizures, hypocalcaemia → own pathways",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Sustained muscle contraction: torticollis, oculogyric crisis, trismus, tongue protrusion, opisthotonos, limb hyperextension / flexion",
+     "s": "phcstg2026:16.10",
+     "b": 1
+    },
+    {
+     "t": "Within minutes to days of metoclopramide / antipsychotic / phenothiazine",
+     "s": "phcstg2026:16.10",
+     "b": 1
+    },
+    {
+     "t": "Conscious, distressed; often intermittent",
+     "d": 1
+    },
+    {
+     "t": "Drug ____ · dose ____ · last dose ____ · weight ____ kg",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Laryngospasm / stridor / airway compromise",
+     "s": "phcstg2026:16.10",
+     "b": 1
+    },
+    {
+     "t": "Overdose (not therapeutic dose)",
+     "s": "paedstg2026:18.13",
+     "b": 1
+    },
+    {
+     "t": "Fever, rigidity, confusion (NMS)",
+     "s": "paedstg2026:18.13",
+     "b": 1
+    },
+    {
+     "t": "Arrhythmia / long QT",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Medicines / clinic card",
+   "items": [
+    {
+     "t": "Metoclopramide (dose / kg)",
+     "s": "adultstg2026:12.13"
+    },
+    {
+     "t": "Haloperidol, risperidone, depot injection",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Promethazine, prochlorperazine",
+     "s": "paedstg2026:18.13"
+    },
+    {
+     "t": "Previous dystonia",
+     "d": 1
+    },
+    {
+     "t": "Epilepsy, intellectual disability, dementia",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Bipolar disorder (higher risk)",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Other drugs at home (child access)",
+     "d": 1
+    },
+    {
+     "t": "Recent dose increase",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Event"
+    },
+    {
+     "t": "Onset after which dose",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Eyes rolling up, neck twisting, jaw locking",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "h": "Danger"
+    },
+    {
+     "t": "Difficulty breathing / swallowing",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Fever, sweating, confusion",
+     "s": "paedstg2026:18.13"
+    },
+    {
+     "h": "Child"
+    },
+    {
+     "t": "Accidental ingestion of anti-emetic / antipsychotic",
+     "s": "paedstg2026:18.13"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Temperature ____ °C",
+     "s": "paedstg2026:18.13",
+     "k": "sub"
+    },
+    {
+     "t": "HGT",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Dystonia"
+    },
+    {
+     "t": "Oculogyric crisis",
+     "d": 1
+    },
+    {
+     "t": "Torticollis / retrocollis",
+     "d": 1
+    },
+    {
+     "t": "Trismus, tongue",
+     "d": 1
+    },
+    {
+     "h": "Airway"
+    },
+    {
+     "t": "Stridor, voice",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "Swallowing secretions",
+     "d": 1
+    },
+    {
+     "h": "Exclude"
+    },
+    {
+     "t": "Lead-pipe rigidity + fever (NMS)",
+     "s": "paedstg2026:18.13"
+    },
+    {
+     "t": "Clonus (serotonin)",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Treat now (IM / slow IV)",
+   "items": [
+    {
+     "t": "ADULT: biperiden 2–2.5 mg IM / IV, repeat every 30 min if needed",
+     "s": "phcstg2026:16.11",
+     "b": 1
+    },
+    {
+     "t": "ADULT alt: promethazine 25–50 mg deep IM (elderly 25 mg) · diazepam 5–10 mg IV if neither",
+     "s": "adultstg2026:12.13",
+     "b": 1
+    },
+    {
+     "t": "CHILD: biperiden IV < 1 y 1 mg · 1–6 y 2 mg · 6–10 y 3 mg (PHC: 0.05–0.1 mg/kg)",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    },
+    {
+     "t": "CHILD alt (5–10 y): promethazine 0.125–0.5 mg/kg IM, max 12.5 mg",
+     "s": "phcstg2026:16.11"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Overdose / severe only",
+   "items": [
+    {
+     "t": "ECG (QTc) ____ ms · CK ____ · creatinine ____",
+     "k": "value"
+    },
+    {
+     "t": "Symptomatic overdose → continuous cardiac monitoring",
+     "s": "paedstg2026:18.13",
+     "b": 1
+    },
+    {
+     "t": "Rigid / hyperthermic → CK, creatinine, urine dipstick (myoglobin)",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    },
+    {
+     "t": "Activated charcoal per poisoning section (overdose)",
+     "s": "paedstg2026:18.14"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Laryngospasm",
+     "s": "phcstg2026:16.10"
+    },
+    {
+     "t": "NMS",
+     "s": "paedstg2026:18.13"
+    },
+    {
+     "t": "Prolonged QT / arrhythmia",
+     "s": "paedstg2026:18.14"
+    },
+    {
+     "t": "Rhabdomyolysis / AKI",
+     "s": "paedstg2026:18.14"
+    },
+    {
+     "t": "Seizures",
+     "s": "paedstg2026:18.13"
+    },
+    {
+     "t": "Tetanus",
+     "d": 1
+    },
+    {
+     "t": "Hypocalcaemia (tetany)",
+     "d": 1
+    },
+    {
+     "t": "Deliberate overdose",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = NMS, prolonged QT / arrhythmia, AKI, or airway not maintained → stabilise → REFER",
+   "s": "paedstg2026:18.14",
+   "b": 1
+  },
+  {
+   "t": "11. TREAT + OBSERVE (therapeutic-dose dystonia: 4–6 h then home; overdose: ≥ 6 h, admit if symptomatic) — continue on the observation chart",
+   "s": "paedstg2026:18.13",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Neuroleptic malignant syndrome",
+   "branch": "",
+   "features": [
+    {
+     "t": "Fever, lead-pipe rigidity, altered mental state, autonomic instability",
+     "s": "paedstg2026:18.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CK, creatinine, urine haem",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop drug; cool; fluids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Acute dystonic reaction (therapeutic dose)",
+   "branch": "If therapeutic dose",
+   "features": [
+    {
+     "t": "Torticollis, oculogyric crisis, trismus after metoclopramide / antipsychotic",
+     "s": "phcstg2026:16.10"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; response to biperiden",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Biperiden / promethazine (doses §7)",
+     "s": "phcstg2026:16.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Neuroleptic / phenothiazine overdose",
+   "branch": "If overdose",
+   "features": [
+    {
+     "t": "Reduced LOC, hypotension, tachycardia, dystonia",
+     "s": "paedstg2026:18.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, cardiac monitor",
+     "s": "paedstg2026:18.13",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Charcoal; biperiden; benzodiazepine if anticholinergic features",
+     "s": "paedstg2026:18.14"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If long QT / AKI",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Serotonin toxicity",
+   "branch": "",
+   "features": [
+    {
+     "t": "Clonus, hyperreflexia, tremor, diaphoresis",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hunter criteria",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Serotonin_Toxicity pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If severe",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Tetanus",
+   "branch": "",
+   "features": [
+    {
+     "t": "Trismus, risus, spasms to stimuli, wound, unvaccinated",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; no drug exposure",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Tetanus section (HOSP / PAED)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Seizure / hypocalcaemia / functional",
+   "branch": "",
+   "features": [
+    {
+     "t": "Impaired awareness, carpopedal spasm, inconsistent signs",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Ca²⁺, HGT, EEG at referral",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat cause (Seizures / Electrolytes)",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If unclear",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time from treatment",
+  "phase_note": "Anticholinergic dose → response by 30 min → observe for recurrence · stop the offending drug",
+  "columns": {
+   "feed": "Airway & obs",
+   "tests": "Monitoring",
+   "treatment": "Drugs & actions"
+  },
+  "standing": [
+   {
+    "t": "Airway: stridor, voice, swallowing",
+    "s": "phcstg2026:16.10",
+    "b": 1
+   },
+   {
+    "t": "HR, BP, T, RR, SpO₂",
+    "s": "paedstg2026:18.13",
+    "b": 1
+   },
+   {
+    "t": "Dystonia present / resolved",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Reassure; dim, quiet space",
+    "d": 1
+   },
+   {
+    "t": "Record on the 6-hour nursing observation record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 min",
+    "phase": "Treat",
+    "lead": "Stop the offending drug. Airway first if laryngospasm.",
+    "feed": [
+     {
+      "t": "O₂ if stridor / SpO₂ low",
+      "d": 1
+     },
+     {
+      "t": "IV access if severe / overdose",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Vitals, T",
+      "s": "paedstg2026:18.13",
+      "b": 1
+     },
+     {
+      "t": "ECG if overdose",
+      "s": "paedstg2026:18.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Adult: biperiden 2–2.5 mg IM / IV",
+      "s": "phcstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Child: biperiden IV < 1 y 1 mg · 1–6 y 2 mg · 6–10 y 3 mg",
+      "s": "paedstg2026:18.14",
+      "b": 1
+     },
+     {
+      "t": "No biperiden: promethazine (adult 25–50 mg IM; child 5–10 y 0.125–0.5 mg/kg, max 12.5 mg)",
+      "s": "adultstg2026:12.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "30 min",
+    "phase": "Response?",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Dystonia resolved?",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Not resolved → repeat biperiden (adult every 30 min)",
+      "s": "phcstg2026:16.11",
+      "b": 1
+     },
+     {
+      "t": "Still not resolved → diazepam 5–10 mg IV (adult); reconsider diagnosis",
+      "s": "adultstg2026:12.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Observe",
+    "feed": [
+     {
+      "t": "Oral fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Vitals",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Anticholinergic side effects: dry mouth, retention, confusion",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Recurrence?",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Dystonia recurred?",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Recurrence (long-acting drug / depot) → oral anticholinergic for 2–3 days",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Disposition",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Asymptomatic ≥ 6 h (overdose)",
+      "s": "paedstg2026:18.13",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge if well; admit symptomatic overdose",
+      "s": "paedstg2026:18.13",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If therapeutic dose",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop metoclopramide; use another anti-emetic",
+      "s": "adultstg2026:12.13",
+      "b": 1
+     },
+     {
+      "t": "Antipsychotic: review dose / switch (risperidone if poor EPSE response)",
+      "s": "phcstg2026:16.21"
+     },
+     {
+      "t": "Record as adverse drug reaction",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If overdose",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Cardiac monitor",
+      "s": "paedstg2026:18.13",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG QTc, CK, creatinine",
+      "s": "paedstg2026:18.14",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Charcoal per poisoning section",
+      "s": "paedstg2026:18.14",
+      "b": 1
+     },
+     {
+      "t": "Anticholinergic features → benzodiazepine instead of biperiden",
+      "s": "paedstg2026:18.14",
+      "b": 1
+     },
+     {
+      "t": "Long QT, AKI, NMS → REFER",
+      "s": "paedstg2026:18.14",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Biperiden adult 2–2.5 mg IM / IV, repeat every 30 min",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Biperiden child IV: < 1 y 1 mg · 1–6 y 2 mg · 6–10 y 3 mg",
+     "s": "paedstg2026:18.14"
+    },
+    {
+     "t": "Promethazine adult 25–50 mg IM (elderly 25 mg)",
+     "s": "adultstg2026:12.13"
+    },
+    {
+     "t": "Promethazine child 5–10 y 0.125–0.5 mg/kg (max 12.5 mg)",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Diazepam adult 5–10 mg IV (second line)",
+     "s": "adultstg2026:12.13"
+    }
+   ]
+  },
+  {
+   "title": "Discrepancies",
+   "items": [
+    {
+     "t": "Adult biperiden: PHC 2.5 mg vs HOSP 2 mg",
+     "s": "phcstg2026:16.11"
+    },
+    {
+     "t": "Child biperiden: PAED age bands vs PHC 0.05–0.1 mg/kg",
+     "s": "paedstg2026:18.14"
+    },
+    {
+     "t": "Adult promethazine: PHC 50 mg vs HOSP 25–50 mg",
+     "s": "adultstg2026:12.13"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Stridor / laryngospasm → airway, repeat dose IV",
+     "s": "phcstg2026:16.10",
+     "b": 1
+    },
+    {
+     "t": "Fever + rigidity → NMS, REFER",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    },
+    {
+     "t": "Long QT / arrhythmia",
+     "s": "paedstg2026:18.14"
+    },
+    {
+     "t": "No response to 2 doses → other diagnosis",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Dystonia resolved, no recurrence on observation",
+    "d": 1
+   },
+   {
+    "t": "Overdose: asymptomatic ≥ 6 h",
+    "s": "paedstg2026:18.13"
+   },
+   {
+    "t": "Offending drug stopped / changed",
+    "s": "adultstg2026:12.13"
+   },
+   {
+    "t": "ADR recorded and patient told the drug name",
+    "d": 1
+   },
+   {
+    "t": "Return if symptoms recur",
+    "d": 1
+   },
+   {
+    "t": "Medicines stored away from children",
+    "d": 1
+   },
+   {
+    "t": "Psychiatric follow-up if antipsychotic",
+    "s": "phcstg2026:16.21"
+   },
+   {
+    "t": "Deliberate overdose: risk assessment",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic review of antipsychotic / EPSE",
+    "s": "phcstg2026:16.11"
+   },
+   {
+    "t": "Avoid metoclopramide in future",
+    "d": 1
+   },
+   {
+    "t": "Return: stiffness, eye rolling, fever",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "6-hour nursing observation record — acute dystonia",
+  "period": "6 hours: 30-min × 2 h, then hourly",
+  "params": [
+   {
+    "h": "Airway",
+    "items": [
+     {
+      "t": "Stridor, voice, swallowing",
+      "s": "phcstg2026:16.10"
+     }
+    ]
+   },
+   {
+    "h": "Dystonia",
+    "items": [
+     {
+      "t": "Present / resolved / recurred",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, BP, T, RR, SpO₂",
+      "s": "paedstg2026:18.13"
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Biperiden / promethazine time",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Stridor / noisy breathing",
+    "s": "phcstg2026:16.10",
+    "b": 1
+   },
+   {
+    "t": "T ≥ 38 °C or rigidity",
+    "s": "paedstg2026:18.13",
+    "b": 1
+   },
+   {
+    "t": "Dystonia not resolved 30 min after dose",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Irregular pulse",
+    "s": "paedstg2026:18.14"
+   },
+   {
+    "t": "Confusion / urinary retention after anticholinergic",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Doses given",
+   "Time resolved",
+   "Recurrence Y/N"
+  ]
+ }
+}

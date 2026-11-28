@@ -1,0 +1,286 @@
+{
+ "id": "infusion-calculator",
+ "type": "calculator",
+ "short": "Infusion_Calculator",
+ "folder": "Infusion_Calculator",
+ "title": "Infusion calculator — dose ↔ mL/h ↔ drops/min",
+ "population": "All ages",
+ "age_range": "all",
+ "setting": "Casualty / ward",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "mL/h · drops/min",
+ "tags": [
+  "calculation",
+  "infusion",
+  "fluids",
+  "drug-dosing"
+ ],
+ "sources": [
+  {
+   "id": "ANDH",
+   "title": "ANDH clinician craft / local practice (not in STG)",
+   "type": "local",
+   "country": "ZA"
+  },
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [
+  {
+   "id": "wt",
+   "label": "Weight",
+   "unit": "kg"
+  },
+  {
+   "id": "dose",
+   "label": "Ordered dose",
+   "unit": "mcg/kg/min · mg/kg/h · mg/h"
+  },
+  {
+   "id": "drug_mg",
+   "label": "Drug in bag",
+   "unit": "mg"
+  },
+  {
+   "id": "vol",
+   "label": "Bag / syringe volume",
+   "unit": "mL"
+  },
+  {
+   "id": "df",
+   "label": "Drop factor",
+   "unit": "drops/mL"
+  }
+ ],
+ "top_question": {
+  "t": "Write the MIX on the bag/syringe: drug ____ mg in ____ mL = ____ mcg/mL · started ____ · by ____"
+ },
+ "components": [],
+ "tables": [
+  {
+   "title": "Drip rate quick table",
+   "head": [
+    "mL/h",
+    "drops/min (20 drop/mL set)",
+    "microdrops/min (60/mL burette)",
+    "h per 1 L"
+   ],
+   "rows": [
+    [
+     "20",
+     "6.7",
+     "20",
+     "50"
+    ],
+    [
+     "42",
+     "14",
+     "42",
+     "23.8"
+    ],
+    [
+     "50",
+     "16.7",
+     "50",
+     "20"
+    ],
+    [
+     "63",
+     "21",
+     "63",
+     "15.9"
+    ],
+    [
+     "83",
+     "27.7",
+     "83",
+     "12"
+    ],
+    [
+     "100",
+     "33.3",
+     "100",
+     "10"
+    ],
+    [
+     "125",
+     "41.7",
+     "125",
+     "8"
+    ],
+    [
+     "167",
+     "55.7",
+     "167",
+     "6"
+    ],
+    [
+     "200",
+     "66.7",
+     "200",
+     "5"
+    ],
+    [
+     "250",
+     "83.3",
+     "250",
+     "4"
+    ]
+   ],
+   "s": null,
+   "d": 1,
+   "note": "60-microdrop burette: drops/min = mL/h. 20-drop set: drops/min = mL/h ÷ 3. Common orders: 1 L 24-hourly ≈ 42 mL/h; 1 L 12-hourly ≈ 83 mL/h; 1 L 8-hourly = 125 mL/h; 1 L 6-hourly ≈ 167 mL/h."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "conc",
+   "name": "Concentration",
+   "expr": "conc (mcg/mL) = drug_mg × 1000 ÷ vol",
+   "vars": {
+    "drug_mg": "mg in bag",
+    "vol": "mL"
+   },
+   "units": "mcg/mL",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "id": "mlh_mcgkgmin",
+   "name": "mcg/kg/min → mL/h",
+   "expr": "mL/h = dose × wt × 60 ÷ conc",
+   "vars": {
+    "dose": "mcg/kg/min",
+    "wt": "kg",
+    "conc": "mcg/mL"
+   },
+   "units": "mL/h",
+   "s": "HOSP:20.7"
+  },
+  {
+   "id": "mlh_mgkgh",
+   "name": "mg/kg/h → mL/h",
+   "expr": "mL/h = dose × wt ÷ conc_mg",
+   "vars": {
+    "dose": "mg/kg/h",
+    "wt": "kg",
+    "conc_mg": "mg/mL"
+   },
+   "units": "mL/h",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "id": "mlh_mgh",
+   "name": "mg/h → mL/h",
+   "expr": "mL/h = dose ÷ conc_mg",
+   "vars": {
+    "dose": "mg/h",
+    "conc_mg": "mg/mL"
+   },
+   "units": "mL/h",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "id": "dose_back",
+   "name": "mL/h → dose (check)",
+   "expr": "mcg/kg/min = mL/h × conc ÷ (wt × 60)",
+   "vars": {
+    "mlh": "mL/h",
+    "conc": "mcg/mL",
+    "wt": "kg"
+   },
+   "units": "mcg/kg/min",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "id": "vol_time",
+   "name": "Volume over time",
+   "expr": "mL/h = volume ÷ hours",
+   "vars": {
+    "volume": "mL",
+    "hours": "h"
+   },
+   "units": "mL/h",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "id": "drops",
+   "name": "Drops/min",
+   "expr": "drops/min = mL/h × df ÷ 60",
+   "vars": {
+    "mlh": "mL/h",
+    "df": "drops/mL (20 adult set · 60 burette)"
+   },
+   "units": "drops/min",
+   "d": true,
+   "s": "ANDH"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "STG worked mix: adrenaline 10 mg in 1 L NaCl 0.9% = 10 mcg/mL → mL/h = 6 × kg × mcg/kg/min",
+   "level": "blue",
+   "s": "HOSP:20.7"
+  },
+  {
+   "t": "Use the dilution printed in the STG for each drug (adrenaline, phenytoin, MgSO₄, insulin, oxytocin cards)",
+   "level": "green",
+   "s": "HOSP:20.7"
+  },
+  {
+   "t": "Children: use a burette or syringe driver — never a free-running 1 L bag",
+   "level": "red",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Drops/min counted over a full minute and rechecked at every observation round",
+   "level": "amber",
+   "d": true,
+   "s": "ANDH"
+  }
+ ],
+ "notes": [
+  {
+   "t": "mcg ≠ mg: 1 mg = 1000 mcg; 1:1000 = 1 mg/mL; 1:10 000 = 0.1 mg/mL",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Second person checks drug, dose, mix and rate",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Drop factor is printed on the giving-set packet — check it",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Changing the mix changes the rate: rewrite the chart",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Gravity drips vary with height and position — pump if available",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Reverse-check every rate with the dose_back formula",
+   "d": true,
+   "s": "ANDH"
+  }
+ ]
+}

@@ -1,0 +1,848 @@
+{
+ "id": "neonatal-weight-loss-breastfeeding",
+ "short": "Neonatal_Weight_Loss_Breastfeeding",
+ "title": "Neonatal weight loss and breastfeeding problems (0–28 days)",
+ "population": "Term and preterm neonates with excessive weight loss, not regaining birth weight, or poor breastfeeding",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "imci2022",
+  "paedstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Weight loss > 10% of birth weight in the first week",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Weight below birth weight at / after 2 weeks (not regained by 10 days)",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Gain below 20 g/kg/day (term) or 10 g/kg/day (preterm)",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "BW ____ g · today ____ g · loss ____ % (= (BW − now) ÷ BW × 100) · 10% of BW = BW ÷ 10",
+     "s": "imci2022:8",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Not able to feed / no attachment / not suckling at all → treat as PSBI",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Lethargic, sunken fontanelle, dry mucosa, few wet nappies (dehydration)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Jaundice with poor feeding",
+     "s": "paedstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:19.53",
+     "b": 1
+    },
+    {
+     "t": "Danger signs of PSBI (fever, hypothermia, fast breathing, convulsions)",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Birth / RTHB record",
+   "items": [
+    {
+     "t": "Birth weight, GA",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Mode of birth, separation from mother",
+     "d": 1
+    },
+    {
+     "t": "Maternal HIV status / infant prophylaxis",
+     "s": "imci2022:7"
+    },
+    {
+     "t": "Previous weights (plot)",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Jaundice",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Formula / other fluids given",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Maternal illness, medicines",
+     "d": 1
+    },
+    {
+     "t": "Previous baby breastfed?",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History (mother)",
+   "items": [
+    {
+     "h": "Feeding"
+    },
+    {
+     "t": "Feeds per 24 h (< 8 = problem)",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Other foods / drinks / water",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Length of feeds; baby satisfied?",
+     "d": 1
+    },
+    {
+     "h": "Output"
+    },
+    {
+     "t": "Wet nappies / day, stool colour and frequency",
+     "d": 1
+    },
+    {
+     "h": "Mother"
+    },
+    {
+     "t": "Breasts: engorged, cracked nipples, mastitis, 'no milk'",
+     "s": "imci2022:17"
+    },
+    {
+     "t": "Pain, fatigue, mood, support",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside neonatal norms or the baby's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Weight ____ g (naked, same scale)",
+     "s": "imci2022:8",
+     "k": "sub"
+    },
+    {
+     "t": "HGT ____ mmol/L",
+     "s": "paedstg2026:19.53",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Hydration"
+    },
+    {
+     "t": "Fontanelle, mucosa, skin turgor",
+     "d": 1
+    },
+    {
+     "t": "Urine colour / urate crystals",
+     "d": 1
+    },
+    {
+     "h": "Mouth"
+    },
+    {
+     "t": "Thrush (white patches)",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Tongue-tie, cleft palate",
+     "d": 1
+    },
+    {
+     "h": "General"
+    },
+    {
+     "t": "Jaundice extent",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Infection signs (umbilicus, skin)",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Observe a breastfeed (4 minutes)",
+   "items": [
+    {
+     "t": "Attachment: ☐ good ☐ poor ☐ none · suckling: ☐ effective ☐ not effective ☐ none",
+     "s": "imci2022:8",
+     "k": "value"
+    },
+    {
+     "t": "Good attachment: chin touching breast, mouth wide, lower lip out, more areola above",
+     "s": "imci2022:17",
+     "b": 1
+    },
+    {
+     "t": "Effective suckling: slow deep sucks, pausing",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Clear a blocked nose if it interferes",
+     "s": "imci2022:8"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods if > 10% loss or dehydrated",
+   "items": [
+    {
+     "t": "Na⁺ ____ · urea ____ · creatinine ____ · TSB ____",
+     "k": "value"
+    },
+    {
+     "t": "Na⁺ raised → hypernatraemic dehydration: slow correction (Electrolytes P4 card)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "TSB → plot on the jaundice graph",
+     "s": "paedstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Blood culture if any PSBI sign",
+     "s": "imci2022:3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Hypernatraemic dehydration",
+     "d": 1
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:19.53"
+    },
+    {
+     "t": "Sepsis (PSBI)",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Severe jaundice",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Cardiac / metabolic cause (FTT, vomiting)",
+     "d": 1
+    },
+    {
+     "t": "Cleft palate",
+     "d": 1
+    },
+    {
+     "t": "Hypothermia",
+     "s": "imci2022:11"
+    },
+    {
+     "t": "Maternal mastitis / depression",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = NOT ABLE TO FEED / PSBI, dehydration with abnormal Na⁺ or renal function, or weight loss despite feeding → stabilise → REFER",
+   "s": "imci2022:8",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT mother + baby (> 10% loss, not regained) — fix attachment, ≥ 8 feeds, top-up with EBM; continue on the feeding chart",
+   "s": "imci2022:8",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Breastfeed ≥ 8 × / 24 h · fix attachment · EBM top-ups by cup · daily weight",
+  "columns": {
+   "feed": "Feeding plan",
+   "tests": "Weight & tests",
+   "treatment": "Actions"
+  },
+  "standing": [
+   {
+    "t": "Breastfeed on demand, at least 8 times in 24 h, day and night",
+    "s": "imci2022:8",
+    "b": 1
+   },
+   {
+    "t": "No water, other fluids or teats",
+    "s": "imci2022:8",
+    "b": 1
+   },
+   {
+    "t": "Count wet nappies and stools",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Skin-to-skin / KMC, keep warm",
+    "s": "imci2022:11",
+    "b": 1
+   },
+   {
+    "t": "Weigh daily: naked, same scale, same time",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing feeding record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Admission",
+    "lead": "Watch a full breastfeed before giving advice. Calculate % loss and plot on the RTHB.",
+    "feed": [
+     {
+      "t": "Teach positioning and attachment",
+      "s": "imci2022:8",
+      "b": 1
+     },
+     {
+      "t": "Express breast milk after feeds; give by cup",
+      "s": "imci2022:16",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight; HGT",
+      "s": "paedstg2026:19.53",
+      "b": 1
+     },
+     {
+      "t": "Na⁺, U&E, TSB if > 10% loss or dehydrated",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "HGT < 2.6 → feed / dextrose 10% 2 mL/kg IV",
+      "s": "imci2022:11",
+      "b": 1
+     },
+     {
+      "t": "Thrush → treat baby and mother",
+      "s": "imci2022:8"
+     },
+     {
+      "t": "Signs of PSBI → Neonatal_Sepsis pathway",
+      "s": "imci2022:3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Feeding",
+    "feed": [
+     {
+      "t": "Feeds ____ in 12 h",
+      "k": "value"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Wet nappies",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Still poor attachment → re-teach; consider tongue-tie / cleft",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Top-up EBM by cup if intake inadequate",
+      "s": "imci2022:16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight (same scale)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Further weight loss despite good feeds → reassess (sepsis, metabolic, cardiac)",
+      "s": "imci2022:15",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 2",
+    "phase": "Gain?",
+    "feed": [
+     {
+      "t": "Mother confident with attachment",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight; Na⁺ recheck if abnormal",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Aim for gain ≥ 20 g/kg/day (term) / 10 g/kg/day (preterm)",
+      "s": "imci2022:8",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 3",
+    "phase": "Discharge?",
+    "feed": [
+     {
+      "t": "Feeding well ≥ 8 / 24 h",
+      "s": "imci2022:8"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight gaining",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Follow-up in 2 days (< 2 wk) / 7 days (> 2 wk)",
+      "s": "imci2022:15",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If dehydrated / Na⁺ raised",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Continue breastfeeds + EBM; NGT if weak",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Na⁺ 6–12-hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "IV fluids and Na⁺ fall rate per Electrolytes P4 card",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Abnormal renal function / seizures → REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If jaundiced",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "More frequent breastfeeds",
+      "s": "paedstg2026:19.5",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSB on graph",
+      "s": "paedstg2026:19.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Neonatal_Jaundice pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If maternal breast problem",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Express to keep supply; feed EBM by cup",
+      "s": "imci2022:16"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Engorgement, cracked nipples, mastitis: treat (PHC 6.7)",
+      "s": "imci2022:17",
+      "b": 1
+     },
+     {
+      "t": "Maternal mood / support assessed",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If not growing",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, U&E, urine, TFT; cardiac exam",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Lost weight or feeding will not improve → REFER",
+      "s": "imci2022:15",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Numbers",
+   "items": [
+    {
+     "t": "Expected loss: up to 10% in the first days",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Regain birth weight by 10 days",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Minimum gain: term 20 g/kg/day · preterm 10 g/kg/day",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "10% of BW = BW ÷ 10",
+     "s": "imci2022:8"
+    },
+    {
+     "t": "Feeds ≥ 8 per 24 h",
+     "s": "imci2022:8"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Water, sugar water, teats",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Stopping breastfeeding for jaundice",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Rapid IV correction of high Na⁺",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Discharge without a weight-check date",
+     "s": "imci2022:15"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Not able to feed → PSBI, refer",
+     "s": "imci2022:8",
+     "b": 1
+    },
+    {
+     "t": "Lethargic / convulsions",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Still losing weight on day 2",
+     "s": "imci2022:15"
+    },
+    {
+     "t": "Yellow palms / soles",
+     "s": "imci2022:3"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Weight gaining on 2 weighings",
+    "d": 1
+   },
+   {
+    "t": "Good attachment and effective suckling observed",
+    "s": "imci2022:8"
+   },
+   {
+    "t": "≥ 8 feeds / 24 h, no other fluids",
+    "s": "imci2022:8"
+   },
+   {
+    "t": "Na⁺ normal (if checked)",
+    "d": 1
+   },
+   {
+    "t": "Mother can express and cup-feed",
+    "s": "imci2022:16"
+   },
+   {
+    "t": "Follow-up 2 days (< 2 wk) / 7 days",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "RTHB weight plotted",
+    "s": "imci2022:8"
+   },
+   {
+    "t": "Return: not feeding, fewer wet nappies, jaundice",
+    "s": "imci2022:14"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Weight in 2 days (< 2 wk) / 7 days (> 2 wk)",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "Continue until gain satisfactory",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "Refer if weight lost",
+    "s": "imci2022:15"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing breastfeeding record",
+  "period": "24 hours, 3-hourly rows",
+  "params": [
+   {
+    "h": "Feeds",
+    "items": [
+     {
+      "t": "Breastfeed duration, attachment",
+      "s": "imci2022:8"
+     },
+     {
+      "t": "EBM top-up mL",
+      "s": "imci2022:16"
+     }
+    ]
+   },
+   {
+    "h": "Output",
+    "items": [
+     {
+      "t": "Wet nappies, stools",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Baby",
+    "items": [
+     {
+      "t": "Alertness, temperature",
+      "s": "imci2022:3"
+     },
+     {
+      "t": "Jaundice",
+      "s": "imci2022:3"
+     }
+    ]
+   },
+   {
+    "h": "Mother",
+    "items": [
+     {
+      "t": "Breast pain / engorgement",
+      "s": "imci2022:17"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Baby will not feed / too sleepy",
+    "s": "imci2022:8",
+    "b": 1
+   },
+   {
+    "t": "No wet nappy for 6 h",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "T < 36.5 or ≥ 37.5 °C",
+    "s": "imci2022:3",
+    "b": 1
+   },
+   {
+    "t": "Yellow palms / soles",
+    "s": "imci2022:3"
+   },
+   {
+    "t": "Mother unwell / breast red and painful",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Breastfeeds (n)",
+   "EBM (mL)",
+   "Wet nappies",
+   "Stools"
+  ]
+ }
+}

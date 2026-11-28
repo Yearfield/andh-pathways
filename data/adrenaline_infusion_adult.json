@@ -1,0 +1,239 @@
+{
+ "id": "adrenaline-infusion-adult",
+ "type": "dose",
+ "short": "Adrenaline_Infusion_Adult",
+ "folder": "Adrenaline_Infusion",
+ "title": "Adrenaline infusion + push-dose — adult",
+ "population": "Adults (and children ≥ 50 kg)",
+ "age_range": "adult",
+ "setting": "Casualty / resus",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "10 mcg/mL · 6 × kg × dose",
+ "tags": [
+  "infusion",
+  "vasopressor",
+  "shock",
+  "anaphylaxis",
+  "resuscitation",
+  "adult"
+ ],
+ "sources": [
+  {
+   "id": "ANDH",
+   "title": "ANDH clinician craft / local practice (not in STG)",
+   "type": "local",
+   "country": "ZA"
+  },
+  {
+   "id": "HOLDEN",
+   "title": "Holden D et al. Safe use of bolus-dose (push-dose) vasopressors in the ED, Ann Emerg Med 2018;71:83–92",
+   "type": "paper",
+   "country": "US"
+  },
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [
+  {
+   "id": "wt",
+   "label": "Weight",
+   "unit": "kg"
+  },
+  {
+   "id": "dose",
+   "label": "Dose",
+   "unit": "mcg/kg/min"
+  }
+ ],
+ "top_question": {
+  "t": "MIX: adrenaline 10 mg (10 × 1 mg/mL ampoules) in 1 L sodium chloride 0.9% = 10 mcg/mL",
+  "s": "HOSP:20.7"
+ },
+ "components": [],
+ "tables": [
+  {
+   "title": "Infusion rate (mL/h) of 10 mcg/mL — computed",
+   "head": [
+    "mcg/kg/min",
+    "50 kg",
+    "60 kg",
+    "70 kg",
+    "80 kg",
+    "90 kg",
+    "100 kg",
+    "110 kg"
+   ],
+   "rows": [
+    [
+     "0.1",
+     "15",
+     "18",
+     "21",
+     "24",
+     "27",
+     "30",
+     "33"
+    ],
+    [
+     "0.1",
+     "30",
+     "36",
+     "42",
+     "48",
+     "54",
+     "60",
+     "66"
+    ],
+    [
+     "0.2",
+     "60",
+     "72",
+     "84",
+     "96",
+     "108",
+     "120",
+     "132"
+    ],
+    [
+     "0.3",
+     "90",
+     "108",
+     "126",
+     "144",
+     "162",
+     "180",
+     "198"
+    ],
+    [
+     "0.5",
+     "150",
+     "180",
+     "210",
+     "240",
+     "270",
+     "300",
+     "330"
+    ],
+    [
+     "0.8",
+     "225",
+     "270",
+     "315",
+     "360",
+     "405",
+     "450",
+     "495"
+    ],
+    [
+     "1",
+     "300",
+     "360",
+     "420",
+     "480",
+     "540",
+     "600",
+     "660"
+    ]
+   ],
+   "s": "HOSP:20.7",
+   "note": "Same as HOSP 20.7 / 20.12 tables (0.05–1 mcg/kg/min); 0.75 row computed. Above ~300 mL/h use a stronger mix (e.g. 20 mg/L halves the rate) †."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "mlh",
+   "name": "Rate",
+   "expr": "mL/h = 6 × wt × dose",
+   "vars": {
+    "wt": "kg",
+    "dose": "mcg/kg/min"
+   },
+   "units": "mL/h",
+   "s": "HOSP:20.7"
+  },
+  {
+   "id": "push_mix",
+   "name": "Push-dose mix",
+   "expr": "1 mL adrenaline 1:10 000 (100 mcg) + 9 mL NaCl 0.9% = 10 mcg/mL",
+   "vars": {},
+   "d": true,
+   "s": "HOLDEN"
+  },
+  {
+   "id": "push_dose",
+   "name": "Push-dose",
+   "expr": "0.5–2 mL (5–20 mcg) IV every 2–5 min",
+   "vars": {},
+   "units": "",
+   "d": true,
+   "s": "HOLDEN"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Anaphylaxis — persistent hypotension or repeated IM doses: start 0.05 mcg/kg/min, titrate",
+   "level": "red",
+   "s": "HOSP:20.12"
+  },
+  {
+   "t": "Shock — hypotension after volume correction: start 0.1 mcg/kg/min, titrate to response",
+   "level": "red",
+   "s": "HOSP:20.7"
+  },
+  {
+   "t": "Infuse according to weight and clinical response; table 0.1–1 mcg/kg/min",
+   "level": "amber",
+   "s": "HOSP:20.7"
+  },
+  {
+   "t": "Needs infusion → REFER (ICU / high care) once started",
+   "level": "blue",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Push-dose = bridge only while infusion is made up; label the syringe 10 mcg/mL",
+   "level": "amber",
+   "d": true,
+   "s": "HOLDEN"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Large, free-flowing cannula; watch the site (extravasation)",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Fill the tank first — volume before pressor (except anaphylaxis)",
+   "s": "HOSP:20.7"
+  },
+  {
+   "t": "Push-dose errors: 1 mg/mL drawn up by mistake = 100× dose",
+   "d": true,
+   "s": "HOLDEN"
+  },
+  {
+   "t": "BP + HR every 5 min while titrating",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Never bolus the infusion line",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Arrest dose is different: 1 mg IV every 3–5 min",
+   "d": true,
+   "s": "ANDH"
+  }
+ ]
+}

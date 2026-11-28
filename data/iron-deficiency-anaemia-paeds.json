@@ -1,0 +1,833 @@
+{
+ "id": "iron-deficiency-anaemia-paeds",
+ "short": "Iron_Deficiency_Anaemia_Paeds",
+ "title": "Iron deficiency anaemia (child 6 months – 12 years)",
+ "population": "Children with microcytic anaemia admitted for severe / symptomatic anaemia or work-up (iron overdose → iron poisoning section)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "paedstg2026",
+  "phcstg2026"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria",
+   "items": [
+    {
+     "t": "Hb below the age threshold (1–5 y < 10 · > 5 y < 11 g/dL)",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Hypochromic microcytic: low MCV / MCH, high RDW",
+     "s": "paedstg2026:3.10",
+     "b": 1
+    },
+    {
+     "t": "Low ferritin / iron / transferrin saturation (not needed if nutritional cause is clear)",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Hb ____ · MCV ____ · RDW ____ · ferritin ____ · weight ____ kg",
+     "k": "value"
+    },
+    {
+     "t": "Mentzer (MCV ÷ RBC) > 13 favours iron deficiency, < 13 thalassaemia trait (haematology card)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Admit / refer = any one of",
+   "items": [
+    {
+     "t": "Hb ≤ 7 g/dL (or severe palmar pallor)",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic: breathless, tachycardic, heart failure",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Liver, spleen or nodes enlarged; other FBC / smear abnormality",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Bleeding, blood in stool, melaena",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Child > 5 y (blood loss until proven otherwise)",
+     "s": "phcstg2026:3.3",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Road to Health booklet / records",
+   "items": [
+    {
+     "t": "Growth curve, SAM history",
+     "s": "paedstg2026:2.44"
+    },
+    {
+     "t": "Prematurity / LBW — iron prophylaxis given?",
+     "s": "paedstg2026:3.11"
+    },
+    {
+     "t": "Milk volume per day (cow's milk)",
+     "s": "paedstg2026:3.9"
+    },
+    {
+     "t": "Deworming dates",
+     "s": "paedstg2026:3.11"
+    },
+    {
+     "t": "HIV, TB",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "Previous Hb",
+     "d": 1
+    },
+    {
+     "t": "Iron at home (overdose risk)",
+     "s": "paedstg2026:3.11"
+    },
+    {
+     "t": "Family: thalassaemia, sickle",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Diet"
+    },
+    {
+     "t": "> 500 mL milk / day, low meat / greens",
+     "s": "paedstg2026:3.9"
+    },
+    {
+     "t": "Pica (soil, ice)",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "h": "Loss"
+    },
+    {
+     "t": "Blood in stool, worms seen, nose bleeds",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "Menorrhagia (adolescent girls)",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "h": "Effects"
+    },
+    {
+     "t": "Fatigue, irritability, poor school / development",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Breathless, feeding difficulty",
+     "s": "phcstg2026:3.2"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the child's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "Severe palmar pallor",
+     "s": "phcstg2026:3.2",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Hb (HemoCue) ____ g/dL",
+     "s": "phcstg2026:3.2",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Anaemia"
+    },
+    {
+     "t": "Pallor (palms, conjunctivae)",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Flow murmur",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Heart failure: gallop, liver, oedema",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "h": "Cause"
+    },
+    {
+     "t": "Hepatosplenomegaly, nodes",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "Bruising / petechiae",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "Jaundice (haemolysis)",
+     "d": 1
+    },
+    {
+     "h": "Growth"
+    },
+    {
+     "t": "Weight / height z (anthropometry card)",
+     "d": 1
+    },
+    {
+     "t": "Koilonychia, angular stomatitis",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Severity + transfusion decision",
+   "items": [
+    {
+     "t": "Hb ____ · heart failure ☐ Y ☐ N · respiratory distress ☐ Y ☐ N",
+     "k": "value"
+    },
+    {
+     "t": "Hb ≤ 7 g/dL → refer / admit",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Symptomatic or heart failure → packed cells 5 mL/kg over 3 h + furosemide 1 mg/kg (no blood bank: O-neg only if life-threatening, REFER)",
+     "s": "paedstg2026:2.44",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Do not transfuse a well, compensated child for a number alone",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Work-up",
+   "items": [
+    {
+     "t": "FBC + smear, reticulocytes",
+     "s": "paedstg2026:3.10",
+     "b": 1
+    },
+    {
+     "t": "Ferritin (± CRP: ferritin rises with infection)",
+     "s": "paedstg2026:3.10",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Stool: parasites, occult blood",
+     "s": "paedstg2026:3.10",
+     "b": 1
+    },
+    {
+     "t": "HIV, TB screen",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Heart failure",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "Active bleeding",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "Haemolysis / sickle crisis",
+     "d": 1
+    },
+    {
+     "t": "Leukaemia / aplasia (other cell lines low)",
+     "s": "phcstg2026:3.2"
+    },
+    {
+     "t": "SAM (iron delayed)",
+     "s": "paedstg2026:2.44"
+    },
+    {
+     "t": "Iron overdose (> 20 mg/kg)",
+     "s": "paedstg2026:18.11"
+    },
+    {
+     "t": "Severe infection (delay iron)",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Thalassaemia trait",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = HEART FAILURE / Hb ≤ 7 symptomatic, other cell lines abnormal, organomegaly, ongoing bleeding, or no response → stabilise → REFER",
+   "s": "phcstg2026:3.2",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (severe / symptomatic) or TREAT AS OUTPATIENT — oral iron, deworm, diet; continue on the inpatient chart",
+   "s": "paedstg2026:3.10",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Treat cause · elemental iron by weight · deworm · response at 2–3 weeks · continue 3 months after normal",
+  "columns": {
+   "feed": "Diet & fluids",
+   "tests": "Tests",
+   "treatment": "Treatment (per kg)"
+  },
+  "standing": [
+   {
+    "t": "HR, RR, signs of heart failure 4-hourly if Hb ≤ 7",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Iron with meals; not with tea / milk",
+    "s": "phcstg2026:3.3",
+    "b": 1
+   },
+   {
+    "t": "Iron stored out of reach (toxic in overdose)",
+    "s": "paedstg2026:3.11",
+    "b": 1
+   },
+   {
+    "t": "Milk ≤ 500 mL/day; iron-rich foods + vitamin C",
+    "s": "phcstg2026:3.3",
+    "b": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "Day 0",
+    "phase": "Start",
+    "lead": "Calculate elemental iron per kg, then convert to mL of the product on the ward.",
+    "feed": [
+     {
+      "t": "Diet: iron-rich foods, vitamin C; limit milk",
+      "s": "phcstg2026:3.3",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC + smear, retics, ferritin, stool",
+      "s": "paedstg2026:3.10",
+      "b": 1
+     },
+     {
+      "t": "HIV",
+      "s": "phcstg2026:3.2",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Elemental iron 3 mg/kg/dose 12-hourly with meals (PAED) — PHC < 5 y: 1–2 mg/kg 8-hourly",
+      "s": "paedstg2026:3.10",
+      "b": 1
+     },
+     {
+      "t": "Mebendazole: 1–2 y 100 mg 12-hourly × 3 d · > 2 y 500 mg once",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     },
+     {
+      "t": "Acute severe infection → delay iron until resolved",
+      "s": "paedstg2026:3.10",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 1–3",
+    "phase": "Ward",
+    "feed": [
+     {
+      "t": "Eating well?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb if transfused",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Discharge when stable, not in failure",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 1–2",
+    "phase": "Retics",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Reticulocytes (if diagnosis doubtful)",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     },
+     {
+      "t": "PHC: Hb at 14 days",
+      "s": "phcstg2026:3.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Hb lower than before → refer",
+      "s": "phcstg2026:3.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Week 3–4",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb: expect ↑ ≥ 2 g/dL in 3 weeks",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Responding → continue",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     },
+     {
+      "t": "Not responding → non-response branch",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Hb normal",
+    "phase": "Replete",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hb monthly",
+      "s": "paedstg2026:3.10",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue 3–4 weeks (PAED) / 3 months (PHC) after Hb normal",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If transfusion needed",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Restrict fluids if heart failure",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Group + crossmatch before",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Packed cells 5 mL/kg over 3 h + furosemide 1 mg/kg at start",
+      "s": "paedstg2026:2.44",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "No blood bank → REFER; O-neg only if life-threatening",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If not responding",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Adherence check, stool occult blood, smear, Hb electrophoresis",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Exclude non-adherence, ongoing GIT / other blood loss, infection",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     },
+     {
+      "t": "Then REFER (thalassaemia, malabsorption, ACD)",
+      "s": "paedstg2026:3.11",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If SAM / infection",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "SAM: F75 → F100 (SAM pathway)",
+      "s": "paedstg2026:2.44"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "SAM: no iron until appetite back and gaining weight, then 2 mg/kg 8-hourly",
+      "s": "paedstg2026:2.44",
+      "b": 1
+     },
+     {
+      "t": "Chronic infection → anaemia of chronic disorder: treat cause",
+      "s": "paedstg2026:3.11"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses / products",
+   "items": [
+    {
+     "t": "Elemental iron 3 mg/kg/dose 12-hourly (PAED) · 1–2 mg/kg 8-hourly (PHC < 5 y)",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Ferrous gluconate syrup 6 mg/mL · elixir 8 mg/mL elemental",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Ferrous lactate drops 25 mg/mL elemental",
+     "s": "paedstg2026:3.10"
+    },
+    {
+     "t": "Ferrous sulphate compound tablet ~55–65 mg elemental",
+     "s": "phcstg2026:3.4"
+    },
+    {
+     "t": "Mebendazole 100 mg 12-hourly × 3 d (1–2 y) / 500 mg once (> 2 y)",
+     "s": "paedstg2026:3.11"
+    }
+   ]
+  },
+  {
+   "title": "Discrepancies",
+   "items": [
+    {
+     "t": "Dose: PAED 6 mg/kg/day vs PHC 3–6 mg/kg/day",
+     "s": "phcstg2026:3.3"
+    },
+    {
+     "t": "Duration after normal Hb: 3–4 weeks (PAED) vs 3 months (PHC)",
+     "s": "paedstg2026:3.11"
+    },
+    {
+     "t": "FeSO₄ compound: 65 mg (PAED 3.10) vs 55 mg (PAED 18.11, PHC 3.4)",
+     "s": "paedstg2026:18.11"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Heart failure → transfuse / REFER",
+     "s": "phcstg2026:3.2",
+     "b": 1
+    },
+    {
+     "t": "Hb falling on treatment → refer",
+     "s": "phcstg2026:3.3",
+     "b": 1
+    },
+    {
+     "t": "Accidental ingestion > 20 mg/kg → iron poisoning",
+     "s": "paedstg2026:18.11",
+     "b": 1
+    },
+    {
+     "t": "Other cell lines low → refer",
+     "s": "phcstg2026:3.2"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No heart failure, feeding well",
+    "d": 1
+   },
+   {
+    "t": "Iron dose in mL written for caregiver",
+    "d": 1
+   },
+   {
+    "t": "Dewormed",
+    "s": "paedstg2026:3.11"
+   },
+   {
+    "t": "Diet counselling (milk, tea, vitamin C)",
+    "s": "phcstg2026:3.3"
+   },
+   {
+    "t": "Safe storage of iron",
+    "s": "paedstg2026:3.11"
+   },
+   {
+    "t": "Hb check at 2–3 weeks booked",
+    "s": "phcstg2026:3.3"
+   },
+   {
+    "t": "Cause addressed / referral made",
+    "s": "phcstg2026:3.3"
+   },
+   {
+    "t": "Return: breathless, black stools, not eating",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Hb at 14 days, then 4 weeks",
+    "s": "phcstg2026:3.3"
+   },
+   {
+    "t": "Continue until stores replete",
+    "s": "paedstg2026:3.11"
+   },
+   {
+    "t": "Refer non-responders",
+    "s": "paedstg2026:3.11"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing record — anaemia (child)",
+  "period": "24 hours, 4-hourly rows",
+  "params": [
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "HR, RR, T",
+      "d": 1
+     },
+     {
+      "t": "Breathless / feeding",
+      "s": "phcstg2026:3.2"
+     }
+    ]
+   },
+   {
+    "h": "Treatment",
+    "items": [
+     {
+      "t": "Iron given with meal",
+      "s": "phcstg2026:3.3"
+     },
+     {
+      "t": "Transfusion obs if given",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Diet",
+    "items": [
+     {
+      "t": "Meal intake, milk volume",
+      "s": "paedstg2026:3.9"
+     }
+    ]
+   },
+   {
+    "h": "Stool",
+    "items": [
+     {
+      "t": "Black / bloody / worms",
+      "s": "phcstg2026:3.2"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Fast breathing, sweating with feeds, liver enlarging",
+    "s": "phcstg2026:3.2",
+    "b": 1
+   },
+   {
+    "t": "Fever / rash during transfusion",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Blood in stool / melaena",
+    "s": "phcstg2026:3.2"
+   },
+   {
+    "t": "Vomiting after iron",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Iron doses",
+   "Milk (mL)",
+   "Stools",
+   "Transfusion (mL)"
+  ]
+ }
+}

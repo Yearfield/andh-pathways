@@ -1,0 +1,303 @@
+{
+ "id": "iron-anaemia-paeds",
+ "type": "dose",
+ "short": "Iron_Anaemia_Paeds",
+ "folder": "Iron_Anaemia_Paeds",
+ "title": "Anaemia & iron — child (Hb limits, iron dose, Mentzer, iron toxicity)",
+ "population": "Children",
+ "age_range": "birth – 12 years +",
+ "setting": "Ward / OPD",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "Fe 3 mg/kg 12-hourly",
+ "tags": [
+  "haematology",
+  "anaemia",
+  "iron",
+  "poisoning",
+  "paediatric",
+  "calculation"
+ ],
+ "sources": [
+  {
+   "id": "MENTZER",
+   "title": "Mentzer WC. Differentiation of iron deficiency from thalassaemia trait, Lancet 1973;1:882",
+   "type": "paper",
+   "country": "US"
+  },
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 2025–2029 cycle (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PHC",
+   "title": "STG & EML Primary Health Care, 2024 ed. (ch 3 updated 9 Jul 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "WHOFER",
+   "title": "WHO guideline on use of ferritin concentrations to assess iron status, 2020",
+   "type": "guideline",
+   "country": "intl",
+   "url": "https://www.who.int/publications/i/item/9789240000124"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [
+  {
+   "id": "wt",
+   "label": "Weight",
+   "unit": "kg"
+  },
+  {
+   "id": "mcv",
+   "label": "MCV",
+   "unit": "fL"
+  },
+  {
+   "id": "rbc",
+   "label": "RBC",
+   "unit": "× 10¹²/L"
+  },
+  {
+   "id": "tabs",
+   "label": "Tablets ingested",
+   "unit": "n"
+  },
+  {
+   "id": "syr_ml",
+   "label": "Syrup ingested",
+   "unit": "mL"
+  }
+ ],
+ "top_question": {
+  "t": "Iron dose is ELEMENTAL iron — convert to mL of the product on the ward",
+  "s": "PAED:3.10"
+ },
+ "components": [],
+ "tables": [
+  {
+   "title": "Lower limit of normal Hb (g/dL)",
+   "head": [
+    "Age",
+    "Birth",
+    "6 wk",
+    "3 mo",
+    "6–18 mo",
+    "18 mo–7 y",
+    "7–12 y",
+    "≥ 12 y"
+   ],
+   "rows": [
+    [
+     "Hb",
+     "13.5",
+     "9.5",
+     "10.0",
+     "10.5",
+     "11.0",
+     "11.5",
+     "F 12 · M 13"
+    ]
+   ],
+   "s": "PAED:3.9"
+  },
+  {
+   "title": "Elemental iron 3 mg/kg/dose 12-hourly → mL per dose (computed)",
+   "head": [
+    "kg",
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "15",
+    "20",
+    "25",
+    "30"
+   ],
+   "rows": [
+    [
+     "mg/dose",
+     "12",
+     "18",
+     "24",
+     "30",
+     "36",
+     "45",
+     "60",
+     "75",
+     "90"
+    ],
+    [
+     "gluconate 6 mg/mL",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7.5",
+     "10",
+     "12.5",
+     "15"
+    ],
+    [
+     "gluconate 8 mg/mL",
+     "1.5",
+     "2.2",
+     "3",
+     "3.8",
+     "4.5",
+     "5.6",
+     "7.5",
+     "9.4",
+     "11.2"
+    ],
+    [
+     "lactate drops 25 mg/mL",
+     "0.5",
+     "0.7",
+     "1",
+     "1.2",
+     "1.4",
+     "1.8",
+     "2.4",
+     "3",
+     "3.6"
+    ],
+    [
+     "PHC 2 mg/kg 8-hourly mg",
+     "8",
+     "12",
+     "16",
+     "20",
+     "24",
+     "30",
+     "40",
+     "50",
+     "60"
+    ]
+   ],
+   "s": "PAED:3.10",
+   "note": "Round to the syringe (0.5 mL; drops to 0.1 mL = 0.04 mL/mg). FeSO₄ compound tablet ≈ 55–65 mg elemental — older children."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "dose_ml",
+   "name": "Iron dose mL",
+   "expr": "mL = 3 × wt ÷ conc",
+   "vars": {
+    "wt": "kg",
+    "conc": "mg elemental/mL"
+   },
+   "units": "mL",
+   "s": "PAED:3.10"
+  },
+  {
+   "id": "mentzer",
+   "name": "Mentzer",
+   "expr": "MCV ÷ RBC",
+   "vars": {
+    "mcv": "fL",
+    "rbc": "10¹²/L"
+   },
+   "range": "> 13 iron deficiency · < 13 thalassaemia trait",
+   "d": true,
+   "s": "MENTZER"
+  },
+  {
+   "id": "ingested",
+   "name": "Iron ingested",
+   "expr": "mg/kg = (tabs × 55 + syr_ml × 8) ÷ wt",
+   "vars": {
+    "tabs": "FeSO₄ compound tablets",
+    "syr_ml": "gluconate 350 mg/5 mL",
+    "wt": "kg"
+   },
+   "units": "mg/kg elemental",
+   "s": "PAED:18.12"
+  },
+  {
+   "id": "dfo",
+   "name": "Desferrioxamine",
+   "expr": "15 mg/kg/h IV",
+   "vars": {
+    "wt": "kg"
+   },
+   "units": "mg/h = 15 × wt",
+   "s": "PAED:18.13"
+  },
+  {
+   "id": "response",
+   "name": "Response",
+   "expr": "Hb ↑ ≥ 2 g/dL in 3 weeks",
+   "vars": {},
+   "s": "PAED:3.11"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Iron ingested > 60 mg/kg → whole bowel irrigation + desferrioxamine 15 mg/kg/h; REFER high care",
+   "level": "red",
+   "s": "PAED:18.13"
+  },
+  {
+   "t": "High risk: drowsy, acidosis, shock, GI bleed, or serum Fe > 90 µmol/L",
+   "level": "red",
+   "s": "PAED:18.12"
+  },
+  {
+   "t": "Medium: symptoms + serum Fe > 60 µmol/L → admit, chelate, NaCl 20 mL/kg",
+   "level": "amber",
+   "s": "PAED:18.12"
+  },
+  {
+   "t": "Low: no GI symptoms, well 6 h, ≤ 20 mg/kg → discharge",
+   "level": "green",
+   "s": "PAED:18.12"
+  },
+  {
+   "t": "Anaemia: Hb ≤ 7, symptomatic, failure, organomegaly, bleeding, > 5 y → refer",
+   "level": "amber",
+   "s": "PHC:3.2"
+  },
+  {
+   "t": "Ferritin low: < 12 µg/L (< 5 y), < 15 (≥ 5 y); with infection < 30 / < 70",
+   "level": "blue",
+   "d": true,
+   "s": "WHOFER"
+  }
+ ],
+ "notes": [
+  {
+   "t": "PHC < 5 y: 1–2 mg/kg 8-hourly, Hb at 14 days",
+   "s": "PHC:3.3"
+  },
+  {
+   "t": "Continue 3–4 wk (PAED) / 3 mo (PHC) after Hb normal",
+   "s": "PAED:3.11"
+  },
+  {
+   "t": "Give with meals, not with milk or tea",
+   "s": "PHC:3.3"
+  },
+  {
+   "t": "Deworm: 1–2 y mebendazole 100 mg 12-hourly × 3 d; > 2 y 500 mg once",
+   "s": "PAED:3.11"
+  },
+  {
+   "t": "Ferritin rises in infection — check CRP",
+   "d": true,
+   "s": "WHOFER"
+  },
+  {
+   "t": "FeSO₄ compound: 65 mg (PAED 3.10) vs 55 mg (PAED 18.12)",
+   "s": "PAED:3.10"
+  }
+ ]
+}

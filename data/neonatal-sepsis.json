@@ -1,0 +1,876 @@
+{
+ "id": "neonatal-sepsis",
+ "short": "Neonatal_Sepsis",
+ "title": "Neonatal sepsis — early-onset (< 7 d) and late-onset (7–28 d)",
+ "population": "Neonates 0–28 days (and young infants < 2 months via IMCI) with suspected bacterial infection",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "paedstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — suspect sepsis if any",
+   "items": [
+    {
+     "t": "Feeding problems, lethargy / moves only when stimulated, apnoea",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Temperature ≥ 37.5 °C or < 35.5 °C",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "RR > 60, severe chest indrawing, grunting, cyanosis",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Convulsions, bulging fontanelle, glucose disturbance, jaundice, abdominal distension, petechiae, shock",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Onset: ☐ EARLY < 7 d (maternal) ☐ LATE 7–28 d (nosocomial / community)",
+     "s": "paedstg2026:19.38",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Complicated = any one of",
+   "items": [
+    {
+     "t": "Septic shock / poor perfusion",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Apnoea / respiratory failure",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Meningitis (convulsions, fontanelle)",
+     "s": "paedstg2026:19.33",
+     "b": 1
+    },
+    {
+     "t": "Bleeding / DIC, NEC (distension, bloody stools)",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Not responding at 72 h",
+     "s": "paedstg2026:19.37",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternal / birth record",
+   "items": [
+    {
+     "t": "Maternal fever / chorioamnionitis",
+     "s": "paedstg2026:19.38"
+    },
+    {
+     "t": "ROM > 18 h (prolonged)",
+     "s": "paedstg2026:19.38"
+    },
+    {
+     "t": "Unexplained preterm labour",
+     "s": "paedstg2026:19.38"
+    },
+    {
+     "t": "Maternal GBS / UTI",
+     "d": 1
+    },
+    {
+     "t": "Maternal HIV, RPR",
+     "d": 1
+    },
+    {
+     "t": "Intrapartum antibiotics",
+     "d": 1
+    },
+    {
+     "t": "GA ____ wk, BW ____ g",
+     "s": "paedstg2026:19.36"
+    },
+    {
+     "t": "Resuscitation at birth",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Baby"
+    },
+    {
+     "t": "Feeding: suck, volume, vomiting",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Activity, cry",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Apnoea / blue spells",
+     "s": "imci2022:3"
+    },
+    {
+     "h": "Focus"
+    },
+    {
+     "t": "Umbilicus, skin pustules, eyes",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Diarrhoea, distension",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Joint / limb swelling (osteomyelitis)",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "h": "Home"
+    },
+    {
+     "t": "Sick contacts, home birth",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside neonatal norms or the baby's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "t": "SpO₂ < 90%",
+     "s": "paedstg2026:19.36",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "HGT ____ mmol/L",
+     "s": "paedstg2026:19.36",
+     "k": "sub"
+    },
+    {
+     "t": "Weight ____ g",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Perfusion"
+    },
+    {
+     "t": "Cap refill, mottling, cold peripheries",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Pallor, petechiae",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Fontanelle",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Tone, irritability, convulsions",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "h": "Focus"
+    },
+    {
+     "t": "Umbilical redness to skin",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Abdomen distended / tender",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Hepatosplenomegaly (congenital infection)",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "HGT + temperature now",
+   "items": [
+    {
+     "t": "HGT ____ · T ____ °C",
+     "k": "value"
+    },
+    {
+     "t": "HGT < 2.6 mmol/L → dextrose 10% 2 mL/kg IV, then 3 mL/kg/h",
+     "s": "imci2022:11",
+     "b": 1
+    },
+    {
+     "t": "Keep warm: KMC / incubator, neutral thermal environment",
+     "s": "paedstg2026:19.36",
+     "b": 1
+    },
+    {
+     "t": "O₂ to SpO₂ 90–95%",
+     "s": "paedstg2026:19.36",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Cultures BEFORE antibiotics (do not delay > 1 h)",
+   "items": [
+    {
+     "t": "Blood culture ☐ · CSF (LP) ☐ · FBC ☐ · CRP / PCT ☐",
+     "s": "paedstg2026:19.35",
+     "k": "value"
+    },
+    {
+     "t": "LP: all LOS and EOS that are symptomatic / culture positive (unless unstable)",
+     "s": "paedstg2026:19.38",
+     "b": 1
+    },
+    {
+     "t": "Urine culture (LOS > 7 d)",
+     "d": 1
+    },
+    {
+     "t": "Blood gas, U&E if shocked",
+     "s": "paedstg2026:19.36"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Apnoea",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Septic shock",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Meningitis",
+     "s": "paedstg2026:19.33"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Hypothermia",
+     "s": "paedstg2026:19.36"
+    },
+    {
+     "t": "NEC",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "DIC / bleeding",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Congenital syphilis",
+     "s": "paedstg2026:19.39"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = COMPLICATED sepsis (shock, apnoea, ventilation, NEC, DIC) or not responding → first antibiotic dose → REFER",
+   "s": "paedstg2026:19.37",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT all suspected neonatal sepsis — cultures, ampicillin + gentamicin, thermal care; continue on the sepsis chart",
+   "s": "paedstg2026:19.36",
+   "b": 1
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Warm · glucose · cultures · ampicillin + gentamicin by gestation and postnatal age · review at 72 h",
+  "columns": {
+   "feed": "Fluids, feeds & thermal",
+   "tests": "Tests",
+   "treatment": "Antibiotics & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, HR, RR, SpO₂, apnoea, colour 3-hourly",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "HGT 3–6-hourly; keep 2.6–6.8 mmol/L",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "Neutral thermal environment / KMC",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "Feeds via NGT if tolerated; else IV neonatal maintenance",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "Gentamicin level per protocol",
+    "s": "paedstg2026:19.36"
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Within 1 hour",
+    "lead": "Warm, glucose, oxygen, then cultures and the first antibiotic dose — do not wait for results.",
+    "feed": [
+     {
+      "t": "IV access; neonatal maintenance solution",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     },
+     {
+      "t": "NGT; enteral feeds if no ileus / distension",
+      "s": "paedstg2026:19.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood culture, FBC, CRP before antibiotics",
+      "s": "paedstg2026:19.35",
+      "b": 1
+     },
+     {
+      "t": "LP if stable",
+      "s": "paedstg2026:19.38",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ampicillin IV 50 mg/kg: ≤ 34 wk ≤ 7 d 12-hourly · ≤ 34 wk 8–28 d 75 mg/kg 12-hourly · > 34 wk 8-hourly",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     },
+     {
+      "t": "+ Gentamicin IV 5 mg/kg: < 32 wk 36-hourly · ≥ 32 wk 24-hourly (first week)",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     },
+     {
+      "t": "No IV yet (IMCI): ceftriaxone IM first dose, refer",
+      "s": "imci2022:12"
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Stabilise",
+    "feed": [
+     {
+      "t": "Feeds tolerated? aspirates?",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "HGT, T",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Shock: BP < 60/40 term or < 50/35 preterm → dopamine 5–15 mcg/kg/min, REFER",
+      "s": "paedstg2026:19.37",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Advance enteral feeds",
+      "s": "paedstg2026:19.36"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Gentamicin level per protocol",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Continue ampicillin + gentamicin",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "72 h",
+    "phase": "Review",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Culture results; repeat CRP",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Culture negative + well → shorter course; stop",
+      "s": "paedstg2026:19.37",
+      "b": 1
+     },
+     {
+      "t": "Not improving → 2nd-line branch / REFER",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Day 5–7",
+    "phase": "Complete",
+    "feed": [
+     {
+      "t": "Full feeds",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop at 5–7 days if culture-negative sepsis responded",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Discharge",
+    "phase": "Home",
+    "feed": [
+     {
+      "t": "Breastfeeding established; weight gain",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Mother taught danger signs",
+      "s": "imci2022:14",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If meningitis / GBS",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Fluid balance",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "CSF results",
+      "s": "paedstg2026:19.38",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "GBS bacteraemia: ampicillin 10 days; meningitis 14 days + gentamicin 5 days",
+      "s": "paedstg2026:19.38",
+      "b": 1
+     },
+     {
+      "t": "Neonatal meningitis section (Meningitis_Neonate)",
+      "s": "paedstg2026:19.33"
+     }
+    ]
+   },
+   {
+    "label": "If not responding (2nd line)",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat cultures",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Piperacillin/tazobactam 50–100 mg/kg (12-hourly < 7 d; 6–8-hourly > 7 d) + amikacin 15 mg/kg daily × 7 d",
+      "s": "paedstg2026:19.37",
+      "b": 1
+     },
+     {
+      "t": "Fungal: amphotericin B 1–1.5 mg/kg/day × 14 d",
+      "s": "paedstg2026:19.37"
+     },
+     {
+      "t": "Abdominal source: + metronidazole (not with pip/taz)",
+      "s": "paedstg2026:19.37"
+     }
+    ]
+   },
+   {
+    "label": "If shock / complicated",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "NPO if distended (NEC)",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Gas, glucose, platelets",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Dopamine 5–15 mcg/kg/min; mean BP ≥ GA + 5–10 mmHg",
+      "s": "paedstg2026:19.37",
+      "b": 1
+     },
+     {
+      "t": "Ventilation needed (PaCO₂ > 55) → REFER",
+      "s": "paedstg2026:19.36",
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses (per kg)",
+   "items": [
+    {
+     "t": "Ampicillin 50 mg/kg 12-hourly (≤ 34 wk, ≤ 7 d) / 75 mg/kg 12-hourly (8–28 d) / 50 mg/kg 8-hourly (> 34 wk)",
+     "s": "paedstg2026:19.36"
+    },
+    {
+     "t": "Gentamicin 5 mg/kg 36-hourly (< 32 wk) / 24-hourly (≥ 32 wk)",
+     "s": "paedstg2026:19.36"
+    },
+    {
+     "t": "Pip/taz 50–100 mg/kg + amikacin 15 mg/kg daily",
+     "s": "paedstg2026:19.37"
+    },
+    {
+     "t": "Dextrose 10% 2 mL/kg bolus",
+     "s": "imci2022:11"
+    }
+   ]
+  },
+  {
+   "title": "Pitfalls",
+   "items": [
+    {
+     "t": "Waiting for CRP / FBC before antibiotics",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Skipping LP in LOS",
+     "s": "paedstg2026:19.38"
+    },
+    {
+     "t": "Forgetting glucose and temperature",
+     "s": "paedstg2026:19.36"
+    },
+    {
+     "t": "Continuing antibiotics when cultures negative and baby well",
+     "s": "paedstg2026:19.37"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Apnoea, shock, need for ventilation → REFER",
+     "s": "paedstg2026:19.36",
+     "b": 1
+    },
+    {
+     "t": "Distension + bloody stool → NEC",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Bleeding / petechiae → DIC",
+     "s": "paedstg2026:19.35"
+    },
+    {
+     "t": "Not improving at 72–96 h",
+     "s": "paedstg2026:19.36"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Course completed or stopped per cultures",
+    "s": "paedstg2026:19.37"
+   },
+   {
+    "t": "Feeding well, gaining weight",
+    "d": 1
+   },
+   {
+    "t": "Temperature stable off incubator",
+    "d": 1
+   },
+   {
+    "t": "Mother taught danger signs + return",
+    "s": "imci2022:14"
+   },
+   {
+    "t": "Follow-up (meningitis: hearing / development)",
+    "d": 1
+   },
+   {
+    "t": "Maternal RPR / HIV results acted on",
+    "d": 1
+   },
+   {
+    "t": "RTHB updated",
+    "d": 1
+   },
+   {
+    "t": "Immunisations up to date",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic 2–7 days: weight, feeding",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "Meningitis: hearing test, development",
+    "d": 1
+   },
+   {
+    "t": "Return: not feeding, fever, lethargy",
+    "s": "imci2022:14"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour neonatal sepsis nursing record",
+  "period": "24 hours, 3-hourly rows",
+  "params": [
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "T, HR, RR, SpO₂",
+      "s": "paedstg2026:19.36"
+     },
+     {
+      "t": "Apnoea / colour",
+      "s": "paedstg2026:19.35"
+     }
+    ]
+   },
+   {
+    "h": "Glucose",
+    "items": [
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.36"
+     }
+    ]
+   },
+   {
+    "h": "Feeds / fluids",
+    "items": [
+     {
+      "t": "NGT / IV volume",
+      "s": "paedstg2026:19.36"
+     },
+     {
+      "t": "Aspirates, abdomen",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Ampicillin / gentamicin times",
+      "s": "paedstg2026:19.36"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Apnoea or SpO₂ < 90%",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "T < 36.5 or ≥ 37.5 °C",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "HGT < 2.6 mmol/L",
+    "s": "paedstg2026:19.36",
+    "b": 1
+   },
+   {
+    "t": "Distended abdomen / bloody stool",
+    "s": "paedstg2026:19.35"
+   },
+   {
+    "t": "Convulsion, mottled, cold",
+    "s": "paedstg2026:19.35"
+   }
+  ],
+  "totals": [
+   "Feeds (mL)",
+   "IV (mL)",
+   "Apnoeas",
+   "Lowest HGT"
+  ]
+ }
+}

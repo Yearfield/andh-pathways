@@ -1,0 +1,1075 @@
+{
+ "id": "neonatal-jaundice",
+ "short": "Neonatal_Jaundice",
+ "title": "Neonatal jaundice (birth – 28 days, incl. prolonged)",
+ "population": "Neonates and young infants with jaundice: early (< 24 h), physiological vs pathological, conjugated, prolonged (> 14 d term / > 21 d preterm)",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "paedstg2026",
+  "imci2022"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Neonate septic / not feeding / lethargic → Neonatal_Sepsis first (jaundice may be a sign)",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    },
+    {
+     "t": "Older infant > 2 months with jaundice → hepatitis / liver work-up",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — pathological if ANY",
+   "items": [
+    {
+     "t": "Jaundice in the first 24 hours of life",
+     "s": "paedstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "TSB above the phototherapy line for hours of life and gestation / weight (graph)",
+     "s": "paedstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Rise > 85 µmol/L in 24 h (> 17 µmol/L/h)",
+     "s": "paedstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Conjugated > 20% of total or ≥ 30 µmol/L; pale stools, dark urine",
+     "s": "paedstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "> 14 days (term) or > 21 days (preterm); baby unwell",
+     "s": "paedstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Age ____ h / d · GA ____ wk · BW ____ g · TSB ____ µmol/L",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Yellow palms and soles",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "TSB at / near exchange line",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    },
+    {
+     "t": "Lethargy, poor suck, hypertonia, arching, high-pitched cry (encephalopathy)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Haemolysis: rapid rise despite phototherapy",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Maternal / birth record",
+   "items": [
+    {
+     "t": "Mother's blood group, Rh, antibodies",
+     "s": "paedstg2026:19.7"
+    },
+    {
+     "t": "Anti-D given?",
+     "s": "paedstg2026:19.7"
+    },
+    {
+     "t": "Maternal RPR / syphilis",
+     "s": "paedstg2026:19.12"
+    },
+    {
+     "t": "Previous sibling with jaundice / exchange",
+     "d": 1
+    },
+    {
+     "t": "GA, birth weight, birth trauma (cephalhaematoma)",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "t": "Prolonged ROM / maternal fever",
+     "d": 1
+    },
+    {
+     "t": "Feeding: breast / formula, frequency",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Maternal HIV / HBV",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Jaundice"
+    },
+    {
+     "t": "Onset age (hours)",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Progression to palms / soles",
+     "s": "imci2022:3"
+    },
+    {
+     "h": "Baby"
+    },
+    {
+     "t": "Feeding well? wet nappies? weight loss",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Stool colour (pale?), urine colour",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Lethargy, poor suck, fever",
+     "d": 1
+    },
+    {
+     "h": "Prolonged"
+    },
+    {
+     "t": "Constipation, hypotonia, umbilical hernia (hypothyroid)",
+     "s": "paedstg2026:19.12"
+    },
+    {
+     "t": "Vomiting, failure to thrive (galactosaemia)",
+     "s": "paedstg2026:19.12"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside neonatal norms or the baby's documented baseline",
+   "items": [
+    {
+     "t": "Abnormal HR for age",
+     "k": "yn"
+    },
+    {
+     "t": "Abnormal RR / respiratory distress for age",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Poor perfusion (cap refill, cold peripheries)",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Weight ____ g (% loss from birth ____)",
+     "s": "imci2022:8",
+     "k": "sub"
+    },
+    {
+     "t": "HGT ____",
+     "s": "paedstg2026:19.6",
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Jaundice"
+    },
+    {
+     "t": "Extent: face / trunk / palms + soles",
+     "s": "imci2022:3"
+    },
+    {
+     "t": "Pallor (haemolysis)",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "t": "Bruising, cephalhaematoma",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "h": "Abdomen"
+    },
+    {
+     "t": "Hepatosplenomegaly",
+     "s": "paedstg2026:19.12"
+    },
+    {
+     "t": "Stool colour (look at nappy)",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "Tone, suck, cry, arching",
+     "d": 1
+    },
+    {
+     "t": "Dehydration",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "TSB + phototherapy decision",
+   "items": [
+    {
+     "t": "TSB ____ µmol/L at ____ h · phototherapy line ____ · exchange line ____",
+     "k": "value"
+    },
+    {
+     "t": "Plot on the STG graph by hours of life + gestation / weight",
+     "s": "paedstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Above phototherapy line → phototherapy now",
+     "s": "paedstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "At / near exchange line → intensive phototherapy + REFER for exchange",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Cause work-up",
+   "items": [
+    {
+     "t": "Baby's blood group + direct Coombs; FBC, smear, retics",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    },
+    {
+     "t": "Conjugated (direct) bilirubin",
+     "s": "paedstg2026:19.5",
+     "b": 1
+    },
+    {
+     "t": "Sepsis screen if unwell; urine MCS (prolonged)",
+     "s": "paedstg2026:19.12",
+     "b": 1
+    },
+    {
+     "t": "Prolonged: TFT, RPR, urine reducing substances, LFT",
+     "s": "paedstg2026:19.12",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Bilirubin encephalopathy",
+     "s": "paedstg2026:19.7"
+    },
+    {
+     "t": "Haemolysis (Rh / ABO / G6PD)",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "t": "Sepsis",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "t": "Biliary atresia (pale stools)",
+     "s": "paedstg2026:19.11"
+    },
+    {
+     "t": "Hypothyroidism",
+     "s": "paedstg2026:19.12"
+    },
+    {
+     "t": "Galactosaemia",
+     "s": "paedstg2026:19.12"
+    },
+    {
+     "t": "Dehydration / poor feeding",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Hypoglycaemia",
+     "s": "paedstg2026:19.6"
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = TSB at EXCHANGE level, encephalopathy, conjugated jaundice > 2 weeks, or cause not found → phototherapy / stabilise → REFER",
+   "s": "paedstg2026:19.13",
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT (pathological, above phototherapy line) — phototherapy, feeding, cause; continue on the jaundice chart",
+   "s": "paedstg2026:19.6",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Haemolysis: Rh / ABO incompatibility",
+   "branch": "If haemolysis",
+   "features": [
+    {
+     "t": "Jaundice < 24 h, pallor, mother Rh− or group O",
+     "s": "paedstg2026:19.7"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood groups, Coombs, FBC, retics",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Intensive phototherapy; IVIG 500 mg/kg over 1 h (specialist)",
+     "s": "paedstg2026:19.7"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If approaching exchange",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sepsis",
+   "branch": "",
+   "features": [
+    {
+     "t": "Unwell, temperature instability, poor feeding",
+     "s": "paedstg2026:19.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Blood culture, FBC, CRP",
+     "s": "paedstg2026:19.35",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Neonatal_Sepsis pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If complicated",
+     "s": "paedstg2026:19.37"
+    }
+   ]
+  },
+  {
+   "dx": "G6PD deficiency / spherocytosis / enclosed haemorrhage",
+   "branch": "If haemolysis",
+   "features": [
+    {
+     "t": "Family history, cephalhaematoma, bruising",
+     "s": "paedstg2026:19.6"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Smear; G6PD assay (REFER lab)",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Phototherapy by graph",
+     "s": "paedstg2026:19.6"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If exchange level",
+     "s": "paedstg2026:19.13",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Breastfeeding-associated jaundice (week 1)",
+   "branch": "If physiological / breastfeeding",
+   "features": [
+    {
+     "t": "Poor intake, weight loss, delayed stools",
+     "s": "paedstg2026:19.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Weight loss %, feeding observation",
+     "s": "imci2022:8",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Increase breastfeeding frequency; phototherapy if above line",
+     "s": "paedstg2026:19.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Physiological jaundice",
+   "branch": "If physiological / breastfeeding",
+   "features": [
+    {
+     "t": "After 24–36 h, baby well, thriving, below line",
+     "s": "paedstg2026:19.5"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "TSB below phototherapy line",
+     "s": "paedstg2026:19.6",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "No treatment; feed well; return if palms / soles yellow",
+     "s": "imci2022:3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "s": "paedstg2026:19.5"
+    }
+   ]
+  },
+  {
+   "dx": "Conjugated: neonatal hepatitis / biliary atresia",
+   "branch": "If conjugated / prolonged",
+   "features": [
+    {
+     "t": "Green-yellow skin, dark urine, pale stools, hepatomegaly",
+     "s": "paedstg2026:19.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Conjugated > 20%; LFT; REFER for US / HIDA",
+     "s": "paedstg2026:19.11",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Fat-soluble vitamins; Kasai before 60 days",
+     "s": "paedstg2026:19.11"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — all",
+     "s": "paedstg2026:19.11",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Prolonged: breast milk jaundice / hypothyroidism / galactosaemia / UTI / syphilis",
+   "branch": "If conjugated / prolonged",
+   "features": [
+    {
+     "t": "> 14 d term / > 21 d preterm",
+     "s": "paedstg2026:19.11"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "TFT, urine MCS + reducing substances, RPR",
+     "s": "paedstg2026:19.12",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Treat cause; galactosaemia → stop lactose",
+     "s": "paedstg2026:19.12"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Unless breast milk jaundice",
+     "s": "paedstg2026:19.13",
+     "b": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Plot every TSB on the STG graph · phototherapy by line · stop when > 50 µmol/L below the start line",
+  "columns": {
+   "feed": "Feeds & phototherapy",
+   "tests": "TSB & tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Breastfeed at least 8 times / 24 h; do not stop breastfeeding",
+    "s": "imci2022:8",
+    "b": 1
+   },
+   {
+    "t": "Temperature 3-hourly; keep thermoneutral",
+    "s": "paedstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Eyes covered, baby undressed, lamp ≤ 45 cm",
+    "s": "paedstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Skin colour does NOT reflect TSB on phototherapy",
+    "s": "paedstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Wet nappies, stools, weight daily",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Admission",
+    "lead": "Plot TSB against hours of life on the correct gestation/weight graph (PAED 19.8–19.10).",
+    "feed": [
+     {
+      "t": "Breastfeed / EBM; cup or NGT if poor suck",
+      "d": 1
+     },
+     {
+      "t": "Phototherapy if above line",
+      "s": "paedstg2026:19.6",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSB + conjugated",
+      "s": "paedstg2026:19.5",
+      "b": 1
+     },
+     {
+      "t": "Blood group, Coombs, FBC, retics",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     },
+     {
+      "t": "HGT",
+      "s": "paedstg2026:19.6",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Correct hypoxia, hypoglycaemia, hypothermia, acidosis",
+      "s": "paedstg2026:19.6",
+      "b": 1
+     },
+     {
+      "t": "Approaching exchange line → phone referral now",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4–6 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "Feeds tolerated",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat TSB (haemolysis / near exchange)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rise > 17 µmol/L/h on phototherapy + Coombs + → IVIG (specialist)",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Weight, nappies",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSB",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Rising towards exchange → REFER",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Day 1",
+    "feed": [
+     {
+      "t": "Continue phototherapy",
+      "s": "paedstg2026:19.6"
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSB daily (or more often)",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "TSB > 50 µmol/L below start line + cause addressed → stop phototherapy",
+      "s": "paedstg2026:19.6",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "Off + 6 h",
+    "phase": "Rebound",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSB ~6 h after stopping (rebound)",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Below line and feeding well → discharge plan",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If haemolysis",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Intensive phototherapy",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "TSB 4–6-hourly; Hb",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "IVIG 500 mg/kg IV over 1 h; repeat once after 6–8 h (specialist)",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     },
+     {
+      "t": "Mother Rh− : anti-D 100 mcg IM within 72 h of birth",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     },
+     {
+      "t": "Exchange level → REFER",
+      "s": "paedstg2026:19.7",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If physiological / breastfeeding",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "More frequent breastfeeds; positioning and attachment",
+      "s": "paedstg2026:19.5",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Weight loss %",
+      "s": "imci2022:8",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "No phototherapy if below line",
+      "s": "paedstg2026:19.5"
+     },
+     {
+      "t": "Return if palms / soles yellow; follow-up 1 day",
+      "s": "imci2022:15",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If conjugated / prolonged",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Galactosaemia suspected → lactose-free feeds",
+      "s": "paedstg2026:19.12",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "LFT, TFT, RPR, urine MCS + reducing substances",
+      "s": "paedstg2026:19.12",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Conjugated > 20% beyond 2 weeks → REFER (biliary atresia: surgery < 60 days)",
+      "s": "paedstg2026:19.11",
+      "b": 1
+     },
+     {
+      "t": "Preterm: multivitamin drops 0.6 mL daily from day 15",
+      "s": "paedstg2026:19.12"
+     },
+     {
+      "t": "Breast milk jaundice: well, thriving → continue breastfeeding",
+      "s": "paedstg2026:19.12"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses / settings",
+   "items": [
+    {
+     "t": "Phototherapy 400–500 nm, ≤ 45 cm, eyes covered",
+     "s": "paedstg2026:19.6"
+    },
+    {
+     "t": "IVIG 500 mg/kg IV over 1 h (repeat once at 6–8 h)",
+     "s": "paedstg2026:19.7"
+    },
+    {
+     "t": "Anti-D 100 mcg IM to Rh− mother within 72 h",
+     "s": "paedstg2026:19.7"
+    },
+    {
+     "t": "Multivitamin drops 0.6 mL daily (preterm, day 15 – 1 y)",
+     "s": "paedstg2026:19.12"
+    }
+   ]
+  },
+  {
+   "title": "Pitfalls",
+   "items": [
+    {
+     "t": "Judging TSB by skin colour on phototherapy",
+     "s": "paedstg2026:19.6",
+     "b": 1
+    },
+    {
+     "t": "Stopping breastfeeding",
+     "s": "paedstg2026:19.5"
+    },
+    {
+     "t": "Missing pale stools (biliary atresia)",
+     "s": "paedstg2026:19.11",
+     "b": 1
+    },
+    {
+     "t": "Plotting on the wrong gestation graph",
+     "s": "paedstg2026:19.6"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "Jaundice < 24 h → urgent",
+     "s": "imci2022:3",
+     "b": 1
+    },
+    {
+     "t": "Lethargy, arching, high-pitched cry → encephalopathy, REFER",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "TSB at exchange line → REFER",
+     "s": "paedstg2026:19.7",
+     "b": 1
+    },
+    {
+     "t": "Not improving on adequate treatment",
+     "s": "paedstg2026:19.13"
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "TSB below line, rebound checked",
+    "s": "paedstg2026:19.7"
+   },
+   {
+    "t": "Feeding well, weight gaining",
+    "d": 1
+   },
+   {
+    "t": "Cause identified / addressed",
+    "s": "paedstg2026:19.6"
+   },
+   {
+    "t": "Mother taught to check palms / soles",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "Follow-up date (1–2 days)",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "Prolonged work-up arranged if > 14 d",
+    "s": "paedstg2026:19.12"
+   },
+   {
+    "t": "Haemolysis: Hb check plan",
+    "d": 1
+   },
+   {
+    "t": "RTHB updated",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "1 day after discharge: jaundice, feeding",
+    "s": "imci2022:15"
+   },
+   {
+    "t": "Haemolysis: Hb at 2–4 weeks (late anaemia)",
+    "d": 1
+   },
+   {
+    "t": "Prolonged jaundice > 14 d → refer for assessment",
+    "s": "imci2022:3"
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing jaundice / phototherapy record",
+  "period": "24 hours, 3-hourly rows (with feeds)",
+  "params": [
+   {
+    "h": "Phototherapy",
+    "items": [
+     {
+      "t": "On / off, eye cover, distance",
+      "s": "paedstg2026:19.6"
+     }
+    ]
+   },
+   {
+    "h": "Feeds",
+    "items": [
+     {
+      "t": "Breastfeed / EBM volume",
+      "d": 1
+     },
+     {
+      "t": "Suck quality",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Output",
+    "items": [
+     {
+      "t": "Wet nappy, stool colour",
+      "s": "paedstg2026:19.5"
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "Temperature",
+      "s": "paedstg2026:19.6"
+     },
+     {
+      "t": "Tone / alertness",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "Poor suck, lethargy, arching, high-pitched cry",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Temperature unstable",
+    "s": "paedstg2026:19.6",
+    "b": 1
+   },
+   {
+    "t": "Pale stools / dark urine",
+    "s": "paedstg2026:19.5",
+    "b": 1
+   },
+   {
+    "t": "Fewer wet nappies",
+    "d": 1
+   },
+   {
+    "t": "Yellow palms / soles",
+    "s": "imci2022:3"
+   }
+  ],
+  "totals": [
+   "Feeds (n)",
+   "Wet nappies",
+   "Stools",
+   "Hours on phototherapy"
+  ]
+ }
+}

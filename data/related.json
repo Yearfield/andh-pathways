@@ -50,6 +50,14 @@
     {"name": "Anorectal conditions", "ids": ["haemorrhoids-adult", "prb-adult"]},
     {"name": "Seizures and epilepsy (adult)", "ids": ["seizures-adult", "epilepsy-adult", "meningitis-adult", "hypo-adult", "alcohol-withdrawal-adult", "tbi-adult", "stroke", "gcs-adult"]},
     {"name": "Seizures and epilepsy (child)", "ids": ["seizures-paeds", "epilepsy-paeds", "meningitis-paeds", "hypo-paeds", "tbi-paeds", "gcs-paeds"]},
-    {"name": "Constipation", "ids": ["constipation-adult", "constipation-paeds", "bo-adult", "bo-paeds", "haemorrhoids-adult", "prb-adult", "prb-paeds"]}
+    {"name": "Constipation", "ids": ["constipation-adult", "constipation-paeds", "bo-adult", "bo-paeds", "haemorrhoids-adult", "prb-adult", "prb-paeds"]},
+    {"name": "Acute asthma (child)", "ids": ["asthma-acute-paeds", "bronchiolitis-paeds", "croup-paeds", "lrti-paeds", "rf-paeds", "asthma-severe-adult"]},
+    {"name": "Newborn care", "ids": ["neonatal-jaundice", "neonatal-sepsis", "neonatal-weight-loss-breastfeeding", "hypo-neonate", "fluids-neonate", "meningitis-neonate", "hie-neonate", "hiv-new-neonate"]},
+    {"name": "Serotonin toxicity and drug reactions", "ids": ["serotonin-toxicity", "hunter-serotonin-toxicity", "acute-dystonia", "toxidromes", "tca", "amphetamines", "cocaine", "psychosis-adult"]},
+    {"name": "Poisoning patterns", "ids": ["toxidromes", "op", "opioids", "tca", "paracetamol", "cocaine", "amphetamines", "toxic-alcohols", "superwarfarin"]},
+    {"name": "Headache and back pain", "ids": ["headache-adult", "back-pain-adult", "meningitis-adult", "stroke", "tia", "tb-adult"]},
+    {"name": "Infusions and vasopressors", "ids": ["infusion-calculator", "adrenaline-infusion-adult", "adrenaline-infusion-paeds", "anaphylaxis-angioedema-adult", "fluids-adult-shock", "fluids-paeds-shock"]},
+    {"name": "Phenytoin and status epilepticus", "ids": ["phenytoin-loading", "seizures-adult", "seizures-paeds", "epilepsy-adult", "epilepsy-paeds"]},
+    {"name": "Anaemia and iron (child)", "ids": ["iron-deficiency-anaemia-paeds", "iron-anaemia-paeds", "sam", "ganzoni", "anthropometry-paeds-0-5"]}
   ]
 }

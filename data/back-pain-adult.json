@@ -1,0 +1,1095 @@
+{
+ "id": "back-pain-adult",
+ "short": "Back_Pain_Adult",
+ "title": "Acute back pain — cauda equina, cord compression and red flags (adult)",
+ "population": "Adults (≥ 13 y) with acute or worsening low back pain ± sciatica",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "girft2023",
+  "nhsscot"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Major trauma / fracture → Fracture_Adult (spinal precautions)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Known myeloma / prostate cancer → Multiple_Myeloma_Adult / Prostate_Cancer_Adult",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Back pain + hypotension / pulsatile mass → ruptured AAA: resuscitate, REFER now",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "CAUDA EQUINA red flags (< 2 weeks) — any = emergency MRI",
+   "items": [
+    {
+     "t": "Bilateral sciatica (or unilateral becoming bilateral)",
+     "s": "nhsscot:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Saddle / perianal / genital numbness or tingling",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "New bladder symptom: hesitancy, poor stream, altered sensation, retention, incontinence",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Loss of rectal sensation / bowel incontinence; reduced anal tone",
+     "s": "nhsscot:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "New sexual dysfunction; severe / progressive leg weakness",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Other red flags — any one",
+   "items": [
+    {
+     "t": "Cancer history, weight loss, pain worse lying / at night → cord compression",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Fever, TB, HIV, diabetes, IV drug use, recent UTI → infection / spinal TB",
+     "s": "nhsscot:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Sudden severe central pain relieved by lying, osteoporosis / steroids → fragility fracture",
+     "s": "nhsscot:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Thoracic pain, sensory level, upper motor neuron signs",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Cancer (breast, prostate, lung, myeloma)",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "HIV / TB treatment",
+     "d": 1
+    },
+    {
+     "t": "Steroids / osteoporosis",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "t": "Anticoagulants (epidural haematoma)",
+     "d": 1
+    },
+    {
+     "t": "Previous spine surgery",
+     "d": 1
+    },
+    {
+     "t": "Diabetes",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "t": "Recent spinal procedure / injection",
+     "d": 1
+    },
+    {
+     "t": "Analgesic use",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Pain"
+    },
+    {
+     "t": "Onset, mechanism, night / rest pain",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Leg pain below knee (sciatica), one or both legs",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "h": "CES screen — ASK EVERY PATIENT"
+    },
+    {
+     "t": "Passing urine normally? feel it?",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Numb between legs / when wiping?",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Bowel control",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "h": "Systemic"
+    },
+    {
+     "t": "Fever, sweats, weight loss, cough",
+     "s": "nhsscot:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Post-void residual (bladder US / catheter) ____ mL",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "Urine dipstick",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro (both legs)"
+    },
+    {
+     "t": "Power: hip flexion, knee, ankle / toe",
+     "d": 1
+    },
+    {
+     "t": "Reflexes knee / ankle; plantars",
+     "d": 1
+    },
+    {
+     "t": "Sensory level / dermatomes",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "h": "Saddle + PR"
+    },
+    {
+     "t": "Perianal pin-prick",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "t": "Anal tone, squeeze",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "h": "Spine / other"
+    },
+    {
+     "t": "Midline tenderness, gibbus (TB)",
+     "d": 1
+    },
+    {
+     "t": "Abdomen: pulsatile mass, bladder",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "CES / MSCC decision",
+   "items": [
+    {
+     "t": "CES red flag ☐ Y ☐ N · MSCC features ☐ Y ☐ N · phoned ____ at ____",
+     "k": "value"
+    },
+    {
+     "t": "CES suspected → emergency MRI (REFER same day); do not wait for retention",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "MSCC suspected → dexamethasone 16 mg IV now, then 4 mg 6-hourly; urgent REFER",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Residual > 200 mL or retention → catheter, document volume",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods + X-ray (do not delay transfer)",
+   "items": [
+    {
+     "t": "FBC ____ · ESR / CRP ____ · Ca²⁺ ____ · HIV ____",
+     "k": "value"
+    },
+    {
+     "t": "FBC, ESR / CRP, Ca²⁺, ALP, U&E",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "HIV; PSA (men > 50); SPEP if myeloma suspected",
+     "d": 1
+    },
+    {
+     "t": "Spine X-ray (collapse, destruction, TB)",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Blood culture if febrile",
+     "s": "nhsscot:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Cauda equina syndrome",
+     "s": "girft2023:pathway",
+     "d": 1
+    },
+    {
+     "t": "Metastatic cord compression",
+     "s": "adultstg2026:21.3"
+    },
+    {
+     "t": "Spinal TB / epidural abscess",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "t": "Vertebral fracture",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "t": "Ruptured / leaking AAA",
+     "d": 1
+    },
+    {
+     "t": "Pyelonephritis / renal colic",
+     "d": 1
+    },
+    {
+     "t": "Epidural haematoma (anticoagulant)",
+     "d": 1
+    },
+    {
+     "t": "Retroperitoneal / pancreatic pain",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SUSPECTED CES, CORD COMPRESSION, spinal infection / TB with neuro signs, or unstable fracture → (dexamethasone if MSCC) → REFER emergency MRI / surgery",
+   "s": "girft2023:pathway",
+   "d": 1,
+   "b": 1
+  },
+  {
+   "t": "11. No red flags = non-specific back pain / sciatica → analgesia, keep active, safety-net; ADMIT only for pain control or work-up",
+   "s": "phcstg2026:20.5",
+   "d": 1,
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Cauda equina syndrome",
+   "branch": "If CES / MSCC",
+   "features": [
+    {
+     "t": "Bilateral sciatica, saddle change, new bladder / bowel symptoms",
+     "s": "girft2023:pathway",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "PR, saddle sensation, PVR; REFER emergency MRI",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; catheter if retention; transfer same day",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — emergency",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Metastatic spinal cord compression",
+   "branch": "If CES / MSCC",
+   "features": [
+    {
+     "t": "Cancer, pain worse lying / night, weakness, sensory level",
+     "s": "adultstg2026:21.3"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Spine X-ray; MRI at referral",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Dexamethasone 16 mg IV then 4 mg 6-hourly",
+     "s": "adultstg2026:21.3"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — urgent (radiotherapy / surgery)",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Spinal TB / epidural abscess / discitis",
+   "branch": "If infection",
+   "features": [
+    {
+     "t": "Fever, night sweats, HIV, gibbus, IVDU, diabetes",
+     "s": "nhsscot:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ESR / CRP, X-ray, HIV, blood culture",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "TB: TB_Adult pathway; abscess: antibiotics after cultures",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y if neuro deficit / abscess",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Vertebral fragility / traumatic fracture",
+   "branch": "",
+   "features": [
+    {
+     "t": "Sudden severe central pain eased lying; elderly, steroids",
+     "s": "nhsscot:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Spine X-ray",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; Fracture_Adult if trauma",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If unstable / neuro signs",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Ruptured / leaking AAA",
+   "branch": "",
+   "features": [
+    {
+     "t": "> 50 y, sudden back / flank pain, hypotension, pulsatile mass",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Bedside US aorta",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Permissive hypotension, O-neg, REFER",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — vascular now",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sciatica (disc prolapse, no CES)",
+   "branch": "If non-specific / sciatica",
+   "features": [
+    {
+     "t": "Unilateral leg pain > back pain, dermatomal",
+     "s": "nhsscot:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; normal bladder / saddle",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "NSAID + paracetamol; keep active; safety-net for CES",
+     "s": "phcstg2026:20.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Progressive weakness / no improvement 6 wk",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Non-specific mechanical back pain",
+   "branch": "If non-specific / sciatica",
+   "features": [
+    {
+     "t": "No red flags; pain with movement",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "No imaging needed",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ibuprofen 400 mg 8-hourly + paracetamol; activity",
+     "s": "phcstg2026:20.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "CES and MSCC screen first · transfer is not delayed by bloods · analgesia for all",
+  "columns": {
+   "feed": "Obs & bladder",
+   "tests": "Tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "Leg power, saddle sensation, bladder (voided? residual?) 4-hourly",
+    "s": "girft2023:pathway",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Any new bladder / saddle symptom → doctor now",
+    "s": "girft2023:pathway",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Pain score; analgesia regular",
+    "s": "phcstg2026:20.5",
+    "b": 1
+   },
+   {
+    "t": "Log-roll if MSCC / fracture suspected",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Screen",
+    "lead": "Document: bladder, saddle sensation, bowels, both-leg neurology, PR when CES suspected.",
+    "feed": [
+     {
+      "t": "Bladder scan / PVR",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "FBC, ESR / CRP, Ca²⁺, ALP, HIV",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Spine X-ray if red flags",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol 1 g + ibuprofen 400 mg (if no contraindication)",
+      "s": "phcstg2026:20.5",
+      "b": 1
+     },
+     {
+      "t": "MSCC → dexamethasone 16 mg IV",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "CES → phone for emergency MRI / spinal surgeon now",
+      "s": "girft2023:pathway",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Transfer?",
+    "feed": [
+     {
+      "t": "Catheter if retention",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Transfer arranged; copy of neuro exam with times",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "Voided? volume",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro re-check",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "New deficit → upgrade urgency",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Ward",
+    "feed": [
+     {
+      "t": "Mobilise as able",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MSCC: dexamethasone 4 mg 6-hourly until transfer",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Disposition",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Non-specific: discharge with safety-net",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If CES / MSCC",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Catheter + document residual",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "MRI at referral centre",
+      "s": "girft2023:pathway",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "MSCC: dexamethasone 16 mg IV, then 4 mg 6-hourly",
+      "s": "adultstg2026:21.3",
+      "b": 1
+     },
+     {
+      "t": "CES: emergency transfer (decompression)",
+      "s": "girft2023:pathway",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If infection",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Blood cultures, HIV, sputum / GeneXpert",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Spinal TB → TB_Adult pathway; neuro deficit → REFER",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Epidural abscess suspected → antibiotics after cultures, REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If non-specific / sciatica",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Keep active; avoid bed rest",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "No imaging",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ibuprofen 400 mg 8-hourly with food (short course) + paracetamol",
+      "s": "phcstg2026:20.5",
+      "b": 1
+     },
+     {
+      "t": "Safety-net card: return immediately for bladder, saddle, bowel, bilateral leg symptoms",
+      "s": "girft2023:pathway",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g)",
+     "s": "phcstg2026:20.5"
+    },
+    {
+     "t": "Ibuprofen 400 mg 8-hourly with food",
+     "s": "phcstg2026:20.5"
+    },
+    {
+     "t": "Dexamethasone 16 mg IV, then 4 mg 6-hourly (MSCC)",
+     "s": "adultstg2026:21.3"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "Waiting for retention before referring CES",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Bed rest for non-specific pain",
+     "d": 1
+    },
+    {
+     "t": "Routine imaging without red flags",
+     "d": 1
+    },
+    {
+     "t": "NSAIDs: renal impairment, ulcer, anticoagulants",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "New bladder / saddle symptom → same-day MRI",
+     "s": "girft2023:pathway",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Leg weakness progressing",
+     "s": "adultstg2026:21.3",
+     "b": 1
+    },
+    {
+     "t": "Fever + back pain → infection",
+     "s": "nhsscot:web",
+     "d": 1
+    },
+    {
+     "t": "Hypotension → AAA",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No red flags on documented exam",
+    "d": 1
+   },
+   {
+    "t": "Voiding normally, normal saddle sensation",
+    "s": "girft2023:pathway",
+    "d": 1
+   },
+   {
+    "t": "Pain controlled, mobile",
+    "d": 1
+   },
+   {
+    "t": "CES safety-net card given and explained",
+    "s": "girft2023:pathway",
+    "d": 1
+   },
+   {
+    "t": "Results reviewed",
+    "d": 1
+   },
+   {
+    "t": "Follow-up 1–2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Return if worse / new symptoms",
+    "d": 1
+   },
+   {
+    "t": "Work / activity advice",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Clinic 1–2 weeks",
+    "d": 1
+   },
+   {
+    "t": "Physiotherapy if persistent",
+    "d": 1
+   },
+   {
+    "t": "Refer: no improvement 6 weeks, progressive deficit",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing back pain / neuro-bladder record",
+  "period": "24 hours, 4-hourly rows",
+  "params": [
+   {
+    "h": "Legs",
+    "items": [
+     {
+      "t": "Power L / R",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Saddle",
+    "items": [
+     {
+      "t": "Sensation normal?",
+      "s": "girft2023:pathway",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Bladder / bowel",
+    "items": [
+     {
+      "t": "Voided, volume, sensation",
+      "s": "girft2023:pathway",
+      "d": 1
+     },
+     {
+      "t": "Bowel control",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "T, BP, pain",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "New numbness between legs",
+    "s": "girft2023:pathway",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Unable to pass urine / leaking",
+    "s": "girft2023:pathway",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Leg weaker",
+    "s": "adultstg2026:21.3",
+    "b": 1
+   },
+   {
+    "t": "Fever",
+    "s": "nhsscot:web",
+    "d": 1
+   },
+   {
+    "t": "BP falling",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Voids",
+   "Total urine (mL)",
+   "Analgesia doses"
+  ]
+ }
+}

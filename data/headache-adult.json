@@ -1,0 +1,1097 @@
+{
+ "id": "headache-adult",
+ "short": "Headache_Adult",
+ "title": "Acute headache — red flags and primary headache (adult)",
+ "population": "Adults (≥ 13 y) presenting with acute or worsening headache",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "adultstg2026",
+  "phcstg2026",
+  "do2019",
+  "bsr2020"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "Head injury → TBI_Adult · stroke signs → Stroke · pregnancy > 20 wk / postpartum → PET (pre-eclampsia)",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Fever + neck stiffness → Meningitis_Adult first (antibiotics before CT/LP if delay)",
+     "s": "adultstg2026:14.37",
+     "b": 1
+    },
+    {
+     "t": "BP ≥ 180/110 with organ damage → HTE_Adult",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Red flags (SNNOOP10) — any = secondary headache until proven otherwise",
+   "items": [
+    {
+     "t": "S: systemic symptoms, fever; HIV / immunosuppression; cancer history",
+     "s": "do2019:134",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "N: neurological deficit, confusion, reduced consciousness, seizure",
+     "s": "phcstg2026:15.54",
+     "b": 1
+    },
+    {
+     "t": "O: onset sudden / thunderclap (max < 1 min)",
+     "s": "adultstg2026:14.4",
+     "b": 1
+    },
+    {
+     "t": "O: older age — new headache > 50 y (GCA)",
+     "s": "do2019:134",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "P: pattern change / progressive; positional; precipitated by cough, exercise, sex; papilloedema; pregnancy / postpartum; painful eye; post-trauma; analgesic overuse",
+     "s": "do2019:134",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severe = any one of",
+   "items": [
+    {
+     "t": "Thunderclap headache (? SAH)",
+     "s": "adultstg2026:14.4",
+     "b": 1
+    },
+    {
+     "t": "Reduced consciousness / focal deficit",
+     "s": "phcstg2026:15.54",
+     "b": 1
+    },
+    {
+     "t": "Fever + meningism",
+     "s": "phcstg2026:15.54",
+     "b": 1
+    },
+    {
+     "t": "Papilloedema / visual loss",
+     "s": "phcstg2026:15.54",
+     "b": 1
+    },
+    {
+     "t": "New headache in HIV (CD4 low) → crypto / TB meningitis",
+     "s": "adultstg2026:10.25",
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Clinic card / previous records",
+   "items": [
+    {
+     "t": "Known migraine / pattern",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "t": "Analgesic use days / month",
+     "s": "adultstg2026:14.35"
+    },
+    {
+     "t": "HIV, CD4, ART",
+     "s": "adultstg2026:10.25"
+    },
+    {
+     "t": "Hypertension, BP control",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Anticoagulants",
+     "d": 1
+    },
+    {
+     "t": "Cancer",
+     "s": "do2019:134",
+     "d": 1
+    },
+    {
+     "t": "Pregnancy / postpartum, OCP",
+     "s": "do2019:134",
+     "d": 1
+    },
+    {
+     "t": "Recent head / neck trauma",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Onset"
+    },
+    {
+     "t": "Sudden (seconds) vs gradual",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Worst ever?",
+     "d": 1
+    },
+    {
+     "t": "Duration ____",
+     "k": "value"
+    },
+    {
+     "h": "Features"
+    },
+    {
+     "t": "Unilateral, throbbing, nausea, photophobia (migraine)",
+     "s": "adultstg2026:14.32"
+    },
+    {
+     "t": "Band-like (tension)",
+     "s": "adultstg2026:14.34"
+    },
+    {
+     "t": "Orbital + tearing, rhinorrhoea (cluster)",
+     "s": "adultstg2026:14.33"
+    },
+    {
+     "h": "Secondary"
+    },
+    {
+     "t": "Fever, vomiting, neck stiffness",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Jaw claudication, scalp tenderness (> 50 y)",
+     "s": "bsr2020:e1",
+     "d": 1
+    },
+    {
+     "t": "Other household members with headache (CO)",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside adult norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "BP ____ (hypertensive emergency?)",
+     "s": "phcstg2026:15.54",
+     "k": "sub"
+    },
+    {
+     "t": "HGT; urine dipstick (protein if pregnant)",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination",
+   "items": [
+    {
+     "h": "Neuro"
+    },
+    {
+     "t": "GCS, pupils",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Focal deficit, cranial nerves",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Fundi: papilloedema",
+     "s": "do2019:134",
+     "d": 1
+    },
+    {
+     "h": "Meningism"
+    },
+    {
+     "t": "Neck stiffness, Kernig",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Rash",
+     "d": 1
+    },
+    {
+     "h": "Local"
+    },
+    {
+     "t": "Temporal artery tender / pulseless",
+     "s": "bsr2020:e1",
+     "d": 1
+    },
+    {
+     "t": "Red eye, fixed mid-dilated pupil (glaucoma)",
+     "d": 1
+    },
+    {
+     "t": "Mastoid, sinus tenderness",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Imaging decision",
+   "items": [
+    {
+     "t": "Red flag present ☐ → CT brain (REFER) ☐ booked at ____",
+     "k": "value"
+    },
+    {
+     "t": "Thunderclap → CT (REFER); no imaging → LP for xanthochromia (≥ 12 h)",
+     "s": "adultstg2026:14.5",
+     "b": 1
+    },
+    {
+     "t": "CT before LP if focal signs, reduced GCS, papilloedema, seizure, immunosuppressed",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods / LP",
+   "items": [
+    {
+     "t": "ESR / CRP ____ (> 50 y) · HIV ____ · CrAg ____",
+     "k": "value"
+    },
+    {
+     "t": "HIV test; CD4 + serum CrAg if positive",
+     "s": "adultstg2026:10.25",
+     "b": 1
+    },
+    {
+     "t": "ESR / CRP if > 50 y (GCA)",
+     "s": "bsr2020:e1",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "LP: opening pressure, cells, protein, glucose, CrAg, xanthochromia",
+     "s": "adultstg2026:14.5",
+     "b": 1
+    },
+    {
+     "t": "Carboxyhaemoglobin if CO suspected",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Subarachnoid haemorrhage",
+     "s": "adultstg2026:14.4"
+    },
+    {
+     "t": "Meningitis / encephalitis",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Cryptococcal / TB meningitis",
+     "s": "adultstg2026:10.25"
+    },
+    {
+     "t": "Hypertensive emergency",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Venous sinus thrombosis",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "Space-occupying lesion / IIH",
+     "s": "phcstg2026:15.54"
+    },
+    {
+     "t": "GCA (visual loss)",
+     "s": "bsr2020:e1",
+     "d": 1
+    },
+    {
+     "t": "Pre-eclampsia / CO poisoning",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SAH, mass / bleed, raised ICP, meningitis needing CT, GCA with visual symptoms, or neuro deficit → stabilise → REFER (CT / neurosurgery)",
+   "s": "adultstg2026:14.5",
+   "b": 1
+  },
+  {
+   "t": "11. TREAT + DISCHARGE primary headache without red flags; ADMIT secondary causes — continue on the headache chart",
+   "s": "phcstg2026:15.55",
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Subarachnoid haemorrhage",
+   "branch": "If SAH / structural",
+   "features": [
+    {
+     "t": "Thunderclap, worst ever, neck stiffness, collapse",
+     "s": "adultstg2026:14.4"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CT; LP xanthochromia if no imaging",
+     "s": "adultstg2026:14.5",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Paracetamol; morphine max 10 mg IV; no NSAIDs; nimodipine 60 mg 4-hourly (neurosurgeon)",
+     "s": "adultstg2026:14.5"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — angiography / neurosurgery",
+     "s": "adultstg2026:14.5",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Bacterial / cryptococcal / TB meningitis",
+   "branch": "If infection",
+   "features": [
+    {
+     "t": "Fever, neck stiffness, confusion; HIV",
+     "s": "phcstg2026:15.54"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "LP; CrAg; CD4",
+     "s": "adultstg2026:10.25",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Ceftriaxone 2 g IV 12-hourly; crypto / TBM per HOSP 10.2 / Meningitis_Adult",
+     "s": "adultstg2026:14.37"
+    }
+   ],
+   "refer": [
+    {
+     "t": "If deteriorating",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Hypertensive emergency / pre-eclampsia",
+   "branch": "",
+   "features": [
+    {
+     "t": "BP very high, visual change, confusion, pregnancy",
+     "s": "phcstg2026:15.54"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "BP, urine protein, fundi",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "HTE_Adult / PET pathways",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Per pathway",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Space-occupying lesion / IIH / venous sinus thrombosis",
+   "branch": "If SAH / structural",
+   "features": [
+    {
+     "t": "Progressive, worse lying / morning, vomiting, papilloedema, seizure",
+     "s": "phcstg2026:15.54"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "REFER for CT / MRI",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Analgesia; dexamethasone only if mass confirmed",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "phcstg2026:15.55",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Giant cell arteritis",
+   "branch": "",
+   "features": [
+    {
+     "t": "> 50 y, temporal tenderness, jaw claudication, visual symptoms",
+     "s": "bsr2020:e1",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ESR / CRP",
+     "s": "bsr2020:e1",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Prednisone 40–60 mg same day (60 mg if visual symptoms)",
+     "s": "bsr2020:e1",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ophthalmology / physician urgently",
+     "s": "bsr2020:e1",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Migraine",
+   "branch": "If primary",
+   "features": [
+    {
+     "t": "Episodic, unilateral, throbbing, nausea, photo / phonophobia ± aura",
+     "s": "adultstg2026:14.32"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; normal exam",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Paracetamol 1 g or ibuprofen 400 mg + metoclopramide 10 mg",
+     "s": "adultstg2026:14.33"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Inadequate response",
+     "s": "adultstg2026:14.33"
+    }
+   ]
+  },
+  {
+   "dx": "Tension / cluster / medication-overuse headache",
+   "branch": "If primary",
+   "features": [
+    {
+     "t": "Band-like / orbital with tearing / ≥ 15 d/month on analgesics",
+     "s": "adultstg2026:14.34"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; analgesic diary",
+     "s": "adultstg2026:14.35",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Amitriptyline; cluster: O₂ + prednisone 40 mg; MOH: stop analgesics",
+     "s": "adultstg2026:14.34"
+    }
+   ],
+   "refer": [
+    {
+     "t": "Poor response / atypical",
+     "s": "adultstg2026:14.34"
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time",
+  "phase_note": "Red flags first · image or refer if any · treat pain without masking neuro change",
+  "columns": {
+   "feed": "Obs",
+   "tests": "Tests",
+   "treatment": "Treatment & actions"
+  },
+  "standing": [
+   {
+    "t": "GCS, pupils, limb power hourly if secondary cause suspected",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "BP, T 4-hourly",
+    "s": "phcstg2026:15.54",
+    "b": 1
+   },
+   {
+    "t": "Pain score; avoid sedating until assessed",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Dark quiet room for migraine",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Assess",
+    "lead": "Ask about onset in seconds. Check fundi, neck and neuro exam in every patient.",
+    "feed": [
+     {
+      "t": "IV access if red flag",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "BP, T, HGT",
+      "s": "phcstg2026:15.54",
+      "b": 1
+     },
+     {
+      "t": "HIV test",
+      "s": "adultstg2026:10.25",
+      "b": 1
+     },
+     {
+      "t": "ESR / CRP if > 50 y",
+      "s": "bsr2020:e1",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol 1 g PO (max 4 g/day)",
+      "s": "adultstg2026:14.33",
+      "b": 1
+     },
+     {
+      "t": "Fever + meningism → ceftriaxone 2 g IV now",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     },
+     {
+      "t": "Red flag → phone for CT",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Response",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro obs",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Migraine: + ibuprofen 400 mg + metoclopramide 10 mg PO / IM",
+      "s": "adultstg2026:14.33",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "LP if indicated and safe",
+      "s": "adultstg2026:14.5",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Worsening GCS / new deficit → urgent REFER",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "LP timing",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Xanthochromia LP ≥ 12 h after onset (no CT)",
+      "s": "adultstg2026:14.5",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Disposition",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Results reviewed",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Primary headache, resolved → discharge with plan",
+      "s": "phcstg2026:15.55",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If SAH / structural",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Bed rest, normal hydration; control BP",
+      "s": "adultstg2026:14.5",
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Neuro obs hourly",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Paracetamol; morphine IV to max 10 mg; NO NSAIDs",
+      "s": "adultstg2026:14.5",
+      "b": 1
+     },
+     {
+      "t": "Nimodipine 60 mg 4-hourly (discuss neurosurgeon)",
+      "s": "adultstg2026:14.5",
+      "b": 1
+     },
+     {
+      "t": "REFER for CT / angiography",
+      "s": "adultstg2026:14.5",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If infection",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "LP, CrAg, CD4",
+      "s": "adultstg2026:10.25",
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Ceftriaxone 2 g IV 12-hourly",
+      "s": "adultstg2026:14.37",
+      "b": 1
+     },
+     {
+      "t": "Crypto: per HOSP 10.2.4.2 (therapeutic LPs)",
+      "s": "adultstg2026:10.25",
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If primary",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Headache diary",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Migraine prophylaxis if > 2–3 / month: amitriptyline 10–25 mg nocte or propranolol 40 mg 12-hourly",
+      "s": "adultstg2026:14.33",
+      "b": 1
+     },
+     {
+      "t": "Cluster: O₂ inhalation; prednisone 40 mg × 5–10 d",
+      "s": "adultstg2026:14.33",
+      "b": 1
+     },
+     {
+      "t": "MOH: stop analgesics; amitriptyline 10 mg nocte",
+      "s": "adultstg2026:14.35"
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Paracetamol 500 mg–1 g 4–6-hourly (max 4 g)",
+     "s": "adultstg2026:14.33"
+    },
+    {
+     "t": "Ibuprofen 400 mg then 8-hourly",
+     "s": "adultstg2026:14.33"
+    },
+    {
+     "t": "Metoclopramide 10 mg PO / IM 8-hourly",
+     "s": "adultstg2026:14.33"
+    },
+    {
+     "t": "SAH: morphine IV max 10 mg; nimodipine 60 mg 4-hourly × 21 d",
+     "s": "adultstg2026:14.5"
+    },
+    {
+     "t": "Cluster: prednisone 40 mg × 5–10 d",
+     "s": "adultstg2026:14.34"
+    }
+   ]
+  },
+  {
+   "title": "Avoid",
+   "items": [
+    {
+     "t": "NSAIDs in suspected SAH",
+     "s": "adultstg2026:14.5",
+     "b": 1
+    },
+    {
+     "t": "Opioids for primary headache (MOH)",
+     "s": "adultstg2026:14.35"
+    },
+    {
+     "t": "LP before CT if focal signs / papilloedema",
+     "d": 1
+    },
+    {
+     "t": "Discharging a first thunderclap headache",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "GCS falls / new deficit → REFER now",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Visual loss > 50 y → GCA steroids now",
+     "s": "bsr2020:e1",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Fever + neck stiffness → antibiotics",
+     "s": "adultstg2026:14.37"
+    },
+    {
+     "t": "BP crisis → HTE pathway",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "No red flags, normal neuro exam and fundi",
+    "s": "do2019:134",
+    "d": 1
+   },
+   {
+    "t": "Pain controlled",
+    "d": 1
+   },
+   {
+    "t": "Secondary causes treated / referred",
+    "d": 1
+   },
+   {
+    "t": "Analgesic-overuse counselling",
+    "s": "adultstg2026:14.35"
+   },
+   {
+    "t": "Prophylaxis if indicated",
+    "s": "adultstg2026:14.33"
+   },
+   {
+    "t": "Return: worst headache, weakness, fever, confusion",
+    "d": 1
+   },
+   {
+    "t": "HIV result acted on",
+    "d": 1
+   },
+   {
+    "t": "Follow-up 1–4 weeks",
+    "s": "phcstg2026:15.55"
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Refer: new headache > 1 week, increasing severity, neuro signs",
+    "s": "phcstg2026:15.55"
+   },
+   {
+    "t": "No improvement after 1 month of treatment → refer",
+    "s": "phcstg2026:15.55"
+   },
+   {
+    "t": "Headache diary",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing headache / neuro observation record",
+  "period": "24 hours: hourly × 6 h, then 4-hourly",
+  "params": [
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "GCS, pupils, limb power",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "BP, HR, T",
+      "s": "phcstg2026:15.54"
+     }
+    ]
+   },
+   {
+    "h": "Pain",
+    "items": [
+     {
+      "t": "Score, analgesia given",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Other",
+    "items": [
+     {
+      "t": "Vomiting, neck stiffness",
+      "s": "phcstg2026:15.54"
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "GCS drop ≥ 1 / pupil change",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "New weakness / speech change",
+    "s": "phcstg2026:15.54",
+    "b": 1
+   },
+   {
+    "t": "Seizure",
+    "s": "phcstg2026:15.54",
+    "b": 1
+   },
+   {
+    "t": "Fever / neck stiffness",
+    "s": "phcstg2026:15.54"
+   },
+   {
+    "t": "BP very high",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Analgesia doses",
+   "Max pain",
+   "Lowest GCS"
+  ]
+ }
+}

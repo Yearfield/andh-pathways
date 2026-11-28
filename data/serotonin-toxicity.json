@@ -1,0 +1,1179 @@
+{
+ "id": "serotonin-toxicity",
+ "short": "Serotonin_Toxicity",
+ "title": "SSRI overdose and serotonin toxicity (all ages)",
+ "population": "Children and adults after SSRI / serotonergic overdose, or with features of serotonin toxicity from drug combinations",
+ "hospital": "Albert Nzula District Hospital",
+ "level": "District",
+ "updated": "2026-11-28",
+ "sources": [
+  "adultstg2026",
+  "paedstg2026",
+  "rch2021",
+  "rch2017",
+  "austin2023",
+  "dunkley2003"
+ ],
+ "dagger_note": "† = clinical or local addition, not in the SA STG",
+ "item_format": "t=text, s=source:printed page, d=dagger, b=bold, k=kind (check|value|yn|info|sub), h=heading",
+ "admission": [
+  {
+   "n": 0,
+   "title": "Not this pathway",
+   "items": [
+    {
+     "t": "TCA overdose (wide QRS, anticholinergic) → TCA pathway",
+     "s": "adultstg2026:19.21",
+     "b": 1
+    },
+    {
+     "t": "Stimulants (cocaine, amphetamines) → own pathways · paracetamol co-ingestion → Paracetamol pathway",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "title": "Diagnostic criteria — Hunter (serotonergic agent taken + ANY one)",
+   "items": [
+    {
+     "t": "Spontaneous clonus",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Inducible clonus + agitation or diaphoresis",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Ocular clonus + agitation or diaphoresis",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Tremor + hyperreflexia",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Hypertonia + T > 38 °C + ocular or inducible clonus",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Agent(s) ____ · dose ____ mg (____ mg/kg) · time ____",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Severity",
+   "items": [
+    {
+     "t": "MILD: tremor, tachycardia, inducible clonus, hyperreflexia (legs), anxiety",
+     "s": "rch2021:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "MODERATE: agitation, sustained clonus, ocular clonus, T < 39 °C",
+     "s": "rch2021:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "SEVERE: T > 39 °C, rigidity, seizures, severe agitation / confusion → ICU",
+     "s": "rch2021:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "ANY RED FLAG (§9)",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Medicines / collateral",
+   "items": [
+    {
+     "t": "SSRI: fluoxetine, citalopram, sertraline…",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Other serotonergic: tramadol, metoclopramide, MDMA, linezolid, St John's wort",
+     "s": "rch2021:web",
+     "d": 1
+    },
+    {
+     "t": "TCA / venlafaxine co-ingestion",
+     "d": 1
+    },
+    {
+     "t": "Paracetamol co-ingestion",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Pill count / packets",
+     "d": 1
+    },
+    {
+     "t": "Recent dose increase or new agent",
+     "s": "rch2021:web",
+     "d": 1
+    },
+    {
+     "t": "Psychiatric history",
+     "d": 1
+    },
+    {
+     "t": "Previous attempts",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "History",
+   "items": [
+    {
+     "h": "Ingestion"
+    },
+    {
+     "t": "Accidental (child) vs deliberate",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Time, amount, modified-release?",
+     "d": 1
+    },
+    {
+     "h": "Symptoms"
+    },
+    {
+     "t": "Nausea, vomiting, tremor, sweating, shivering",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Jerks / seizures",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "h": "Risk"
+    },
+    {
+     "t": "Suicidal intent → risk assessment",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Palpitations, syncope (QT)",
+     "s": "rch2017:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Vitals and measurements",
+   "note": "Abnormal = outside age-appropriate norms or the patient's documented baseline",
+   "items": [
+    {
+     "t": "Hypotension",
+     "k": "yn"
+    },
+    {
+     "t": "Tachycardia",
+     "k": "yn"
+    },
+    {
+     "t": "Fever / hypothermia",
+     "k": "yn"
+    },
+    {
+     "t": "Tachypnoea / respiratory distress",
+     "k": "yn"
+    },
+    {
+     "t": "Decreased level of consciousness",
+     "k": "yn"
+    },
+    {
+     "h": "Bedside"
+    },
+    {
+     "t": "Temperature ____ °C (≥ 39 = severe)",
+     "s": "rch2021:web",
+     "d": 1,
+     "k": "sub"
+    },
+    {
+     "t": "HGT ____",
+     "s": "rch2021:web",
+     "d": 1,
+     "k": "sub"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Examination (neuromuscular)",
+   "items": [
+    {
+     "h": "Clonus"
+    },
+    {
+     "t": "Ankle clonus (inducible / sustained)",
+     "s": "dunkley2003:635",
+     "d": 1
+    },
+    {
+     "t": "Ocular clonus",
+     "s": "dunkley2003:635",
+     "d": 1
+    },
+    {
+     "t": "Hyperreflexia (legs > arms)",
+     "s": "dunkley2003:635",
+     "d": 1
+    },
+    {
+     "h": "Tone"
+    },
+    {
+     "t": "Tremor",
+     "s": "dunkley2003:635",
+     "d": 1
+    },
+    {
+     "t": "Rigidity (trunk)",
+     "s": "rch2021:web",
+     "d": 1
+    },
+    {
+     "h": "Autonomic"
+    },
+    {
+     "t": "Diaphoresis, mydriasis, diarrhoea",
+     "d": 1
+    },
+    {
+     "t": "Dry skin, urinary retention → anticholinergic instead",
+     "d": 1
+    },
+    {
+     "t": "Extra findings: ____________________",
+     "k": "value"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "12-lead ECG",
+   "items": [
+    {
+     "t": "HR ____ · QRS ____ ms · QTc ____ ms",
+     "k": "value"
+    },
+    {
+     "t": "Citalopram / escitalopram: serial ECGs, cardiac monitor if QTc abnormal",
+     "s": "rch2017:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Wide QRS → think TCA, NaHCO₃ (TCA pathway)",
+     "s": "adultstg2026:19.22",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Bloods",
+   "items": [
+    {
+     "t": "Paracetamol level (deliberate), HGT",
+     "s": "rch2017:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "U&E, CK, creatinine (moderate / severe)",
+     "s": "rch2021:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Blood gas, LFT, clotting if T ≥ 39 °C",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Red flags to rule out on arrival",
+   "items": [
+    {
+     "t": "Airway compromise",
+     "b": 1
+    },
+    {
+     "t": "Shock",
+     "b": 1
+    },
+    {
+     "t": "Reduced LOC",
+     "b": 1
+    },
+    {
+     "t": "Seizures",
+     "b": 1
+    },
+    {
+     "t": "Hyperthermia ≥ 39 °C",
+     "s": "austin2023:1",
+     "d": 1
+    },
+    {
+     "t": "Rigidity",
+     "s": "rch2021:web",
+     "d": 1
+    },
+    {
+     "t": "Seizures",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "QT prolongation / TdP",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Co-ingestion (TCA, paracetamol)",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "NMS (slow onset, bradyreflexia)",
+     "s": "rch2021:web",
+     "d": 1
+    },
+    {
+     "t": "Anticholinergic toxidrome",
+     "d": 1
+    },
+    {
+     "t": "Suicide risk",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "decision": [
+  {
+   "t": "10. Diagnosis = SEVERE serotonin toxicity (T > 39 °C, rigidity, seizures) or QTc with arrhythmia → stop agents, benzodiazepines, cool → REFER ICU",
+   "s": "rch2021:web",
+   "d": 1,
+   "b": 1
+  },
+  {
+   "t": "11. ADMIT / OBSERVE ≥ 12 h (deliberate, symptomatic, or child above threshold) — continue on the tox chart",
+   "s": "rch2017:web",
+   "d": 1,
+   "b": 1
+  }
+ ],
+ "differentials": [
+  {
+   "dx": "Severe serotonin toxicity",
+   "branch": "If severe",
+   "features": [
+    {
+     "t": "T > 39 °C, rigidity, seizures",
+     "s": "rch2021:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hunter criteria; CK, gas",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzodiazepines, cooling, intubation / paralysis → ICU",
+     "s": "austin2023:1",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y — ICU",
+     "s": "rch2021:web",
+     "d": 1,
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Mild–moderate serotonin toxicity",
+   "branch": "If mild–moderate",
+   "features": [
+    {
+     "t": "Tremor, inducible / ocular clonus, agitation",
+     "s": "rch2021:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Hunter criteria",
+     "s": "dunkley2003:635",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop agents; diazepam; cyproheptadine if refractory",
+     "s": "rch2021:web",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Isolated SSRI overdose, no toxicity",
+   "branch": "If asymptomatic",
+   "features": [
+    {
+     "t": "Nausea only; below child threshold",
+     "s": "rch2017:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "ECG, paracetamol level",
+     "s": "rch2017:web",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Observe 12 h; charcoal rarely",
+     "s": "rch2017:web",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "N",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Neuroleptic malignant syndrome",
+   "branch": "",
+   "features": [
+    {
+     "t": "Antipsychotic; days onset; rigidity, bradyreflexia, no clonus",
+     "s": "paedstg2026:18.13"
+    }
+   ],
+   "confirm": [
+    {
+     "t": "CK, creatinine",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Stop neuroleptic; cool; fluids",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "Y",
+     "s": "paedstg2026:18.14",
+     "b": 1
+    }
+   ]
+  },
+  {
+   "dx": "Anticholinergic toxidrome",
+   "branch": "",
+   "features": [
+    {
+     "t": "Dry hot skin, retention, absent bowel sounds, no clonus",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Clinical; ECG",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Benzodiazepines; supportive",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If severe",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sympathomimetic (MDMA, cocaine, amphetamine)",
+   "branch": "",
+   "features": [
+    {
+     "t": "Hypertension, hyperthermia, agitation",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "History, urine drug screen",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Cocaine / Amphetamines pathways",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If severe",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "dx": "Sepsis / CNS infection",
+   "branch": "",
+   "features": [
+    {
+     "t": "Fever, meningism, no drug history",
+     "s": "rch2021:web",
+     "d": 1
+    }
+   ],
+   "confirm": [
+    {
+     "t": "Cultures, LP",
+     "d": 1,
+     "b": 1
+    }
+   ],
+   "manage": [
+    {
+     "t": "Meningitis / sepsis pathway",
+     "d": 1
+    }
+   ],
+   "refer": [
+    {
+     "t": "If indicated",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "chart": {
+  "unit": "Time from ingestion / arrival",
+  "phase_note": "Stop serotonergic agents · benzodiazepines titrated · temperature and tone hourly · observe ≥ 12 h",
+  "columns": {
+   "feed": "Supportive & obs",
+   "tests": "Monitoring",
+   "treatment": "Drugs & actions"
+  },
+  "standing": [
+   {
+    "t": "Temperature, HR, BP, RR, SpO₂ hourly",
+    "s": "rch2021:web",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Clonus, tremor, rigidity, agitation hourly",
+    "s": "rch2021:web",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "No restraints (worsen hyperthermia) — sedate instead",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "No further serotonergic drugs (tramadol, metoclopramide, ondansetron)",
+    "s": "rch2021:web",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Deliberate: 1:1 observation, suicide risk",
+    "s": "rch2017:web",
+    "d": 1
+   },
+   {
+    "t": "Record on the 24-hour nursing tox record",
+    "k": "info"
+   }
+  ],
+  "rows": [
+   {
+    "label": "0 h",
+    "phase": "Arrival",
+    "lead": "Call Poisons Information Helpline 0861 555 777 (24/7) or UFS 082 491 0160. Check for co-ingestion.",
+    "feed": [
+     {
+      "t": "IV access; IV fluids if dehydrated / tachycardic",
+      "d": 1
+     },
+     {
+      "t": "Cardiac monitor (citalopram / escitalopram)",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "12-lead ECG (QRS, QTc)",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "HGT; paracetamol level",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "U&E, CK if moderate / severe",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Stop all serotonergic agents",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Charcoal only if large citalopram / escitalopram < 1–2 h and airway safe (adult 50 g; child < 6 y 1 g/kg)",
+      "s": "adultstg2026:19.14",
+      "b": 1
+     },
+     {
+      "t": "Seizure → benzodiazepine (Seizures pathway)",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "1 h",
+    "phase": "Symptoms?",
+    "feed": [
+     {
+      "t": "Cool if T ≥ 38.5 °C",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Clonus, T",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Agitation / tremor → adult diazepam 5–10 mg PO / IV, child 0.1–0.2 mg/kg, titrate",
+      "s": "austin2023:1",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "4 h",
+    "phase": "Peak",
+    "feed": [
+     {
+      "t": "Oral fluids if well",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Repeat ECG (citalopram)",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Refractory → cyproheptadine (side 2 doses), discuss with Poisons Centre",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "6 h",
+    "phase": "Reassess",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "Temperature trend",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "T rising, rigidity → severe branch, REFER",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "12 h",
+    "phase": "Observation end",
+    "feed": [
+     {
+      "t": "Eating, mobilising",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Normal GCS, normal ECG?",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Asymptomatic, normal ECG → medically fit",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Deliberate → psychiatric risk assessment",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "24 h",
+    "phase": "Symptomatic course",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "CK, creatinine if rigid",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Most resolve within 12–24 h",
+      "s": "rch2017:web",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "label": "If asymptomatic",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "—",
+      "k": "info"
+     }
+    ],
+    "tests": [
+     {
+      "t": "ECG at arrival and before discharge",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Child below threshold: home observation possible",
+      "s": "rch2017:web",
+      "d": 1
+     },
+     {
+      "t": "Above threshold / deliberate: observe 12 h",
+      "s": "rch2017:web",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If mild–moderate",
+    "phase": "Branch",
+    "feed": [
+     {
+      "t": "Quiet room; fluids",
+      "d": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Hourly clonus / T",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Diazepam titrated (adult 5–10 mg 2–4-hourly)",
+      "s": "austin2023:1",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Cyproheptadine PO / NGT: child < 7 y 2 mg, ≥ 7 y 4 mg, then 8-hourly; adult 12 mg then 2 mg 2-hourly (max 32 mg/24 h)",
+      "s": "rch2021:web",
+      "d": 1,
+      "b": 1
+     }
+    ]
+   },
+   {
+    "label": "If severe",
+    "phase": "Emergency",
+    "feed": [
+     {
+      "t": "Active cooling; IV fluids",
+      "s": "austin2023:1",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "tests": [
+     {
+      "t": "Gas, CK, K⁺, clotting",
+      "d": 1,
+      "b": 1
+     }
+    ],
+    "treatment": [
+     {
+      "t": "Benzodiazepines IV; T ≥ 39 °C / rigidity → intubate, paralyse → REFER ICU",
+      "s": "austin2023:1",
+      "d": 1,
+      "b": 1
+     },
+     {
+      "t": "Chlorpromazine 0.5 mg/kg IV (max 25 mg) over 30–60 min if not hypotensive (child)",
+      "s": "rch2021:web",
+      "d": 1
+     },
+     {
+      "t": "No antipyretics benefit (heat is muscular)",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ },
+ "boxes": [
+  {
+   "title": "Child assessment thresholds (accidental)",
+   "items": [
+    {
+     "t": "Citalopram > 2 mg/kg · escitalopram > 1 mg/kg",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Fluoxetine > 5 mg/kg or > 60 mg",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Paroxetine > 5 mg/kg or > 60 mg",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Sertraline > 10 mg/kg · fluvoxamine > 10 mg/kg or > 100 mg",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Adolescents / adults: discuss with Poisons Centre",
+     "s": "rch2017:web",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "title": "Doses",
+   "items": [
+    {
+     "t": "Diazepam adult 5–10 mg PO 2–4-hourly",
+     "s": "austin2023:1",
+     "d": 1
+    },
+    {
+     "t": "Cyproheptadine adult 12 mg, then 2 mg 2-hourly (max 32 mg/24 h)",
+     "s": "austin2023:1",
+     "d": 1
+    },
+    {
+     "t": "Cyproheptadine child < 7 y 2 mg · ≥ 7 y 4 mg, 8-hourly",
+     "s": "rch2021:web",
+     "d": 1
+    },
+    {
+     "t": "Charcoal adult 50 g · child < 6 y 1 g/kg",
+     "s": "adultstg2026:19.14"
+    }
+   ]
+  },
+  {
+   "title": "Stop · escalate",
+   "items": [
+    {
+     "t": "T ≥ 39 °C, rigidity, seizures → ICU",
+     "s": "austin2023:1",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "QTc prolonged / TdP (citalopram)",
+     "s": "rch2017:web",
+     "d": 1,
+     "b": 1
+    },
+    {
+     "t": "Deep coma → co-ingestant",
+     "s": "rch2017:web",
+     "d": 1
+    },
+    {
+     "t": "Rising CK / dark urine → rhabdomyolysis",
+     "d": 1
+    }
+   ]
+  }
+ ],
+ "discharge": {
+  "title": "Discharge criteria — all must be met",
+  "items": [
+   {
+    "t": "Observation period complete (≥ 12 h)",
+    "s": "rch2017:web",
+    "d": 1
+   },
+   {
+    "t": "Normal GCS",
+    "s": "rch2017:web",
+    "d": 1
+   },
+   {
+    "t": "Normal ECG",
+    "s": "rch2017:web",
+    "d": 1
+   },
+   {
+    "t": "No clonus, afebrile",
+    "d": 1
+   },
+   {
+    "t": "Deliberate: low risk on psychiatric assessment",
+    "s": "rch2017:web",
+    "d": 1
+   },
+   {
+    "t": "Serotonergic combination reviewed",
+    "s": "rch2021:web",
+    "d": 1
+   },
+   {
+    "t": "Medicines locked away (child)",
+    "d": 1
+   },
+   {
+    "t": "MHCA / social worker if indicated",
+    "d": 1
+   }
+  ]
+ },
+ "followup": {
+  "title": "Follow up",
+  "items": [
+   {
+    "t": "Mental health follow-up (deliberate)",
+    "d": 1
+   },
+   {
+    "t": "Restart antidepressant only after review",
+    "d": 1
+   },
+   {
+    "t": "Return: fever, jerks, confusion",
+    "d": 1
+   }
+  ]
+ },
+ "nursing": {
+  "title": "24-hour nursing tox record — serotonin toxicity",
+  "period": "24 hours: hourly × 6 h, then 2-hourly",
+  "params": [
+   {
+    "h": "Obs",
+    "items": [
+     {
+      "t": "T, HR, BP, RR, SpO₂",
+      "s": "rch2021:web",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Neuro",
+    "items": [
+     {
+      "t": "Clonus, tremor, rigidity",
+      "s": "rch2021:web",
+      "d": 1
+     },
+     {
+      "t": "Agitation / GCS",
+      "s": "rch2021:web",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Drugs",
+    "items": [
+     {
+      "t": "Benzodiazepine / cyproheptadine given",
+      "d": 1
+     }
+    ]
+   },
+   {
+    "h": "Safety",
+    "items": [
+     {
+      "t": "1:1 if deliberate",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "call": [
+   {
+    "t": "T ≥ 38.5 °C or rising",
+    "s": "austin2023:1",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Rigidity, sustained clonus",
+    "s": "rch2021:web",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Seizure",
+    "s": "rch2017:web",
+    "d": 1,
+    "b": 1
+   },
+   {
+    "t": "Irregular pulse / syncope",
+    "s": "rch2017:web",
+    "d": 1
+   },
+   {
+    "t": "Drowsy after benzodiazepine (RR)",
+    "d": 1
+   }
+  ],
+  "totals": [
+   "Max T",
+   "Benzodiazepine total",
+   "Cyproheptadine total",
+   "Seizures"
+  ]
+ }
+}

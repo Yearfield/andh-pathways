@@ -133,6 +133,21 @@
     {"id": "MULLER", "alias": "muller2012", "short": "Müller 2012", "title": "Müller GJ, et al. CME 2012;30(10):356–361 (same source as muller2012)", "edition": "", "offset": 0},
     {"id": "CUTIS", "alias": "tomlinson2019", "short": "Tomlinson 2019", "title": "Tomlinson H, Elston DM. Cutis 2019;104(4):217–219 (same source as tomlinson2019)", "edition": "", "offset": 0},
     {"id": "fazel2019", "short": "Fazel 2019", "title": "Fazel F, Bassa F. SAMJ 2019;109(10):723–727", "edition": "2019", "type": "online", "url": "https://scielo.org.za/pdf/samj/v109n10/09.pdf", "url_template": "https://scielo.org.za/pdf/samj/v109n10/09.pdf", "cite_prefix": "p"},
-    {"id": "john2024", "short": "John 2024", "title": "John J, et al. SA Prostate Cancer Screening Guidelines. SAMJ 2024;114(5):15–18", "edition": "2024", "type": "online", "url": "https://scielo.org.za/pdf/samj/v114n5/07.pdf", "url_template": "https://scielo.org.za/pdf/samj/v114n5/07.pdf", "cite_prefix": "p"}
+    {"id": "john2024", "short": "John 2024", "title": "John J, et al. SA Prostate Cancer Screening Guidelines. SAMJ 2024;114(5):15–18", "edition": "2024", "type": "online", "url": "https://scielo.org.za/pdf/samj/v114n5/07.pdf", "url_template": "https://scielo.org.za/pdf/samj/v114n5/07.pdf", "cite_prefix": "p"},
+    {"id": "rch2021", "short": "RCH 2021", "title": "RCH Melbourne Clinical Practice Guideline — Serotonin toxicity (Jul 2021)", "edition": "2021", "offset": 0},
+    {"id": "rch2017", "short": "RCH 2017", "title": "RCH Melbourne Clinical Practice Guideline — SSRI poisoning (Nov 2017)", "edition": "2017", "offset": 0},
+    {"id": "austin2023", "short": "Austin 2023", "title": "Austin Health / Victorian Poisons Information Centre — Serotonin toxicity guideline (Mar 2023)", "edition": "2023", "offset": 0},
+    {"id": "dunkley2003", "short": "Dunkley 2003", "title": "Dunkley EJC et al. The Hunter Serotonin Toxicity Criteria. QJM 2003;96:635–642", "edition": "", "offset": 0},
+    {"id": "do2019", "short": "Do 2019", "title": "Do TP et al. Red and orange flags for secondary headaches (SNNOOP10). Neurology 2019;92:134–144", "edition": "", "offset": 0},
+    {"id": "bsr2020", "short": "BSR 2020", "title": "Mackie SL et al. British Society for Rheumatology guideline for giant cell arteritis. Rheumatology 2020;59:e1–e23", "edition": "", "offset": 0},
+    {"id": "girft2023", "short": "GIRFT 2023", "title": "National Suspected Cauda Equina Syndrome Pathway (GIRFT / NHS England, Feb 2023)", "edition": "2023", "offset": 0},
+    {"id": "nhsscot", "short": "NHS Scotland", "title": "NHS Scotland Right Decisions — serious lumbar spine conditions", "edition": "", "offset": 0},
+    {"id": "HOLDEN", "short": "Holden 2018", "title": "Holden D et al. Safe use of bolus-dose (push-dose) vasopressors in the ED, Ann Emerg Med 2018;71:83–92", "edition": "", "offset": 0},
+    {"id": "BNFC", "short": "BNFC", "title": "BNF for Children — phenytoin IV infusion (dilute to ≤ 10 mg/mL in NaCl 0.9%)", "edition": "", "offset": 0, "type": "online", "url": "https://bnfc.nice.org.uk/drugs/phenytoin/"},
+    {"id": "MENTZER", "short": "Mentzer 1973", "title": "Mentzer WC. Differentiation of iron deficiency from thalassaemia trait, Lancet 1973;1:882", "edition": "", "offset": 0},
+    {"id": "WHOFER", "short": "WHO ferritin 2020", "title": "WHO guideline on use of ferritin concentrations to assess iron status, 2020", "edition": "", "offset": 0, "type": "online", "url": "https://www.who.int/publications/i/item/9789240000124"},
+    {"id": "HUNTER", "short": "Dunkley 2003", "title": "Dunkley EJC et al. The Hunter Serotonin Toxicity Criteria, QJM 2003;96:635–642", "edition": "", "offset": 0, "alias": "dunkley2003"},
+    {"id": "AUSTIN", "short": "Austin 2023", "title": "Austin Health / Victorian Poisons Information Centre — Serotonin toxicity guideline, 2023", "edition": "", "offset": 0, "alias": "austin2023"},
+    {"id": "ANDH", "short": "ANDH local", "title": "ANDH clinician craft / local practice (not in STG)", "edition": "", "offset": 0}
   ]
 }

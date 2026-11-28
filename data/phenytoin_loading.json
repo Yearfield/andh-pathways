@@ -1,0 +1,348 @@
+{
+ "id": "phenytoin-loading",
+ "type": "dose",
+ "short": "Phenytoin_Loading",
+ "folder": "Phenytoin_Loading",
+ "title": "Phenytoin IV loading — adult + child (status epilepticus)",
+ "population": "Adults · children",
+ "age_range": "all",
+ "setting": "Casualty / resus",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "20 mg/kg",
+ "tags": [
+  "seizure",
+  "status-epilepticus",
+  "infusion",
+  "neuro",
+  "adult",
+  "paediatric"
+ ],
+ "sources": [
+  {
+   "id": "ANDH",
+   "title": "ANDH clinician craft / local practice (not in STG)",
+   "type": "local",
+   "country": "ZA"
+  },
+  {
+   "id": "BNFC",
+   "title": "BNF for Children — phenytoin IV infusion (dilute to ≤ 10 mg/mL in NaCl 0.9%)",
+   "type": "formulary",
+   "country": "UK",
+   "url": "https://bnfc.nice.org.uk/drugs/phenytoin/"
+  },
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 2025–2029 cycle (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [
+  {
+   "id": "wt",
+   "label": "Weight",
+   "unit": "kg"
+  }
+ ],
+ "top_question": {
+  "t": "NOT for drug- or toxin-induced seizures · NaCl 0.9% only (no dextrose) · cardiac monitor",
+  "s": "HOSP:14.16"
+ },
+ "components": [],
+ "tables": [
+  {
+   "title": "ADULT — 20 mg/kg in 200 mL NaCl 0.9%, not faster than 50 mg/min",
+   "head": [
+    "kg",
+    "mg",
+    "mL (50 mg/mL)",
+    "NaCl mL",
+    "≥ min",
+    "≤ mL/h"
+   ],
+   "rows": [
+    [
+     "40",
+     "800",
+     "16",
+     "200",
+     "16",
+     "810"
+    ],
+    [
+     "50",
+     "1000",
+     "20",
+     "200",
+     "20",
+     "660"
+    ],
+    [
+     "60",
+     "1200",
+     "24",
+     "200",
+     "24",
+     "560"
+    ],
+    [
+     "70",
+     "1400",
+     "28",
+     "200",
+     "28",
+     "489"
+    ],
+    [
+     "80",
+     "1600",
+     "32",
+     "200",
+     "32",
+     "435"
+    ],
+    [
+     "90",
+     "1800",
+     "36",
+     "200",
+     "36",
+     "393"
+    ],
+    [
+     "100",
+     "2000",
+     "40",
+     "200",
+     "40",
+     "360"
+    ],
+    [
+     "110",
+     "2200",
+     "44",
+     "200",
+     "44",
+     "333"
+    ],
+    [
+     "120",
+     "2400",
+     "48",
+     "200",
+     "48",
+     "310"
+    ]
+   ],
+   "s": "HOSP:14.16",
+   "note": "≤ mL/h = (200 mL + drug volume) at the 50 mg/min limit; usually run over 20–30 min. Computed."
+  },
+  {
+   "title": "CHILD — 20 mg/kg over 20 min (≤ 3 mg/kg/min), dilute to ≤ 10 mg/mL",
+   "head": [
+    "kg",
+    "mg",
+    "mL (50 mg/mL)",
+    "+ NaCl mL",
+    "total mL",
+    "mL/h (20 min)"
+   ],
+   "rows": [
+    [
+     "3",
+     "60",
+     "1.2",
+     "4.8",
+     "6",
+     "18"
+    ],
+    [
+     "5",
+     "100",
+     "2",
+     "8",
+     "10",
+     "30"
+    ],
+    [
+     "8",
+     "160",
+     "3.2",
+     "12.8",
+     "16",
+     "48"
+    ],
+    [
+     "10",
+     "200",
+     "4",
+     "16",
+     "20",
+     "60"
+    ],
+    [
+     "15",
+     "300",
+     "6",
+     "24",
+     "30",
+     "90"
+    ],
+    [
+     "20",
+     "400",
+     "8",
+     "32",
+     "40",
+     "120"
+    ],
+    [
+     "25",
+     "500",
+     "10",
+     "40",
+     "50",
+     "150"
+    ],
+    [
+     "30",
+     "600",
+     "12",
+     "48",
+     "60",
+     "180"
+    ],
+    [
+     "40",
+     "800",
+     "16",
+     "64",
+     "80",
+     "240"
+    ]
+   ],
+   "s": "PAED:13.9",
+   "note": "Dilution ≤ 10 mg/mL from BNFc † (STG: 'diluted in NaCl 0.9%'). IV or IO. Computed."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "dose",
+   "name": "Dose",
+   "expr": "mg = 20 × wt",
+   "vars": {
+    "wt": "kg"
+   },
+   "units": "mg",
+   "s": "HOSP:14.16"
+  },
+  {
+   "id": "vial_ml",
+   "name": "Drug volume",
+   "expr": "mL = mg ÷ 50",
+   "vars": {
+    "mg": "mg"
+   },
+   "units": "mL",
+   "s": "HOSP:14.16"
+  },
+  {
+   "id": "min_time_adult",
+   "name": "Adult minimum time",
+   "expr": "min = mg ÷ 50",
+   "vars": {
+    "mg": "mg"
+   },
+   "units": "min",
+   "s": "HOSP:14.16"
+  },
+  {
+   "id": "child_vol",
+   "name": "Child total volume",
+   "expr": "mL = mg ÷ 10",
+   "vars": {
+    "mg": "mg"
+   },
+   "units": "mL",
+   "d": true,
+   "s": "BNFC"
+  },
+  {
+   "id": "child_rate",
+   "name": "Child rate over 20 min",
+   "expr": "mL/h = total mL × 3",
+   "vars": {
+    "total": "mL"
+   },
+   "units": "mL/h",
+   "s": "PAED:13.9"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Adult (10–30 min of seizure): phenytoin 20 mg/kg in 200 mL NaCl ≤ 50 mg/min, cardiac monitoring",
+   "level": "red",
+   "s": "HOSP:14.16"
+  },
+  {
+   "t": "Arrhythmia / hypotension → stop, restart slower",
+   "level": "amber",
+   "s": "HOSP:14.16"
+  },
+  {
+   "t": "Child: 20 mg/kg IV/IO in NaCl over 20 min, ≤ 3 mg/kg/min, cardiac monitor",
+   "level": "red",
+   "s": "PAED:13.9"
+  },
+  {
+   "t": "Drug / toxin seizures (e.g. TCA, cocaine, INH) → benzodiazepine, not phenytoin",
+   "level": "amber",
+   "s": "HOSP:14.16"
+  },
+  {
+   "t": "Already on phenytoin + possible toxicity → do not load",
+   "level": "blue",
+   "s": "HOSP:14.16"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Separate line; flush with NaCl before and after",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Use within 1 h of mixing; discard if cloudy",
+   "d": true,
+   "s": "BNFC"
+  },
+  {
+   "t": "Extravasation → tissue necrosis (purple glove)",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Obese adult: dose on actual weight, many cap at 2 g",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Benzodiazepine first (5 min), phenytoin second",
+   "s": "HOSP:14.16"
+  },
+  {
+   "t": "Still seizing after load → REFER, RSI",
+   "s": "HOSP:14.16"
+  }
+ ]
+}

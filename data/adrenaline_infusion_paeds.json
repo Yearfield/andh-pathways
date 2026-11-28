@@ -1,0 +1,227 @@
+{
+ "id": "adrenaline-infusion-paeds",
+ "type": "dose",
+ "short": "Adrenaline_Infusion_Paeds",
+ "folder": "Adrenaline_Infusion",
+ "title": "Adrenaline infusion — child",
+ "population": "Children < 50 kg",
+ "age_range": "1 month – 12 years",
+ "setting": "Casualty / resus",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "0.06 mg/kg in 50 mL",
+ "tags": [
+  "infusion",
+  "vasopressor",
+  "shock",
+  "anaphylaxis",
+  "paediatric"
+ ],
+ "sources": [
+  {
+   "id": "ANDH",
+   "title": "ANDH clinician craft / local practice (not in STG)",
+   "type": "local",
+   "country": "ZA"
+  },
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "PAED",
+   "title": "STG & EML Paediatric Hospital Level, 2025–2029 cycle (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [
+  {
+   "id": "wt",
+   "label": "Weight",
+   "unit": "kg"
+  },
+  {
+   "id": "dose",
+   "label": "Dose",
+   "unit": "mcg/kg/min"
+  }
+ ],
+ "top_question": {
+  "t": "MIX: 0.06 mg/kg adrenaline in 50 mL dextrose 5% → 1 mL/h = 0.02 mcg/kg/min",
+  "s": "PAED:1.6"
+ },
+ "components": [],
+ "tables": [
+  {
+   "title": "Step 1 — drug into 50 mL syringe (1 mg/mL ampoule)",
+   "head": [
+    "Weight",
+    "3 kg",
+    "5 kg",
+    "10 kg",
+    "15 kg",
+    "20 kg",
+    "25 kg",
+    "30 kg",
+    "40 kg"
+   ],
+   "rows": [
+    [
+     "mg (0.06 × kg)",
+     "0.18",
+     "0.30",
+     "0.60",
+     "0.90",
+     "1.20",
+     "1.50",
+     "1.80",
+     "2.40"
+    ],
+    [
+     "mL of 1 mg/mL",
+     "0.18",
+     "0.30",
+     "0.60",
+     "0.90",
+     "1.20",
+     "1.50",
+     "1.80",
+     "2.40"
+    ]
+   ],
+   "s": "PAED:1.6"
+  },
+  {
+   "title": "Step 2 — rate (any weight with this mix)",
+   "head": [
+    "mcg/kg/min",
+    "0",
+    "0.1",
+    "0.1",
+    "0.2",
+    "0.3",
+    "0.5",
+    "1"
+   ],
+   "rows": [
+    [
+     "mL/h",
+     "1",
+     "2.5",
+     "5",
+     "10",
+     "15",
+     "25",
+     "50"
+    ]
+   ],
+   "s": "PAED:1.6",
+   "note": "Shock range 0.05–1 mcg/kg/min (PAED 1.17). Above ~10 mL/h use the stronger mix: 0.3 mg/kg in 50 mL → 1 mL/h = 0.1 mcg/kg/min †."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "drug_mg",
+   "name": "Drug in 50 mL",
+   "expr": "mg = 0.06 × wt",
+   "vars": {
+    "wt": "kg"
+   },
+   "units": "mg",
+   "s": "PAED:1.6"
+  },
+  {
+   "id": "mlh",
+   "name": "Rate",
+   "expr": "mL/h = dose ÷ 0.02",
+   "vars": {
+    "dose": "mcg/kg/min"
+   },
+   "units": "mL/h",
+   "s": "PAED:1.6"
+  },
+  {
+   "id": "mlh_strong",
+   "name": "Strong mix (0.3 mg/kg in 50 mL)",
+   "expr": "mL/h = dose ÷ 0.1",
+   "vars": {
+    "dose": "mcg/kg/min"
+   },
+   "units": "mL/h",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "id": "generic",
+   "name": "Any mix",
+   "expr": "mL/h = dose × wt × 60 ÷ conc (mcg/mL)",
+   "vars": {
+    "dose": "mcg/kg/min",
+    "wt": "kg",
+    "conc": "mcg/mL"
+   },
+   "units": "mL/h",
+   "s": "HOSP:20.7"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "Anaphylaxis: IV infusion only if no response to several IM doses — start 0.02 mcg/kg/min",
+   "level": "red",
+   "s": "PAED:1.6"
+  },
+  {
+   "t": "Shock not responding to fluids + inotrope: 0.05–1 mcg/kg/min",
+   "level": "red",
+   "s": "PAED:1.17"
+  },
+  {
+   "t": "Cardiogenic shock / dysrhythmia: 0.05–2 mcg/kg/min",
+   "level": "amber",
+   "s": "PAED:4.5"
+  },
+  {
+   "t": "Infusion running → REFER PICU / high care",
+   "level": "blue",
+   "d": true,
+   "s": "ANDH"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Syringe driver only; dedicated line",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Label syringe with mix + 1 mL/h = 0.02",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Draw small volumes with a 1 mL syringe",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Recheck weight (RTHB / estimate) before mixing",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "IO route acceptable if no IV",
+   "d": true,
+   "s": "ANDH"
+  },
+  {
+   "t": "Arrest dose differs: 10 mcg/kg (0.1 mL/kg of 1:10 000)",
+   "d": true,
+   "s": "ANDH"
+  }
+ ]
+}

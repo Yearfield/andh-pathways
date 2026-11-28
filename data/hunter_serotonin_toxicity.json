@@ -1,0 +1,241 @@
+{
+ "id": "hunter-serotonin-toxicity",
+ "type": "score",
+ "short": "Hunter_Criteria",
+ "folder": "Hunter_Criteria",
+ "title": "Hunter criteria — serotonin toxicity",
+ "population": "All ages",
+ "age_range": "all",
+ "setting": "Casualty / ward",
+ "hospital": "ANDH",
+ "level": "district",
+ "updated": "2026-11-28",
+ "badge": "agent + ANY 1",
+ "tags": [
+  "toxicology",
+  "serotonin",
+  "SSRI",
+  "neuro",
+  "diagnosis"
+ ],
+ "sources": [
+  {
+   "id": "AUSTIN",
+   "title": "Austin Health / Victorian Poisons Information Centre — Serotonin toxicity guideline, 2023",
+   "type": "guideline",
+   "country": "AU"
+  },
+  {
+   "id": "HOSP",
+   "title": "STG & EML Hospital Level Adults, 6th ed. 2024 (updated Mar 2026)",
+   "type": "guideline",
+   "country": "ZA"
+  },
+  {
+   "id": "HUNTER",
+   "title": "Dunkley EJC et al. The Hunter Serotonin Toxicity Criteria, QJM 2003;96:635–642",
+   "type": "paper",
+   "country": "AU"
+  },
+  {
+   "id": "RCH",
+   "title": "RCH Melbourne Clinical Practice Guideline — Serotonin toxicity, 2021",
+   "type": "guideline",
+   "country": "AU",
+   "url": "https://www.rch.org.au/clinicalguide/"
+  }
+ ],
+ "dagger_note": "† = not in the SA STG (source named). Doses and mixes from STG pages shown; recheck units (mg vs mcg) before drawing up",
+ "inputs": [
+  {
+   "id": "agent",
+   "label": "Serotonergic agent",
+   "unit": "Y/N"
+  },
+  {
+   "id": "temp",
+   "label": "Temperature",
+   "unit": "°C"
+  }
+ ],
+ "top_question": {
+  "t": "Serotonergic agent in last 5 weeks? (SSRI, SNRI, TCA, tramadol, MDMA, linezolid, metoclopramide, St John's wort) ☐ Y ☐ N",
+  "s": "HUNTER",
+  "d": true
+ },
+ "components": [
+  {
+   "key": "H",
+   "name": "Hunter decision rule — toxicity if ANY one",
+   "range": "sens 84 % · spec 97 %",
+   "s": "HUNTER",
+   "items": [
+    {
+     "band": "1",
+     "label": "Spontaneous clonus",
+     "level": "red",
+     "s": "HUNTER",
+     "d": true
+    },
+    {
+     "band": "2",
+     "label": "Inducible clonus + agitation OR diaphoresis",
+     "level": "red",
+     "s": "HUNTER",
+     "d": true
+    },
+    {
+     "band": "3",
+     "label": "Ocular clonus + agitation OR diaphoresis",
+     "level": "red",
+     "s": "HUNTER",
+     "d": true
+    },
+    {
+     "band": "4",
+     "label": "Tremor + hyperreflexia",
+     "level": "red",
+     "s": "HUNTER",
+     "d": true
+    },
+    {
+     "band": "5",
+     "label": "Hypertonia + T > 38 °C + ocular OR inducible clonus",
+     "level": "red",
+     "s": "HUNTER",
+     "d": true
+    }
+   ]
+  },
+  {
+   "key": "S",
+   "name": "Severity",
+   "range": "RCH / Austin",
+   "s": "RCH",
+   "items": [
+    {
+     "band": "MILD",
+     "label": "Tremor, tachycardia, inducible clonus, hyperreflexia (legs), anxiety",
+     "level": "green",
+     "s": "RCH",
+     "d": true
+    },
+    {
+     "band": "MODERATE",
+     "label": "Agitation, sustained / ocular clonus, T < 39 °C",
+     "level": "amber",
+     "s": "RCH",
+     "d": true
+    },
+    {
+     "band": "SEVERE",
+     "label": "T > 39 °C, rigidity, seizures, severe confusion",
+     "level": "red",
+     "s": "RCH",
+     "d": true
+    }
+   ]
+  }
+ ],
+ "tables": [],
+ "formulas": [
+  {
+   "id": "hunter",
+   "name": "Hunter positive",
+   "expr": "agent = Y AND (rule1 OR rule2 OR rule3 OR rule4 OR rule5)",
+   "vars": {
+    "agent": "Y/N",
+    "rule1..5": "Y/N"
+   },
+   "d": true,
+   "s": "HUNTER"
+  },
+  {
+   "id": "cypro_child",
+   "name": "Cyproheptadine child",
+   "expr": "< 7 y 2 mg · ≥ 7 y 4 mg PO/NGT 8-hourly",
+   "vars": {},
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "id": "cypro_adult",
+   "name": "Cyproheptadine adult",
+   "expr": "12 mg, then 2 mg 2-hourly (max 32 mg/24 h)",
+   "vars": {},
+   "d": true,
+   "s": "AUSTIN"
+  },
+  {
+   "id": "diazepam",
+   "name": "Diazepam",
+   "expr": "adult 5–10 mg · child 0.1–0.2 mg/kg, titrate",
+   "vars": {},
+   "d": true,
+   "s": "AUSTIN"
+  }
+ ],
+ "interpretation_stg": [
+  {
+   "t": "No SA STG section on serotonin toxicity — all criteria and doses †",
+   "level": "blue",
+   "d": true,
+   "s": "HUNTER"
+  },
+  {
+   "t": "Severe (T > 39 °C, rigidity) → stop agents, benzodiazepine, active cooling, REFER ICU (intubate + paralyse)",
+   "level": "red",
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "t": "Moderate → admit, benzodiazepine, cyproheptadine, observe ≥ 12 h",
+   "level": "amber",
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "t": "Mild → stop agent, benzodiazepine PRN, observe until settled",
+   "level": "green",
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "t": "Poisons Information Helpline 0861 555 777",
+   "level": "blue",
+   "s": "HOSP:19.1"
+  }
+ ],
+ "notes": [
+  {
+   "t": "Clonus + hyperreflexia worse in legs than arms",
+   "d": true,
+   "s": "HUNTER"
+  },
+  {
+   "t": "NMS: slow onset, bradyreflexia, lead-pipe rigidity",
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "t": "Anticholinergic: dry skin, no clonus",
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "t": "Avoid physical restraint (heat, rhabdo)",
+   "d": true,
+   "s": "AUSTIN"
+  },
+  {
+   "t": "Antipyretics do not work — cool",
+   "d": true,
+   "s": "RCH"
+  },
+  {
+   "t": "Check CK, gas, ECG (citalopram QT)",
+   "d": true,
+   "s": "AUSTIN"
+  }
+ ]
+}
